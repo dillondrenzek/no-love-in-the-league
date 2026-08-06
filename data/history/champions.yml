@@ -1,0 +1,22 @@
+# League champions, most recent season first.
+# Edit this file by hand after each season wraps up, then re-run:
+#   scripts/generate_history.py
+#
+# Fields:
+#   season:     year the season was played (int)
+#   champion:   team name that won the championship
+#   runner_up:  team name that lost the championship
+#   record:     regular season record, e.g. "10-3"
+#   points_for: total regular season points scored
+
+- season: 2025
+  champion: "Sample Team A"
+  runner_up: "Sample Team B"
+  record: "11-2"
+  points_for: 1621.4
+
+- season: 2024
+  champion: "Sample Team C"
+  runner_up: "Sample Team A"
+  record: "9-4"
+  points_for: 1544.8

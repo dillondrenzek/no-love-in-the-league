@@ -1,0 +1,28 @@
+---
+---
+
+@import "minima";
+
+// --- League customization -------------------------------------------------
+// Tweak these to match your league's branding. Minima exposes its palette
+// as CSS custom properties, so overriding them here is enough to reskin
+// the whole site without touching minima's own files.
+
+:root {
+  --link-base-color: #d94f30;
+  --link-visited-color: #d94f30;
+  --brand-color: #d94f30;
+}
+
+.site-header {
+  border-top: 5px solid var(--brand-color);
+}
+
+.site-title,
+.site-title:visited {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+}
