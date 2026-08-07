@@ -36,10 +36,15 @@ def chip(text, bg):
     return f'<span class="chip" style="background:{bg}">{text}</span>'
 
 
+def heat_color(value, lo, hi):
+    """Warm-heat hex for `value` normalized against a column's lo..hi range."""
+    t = 0.0 if hi == lo else (value - lo) / (hi - lo)
+    return warm_heat(t)
+
+
 def heat_chip(value, lo, hi, text=None):
     """A warm-heat chip for `value` normalized against a column's lo..hi range."""
-    t = 0.0 if hi == lo else (value - lo) / (hi - lo)
-    return chip(text if text is not None else value, warm_heat(t))
+    return chip(text if text is not None else value, heat_color(value, lo, hi))
 
 
 def winpct_chip(p, text=None):

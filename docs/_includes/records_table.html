@@ -1,0 +1,16 @@
+{%- comment -%}Renders site.data.history.records.{%- endcomment -%}
+<table>
+  <thead>
+    <tr><th>Category</th><th>Holder</th><th>Value</th><th style="text-align: right">Season</th></tr>
+  </thead>
+  <tbody>
+    {%- for r in site.data.history.records %}
+    <tr>
+      <td>{{ r.category }}</td>
+      <td>{{ r.holder }}</td>
+      <td>{{ r.value }}</td>
+      <td style="text-align: right">{% if r.season %}{{ r.season }}{% else %}—{% endif %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>

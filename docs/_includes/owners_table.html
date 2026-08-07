@@ -1,0 +1,30 @@
+{%- comment -%}
+Owners summary table. Param: rows = a list of owner records from
+site.data.owners (see scripts/generate_teams.py -> owners.yml).
+{%- endcomment -%}
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th style="text-align: right">Seasons</th>
+      <th>All-Time Record</th>
+      <th style="text-align: right">Win%</th>
+      <th style="text-align: right">Titles</th>
+      <th style="text-align: right">Sackos</th>
+      <th>Best Finish</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for o in include.rows %}
+    <tr>
+      <td><a href="{{ '/teams/' | append: o.id | append: '/' | relative_url }}">{{ o.name }}</a></td>
+      <td style="text-align: right">{{ o.seasons }}</td>
+      <td>{{ o.record }}</td>
+      <td style="text-align: right">{% include chip.html text=o.win_pct bg=o.win_color %}</td>
+      <td style="text-align: right">{{ o.titles }}</td>
+      <td style="text-align: right">{% if o.sackos > 0 %}{{ o.sackos }}{% endif %}</td>
+      <td>{% include best_finish.html bf=o.best_finish %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>

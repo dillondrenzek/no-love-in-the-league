@@ -1,0 +1,12 @@
+{%- comment -%}
+Best-finish label. Param: bf = { type: shiva|cochamp|place, years: [...],
+ordinal: "2nd" (place only) }.
+{%- endcomment -%}
+{%- assign bf = include.bf -%}
+{%- if bf.type == "shiva" -%}
+<span class="shiva">Shiva</span> ({{ bf.years | join: ", " }})
+{%- elsif bf.type == "cochamp" -%}
+<span class="shiva">Co-champ</span> ({{ bf.years | join: ", " }})
+{%- else -%}
+{{ bf.ordinal }} ({{ bf.years | join: ", " }})
+{%- endif -%}

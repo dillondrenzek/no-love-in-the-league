@@ -1,0 +1,38 @@
+{%- comment -%}
+One season's standings table. Param: season = an entry from
+site.data.standings.seasons.
+{%- endcomment -%}
+{%- assign s = include.season -%}
+<h3>{{ s.year }}</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Finish</th>
+      <th>Team</th>
+      <th>Record</th>
+      {%- if s.points %}
+      <th style="text-align: right">PF</th>
+      <th style="text-align: right">PA</th>
+      {%- endif %}
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in s.rows %}
+    <tr>
+      <td>{{ r.finish }}</td>
+      <td>
+        {%- if r.owner_id -%}
+        <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.team }}</a>
+        {%- if r.owner_name %} <span class="owner-name">{{ r.owner_name }}</span>{% endif -%}
+        {%- else -%}{{ r.team }}{%- endif -%}
+        {%- include finish_tag.html tag=r.tag -%}
+      </td>
+      <td>{{ r.record }}</td>
+      {%- if s.points %}
+      <td style="text-align: right">{% include chip.html text=r.pf bg=r.pf_color %}</td>
+      <td style="text-align: right">{{ r.pa }}</td>
+      {%- endif %}
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>

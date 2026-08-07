@@ -1,0 +1,206 @@
+active:
+- id: henpen28
+  name: Henry Stefan
+  seasons: 12
+  record: 77-84
+  win_pct: '.478'
+  win_color: '#f1e7e4'
+  titles: '3'
+  sackos: 0
+  best_finish:
+    type: shiva
+    years:
+    - 2014
+    - 2017
+    - 2022
+- id: shawne2520997
+  name: Shawnee Perkins
+  seasons: 10
+  record: 81-53-1
+  win_pct: '.604'
+  win_color: '#c0ddcd'
+  titles: '2'
+  sackos: 2
+  best_finish:
+    type: shiva
+    years:
+    - 2021
+    - 2023
+- id: jackperkins74
+  name: Jack Perkins
+  seasons: 12
+  record: 88-73
+  win_pct: '.547'
+  win_color: '#dae8de'
+  titles: '2'
+  sackos: 1
+  best_finish:
+    type: shiva
+    years:
+    - 2015
+    - 2025
+- id: theoceanpulse
+  name: Dillon Drenzek
+  seasons: 10
+  record: 83-51-1
+  win_pct: '.619'
+  win_color: '#badac9'
+  titles: '1'
+  sackos: 0
+  best_finish:
+    type: shiva
+    years:
+    - 2018
+- id: zachzoske
+  name: Zach Zoske
+  seasons: 12
+  record: 80-80-1
+  win_pct: '.500'
+  win_color: '#f4f3f0'
+  titles: '1'
+  sackos: 1
+  best_finish:
+    type: shiva
+    years:
+    - 2019
+- id: lukstein
+  name: Luke Stein
+  seasons: 12
+  record: 75-86
+  win_pct: '.466'
+  win_color: '#f0e1de'
+  titles: '1'
+  sackos: 2
+  best_finish:
+    type: shiva
+    years:
+    - 2024
+- id: sturmanator15
+  name: Wade Sturman
+  seasons: 12
+  record: 94-66-1
+  win_pct: '.587'
+  win_color: '#c7e0d2'
+  titles: ½
+  sackos: 0
+  best_finish:
+    type: cochamp
+    years:
+    - 2016
+- id: schirmerj
+  name: Jono Schirmer
+  seasons: 12
+  record: 80-80-1
+  win_pct: '.500'
+  win_color: '#f4f3f0'
+  titles: ½
+  sackos: 0
+  best_finish:
+    type: cochamp
+    years:
+    - 2016
+- id: gganoom
+  name: Grant Ganoom
+  seasons: 2
+  record: 16-12
+  win_pct: '.571'
+  win_color: '#cee3d6'
+  titles: '0'
+  sackos: 0
+  best_finish:
+    type: place
+    ordinal: 4th
+    years:
+    - 2025
+- id: purpsworth
+  name: Trevor Gappmayer
+  seasons: 7
+  record: 44-52
+  win_pct: '.458'
+  win_color: '#f0dedb'
+  titles: '0'
+  sackos: 1
+  best_finish:
+    type: place
+    ordinal: 2nd
+    years:
+    - 2021
+- id: kevbots22
+  name: Kevin Graczyk
+  seasons: 12
+  record: 64-96-1
+  win_pct: '.401'
+  win_color: '#ebc6c3'
+  titles: '0'
+  sackos: 1
+  best_finish:
+    type: place
+    ordinal: 2nd
+    years:
+    - 2025
+- id: whowonthelastsuperbowl
+  name: Nate Appel
+  seasons: 12
+  record: 62-99
+  win_pct: '.385'
+  win_color: '#eac1bd'
+  titles: '0'
+  sackos: 2
+  best_finish:
+    type: place
+    ordinal: 4th
+    years:
+    - 2022
+inactive:
+- id: unclebadtouch38
+  name: Fletcher Harvey
+  seasons: 8
+  record: 49-56-2
+  win_pct: '.467'
+  win_color: '#f0e2df'
+  titles: '1'
+  sackos: 1
+  best_finish:
+    type: shiva
+    years:
+    - 2020
+- id: thebragers
+  name: Brady
+  seasons: 2
+  record: 16-10
+  win_pct: '.615'
+  win_color: '#bbdbc9'
+  titles: '0'
+  sackos: 0
+  best_finish:
+    type: place
+    ordinal: 5th
+    years:
+    - 2014
+- id: master-otis
+  name: Odie Olsen
+  seasons: 3
+  record: 19-20
+  win_pct: '.487'
+  win_color: '#f2ebe8'
+  titles: '0'
+  sackos: 1
+  best_finish:
+    type: place
+    ordinal: 2nd
+    years:
+    - 2014
+    - 2015
+- id: ajstewart04
+  name: Anthony Stewart
+  seasons: 2
+  record: 8-18
+  win_pct: '.308'
+  win_color: '#e4a5a1'
+  titles: '0'
+  sackos: 0
+  best_finish:
+    type: place
+    ordinal: 9th
+    years:
+    - 2017

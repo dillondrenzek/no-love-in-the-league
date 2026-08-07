@@ -114,25 +114,44 @@ ESPN doesn't record lives here instead (the importer never touches this file):
 
 The rulings are applied in `scripts/lib/rulings.py`.
 
-## Derived data + pages (generated, never hand-edited)
+## Compute in Python, render in Jekyll
 
-`scripts/` reads `data/` and writes into `docs/`. Generated files carry a
-"do not edit by hand" note at the top. The `docs/` folder is what GitHub Pages
-publishes (Jekyll + the `minima` theme).
+Two clean layers, connected by generated data files:
+
+**Python computes** — `scripts/` reads `data/`, computes everything (standings,
+records, owner profiles, and every *display* value: chip colors, tags, formatted
+percentages), and writes it to `docs/_data/*.yml`. No HTML lives in Python.
 
 ```
 scripts/
-  lib/                   <- shared, pure functions: load data, compute standings/records
-  generate_history.py    <- champions + record book
-  generate_standings.py  <- final standings per season
-  generate_teams.py      <- owner index + per-owner pages (all-time, H2H)
+  lib/                   <- pure functions: load data, standings, records, teams,
+                            rulings, and render helpers (heat/win colors)
+  generate_history.py    <- docs/_data/history.yml (champions + record book)
+  generate_standings.py  <- docs/_data/standings.yml (per-season finals)
+  generate_teams.py      <- docs/_data/owners.yml, owner_profiles.yml + owner stub pages
   build.py               <- runs every generator in order
 ```
 
-The rule: **generators are thin, `lib/` does the thinking.** A generator loads
-data, calls a compute function from `lib/`, and renders a Markdown table. All the
-real logic (what counts as a win, how a streak is measured) lives in one place in
-`lib/` so it's tested once and reused everywhere.
+**Jekyll renders** — `docs/` is a themeless Jekyll site (our own `_layouts` and
+`_includes`, one stylesheet `assets/main.scss`). The pages loop over `site.data`
+and call small includes to build the HTML:
+
+```
+docs/
+  _layouts/, _includes/  <- our layouts + reusable partials (chip, finish_tag,
+                            person_cell, owners_table, season_standings,
+                            champions_table, records_table, owner_profile)
+  _data/*.yml            <- generated; the templates' input (never hand-edit)
+  standings/index.md     <- hand-maintained template that renders _data
+  history/index.md       <- hand-maintained template
+  teams/index.md         <- hand-maintained template (owners index)
+  teams/<id>.md          <- generated stub: includes owner_profile.html
+  assets/main.scss
+```
+
+The rule: **generators are thin, `lib/` does the thinking; templates assemble
+markup, `_data` carries the values.** Real logic (what counts as a win, a chip's
+color) lives once in `lib/`; the includes never do math.
 
 ## The build loop
 

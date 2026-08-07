@@ -11,6 +11,25 @@ version: each season is one YAML file. At minimum it holds the final standings
 (finish, team, record) pasted from ESPN; later you can add game scores and the
 build scripts compute points and richer records from those.
 
+## What you edit vs. what's generated
+
+**Edit these** (source of truth):
+
+- `data/seasons/*.yml` — season results (usually written by the importer).
+- `data/franchises.yml` — owners; edit the `name` field freely.
+- `data/overrides.yml` — league rulings (co-champions, double-elim years).
+- `docs/_layouts/`, `docs/_includes/`, `docs/*.md` templates, `docs/assets/main.scss`
+  — the site's presentation (HTML/Liquid/CSS).
+
+**Never hand-edit these** (rewritten by `scripts/build.py`):
+
+- `docs/_data/*.yml` — pre-computed data the templates render.
+- Generated pages under `docs/standings/`, `docs/history/`, `docs/teams/*.md`.
+
+The pipeline is always: edit `data/` → `python scripts/build.py` → the generated
+files are rewritten → Jekyll renders. Computation lives in Python; presentation
+lives in the Liquid templates + includes.
+
 ## How it works
 
 ```

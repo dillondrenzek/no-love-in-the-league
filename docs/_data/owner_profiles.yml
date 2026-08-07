@@ -1,0 +1,3069 @@
+jackperkins74:
+  name: Jack Perkins
+  latest_team: Pukkake
+  honors:
+  - emoji: 🏆
+    text: 2× Shiva (2015, 2025)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 2× Third
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2020)
+    strong: true
+  - emoji: ''
+    text: 9× Playoffs
+    strong: false
+  resume:
+    all_time: 88-73
+    win_pct: '.547'
+    titles: '2'
+    sackos: 1
+    playoff_apps: 9
+    seasons: 12
+    best_finish:
+      type: shiva
+      years:
+      - 2015
+      - 2025
+  seasons:
+  - year: 2025
+    team: Pukkake
+    tag: shiva
+    finish: 1st
+    record: 9-5
+    pf: 1769.9
+    pf_color: '#d65a30'
+    pa: 1579.4
+  - year: 2024
+    team: Pukkake
+    tag: null
+    finish: 3rd
+    record: 7-7
+    pf: 1661.3
+    pf_color: '#e0724c'
+    pa: 1686.1
+  - year: 2023
+    team: Vinegar Strokes
+    tag: null
+    finish: 7th
+    record: 7-7
+    pf: 1522.5
+    pf_color: '#ec9071'
+    pa: 1610.4
+  - year: 2022
+    team: Allen's Deep Balls
+    tag: null
+    finish: 6th
+    record: 10-4
+    pf: 1535.0
+    pf_color: '#eb8e6e'
+    pa: 1340.4
+  - year: 2021
+    team: Jackie PooPooPants
+    tag: null
+    finish: 5th
+    record: 7-7
+    pf: 1428.8
+    pf_color: '#f2aa90'
+    pa: 1315.6
+  - year: 2020
+    team: Ram It In
+    tag: sacko
+    finish: 12th
+    record: 5-8
+    pf: 1278.1
+    pf_color: '#f7d8ca'
+    pa: 1296.8
+  - year: 2019
+    team: Vladimir Putin
+    tag: null
+    finish: 3rd
+    record: 6-7
+    pf: 1197.1
+    pf_color: '#faf1e9'
+    pa: 1160.2
+  - year: 2018
+    team: Mixon's Gurley Fight Club
+    tag: null
+    finish: 2nd
+    record: 11-2
+    pf: 1581.3
+    pf_color: '#e78361'
+    pa: 1444.2
+  - year: 2017
+    team: Jacking Goff
+    tag: null
+    finish: 5th
+    record: 6-7
+    pf: 1220.5
+    pf_color: '#f9eae0'
+    pa: 1170.3
+  - year: 2016
+    team: The Toddfather
+    tag: null
+    finish: 4th
+    record: 8-5
+    pf: 1255.4
+    pf_color: '#f8dfd3'
+    pa: 1208.1
+  - year: 2015
+    team: Jenner's Man Meat
+    tag: shiva
+    finish: 1st
+    record: 6-7
+    pf: 1218.3
+    pf_color: '#f9eae1'
+    pa: 1187.3
+  - year: 2014
+    team: Turn down for Watt
+    tag: null
+    finish: 9th
+    record: 6-7
+    pf: 1254.7
+    pf_color: '#f8dfd3'
+    pa: 1333.1
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 125.1
+    avg_pa: 97.3
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-3
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 108.3
+    avg_pa: 103.6
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 10-8
+    win_pct: '.556'
+    win_color: '#d5e6db'
+    avg_pf: 103.8
+    avg_pa: 107.8
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 4-5
+    win_pct: '.444'
+    win_color: '#eed8d5'
+    avg_pf: 100.7
+    avg_pa: 94.8
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 142.2
+    avg_pa: 112.2
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 9-7
+    win_pct: '.562'
+    win_color: '#d2e4d9'
+    avg_pf: 99.0
+    avg_pa: 93.6
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 13-9
+    win_pct: '.591'
+    win_color: '#c6dfd1'
+    avg_pf: 112.9
+    avg_pa: 101.5
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 16-3
+    win_pct: '.842'
+    win_color: '#65b58f'
+    avg_pf: 115.4
+    avg_pa: 95.4
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 11-10
+    win_pct: '.524'
+    win_color: '#e5ede6'
+    avg_pf: 98.1
+    avg_pa: 99.4
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 9-8
+    win_pct: '.529'
+    win_color: '#e2ebe4'
+    avg_pf: 108.0
+    avg_pa: 104.2
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 3-3
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 90.3
+    avg_pa: 94.7
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 7-6
+    win_pct: '.538'
+    win_color: '#dee9e1'
+    avg_pf: 103.3
+    avg_pa: 100.5
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 7-7
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 105.8
+    avg_pa: 103.7
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 8-5
+    win_pct: '.615'
+    win_color: '#bbdbc9'
+    avg_pf: 102.5
+    avg_pa: 97.4
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 4-12
+    win_pct: '.250'
+    win_color: '#e0918e'
+    avg_pf: 98.4
+    avg_pa: 108.0
+kevbots22:
+  name: Kevin Graczyk
+  latest_team: Keeping up with the McCalferies
+  honors:
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2015)
+    strong: true
+  - emoji: ''
+    text: 5× Playoffs
+    strong: false
+  resume:
+    all_time: 64-96-1
+    win_pct: '.401'
+    titles: '0'
+    sackos: 1
+    playoff_apps: 5
+    seasons: 12
+    best_finish:
+      type: place
+      ordinal: 2nd
+      years:
+      - 2025
+  seasons:
+  - year: 2025
+    team: Keeping up with the McCalferies
+    tag: null
+    finish: 2nd
+    record: 10-4
+    pf: 1626.2
+    pf_color: '#d65a30'
+    pa: 1504.3
+  - year: 2024
+    team: Tom Bradys Only Fans
+    tag: null
+    finish: 11th
+    record: 2-12
+    pf: 1428.1
+    pf_color: '#ea8b6a'
+    pa: 1667.3
+  - year: 2023
+    team: Tom Bradys Only Fans
+    tag: null
+    finish: 8th
+    record: 4-10
+    pf: 1507.9
+    pf_color: '#e27753'
+    pa: 1608.6
+  - year: 2022
+    team: Naggar's In Paris
+    tag: null
+    finish: 9th
+    record: 2-12
+    pf: 1222.3
+    pf_color: '#f6ccbb'
+    pa: 1398.7
+  - year: 2021
+    team: Fantasy Judas
+    tag: null
+    finish: 4th
+    record: 7-6-1
+    pf: 1334.7
+    pf_color: '#f1a58a'
+    pa: 1395.1
+  - year: 2020
+    team: Fantasy Judas
+    tag: null
+    finish: 4th
+    record: 8-5
+    pf: 1357.0
+    pf_color: '#f19e81'
+    pa: 1148.6
+  - year: 2019
+    team: The Antonio ClownExperience
+    tag: null
+    finish: 9th
+    record: 4-9
+    pf: 1181.7
+    pf_color: '#f7dacc'
+    pa: 1411.7
+  - year: 2018
+    team: Team Kevin with a K
+    tag: null
+    finish: 10th
+    record: 4-9
+    pf: 1210.9
+    pf_color: '#f6d0c0'
+    pa: 1446.7
+  - year: 2017
+    team: Russian Roiders
+    tag: null
+    finish: 6th
+    record: 7-6
+    pf: 1228.6
+    pf_color: '#f6cab8'
+    pa: 1187.0
+  - year: 2016
+    team: Russian Roiders
+    tag: null
+    finish: 9th
+    record: 4-9
+    pf: 1177.7
+    pf_color: '#f8dbce'
+    pa: 1353.8
+  - year: 2015
+    team: MasterDeflater And_Commander
+    tag: sacko
+    finish: 10th
+    record: 5-8
+    pf: 1115.0
+    pf_color: '#faf1e9'
+    pa: 1259.0
+  - year: 2014
+    team: Luck her right in the Pussy
+    tag: null
+    finish: 3rd
+    record: 7-6
+    pf: 1369.3
+    pf_color: '#f0997c'
+    pa: 1168.4
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 112.6
+    avg_pa: 74.3
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 1-3
+    win_pct: '.250'
+    win_color: '#e0918e'
+    avg_pf: 96.4
+    avg_pa: 95.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 3-8
+    win_pct: '.273'
+    win_color: '#e29995'
+    avg_pf: 96.6
+    avg_pa: 111.4
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-3
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 102.1
+    avg_pa: 84.2
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 108.8
+    avg_pa: 91.0
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 11-12
+    win_pct: '.478'
+    win_color: '#f1e7e4'
+    avg_pf: 97.3
+    avg_pa: 99.8
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 3-16
+    win_pct: '.158'
+    win_color: '#da7470'
+    avg_pf: 95.4
+    avg_pa: 115.4
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 12-5
+    win_pct: '.706'
+    win_color: '#97cbb1'
+    avg_pf: 106.1
+    avg_pa: 94.6
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 12-5
+    win_pct: '.706'
+    win_color: '#97cbb1'
+    avg_pf: 108.4
+    avg_pa: 95.7
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 8-8
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 98.9
+    avg_pa: 100.2
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 2-5
+    win_pct: '.286'
+    win_color: '#e29d9a'
+    avg_pf: 89.2
+    avg_pa: 108.0
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 6-13
+    win_pct: '.316'
+    win_color: '#e5a8a4'
+    avg_pf: 101.4
+    avg_pa: 106.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 4-6
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 98.1
+    avg_pa: 118.8
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 4-18-1
+    win_pct: '.196'
+    win_color: '#dc807c'
+    avg_pf: 86.1
+    avg_pa: 97.9
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 7-8
+    win_pct: '.467'
+    win_color: '#f0e1de'
+    avg_pf: 97.3
+    avg_pa: 103.3
+purpsworth:
+  name: Trevor Gappmayer
+  latest_team: I am dead inside
+  honors:
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2019)
+    strong: true
+  - emoji: ''
+    text: 4× Playoffs
+    strong: false
+  resume:
+    all_time: 44-52
+    win_pct: '.458'
+    titles: '0'
+    sackos: 1
+    playoff_apps: 4
+    seasons: 7
+    best_finish:
+      type: place
+      ordinal: 2nd
+      years:
+      - 2021
+  seasons:
+  - year: 2025
+    team: I am dead inside
+    tag: null
+    finish: 3rd
+    record: 6-8
+    pf: 1566.2
+    pf_color: '#e6805d'
+    pa: 1526.0
+  - year: 2024
+    team: I am dead inside
+    tag: null
+    finish: 9th
+    record: 5-9
+    pf: 1606.7
+    pf_color: '#e17551'
+    pa: 1663.6
+  - year: 2023
+    team: Used Napkin
+    tag: null
+    finish: 6th
+    record: 9-5
+    pf: 1714.6
+    pf_color: '#d65a30'
+    pa: 1505.6
+  - year: 2022
+    team: Used Napkin
+    tag: null
+    finish: 7th
+    record: 7-7
+    pf: 1355.2
+    pf_color: '#f5c1ad'
+    pa: 1319.5
+  - year: 2021
+    team: WA Fantasy Football Team
+    tag: null
+    finish: 2nd
+    record: 7-7
+    pf: 1372.6
+    pf_color: '#f4bba5'
+    pa: 1433.8
+  - year: 2020
+    team: AB’s Helmet
+    tag: null
+    finish: 7th
+    record: 6-7
+    pf: 1219.5
+    pf_color: '#faf1e9'
+    pa: 1311.4
+  - year: 2019
+    team: AB’s Helmet
+    tag: sacko
+    finish: 12th
+    record: 4-9
+    pf: 1240.3
+    pf_color: '#f9eae0'
+    pa: 1344.1
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 5-10
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 100.7
+    avg_pa: 108.5
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-5
+    win_pct: '.545'
+    win_color: '#dae8df'
+    avg_pf: 99.5
+    avg_pa: 89.3
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 2-3
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 105.9
+    avg_pa: 116.5
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 4-7
+    win_pct: '.364'
+    win_color: '#e8b9b5'
+    avg_pf: 96.1
+    avg_pa: 99.9
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 7-7
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 103.7
+    avg_pa: 105.8
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 4-5
+    win_pct: '.444'
+    win_color: '#eed8d5'
+    avg_pf: 111.5
+    avg_pa: 113.8
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 6-4
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 118.8
+    avg_pa: 98.1
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 2-5
+    win_pct: '.286'
+    win_color: '#e29d9a'
+    avg_pf: 109.0
+    avg_pa: 109.0
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 8-1
+    win_pct: '.889'
+    win_color: '#54ae84'
+    avg_pf: 106.1
+    avg_pa: 91.8
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 1-8
+    win_pct: '.111'
+    win_color: '#d76561'
+    avg_pf: 97.1
+    avg_pa: 112.7
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 5-3
+    win_pct: '.625'
+    win_color: '#b7d9c7'
+    avg_pf: 110.3
+    avg_pa: 100.2
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 5-3
+    win_pct: '.625'
+    win_color: '#b7d9c7'
+    avg_pf: 113.9
+    avg_pa: 102.4
+gganoom:
+  name: Grant Ganoom
+  latest_team: One Big Beautiful Dill
+  honors:
+  - emoji: ''
+    text: 1× Playoffs
+    strong: false
+  resume:
+    all_time: 16-12
+    win_pct: '.571'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 1
+    seasons: 2
+    best_finish:
+      type: place
+      ordinal: 4th
+      years:
+      - 2025
+  seasons:
+  - year: 2025
+    team: One Big Beautiful Dill
+    tag: null
+    finish: 4th
+    record: 9-5
+    pf: 1587.6
+    pf_color: '#faf1e9'
+    pa: 1494.2
+  - year: 2024
+    team: KillDilly Elegy
+    tag: null
+    finish: 8th
+    record: 7-7
+    pf: 1622.6
+    pf_color: '#d65a30'
+    pa: 1550.1
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 115.6
+    avg_pa: 102.2
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 112.2
+    avg_pa: 103.5
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 0-3
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 112.2
+    avg_pa: 142.2
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 141.1
+    avg_pa: 126.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 91.0
+    avg_pa: 108.8
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 112.0
+    avg_pa: 112.2
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 141.4
+    avg_pa: 97.1
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 3-1
+    win_pct: '.750'
+    win_color: '#86c4a6'
+    avg_pf: 116.7
+    avg_pa: 99.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 3-2
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 116.5
+    avg_pa: 105.9
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 104.9
+    avg_pa: 119.5
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 124.0
+    avg_pa: 123.6
+theoceanpulse:
+  name: Dillon Drenzek
+  latest_team: Thoughts and Players
+  honors:
+  - emoji: 🏆
+    text: 1× Shiva (2018)
+    strong: true
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: ''
+    text: 8× Playoffs
+    strong: false
+  resume:
+    all_time: 83-51-1
+    win_pct: '.619'
+    titles: '1'
+    sackos: 0
+    playoff_apps: 8
+    seasons: 10
+    best_finish:
+      type: shiva
+      years:
+      - 2018
+  seasons:
+  - year: 2025
+    team: Thoughts and Players
+    tag: null
+    finish: 5th
+    record: 8-6
+    pf: 1612.9
+    pf_color: '#e37a56'
+    pa: 1495.9
+  - year: 2024
+    team: Thoughts and Players
+    tag: null
+    finish: 4th
+    record: 8-6
+    pf: 1569.8
+    pf_color: '#e78462'
+    pa: 1502.7
+  - year: 2023
+    team: Thoughts and Players
+    tag: null
+    finish: 3rd
+    record: 12-2
+    pf: 1748.5
+    pf_color: '#d65a30'
+    pa: 1480.6
+  - year: 2022
+    team: Thoughts and Players
+    tag: null
+    finish: 5th
+    record: 7-7
+    pf: 1312.8
+    pf_color: '#f6cfbf'
+    pa: 1371.1
+  - year: 2021
+    team: Hot Chubb Time Machine
+    tag: null
+    finish: 10th
+    record: 5-9
+    pf: 1489.3
+    pf_color: '#ef9778'
+    pa: 1463.8
+  - year: 2020
+    team: Trick-Ass Marks
+    tag: null
+    finish: 6th
+    record: 6-7
+    pf: 1208.9
+    pf_color: '#faf1e9'
+    pa: 1249.7
+  - year: 2019
+    team: Hans Blitz! Ohh noo!
+    tag: null
+    finish: 4th
+    record: 11-1-1
+    pf: 1592.1
+    pf_color: '#e57f5b'
+    pa: 1197.2
+  - year: 2018
+    team: Hans Blitz! Ohh noo!
+    tag: shiva
+    finish: 1st
+    record: 9-4
+    pf: 1453.7
+    pf_color: '#f1a185'
+    pa: 1211.3
+  - year: 2017
+    team: Hans Blitz! Ohh noo!
+    tag: null
+    finish: 7th
+    record: 11-2
+    pf: 1241.2
+    pf_color: '#f9e6dc'
+    pa: 1097.6
+  - year: 2016
+    team: Hillary Has The 2nd Clinton-Dix
+    tag: null
+    finish: 10th
+    record: 6-7
+    pf: 1304.7
+    pf_color: '#f6d2c2'
+    pa: 1281.6
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 4-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 110.2
+    avg_pa: 75.0
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 5-5
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 86.7
+    avg_pa: 80.2
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 102.2
+    avg_pa: 115.6
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 10-6
+    win_pct: '.625'
+    win_color: '#b7d9c7'
+    avg_pf: 108.4
+    avg_pa: 102.3
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 8-10
+    win_pct: '.444'
+    win_color: '#eed8d5'
+    avg_pf: 107.8
+    avg_pa: 103.8
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 7-5-1
+    win_pct: '.577'
+    win_color: '#cce2d5'
+    avg_pf: 103.7
+    avg_pa: 106.8
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 8-3
+    win_pct: '.727'
+    win_color: '#8fc8ab'
+    avg_pf: 111.4
+    avg_pa: 96.6
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 8-4
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 118.5
+    avg_pa: 98.2
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 10-1
+    win_pct: '.909'
+    win_color: '#4dab7f'
+    avg_pf: 119.4
+    avg_pa: 90.3
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 86.0
+    avg_pa: 78.2
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 9-10
+    win_pct: '.474'
+    win_color: '#f1e5e2'
+    avg_pf: 99.9
+    avg_pa: 101.3
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 10-5
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 108.5
+    avg_pa: 100.7
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 9-5
+    win_pct: '.643'
+    win_color: '#b0d6c2'
+    avg_pf: 103.8
+    avg_pa: 95.3
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 5-10
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 100.9
+    avg_pa: 104.9
+zachzoske:
+  name: Zach Zoske
+  latest_team: Big Brown Dak Makes em Waddle
+  honors:
+  - emoji: 🏆
+    text: 1× Shiva (2019)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 2× Third
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2022)
+    strong: true
+  - emoji: ''
+    text: 5× Playoffs
+    strong: false
+  resume:
+    all_time: 80-80-1
+    win_pct: '.500'
+    titles: '1'
+    sackos: 1
+    playoff_apps: 5
+    seasons: 12
+    best_finish:
+      type: shiva
+      years:
+      - 2019
+  seasons:
+  - year: 2025
+    team: Big Brown Dak Makes em Waddle
+    tag: null
+    finish: 6th
+    record: 9-5
+    pf: 1703.3
+    pf_color: '#d65a30'
+    pa: 1511.2
+  - year: 2024
+    team: Nix Out For Harambe
+    tag: null
+    finish: 7th
+    record: 7-7
+    pf: 1509.0
+    pf_color: '#e78361'
+    pa: 1511.3
+  - year: 2023
+    team: Zach's Juicy Fantasy Teamussy
+    tag: null
+    finish: 10th
+    record: 7-7
+    pf: 1562.1
+    pf_color: '#e27853'
+    pa: 1635.0
+  - year: 2022
+    team: Risk it for The Biscuit
+    tag: sacko
+    finish: 12th
+    record: 6-8
+    pf: 1311.0
+    pf_color: '#f3b49d'
+    pa: 1321.0
+  - year: 2021
+    team: ESPN 8 The Ocho
+    tag: null
+    finish: 9th
+    record: 5-9
+    pf: 1346.7
+    pf_color: '#f2aa90'
+    pa: 1455.0
+  - year: 2020
+    team: Calvin and (Jac)Obs
+    tag: null
+    finish: 2nd
+    record: 9-4
+    pf: 1502.4
+    pf_color: '#e78462'
+    pa: 1276.8
+  - year: 2019
+    team: Eleven In Crocks
+    tag: shiva
+    finish: 1st
+    record: 6-7
+    pf: 1358.9
+    pf_color: '#f1a68b'
+    pa: 1269.3
+  - year: 2018
+    team: Sackos Auto Draft Experiene
+    tag: null
+    finish: 3rd
+    record: 7-6
+    pf: 1359.5
+    pf_color: '#f1a68b'
+    pa: 1357.5
+  - year: 2017
+    team: Injury Reserve
+    tag: null
+    finish: 11th
+    record: 3-9-1
+    pf: 1103.0
+    pf_color: '#faf1e9'
+    pa: 1266.4
+  - year: 2016
+    team: The Mighty Cucks
+    tag: null
+    finish: 7th
+    record: 7-6
+    pf: 1168.4
+    pf_color: '#f8ded1'
+    pa: 1209.2
+  - year: 2015
+    team: Gronkey Punch
+    tag: null
+    finish: 3rd
+    record: 8-5
+    pf: 1367.2
+    pf_color: '#f1a488'
+    pa: 1277.5
+  - year: 2014
+    team: Spaceball One
+    tag: null
+    finish: 7th
+    record: 6-7
+    pf: 1253.9
+    pf_color: '#f5c5b2'
+    pa: 1252.9
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 77.1
+    avg_pa: 116.6
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 107.4
+    avg_pa: 85.0
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 10-5
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 104.9
+    avg_pa: 100.9
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 4-6-1
+    win_pct: '.409'
+    win_color: '#eccac6'
+    avg_pf: 95.4
+    avg_pa: 99.0
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 123.6
+    avg_pa: 124.0
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 7-11
+    win_pct: '.389'
+    win_color: '#eac2bf'
+    avg_pf: 101.5
+    avg_pa: 103.9
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 12-4
+    win_pct: '.750'
+    win_color: '#86c4a6'
+    avg_pf: 108.0
+    avg_pa: 98.4
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 9-16
+    win_pct: '.360'
+    win_color: '#e8b7b4'
+    avg_pf: 102.2
+    avg_pa: 106.3
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 8-7
+    win_pct: '.533'
+    win_color: '#e0eae3'
+    avg_pf: 103.3
+    avg_pa: 97.3
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 12-8
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 105.2
+    avg_pa: 95.3
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 12-8
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 110.1
+    avg_pa: 103.6
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 90.3
+    avg_pa: 84.4
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 7-5
+    win_pct: '.583'
+    win_color: '#c9e0d3'
+    avg_pf: 102.4
+    avg_pa: 96.9
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 3-5
+    win_pct: '.375'
+    win_color: '#e9bdba'
+    avg_pf: 102.4
+    avg_pa: 113.9
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 10-13
+    win_pct: '.435'
+    win_color: '#eed4d1'
+    avg_pf: 96.0
+    avg_pa: 98.9
+henpen28:
+  name: Henry Stefan
+  latest_team: Dump it on my Chest
+  honors:
+  - emoji: 🏆
+    text: 3× Shiva (2014, 2017, 2022)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: ''
+    text: 7× Playoffs
+    strong: false
+  resume:
+    all_time: 77-84
+    win_pct: '.478'
+    titles: '3'
+    sackos: 0
+    playoff_apps: 7
+    seasons: 12
+    best_finish:
+      type: shiva
+      years:
+      - 2014
+      - 2017
+      - 2022
+  seasons:
+  - year: 2025
+    team: Dump it on my Chest
+    tag: null
+    finish: 7th
+    record: 5-9
+    pf: 1411.9
+    pf_color: '#ec8e6e'
+    pa: 1606.0
+  - year: 2024
+    team: Three's Company
+    tag: null
+    finish: 6th
+    record: 9-5
+    pf: 1644.2
+    pf_color: '#d65a30'
+    pa: 1603.1
+  - year: 2023
+    team: Three's Company
+    tag: null
+    finish: 2nd
+    record: 7-7
+    pf: 1569.6
+    pf_color: '#dd6b44'
+    pa: 1605.2
+  - year: 2022
+    team: Consensual Trades
+    tag: shiva
+    finish: 1st
+    record: 7-7
+    pf: 1360.5
+    pf_color: '#f09a7d'
+    pa: 1300.7
+  - year: 2021
+    team: Scat Play
+    tag: null
+    finish: 3rd
+    record: 11-3
+    pf: 1490.0
+    pf_color: '#e47d59'
+    pa: 1327.2
+  - year: 2020
+    team: Scat Play
+    tag: null
+    finish: 10th
+    record: 4-9
+    pf: 1163.4
+    pf_color: '#f7d9cb'
+    pa: 1318.5
+  - year: 2019
+    team: Tom Brady's Fluffer
+    tag: null
+    finish: 11th
+    record: 4-9
+    pf: 1288.2
+    pf_color: '#f3b199'
+    pa: 1320.7
+  - year: 2018
+    team: Tom Brady's Fluffer
+    tag: null
+    finish: 6th
+    record: 8-5
+    pf: 1309.2
+    pf_color: '#f2ab91'
+    pa: 1255.2
+  - year: 2017
+    team: Forceable Entry
+    tag: shiva
+    finish: 1st
+    record: 6-7
+    pf: 1155.7
+    pf_color: '#f8dbce'
+    pa: 1134.6
+  - year: 2016
+    team: Forceable Entry
+    tag: null
+    finish: 11th
+    record: 5-8
+    pf: 1229.8
+    pf_color: '#f5c4b0'
+    pa: 1201.5
+  - year: 2015
+    team: Jared's Kids
+    tag: null
+    finish: 8th
+    record: 4-9
+    pf: 1086.2
+    pf_color: '#faf1e9'
+    pa: 1207.2
+  - year: 2014
+    team: Uncle Grabby
+    tag: shiva
+    finish: 1st
+    record: 7-6
+    pf: 1337.1
+    pf_color: '#f1a286'
+    pa: 1293.6
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 116.7
+    avg_pa: 99.4
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-3
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 79.2
+    avg_pa: 81.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 6-10
+    win_pct: '.375'
+    win_color: '#e9bdba'
+    avg_pf: 102.3
+    avg_pa: 108.4
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 8-6
+    win_pct: '.571'
+    win_color: '#cee3d6'
+    avg_pf: 96.0
+    avg_pa: 86.4
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 103.5
+    avg_pa: 112.2
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 7-9
+    win_pct: '.438'
+    win_color: '#eed5d2'
+    avg_pf: 93.6
+    avg_pa: 99.0
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 5-8
+    win_pct: '.385'
+    win_color: '#eac0bd'
+    avg_pf: 105.8
+    avg_pa: 106.9
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 12-11
+    win_pct: '.522'
+    win_color: '#e6ede7'
+    avg_pf: 99.8
+    avg_pa: 97.3
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 10-7
+    win_pct: '.588'
+    win_color: '#c7e0d1'
+    avg_pf: 98.9
+    avg_pa: 100.2
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 9-7
+    win_pct: '.562'
+    win_color: '#d2e4d9'
+    avg_pf: 98.0
+    avg_pa: 99.0
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 4-3
+    win_pct: '.571'
+    win_color: '#cee3d6'
+    avg_pf: 93.8
+    avg_pa: 101.3
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 8-10
+    win_pct: '.444'
+    win_color: '#eed8d5'
+    avg_pf: 100.3
+    avg_pa: 99.5
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 7-4
+    win_pct: '.636'
+    win_color: '#b2d7c4'
+    avg_pf: 99.9
+    avg_pa: 96.1
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 7-10
+    win_pct: '.412'
+    win_color: '#eccbc7'
+    avg_pf: 98.4
+    avg_pa: 99.1
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 11-7
+    win_pct: '.611'
+    win_color: '#bddbcb'
+    avg_pf: 103.9
+    avg_pa: 101.5
+lukstein:
+  name: Luke Stein
+  latest_team: 2x Runner Up
+  honors:
+  - emoji: 🏆
+    text: 1× Shiva (2024)
+    strong: true
+  - emoji: 🥈
+    text: 2× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: 💩
+    text: 2× Sacko (2018, 2021)
+    strong: true
+  - emoji: ''
+    text: 7× Playoffs
+    strong: false
+  resume:
+    all_time: 75-86
+    win_pct: '.466'
+    titles: '1'
+    sackos: 2
+    playoff_apps: 7
+    seasons: 12
+    best_finish:
+      type: shiva
+      years:
+      - 2024
+  seasons:
+  - year: 2025
+    team: 2x Runner Up
+    tag: null
+    finish: 8th
+    record: 8-6
+    pf: 1479.8
+    pf_color: '#f09b7e'
+    pa: 1472.9
+  - year: 2024
+    team: 2x Runner Up
+    tag: shiva
+    finish: 1st
+    record: 9-5
+    pf: 1890.9
+    pf_color: '#d65a30'
+    pa: 1711.1
+  - year: 2023
+    team: 2x Runner Up
+    tag: null
+    finish: 11th
+    record: 3-11
+    pf: 1428.2
+    pf_color: '#f2a68c'
+    pa: 1719.9
+  - year: 2022
+    team: Fly Eagles Fly
+    tag: null
+    finish: 3rd
+    record: 11-3
+    pf: 1501.3
+    pf_color: '#ef9779'
+    pa: 1367.6
+  - year: 2021
+    team: Autodraft Monster
+    tag: sacko
+    finish: 12th
+    record: 4-10
+    pf: 1302.7
+    pf_color: '#f5c2ae'
+    pa: 1465.5
+  - year: 2020
+    team: Show Me Your TDs
+    tag: null
+    finish: 11th
+    record: 5-8
+    pf: 1291.1
+    pf_color: '#f5c4b1'
+    pa: 1309.2
+  - year: 2019
+    team: Show Me Your TDs
+    tag: null
+    finish: 2nd
+    record: 6-7
+    pf: 1121.6
+    pf_color: '#f9eae0'
+    pa: 1170.5
+  - year: 2018
+    team: Graham Slam
+    tag: sacko
+    finish: 12th
+    record: 3-10
+    pf: 1184.6
+    pf_color: '#f8dccf'
+    pa: 1295.5
+  - year: 2017
+    team: My Cox Will Ertz You
+    tag: null
+    finish: 2nd
+    record: 9-4
+    pf: 1386.7
+    pf_color: '#f3b097'
+    pa: 1095.3
+  - year: 2016
+    team: My Cox Will Ertz You
+    tag: null
+    finish: 6th
+    record: 7-6
+    pf: 1224.4
+    pf_color: '#f7d3c4'
+    pa: 1234.7
+  - year: 2015
+    team: Polk Me Til I Goregasm
+    tag: null
+    finish: 7th
+    record: 3-10
+    pf: 1087.9
+    pf_color: '#faf1e9'
+    pa: 1296.0
+  - year: 2014
+    team: Washington Blowskins
+    tag: null
+    finish: 6th
+    record: 7-6
+    pf: 1168.4
+    pf_color: '#f8dfd3'
+    pa: 1213.1
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 0-3
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 79.6
+    avg_pa: 90.1
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 0-4
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 52.7
+    avg_pa: 77.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 4-8
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 98.2
+    avg_pa: 118.5
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 11-7
+    win_pct: '.611'
+    win_color: '#bddbcb'
+    avg_pf: 98.2
+    avg_pa: 99.8
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 112.2
+    avg_pa: 112.0
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 7-10
+    win_pct: '.412'
+    win_color: '#eccbc7'
+    avg_pf: 100.2
+    avg_pa: 98.9
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 10-11
+    win_pct: '.476'
+    win_color: '#f1e6e3'
+    avg_pf: 99.4
+    avg_pa: 98.1
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 9-7
+    win_pct: '.562'
+    win_color: '#d2e4d9'
+    avg_pf: 110.9
+    avg_pa: 108.1
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 5-12
+    win_pct: '.294'
+    win_color: '#e3a09d'
+    avg_pf: 95.7
+    avg_pa: 108.4
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 14-11
+    win_pct: '.560'
+    win_color: '#d3e5da'
+    avg_pf: 98.3
+    avg_pa: 90.6
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 113.9
+    avg_pa: 91.3
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 4-8
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 110.9
+    avg_pa: 103.7
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 5-2
+    win_pct: '.714'
+    win_color: '#94caaf'
+    avg_pf: 109.0
+    avg_pa: 109.0
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 11-5
+    win_pct: '.688'
+    win_color: '#9eceb6'
+    avg_pf: 105.8
+    avg_pa: 95.7
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 8-12
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 95.3
+    avg_pa: 105.2
+whowonthelastsuperbowl:
+  name: Nate Appel
+  latest_team: Trick or Trick It’s Mike Vick
+  honors:
+  - emoji: 💩
+    text: 2× Sacko (2014, 2017)
+    strong: true
+  - emoji: ''
+    text: 4× Playoffs
+    strong: false
+  resume:
+    all_time: 62-99
+    win_pct: '.385'
+    titles: '0'
+    sackos: 2
+    playoff_apps: 4
+    seasons: 12
+    best_finish:
+      type: place
+      ordinal: 4th
+      years:
+      - 2022
+  seasons:
+  - year: 2025
+    team: Trick or Trick It’s Mike Vick
+    tag: null
+    finish: 9th
+    record: 3-11
+    pf: 1445.6
+    pf_color: '#e37955'
+    pa: 1675.7
+  - year: 2024
+    team: Trick or Trick It’s Mike Vick
+    tag: null
+    finish: 10th
+    record: 6-8
+    pf: 1617.1
+    pf_color: '#d65a30'
+    pa: 1794.0
+  - year: 2023
+    team: Trick or Trick It’s Mike Vick
+    tag: null
+    finish: 9th
+    record: 5-9
+    pf: 1566.3
+    pf_color: '#da633b'
+    pa: 1630.8
+  - year: 2022
+    team: Trick or Trick It’s Mike Vick
+    tag: null
+    finish: 4th
+    record: 7-7
+    pf: 1331.2
+    pf_color: '#eb8e6e'
+    pa: 1302.5
+  - year: 2021
+    team: Trick or Trick It’s Mike Vick
+    tag: null
+    finish: 8th
+    record: 6-8
+    pf: 1405.3
+    pf_color: '#e6805e'
+    pa: 1450.5
+  - year: 2020
+    team: Wadgerach Sturdellske
+    tag: null
+    finish: 8th
+    record: 6-7
+    pf: 1298.8
+    pf_color: '#ee9475'
+    pa: 1350.4
+  - year: 2019
+    team: Wadgerach Sturdellske
+    tag: null
+    finish: 8th
+    record: 7-6
+    pf: 1201.0
+    pf_color: '#f2aa90'
+    pa: 1342.3
+  - year: 2018
+    team: Wadgerach Sturdellske
+    tag: null
+    finish: 9th
+    record: 5-8
+    pf: 1240.9
+    pf_color: '#f1a084'
+    pa: 1378.4
+  - year: 2017
+    team: Wadgerach Sturdellske
+    tag: sacko
+    finish: 12th
+    record: 4-9
+    pf: 1160.5
+    pf_color: '#f3b49d'
+    pa: 1279.7
+  - year: 2016
+    team: Wadgerach Sturdellske
+    tag: null
+    finish: 8th
+    record: 6-7
+    pf: 1299.0
+    pf_color: '#ee9474'
+    pa: 1278.2
+  - year: 2015
+    team: He's Quick He's Slick He's Mike
+    tag: null
+    finish: 9th
+    record: 6-7
+    pf: 1176.3
+    pf_color: '#f3b098'
+    pa: 1236.9
+  - year: 2014
+    team: Haters Gonna Hate
+    tag: sacko
+    finish: 10th
+    record: 1-12
+    pf: 920.5
+    pf_color: '#faf1e9'
+    pa: 1206.1
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 0-4
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 77.4
+    avg_pa: 106.7
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 70.5
+    avg_pa: 96.0
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 1-10
+    win_pct: '.091'
+    win_color: '#d65f5b'
+    avg_pf: 90.3
+    avg_pa: 119.4
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 5-5
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 100.9
+    avg_pa: 104.3
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 0-3
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 97.1
+    avg_pa: 141.4
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 7-9
+    win_pct: '.438'
+    win_color: '#eed5d2'
+    avg_pf: 99.0
+    avg_pa: 98.0
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 8-9
+    win_pct: '.471'
+    win_color: '#f1e3e0'
+    avg_pf: 104.2
+    avg_pa: 108.0
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 11-11
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 91.6
+    avg_pa: 105.7
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 8-8
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 100.2
+    avg_pa: 98.9
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 11-14
+    win_pct: '.440'
+    win_color: '#eed6d3'
+    avg_pf: 90.6
+    avg_pa: 98.3
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 79.8
+    avg_pa: 97.2
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 5-12
+    win_pct: '.294'
+    win_color: '#e3a09d'
+    avg_pf: 95.4
+    avg_pa: 104.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 1-8
+    win_pct: '.111'
+    win_color: '#d76561'
+    avg_pf: 91.8
+    avg_pa: 106.1
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 8-14
+    win_pct: '.364'
+    win_color: '#e8b9b5'
+    avg_pf: 101.3
+    avg_pa: 102.5
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 8-12
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 103.6
+    avg_pa: 110.1
+sturmanator15:
+  name: Wade Sturman
+  latest_team: Dont spit just swallow
+  honors:
+  - emoji: 🤝
+    text: Co-champ (2016)
+    strong: true
+  - emoji: ''
+    text: 8× Playoffs
+    strong: false
+  resume:
+    all_time: 94-66-1
+    win_pct: '.587'
+    titles: ½
+    sackos: 0
+    playoff_apps: 8
+    seasons: 12
+    best_finish:
+      type: cochamp
+      years:
+      - 2016
+  seasons:
+  - year: 2025
+    team: Dont spit just swallow
+    tag: null
+    finish: 10th
+    record: 7-7
+    pf: 1537.3
+    pf_color: '#e6815e'
+    pa: 1592.9
+  - year: 2024
+    team: All Hail the King
+    tag: null
+    finish: 5th
+    record: 8-6
+    pf: 1560.8
+    pf_color: '#e47c59'
+    pa: 1507.7
+  - year: 2023
+    team: In Goff we trust
+    tag: null
+    finish: 4th
+    record: 9-5
+    pf: 1733.5
+    pf_color: '#d65a30'
+    pa: 1508.8
+  - year: 2022
+    team: Trey Lanced my ❤️
+    tag: null
+    finish: 10th
+    record: 5-9
+    pf: 1299.8
+    pf_color: '#f4b8a2'
+    pa: 1507.5
+  - year: 2021
+    team: Purple Cobras and Michel
+    tag: null
+    finish: 7th
+    record: 7-6-1
+    pf: 1341.5
+    pf_color: '#f2ad94'
+    pa: 1271.9
+  - year: 2020
+    team: Lickin Brown in my McLaurin
+    tag: null
+    finish: 9th
+    record: 5-8
+    pf: 1093.9
+    pf_color: '#faf1e9'
+    pa: 1284.1
+  - year: 2019
+    team: Lamar's Donger
+    tag: null
+    finish: 6th
+    record: 11-2
+    pf: 1402.9
+    pf_color: '#f09c7f'
+    pa: 1160.6
+  - year: 2018
+    team: Chubbin out (no more Hydin)
+    tag: null
+    finish: 8th
+    record: 7-6
+    pf: 1302.1
+    pf_color: '#f3b8a1'
+    pa: 1255.9
+  - year: 2017
+    team: The People's Champion
+    tag: null
+    finish: 10th
+    record: 5-8
+    pf: 1151.0
+    pf_color: '#f8e1d5'
+    pa: 1331.7
+  - year: 2016
+    team: Wadger Sturdell
+    tag: cochamp
+    finish: 1st
+    record: 11-2
+    pf: 1296.1
+    pf_color: '#f4b9a3'
+    pa: 1063.9
+  - year: 2015
+    team: The People's Commissioner
+    tag: null
+    finish: 4th
+    record: 8-5
+    pf: 1296.7
+    pf_color: '#f4b9a3'
+    pa: 1097.6
+  - year: 2014
+    team: Ben there raped that
+    tag: null
+    finish: 4th
+    record: 11-2
+    pf: 1358.7
+    pf_color: '#f2a88e'
+    pa: 1135.6
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 81.5
+    avg_pa: 87.6
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 126.7
+    avg_pa: 80.9
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 5-9
+    win_pct: '.357'
+    win_color: '#e8b6b3'
+    avg_pf: 95.3
+    avg_pa: 103.8
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-4
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 98.8
+    avg_pa: 84.2
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 119.5
+    avg_pa: 104.9
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 10-7
+    win_pct: '.588'
+    win_color: '#c7e0d1'
+    avg_pf: 99.1
+    avg_pa: 98.4
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 5-8
+    win_pct: '.385'
+    win_color: '#eac0bd'
+    avg_pf: 97.4
+    avg_pa: 102.5
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 11-12-1
+    win_pct: '.479'
+    win_color: '#f2e7e4'
+    avg_pf: 97.1
+    avg_pa: 100.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 18-4-1
+    win_pct: '.804'
+    win_color: '#72bb98'
+    avg_pf: 97.9
+    avg_pa: 86.1
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 5-11
+    win_pct: '.312'
+    win_color: '#e4a7a3'
+    avg_pf: 95.7
+    avg_pa: 105.8
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 14-8
+    win_pct: '.636'
+    win_color: '#b2d7c4'
+    avg_pf: 102.5
+    avg_pa: 101.3
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 3-1
+    win_pct: '.750'
+    win_color: '#86c4a6'
+    avg_pf: 108.7
+    avg_pa: 71.0
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 6-6
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 107.9
+    avg_pa: 102.6
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 3-5
+    win_pct: '.375'
+    win_color: '#e9bdba'
+    avg_pf: 100.2
+    avg_pa: 110.3
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 13-10
+    win_pct: '.565'
+    win_color: '#d1e4d8'
+    avg_pf: 98.9
+    avg_pa: 96.0
+schirmerj:
+  name: Jono Schirmer
+  latest_team: IDPs Forever
+  honors:
+  - emoji: 🤝
+    text: Co-champ (2016)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: ''
+    text: 9× Playoffs
+    strong: false
+  resume:
+    all_time: 80-80-1
+    win_pct: '.500'
+    titles: ½
+    sackos: 0
+    playoff_apps: 9
+    seasons: 12
+    best_finish:
+      type: cochamp
+      years:
+      - 2016
+  seasons:
+  - year: 2025
+    team: IDPs Forever
+    tag: null
+    finish: 11th
+    record: 5-9
+    pf: 1546.0
+    pf_color: '#e78462'
+    pa: 1701.4
+  - year: 2024
+    team: 5 Star Men
+    tag: null
+    finish: 2nd
+    record: 9-5
+    pf: 1764.6
+    pf_color: '#d65a30'
+    pa: 1661.4
+  - year: 2023
+    team: IDP'd My Pants
+    tag: null
+    finish: 5th
+    record: 8-6
+    pf: 1658.4
+    pf_color: '#de6e48'
+    pa: 1546.3
+  - year: 2022
+    team: Make Dalvin Cook Again
+    tag: null
+    finish: 11th
+    record: 4-10
+    pf: 1317.0
+    pf_color: '#f4b8a2'
+    pa: 1350.7
+  - year: 2021
+    team: Post Mahomes
+    tag: null
+    finish: 6th
+    record: 8-6
+    pf: 1341.1
+    pf_color: '#f3b29a'
+    pa: 1376.5
+  - year: 2020
+    team: Folklore Bandits
+    tag: null
+    finish: 3rd
+    record: 8-5
+    pf: 1370.3
+    pf_color: '#f2aa90'
+    pa: 1305.0
+  - year: 2019
+    team: Tank4Picks .
+    tag: null
+    finish: 5th
+    record: 5-7-1
+    pf: 1183.5
+    pf_color: '#f8dcce'
+    pa: 1194.4
+  - year: 2018
+    team: Hammed Up .
+    tag: null
+    finish: 5th
+    record: 6-7
+    pf: 1311.7
+    pf_color: '#f4b9a4'
+    pa: 1360.6
+  - year: 2017
+    team: Browning out .
+    tag: null
+    finish: 8th
+    record: 7-6
+    pf: 1375.9
+    pf_color: '#f2a88e'
+    pa: 1273.8
+  - year: 2016
+    team: Lick my Rawls .
+    tag: cochamp
+    finish: 2nd
+    record: 9-4
+    pf: 1403.8
+    pf_color: '#f1a185'
+    pa: 1229.1
+  - year: 2015
+    team: Wilson's Magic Water
+    tag: null
+    finish: 5th
+    record: 7-6
+    pf: 1243.2
+    pf_color: '#f6ccba'
+    pa: 1210.2
+  - year: 2014
+    team: Arian nation .
+    tag: null
+    finish: 8th
+    record: 4-9
+    pf: 1103.1
+    pf_color: '#faf1e9'
+    pa: 1267.0
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 97.1
+    avg_pa: 101.2
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 101.0
+    avg_pa: 88.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 5-7-1
+    win_pct: '.423'
+    win_color: '#edcfcc'
+    avg_pf: 106.8
+    avg_pa: 103.7
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 5-4
+    win_pct: '.556'
+    win_color: '#d5e6db'
+    avg_pf: 93.1
+    avg_pa: 88.9
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 126.0
+    avg_pa: 141.1
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 8-5
+    win_pct: '.615'
+    win_color: '#bbdbc9'
+    avg_pf: 106.9
+    avg_pa: 105.8
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 9-13
+    win_pct: '.409'
+    win_color: '#eccac6'
+    avg_pf: 101.5
+    avg_pa: 112.9
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 5-12
+    win_pct: '.294'
+    win_color: '#e3a09d'
+    avg_pf: 94.6
+    avg_pa: 106.1
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 7-9
+    win_pct: '.438'
+    win_color: '#eed5d2'
+    avg_pf: 108.1
+    avg_pa: 110.9
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 11-11
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 105.7
+    avg_pa: 91.6
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 96.3
+    avg_pa: 87.2
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 8-5
+    win_pct: '.615'
+    win_color: '#bbdbc9'
+    avg_pf: 112.0
+    avg_pa: 102.8
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 5-4
+    win_pct: '.556'
+    win_color: '#d5e6db'
+    avg_pf: 113.8
+    avg_pa: 111.5
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 12-11-1
+    win_pct: '.521'
+    win_color: '#e7ede7'
+    avg_pf: 100.0
+    avg_pa: 97.1
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 16-9
+    win_pct: '.640'
+    win_color: '#b1d6c3'
+    avg_pf: 106.3
+    avg_pa: 102.2
+shawne2520997:
+  name: Shawnee Perkins
+  latest_team: D***er my Sufficient Tight End
+  honors:
+  - emoji: 🏆
+    text: 2× Shiva (2021, 2023)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 2× Third
+    strong: false
+  - emoji: 💩
+    text: 2× Sacko (2024, 2025)
+    strong: true
+  - emoji: ''
+    text: 8× Playoffs
+    strong: false
+  resume:
+    all_time: 81-53-1
+    win_pct: '.604'
+    titles: '2'
+    sackos: 2
+    playoff_apps: 8
+    seasons: 10
+    best_finish:
+      type: shiva
+      years:
+      - 2021
+      - 2023
+  seasons:
+  - year: 2025
+    team: D***er my Sufficient Tight End
+    tag: sacko
+    finish: 12th
+    record: 5-9
+    pf: 1542.5
+    pf_color: '#df6f49'
+    pa: 1669.3
+  - year: 2024
+    team: Save a horse, Ride the Cowboys
+    tag: sacko
+    finish: 12th
+    record: 7-7
+    pf: 1433.9
+    pf_color: '#eb8c6c'
+    pa: 1450.6
+  - year: 2023
+    team: Save a horse, Ride the Cowboys
+    tag: shiva
+    finish: 1st
+    record: 9-5
+    pf: 1606.6
+    pf_color: '#d75e34'
+    pa: 1510.0
+  - year: 2022
+    team: Koo Koo Kachoo
+    tag: null
+    finish: 2nd
+    record: 11-3
+    pf: 1438.2
+    pf_color: '#ea8b6b'
+    pa: 1258.8
+  - year: 2021
+    team: Koo Koo Kachoo
+    tag: shiva
+    finish: 1st
+    record: 12-2
+    pf: 1619.5
+    pf_color: '#d65a30'
+    pa: 1237.5
+  - year: 2020
+    team: Koo Koo Kachoo
+    tag: null
+    finish: 5th
+    record: 7-6
+    pf: 1204.8
+    pf_color: '#f8ded2'
+    pa: 1261.8
+  - year: 2019
+    team: Mixon it up
+    tag: null
+    finish: 7th
+    record: 7-5-1
+    pf: 1279.9
+    pf_color: '#f5c2ae'
+    pa: 1296.9
+  - year: 2018
+    team: Queen of the Hill
+    tag: null
+    finish: 4th
+    record: 7-6
+    pf: 1327.0
+    pf_color: '#f3b098'
+    pa: 1245.1
+  - year: 2017
+    team: Dislocated Johnson
+    tag: null
+    finish: 3rd
+    record: 9-4
+    pf: 1155.7
+    pf_color: '#faf1e9'
+    pa: 1193.0
+  - year: 2016
+    team: GONNA DEFLATE YO BALLS!!
+    tag: null
+    finish: 3rd
+    record: 7-6
+    pf: 1317.2
+    pf_color: '#f3b49c'
+    pa: 1276.8
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 112.8
+    avg_pa: 99.2
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 10-9
+    win_pct: '.526'
+    win_color: '#e4ece5'
+    avg_pf: 101.3
+    avg_pa: 99.9
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 10-3-1
+    win_pct: '.750'
+    win_color: '#86c4a6'
+    avg_pf: 103.2
+    avg_pa: 77.8
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-3
+    win_pct: '.250'
+    win_color: '#e0918e'
+    avg_pf: 99.2
+    avg_pa: 116.7
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 10-8
+    win_pct: '.556'
+    win_color: '#d5e6db'
+    avg_pf: 99.5
+    avg_pa: 100.3
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 6-7
+    win_pct: '.462'
+    win_color: '#f0dfdc'
+    avg_pf: 100.5
+    avg_pa: 103.3
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 5-8
+    win_pct: '.385'
+    win_color: '#eac0bd'
+    avg_pf: 102.8
+    avg_pa: 112.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 13-6
+    win_pct: '.684'
+    win_color: '#9fcfb7'
+    avg_pf: 106.2
+    avg_pa: 101.4
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 8-4
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 103.7
+    avg_pa: 110.9
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 12-5
+    win_pct: '.706'
+    win_color: '#97cbb1'
+    avg_pf: 104.2
+    avg_pa: 95.4
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 1-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 73.6
+    avg_pa: 71.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 8-1
+    win_pct: '.889'
+    win_color: '#54ae84'
+    avg_pf: 112.7
+    avg_pa: 97.1
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 6-6
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 102.6
+    avg_pa: 107.9
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 5-7
+    win_pct: '.417'
+    win_color: '#eccdc9'
+    avg_pf: 96.9
+    avg_pa: 102.4
+unclebadtouch38:
+  name: Fletcher Harvey
+  latest_team: Mr. Irrelevant
+  honors:
+  - emoji: 🏆
+    text: 1× Shiva (2020)
+    strong: true
+  - emoji: 💩
+    text: 1× Sacko (2023)
+    strong: true
+  - emoji: ''
+    text: 5× Playoffs
+    strong: false
+  resume:
+    all_time: 49-56-2
+    win_pct: '.467'
+    titles: '1'
+    sackos: 1
+    playoff_apps: 5
+    seasons: 8
+    best_finish:
+      type: shiva
+      years:
+      - 2020
+  seasons:
+  - year: 2023
+    team: Mr. Irrelevant
+    tag: sacko
+    finish: 12th
+    record: 4-10
+    pf: 1297.6
+    pf_color: '#e37b57'
+    pa: 1554.6
+  - year: 2022
+    team: Mr. Irrelevant
+    tag: null
+    finish: 8th
+    record: 7-7
+    pf: 1144.5
+    pf_color: '#f4bba6'
+    pa: 1290.3
+  - year: 2021
+    team: Set_The_ RAT_TRAP_!
+    tag: null
+    finish: 11th
+    record: 4-10
+    pf: 1112.9
+    pf_color: '#f6cbb9'
+    pa: 1392.7
+  - year: 2020
+    team: Set_The_ RAT_TRAP_!
+    tag: shiva
+    finish: 1st
+    record: 9-4
+    pf: 1389.2
+    pf_color: '#d65a30'
+    pa: 1265.1
+  - year: 2019
+    team: Set_The_ RAT_TRAP_!
+    tag: null
+    finish: 10th
+    record: 5-7-1
+    pf: 1036.2
+    pf_color: '#faf1e9'
+    pa: 1215.5
+  - year: 2018
+    team: Cleveland Mcpussysmasher
+    tag: null
+    finish: 7th
+    record: 7-6
+    pf: 1327.9
+    pf_color: '#df704a'
+    pa: 1210.7
+  - year: 2017
+    team: Cleveland Mcpussysmasher
+    tag: null
+    finish: 4th
+    record: 6-6-1
+    pf: 1105.6
+    pf_color: '#f6cebe'
+    pa: 1120.6
+  - year: 2016
+    team: Cleveland Mcpussysmasher
+    tag: null
+    finish: 5th
+    record: 7-6
+    pf: 1238.7
+    pf_color: '#ec9070'
+    pa: 1269.9
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 4-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 111.9
+    avg_pa: 85.3
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 5-5
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 80.2
+    avg_pa: 86.7
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 6-8
+    win_pct: '.429'
+    win_color: '#edd1ce'
+    avg_pf: 86.4
+    avg_pa: 96.0
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 5-4
+    win_pct: '.556'
+    win_color: '#d5e6db'
+    avg_pf: 94.8
+    avg_pa: 100.7
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 4-5
+    win_pct: '.444'
+    win_color: '#eed8d5'
+    avg_pf: 88.9
+    avg_pa: 93.1
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 3-6
+    win_pct: '.333'
+    win_color: '#e6aeaa'
+    avg_pf: 84.2
+    avg_pa: 102.1
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 7-11
+    win_pct: '.389'
+    win_color: '#eac2bf'
+    avg_pf: 99.8
+    avg_pa: 98.2
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 5-5
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 104.3
+    avg_pa: 100.9
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 104.5
+    avg_pa: 73.0
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 3-10-1
+    win_pct: '.250'
+    win_color: '#e0918e'
+    avg_pf: 77.8
+    avg_pa: 103.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 5-6
+    win_pct: '.455'
+    win_color: '#efdcd9'
+    avg_pf: 89.3
+    avg_pa: 99.5
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 4-6
+    win_pct: '.400'
+    win_color: '#ebc6c3'
+    avg_pf: 84.2
+    avg_pa: 98.8
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 6-4-1
+    win_pct: '.591'
+    win_color: '#c6dfd1'
+    avg_pf: 99.0
+    avg_pa: 95.4
+ajstewart04:
+  name: Anthony Stewart
+  latest_team: Tacos Food Truck
+  honors: []
+  resume:
+    all_time: 8-18
+    win_pct: '.308'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 0
+    seasons: 2
+    best_finish:
+      type: place
+      ordinal: 9th
+      years:
+      - 2017
+  seasons:
+  - year: 2018
+    team: Tacos Food Truck
+    tag: null
+    finish: 11th
+    record: 4-9
+    pf: 1269.9
+    pf_color: '#d65a30'
+    pa: 1417.6
+  - year: 2017
+    team: Tacos Food Truck
+    tag: null
+    finish: 9th
+    record: 4-9
+    pf: 1143.7
+    pf_color: '#faf1e9'
+    pa: 1278.1
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 0-4
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 75.0
+    avg_pa: 110.2
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 0-4
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 85.3
+    avg_pa: 111.9
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 99.4
+    avg_pa: 116.7
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 97.3
+    avg_pa: 125.1
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 101.2
+    avg_pa: 97.1
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 0-3
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 74.3
+    avg_pa: 112.6
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 90.1
+    avg_pa: 79.6
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 4-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 106.7
+    avg_pa: 77.4
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 99.2
+    avg_pa: 112.8
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 87.6
+    avg_pa: 81.5
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 116.6
+    avg_pa: 77.1
+master-otis:
+  name: Odie Olsen
+  latest_team: Brown Lives Matter
+  honors:
+  - emoji: 🥈
+    text: 2× Runner-Up
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2016)
+    strong: true
+  - emoji: ''
+    text: 2× Playoffs
+    strong: false
+  resume:
+    all_time: 19-20
+    win_pct: '.487'
+    titles: '0'
+    sackos: 1
+    playoff_apps: 2
+    seasons: 3
+    best_finish:
+      type: place
+      ordinal: 2nd
+      years:
+      - 2014
+      - 2015
+  seasons:
+  - year: 2016
+    team: Brown Lives Matter
+    tag: sacko
+    finish: 12th
+    record: 1-12
+    pf: 953.6
+    pf_color: '#faf1e9'
+    pa: 1262.0
+  - year: 2015
+    team: I Waxed My Child For This
+    tag: null
+    finish: 2nd
+    record: 9-4
+    pf: 1425.0
+    pf_color: '#d65a30'
+    pa: 1200.2
+  - year: 2014
+    team: Lynched by Le' Bell
+    tag: null
+    finish: 2nd
+    record: 9-4
+    pf: 1297.1
+    pf_color: '#e47c59'
+    pa: 1202.4
+  h2h:
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 3-1
+    win_pct: '.750'
+    win_color: '#86c4a6'
+    avg_pf: 115.2
+    avg_pa: 87.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 78.2
+    avg_pa: 86.0
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 73.0
+    avg_pa: 104.5
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 3-4
+    win_pct: '.429'
+    win_color: '#edd1ce'
+    avg_pf: 101.3
+    avg_pa: 93.8
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 3-3
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 94.7
+    avg_pa: 90.3
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 87.2
+    avg_pa: 96.3
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 5-2
+    win_pct: '.714'
+    win_color: '#94caaf'
+    avg_pf: 108.0
+    avg_pa: 89.2
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 0-3
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 91.3
+    avg_pa: 113.9
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 97.2
+    avg_pa: 79.8
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 0-1
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 71.2
+    avg_pa: 73.6
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 1-3
+    win_pct: '.250'
+    win_color: '#e0918e'
+    avg_pf: 71.0
+    avg_pa: 108.7
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#a6d2bb'
+    avg_pf: 84.4
+    avg_pa: 90.3
+thebragers:
+  name: Brady
+  latest_team: The Bragers
+  honors:
+  - emoji: ''
+    text: 2× Playoffs
+    strong: false
+  resume:
+    all_time: 16-10
+    win_pct: '.615'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 2
+    seasons: 2
+    best_finish:
+      type: place
+      ordinal: 5th
+      years:
+      - 2014
+  seasons:
+  - year: 2015
+    team: The Bragers
+    tag: null
+    finish: 6th
+    record: 9-4
+    pf: 1219.6
+    pf_color: '#d65a30'
+    pa: 1263.5
+  - year: 2014
+    team: Team TheBragers
+    tag: null
+    finish: 5th
+    record: 7-6
+    pf: 1197.9
+    pf_color: '#faf1e9'
+    pa: 1188.5
+  h2h:
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 3-2
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 81.7
+    avg_pa: 79.2
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 3-2
+    win_pct: '.600'
+    win_color: '#c2ddce'
+    avg_pf: 103.6
+    avg_pa: 108.3
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f4f3f0'
+    avg_pf: 88.7
+    avg_pa: 101.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 3-1
+    win_pct: '.750'
+    win_color: '#86c4a6'
+    avg_pf: 95.7
+    avg_pa: 96.4
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 4-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 77.7
+    avg_pa: 52.7
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#2e9e6a'
+    avg_pf: 96.0
+    avg_pa: 70.5
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 1-3
+    win_pct: '.250'
+    win_color: '#e0918e'
+    avg_pf: 87.7
+    avg_pa: 115.2
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 80.9
+    avg_pa: 126.7
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#d0433f'
+    avg_pf: 85.0
+    avg_pa: 107.4

@@ -1,0 +1,8 @@
+{%- comment -%}
+Inline finish tag. Param: tag = "shiva" | "cochamp" | "sacko" (or blank).
+{%- endcomment -%}
+{%- assign t = include.tag -%}
+{%- if t == "shiva" %} <span class="tag tag--shiva">Shiva</span>
+{%- elsif t == "cochamp" %} <span class="tag tag--shiva">Co-champ</span>
+{%- elsif t == "sacko" %} <span class="tag tag--sacko">Sacko</span>
+{%- endif -%}
