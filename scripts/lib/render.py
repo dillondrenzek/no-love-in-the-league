@@ -44,3 +44,15 @@ def heat_chip(value, lo, hi, text=None):
 
 def winpct_chip(p, text=None):
     return chip(text if text is not None else f"{p:.3f}".lstrip("0"), winpct_color(p))
+
+
+def finish_tag(finish, team_count, is_co=False):
+    """A small inline tag for a notable finish: Shiva (title), Co-champ, or Sacko
+    (dead last). Empty string for everything in between."""
+    if is_co:
+        return ' <span class="tag tag--shiva">Co-champ</span>'
+    if finish == 1:
+        return ' <span class="tag tag--shiva">Shiva</span>'
+    if team_count and finish == team_count:
+        return ' <span class="tag tag--sacko">Sacko</span>'
+    return ""

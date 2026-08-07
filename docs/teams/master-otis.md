@@ -9,15 +9,16 @@ permalink: /teams/master-otis/
 
 <p class="owner-sub">Most recent: Brown Lives Matter</p>
 
-🥈 2× Runner-Up · 3× Playoffs
-
-**All-time regular season:** 19-20 (.487) · **Playoffs:** 2-5 · **Seasons:** 3 · **Best finish:** 2nd · **Points for/against:** 3675.7 / 3664.6
+<div class="resume">
+  <div class="resume__honors">🥈 2× Runner-Up · 💩 <b>1× Sacko</b> (2016) · 3× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">19-20 <span class='muted'>(.487)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">2-5</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">3</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2014, 2015)</div></div></div>
+</div>
 
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2016 | Brown Lives Matter | 12th | 1-12 | <span class="chip" style="background:#faf1e9">953.6</span> | 1262.0 |
+| 2016 | Brown Lives Matter <span class="tag tag--sacko">Sacko</span> | 12th | 1-12 | <span class="chip" style="background:#faf1e9">953.6</span> | 1262.0 |
 | 2015 | I Waxed My Child For This | 2nd | 9-4 | <span class="chip" style="background:#d65a30">1425.0</span> | 1200.2 |
 | 2014 | Lynched by Le' Bell | 2nd | 9-4 | <span class="chip" style="background:#e47c59">1297.1</span> | 1202.4 |
 

@@ -9,9 +9,10 @@ permalink: /teams/schirmerj/
 
 <p class="owner-sub">Most recent: IDPs Forever</p>
 
-🤝 **Co-Champion** (2016) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
-
-**All-time regular season:** 80-80-1 (.500) · **Playoffs:** 17-16-1 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 16618.6 / 16476.4
+<div class="resume">
+  <div class="resume__honors">🤝 <b>Co-champ</b> (2016) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">80-80-1 <span class='muted'>(.500)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">½</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">17-16-1</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Co-champ</span> (2016)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -26,7 +27,7 @@ permalink: /teams/schirmerj/
 | 2019 | Tank4Picks   . | 5th | 5-7-1 | <span class="chip" style="background:#f8dcce">1183.5</span> | 1194.4 |
 | 2018 | Hammed Up   . | 5th | 6-7 | <span class="chip" style="background:#f4b9a4">1311.7</span> | 1360.6 |
 | 2017 | Browning out   . | 8th | 7-6 | <span class="chip" style="background:#f2a88e">1375.9</span> | 1273.8 |
-| 2016 | Lick my Rawls . | 2nd | 9-4 | <span class="chip" style="background:#f1a185">1403.8</span> | 1229.1 |
+| 2016 | Lick my Rawls . <span class="tag tag--shiva">Co-champ</span> | 2nd | 9-4 | <span class="chip" style="background:#f1a185">1403.8</span> | 1229.1 |
 | 2015 | Wilson's Magic Water | 5th | 7-6 | <span class="chip" style="background:#f6ccba">1243.2</span> | 1210.2 |
 | 2014 | Arian nation . | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1103.1</span> | 1267.0 |
 

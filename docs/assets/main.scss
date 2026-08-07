@@ -187,16 +187,59 @@ tbody td a:hover { color: var(--brand); }
   text-align: right;
 }
 
-// Champion marker in the standings finish column.
-.star { color: var(--brand); font-size: 0.8rem; }
+// The "Shiva" (championship) label used in the best-finish column.
+.shiva { color: var(--brand); font-weight: 700; }
+
+// Inline finish tags (Shiva / Co-champ / Sacko) after a team name.
+.tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 5px;
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+.tag--shiva { background: #fbe6d6; color: #a4530f; }
+.tag--sacko { background: #ece3da; color: #6d4a2c; }
 
 // Monospace subtitle under an owner-page title (their latest team name).
 .owner-sub {
   font-family: var(--mono);
   color: var(--muted);
   font-size: 0.85rem;
-  margin: -0.4em 0 1.4em;
+  margin: -0.4em 0 1em;
 }
+
+// ---- Owner "resume" card ----------------------------------------------------
+.resume {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 0 0 1.8em;
+  background: #fff;
+}
+.resume__honors { font-size: 0.97rem; line-height: 1.7; }
+.resume__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+.tile__label {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.tile__val { font-size: 1.05rem; font-weight: 700; margin-top: 3px; }
+.tile__val .muted { color: var(--muted); font-weight: 500; font-size: 0.85rem; }
 
 // ---- Trophy line / stats line -----------------------------------------------
 .post-content strong { font-weight: 700; }

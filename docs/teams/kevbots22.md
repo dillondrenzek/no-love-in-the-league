@@ -9,9 +9,10 @@ permalink: /teams/kevbots22/
 
 <p class="owner-sub">Most recent: Keeping up with the McCalferies</p>
 
-🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
-
-**All-time regular season:** 64-96-1 (.401) · **Playoffs:** 19-15 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 15759.4 / 16549.2
+<div class="resume">
+  <div class="resume__honors">🥈 1× Runner-Up · 🥉 1× Third · 💩 <b>1× Sacko</b> (2015) · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">64-96-1 <span class='muted'>(.401)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">19-15</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2025)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -27,7 +28,7 @@ permalink: /teams/kevbots22/
 | 2018 | Team Kevin  with a K | 10th | 4-9 | <span class="chip" style="background:#f6d0c0">1210.9</span> | 1446.7 |
 | 2017 | Russian  Roiders  | 6th | 7-6 | <span class="chip" style="background:#f6cab8">1228.6</span> | 1187.0 |
 | 2016 | Russian  Roiders  | 9th | 4-9 | <span class="chip" style="background:#f8dbce">1177.7</span> | 1353.8 |
-| 2015 | MasterDeflater  And_Commander | 10th | 5-8 | <span class="chip" style="background:#faf1e9">1115.0</span> | 1259.0 |
+| 2015 | MasterDeflater  And_Commander <span class="tag tag--sacko">Sacko</span> | 10th | 5-8 | <span class="chip" style="background:#faf1e9">1115.0</span> | 1259.0 |
 | 2014 | Luck her right  in the Pussy | 3rd | 7-6 | <span class="chip" style="background:#f0997c">1369.3</span> | 1168.4 |
 
 ## Head-to-head

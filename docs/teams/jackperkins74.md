@@ -9,25 +9,26 @@ permalink: /teams/jackperkins74/
 
 <p class="owner-sub">Most recent: Pukkake</p>
 
-🏆 **2× Champion** (2015, 2025) · 🥈 1× Runner-Up · 🥉 2× Third · 12× Playoffs
-
-**All-time regular season:** 88-73 (.547) · **Playoffs:** 20-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16922.9 / 16331.9
+<div class="resume">
+  <div class="resume__honors">🏆 <b>2× Shiva</b> (2015, 2025) · 🥈 1× Runner-Up · 🥉 2× Third · 💩 <b>1× Sacko</b> (2020) · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">88-73 <span class='muted'>(.547)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">20-13</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2015, 2025)</div></div></div>
+</div>
 
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | Pukkake | <span class="star">★</span> 1st | 9-5 | <span class="chip" style="background:#d65a30">1769.9</span> | 1579.4 |
+| 2025 | Pukkake <span class="tag tag--shiva">Shiva</span> | 1st | 9-5 | <span class="chip" style="background:#d65a30">1769.9</span> | 1579.4 |
 | 2024 | Pukkake | 3rd | 7-7 | <span class="chip" style="background:#e0724c">1661.3</span> | 1686.1 |
 | 2023 | Vinegar Strokes | 7th | 7-7 | <span class="chip" style="background:#ec9071">1522.5</span> | 1610.4 |
 | 2022 | Allen's Deep Balls | 6th | 10-4 | <span class="chip" style="background:#eb8e6e">1535.0</span> | 1340.4 |
 | 2021 | Jackie PooPooPants | 5th | 7-7 | <span class="chip" style="background:#f2aa90">1428.8</span> | 1315.6 |
-| 2020 | Ram It In | 12th | 5-8 | <span class="chip" style="background:#f7d8ca">1278.1</span> | 1296.8 |
+| 2020 | Ram It In <span class="tag tag--sacko">Sacko</span> | 12th | 5-8 | <span class="chip" style="background:#f7d8ca">1278.1</span> | 1296.8 |
 | 2019 | Vladimir Putin | 3rd | 6-7 | <span class="chip" style="background:#faf1e9">1197.1</span> | 1160.2 |
 | 2018 | Mixon's Gurley Fight Club | 2nd | 11-2 | <span class="chip" style="background:#e78361">1581.3</span> | 1444.2 |
 | 2017 | Jacking Goff | 5th | 6-7 | <span class="chip" style="background:#f9eae0">1220.5</span> | 1170.3 |
 | 2016 | The Toddfather | 4th | 8-5 | <span class="chip" style="background:#f8dfd3">1255.4</span> | 1208.1 |
-| 2015 | Jenner's Man Meat | <span class="star">★</span> 1st | 6-7 | <span class="chip" style="background:#f9eae1">1218.3</span> | 1187.3 |
+| 2015 | Jenner's Man Meat <span class="tag tag--shiva">Shiva</span> | 1st | 6-7 | <span class="chip" style="background:#f9eae1">1218.3</span> | 1187.3 |
 | 2014 | Turn down for Watt | 9th | 6-7 | <span class="chip" style="background:#f8dfd3">1254.7</span> | 1333.1 |
 
 ## Head-to-head

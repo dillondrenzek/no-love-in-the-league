@@ -20,6 +20,7 @@ def _blank(fid, franchises):
         "reg": {"w": 0, "l": 0, "t": 0, "pf": 0.0, "pa": 0.0},
         "playoff": {"w": 0, "l": 0, "t": 0},
         "titles": 0.0, "runner_ups": 0, "thirds": 0, "berths": 0,
+        "sackos": 0, "sacko_years": [],                 # dead-last finishes
         "champ_years": [],                              # list of (year, is_co)
         "h2h": {},                                      # opp id -> {w,l,t,pf,pa}
     }
@@ -53,6 +54,7 @@ def compute_profiles(seasons, franchises, overrides=None):
         rows = {r["id"]: r for r in get_standings(season, franchises)}
         co = set(co_champions(year, overrides))
         skip = meaningless_keys(season, overrides)
+        team_count = len(rows)
 
         for fid, r in rows.items():
             p = prof(fid)
@@ -60,6 +62,7 @@ def compute_profiles(seasons, franchises, overrides=None):
                 "year": year, "team": teams_map.get(fid) or r["name"],
                 "finish": r["finish"], "record": r["record"],
                 "pf": r["points_for"], "pa": r["points_against"],
+                "team_count": team_count, "is_co": fid in co,
             })
             p["reg"]["w"] += r["wins"]; p["reg"]["l"] += r["losses"]; p["reg"]["t"] += r["ties"]
             if r["points_for"] is not None:
@@ -72,6 +75,8 @@ def compute_profiles(seasons, franchises, overrides=None):
                 p["runner_ups"] += 1
             elif r["finish"] == 3:
                 p["thirds"] += 1
+            if r["finish"] == team_count:      # dead last = Sacko
+                p["sackos"] += 1; p["sacko_years"].append(year)
 
         in_playoffs = set()
         for m in season.get("matchups", []):

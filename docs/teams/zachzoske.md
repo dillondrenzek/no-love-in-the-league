@@ -9,9 +9,10 @@ permalink: /teams/zachzoske/
 
 <p class="owner-sub">Most recent: Big Brown Dak Makes em Waddle</p>
 
-🏆 **1× Champion** (2019) · 🥈 1× Runner-Up · 🥉 2× Third · 12× Playoffs
-
-**All-time regular season:** 80-80-1 (.500) · **Playoffs:** 19-14 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16545.4 / 16343.1
+<div class="resume">
+  <div class="resume__honors">🏆 <b>1× Shiva</b> (2019) · 🥈 1× Runner-Up · 🥉 2× Third · 💩 <b>1× Sacko</b> (2022) · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">80-80-1 <span class='muted'>(.500)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">19-14</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2019)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -20,10 +21,10 @@ permalink: /teams/zachzoske/
 | 2025 | Big Brown Dak Makes em Waddle | 6th | 9-5 | <span class="chip" style="background:#d65a30">1703.3</span> | 1511.2 |
 | 2024 | Nix Out For Harambe | 7th | 7-7 | <span class="chip" style="background:#e78361">1509.0</span> | 1511.3 |
 | 2023 | Zach's Juicy Fantasy Teamussy | 10th | 7-7 | <span class="chip" style="background:#e27853">1562.1</span> | 1635.0 |
-| 2022 | Risk it for The Biscuit | 12th | 6-8 | <span class="chip" style="background:#f3b49d">1311.0</span> | 1321.0 |
+| 2022 | Risk it for The Biscuit <span class="tag tag--sacko">Sacko</span> | 12th | 6-8 | <span class="chip" style="background:#f3b49d">1311.0</span> | 1321.0 |
 | 2021 | ESPN 8 The Ocho | 9th | 5-9 | <span class="chip" style="background:#f2aa90">1346.7</span> | 1455.0 |
 | 2020 | Calvin and (Jac)Obs | 2nd | 9-4 | <span class="chip" style="background:#e78462">1502.4</span> | 1276.8 |
-| 2019 | Eleven In Crocks | <span class="star">★</span> 1st | 6-7 | <span class="chip" style="background:#f1a68b">1358.9</span> | 1269.3 |
+| 2019 | Eleven In Crocks <span class="tag tag--shiva">Shiva</span> | 1st | 6-7 | <span class="chip" style="background:#f1a68b">1358.9</span> | 1269.3 |
 | 2018 | Sackos Auto Draft Experiene | 3rd | 7-6 | <span class="chip" style="background:#f1a68b">1359.5</span> | 1357.5 |
 | 2017 | Injury  Reserve  | 11th | 3-9-1 | <span class="chip" style="background:#faf1e9">1103.0</span> | 1266.4 |
 | 2016 | The  Mighty Cucks | 7th | 7-6 | <span class="chip" style="background:#f8ded1">1168.4</span> | 1209.2 |

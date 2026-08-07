@@ -136,6 +136,16 @@ def test_rec_str():
     assert rec_str(7, 6, 1) == "7-6-1"
 
 
+def test_sacko_counts_last_place():
+    # 4-team season; whoever finishes last (finish == team_count) gets a Sacko.
+    profiles = compute_profiles([matchup_season(2025)], {}, {})
+    last = max(profiles.values(), key=lambda p: p["seasons"][0]["finish"])
+    assert last["seasons"][0]["team_count"] == 4
+    assert last["sackos"] == 1 and last["sacko_years"] == [2025]
+    # Exactly one Sacko handed out.
+    assert sum(p["sackos"] for p in profiles.values()) == 1
+
+
 def test_fmt_titles_half():
     assert fmt_titles(0.5) == "½"
     assert fmt_titles(2) == "2"

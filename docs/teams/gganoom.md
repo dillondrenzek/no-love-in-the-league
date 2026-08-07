@@ -9,9 +9,10 @@ permalink: /teams/gganoom/
 
 <p class="owner-sub">Most recent: One Big Beautiful Dill</p>
 
-2× Playoffs
-
-**All-time regular season:** 16-12 (.571) · **Playoffs:** 2-3 · **Seasons:** 2 · **Best finish:** 4th · **Points for/against:** 3210.2 / 3044.3
+<div class="resume">
+  <div class="resume__honors">2× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">16-12 <span class='muted'>(.571)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">2-3</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">4th (2025)</div></div></div>
+</div>
 
 ## Season by season
 

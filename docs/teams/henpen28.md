@@ -9,9 +9,10 @@ permalink: /teams/henpen28/
 
 <p class="owner-sub">Most recent: Dump it on my Chest</p>
 
-🏆 **3× Champion** (2014, 2017, 2022) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
-
-**All-time regular season:** 77-84 (.478) · **Playoffs:** 21-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16045.8 / 16173.5
+<div class="resume">
+  <div class="resume__honors">🏆 <b>3× Shiva</b> (2014, 2017, 2022) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">77-84 <span class='muted'>(.478)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">3</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">21-13</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2014, 2017, 2022)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -20,15 +21,15 @@ permalink: /teams/henpen28/
 | 2025 | Dump it on my Chest | 7th | 5-9 | <span class="chip" style="background:#ec8e6e">1411.9</span> | 1606.0 |
 | 2024 | Three's Company | 6th | 9-5 | <span class="chip" style="background:#d65a30">1644.2</span> | 1603.1 |
 | 2023 | Three's Company | 2nd | 7-7 | <span class="chip" style="background:#dd6b44">1569.6</span> | 1605.2 |
-| 2022 | Consensual Trades | <span class="star">★</span> 1st | 7-7 | <span class="chip" style="background:#f09a7d">1360.5</span> | 1300.7 |
+| 2022 | Consensual Trades <span class="tag tag--shiva">Shiva</span> | 1st | 7-7 | <span class="chip" style="background:#f09a7d">1360.5</span> | 1300.7 |
 | 2021 | Scat Play | 3rd | 11-3 | <span class="chip" style="background:#e47d59">1490.0</span> | 1327.2 |
 | 2020 | Scat Play | 10th | 4-9 | <span class="chip" style="background:#f7d9cb">1163.4</span> | 1318.5 |
 | 2019 | Tom Brady's Fluffer | 11th | 4-9 | <span class="chip" style="background:#f3b199">1288.2</span> | 1320.7 |
 | 2018 | Tom Brady's Fluffer | 6th | 8-5 | <span class="chip" style="background:#f2ab91">1309.2</span> | 1255.2 |
-| 2017 | Forceable Entry | <span class="star">★</span> 1st | 6-7 | <span class="chip" style="background:#f8dbce">1155.7</span> | 1134.6 |
+| 2017 | Forceable Entry <span class="tag tag--shiva">Shiva</span> | 1st | 6-7 | <span class="chip" style="background:#f8dbce">1155.7</span> | 1134.6 |
 | 2016 | Forceable Entry | 11th | 5-8 | <span class="chip" style="background:#f5c4b0">1229.8</span> | 1201.5 |
 | 2015 | Jared's  Kids | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1086.2</span> | 1207.2 |
-| 2014 | Uncle Grabby | <span class="star">★</span> 1st | 7-6 | <span class="chip" style="background:#f1a286">1337.1</span> | 1293.6 |
+| 2014 | Uncle Grabby <span class="tag tag--shiva">Shiva</span> | 1st | 7-6 | <span class="chip" style="background:#f1a286">1337.1</span> | 1293.6 |
 
 ## Head-to-head
 

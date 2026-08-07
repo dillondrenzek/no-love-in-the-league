@@ -9,9 +9,10 @@ permalink: /teams/sturmanator15/
 
 <p class="owner-sub">Most recent: Dont spit just swallow</p>
 
-🤝 **Co-Champion** (2016) · 12× Playoffs
-
-**All-time regular season:** 94-66-1 (.587) · **Playoffs:** 10-21-1 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16374.3 / 15718.2
+<div class="resume">
+  <div class="resume__honors">🤝 <b>Co-champ</b> (2016) · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">94-66-1 <span class='muted'>(.587)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">½</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">10-21-1</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Co-champ</span> (2016)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -26,7 +27,7 @@ permalink: /teams/sturmanator15/
 | 2019 | Lamar's  Donger | 6th | 11-2 | <span class="chip" style="background:#f09c7f">1402.9</span> | 1160.6 |
 | 2018 | Chubbin out (no more Hydin) | 8th | 7-6 | <span class="chip" style="background:#f3b8a1">1302.1</span> | 1255.9 |
 | 2017 | The People's Champion | 10th | 5-8 | <span class="chip" style="background:#f8e1d5">1151.0</span> | 1331.7 |
-| 2016 | Wadger Sturdell | <span class="star">★</span> 1st | 11-2 | <span class="chip" style="background:#f4b9a3">1296.1</span> | 1063.9 |
+| 2016 | Wadger Sturdell <span class="tag tag--shiva">Co-champ</span> | 1st | 11-2 | <span class="chip" style="background:#f4b9a3">1296.1</span> | 1063.9 |
 | 2015 | The People's  Commissioner  | 4th | 8-5 | <span class="chip" style="background:#f4b9a3">1296.7</span> | 1097.6 |
 | 2014 | Ben there raped that  | 4th | 11-2 | <span class="chip" style="background:#f2a88e">1358.7</span> | 1135.6 |
 

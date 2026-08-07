@@ -9,9 +9,10 @@ permalink: /teams/purpsworth/
 
 <p class="owner-sub">Most recent: I am dead inside</p>
 
-🥈 1× Runner-Up · 🥉 1× Third · 7× Playoffs
-
-**All-time regular season:** 44-52 (.458) · **Playoffs:** 11-9 · **Seasons:** 7 · **Best finish:** 2nd · **Points for/against:** 10075.1 / 10104.0
+<div class="resume">
+  <div class="resume__honors">🥈 1× Runner-Up · 🥉 1× Third · 💩 <b>1× Sacko</b> (2019) · 7× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">44-52 <span class='muted'>(.458)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">11-9</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">7</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2021)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -23,7 +24,7 @@ permalink: /teams/purpsworth/
 | 2022 | Used Napkin | 7th | 7-7 | <span class="chip" style="background:#f5c1ad">1355.2</span> | 1319.5 |
 | 2021 | WA Fantasy Football Team | 2nd | 7-7 | <span class="chip" style="background:#f4bba5">1372.6</span> | 1433.8 |
 | 2020 | AB’s Helmet | 7th | 6-7 | <span class="chip" style="background:#faf1e9">1219.5</span> | 1311.4 |
-| 2019 | AB’s Helmet | 12th | 4-9 | <span class="chip" style="background:#f9eae0">1240.3</span> | 1344.1 |
+| 2019 | AB’s Helmet <span class="tag tag--sacko">Sacko</span> | 12th | 4-9 | <span class="chip" style="background:#f9eae0">1240.3</span> | 1344.1 |
 
 ## Head-to-head
 

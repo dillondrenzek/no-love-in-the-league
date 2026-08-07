@@ -9,9 +9,10 @@ permalink: /teams/theoceanpulse/
 
 <p class="owner-sub">Most recent: Thoughts and Players</p>
 
-🏆 **1× Champion** (2018) · 🥉 1× Third · 10× Playoffs
-
-**All-time regular season:** 83-51-1 (.619) · **Playoffs:** 13-15 · **Seasons:** 10 · **Best finish:** 1st · **Points for/against:** 14533.9 / 13351.5
+<div class="resume">
+  <div class="resume__honors">🏆 <b>1× Shiva</b> (2018) · 🥉 1× Third · 10× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">83-51-1 <span class='muted'>(.619)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">13-15</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">10</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2018)</div></div></div>
+</div>
 
 ## Season by season
 
@@ -24,7 +25,7 @@ permalink: /teams/theoceanpulse/
 | 2021 | Hot Chubb Time Machine | 10th | 5-9 | <span class="chip" style="background:#ef9778">1489.3</span> | 1463.8 |
 | 2020 | Trick-Ass Marks | 6th | 6-7 | <span class="chip" style="background:#faf1e9">1208.9</span> | 1249.7 |
 | 2019 | Hans Blitz! Ohh noo! | 4th | 11-1-1 | <span class="chip" style="background:#e57f5b">1592.1</span> | 1197.2 |
-| 2018 | Hans Blitz! Ohh noo! | <span class="star">★</span> 1st | 9-4 | <span class="chip" style="background:#f1a185">1453.7</span> | 1211.3 |
+| 2018 | Hans Blitz! Ohh noo! <span class="tag tag--shiva">Shiva</span> | 1st | 9-4 | <span class="chip" style="background:#f1a185">1453.7</span> | 1211.3 |
 | 2017 | Hans Blitz! Ohh noo! | 7th | 11-2 | <span class="chip" style="background:#f9e6dc">1241.2</span> | 1097.6 |
 | 2016 | Hillary Has The 2nd Clinton-Dix | 10th | 6-7 | <span class="chip" style="background:#f6d2c2">1304.7</span> | 1281.6 |
 

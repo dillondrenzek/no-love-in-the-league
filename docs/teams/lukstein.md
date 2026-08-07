@@ -9,22 +9,23 @@ permalink: /teams/lukstein/
 
 <p class="owner-sub">Most recent: 2x Runner Up</p>
 
-🏆 **1× Champion** (2024) · 🥈 2× Runner-Up · 🥉 1× Third · 12× Playoffs
-
-**All-time regular season:** 75-86 (.466) · **Playoffs:** 18-16 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16067.6 / 16351.3
+<div class="resume">
+  <div class="resume__honors">🏆 <b>1× Shiva</b> (2024) · 🥈 2× Runner-Up · 🥉 1× Third · 💩 <b>2× Sacko</b> (2018, 2021) · 12× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">75-86 <span class='muted'>(.466)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">18-16</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2024)</div></div></div>
+</div>
 
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
 | 2025 | 2x Runner Up | 8th | 8-6 | <span class="chip" style="background:#f09b7e">1479.8</span> | 1472.9 |
-| 2024 | 2x Runner Up | <span class="star">★</span> 1st | 9-5 | <span class="chip" style="background:#d65a30">1890.9</span> | 1711.1 |
+| 2024 | 2x Runner Up <span class="tag tag--shiva">Shiva</span> | 1st | 9-5 | <span class="chip" style="background:#d65a30">1890.9</span> | 1711.1 |
 | 2023 | 2x Runner Up | 11th | 3-11 | <span class="chip" style="background:#f2a68c">1428.2</span> | 1719.9 |
 | 2022 | Fly Eagles Fly | 3rd | 11-3 | <span class="chip" style="background:#ef9779">1501.3</span> | 1367.6 |
-| 2021 | Autodraft Monster | 12th | 4-10 | <span class="chip" style="background:#f5c2ae">1302.7</span> | 1465.5 |
+| 2021 | Autodraft Monster <span class="tag tag--sacko">Sacko</span> | 12th | 4-10 | <span class="chip" style="background:#f5c2ae">1302.7</span> | 1465.5 |
 | 2020 | Show Me Your TDs | 11th | 5-8 | <span class="chip" style="background:#f5c4b1">1291.1</span> | 1309.2 |
 | 2019 | Show Me Your TDs | 2nd | 6-7 | <span class="chip" style="background:#f9eae0">1121.6</span> | 1170.5 |
-| 2018 | Graham Slam | 12th | 3-10 | <span class="chip" style="background:#f8dccf">1184.6</span> | 1295.5 |
+| 2018 | Graham Slam <span class="tag tag--sacko">Sacko</span> | 12th | 3-10 | <span class="chip" style="background:#f8dccf">1184.6</span> | 1295.5 |
 | 2017 | My Cox Will Ertz You | 2nd | 9-4 | <span class="chip" style="background:#f3b097">1386.7</span> | 1095.3 |
 | 2016 | My Cox Will Ertz You | 6th | 7-6 | <span class="chip" style="background:#f7d3c4">1224.4</span> | 1234.7 |
 | 2015 | Polk Me Til I Goregasm | 7th | 3-10 | <span class="chip" style="background:#faf1e9">1087.9</span> | 1296.0 |

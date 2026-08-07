@@ -13,7 +13,7 @@ from pathlib import Path
 from lib.data import load_franchises, load_seasons
 from lib.teams import compute_profiles, win_pct, rec_str, fmt_titles, split_titles
 from lib.rulings import load_overrides
-from lib.render import heat_chip, winpct_chip
+from lib.render import heat_chip, winpct_chip, finish_tag
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "teams"
@@ -32,6 +32,21 @@ def pct(x):
     return f"{x:.3f}".lstrip("0") or ".000"
 
 
+def best_finish_label(p):
+    """Best finish with the year(s): 'Shiva (2014, 2017)', 'Co-champ (2016)',
+    or '2nd (2023)'."""
+    outright, co = split_titles(p["champ_years"])
+    if outright:
+        yrs = ", ".join(str(y) for y in outright)
+        return f'<span class="shiva">Shiva</span> ({yrs})'
+    if co:
+        yrs = ", ".join(str(y) for y in co)
+        return f'<span class="shiva">Co-champ</span> ({yrs})'
+    best = p["best_finish"]
+    yrs = ", ".join(str(y) for y in sorted(s["year"] for s in p["seasons"] if s["finish"] == best))
+    return f"{ordinal(best)} ({yrs})"
+
+
 def sorted_profiles(profiles):
     return sorted(
         profiles.values(),
@@ -46,8 +61,8 @@ def index_page(profiles):
         "",
         "Every manager in league history. Click a name for their full profile.",
         "",
-        "| Owner | Seasons | All-Time Record | Win% | Titles | Best Finish |",
-        "|:--|--:|:--|--:|--:|:--|",
+        "| Owner | Seasons | All-Time Record | Win% | Titles | Sackos | Best Finish |",
+        "|:--|--:|:--|--:|--:|--:|:--|",
     ]
     for p in sorted_profiles(profiles):
         reg = p["reg"]
@@ -55,27 +70,53 @@ def index_page(profiles):
         lines.append(
             f"| {link} | {p['seasons_count']} | {rec_str(reg['w'], reg['l'], reg['t'])} "
             f"| {winpct_chip(reg['win_pct'], pct(reg['win_pct']))} "
-            f"| {fmt_titles(p['titles'])} | {ordinal(p['best_finish'])} |"
+            f"| {fmt_titles(p['titles'])} | {p['sackos'] or ''} | {best_finish_label(p)} |"
         )
     return "\n".join(lines) + "\n"
 
 
-def trophy_case(p):
+def honors(p):
+    """Inline honors summary: Shivas, co-championships, runner-ups, thirds,
+    Sackos, playoff berths."""
     bits = []
     outright, co = split_titles(p["champ_years"])
     if outright:
-        yrs = ", ".join(str(y) for y in outright)
-        bits.append(f"🏆 **{len(outright)}× Champion** ({yrs})")
+        bits.append(f"🏆 <b>{len(outright)}× Shiva</b> ({', '.join(str(y) for y in outright)})")
     if co:
-        yrs = ", ".join(str(y) for y in co)
-        bits.append(f"🤝 **Co-Champion** ({yrs})")
+        bits.append(f"🤝 <b>Co-champ</b> ({', '.join(str(y) for y in co)})")
     if p["runner_ups"]:
         bits.append(f"🥈 {p['runner_ups']}× Runner-Up")
     if p["thirds"]:
         bits.append(f"🥉 {p['thirds']}× Third")
+    if p["sackos"]:
+        yrs = ", ".join(str(y) for y in sorted(p["sacko_years"]))
+        bits.append(f'💩 <b>{p["sackos"]}× Sacko</b> ({yrs})')
     if p["berths"]:
         bits.append(f"{p['berths']}× Playoffs")
-    return " · ".join(bits) if bits else "_No hardware yet._"
+    return " · ".join(bits) if bits else "No hardware yet."
+
+
+def tile(label, value):
+    return (f'<div class="tile"><div class="tile__label">{label}</div>'
+            f'<div class="tile__val">{value}</div></div>')
+
+
+def resume_card(p):
+    reg = p["reg"]
+    pl = p["playoff"]
+    playoff_line = rec_str(pl["w"], pl["l"], pl["t"]) if (pl["w"] + pl["l"] + pl["t"]) else "—"
+    tiles = "".join([
+        tile("All-Time", f"{rec_str(reg['w'], reg['l'], reg['t'])} <span class='muted'>({pct(reg['win_pct'])})</span>"),
+        tile("Titles", fmt_titles(p["titles"])),
+        tile("Sackos", p["sackos"]),
+        tile("Playoffs", playoff_line),
+        tile("Seasons", p["seasons_count"]),
+        tile("Best Finish", best_finish_label(p)),
+    ])
+    return (f'<div class="resume">\n'
+            f'  <div class="resume__honors">{honors(p)}</div>\n'
+            f'  <div class="resume__grid">{tiles}</div>\n'
+            f'</div>')
 
 
 def season_table(p):
@@ -88,11 +129,9 @@ def season_table(p):
     for s in p["seasons"]:
         pf = heat_chip(s["pf"], lo, hi) if s["pf"] is not None else "—"
         pa = s["pa"] if s["pa"] is not None else "—"
-        finish = ordinal(s["finish"])
-        if s["finish"] == 1:
-            finish = f'<span class="star">★</span> {finish}'
+        team = s["team"] + finish_tag(s["finish"], s["team_count"], s["is_co"])
         lines.append(
-            f"| {s['year']} | {s['team']} | {finish} | {s['record']} | {pf} | {pa} |"
+            f"| {s['year']} | {team} | {ordinal(s['finish'])} | {s['record']} | {pf} | {pa} |"
         )
     return "\n".join(lines)
 
@@ -117,10 +156,6 @@ def h2h_table(p, profiles):
 
 
 def owner_page(p, profiles):
-    reg = p["reg"]
-    pl = p["playoff"]
-    all_time = rec_str(reg["w"], reg["l"], reg["t"])
-    playoff_line = rec_str(pl["w"], pl["l"], pl["t"]) if (pl["w"] + pl["l"] + pl["t"]) else "—"
     latest_team = p["seasons"][0]["team"] if p["seasons"] else ""
     return f"""---
 layout: page
@@ -133,12 +168,7 @@ permalink: /teams/{p['id']}/
 
 <p class="owner-sub">Most recent: {latest_team}</p>
 
-{trophy_case(p)}
-
-**All-time regular season:** {all_time} ({pct(reg['win_pct'])}) · \
-**Playoffs:** {playoff_line} · **Seasons:** {p['seasons_count']} · \
-**Best finish:** {ordinal(p['best_finish'])} · \
-**Points for/against:** {reg['pf']} / {reg['pa']}
+{resume_card(p)}
 
 ## Season by season
 
