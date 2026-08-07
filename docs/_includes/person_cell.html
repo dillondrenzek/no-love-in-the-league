@@ -1,9 +1,0 @@
-{%- comment -%}
-A team-name cell linked to its owner, with the owner's name in gray. Param:
-p = { team, owner_id, owner_name } or nil.
-{%- endcomment -%}
-{%- assign p = include.p -%}
-{%- if p -%}
-{%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.team }}</a>{%- if p.owner_name %} <span class="owner-name">{{ p.owner_name }}</span>{% endif -%}
-{%- else -%}{{ p.team }}{%- endif -%}
-{%- else -%}—{%- endif -%}

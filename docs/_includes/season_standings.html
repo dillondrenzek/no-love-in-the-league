@@ -3,7 +3,15 @@ One season's standings table. Param: season = an entry from
 site.data.standings.seasons.
 {%- endcomment -%}
 {%- assign s = include.season -%}
+<div class="history__season-container">
 <h3>{{ s.year }}</h3>
+{%- if s.notes and s.notes.size > 0 %}
+<ul class="season-notes">
+  {%- for note in s.notes %}
+  <li>{{ note | markdownify }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
 <table>
   <thead>
     <tr>
@@ -36,3 +44,4 @@ site.data.standings.seasons.
     {%- endfor %}
   </tbody>
 </table>
+</div>

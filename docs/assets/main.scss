@@ -244,6 +244,31 @@ tbody td a:hover { color: var(--brand); }
   white-space: nowrap;
 }
 
+// Per-year event bullets under a standings table (History page).
+.history__season-container {
+  margin-bottom: 6rem;
+}
+
+.season-notes {
+  margin: -0.4em 0 2.2em;
+  padding-left: 1.1em;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.season-notes li {
+  position: relative;
+  margin: 0.25em 0;
+  line-height: 1.45;
+}
+.season-notes li::before {
+  content: "▪";
+  position: absolute;
+  left: -1.1em;
+  color: var(--brand);
+}
+.season-notes li p { display: inline; margin: 0; }
+
 // Monospace subtitle under an owner-page title (their latest team name).
 .owner-sub {
   font-family: var(--mono);
@@ -251,6 +276,82 @@ tbody td a:hover { color: var(--brand); }
   font-size: 0.85rem;
   margin: -0.4em 0 1em;
 }
+
+// ---- Home hero --------------------------------------------------------------
+.hero { text-align: center; padding: 2.4rem 0 1.5rem; }
+.hero__title {
+  font-size: clamp(2rem, 9vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0;
+}
+.hero__subtitle {
+  font-size: clamp(0.7rem, 9vw, 1.4rem);
+  font-weight: 600;
+  color: var(--brand);
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin: 0;
+}
+.hero__tagline {
+  color: var(--muted);
+  max-width: 34ch;
+  margin: 0.7em auto 1.8em;
+  font-size: 1.02rem;
+}
+.hero__highlights {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hero__stat {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 12px 18px;
+  min-width: 150px;
+}
+.hero__stat-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.hero__stat-value {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+  margin-top: 3px;
+}
+.hero__stat-value:hover { color: var(--brand); }
+.hero__stat-owner { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+.hero__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.hero__links a {
+  display: block;
+  padding: 15px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.hero__links a:hover { background: var(--ink); color: #fff; }
 
 // ---- Owner "resume" card ----------------------------------------------------
 .resume {

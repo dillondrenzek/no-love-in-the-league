@@ -1,10 +1,10 @@
-{%- comment -%}Renders site.data.history.records.{%- endcomment -%}
+{%- comment -%}Renders site.data.records.records.{%- endcomment -%}
 <table>
   <thead>
     <tr><th>Category</th><th>Holder</th><th>Value</th><th style="text-align: right">Season</th></tr>
   </thead>
   <tbody>
-    {%- for r in site.data.history.records %}
+    {%- for r in site.data.records.records %}
     <tr>
       <td>{{ r.category }}</td>
       <td>{{ r.holder }}</td>

@@ -12,13 +12,20 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons
+from lib.data import load_franchises, load_seasons, DATA_DIR
 from lib.standings import get_standings, has_points
 from lib.render import heat_color
 from lib.rulings import load_overrides, co_champions
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "docs" / "_data" / "standings.yml"
+NOTES_PATH = DATA_DIR / "season_notes.yml"  # hand-edited: year -> [bullets]
+
+
+def load_season_notes():
+    if NOTES_PATH.exists():
+        return yaml.safe_load(NOTES_PATH.read_text()) or {}
+    return {}
 
 
 def _tag(finish, team_count, is_co):
@@ -31,7 +38,7 @@ def _tag(finish, team_count, is_co):
     return None
 
 
-def season_rows(season, franchises, overrides):
+def season_rows(season, franchises, overrides, notes):
     rows = get_standings(season, franchises)
     points = has_points(rows)
     co = set(co_champions(season["season"], overrides))
@@ -54,15 +61,19 @@ def season_rows(season, franchises, overrides):
             row["pf_color"] = heat_color(r["points_for"], lo, hi)
             row["pa"] = r["points_against"]
         out.append(row)
-    return {"year": season["season"], "points": points, "rows": out}
+    return {
+        "year": season["season"], "points": points, "rows": out,
+        "notes": notes.get(season["season"]) or [],
+    }
 
 
 def main():
     franchises = load_franchises()
     seasons = load_seasons()
     overrides = load_overrides()
+    notes = load_season_notes()
 
-    data = {"seasons": [season_rows(s, franchises, overrides) for s in seasons]}
+    data = {"seasons": [season_rows(s, franchises, overrides, notes) for s in seasons]}
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
     print(f"Wrote {DATA_PATH.relative_to(ROOT)}")

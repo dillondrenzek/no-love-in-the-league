@@ -18,8 +18,10 @@ build scripts compute points and richer records from those.
 - `data/seasons/*.yml` — season results (usually written by the importer).
 - `data/franchises.yml` — owners; edit the `name` field freely.
 - `data/overrides.yml` — league rulings (co-champions, double-elim years).
-- `docs/_layouts/`, `docs/_includes/`, `docs/*.md` templates, `docs/assets/main.scss`
-  — the site's presentation (HTML/Liquid/CSS).
+- `data/season_notes.yml` — the per-year event bullets shown on the History page.
+- `docs/_layouts/`, `docs/_includes/`, `docs/*.md` templates (incl. the
+  hand-written `docs/rulebook/index.md`), `docs/assets/main.scss` — the site's
+  presentation (HTML/Liquid/CSS).
 
 **Never hand-edit these** (rewritten by `scripts/build.py`):
 
