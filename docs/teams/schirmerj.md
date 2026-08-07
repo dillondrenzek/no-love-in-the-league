@@ -14,7 +14,7 @@ permalink: /teams/schirmerj/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | IDPs Forever | 11th | 5-9 | 1546.0 | 1701.4 |
 | 2024 | 5 Star Men | 2nd | 9-5 | 1764.6 | 1661.4 |
 | 2023 | IDP'd My Pants | 5th | 8-6 | 1658.4 | 1546.3 |
@@ -31,7 +31,7 @@ permalink: /teams/schirmerj/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-1 | .500 | 97.1 | 101.2 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-2 | .500 | 101.0 | 88.7 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-7-1 | .423 | 106.8 | 103.7 |

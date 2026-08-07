@@ -20,7 +20,7 @@ def season_table(season, franchises):
     points = has_points(rows)
 
     header = "| Finish | Team | Record |" + (" PF | PA |" if points else "")
-    sep = "|---|---|---|" + ("---|---|" if points else "")
+    sep = "|:--|:--|:--|" + ("--:|--:|" if points else "")
     lines = [f"### {season['season']}", "", header, sep]
     for r in rows:
         team = owner_link(r["id"], r["name"], franchises)

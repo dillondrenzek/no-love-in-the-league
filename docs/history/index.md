@@ -25,7 +25,7 @@ permalink: /history/
 ## Record Book
 
 | Category | Holder | Value | Season |
-|---|---|---|---|
+|:--|:--|:--|--:|
 | Best Regular-Season Record | Hans Blitz! Ohh noo! | 11-1-1 | 2019 |
 | Worst Regular-Season Record | Brown Lives Matter | 1-12 | 2016 |
 | Most Championships | Henry | 3 | — |

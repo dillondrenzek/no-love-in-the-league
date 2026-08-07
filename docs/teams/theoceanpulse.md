@@ -14,7 +14,7 @@ permalink: /teams/theoceanpulse/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Thoughts and Players | 5th | 8-6 | 1612.9 | 1495.9 |
 | 2024 | Thoughts and Players | 4th | 8-6 | 1569.8 | 1502.7 |
 | 2023 | Thoughts and Players | 3rd | 12-2 | 1748.5 | 1480.6 |
@@ -29,7 +29,7 @@ permalink: /teams/theoceanpulse/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 4-0 | 1.000 | 110.2 | 75.0 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-5 | .500 | 86.7 | 80.2 |
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-2 | .333 | 102.2 | 115.6 |

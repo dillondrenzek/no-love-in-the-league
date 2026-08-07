@@ -14,7 +14,7 @@ permalink: /teams/whowonthelastsuperbowl/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Trick or Trick It’s Mike Vick | 9th | 3-11 | 1445.6 | 1675.7 |
 | 2024 | Trick or Trick It’s Mike Vick | 10th | 6-8 | 1617.1 | 1794.0 |
 | 2023 | Trick or Trick It’s Mike Vick | 9th | 5-9 | 1566.3 | 1630.8 |
@@ -31,7 +31,7 @@ permalink: /teams/whowonthelastsuperbowl/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 0-4 | .000 | 77.4 | 106.7 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 0-2 | .000 | 70.5 | 96.0 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 1-10 | .091 | 90.3 | 119.4 |

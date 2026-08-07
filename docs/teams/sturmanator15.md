@@ -14,7 +14,7 @@ permalink: /teams/sturmanator15/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Dont spit just swallow | 10th | 7-7 | 1537.3 | 1592.9 |
 | 2024 | All Hail the King | 5th | 8-6 | 1560.8 | 1507.7 |
 | 2023 | In Goff we trust  | 4th | 9-5 | 1733.5 | 1508.8 |
@@ -31,7 +31,7 @@ permalink: /teams/sturmanator15/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-2 | .333 | 81.5 | 87.6 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-0 | 1.000 | 126.7 | 80.9 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-9 | .357 | 95.3 | 103.8 |

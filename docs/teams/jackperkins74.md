@@ -14,7 +14,7 @@ permalink: /teams/jackperkins74/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Pukkake | 1st | 9-5 | 1769.9 | 1579.4 |
 | 2024 | Pukkake | 3rd | 7-7 | 1661.3 | 1686.1 |
 | 2023 | Vinegar Strokes | 7th | 7-7 | 1522.5 | 1610.4 |
@@ -31,7 +31,7 @@ permalink: /teams/jackperkins74/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 2-0 | 1.000 | 125.1 | 97.3 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-3 | .400 | 108.3 | 103.6 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 10-8 | .556 | 103.8 | 107.8 |

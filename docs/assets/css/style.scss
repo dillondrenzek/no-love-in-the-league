@@ -3,26 +3,187 @@
 
 @import "minima";
 
-// --- League customization -------------------------------------------------
-// Tweak these to match your league's branding. Minima exposes its palette
-// as CSS custom properties, so overriding them here is enough to reskin
-// the whole site without touching minima's own files.
+// =============================================================================
+// No Love in the League — a light, newspaper/FiveThirtyEight-inspired skin.
+//
+// Loaded after minima, so these rules override the theme. Kept mostly as plain
+// CSS (not minima SCSS variables) so it's easy to read and version-proof.
+// =============================================================================
 
 :root {
-  --link-base-color: #d94f30;
-  --link-visited-color: #d94f30;
-  --brand-color: #d94f30;
+  --ink: #1a1a1a;         // primary text
+  --muted: #6b6b6b;       // secondary text, column heads
+  --faint: #9a9a9a;       // de-emphasized (ranks, notes)
+  --rule: #e7e4de;        // thin row dividers
+  --rule-strong: #1a1a1a; // header underline / section rules
+  --brand: #d94f30;       // links, accents
+  --row-hover: #faf6f1;   // warm hover
+  --bg: #ffffff;
+  --mono: "Roboto Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --sans: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// ---- Links ------------------------------------------------------------------
+a,
+a:visited {
+  color: var(--brand);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+// ---- Masthead / header ------------------------------------------------------
 .site-header {
-  border-top: 5px solid var(--brand-color);
+  border-top: none;
+  border-bottom: 3px solid var(--rule-strong);
+  background: var(--bg);
+  padding: 6px 0;
+  min-height: auto;
 }
 
 .site-title,
 .site-title:visited {
-  font-weight: 700;
+  font-family: var(--sans);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 1.55rem;
+  color: var(--ink) !important;
+  line-height: 1.1;
+}
+.site-title:hover { text-decoration: none; }
+
+.site-nav {
+  line-height: 1;
+  .page-link,
+  .page-link:visited {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin-left: 22px;
+  }
+  .page-link:hover { color: var(--ink); text-decoration: none; }
 }
 
+// ---- Headings ---------------------------------------------------------------
+h1, h2, h3, h4 {
+  font-family: var(--sans);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.post-title,
+h1 { font-size: 2.1rem; margin-bottom: 0.4em; }
+
+h2 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  margin-top: 2em;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--rule-strong);
+}
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.6em;
+  color: var(--ink);
+}
+
+// A lead paragraph (first paragraph after a title) reads like a standfirst.
+.post-content > p:first-of-type {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+// ---- Tables (the heart of the site) ----------------------------------------
 table {
   width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0 1.8em;
+  font-size: 0.95rem;
+  border: none;
+}
+
+thead th {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-align: left;
+  padding: 0 10px 8px;
+  border-bottom: 2px solid var(--rule-strong);
+  vertical-align: bottom;
+  background: transparent;
+}
+
+tbody td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: middle;
+  background: transparent;
+}
+
+tbody tr:hover td { background: var(--row-hover); }
+
+// First column (rank / season) reads as a quiet index.
+tbody td:first-child {
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+  width: 1%;
+  white-space: nowrap;
+}
+
+// Right-aligned cells are numbers → monospaced, tabular, dark.
+th[style*="right"],
+td[style*="right"] {
+  text-align: right;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+th[style*="right"] { color: var(--muted); font-size: 0.68rem; }
+
+// Bold the primary link in a row (team / owner names).
+tbody td a { font-weight: 700; color: var(--ink); }
+tbody td a:hover { color: var(--brand); }
+
+// ---- Trophy line / stats line -----------------------------------------------
+.post-content strong { font-weight: 700; }
+
+// ---- Footer -----------------------------------------------------------------
+.site-footer {
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer .footer-heading { font-weight: 800; }
+
+// ---- Small screens: let wide tables scroll ----------------------------------
+@media (max-width: 640px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+  .site-title { font-size: 1.25rem; }
 }

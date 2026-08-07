@@ -14,7 +14,7 @@ permalink: /teams/unclebadtouch38/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2023 | Mr.  Irrelevant | 12th | 4-10 | 1297.6 | 1554.6 |
 | 2022 | Mr.  Irrelevant | 8th | 7-7 | 1144.5 | 1290.3 |
 | 2021 | Set_The_ RAT_TRAP_! | 11th | 4-10 | 1112.9 | 1392.7 |
@@ -27,7 +27,7 @@ permalink: /teams/unclebadtouch38/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 4-0 | 1.000 | 111.9 | 85.3 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-5 | .500 | 80.2 | 86.7 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 6-8 | .429 | 86.4 | 96.0 |

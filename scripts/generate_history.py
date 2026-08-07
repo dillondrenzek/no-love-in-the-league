@@ -44,7 +44,7 @@ def champions_table(seasons, franchises):
 def records_table(seasons, franchises):
     lines = [
         "| Category | Holder | Value | Season |",
-        "|---|---|---|---|",
+        "|:--|:--|:--|--:|",
     ]
     for r in compute_records(seasons, franchises):
         season = r["season"] if r["season"] is not None else "—"

@@ -12,7 +12,7 @@ season has game-by-game scores added.
 ### 2025
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Pukkake]({{ '/teams/jackperkins74/' | relative_url }}) | 9-5 | 1769.9 | 1579.4 |
 | 2 | [Keeping up with the McCalferies]({{ '/teams/kevbots22/' | relative_url }}) | 10-4 | 1626.2 | 1504.3 |
 | 3 | [I am dead inside]({{ '/teams/purpsworth/' | relative_url }}) | 6-8 | 1566.2 | 1526.0 |
@@ -29,7 +29,7 @@ season has game-by-game scores added.
 ### 2024
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [2x Runner Up]({{ '/teams/lukstein/' | relative_url }}) | 9-5 | 1890.9 | 1711.1 |
 | 2 | [5 Star Men]({{ '/teams/schirmerj/' | relative_url }}) | 9-5 | 1764.6 | 1661.4 |
 | 3 | [Pukkake]({{ '/teams/jackperkins74/' | relative_url }}) | 7-7 | 1661.3 | 1686.1 |
@@ -46,7 +46,7 @@ season has game-by-game scores added.
 ### 2023
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Save a horse, Ride the Cowboys]({{ '/teams/shawne2520997/' | relative_url }}) | 9-5 | 1606.6 | 1510.0 |
 | 2 | [Three's Company]({{ '/teams/henpen28/' | relative_url }}) | 7-7 | 1569.6 | 1605.2 |
 | 3 | [Thoughts and Players]({{ '/teams/theoceanpulse/' | relative_url }}) | 12-2 | 1748.5 | 1480.6 |
@@ -63,7 +63,7 @@ season has game-by-game scores added.
 ### 2022
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Consensual Trades]({{ '/teams/henpen28/' | relative_url }}) | 7-7 | 1360.5 | 1300.7 |
 | 2 | [Koo Koo Kachoo]({{ '/teams/shawne2520997/' | relative_url }}) | 11-3 | 1438.2 | 1258.8 |
 | 3 | [Fly Eagles Fly]({{ '/teams/lukstein/' | relative_url }}) | 11-3 | 1501.3 | 1367.6 |
@@ -80,7 +80,7 @@ season has game-by-game scores added.
 ### 2021
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Koo Koo Kachoo]({{ '/teams/shawne2520997/' | relative_url }}) | 12-2 | 1619.5 | 1237.5 |
 | 2 | [WA Fantasy Football Team]({{ '/teams/purpsworth/' | relative_url }}) | 7-7 | 1372.6 | 1433.8 |
 | 3 | [Scat Play]({{ '/teams/henpen28/' | relative_url }}) | 11-3 | 1490.0 | 1327.2 |
@@ -97,7 +97,7 @@ season has game-by-game scores added.
 ### 2020
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Set_The_ RAT_TRAP_!]({{ '/teams/unclebadtouch38/' | relative_url }}) | 9-4 | 1389.2 | 1265.1 |
 | 2 | [Calvin and (Jac)Obs]({{ '/teams/zachzoske/' | relative_url }}) | 9-4 | 1502.4 | 1276.8 |
 | 3 | [Folklore   Bandits]({{ '/teams/schirmerj/' | relative_url }}) | 8-5 | 1370.3 | 1305.0 |
@@ -114,7 +114,7 @@ season has game-by-game scores added.
 ### 2019
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Eleven In Crocks]({{ '/teams/zachzoske/' | relative_url }}) | 6-7 | 1358.9 | 1269.3 |
 | 2 | [Show Me Your TDs]({{ '/teams/lukstein/' | relative_url }}) | 6-7 | 1121.6 | 1170.5 |
 | 3 | [Vladimir Putin]({{ '/teams/jackperkins74/' | relative_url }}) | 6-7 | 1197.1 | 1160.2 |
@@ -131,7 +131,7 @@ season has game-by-game scores added.
 ### 2018
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Hans Blitz! Ohh noo!]({{ '/teams/theoceanpulse/' | relative_url }}) | 9-4 | 1453.7 | 1211.3 |
 | 2 | [Mixon's Gurley Fight Club]({{ '/teams/jackperkins74/' | relative_url }}) | 11-2 | 1581.3 | 1444.2 |
 | 3 | [Sackos Auto Draft Experiene]({{ '/teams/zachzoske/' | relative_url }}) | 7-6 | 1359.5 | 1357.5 |
@@ -148,7 +148,7 @@ season has game-by-game scores added.
 ### 2017
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Forceable Entry]({{ '/teams/henpen28/' | relative_url }}) | 6-7 | 1155.7 | 1134.6 |
 | 2 | [My Cox Will Ertz You]({{ '/teams/lukstein/' | relative_url }}) | 9-4 | 1386.7 | 1095.3 |
 | 3 | [Dislocated Johnson]({{ '/teams/shawne2520997/' | relative_url }}) | 9-4 | 1155.7 | 1193.0 |
@@ -165,7 +165,7 @@ season has game-by-game scores added.
 ### 2016
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Wadger Sturdell]({{ '/teams/sturmanator15/' | relative_url }}) | 11-2 | 1296.1 | 1063.9 |
 | 2 | [Lick my Rawls .]({{ '/teams/schirmerj/' | relative_url }}) | 9-4 | 1403.8 | 1229.1 |
 | 3 | [GONNA DEFLATE YO BALLS!!]({{ '/teams/shawne2520997/' | relative_url }}) | 7-6 | 1317.2 | 1276.8 |
@@ -182,7 +182,7 @@ season has game-by-game scores added.
 ### 2015
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Jenner's Man Meat]({{ '/teams/jackperkins74/' | relative_url }}) | 6-7 | 1218.3 | 1187.3 |
 | 2 | [I Waxed My Child For This]({{ '/teams/master-otis/' | relative_url }}) | 9-4 | 1425.0 | 1200.2 |
 | 3 | [Gronkey Punch]({{ '/teams/zachzoske/' | relative_url }}) | 8-5 | 1367.2 | 1277.5 |
@@ -197,7 +197,7 @@ season has game-by-game scores added.
 ### 2014
 
 | Finish | Team | Record | PF | PA |
-|---|---|---|---|---|
+|:--|:--|:--|--:|--:|
 | 1 | [Uncle Grabby]({{ '/teams/henpen28/' | relative_url }}) | 7-6 | 1337.1 | 1293.6 |
 | 2 | [Lynched by Le' Bell]({{ '/teams/master-otis/' | relative_url }}) | 9-4 | 1297.1 | 1202.4 |
 | 3 | [Luck her right  in the Pussy]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 | 1369.3 | 1168.4 |

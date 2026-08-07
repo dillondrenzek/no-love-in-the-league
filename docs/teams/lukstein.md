@@ -14,7 +14,7 @@ permalink: /teams/lukstein/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | 2x Runner Up | 8th | 8-6 | 1479.8 | 1472.9 |
 | 2024 | 2x Runner Up | 1st | 9-5 | 1890.9 | 1711.1 |
 | 2023 | 2x Runner Up | 11th | 3-11 | 1428.2 | 1719.9 |
@@ -31,7 +31,7 @@ permalink: /teams/lukstein/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 0-3 | .000 | 79.6 | 90.1 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 0-4 | .000 | 52.7 | 77.7 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 4-8 | .333 | 98.2 | 118.5 |

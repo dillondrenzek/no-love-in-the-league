@@ -14,7 +14,7 @@ permalink: /teams/henpen28/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Dump it on my Chest | 7th | 5-9 | 1411.9 | 1606.0 |
 | 2024 | Three's Company | 6th | 9-5 | 1644.2 | 1603.1 |
 | 2023 | Three's Company | 2nd | 7-7 | 1569.6 | 1605.2 |
@@ -31,7 +31,7 @@ permalink: /teams/henpen28/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-1 | .500 | 116.7 | 99.4 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-3 | .400 | 79.2 | 81.7 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 6-10 | .375 | 102.3 | 108.4 |

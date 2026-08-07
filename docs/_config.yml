@@ -1,8 +1,6 @@
 title: No Love in the League
 description: Where there is no love — league history, standings, and records.
 theme: minima
-minima:
-  skin: dark
 
 header_pages:
   - standings/index.md

@@ -14,14 +14,14 @@ permalink: /teams/gganoom/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | One Big Beautiful Dill | 4th | 9-5 | 1587.6 | 1494.2 |
 | 2024 | KillDilly Elegy | 8th | 7-7 | 1622.6 | 1550.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 2-1 | .667 | 115.6 | 102.2 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 1-1 | .500 | 112.2 | 103.5 |
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 0-3 | .000 | 112.2 | 142.2 |

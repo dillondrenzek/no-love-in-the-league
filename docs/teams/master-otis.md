@@ -14,7 +14,7 @@ permalink: /teams/master-otis/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2016 | Brown Lives Matter | 12th | 1-12 | 953.6 | 1262.0 |
 | 2015 | I Waxed My Child For This | 2nd | 9-4 | 1425.0 | 1200.2 |
 | 2014 | Lynched by Le' Bell | 2nd | 9-4 | 1297.1 | 1202.4 |
@@ -22,7 +22,7 @@ permalink: /teams/master-otis/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 3-1 | .750 | 115.2 | 87.7 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 0-2 | .000 | 78.2 | 86.0 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 0-2 | .000 | 73.0 | 104.5 |

@@ -14,14 +14,14 @@ permalink: /teams/ajstewart04/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2018 | Tacos Food Truck | 11th | 4-9 | 1269.9 | 1417.6 |
 | 2017 | Tacos Food Truck | 9th | 4-9 | 1143.7 | 1278.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 0-4 | .000 | 75.0 | 110.2 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 0-4 | .000 | 85.3 | 111.9 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 1-1 | .500 | 99.4 | 116.7 |

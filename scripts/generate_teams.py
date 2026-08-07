@@ -45,7 +45,7 @@ def index_page(profiles):
         "Every manager in league history. Click a name for their full profile.",
         "",
         "| Owner | Seasons | All-Time Record | Win% | Titles | Best Finish |",
-        "|---|---|---|---|---|---|",
+        "|:--|--:|:--|--:|--:|:--|",
     ]
     for p in sorted_profiles(profiles):
         reg = p["reg"]
@@ -74,7 +74,7 @@ def trophy_case(p):
 def season_table(p):
     lines = [
         "| Season | Team | Finish | Record | PF | PA |",
-        "|---|---|---|---|---|---|",
+        "|:--|:--|:--|:--|--:|--:|",
     ]
     for s in p["seasons"]:
         pf = s["pf"] if s["pf"] is not None else "—"
@@ -90,7 +90,7 @@ def h2h_table(p, profiles):
     opps.sort(key=lambda kv: profiles[kv[0]]["short"].lower())
     lines = [
         "| Opponent | Record | Win% | Avg PF | Avg PA |",
-        "|---|---|---|---|---|",
+        "|:--|:--|--:|--:|--:|",
     ]
     for oid, r in opps:
         games = r["w"] + r["l"] + r["t"]

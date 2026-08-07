@@ -14,7 +14,7 @@ permalink: /teams/purpsworth/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | I am dead inside | 3rd | 6-8 | 1566.2 | 1526.0 |
 | 2024 | I am dead inside | 9th | 5-9 | 1606.7 | 1663.6 |
 | 2023 | Used Napkin | 6th | 9-5 | 1714.6 | 1505.6 |
@@ -26,7 +26,7 @@ permalink: /teams/purpsworth/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-10 | .333 | 100.7 | 108.5 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-5 | .545 | 99.5 | 89.3 |
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-3 | .400 | 105.9 | 116.5 |

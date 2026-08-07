@@ -14,14 +14,14 @@ permalink: /teams/thebragers/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2015 | The Bragers | 6th | 9-4 | 1219.6 | 1263.5 |
 | 2014 | Team TheBragers | 5th | 7-6 | 1197.9 | 1188.5 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 3-2 | .600 | 81.7 | 79.2 |
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-2 | .600 | 103.6 | 108.3 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 2-2 | .500 | 88.7 | 101.0 |

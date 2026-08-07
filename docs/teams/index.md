@@ -8,7 +8,7 @@ permalink: /teams/
 Every manager in league history. Click a name for their full profile.
 
 | Owner | Seasons | All-Time Record | Win% | Titles | Best Finish |
-|---|---|---|---|---|---|
+|:--|--:|:--|--:|--:|:--|
 | [Henry Stefan]({{ '/teams/henpen28/' | relative_url }}) | 12 | 77-84 | .478 | 3 | 1st |
 | [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 10 | 81-53-1 | .604 | 2 | 1st |
 | [Jack Perkins]({{ '/teams/jackperkins74/' | relative_url }}) | 12 | 88-73 | .547 | 2 | 1st |

@@ -14,7 +14,7 @@ permalink: /teams/kevbots22/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Keeping up with the McCalferies | 2nd | 10-4 | 1626.2 | 1504.3 |
 | 2024 | Tom Bradys Only Fans  | 11th | 2-12 | 1428.1 | 1667.3 |
 | 2023 | Tom Bradys Only Fans  | 8th | 4-10 | 1507.9 | 1608.6 |
@@ -31,7 +31,7 @@ permalink: /teams/kevbots22/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 3-0 | 1.000 | 112.6 | 74.3 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 1-3 | .250 | 96.4 | 95.7 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 3-8 | .273 | 96.6 | 111.4 |

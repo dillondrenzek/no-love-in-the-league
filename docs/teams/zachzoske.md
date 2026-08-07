@@ -14,7 +14,7 @@ permalink: /teams/zachzoske/
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
-|---|---|---|---|---|---|
+|:--|:--|:--|:--|--:|--:|
 | 2025 | Big Brown Dak Makes em Waddle | 6th | 9-5 | 1703.3 | 1511.2 |
 | 2024 | Nix Out For Harambe | 7th | 7-7 | 1509.0 | 1511.3 |
 | 2023 | Zach's Juicy Fantasy Teamussy | 10th | 7-7 | 1562.1 | 1635.0 |
@@ -31,7 +31,7 @@ permalink: /teams/zachzoske/
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
-|---|---|---|---|---|
+|:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-2 | .333 | 77.1 | 116.6 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-0 | 1.000 | 107.4 | 85.0 |
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 10-6 | .625 | 105.2 | 102.8 |
