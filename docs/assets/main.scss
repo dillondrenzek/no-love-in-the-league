@@ -391,8 +391,38 @@ tbody td a:hover { color: var(--brand); }
 }
 .site-footer .footer-heading { font-weight: 800; }
 
-// ---- Small screens: let wide tables scroll ----------------------------------
+// ---- Tables that are too wide scroll inside their own box -------------------
+// (Text columns wrap; number columns stay intact. The wrapper is a safety net
+// so a wide table never pushes the whole page sideways.)
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-scroll > table { margin: 1em 0 1.6em; }
+
+// ---- Small screens ----------------------------------------------------------
 @media (max-width: 640px) {
-  table { display: block; overflow-x: auto; white-space: nowrap; }
-  .site-title { font-size: 1.25rem; }
+  body { font-size: 16px; }
+  .wrapper { padding: 0 16px; }
+
+  // Masthead + nav
+  .site-title { font-size: 1.3rem; }
+  .site-nav .page-link {
+    margin-left: 0;
+    margin-right: 16px;
+    padding: 5px 0;
+    font-size: 0.68rem;
+  }
+
+  // Denser tables; keep numbers and chips readable
+  table { font-size: 0.86rem; }
+  thead th { padding: 0 7px 7px; font-size: 0.62rem; }
+  tbody td { padding: 8px 7px; }
+  th[style*="right"], td[style*="right"] { font-size: 0.82rem; }
+  .chip { min-width: 3.2em; padding: 2px 7px; }
+  .owner-name { font-size: 0.68rem; }
+  .tag { font-size: 0.56rem; }
+
+  // Roomier tap targets on the hero links
+  .hero__links a { padding: 16px 10px; }
 }
