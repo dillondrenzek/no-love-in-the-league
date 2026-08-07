@@ -1,13 +1,16 @@
 ---
+# This file shadows minima's own assets/main.scss and is what the theme's HTML
+# links to (as /assets/main.css). Everything after `@import "minima"` overrides
+# the theme. (A stylesheet at assets/css/style.css would NOT be loaded — nothing
+# references it — which is why our styles must live here.)
 ---
 
 @import "minima";
 
 // =============================================================================
 // No Love in the League — a light, newspaper/FiveThirtyEight-inspired skin.
-//
-// Loaded after minima, so these rules override the theme. Kept mostly as plain
-// CSS (not minima SCSS variables) so it's easy to read and version-proof.
+// Plain CSS overrides (not minima SCSS vars) so it's easy to read and
+// version-proof.
 // =============================================================================
 
 :root {

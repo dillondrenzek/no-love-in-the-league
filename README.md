@@ -30,7 +30,7 @@ docs/                    <- Jekyll site (the GitHub Pages source)
   standings/index.md        generated — do not edit by hand
   history/index.md          generated — do not edit by hand
   index.md
-  assets/css/style.scss     custom styling / branding
+  assets/main.scss          custom styling / branding (shadows minima's main.scss)
 ```
 
 ## Updating the site with new data
