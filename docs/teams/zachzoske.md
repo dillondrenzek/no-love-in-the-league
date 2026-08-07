@@ -9,7 +9,7 @@ permalink: /teams/zachzoske/
 
 🏆 **1× Champion** (2019) · 🥈 1× Runner-Up · 🥉 2× Third · 12× Playoffs
 
-**All-time regular season:** 80-80-1 (.500) · **Playoffs:** 20-15 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16545.4 / 16343.1
+**All-time regular season:** 80-80-1 (.500) · **Playoffs:** 19-14 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16545.4 / 16343.1
 
 ## Season by season
 
@@ -34,9 +34,9 @@ permalink: /teams/zachzoske/
 |:--|:--|--:|--:|--:|
 | [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-2 | .333 | 77.1 | 116.6 |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-0 | 1.000 | 107.4 | 85.0 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 10-6 | .625 | 105.2 | 102.8 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 10-5 | .667 | 104.9 | 100.9 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 4-6-1 | .409 | 95.4 | 99.0 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-2 | .500 | 130.3 | 127.7 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-2 | .333 | 123.6 | 124.0 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-11 | .389 | 101.5 | 103.9 |
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 12-4 | .750 | 108.0 | 98.4 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 9-16 | .360 | 102.2 | 106.3 |

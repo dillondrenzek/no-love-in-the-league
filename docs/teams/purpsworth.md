@@ -9,7 +9,7 @@ permalink: /teams/purpsworth/
 
 🥈 1× Runner-Up · 🥉 1× Third · 7× Playoffs
 
-**All-time regular season:** 44-52 (.458) · **Playoffs:** 11-10 · **Seasons:** 7 · **Best finish:** 2nd · **Points for/against:** 10075.1 / 10104.0
+**All-time regular season:** 44-52 (.458) · **Playoffs:** 11-9 · **Seasons:** 7 · **Best finish:** 2nd · **Points for/against:** 10075.1 / 10104.0
 
 ## Season by season
 
@@ -32,7 +32,7 @@ permalink: /teams/purpsworth/
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-3 | .400 | 105.9 | 116.5 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 4-7 | .364 | 96.1 | 99.9 |
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 7-7 | .500 | 103.7 | 105.8 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 4-6 | .400 | 112.2 | 117.0 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 4-5 | .444 | 111.5 | 113.8 |
 | [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 6-4 | .600 | 118.8 | 98.1 |
 | [Luke]({{ '/teams/lukstein/' | relative_url }}) | 2-5 | .286 | 109.0 | 109.0 |
 | [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 8-1 | .889 | 106.1 | 91.8 |

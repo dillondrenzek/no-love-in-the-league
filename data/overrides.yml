@@ -1,0 +1,17 @@
+# League rulings that ESPN's data doesn't capture.
+#
+# IMPORTANT: scripts/import_espn.py NEVER touches this file, so anything here
+# survives a full re-import. Season files (data/seasons/*.yml) are regenerated
+# from ESPN and should not hold league-specific rulings — put those here.
+
+# Tied championship games we officially ruled a shared title. Each listed
+# franchise is a CO-CHAMPION and counts as half a title (0.5).
+co_champions:
+  2016: [sturmanator15, schirmerj]   # Wade & Jono, 114.8-114.8 in the final
+
+# Seasons using our 6-team double-elimination playoff bracket. In these years the
+# 5th-8th place finishes are decided in the second-to-last playoff week, so the
+# final-week consolation games between two 5th-8th teams are MEANINGLESS — they
+# don't affect standings and are excluded from the record book, head-to-head,
+# and playoff records. Add new seasons here as they happen.
+double_elim_6: [2023, 2024, 2025]

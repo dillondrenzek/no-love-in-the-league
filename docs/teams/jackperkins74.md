@@ -9,7 +9,7 @@ permalink: /teams/jackperkins74/
 
 🏆 **2× Champion** (2015, 2025) · 🥈 1× Runner-Up · 🥉 2× Third · 12× Playoffs
 
-**All-time regular season:** 88-73 (.547) · **Playoffs:** 21-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16922.9 / 16331.9
+**All-time regular season:** 88-73 (.547) · **Playoffs:** 20-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16922.9 / 16331.9
 
 ## Season by season
 
@@ -39,7 +39,7 @@ permalink: /teams/jackperkins74/
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 3-0 | 1.000 | 142.2 | 112.2 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 9-7 | .562 | 99.0 | 93.6 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 13-9 | .591 | 112.9 | 101.5 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 17-3 | .850 | 115.3 | 95.0 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 16-3 | .842 | 115.4 | 95.4 |
 | [Luke]({{ '/teams/lukstein/' | relative_url }}) | 11-10 | .524 | 98.1 | 99.4 |
 | [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 9-8 | .529 | 108.0 | 104.2 |
 | [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3-3 | .500 | 90.3 | 94.7 |

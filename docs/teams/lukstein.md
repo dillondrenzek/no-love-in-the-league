@@ -9,7 +9,7 @@ permalink: /teams/lukstein/
 
 🏆 **1× Champion** (2024) · 🥈 2× Runner-Up · 🥉 1× Third · 12× Playoffs
 
-**All-time regular season:** 75-86 (.466) · **Playoffs:** 18-17 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16067.6 / 16351.3
+**All-time regular season:** 75-86 (.466) · **Playoffs:** 18-16 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16067.6 / 16351.3
 
 ## Season by season
 
@@ -37,7 +37,7 @@ permalink: /teams/lukstein/
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 4-8 | .333 | 98.2 | 118.5 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 11-7 | .611 | 98.2 | 99.8 |
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-2 | .500 | 112.2 | 112.0 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-11 | .389 | 99.3 | 99.4 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-10 | .412 | 100.2 | 98.9 |
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 10-11 | .476 | 99.4 | 98.1 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 9-7 | .562 | 110.9 | 108.1 |
 | [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 5-12 | .294 | 95.7 | 108.4 |

@@ -11,7 +11,8 @@
 from pathlib import Path
 
 from lib.data import load_franchises, load_seasons
-from lib.teams import compute_profiles, win_pct, rec_str
+from lib.teams import compute_profiles, win_pct, rec_str, fmt_titles, split_titles
+from lib.rulings import load_overrides
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "teams"
@@ -52,16 +53,20 @@ def index_page(profiles):
         link = f"[{p['name']}]({{{{ '/teams/{p['id']}/' | relative_url }}}})"
         lines.append(
             f"| {link} | {p['seasons_count']} | {rec_str(reg['w'], reg['l'], reg['t'])} "
-            f"| {pct(reg['win_pct'])} | {p['titles']} | {ordinal(p['best_finish'])} |"
+            f"| {pct(reg['win_pct'])} | {fmt_titles(p['titles'])} | {ordinal(p['best_finish'])} |"
         )
     return "\n".join(lines) + "\n"
 
 
 def trophy_case(p):
     bits = []
-    if p["titles"]:
-        yrs = ", ".join(str(y) for y in sorted(p["champ_years"]))
-        bits.append(f"🏆 **{p['titles']}× Champion** ({yrs})")
+    outright, co = split_titles(p["champ_years"])
+    if outright:
+        yrs = ", ".join(str(y) for y in outright)
+        bits.append(f"🏆 **{len(outright)}× Champion** ({yrs})")
+    if co:
+        yrs = ", ".join(str(y) for y in co)
+        bits.append(f"🤝 **Co-Champion** ({yrs})")
     if p["runner_ups"]:
         bits.append(f"🥈 {p['runner_ups']}× Runner-Up")
     if p["thirds"]:
@@ -137,7 +142,8 @@ permalink: /teams/{p['id']}/
 def main():
     franchises = load_franchises()
     seasons = load_seasons()
-    profiles = compute_profiles(seasons, franchises)
+    overrides = load_overrides()
+    profiles = compute_profiles(seasons, franchises, overrides)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / "index.md").write_text(index_page(profiles))

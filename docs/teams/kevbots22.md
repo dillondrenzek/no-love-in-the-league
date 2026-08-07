@@ -9,7 +9,7 @@ permalink: /teams/kevbots22/
 
 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
 
-**All-time regular season:** 64-96-1 (.401) · **Playoffs:** 19-16 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 15759.4 / 16549.2
+**All-time regular season:** 64-96-1 (.401) · **Playoffs:** 19-15 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 15759.4 / 16549.2
 
 ## Season by season
 
@@ -38,7 +38,7 @@ permalink: /teams/kevbots22/
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-3 | .667 | 102.1 | 84.2 |
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | .500 | 108.8 | 91.0 |
 | [Henry]({{ '/teams/henpen28/' | relative_url }}) | 11-12 | .478 | 97.3 | 99.8 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-17 | .150 | 95.0 | 115.3 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-16 | .158 | 95.4 | 115.4 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 12-5 | .706 | 106.1 | 94.6 |
 | [Luke]({{ '/teams/lukstein/' | relative_url }}) | 12-5 | .706 | 108.4 | 95.7 |
 | [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 8-8 | .500 | 98.9 | 100.2 |

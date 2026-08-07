@@ -16,7 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from lib.standings import get_standings, record_string, parse_record, has_points
 from lib.records import compute_records
-from lib.teams import compute_profiles, rec_str
+from lib.teams import compute_profiles, rec_str, fmt_titles
+from lib.rulings import meaningless_keys, co_champions
 
 
 # --- Explicit-standings season (the ESPN-import shape, no scores) ------------
@@ -116,11 +117,11 @@ def test_records_score_based_appear_with_matchups():
 def test_owner_profiles_totals_and_h2h():
     # Same franchises across two seasons; 'a' wins both.
     seasons = [matchup_season(2024), matchup_season(2025)]
-    profiles = compute_profiles(seasons, {})
+    profiles = compute_profiles(seasons, {}, {})
 
     a = profiles["a"]
     assert a["seasons_count"] == 2
-    assert a["titles"] == 2 and sorted(a["champ_years"]) == [2024, 2025]
+    assert a["titles"] == 2 and sorted(y for y, _ in a["champ_years"]) == [2024, 2025]
     # Reg season 2-0 each year -> 4-0 all time.
     assert (a["reg"]["w"], a["reg"]["l"]) == (4, 0), a["reg"]
     # 'a' has a playoff loss to 'd' each season (200-60), so playoff record 0-2.
@@ -133,6 +134,54 @@ def test_owner_profiles_totals_and_h2h():
 def test_rec_str():
     assert rec_str(4, 0, 0) == "4-0"
     assert rec_str(7, 6, 1) == "7-6-1"
+
+
+def test_fmt_titles_half():
+    assert fmt_titles(0.5) == "½"
+    assert fmt_titles(2) == "2"
+    assert fmt_titles(2.5) == "2½"
+
+
+def test_co_champions_split_half_titles():
+    # Two seasons; in 2024 the title is a co-championship shared by a and b.
+    seasons = [matchup_season(2024), matchup_season(2025)]
+    overrides = {"co_champions": {2024: ["a", "b"]}}
+    profiles = compute_profiles(seasons, {}, overrides)
+    # a: outright champ 2025 (1.0) + co-champ 2024 (0.5) = 1.5
+    assert profiles["a"]["titles"] == 1.5, profiles["a"]["titles"]
+    # b: only the 2024 co-championship = 0.5
+    assert profiles["b"]["titles"] == 0.5, profiles["b"]["titles"]
+    co_years = [y for y, is_co in profiles["a"]["champ_years"] if is_co]
+    assert co_years == [2024]
+
+
+def test_meaningless_games_excluded_from_records_and_h2h():
+    # Build a double-elim season where the week-5 game between two 5th-8th
+    # finishers is meaningless and carries an absurd score that must be ignored.
+    season = {
+        "season": 2025,
+        "weeks_in_regular_season": 2,
+        "final_standings": ["a", "b", "c", "d", "e", "f", "g", "h"],  # e..h are 5th-8th
+        "teams": {},
+        "matchups": [
+            {"week": 1, "home": "a", "away": "b", "home_score": 100.0, "away_score": 90.0},
+            {"week": 1, "home": "e", "away": "f", "home_score": 80.0, "away_score": 70.0},   # real
+            {"week": 5, "home": "e", "away": "f", "home_score": 999.0, "away_score": 5.0, "playoff": True},  # meaningless
+        ],
+    }
+    overrides = {"double_elim_6": [2025]}
+    keys = meaningless_keys(season, overrides)
+    assert (5, frozenset(("e", "f"))) in keys
+
+    recs = {r["category"]: r for r in compute_records([season], {}, overrides)}
+    # The 999 must NOT be the record — it came from a meaningless game.
+    assert recs["Most Points in a Week"]["value"] != "999.00", recs["Most Points in a Week"]
+
+    profiles = compute_profiles([season], {}, overrides)
+    # The meaningless playoff game adds nothing: no playoff win, and the e-vs-f
+    # head-to-head reflects only the real regular-season game (1-0, not 1-1).
+    assert profiles["e"]["playoff"]["w"] == 0
+    assert (profiles["e"]["h2h"]["f"]["w"], profiles["e"]["h2h"]["f"]["l"]) == (1, 0)
 
 
 def run():

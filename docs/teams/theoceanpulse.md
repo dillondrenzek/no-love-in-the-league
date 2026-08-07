@@ -9,7 +9,7 @@ permalink: /teams/theoceanpulse/
 
 🏆 **1× Champion** (2018) · 🥉 1× Third · 10× Playoffs
 
-**All-time regular season:** 83-51-1 (.619) · **Playoffs:** 14-15 · **Seasons:** 10 · **Best finish:** 1st · **Points for/against:** 14533.9 / 13351.5
+**All-time regular season:** 83-51-1 (.619) · **Playoffs:** 13-15 · **Seasons:** 10 · **Best finish:** 1st · **Points for/against:** 14533.9 / 13351.5
 
 ## Season by season
 
@@ -43,4 +43,4 @@ permalink: /teams/theoceanpulse/
 | [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 9-10 | .474 | 99.9 | 101.3 |
 | [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 10-5 | .667 | 108.5 | 100.7 |
 | [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 9-5 | .643 | 103.8 | 95.3 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 6-10 | .375 | 102.8 | 105.2 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 5-10 | .333 | 100.9 | 104.9 |

@@ -18,7 +18,7 @@ permalink: /history/
 | 2019 | [Eleven In Crocks]({{ '/teams/zachzoske/' | relative_url }}) | [Show Me Your TDs]({{ '/teams/lukstein/' | relative_url }}) | [Vladimir Putin]({{ '/teams/jackperkins74/' | relative_url }}) | 6-7 |
 | 2018 | [Hans Blitz! Ohh noo!]({{ '/teams/theoceanpulse/' | relative_url }}) | [Mixon's Gurley Fight Club]({{ '/teams/jackperkins74/' | relative_url }}) | [Sackos Auto Draft Experiene]({{ '/teams/zachzoske/' | relative_url }}) | 9-4 |
 | 2017 | [Forceable Entry]({{ '/teams/henpen28/' | relative_url }}) | [My Cox Will Ertz You]({{ '/teams/lukstein/' | relative_url }}) | [Dislocated Johnson]({{ '/teams/shawne2520997/' | relative_url }}) | 6-7 |
-| 2016 | [Wadger Sturdell]({{ '/teams/sturmanator15/' | relative_url }}) | [Lick my Rawls .]({{ '/teams/schirmerj/' | relative_url }}) | [GONNA DEFLATE YO BALLS!!]({{ '/teams/shawne2520997/' | relative_url }}) | 11-2 |
+| 2016 | [Wadger Sturdell]({{ '/teams/sturmanator15/' | relative_url }}) & [Lick my Rawls .]({{ '/teams/schirmerj/' | relative_url }}) | — (co-champions) | [GONNA DEFLATE YO BALLS!!]({{ '/teams/shawne2520997/' | relative_url }}) | — |
 | 2015 | [Jenner's Man Meat]({{ '/teams/jackperkins74/' | relative_url }}) | [I Waxed My Child For This]({{ '/teams/master-otis/' | relative_url }}) | [Gronkey Punch]({{ '/teams/zachzoske/' | relative_url }}) | 6-7 |
 | 2014 | [Uncle Grabby]({{ '/teams/henpen28/' | relative_url }}) | [Lynched by Le' Bell]({{ '/teams/master-otis/' | relative_url }}) | [Luck her right  in the Pussy]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 |
 

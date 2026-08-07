@@ -9,7 +9,7 @@ permalink: /teams/gganoom/
 
 2× Playoffs
 
-**All-time regular season:** 16-12 (.571) · **Playoffs:** 2-4 · **Seasons:** 2 · **Best finish:** 4th · **Points for/against:** 3210.2 / 3044.3
+**All-time regular season:** 16-12 (.571) · **Playoffs:** 2-3 · **Seasons:** 2 · **Best finish:** 4th · **Points for/against:** 3210.2 / 3044.3
 
 ## Season by season
 
@@ -32,4 +32,4 @@ permalink: /teams/gganoom/
 | [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 3-1 | .750 | 116.7 | 99.2 |
 | [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 3-2 | .600 | 116.5 | 105.9 |
 | [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 0-2 | .000 | 104.9 | 119.5 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 2-2 | .500 | 127.7 | 130.3 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 2-1 | .667 | 124.0 | 123.6 |

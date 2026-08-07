@@ -7,9 +7,9 @@ permalink: /teams/sturmanator15/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
-🏆 **1× Champion** (2016) · 12× Playoffs
+🤝 **Co-Champion** (2016) · 12× Playoffs
 
-**All-time regular season:** 94-66-1 (.587) · **Playoffs:** 11-21-1 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16374.3 / 15718.2
+**All-time regular season:** 94-66-1 (.587) · **Playoffs:** 10-21-1 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16374.3 / 15718.2
 
 ## Season by season
 
@@ -37,7 +37,7 @@ permalink: /teams/sturmanator15/
 | [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-9 | .357 | 95.3 | 103.8 |
 | [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-4 | .600 | 98.8 | 84.2 |
 | [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-0 | 1.000 | 119.5 | 104.9 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 11-7 | .611 | 99.7 | 97.0 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 10-7 | .588 | 99.1 | 98.4 |
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 5-8 | .385 | 97.4 | 102.5 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 11-12-1 | .479 | 97.1 | 100.0 |
 | [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 18-4-1 | .804 | 97.9 | 86.1 |

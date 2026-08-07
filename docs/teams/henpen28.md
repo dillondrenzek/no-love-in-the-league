@@ -9,7 +9,7 @@ permalink: /teams/henpen28/
 
 🏆 **3× Champion** (2014, 2017, 2022) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
 
-**All-time regular season:** 77-84 (.478) · **Playoffs:** 22-14 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16045.8 / 16173.5
+**All-time regular season:** 77-84 (.478) · **Playoffs:** 21-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16045.8 / 16173.5
 
 ## Season by season
 
@@ -40,10 +40,10 @@ permalink: /teams/henpen28/
 | [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 7-9 | .438 | 93.6 | 99.0 |
 | [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 5-8 | .385 | 105.8 | 106.9 |
 | [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 12-11 | .522 | 99.8 | 97.3 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 11-7 | .611 | 99.4 | 99.3 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 10-7 | .588 | 98.9 | 100.2 |
 | [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 9-7 | .562 | 98.0 | 99.0 |
 | [Odie]({{ '/teams/master-otis/' | relative_url }}) | 4-3 | .571 | 93.8 | 101.3 |
 | [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 8-10 | .444 | 100.3 | 99.5 |
 | [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 7-4 | .636 | 99.9 | 96.1 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 7-11 | .389 | 97.0 | 99.7 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 7-10 | .412 | 98.4 | 99.1 |
 | [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 11-7 | .611 | 103.9 | 101.5 |

@@ -13,13 +13,13 @@ Every manager in league history. Click a name for their full profile.
 | [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 10 | 81-53-1 | .604 | 2 | 1st |
 | [Jack Perkins]({{ '/teams/jackperkins74/' | relative_url }}) | 12 | 88-73 | .547 | 2 | 1st |
 | [Dillon Drenzek]({{ '/teams/theoceanpulse/' | relative_url }}) | 10 | 83-51-1 | .619 | 1 | 1st |
-| [Wade Sturman]({{ '/teams/sturmanator15/' | relative_url }}) | 12 | 94-66-1 | .587 | 1 | 1st |
 | [Zach Zoske]({{ '/teams/zachzoske/' | relative_url }}) | 12 | 80-80-1 | .500 | 1 | 1st |
 | [Fletcher Harvey]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8 | 49-56-2 | .467 | 1 | 1st |
 | [Luke Stein]({{ '/teams/lukstein/' | relative_url }}) | 12 | 75-86 | .466 | 1 | 1st |
+| [Wade Sturman]({{ '/teams/sturmanator15/' | relative_url }}) | 12 | 94-66-1 | .587 | ½ | 1st |
+| [Jono Schirmer]({{ '/teams/schirmerj/' | relative_url }}) | 12 | 80-80-1 | .500 | ½ | 2nd |
 | [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2 | 16-10 | .615 | 0 | 5th |
 | [Grant Ganoom]({{ '/teams/gganoom/' | relative_url }}) | 2 | 16-12 | .571 | 0 | 4th |
-| [Jono Schirmer]({{ '/teams/schirmerj/' | relative_url }}) | 12 | 80-80-1 | .500 | 0 | 2nd |
 | [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3 | 19-20 | .487 | 0 | 2nd |
 | [Trevor Gappmayer]({{ '/teams/purpsworth/' | relative_url }}) | 7 | 44-52 | .458 | 0 | 2nd |
 | [Kevin Graczyk]({{ '/teams/kevbots22/' | relative_url }}) | 12 | 64-96-1 | .401 | 0 | 2nd |

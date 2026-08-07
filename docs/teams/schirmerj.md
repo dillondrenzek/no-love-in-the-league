@@ -7,9 +7,9 @@ permalink: /teams/schirmerj/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
-🥈 2× Runner-Up · 🥉 1× Third · 12× Playoffs
+🤝 **Co-Champion** (2016) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
 
-**All-time regular season:** 80-80-1 (.500) · **Playoffs:** 18-16-1 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 16618.6 / 16476.4
+**All-time regular season:** 80-80-1 (.500) · **Playoffs:** 17-16-1 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 16618.6 / 16476.4
 
 ## Season by season
 
@@ -44,6 +44,6 @@ permalink: /teams/schirmerj/
 | [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 11-11 | .500 | 105.7 | 91.6 |
 | [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-2 | .500 | 96.3 | 87.2 |
 | [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 8-5 | .615 | 112.0 | 102.8 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 6-4 | .600 | 117.0 | 112.2 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-4 | .556 | 113.8 | 111.5 |
 | [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 12-11-1 | .521 | 100.0 | 97.1 |
 | [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 16-9 | .640 | 106.3 | 102.2 |
