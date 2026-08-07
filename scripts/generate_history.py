@@ -10,7 +10,7 @@ with scores are added). Nothing here is hand-maintained.
 
 from pathlib import Path
 
-from lib.data import load_franchises, load_seasons, owner_link
+from lib.data import load_franchises, load_seasons, owner_link, owner_name_tag
 from lib.standings import get_standings
 from lib.records import compute_records
 from lib.rulings import load_overrides, co_champions
@@ -31,11 +31,15 @@ def champions_table(seasons, franchises, overrides):
         by_finish = {r["finish"]: r for r in rows.values()}
 
         def cell(r):
-            return owner_link(r["id"], r["name"], franchises) if r else "—"
+            if not r:
+                return "—"
+            return owner_link(r["id"], r["name"], franchises) + owner_name_tag(r["id"], franchises)
 
         co = co_champions(season["season"], overrides)
         if co:
-            champ_cell = " & ".join(owner_link(fid, rows[fid]["name"], franchises) for fid in co)
+            champ_cell = " & ".join(
+                owner_link(fid, rows[fid]["name"], franchises) + owner_name_tag(fid, franchises)
+                for fid in co)
             lines.append(
                 f"| {season['season']} | {champ_cell} | — (co-champions) "
                 f"| {cell(by_finish.get(3))} | — |"

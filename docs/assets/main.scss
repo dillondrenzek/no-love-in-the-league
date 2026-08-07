@@ -206,6 +206,16 @@ tbody td a:hover { color: var(--brand); }
 .tag--shiva { background: #fbe6d6; color: #a4530f; }
 .tag--sacko { background: #ece3da; color: #6d4a2c; }
 
+// Small gray owner name beside a team name.
+.owner-name {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
 // Monospace subtitle under an owner-page title (their latest team name).
 .owner-sub {
   font-family: var(--mono);

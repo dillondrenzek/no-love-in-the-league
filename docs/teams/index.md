@@ -14,14 +14,19 @@ Every manager in league history. Click a name for their full profile.
 | [Jack Perkins]({{ '/teams/jackperkins74/' | relative_url }}) | 12 | 88-73 | <span class="chip" style="background:#dae8de">.547</span> | 2 | 1 | <span class="shiva">Shiva</span> (2015, 2025) |
 | [Dillon Drenzek]({{ '/teams/theoceanpulse/' | relative_url }}) | 10 | 83-51-1 | <span class="chip" style="background:#badac9">.619</span> | 1 |  | <span class="shiva">Shiva</span> (2018) |
 | [Zach Zoske]({{ '/teams/zachzoske/' | relative_url }}) | 12 | 80-80-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 1 | 1 | <span class="shiva">Shiva</span> (2019) |
-| [Fletcher Harvey]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8 | 49-56-2 | <span class="chip" style="background:#f0e2df">.467</span> | 1 | 1 | <span class="shiva">Shiva</span> (2020) |
 | [Luke Stein]({{ '/teams/lukstein/' | relative_url }}) | 12 | 75-86 | <span class="chip" style="background:#f0e1de">.466</span> | 1 | 2 | <span class="shiva">Shiva</span> (2024) |
 | [Wade Sturman]({{ '/teams/sturmanator15/' | relative_url }}) | 12 | 94-66-1 | <span class="chip" style="background:#c7e0d2">.587</span> | ½ |  | <span class="shiva">Co-champ</span> (2016) |
 | [Jono Schirmer]({{ '/teams/schirmerj/' | relative_url }}) | 12 | 80-80-1 | <span class="chip" style="background:#f4f3f0">.500</span> | ½ |  | <span class="shiva">Co-champ</span> (2016) |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2 | 16-10 | <span class="chip" style="background:#bbdbc9">.615</span> | 0 |  | 5th (2014) |
 | [Grant Ganoom]({{ '/teams/gganoom/' | relative_url }}) | 2 | 16-12 | <span class="chip" style="background:#cee3d6">.571</span> | 0 |  | 4th (2025) |
-| [Odie Olsen]({{ '/teams/master-otis/' | relative_url }}) | 3 | 19-20 | <span class="chip" style="background:#f2ebe8">.487</span> | 0 | 1 | 2nd (2014, 2015) |
 | [Trevor Gappmayer]({{ '/teams/purpsworth/' | relative_url }}) | 7 | 44-52 | <span class="chip" style="background:#f0dedb">.458</span> | 0 | 1 | 2nd (2021) |
 | [Kevin Graczyk]({{ '/teams/kevbots22/' | relative_url }}) | 12 | 64-96-1 | <span class="chip" style="background:#ebc6c3">.401</span> | 0 | 1 | 2nd (2025) |
 | [Nate Appel]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 12 | 62-99 | <span class="chip" style="background:#eac1bd">.385</span> | 0 | 2 | 4th (2022) |
+
+## Inactive Owners
+
+| Owner | Seasons | All-Time Record | Win% | Titles | Sackos | Best Finish |
+|:--|--:|:--|--:|--:|--:|:--|
+| [Fletcher Harvey]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8 | 49-56-2 | <span class="chip" style="background:#f0e2df">.467</span> | 1 | 1 | <span class="shiva">Shiva</span> (2020) |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2 | 16-10 | <span class="chip" style="background:#bbdbc9">.615</span> | 0 |  | 5th (2014) |
+| [Odie Olsen]({{ '/teams/master-otis/' | relative_url }}) | 3 | 19-20 | <span class="chip" style="background:#f2ebe8">.487</span> | 0 | 1 | 2nd (2014, 2015) |
 | [Anthony Stewart]({{ '/teams/ajstewart04/' | relative_url }}) | 2 | 8-18 | <span class="chip" style="background:#e4a5a1">.308</span> | 0 |  | 9th (2017) |

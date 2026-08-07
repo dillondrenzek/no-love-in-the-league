@@ -49,6 +49,13 @@ def owner_link(franchise_id, text, franchises):
     return text
 
 
+def owner_name_tag(franchise_id, franchises):
+    """A small gray owner-name label to sit next to a team name."""
+    if franchise_id in franchises:
+        return f' <span class="owner-name">{franchises[franchise_id]["name"]}</span>'
+    return ""
+
+
 def short_name_of(franchise_id, franchises):
     """First name (or an explicit `short:` override) for a franchise id.
 

@@ -6,7 +6,7 @@
 
 from pathlib import Path
 
-from lib.data import load_franchises, load_seasons, owner_link
+from lib.data import load_franchises, load_seasons, owner_link, owner_name_tag
 from lib.standings import get_standings, has_points
 from lib.render import heat_chip, finish_tag
 from lib.rulings import load_overrides, co_champions
@@ -31,7 +31,9 @@ def season_table(season, franchises, overrides):
     lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
 
     for r in rows:
-        team = owner_link(r["id"], r["name"], franchises) + finish_tag(r["finish"], team_count, r["id"] in co)
+        team = (owner_link(r["id"], r["name"], franchises)
+                + owner_name_tag(r["id"], franchises)
+                + finish_tag(r["finish"], team_count, r["id"] in co))
         line = f"| {r['finish']} | {team} | {r['record']} |"
         if points:
             pf = heat_chip(r["points_for"], lo, hi)

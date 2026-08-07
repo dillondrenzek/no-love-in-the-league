@@ -55,16 +55,12 @@ def sorted_profiles(profiles):
     )
 
 
-def index_page(profiles):
+def _owner_table(profs):
     lines = [
-        "---", "layout: page", "title: Owners", "permalink: /teams/", "---", GEN,
-        "",
-        "Every manager in league history. Click a name for their full profile.",
-        "",
         "| Owner | Seasons | All-Time Record | Win% | Titles | Sackos | Best Finish |",
         "|:--|--:|:--|--:|--:|--:|:--|",
     ]
-    for p in sorted_profiles(profiles):
+    for p in profs:
         reg = p["reg"]
         link = f"[{p['name']}]({{{{ '/teams/{p['id']}/' | relative_url }}}})"
         lines.append(
@@ -72,7 +68,25 @@ def index_page(profiles):
             f"| {winpct_chip(reg['win_pct'], pct(reg['win_pct']))} "
             f"| {fmt_titles(p['titles'])} | {p['sackos'] or ''} | {best_finish_label(p)} |"
         )
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines)
+
+
+def index_page(profiles):
+    ranked = sorted_profiles(profiles)
+    latest = max(p["seasons"][0]["year"] for p in ranked)  # most recent league season
+    active = [p for p in ranked if p["seasons"][0]["year"] == latest]
+    inactive = [p for p in ranked if p["seasons"][0]["year"] != latest]
+
+    parts = [
+        "---", "layout: page", "title: Owners", "permalink: /teams/", "---", GEN,
+        "",
+        "Every manager in league history. Click a name for their full profile.",
+        "",
+        _owner_table(active),
+    ]
+    if inactive:
+        parts += ["", "## Inactive Owners", "", _owner_table(inactive)]
+    return "\n".join(parts) + "\n"
 
 
 def honors(p):
