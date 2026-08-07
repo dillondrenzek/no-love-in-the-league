@@ -1,0 +1,8 @@
+# Code owners for no-love-in-the-league.
+#
+# Each line is a file pattern followed by one or more owners. The last matching
+# pattern wins. Owners are auto-requested for review on pull requests that touch
+# matching files.
+
+# Default owner for everything in the repo.
+* @dillondrenzek
