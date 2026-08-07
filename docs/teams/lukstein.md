@@ -7,6 +7,8 @@ permalink: /teams/lukstein/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: 2x Runner Up</p>
+
 🏆 **1× Champion** (2024) · 🥈 2× Runner-Up · 🥉 1× Third · 12× Playoffs
 
 **All-time regular season:** 75-86 (.466) · **Playoffs:** 18-16 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16067.6 / 16351.3
@@ -15,35 +17,35 @@ permalink: /teams/lukstein/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | 2x Runner Up | 8th | 8-6 | 1479.8 | 1472.9 |
-| 2024 | 2x Runner Up | 1st | 9-5 | 1890.9 | 1711.1 |
-| 2023 | 2x Runner Up | 11th | 3-11 | 1428.2 | 1719.9 |
-| 2022 | Fly Eagles Fly | 3rd | 11-3 | 1501.3 | 1367.6 |
-| 2021 | Autodraft Monster | 12th | 4-10 | 1302.7 | 1465.5 |
-| 2020 | Show Me Your TDs | 11th | 5-8 | 1291.1 | 1309.2 |
-| 2019 | Show Me Your TDs | 2nd | 6-7 | 1121.6 | 1170.5 |
-| 2018 | Graham Slam | 12th | 3-10 | 1184.6 | 1295.5 |
-| 2017 | My Cox Will Ertz You | 2nd | 9-4 | 1386.7 | 1095.3 |
-| 2016 | My Cox Will Ertz You | 6th | 7-6 | 1224.4 | 1234.7 |
-| 2015 | Polk Me Til I Goregasm | 7th | 3-10 | 1087.9 | 1296.0 |
-| 2014 | Washington Blowskins | 6th | 7-6 | 1168.4 | 1213.1 |
+| 2025 | 2x Runner Up | 8th | 8-6 | <span class="chip" style="background:#f09b7e">1479.8</span> | 1472.9 |
+| 2024 | 2x Runner Up | <span class="star">★</span> 1st | 9-5 | <span class="chip" style="background:#d65a30">1890.9</span> | 1711.1 |
+| 2023 | 2x Runner Up | 11th | 3-11 | <span class="chip" style="background:#f2a68c">1428.2</span> | 1719.9 |
+| 2022 | Fly Eagles Fly | 3rd | 11-3 | <span class="chip" style="background:#ef9779">1501.3</span> | 1367.6 |
+| 2021 | Autodraft Monster | 12th | 4-10 | <span class="chip" style="background:#f5c2ae">1302.7</span> | 1465.5 |
+| 2020 | Show Me Your TDs | 11th | 5-8 | <span class="chip" style="background:#f5c4b1">1291.1</span> | 1309.2 |
+| 2019 | Show Me Your TDs | 2nd | 6-7 | <span class="chip" style="background:#f9eae0">1121.6</span> | 1170.5 |
+| 2018 | Graham Slam | 12th | 3-10 | <span class="chip" style="background:#f8dccf">1184.6</span> | 1295.5 |
+| 2017 | My Cox Will Ertz You | 2nd | 9-4 | <span class="chip" style="background:#f3b097">1386.7</span> | 1095.3 |
+| 2016 | My Cox Will Ertz You | 6th | 7-6 | <span class="chip" style="background:#f7d3c4">1224.4</span> | 1234.7 |
+| 2015 | Polk Me Til I Goregasm | 7th | 3-10 | <span class="chip" style="background:#faf1e9">1087.9</span> | 1296.0 |
+| 2014 | Washington Blowskins | 6th | 7-6 | <span class="chip" style="background:#f8dfd3">1168.4</span> | 1213.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 0-3 | .000 | 79.6 | 90.1 |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 0-4 | .000 | 52.7 | 77.7 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 4-8 | .333 | 98.2 | 118.5 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 11-7 | .611 | 98.2 | 99.8 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-2 | .500 | 112.2 | 112.0 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-10 | .412 | 100.2 | 98.9 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 10-11 | .476 | 99.4 | 98.1 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 9-7 | .562 | 110.9 | 108.1 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 5-12 | .294 | 95.7 | 108.4 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 14-11 | .560 | 98.3 | 90.6 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3-0 | 1.000 | 113.9 | 91.3 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 4-8 | .333 | 110.9 | 103.7 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-2 | .714 | 109.0 | 109.0 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 11-5 | .688 | 105.8 | 95.7 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 8-12 | .400 | 95.3 | 105.2 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 0-3 | <span class="chip" style="background:#d0433f">.000</span> | 79.6 | 90.1 |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 0-4 | <span class="chip" style="background:#d0433f">.000</span> | 52.7 | 77.7 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 4-8 | <span class="chip" style="background:#e6aeaa">.333</span> | 98.2 | 118.5 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 11-7 | <span class="chip" style="background:#bddbcb">.611</span> | 98.2 | 99.8 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-2 | <span class="chip" style="background:#f4f3f0">.500</span> | 112.2 | 112.0 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-10 | <span class="chip" style="background:#eccbc7">.412</span> | 100.2 | 98.9 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 10-11 | <span class="chip" style="background:#f1e6e3">.476</span> | 99.4 | 98.1 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 9-7 | <span class="chip" style="background:#d2e4d9">.562</span> | 110.9 | 108.1 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 5-12 | <span class="chip" style="background:#e3a09d">.294</span> | 95.7 | 108.4 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 14-11 | <span class="chip" style="background:#d3e5da">.560</span> | 98.3 | 90.6 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 113.9 | 91.3 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 4-8 | <span class="chip" style="background:#e6aeaa">.333</span> | 110.9 | 103.7 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-2 | <span class="chip" style="background:#94caaf">.714</span> | 109.0 | 109.0 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 11-5 | <span class="chip" style="background:#9eceb6">.688</span> | 105.8 | 95.7 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 8-12 | <span class="chip" style="background:#ebc6c3">.400</span> | 95.3 | 105.2 |

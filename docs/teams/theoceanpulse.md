@@ -7,6 +7,8 @@ permalink: /teams/theoceanpulse/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: Thoughts and Players</p>
+
 🏆 **1× Champion** (2018) · 🥉 1× Third · 10× Playoffs
 
 **All-time regular season:** 83-51-1 (.619) · **Playoffs:** 13-15 · **Seasons:** 10 · **Best finish:** 1st · **Points for/against:** 14533.9 / 13351.5
@@ -15,32 +17,32 @@ permalink: /teams/theoceanpulse/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | Thoughts and Players | 5th | 8-6 | 1612.9 | 1495.9 |
-| 2024 | Thoughts and Players | 4th | 8-6 | 1569.8 | 1502.7 |
-| 2023 | Thoughts and Players | 3rd | 12-2 | 1748.5 | 1480.6 |
-| 2022 | Thoughts and Players | 5th | 7-7 | 1312.8 | 1371.1 |
-| 2021 | Hot Chubb Time Machine | 10th | 5-9 | 1489.3 | 1463.8 |
-| 2020 | Trick-Ass Marks | 6th | 6-7 | 1208.9 | 1249.7 |
-| 2019 | Hans Blitz! Ohh noo! | 4th | 11-1-1 | 1592.1 | 1197.2 |
-| 2018 | Hans Blitz! Ohh noo! | 1st | 9-4 | 1453.7 | 1211.3 |
-| 2017 | Hans Blitz! Ohh noo! | 7th | 11-2 | 1241.2 | 1097.6 |
-| 2016 | Hillary Has The 2nd Clinton-Dix | 10th | 6-7 | 1304.7 | 1281.6 |
+| 2025 | Thoughts and Players | 5th | 8-6 | <span class="chip" style="background:#e37a56">1612.9</span> | 1495.9 |
+| 2024 | Thoughts and Players | 4th | 8-6 | <span class="chip" style="background:#e78462">1569.8</span> | 1502.7 |
+| 2023 | Thoughts and Players | 3rd | 12-2 | <span class="chip" style="background:#d65a30">1748.5</span> | 1480.6 |
+| 2022 | Thoughts and Players | 5th | 7-7 | <span class="chip" style="background:#f6cfbf">1312.8</span> | 1371.1 |
+| 2021 | Hot Chubb Time Machine | 10th | 5-9 | <span class="chip" style="background:#ef9778">1489.3</span> | 1463.8 |
+| 2020 | Trick-Ass Marks | 6th | 6-7 | <span class="chip" style="background:#faf1e9">1208.9</span> | 1249.7 |
+| 2019 | Hans Blitz! Ohh noo! | 4th | 11-1-1 | <span class="chip" style="background:#e57f5b">1592.1</span> | 1197.2 |
+| 2018 | Hans Blitz! Ohh noo! | <span class="star">★</span> 1st | 9-4 | <span class="chip" style="background:#f1a185">1453.7</span> | 1211.3 |
+| 2017 | Hans Blitz! Ohh noo! | 7th | 11-2 | <span class="chip" style="background:#f9e6dc">1241.2</span> | 1097.6 |
+| 2016 | Hillary Has The 2nd Clinton-Dix | 10th | 6-7 | <span class="chip" style="background:#f6d2c2">1304.7</span> | 1281.6 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 4-0 | 1.000 | 110.2 | 75.0 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-5 | .500 | 86.7 | 80.2 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-2 | .333 | 102.2 | 115.6 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 10-6 | .625 | 108.4 | 102.3 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 8-10 | .444 | 107.8 | 103.8 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 7-5-1 | .577 | 103.7 | 106.8 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 8-3 | .727 | 111.4 | 96.6 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 8-4 | .667 | 118.5 | 98.2 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 10-1 | .909 | 119.4 | 90.3 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-0 | 1.000 | 86.0 | 78.2 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 9-10 | .474 | 99.9 | 101.3 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 10-5 | .667 | 108.5 | 100.7 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 9-5 | .643 | 103.8 | 95.3 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 5-10 | .333 | 100.9 | 104.9 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 4-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 110.2 | 75.0 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-5 | <span class="chip" style="background:#f4f3f0">.500</span> | 86.7 | 80.2 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-2 | <span class="chip" style="background:#e6aeaa">.333</span> | 102.2 | 115.6 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 10-6 | <span class="chip" style="background:#b7d9c7">.625</span> | 108.4 | 102.3 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 8-10 | <span class="chip" style="background:#eed8d5">.444</span> | 107.8 | 103.8 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 7-5-1 | <span class="chip" style="background:#cce2d5">.577</span> | 103.7 | 106.8 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 8-3 | <span class="chip" style="background:#8fc8ab">.727</span> | 111.4 | 96.6 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 8-4 | <span class="chip" style="background:#a6d2bb">.667</span> | 118.5 | 98.2 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 10-1 | <span class="chip" style="background:#4dab7f">.909</span> | 119.4 | 90.3 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 86.0 | 78.2 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 9-10 | <span class="chip" style="background:#f1e5e2">.474</span> | 99.9 | 101.3 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 10-5 | <span class="chip" style="background:#a6d2bb">.667</span> | 108.5 | 100.7 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 9-5 | <span class="chip" style="background:#b0d6c2">.643</span> | 103.8 | 95.3 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 5-10 | <span class="chip" style="background:#e6aeaa">.333</span> | 100.9 | 104.9 |

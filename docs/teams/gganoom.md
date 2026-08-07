@@ -7,6 +7,8 @@ permalink: /teams/gganoom/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: One Big Beautiful Dill</p>
+
 2× Playoffs
 
 **All-time regular season:** 16-12 (.571) · **Playoffs:** 2-3 · **Seasons:** 2 · **Best finish:** 4th · **Points for/against:** 3210.2 / 3044.3
@@ -15,21 +17,21 @@ permalink: /teams/gganoom/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | One Big Beautiful Dill | 4th | 9-5 | 1587.6 | 1494.2 |
-| 2024 | KillDilly Elegy | 8th | 7-7 | 1622.6 | 1550.1 |
+| 2025 | One Big Beautiful Dill | 4th | 9-5 | <span class="chip" style="background:#faf1e9">1587.6</span> | 1494.2 |
+| 2024 | KillDilly Elegy | 8th | 7-7 | <span class="chip" style="background:#d65a30">1622.6</span> | 1550.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 2-1 | .667 | 115.6 | 102.2 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 1-1 | .500 | 112.2 | 103.5 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 0-3 | .000 | 112.2 | 142.2 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 1-1 | .500 | 141.1 | 126.0 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 1-1 | .500 | 91.0 | 108.8 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 2-2 | .500 | 112.0 | 112.2 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 3-0 | 1.000 | 141.4 | 97.1 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 3-1 | .750 | 116.7 | 99.2 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 3-2 | .600 | 116.5 | 105.9 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 0-2 | .000 | 104.9 | 119.5 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 2-1 | .667 | 124.0 | 123.6 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 2-1 | <span class="chip" style="background:#a6d2bb">.667</span> | 115.6 | 102.2 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 112.2 | 103.5 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 0-3 | <span class="chip" style="background:#d0433f">.000</span> | 112.2 | 142.2 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 141.1 | 126.0 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 91.0 | 108.8 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 2-2 | <span class="chip" style="background:#f4f3f0">.500</span> | 112.0 | 112.2 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 3-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 141.4 | 97.1 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 3-1 | <span class="chip" style="background:#86c4a6">.750</span> | 116.7 | 99.2 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 3-2 | <span class="chip" style="background:#c2ddce">.600</span> | 116.5 | 105.9 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 0-2 | <span class="chip" style="background:#d0433f">.000</span> | 104.9 | 119.5 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 2-1 | <span class="chip" style="background:#a6d2bb">.667</span> | 124.0 | 123.6 |

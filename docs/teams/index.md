@@ -9,19 +9,19 @@ Every manager in league history. Click a name for their full profile.
 
 | Owner | Seasons | All-Time Record | Win% | Titles | Best Finish |
 |:--|--:|:--|--:|--:|:--|
-| [Henry Stefan]({{ '/teams/henpen28/' | relative_url }}) | 12 | 77-84 | .478 | 3 | 1st |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 10 | 81-53-1 | .604 | 2 | 1st |
-| [Jack Perkins]({{ '/teams/jackperkins74/' | relative_url }}) | 12 | 88-73 | .547 | 2 | 1st |
-| [Dillon Drenzek]({{ '/teams/theoceanpulse/' | relative_url }}) | 10 | 83-51-1 | .619 | 1 | 1st |
-| [Zach Zoske]({{ '/teams/zachzoske/' | relative_url }}) | 12 | 80-80-1 | .500 | 1 | 1st |
-| [Fletcher Harvey]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8 | 49-56-2 | .467 | 1 | 1st |
-| [Luke Stein]({{ '/teams/lukstein/' | relative_url }}) | 12 | 75-86 | .466 | 1 | 1st |
-| [Wade Sturman]({{ '/teams/sturmanator15/' | relative_url }}) | 12 | 94-66-1 | .587 | ½ | 1st |
-| [Jono Schirmer]({{ '/teams/schirmerj/' | relative_url }}) | 12 | 80-80-1 | .500 | ½ | 2nd |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2 | 16-10 | .615 | 0 | 5th |
-| [Grant Ganoom]({{ '/teams/gganoom/' | relative_url }}) | 2 | 16-12 | .571 | 0 | 4th |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3 | 19-20 | .487 | 0 | 2nd |
-| [Trevor Gappmayer]({{ '/teams/purpsworth/' | relative_url }}) | 7 | 44-52 | .458 | 0 | 2nd |
-| [Kevin Graczyk]({{ '/teams/kevbots22/' | relative_url }}) | 12 | 64-96-1 | .401 | 0 | 2nd |
-| [Nate Appel]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 12 | 62-99 | .385 | 0 | 4th |
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 2 | 8-18 | .308 | 0 | 9th |
+| [Henry Stefan]({{ '/teams/henpen28/' | relative_url }}) | 12 | 77-84 | <span class="chip" style="background:#f1e7e4">.478</span> | 3 | 1st |
+| [Shawnee Perkins]({{ '/teams/shawne2520997/' | relative_url }}) | 10 | 81-53-1 | <span class="chip" style="background:#c0ddcd">.604</span> | 2 | 1st |
+| [Jack Perkins]({{ '/teams/jackperkins74/' | relative_url }}) | 12 | 88-73 | <span class="chip" style="background:#dae8de">.547</span> | 2 | 1st |
+| [Dillon Drenzek]({{ '/teams/theoceanpulse/' | relative_url }}) | 10 | 83-51-1 | <span class="chip" style="background:#badac9">.619</span> | 1 | 1st |
+| [Zach Zoske]({{ '/teams/zachzoske/' | relative_url }}) | 12 | 80-80-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 1 | 1st |
+| [Fletcher Harvey]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8 | 49-56-2 | <span class="chip" style="background:#f0e2df">.467</span> | 1 | 1st |
+| [Luke Stein]({{ '/teams/lukstein/' | relative_url }}) | 12 | 75-86 | <span class="chip" style="background:#f0e1de">.466</span> | 1 | 1st |
+| [Wade Sturman]({{ '/teams/sturmanator15/' | relative_url }}) | 12 | 94-66-1 | <span class="chip" style="background:#c7e0d2">.587</span> | ½ | 1st |
+| [Jono Schirmer]({{ '/teams/schirmerj/' | relative_url }}) | 12 | 80-80-1 | <span class="chip" style="background:#f4f3f0">.500</span> | ½ | 2nd |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2 | 16-10 | <span class="chip" style="background:#bbdbc9">.615</span> | 0 | 5th |
+| [Grant Ganoom]({{ '/teams/gganoom/' | relative_url }}) | 2 | 16-12 | <span class="chip" style="background:#cee3d6">.571</span> | 0 | 4th |
+| [Odie Olsen]({{ '/teams/master-otis/' | relative_url }}) | 3 | 19-20 | <span class="chip" style="background:#f2ebe8">.487</span> | 0 | 2nd |
+| [Trevor Gappmayer]({{ '/teams/purpsworth/' | relative_url }}) | 7 | 44-52 | <span class="chip" style="background:#f0dedb">.458</span> | 0 | 2nd |
+| [Kevin Graczyk]({{ '/teams/kevbots22/' | relative_url }}) | 12 | 64-96-1 | <span class="chip" style="background:#ebc6c3">.401</span> | 0 | 2nd |
+| [Nate Appel]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 12 | 62-99 | <span class="chip" style="background:#eac1bd">.385</span> | 0 | 4th |
+| [Anthony Stewart]({{ '/teams/ajstewart04/' | relative_url }}) | 2 | 8-18 | <span class="chip" style="background:#e4a5a1">.308</span> | 0 | 9th |

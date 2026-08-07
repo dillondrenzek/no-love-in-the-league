@@ -7,6 +7,8 @@ permalink: /teams/unclebadtouch38/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: Mr.  Irrelevant</p>
+
 🏆 **1× Champion** (2020) · 8× Playoffs
 
 **All-time regular season:** 49-56-2 (.467) · **Playoffs:** 10-14 · **Seasons:** 8 · **Best finish:** 1st · **Points for/against:** 9652.6 / 10319.4
@@ -15,29 +17,29 @@ permalink: /teams/unclebadtouch38/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2023 | Mr.  Irrelevant | 12th | 4-10 | 1297.6 | 1554.6 |
-| 2022 | Mr.  Irrelevant | 8th | 7-7 | 1144.5 | 1290.3 |
-| 2021 | Set_The_ RAT_TRAP_! | 11th | 4-10 | 1112.9 | 1392.7 |
-| 2020 | Set_The_ RAT_TRAP_! | 1st | 9-4 | 1389.2 | 1265.1 |
-| 2019 | Set_The_ RAT_TRAP_! | 10th | 5-7-1 | 1036.2 | 1215.5 |
-| 2018 | Cleveland Mcpussysmasher | 7th | 7-6 | 1327.9 | 1210.7 |
-| 2017 | Cleveland Mcpussysmasher | 4th | 6-6-1 | 1105.6 | 1120.6 |
-| 2016 | Cleveland Mcpussysmasher | 5th | 7-6 | 1238.7 | 1269.9 |
+| 2023 | Mr.  Irrelevant | 12th | 4-10 | <span class="chip" style="background:#e37b57">1297.6</span> | 1554.6 |
+| 2022 | Mr.  Irrelevant | 8th | 7-7 | <span class="chip" style="background:#f4bba6">1144.5</span> | 1290.3 |
+| 2021 | Set_The_ RAT_TRAP_! | 11th | 4-10 | <span class="chip" style="background:#f6cbb9">1112.9</span> | 1392.7 |
+| 2020 | Set_The_ RAT_TRAP_! | <span class="star">★</span> 1st | 9-4 | <span class="chip" style="background:#d65a30">1389.2</span> | 1265.1 |
+| 2019 | Set_The_ RAT_TRAP_! | 10th | 5-7-1 | <span class="chip" style="background:#faf1e9">1036.2</span> | 1215.5 |
+| 2018 | Cleveland Mcpussysmasher | 7th | 7-6 | <span class="chip" style="background:#df704a">1327.9</span> | 1210.7 |
+| 2017 | Cleveland Mcpussysmasher | 4th | 6-6-1 | <span class="chip" style="background:#f6cebe">1105.6</span> | 1120.6 |
+| 2016 | Cleveland Mcpussysmasher | 5th | 7-6 | <span class="chip" style="background:#ec9070">1238.7</span> | 1269.9 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 4-0 | 1.000 | 111.9 | 85.3 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-5 | .500 | 80.2 | 86.7 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 6-8 | .429 | 86.4 | 96.0 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 5-4 | .556 | 94.8 | 100.7 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 4-5 | .444 | 88.9 | 93.1 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 3-6 | .333 | 84.2 | 102.1 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 7-11 | .389 | 99.8 | 98.2 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 5-5 | .500 | 104.3 | 100.9 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-0 | 1.000 | 104.5 | 73.0 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 3-10-1 | .250 | 77.8 | 103.2 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-6 | .455 | 89.3 | 99.5 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 4-6 | .400 | 84.2 | 98.8 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 6-4-1 | .591 | 99.0 | 95.4 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 4-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 111.9 | 85.3 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-5 | <span class="chip" style="background:#f4f3f0">.500</span> | 80.2 | 86.7 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 6-8 | <span class="chip" style="background:#edd1ce">.429</span> | 86.4 | 96.0 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 5-4 | <span class="chip" style="background:#d5e6db">.556</span> | 94.8 | 100.7 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 4-5 | <span class="chip" style="background:#eed8d5">.444</span> | 88.9 | 93.1 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 3-6 | <span class="chip" style="background:#e6aeaa">.333</span> | 84.2 | 102.1 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 7-11 | <span class="chip" style="background:#eac2bf">.389</span> | 99.8 | 98.2 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 5-5 | <span class="chip" style="background:#f4f3f0">.500</span> | 104.3 | 100.9 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 104.5 | 73.0 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 3-10-1 | <span class="chip" style="background:#e0918e">.250</span> | 77.8 | 103.2 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-6 | <span class="chip" style="background:#efdcd9">.455</span> | 89.3 | 99.5 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 4-6 | <span class="chip" style="background:#ebc6c3">.400</span> | 84.2 | 98.8 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 6-4-1 | <span class="chip" style="background:#c6dfd1">.591</span> | 99.0 | 95.4 |

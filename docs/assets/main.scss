@@ -20,10 +20,10 @@
   --rule: #e7e4de;        // thin row dividers
   --rule-strong: #1a1a1a; // header underline / section rules
   --brand: #d94f30;       // links, accents
-  --row-hover: #faf6f1;   // warm hover
+  --row-hover: #faf7f3;   // warm hover
   --bg: #ffffff;
-  --mono: "Roboto Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --sans: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -171,8 +171,32 @@ td[style*="right"] {
 th[style*="right"] { color: var(--muted); font-size: 0.68rem; }
 
 // Bold the primary link in a row (team / owner names).
-tbody td a { font-weight: 700; color: var(--ink); }
+tbody td a { font-weight: 600; color: var(--ink); }
 tbody td a:hover { color: var(--brand); }
+
+// ---- Value chips (heat / win-loss) ------------------------------------------
+.chip {
+  display: inline-block;
+  min-width: 3.7em;
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #33251c;
+  text-align: right;
+}
+
+// Champion marker in the standings finish column.
+.star { color: var(--brand); font-size: 0.8rem; }
+
+// Monospace subtitle under an owner-page title (their latest team name).
+.owner-sub {
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: -0.4em 0 1.4em;
+}
 
 // ---- Trophy line / stats line -----------------------------------------------
 .post-content strong { font-weight: 700; }

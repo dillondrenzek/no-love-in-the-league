@@ -7,6 +7,8 @@ permalink: /teams/henpen28/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: Dump it on my Chest</p>
+
 🏆 **3× Champion** (2014, 2017, 2022) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
 
 **All-time regular season:** 77-84 (.478) · **Playoffs:** 21-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16045.8 / 16173.5
@@ -15,35 +17,35 @@ permalink: /teams/henpen28/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | Dump it on my Chest | 7th | 5-9 | 1411.9 | 1606.0 |
-| 2024 | Three's Company | 6th | 9-5 | 1644.2 | 1603.1 |
-| 2023 | Three's Company | 2nd | 7-7 | 1569.6 | 1605.2 |
-| 2022 | Consensual Trades | 1st | 7-7 | 1360.5 | 1300.7 |
-| 2021 | Scat Play | 3rd | 11-3 | 1490.0 | 1327.2 |
-| 2020 | Scat Play | 10th | 4-9 | 1163.4 | 1318.5 |
-| 2019 | Tom Brady's Fluffer | 11th | 4-9 | 1288.2 | 1320.7 |
-| 2018 | Tom Brady's Fluffer | 6th | 8-5 | 1309.2 | 1255.2 |
-| 2017 | Forceable Entry | 1st | 6-7 | 1155.7 | 1134.6 |
-| 2016 | Forceable Entry | 11th | 5-8 | 1229.8 | 1201.5 |
-| 2015 | Jared's  Kids | 8th | 4-9 | 1086.2 | 1207.2 |
-| 2014 | Uncle Grabby | 1st | 7-6 | 1337.1 | 1293.6 |
+| 2025 | Dump it on my Chest | 7th | 5-9 | <span class="chip" style="background:#ec8e6e">1411.9</span> | 1606.0 |
+| 2024 | Three's Company | 6th | 9-5 | <span class="chip" style="background:#d65a30">1644.2</span> | 1603.1 |
+| 2023 | Three's Company | 2nd | 7-7 | <span class="chip" style="background:#dd6b44">1569.6</span> | 1605.2 |
+| 2022 | Consensual Trades | <span class="star">★</span> 1st | 7-7 | <span class="chip" style="background:#f09a7d">1360.5</span> | 1300.7 |
+| 2021 | Scat Play | 3rd | 11-3 | <span class="chip" style="background:#e47d59">1490.0</span> | 1327.2 |
+| 2020 | Scat Play | 10th | 4-9 | <span class="chip" style="background:#f7d9cb">1163.4</span> | 1318.5 |
+| 2019 | Tom Brady's Fluffer | 11th | 4-9 | <span class="chip" style="background:#f3b199">1288.2</span> | 1320.7 |
+| 2018 | Tom Brady's Fluffer | 6th | 8-5 | <span class="chip" style="background:#f2ab91">1309.2</span> | 1255.2 |
+| 2017 | Forceable Entry | <span class="star">★</span> 1st | 6-7 | <span class="chip" style="background:#f8dbce">1155.7</span> | 1134.6 |
+| 2016 | Forceable Entry | 11th | 5-8 | <span class="chip" style="background:#f5c4b0">1229.8</span> | 1201.5 |
+| 2015 | Jared's  Kids | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1086.2</span> | 1207.2 |
+| 2014 | Uncle Grabby | <span class="star">★</span> 1st | 7-6 | <span class="chip" style="background:#f1a286">1337.1</span> | 1293.6 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-1 | .500 | 116.7 | 99.4 |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-3 | .400 | 79.2 | 81.7 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 6-10 | .375 | 102.3 | 108.4 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8-6 | .571 | 96.0 | 86.4 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | .500 | 103.5 | 112.2 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 7-9 | .438 | 93.6 | 99.0 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 5-8 | .385 | 105.8 | 106.9 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 12-11 | .522 | 99.8 | 97.3 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 10-7 | .588 | 98.9 | 100.2 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 9-7 | .562 | 98.0 | 99.0 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 4-3 | .571 | 93.8 | 101.3 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 8-10 | .444 | 100.3 | 99.5 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 7-4 | .636 | 99.9 | 96.1 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 7-10 | .412 | 98.4 | 99.1 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 11-7 | .611 | 103.9 | 101.5 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 116.7 | 99.4 |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-3 | <span class="chip" style="background:#ebc6c3">.400</span> | 79.2 | 81.7 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 6-10 | <span class="chip" style="background:#e9bdba">.375</span> | 102.3 | 108.4 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 8-6 | <span class="chip" style="background:#cee3d6">.571</span> | 96.0 | 86.4 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 103.5 | 112.2 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 7-9 | <span class="chip" style="background:#eed5d2">.438</span> | 93.6 | 99.0 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 5-8 | <span class="chip" style="background:#eac0bd">.385</span> | 105.8 | 106.9 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 12-11 | <span class="chip" style="background:#e6ede7">.522</span> | 99.8 | 97.3 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 10-7 | <span class="chip" style="background:#c7e0d1">.588</span> | 98.9 | 100.2 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 9-7 | <span class="chip" style="background:#d2e4d9">.562</span> | 98.0 | 99.0 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 4-3 | <span class="chip" style="background:#cee3d6">.571</span> | 93.8 | 101.3 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 8-10 | <span class="chip" style="background:#eed8d5">.444</span> | 100.3 | 99.5 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 7-4 | <span class="chip" style="background:#b2d7c4">.636</span> | 99.9 | 96.1 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 7-10 | <span class="chip" style="background:#eccbc7">.412</span> | 98.4 | 99.1 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 11-7 | <span class="chip" style="background:#bddbcb">.611</span> | 103.9 | 101.5 |

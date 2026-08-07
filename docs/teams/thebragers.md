@@ -7,6 +7,8 @@ permalink: /teams/thebragers/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: The Bragers</p>
+
 2× Playoffs
 
 **All-time regular season:** 16-10 (.615) · **Playoffs:** 2-4 · **Seasons:** 2 · **Best finish:** 5th · **Points for/against:** 2417.5 / 2452.0
@@ -15,19 +17,19 @@ permalink: /teams/thebragers/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2015 | The Bragers | 6th | 9-4 | 1219.6 | 1263.5 |
-| 2014 | Team TheBragers | 5th | 7-6 | 1197.9 | 1188.5 |
+| 2015 | The Bragers | 6th | 9-4 | <span class="chip" style="background:#d65a30">1219.6</span> | 1263.5 |
+| 2014 | Team TheBragers | 5th | 7-6 | <span class="chip" style="background:#faf1e9">1197.9</span> | 1188.5 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 3-2 | .600 | 81.7 | 79.2 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-2 | .600 | 103.6 | 108.3 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 2-2 | .500 | 88.7 | 101.0 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 3-1 | .750 | 95.7 | 96.4 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 4-0 | 1.000 | 77.7 | 52.7 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 2-0 | 1.000 | 96.0 | 70.5 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 1-3 | .250 | 87.7 | 115.2 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 0-2 | .000 | 80.9 | 126.7 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 0-2 | .000 | 85.0 | 107.4 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 3-2 | <span class="chip" style="background:#c2ddce">.600</span> | 81.7 | 79.2 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-2 | <span class="chip" style="background:#c2ddce">.600</span> | 103.6 | 108.3 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 2-2 | <span class="chip" style="background:#f4f3f0">.500</span> | 88.7 | 101.0 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 3-1 | <span class="chip" style="background:#86c4a6">.750</span> | 95.7 | 96.4 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 4-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 77.7 | 52.7 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 2-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 96.0 | 70.5 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 1-3 | <span class="chip" style="background:#e0918e">.250</span> | 87.7 | 115.2 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 0-2 | <span class="chip" style="background:#d0433f">.000</span> | 80.9 | 126.7 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 0-2 | <span class="chip" style="background:#d0433f">.000</span> | 85.0 | 107.4 |

@@ -7,6 +7,8 @@ permalink: /teams/jackperkins74/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: Pukkake</p>
+
 🏆 **2× Champion** (2015, 2025) · 🥈 1× Runner-Up · 🥉 2× Third · 12× Playoffs
 
 **All-time regular season:** 88-73 (.547) · **Playoffs:** 20-13 · **Seasons:** 12 · **Best finish:** 1st · **Points for/against:** 16922.9 / 16331.9
@@ -15,35 +17,35 @@ permalink: /teams/jackperkins74/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | Pukkake | 1st | 9-5 | 1769.9 | 1579.4 |
-| 2024 | Pukkake | 3rd | 7-7 | 1661.3 | 1686.1 |
-| 2023 | Vinegar Strokes | 7th | 7-7 | 1522.5 | 1610.4 |
-| 2022 | Allen's Deep Balls | 6th | 10-4 | 1535.0 | 1340.4 |
-| 2021 | Jackie PooPooPants | 5th | 7-7 | 1428.8 | 1315.6 |
-| 2020 | Ram It In | 12th | 5-8 | 1278.1 | 1296.8 |
-| 2019 | Vladimir Putin | 3rd | 6-7 | 1197.1 | 1160.2 |
-| 2018 | Mixon's Gurley Fight Club | 2nd | 11-2 | 1581.3 | 1444.2 |
-| 2017 | Jacking Goff | 5th | 6-7 | 1220.5 | 1170.3 |
-| 2016 | The Toddfather | 4th | 8-5 | 1255.4 | 1208.1 |
-| 2015 | Jenner's Man Meat | 1st | 6-7 | 1218.3 | 1187.3 |
-| 2014 | Turn down for Watt | 9th | 6-7 | 1254.7 | 1333.1 |
+| 2025 | Pukkake | <span class="star">★</span> 1st | 9-5 | <span class="chip" style="background:#d65a30">1769.9</span> | 1579.4 |
+| 2024 | Pukkake | 3rd | 7-7 | <span class="chip" style="background:#e0724c">1661.3</span> | 1686.1 |
+| 2023 | Vinegar Strokes | 7th | 7-7 | <span class="chip" style="background:#ec9071">1522.5</span> | 1610.4 |
+| 2022 | Allen's Deep Balls | 6th | 10-4 | <span class="chip" style="background:#eb8e6e">1535.0</span> | 1340.4 |
+| 2021 | Jackie PooPooPants | 5th | 7-7 | <span class="chip" style="background:#f2aa90">1428.8</span> | 1315.6 |
+| 2020 | Ram It In | 12th | 5-8 | <span class="chip" style="background:#f7d8ca">1278.1</span> | 1296.8 |
+| 2019 | Vladimir Putin | 3rd | 6-7 | <span class="chip" style="background:#faf1e9">1197.1</span> | 1160.2 |
+| 2018 | Mixon's Gurley Fight Club | 2nd | 11-2 | <span class="chip" style="background:#e78361">1581.3</span> | 1444.2 |
+| 2017 | Jacking Goff | 5th | 6-7 | <span class="chip" style="background:#f9eae0">1220.5</span> | 1170.3 |
+| 2016 | The Toddfather | 4th | 8-5 | <span class="chip" style="background:#f8dfd3">1255.4</span> | 1208.1 |
+| 2015 | Jenner's Man Meat | <span class="star">★</span> 1st | 6-7 | <span class="chip" style="background:#f9eae1">1218.3</span> | 1187.3 |
+| 2014 | Turn down for Watt | 9th | 6-7 | <span class="chip" style="background:#f8dfd3">1254.7</span> | 1333.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 2-0 | 1.000 | 125.1 | 97.3 |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-3 | .400 | 108.3 | 103.6 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 10-8 | .556 | 103.8 | 107.8 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 4-5 | .444 | 100.7 | 94.8 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 3-0 | 1.000 | 142.2 | 112.2 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 9-7 | .562 | 99.0 | 93.6 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 13-9 | .591 | 112.9 | 101.5 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 16-3 | .842 | 115.4 | 95.4 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 11-10 | .524 | 98.1 | 99.4 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 9-8 | .529 | 108.0 | 104.2 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3-3 | .500 | 90.3 | 94.7 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 7-6 | .538 | 103.3 | 100.5 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 7-7 | .500 | 105.8 | 103.7 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 8-5 | .615 | 102.5 | 97.4 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 4-12 | .250 | 98.4 | 108.0 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 2-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 125.1 | 97.3 |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-3 | <span class="chip" style="background:#ebc6c3">.400</span> | 108.3 | 103.6 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 10-8 | <span class="chip" style="background:#d5e6db">.556</span> | 103.8 | 107.8 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 4-5 | <span class="chip" style="background:#eed8d5">.444</span> | 100.7 | 94.8 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 3-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 142.2 | 112.2 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 9-7 | <span class="chip" style="background:#d2e4d9">.562</span> | 99.0 | 93.6 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 13-9 | <span class="chip" style="background:#c6dfd1">.591</span> | 112.9 | 101.5 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 16-3 | <span class="chip" style="background:#65b58f">.842</span> | 115.4 | 95.4 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 11-10 | <span class="chip" style="background:#e5ede6">.524</span> | 98.1 | 99.4 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 9-8 | <span class="chip" style="background:#e2ebe4">.529</span> | 108.0 | 104.2 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 3-3 | <span class="chip" style="background:#f4f3f0">.500</span> | 90.3 | 94.7 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 7-6 | <span class="chip" style="background:#dee9e1">.538</span> | 103.3 | 100.5 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 7-7 | <span class="chip" style="background:#f4f3f0">.500</span> | 105.8 | 103.7 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 8-5 | <span class="chip" style="background:#bbdbc9">.615</span> | 102.5 | 97.4 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 4-12 | <span class="chip" style="background:#e0918e">.250</span> | 98.4 | 108.0 |

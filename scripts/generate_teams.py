@@ -13,6 +13,7 @@ from pathlib import Path
 from lib.data import load_franchises, load_seasons
 from lib.teams import compute_profiles, win_pct, rec_str, fmt_titles, split_titles
 from lib.rulings import load_overrides
+from lib.render import heat_chip, winpct_chip
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "teams"
@@ -53,7 +54,8 @@ def index_page(profiles):
         link = f"[{p['name']}]({{{{ '/teams/{p['id']}/' | relative_url }}}})"
         lines.append(
             f"| {link} | {p['seasons_count']} | {rec_str(reg['w'], reg['l'], reg['t'])} "
-            f"| {pct(reg['win_pct'])} | {fmt_titles(p['titles'])} | {ordinal(p['best_finish'])} |"
+            f"| {winpct_chip(reg['win_pct'], pct(reg['win_pct']))} "
+            f"| {fmt_titles(p['titles'])} | {ordinal(p['best_finish'])} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -81,11 +83,16 @@ def season_table(p):
         "| Season | Team | Finish | Record | PF | PA |",
         "|:--|:--|:--|:--|--:|--:|",
     ]
+    pfs = [s["pf"] for s in p["seasons"] if s["pf"] is not None]
+    lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
     for s in p["seasons"]:
-        pf = s["pf"] if s["pf"] is not None else "—"
+        pf = heat_chip(s["pf"], lo, hi) if s["pf"] is not None else "—"
         pa = s["pa"] if s["pa"] is not None else "—"
+        finish = ordinal(s["finish"])
+        if s["finish"] == 1:
+            finish = f'<span class="star">★</span> {finish}'
         lines.append(
-            f"| {s['year']} | {s['team']} | {ordinal(s['finish'])} | {s['record']} | {pf} | {pa} |"
+            f"| {s['year']} | {s['team']} | {finish} | {s['record']} | {pf} | {pa} |"
         )
     return "\n".join(lines)
 
@@ -101,8 +108,9 @@ def h2h_table(p, profiles):
         games = r["w"] + r["l"] + r["t"]
         opp = profiles[oid]
         link = f"[{opp['short']}]({{{{ '/teams/{oid}/' | relative_url }}}})"
+        wp = win_pct(r["w"], r["l"], r["t"])
         lines.append(
-            f"| {link} | {rec_str(r['w'], r['l'], r['t'])} | {pct(win_pct(r['w'], r['l'], r['t']))} "
+            f"| {link} | {rec_str(r['w'], r['l'], r['t'])} | {winpct_chip(wp, pct(wp))} "
             f"| {r['pf'] / games:.1f} | {r['pa'] / games:.1f} |"
         )
     return "\n".join(lines)
@@ -113,6 +121,7 @@ def owner_page(p, profiles):
     pl = p["playoff"]
     all_time = rec_str(reg["w"], reg["l"], reg["t"])
     playoff_line = rec_str(pl["w"], pl["l"], pl["t"]) if (pl["w"] + pl["l"] + pl["t"]) else "—"
+    latest_team = p["seasons"][0]["team"] if p["seasons"] else ""
     return f"""---
 layout: page
 title: {p['name']}
@@ -121,6 +130,8 @@ permalink: /teams/{p['id']}/
 {GEN}
 
 [← All owners]({{{{ '/teams/' | relative_url }}}})
+
+<p class="owner-sub">Most recent: {latest_team}</p>
 
 {trophy_case(p)}
 

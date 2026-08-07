@@ -7,6 +7,8 @@ permalink: /teams/kevbots22/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: Keeping up with the McCalferies</p>
+
 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
 
 **All-time regular season:** 64-96-1 (.401) · **Playoffs:** 19-15 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 15759.4 / 16549.2
@@ -15,35 +17,35 @@ permalink: /teams/kevbots22/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | Keeping up with the McCalferies | 2nd | 10-4 | 1626.2 | 1504.3 |
-| 2024 | Tom Bradys Only Fans  | 11th | 2-12 | 1428.1 | 1667.3 |
-| 2023 | Tom Bradys Only Fans  | 8th | 4-10 | 1507.9 | 1608.6 |
-| 2022 | Naggar's In Paris | 9th | 2-12 | 1222.3 | 1398.7 |
-| 2021 | Fantasy Judas | 4th | 7-6-1 | 1334.7 | 1395.1 |
-| 2020 | Fantasy Judas | 4th | 8-5 | 1357.0 | 1148.6 |
-| 2019 | The Antonio ClownExperience | 9th | 4-9 | 1181.7 | 1411.7 |
-| 2018 | Team Kevin  with a K | 10th | 4-9 | 1210.9 | 1446.7 |
-| 2017 | Russian  Roiders  | 6th | 7-6 | 1228.6 | 1187.0 |
-| 2016 | Russian  Roiders  | 9th | 4-9 | 1177.7 | 1353.8 |
-| 2015 | MasterDeflater  And_Commander | 10th | 5-8 | 1115.0 | 1259.0 |
-| 2014 | Luck her right  in the Pussy | 3rd | 7-6 | 1369.3 | 1168.4 |
+| 2025 | Keeping up with the McCalferies | 2nd | 10-4 | <span class="chip" style="background:#d65a30">1626.2</span> | 1504.3 |
+| 2024 | Tom Bradys Only Fans  | 11th | 2-12 | <span class="chip" style="background:#ea8b6a">1428.1</span> | 1667.3 |
+| 2023 | Tom Bradys Only Fans  | 8th | 4-10 | <span class="chip" style="background:#e27753">1507.9</span> | 1608.6 |
+| 2022 | Naggar's In Paris | 9th | 2-12 | <span class="chip" style="background:#f6ccbb">1222.3</span> | 1398.7 |
+| 2021 | Fantasy Judas | 4th | 7-6-1 | <span class="chip" style="background:#f1a58a">1334.7</span> | 1395.1 |
+| 2020 | Fantasy Judas | 4th | 8-5 | <span class="chip" style="background:#f19e81">1357.0</span> | 1148.6 |
+| 2019 | The Antonio ClownExperience | 9th | 4-9 | <span class="chip" style="background:#f7dacc">1181.7</span> | 1411.7 |
+| 2018 | Team Kevin  with a K | 10th | 4-9 | <span class="chip" style="background:#f6d0c0">1210.9</span> | 1446.7 |
+| 2017 | Russian  Roiders  | 6th | 7-6 | <span class="chip" style="background:#f6cab8">1228.6</span> | 1187.0 |
+| 2016 | Russian  Roiders  | 9th | 4-9 | <span class="chip" style="background:#f8dbce">1177.7</span> | 1353.8 |
+| 2015 | MasterDeflater  And_Commander | 10th | 5-8 | <span class="chip" style="background:#faf1e9">1115.0</span> | 1259.0 |
+| 2014 | Luck her right  in the Pussy | 3rd | 7-6 | <span class="chip" style="background:#f0997c">1369.3</span> | 1168.4 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 3-0 | 1.000 | 112.6 | 74.3 |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 1-3 | .250 | 96.4 | 95.7 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 3-8 | .273 | 96.6 | 111.4 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-3 | .667 | 102.1 | 84.2 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | .500 | 108.8 | 91.0 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 11-12 | .478 | 97.3 | 99.8 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-16 | .158 | 95.4 | 115.4 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 12-5 | .706 | 106.1 | 94.6 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 12-5 | .706 | 108.4 | 95.7 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 8-8 | .500 | 98.9 | 100.2 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-5 | .286 | 89.2 | 108.0 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 6-13 | .316 | 101.4 | 106.2 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 4-6 | .400 | 98.1 | 118.8 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 4-18-1 | .196 | 86.1 | 97.9 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 7-8 | .467 | 97.3 | 103.3 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 3-0 | <span class="chip" style="background:#2e9e6a">1.000</span> | 112.6 | 74.3 |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 1-3 | <span class="chip" style="background:#e0918e">.250</span> | 96.4 | 95.7 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 3-8 | <span class="chip" style="background:#e29995">.273</span> | 96.6 | 111.4 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-3 | <span class="chip" style="background:#a6d2bb">.667</span> | 102.1 | 84.2 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 108.8 | 91.0 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 11-12 | <span class="chip" style="background:#f1e7e4">.478</span> | 97.3 | 99.8 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 3-16 | <span class="chip" style="background:#da7470">.158</span> | 95.4 | 115.4 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 12-5 | <span class="chip" style="background:#97cbb1">.706</span> | 106.1 | 94.6 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 12-5 | <span class="chip" style="background:#97cbb1">.706</span> | 108.4 | 95.7 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 8-8 | <span class="chip" style="background:#f4f3f0">.500</span> | 98.9 | 100.2 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-5 | <span class="chip" style="background:#e29d9a">.286</span> | 89.2 | 108.0 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 6-13 | <span class="chip" style="background:#e5a8a4">.316</span> | 101.4 | 106.2 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 4-6 | <span class="chip" style="background:#ebc6c3">.400</span> | 98.1 | 118.8 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 4-18-1 | <span class="chip" style="background:#dc807c">.196</span> | 86.1 | 97.9 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 7-8 | <span class="chip" style="background:#f0e1de">.467</span> | 97.3 | 103.3 |

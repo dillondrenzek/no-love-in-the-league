@@ -8,6 +8,7 @@ from pathlib import Path
 
 from lib.data import load_franchises, load_seasons, owner_link
 from lib.standings import get_standings, has_points
+from lib.render import heat_chip
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = ROOT / "docs" / "standings" / "index.md"
@@ -22,11 +23,17 @@ def season_table(season, franchises):
     header = "| Finish | Team | Record |" + (" PF | PA |" if points else "")
     sep = "|:--|:--|:--|" + ("--:|--:|" if points else "")
     lines = [f"### {season['season']}", "", header, sep]
+
+    pfs = [r["points_for"] for r in rows if r["points_for"] is not None]
+    lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
+
     for r in rows:
         team = owner_link(r["id"], r["name"], franchises)
-        line = f"| {r['finish']} | {team} | {r['record']} |"
+        finish = f'<span class="star">★</span> {r["finish"]}' if r["finish"] == 1 else str(r["finish"])
+        line = f"| {finish} | {team} | {r['record']} |"
         if points:
-            line += f" {r['points_for']} | {r['points_against']} |"
+            pf = heat_chip(r["points_for"], lo, hi)
+            line += f" {pf} | {r['points_against']} |"
         lines.append(line)
     return "\n".join(lines)
 

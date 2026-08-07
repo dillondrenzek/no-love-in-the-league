@@ -7,6 +7,8 @@ permalink: /teams/purpsworth/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: I am dead inside</p>
+
 🥈 1× Runner-Up · 🥉 1× Third · 7× Playoffs
 
 **All-time regular season:** 44-52 (.458) · **Playoffs:** 11-9 · **Seasons:** 7 · **Best finish:** 2nd · **Points for/against:** 10075.1 / 10104.0
@@ -15,27 +17,27 @@ permalink: /teams/purpsworth/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | I am dead inside | 3rd | 6-8 | 1566.2 | 1526.0 |
-| 2024 | I am dead inside | 9th | 5-9 | 1606.7 | 1663.6 |
-| 2023 | Used Napkin | 6th | 9-5 | 1714.6 | 1505.6 |
-| 2022 | Used Napkin | 7th | 7-7 | 1355.2 | 1319.5 |
-| 2021 | WA Fantasy Football Team | 2nd | 7-7 | 1372.6 | 1433.8 |
-| 2020 | AB’s Helmet | 7th | 6-7 | 1219.5 | 1311.4 |
-| 2019 | AB’s Helmet | 12th | 4-9 | 1240.3 | 1344.1 |
+| 2025 | I am dead inside | 3rd | 6-8 | <span class="chip" style="background:#e6805d">1566.2</span> | 1526.0 |
+| 2024 | I am dead inside | 9th | 5-9 | <span class="chip" style="background:#e17551">1606.7</span> | 1663.6 |
+| 2023 | Used Napkin | 6th | 9-5 | <span class="chip" style="background:#d65a30">1714.6</span> | 1505.6 |
+| 2022 | Used Napkin | 7th | 7-7 | <span class="chip" style="background:#f5c1ad">1355.2</span> | 1319.5 |
+| 2021 | WA Fantasy Football Team | 2nd | 7-7 | <span class="chip" style="background:#f4bba5">1372.6</span> | 1433.8 |
+| 2020 | AB’s Helmet | 7th | 6-7 | <span class="chip" style="background:#faf1e9">1219.5</span> | 1311.4 |
+| 2019 | AB’s Helmet | 12th | 4-9 | <span class="chip" style="background:#f9eae0">1240.3</span> | 1344.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-10 | .333 | 100.7 | 108.5 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-5 | .545 | 99.5 | 89.3 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-3 | .400 | 105.9 | 116.5 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 4-7 | .364 | 96.1 | 99.9 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 7-7 | .500 | 103.7 | 105.8 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 4-5 | .444 | 111.5 | 113.8 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 6-4 | .600 | 118.8 | 98.1 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 2-5 | .286 | 109.0 | 109.0 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 8-1 | .889 | 106.1 | 91.8 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 1-8 | .111 | 97.1 | 112.7 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 5-3 | .625 | 110.3 | 100.2 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 5-3 | .625 | 113.9 | 102.4 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-10 | <span class="chip" style="background:#e6aeaa">.333</span> | 100.7 | 108.5 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-5 | <span class="chip" style="background:#dae8df">.545</span> | 99.5 | 89.3 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 2-3 | <span class="chip" style="background:#ebc6c3">.400</span> | 105.9 | 116.5 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 4-7 | <span class="chip" style="background:#e8b9b5">.364</span> | 96.1 | 99.9 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 7-7 | <span class="chip" style="background:#f4f3f0">.500</span> | 103.7 | 105.8 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 4-5 | <span class="chip" style="background:#eed8d5">.444</span> | 111.5 | 113.8 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 6-4 | <span class="chip" style="background:#c2ddce">.600</span> | 118.8 | 98.1 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 2-5 | <span class="chip" style="background:#e29d9a">.286</span> | 109.0 | 109.0 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 8-1 | <span class="chip" style="background:#54ae84">.889</span> | 106.1 | 91.8 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 1-8 | <span class="chip" style="background:#d76561">.111</span> | 97.1 | 112.7 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 5-3 | <span class="chip" style="background:#b7d9c7">.625</span> | 110.3 | 100.2 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 5-3 | <span class="chip" style="background:#b7d9c7">.625</span> | 113.9 | 102.4 |

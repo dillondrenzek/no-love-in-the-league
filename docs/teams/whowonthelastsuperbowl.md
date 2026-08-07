@@ -7,6 +7,8 @@ permalink: /teams/whowonthelastsuperbowl/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: Trick or Trick It’s Mike Vick</p>
+
 12× Playoffs
 
 **All-time regular season:** 62-99 (.385) · **Playoffs:** 12-24 · **Seasons:** 12 · **Best finish:** 4th · **Points for/against:** 15662.5 / 16925.5
@@ -15,35 +17,35 @@ permalink: /teams/whowonthelastsuperbowl/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | Trick or Trick It’s Mike Vick | 9th | 3-11 | 1445.6 | 1675.7 |
-| 2024 | Trick or Trick It’s Mike Vick | 10th | 6-8 | 1617.1 | 1794.0 |
-| 2023 | Trick or Trick It’s Mike Vick | 9th | 5-9 | 1566.3 | 1630.8 |
-| 2022 | Trick or Trick It’s Mike Vick | 4th | 7-7 | 1331.2 | 1302.5 |
-| 2021 | Trick or Trick It’s Mike Vick | 8th | 6-8 | 1405.3 | 1450.5 |
-| 2020 | Wadgerach  Sturdellske  | 8th | 6-7 | 1298.8 | 1350.4 |
-| 2019 | Wadgerach  Sturdellske  | 8th | 7-6 | 1201.0 | 1342.3 |
-| 2018 | Wadgerach  Sturdellske  | 9th | 5-8 | 1240.9 | 1378.4 |
-| 2017 | Wadgerach  Sturdellske  | 12th | 4-9 | 1160.5 | 1279.7 |
-| 2016 | Wadgerach  Sturdellske  | 8th | 6-7 | 1299.0 | 1278.2 |
-| 2015 | He's Quick He's Slick He's Mike | 9th | 6-7 | 1176.3 | 1236.9 |
-| 2014 | Haters Gonna Hate | 10th | 1-12 | 920.5 | 1206.1 |
+| 2025 | Trick or Trick It’s Mike Vick | 9th | 3-11 | <span class="chip" style="background:#e37955">1445.6</span> | 1675.7 |
+| 2024 | Trick or Trick It’s Mike Vick | 10th | 6-8 | <span class="chip" style="background:#d65a30">1617.1</span> | 1794.0 |
+| 2023 | Trick or Trick It’s Mike Vick | 9th | 5-9 | <span class="chip" style="background:#da633b">1566.3</span> | 1630.8 |
+| 2022 | Trick or Trick It’s Mike Vick | 4th | 7-7 | <span class="chip" style="background:#eb8e6e">1331.2</span> | 1302.5 |
+| 2021 | Trick or Trick It’s Mike Vick | 8th | 6-8 | <span class="chip" style="background:#e6805e">1405.3</span> | 1450.5 |
+| 2020 | Wadgerach  Sturdellske  | 8th | 6-7 | <span class="chip" style="background:#ee9475">1298.8</span> | 1350.4 |
+| 2019 | Wadgerach  Sturdellske  | 8th | 7-6 | <span class="chip" style="background:#f2aa90">1201.0</span> | 1342.3 |
+| 2018 | Wadgerach  Sturdellske  | 9th | 5-8 | <span class="chip" style="background:#f1a084">1240.9</span> | 1378.4 |
+| 2017 | Wadgerach  Sturdellske  | 12th | 4-9 | <span class="chip" style="background:#f3b49d">1160.5</span> | 1279.7 |
+| 2016 | Wadgerach  Sturdellske  | 8th | 6-7 | <span class="chip" style="background:#ee9474">1299.0</span> | 1278.2 |
+| 2015 | He's Quick He's Slick He's Mike | 9th | 6-7 | <span class="chip" style="background:#f3b098">1176.3</span> | 1236.9 |
+| 2014 | Haters Gonna Hate | 10th | 1-12 | <span class="chip" style="background:#faf1e9">920.5</span> | 1206.1 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 0-4 | .000 | 77.4 | 106.7 |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 0-2 | .000 | 70.5 | 96.0 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 1-10 | .091 | 90.3 | 119.4 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-5 | .500 | 100.9 | 104.3 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 0-3 | .000 | 97.1 | 141.4 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-9 | .438 | 99.0 | 98.0 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 8-9 | .471 | 104.2 | 108.0 |
-| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 11-11 | .500 | 91.6 | 105.7 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 8-8 | .500 | 100.2 | 98.9 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 11-14 | .440 | 90.6 | 98.3 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 1-2 | .333 | 79.8 | 97.2 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 5-12 | .294 | 95.4 | 104.2 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 1-8 | .111 | 91.8 | 106.1 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 8-14 | .364 | 101.3 | 102.5 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 8-12 | .400 | 103.6 | 110.1 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 0-4 | <span class="chip" style="background:#d0433f">.000</span> | 77.4 | 106.7 |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 0-2 | <span class="chip" style="background:#d0433f">.000</span> | 70.5 | 96.0 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 1-10 | <span class="chip" style="background:#d65f5b">.091</span> | 90.3 | 119.4 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-5 | <span class="chip" style="background:#f4f3f0">.500</span> | 100.9 | 104.3 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 0-3 | <span class="chip" style="background:#d0433f">.000</span> | 97.1 | 141.4 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 7-9 | <span class="chip" style="background:#eed5d2">.438</span> | 99.0 | 98.0 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 8-9 | <span class="chip" style="background:#f1e3e0">.471</span> | 104.2 | 108.0 |
+| [Jono]({{ '/teams/schirmerj/' | relative_url }}) | 11-11 | <span class="chip" style="background:#f4f3f0">.500</span> | 91.6 | 105.7 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 8-8 | <span class="chip" style="background:#f4f3f0">.500</span> | 100.2 | 98.9 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 11-14 | <span class="chip" style="background:#eed6d3">.440</span> | 90.6 | 98.3 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 1-2 | <span class="chip" style="background:#e6aeaa">.333</span> | 79.8 | 97.2 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 5-12 | <span class="chip" style="background:#e3a09d">.294</span> | 95.4 | 104.2 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 1-8 | <span class="chip" style="background:#d76561">.111</span> | 91.8 | 106.1 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 8-14 | <span class="chip" style="background:#e8b9b5">.364</span> | 101.3 | 102.5 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 8-12 | <span class="chip" style="background:#ebc6c3">.400</span> | 103.6 | 110.1 |

@@ -7,6 +7,8 @@ permalink: /teams/schirmerj/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
+<p class="owner-sub">Most recent: IDPs Forever</p>
+
 🤝 **Co-Champion** (2016) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs
 
 **All-time regular season:** 80-80-1 (.500) · **Playoffs:** 17-16-1 · **Seasons:** 12 · **Best finish:** 2nd · **Points for/against:** 16618.6 / 16476.4
@@ -15,35 +17,35 @@ permalink: /teams/schirmerj/
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2025 | IDPs Forever | 11th | 5-9 | 1546.0 | 1701.4 |
-| 2024 | 5 Star Men | 2nd | 9-5 | 1764.6 | 1661.4 |
-| 2023 | IDP'd My Pants | 5th | 8-6 | 1658.4 | 1546.3 |
-| 2022 | Make Dalvin Cook Again | 11th | 4-10 | 1317.0 | 1350.7 |
-| 2021 | Post Mahomes | 6th | 8-6 | 1341.1 | 1376.5 |
-| 2020 | Folklore   Bandits | 3rd | 8-5 | 1370.3 | 1305.0 |
-| 2019 | Tank4Picks   . | 5th | 5-7-1 | 1183.5 | 1194.4 |
-| 2018 | Hammed Up   . | 5th | 6-7 | 1311.7 | 1360.6 |
-| 2017 | Browning out   . | 8th | 7-6 | 1375.9 | 1273.8 |
-| 2016 | Lick my Rawls . | 2nd | 9-4 | 1403.8 | 1229.1 |
-| 2015 | Wilson's Magic Water | 5th | 7-6 | 1243.2 | 1210.2 |
-| 2014 | Arian nation . | 8th | 4-9 | 1103.1 | 1267.0 |
+| 2025 | IDPs Forever | 11th | 5-9 | <span class="chip" style="background:#e78462">1546.0</span> | 1701.4 |
+| 2024 | 5 Star Men | 2nd | 9-5 | <span class="chip" style="background:#d65a30">1764.6</span> | 1661.4 |
+| 2023 | IDP'd My Pants | 5th | 8-6 | <span class="chip" style="background:#de6e48">1658.4</span> | 1546.3 |
+| 2022 | Make Dalvin Cook Again | 11th | 4-10 | <span class="chip" style="background:#f4b8a2">1317.0</span> | 1350.7 |
+| 2021 | Post Mahomes | 6th | 8-6 | <span class="chip" style="background:#f3b29a">1341.1</span> | 1376.5 |
+| 2020 | Folklore   Bandits | 3rd | 8-5 | <span class="chip" style="background:#f2aa90">1370.3</span> | 1305.0 |
+| 2019 | Tank4Picks   . | 5th | 5-7-1 | <span class="chip" style="background:#f8dcce">1183.5</span> | 1194.4 |
+| 2018 | Hammed Up   . | 5th | 6-7 | <span class="chip" style="background:#f4b9a4">1311.7</span> | 1360.6 |
+| 2017 | Browning out   . | 8th | 7-6 | <span class="chip" style="background:#f2a88e">1375.9</span> | 1273.8 |
+| 2016 | Lick my Rawls . | 2nd | 9-4 | <span class="chip" style="background:#f1a185">1403.8</span> | 1229.1 |
+| 2015 | Wilson's Magic Water | 5th | 7-6 | <span class="chip" style="background:#f6ccba">1243.2</span> | 1210.2 |
+| 2014 | Arian nation . | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1103.1</span> | 1267.0 |
 
 ## Head-to-head
 
 | Opponent | Record | Win% | Avg PF | Avg PA |
 |:--|:--|--:|--:|--:|
-| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-1 | .500 | 97.1 | 101.2 |
-| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-2 | .500 | 101.0 | 88.7 |
-| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-7-1 | .423 | 106.8 | 103.7 |
-| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-4 | .556 | 93.1 | 88.9 |
-| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | .500 | 126.0 | 141.1 |
-| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 8-5 | .615 | 106.9 | 105.8 |
-| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 9-13 | .409 | 101.5 | 112.9 |
-| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 5-12 | .294 | 94.6 | 106.1 |
-| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 7-9 | .438 | 108.1 | 110.9 |
-| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 11-11 | .500 | 105.7 | 91.6 |
-| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-2 | .500 | 96.3 | 87.2 |
-| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 8-5 | .615 | 112.0 | 102.8 |
-| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-4 | .556 | 113.8 | 111.5 |
-| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 12-11-1 | .521 | 100.0 | 97.1 |
-| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 16-9 | .640 | 106.3 | 102.2 |
+| [Anthony]({{ '/teams/ajstewart04/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 97.1 | 101.2 |
+| [Brady]({{ '/teams/thebragers/' | relative_url }}) | 2-2 | <span class="chip" style="background:#f4f3f0">.500</span> | 101.0 | 88.7 |
+| [Dillon]({{ '/teams/theoceanpulse/' | relative_url }}) | 5-7-1 | <span class="chip" style="background:#edcfcc">.423</span> | 106.8 | 103.7 |
+| [Fletcher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-4 | <span class="chip" style="background:#d5e6db">.556</span> | 93.1 | 88.9 |
+| [Grant]({{ '/teams/gganoom/' | relative_url }}) | 1-1 | <span class="chip" style="background:#f4f3f0">.500</span> | 126.0 | 141.1 |
+| [Henry]({{ '/teams/henpen28/' | relative_url }}) | 8-5 | <span class="chip" style="background:#bbdbc9">.615</span> | 106.9 | 105.8 |
+| [Jack]({{ '/teams/jackperkins74/' | relative_url }}) | 9-13 | <span class="chip" style="background:#eccac6">.409</span> | 101.5 | 112.9 |
+| [Kevin]({{ '/teams/kevbots22/' | relative_url }}) | 5-12 | <span class="chip" style="background:#e3a09d">.294</span> | 94.6 | 106.1 |
+| [Luke]({{ '/teams/lukstein/' | relative_url }}) | 7-9 | <span class="chip" style="background:#eed5d2">.438</span> | 108.1 | 110.9 |
+| [Nate]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 11-11 | <span class="chip" style="background:#f4f3f0">.500</span> | 105.7 | 91.6 |
+| [Odie]({{ '/teams/master-otis/' | relative_url }}) | 2-2 | <span class="chip" style="background:#f4f3f0">.500</span> | 96.3 | 87.2 |
+| [Shawnee]({{ '/teams/shawne2520997/' | relative_url }}) | 8-5 | <span class="chip" style="background:#bbdbc9">.615</span> | 112.0 | 102.8 |
+| [Trevor]({{ '/teams/purpsworth/' | relative_url }}) | 5-4 | <span class="chip" style="background:#d5e6db">.556</span> | 113.8 | 111.5 |
+| [Wade]({{ '/teams/sturmanator15/' | relative_url }}) | 12-11-1 | <span class="chip" style="background:#e7ede7">.521</span> | 100.0 | 97.1 |
+| [Zach]({{ '/teams/zachzoske/' | relative_url }}) | 16-9 | <span class="chip" style="background:#b1d6c3">.640</span> | 106.3 | 102.2 |
