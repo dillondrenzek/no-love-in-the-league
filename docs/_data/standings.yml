@@ -337,6 +337,7 @@ seasons:
     pa: 1554.6
   notes:
   - Playoff field cut back from 8 teams to 6.
+  - Dropped the IDP slot and added a third WR starter.
 - year: 2022
   points: true
   rows:
@@ -450,6 +451,7 @@ seasons:
     pa: 1321.0
   notes:
   - NFL season expanded to 17 games, giving us one more week of fantasy.
+  - Bench expanded from 4 spots to 5.
 - year: 2021
   points: true
   rows:
@@ -561,7 +563,8 @@ seasons:
     pf: 1302.7
     pf_color: '#f3af97'
     pa: 1465.5
-  notes: []
+  notes:
+  - Injured-reserve slots trimmed from 4 to 1.
 - year: 2020
   points: true
   rows:
@@ -673,7 +676,8 @@ seasons:
     pf: 1278.1
     pf_color: '#f1a286'
     pa: 1296.8
-  notes: []
+  notes:
+  - Added injured-reserve (IR) slots.
 - year: 2019
   points: true
   rows:
@@ -1012,6 +1016,7 @@ seasons:
     pa: 1279.7
   notes:
   - Playoff field expanded from 6 teams to 8.
+  - Bench shrank from 7 spots to 4.
   - Anthony joined the league; Odie departed.
 - year: 2016
   points: true
@@ -1126,6 +1131,7 @@ seasons:
     pa: 1262.0
   notes:
   - League expanded from 10 to 12 teams.
+  - Added an IDP (individual defensive player) starting slot.
   - Dillon, Fletcher, and Shawnee joined; Brady departed.
   - Wade and Jono tied the championship game 114.8–114.8 — officially ruled a **co-championship**.
 - year: 2015

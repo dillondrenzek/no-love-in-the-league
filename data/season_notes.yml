@@ -5,9 +5,8 @@
 # **bold**). Leave a year's list empty until you have something to say. Add new
 # years here going forward; then run `python scripts/build.py`.
 #
-# The playoff-field and league-size and manager-change notes below were derived
-# from the season data. Roster/scoring composition changes aren't in the data —
-# add those by hand.
+# The playoff-field, league-size, manager-change, and roster notes below were
+# derived from the ESPN data (see scripts/inspect_settings.py for rosters).
 
 2025: []
 
@@ -16,13 +15,17 @@
 
 2023:
   - "Playoff field cut back from 8 teams to 6."
+  - "Dropped the IDP slot and added a third WR starter."
 
 2022:
   - "NFL season expanded to 17 games, giving us one more week of fantasy."
+  - "Bench expanded from 4 spots to 5."
 
-2021: []
+2021:
+  - "Injured-reserve slots trimmed from 4 to 1."
 
-2020: []
+2020:
+  - "Added injured-reserve (IR) slots."
 
 2019:
   - "Trevor joined the league; Anthony departed."
@@ -31,10 +34,12 @@
 
 2017:
   - "Playoff field expanded from 6 teams to 8."
+  - "Bench shrank from 7 spots to 4."
   - "Anthony joined the league; Odie departed."
 
 2016:
   - "League expanded from 10 to 12 teams."
+  - "Added an IDP (individual defensive player) starting slot."
   - "Dillon, Fletcher, and Shawnee joined; Brady departed."
   - "Wade and Jono tied the championship game 114.8–114.8 — officially ruled a **co-championship**."
 
