@@ -1,18 +1,12 @@
 ---
-# This file shadows minima's own assets/main.scss and is what the theme's HTML
-# links to (as /assets/main.css). Everything after `@import "minima"` overrides
-# the theme. (A stylesheet at assets/css/style.css would NOT be loaded — nothing
-# references it — which is why our styles must live here.)
+# The site's only stylesheet. Compiled by Jekyll to /assets/main.css and linked
+# from _includes/head.html. No theme gem — this file is fully self-contained:
+# a small base/reset first, then the newspaper/FiveThirtyEight-inspired skin.
 ---
 
-@import "minima";
-
 // =============================================================================
-// No Love in the League — a light, newspaper/FiveThirtyEight-inspired skin.
-// Plain CSS overrides (not minima SCSS vars) so it's easy to read and
-// version-proof.
+// Design tokens
 // =============================================================================
-
 :root {
   --ink: #1a1a1a;         // primary text
   --muted: #6b6b6b;       // secondary text, column heads
@@ -26,9 +20,15 @@
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+// =============================================================================
+// Base / reset / layout (what a theme would normally give us)
+// =============================================================================
+*, *::before, *::after { box-sizing: border-box; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {
+  margin: 0;
   font-family: var(--sans);
   color: var(--ink);
   background: var(--bg);
@@ -40,8 +40,37 @@ body {
 
 .wrapper {
   max-width: 960px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-content { padding: 26px 0 44px; }
+
+.site-header .wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+
+img { max-width: 100%; height: auto; }
+
+.post-content > p,
+.post-content > ul,
+.post-content > ol { margin: 0 0 1em; }
+
+.post-content ul,
+.post-content ol { padding-left: 1.4em; }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2em 0; }
+
+code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: #f4f2ec;
+  padding: 1px 5px;
+  border-radius: 4px;
 }
 
 // ---- Links ------------------------------------------------------------------

@@ -1,13 +1,14 @@
 title: No Love in the League
 description: Where there is no love — league history, standings, and records.
-theme: minima
 
-header_pages:
-  - standings/index.md
-  - teams/index.md
-  - history/index.md
-
-plugins:
-  - jekyll-feed
+# This site uses its own layouts (docs/_layouts + docs/_includes) and its own
+# stylesheet (assets/main.scss) — no Jekyll theme gem. Nav lives in
+# _includes/header.html.
 
 markdown: kramdown
+
+# Don't process the tooling when building the site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

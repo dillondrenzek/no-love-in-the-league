@@ -26,11 +26,13 @@ scripts/
   build.py                  runs every generator
   tests/test_lib.py         plain-python tests for lib
 
-docs/                    <- Jekyll site (the GitHub Pages source)
+docs/                    <- Jekyll site (the GitHub Pages source); no theme gem
+  _layouts/                 default / page / home layouts (our own)
+  _includes/                head, header (nav), footer
+  assets/main.scss          the single self-contained stylesheet
   standings/index.md        generated — do not edit by hand
   history/index.md          generated — do not edit by hand
   index.md
-  assets/main.scss          custom styling / branding (shadows minima's main.scss)
 ```
 
 ## Updating the site with new data
@@ -89,7 +91,7 @@ python3 -m venv .venv
 
 ## Previewing the Jekyll site locally (optional)
 
-Requires Ruby + Bundler.
+Requires Ruby (v3+) + Bundler.
 
 ```
 cd docs
