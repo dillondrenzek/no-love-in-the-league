@@ -6,6 +6,7 @@ minima:
 
 header_pages:
   - standings/index.md
+  - teams/index.md
   - history/index.md
 
 plugins:

@@ -6,7 +6,7 @@
 
 from pathlib import Path
 
-from lib.data import load_franchises, load_seasons
+from lib.data import load_franchises, load_seasons, owner_link
 from lib.standings import get_standings, has_points
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,7 +23,8 @@ def season_table(season, franchises):
     sep = "|---|---|---|" + ("---|---|" if points else "")
     lines = [f"### {season['season']}", "", header, sep]
     for r in rows:
-        line = f"| {r['finish']} | {r['name']} | {r['record']} |"
+        team = owner_link(r["id"], r["name"], franchises)
+        line = f"| {r['finish']} | {team} | {r['record']} |"
         if points:
             line += f" {r['points_for']} | {r['points_against']} |"
         lines.append(line)

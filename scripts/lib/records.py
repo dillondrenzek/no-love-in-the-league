@@ -11,7 +11,7 @@ Two kinds of records:
 automatically as richer data (scores) is added.
 """
 
-from .data import name_of
+from .data import name_of, short_name_of
 from .standings import get_standings, parse_record
 
 
@@ -30,7 +30,7 @@ def _standings_records(seasons, franchises):
             all_rows.append((season["season"], r))
             if r["finish"] == 1:
                 titles[r["id"]] = titles.get(r["id"], 0) + 1
-                title_display[r["id"]] = name_of(r["id"], franchises) if r["id"] in franchises else r["name"]
+                title_display[r["id"]] = short_name_of(r["id"], franchises) if r["id"] in franchises else r["name"]
 
     if not all_rows:
         return []
@@ -75,7 +75,7 @@ def _score_records(seasons, franchises):
     teams_by_year = {s["season"]: s.get("teams", {}) for s in seasons}
 
     def holder_name(g):
-        return teams_by_year.get(g["season"], {}).get(g["id"]) or name_of(g["id"], franchises)
+        return teams_by_year.get(g["season"], {}).get(g["id"]) or short_name_of(g["id"], franchises)
 
     def entry(category, g, value):
         return {"category": category, "holder": holder_name(g),

@@ -33,9 +33,32 @@ def load_seasons(seasons_dir=SEASONS_DIR):
 
 
 def name_of(franchise_id, franchises):
-    """Display name for a franchise id, falling back to the id itself."""
+    """Full display name for a franchise id, falling back to the id itself."""
     f = franchises.get(franchise_id)
     return f["name"] if f else franchise_id
+
+
+def owner_link(franchise_id, text, franchises):
+    """Markdown link from `text` to the franchise's owner page.
+
+    Falls back to plain text when there's no owner page (e.g. a level-1 season
+    keyed by team name rather than a real franchise id).
+    """
+    if franchise_id in franchises:
+        return f"[{text}]({{{{ '/teams/{franchise_id}/' | relative_url }}}})"
+    return text
+
+
+def short_name_of(franchise_id, franchises):
+    """First name (or an explicit `short:` override) for a franchise id.
+
+    Used for most on-site displays; `name_of` gives the full name for places
+    like a team-page header.
+    """
+    f = franchises.get(franchise_id)
+    if not f:
+        return franchise_id
+    return f.get("short") or f["name"].split()[0]
 
 
 def regular_season_matchups(season):

@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from lib.standings import get_standings, record_string, parse_record, has_points
 from lib.records import compute_records
+from lib.teams import compute_profiles, rec_str
 
 
 # --- Explicit-standings season (the ESPN-import shape, no scores) ------------
@@ -110,6 +111,28 @@ def test_records_score_based_appear_with_matchups():
     recs = {r["category"]: r for r in compute_records([matchup_season()], {})}
     assert recs["Most Points in a Week"]["value"] == "200.00"
     assert recs["Biggest Blowout"]["holder"] == "Delta Fish"
+
+
+def test_owner_profiles_totals_and_h2h():
+    # Same franchises across two seasons; 'a' wins both.
+    seasons = [matchup_season(2024), matchup_season(2025)]
+    profiles = compute_profiles(seasons, {})
+
+    a = profiles["a"]
+    assert a["seasons_count"] == 2
+    assert a["titles"] == 2 and sorted(a["champ_years"]) == [2024, 2025]
+    # Reg season 2-0 each year -> 4-0 all time.
+    assert (a["reg"]["w"], a["reg"]["l"]) == (4, 0), a["reg"]
+    # 'a' has a playoff loss to 'd' each season (200-60), so playoff record 0-2.
+    assert (a["playoff"]["w"], a["playoff"]["l"]) == (0, 2), a["playoff"]
+
+    # Head-to-head is symmetric: a beat b twice (weeks 1), b lost to a twice.
+    assert a["h2h"]["b"]["w"] == 2 and profiles["b"]["h2h"]["a"]["l"] == 2
+
+
+def test_rec_str():
+    assert rec_str(4, 0, 0) == "4-0"
+    assert rec_str(7, 6, 1) == "7-6-1"
 
 
 def run():

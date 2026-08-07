@@ -12,7 +12,7 @@ A season carries its results in one of two forms:
 generators don't care which a season uses.
 """
 
-from .data import regular_season_matchups, name_of
+from .data import regular_season_matchups, name_of, short_name_of
 
 
 def parse_record(record):
@@ -68,8 +68,8 @@ def _from_matchups(season, franchises):
     season_teams = season.get("teams", {})
     for i, r in enumerate(rows, start=1):
         r["finish"] = i
-        # Prefer this season's team name; fall back to the franchise/owner name.
-        r["name"] = season_teams.get(r["id"]) or name_of(r["id"], franchises)
+        # Prefer this season's team name; fall back to the franchise's first name.
+        r["name"] = season_teams.get(r["id"]) or short_name_of(r["id"], franchises)
         r["record"] = record_string(r)
         r["points_for"] = round(r["points_for"], 1)
         r["points_against"] = round(r["points_against"], 1)

@@ -10,7 +10,7 @@ with scores are added). Nothing here is hand-maintained.
 
 from pathlib import Path
 
-from lib.data import load_franchises, load_seasons
+from lib.data import load_franchises, load_seasons, owner_link
 from lib.standings import get_standings
 from lib.records import compute_records
 
@@ -27,14 +27,15 @@ def champions_table(seasons, franchises):
     ]
     for season in seasons:
         by_finish = {r["finish"]: r for r in get_standings(season, franchises)}
+        def cell(r):
+            return owner_link(r["id"], r["name"], franchises) if r else "—"
+
         champ = by_finish.get(1)
-        runner = by_finish.get(2)
-        third = by_finish.get(3)
         lines.append(
             f"| {season['season']} "
-            f"| {champ['name'] if champ else '—'} "
-            f"| {runner['name'] if runner else '—'} "
-            f"| {third['name'] if third else '—'} "
+            f"| {cell(champ)} "
+            f"| {cell(by_finish.get(2))} "
+            f"| {cell(by_finish.get(3))} "
             f"| {champ['record'] if champ else '—'} |"
         )
     return "\n".join(lines)

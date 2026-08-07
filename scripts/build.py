@@ -10,10 +10,12 @@ main() function, then add it to GENERATORS below.
 
 import generate_history
 import generate_standings
+import generate_teams
 
 GENERATORS = [
     generate_history,
     generate_standings,
+    generate_teams,
 ]
 
 

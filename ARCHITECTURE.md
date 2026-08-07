@@ -107,7 +107,7 @@ scripts/
   lib/                   <- shared, pure functions: load data, compute standings/records
   generate_history.py    <- champions + record book
   generate_standings.py  <- final standings per season
-  generate_teams.py       (planned)
+  generate_teams.py      <- owner index + per-owner pages (all-time, H2H)
   build.py               <- runs every generator in order
 ```
 
@@ -128,8 +128,8 @@ real logic (what counts as a win, how a streak is measured) lives in one place i
 
 - **History & records** — champions, record book. *(scaffold exists)*
 - **Standings by season** — full regular-season table per year.
-- **Team pages** — one per franchise: all-time record, titles, season-by-season,
-  head-to-head.
+- **Owner pages** — one per franchise: all-time record, titles, season-by-season,
+  head-to-head. *(done)*
 - **Fun / rivalry stats** — head-to-head grid, biggest blowouts, luckiest team,
   power rankings. The "no love" flavor.
 
