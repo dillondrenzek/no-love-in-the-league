@@ -1,0 +1,134 @@
+# 2017 — imported from ESPN by scripts/import_espn.py. Do not hand-edit;
+# re-run the importer to refresh. See ../../ARCHITECTURE.md.
+
+season: 2017
+source: espn-api
+weeks_in_regular_season: 13
+
+# This season's team name for each franchise (shown on per-season pages).
+teams:
+  sturmanator15: "The People's Champion"
+  zachzoske: "Injury  Reserve "
+  schirmerj: "Browning out   ."
+  lukstein: "My Cox Will Ertz You"
+  jackperkins74: "Jacking Goff"
+  kevbots22: "Russian  Roiders "
+  henpen28: "Forceable Entry"
+  ajstewart04: "Tacos Food Truck"
+  whowonthelastsuperbowl: "Wadgerach  Sturdellske "
+  theoceanpulse: "Hans Blitz! Ohh noo!"
+  unclebadtouch38: "Cleveland Mcpussysmasher"
+  shawne2520997: "Dislocated Johnson"
+
+# Final placement (ESPN's rankCalculatedFinal), used for the finish column.
+final_standings:
+  - henpen28
+  - lukstein
+  - shawne2520997
+  - unclebadtouch38
+  - jackperkins74
+  - kevbots22
+  - theoceanpulse
+  - schirmerj
+  - ajstewart04
+  - sturmanator15
+  - zachzoske
+  - whowonthelastsuperbowl
+
+matchups:
+  - { week:  1, home: jackperkins74, away: ajstewart04, home_score: 121.5, away_score: 77.2, playoff: false }
+  - { week:  1, home: kevbots22, away: shawne2520997, home_score: 82.1, away_score: 89.9, playoff: false }
+  - { week:  1, home: schirmerj, away: lukstein, home_score: 79.4, away_score: 152.2, playoff: false }
+  - { week:  1, home: sturmanator15, away: henpen28, home_score: 55.1, away_score: 113.6, playoff: false }
+  - { week:  1, home: theoceanpulse, away: unclebadtouch38, home_score: 67.2, away_score: 58.9, playoff: false }
+  - { week:  1, home: zachzoske, away: whowonthelastsuperbowl, home_score: 60.4, away_score: 62.1, playoff: false }
+  - { week:  2, home: henpen28, away: ajstewart04, home_score: 151.7, away_score: 93.4, playoff: false }
+  - { week:  2, home: lukstein, away: kevbots22, home_score: 83.1, away_score: 84.2, playoff: false }
+  - { week:  2, home: schirmerj, away: theoceanpulse, home_score: 92.9, away_score: 110.2, playoff: false }
+  - { week:  2, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 95.6, away_score: 85.8, playoff: false }
+  - { week:  2, home: unclebadtouch38, away: shawne2520997, home_score: 68.8, away_score: 90.1, playoff: false }
+  - { week:  2, home: zachzoske, away: jackperkins74, home_score: 82.0, away_score: 55.9, playoff: false }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, home_score: 75.5, away_score: 108.0, playoff: false }
+  - { week:  3, home: kevbots22, away: unclebadtouch38, home_score: 100.9, away_score: 87.0, playoff: false }
+  - { week:  3, home: lukstein, away: theoceanpulse, home_score: 72.4, away_score: 101.5, playoff: false }
+  - { week:  3, home: schirmerj, away: shawne2520997, home_score: 79.7, away_score: 93.0, playoff: false }
+  - { week:  3, home: sturmanator15, away: ajstewart04, home_score: 77.9, away_score: 94.0, playoff: false }
+  - { week:  3, home: zachzoske, away: henpen28, home_score: 100.9, away_score: 84.2, playoff: false }
+  - { week:  4, home: ajstewart04, away: whowonthelastsuperbowl, home_score: 98.3, away_score: 62.3, playoff: false }
+  - { week:  4, home: jackperkins74, away: henpen28, home_score: 94.2, away_score: 98.3, playoff: false }
+  - { week:  4, home: lukstein, away: unclebadtouch38, home_score: 73.5, away_score: 69.3, playoff: false }
+  - { week:  4, home: schirmerj, away: kevbots22, home_score: 95.9, away_score: 104.1, playoff: false }
+  - { week:  4, home: sturmanator15, away: zachzoske, home_score: 111.0, away_score: 81.1, playoff: false }
+  - { week:  4, home: theoceanpulse, away: shawne2520997, home_score: 92.4, away_score: 80.5, playoff: false }
+  - { week:  5, home: henpen28, away: whowonthelastsuperbowl, home_score: 57.8, away_score: 50.4, playoff: false }
+  - { week:  5, home: kevbots22, away: theoceanpulse, home_score: 77.5, away_score: 98.5, playoff: false }
+  - { week:  5, home: lukstein, away: shawne2520997, home_score: 120.1, away_score: 57.5, playoff: false }
+  - { week:  5, home: schirmerj, away: unclebadtouch38, home_score: 110.6, away_score: 88.2, playoff: false }
+  - { week:  5, home: sturmanator15, away: jackperkins74, home_score: 79.0, away_score: 111.8, playoff: false }
+  - { week:  5, home: zachzoske, away: ajstewart04, home_score: 61.6, away_score: 128.1, playoff: false }
+  - { week:  6, home: ajstewart04, away: unclebadtouch38, home_score: 80.5, away_score: 113.7, playoff: false }
+  - { week:  6, home: henpen28, away: shawne2520997, home_score: 94.3, away_score: 61.9, playoff: false }
+  - { week:  6, home: jackperkins74, away: theoceanpulse, home_score: 86.2, away_score: 92.6, playoff: false }
+  - { week:  6, home: lukstein, away: whowonthelastsuperbowl, home_score: 88.1, away_score: 94.5, playoff: false }
+  - { week:  6, home: sturmanator15, away: kevbots22, home_score: 95.0, away_score: 86.8, playoff: false }
+  - { week:  6, home: zachzoske, away: schirmerj, home_score: 78.2, away_score: 141.1, playoff: false }
+  - { week:  7, home: ajstewart04, away: theoceanpulse, home_score: 74.4, away_score: 83.7, playoff: false }
+  - { week:  7, home: henpen28, away: unclebadtouch38, home_score: 101.3, away_score: 70.9, playoff: false }
+  - { week:  7, home: jackperkins74, away: kevbots22, home_score: 80.9, away_score: 80.5, playoff: false }
+  - { week:  7, home: sturmanator15, away: schirmerj, home_score: 103.7, away_score: 95.0, playoff: false }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 91.1, away_score: 116.3, playoff: false }
+  - { week:  7, home: zachzoske, away: lukstein, home_score: 107.2, away_score: 131.0, playoff: false }
+  - { week:  8, home: henpen28, away: theoceanpulse, home_score: 82.4, away_score: 90.6, playoff: false }
+  - { week:  8, home: kevbots22, away: ajstewart04, home_score: 108.1, away_score: 57.3, playoff: false }
+  - { week:  8, home: schirmerj, away: jackperkins74, home_score: 76.1, away_score: 100.0, playoff: false }
+  - { week:  8, home: sturmanator15, away: lukstein, home_score: 97.7, away_score: 146.6, playoff: false }
+  - { week:  8, home: whowonthelastsuperbowl, away: unclebadtouch38, home_score: 93.1, away_score: 112.8, playoff: false }
+  - { week:  8, home: zachzoske, away: shawne2520997, home_score: 129.3, away_score: 63.2, playoff: false }
+  - { week:  9, home: kevbots22, away: henpen28, home_score: 110.1, away_score: 80.0, playoff: false }
+  - { week:  9, home: lukstein, away: jackperkins74, home_score: 96.3, away_score: 73.7, playoff: false }
+  - { week:  9, home: schirmerj, away: ajstewart04, home_score: 94.1, away_score: 86.6, playoff: false }
+  - { week:  9, home: sturmanator15, away: shawne2520997, home_score: 78.2, away_score: 93.3, playoff: false }
+  - { week:  9, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 120.4, away_score: 83.0, playoff: false }
+  - { week:  9, home: zachzoske, away: unclebadtouch38, home_score: 77.4, away_score: 77.4, playoff: false }
+  - { week: 10, home: jackperkins74, away: shawne2520997, home_score: 94.2, away_score: 98.3, playoff: false }
+  - { week: 10, home: kevbots22, away: whowonthelastsuperbowl, home_score: 95.9, away_score: 94.9, playoff: false }
+  - { week: 10, home: lukstein, away: ajstewart04, home_score: 91.5, away_score: 99.0, playoff: false }
+  - { week: 10, home: schirmerj, away: henpen28, home_score: 107.1, away_score: 85.4, playoff: false }
+  - { week: 10, home: sturmanator15, away: unclebadtouch38, home_score: 56.6, away_score: 69.3, playoff: false }
+  - { week: 10, home: zachzoske, away: theoceanpulse, home_score: 81.2, away_score: 123.1, playoff: false }
+  - { week: 11, home: ajstewart04, away: shawne2520997, home_score: 96.7, away_score: 108.7, playoff: false }
+  - { week: 11, home: jackperkins74, away: unclebadtouch38, home_score: 93.5, away_score: 108.1, playoff: false }
+  - { week: 11, home: lukstein, away: henpen28, home_score: 132.5, away_score: 59.3, playoff: false }
+  - { week: 11, home: schirmerj, away: whowonthelastsuperbowl, home_score: 149.2, away_score: 84.6, playoff: false }
+  - { week: 11, home: sturmanator15, away: theoceanpulse, home_score: 97.8, away_score: 113.4, playoff: false }
+  - { week: 11, home: zachzoske, away: kevbots22, home_score: 83.3, away_score: 96.4, playoff: false }
+  - { week: 12, home: ajstewart04, away: unclebadtouch38, home_score: 93.3, away_score: 96.4, playoff: false }
+  - { week: 12, home: henpen28, away: shawne2520997, home_score: 64.8, away_score: 82.7, playoff: false }
+  - { week: 12, home: jackperkins74, away: theoceanpulse, home_score: 108.1, away_score: 78.1, playoff: false }
+  - { week: 12, home: lukstein, away: whowonthelastsuperbowl, home_score: 126.5, away_score: 112.0, playoff: false }
+  - { week: 12, home: sturmanator15, away: kevbots22, home_score: 116.2, away_score: 106.2, playoff: false }
+  - { week: 12, home: zachzoske, away: schirmerj, home_score: 100.4, away_score: 120.0, playoff: false }
+  - { week: 13, home: ajstewart04, away: theoceanpulse, home_score: 64.9, away_score: 106.9, playoff: false }
+  - { week: 13, home: henpen28, away: unclebadtouch38, home_score: 82.6, away_score: 84.8, playoff: false }
+  - { week: 13, home: jackperkins74, away: kevbots22, home_score: 125.0, away_score: 95.8, playoff: false }
+  - { week: 13, home: sturmanator15, away: schirmerj, home_score: 87.2, away_score: 134.8, playoff: false }
+  - { week: 13, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 101.3, away_score: 120.3, playoff: false }
+  - { week: 13, home: zachzoske, away: lukstein, home_score: 60.0, away_score: 72.9, playoff: false }
+  - { week: 14, home: henpen28, away: theoceanpulse, home_score: 89.2, away_score: 87.6, playoff: true }
+  - { week: 14, home: jackperkins74, away: unclebadtouch38, home_score: 97.7, away_score: 105.4, playoff: true }
+  - { week: 14, home: lukstein, away: kevbots22, home_score: 158.9, away_score: 129.3, playoff: true }
+  - { week: 14, home: schirmerj, away: shawne2520997, home_score: 88.7, away_score: 97.9, playoff: true }
+  - { week: 14, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 70.2, away_score: 88.9, playoff: true }
+  - { week: 14, home: zachzoske, away: ajstewart04, home_score: 71.8, away_score: 130.2, playoff: true }
+  - { week: 15, home: ajstewart04, away: whowonthelastsuperbowl, home_score: 78.1, away_score: 76.2, playoff: true }
+  - { week: 15, home: henpen28, away: shawne2520997, home_score: 141.8, away_score: 103.9, playoff: true }
+  - { week: 15, home: jackperkins74, away: theoceanpulse, home_score: 80.7, away_score: 78.7, playoff: true }
+  - { week: 15, home: lukstein, away: unclebadtouch38, home_score: 118.8, away_score: 87.2, playoff: true }
+  - { week: 15, home: schirmerj, away: kevbots22, home_score: 105.6, away_score: 118.9, playoff: true }
+  - { week: 15, home: sturmanator15, away: zachzoske, home_score: 86.4, away_score: 64.8, playoff: true }
+  - { week: 16, home: jackperkins74, away: kevbots22, home_score: 98.6, away_score: 59.1, playoff: true }
+  - { week: 16, home: lukstein, away: henpen28, home_score: 98.9, away_score: 113.8, playoff: true }
+  - { week: 16, home: schirmerj, away: theoceanpulse, home_score: 90.5, away_score: 116.5, playoff: true }
+  - { week: 16, home: sturmanator15, away: ajstewart04, home_score: 64.0, away_score: 89.5, playoff: true }
+  - { week: 16, home: unclebadtouch38, away: shawne2520997, home_score: 85.6, away_score: 108.6, playoff: true }
+  - { week: 16, home: zachzoske, away: whowonthelastsuperbowl, home_score: 86.2, away_score: 83.7, playoff: true }

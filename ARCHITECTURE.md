@@ -1,0 +1,146 @@
+# Architecture
+
+How data flows through this project, and the conventions we follow so it stays
+easy to extend and easy for new contributors to pick up.
+
+## Two levels of data, from cheapest to richest
+
+We add data in whatever detail we have. Two levels, and a season can sit at
+either one:
+
+1. **Final standings (what we have now).** ESPN's league-history page gives, per
+   season, the final finish order, each team's name that year, and its
+   regular-season W-L-T record. That's enough to render the standings and the
+   champions list. No game scores.
+2. **Matchups (richer, added later).** ESPN's scoreboard/schedule page gives
+   each week's games and scores. When a season has these, the build scripts
+   compute its standings *from* the scores and unlock points-for/against plus the
+   score-based record book (highest week, biggest blowout, head-to-head, etc.).
+
+The key idea for level 2: **store matchups, derive everything else.** Standings,
+records, team pages, and rivalry stats are all calculations over the matchup
+list, so we never hand-maintain them separately (they'd drift out of sync). We
+keep source data minimal and let the scripts compute the rest.
+
+A season starts at level 1 (paste the final standings) and can be upgraded to
+level 2 later by adding a `matchups:` list — nothing else changes.
+
+### A note on franchise identity
+
+ESPN team names change every year, and the standings export has no stable owner
+id, so we currently key everything off each season's **team name**. Linking the
+same owner across years (for team pages and all-time records) is a later step
+that lives in `data/franchises.yml` and needs human knowledge of who's who.
+
+## Source of truth (hand-edited, committed)
+
+Lives under `data/`. This is the only thing a human edits.
+
+```
+data/
+  franchises.yml         <- the league's teams (stable identities across years)
+  seasons/
+    2024.yml             <- one file per season: matchups + a little metadata
+    2025.yml
+```
+
+### `data/seasons/<year>.yml` — level 1 (final standings)
+
+What every season currently uses. Champions are read off the top of the finish
+order (finish 1/2/3), so they aren't stored separately.
+
+```yaml
+season: 2025
+source: espn-final-standings
+standings:
+  - finish: 1
+    team: "Pukkake"       # team name that season
+    record: "9-5-0"       # regular-season W-L-T
+  - finish: 2
+    team: "Keeping up with the McCalferies"
+    record: "10-4-0"
+```
+
+### `data/seasons/<year>.yml` — level 2 (matchups)
+
+To upgrade a season, add a `matchups:` list. When present it takes over: the
+scripts compute standings and points from the scores instead of reading the
+`standings` block.
+
+```yaml
+season: 2025
+weeks_in_regular_season: 14
+teams:                      # this season's team name per franchise id
+  jackperkins74: "Pukkake"
+  kevbots22: "Keeping up with the McCalferies"
+final_standings:            # finish order (ESPN's final placement)
+  - jackperkins74
+  - kevbots22
+matchups:
+  - week: 1
+    home: jackperkins74
+    away: kevbots22
+    home_score: 122.4
+    away_score: 98.1
+    playoff: false          # omit or false for regular season
+```
+
+At level 2, `home`/`away`/`final_standings` reference franchise ids from
+`franchises.yml`, and `teams` maps each id to its name that season (so per-season
+pages show "Pukkake", while the id links the owner across years). Scores are the
+only numbers you type — win/loss is computed, not stored. These files are written
+by `scripts/import_espn.py`, not by hand.
+
+### `franchises.yml`
+
+Owner-to-team-name mapping, used only for level-2 features (team pages, all-time
+records). Empty for now; fill it in when we build those. See the file's comments.
+
+## Derived data + pages (generated, never hand-edited)
+
+`scripts/` reads `data/` and writes into `docs/`. Generated files carry a
+"do not edit by hand" note at the top. The `docs/` folder is what GitHub Pages
+publishes (Jekyll + the `minima` theme).
+
+```
+scripts/
+  lib/                   <- shared, pure functions: load data, compute standings/records
+  generate_history.py    <- champions + record book
+  generate_standings.py  <- final standings per season
+  generate_teams.py       (planned)
+  build.py               <- runs every generator in order
+```
+
+The rule: **generators are thin, `lib/` does the thinking.** A generator loads
+data, calls a compute function from `lib/`, and renders a Markdown table. All the
+real logic (what counts as a win, how a streak is measured) lives in one place in
+`lib/` so it's tested once and reused everywhere.
+
+## The build loop
+
+1. Download the relevant ESPN page(s) for the season.
+2. Edit the matching `data/seasons/<year>.yml` (hand or AI-assisted).
+3. Rebuild: `.venv/bin/python scripts/build.py`
+4. Commit the `data/` change **and** the regenerated `docs/` files, then push.
+   GitHub Pages rebuilds automatically.
+
+## Site sections (MVP target)
+
+- **History & records** — champions, record book. *(scaffold exists)*
+- **Standings by season** — full regular-season table per year.
+- **Team pages** — one per franchise: all-time record, titles, season-by-season,
+  head-to-head.
+- **Fun / rivalry stats** — head-to-head grid, biggest blowouts, luckiest team,
+  power rankings. The "no love" flavor.
+
+All four are computed from the same matchup data — they're different views, not
+different datasets.
+
+## Conventions for contributors
+
+- Franchise `id`s are lowercase, stable, and never reused. Add `aliases` rather
+  than renaming an `id`.
+- Never hand-edit anything under `docs/` that a generator produces.
+- Put new logic in `scripts/lib/` with a matching test, not inline in a generator.
+- Keep it simple. Prefer plain YAML + small Python over any framework. If a change
+  makes the project harder for a newcomer to read, it probably isn't worth it.

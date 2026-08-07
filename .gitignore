@@ -3,6 +3,9 @@
 __pycache__/
 *.pyc
 
+# ESPN cookies (secrets — never commit)
+.espn-cookies
+
 # Jekyll
 docs/_site/
 docs/.jekyll-cache/

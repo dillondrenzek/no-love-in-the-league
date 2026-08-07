@@ -1,0 +1,8 @@
+# Copy this file to `.espn-cookies` (which is git-ignored) and paste your two
+# ESPN cookie values below. scripts/import_all.sh reads them from here.
+#
+# To find them: log into fantasy.espn.com, open your browser's dev tools ->
+# Application/Storage -> Cookies -> espn.com, and copy these two values.
+
+ESPN_S2='paste_your_espn_s2_value_here'
+ESPN_SWID='{paste-your-SWID-including-braces}'

@@ -1,0 +1,3 @@
+# Tools used only for importing data locally — NOT needed to build the site.
+# The published site build depends only on requirements.txt (PyYAML).
+espn-api
