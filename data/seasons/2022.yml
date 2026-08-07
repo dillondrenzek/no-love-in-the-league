@@ -17,8 +17,20 @@ teams:
   purpsworth: "Used Napkin"
   whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
   theoceanpulse: "Thoughts and Players"
-  unclebadtouch38: "Mr.  Irrelevant"
+  unclebadtouch38: "Mr. Irrelevant"
   shawne2520997: "Koo Koo Kachoo"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - lukstein
+  - shawne2520997
+  - jackperkins74
+  - henpen28
+  - purpsworth
+  - whowonthelastsuperbowl
+  - theoceanpulse
+  - unclebadtouch38
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

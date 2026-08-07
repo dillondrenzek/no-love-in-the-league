@@ -20,6 +20,16 @@ teams:
   gganoom: "One Big Beautiful Dill"
   shawne2520997: "D***er my Sufficient Tight End"
 
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - kevbots22
+  - jackperkins74
+  - zachzoske
+  - gganoom
+  - theoceanpulse
+  - lukstein
+
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:
   - jackperkins74

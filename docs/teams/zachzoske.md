@@ -10,8 +10,8 @@ permalink: /teams/zachzoske/
 <p class="owner-sub">Most recent: Big Brown Dak Makes em Waddle</p>
 
 <div class="resume">
-  <div class="resume__honors">🏆 <b>1× Shiva</b> (2019) · 🥈 1× Runner-Up · 🥉 2× Third · 💩 <b>1× Sacko</b> (2022) · 12× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">80-80-1 <span class='muted'>(.500)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">19-14</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2019)</div></div></div>
+  <div class="resume__honors">🏆 <b>1× Shiva</b> (2019) · 🥈 1× Runner-Up · 🥉 2× Third · 💩 <b>1× Sacko</b> (2022) · 5× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">80-80-1 <span class='muted'>(.500)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">5</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2019)</div></div></div>
 </div>
 
 ## Season by season
@@ -26,8 +26,8 @@ permalink: /teams/zachzoske/
 | 2020 | Calvin and (Jac)Obs | 2nd | 9-4 | <span class="chip" style="background:#e78462">1502.4</span> | 1276.8 |
 | 2019 | Eleven In Crocks <span class="tag tag--shiva">Shiva</span> | 1st | 6-7 | <span class="chip" style="background:#f1a68b">1358.9</span> | 1269.3 |
 | 2018 | Sackos Auto Draft Experiene | 3rd | 7-6 | <span class="chip" style="background:#f1a68b">1359.5</span> | 1357.5 |
-| 2017 | Injury  Reserve  | 11th | 3-9-1 | <span class="chip" style="background:#faf1e9">1103.0</span> | 1266.4 |
-| 2016 | The  Mighty Cucks | 7th | 7-6 | <span class="chip" style="background:#f8ded1">1168.4</span> | 1209.2 |
+| 2017 | Injury Reserve | 11th | 3-9-1 | <span class="chip" style="background:#faf1e9">1103.0</span> | 1266.4 |
+| 2016 | The Mighty Cucks | 7th | 7-6 | <span class="chip" style="background:#f8ded1">1168.4</span> | 1209.2 |
 | 2015 | Gronkey Punch | 3rd | 8-5 | <span class="chip" style="background:#f1a488">1367.2</span> | 1277.5 |
 | 2014 | Spaceball One | 7th | 6-7 | <span class="chip" style="background:#f5c5b2">1253.9</span> | 1252.9 |
 

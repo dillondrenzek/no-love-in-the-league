@@ -7,16 +7,26 @@ weeks_in_regular_season: 13
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
-  sturmanator15: "Ben there raped that "
+  sturmanator15: "Ben there raped that"
   zachzoske: "Spaceball One"
   schirmerj: "Arian nation ."
   lukstein: "Washington Blowskins"
   whowonthelastsuperbowl: "Haters Gonna Hate"
   jackperkins74: "Turn down for Watt"
-  kevbots22: "Luck her right  in the Pussy"
+  kevbots22: "Luck her right in the Pussy"
   thebragers: "Team TheBragers"
   henpen28: "Uncle Grabby"
   master-otis: "Lynched by Le' Bell"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - sturmanator15
+  - master-otis
+  - kevbots22
+  - henpen28
+  - thebragers
+  - lukstein
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

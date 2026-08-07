@@ -10,8 +10,8 @@ permalink: /teams/henpen28/
 <p class="owner-sub">Most recent: Dump it on my Chest</p>
 
 <div class="resume">
-  <div class="resume__honors">🏆 <b>3× Shiva</b> (2014, 2017, 2022) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">77-84 <span class='muted'>(.478)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">3</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">21-13</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2014, 2017, 2022)</div></div></div>
+  <div class="resume__honors">🏆 <b>3× Shiva</b> (2014, 2017, 2022) · 🥈 1× Runner-Up · 🥉 1× Third · 7× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">77-84 <span class='muted'>(.478)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">3</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">7</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2014, 2017, 2022)</div></div></div>
 </div>
 
 ## Season by season
@@ -28,7 +28,7 @@ permalink: /teams/henpen28/
 | 2018 | Tom Brady's Fluffer | 6th | 8-5 | <span class="chip" style="background:#f2ab91">1309.2</span> | 1255.2 |
 | 2017 | Forceable Entry <span class="tag tag--shiva">Shiva</span> | 1st | 6-7 | <span class="chip" style="background:#f8dbce">1155.7</span> | 1134.6 |
 | 2016 | Forceable Entry | 11th | 5-8 | <span class="chip" style="background:#f5c4b0">1229.8</span> | 1201.5 |
-| 2015 | Jared's  Kids | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1086.2</span> | 1207.2 |
+| 2015 | Jared's Kids | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1086.2</span> | 1207.2 |
 | 2014 | Uncle Grabby <span class="tag tag--shiva">Shiva</span> | 1st | 7-6 | <span class="chip" style="background:#f1a286">1337.1</span> | 1293.6 |
 
 ## Head-to-head

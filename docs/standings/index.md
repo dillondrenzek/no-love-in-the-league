@@ -40,7 +40,7 @@ season has game-by-game scores added.
 | 8 | [KillDilly Elegy]({{ '/teams/gganoom/' | relative_url }}) | 7-7 | <span class="chip" style="background:#f2a78d">1622.6</span> | 1550.1 |
 | 9 | [I am dead inside]({{ '/teams/purpsworth/' | relative_url }}) | 5-9 | <span class="chip" style="background:#f2ad94">1606.7</span> | 1663.6 |
 | 10 | [Trick or Trick It’s Mike Vick]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 6-8 | <span class="chip" style="background:#f2a98f">1617.1</span> | 1794.0 |
-| 11 | [Tom Bradys Only Fans ]({{ '/teams/kevbots22/' | relative_url }}) | 2-12 | <span class="chip" style="background:#faf1e9">1428.1</span> | 1667.3 |
+| 11 | [Tom Bradys Only Fans]({{ '/teams/kevbots22/' | relative_url }}) | 2-12 | <span class="chip" style="background:#faf1e9">1428.1</span> | 1667.3 |
 | 12 | [Save a horse, Ride the Cowboys]({{ '/teams/shawne2520997/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 7-7 | <span class="chip" style="background:#faefe6">1433.9</span> | 1450.6 |
 
 ### 2023
@@ -50,15 +50,15 @@ season has game-by-game scores added.
 | 1 | [Save a horse, Ride the Cowboys]({{ '/teams/shawne2520997/' | relative_url }}) <span class="tag tag--shiva">Shiva</span> | 9-5 | <span class="chip" style="background:#e6825f">1606.6</span> | 1510.0 |
 | 2 | [Three's Company]({{ '/teams/henpen28/' | relative_url }}) | 7-7 | <span class="chip" style="background:#eb8c6c">1569.6</span> | 1605.2 |
 | 3 | [Thoughts and Players]({{ '/teams/theoceanpulse/' | relative_url }}) | 12-2 | <span class="chip" style="background:#d65a30">1748.5</span> | 1480.6 |
-| 4 | [In Goff we trust ]({{ '/teams/sturmanator15/' | relative_url }}) | 9-5 | <span class="chip" style="background:#d85e35">1733.5</span> | 1508.8 |
+| 4 | [In Goff we trust]({{ '/teams/sturmanator15/' | relative_url }}) | 9-5 | <span class="chip" style="background:#d85e35">1733.5</span> | 1508.8 |
 | 5 | [IDP'd My Pants]({{ '/teams/schirmerj/' | relative_url }}) | 8-6 | <span class="chip" style="background:#e0734e">1658.4</span> | 1546.3 |
 | 6 | [Used Napkin]({{ '/teams/purpsworth/' | relative_url }}) | 9-5 | <span class="chip" style="background:#da633b">1714.6</span> | 1505.6 |
 | 7 | [Vinegar Strokes]({{ '/teams/jackperkins74/' | relative_url }}) | 7-7 | <span class="chip" style="background:#f0997b">1522.5</span> | 1610.4 |
-| 8 | [Tom Bradys Only Fans ]({{ '/teams/kevbots22/' | relative_url }}) | 4-10 | <span class="chip" style="background:#f19f82">1507.9</span> | 1608.6 |
+| 8 | [Tom Bradys Only Fans]({{ '/teams/kevbots22/' | relative_url }}) | 4-10 | <span class="chip" style="background:#f19f82">1507.9</span> | 1608.6 |
 | 9 | [Trick or Trick It’s Mike Vick]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 5-9 | <span class="chip" style="background:#eb8d6d">1566.3</span> | 1630.8 |
 | 10 | [Zach's Juicy Fantasy Teamussy]({{ '/teams/zachzoske/' | relative_url }}) | 7-7 | <span class="chip" style="background:#eb8e6e">1562.1</span> | 1635.0 |
 | 11 | [2x Runner Up]({{ '/teams/lukstein/' | relative_url }}) | 3-11 | <span class="chip" style="background:#f4bea9">1428.2</span> | 1719.9 |
-| 12 | [Mr.  Irrelevant]({{ '/teams/unclebadtouch38/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 4-10 | <span class="chip" style="background:#faf1e9">1297.6</span> | 1554.6 |
+| 12 | [Mr. Irrelevant]({{ '/teams/unclebadtouch38/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 4-10 | <span class="chip" style="background:#faf1e9">1297.6</span> | 1554.6 |
 
 ### 2022
 
@@ -71,7 +71,7 @@ season has game-by-game scores added.
 | 5 | [Thoughts and Players]({{ '/teams/theoceanpulse/' | relative_url }}) | 7-7 | <span class="chip" style="background:#f1a58a">1312.8</span> | 1371.1 |
 | 6 | [Allen's Deep Balls]({{ '/teams/jackperkins74/' | relative_url }}) | 10-4 | <span class="chip" style="background:#d65a30">1535.0</span> | 1340.4 |
 | 7 | [Used Napkin]({{ '/teams/purpsworth/' | relative_url }}) | 7-7 | <span class="chip" style="background:#ee9475">1355.2</span> | 1319.5 |
-| 8 | [Mr.  Irrelevant]({{ '/teams/unclebadtouch38/' | relative_url }}) | 7-7 | <span class="chip" style="background:#faf1e9">1144.5</span> | 1290.3 |
+| 8 | [Mr. Irrelevant]({{ '/teams/unclebadtouch38/' | relative_url }}) | 7-7 | <span class="chip" style="background:#faf1e9">1144.5</span> | 1290.3 |
 | 9 | [Naggar's In Paris]({{ '/teams/kevbots22/' | relative_url }}) | 2-12 | <span class="chip" style="background:#f6cebd">1222.3</span> | 1398.7 |
 | 10 | [Trey Lanced my ❤️]({{ '/teams/sturmanator15/' | relative_url }}) | 5-9 | <span class="chip" style="background:#f2ab92">1299.8</span> | 1507.5 |
 | 11 | [Make Dalvin Cook Again]({{ '/teams/schirmerj/' | relative_url }}) | 4-10 | <span class="chip" style="background:#f1a388">1317.0</span> | 1350.7 |
@@ -100,12 +100,12 @@ season has game-by-game scores added.
 |:--|:--|:--|--:|--:|
 | 1 | [Set_The_ RAT_TRAP_!]({{ '/teams/unclebadtouch38/' | relative_url }}) <span class="tag tag--shiva">Shiva</span> | 9-4 | <span class="chip" style="background:#e47d5a">1389.2</span> | 1265.1 |
 | 2 | [Calvin and (Jac)Obs]({{ '/teams/zachzoske/' | relative_url }}) | 9-4 | <span class="chip" style="background:#d65a30">1502.4</span> | 1276.8 |
-| 3 | [Folklore   Bandits]({{ '/teams/schirmerj/' | relative_url }}) | 8-5 | <span class="chip" style="background:#e78361">1370.3</span> | 1305.0 |
+| 3 | [Folklore Bandits]({{ '/teams/schirmerj/' | relative_url }}) | 8-5 | <span class="chip" style="background:#e78361">1370.3</span> | 1305.0 |
 | 4 | [Fantasy Judas]({{ '/teams/kevbots22/' | relative_url }}) | 8-5 | <span class="chip" style="background:#e98765">1357.0</span> | 1148.6 |
 | 5 | [Koo Koo Kachoo]({{ '/teams/shawne2520997/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f5c1ad">1204.8</span> | 1261.8 |
 | 6 | [Trick-Ass Marks]({{ '/teams/theoceanpulse/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f4bfab">1208.9</span> | 1249.7 |
 | 7 | [AB’s Helmet]({{ '/teams/purpsworth/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f4bba5">1219.5</span> | 1311.4 |
-| 8 | [Wadgerach  Sturdellske ]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f0997b">1298.8</span> | 1350.4 |
+| 8 | [Wadgerach Sturdellske]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f0997b">1298.8</span> | 1350.4 |
 | 9 | [Lickin Brown in my McLaurin]({{ '/teams/sturmanator15/' | relative_url }}) | 5-8 | <span class="chip" style="background:#faf1e9">1093.9</span> | 1284.1 |
 | 10 | [Scat Play]({{ '/teams/henpen28/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f7d3c4">1163.4</span> | 1318.5 |
 | 11 | [Show Me Your TDs]({{ '/teams/lukstein/' | relative_url }}) | 5-8 | <span class="chip" style="background:#f09c7f">1291.1</span> | 1309.2 |
@@ -119,10 +119,10 @@ season has game-by-game scores added.
 | 2 | [Show Me Your TDs]({{ '/teams/lukstein/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f7d6c7">1121.6</span> | 1170.5 |
 | 3 | [Vladimir Putin]({{ '/teams/jackperkins74/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f4bea9">1197.1</span> | 1160.2 |
 | 4 | [Hans Blitz! Ohh noo!]({{ '/teams/theoceanpulse/' | relative_url }}) | 11-1-1 | <span class="chip" style="background:#d65a30">1592.1</span> | 1197.2 |
-| 5 | [Tank4Picks   .]({{ '/teams/schirmerj/' | relative_url }}) | 5-7-1 | <span class="chip" style="background:#f5c2af">1183.5</span> | 1194.4 |
-| 6 | [Lamar's  Donger]({{ '/teams/sturmanator15/' | relative_url }}) | 11-2 | <span class="chip" style="background:#e88563">1402.9</span> | 1160.6 |
-| 7 | [Mixon  it up]({{ '/teams/shawne2520997/' | relative_url }}) | 7-5-1 | <span class="chip" style="background:#f1a489">1279.9</span> | 1296.9 |
-| 8 | [Wadgerach  Sturdellske ]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f4bda8">1201.0</span> | 1342.3 |
+| 5 | [Tank4Picks .]({{ '/teams/schirmerj/' | relative_url }}) | 5-7-1 | <span class="chip" style="background:#f5c2af">1183.5</span> | 1194.4 |
+| 6 | [Lamar's Donger]({{ '/teams/sturmanator15/' | relative_url }}) | 11-2 | <span class="chip" style="background:#e88563">1402.9</span> | 1160.6 |
+| 7 | [Mixon it up]({{ '/teams/shawne2520997/' | relative_url }}) | 7-5-1 | <span class="chip" style="background:#f1a489">1279.9</span> | 1296.9 |
+| 8 | [Wadgerach Sturdellske]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f4bda8">1201.0</span> | 1342.3 |
 | 9 | [The Antonio ClownExperience]({{ '/teams/kevbots22/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f5c3af">1181.7</span> | 1411.7 |
 | 10 | [Set_The_ RAT_TRAP_!]({{ '/teams/unclebadtouch38/' | relative_url }}) | 5-7-1 | <span class="chip" style="background:#faf1e9">1036.2</span> | 1215.5 |
 | 11 | [Tom Brady's Fluffer]({{ '/teams/henpen28/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f1a185">1288.2</span> | 1320.7 |
@@ -135,13 +135,13 @@ season has game-by-game scores added.
 | 1 | [Hans Blitz! Ohh noo!]({{ '/teams/theoceanpulse/' | relative_url }}) <span class="tag tag--shiva">Shiva</span> | 9-4 | <span class="chip" style="background:#e78360">1453.7</span> | 1211.3 |
 | 2 | [Mixon's Gurley Fight Club]({{ '/teams/jackperkins74/' | relative_url }}) | 11-2 | <span class="chip" style="background:#d65a30">1581.3</span> | 1444.2 |
 | 3 | [Sackos Auto Draft Experiene]({{ '/teams/zachzoske/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f1a388">1359.5</span> | 1357.5 |
-| 4 | [Queen of the  Hill]({{ '/teams/shawne2520997/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f3b29a">1327.0</span> | 1245.1 |
-| 5 | [Hammed Up   .]({{ '/teams/schirmerj/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f4b9a3">1311.7</span> | 1360.6 |
+| 4 | [Queen of the Hill]({{ '/teams/shawne2520997/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f3b29a">1327.0</span> | 1245.1 |
+| 5 | [Hammed Up .]({{ '/teams/schirmerj/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f4b9a3">1311.7</span> | 1360.6 |
 | 6 | [Tom Brady's Fluffer]({{ '/teams/henpen28/' | relative_url }}) | 8-5 | <span class="chip" style="background:#f4baa4">1309.2</span> | 1255.2 |
 | 7 | [Cleveland Mcpussysmasher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f3b19a">1327.9</span> | 1210.7 |
 | 8 | [Chubbin out (no more Hydin)]({{ '/teams/sturmanator15/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f4bda8">1302.1</span> | 1255.9 |
-| 9 | [Wadgerach  Sturdellske ]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 5-8 | <span class="chip" style="background:#f7d8ca">1240.9</span> | 1378.4 |
-| 10 | [Team Kevin  with a K]({{ '/teams/kevbots22/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f9e5da">1210.9</span> | 1446.7 |
+| 9 | [Wadgerach Sturdellske]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 5-8 | <span class="chip" style="background:#f7d8ca">1240.9</span> | 1378.4 |
+| 10 | [Team Kevin with a K]({{ '/teams/kevbots22/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f9e5da">1210.9</span> | 1446.7 |
 | 11 | [Tacos Food Truck]({{ '/teams/ajstewart04/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f6cbba">1269.9</span> | 1417.6 |
 | 12 | [Graham Slam]({{ '/teams/lukstein/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 3-10 | <span class="chip" style="background:#faf1e9">1184.6</span> | 1295.5 |
 
@@ -154,13 +154,13 @@ season has game-by-game scores added.
 | 3 | [Dislocated Johnson]({{ '/teams/shawne2520997/' | relative_url }}) | 9-4 | <span class="chip" style="background:#f6d0c0">1155.7</span> | 1193.0 |
 | 4 | [Cleveland Mcpussysmasher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 6-6-1 | <span class="chip" style="background:#faefe7">1105.6</span> | 1120.6 |
 | 5 | [Jacking Goff]({{ '/teams/jackperkins74/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f2a88e">1220.5</span> | 1170.3 |
-| 6 | [Russian  Roiders ]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f1a388">1228.6</span> | 1187.0 |
+| 6 | [Russian Roiders]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f1a388">1228.6</span> | 1187.0 |
 | 7 | [Hans Blitz! Ohh noo!]({{ '/teams/theoceanpulse/' | relative_url }}) | 11-2 | <span class="chip" style="background:#f09b7e">1241.2</span> | 1097.6 |
-| 8 | [Browning out   .]({{ '/teams/schirmerj/' | relative_url }}) | 7-6 | <span class="chip" style="background:#d85f36">1375.9</span> | 1273.8 |
+| 8 | [Browning out .]({{ '/teams/schirmerj/' | relative_url }}) | 7-6 | <span class="chip" style="background:#d85f36">1375.9</span> | 1273.8 |
 | 9 | [Tacos Food Truck]({{ '/teams/ajstewart04/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f7d8c9">1143.7</span> | 1278.1 |
 | 10 | [The People's Champion]({{ '/teams/sturmanator15/' | relative_url }}) | 5-8 | <span class="chip" style="background:#f7d3c4">1151.0</span> | 1331.7 |
-| 11 | [Injury  Reserve ]({{ '/teams/zachzoske/' | relative_url }}) | 3-9-1 | <span class="chip" style="background:#faf1e9">1103.0</span> | 1266.4 |
-| 12 | [Wadgerach  Sturdellske ]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 4-9 | <span class="chip" style="background:#f6cdbc">1160.5</span> | 1279.7 |
+| 11 | [Injury Reserve]({{ '/teams/zachzoske/' | relative_url }}) | 3-9-1 | <span class="chip" style="background:#faf1e9">1103.0</span> | 1266.4 |
+| 12 | [Wadgerach Sturdellske]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 4-9 | <span class="chip" style="background:#f6cdbc">1160.5</span> | 1279.7 |
 
 ### 2016
 
@@ -172,9 +172,9 @@ season has game-by-game scores added.
 | 4 | [The Toddfather]({{ '/teams/jackperkins74/' | relative_url }}) | 8-5 | <span class="chip" style="background:#e78461">1255.4</span> | 1208.1 |
 | 5 | [Cleveland Mcpussysmasher]({{ '/teams/unclebadtouch38/' | relative_url }}) | 7-6 | <span class="chip" style="background:#e98867">1238.7</span> | 1269.9 |
 | 6 | [My Cox Will Ertz You]({{ '/teams/lukstein/' | relative_url }}) | 7-6 | <span class="chip" style="background:#eb8c6c">1224.4</span> | 1234.7 |
-| 7 | [The  Mighty Cucks]({{ '/teams/zachzoske/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f09d80">1168.4</span> | 1209.2 |
-| 8 | [Wadgerach  Sturdellske ]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 6-7 | <span class="chip" style="background:#e27753">1299.0</span> | 1278.2 |
-| 9 | [Russian  Roiders ]({{ '/teams/kevbots22/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f0997b">1177.7</span> | 1353.8 |
+| 7 | [The Mighty Cucks]({{ '/teams/zachzoske/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f09d80">1168.4</span> | 1209.2 |
+| 8 | [Wadgerach Sturdellske]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 6-7 | <span class="chip" style="background:#e27753">1299.0</span> | 1278.2 |
+| 9 | [Russian Roiders]({{ '/teams/kevbots22/' | relative_url }}) | 4-9 | <span class="chip" style="background:#f0997b">1177.7</span> | 1353.8 |
 | 10 | [Hillary Has The 2nd Clinton-Dix]({{ '/teams/theoceanpulse/' | relative_url }}) | 6-7 | <span class="chip" style="background:#e17651">1304.7</span> | 1281.6 |
 | 11 | [Forceable Entry]({{ '/teams/henpen28/' | relative_url }}) | 5-8 | <span class="chip" style="background:#ea8b6a">1229.8</span> | 1201.5 |
 | 12 | [Brown Lives Matter]({{ '/teams/master-otis/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 1-12 | <span class="chip" style="background:#faf1e9">953.6</span> | 1262.0 |
@@ -186,13 +186,13 @@ season has game-by-game scores added.
 | 1 | [Jenner's Man Meat]({{ '/teams/jackperkins74/' | relative_url }}) <span class="tag tag--shiva">Shiva</span> | 6-7 | <span class="chip" style="background:#f2ac93">1218.3</span> | 1187.3 |
 | 2 | [I Waxed My Child For This]({{ '/teams/master-otis/' | relative_url }}) | 9-4 | <span class="chip" style="background:#d65a30">1425.0</span> | 1200.2 |
 | 3 | [Gronkey Punch]({{ '/teams/zachzoske/' | relative_url }}) | 8-5 | <span class="chip" style="background:#df6f4a">1367.2</span> | 1277.5 |
-| 4 | [The People's  Commissioner ]({{ '/teams/sturmanator15/' | relative_url }}) | 8-5 | <span class="chip" style="background:#ea8a69">1296.7</span> | 1097.6 |
+| 4 | [The People's Commissioner]({{ '/teams/sturmanator15/' | relative_url }}) | 8-5 | <span class="chip" style="background:#ea8a69">1296.7</span> | 1097.6 |
 | 5 | [Wilson's Magic Water]({{ '/teams/schirmerj/' | relative_url }}) | 7-6 | <span class="chip" style="background:#f19f83">1243.2</span> | 1210.2 |
 | 6 | [The Bragers]({{ '/teams/thebragers/' | relative_url }}) | 9-4 | <span class="chip" style="background:#f2ac92">1219.6</span> | 1263.5 |
 | 7 | [Polk Me Til I Goregasm]({{ '/teams/lukstein/' | relative_url }}) | 3-10 | <span class="chip" style="background:#faf0e8">1087.9</span> | 1296.0 |
-| 8 | [Jared's  Kids]({{ '/teams/henpen28/' | relative_url }}) | 4-9 | <span class="chip" style="background:#faf1e9">1086.2</span> | 1207.2 |
+| 8 | [Jared's Kids]({{ '/teams/henpen28/' | relative_url }}) | 4-9 | <span class="chip" style="background:#faf1e9">1086.2</span> | 1207.2 |
 | 9 | [He's Quick He's Slick He's Mike]({{ '/teams/whowonthelastsuperbowl/' | relative_url }}) | 6-7 | <span class="chip" style="background:#f5c2ae">1176.3</span> | 1236.9 |
-| 10 | [MasterDeflater  And_Commander]({{ '/teams/kevbots22/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 5-8 | <span class="chip" style="background:#f8e2d6">1115.0</span> | 1259.0 |
+| 10 | [MasterDeflater And_Commander]({{ '/teams/kevbots22/' | relative_url }}) <span class="tag tag--sacko">Sacko</span> | 5-8 | <span class="chip" style="background:#f8e2d6">1115.0</span> | 1259.0 |
 
 ### 2014
 
@@ -200,8 +200,8 @@ season has game-by-game scores added.
 |:--|:--|:--|--:|--:|
 | 1 | [Uncle Grabby]({{ '/teams/henpen28/' | relative_url }}) <span class="tag tag--shiva">Shiva</span> | 7-6 | <span class="chip" style="background:#da633b">1337.1</span> | 1293.6 |
 | 2 | [Lynched by Le' Bell]({{ '/teams/master-otis/' | relative_url }}) | 9-4 | <span class="chip" style="background:#de6e48">1297.1</span> | 1202.4 |
-| 3 | [Luck her right  in the Pussy]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 | <span class="chip" style="background:#d65a30">1369.3</span> | 1168.4 |
-| 4 | [Ben there raped that ]({{ '/teams/sturmanator15/' | relative_url }}) | 11-2 | <span class="chip" style="background:#d75d34">1358.7</span> | 1135.6 |
+| 3 | [Luck her right in the Pussy]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 | <span class="chip" style="background:#d65a30">1369.3</span> | 1168.4 |
+| 4 | [Ben there raped that]({{ '/teams/sturmanator15/' | relative_url }}) | 11-2 | <span class="chip" style="background:#d75d34">1358.7</span> | 1135.6 |
 | 5 | [Team TheBragers]({{ '/teams/thebragers/' | relative_url }}) | 7-6 | <span class="chip" style="background:#ea8a69">1197.9</span> | 1188.5 |
 | 6 | [Washington Blowskins]({{ '/teams/lukstein/' | relative_url }}) | 7-6 | <span class="chip" style="background:#ed9273">1168.4</span> | 1213.1 |
 | 7 | [Spaceball One]({{ '/teams/zachzoske/' | relative_url }}) | 6-7 | <span class="chip" style="background:#e37a57">1253.9</span> | 1252.9 |

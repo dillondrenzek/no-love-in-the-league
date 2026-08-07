@@ -103,13 +103,11 @@ def tile(label, value):
 
 def resume_card(p):
     reg = p["reg"]
-    pl = p["playoff"]
-    playoff_line = rec_str(pl["w"], pl["l"], pl["t"]) if (pl["w"] + pl["l"] + pl["t"]) else "—"
     tiles = "".join([
         tile("All-Time", f"{rec_str(reg['w'], reg['l'], reg['t'])} <span class='muted'>({pct(reg['win_pct'])})</span>"),
         tile("Titles", fmt_titles(p["titles"])),
         tile("Sackos", p["sackos"]),
-        tile("Playoffs", playoff_line),
+        tile("Playoff Apps", p["berths"]),
         tile("Seasons", p["seasons_count"]),
         tile("Best Finish", best_finish_label(p)),
     ])

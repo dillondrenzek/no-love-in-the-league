@@ -73,6 +73,9 @@ weeks_in_regular_season: 14
 teams:                      # this season's team name per franchise id
   jackperkins74: "Pukkake"
   kevbots22: "Keeping up with the McCalferies"
+playoff_teams:              # winners-bracket seeds (top ESPN playoffSeed), in order
+  - jackperkins74
+  - kevbots22
 final_standings:            # finish order (ESPN's final placement)
   - jackperkins74
   - kevbots22

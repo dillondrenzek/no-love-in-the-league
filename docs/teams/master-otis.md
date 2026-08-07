@@ -10,8 +10,8 @@ permalink: /teams/master-otis/
 <p class="owner-sub">Most recent: Brown Lives Matter</p>
 
 <div class="resume">
-  <div class="resume__honors">🥈 2× Runner-Up · 💩 <b>1× Sacko</b> (2016) · 3× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">19-20 <span class='muted'>(.487)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">2-5</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">3</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2014, 2015)</div></div></div>
+  <div class="resume__honors">🥈 2× Runner-Up · 💩 <b>1× Sacko</b> (2016) · 2× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">19-20 <span class='muted'>(.487)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">3</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2014, 2015)</div></div></div>
 </div>
 
 ## Season by season

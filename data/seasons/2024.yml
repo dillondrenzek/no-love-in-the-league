@@ -12,13 +12,23 @@ teams:
   schirmerj: "5 Star Men"
   lukstein: "2x Runner Up"
   jackperkins74: "Pukkake"
-  kevbots22: "Tom Bradys Only Fans "
+  kevbots22: "Tom Bradys Only Fans"
   henpen28: "Three's Company"
   purpsworth: "I am dead inside"
   whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
   theoceanpulse: "Thoughts and Players"
   gganoom: "KillDilly Elegy"
   shawne2520997: "Save a horse, Ride the Cowboys"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - lukstein
+  - schirmerj
+  - henpen28
+  - theoceanpulse
+  - sturmanator15
+  - jackperkins74
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

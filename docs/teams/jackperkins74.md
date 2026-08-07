@@ -10,8 +10,8 @@ permalink: /teams/jackperkins74/
 <p class="owner-sub">Most recent: Pukkake</p>
 
 <div class="resume">
-  <div class="resume__honors">🏆 <b>2× Shiva</b> (2015, 2025) · 🥈 1× Runner-Up · 🥉 2× Third · 💩 <b>1× Sacko</b> (2020) · 12× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">88-73 <span class='muted'>(.547)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">20-13</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2015, 2025)</div></div></div>
+  <div class="resume__honors">🏆 <b>2× Shiva</b> (2015, 2025) · 🥈 1× Runner-Up · 🥉 2× Third · 💩 <b>1× Sacko</b> (2020) · 9× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">88-73 <span class='muted'>(.547)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">9</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2015, 2025)</div></div></div>
 </div>
 
 ## Season by season

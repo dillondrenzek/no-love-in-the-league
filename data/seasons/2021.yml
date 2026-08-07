@@ -20,6 +20,18 @@ teams:
   unclebadtouch38: "Set_The_ RAT_TRAP_!"
   shawne2520997: "Koo Koo Kachoo"
 
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - shawne2520997
+  - sturmanator15
+  - henpen28
+  - schirmerj
+  - kevbots22
+  - jackperkins74
+  - purpsworth
+  - whowonthelastsuperbowl
+
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:
   - shawne2520997

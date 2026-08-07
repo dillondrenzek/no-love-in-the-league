@@ -143,7 +143,7 @@ def build_matchups(teams, team_to_fid, reg_season_count):
     return matchups
 
 
-def dump_season_yaml(year, reg_count, final_order, matchups, teams):
+def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Do not hand-edit;",
         f"# re-run the importer to refresh. See ../../ARCHITECTURE.md.",
@@ -156,6 +156,13 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams):
         "teams:",
     ]
     lines += [f'  {fid}: "{name}"' for fid, name in teams.items()]
+    lines += [
+        "",
+        "# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff",
+        "# team count), in seed order. Used for the 'made the playoffs' count.",
+        "playoff_teams:",
+    ]
+    lines += [f"  - {fid}" for fid in playoff_teams]
     lines += [
         "",
         "# Final placement (ESPN's rankCalculatedFinal), used for the finish column.",
@@ -219,7 +226,16 @@ def main():
     final_order = [team_to_fid[t.team_id] for t in final_sorted]
     season_teams = {team_to_fid[t.team_id]: clean_name(t.team_name) for t in teams}
 
-    season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups, season_teams)
+    # Winners-bracket teams = top seeds. team.standing is ESPN's playoffSeed.
+    playoff_count = league.settings.playoff_team_count
+    seeded = sorted(
+        (t for t in teams if getattr(t, "standing", 0) and t.standing <= playoff_count),
+        key=lambda t: t.standing,
+    )
+    playoff_ids = [team_to_fid[t.team_id] for t in seeded]
+
+    season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups,
+                                   season_teams, playoff_ids)
 
     if not any(o for _, o in map(owner_of, teams)):
         print("WARNING: no owner names/SWIDs found — franchise ids fell back to team "

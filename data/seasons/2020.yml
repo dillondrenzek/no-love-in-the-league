@@ -9,16 +9,28 @@ weeks_in_regular_season: 13
 teams:
   sturmanator15: "Lickin Brown in my McLaurin"
   zachzoske: "Calvin and (Jac)Obs"
-  schirmerj: "Folklore   Bandits"
+  schirmerj: "Folklore Bandits"
   lukstein: "Show Me Your TDs"
   jackperkins74: "Ram It In"
   kevbots22: "Fantasy Judas"
   henpen28: "Scat Play"
   purpsworth: "AB’s Helmet"
-  whowonthelastsuperbowl: "Wadgerach  Sturdellske "
+  whowonthelastsuperbowl: "Wadgerach Sturdellske"
   theoceanpulse: "Trick-Ass Marks"
   unclebadtouch38: "Set_The_ RAT_TRAP_!"
   shawne2520997: "Koo Koo Kachoo"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - zachzoske
+  - schirmerj
+  - unclebadtouch38
+  - kevbots22
+  - shawne2520997
+  - whowonthelastsuperbowl
+  - purpsworth
+  - theoceanpulse
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

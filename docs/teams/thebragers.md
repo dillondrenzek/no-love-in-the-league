@@ -11,7 +11,7 @@ permalink: /teams/thebragers/
 
 <div class="resume">
   <div class="resume__honors">2× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">16-10 <span class='muted'>(.615)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">2-4</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">5th (2014)</div></div></div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">16-10 <span class='muted'>(.615)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">5th (2014)</div></div></div>
 </div>
 
 ## Season by season

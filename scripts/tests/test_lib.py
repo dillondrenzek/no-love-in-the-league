@@ -124,8 +124,9 @@ def test_owner_profiles_totals_and_h2h():
     assert a["titles"] == 2 and sorted(y for y, _ in a["champ_years"]) == [2024, 2025]
     # Reg season 2-0 each year -> 4-0 all time.
     assert (a["reg"]["w"], a["reg"]["l"]) == (4, 0), a["reg"]
-    # 'a' has a playoff loss to 'd' each season (200-60), so playoff record 0-2.
-    assert (a["playoff"]["w"], a["playoff"]["l"]) == (0, 2), a["playoff"]
+    # No playoff_teams list -> fallback counts the post-season game 'a' played
+    # each season, so 2 appearances.
+    assert a["berths"] == 2, a["berths"]
 
     # Head-to-head is symmetric: a beat b twice (weeks 1), b lost to a twice.
     assert a["h2h"]["b"]["w"] == 2 and profiles["b"]["h2h"]["a"]["l"] == 2
@@ -134,6 +135,20 @@ def test_owner_profiles_totals_and_h2h():
 def test_rec_str():
     assert rec_str(4, 0, 0) == "4-0"
     assert rec_str(7, 6, 1) == "7-6-1"
+
+
+def test_berths_use_winners_bracket_seeds():
+    s = matchup_season(2025)
+    s["playoff_teams"] = ["a", "c"]      # only these two made the winners bracket
+    profiles = compute_profiles([s], {}, {})
+    assert profiles["a"]["berths"] == 1 and profiles["c"]["berths"] == 1
+    assert profiles["b"]["berths"] == 0 and profiles["d"]["berths"] == 0
+
+
+def test_berths_fallback_without_seed_list():
+    s = matchup_season(2025)              # no playoff_teams -> fallback counts the
+    profiles = compute_profiles([s], {}, {})  # one post-season game's participants
+    assert profiles["a"]["berths"] == 1 and profiles["d"]["berths"] == 1
 
 
 def test_sacko_counts_last_place():
@@ -188,9 +203,8 @@ def test_meaningless_games_excluded_from_records_and_h2h():
     assert recs["Most Points in a Week"]["value"] != "999.00", recs["Most Points in a Week"]
 
     profiles = compute_profiles([season], {}, overrides)
-    # The meaningless playoff game adds nothing: no playoff win, and the e-vs-f
-    # head-to-head reflects only the real regular-season game (1-0, not 1-1).
-    assert profiles["e"]["playoff"]["w"] == 0
+    # The meaningless playoff game adds nothing: the e-vs-f head-to-head reflects
+    # only the real regular-season game (1-0, not 1-1).
     assert (profiles["e"]["h2h"]["f"]["w"], profiles["e"]["h2h"]["f"]["l"]) == (1, 0)
 
 

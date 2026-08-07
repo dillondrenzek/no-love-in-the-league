@@ -8,17 +8,27 @@ weeks_in_regular_season: 13
 # This season's team name for each franchise (shown on per-season pages).
 teams:
   sturmanator15: "Wadger Sturdell"
-  zachzoske: "The  Mighty Cucks"
+  zachzoske: "The Mighty Cucks"
   schirmerj: "Lick my Rawls ."
   lukstein: "My Cox Will Ertz You"
   jackperkins74: "The Toddfather"
-  kevbots22: "Russian  Roiders "
+  kevbots22: "Russian Roiders"
   henpen28: "Forceable Entry"
   master-otis: "Brown Lives Matter"
-  whowonthelastsuperbowl: "Wadgerach  Sturdellske "
+  whowonthelastsuperbowl: "Wadgerach Sturdellske"
   theoceanpulse: "Hillary Has The 2nd Clinton-Dix"
   unclebadtouch38: "Cleveland Mcpussysmasher"
   shawne2520997: "GONNA DEFLATE YO BALLS!!"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - sturmanator15
+  - jackperkins74
+  - schirmerj
+  - shawne2520997
+  - unclebadtouch38
+  - lukstein
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

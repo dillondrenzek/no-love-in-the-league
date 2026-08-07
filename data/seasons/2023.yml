@@ -7,18 +7,28 @@ weeks_in_regular_season: 14
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
-  sturmanator15: "In Goff we trust "
+  sturmanator15: "In Goff we trust"
   zachzoske: "Zach's Juicy Fantasy Teamussy"
   schirmerj: "IDP'd My Pants"
   lukstein: "2x Runner Up"
   jackperkins74: "Vinegar Strokes"
-  kevbots22: "Tom Bradys Only Fans "
+  kevbots22: "Tom Bradys Only Fans"
   henpen28: "Three's Company"
   purpsworth: "Used Napkin"
   whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
   theoceanpulse: "Thoughts and Players"
-  unclebadtouch38: "Mr.  Irrelevant"
+  unclebadtouch38: "Mr. Irrelevant"
   shawne2520997: "Save a horse, Ride the Cowboys"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - theoceanpulse
+  - sturmanator15
+  - purpsworth
+  - shawne2520997
+  - schirmerj
+  - henpen28
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

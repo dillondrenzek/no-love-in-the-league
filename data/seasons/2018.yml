@@ -9,16 +9,28 @@ weeks_in_regular_season: 13
 teams:
   sturmanator15: "Chubbin out (no more Hydin)"
   zachzoske: "Sackos Auto Draft Experiene"
-  schirmerj: "Hammed Up   ."
+  schirmerj: "Hammed Up ."
   lukstein: "Graham Slam"
   jackperkins74: "Mixon's Gurley Fight Club"
-  kevbots22: "Team Kevin  with a K"
+  kevbots22: "Team Kevin with a K"
   henpen28: "Tom Brady's Fluffer"
   ajstewart04: "Tacos Food Truck"
-  whowonthelastsuperbowl: "Wadgerach  Sturdellske "
+  whowonthelastsuperbowl: "Wadgerach Sturdellske"
   theoceanpulse: "Hans Blitz! Ohh noo!"
   unclebadtouch38: "Cleveland Mcpussysmasher"
-  shawne2520997: "Queen of the  Hill"
+  shawne2520997: "Queen of the Hill"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - jackperkins74
+  - theoceanpulse
+  - henpen28
+  - zachzoske
+  - unclebadtouch38
+  - shawne2520997
+  - sturmanator15
+  - schirmerj
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

@@ -14,13 +14,13 @@ permalink: /history/
 | 2023 | [Save a horse, Ride the Cowboys]({{ '/teams/shawne2520997/' | relative_url }}) | [Three's Company]({{ '/teams/henpen28/' | relative_url }}) | [Thoughts and Players]({{ '/teams/theoceanpulse/' | relative_url }}) | 9-5 |
 | 2022 | [Consensual Trades]({{ '/teams/henpen28/' | relative_url }}) | [Koo Koo Kachoo]({{ '/teams/shawne2520997/' | relative_url }}) | [Fly Eagles Fly]({{ '/teams/lukstein/' | relative_url }}) | 7-7 |
 | 2021 | [Koo Koo Kachoo]({{ '/teams/shawne2520997/' | relative_url }}) | [WA Fantasy Football Team]({{ '/teams/purpsworth/' | relative_url }}) | [Scat Play]({{ '/teams/henpen28/' | relative_url }}) | 12-2 |
-| 2020 | [Set_The_ RAT_TRAP_!]({{ '/teams/unclebadtouch38/' | relative_url }}) | [Calvin and (Jac)Obs]({{ '/teams/zachzoske/' | relative_url }}) | [Folklore   Bandits]({{ '/teams/schirmerj/' | relative_url }}) | 9-4 |
+| 2020 | [Set_The_ RAT_TRAP_!]({{ '/teams/unclebadtouch38/' | relative_url }}) | [Calvin and (Jac)Obs]({{ '/teams/zachzoske/' | relative_url }}) | [Folklore Bandits]({{ '/teams/schirmerj/' | relative_url }}) | 9-4 |
 | 2019 | [Eleven In Crocks]({{ '/teams/zachzoske/' | relative_url }}) | [Show Me Your TDs]({{ '/teams/lukstein/' | relative_url }}) | [Vladimir Putin]({{ '/teams/jackperkins74/' | relative_url }}) | 6-7 |
 | 2018 | [Hans Blitz! Ohh noo!]({{ '/teams/theoceanpulse/' | relative_url }}) | [Mixon's Gurley Fight Club]({{ '/teams/jackperkins74/' | relative_url }}) | [Sackos Auto Draft Experiene]({{ '/teams/zachzoske/' | relative_url }}) | 9-4 |
 | 2017 | [Forceable Entry]({{ '/teams/henpen28/' | relative_url }}) | [My Cox Will Ertz You]({{ '/teams/lukstein/' | relative_url }}) | [Dislocated Johnson]({{ '/teams/shawne2520997/' | relative_url }}) | 6-7 |
 | 2016 | [Wadger Sturdell]({{ '/teams/sturmanator15/' | relative_url }}) & [Lick my Rawls .]({{ '/teams/schirmerj/' | relative_url }}) | — (co-champions) | [GONNA DEFLATE YO BALLS!!]({{ '/teams/shawne2520997/' | relative_url }}) | — |
 | 2015 | [Jenner's Man Meat]({{ '/teams/jackperkins74/' | relative_url }}) | [I Waxed My Child For This]({{ '/teams/master-otis/' | relative_url }}) | [Gronkey Punch]({{ '/teams/zachzoske/' | relative_url }}) | 6-7 |
-| 2014 | [Uncle Grabby]({{ '/teams/henpen28/' | relative_url }}) | [Lynched by Le' Bell]({{ '/teams/master-otis/' | relative_url }}) | [Luck her right  in the Pussy]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 |
+| 2014 | [Uncle Grabby]({{ '/teams/henpen28/' | relative_url }}) | [Lynched by Le' Bell]({{ '/teams/master-otis/' | relative_url }}) | [Luck her right in the Pussy]({{ '/teams/kevbots22/' | relative_url }}) | 7-6 |
 
 ## Record Book
 
@@ -29,9 +29,9 @@ permalink: /history/
 | Best Regular-Season Record | Hans Blitz! Ohh noo! | 11-1-1 | 2019 |
 | Worst Regular-Season Record | Brown Lives Matter | 1-12 | 2016 |
 | Most Championships | Henry | 3 | — |
-| Most Points in a Week | Tom Bradys Only Fans  | 184.90 | 2024 |
-| Fewest Points in a Week | The People's  Commissioner  | 19.30 | 2015 |
-| Biggest Blowout | Tom Bradys Only Fans  | 126.10 (184.9-58.8) | 2024 |
+| Most Points in a Week | Tom Bradys Only Fans | 184.90 | 2024 |
+| Fewest Points in a Week | The People's Commissioner | 19.30 | 2015 |
+| Biggest Blowout | Tom Bradys Only Fans | 126.10 (184.9-58.8) | 2024 |
 | Highest Combined Score | Nix Out For Harambe | 330.10 | 2024 |
 
 *More records (highest-scoring week, biggest blowouts, head-to-head) unlock once

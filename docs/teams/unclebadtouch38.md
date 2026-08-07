@@ -7,19 +7,19 @@ permalink: /teams/unclebadtouch38/
 
 [← All owners]({{ '/teams/' | relative_url }})
 
-<p class="owner-sub">Most recent: Mr.  Irrelevant</p>
+<p class="owner-sub">Most recent: Mr. Irrelevant</p>
 
 <div class="resume">
-  <div class="resume__honors">🏆 <b>1× Shiva</b> (2020) · 💩 <b>1× Sacko</b> (2023) · 8× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">49-56-2 <span class='muted'>(.467)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">10-14</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">8</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2020)</div></div></div>
+  <div class="resume__honors">🏆 <b>1× Shiva</b> (2020) · 💩 <b>1× Sacko</b> (2023) · 5× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">49-56-2 <span class='muted'>(.467)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">5</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">8</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Shiva</span> (2020)</div></div></div>
 </div>
 
 ## Season by season
 
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
-| 2023 | Mr.  Irrelevant <span class="tag tag--sacko">Sacko</span> | 12th | 4-10 | <span class="chip" style="background:#e37b57">1297.6</span> | 1554.6 |
-| 2022 | Mr.  Irrelevant | 8th | 7-7 | <span class="chip" style="background:#f4bba6">1144.5</span> | 1290.3 |
+| 2023 | Mr. Irrelevant <span class="tag tag--sacko">Sacko</span> | 12th | 4-10 | <span class="chip" style="background:#e37b57">1297.6</span> | 1554.6 |
+| 2022 | Mr. Irrelevant | 8th | 7-7 | <span class="chip" style="background:#f4bba6">1144.5</span> | 1290.3 |
 | 2021 | Set_The_ RAT_TRAP_! | 11th | 4-10 | <span class="chip" style="background:#f6cbb9">1112.9</span> | 1392.7 |
 | 2020 | Set_The_ RAT_TRAP_! <span class="tag tag--shiva">Shiva</span> | 1st | 9-4 | <span class="chip" style="background:#d65a30">1389.2</span> | 1265.1 |
 | 2019 | Set_The_ RAT_TRAP_! | 10th | 5-7-1 | <span class="chip" style="background:#faf1e9">1036.2</span> | 1215.5 |

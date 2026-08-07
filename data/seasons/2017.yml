@@ -8,17 +8,29 @@ weeks_in_regular_season: 13
 # This season's team name for each franchise (shown on per-season pages).
 teams:
   sturmanator15: "The People's Champion"
-  zachzoske: "Injury  Reserve "
-  schirmerj: "Browning out   ."
+  zachzoske: "Injury Reserve"
+  schirmerj: "Browning out ."
   lukstein: "My Cox Will Ertz You"
   jackperkins74: "Jacking Goff"
-  kevbots22: "Russian  Roiders "
+  kevbots22: "Russian Roiders"
   henpen28: "Forceable Entry"
   ajstewart04: "Tacos Food Truck"
-  whowonthelastsuperbowl: "Wadgerach  Sturdellske "
+  whowonthelastsuperbowl: "Wadgerach Sturdellske"
   theoceanpulse: "Hans Blitz! Ohh noo!"
   unclebadtouch38: "Cleveland Mcpussysmasher"
   shawne2520997: "Dislocated Johnson"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - theoceanpulse
+  - jackperkins74
+  - lukstein
+  - shawne2520997
+  - schirmerj
+  - kevbots22
+  - unclebadtouch38
+  - henpen28
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

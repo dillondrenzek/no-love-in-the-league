@@ -10,8 +10,8 @@ permalink: /teams/whowonthelastsuperbowl/
 <p class="owner-sub">Most recent: Trick or Trick It’s Mike Vick</p>
 
 <div class="resume">
-  <div class="resume__honors">💩 <b>2× Sacko</b> (2014, 2017) · 12× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">62-99 <span class='muted'>(.385)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">12-24</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">4th (2022)</div></div></div>
+  <div class="resume__honors">💩 <b>2× Sacko</b> (2014, 2017) · 4× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">62-99 <span class='muted'>(.385)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">2</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">4</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">4th (2022)</div></div></div>
 </div>
 
 ## Season by season
@@ -23,11 +23,11 @@ permalink: /teams/whowonthelastsuperbowl/
 | 2023 | Trick or Trick It’s Mike Vick | 9th | 5-9 | <span class="chip" style="background:#da633b">1566.3</span> | 1630.8 |
 | 2022 | Trick or Trick It’s Mike Vick | 4th | 7-7 | <span class="chip" style="background:#eb8e6e">1331.2</span> | 1302.5 |
 | 2021 | Trick or Trick It’s Mike Vick | 8th | 6-8 | <span class="chip" style="background:#e6805e">1405.3</span> | 1450.5 |
-| 2020 | Wadgerach  Sturdellske  | 8th | 6-7 | <span class="chip" style="background:#ee9475">1298.8</span> | 1350.4 |
-| 2019 | Wadgerach  Sturdellske  | 8th | 7-6 | <span class="chip" style="background:#f2aa90">1201.0</span> | 1342.3 |
-| 2018 | Wadgerach  Sturdellske  | 9th | 5-8 | <span class="chip" style="background:#f1a084">1240.9</span> | 1378.4 |
-| 2017 | Wadgerach  Sturdellske  <span class="tag tag--sacko">Sacko</span> | 12th | 4-9 | <span class="chip" style="background:#f3b49d">1160.5</span> | 1279.7 |
-| 2016 | Wadgerach  Sturdellske  | 8th | 6-7 | <span class="chip" style="background:#ee9474">1299.0</span> | 1278.2 |
+| 2020 | Wadgerach Sturdellske | 8th | 6-7 | <span class="chip" style="background:#ee9475">1298.8</span> | 1350.4 |
+| 2019 | Wadgerach Sturdellske | 8th | 7-6 | <span class="chip" style="background:#f2aa90">1201.0</span> | 1342.3 |
+| 2018 | Wadgerach Sturdellske | 9th | 5-8 | <span class="chip" style="background:#f1a084">1240.9</span> | 1378.4 |
+| 2017 | Wadgerach Sturdellske <span class="tag tag--sacko">Sacko</span> | 12th | 4-9 | <span class="chip" style="background:#f3b49d">1160.5</span> | 1279.7 |
+| 2016 | Wadgerach Sturdellske | 8th | 6-7 | <span class="chip" style="background:#ee9474">1299.0</span> | 1278.2 |
 | 2015 | He's Quick He's Slick He's Mike | 9th | 6-7 | <span class="chip" style="background:#f3b098">1176.3</span> | 1236.9 |
 | 2014 | Haters Gonna Hate <span class="tag tag--sacko">Sacko</span> | 10th | 1-12 | <span class="chip" style="background:#faf1e9">920.5</span> | 1206.1 |
 

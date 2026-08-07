@@ -5,167 +5,187 @@
 - id: sturmanator15
   name: Wade Sturman
   aliases:
-    - "Ben there raped that "
-    - "The People's  Commissioner "
-    - Wadger Sturdell
-    - The People's Champion
-    - Chubbin out (no more Hydin)
-    - Lamar's  Donger
-    - Lickin Brown in my McLaurin
-    - Purple Cobras and Michel
-    - Trey Lanced my ❤️
-    - "In Goff we trust "
-    - All Hail the King
-    - Dont spit just swallow
-  espn_swid: "{1C08B299-B471-49F1-88B2-99B47149F176}"
+  - 'Ben there raped that '
+  - 'The People''s  Commissioner '
+  - Wadger Sturdell
+  - The People's Champion
+  - Chubbin out (no more Hydin)
+  - Lamar's  Donger
+  - Lickin Brown in my McLaurin
+  - Purple Cobras and Michel
+  - Trey Lanced my ❤️
+  - 'In Goff we trust '
+  - All Hail the King
+  - Dont spit just swallow
+  - Ben there raped that
+  - The People's Commissioner
+  - Lamar's Donger
+  - In Goff we trust
+  espn_swid: '{1C08B299-B471-49F1-88B2-99B47149F176}'
 - id: zachzoske
   name: Zach Zoske
   aliases:
-    - Spaceball One
-    - Gronkey Punch
-    - The  Mighty Cucks
-    - "Injury  Reserve "
-    - Sackos Auto Draft Experiene
-    - Eleven In Crocks
-    - Calvin and (Jac)Obs
-    - ESPN 8 The Ocho
-    - Risk it for The Biscuit
-    - Zach's Juicy Fantasy Teamussy
-    - Nix Out For Harambe
-    - Big Brown Dak Makes em Waddle
-  espn_swid: "{CE078498-3784-4866-8784-983784A866C4}"
+  - Spaceball One
+  - Gronkey Punch
+  - The  Mighty Cucks
+  - 'Injury  Reserve '
+  - Sackos Auto Draft Experiene
+  - Eleven In Crocks
+  - Calvin and (Jac)Obs
+  - ESPN 8 The Ocho
+  - Risk it for The Biscuit
+  - Zach's Juicy Fantasy Teamussy
+  - Nix Out For Harambe
+  - Big Brown Dak Makes em Waddle
+  - The Mighty Cucks
+  - Injury Reserve
+  espn_swid: '{CE078498-3784-4866-8784-983784A866C4}'
 - id: schirmerj
   name: Jono Schirmer
   aliases:
-    - Arian nation .
-    - Wilson's Magic Water
-    - Lick my Rawls .
-    - Browning out   .
-    - Hammed Up   .
-    - Tank4Picks   .
-    - Folklore   Bandits
-    - Post Mahomes
-    - Make Dalvin Cook Again
-    - IDP'd My Pants
-    - 5 Star Men
-    - IDPs Forever
-  espn_swid: "{D92FE464-BE9C-482A-AFE4-64BE9C882A83}"
+  - Arian nation .
+  - Wilson's Magic Water
+  - Lick my Rawls .
+  - Browning out   .
+  - Hammed Up   .
+  - Tank4Picks   .
+  - Folklore   Bandits
+  - Post Mahomes
+  - Make Dalvin Cook Again
+  - IDP'd My Pants
+  - 5 Star Men
+  - IDPs Forever
+  - Browning out .
+  - Hammed Up .
+  - Tank4Picks .
+  - Folklore Bandits
+  espn_swid: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
 - id: lukstein
   name: Luke Stein
   aliases:
-    - Washington Blowskins
-    - Polk Me Til I Goregasm
-    - My Cox Will Ertz You
-    - Graham Slam
-    - Show Me Your TDs
-    - Autodraft Monster
-    - Fly Eagles Fly
-    - 2x Runner Up
-  espn_swid: "{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}"
+  - Washington Blowskins
+  - Polk Me Til I Goregasm
+  - My Cox Will Ertz You
+  - Graham Slam
+  - Show Me Your TDs
+  - Autodraft Monster
+  - Fly Eagles Fly
+  - 2x Runner Up
+  espn_swid: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
 - id: whowonthelastsuperbowl
   name: Nate Appel
   aliases:
-    - Haters Gonna Hate
-    - He's Quick He's Slick He's Mike
-    - "Wadgerach  Sturdellske "
-    - Trick or Trick It’s Mike Vick
-  espn_swid: "{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}"
+  - Haters Gonna Hate
+  - He's Quick He's Slick He's Mike
+  - 'Wadgerach  Sturdellske '
+  - Trick or Trick It’s Mike Vick
+  - Wadgerach Sturdellske
+  espn_swid: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
 - id: jackperkins74
   name: Jack Perkins
   aliases:
-    - Turn down for Watt
-    - Jenner's Man Meat
-    - The Toddfather
-    - Jacking Goff
-    - Mixon's Gurley Fight Club
-    - Vladimir Putin
-    - Ram It In
-    - Jackie PooPooPants
-    - Allen's Deep Balls
-    - Vinegar Strokes
-    - Pukkake
-  espn_swid: "{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}"
+  - Turn down for Watt
+  - Jenner's Man Meat
+  - The Toddfather
+  - Jacking Goff
+  - Mixon's Gurley Fight Club
+  - Vladimir Putin
+  - Ram It In
+  - Jackie PooPooPants
+  - Allen's Deep Balls
+  - Vinegar Strokes
+  - Pukkake
+  espn_swid: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
 - id: kevbots22
   name: Kevin Graczyk
   aliases:
-    - Luck her right  in the Pussy
-    - MasterDeflater  And_Commander
-    - "Russian  Roiders "
-    - Team Kevin  with a K
-    - The Antonio ClownExperience
-    - Fantasy Judas
-    - Naggar's In Paris
-    - "Tom Bradys Only Fans "
-    - Keeping up with the McCalferies
-  espn_swid: "{F2121BF6-458B-47A2-921B-F6458BC7A227}"
+  - Luck her right  in the Pussy
+  - MasterDeflater  And_Commander
+  - 'Russian  Roiders '
+  - Team Kevin  with a K
+  - The Antonio ClownExperience
+  - Fantasy Judas
+  - Naggar's In Paris
+  - 'Tom Bradys Only Fans '
+  - Keeping up with the McCalferies
+  - Luck her right in the Pussy
+  - MasterDeflater And_Commander
+  - Russian Roiders
+  - Team Kevin with a K
+  - Tom Bradys Only Fans
+  espn_swid: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
 - id: thebragers
   name: Brady
   aliases:
-    - Team TheBragers
-    - The Bragers
-  espn_swid: "{F01BA4FF-F3C9-489C-9BA4-FFF3C9489C07}"
+  - Team TheBragers
+  - The Bragers
+  espn_swid: '{F01BA4FF-F3C9-489C-9BA4-FFF3C9489C07}'
 - id: henpen28
   name: Henry Stefan
   aliases:
-    - Uncle Grabby
-    - Jared's  Kids
-    - Forceable Entry
-    - Tom Brady's Fluffer
-    - Scat Play
-    - Consensual Trades
-    - Three's Company
-    - Dump it on my Chest
-  espn_swid: "{821EBE27-2BE3-49D4-9EBE-272BE3B9D412}"
+  - Uncle Grabby
+  - Jared's  Kids
+  - Forceable Entry
+  - Tom Brady's Fluffer
+  - Scat Play
+  - Consensual Trades
+  - Three's Company
+  - Dump it on my Chest
+  - Jared's Kids
+  espn_swid: '{821EBE27-2BE3-49D4-9EBE-272BE3B9D412}'
 - id: master-otis
   name: Odie Olsen
   aliases:
-    - Lynched by Le' Bell
-    - I Waxed My Child For This
-    - Brown Lives Matter
-  espn_swid: "{35E51D27-05AB-4993-A51D-2705ABF99311}"
+  - Lynched by Le' Bell
+  - I Waxed My Child For This
+  - Brown Lives Matter
+  espn_swid: '{35E51D27-05AB-4993-A51D-2705ABF99311}'
 - id: theoceanpulse
   name: Dillon Drenzek
   aliases:
-    - Hillary Has The 2nd Clinton-Dix
-    - Hans Blitz! Ohh noo!
-    - Trick-Ass Marks
-    - Hot Chubb Time Machine
-    - Thoughts and Players
-  espn_swid: "{A07D41FF-2713-4306-883E-959C2C6F8F1E}"
+  - Hillary Has The 2nd Clinton-Dix
+  - Hans Blitz! Ohh noo!
+  - Trick-Ass Marks
+  - Hot Chubb Time Machine
+  - Thoughts and Players
+  espn_swid: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
 - id: unclebadtouch38
   name: Fletcher Harvey
   aliases:
-    - Cleveland Mcpussysmasher
-    - Set_The_ RAT_TRAP_!
-    - Mr.  Irrelevant
-  espn_swid: "{2E4B888F-67D7-44C1-8B88-8F67D7C4C160}"
+  - Cleveland Mcpussysmasher
+  - Set_The_ RAT_TRAP_!
+  - Mr.  Irrelevant
+  - Mr. Irrelevant
+  espn_swid: '{2E4B888F-67D7-44C1-8B88-8F67D7C4C160}'
 - id: shawne2520997
   name: Shawnee Perkins
   aliases:
-    - GONNA DEFLATE YO BALLS!!
-    - Dislocated Johnson
-    - Queen of the  Hill
-    - Mixon  it up
-    - Koo Koo Kachoo
-    - Save a horse, Ride the Cowboys
-    - D***er my Sufficient Tight End
-  espn_swid: "{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}"
+  - GONNA DEFLATE YO BALLS!!
+  - Dislocated Johnson
+  - Queen of the  Hill
+  - Mixon  it up
+  - Koo Koo Kachoo
+  - Save a horse, Ride the Cowboys
+  - D***er my Sufficient Tight End
+  - Queen of the Hill
+  - Mixon it up
+  espn_swid: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
 - id: ajstewart04
   name: Anthony Stewart
   aliases:
-    - Tacos Food Truck
-  espn_swid: "{960BDC58-9F03-47E5-8A85-7969929EE689}"
+  - Tacos Food Truck
+  espn_swid: '{960BDC58-9F03-47E5-8A85-7969929EE689}'
 - id: purpsworth
   name: Trevor Gappmayer
   aliases:
-    - AB’s Helmet
-    - WA Fantasy Football Team
-    - Used Napkin
-    - I am dead inside
-  espn_swid: "{06571853-E276-48AA-9202-F06B0AD927ED}"
+  - AB’s Helmet
+  - WA Fantasy Football Team
+  - Used Napkin
+  - I am dead inside
+  espn_swid: '{06571853-E276-48AA-9202-F06B0AD927ED}'
 - id: gganoom
   name: Grant Ganoom
   aliases:
-    - KillDilly Elegy
-    - One Big Beautiful Dill
-  espn_swid: "{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}"
+  - KillDilly Elegy
+  - One Big Beautiful Dill
+  espn_swid: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'

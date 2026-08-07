@@ -7,18 +7,30 @@ weeks_in_regular_season: 13
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
-  sturmanator15: "Lamar's  Donger"
+  sturmanator15: "Lamar's Donger"
   zachzoske: "Eleven In Crocks"
-  schirmerj: "Tank4Picks   ."
+  schirmerj: "Tank4Picks ."
   lukstein: "Show Me Your TDs"
   jackperkins74: "Vladimir Putin"
   kevbots22: "The Antonio ClownExperience"
   henpen28: "Tom Brady's Fluffer"
   purpsworth: "AB’s Helmet"
-  whowonthelastsuperbowl: "Wadgerach  Sturdellske "
+  whowonthelastsuperbowl: "Wadgerach Sturdellske"
   theoceanpulse: "Hans Blitz! Ohh noo!"
   unclebadtouch38: "Set_The_ RAT_TRAP_!"
-  shawne2520997: "Mixon  it up"
+  shawne2520997: "Mixon it up"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams:
+  - theoceanpulse
+  - sturmanator15
+  - shawne2520997
+  - whowonthelastsuperbowl
+  - zachzoske
+  - jackperkins74
+  - lukstein
+  - schirmerj
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:

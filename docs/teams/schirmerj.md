@@ -10,8 +10,8 @@ permalink: /teams/schirmerj/
 <p class="owner-sub">Most recent: IDPs Forever</p>
 
 <div class="resume">
-  <div class="resume__honors">🤝 <b>Co-champ</b> (2016) · 🥈 1× Runner-Up · 🥉 1× Third · 12× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">80-80-1 <span class='muted'>(.500)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">½</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">17-16-1</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Co-champ</span> (2016)</div></div></div>
+  <div class="resume__honors">🤝 <b>Co-champ</b> (2016) · 🥈 1× Runner-Up · 🥉 1× Third · 9× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">80-80-1 <span class='muted'>(.500)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">½</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">9</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val"><span class="shiva">Co-champ</span> (2016)</div></div></div>
 </div>
 
 ## Season by season
@@ -23,10 +23,10 @@ permalink: /teams/schirmerj/
 | 2023 | IDP'd My Pants | 5th | 8-6 | <span class="chip" style="background:#de6e48">1658.4</span> | 1546.3 |
 | 2022 | Make Dalvin Cook Again | 11th | 4-10 | <span class="chip" style="background:#f4b8a2">1317.0</span> | 1350.7 |
 | 2021 | Post Mahomes | 6th | 8-6 | <span class="chip" style="background:#f3b29a">1341.1</span> | 1376.5 |
-| 2020 | Folklore   Bandits | 3rd | 8-5 | <span class="chip" style="background:#f2aa90">1370.3</span> | 1305.0 |
-| 2019 | Tank4Picks   . | 5th | 5-7-1 | <span class="chip" style="background:#f8dcce">1183.5</span> | 1194.4 |
-| 2018 | Hammed Up   . | 5th | 6-7 | <span class="chip" style="background:#f4b9a4">1311.7</span> | 1360.6 |
-| 2017 | Browning out   . | 8th | 7-6 | <span class="chip" style="background:#f2a88e">1375.9</span> | 1273.8 |
+| 2020 | Folklore Bandits | 3rd | 8-5 | <span class="chip" style="background:#f2aa90">1370.3</span> | 1305.0 |
+| 2019 | Tank4Picks . | 5th | 5-7-1 | <span class="chip" style="background:#f8dcce">1183.5</span> | 1194.4 |
+| 2018 | Hammed Up . | 5th | 6-7 | <span class="chip" style="background:#f4b9a4">1311.7</span> | 1360.6 |
+| 2017 | Browning out . | 8th | 7-6 | <span class="chip" style="background:#f2a88e">1375.9</span> | 1273.8 |
 | 2016 | Lick my Rawls . <span class="tag tag--shiva">Co-champ</span> | 2nd | 9-4 | <span class="chip" style="background:#f1a185">1403.8</span> | 1229.1 |
 | 2015 | Wilson's Magic Water | 5th | 7-6 | <span class="chip" style="background:#f6ccba">1243.2</span> | 1210.2 |
 | 2014 | Arian nation . | 8th | 4-9 | <span class="chip" style="background:#faf1e9">1103.1</span> | 1267.0 |

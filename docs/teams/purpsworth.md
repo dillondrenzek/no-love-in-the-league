@@ -10,8 +10,8 @@ permalink: /teams/purpsworth/
 <p class="owner-sub">Most recent: I am dead inside</p>
 
 <div class="resume">
-  <div class="resume__honors">🥈 1× Runner-Up · 🥉 1× Third · 💩 <b>1× Sacko</b> (2019) · 7× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">44-52 <span class='muted'>(.458)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">11-9</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">7</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2021)</div></div></div>
+  <div class="resume__honors">🥈 1× Runner-Up · 🥉 1× Third · 💩 <b>1× Sacko</b> (2019) · 4× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">44-52 <span class='muted'>(.458)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">4</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">7</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2021)</div></div></div>
 </div>
 
 ## Season by season

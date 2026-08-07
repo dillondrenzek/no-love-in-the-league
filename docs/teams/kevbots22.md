@@ -10,8 +10,8 @@ permalink: /teams/kevbots22/
 <p class="owner-sub">Most recent: Keeping up with the McCalferies</p>
 
 <div class="resume">
-  <div class="resume__honors">🥈 1× Runner-Up · 🥉 1× Third · 💩 <b>1× Sacko</b> (2015) · 12× Playoffs</div>
-  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">64-96-1 <span class='muted'>(.401)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoffs</div><div class="tile__val">19-15</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2025)</div></div></div>
+  <div class="resume__honors">🥈 1× Runner-Up · 🥉 1× Third · 💩 <b>1× Sacko</b> (2015) · 5× Playoffs</div>
+  <div class="resume__grid"><div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">64-96-1 <span class='muted'>(.401)</span></div></div><div class="tile"><div class="tile__label">Titles</div><div class="tile__val">0</div></div><div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">1</div></div><div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">5</div></div><div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">12</div></div><div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">2nd (2025)</div></div></div>
 </div>
 
 ## Season by season
@@ -19,17 +19,17 @@ permalink: /teams/kevbots22/
 | Season | Team | Finish | Record | PF | PA |
 |:--|:--|:--|:--|--:|--:|
 | 2025 | Keeping up with the McCalferies | 2nd | 10-4 | <span class="chip" style="background:#d65a30">1626.2</span> | 1504.3 |
-| 2024 | Tom Bradys Only Fans  | 11th | 2-12 | <span class="chip" style="background:#ea8b6a">1428.1</span> | 1667.3 |
-| 2023 | Tom Bradys Only Fans  | 8th | 4-10 | <span class="chip" style="background:#e27753">1507.9</span> | 1608.6 |
+| 2024 | Tom Bradys Only Fans | 11th | 2-12 | <span class="chip" style="background:#ea8b6a">1428.1</span> | 1667.3 |
+| 2023 | Tom Bradys Only Fans | 8th | 4-10 | <span class="chip" style="background:#e27753">1507.9</span> | 1608.6 |
 | 2022 | Naggar's In Paris | 9th | 2-12 | <span class="chip" style="background:#f6ccbb">1222.3</span> | 1398.7 |
 | 2021 | Fantasy Judas | 4th | 7-6-1 | <span class="chip" style="background:#f1a58a">1334.7</span> | 1395.1 |
 | 2020 | Fantasy Judas | 4th | 8-5 | <span class="chip" style="background:#f19e81">1357.0</span> | 1148.6 |
 | 2019 | The Antonio ClownExperience | 9th | 4-9 | <span class="chip" style="background:#f7dacc">1181.7</span> | 1411.7 |
-| 2018 | Team Kevin  with a K | 10th | 4-9 | <span class="chip" style="background:#f6d0c0">1210.9</span> | 1446.7 |
-| 2017 | Russian  Roiders  | 6th | 7-6 | <span class="chip" style="background:#f6cab8">1228.6</span> | 1187.0 |
-| 2016 | Russian  Roiders  | 9th | 4-9 | <span class="chip" style="background:#f8dbce">1177.7</span> | 1353.8 |
-| 2015 | MasterDeflater  And_Commander <span class="tag tag--sacko">Sacko</span> | 10th | 5-8 | <span class="chip" style="background:#faf1e9">1115.0</span> | 1259.0 |
-| 2014 | Luck her right  in the Pussy | 3rd | 7-6 | <span class="chip" style="background:#f0997c">1369.3</span> | 1168.4 |
+| 2018 | Team Kevin with a K | 10th | 4-9 | <span class="chip" style="background:#f6d0c0">1210.9</span> | 1446.7 |
+| 2017 | Russian Roiders | 6th | 7-6 | <span class="chip" style="background:#f6cab8">1228.6</span> | 1187.0 |
+| 2016 | Russian Roiders | 9th | 4-9 | <span class="chip" style="background:#f8dbce">1177.7</span> | 1353.8 |
+| 2015 | MasterDeflater And_Commander <span class="tag tag--sacko">Sacko</span> | 10th | 5-8 | <span class="chip" style="background:#faf1e9">1115.0</span> | 1259.0 |
+| 2014 | Luck her right in the Pussy | 3rd | 7-6 | <span class="chip" style="background:#f0997c">1369.3</span> | 1168.4 |
 
 ## Head-to-head
 

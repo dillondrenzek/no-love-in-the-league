@@ -18,7 +18,6 @@ def _blank(fid, franchises):
         "short": short_name_of(fid, franchises),
         "seasons": [],                                  # one entry per year played
         "reg": {"w": 0, "l": 0, "t": 0, "pf": 0.0, "pa": 0.0},
-        "playoff": {"w": 0, "l": 0, "t": 0},
         "titles": 0.0, "runner_ups": 0, "thirds": 0, "berths": 0,
         "sackos": 0, "sacko_years": [],                 # dead-last finishes
         "champ_years": [],                              # list of (year, is_co)
@@ -89,15 +88,11 @@ def compute_profiles(seasons, franchises, overrides=None):
             _apply_game(profiles, a, h, as_, hs)
             if m.get("playoff"):
                 in_playoffs.update((h, a))
-                for x, xs, ys in ((h, hs, as_), (a, as_, hs)):
-                    pp = profiles[x]["playoff"]
-                    if xs > ys:
-                        pp["w"] += 1
-                    elif ys > xs:
-                        pp["l"] += 1
-                    else:
-                        pp["t"] += 1
-        for fid in in_playoffs:
+        # A "playoff appearance" means the winners bracket (top seeds). Use the
+        # imported seed list when present; otherwise fall back to "played any
+        # post-season game" (over-counts consolation — re-import to fix).
+        seeded = season.get("playoff_teams")
+        for fid in (seeded if seeded is not None else in_playoffs):
             prof(fid)["berths"] += 1
 
     for p in profiles.values():
