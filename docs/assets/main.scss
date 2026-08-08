@@ -391,6 +391,37 @@ tbody td a:hover { color: var(--brand); }
 }
 .site-footer .footer-heading { font-weight: 800; }
 
+// ---- Heading anchor links (added by assets/anchors.js) ----------------------
+.heading-anchor {
+  opacity: 0;
+  margin-left: 0.32em;
+  color: var(--brand);
+  line-height: 0;
+  vertical-align: middle;
+  transition: opacity 0.12s ease;
+}
+.heading-anchor { position: relative; cursor: pointer; }
+.heading-anchor svg { display: inline-block; vertical-align: middle; }
+h2:hover > .heading-anchor,
+h3:hover > .heading-anchor,
+h4:hover > .heading-anchor,
+.heading-anchor:focus,
+.heading-anchor.is-copied { opacity: 1; }
+// Brief "Copied" confirmation after a click.
+.heading-anchor.is-copied::after {
+  content: "Copied";
+  margin-left: 6px;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--brand);
+  vertical-align: middle;
+}
+// Touch devices have no hover — keep it faintly visible so it's still tappable.
+@media (hover: none) { .heading-anchor { opacity: 0.35; } }
+
 // ---- Tables that are too wide scroll inside their own box -------------------
 // (Text columns wrap; number columns stay intact. The wrapper is a safety net
 // so a wide table never pushes the whole page sideways.)
