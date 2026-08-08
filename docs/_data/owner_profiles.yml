@@ -965,7 +965,7 @@ zachzoske:
     text: 2× Third
     strong: false
   - emoji: 💩
-    text: 1× Sacko (2022)
+    text: 2× Sacko (2017, 2022)
     strong: true
   - emoji: ''
     text: 5× Playoffs
@@ -974,7 +974,7 @@ zachzoske:
     all_time: 80-80-1
     win_pct: '.500'
     titles: '1'
-    sackos: 1
+    sackos: 2
     playoff_apps: 5
     seasons: 12
     best_finish:
@@ -1048,8 +1048,8 @@ zachzoske:
     pa: 1357.5
   - year: 2017
     team: Injury Reserve
-    tag: null
-    finish: 11th
+    tag: sacko
+    finish: 12th
     record: 3-9-1
     pf: 1103.0
     pf_color: '#fdf3e0'
@@ -1654,7 +1654,7 @@ whowonthelastsuperbowl:
   nickname: ''
   honors:
   - emoji: 💩
-    text: 2× Sacko (2014, 2017)
+    text: 1× Sacko (2014)
     strong: true
   - emoji: ''
     text: 4× Playoffs
@@ -1663,7 +1663,7 @@ whowonthelastsuperbowl:
     all_time: 62-99
     win_pct: '.385'
     titles: '0'
-    sackos: 2
+    sackos: 1
     playoff_apps: 4
     seasons: 12
     best_finish:
@@ -1738,8 +1738,8 @@ whowonthelastsuperbowl:
     pa: 1378.4
   - year: 2017
     team: Wadgerach Sturdellske
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 4-9
     pf: 1160.5
     pf_color: '#fac97b'

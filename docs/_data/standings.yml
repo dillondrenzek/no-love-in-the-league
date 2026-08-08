@@ -997,23 +997,23 @@ seasons:
     pf_color: '#fcdeae'
     pa: 1331.7
   - finish: 11
-    team: Injury Reserve
-    owner_id: zachzoske
-    owner_name: Zach
-    record: 3-9-1
-    tag: null
-    pf: 1103.0
-    pf_color: '#fdf3e0'
-    pa: 1266.4
-  - finish: 12
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
     owner_name: Nate
     record: 4-9
-    tag: sacko
+    tag: null
     pf: 1160.5
     pf_color: '#fbdaa4'
     pa: 1279.7
+  - finish: 12
+    team: Injury Reserve
+    owner_id: zachzoske
+    owner_name: Zach
+    record: 3-9-1
+    tag: sacko
+    pf: 1103.0
+    pf_color: '#fdf3e0'
+    pa: 1266.4
   notes:
   - Playoff field expanded from 6 teams to 8.
   - Bench shrank from 7 spots to 4.

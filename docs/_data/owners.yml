@@ -58,7 +58,7 @@ active:
   win_pct: '.500'
   win_color: '#f6a449'
   titles: '1'
-  sackos: 1
+  sackos: 2
   best_finish:
     type: shiva
     years:
@@ -145,7 +145,7 @@ active:
   win_pct: '.385'
   win_color: '#fbd597'
   titles: '0'
-  sackos: 2
+  sackos: 1
   best_finish:
     type: place
     ordinal: 4th
