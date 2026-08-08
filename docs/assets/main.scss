@@ -296,6 +296,7 @@ tbody td a:hover { color: var(--brand); }
 }
 .hero__subtitle {
   font-size: clamp(0.7rem, 9vw, 1.4rem);
+  font-family: var(--mono);
   font-weight: 600;
   color: var(--brand);
   text-transform: uppercase;
@@ -310,22 +311,31 @@ tbody td a:hover { color: var(--brand); }
 }
 .hero__highlights {
   display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .hero__stat {
+  width: 100%;
+  max-width: 340px;
   border: 1px solid var(--rule);
   border-radius: 12px;
   padding: 12px 18px;
-  min-width: 150px;
 }
+// The reigning champ leads and reads a step louder than the Sacko below it.
+.hero__stat--shiva {
+  border: 2px solid #f7e0b6;
+  background: #fdf3e0;
+  padding: 16px 18px;
+}
+.hero__stat--shiva .hero__stat-label { color: var(--brand); }
+.hero__stat--shiva .hero__stat-value { font-size: 1.35rem; }
 .hero__stat-label {
   display: block;
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--muted);
@@ -359,7 +369,7 @@ tbody td a:hover { color: var(--brand); }
   color: var(--ink);
   text-decoration: none;
 }
-.hero__links a:hover { background: var(--ink); color: #fff; }
+.hero__links a:hover { background: var(--brand); color: #fff; }
 
 // ---- Owner "resume" card ----------------------------------------------------
 .resume {
@@ -396,6 +406,16 @@ tbody td a:hover { color: var(--brand); }
   border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: 0.85rem;
+  text-align: center;
+
+  a {
+    color: var(--muted);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--brand);
+    }
+  }
 }
 .site-footer .footer-heading { font-weight: 800; }
 

@@ -10,6 +10,3 @@ permalink: /records/
 The league record book.
 
 {% include records_table.html %}
-
-*More records (highest-scoring week, biggest blowouts, head-to-head) unlock as
-more game data is added.*

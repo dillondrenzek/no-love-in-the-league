@@ -12,15 +12,15 @@ title: Home
   <p class="hero__subtitle">Season 13</p>
 
   <div class="hero__highlights">
-    <div class="hero__stat">
+    <div class="hero__stat hero__stat--shiva">
       <span class="hero__stat-label">🏆 Reigning Shiva · {{ latest.year }}</span>
-      <a class="hero__stat-value" href="{{ '/teams/' | append: champ.owner_id | append: '/' | relative_url }}">{{ champ.team }}</a>
-      <span class="hero__stat-owner">{{ champ.owner_name }}</span>
+      <a class="hero__stat-value" href="{{ '/teams/' | append: champ.owner_id | append: '/' | relative_url }}">{{ champ.owner_name }}</a>
+      <span class="hero__stat-owner">{{ champ.team }}</span>
     </div>
-    <div class="hero__stat">
+    <div class="hero__stat hero__stat--sacko">
       <span class="hero__stat-label">💩 Current Sacko · {{ latest.year }}</span>
-      <a class="hero__stat-value" href="{{ '/teams/' | append: sacko.owner_id | append: '/' | relative_url }}">{{ sacko.team }}</a>
-      <span class="hero__stat-owner">{{ sacko.owner_name }}</span>
+      <a class="hero__stat-value" href="{{ '/teams/' | append: sacko.owner_id | append: '/' | relative_url }}">{{ sacko.owner_name }}</a>
+      <span class="hero__stat-owner">{{ sacko.team }}</span>
     </div>
   </div>
 
