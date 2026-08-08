@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fletcher Harvey
+title: Fletcher
 permalink: /teams/unclebadtouch38/
 owner_id: unclebadtouch38
 ---

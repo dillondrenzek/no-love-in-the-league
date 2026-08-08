@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Anthony Stewart
+title: Anthony
 permalink: /teams/ajstewart04/
 owner_id: ajstewart04
 ---

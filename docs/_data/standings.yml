@@ -5,110 +5,110 @@ seasons:
   - finish: 1
     team: Pukkake
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 9-5
     tag: shiva
     pf: 1769.9
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1579.4
   - finish: 2
     team: Keeping up with the McCalferies
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 10-4
     tag: null
     pf: 1626.2
-    pf_color: '#eb8d6c'
+    pf_color: '#f7a749'
     pa: 1504.3
   - finish: 3
     team: I am dead inside
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 6-8
     tag: null
     pf: 1566.2
-    pf_color: '#f1a58a'
+    pf_color: '#fabe61'
     pa: 1526.0
   - finish: 4
     team: One Big Beautiful Dill
     owner_id: gganoom
-    owner_name: Grant Ganoom
+    owner_name: Grant
     record: 9-5
     tag: null
     pf: 1587.6
-    pf_color: '#f09b7d'
+    pf_color: '#f9b750'
     pa: 1494.2
   - finish: 5
     team: Thoughts and Players
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 8-6
     tag: null
     pf: 1612.9
-    pf_color: '#ed9172'
+    pf_color: '#f8ad4b'
     pa: 1495.9
   - finish: 6
     team: Big Brown Dak Makes em Waddle
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 9-5
     tag: null
     pf: 1703.3
-    pf_color: '#e0714c'
+    pf_color: '#f28742'
     pa: 1511.2
   - finish: 7
     team: Dump it on my Chest
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 5-9
     tag: null
     pf: 1411.9
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1606.0
   - finish: 8
     team: 2x Runner Up
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 8-6
     tag: null
     pf: 1479.8
-    pf_color: '#f6d0bf'
+    pf_color: '#fbdca8'
     pa: 1472.9
   - finish: 9
     team: Trick or Trick It’s Mike Vick
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 3-11
     tag: null
     pf: 1445.6
-    pf_color: '#f8e0d4'
+    pf_color: '#fce8c4'
     pa: 1675.7
   - finish: 10
     team: Dont spit just swallow
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 7-7
     tag: null
     pf: 1537.3
-    pf_color: '#f3b39c'
+    pf_color: '#fac879'
     pa: 1592.9
   - finish: 11
     team: IDPs Forever
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 5-9
     tag: null
     pf: 1546.0
-    pf_color: '#f3af97'
+    pf_color: '#fac572'
     pa: 1701.4
   - finish: 12
     team: D***er my Sufficient Tight End
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 5-9
     tag: sacko
     pf: 1542.5
-    pf_color: '#f3b199'
+    pf_color: '#fac675'
     pa: 1669.3
   notes: []
 - year: 2024
@@ -117,110 +117,110 @@ seasons:
   - finish: 1
     team: 2x Runner Up
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 9-5
     tag: shiva
     pf: 1890.9
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1711.1
   - finish: 2
     team: 5 Star Men
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 9-5
     tag: null
     pf: 1764.6
-    pf_color: '#e47c59'
+    pf_color: '#f49445'
     pa: 1661.4
   - finish: 3
     team: Pukkake
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 7-7
     tag: null
     pf: 1661.3
-    pf_color: '#f0997a'
+    pf_color: '#f9b54d'
     pa: 1686.1
   - finish: 4
     team: Thoughts and Players
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 8-6
     tag: null
     pf: 1569.8
-    pf_color: '#f4bba6'
+    pf_color: '#fbce86'
     pa: 1502.7
   - finish: 5
     team: All Hail the King
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 8-6
     tag: null
     pf: 1560.8
-    pf_color: '#f4bfaa'
+    pf_color: '#fbd08c'
     pa: 1507.7
   - finish: 6
     team: Three's Company
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 9-5
     tag: null
     pf: 1644.2
-    pf_color: '#f19f82'
+    pf_color: '#f9ba57'
     pa: 1603.1
   - finish: 7
     team: Nix Out For Harambe
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 7-7
     tag: null
     pf: 1509.0
-    pf_color: '#f7d2c3'
+    pf_color: '#fcdead'
     pa: 1511.3
   - finish: 8
     team: KillDilly Elegy
     owner_id: gganoom
-    owner_name: Grant Ganoom
+    owner_name: Grant
     record: 7-7
     tag: null
     pf: 1622.6
-    pf_color: '#f2a78d'
+    pf_color: '#fac064'
     pa: 1550.1
   - finish: 9
     team: I am dead inside
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 5-9
     tag: null
     pf: 1606.7
-    pf_color: '#f2ad94'
+    pf_color: '#fac46f'
     pa: 1663.6
   - finish: 10
     team: Trick or Trick It’s Mike Vick
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 6-8
     tag: null
     pf: 1617.1
-    pf_color: '#f2a98f'
+    pf_color: '#fac168'
     pa: 1794.0
   - finish: 11
     team: Tom Bradys Only Fans
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 2-12
     tag: null
     pf: 1428.1
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1667.3
   - finish: 12
     team: Save a horse, Ride the Cowboys
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 7-7
     tag: sacko
     pf: 1433.9
-    pf_color: '#faefe6'
+    pf_color: '#fdf1dc'
     pa: 1450.6
   notes:
   - Grant joined the league; Fletcher departed.
@@ -230,110 +230,110 @@ seasons:
   - finish: 1
     team: Save a horse, Ride the Cowboys
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 9-5
     tag: shiva
     pf: 1606.6
-    pf_color: '#e6825f'
+    pf_color: '#f59a46'
     pa: 1510.0
   - finish: 2
     team: Three's Company
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 7-7
     tag: null
     pf: 1569.6
-    pf_color: '#eb8c6c'
+    pf_color: '#f7a749'
     pa: 1605.2
   - finish: 3
     team: Thoughts and Players
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 12-2
     tag: null
     pf: 1748.5
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1480.6
   - finish: 4
     team: In Goff we trust
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 9-5
     tag: null
     pf: 1733.5
-    pf_color: '#d85e35'
+    pf_color: '#ef703c'
     pa: 1508.8
   - finish: 5
     team: IDP'd My Pants
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 8-6
     tag: null
     pf: 1658.4
-    pf_color: '#e0734e'
+    pf_color: '#f28942'
     pa: 1546.3
   - finish: 6
     team: Used Napkin
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 9-5
     tag: null
     pf: 1714.6
-    pf_color: '#da633b'
+    pf_color: '#f0763e'
     pa: 1505.6
   - finish: 7
     team: Vinegar Strokes
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 7-7
     tag: null
     pf: 1522.5
-    pf_color: '#f0997b'
+    pf_color: '#f9b64d'
     pa: 1610.4
   - finish: 8
     team: Tom Bradys Only Fans
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 4-10
     tag: null
     pf: 1507.9
-    pf_color: '#f19f82'
+    pf_color: '#f9ba57'
     pa: 1608.6
   - finish: 9
     team: Trick or Trick It’s Mike Vick
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 5-9
     tag: null
     pf: 1566.3
-    pf_color: '#eb8d6d'
+    pf_color: '#f7a84a'
     pa: 1630.8
   - finish: 10
     team: Zach's Juicy Fantasy Teamussy
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 7-7
     tag: null
     pf: 1562.1
-    pf_color: '#eb8e6e'
+    pf_color: '#f7a94a'
     pa: 1635.0
   - finish: 11
     team: 2x Runner Up
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 3-11
     tag: null
     pf: 1428.2
-    pf_color: '#f4bea9'
+    pf_color: '#fbd08b'
     pa: 1719.9
   - finish: 12
     team: Mr. Irrelevant
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 4-10
     tag: sacko
     pf: 1297.6
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1554.6
   notes:
   - Playoff field cut back from 8 teams to 6.
@@ -344,110 +344,110 @@ seasons:
   - finish: 1
     team: Consensual Trades
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 7-7
     tag: shiva
     pf: 1360.5
-    pf_color: '#ed9273'
+    pf_color: '#f8ae4b'
     pa: 1300.7
   - finish: 2
     team: Koo Koo Kachoo
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 11-3
     tag: null
     pf: 1438.2
-    pf_color: '#e37955'
+    pf_color: '#f39044'
     pa: 1258.8
   - finish: 3
     team: Fly Eagles Fly
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 11-3
     tag: null
     pf: 1501.3
-    pf_color: '#da653d'
+    pf_color: '#f0783e'
     pa: 1367.6
   - finish: 4
     team: Trick or Trick It’s Mike Vick
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 7-7
     tag: null
     pf: 1331.2
-    pf_color: '#f09d80'
+    pf_color: '#f9b953'
     pa: 1302.5
   - finish: 5
     team: Thoughts and Players
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 7-7
     tag: null
     pf: 1312.8
-    pf_color: '#f1a58a'
+    pf_color: '#fabe61'
     pa: 1371.1
   - finish: 6
     team: Allen's Deep Balls
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 10-4
     tag: null
     pf: 1535.0
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1340.4
   - finish: 7
     team: Used Napkin
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 7-7
     tag: null
     pf: 1355.2
-    pf_color: '#ee9475'
+    pf_color: '#f8b04c'
     pa: 1319.5
   - finish: 8
     team: Mr. Irrelevant
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 7-7
     tag: null
     pf: 1144.5
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1290.3
   - finish: 9
     team: Naggar's In Paris
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 2-12
     tag: null
     pf: 1222.3
-    pf_color: '#f6cebd'
+    pf_color: '#fbdba5'
     pa: 1398.7
   - finish: 10
     team: Trey Lanced my ❤️
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 5-9
     tag: null
     pf: 1299.8
-    pf_color: '#f2ab92'
+    pf_color: '#fac26b'
     pa: 1507.5
   - finish: 11
     team: Make Dalvin Cook Again
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 4-10
     tag: null
     pf: 1317.0
-    pf_color: '#f1a388'
+    pf_color: '#f9bd5e'
     pa: 1350.7
   - finish: 12
     team: Risk it for The Biscuit
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 6-8
     tag: sacko
     pf: 1311.0
-    pf_color: '#f1a68b'
+    pf_color: '#fabf63'
     pa: 1321.0
   notes:
   - NFL season expanded to 17 games, giving us one more week of fantasy.
@@ -458,110 +458,110 @@ seasons:
   - finish: 1
     team: Koo Koo Kachoo
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 12-2
     tag: shiva
     pf: 1619.5
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1237.5
   - finish: 2
     team: WA Fantasy Football Team
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 7-7
     tag: null
     pf: 1372.6
-    pf_color: '#ef9779'
+    pf_color: '#f9b44d'
     pa: 1433.8
   - finish: 3
     team: Scat Play
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 11-3
     tag: null
     pf: 1490.0
-    pf_color: '#e37a56'
+    pf_color: '#f49144'
     pa: 1327.2
   - finish: 4
     team: Fantasy Judas
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 7-6-1
     tag: null
     pf: 1334.7
-    pf_color: '#f1a489'
+    pf_color: '#f9be5f'
     pa: 1395.1
   - finish: 5
     team: Jackie PooPooPants
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 7-7
     tag: null
     pf: 1428.8
-    pf_color: '#ea8968'
+    pf_color: '#f6a349'
     pa: 1315.6
   - finish: 6
     team: Post Mahomes
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 8-6
     tag: null
     pf: 1341.1
-    pf_color: '#f1a286'
+    pf_color: '#f9bc5c'
     pa: 1376.5
   - finish: 7
     team: Purple Cobras and Michel
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 7-6-1
     tag: null
     pf: 1341.5
-    pf_color: '#f1a286'
+    pf_color: '#f9bc5b'
     pa: 1271.9
   - finish: 8
     team: Trick or Trick It’s Mike Vick
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 6-8
     tag: null
     pf: 1405.3
-    pf_color: '#ec8f6f'
+    pf_color: '#f7aa4a'
     pa: 1450.5
   - finish: 9
     team: ESPN 8 The Ocho
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 5-9
     tag: null
     pf: 1346.7
-    pf_color: '#f1a083'
+    pf_color: '#f9bb58'
     pa: 1455.0
   - finish: 10
     team: Hot Chubb Time Machine
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 5-9
     tag: null
     pf: 1489.3
-    pf_color: '#e37a57'
+    pf_color: '#f49244'
     pa: 1463.8
   - finish: 11
     team: Set_The_ RAT_TRAP_!
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 4-10
     tag: null
     pf: 1112.9
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1392.7
   - finish: 12
     team: Autodraft Monster
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 4-10
     tag: sacko
     pf: 1302.7
-    pf_color: '#f3af97'
+    pf_color: '#fac572'
     pa: 1465.5
   notes:
   - Injured-reserve slots trimmed from 4 to 1.
@@ -571,110 +571,110 @@ seasons:
   - finish: 1
     team: Set_The_ RAT_TRAP_!
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 9-4
     tag: shiva
     pf: 1389.2
-    pf_color: '#e47d5a'
+    pf_color: '#f49545'
     pa: 1265.1
   - finish: 2
     team: Calvin and (Jac)Obs
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 9-4
     tag: null
     pf: 1502.4
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1276.8
   - finish: 3
     team: Folklore Bandits
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 8-5
     tag: null
     pf: 1370.3
-    pf_color: '#e78361'
+    pf_color: '#f59c47'
     pa: 1305.0
   - finish: 4
     team: Fantasy Judas
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 8-5
     tag: null
     pf: 1357.0
-    pf_color: '#e98765'
+    pf_color: '#f6a048'
     pa: 1148.6
   - finish: 5
     team: Koo Koo Kachoo
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 7-6
     tag: null
     pf: 1204.8
-    pf_color: '#f5c1ad'
+    pf_color: '#fbd290'
     pa: 1261.8
   - finish: 6
     team: Trick-Ass Marks
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 6-7
     tag: null
     pf: 1208.9
-    pf_color: '#f4bfab'
+    pf_color: '#fbd18d'
     pa: 1249.7
   - finish: 7
     team: AB’s Helmet
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 6-7
     tag: null
     pf: 1219.5
-    pf_color: '#f4bba5'
+    pf_color: '#fbcd86'
     pa: 1311.4
   - finish: 8
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 6-7
     tag: null
     pf: 1298.8
-    pf_color: '#f0997b'
+    pf_color: '#f9b64d'
     pa: 1350.4
   - finish: 9
     team: Lickin Brown in my McLaurin
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 5-8
     tag: null
     pf: 1093.9
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1284.1
   - finish: 10
     team: Scat Play
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 4-9
     tag: null
     pf: 1163.4
-    pf_color: '#f7d3c4'
+    pf_color: '#fcdeae'
     pa: 1318.5
   - finish: 11
     team: Show Me Your TDs
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 5-8
     tag: null
     pf: 1291.1
-    pf_color: '#f09c7f'
+    pf_color: '#f9b852'
     pa: 1309.2
   - finish: 12
     team: Ram It In
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 5-8
     tag: sacko
     pf: 1278.1
-    pf_color: '#f1a286'
+    pf_color: '#f9bc5b'
     pa: 1296.8
   notes:
   - Added injured-reserve (IR) slots.
@@ -684,110 +684,110 @@ seasons:
   - finish: 1
     team: Eleven In Crocks
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 6-7
     tag: shiva
     pf: 1358.9
-    pf_color: '#ec8f6f'
+    pf_color: '#f7aa4a'
     pa: 1269.3
   - finish: 2
     team: Show Me Your TDs
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 6-7
     tag: null
     pf: 1121.6
-    pf_color: '#f7d6c7'
+    pf_color: '#fce0b3'
     pa: 1170.5
   - finish: 3
     team: Vladimir Putin
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 6-7
     tag: null
     pf: 1197.1
-    pf_color: '#f4bea9'
+    pf_color: '#fbd08b'
     pa: 1160.2
   - finish: 4
     team: Hans Blitz! Ohh noo!
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 11-1-1
     tag: null
     pf: 1592.1
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1197.2
   - finish: 5
     team: Tank4Picks .
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 5-7-1
     tag: null
     pf: 1183.5
-    pf_color: '#f5c2af'
+    pf_color: '#fbd392'
     pa: 1194.4
   - finish: 6
     team: Lamar's Donger
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 11-2
     tag: null
     pf: 1402.9
-    pf_color: '#e88563'
+    pf_color: '#f59e47'
     pa: 1160.6
   - finish: 7
     team: Mixon it up
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 7-5-1
     tag: null
     pf: 1279.9
-    pf_color: '#f1a489'
+    pf_color: '#f9be5f'
     pa: 1296.9
   - finish: 8
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 7-6
     tag: null
     pf: 1201.0
-    pf_color: '#f4bda8'
+    pf_color: '#fbcf89'
     pa: 1342.3
   - finish: 9
     team: The Antonio ClownExperience
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 4-9
     tag: null
     pf: 1181.7
-    pf_color: '#f5c3af'
+    pf_color: '#fbd393'
     pa: 1411.7
   - finish: 10
     team: Set_The_ RAT_TRAP_!
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 5-7-1
     tag: null
     pf: 1036.2
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1215.5
   - finish: 11
     team: Tom Brady's Fluffer
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 4-9
     tag: null
     pf: 1288.2
-    pf_color: '#f1a185'
+    pf_color: '#f9bc5b'
     pa: 1320.7
   - finish: 12
     team: AB’s Helmet
     owner_id: purpsworth
-    owner_name: Trevor Gappmayer
+    owner_name: Trevor
     record: 4-9
     tag: sacko
     pf: 1240.3
-    pf_color: '#f3b098'
+    pf_color: '#fac674'
     pa: 1344.1
   notes:
   - Trevor joined the league; Anthony departed.
@@ -797,110 +797,110 @@ seasons:
   - finish: 1
     team: Hans Blitz! Ohh noo!
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 9-4
     tag: shiva
     pf: 1453.7
-    pf_color: '#e78360'
+    pf_color: '#f59b47'
     pa: 1211.3
   - finish: 2
     team: Mixon's Gurley Fight Club
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 11-2
     tag: null
     pf: 1581.3
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1444.2
   - finish: 3
     team: Sackos Auto Draft Experiene
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 7-6
     tag: null
     pf: 1359.5
-    pf_color: '#f1a388'
+    pf_color: '#f9bd5e'
     pa: 1357.5
   - finish: 4
     team: Queen of the Hill
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 7-6
     tag: null
     pf: 1327.0
-    pf_color: '#f3b29a'
+    pf_color: '#fac776'
     pa: 1245.1
   - finish: 5
     team: Hammed Up .
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 6-7
     tag: null
     pf: 1311.7
-    pf_color: '#f4b9a3'
+    pf_color: '#facc82'
     pa: 1360.6
   - finish: 6
     team: Tom Brady's Fluffer
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 8-5
     tag: null
     pf: 1309.2
-    pf_color: '#f4baa4'
+    pf_color: '#facd84'
     pa: 1255.2
   - finish: 7
     team: Cleveland Mcpussysmasher
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 7-6
     tag: null
     pf: 1327.9
-    pf_color: '#f3b19a'
+    pf_color: '#fac776'
     pa: 1210.7
   - finish: 8
     team: Chubbin out (no more Hydin)
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 7-6
     tag: null
     pf: 1302.1
-    pf_color: '#f4bda8'
+    pf_color: '#fbcf89'
     pa: 1255.9
   - finish: 9
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 5-8
     tag: null
     pf: 1240.9
-    pf_color: '#f7d8ca'
+    pf_color: '#fce2b6'
     pa: 1378.4
   - finish: 10
     team: Team Kevin with a K
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 4-9
     tag: null
     pf: 1210.9
-    pf_color: '#f9e5da'
+    pf_color: '#fcebcd'
     pa: 1446.7
   - finish: 11
     team: Tacos Food Truck
     owner_id: ajstewart04
-    owner_name: Anthony Stewart
+    owner_name: Anthony
     record: 4-9
     tag: null
     pf: 1269.9
-    pf_color: '#f6cbba'
+    pf_color: '#fbd9a1'
     pa: 1417.6
   - finish: 12
     team: Graham Slam
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 3-10
     tag: sacko
     pf: 1184.6
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1295.5
   notes: []
 - year: 2017
@@ -909,110 +909,110 @@ seasons:
   - finish: 1
     team: Forceable Entry
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 6-7
     tag: shiva
     pf: 1155.7
-    pf_color: '#f6d0c0'
+    pf_color: '#fcdca9'
     pa: 1134.6
   - finish: 2
     team: My Cox Will Ertz You
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 9-4
     tag: null
     pf: 1386.7
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1095.3
   - finish: 3
     team: Dislocated Johnson
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 9-4
     tag: null
     pf: 1155.7
-    pf_color: '#f6d0c0'
+    pf_color: '#fcdca9'
     pa: 1193.0
   - finish: 4
     team: Cleveland Mcpussysmasher
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 6-6-1
     tag: null
     pf: 1105.6
-    pf_color: '#faefe7'
+    pf_color: '#fdf2dd'
     pa: 1120.6
   - finish: 5
     team: Jacking Goff
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 6-7
     tag: null
     pf: 1220.5
-    pf_color: '#f2a88e'
+    pf_color: '#fac066'
     pa: 1170.3
   - finish: 6
     team: Russian Roiders
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 7-6
     tag: null
     pf: 1228.6
-    pf_color: '#f1a388'
+    pf_color: '#f9bd5e'
     pa: 1187.0
   - finish: 7
     team: Hans Blitz! Ohh noo!
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 11-2
     tag: null
     pf: 1241.2
-    pf_color: '#f09b7e'
+    pf_color: '#f9b851'
     pa: 1097.6
   - finish: 8
     team: Browning out .
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 7-6
     tag: null
     pf: 1375.9
-    pf_color: '#d85f36'
+    pf_color: '#ef713c'
     pa: 1273.8
   - finish: 9
     team: Tacos Food Truck
     owner_id: ajstewart04
-    owner_name: Anthony Stewart
+    owner_name: Anthony
     record: 4-9
     tag: null
     pf: 1143.7
-    pf_color: '#f7d8c9'
+    pf_color: '#fce1b6'
     pa: 1278.1
   - finish: 10
     team: The People's Champion
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 5-8
     tag: null
     pf: 1151.0
-    pf_color: '#f7d3c4'
+    pf_color: '#fcdeae'
     pa: 1331.7
   - finish: 11
     team: Injury Reserve
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 3-9-1
     tag: null
     pf: 1103.0
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1266.4
   - finish: 12
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 4-9
     tag: sacko
     pf: 1160.5
-    pf_color: '#f6cdbc'
+    pf_color: '#fbdaa4'
     pa: 1279.7
   notes:
   - Playoff field expanded from 6 teams to 8.
@@ -1024,110 +1024,110 @@ seasons:
   - finish: 1
     team: Wadger Sturdell
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 11-2
     tag: cochamp
     pf: 1296.1
-    pf_color: '#e27854'
+    pf_color: '#f38f44'
     pa: 1063.9
   - finish: 2
     team: Lick my Rawls .
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 9-4
     tag: cochamp
     pf: 1403.8
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1229.1
   - finish: 3
     team: GONNA DEFLATE YO BALLS!!
     owner_id: shawne2520997
-    owner_name: Shawnee Perkins
+    owner_name: Shawnee
     record: 7-6
     tag: null
     pf: 1317.2
-    pf_color: '#e0724d'
+    pf_color: '#f28842'
     pa: 1276.8
   - finish: 4
     team: The Toddfather
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 8-5
     tag: null
     pf: 1255.4
-    pf_color: '#e78461'
+    pf_color: '#f59c47'
     pa: 1208.1
   - finish: 5
     team: Cleveland Mcpussysmasher
     owner_id: unclebadtouch38
-    owner_name: Fletcher Harvey
+    owner_name: Fletcher
     record: 7-6
     tag: null
     pf: 1238.7
-    pf_color: '#e98867'
+    pf_color: '#f6a248'
     pa: 1269.9
   - finish: 6
     team: My Cox Will Ertz You
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 7-6
     tag: null
     pf: 1224.4
-    pf_color: '#eb8c6c'
+    pf_color: '#f7a749'
     pa: 1234.7
   - finish: 7
     team: The Mighty Cucks
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 7-6
     tag: null
     pf: 1168.4
-    pf_color: '#f09d80'
+    pf_color: '#f9b954'
     pa: 1209.2
   - finish: 8
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 6-7
     tag: null
     pf: 1299.0
-    pf_color: '#e27753'
+    pf_color: '#f38e43'
     pa: 1278.2
   - finish: 9
     team: Russian Roiders
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 4-9
     tag: null
     pf: 1177.7
-    pf_color: '#f0997b'
+    pf_color: '#f9b64e'
     pa: 1353.8
   - finish: 10
     team: Hillary Has The 2nd Clinton-Dix
     owner_id: theoceanpulse
-    owner_name: Dillon Drenzek
+    owner_name: Dillon
     record: 6-7
     tag: null
     pf: 1304.7
-    pf_color: '#e17651'
+    pf_color: '#f38c43'
     pa: 1281.6
   - finish: 11
     team: Forceable Entry
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 5-8
     tag: null
     pf: 1229.8
-    pf_color: '#ea8b6a'
+    pf_color: '#f7a549'
     pa: 1201.5
   - finish: 12
     team: Brown Lives Matter
     owner_id: master-otis
-    owner_name: Odie Olsen
+    owner_name: Odie
     record: 1-12
     tag: sacko
     pf: 953.6
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1262.0
   notes:
   - League expanded from 10 to 12 teams.
@@ -1140,47 +1140,47 @@ seasons:
   - finish: 1
     team: Jenner's Man Meat
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 6-7
     tag: shiva
     pf: 1218.3
-    pf_color: '#f2ac93'
+    pf_color: '#fac36d'
     pa: 1187.3
   - finish: 2
     team: I Waxed My Child For This
     owner_id: master-otis
-    owner_name: Odie Olsen
+    owner_name: Odie
     record: 9-4
     tag: null
     pf: 1425.0
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1200.2
   - finish: 3
     team: Gronkey Punch
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 8-5
     tag: null
     pf: 1367.2
-    pf_color: '#df6f4a'
+    pf_color: '#f28541'
     pa: 1277.5
   - finish: 4
     team: The People's Commissioner
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 8-5
     tag: null
     pf: 1296.7
-    pf_color: '#ea8a69'
+    pf_color: '#f6a449'
     pa: 1097.6
   - finish: 5
     team: Wilson's Magic Water
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 7-6
     tag: null
     pf: 1243.2
-    pf_color: '#f19f83'
+    pf_color: '#f9ba58'
     pa: 1210.2
   - finish: 6
     team: The Bragers
@@ -1189,43 +1189,43 @@ seasons:
     record: 9-4
     tag: null
     pf: 1219.6
-    pf_color: '#f2ac92'
+    pf_color: '#fac36c'
     pa: 1263.5
   - finish: 7
     team: Polk Me Til I Goregasm
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 3-10
     tag: null
     pf: 1087.9
-    pf_color: '#faf0e8'
+    pf_color: '#fdf2df'
     pa: 1296.0
   - finish: 8
     team: Jared's Kids
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 4-9
     tag: null
     pf: 1086.2
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1207.2
   - finish: 9
     team: He's Quick He's Slick He's Mike
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 6-7
     tag: null
     pf: 1176.3
-    pf_color: '#f5c2ae'
+    pf_color: '#fbd392'
     pa: 1236.9
   - finish: 10
     team: MasterDeflater And_Commander
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 5-8
     tag: sacko
     pf: 1115.0
-    pf_color: '#f8e2d6'
+    pf_color: '#fce9c7'
     pa: 1259.0
   notes: []
 - year: 2014
@@ -1234,38 +1234,38 @@ seasons:
   - finish: 1
     team: Uncle Grabby
     owner_id: henpen28
-    owner_name: Henry Stefan
+    owner_name: Henry
     record: 7-6
     tag: shiva
     pf: 1337.1
-    pf_color: '#da633b'
+    pf_color: '#f0763e'
     pa: 1293.6
   - finish: 2
     team: Lynched by Le' Bell
     owner_id: master-otis
-    owner_name: Odie Olsen
+    owner_name: Odie
     record: 9-4
     tag: null
     pf: 1297.1
-    pf_color: '#de6e48'
+    pf_color: '#f28341'
     pa: 1202.4
   - finish: 3
     team: Luck her right in the Pussy
     owner_id: kevbots22
-    owner_name: Kevin Graczyk
+    owner_name: Kevin
     record: 7-6
     tag: null
     pf: 1369.3
-    pf_color: '#d65a30'
+    pf_color: '#ee6b3b'
     pa: 1168.4
   - finish: 4
     team: Ben there raped that
     owner_id: sturmanator15
-    owner_name: Wade Sturman
+    owner_name: Wade
     record: 11-2
     tag: null
     pf: 1358.7
-    pf_color: '#d75d34'
+    pf_color: '#ef6f3c'
     pa: 1135.6
   - finish: 5
     team: Team TheBragers
@@ -1274,52 +1274,52 @@ seasons:
     record: 7-6
     tag: null
     pf: 1197.9
-    pf_color: '#ea8a69'
+    pf_color: '#f6a449'
     pa: 1188.5
   - finish: 6
     team: Washington Blowskins
     owner_id: lukstein
-    owner_name: Luke Stein
+    owner_name: Luke
     record: 7-6
     tag: null
     pf: 1168.4
-    pf_color: '#ed9273'
+    pf_color: '#f8ae4b'
     pa: 1213.1
   - finish: 7
     team: Spaceball One
     owner_id: zachzoske
-    owner_name: Zach Zoske
+    owner_name: Zach
     record: 6-7
     tag: null
     pf: 1253.9
-    pf_color: '#e37a57'
+    pf_color: '#f49244'
     pa: 1252.9
   - finish: 8
     team: Arian nation .
     owner_id: schirmerj
-    owner_name: Jono Schirmer
+    owner_name: Jono
     record: 4-9
     tag: null
     pf: 1103.1
-    pf_color: '#f2a98f'
+    pf_color: '#fac168'
     pa: 1267.0
   - finish: 9
     team: Turn down for Watt
     owner_id: jackperkins74
-    owner_name: Jack Perkins
+    owner_name: Jack
     record: 6-7
     tag: null
     pf: 1254.7
-    pf_color: '#e37a56'
+    pf_color: '#f49144'
     pa: 1333.1
   - finish: 10
     team: Haters Gonna Hate
     owner_id: whowonthelastsuperbowl
-    owner_name: Nate Appel
+    owner_name: Nate
     record: 1-12
     tag: sacko
     pf: 920.5
-    pf_color: '#faf1e9'
+    pf_color: '#fdf3e0'
     pa: 1206.1
   notes:
   - The league is founded — 10 teams, with 6 making the playoffs.

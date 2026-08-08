@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Grant Ganoom
+title: Grant
 permalink: /teams/gganoom/
 owner_id: gganoom
 ---

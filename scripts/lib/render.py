@@ -1,9 +1,10 @@
 """Small presentation helpers shared by the generators.
 
-Colored value "chips" are the signature of the look: a magnitude scale (warm,
-pale -> orange) for raw numbers like points, and a diverging scale (red <-> green,
-neutral at .500) for win percentages. All logic lives here so every table colors
-consistently.
+Heat-shaded table cells are the signature of the look: one warm magnitude ramp
+(cream -> gold -> red-orange) drives every colored value — points, win
+percentages, all of it. These functions return hex colors; the templates render
+them as chips inside the cell (see _includes/chip.html). All the color logic
+lives here so every table shades consistently.
 """
 
 
@@ -16,39 +17,19 @@ def _hex(rgb):
 
 
 def warm_heat(t):
-    """t in [0,1] -> pale cream to hot orange."""
+    """t in [0,1] -> cream to golden yellow to red-orange (FiveThirtyEight's
+    YlOrRd sequential ramp). Cream low end, an amber/gold midrange, deep
+    red-orange at the top."""
     t = 0.0 if t is None else max(0.0, min(1.0, t))
-    pale, mid, hot = (250, 241, 233), (240, 153, 123), (214, 90, 48)
+    pale, mid, hot = (253, 243, 224), (249, 182, 77), (238, 107, 59)
     rgb = _lerp(pale, mid, t / 0.5) if t <= 0.5 else _lerp(mid, hot, (t - 0.5) / 0.5)
     return _hex(rgb)
-
-
-def winpct_color(p):
-    """Win% in [0,1] -> red (losing) through neutral (.500) to green (winning)."""
-    neutral, green, red = (244, 243, 240), (46, 158, 106), (208, 67, 63)
-    t = (p - 0.5) * 2
-    if t >= 0:
-        return _hex(_lerp(neutral, green, min(1.0, t) ** 0.85))
-    return _hex(_lerp(neutral, red, min(1.0, -t) ** 0.85))
-
-
-def chip(text, bg):
-    return f'<span class="chip" style="background:{bg}">{text}</span>'
 
 
 def heat_color(value, lo, hi):
     """Warm-heat hex for `value` normalized against a column's lo..hi range."""
     t = 0.0 if hi == lo else (value - lo) / (hi - lo)
     return warm_heat(t)
-
-
-def heat_chip(value, lo, hi, text=None):
-    """A warm-heat chip for `value` normalized against a column's lo..hi range."""
-    return chip(text if text is not None else value, heat_color(value, lo, hi))
-
-
-def winpct_chip(p, text=None):
-    return chip(text if text is not None else f"{p:.3f}".lstrip("0"), winpct_color(p))
 
 
 def finish_tag(finish, team_count, is_co=False):

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Wade Sturman
+title: Wade
 permalink: /teams/sturmanator15/
 owner_id: sturmanator15
 ---

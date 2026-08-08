@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Zach Zoske
+title: Zach
 permalink: /teams/zachzoske/
 owner_id: zachzoske
 ---

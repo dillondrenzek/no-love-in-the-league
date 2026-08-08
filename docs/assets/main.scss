@@ -202,7 +202,9 @@ th[style*="right"] { color: var(--muted); font-size: 0.68rem; }
 tbody td a { font-weight: 600; color: var(--ink); }
 tbody td a:hover { color: var(--brand); }
 
-// ---- Value chips (heat / win-loss) ------------------------------------------
+// ---- Value chips (heat-shaded pills inside a cell) --------------------------
+// The shade is precomputed in lib/render.py; dark text keeps its contrast
+// across the cream→red-orange range.
 .chip {
   display: inline-block;
   min-width: 3.7em;
@@ -275,6 +277,12 @@ tbody td a:hover { color: var(--brand); }
   color: var(--muted);
   font-size: 0.85rem;
   margin: -0.4em 0 1em;
+}
+
+.back-link {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  margin: 0 0 0.6em;
 }
 
 // ---- Home hero --------------------------------------------------------------

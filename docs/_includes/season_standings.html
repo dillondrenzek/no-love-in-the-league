@@ -18,7 +18,7 @@ site.data.standings.seasons.
     <tr>
       <th>Finish</th>
       <th>Team</th>
-      <th>Record</th>
+      <th style="text-align: right">Record</th>
       {%- if s.points %}
       <th style="text-align: right">PF</th>
       <th style="text-align: right">PA</th>
@@ -36,7 +36,7 @@ site.data.standings.seasons.
         {%- else -%}{{ r.team }}{%- endif -%}
         {%- include finish_tag.html tag=r.tag -%}
       </td>
-      <td>{{ r.record }}</td>
+      <td style="text-align: right">{{ r.record }}</td>
       {%- if s.points %}
       <td style="text-align: right">{% include chip.html text=r.pf bg=r.pf_color %}</td>
       <td style="text-align: right">{{ r.pa }}</td>

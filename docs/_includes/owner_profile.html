@@ -3,9 +3,9 @@ Full owner profile. Param: p = a record from site.data.owner_profiles.
 {%- endcomment -%}
 {%- assign p = include.p -%}
 
-<p><a href="{{ '/teams/' | relative_url }}">← All owners</a></p>
-
-<p class="owner-sub">Most recent: {{ p.latest_team }}</p>
+{%- if p.nickname and p.nickname != "" -%}
+<p class="owner-sub">{{ p.nickname }}</p>
+{%- endif -%}
 
 <div class="resume">
   <div class="resume__honors">
@@ -28,7 +28,7 @@ Full owner profile. Param: p = a record from site.data.owner_profiles.
 <div class="table-scroll">
 <table>
   <thead>
-    <tr><th>Season</th><th>Team</th><th>Finish</th><th>Record</th><th style="text-align: right">PF</th><th style="text-align: right">PA</th></tr>
+    <tr><th>Season</th><th>Team</th><th>Finish</th><th style="text-align: right">Record</th><th style="text-align: right">PF</th><th style="text-align: right">PA</th></tr>
   </thead>
   <tbody>
     {%- for s in p.seasons %}
@@ -36,7 +36,7 @@ Full owner profile. Param: p = a record from site.data.owner_profiles.
       <td>{{ s.year }}</td>
       <td>{{ s.team }}{% include finish_tag.html tag=s.tag %}</td>
       <td>{{ s.finish }}</td>
-      <td>{{ s.record }}</td>
+      <td style="text-align: right">{{ s.record }}</td>
       <td style="text-align: right">{% if s.pf %}{% include chip.html text=s.pf bg=s.pf_color %}{% else %}—{% endif %}</td>
       <td style="text-align: right">{% if s.pa %}{{ s.pa }}{% else %}—{% endif %}</td>
     </tr>
@@ -49,13 +49,13 @@ Full owner profile. Param: p = a record from site.data.owner_profiles.
 <div class="table-scroll">
 <table>
   <thead>
-    <tr><th>Opponent</th><th>Record</th><th style="text-align: right">Win%</th><th style="text-align: right">Avg PF</th><th style="text-align: right">Avg PA</th></tr>
+    <tr><th>Opponent</th><th style="text-align: right">Record</th><th style="text-align: right">Win%</th><th style="text-align: right">Avg PF</th><th style="text-align: right">Avg PA</th></tr>
   </thead>
   <tbody>
     {%- for h in p.h2h %}
     <tr>
       <td><a href="{{ '/teams/' | append: h.opp_id | append: '/' | relative_url }}">{{ h.opp_short }}</a></td>
-      <td>{{ h.record }}</td>
+      <td style="text-align: right">{{ h.record }}</td>
       <td style="text-align: right">{% include chip.html text=h.win_pct bg=h.win_color %}</td>
       <td style="text-align: right">{{ h.avg_pf }}</td>
       <td style="text-align: right">{{ h.avg_pa }}</td>

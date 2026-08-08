@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Luke Stein
+title: Luke
 permalink: /teams/lukstein/
 owner_id: lukstein
 ---

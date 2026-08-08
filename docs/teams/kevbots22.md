@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kevin Graczyk
+title: Kevin
 permalink: /teams/kevbots22/
 owner_id: kevbots22
 ---

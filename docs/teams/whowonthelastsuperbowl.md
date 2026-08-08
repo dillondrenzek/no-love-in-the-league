@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nate Appel
+title: Nate
 permalink: /teams/whowonthelastsuperbowl/
 owner_id: whowonthelastsuperbowl
 ---

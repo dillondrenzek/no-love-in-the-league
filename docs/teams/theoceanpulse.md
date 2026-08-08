@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dillon Drenzek
+title: Dillon
 permalink: /teams/theoceanpulse/
 owner_id: theoceanpulse
 ---

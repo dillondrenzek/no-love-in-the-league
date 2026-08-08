@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jack Perkins
+title: Jack
 permalink: /teams/jackperkins74/
 owner_id: jackperkins74
 ---

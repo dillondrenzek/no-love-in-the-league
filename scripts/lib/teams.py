@@ -16,6 +16,7 @@ def _blank(fid, franchises):
         "id": fid,
         "name": name_of(fid, franchises),
         "short": short_name_of(fid, franchises),
+        "nickname": (franchises.get(fid) or {}).get("nickname", ""),
         "seasons": [],                                  # one entry per year played
         "reg": {"w": 0, "l": 0, "t": 0, "pf": 0.0, "pa": 0.0},
         "titles": 0.0, "runner_ups": 0, "thirds": 0, "berths": 0,

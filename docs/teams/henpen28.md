@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Henry Stefan
+title: Henry
 permalink: /teams/henpen28/
 owner_id: henpen28
 ---

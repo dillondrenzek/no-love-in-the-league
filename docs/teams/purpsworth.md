@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trevor Gappmayer
+title: Trevor
 permalink: /teams/purpsworth/
 owner_id: purpsworth
 ---

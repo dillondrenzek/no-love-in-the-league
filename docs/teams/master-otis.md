@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Odie Olsen
+title: Odie
 permalink: /teams/master-otis/
 owner_id: master-otis
 ---

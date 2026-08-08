@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jono Schirmer
+title: Jono
 permalink: /teams/schirmerj/
 owner_id: schirmerj
 ---

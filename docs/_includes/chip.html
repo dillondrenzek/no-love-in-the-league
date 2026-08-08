@@ -1,5 +1,5 @@
 {%- comment -%}
-Colored value chip. Params: text (display string), bg (hex color, precomputed
-in Python). See lib/render.py.
+Colored value chip: a rounded pill sitting inside the cell. Params: text
+(display string), bg (hex color, precomputed in lib/render.py).
 {%- endcomment -%}
 <span class="chip" style="background: {{ include.bg }}">{{ include.text }}</span>

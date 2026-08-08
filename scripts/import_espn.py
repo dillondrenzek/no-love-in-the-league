@@ -256,8 +256,10 @@ def main():
     out_path.write_text(season_yaml, encoding="utf-8")
     FRANCHISES_PATH.write_text(
         "# Owner -> franchise mapping, maintained by scripts/import_espn.py.\n"
-        "# `id` is stable across seasons (keyed off the owner's ESPN SWID). Edit\n"
-        "# `name` freely; add `aliases` if a team name is missing.\n\n"
+        "# `id` is stable across seasons (keyed off the owner's ESPN SWID). Names are\n"
+        "# first-name-only by choice — no last names on the public site. Edit `name`\n"
+        "# and `nickname` freely; `nickname` shows as the tagline on the owner's\n"
+        "# profile. Add `aliases` if a team name is missing.\n\n"
         + yaml.safe_dump(registry, sort_keys=False, allow_unicode=True),
         encoding="utf-8",
     )

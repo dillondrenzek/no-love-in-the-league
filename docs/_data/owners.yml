@@ -1,10 +1,10 @@
 active:
 - id: henpen28
-  name: Henry Stefan
+  name: Henry
   seasons: 12
   record: 77-84
   win_pct: '.478'
-  win_color: '#f1e7e4'
+  win_color: '#f8af4b'
   titles: '3'
   sackos: 0
   best_finish:
@@ -14,11 +14,11 @@ active:
     - 2017
     - 2022
 - id: shawne2520997
-  name: Shawnee Perkins
+  name: Shawnee
   seasons: 10
   record: 81-53-1
   win_pct: '.604'
-  win_color: '#c0ddcd'
+  win_color: '#ef723d'
   titles: '2'
   sackos: 2
   best_finish:
@@ -27,11 +27,11 @@ active:
     - 2021
     - 2023
 - id: jackperkins74
-  name: Jack Perkins
+  name: Jack
   seasons: 12
   record: 88-73
   win_pct: '.547'
-  win_color: '#dae8de'
+  win_color: '#f38e43'
   titles: '2'
   sackos: 1
   best_finish:
@@ -40,11 +40,11 @@ active:
     - 2015
     - 2025
 - id: theoceanpulse
-  name: Dillon Drenzek
+  name: Dillon
   seasons: 10
   record: 83-51-1
   win_pct: '.619'
-  win_color: '#badac9'
+  win_color: '#ee6b3b'
   titles: '1'
   sackos: 0
   best_finish:
@@ -52,11 +52,11 @@ active:
     years:
     - 2018
 - id: zachzoske
-  name: Zach Zoske
+  name: Zach
   seasons: 12
   record: 80-80-1
   win_pct: '.500'
-  win_color: '#f4f3f0'
+  win_color: '#f6a449'
   titles: '1'
   sackos: 1
   best_finish:
@@ -64,11 +64,11 @@ active:
     years:
     - 2019
 - id: lukstein
-  name: Luke Stein
+  name: Luke
   seasons: 12
   record: 75-86
   win_pct: '.466'
-  win_color: '#f0e1de'
+  win_color: '#f9b54d'
   titles: '1'
   sackos: 2
   best_finish:
@@ -76,11 +76,11 @@ active:
     years:
     - 2024
 - id: sturmanator15
-  name: Wade Sturman
+  name: Wade
   seasons: 12
   record: 94-66-1
   win_pct: '.587'
-  win_color: '#c7e0d2'
+  win_color: '#f07a3f'
   titles: ½
   sackos: 0
   best_finish:
@@ -88,11 +88,11 @@ active:
     years:
     - 2016
 - id: schirmerj
-  name: Jono Schirmer
+  name: Jono
   seasons: 12
   record: 80-80-1
   win_pct: '.500'
-  win_color: '#f4f3f0'
+  win_color: '#f6a449'
   titles: ½
   sackos: 0
   best_finish:
@@ -100,11 +100,11 @@ active:
     years:
     - 2016
 - id: gganoom
-  name: Grant Ganoom
+  name: Grant
   seasons: 2
   record: 16-12
   win_pct: '.571'
-  win_color: '#cee3d6'
+  win_color: '#f18240'
   titles: '0'
   sackos: 0
   best_finish:
@@ -113,11 +113,11 @@ active:
     years:
     - 2025
 - id: purpsworth
-  name: Trevor Gappmayer
+  name: Trevor
   seasons: 7
   record: 44-52
   win_pct: '.458'
-  win_color: '#f0dedb'
+  win_color: '#f9b852'
   titles: '0'
   sackos: 1
   best_finish:
@@ -126,11 +126,11 @@ active:
     years:
     - 2021
 - id: kevbots22
-  name: Kevin Graczyk
+  name: Kevin
   seasons: 12
   record: 64-96-1
   win_pct: '.401'
-  win_color: '#ebc6c3'
+  win_color: '#fbcf88'
   titles: '0'
   sackos: 1
   best_finish:
@@ -139,11 +139,11 @@ active:
     years:
     - 2025
 - id: whowonthelastsuperbowl
-  name: Nate Appel
+  name: Nate
   seasons: 12
   record: 62-99
   win_pct: '.385'
-  win_color: '#eac1bd'
+  win_color: '#fbd597'
   titles: '0'
   sackos: 2
   best_finish:
@@ -153,11 +153,11 @@ active:
     - 2022
 inactive:
 - id: unclebadtouch38
-  name: Fletcher Harvey
+  name: Fletcher
   seasons: 8
   record: 49-56-2
   win_pct: '.467'
-  win_color: '#f0e2df'
+  win_color: '#f9b44d'
   titles: '1'
   sackos: 1
   best_finish:
@@ -169,7 +169,7 @@ inactive:
   seasons: 2
   record: 16-10
   win_pct: '.615'
-  win_color: '#bbdbc9'
+  win_color: '#ee6d3b'
   titles: '0'
   sackos: 0
   best_finish:
@@ -178,11 +178,11 @@ inactive:
     years:
     - 2014
 - id: master-otis
-  name: Odie Olsen
+  name: Odie
   seasons: 3
   record: 19-20
   win_pct: '.487'
-  win_color: '#f2ebe8'
+  win_color: '#f7aa4a'
   titles: '0'
   sackos: 1
   best_finish:
@@ -192,11 +192,11 @@ inactive:
     - 2014
     - 2015
 - id: ajstewart04
-  name: Anthony Stewart
+  name: Anthony
   seasons: 2
   record: 8-18
   win_pct: '.308'
-  win_color: '#e4a5a1'
+  win_color: '#fdf3e0'
   titles: '0'
   sackos: 0
   best_finish:
