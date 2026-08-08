@@ -18,7 +18,7 @@ import yaml
 from lib.data import load_franchises, load_seasons
 from lib.teams import compute_profiles, win_pct, rec_str, fmt_titles, split_titles
 from lib.rulings import load_overrides
-from lib.render import heat_color
+from lib.render import warm_heat, heat_color
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "teams"
@@ -67,12 +67,12 @@ def _season_tag(s):
 
 # --- Owners index -----------------------------------------------------------
 
-def _owner_row(p, lo, hi):
+def _owner_row(p):
     reg = p["reg"]
     return {
         "id": p["id"], "name": p["name"], "seasons": p["seasons_count"],
         "record": rec_str(reg["w"], reg["l"], reg["t"]),
-        "win_pct": pct(reg["win_pct"]), "win_color": heat_color(reg["win_pct"], lo, hi),
+        "win_pct": pct(reg["win_pct"]), "win_color": heat_color(reg["win_pct"], 0.3, 0.7),
         "titles": fmt_titles(p["titles"]), "sackos": p["sackos"],
         "best_finish": _best_finish_data(p),
     }
@@ -81,12 +81,9 @@ def _owner_row(p, lo, hi):
 def owners_data(profiles):
     ranked = sorted_profiles(profiles)
     latest = max(p["seasons"][0]["year"] for p in ranked)
-    # Shade win% across the whole owner pool so the two tables are comparable.
-    wps = [p["reg"]["win_pct"] for p in ranked]
-    lo, hi = (min(wps), max(wps)) if wps else (0.0, 1.0)
     return {
-        "active": [_owner_row(p, lo, hi) for p in ranked if p["seasons"][0]["year"] == latest],
-        "inactive": [_owner_row(p, lo, hi) for p in ranked if p["seasons"][0]["year"] != latest],
+        "active": [_owner_row(p) for p in ranked if p["seasons"][0]["year"] == latest],
+        "inactive": [_owner_row(p) for p in ranked if p["seasons"][0]["year"] != latest],
     }
 
 
@@ -129,9 +126,6 @@ def _season_rows(p):
 def _h2h_rows(p, profiles):
     opps = [(oid, r) for oid, r in p["h2h"].items() if oid in profiles]
     opps.sort(key=lambda kv: profiles[kv[0]]["short"].lower())
-    # Normalize win% shading across this owner's opponents.
-    wps = [win_pct(r["w"], r["l"], r["t"]) for _, r in opps]
-    lo, hi = (min(wps), max(wps)) if wps else (0.0, 1.0)
     rows = []
     for oid, r in opps:
         games = r["w"] + r["l"] + r["t"]
@@ -139,7 +133,7 @@ def _h2h_rows(p, profiles):
         rows.append({
             "opp_id": oid, "opp_short": profiles[oid]["short"],
             "record": rec_str(r["w"], r["l"], r["t"]),
-            "win_pct": pct(wp), "win_color": heat_color(wp, lo, hi),
+            "win_pct": pct(wp), "win_color": warm_heat(wp),
             "avg_pf": round(r["pf"] / games, 1), "avg_pa": round(r["pa"] / games, 1),
         })
     return rows

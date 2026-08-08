@@ -138,21 +138,21 @@ jackperkins74:
     opp_short: Brady
     record: 2-3
     win_pct: '.400'
-    win_color: '#fbdba5'
+    win_color: '#fac26a'
     avg_pf: 108.3
     avg_pa: 103.6
   - opp_id: theoceanpulse
     opp_short: Dillon
     record: 10-8
     win_pct: '.556'
-    win_color: '#fac168'
+    win_color: '#f8ae4b'
     avg_pf: 103.8
     avg_pa: 107.8
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 4-5
     win_pct: '.444'
-    win_color: '#fbd394'
+    win_color: '#f9bd5d'
     avg_pf: 100.7
     avg_pa: 94.8
   - opp_id: gganoom
@@ -166,70 +166,70 @@ jackperkins74:
     opp_short: Henry
     record: 9-7
     win_pct: '.562'
-    win_color: '#fac066'
+    win_color: '#f8ad4b'
     avg_pf: 99.0
     avg_pa: 93.6
   - opp_id: schirmerj
     opp_short: Jono
     record: 13-9
     win_pct: '.591'
-    win_color: '#f9bc5a'
+    win_color: '#f7a84a'
     avg_pf: 112.9
     avg_pa: 101.5
   - opp_id: kevbots22
     opp_short: Kevin
     record: 16-3
     win_pct: '.842'
-    win_color: '#f38b43'
+    win_color: '#f18341'
     avg_pf: 115.4
     avg_pa: 95.4
   - opp_id: lukstein
     opp_short: Luke
     record: 11-10
     win_pct: '.524'
-    win_color: '#fac675'
+    win_color: '#f8b24c'
     avg_pf: 98.1
     avg_pa: 99.4
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 9-8
     win_pct: '.529'
-    win_color: '#fac672'
+    win_color: '#f8b24c'
     avg_pf: 108.0
     avg_pa: 104.2
   - opp_id: master-otis
     opp_short: Odie
     record: 3-3
     win_pct: '.500'
-    win_color: '#faca7e'
+    win_color: '#f9b64d'
     avg_pf: 90.3
     avg_pa: 94.7
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 7-6
     win_pct: '.538'
-    win_color: '#fac46f'
+    win_color: '#f8b04c'
     avg_pf: 103.3
     avg_pa: 100.5
   - opp_id: purpsworth
     opp_short: Trevor
     record: 7-7
     win_pct: '.500'
-    win_color: '#faca7e'
+    win_color: '#f9b64d'
     avg_pf: 105.8
     avg_pa: 103.7
   - opp_id: sturmanator15
     opp_short: Wade
     record: 8-5
     win_pct: '.615'
-    win_color: '#f9b851'
+    win_color: '#f6a549'
     avg_pf: 102.5
     avg_pa: 97.4
   - opp_id: zachzoske
     opp_short: Zach
     record: 4-12
     win_pct: '.250'
-    win_color: '#fdf3e0'
+    win_color: '#fbd496'
     avg_pf: 98.4
     avg_pa: 108.0
 kevbots22:
@@ -369,98 +369,98 @@ kevbots22:
     opp_short: Brady
     record: 1-3
     win_pct: '.250'
-    win_color: '#fce6c0'
+    win_color: '#fbd496'
     avg_pf: 96.4
     avg_pa: 95.7
   - opp_id: theoceanpulse
     opp_short: Dillon
     record: 3-8
     win_pct: '.273'
-    win_color: '#fce2b8'
+    win_color: '#fbd290'
     avg_pf: 96.6
     avg_pa: 111.4
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 6-3
     win_pct: '.667'
-    win_color: '#f7a649'
+    win_color: '#f59d47'
     avg_pf: 102.1
     avg_pa: 84.2
   - opp_id: gganoom
     opp_short: Grant
     record: 1-1
     win_pct: '.500'
-    win_color: '#fac169'
+    win_color: '#f9b64d'
     avg_pf: 108.8
     avg_pa: 91.0
   - opp_id: henpen28
     opp_short: Henry
     record: 11-12
     win_pct: '.478'
-    win_color: '#fac570'
+    win_color: '#f9b953'
     avg_pf: 97.3
     avg_pa: 99.8
   - opp_id: jackperkins74
     opp_short: Jack
     record: 3-16
     win_pct: '.158'
-    win_color: '#fdf3e0'
+    win_color: '#fce0b2'
     avg_pf: 95.4
     avg_pa: 115.4
   - opp_id: schirmerj
     opp_short: Jono
     record: 12-5
     win_pct: '.706'
-    win_color: '#f69f48'
+    win_color: '#f49746'
     avg_pf: 106.1
     avg_pa: 94.6
   - opp_id: lukstein
     opp_short: Luke
     record: 12-5
     win_pct: '.706'
-    win_color: '#f69f48'
+    win_color: '#f49746'
     avg_pf: 108.4
     avg_pa: 95.7
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 8-8
     win_pct: '.500'
-    win_color: '#fac169'
+    win_color: '#f9b64d'
     avg_pf: 98.9
     avg_pa: 100.2
   - opp_id: master-otis
     opp_short: Odie
     record: 2-5
     win_pct: '.286'
-    win_color: '#fce0b3'
+    win_color: '#fbd08c'
     avg_pf: 89.2
     avg_pa: 108.0
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 6-13
     win_pct: '.316'
-    win_color: '#fcdca9'
+    win_color: '#facc83'
     avg_pf: 101.4
     avg_pa: 106.2
   - opp_id: purpsworth
     opp_short: Trevor
     record: 4-6
     win_pct: '.400'
-    win_color: '#fbd08b'
+    win_color: '#fac26a'
     avg_pf: 98.1
     avg_pa: 118.8
   - opp_id: sturmanator15
     opp_short: Wade
     record: 4-18-1
     win_pct: '.196'
-    win_color: '#fdeed3'
+    win_color: '#fbdba6'
     avg_pf: 86.1
     avg_pa: 97.9
   - opp_id: zachzoske
     opp_short: Zach
     record: 7-8
     win_pct: '.467'
-    win_color: '#fac674'
+    win_color: '#f9ba57'
     avg_pf: 97.3
     avg_pa: 103.3
 purpsworth:
@@ -553,28 +553,28 @@ purpsworth:
     opp_short: Dillon
     record: 5-10
     win_pct: '.333'
-    win_color: '#fbd08c'
+    win_color: '#faca7e'
     avg_pf: 100.7
     avg_pa: 108.5
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 6-5
     win_pct: '.545'
-    win_color: '#f8ad4b'
+    win_color: '#f8af4b'
     avg_pf: 99.5
     avg_pa: 89.3
   - opp_id: gganoom
     opp_short: Grant
     record: 2-3
     win_pct: '.400'
-    win_color: '#fac673'
+    win_color: '#fac26a'
     avg_pf: 105.9
     avg_pa: 116.5
   - opp_id: henpen28
     opp_short: Henry
     record: 4-7
     win_pct: '.364'
-    win_color: '#facb81'
+    win_color: '#fac775'
     avg_pf: 96.1
     avg_pa: 99.9
   - opp_id: jackperkins74
@@ -588,49 +588,49 @@ purpsworth:
     opp_short: Jono
     record: 4-5
     win_pct: '.444'
-    win_color: '#fabf62'
+    win_color: '#f9bd5d'
     avg_pf: 111.5
     avg_pa: 113.8
   - opp_id: kevbots22
     opp_short: Kevin
     record: 6-4
     win_pct: '.600'
-    win_color: '#f6a348'
+    win_color: '#f7a749'
     avg_pf: 118.8
     avg_pa: 98.1
   - opp_id: lukstein
     opp_short: Luke
     record: 2-5
     win_pct: '.286'
-    win_color: '#fbd89e'
+    win_color: '#fbd08c'
     avg_pf: 109.0
     avg_pa: 109.0
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 8-1
     win_pct: '.889'
-    win_color: '#ee6b3b'
+    win_color: '#f07c3f'
     avg_pf: 106.1
     avg_pa: 91.8
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 1-8
     win_pct: '.111'
-    win_color: '#fdf3e0'
+    win_color: '#fce5bf'
     avg_pf: 97.1
     avg_pa: 112.7
   - opp_id: sturmanator15
     opp_short: Wade
     record: 5-3
     win_pct: '.625'
-    win_color: '#f59e47'
+    win_color: '#f6a348'
     avg_pf: 110.3
     avg_pa: 100.2
   - opp_id: zachzoske
     opp_short: Zach
     record: 5-3
     win_pct: '.625'
-    win_color: '#f59e47'
+    win_color: '#f6a348'
     avg_pf: 113.9
     avg_pa: 102.4
 gganoom:
@@ -864,56 +864,56 @@ theoceanpulse:
     opp_short: Fletcher
     record: 5-5
     win_pct: '.500'
-    win_color: '#fbd496'
+    win_color: '#f9b64d'
     avg_pf: 86.7
     avg_pa: 80.2
   - opp_id: gganoom
     opp_short: Grant
     record: 1-2
     win_pct: '.333'
-    win_color: '#fdf3e0'
+    win_color: '#faca7e'
     avg_pf: 102.2
     avg_pa: 115.6
   - opp_id: henpen28
     opp_short: Henry
     record: 10-6
     win_pct: '.625'
-    win_color: '#fabe5f'
+    win_color: '#f6a348'
     avg_pf: 108.4
     avg_pa: 102.3
   - opp_id: jackperkins74
     opp_short: Jack
     record: 8-10
     win_pct: '.444'
-    win_color: '#fcdfaf'
+    win_color: '#f9bd5d'
     avg_pf: 107.8
     avg_pa: 103.8
   - opp_id: schirmerj
     opp_short: Jono
     record: 7-5-1
     win_pct: '.577'
-    win_color: '#fac675'
+    win_color: '#f7aa4a'
     avg_pf: 103.7
     avg_pa: 106.8
   - opp_id: kevbots22
     opp_short: Kevin
     record: 8-3
     win_pct: '.727'
-    win_color: '#f7a84a'
+    win_color: '#f49445'
     avg_pf: 111.4
     avg_pa: 96.6
   - opp_id: lukstein
     opp_short: Luke
     record: 8-4
     win_pct: '.667'
-    win_color: '#f9b64d'
+    win_color: '#f59d47'
     avg_pf: 118.5
     avg_pa: 98.2
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 10-1
     win_pct: '.909'
-    win_color: '#f17f40'
+    win_color: '#f0793e'
     avg_pf: 119.4
     avg_pa: 90.3
   - opp_id: master-otis
@@ -927,28 +927,28 @@ theoceanpulse:
     opp_short: Shawnee
     record: 9-10
     win_pct: '.474'
-    win_color: '#fbd9a2'
+    win_color: '#f9b955'
     avg_pf: 99.9
     avg_pa: 101.3
   - opp_id: purpsworth
     opp_short: Trevor
     record: 10-5
     win_pct: '.667'
-    win_color: '#f9b64d'
+    win_color: '#f59d47'
     avg_pf: 108.5
     avg_pa: 100.7
   - opp_id: sturmanator15
     opp_short: Wade
     record: 9-5
     win_pct: '.643'
-    win_color: '#f9ba57'
+    win_color: '#f6a148'
     avg_pf: 103.8
     avg_pa: 95.3
   - opp_id: zachzoske
     opp_short: Zach
     record: 5-10
     win_pct: '.333'
-    win_color: '#fdf3e0'
+    win_color: '#faca7e'
     avg_pf: 100.9
     avg_pa: 104.9
 zachzoske:
@@ -1083,7 +1083,7 @@ zachzoske:
     opp_short: Anthony
     record: 1-2
     win_pct: '.333'
-    win_color: '#fdf3e0'
+    win_color: '#faca7e'
     avg_pf: 77.1
     avg_pa: 116.6
   - opp_id: thebragers
@@ -1097,91 +1097,91 @@ zachzoske:
     opp_short: Dillon
     record: 10-5
     win_pct: '.667'
-    win_color: '#f9b64d'
+    win_color: '#f59d47'
     avg_pf: 104.9
     avg_pa: 100.9
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 4-6-1
     win_pct: '.409'
-    win_color: '#fce5bf'
+    win_color: '#fac168'
     avg_pf: 95.4
     avg_pa: 99.0
   - opp_id: gganoom
     opp_short: Grant
     record: 1-2
     win_pct: '.333'
-    win_color: '#fdf3e0'
+    win_color: '#faca7e'
     avg_pf: 123.6
     avg_pa: 124.0
   - opp_id: henpen28
     opp_short: Henry
     record: 7-11
     win_pct: '.389'
-    win_color: '#fce9c8'
+    win_color: '#fac46e'
     avg_pf: 101.5
     avg_pa: 103.9
   - opp_id: jackperkins74
     opp_short: Jack
     record: 12-4
     win_pct: '.750'
-    win_color: '#f6a348'
+    win_color: '#f49044'
     avg_pf: 108.0
     avg_pa: 98.4
   - opp_id: schirmerj
     opp_short: Jono
     record: 9-16
     win_pct: '.360'
-    win_color: '#fdeed4'
+    win_color: '#fac776'
     avg_pf: 102.2
     avg_pa: 106.3
   - opp_id: kevbots22
     opp_short: Kevin
     record: 8-7
     win_pct: '.533'
-    win_color: '#fbce88'
+    win_color: '#f8b14c'
     avg_pf: 103.3
     avg_pa: 97.3
   - opp_id: lukstein
     opp_short: Luke
     record: 12-8
     win_pct: '.600'
-    win_color: '#fac26a'
+    win_color: '#f7a749'
     avg_pf: 105.2
     avg_pa: 95.3
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 12-8
     win_pct: '.600'
-    win_color: '#fac26a'
+    win_color: '#f7a749'
     avg_pf: 110.1
     avg_pa: 103.6
   - opp_id: master-otis
     opp_short: Odie
     record: 1-2
     win_pct: '.333'
-    win_color: '#fdf3e0'
+    win_color: '#faca7e'
     avg_pf: 90.3
     avg_pa: 84.4
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 7-5
     win_pct: '.583'
-    win_color: '#fac572'
+    win_color: '#f7aa4a'
     avg_pf: 102.4
     avg_pa: 96.9
   - opp_id: purpsworth
     opp_short: Trevor
     record: 3-5
     win_pct: '.375'
-    win_color: '#fcebce'
+    win_color: '#fac572'
     avg_pf: 102.4
     avg_pa: 113.9
   - opp_id: sturmanator15
     opp_short: Wade
     record: 10-13
     win_pct: '.435'
-    win_color: '#fce0b3'
+    win_color: '#fabe60'
     avg_pf: 96.0
     avg_pa: 98.9
 henpen28:
@@ -1315,105 +1315,105 @@ henpen28:
     opp_short: Anthony
     record: 1-1
     win_pct: '.500'
-    win_color: '#f9b953'
+    win_color: '#f9b64d'
     avg_pf: 116.7
     avg_pa: 99.4
   - opp_id: thebragers
     opp_short: Brady
     record: 2-3
     win_pct: '.400'
-    win_color: '#fce7c4'
+    win_color: '#fac26a'
     avg_pf: 79.2
     avg_pa: 81.7
   - opp_id: theoceanpulse
     opp_short: Dillon
     record: 6-10
     win_pct: '.375'
-    win_color: '#fdf3e0'
+    win_color: '#fac572'
     avg_pf: 102.3
     avg_pa: 108.4
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 8-6
     win_pct: '.571'
-    win_color: '#f39044'
+    win_color: '#f7ab4a'
     avg_pf: 96.0
     avg_pa: 86.4
   - opp_id: gganoom
     opp_short: Grant
     record: 1-1
     win_pct: '.500'
-    win_color: '#f9b953'
+    win_color: '#f9b64d'
     avg_pf: 103.5
     avg_pa: 112.2
   - opp_id: jackperkins74
     opp_short: Jack
     record: 7-9
     win_pct: '.438'
-    win_color: '#fbd69a'
+    win_color: '#fabe5f'
     avg_pf: 93.6
     avg_pa: 99.0
   - opp_id: schirmerj
     opp_short: Jono
     record: 5-8
     win_pct: '.385'
-    win_color: '#fdefd5'
+    win_color: '#fac46f'
     avg_pf: 105.8
     avg_pa: 106.9
   - opp_id: kevbots22
     opp_short: Kevin
     record: 12-11
     win_pct: '.522'
-    win_color: '#f8ad4b'
+    win_color: '#f9b34c'
     avg_pf: 99.8
     avg_pa: 97.3
   - opp_id: lukstein
     opp_short: Luke
     record: 10-7
     win_pct: '.588'
-    win_color: '#f28742'
+    win_color: '#f7a94a'
     avg_pf: 98.9
     avg_pa: 100.2
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 9-7
     win_pct: '.562'
-    win_color: '#f49545'
+    win_color: '#f8ad4b'
     avg_pf: 98.0
     avg_pa: 99.0
   - opp_id: master-otis
     opp_short: Odie
     record: 4-3
     win_pct: '.571'
-    win_color: '#f39044'
+    win_color: '#f7ab4a'
     avg_pf: 93.8
     avg_pa: 101.3
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 8-10
     win_pct: '.444'
-    win_color: '#fbd392'
+    win_color: '#f9bd5d'
     avg_pf: 100.3
     avg_pa: 99.5
   - opp_id: purpsworth
     opp_short: Trevor
     record: 7-4
     win_pct: '.636'
-    win_color: '#ee6b3b'
+    win_color: '#f6a248'
     avg_pf: 99.9
     avg_pa: 96.1
   - opp_id: sturmanator15
     opp_short: Wade
     record: 7-10
     win_pct: '.412'
-    win_color: '#fce2b7'
+    win_color: '#fac167'
     avg_pf: 98.4
     avg_pa: 99.1
   - opp_id: zachzoske
     opp_short: Zach
     record: 11-7
     win_pct: '.611'
-    win_color: '#f0793e'
+    win_color: '#f7a549'
     avg_pf: 103.9
     avg_pa: 101.5
 lukstein:
@@ -1787,14 +1787,14 @@ whowonthelastsuperbowl:
     opp_short: Dillon
     record: 1-10
     win_pct: '.091'
-    win_color: '#fcddab'
+    win_color: '#fce8c5'
     avg_pf: 90.3
     avg_pa: 119.4
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 5-5
     win_pct: '.500'
-    win_color: '#ee6b3b'
+    win_color: '#f9b64d'
     avg_pf: 100.9
     avg_pa: 104.3
   - opp_id: gganoom
@@ -1808,70 +1808,70 @@ whowonthelastsuperbowl:
     opp_short: Henry
     record: 7-9
     win_pct: '.438'
-    win_color: '#f17e40'
+    win_color: '#fabe5f'
     avg_pf: 99.0
     avg_pa: 98.0
   - opp_id: jackperkins74
     opp_short: Jack
     record: 8-9
     win_pct: '.471'
-    win_color: '#ef743d'
+    win_color: '#f9ba56'
     avg_pf: 104.2
     avg_pa: 108.0
   - opp_id: schirmerj
     opp_short: Jono
     record: 11-11
     win_pct: '.500'
-    win_color: '#ee6b3b'
+    win_color: '#f9b64d'
     avg_pf: 91.6
     avg_pa: 105.7
   - opp_id: kevbots22
     opp_short: Kevin
     record: 8-8
     win_pct: '.500'
-    win_color: '#ee6b3b'
+    win_color: '#f9b64d'
     avg_pf: 100.2
     avg_pa: 98.9
   - opp_id: lukstein
     opp_short: Luke
     record: 11-14
     win_pct: '.440'
-    win_color: '#f17d3f'
+    win_color: '#f9bd5f'
     avg_pf: 90.6
     avg_pa: 98.3
   - opp_id: master-otis
     opp_short: Odie
     record: 1-2
     win_pct: '.333'
-    win_color: '#f59d47'
+    win_color: '#faca7e'
     avg_pf: 79.8
     avg_pa: 97.2
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 5-12
     win_pct: '.294'
-    win_color: '#f7a94a'
+    win_color: '#fbcf8a'
     avg_pf: 95.4
     avg_pa: 104.2
   - opp_id: purpsworth
     opp_short: Trevor
     record: 1-8
     win_pct: '.111'
-    win_color: '#fbd89f'
+    win_color: '#fce5bf'
     avg_pf: 91.8
     avg_pa: 106.1
   - opp_id: sturmanator15
     opp_short: Wade
     record: 8-14
     win_pct: '.364'
-    win_color: '#f49445'
+    win_color: '#fac775'
     avg_pf: 101.3
     avg_pa: 102.5
   - opp_id: zachzoske
     opp_short: Zach
     record: 8-12
     win_pct: '.400'
-    win_color: '#f28942'
+    win_color: '#fac26a'
     avg_pf: 103.6
     avg_pa: 110.1
 sturmanator15:
@@ -1997,7 +1997,7 @@ sturmanator15:
     opp_short: Anthony
     record: 1-2
     win_pct: '.333'
-    win_color: '#fdefd7'
+    win_color: '#faca7e'
     avg_pf: 81.5
     avg_pa: 87.6
   - opp_id: thebragers
@@ -2011,14 +2011,14 @@ sturmanator15:
     opp_short: Dillon
     record: 5-9
     win_pct: '.357'
-    win_color: '#fcebcd'
+    win_color: '#fac777'
     avg_pf: 95.3
     avg_pa: 103.8
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 6-4
     win_pct: '.600'
-    win_color: '#fac065'
+    win_color: '#f7a749'
     avg_pf: 98.8
     avg_pa: 84.2
   - opp_id: gganoom
@@ -2032,70 +2032,70 @@ sturmanator15:
     opp_short: Henry
     record: 10-7
     win_pct: '.588'
-    win_color: '#fac26a'
+    win_color: '#f7a94a'
     avg_pf: 99.1
     avg_pa: 98.4
   - opp_id: jackperkins74
     opp_short: Jack
     record: 5-8
     win_pct: '.385'
-    win_color: '#fce6c1'
+    win_color: '#fac46f'
     avg_pf: 97.4
     avg_pa: 102.5
   - opp_id: schirmerj
     opp_short: Jono
     record: 11-12-1
     win_pct: '.479'
-    win_color: '#fbd599'
+    win_color: '#f9b953'
     avg_pf: 97.1
     avg_pa: 100.0
   - opp_id: kevbots22
     opp_short: Kevin
     record: 18-4-1
     win_pct: '.804'
-    win_color: '#f49645'
+    win_color: '#f28842'
     avg_pf: 97.9
     avg_pa: 86.1
   - opp_id: lukstein
     opp_short: Luke
     record: 5-11
     win_pct: '.312'
-    win_color: '#fdf3e0'
+    win_color: '#facd84'
     avg_pf: 95.7
     avg_pa: 105.8
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 14-8
     win_pct: '.636'
-    win_color: '#f9ba56'
+    win_color: '#f6a248'
     avg_pf: 102.5
     avg_pa: 101.3
   - opp_id: master-otis
     opp_short: Odie
     record: 3-1
     win_pct: '.750'
-    win_color: '#f6a248'
+    win_color: '#f49044'
     avg_pf: 108.7
     avg_pa: 71.0
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 6-6
     win_pct: '.500'
-    win_color: '#fbd290'
+    win_color: '#f9b64d'
     avg_pf: 107.9
     avg_pa: 102.6
   - opp_id: purpsworth
     opp_short: Trevor
     record: 3-5
     win_pct: '.375'
-    win_color: '#fce8c5'
+    win_color: '#fac572'
     avg_pf: 100.2
     avg_pa: 110.3
   - opp_id: zachzoske
     opp_short: Zach
     record: 13-10
     win_pct: '.565'
-    win_color: '#fac674'
+    win_color: '#f8ac4b'
     avg_pf: 98.9
     avg_pa: 96.0
 schirmerj:
@@ -2227,105 +2227,105 @@ schirmerj:
     opp_short: Anthony
     record: 1-1
     win_pct: '.500'
-    win_color: '#f7a84a'
+    win_color: '#f9b64d'
     avg_pf: 97.1
     avg_pa: 101.2
   - opp_id: thebragers
     opp_short: Brady
     record: 2-2
     win_pct: '.500'
-    win_color: '#f7a84a'
+    win_color: '#f9b64d'
     avg_pf: 101.0
     avg_pa: 88.7
   - opp_id: theoceanpulse
     opp_short: Dillon
     record: 5-7-1
     win_pct: '.423'
-    win_color: '#fac672'
+    win_color: '#fabf64'
     avg_pf: 106.8
     avg_pa: 103.7
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 5-4
     win_pct: '.556'
-    win_color: '#f39044'
+    win_color: '#f8ae4b'
     avg_pf: 93.1
     avg_pa: 88.9
   - opp_id: gganoom
     opp_short: Grant
     record: 1-1
     win_pct: '.500'
-    win_color: '#f7a84a'
+    win_color: '#f9b64d'
     avg_pf: 126.0
     avg_pa: 141.1
   - opp_id: henpen28
     opp_short: Henry
     record: 8-5
     win_pct: '.615'
-    win_color: '#f0763e'
+    win_color: '#f6a549'
     avg_pf: 106.9
     avg_pa: 105.8
   - opp_id: jackperkins74
     opp_short: Jack
     record: 9-13
     win_pct: '.409'
-    win_color: '#faca7e'
+    win_color: '#fac168'
     avg_pf: 101.5
     avg_pa: 112.9
   - opp_id: kevbots22
     opp_short: Kevin
     record: 5-12
     win_pct: '.294'
-    win_color: '#fdf3e0'
+    win_color: '#fbcf8a'
     avg_pf: 94.6
     avg_pa: 106.1
   - opp_id: lukstein
     opp_short: Luke
     record: 7-9
     win_pct: '.438'
-    win_color: '#fac066'
+    win_color: '#fabe5f'
     avg_pf: 108.1
     avg_pa: 110.9
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 11-11
     win_pct: '.500'
-    win_color: '#f7a84a'
+    win_color: '#f9b64d'
     avg_pf: 105.7
     avg_pa: 91.6
   - opp_id: master-otis
     opp_short: Odie
     record: 2-2
     win_pct: '.500'
-    win_color: '#f7a84a'
+    win_color: '#f9b64d'
     avg_pf: 96.3
     avg_pa: 87.2
   - opp_id: shawne2520997
     opp_short: Shawnee
     record: 8-5
     win_pct: '.615'
-    win_color: '#f0763e'
+    win_color: '#f6a549'
     avg_pf: 112.0
     avg_pa: 102.8
   - opp_id: purpsworth
     opp_short: Trevor
     record: 5-4
     win_pct: '.556'
-    win_color: '#f39044'
+    win_color: '#f8ae4b'
     avg_pf: 113.8
     avg_pa: 111.5
   - opp_id: sturmanator15
     opp_short: Wade
     record: 12-11-1
     win_pct: '.521'
-    win_color: '#f69f47'
+    win_color: '#f9b34c'
     avg_pf: 100.0
     avg_pa: 97.1
   - opp_id: zachzoske
     opp_short: Zach
     record: 16-9
     win_pct: '.640'
-    win_color: '#ee6b3b'
+    win_color: '#f6a148'
     avg_pf: 106.3
     avg_pa: 102.2
 shawne2520997:
@@ -2452,63 +2452,63 @@ shawne2520997:
     opp_short: Dillon
     record: 10-9
     win_pct: '.526'
-    win_color: '#fac674'
+    win_color: '#f8b24c'
     avg_pf: 101.3
     avg_pa: 99.9
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 10-3-1
     win_pct: '.750'
-    win_color: '#f59d47'
+    win_color: '#f49044'
     avg_pf: 103.2
     avg_pa: 77.8
   - opp_id: gganoom
     opp_short: Grant
     record: 1-3
     win_pct: '.250'
-    win_color: '#fdf3e0'
+    win_color: '#fbd496'
     avg_pf: 99.2
     avg_pa: 116.7
   - opp_id: henpen28
     opp_short: Henry
     record: 10-8
     win_pct: '.556'
-    win_color: '#fac168'
+    win_color: '#f8ae4b'
     avg_pf: 99.5
     avg_pa: 100.3
   - opp_id: jackperkins74
     opp_short: Jack
     record: 6-7
     win_pct: '.462'
-    win_color: '#fbd18d'
+    win_color: '#f9bb58'
     avg_pf: 100.5
     avg_pa: 103.3
   - opp_id: schirmerj
     opp_short: Jono
     record: 5-8
     win_pct: '.385'
-    win_color: '#fcddab'
+    win_color: '#fac46f'
     avg_pf: 102.8
     avg_pa: 112.0
   - opp_id: kevbots22
     opp_short: Kevin
     record: 13-6
     win_pct: '.684'
-    win_color: '#f7aa4a'
+    win_color: '#f59a46'
     avg_pf: 106.2
     avg_pa: 101.4
   - opp_id: lukstein
     opp_short: Luke
     record: 8-4
     win_pct: '.667'
-    win_color: '#f8ae4b'
+    win_color: '#f59d47'
     avg_pf: 103.7
     avg_pa: 110.9
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 12-5
     win_pct: '.706'
-    win_color: '#f7a649'
+    win_color: '#f49746'
     avg_pf: 104.2
     avg_pa: 95.4
   - opp_id: master-otis
@@ -2522,21 +2522,21 @@ shawne2520997:
     opp_short: Trevor
     record: 8-1
     win_pct: '.889'
-    win_color: '#f18140'
+    win_color: '#f07c3f'
     avg_pf: 112.7
     avg_pa: 97.1
   - opp_id: sturmanator15
     opp_short: Wade
     record: 6-6
     win_pct: '.500'
-    win_color: '#faca7e'
+    win_color: '#f9b64d'
     avg_pf: 102.6
     avg_pa: 107.9
   - opp_id: zachzoske
     opp_short: Zach
     record: 5-7
     win_pct: '.417'
-    win_color: '#fbd89f'
+    win_color: '#fac066'
     avg_pf: 96.9
     avg_pa: 102.4
 unclebadtouch38:
@@ -2640,49 +2640,49 @@ unclebadtouch38:
     opp_short: Dillon
     record: 5-5
     win_pct: '.500'
-    win_color: '#faca7e'
+    win_color: '#f9b64d'
     avg_pf: 80.2
     avg_pa: 86.7
   - opp_id: henpen28
     opp_short: Henry
     record: 6-8
     win_pct: '.429'
-    win_color: '#fbd69a'
+    win_color: '#fabf62'
     avg_pf: 86.4
     avg_pa: 96.0
   - opp_id: jackperkins74
     opp_short: Jack
     record: 5-4
     win_pct: '.556'
-    win_color: '#fac168'
+    win_color: '#f8ae4b'
     avg_pf: 94.8
     avg_pa: 100.7
   - opp_id: schirmerj
     opp_short: Jono
     record: 4-5
     win_pct: '.444'
-    win_color: '#fbd394'
+    win_color: '#f9bd5d'
     avg_pf: 88.9
     avg_pa: 93.1
   - opp_id: kevbots22
     opp_short: Kevin
     record: 3-6
     win_pct: '.333'
-    win_color: '#fce5bf'
+    win_color: '#faca7e'
     avg_pf: 84.2
     avg_pa: 102.1
   - opp_id: lukstein
     opp_short: Luke
     record: 7-11
     win_pct: '.389'
-    win_color: '#fcdcaa'
+    win_color: '#fac46e'
     avg_pf: 99.8
     avg_pa: 98.2
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 5-5
     win_pct: '.500'
-    win_color: '#faca7e'
+    win_color: '#f9b64d'
     avg_pf: 104.3
     avg_pa: 100.9
   - opp_id: master-otis
@@ -2696,28 +2696,28 @@ unclebadtouch38:
     opp_short: Shawnee
     record: 3-10-1
     win_pct: '.250'
-    win_color: '#fdf3e0'
+    win_color: '#fbd496'
     avg_pf: 77.8
     avg_pa: 103.2
   - opp_id: purpsworth
     opp_short: Trevor
     record: 5-6
     win_pct: '.455'
-    win_color: '#fbd290'
+    win_color: '#f9bc5a'
     avg_pf: 89.3
     avg_pa: 99.5
   - opp_id: sturmanator15
     opp_short: Wade
     record: 4-6
     win_pct: '.400'
-    win_color: '#fbdba5'
+    win_color: '#fac26a'
     avg_pf: 84.2
     avg_pa: 98.8
   - opp_id: zachzoske
     opp_short: Zach
     record: 6-4-1
     win_pct: '.591'
-    win_color: '#f9bc5a'
+    win_color: '#f7a84a'
     avg_pf: 99.0
     avg_pa: 95.4
 ajstewart04:
@@ -2887,7 +2887,7 @@ master-otis:
     opp_short: Brady
     record: 3-1
     win_pct: '.750'
-    win_color: '#ee6b3b'
+    win_color: '#f49044'
     avg_pf: 115.2
     avg_pa: 87.7
   - opp_id: theoceanpulse
@@ -2908,28 +2908,28 @@ master-otis:
     opp_short: Henry
     record: 3-4
     win_pct: '.429'
-    win_color: '#f7ab4a'
+    win_color: '#fabf62'
     avg_pf: 101.3
     avg_pa: 93.8
   - opp_id: jackperkins74
     opp_short: Jack
     record: 3-3
     win_pct: '.500'
-    win_color: '#f59d47'
+    win_color: '#f9b64d'
     avg_pf: 94.7
     avg_pa: 90.3
   - opp_id: schirmerj
     opp_short: Jono
     record: 2-2
     win_pct: '.500'
-    win_color: '#f59d47'
+    win_color: '#f9b64d'
     avg_pf: 87.2
     avg_pa: 96.3
   - opp_id: kevbots22
     opp_short: Kevin
     record: 5-2
     win_pct: '.714'
-    win_color: '#ef723d'
+    win_color: '#f49645'
     avg_pf: 108.0
     avg_pa: 89.2
   - opp_id: lukstein
@@ -2943,7 +2943,7 @@ master-otis:
     opp_short: Nate
     record: 2-1
     win_pct: '.667'
-    win_color: '#f07c3f'
+    win_color: '#f59d47'
     avg_pf: 97.2
     avg_pa: 79.8
   - opp_id: shawne2520997
@@ -2957,14 +2957,14 @@ master-otis:
     opp_short: Wade
     record: 1-3
     win_pct: '.250'
-    win_color: '#faca7e'
+    win_color: '#fbd496'
     avg_pf: 71.0
     avg_pa: 108.7
   - opp_id: zachzoske
     opp_short: Zach
     record: 2-1
     win_pct: '.667'
-    win_color: '#f07c3f'
+    win_color: '#f59d47'
     avg_pf: 84.4
     avg_pa: 90.3
 thebragers:
