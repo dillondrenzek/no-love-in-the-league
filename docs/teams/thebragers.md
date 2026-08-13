@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Brady
 permalink: /teams/thebragers/
 owner_id: thebragers

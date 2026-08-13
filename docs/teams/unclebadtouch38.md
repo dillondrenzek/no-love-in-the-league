@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Fletcher
 permalink: /teams/unclebadtouch38/
 owner_id: unclebadtouch38

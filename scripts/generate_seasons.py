@@ -106,12 +106,18 @@ def main():
         yaml.safe_dump({"list": index, "detail": detail}, sort_keys=False, allow_unicode=True),
         encoding="utf-8")
 
+    # Season pages are scaffolded once, then hand-editable: only create a stub
+    # for a season that doesn't have a page yet. Delete a page to regenerate it.
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    created = 0
     for y in years:
-        (OUT_DIR / f"{y}.md").write_text(
-            STUB.format(no=season_no(y), year=y), encoding="utf-8")
+        path = OUT_DIR / f"{y}.md"
+        if not path.exists():
+            path.write_text(STUB.format(no=season_no(y), year=y), encoding="utf-8")
+            created += 1
 
-    print(f"Wrote {DATA_PATH.relative_to(ROOT)} and {len(years)} season pages")
+    print(f"Wrote {DATA_PATH.relative_to(ROOT)}; "
+          f"created {created} new season page(s), kept {len(years) - created} as-is")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Wade
 permalink: /teams/sturmanator15/
 owner_id: sturmanator15

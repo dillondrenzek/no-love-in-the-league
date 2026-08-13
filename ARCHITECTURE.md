@@ -1,183 +1,152 @@
 # Architecture
 
-How data flows through this project, and the conventions we follow so it stays
-easy to extend and easy for new contributors to pick up.
+How data flows through the project, and the conventions that keep it easy to
+extend. The one-line version: **hand-edited YAML in `data/` → Python computes and
+writes `docs/_data/*.yml` → Jekyll renders it through layouts and components.**
 
-## Two levels of data, from cheapest to richest
+## Source of truth: `data/`
 
-We add data in whatever detail we have. Two levels, and a season can sit at
-either one:
-
-1. **Final standings (what we have now).** ESPN's league-history page gives, per
-   season, the final finish order, each team's name that year, and its
-   regular-season W-L-T record. That's enough to render the standings and the
-   champions list. No game scores.
-2. **Matchups (richer, added later).** ESPN's scoreboard/schedule page gives
-   each week's games and scores. When a season has these, the build scripts
-   compute its standings *from* the scores and unlock points-for/against plus the
-   score-based record book (highest week, biggest blowout, head-to-head, etc.).
-
-The key idea for level 2: **store matchups, derive everything else.** Standings,
-records, team pages, and rivalry stats are all calculations over the matchup
-list, so we never hand-maintain them separately (they'd drift out of sync). We
-keep source data minimal and let the scripts compute the rest.
-
-A season starts at level 1 (paste the final standings) and can be upgraded to
-level 2 later by adding a `matchups:` list — nothing else changes.
-
-### A note on franchise identity
-
-ESPN team names change every year, and the standings export has no stable owner
-id, so we currently key everything off each season's **team name**. Linking the
-same owner across years (for team pages and all-time records) is a later step
-that lives in `data/franchises.yml` and needs human knowledge of who's who.
-
-## Source of truth (hand-edited, committed)
-
-Lives under `data/`. This is the only thing a human edits.
+The only thing a human (or the importer) edits.
 
 ```
 data/
-  franchises.yml         <- the league's teams (stable identities across years)
-  seasons/
-    2024.yml             <- one file per season: matchups + a little metadata
-    2025.yml
+  seasons/<year>.yml   one file per season — the raw results
+  franchises.yml       owner ↔ franchise mapping (stable across years)
+  overrides.yml        league rulings ESPN doesn't record
+  season_notes.yml     per-year event bullets shown on History
 ```
 
-### `data/seasons/<year>.yml` — level 1 (final standings)
+### `seasons/<year>.yml`
 
-What every season currently uses. Champions are read off the top of the finish
-order (finish 1/2/3), so they aren't stored separately.
-
-```yaml
-season: 2025
-source: espn-final-standings
-standings:
-  - finish: 1
-    team: "Pukkake"       # team name that season
-    record: "9-5-0"       # regular-season W-L-T
-  - finish: 2
-    team: "Keeping up with the McCalferies"
-    record: "10-4-0"
-```
-
-### `data/seasons/<year>.yml` — level 2 (matchups)
-
-To upgrade a season, add a `matchups:` list. When present it takes over: the
-scripts compute standings and points from the scores instead of reading the
-`standings` block.
+Written by `scripts/import_espn.py`, one per season. It stores each week's
+matchups with scores and lets the build compute everything else — standings,
+points for/against, records, head-to-head. Store the games, derive the rest, so
+nothing drifts out of sync.
 
 ```yaml
 season: 2025
 weeks_in_regular_season: 14
-teams:                      # this season's team name per franchise id
+status: in_progress        # present only mid-season (see below); omit when final
+draft_order:               # optional, HAND-EDITED; preserved across re-imports
+  - jackperkins74
+teams:                     # this season's team name per franchise id
   jackperkins74: "Pukkake"
-  kevbots22: "Keeping up with the McCalferies"
-playoff_teams:              # winners-bracket seeds (top ESPN playoffSeed), in order
+playoff_teams:             # winners-bracket seeds (top ESPN playoffSeed), in order
   - jackperkins74
-  - kevbots22
-final_standings:            # finish order (ESPN's final placement)
+final_standings:           # finish order (ESPN's final placement)
   - jackperkins74
-  - kevbots22
 matchups:
-  - week: 1
-    home: jackperkins74
-    away: kevbots22
-    home_score: 122.4
-    away_score: 98.1
-    playoff: false          # omit or false for regular season
+  - { week: 1, home: jackperkins74, away: kevbots22, home_score: 122.4, away_score: 98.1, playoff: false }
 ```
 
-At level 2, `home`/`away`/`final_standings` reference franchise ids from
-`franchises.yml`, and `teams` maps each id to its name that season (so per-season
-pages show "Pukkake", while the id links the owner across years). Scores are the
-only numbers you type — win/loss is computed, not stored. These files are written
-by `scripts/import_espn.py`, not by hand.
+`home`/`away`/`final_standings`/`draft_order` reference franchise ids;
+`teams` maps each id to its name that season (so pages show "Pukkake" while the id
+links the owner across years). Scores are the only numbers typed by hand — win/loss
+is computed. Everything except `draft_order` is importer-owned; don't hand-edit it.
 
-### `franchises.yml`
+*(A season can instead carry an explicit `standings:` block of finish/team/record
+rows with no scores — a legacy path still supported by `lib/standings.py` — but
+every current season comes from the importer with matchups.)*
 
-Owner-to-team-name mapping (keyed by ESPN SWID), used for team pages and all-time
-records. Written by the importer; edit `name` freely.
+### Franchise identity
 
-### `overrides.yml` — league rulings ESPN doesn't know
+Each owner gets a stable `id` keyed off their ESPN **SWID**, so the same person
+stays one franchise across years even when they rename their team each season.
+`franchises.yml` maps id → `name` (kept first-name-only for the public site) and an
+optional `nickname` (the tagline on their profile). The importer writes this file
+and folds each year's team names in as `aliases`; edit `name` and `nickname`
+freely.
 
-Season files are regenerated by the importer, so anything the league decided that
-ESPN doesn't record lives here instead (the importer never touches this file):
+### `overrides.yml` — rulings ESPN doesn't know
 
-- `co_champions` — a tied championship game ruled a shared title. Each listed
-  franchise counts as half a title and shows as a co-champion.
-- `double_elim_6` — seasons using our 6-team double-elimination bracket. In these
-  years the final-week consolation games between two 5th–8th place teams are
-  *meaningless* (placement was already decided) and are excluded from the record
-  book, head-to-head, and playoff records. The specific games are derived from
-  `final_standings` + the playoff schedule, so we only list the years.
+Season files are regenerated by the importer, so league decisions live here (the
+importer never touches this file), applied by `lib/rulings.py`:
 
-The rulings are applied in `scripts/lib/rulings.py`.
+- `co_champions` — a tied title ruled shared. Each listed franchise counts as half
+  a title (shown as `½`) and as a co-champion.
+- `double_elim_6` — years using our 6-team double-elimination bracket, where the
+  final-week consolation games are *meaningless* (placement already decided) and
+  are excluded from records, head-to-head, and playoff counts.
 
-## Compute in Python, render in Jekyll
+### In-progress seasons
 
-Two clean layers, connected by generated data files:
+Mid-year ESPN hasn't assigned final placements, so the importer orders by current
+standing and writes `status: in_progress`. Such a season is **excluded** from the
+all-time pool (`load_seasons()` skips it) — standings, records, owner profiles, and
+the homepage hero only count finished seasons — but its own `/seasons/<year>/` page
+shows current standings. Re-importing after the season ends drops the flag and
+folds it into the all-time numbers.
 
-**Python computes** — `scripts/` reads `data/`, computes everything (standings,
-records, owner profiles, and every *display* value: chip colors, tags, formatted
-percentages), and writes it to `docs/_data/*.yml`. No HTML lives in Python.
+## Compute in Python → `docs/_data/`
+
+`scripts/` reads `data/`, computes everything including every *display* value (chip
+colors, tags, formatted percentages), and writes `docs/_data/*.yml`. No HTML in
+Python.
 
 ```
 scripts/
-  lib/                   <- pure functions: load data, standings, records, teams,
-                            rulings, and render helpers (heat/win colors)
-  generate_history.py    <- docs/_data/history.yml (champions + record book)
-  generate_standings.py  <- docs/_data/standings.yml (per-season finals)
-  generate_teams.py      <- docs/_data/owners.yml, owner_profiles.yml + owner stub pages
-  build.py               <- runs every generator in order
+  lib/                     pure, tested functions:
+                             data, standings, records, teams, rulings, render
+  generate_records.py   -> docs/_data/records.yml        (record book)
+  generate_standings.py -> docs/_data/standings.yml      (per-season, History)
+  generate_teams.py     -> owners.yml, owner_profiles.yml (+ owner stub pages)
+  generate_seasons.py   -> seasons.yml                    (+ season stub pages)
+  build.py                 runs every generator in order
+  import_espn.py           pull a season from ESPN into data/seasons/
+  update_season.sh         weekly: import one season + rebuild
 ```
 
-**Jekyll renders** — `docs/` is a themeless Jekyll site (our own `_layouts` and
-`_includes`, one stylesheet `assets/main.scss`). The pages loop over `site.data`
-and call small includes to build the HTML:
+**Generators are thin; `lib/` does the thinking.** What counts as a win, a chip's
+color, half-titles — all live once in `lib/` with a test in `tests/test_lib.py`.
+
+## Render in Jekyll: `docs/`
+
+A themeless Jekyll site (our own layouts, includes, and one stylesheet). Layouts
+and pages compose small presentational includes ("components").
 
 ```
 docs/
-  _layouts/, _includes/  <- our layouts + reusable partials (chip, finish_tag,
-                            person_cell, owners_table, season_standings,
-                            champions_table, records_table, owner_profile)
-  _data/*.yml            <- generated; the templates' input (never hand-edit)
-  standings/index.md     <- hand-maintained template that renders _data
-  history/index.md       <- hand-maintained template
-  teams/index.md         <- hand-maintained template (owners index)
-  teams/<id>.md          <- generated stub: includes owner_profile.html
-  assets/main.scss
+  _layouts/     default (shell) · home (hero) · page · owner · season
+  _includes/    components (props via include params):
+                  standings_table · draft_table · season_notes · resume_card
+                  owner_seasons_table · h2h_table · owners_table · records_table
+                  chip · finish_tag · best_finish
+                compositions (thin, assemble the above):
+                  owner_profile · season_detail · season_standings
+                chrome: head · header (nav) · footer
+  _data/*.yml   generated — the components' input (never hand-edit)
+  assets/main.scss   one stylesheet; colors are :root tokens, numeric cells use .num
+  index.md · history/ · records/ · teams/index.md · rulebook/ · feedback/   hand-written
+  teams/<id>.md · seasons/<year>.md   generated stubs (see below)
 ```
 
-The rule: **generators are thin, `lib/` does the thinking; templates assemble
-markup, `_data` carries the values.** Real logic (what counts as a win, a chip's
-color) lives once in `lib/`; the includes never do math.
+Components are presentational and take their data as include params (Jekyll's
+version of props); pages and layouts own the headings and structure around them.
+The standings table is one component shared by the History page and every season
+page.
+
+### Page pages vs. generated stubs
+
+Most pages are hand-written and render `site.data` through the components. The
+per-owner and per-season pages are **scaffolded once**: `generate_teams` and
+`generate_seasons` create a stub only when it's missing and never overwrite an
+existing one, so they're yours to edit. Delete a stub to regenerate it. Each stub
+is a thin front-matter + one composition include; swap in individual components and
+interleave your own markdown to customize a page.
 
 ## The build loop
 
-1. Download the relevant ESPN page(s) for the season.
-2. Edit the matching `data/seasons/<year>.yml` (hand or AI-assisted).
-3. Rebuild: `.venv/bin/python scripts/build.py`
-4. Commit the `data/` change **and** the regenerated `docs/` files, then push.
-   GitHub Pages rebuilds automatically.
+1. `scripts/update_season.sh 2026` (or `import_all.sh`) — pull from ESPN into
+   `data/seasons/`.
+2. It runs `build.py`, regenerating `docs/_data/*.yml`.
+3. Review `git diff`, commit the `data/` and `docs/` changes, push. GitHub Pages
+   redeploys automatically.
 
-## Site sections (MVP target)
-
-- **History & records** — champions, record book. *(scaffold exists)*
-- **Standings by season** — full regular-season table per year.
-- **Owner pages** — one per franchise: all-time record, titles, season-by-season,
-  head-to-head. *(done)*
-- **Fun / rivalry stats** — head-to-head grid, biggest blowouts, luckiest team,
-  power rankings. The "no love" flavor.
-
-All four are computed from the same matchup data — they're different views, not
-different datasets.
-
-## Conventions for contributors
+## Conventions
 
 - Franchise `id`s are lowercase, stable, and never reused. Add `aliases` rather
   than renaming an `id`.
-- Never hand-edit anything under `docs/` that a generator produces.
-- Put new logic in `scripts/lib/` with a matching test, not inline in a generator.
-- Keep it simple. Prefer plain YAML + small Python over any framework. If a change
-  makes the project harder for a newcomer to read, it probably isn't worth it.
+- Never hand-edit `docs/_data/*.yml` or a season file's importer-owned fields.
+- New logic goes in `scripts/lib/` with a test, not inline in a generator.
+- Keep components presentational; keep computation in Python. Prefer plain YAML +
+  small Python over any framework.

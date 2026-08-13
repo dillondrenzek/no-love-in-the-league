@@ -7,9 +7,8 @@ GitHub Pages. League data (pulled manually from ESPN) lives in hand-edited
 YAML files and is compiled into Markdown pages by small Python scripts.
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the design and conventions. The short
-version: each season is one YAML file. At minimum it holds the final standings
-(finish, team, record) pasted from ESPN; later you can add game scores and the
-build scripts compute points and richer records from those.
+version: each season is one YAML file of matchups (imported from ESPN), and the
+build scripts compute standings, records, and owner stats from those.
 
 ## What you edit vs. what's generated
 
@@ -29,8 +28,15 @@ build scripts compute points and richer records from those.
 **Never hand-edit these** (rewritten by `scripts/build.py`):
 
 - `docs/_data/*.yml` — pre-computed data the templates render.
-- Generated pages under `docs/history/`, `docs/teams/*.md`, and
-  `docs/seasons/*.md` (the per-season pages).
+
+**Scaffolded once, then yours to edit:**
+
+- `docs/teams/*.md` and `docs/seasons/*.md` — the per-owner and per-season pages.
+  The build only creates one when it's missing; it never overwrites an existing
+  page. Edit them freely. To regenerate a fresh stub, delete the file and run
+  `scripts/build.py`. (They render the generated `docs/_data/*.yml` through
+  includes, so their tables still update on rebuild — unless you replace the
+  include with your own hand-written content.)
 
 The pipeline is always: edit `data/` → `python scripts/build.py` → the generated
 files are rewritten → Jekyll renders. Computation lives in Python; presentation
@@ -39,41 +45,33 @@ lives in the Liquid templates + includes.
 ## How it works
 
 ```
-data/                    <- hand-edited YAML, the only thing you edit
-  seasons/
-    2014.yml ... 2025.yml   one file per season (final standings; scores optional)
-  franchises.yml            owner mapping for future team pages (empty for now)
+data/                    <- hand-edited YAML (or importer-written); source of truth
+  seasons/2014.yml … 2026.yml   one file per season (matchups + metadata)
+  franchises.yml                owner ↔ franchise mapping
+  overrides.yml                 league rulings (co-champions, double-elim years)
+  season_notes.yml              per-year event bullets (History)
 
 scripts/
-  lib/                      shared pure functions (standings, records, teams) — tested
+  lib/                      shared, tested pure functions (standings, records, teams, …)
   generate_records.py       record book
-  generate_standings.py     standings per season (History page)
-  generate_teams.py         owner index + per-owner profile pages
+  generate_standings.py     per-season standings (History page)
+  generate_teams.py         owner index + per-owner pages
   generate_seasons.py       per-season pages (/seasons/<year>/)
   import_espn.py            pull a season from ESPN
   update_season.sh          weekly: import one season + rebuild
   build.py                  runs every generator
   tests/test_lib.py         plain-python tests for lib
 
-docs/                    <- Jekyll site (the GitHub Pages source); no theme gem
-  _layouts/                 default / page / home layouts (our own)
-  _includes/                head, header (nav), footer
-  assets/main.scss          the single self-contained stylesheet
-  standings/index.md        generated — do not edit by hand
-  history/index.md          generated — do not edit by hand
-  index.md
+docs/                    <- themeless Jekyll site (GitHub Pages source)
+  _layouts/                 default · home · page · owner · season
+  _includes/                components + compositions + chrome (head/header/footer)
+  _data/*.yml               generated — never hand-edit
+  assets/main.scss          one stylesheet (:root color tokens, .num numeric cells)
+  index.md · history/ · records/ · teams/ · rulebook/ · feedback/   pages
+  teams/<id>.md · seasons/<year>.md   generated once, then hand-editable
 ```
 
-## Updating the site with new data
-
-1. Download the relevant ESPN page(s) and edit the matching `data/seasons/<year>.yml`.
-   For a new season, paste its final standings; to enrich an existing one, add game scores.
-2. Rebuild every page:
-   ```
-   .venv/bin/python scripts/build.py
-   ```
-3. Commit both the `data/` changes and the regenerated `docs/` files, then push.
-   GitHub Pages rebuilds the site automatically.
+To get new data in, import it (below) rather than editing season files by hand.
 
 ## Importing a season's scores from ESPN
 

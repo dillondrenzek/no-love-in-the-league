@@ -1,0 +1,12 @@
+{%- comment -%}
+Per-season event notes. Param: notes (list of markdown bullet strings). Renders
+nothing when the list is empty.
+{%- endcomment -%}
+{%- assign notes = include.notes -%}
+{%- if notes and notes.size > 0 -%}
+<ul class="season-notes">
+  {%- for note in notes %}
+  <li>{{ note | markdownify }}</li>
+  {%- endfor %}
+</ul>
+{%- endif -%}

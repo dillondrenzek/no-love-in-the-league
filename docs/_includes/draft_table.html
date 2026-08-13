@@ -1,0 +1,25 @@
+{%- comment -%}
+Draft order table. Param: rows (list of {pick, owner_id, owner_name, team}).
+Shows the team name (with the manager in small text) like the History tables.
+{%- endcomment -%}
+{%- assign rows = include.rows -%}
+<div class="table-scroll">
+<table>
+  <thead><tr><th>Pick</th><th>Team</th></tr></thead>
+  <tbody>
+    {%- for p in rows %}
+    <tr>
+      <td>{{ p.pick }}</td>
+      <td>
+        {%- if p.team -%}
+        {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.team }}</a>{%- else -%}{{ p.team }}{%- endif -%}
+        {%- if p.owner_name %} <span class="owner-name">{{ p.owner_name }}</span>{% endif -%}
+        {%- else -%}
+        {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.owner_name }}</a>{%- else -%}{{ p.owner_name }}{%- endif -%}
+        {%- endif -%}
+      </td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>

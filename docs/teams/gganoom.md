@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Grant
 permalink: /teams/gganoom/
 owner_id: gganoom

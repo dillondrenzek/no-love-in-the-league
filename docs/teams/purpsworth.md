@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Trevor
 permalink: /teams/purpsworth/
 owner_id: purpsworth

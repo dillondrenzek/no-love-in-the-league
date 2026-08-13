@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign profile = site.data.owner_profiles[page.owner_id] -%}
+<article class="post">
+  <p class="back-link"><a href="{{ '/teams/' | relative_url }}">← All owners</a></p>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {%- if profile.nickname and profile.nickname != "" %}
+    <p class="owner-sub">{{ profile.nickname }}</p>
+    {%- endif %}
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

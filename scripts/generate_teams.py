@@ -160,7 +160,7 @@ def _profile_data(p, profiles):
 
 
 STUB = """---
-layout: page
+layout: owner
 title: {name}
 permalink: /teams/{id}/
 owner_id: {id}
@@ -183,11 +183,18 @@ def main():
         yaml.safe_dump({pid: _profile_data(p, profiles) for pid, p in profiles.items()},
                        sort_keys=False, allow_unicode=True), encoding="utf-8")
 
+    # Owner pages are scaffolded once, then hand-editable: only create a stub
+    # for an owner that doesn't have a page yet. Delete a page to regenerate it.
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    created = 0
     for pid, p in profiles.items():
-        (OUT_DIR / f"{pid}.md").write_text(STUB.format(name=p["name"], id=pid), encoding="utf-8")
+        path = OUT_DIR / f"{pid}.md"
+        if not path.exists():
+            path.write_text(STUB.format(name=p["name"], id=pid), encoding="utf-8")
+            created += 1
 
-    print(f"Wrote docs/_data/owners.yml, owner_profiles.yml and {len(profiles)} stub pages")
+    print(f"Wrote docs/_data/owners.yml, owner_profiles.yml; "
+          f"created {created} new owner page(s), kept {len(profiles) - created} as-is")
 
 
 if __name__ == "__main__":

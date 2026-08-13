@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Anthony
 permalink: /teams/ajstewart04/
 owner_id: ajstewart04

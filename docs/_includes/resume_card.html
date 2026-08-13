@@ -1,0 +1,21 @@
+{%- comment -%}
+Owner résumé card: honors line + a grid of headline stats. Param: p (an
+owner_profiles record).
+{%- endcomment -%}
+{%- assign p = include.p -%}
+<div class="resume">
+  <div class="resume__honors">
+    {%- for h in p.honors -%}
+      {%- unless forloop.first %} · {% endunless -%}
+      {{ h.emoji }} {% if h.strong %}<b>{{ h.text }}</b>{% else %}{{ h.text }}{% endif %}
+    {%- endfor -%}
+  </div>
+  <div class="resume__grid">
+    <div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">{{ p.resume.all_time }} <span class="muted">({{ p.resume.win_pct }})</span></div></div>
+    <div class="tile"><div class="tile__label">Titles</div><div class="tile__val">{{ p.resume.titles }}</div></div>
+    <div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">{{ p.resume.sackos }}</div></div>
+    <div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">{{ p.resume.playoff_apps }}</div></div>
+    <div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">{{ p.resume.seasons }}</div></div>
+    <div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">{% include best_finish.html bf=p.resume.best_finish %}</div></div>
+  </div>
+</div>

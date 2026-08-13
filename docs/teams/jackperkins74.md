@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Jack
 permalink: /teams/jackperkins74/
 owner_id: jackperkins74

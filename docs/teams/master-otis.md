@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Odie
 permalink: /teams/master-otis/
 owner_id: master-otis

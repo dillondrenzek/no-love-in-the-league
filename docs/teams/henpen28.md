@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Henry
 permalink: /teams/henpen28/
 owner_id: henpen28

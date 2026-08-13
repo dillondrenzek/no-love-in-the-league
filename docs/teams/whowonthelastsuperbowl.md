@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Nate
 permalink: /teams/whowonthelastsuperbowl/
 owner_id: whowonthelastsuperbowl

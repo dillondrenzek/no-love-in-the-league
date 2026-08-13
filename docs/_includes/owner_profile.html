@@ -1,66 +1,13 @@
 {%- comment -%}
-Full owner profile. Param: p = a record from site.data.owner_profiles.
+Owner profile body — composes the résumé card, season-by-season table, and
+head-to-head table. Param: p (a site.data.owner_profiles record). The name +
+nickname header is rendered by the `owner` layout.
 {%- endcomment -%}
 {%- assign p = include.p -%}
-
-{%- if p.nickname and p.nickname != "" -%}
-<p class="owner-sub">{{ p.nickname }}</p>
-{%- endif -%}
-
-<div class="resume">
-  <div class="resume__honors">
-    {%- for h in p.honors -%}
-      {%- unless forloop.first %} · {% endunless -%}
-      {{ h.emoji }} {% if h.strong %}<b>{{ h.text }}</b>{% else %}{{ h.text }}{% endif %}
-    {%- endfor -%}
-  </div>
-  <div class="resume__grid">
-    <div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">{{ p.resume.all_time }} <span class="muted">({{ p.resume.win_pct }})</span></div></div>
-    <div class="tile"><div class="tile__label">Titles</div><div class="tile__val">{{ p.resume.titles }}</div></div>
-    <div class="tile"><div class="tile__label">Sackos</div><div class="tile__val">{{ p.resume.sackos }}</div></div>
-    <div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">{{ p.resume.playoff_apps }}</div></div>
-    <div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">{{ p.resume.seasons }}</div></div>
-    <div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">{% include best_finish.html bf=p.resume.best_finish %}</div></div>
-  </div>
-</div>
+{% include resume_card.html p=p %}
 
 <h2>Season by season</h2>
-<div class="table-scroll">
-<table>
-  <thead>
-    <tr><th>Season</th><th>Team</th><th>Finish</th><th style="text-align: right">Record</th><th style="text-align: right">PF</th><th style="text-align: right">PA</th></tr>
-  </thead>
-  <tbody>
-    {%- for s in p.seasons %}
-    <tr>
-      <td>{{ s.year }}</td>
-      <td>{{ s.team }}{% include finish_tag.html tag=s.tag %}</td>
-      <td>{{ s.finish }}</td>
-      <td style="text-align: right">{{ s.record }}</td>
-      <td style="text-align: right">{% if s.pf %}{% include chip.html text=s.pf bg=s.pf_color %}{% else %}—{% endif %}</td>
-      <td style="text-align: right">{% if s.pa %}{{ s.pa }}{% else %}—{% endif %}</td>
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
-</div>
+{% include owner_seasons_table.html rows=p.seasons %}
 
 <h2>Head-to-head</h2>
-<div class="table-scroll">
-<table>
-  <thead>
-    <tr><th>Opponent</th><th style="text-align: right">Record</th><th style="text-align: right">Win%</th><th style="text-align: right">Avg PF</th><th style="text-align: right">Avg PA</th></tr>
-  </thead>
-  <tbody>
-    {%- for h in p.h2h %}
-    <tr>
-      <td><a href="{{ '/teams/' | append: h.opp_id | append: '/' | relative_url }}">{{ h.opp_short }}</a></td>
-      <td style="text-align: right">{{ h.record }}</td>
-      <td style="text-align: right">{% include chip.html text=h.win_pct bg=h.win_color %}</td>
-      <td style="text-align: right">{{ h.avg_pf }}</td>
-      <td style="text-align: right">{{ h.avg_pa }}</td>
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
-</div>
+{% include h2h_table.html rows=p.h2h %}

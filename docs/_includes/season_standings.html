@@ -1,49 +1,11 @@
 {%- comment -%}
-One season's standings table. Param: season = an entry from
-site.data.standings.seasons.
+One season block on the History page. Param: season = an entry from
+site.data.standings.seasons. Composes the year heading, notes, and the shared
+standings table.
 {%- endcomment -%}
 {%- assign s = include.season -%}
 <div class="history__season-container">
 <h3>{{ s.year }}</h3>
-{%- if s.notes and s.notes.size > 0 %}
-<ul class="season-notes">
-  {%- for note in s.notes %}
-  <li>{{ note | markdownify }}</li>
-  {%- endfor %}
-</ul>
-{%- endif %}
-<div class="table-scroll">
-<table>
-  <thead>
-    <tr>
-      <th>Finish</th>
-      <th>Team</th>
-      <th style="text-align: right">Record</th>
-      {%- if s.points %}
-      <th style="text-align: right">PF</th>
-      <th style="text-align: right">PA</th>
-      {%- endif %}
-    </tr>
-  </thead>
-  <tbody>
-    {%- for r in s.rows %}
-    <tr>
-      <td>{{ r.finish }}</td>
-      <td>
-        {%- if r.owner_id -%}
-        <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.team }}</a>
-        {%- if r.owner_name %} <span class="owner-name">{{ r.owner_name }}</span>{% endif -%}
-        {%- else -%}{{ r.team }}{%- endif -%}
-        {%- include finish_tag.html tag=r.tag -%}
-      </td>
-      <td style="text-align: right">{{ r.record }}</td>
-      {%- if s.points %}
-      <td style="text-align: right">{% include chip.html text=r.pf bg=r.pf_color %}</td>
-      <td style="text-align: right">{{ r.pa }}</td>
-      {%- endif %}
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
-</div>
+{% include season_notes.html notes=s.notes %}
+{% include standings_table.html rows=s.rows points=s.points %}
 </div>

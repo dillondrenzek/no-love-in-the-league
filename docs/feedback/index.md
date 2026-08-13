@@ -15,7 +15,7 @@ Tell us _all_ your complaints.
 <label for="fb-message">Feedback</label>
 <textarea id="fb-message" name="message" rows="6" placeholder="What's wrong? How can we help you feel better?"></textarea>
 
-  <div id="fb-alert" class="form-alert" role="alert" hidden>Oops! Try again. Your feedback is very important to us.</div>
+  <div id="fb-alert" class="form-alert" role="alert" hidden>Oops! Something went wrong. Please try again. Your feedback is very important to us.</div>
 
 <button type="submit">Submit feedback</button>
 
