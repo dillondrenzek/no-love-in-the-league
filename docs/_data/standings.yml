@@ -763,15 +763,6 @@ seasons:
     pf_color: '#fbd393'
     pa: 1411.7
   - finish: 10
-    team: Tom Brady's Fluffer
-    owner_id: henpen28
-    owner_name: Henry
-    record: 4-9
-    tag: null
-    pf: 1288.2
-    pf_color: '#f9bc5b'
-    pa: 1320.7
-  - finish: 11
     team: AB’s Helmet
     owner_id: purpsworth
     owner_name: Trevor
@@ -780,15 +771,24 @@ seasons:
     pf: 1240.3
     pf_color: '#fac674'
     pa: 1344.1
-  - finish: 12
+  - finish: 11
     team: Set_The_ RAT_TRAP_!
     owner_id: unclebadtouch38
     owner_name: Fletcher
     record: 5-7-1
-    tag: sacko
+    tag: null
     pf: 1036.2
     pf_color: '#fdf3e0'
     pa: 1215.5
+  - finish: 12
+    team: Tom Brady's Fluffer
+    owner_id: henpen28
+    owner_name: Henry
+    record: 4-9
+    tag: sacko
+    pf: 1288.2
+    pf_color: '#f9bc5b'
+    pa: 1320.7
   notes:
   - Trevor joined the league; Anthony departed.
 - year: 2018
@@ -1016,6 +1016,7 @@ seasons:
     pa: 1266.4
   notes:
   - Playoff field expanded from 6 teams to 8.
+  - Sacko punishment implemented.
   - Bench shrank from 7 spots to 4.
   - Anthony joined the league; Odie departed.
 - year: 2016
@@ -1210,23 +1211,23 @@ seasons:
     pf_color: '#fdf3e0'
     pa: 1207.2
   - finish: 9
-    team: He's Quick He's Slick He's Mike
-    owner_id: whowonthelastsuperbowl
-    owner_name: Nate
-    record: 6-7
-    tag: null
-    pf: 1176.3
-    pf_color: '#fbd392'
-    pa: 1236.9
-  - finish: 10
     team: MasterDeflater And_Commander
     owner_id: kevbots22
     owner_name: Kevin
     record: 5-8
-    tag: sacko
+    tag: null
     pf: 1115.0
     pf_color: '#fce9c7'
     pa: 1259.0
+  - finish: 10
+    team: He's Quick He's Slick He's Mike
+    owner_id: whowonthelastsuperbowl
+    owner_name: Nate
+    record: 6-7
+    tag: sacko
+    pf: 1176.3
+    pf_color: '#fbd392'
+    pa: 1236.9
   notes: []
 - year: 2014
   points: true
