@@ -456,6 +456,30 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 }
 .hero__links a:hover { background: var(--brand); color: #fff; }
 
+// ---- Season page masthead (the hero style, but inline) ----------------------
+.season-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.15em 0.55em;
+  margin: 0 0 1.1em;
+}
+.season-head__title {
+  font-size: clamp(1.8rem, 7vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0;
+}
+.season-head__label {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--brand);
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 3.4vw, 1.2rem);
+  line-height: 1.05;
+}
+
 // ---- Owner "resume" card ----------------------------------------------------
 .resume {
   border: 1px solid var(--rule);

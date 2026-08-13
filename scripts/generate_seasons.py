@@ -77,10 +77,11 @@ def season_detail(season, franchises, overrides, notes):
 
 
 STUB = """---
-layout: page
+layout: season
 title: Season {no} · {year}
 permalink: /seasons/{year}/
 season_year: {year}
+season_no: {no}
 ---
 {{% assign d = site.data.seasons.detail[page.season_year] %}}
 {{% include season_detail.html d=d %}}
