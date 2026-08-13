@@ -685,24 +685,24 @@ detail:
       pf_color: '#f49244'
       pa: 1463.8
     - finish: 11
-      team: Set_The_ RAT_TRAP_!
-      owner_id: unclebadtouch38
-      owner_name: Fletcher
-      record: 4-10
-      tag: null
-      pf: 1112.9
-      pf_color: '#fdf3e0'
-      pa: 1392.7
-    - &id010
-      finish: 12
       team: Autodraft Monster
       owner_id: lukstein
       owner_name: Luke
       record: 4-10
-      tag: sacko
+      tag: null
       pf: 1302.7
       pf_color: '#fac572'
       pa: 1465.5
+    - &id010
+      finish: 12
+      team: Set_The_ RAT_TRAP_!
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      record: 4-10
+      tag: sacko
+      pf: 1112.9
+      pf_color: '#fdf3e0'
+      pa: 1392.7
     notes:
     - Injured-reserve slots trimmed from 4 to 1.
     weeks_played: 14
