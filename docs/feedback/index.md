@@ -12,12 +12,13 @@ Tell us _all_ your complaints.
   <label for="fb-name">Name</label>
   <input id="fb-name" name="name" type="text" placeholder="Your name" autocomplete="off">
 
-  <label for="fb-message">Feedback</label>
-  <textarea id="fb-message" name="message" rows="6" placeholder="Tell us all your complaints…"></textarea>
+<label for="fb-message">Feedback</label>
+<textarea id="fb-message" name="message" rows="6" placeholder="What's wrong? How can we help you feel better?"></textarea>
 
   <div id="fb-alert" class="form-alert" role="alert" hidden>Oops! Try again. Your feedback is very important to us.</div>
 
-  <button type="submit">Submit feedback</button>
+<button type="submit">Submit feedback</button>
+
 </form>
 
 <script>
