@@ -40,7 +40,30 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
 FRANCHISES_PATH = ROOT / "data" / "franchises.yml"
+COOKIES_PATH = ROOT / ".espn-cookies"
 LEAGUE_ID = 236302
+
+
+def load_cookies():
+    """(espn_s2, swid) read from the .espn-cookies file, falling back to the
+    environment. The file holds `ESPN_S2='...'` / `ESPN_SWID='{...}'` lines (a
+    leading `export` is fine); keeping the values there means they never need to
+    be exported into your shell or saved in shell history. Override the path
+    with the ESPN_COOKIES_FILE env var."""
+    values = {}
+    path = Path(os.environ.get("ESPN_COOKIES_FILE") or COOKIES_PATH)
+    if path.exists():
+        for raw in path.read_text().splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            if line.startswith("export "):
+                line = line[len("export "):].lstrip()
+            key, val = line.split("=", 1)
+            values[key.strip()] = val.strip().strip('"').strip("'")
+    s2 = values.get("ESPN_S2") or os.environ.get("ESPN_S2")
+    swid = values.get("ESPN_SWID") or os.environ.get("ESPN_SWID")
+    return s2, swid
 
 
 def clean_name(text):
@@ -71,6 +94,16 @@ def load_franchises():
     if FRANCHISES_PATH.exists():
         data = yaml.safe_load(FRANCHISES_PATH.read_text()) or []
         return data if isinstance(data, list) else []
+    return []
+
+
+def existing_draft_order(year):
+    """The hand-edited `draft_order` already in a season's file, so re-imports
+    preserve it (the importer owns every other field, but not this one)."""
+    path = SEASONS_DIR / f"{year}.yml"
+    if path.exists():
+        data = yaml.safe_load(path.read_text()) or {}
+        return data.get("draft_order") or []
     return []
 
 
@@ -143,14 +176,35 @@ def build_matchups(teams, team_to_fid, reg_season_count):
     return matchups
 
 
-def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams):
+def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
+                     status=None, draft_order=None):
     lines = [
-        f"# {year} — imported from ESPN by scripts/import_espn.py. Do not hand-edit;",
-        f"# re-run the importer to refresh. See ../../ARCHITECTURE.md.",
+        f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
+        f"# to refresh; only the hand-edited `draft_order:` below is preserved across",
+        f"# imports. See ../../ARCHITECTURE.md.",
         "",
         f"season: {year}",
         "source: espn-api",
         f"weeks_in_regular_season: {reg_count}",
+    ]
+    if status:
+        lines += [
+            "",
+            "# Season still in progress: standings reflect the current order and this",
+            "# season is left out of all-time stats until it's re-imported as final.",
+            f"status: {status}",
+        ]
+    lines += [
+        "",
+        "# Draft order (1st overall pick first), franchise ids. Optional and HAND-",
+        "# EDITED — preserved across re-imports; remove the block to hide the draft",
+        "# table on the season page.",
+    ]
+    if draft_order:
+        lines += ["draft_order:"] + [f"  - {fid}" for fid in draft_order]
+    else:
+        lines += ["draft_order: []"]
+    lines += [
         "",
         "# This season's team name for each franchise (shown on per-season pages).",
         "teams:",
@@ -160,22 +214,29 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         "",
         "# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff",
         "# team count), in seed order. Used for the 'made the playoffs' count.",
-        "playoff_teams:",
     ]
-    lines += [f"  - {fid}" for fid in playoff_teams]
+    if playoff_teams:
+        lines += ["playoff_teams:"] + [f"  - {fid}" for fid in playoff_teams]
+    else:
+        lines += ["playoff_teams: []  # not seeded yet"]
     lines += [
         "",
         "# Final placement (ESPN's rankCalculatedFinal), used for the finish column.",
-        "final_standings:",
     ]
-    lines += [f"  - {fid}" for fid in final_order]
-    lines += ["", "matchups:"]
-    for m in matchups:
-        pf = "true" if m["playoff"] else "false"
-        lines.append(
-            f"  - {{ week: {m['week']:>2}, home: {m['home']}, away: {m['away']}, "
-            f"home_score: {m['home_score']}, away_score: {m['away_score']}, playoff: {pf} }}"
-        )
+    if final_order:
+        lines += ["final_standings:"] + [f"  - {fid}" for fid in final_order]
+    else:
+        lines += ["final_standings: []"]
+    if matchups:
+        lines += ["", "matchups:"]
+        for m in matchups:
+            pf = "true" if m["playoff"] else "false"
+            lines.append(
+                f"  - {{ week: {m['week']:>2}, home: {m['home']}, away: {m['away']}, "
+                f"home_score: {m['home_score']}, away_score: {m['away_score']}, playoff: {pf} }}"
+            )
+    else:
+        lines += ["", "matchups: []  # no games played yet"]
     return "\n".join(lines) + "\n"
 
 
@@ -211,8 +272,7 @@ def main():
     ap.add_argument("--stdout", action="store_true", help="print YAML, write nothing")
     args = ap.parse_args()
 
-    espn_s2 = os.environ.get("ESPN_S2")
-    swid = os.environ.get("ESPN_SWID")
+    espn_s2, swid = load_cookies()
     league = League(league_id=args.league_id, year=args.year, espn_s2=espn_s2, swid=swid)
 
     reg_count = league.settings.reg_season_count
@@ -222,7 +282,14 @@ def main():
     team_to_fid = resolve_franchises(teams, registry)
     matchups = build_matchups(teams, team_to_fid, reg_count)
 
-    final_sorted = sorted(teams, key=lambda t: getattr(t, "final_standing", 0) or 999)
+    # A season is "complete" once ESPN has assigned every team a final placement.
+    # Until then we order by the current standing and flag the file in-progress.
+    complete = bool(teams) and all(getattr(t, "final_standing", 0) for t in teams)
+    if complete:
+        order_key = lambda t: getattr(t, "final_standing", 0) or 999
+    else:
+        order_key = lambda t: getattr(t, "standing", 0) or 999
+    final_sorted = sorted(teams, key=order_key)
     final_order = [team_to_fid[t.team_id] for t in final_sorted]
     season_teams = {team_to_fid[t.team_id]: clean_name(t.team_name) for t in teams}
 
@@ -235,7 +302,9 @@ def main():
     playoff_ids = [team_to_fid[t.team_id] for t in seeded]
 
     season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups,
-                                   season_teams, playoff_ids)
+                                   season_teams, playoff_ids,
+                                   status=None if complete else "in_progress",
+                                   draft_order=existing_draft_order(args.year))
 
     if not any(o for _, o in map(owner_of, teams)):
         print("WARNING: no owner names/SWIDs found — franchise ids fell back to team "
@@ -243,7 +312,9 @@ def main():
               "private league.\n", file=sys.stderr)
 
     print(f"Parsed {args.year}: {len(teams)} teams, {len(matchups)} matchups, "
-          f"{reg_count} regular-season weeks.\n", file=sys.stderr)
+          f"{reg_count} regular-season weeks — "
+          f"{'COMPLETE' if complete else 'IN PROGRESS (ordered by current standing)'}.\n",
+          file=sys.stderr)
     print("Computed regular-season standings (verify against the ESPN final standings):",
           file=sys.stderr)
     print(validation_table(matchups, team_to_fid) + "\n", file=sys.stderr)

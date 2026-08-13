@@ -1,0 +1,64 @@
+# 2026 — imported from ESPN by scripts/import_espn.py. Re-run the importer to
+# refresh; only the hand-edited `draft_order:` below is preserved across
+# imports. See ../../ARCHITECTURE.md.
+
+season: 2026
+source: espn-api
+weeks_in_regular_season: 14
+
+# Season still in progress: standings reflect the current order and this
+# season is left out of all-time stats until it's re-imported as final.
+status: in_progress
+
+# Draft order (1st overall pick first), franchise ids. Optional and HAND-EDITED
+# — the importer preserves whatever is here across re-imports; remove the block
+# to hide the draft table on the season page.
+draft_order:
+  - jackperkins74
+  - gganoom
+  - henpen28
+  - shawne2520997
+  - schirmerj
+  - lukstein
+  - purpsworth
+  - zachzoske
+  - sturmanator15
+  - theoceanpulse
+  - kevbots22
+  - whowonthelastsuperbowl
+
+# This season's team name for each franchise (shown on per-season pages).
+teams:
+  sturmanator15: "The People's Commissioner"
+  zachzoske: "Big Brown Dak Makes em Waddle"
+  schirmerj: "IDPs Forever"
+  lukstein: "2x Runner Up"
+  jackperkins74: "Golden Tempo"
+  kevbots22: "Keeping up with the McCalferies"
+  henpen28: "Dump it on my Chest"
+  purpsworth: "I am dead inside"
+  whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
+  theoceanpulse: "Thoughts and Players"
+  gganoom: "One Big Beautiful Dill"
+  shawne2520997: "D***er my Sufficient Tight End"
+
+# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
+# team count), in seed order. Used for the 'made the playoffs' count.
+playoff_teams: [] # not seeded yet
+
+# Final placement (ESPN's rankCalculatedFinal), used for the finish column.
+final_standings:
+  - sturmanator15
+  - zachzoske
+  - schirmerj
+  - lukstein
+  - jackperkins74
+  - kevbots22
+  - henpen28
+  - purpsworth
+  - whowonthelastsuperbowl
+  - theoceanpulse
+  - gganoom
+  - shawne2520997
+
+matchups: [] # no games played yet

@@ -76,7 +76,6 @@ code {
 // ---- Links ------------------------------------------------------------------
 a {
   color: var(--brand);
-  text-decoration: none;
 }
 a:hover { text-decoration: underline; }
 
@@ -97,6 +96,7 @@ a:hover { text-decoration: underline; }
   font-size: 1.55rem;
   color: var(--ink) !important;
   line-height: 1.1;
+  text-decoration: none;
 }
 .site-title:hover { text-decoration: none; }
 
@@ -106,12 +106,17 @@ a:hover { text-decoration: underline; }
   .page-link:visited {
     color: var(--muted);
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 0.07em;
     font-size: 0.72rem;
     font-weight: 700;
     margin-left: 22px;
   }
-  .page-link:hover { color: var(--ink); text-decoration: none; }
+  .page-link:hover { color: var(--ink); }
+  // The current-season link leads and reads in the brand color.
+  .page-link--season,
+  .page-link--season:visited { color: var(--brand); }
+  .page-link--season:hover { color: var(--brand); text-decoration: underline; }
 }
 
 // ---- Headings ---------------------------------------------------------------
@@ -271,6 +276,14 @@ tbody td a:hover { color: var(--brand); }
 }
 .season-notes li p { display: inline; margin: 0; }
 
+// Preview note on an upcoming season's page.
+.season-status {
+  font-family: var(--mono);
+  color: var(--brand);
+  font-size: 0.9rem;
+  margin: -0.2em 0 1.6em;
+}
+
 // Monospace subtitle under an owner-page title (their latest team name).
 .owner-sub {
   font-family: var(--mono);
@@ -303,6 +316,9 @@ tbody td a:hover { color: var(--brand); }
   line-height: 1.05;
   margin: 0;
 }
+// The subtitle doubles as the link into the current season's page.
+a.hero__subtitle--link { display: inline-block; text-decoration: none; }
+a.hero__subtitle--link:hover { text-decoration: underline; }
 .hero__tagline {
   color: var(--muted);
   max-width: 34ch;
