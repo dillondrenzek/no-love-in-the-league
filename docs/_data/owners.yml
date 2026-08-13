@@ -119,7 +119,7 @@ active:
   win_pct: '.458'
   win_color: '#fac36c'
   titles: '0'
-  sackos: 1
+  sackos: 0
   best_finish:
     type: place
     ordinal: 2nd
@@ -159,7 +159,7 @@ inactive:
   win_pct: '.467'
   win_color: '#fac065'
   titles: '1'
-  sackos: 1
+  sackos: 2
   best_finish:
     type: shiva
     years:
