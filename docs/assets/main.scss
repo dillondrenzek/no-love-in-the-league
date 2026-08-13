@@ -16,6 +16,20 @@
   --brand: #d94f30;       // links, accents
   --row-hover: #faf7f3;   // warm hover
   --bg: #ffffff;
+
+  // Accents & states
+  --code-bg: #f4f2ec;     // inline `code`
+  --chip-ink: #33251c;    // dark text on heat chips
+  --gold-bg: #fdf3e0;     // warm highlight fill (Shiva)
+  --gold-border: #f7e0b6;
+  --tag-shiva-bg: #fbe6d6;
+  --tag-shiva-ink: #a4530f;
+  --tag-sacko-bg: #ece3da;
+  --tag-sacko-ink: #6d4a2c;
+  --danger: #d0433f;      // error / the prank alert
+  --danger-bg: #fcebeb;
+  --danger-ink: #a32d2d;
+
   --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -68,7 +82,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2em 0; }
 code {
   font-family: var(--mono);
   font-size: 0.85em;
-  background: #f4f2ec;
+  background: var(--code-bg);
   padding: 1px 5px;
   border-radius: 4px;
 }
@@ -191,17 +205,17 @@ tbody td:first-child {
   white-space: nowrap;
 }
 
-// Right-aligned cells are numbers → monospaced, tabular, dark.
-th[style*="right"],
-td[style*="right"] {
-  text-align: right;
+// Numeric cells (.num) → right-aligned, monospaced, tabular, dark.
+.num { text-align: right; }
+th.num,
+td.num {
   font-family: var(--mono);
   font-variant-numeric: tabular-nums;
   font-size: 0.9rem;
   color: var(--ink);
   white-space: nowrap;
 }
-th[style*="right"] { color: var(--muted); font-size: 0.68rem; }
+th.num { color: var(--muted); font-size: 0.68rem; }
 
 // Bold the primary link in a row (team / owner names).
 tbody td a { font-weight: 600; color: var(--ink); }
@@ -218,7 +232,7 @@ tbody td a:hover { color: var(--brand); }
   font-family: var(--mono);
   font-weight: 500;
   font-size: 0.8rem;
-  color: #33251c;
+  color: var(--chip-ink);
   text-align: right;
 }
 
@@ -238,8 +252,8 @@ tbody td a:hover { color: var(--brand); }
   margin-left: 6px;
   vertical-align: 1px;
 }
-.tag--shiva { background: #fbe6d6; color: #a4530f; }
-.tag--sacko { background: #ece3da; color: #6d4a2c; }
+.tag--shiva { background: var(--tag-shiva-bg); color: var(--tag-shiva-ink); }
+.tag--sacko { background: var(--tag-sacko-bg); color: var(--tag-sacko-ink); }
 
 // Small gray owner name beside a team name.
 .owner-name {
@@ -341,10 +355,10 @@ blockquote > :last-child { margin-bottom: 0; }
 .form-alert {
   margin-top: 1.3em;
   padding: 0.8em 1em;
-  border-left: 4px solid #d0433f;
+  border-left: 4px solid var(--danger);
   border-radius: 0 8px 8px 0;
-  background: #fcebeb;
-  color: #a32d2d;
+  background: var(--danger-bg);
+  color: var(--danger-ink);
   font-weight: 600;
 }
 .form-alert.is-flash { animation: form-alert-flash 0.35s ease; }
@@ -411,8 +425,8 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 }
 // The reigning champ leads and reads a step louder than the Sacko below it.
 .hero__stat--shiva {
-  border: 2px solid #f7e0b6;
-  background: #fdf3e0;
+  border: 2px solid var(--gold-border);
+  background: var(--gold-bg);
   padding: 16px 18px;
 }
 .hero__stat--shiva .hero__stat-label { color: var(--brand); }
@@ -586,7 +600,7 @@ h4:hover > .heading-anchor,
   table { font-size: 0.86rem; }
   thead th { padding: 0 7px 7px; font-size: 0.62rem; }
   tbody td { padding: 8px 7px; }
-  th[style*="right"], td[style*="right"] { font-size: 0.82rem; }
+  th.num, td.num { font-size: 0.82rem; }
   .chip { min-width: 3.2em; padding: 2px 7px; }
   .owner-name { font-size: 0.68rem; }
   .tag { font-size: 0.56rem; }

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Luke
 permalink: /teams/lukstein/
 owner_id: lukstein

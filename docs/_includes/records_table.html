@@ -2,7 +2,7 @@
 <div class="table-scroll">
 <table>
   <thead>
-    <tr><th>Category</th><th>Holder</th><th>Value</th><th style="text-align: right">Season</th></tr>
+    <tr><th>Category</th><th>Holder</th><th>Value</th><th class="num">Season</th></tr>
   </thead>
   <tbody>
     {%- for r in site.data.records.records %}
@@ -10,7 +10,7 @@
       <td>{{ r.category }}</td>
       <td>{{ r.holder }}</td>
       <td>{{ r.value }}</td>
-      <td style="text-align: right">{% if r.season %}{{ r.season }}{% else %}—{% endif %}</td>
+      <td class="num">{% if r.season %}{{ r.season }}{% else %}—{% endif %}</td>
     </tr>
     {%- endfor %}
   </tbody>

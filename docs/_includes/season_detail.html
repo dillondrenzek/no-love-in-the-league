@@ -1,83 +1,33 @@
 {%- comment -%}
-One season's page body. Param: d = site.data.seasons.detail[year] (see
-scripts/generate_seasons.py). Renders final standings for completed seasons, a
-draft-order table when present, and a preview note for upcoming seasons.
+Season page body — composes notes, standings, and the draft table. Param:
+d (a site.data.seasons.detail record). The season masthead is rendered by the
+`season` layout.
 {%- endcomment -%}
 {%- assign d = include.d -%}
 {%- assign has_rows = false -%}
 {%- if d.rows and d.rows.size > 0 %}{% assign has_rows = true %}{% endif -%}
 
-{%- if d.notes and d.notes.size > 0 -%}
-<ul class="season-notes">
-  {%- for note in d.notes %}
-  <li>{{ note | markdownify }}</li>
-  {%- endfor %}
-</ul>
+{%- unless has_rows -%}
+{%- if d.draft_order and d.draft_order.size > 0 -%}
+<p class="season-status">This season hasn't kicked off yet — here's the draft order.</p>
+{%- else -%}
+<p class="season-status">This season hasn't kicked off yet.</p>
 {%- endif -%}
+{%- endunless -%}
 
-{%- if d.rows and d.rows.size > 0 -%}
+{% include season_notes.html notes=d.notes %}
+
+{%- if has_rows -%}
 {%- if d.status == "in_progress" -%}
 <h2>Current standings</h2>
 <p class="season-status">Season in progress — through week {{ d.weeks_played }}.</p>
 {%- else -%}
 <h2>Final standings</h2>
 {%- endif -%}
-<div class="table-scroll">
-<table>
-  <thead>
-    <tr>
-      <th>Finish</th>
-      <th>Team</th>
-      <th style="text-align: right">Record</th>
-      {%- if d.points %}
-      <th style="text-align: right">PF</th>
-      <th style="text-align: right">PA</th>
-      {%- endif %}
-    </tr>
-  </thead>
-  <tbody>
-    {%- for r in d.rows %}
-    <tr>
-      <td>{{ r.finish }}</td>
-      <td>
-        {%- if r.owner_id -%}
-        <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.team }}</a>
-        {%- if r.owner_name %} <span class="owner-name">{{ r.owner_name }}</span>{% endif -%}
-        {%- else -%}{{ r.team }}{%- endif -%}
-        {%- include finish_tag.html tag=r.tag -%}
-      </td>
-      <td style="text-align: right">{{ r.record }}</td>
-      {%- if d.points %}
-      <td style="text-align: right">{% include chip.html text=r.pf bg=r.pf_color %}</td>
-      <td style="text-align: right">{{ r.pa }}</td>
-      {%- endif %}
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
-</div>
+{% include standings_table.html rows=d.rows points=d.points %}
 {%- endif -%}
 
 {%- if d.draft_order and d.draft_order.size > 0 -%}
 <h2>Draft order</h2>
-<div class="table-scroll">
-<table>
-  <thead><tr><th>Pick</th><th>Team</th></tr></thead>
-  <tbody>
-    {%- for p in d.draft_order %}
-    <tr>
-      <td>{{ p.pick }}</td>
-      <td>
-        {%- if p.team -%}
-        {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.team }}</a>{%- else -%}{{ p.team }}{%- endif -%}
-        {%- if p.owner_name %} <span class="owner-name">{{ p.owner_name }}</span>{% endif -%}
-        {%- else -%}
-        {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.owner_name }}</a>{%- else -%}{{ p.owner_name }}{%- endif -%}
-        {%- endif -%}
-      </td>
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
-</div>
+{% include draft_table.html rows=d.draft_order %}
 {%- endif -%}

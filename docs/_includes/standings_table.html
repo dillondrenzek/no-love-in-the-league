@@ -1,0 +1,40 @@
+{%- comment -%}
+Standings table. Params: rows (standings rows), points (bool — show PF/PA).
+Row shape: finish, team, owner_id, owner_name, record, tag, pf, pf_color, pa.
+Shared by the History page and each season page.
+{%- endcomment -%}
+{%- assign rows = include.rows -%}
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th>Finish</th>
+      <th>Team</th>
+      <th class="num">Record</th>
+      {%- if include.points %}
+      <th class="num">PF</th>
+      <th class="num">PA</th>
+      {%- endif %}
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in rows %}
+    <tr>
+      <td>{{ r.finish }}</td>
+      <td>
+        {%- if r.owner_id -%}
+        <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.team }}</a>
+        {%- if r.owner_name %} <span class="owner-name">{{ r.owner_name }}</span>{% endif -%}
+        {%- else -%}{{ r.team }}{%- endif -%}
+        {%- include finish_tag.html tag=r.tag -%}
+      </td>
+      <td class="num">{{ r.record }}</td>
+      {%- if include.points %}
+      <td class="num">{% include chip.html text=r.pf bg=r.pf_color %}</td>
+      <td class="num">{{ r.pa }}</td>
+      {%- endif %}
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>

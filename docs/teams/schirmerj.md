@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Jono
 permalink: /teams/schirmerj/
 owner_id: schirmerj

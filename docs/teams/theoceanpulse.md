@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Dillon
 permalink: /teams/theoceanpulse/
 owner_id: theoceanpulse

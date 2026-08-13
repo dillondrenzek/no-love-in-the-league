@@ -160,7 +160,7 @@ def _profile_data(p, profiles):
 
 
 STUB = """---
-layout: page
+layout: owner
 title: {name}
 permalink: /teams/{id}/
 owner_id: {id}

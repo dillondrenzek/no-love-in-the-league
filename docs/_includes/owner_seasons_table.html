@@ -1,0 +1,24 @@
+{%- comment -%}
+An owner's season-by-season table. Param: rows (list with year, team, tag,
+finish, record, pf, pf_color, pa).
+{%- endcomment -%}
+{%- assign rows = include.rows -%}
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Season</th><th>Team</th><th>Finish</th><th class="num">Record</th><th class="num">PF</th><th class="num">PA</th></tr>
+  </thead>
+  <tbody>
+    {%- for s in rows %}
+    <tr>
+      <td>{{ s.year }}</td>
+      <td>{{ s.team }}{% include finish_tag.html tag=s.tag %}</td>
+      <td>{{ s.finish }}</td>
+      <td class="num">{{ s.record }}</td>
+      <td class="num">{% if s.pf %}{% include chip.html text=s.pf bg=s.pf_color %}{% else %}—{% endif %}</td>
+      <td class="num">{% if s.pa %}{{ s.pa }}{% else %}—{% endif %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>

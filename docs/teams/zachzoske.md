@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: owner
 title: Zach
 permalink: /teams/zachzoske/
 owner_id: zachzoske
