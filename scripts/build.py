@@ -11,11 +11,13 @@ main() function, then add it to GENERATORS below.
 import generate_records
 import generate_standings
 import generate_teams
+import generate_seasons
 
 GENERATORS = [
     generate_records,
     generate_standings,
     generate_teams,
+    generate_seasons,
 ]
 
 

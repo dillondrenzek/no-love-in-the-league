@@ -2,6 +2,8 @@
   <div class="wrapper">
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav class="site-nav">
+      {%- assign cur = site.data.seasons.list | first -%}
+      {%- if cur %}<a class="page-link page-link--season" href="{{ '/seasons/' | append: cur.year | append: '/' | relative_url }}">Season {{ cur.season_no }}</a>{% endif -%}
       <a class="page-link" href="{{ '/history/' | relative_url }}">History</a>
       <a class="page-link" href="{{ '/records/' | relative_url }}">Records</a>
       <a class="page-link" href="{{ '/teams/' | relative_url }}">Owners</a>

@@ -10,8 +10,8 @@
 #   scripts/import_all.sh                 # import the default season range
 #   scripts/import_all.sh 2023 2024 2025  # import only these seasons
 #
-# Cookies are read from `.espn-cookies` (git-ignored) so they never hit your
-# shell history or the repo.
+# Cookies are read straight from `.espn-cookies` (git-ignored) by the importer,
+# so nothing is exported into your shell or saved in shell history.
 
 set -euo pipefail
 
@@ -19,13 +19,8 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-COOKIES_FILE="${ESPN_COOKIES_FILE:-$ROOT/.espn-cookies}"
-if [[ -f "$COOKIES_FILE" ]]; then
-  # shellcheck disable=SC1090
-  source "$COOKIES_FILE"
-  export ESPN_S2 ESPN_SWID
-else
-  echo "No cookies file at $COOKIES_FILE." >&2
+if [[ ! -f "${ESPN_COOKIES_FILE:-$ROOT/.espn-cookies}" ]]; then
+  echo "No cookies file at ${ESPN_COOKIES_FILE:-$ROOT/.espn-cookies}." >&2
   echo "Copy .espn-cookies.example to .espn-cookies and fill it in (private league)," >&2
   echo "or continue without it if your league is public." >&2
 fi
