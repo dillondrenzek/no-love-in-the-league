@@ -1,5 +1,5 @@
-# 2026 — imported from ESPN by scripts/import_espn.py. Re-run the importer to
-# refresh; only the hand-edited `draft_order:` below is preserved across
+# 2026 — imported from ESPN by scripts/import_espn.py. Re-run the importer
+# to refresh; only the hand-edited `draft_order:` below is preserved across
 # imports. See ../../ARCHITECTURE.md.
 
 season: 2026
@@ -10,9 +10,9 @@ weeks_in_regular_season: 14
 # season is left out of all-time stats until it's re-imported as final.
 status: in_progress
 
-# Draft order (1st overall pick first), franchise ids. Optional and HAND-EDITED
-# — the importer preserves whatever is here across re-imports; remove the block
-# to hide the draft table on the season page.
+# Draft order (1st overall pick first), franchise ids. Optional and HAND-
+# EDITED — preserved across re-imports; remove the block to hide the draft
+# table on the season page.
 draft_order:
   - jackperkins74
   - gganoom
@@ -30,7 +30,7 @@ draft_order:
 # This season's team name for each franchise (shown on per-season pages).
 teams:
   sturmanator15: "The People's Commissioner"
-  zachzoske: "Big Brown Dak Makes em Waddle"
+  zachzoske: "Zoinks"
   schirmerj: "IDPs Forever"
   lukstein: "2x Runner Up"
   jackperkins74: "Golden Tempo"
@@ -44,7 +44,7 @@ teams:
 
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
-playoff_teams: [] # not seeded yet
+playoff_teams: []  # not seeded yet
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:
@@ -61,4 +61,4 @@ final_standings:
   - gganoom
   - shawne2520997
 
-matchups: [] # no games played yet
+matchups: []  # no games played yet
