@@ -29,8 +29,15 @@ build scripts compute points and richer records from those.
 **Never hand-edit these** (rewritten by `scripts/build.py`):
 
 - `docs/_data/*.yml` — pre-computed data the templates render.
-- Generated pages under `docs/history/`, `docs/teams/*.md`, and
-  `docs/seasons/*.md` (the per-season pages).
+
+**Scaffolded once, then yours to edit:**
+
+- `docs/teams/*.md` and `docs/seasons/*.md` — the per-owner and per-season pages.
+  The build only creates one when it's missing; it never overwrites an existing
+  page. Edit them freely. To regenerate a fresh stub, delete the file and run
+  `scripts/build.py`. (They render the generated `docs/_data/*.yml` through
+  includes, so their tables still update on rebuild — unless you replace the
+  include with your own hand-written content.)
 
 The pipeline is always: edit `data/` → `python scripts/build.py` → the generated
 files are rewritten → Jekyll renders. Computation lives in Python; presentation
