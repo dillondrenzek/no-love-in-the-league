@@ -44,8 +44,8 @@ final_standings:
   - whowonthelastsuperbowl
   - zachzoske
   - theoceanpulse
-  - unclebadtouch38
   - lukstein
+  - unclebadtouch38
 
 matchups:
   - { week:  1, home: jackperkins74, away: unclebadtouch38, home_score: 110.4, away_score: 86.4, playoff: false }
