@@ -284,6 +284,75 @@ tbody td a:hover { color: var(--brand); }
   margin: -0.2em 0 1.6em;
 }
 
+// Blockquotes (`>` in markdown) double as notice / callout boxes: a brand-color
+// left rule, a light warm-gray fill, and italic text.
+blockquote {
+  margin: 1.6em 0;
+  padding: 0.85em 1.15em;
+  border-left: 4px solid var(--brand);
+  border-radius: 0 8px 8px 0;   // square on the ruled edge
+  background: var(--row-hover);
+  color: var(--muted);
+  font-style: italic;
+}
+blockquote > :first-child { margin-top: 0; }
+blockquote > :last-child { margin-bottom: 0; }
+
+// ---- Forms (feedback page) --------------------------------------------------
+.feedback-form { max-width: 460px; margin: 1.8em 0; }
+.feedback-form label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 1.1em 0 0.4em;
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #fff;
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--ink);
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus { outline: none; border-color: var(--brand); }
+.feedback-form textarea { resize: vertical; }
+.feedback-form button {
+  margin-top: 1.3em;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.feedback-form button:hover { background: var(--brand); }
+
+// The prank "error" — a red notice that flashes on every (failed) submit.
+.form-alert {
+  margin-top: 1.3em;
+  padding: 0.8em 1em;
+  border-left: 4px solid #d0433f;
+  border-radius: 0 8px 8px 0;
+  background: #fcebeb;
+  color: #a32d2d;
+  font-weight: 600;
+}
+.form-alert.is-flash { animation: form-alert-flash 0.35s ease; }
+@keyframes form-alert-flash {
+  from { opacity: 0.15; transform: translateY(-3px); }
+  to   { opacity: 1; transform: none; }
+}
+
 // Monospace subtitle under an owner-page title (their latest team name).
 .owner-sub {
   font-family: var(--mono);

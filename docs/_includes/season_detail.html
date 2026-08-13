@@ -7,15 +7,6 @@ draft-order table when present, and a preview note for upcoming seasons.
 {%- assign has_rows = false -%}
 {%- if d.rows and d.rows.size > 0 %}{% assign has_rows = true %}{% endif -%}
 
-{%- comment -%} Imported but no games played yet {%- endcomment -%}
-{%- unless has_rows -%}
-{%- if d.draft_order and d.draft_order.size > 0 -%}
-<p class="season-status">This season hasn't kicked off yet — here's the draft order.</p>
-{%- else -%}
-<p class="season-status">This season hasn't kicked off yet.</p>
-{%- endif -%}
-{%- endunless -%}
-
 {%- if d.notes and d.notes.size > 0 -%}
 <ul class="season-notes">
   {%- for note in d.notes %}
@@ -71,25 +62,18 @@ draft-order table when present, and a preview note for upcoming seasons.
 <h2>Draft order</h2>
 <div class="table-scroll">
 <table>
-  <thead><tr><th>Pick</th><th>Manager</th><th>Team</th><th>Keeper</th></tr></thead>
+  <thead><tr><th>Pick</th><th>Team</th></tr></thead>
   <tbody>
     {%- for p in d.draft_order %}
     <tr>
       <td>{{ p.pick }}</td>
       <td>
-        {%- if p.owner_id -%}
-        <a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.owner_name }}</a>
-        {%- else -%}{{ p.owner_name }}{%- endif -%}
-      </td>
-      <td>
         {%- if p.team -%}
-          {%- if p.owner_id -%}
-          <a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.team }}</a>
-          {%- else -%}{{ p.team }}{%- endif -%}
-        {%- else -%}—{%- endif -%}
-      </td>
-      <td>
-          <a href="{{ '/feedback/' | relative_url }}">Ask for help</a>
+        {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.team }}</a>{%- else -%}{{ p.team }}{%- endif -%}
+        {%- if p.owner_name %} <span class="owner-name">{{ p.owner_name }}</span>{% endif -%}
+        {%- else -%}
+        {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.owner_name }}</a>{%- else -%}{{ p.owner_name }}{%- endif -%}
+        {%- endif -%}
       </td>
     </tr>
     {%- endfor %}

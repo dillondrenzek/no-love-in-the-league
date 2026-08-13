@@ -31,5 +31,5 @@ title: Home
     <a href="{{ '/rulebook/' | relative_url }}">Rulebook</a>
   </nav>
 
-  <h3>Comments or concerns? <a>Submit feedback</a></h3>
+  <h3>Comments or concerns? <a href="{{ '/feedback/' | relative_url }}">Submit feedback</a></h3>
 </section>
