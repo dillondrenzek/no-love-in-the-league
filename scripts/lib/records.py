@@ -77,14 +77,26 @@ def _team_games(seasons, overrides):
     for season in seasons:
         year = season["season"]
         skip = meaningless_keys(season, overrides)
-        for m in season.get("matchups", []):
+        for m in season.get("matchups", []) or []:
             if matchup_key(m) in skip:
                 continue
             hs, as_ = m["home_score"], m["away_score"]
+            playoff = bool(m.get("playoff"))
             yield {"id": m["home"], "score": hs, "opp_score": as_,
-                   "margin": hs - as_, "combined": hs + as_, "season": year, "week": m["week"]}
+                   "margin": hs - as_, "combined": hs + as_,
+                   "season": year, "week": m["week"], "playoff": playoff}
             yield {"id": m["away"], "score": as_, "opp_score": hs,
-                   "margin": as_ - hs, "combined": hs + as_, "season": year, "week": m["week"]}
+                   "margin": as_ - hs, "combined": hs + as_,
+                   "season": year, "week": m["week"], "playoff": playoff}
+
+
+def _season_totals(games):
+    """(season, franchise_id) -> total regular-season points, summed from `games`."""
+    totals = {}
+    for g in games:
+        key = (g["season"], g["id"])
+        totals[key] = totals.get(key, 0.0) + g["score"]
+    return totals
 
 
 def _score_records(seasons, franchises, overrides):
@@ -94,19 +106,28 @@ def _score_records(seasons, franchises, overrides):
 
     teams_by_year = {s["season"]: s.get("teams", {}) for s in seasons}
 
-    def holder_name(g):
-        return teams_by_year.get(g["season"], {}).get(g["id"]) or short_name_of(g["id"], franchises)
+    def name_for(fid, year):
+        return teams_by_year.get(year, {}).get(fid) or short_name_of(fid, franchises)
 
     def entry(category, g, value):
-        return {"category": category, "holder": holder_name(g),
+        return {"category": category, "holder": name_for(g["id"], g["season"]),
                 "value": value, "season": g["season"], "week": g["week"]}
 
     most = max(games, key=lambda g: g["score"])
     fewest = min(games, key=lambda g: g["score"])
     blowout = max(games, key=lambda g: g["margin"])
     combined = max(games, key=lambda g: g["combined"])
+
+    # "Most Points in a Season" is regular-season points-for only, so playoff
+    # games are excluded from the sum even though they still count toward the
+    # per-week records above.
+    totals = _season_totals(g for g in games if not g["playoff"])
+    (top_year, top_fid), top_points = max(totals.items(), key=lambda kv: kv[1])
+
     return [
         entry("Most Points in a Week", most, f"{most['score']:.2f}"),
+        {"category": "Most Points in a Season", "holder": name_for(top_fid, top_year),
+         "value": f"{top_points:.2f}", "season": top_year, "week": None},
         entry("Fewest Points in a Week", fewest, f"{fewest['score']:.2f}"),
         entry("Biggest Blowout", blowout,
               f"{blowout['margin']:.2f} ({blowout['score']:.1f}-{blowout['opp_score']:.1f})"),
