@@ -9,7 +9,7 @@ title: Home
 
 <section class="hero">
   <h1 class="hero__title">The League</h1>
-  <p class="hero__subtitle">Season 13</p>
+  <a class="hero__subtitle hero__subtitle--link" href="{{ '/seasons/2026/' | relative_url }}">Season 13</a>
 
   <div class="hero__highlights">
     <div class="hero__stat hero__stat--shiva">
@@ -30,4 +30,6 @@ title: Home
     <a href="{{ '/teams/' | relative_url }}">Owners</a>
     <a href="{{ '/rulebook/' | relative_url }}">Rulebook</a>
   </nav>
+
+  <h3>Comments or concerns? <a>Submit feedback</a></h3>
 </section>
