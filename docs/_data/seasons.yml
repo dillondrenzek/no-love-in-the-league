@@ -920,15 +920,6 @@ detail:
       pf_color: '#fbd393'
       pa: 1411.7
     - finish: 10
-      team: Set_The_ RAT_TRAP_!
-      owner_id: unclebadtouch38
-      owner_name: Fletcher
-      record: 5-7-1
-      tag: null
-      pf: 1036.2
-      pf_color: '#fdf3e0'
-      pa: 1215.5
-    - finish: 11
       team: Tom Brady's Fluffer
       owner_id: henpen28
       owner_name: Henry
@@ -937,16 +928,25 @@ detail:
       pf: 1288.2
       pf_color: '#f9bc5b'
       pa: 1320.7
-    - &id014
-      finish: 12
+    - finish: 11
       team: AB’s Helmet
       owner_id: purpsworth
       owner_name: Trevor
       record: 4-9
-      tag: sacko
+      tag: null
       pf: 1240.3
       pf_color: '#fac674'
       pa: 1344.1
+    - &id014
+      finish: 12
+      team: Set_The_ RAT_TRAP_!
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      record: 5-7-1
+      tag: sacko
+      pf: 1036.2
+      pf_color: '#fdf3e0'
+      pa: 1215.5
     notes:
     - Trevor joined the league; Anthony departed.
     weeks_played: 13

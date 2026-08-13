@@ -43,9 +43,9 @@ final_standings:
   - shawne2520997
   - whowonthelastsuperbowl
   - kevbots22
-  - unclebadtouch38
   - henpen28
   - purpsworth
+  - unclebadtouch38
 
 matchups:
   - { week:  1, home: jackperkins74, away: purpsworth, home_score: 90.4, away_score: 85.1, playoff: false }

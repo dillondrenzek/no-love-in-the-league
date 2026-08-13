@@ -473,9 +473,6 @@ purpsworth:
   - emoji: 🥉
     text: 1× Third
     strong: false
-  - emoji: 💩
-    text: 1× Sacko (2019)
-    strong: true
   - emoji: ''
     text: 4× Playoffs
     strong: false
@@ -483,7 +480,7 @@ purpsworth:
     all_time: 44-52
     win_pct: '.458'
     titles: '0'
-    sackos: 1
+    sackos: 0
     playoff_apps: 4
     seasons: 7
     best_finish:
@@ -542,8 +539,8 @@ purpsworth:
     pa: 1311.4
   - year: 2019
     team: AB’s Helmet
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 4-9
     pf: 1240.3
     pf_color: '#fdeed4'
@@ -1265,7 +1262,7 @@ henpen28:
   - year: 2019
     team: Tom Brady's Fluffer
     tag: null
-    finish: 11th
+    finish: 10th
     record: 4-9
     pf: 1288.2
     pf_color: '#fac776'
@@ -2547,7 +2544,7 @@ unclebadtouch38:
     text: 1× Shiva (2020)
     strong: true
   - emoji: 💩
-    text: 1× Sacko (2023)
+    text: 2× Sacko (2019, 2023)
     strong: true
   - emoji: ''
     text: 5× Playoffs
@@ -2556,7 +2553,7 @@ unclebadtouch38:
     all_time: 49-56-2
     win_pct: '.467'
     titles: '1'
-    sackos: 1
+    sackos: 2
     playoff_apps: 5
     seasons: 8
     best_finish:
@@ -2598,8 +2595,8 @@ unclebadtouch38:
     pa: 1265.1
   - year: 2019
     team: Set_The_ RAT_TRAP_!
-    tag: null
-    finish: 10th
+    tag: sacko
+    finish: 12th
     record: 5-7-1
     pf: 1036.2
     pf_color: '#fdf3e0'
