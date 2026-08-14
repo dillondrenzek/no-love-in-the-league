@@ -560,12 +560,14 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 }
 .record-card__meta {
   font-family: var(--mono);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-top: 6px;
 }
+.record-card__meta a { color: var(--muted); text-decoration: none; }
+.record-card__meta a:hover { color: var(--brand); }
 @media (max-width: 640px) {
   .records-list { grid-template-columns: 1fr; }
   .record-row__name { font-size: 1.05rem; }

@@ -30,7 +30,7 @@ and a centered info card on the right. Reads site.data.records.records.
       {%- endif %}
       {%- if r.season %}
       <div class="record-card__meta">
-        {{ r.season }}{% if r.week %} · Week {{ r.week }}{% endif %}
+        <a href="{{ '/seasons/' | append: r.season | append: '/' | relative_url }}">{{ r.season }}{% if r.week %} · Week {{ r.week }}{% endif %}</a>
       </div>
       {%- endif %}
     </article>
