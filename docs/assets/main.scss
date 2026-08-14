@@ -494,6 +494,83 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
   line-height: 1.05;
 }
 
+// ---- Record book (two-up grid, name above each card) ------------------------
+.records-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 24px;
+  margin: 1.6em 0 2em;
+}
+.record-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.record-row__name {
+  margin: 0;                 // override the h3 top margin inside a card row
+  font-size: 1.15rem;
+  text-align: center;
+}
+.record-card {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 18px 20px;
+  background: var(--bg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.record-card__value {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.record-card__subvalue {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: -6px 0 6px;
+}
+.record-card__owner { font-weight: 700; font-size: 1.05rem; }
+.record-card__owner a { color: var(--ink); text-decoration: none; }
+.record-card__owner a:hover { color: var(--brand); }
+.record-card__team {
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.record-card__opponent {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.record-card__opponent a { color: var(--muted); text-decoration: none; }
+.record-card__opponent a:hover { color: var(--brand); }
+.record-card__opp-team {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+}
+.record-card__meta {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+}
+@media (max-width: 640px) {
+  .records-list { grid-template-columns: 1fr; }
+  .record-row__name { font-size: 1.05rem; }
+}
+
 // ---- Owner "resume" card ----------------------------------------------------
 .resume {
   border: 1px solid var(--rule);

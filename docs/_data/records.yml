@@ -1,33 +1,97 @@
 records:
 - category: Best Regular-Season Record
-  holder: Hans Blitz! Ohh noo!
   value: 11-1-1
+  sub_value: null
   season: 2019
+  week: null
+  holder: Hans Blitz! Ohh noo!
+  owner_id: theoceanpulse
+  owner_name: Dillon
+  team: Hans Blitz! Ohh noo!
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
 - category: Worst Regular-Season Record
-  holder: Brown Lives Matter
   value: 1-12
+  sub_value: null
   season: 2016
+  week: null
+  holder: Brown Lives Matter
+  owner_id: master-otis
+  owner_name: Odie
+  team: Brown Lives Matter
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
 - category: Most Championships
-  holder: Henry
   value: '3'
+  sub_value: null
   season: null
+  week: null
+  holder: Henry
+  owner_id: henpen28
+  owner_name: Henry
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
 - category: Most Points in a Week
-  holder: Tom Bradys Only Fans
   value: '184.90'
+  sub_value: null
   season: 2024
-- category: Most Points in a Season
-  holder: 2x Runner Up
-  value: '1890.90'
-  season: 2024
-- category: Fewest Points in a Week
-  holder: The People's Commissioner
-  value: '19.30'
-  season: 2015
-- category: Biggest Blowout
+  week: 17
   holder: Tom Bradys Only Fans
-  value: 126.10 (184.9-58.8)
+  owner_id: kevbots22
+  owner_name: Kevin
+  team: Tom Bradys Only Fans
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
+- category: Most Points in a Season
+  value: '1890.90'
+  sub_value: null
   season: 2024
+  week: null
+  holder: 2x Runner Up
+  owner_id: lukstein
+  owner_name: Luke
+  team: 2x Runner Up
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
+- category: Fewest Points in a Week
+  value: '19.30'
+  sub_value: null
+  season: 2015
+  week: 16
+  holder: The People's Commissioner
+  owner_id: sturmanator15
+  owner_name: Wade
+  team: The People's Commissioner
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
+- category: Biggest Blowout
+  value: '126.10'
+  sub_value: 184.9–58.8
+  season: 2024
+  week: 17
+  holder: Tom Bradys Only Fans
+  owner_id: kevbots22
+  owner_name: Kevin
+  team: Tom Bradys Only Fans
+  opp_owner_id: shawne2520997
+  opp_owner_name: Shawnee
+  opp_team: Save a horse, Ride the Cowboys
 - category: Highest Combined Score
-  holder: Nix Out For Harambe
   value: '330.10'
+  sub_value: 184.0–146.1
   season: 2024
+  week: 16
+  holder: Nix Out For Harambe
+  owner_id: zachzoske
+  owner_name: Zach
+  team: Nix Out For Harambe
+  opp_owner_id: gganoom
+  opp_owner_name: Grant
+  opp_team: KillDilly Elegy
