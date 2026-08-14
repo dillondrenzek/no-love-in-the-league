@@ -112,6 +112,8 @@ def test_records_score_based_appear_with_matchups():
     recs = {r["category"]: r for r in compute_records([matchup_season()], {})}
     assert recs["Most Points in a Week"]["value"] == "200.00"
     assert recs["Biggest Blowout"]["holder"] == "Delta Fish"
+    assert "Most Points in a Season" in recs
+    assert recs["Most Points in a Season"]["week"] is None
 
 
 def test_owner_profiles_totals_and_h2h():
