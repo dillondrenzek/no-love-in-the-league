@@ -81,19 +81,12 @@ and writes `data/seasons/<year>.yml` plus the owner mapping in
 build the site.
 
 The data comes through [the-league-espn-api](https://github.com/dillondrenzek/espn-fantasy-cli),
-The League's own dependency-free ESPN client. It's a private repo installed over
-HTTPS, so pip reuses the GitHub credentials you already push/pull with — no token
-in the repo. Only your machine needs it — GitHub Pages builds the site from
-`requirements.txt` alone and never touches it.
+The League's own ESPN client.
 
 ```
-git -C ~/Codebase/espn-fantasy-cli push origin v0.1.1  # once: publish the pinned tag
 .venv/bin/pip install -r requirements-dev.txt          # installs the-league-espn-api
 cp .espn-cookies.example .espn-cookies                 # then paste your cookie values in
 ```
-
-Actively hacking on the client too? Install it editable instead —
-`pip install -e ~/Codebase/espn-fantasy-cli` — no network or auth at all.
 
 The importer reads your two cookie values straight from `.espn-cookies` (which
 is git-ignored), so nothing is exported into your shell or saved in shell
