@@ -12,12 +12,14 @@ import generate_records
 import generate_standings
 import generate_teams
 import generate_seasons
+import generate_rules
 
 GENERATORS = [
     generate_records,
     generate_standings,
     generate_teams,
     generate_seasons,
+    generate_rules,
 ]
 
 

@@ -4,20 +4,19 @@ title: Rulebook
 permalink: /rulebook/
 ---
 
-<!-- Hand-written. Edit this file directly — no data file or build step needed. -->
+<!-- Mostly hand-written — edit the house rules below directly. Two blocks are
+     generated from ESPN league data: the "Scoring & rosters" table and the
+     "Rule changes" log at the bottom both render docs/_data/rules.yml (built by
+     scripts/generate_rules.py from data/settings.yml). Refresh those once a year
+     with scripts/refresh_rules.sh. See ARCHITECTURE.md → "Yearly: rules". -->
 
 _House rules — the things we do that [ESPN](https://fantasy.espn.com/football/league/settings?leagueId=236302&seasonId=2026&view=summary) doesn't enforce on its own._
 
 > See a rule you disagree with and want to change? Try winning the league or [submit your feedback](/feedback) with our easy-to-use form - we value your suggestions.
 
-## Scoring
+## Scoring & rosters
 
-- 5-pt QB TDs
-- 0.5 PPR
-
-## Rosters
-
-No IDPs.
+{% include current_settings.html %}
 
 ## Keepers
 
@@ -71,3 +70,9 @@ If the championship game ends in an exact tie, the title is shared: both manager
 ## Dues & payouts
 
 _You guys **aren't** paying money every year?_
+
+## Rule changes
+
+_History of rule changes, pulled from ESPN each offseason._
+
+{% include rule_changes.html %}

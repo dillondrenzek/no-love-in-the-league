@@ -1,0 +1,469 @@
+current:
+  season: 2026
+  format: H2H_POINTS
+  scoring:
+  - id: 19
+    label: 2pt Passing Conversion
+    points: '2'
+    changed: false
+  - id: 5
+    label: Every 5 passing yards
+    points: '0.2'
+    changed: false
+  - id: 4
+    label: TD Pass
+    points: '5'
+    changed: true
+  - id: 95
+    label: Each Interception
+    points: '2'
+    changed: true
+  - id: 103
+    label: Interception Return TD
+    points: '6'
+    changed: false
+  - id: 20
+    label: Interceptions Thrown
+    points: '-2'
+    changed: false
+  - id: 26
+    label: 2pt Rushing Conversion
+    points: '2'
+    changed: false
+  - id: 24
+    label: Rushing Yards
+    points: '0.1'
+    changed: false
+  - id: 25
+    label: TD Rush
+    points: '6'
+    changed: false
+  - id: 44
+    label: 2pt Receiving Conversion
+    points: '2'
+    changed: false
+  - id: 42
+    label: Receiving Yards
+    points: '0.1'
+    changed: false
+  - id: 53
+    label: Each reception
+    points: '0.5'
+    changed: true
+  - id: 43
+    label: TD Reception
+    points: '6'
+    changed: false
+  - id: 96
+    label: Each Fumble Recovered
+    points: '2'
+    changed: true
+  - id: 63
+    label: Fumble Recovered for TD
+    points: '6'
+    changed: false
+  - id: 104
+    label: Fumble Return TD
+    points: '6'
+    changed: false
+  - id: 72
+    label: Total Fumbles Lost
+    points: '-2'
+    changed: false
+  - id: 93
+    label: Blocked Punt or FG return for TD
+    points: '6'
+    changed: false
+  - id: 80
+    label: FG Made (0-39 yards)
+    points: '3'
+    changed: false
+  - id: 77
+    label: FG Made (40-49 yards)
+    points: '4'
+    changed: false
+  - id: 198
+    label: FG Made (50-59 yards)
+    points: '5'
+    changed: true
+  - id: 201
+    label: FG Made (60+ yards)
+    points: '5'
+    changed: true
+  - id: 82
+    label: FG Missed (0-39 yards)
+    points: '-1'
+    changed: true
+  - id: 79
+    label: FG Missed (40-49 yards)
+    points: '-1'
+    changed: true
+  - id: 85
+    label: Total FG Missed
+    points: '-1'
+    changed: false
+  - id: 97
+    label: Blocked Punt, PAT or FG
+    points: '2'
+    changed: false
+  - id: 86
+    label: Each PAT Made
+    points: '1'
+    changed: false
+  - id: 88
+    label: Each PAT Missed
+    points: '-2'
+    changed: true
+  - id: 89
+    label: 0 points allowed
+    points: '5'
+    changed: false
+  - id: 90
+    label: 1-6 points allowed
+    points: '4'
+    changed: false
+  - id: 92
+    label: 14-17 points allowed
+    points: '1'
+    changed: false
+  - id: 123
+    label: 28-34 points allowed
+    points: '-1'
+    changed: false
+  - id: 124
+    label: 35-45 points allowed
+    points: '-3'
+    changed: false
+  - id: 125
+    label: 46+ points allowed
+    points: '-5'
+    changed: false
+  - id: 91
+    label: 7-13 points allowed
+    points: '3'
+    changed: false
+  - id: 129
+    label: 100-199 total yards allowed
+    points: '3'
+    changed: false
+  - id: 130
+    label: 200-299 total yards allowed
+    points: '2'
+    changed: false
+  - id: 132
+    label: 350-399 total yards allowed
+    points: '-1'
+    changed: false
+  - id: 133
+    label: 400-449 total yards allowed
+    points: '-3'
+    changed: false
+  - id: 134
+    label: 450-499 total yards allowed
+    points: '-5'
+    changed: false
+  - id: 135
+    label: 500-549 total yards allowed
+    points: '-6'
+    changed: false
+  - id: 136
+    label: 550+ total yards allowed
+    points: '-7'
+    changed: false
+  - id: 128
+    label: Less than 100 total yards allowed
+    points: '5'
+    changed: false
+  - id: 99
+    label: Each Sack
+    points: '1'
+    changed: true
+  - id: 98
+    label: Each Safety
+    points: '2'
+    changed: false
+  - id: 206
+    label: 2pt Return
+    points: '2'
+    changed: true
+  - id: 117
+    label: Every 25 kickoff return yards
+    points: '0.5'
+    changed: true
+  - id: 119
+    label: Every 25 punt return yards
+    points: '0.5'
+    changed: true
+  - id: 101
+    label: Kickoff Return TD
+    points: '6'
+    changed: false
+  - id: 102
+    label: Punt Return TD
+    points: '6'
+    changed: false
+  scoring_changed_count: 13
+  scoring_total_count: 50
+  roster:
+    slots:
+    - id: 0
+      label: QB
+      count: 1
+    - id: 2
+      label: RB
+      count: 2
+    - id: 4
+      label: WR
+      count: 3
+    - id: 6
+      label: TE
+      count: 1
+    - id: 23
+      label: FLEX
+      count: 1
+    - id: 16
+      label: D/ST
+      count: 1
+    - id: 17
+      label: K
+      count: 1
+    - id: 20
+      label: Bench
+      count: 5
+    - id: 21
+      label: IR
+      count: 1
+    starters: 10
+    bench: 5
+    ir: 1
+    total: 16
+    summary: QB×1, RB×2, WR×3, TE×1, FLEX×1, D/ST×1, K×1, Bench×5, IR×1
+changes:
+- season: 2023
+  prev: 2022
+  items:
+  - kind: scoring
+    id: 4
+    op: changed
+    label: TD Pass
+    from: '4'
+    to: '5'
+    text: 'TD Pass: 4 → 5'
+  - kind: scoring
+    id: 53
+    op: added
+    label: Each reception
+    from: null
+    to: '0.5'
+    text: Added Each reception (0.5)
+  - kind: scoring
+    id: 95
+    op: changed
+    label: Each Interception
+    from: '3'
+    to: '2'
+    text: 'Each Interception: 3 → 2'
+  - kind: scoring
+    id: 96
+    op: changed
+    label: Each Fumble Recovered
+    from: '3'
+    to: '2'
+    text: 'Each Fumble Recovered: 3 → 2'
+  - kind: scoring
+    id: 99
+    op: changed
+    label: Each Sack
+    from: '2'
+    to: '1'
+    text: 'Each Sack: 2 → 1'
+  - kind: scoring
+    id: 106
+    op: removed
+    label: Each Fumble Forced
+    from: '3'
+    to: null
+    text: Removed Each Fumble Forced (was 3)
+  - kind: scoring
+    id: 109
+    op: removed
+    label: Total Tackles
+    from: '0.5'
+    to: null
+    text: Removed Total Tackles (was 0.5)
+  - kind: scoring
+    id: 206
+    op: added
+    label: 2pt Return
+    from: null
+    to: '2'
+    text: Added 2pt Return (2)
+  - kind: roster
+    id: 4
+    op: changed
+    label: WR
+    from: '2'
+    to: '3'
+    text: 'WR: 2 → 3'
+  - kind: roster
+    id: 15
+    op: removed
+    label: DP
+    from: '1'
+    to: null
+    text: Removed DP (was 1)
+- season: 2022
+  prev: 2021
+  items:
+  - kind: roster
+    id: 20
+    op: changed
+    label: Bench
+    from: '4'
+    to: '5'
+    text: 'Bench: 4 → 5'
+- season: 2021
+  prev: 2020
+  items:
+  - kind: roster
+    id: 21
+    op: changed
+    label: IR
+    from: '4'
+    to: '1'
+    text: 'IR: 4 → 1'
+- season: 2020
+  prev: 2019
+  items:
+  - kind: scoring
+    id: 74
+    op: removed
+    label: FG Made (50+ yards)
+    from: '5'
+    to: null
+    text: Removed FG Made (50+ yards) (was 5)
+  - kind: scoring
+    id: 76
+    op: removed
+    label: FG Missed (50+ yards)
+    from: '-1'
+    to: null
+    text: Removed FG Missed (50+ yards) (was -1)
+  - kind: scoring
+    id: 198
+    op: added
+    label: FG Made (50-59 yards)
+    from: null
+    to: '5'
+    text: Added FG Made (50-59 yards) (5)
+  - kind: scoring
+    id: 201
+    op: added
+    label: FG Made (60+ yards)
+    from: null
+    to: '5'
+    text: Added FG Made (60+ yards) (5)
+  - kind: roster
+    id: 21
+    op: added
+    label: IR
+    from: null
+    to: '4'
+    text: Added IR (4)
+- season: 2017
+  prev: 2016
+  items:
+  - kind: roster
+    id: 20
+    op: changed
+    label: Bench
+    from: '7'
+    to: '4'
+    text: 'Bench: 7 → 4'
+- season: 2016
+  prev: 2015
+  items:
+  - kind: scoring
+    id: 76
+    op: added
+    label: FG Missed (50+ yards)
+    from: null
+    to: '-1'
+    text: Added FG Missed (50+ yards) (-1)
+  - kind: scoring
+    id: 79
+    op: added
+    label: FG Missed (40-49 yards)
+    from: null
+    to: '-1'
+    text: Added FG Missed (40-49 yards) (-1)
+  - kind: scoring
+    id: 82
+    op: added
+    label: FG Missed (0-39 yards)
+    from: null
+    to: '-1'
+    text: Added FG Missed (0-39 yards) (-1)
+  - kind: scoring
+    id: 88
+    op: added
+    label: Each PAT Missed
+    from: null
+    to: '-2'
+    text: Added Each PAT Missed (-2)
+  - kind: scoring
+    id: 95
+    op: changed
+    label: Each Interception
+    from: '2'
+    to: '3'
+    text: 'Each Interception: 2 → 3'
+  - kind: scoring
+    id: 96
+    op: changed
+    label: Each Fumble Recovered
+    from: '2'
+    to: '3'
+    text: 'Each Fumble Recovered: 2 → 3'
+  - kind: scoring
+    id: 99
+    op: changed
+    label: Each Sack
+    from: '1'
+    to: '2'
+    text: 'Each Sack: 1 → 2'
+  - kind: scoring
+    id: 106
+    op: added
+    label: Each Fumble Forced
+    from: null
+    to: '3'
+    text: Added Each Fumble Forced (3)
+  - kind: scoring
+    id: 109
+    op: added
+    label: Total Tackles
+    from: null
+    to: '0.5'
+    text: Added Total Tackles (0.5)
+  - kind: scoring
+    id: 117
+    op: added
+    label: Every 25 kickoff return yards
+    from: null
+    to: '0.5'
+    text: Added Every 25 kickoff return yards (0.5)
+  - kind: scoring
+    id: 119
+    op: added
+    label: Every 25 punt return yards
+    from: null
+    to: '0.5'
+    text: Added Every 25 punt return yards (0.5)
+  - kind: roster
+    id: 15
+    op: added
+    label: DP
+    from: null
+    to: '1'
+    text: Added DP (1)

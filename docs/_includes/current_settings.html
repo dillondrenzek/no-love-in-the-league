@@ -1,0 +1,41 @@
+{%- comment -%}
+Current settings, pulled from ESPN league data by scripts/generate_rules.py
+(docs/_data/rules.yml). To keep the list short, the scoring block shows only the
+rules the league has *changed* over the years (site.data.rules.current.scoring
+rows flagged changed) and links out to ESPN — the source of truth — for the full
+scoring. The roster table shows every lineup slot. Renders nothing until settings
+have been imported (scripts/import_settings.py).
+{%- endcomment -%}
+{%- assign c = site.data.rules.current -%}
+{%- assign espn = "https://fantasy.espn.com/football/league/settings?leagueId=236302&seasonId=2026&view=summary" -%}
+{%- if c -%}
+<p class="settings-note">Synced from ESPN for the {{ c.season }} season. The scoring list below is just the rules the league has tweaked over the years — <a href="{{ espn }}">see ESPN for the full scoring settings</a>.</p>
+<div class="settings-grid">
+  <div class="settings-block">
+    <h3>Scoring — our changes</h3>
+    {%- if c.scoring_changed_count > 0 %}
+    <table class="settings-table">
+      <tbody>
+      {%- for s in c.scoring %}{%- if s.changed %}
+        <tr><td class="settings-table__label">{{ s.label }}</td><td class="num">{{ s.points }}</td></tr>
+      {%- endif %}{%- endfor %}
+      </tbody>
+    </table>
+    {%- else %}
+    <p class="empty-state">No scoring changes on record yet.</p>
+    {%- endif %}
+    <p class="settings-total"><a href="{{ espn }}">Full scoring on ESPN →</a></p>
+  </div>
+  <div class="settings-block">
+    <h3>Roster</h3>
+    <table class="settings-table">
+      <tbody>
+      {%- for slot in c.roster.slots %}
+        <tr><td class="settings-table__label">{{ slot.label }}</td><td class="num">{{ slot.count }}</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+    <p class="settings-total">{{ c.roster.starters }} starters · {{ c.roster.bench }} bench{% if c.roster.ir > 0 %} · {{ c.roster.ir }} IR{% endif %} · {{ c.roster.total }} total</p>
+  </div>
+</div>
+{%- endif -%}
