@@ -270,8 +270,14 @@ tbody td a:hover { color: var(--brand); }
   margin-bottom: 6rem;
 }
 
+.history__season-container-title {
+  h3 {
+    margin-bottom: 0rem;
+  }
+}
+
 .season-notes {
-  margin: -0.4em 0 2.2em;
+  margin: 1.5em 0 1.5em;
   padding-left: 1.1em;
   list-style: none;
   color: var(--muted);
