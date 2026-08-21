@@ -73,6 +73,6 @@ _You guys **aren't** paying money every year?_
 
 ## Rule changes
 
-_How the league's scoring and roster construction have changed over the years, newest first. Pulled straight from ESPN league data and refreshed each offseason._
+_History of rule changes, pulled from ESPN each offseason._
 
 {% include rule_changes.html %}

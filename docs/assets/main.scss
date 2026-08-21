@@ -29,6 +29,10 @@
   --danger: #d0433f;      // error / the prank alert
   --danger-bg: #fcebeb;
   --danger-ink: #a32d2d;
+  --tag-added-bg: #e2f0e0;    // rule-change "added" chip (green)
+  --tag-added-ink: #2f6b34;
+  --tag-removed-bg: #fbe4e2;  // rule-change "removed" chip (red)
+  --tag-removed-ink: #a83029;
 
   --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -810,6 +814,7 @@ h4:hover > .heading-anchor,
   border-radius: 5px;
   font-family: var(--mono);
   font-size: 0.66rem;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--muted);
@@ -818,11 +823,11 @@ h4:hover > .heading-anchor,
 }
 
 .rule-change__item--added .rule-change__kind {
-  background: var(--tag-shiva-bg);
-  color: var(--tag-shiva-ink);
+  background: var(--tag-added-bg);
+  color: var(--tag-added-ink);
 }
 
 .rule-change__item--removed .rule-change__kind {
-  background: var(--tag-sacko-bg);
-  color: var(--tag-sacko-ink);
+  background: var(--tag-removed-bg);
+  color: var(--tag-removed-ink);
 }
