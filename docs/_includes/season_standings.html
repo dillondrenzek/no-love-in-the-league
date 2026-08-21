@@ -5,7 +5,10 @@ standings table.
 {%- endcomment -%}
 {%- assign s = include.season -%}
 <div class="history__season-container">
-<h3>{{ s.year }}</h3>
+  <div class="history__season-container-title">
+    <h3>{{ s.year }}</h3>
+    <a href="{{ '/seasons/' | append: s.year | append: '/' | relative_url }}">Go to page</a>
+  </div>
 {% include season_notes.html notes=s.notes %}
 {% include standings_table.html rows=s.rows points=s.points %}
 </div>
