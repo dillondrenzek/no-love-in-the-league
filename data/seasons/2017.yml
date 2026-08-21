@@ -50,8 +50,8 @@ final_standings:
   - schirmerj
   - ajstewart04
   - sturmanator15
-  - zachzoske
   - whowonthelastsuperbowl
+  - zachzoske
 
 matchups:
   - { week:  1, home: jackperkins74, away: ajstewart04, home_score: 121.5, away_score: 77.2, playoff: false }

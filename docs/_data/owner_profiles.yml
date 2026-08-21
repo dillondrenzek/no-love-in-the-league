@@ -319,9 +319,6 @@ kevbots22:
   - emoji: 🥉
     text: 1× Third
     strong: false
-  - emoji: 💩
-    text: 1× Sacko (2015)
-    strong: true
   - emoji: ''
     text: 5× Playoffs
     strong: false
@@ -329,7 +326,7 @@ kevbots22:
     all_time: 64-96-1
     win_pct: '.401'
     titles: '0'
-    sackos: 1
+    sackos: 0
     playoff_apps: 5
     trades: 0
     trades_known: false
@@ -422,8 +419,8 @@ kevbots22:
     pa: 1353.8
   - year: 2015
     team: MasterDeflater And_Commander
-    tag: sacko
-    finish: 10th
+    tag: null
+    finish: 9th
     record: 5-8
     pf: 1115.0
     pf_color: '#fdf3e0'
@@ -554,9 +551,6 @@ purpsworth:
   - emoji: 🥉
     text: 1× Third
     strong: false
-  - emoji: 💩
-    text: 1× Sacko (2019)
-    strong: true
   - emoji: ''
     text: 4× Playoffs
     strong: false
@@ -564,7 +558,7 @@ purpsworth:
     all_time: 44-52
     win_pct: '.458'
     titles: '0'
-    sackos: 1
+    sackos: 0
     playoff_apps: 4
     trades: 4
     trades_known: false
@@ -625,8 +619,8 @@ purpsworth:
     pa: 1311.4
   - year: 2019
     team: AB’s Helmet
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 10th
     record: 4-9
     pf: 1240.3
     pf_color: '#fdeed4'
@@ -1229,7 +1223,7 @@ zachzoske:
     text: 2× Third
     strong: false
   - emoji: 💩
-    text: 1× Sacko (2022)
+    text: 2× Sacko (2017, 2022)
     strong: true
   - emoji: ''
     text: 5× Playoffs
@@ -1238,7 +1232,7 @@ zachzoske:
     all_time: 80-80-1
     win_pct: '.500'
     titles: '1'
-    sackos: 1
+    sackos: 2
     playoff_apps: 5
     trades: 6
     trades_known: false
@@ -1314,8 +1308,8 @@ zachzoske:
     pa: 1357.5
   - year: 2017
     team: Injury Reserve
-    tag: null
-    finish: 11th
+    tag: sacko
+    finish: 12th
     record: 3-9-1
     pf: 1103.0
     pf_color: '#fdf3e0'
@@ -1518,6 +1512,9 @@ henpen28:
   - emoji: 🥉
     text: 1× Third
     strong: false
+  - emoji: 💩
+    text: 1× Sacko (2019)
+    strong: true
   - emoji: ''
     text: 7× Playoffs
     strong: false
@@ -1525,7 +1522,7 @@ henpen28:
     all_time: 77-84
     win_pct: '.478'
     titles: '3'
-    sackos: 0
+    sackos: 1
     playoff_apps: 7
     trades: 5
     trades_known: false
@@ -1587,8 +1584,8 @@ henpen28:
     pa: 1318.5
   - year: 2019
     team: Tom Brady's Fluffer
-    tag: null
-    finish: 11th
+    tag: sacko
+    finish: 12th
     record: 4-9
     pf: 1288.2
     pf_color: '#fac776'
@@ -1789,7 +1786,7 @@ lukstein:
     text: 1× Third
     strong: false
   - emoji: 💩
-    text: 2× Sacko (2018, 2021)
+    text: 1× Sacko (2018)
     strong: true
   - emoji: ''
     text: 7× Playoffs
@@ -1798,7 +1795,7 @@ lukstein:
     all_time: 75-86
     win_pct: '.466'
     titles: '1'
-    sackos: 2
+    sackos: 1
     playoff_apps: 7
     trades: 8
     trades_known: false
@@ -1842,8 +1839,8 @@ lukstein:
     pa: 1367.6
   - year: 2021
     team: Autodraft Monster
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 4-10
     pf: 1302.7
     pf_color: '#fbd291'
@@ -2088,7 +2085,7 @@ whowonthelastsuperbowl:
   nickname: ''
   honors:
   - emoji: 💩
-    text: 2× Sacko (2014, 2017)
+    text: 2× Sacko (2014, 2015)
     strong: true
   - emoji: ''
     text: 4× Playoffs
@@ -2174,8 +2171,8 @@ whowonthelastsuperbowl:
     pa: 1378.4
   - year: 2017
     team: Wadgerach Sturdellske
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 4-9
     pf: 1160.5
     pf_color: '#fac97b'
@@ -2190,8 +2187,8 @@ whowonthelastsuperbowl:
     pa: 1278.2
   - year: 2015
     team: He's Quick He's Slick He's Mike
-    tag: null
-    finish: 9th
+    tag: sacko
+    finish: 10th
     record: 6-7
     pf: 1176.3
     pf_color: '#fac674'
@@ -3123,7 +3120,7 @@ unclebadtouch38:
     text: 1× Shiva (2020)
     strong: true
   - emoji: 💩
-    text: 1× Sacko (2023)
+    text: 2× Sacko (2021, 2023)
     strong: true
   - emoji: ''
     text: 5× Playoffs
@@ -3132,7 +3129,7 @@ unclebadtouch38:
     all_time: 49-56-2
     win_pct: '.467'
     titles: '1'
-    sackos: 1
+    sackos: 2
     playoff_apps: 5
     trades: 3
     trades_known: false
@@ -3160,8 +3157,8 @@ unclebadtouch38:
     pa: 1290.3
   - year: 2021
     team: Set_The_ RAT_TRAP_!
-    tag: null
-    finish: 11th
+    tag: sacko
+    finish: 12th
     record: 4-10
     pf: 1112.9
     pf_color: '#fbd8a0'
@@ -3177,7 +3174,7 @@ unclebadtouch38:
   - year: 2019
     team: Set_The_ RAT_TRAP_!
     tag: null
-    finish: 10th
+    finish: 11th
     record: 5-7-1
     pf: 1036.2
     pf_color: '#fdf3e0'

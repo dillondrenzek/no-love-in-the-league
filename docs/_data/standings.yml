@@ -550,23 +550,23 @@ seasons:
     pf_color: '#f49244'
     pa: 1463.8
   - finish: 11
-    team: Set_The_ RAT_TRAP_!
-    owner_id: unclebadtouch38
-    owner_name: Fletcher
-    record: 4-10
-    tag: null
-    pf: 1112.9
-    pf_color: '#fdf3e0'
-    pa: 1392.7
-  - finish: 12
     team: Autodraft Monster
     owner_id: lukstein
     owner_name: Luke
     record: 4-10
-    tag: sacko
+    tag: null
     pf: 1302.7
     pf_color: '#fac572'
     pa: 1465.5
+  - finish: 12
+    team: Set_The_ RAT_TRAP_!
+    owner_id: unclebadtouch38
+    owner_name: Fletcher
+    record: 4-10
+    tag: sacko
+    pf: 1112.9
+    pf_color: '#fdf3e0'
+    pa: 1392.7
   notes:
   - Injured-reserve slots trimmed from 4 to 1.
   - 5 trades completed
@@ -769,6 +769,15 @@ seasons:
     pf_color: '#fbd393'
     pa: 1411.7
   - finish: 10
+    team: AB’s Helmet
+    owner_id: purpsworth
+    owner_name: Trevor
+    record: 4-9
+    tag: null
+    pf: 1240.3
+    pf_color: '#fac674'
+    pa: 1344.1
+  - finish: 11
     team: Set_The_ RAT_TRAP_!
     owner_id: unclebadtouch38
     owner_name: Fletcher
@@ -777,24 +786,15 @@ seasons:
     pf: 1036.2
     pf_color: '#fdf3e0'
     pa: 1215.5
-  - finish: 11
+  - finish: 12
     team: Tom Brady's Fluffer
     owner_id: henpen28
     owner_name: Henry
     record: 4-9
-    tag: null
+    tag: sacko
     pf: 1288.2
     pf_color: '#f9bc5b'
     pa: 1320.7
-  - finish: 12
-    team: AB’s Helmet
-    owner_id: purpsworth
-    owner_name: Trevor
-    record: 4-9
-    tag: sacko
-    pf: 1240.3
-    pf_color: '#fac674'
-    pa: 1344.1
   notes:
   - Trevor joined the league; Anthony departed.
   - 8 trades completed
@@ -1004,23 +1004,23 @@ seasons:
     pf_color: '#fcdeae'
     pa: 1331.7
   - finish: 11
-    team: Injury Reserve
-    owner_id: zachzoske
-    owner_name: Zach
-    record: 3-9-1
-    tag: null
-    pf: 1103.0
-    pf_color: '#fdf3e0'
-    pa: 1266.4
-  - finish: 12
     team: Wadgerach Sturdellske
     owner_id: whowonthelastsuperbowl
     owner_name: Nate
     record: 4-9
-    tag: sacko
+    tag: null
     pf: 1160.5
     pf_color: '#fbdaa4'
     pa: 1279.7
+  - finish: 12
+    team: Injury Reserve
+    owner_id: zachzoske
+    owner_name: Zach
+    record: 3-9-1
+    tag: sacko
+    pf: 1103.0
+    pf_color: '#fdf3e0'
+    pa: 1266.4
   notes:
   - Playoff field expanded from 6 teams to 8.
   - Sacko punishment implemented.
@@ -1218,23 +1218,23 @@ seasons:
     pf_color: '#fdf3e0'
     pa: 1207.2
   - finish: 9
-    team: He's Quick He's Slick He's Mike
-    owner_id: whowonthelastsuperbowl
-    owner_name: Nate
-    record: 6-7
-    tag: null
-    pf: 1176.3
-    pf_color: '#fbd392'
-    pa: 1236.9
-  - finish: 10
     team: MasterDeflater And_Commander
     owner_id: kevbots22
     owner_name: Kevin
     record: 5-8
-    tag: sacko
+    tag: null
     pf: 1115.0
     pf_color: '#fce9c7'
     pa: 1259.0
+  - finish: 10
+    team: He's Quick He's Slick He's Mike
+    owner_id: whowonthelastsuperbowl
+    owner_name: Nate
+    record: 6-7
+    tag: sacko
+    pf: 1176.3
+    pf_color: '#fbd392'
+    pa: 1236.9
   notes: []
 - year: 2014
   points: true

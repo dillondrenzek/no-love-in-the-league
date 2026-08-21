@@ -44,8 +44,8 @@ final_standings:
   - thebragers
   - lukstein
   - henpen28
-  - whowonthelastsuperbowl
   - kevbots22
+  - whowonthelastsuperbowl
 
 matchups:
   - { week:  1, home: jackperkins74, away: thebragers, home_score: 107.4, away_score: 130.4, playoff: false }
