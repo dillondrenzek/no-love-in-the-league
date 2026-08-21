@@ -7,7 +7,7 @@ when the owner has never traded.
 {%- endcomment -%}
 {%- assign trades = include.trades -%}
 {%- if include.known == false -%}
-<p class="empty-state">The deals marked <em>Trade Accepted</em> below are real trades this owner made, but ESPN only shares a trade's contents with its participants — so the players and picks can't be shown, and their total trade count is a floor ("at least this many") until we merge more managers' cookies.</p>
+<p class="empty-state">This data might be incomplete. The deals marked <em>Trade Accepted</em> below are real trades this owner made, but we get incomplete data from the ESPN API — so the players and picks can't be shown. Ask Dillon how you can get your actual trades listed here.</p>
 {%- endif -%}
 {%- if trades and trades.size > 0 -%}
 <div class="trades">
