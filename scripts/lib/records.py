@@ -14,7 +14,7 @@ score records. Co-champions each count as half a title.
 automatically as richer data (scores) is added.
 """
 
-from .data import name_of, short_name_of
+from .data import name_of, short_name_of, season_trades_complete
 from .standings import get_standings, parse_record
 from .rulings import co_champions, meaningless_keys, matchup_key
 
@@ -79,7 +79,36 @@ def _standings_records(seasons, franchises, overrides):
                             "value": _fmt_titles(champ_count), "season": None, "week": None,
                             "owner_id": champ_id if champ_id in franchises else None,
                             "owner_name": display.get(champ_id), "team": None})
+
+    trade_rec = _most_trades(seasons, franchises)
+    if trade_rec:
+        records.append(trade_rec)
     return records
+
+
+def _most_trades(seasons, franchises):
+    """Franchise with the most trades participated in (both sides count).
+
+    Omitted entirely while any season's trades are incomplete — with hidden
+    proposers the leader can't be trusted (someone undercounted might really be
+    on top). It reappears once every season's trades are fully known."""
+    if not all(season_trades_complete(s) for s in seasons):
+        return None
+    counts = {}
+    for season in seasons:
+        for trade in season.get("trades") or []:
+            for fid in trade.get("teams") or []:
+                counts[fid] = counts.get(fid, 0) + 1
+    if not counts:
+        return None
+    fid, n = max(counts.items(), key=lambda kv: kv[1])
+    if n < 1:
+        return None
+    name = short_name_of(fid, franchises) if fid in franchises else fid
+    return {"category": "Most Trades", "holder": name, "value": str(n),
+            "season": None, "week": None,
+            "owner_id": fid if fid in franchises else None,
+            "owner_name": name, "team": None}
 
 
 def _team_games(seasons, overrides):

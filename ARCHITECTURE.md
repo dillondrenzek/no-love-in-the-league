@@ -37,6 +37,11 @@ final_standings:           # finish order (ESPN's final placement)
   - jackperkins74
 matchups:
   - { week: 1, home: jackperkins74, away: kevbots22, home_score: 122.4, away_score: 98.1, playoff: false }
+trades:                    # completed trades (franchise-keyed); [] when none.
+  - week: 3                # trades ESPN didn't fully detail are dropped at import
+    teams: [jackperkins74, theoceanpulse]   # participants (both get credit)
+    assets:
+      - { from: theoceanpulse, to: jackperkins74, label: "Puka Nacua" }
 ```
 
 `home`/`away`/`final_standings`/`draft_order` reference franchise ids;
@@ -92,7 +97,8 @@ scripts/
   generate_teams.py     -> owners.yml, owner_profiles.yml (+ owner stub pages)
   generate_seasons.py   -> seasons.yml                    (+ season stub pages)
   build.py                 runs every generator in order
-  import_espn.py           pull a season from ESPN into data/seasons/
+  import_espn.py           pull a season from ESPN into data/seasons/ (via the
+                           the-league-espn-api client; a dev-only dependency)
   update_season.sh         weekly: import one season + rebuild
 ```
 

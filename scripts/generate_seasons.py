@@ -19,7 +19,7 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons, name_of
+from lib.data import load_franchises, load_seasons, name_of, short_name_of
 from lib.rulings import load_overrides
 from generate_standings import season_rows, load_season_notes
 
@@ -52,11 +52,31 @@ def draft_rows(fids, franchises, teams=None):
     return rows
 
 
+def season_trades(season, franchises):
+    """One entry per trade, each with its parties and what each gave away — the
+    full-breakdown shape the season page renders."""
+    teams_map = season.get("teams", {})
+    out = []
+    for t in season.get("trades") or []:
+        parties = []
+        for fid in t.get("teams") or []:
+            gave = [a["label"] for a in (t.get("assets") or []) if a.get("from") == fid]
+            parties.append({
+                "owner_id": fid if fid in franchises else None,
+                "owner_name": short_name_of(fid, franchises),
+                "team": teams_map.get(fid),
+                "gave": gave,
+            })
+        out.append({"week": t.get("week") or 0, "parties": parties})
+    return out
+
+
 def season_detail(season, franchises, overrides, notes):
     """Page data for one season — completed or still in progress."""
     year = season["season"]
     in_progress = season.get("status") == "in_progress"
-    sr = season_rows(season, franchises, overrides, notes)  # year, points, rows, notes
+    # trade_note=False: the page has a full Trades section, so skip the count bullet.
+    sr = season_rows(season, franchises, overrides, notes, trade_note=False)
     rows = sr["rows"]
     if in_progress:
         for r in rows:      # nothing is decided yet — no Shiva/Sacko tags
@@ -71,6 +91,7 @@ def season_detail(season, franchises, overrides, notes):
         "notes": sr["notes"],
         "weeks_played": max(weeks) if weeks else 0,
         "draft_order": draft_rows(season.get("draft_order"), franchises, season.get("teams")),
+        "trades": season_trades(season, franchises),
         "champ": None if in_progress else (rows[0] if rows else None),
         "sacko": None if in_progress else (rows[-1] if rows else None),
     }

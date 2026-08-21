@@ -23,6 +23,8 @@ jackperkins74:
     titles: '2'
     sackos: 1
     playoff_apps: 9
+    trades: 6
+    trades_known: false
     seasons: 12
     best_finish:
       type: shiva
@@ -232,6 +234,81 @@ jackperkins74:
     win_color: '#fbd496'
     avg_pf: 98.4
     avg_pa: 108.0
+  trades:
+  - year: 2025
+    week: 8
+    got:
+    - Derrick Henry
+    gave:
+    - Rachaad White
+    - Breece Hall
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2024
+    week: 0
+    got:
+    - 1.11 pick
+    - Puka Nacua
+    gave:
+    - 1.10 pick
+    - Sam LaPorta
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2023
+    week: 11
+    got:
+    - James Conner
+    - Davante Adams
+    gave:
+    - Brandon Aiyuk
+    - Tony Pollard
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2023
+    week: 0
+    got:
+    - Tony Pollard
+    - 6.01 pick
+    gave:
+    - 3.08 pick
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2022
+    week: 8
+    got:
+    - Brandin Cooks
+    - Christian McCaffrey
+    gave:
+    - Tony Pollard
+    - Raheem Mostert
+    - Jaylen Waddle
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2019
+    week: 0
+    got:
+    - 2.07 pick
+    - 5.06 pick
+    - 7.06 pick
+    gave:
+    - 2.01 pick
+    - 5.12 pick
+    - 7.12 pick
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Lamar's Donger
+  trades_known: false
 kevbots22:
   name: Kevin
   nickname: ''
@@ -242,6 +319,9 @@ kevbots22:
   - emoji: 🥉
     text: 1× Third
     strong: false
+  - emoji: 💩
+    text: 1× Sacko (2015)
+    strong: true
   - emoji: ''
     text: 5× Playoffs
     strong: false
@@ -249,8 +329,10 @@ kevbots22:
     all_time: 64-96-1
     win_pct: '.401'
     titles: '0'
-    sackos: 0
+    sackos: 1
     playoff_apps: 5
+    trades: 0
+    trades_known: false
     seasons: 12
     best_finish:
       type: place
@@ -340,8 +422,8 @@ kevbots22:
     pa: 1353.8
   - year: 2015
     team: MasterDeflater And_Commander
-    tag: null
-    finish: 9th
+    tag: sacko
+    finish: 10th
     record: 5-8
     pf: 1115.0
     pf_color: '#fdf3e0'
@@ -460,6 +542,8 @@ kevbots22:
     win_color: '#f9ba57'
     avg_pf: 97.3
     avg_pa: 103.3
+  trades: []
+  trades_known: false
 purpsworth:
   name: Trevor
   nickname: ''
@@ -470,6 +554,9 @@ purpsworth:
   - emoji: 🥉
     text: 1× Third
     strong: false
+  - emoji: 💩
+    text: 1× Sacko (2019)
+    strong: true
   - emoji: ''
     text: 4× Playoffs
     strong: false
@@ -477,8 +564,10 @@ purpsworth:
     all_time: 44-52
     win_pct: '.458'
     titles: '0'
-    sackos: 0
+    sackos: 1
     playoff_apps: 4
+    trades: 4
+    trades_known: false
     seasons: 7
     best_finish:
       type: place
@@ -536,8 +625,8 @@ purpsworth:
     pa: 1311.4
   - year: 2019
     team: AB’s Helmet
-    tag: null
-    finish: 10th
+    tag: sacko
+    finish: 12th
     record: 4-9
     pf: 1240.3
     pf_color: '#fdeed4'
@@ -627,6 +716,42 @@ purpsworth:
     win_color: '#f6a348'
     avg_pf: 113.9
     avg_pa: 102.4
+  trades:
+  - year: 2024
+    week: 0
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2022
+    week: 9
+    got:
+    - Amon-Ra St. Brown
+    gave:
+    - Kyler Murray
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2021
+    week: 8
+    got:
+    - Joe Mixon
+    - Keenan Allen
+    gave:
+    - A.J. Brown
+    - Kenyan Drake
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Hot Chubb Time Machine
+  - year: 2019
+    week: 0
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  trades_known: false
 gganoom:
   name: Grant
   nickname: ''
@@ -640,6 +765,8 @@ gganoom:
     titles: '0'
     sackos: 0
     playoff_apps: 1
+    trades: 0
+    trades_known: false
     seasons: 2
     best_finish:
       type: place
@@ -741,6 +868,8 @@ gganoom:
     win_color: '#f59d47'
     avg_pf: 124.0
     avg_pa: 123.6
+  trades: []
+  trades_known: false
 theoceanpulse:
   name: Dillon
   nickname: ''
@@ -760,6 +889,8 @@ theoceanpulse:
     titles: '1'
     sackos: 0
     playoff_apps: 8
+    trades: 12
+    trades_known: false
     seasons: 10
     best_finish:
       type: shiva
@@ -945,6 +1076,145 @@ theoceanpulse:
     win_color: '#faca7e'
     avg_pf: 100.9
     avg_pa: 104.9
+  trades:
+  - year: 2025
+    week: 8
+    got:
+    - Rachaad White
+    - Breece Hall
+    gave:
+    - Derrick Henry
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Pukkake
+  - year: 2025
+    week: 0
+    got:
+    - Nico Collins
+    - 1.09 pick
+    - 4.04 pick
+    - 6.04 pick
+    gave:
+    - 1.04 pick
+    - 4.09 pick
+    - 6.09 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Big Brown Dak Makes em Waddle
+  - year: 2024
+    week: 0
+    got:
+    - 1.10 pick
+    - Sam LaPorta
+    gave:
+    - 1.11 pick
+    - Puka Nacua
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Pukkake
+  - year: 2023
+    week: 11
+    got:
+    - Brandon Aiyuk
+    - Tony Pollard
+    gave:
+    - James Conner
+    - Davante Adams
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vinegar Strokes
+  - year: 2023
+    week: 11
+    got:
+    - James Conner
+    gave:
+    - Marquise Brown
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Zach's Juicy Fantasy Teamussy
+  - year: 2023
+    week: 1
+    got:
+    - Elijah Moore
+    - Saints D/ST
+    gave:
+    - Eagles D/ST
+    with:
+    - id: lukstein
+      name: Luke
+      team: 2x Runner Up
+  - year: 2023
+    week: 0
+    got:
+    - 3.08 pick
+    gave:
+    - Tony Pollard
+    - 6.01 pick
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vinegar Strokes
+  - year: 2022
+    week: 9
+    got:
+    - Kyler Murray
+    gave:
+    - Amon-Ra St. Brown
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: Used Napkin
+  - year: 2022
+    week: 8
+    got:
+    - Tony Pollard
+    - Raheem Mostert
+    - Jaylen Waddle
+    gave:
+    - Brandin Cooks
+    - Christian McCaffrey
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Allen's Deep Balls
+  - year: 2021
+    week: 11
+    got:
+    - Damien Harris
+    gave:
+    - Michael Pittman Jr.
+    with:
+    - id: zachzoske
+      name: Zach
+      team: ESPN 8 The Ocho
+  - year: 2021
+    week: 8
+    got:
+    - A.J. Brown
+    - Kenyan Drake
+    gave:
+    - Joe Mixon
+    - Keenan Allen
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: WA Fantasy Football Team
+  - year: 2020
+    week: 9
+    got:
+    - Mike Williams
+    gave:
+    - Noah Fant
+    with:
+    - id: lukstein
+      name: Luke
+      team: Show Me Your TDs
+  trades_known: false
 zachzoske:
   name: Zach
   nickname: ''
@@ -959,7 +1229,7 @@ zachzoske:
     text: 2× Third
     strong: false
   - emoji: 💩
-    text: 2× Sacko (2017, 2022)
+    text: 1× Sacko (2022)
     strong: true
   - emoji: ''
     text: 5× Playoffs
@@ -968,8 +1238,10 @@ zachzoske:
     all_time: 80-80-1
     win_pct: '.500'
     titles: '1'
-    sackos: 2
+    sackos: 1
     playoff_apps: 5
+    trades: 6
+    trades_known: false
     seasons: 12
     best_finish:
       type: shiva
@@ -1042,8 +1314,8 @@ zachzoske:
     pa: 1357.5
   - year: 2017
     team: Injury Reserve
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 3-9-1
     pf: 1103.0
     pf_color: '#fdf3e0'
@@ -1178,6 +1450,61 @@ zachzoske:
     win_color: '#fabe60'
     avg_pf: 96.0
     avg_pa: 98.9
+  trades:
+  - year: 2025
+    week: 0
+    got:
+    - 1.04 pick
+    - 4.09 pick
+    - 6.09 pick
+    gave:
+    - Nico Collins
+    - 1.09 pick
+    - 4.04 pick
+    - 6.04 pick
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2023
+    week: 11
+    got:
+    - Marquise Brown
+    gave:
+    - James Conner
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2023
+    week: 11
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2023
+    week: 4
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2021
+    week: 11
+    got:
+    - Michael Pittman Jr.
+    gave:
+    - Damien Harris
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Hot Chubb Time Machine
+  - year: 2021
+    week: 4
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  trades_known: false
 henpen28:
   name: Henry
   nickname: ''
@@ -1191,9 +1518,6 @@ henpen28:
   - emoji: 🥉
     text: 1× Third
     strong: false
-  - emoji: 💩
-    text: 1× Sacko (2019)
-    strong: true
   - emoji: ''
     text: 7× Playoffs
     strong: false
@@ -1201,8 +1525,10 @@ henpen28:
     all_time: 77-84
     win_pct: '.478'
     titles: '3'
-    sackos: 1
+    sackos: 0
     playoff_apps: 7
+    trades: 5
+    trades_known: false
     seasons: 12
     best_finish:
       type: shiva
@@ -1261,8 +1587,8 @@ henpen28:
     pa: 1318.5
   - year: 2019
     team: Tom Brady's Fluffer
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 4-9
     pf: 1288.2
     pf_color: '#fac776'
@@ -1413,6 +1739,42 @@ henpen28:
     win_color: '#f7a549'
     avg_pf: 103.9
     avg_pa: 101.5
+  trades:
+  - year: 2022
+    week: 10
+    got:
+    - Najee Harris
+    gave:
+    - Amari Cooper
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Trey Lanced my ❤️
+  - year: 2022
+    week: 0
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2020
+    week: 5
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2020
+    week: 5
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2019
+    week: 8
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  trades_known: false
 lukstein:
   name: Luke
   nickname: ''
@@ -1427,7 +1789,7 @@ lukstein:
     text: 1× Third
     strong: false
   - emoji: 💩
-    text: 1× Sacko (2018)
+    text: 2× Sacko (2018, 2021)
     strong: true
   - emoji: ''
     text: 7× Playoffs
@@ -1436,8 +1798,10 @@ lukstein:
     all_time: 75-86
     win_pct: '.466'
     titles: '1'
-    sackos: 1
+    sackos: 2
     playoff_apps: 7
+    trades: 8
+    trades_known: false
     seasons: 12
     best_finish:
       type: shiva
@@ -1478,8 +1842,8 @@ lukstein:
     pa: 1367.6
   - year: 2021
     team: Autodraft Monster
-    tag: null
-    finish: 11th
+    tag: sacko
+    finish: 12th
     record: 4-10
     pf: 1302.7
     pf_color: '#fbd291'
@@ -1646,12 +2010,85 @@ lukstein:
     win_color: '#fac26a'
     avg_pf: 95.3
     avg_pa: 105.2
+  trades:
+  - year: 2024
+    week: 7
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2023
+    week: 13
+    got:
+    - Chuba Hubbard
+    - Rashee Rice
+    - Joe Mixon
+    gave:
+    - D'Andre Swift
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: In Goff we trust
+  - year: 2023
+    week: 1
+    got:
+    - Eagles D/ST
+    gave:
+    - Elijah Moore
+    - Saints D/ST
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2021
+    week: 1
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2020
+    week: 9
+    got:
+    - Miles Sanders
+    gave:
+    - Melvin Gordon III
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Lickin Brown in my McLaurin
+  - year: 2020
+    week: 9
+    got:
+    - Noah Fant
+    gave:
+    - Mike Williams
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Trick-Ass Marks
+  - year: 2019
+    week: 4
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2019
+    week: 4
+    got:
+    - Marquise Brown
+    gave:
+    - Matt Breida
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Lamar's Donger
+  trades_known: false
 whowonthelastsuperbowl:
   name: Nate
   nickname: ''
   honors:
   - emoji: 💩
-    text: 2× Sacko (2014, 2015)
+    text: 2× Sacko (2014, 2017)
     strong: true
   - emoji: ''
     text: 4× Playoffs
@@ -1662,6 +2099,8 @@ whowonthelastsuperbowl:
     titles: '0'
     sackos: 2
     playoff_apps: 4
+    trades: 3
+    trades_known: false
     seasons: 12
     best_finish:
       type: place
@@ -1735,8 +2174,8 @@ whowonthelastsuperbowl:
     pa: 1378.4
   - year: 2017
     team: Wadgerach Sturdellske
-    tag: null
-    finish: 11th
+    tag: sacko
+    finish: 12th
     record: 4-9
     pf: 1160.5
     pf_color: '#fac97b'
@@ -1751,8 +2190,8 @@ whowonthelastsuperbowl:
     pa: 1278.2
   - year: 2015
     team: He's Quick He's Slick He's Mike
-    tag: sacko
-    finish: 10th
+    tag: null
+    finish: 9th
     record: 6-7
     pf: 1176.3
     pf_color: '#fac674'
@@ -1871,6 +2310,26 @@ whowonthelastsuperbowl:
     win_color: '#fac26a'
     avg_pf: 103.6
     avg_pa: 110.1
+  trades:
+  - year: 2025
+    week: 11
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2025
+    week: 11
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2021
+    week: 10
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  trades_known: false
 sturmanator15:
   name: Wade
   nickname: ''
@@ -1887,6 +2346,8 @@ sturmanator15:
     titles: ½
     sackos: 0
     playoff_apps: 8
+    trades: 7
+    trades_known: false
     seasons: 12
     best_finish:
       type: cochamp
@@ -2095,6 +2556,86 @@ sturmanator15:
     win_color: '#f8ac4b'
     avg_pf: 98.9
     avg_pa: 96.0
+  trades:
+  - year: 2023
+    week: 13
+    got:
+    - D'Andre Swift
+    gave:
+    - Chuba Hubbard
+    - Rashee Rice
+    - Joe Mixon
+    with:
+    - id: lukstein
+      name: Luke
+      team: 2x Runner Up
+  - year: 2022
+    week: 10
+    got:
+    - Amari Cooper
+    gave:
+    - Najee Harris
+    with:
+    - id: henpen28
+      name: Henry
+      team: Consensual Trades
+  - year: 2020
+    week: 9
+    got:
+    - Melvin Gordon III
+    gave:
+    - Miles Sanders
+    with:
+    - id: lukstein
+      name: Luke
+      team: Show Me Your TDs
+  - year: 2020
+    week: 5
+    got:
+    - Diontae Johnson
+    gave:
+    - Jerick McKinnon
+    with:
+    - id: unclebadtouch38
+      name: Fletcher
+      team: Set_The_ RAT_TRAP_!
+  - year: 2019
+    week: 8
+    got:
+    - Le'Veon Bell
+    - Benny Snell Jr.
+    gave:
+    - Carlos Hyde
+    - Mark Ingram II
+    with:
+    - id: schirmerj
+      name: Jono
+      team: Tank4Picks .
+  - year: 2019
+    week: 4
+    got:
+    - Matt Breida
+    gave:
+    - Marquise Brown
+    with:
+    - id: lukstein
+      name: Luke
+      team: Show Me Your TDs
+  - year: 2019
+    week: 0
+    got:
+    - 2.01 pick
+    - 5.12 pick
+    - 7.12 pick
+    gave:
+    - 2.07 pick
+    - 5.06 pick
+    - 7.06 pick
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vladimir Putin
+  trades_known: false
 schirmerj:
   name: Jono
   nickname: ''
@@ -2117,6 +2658,8 @@ schirmerj:
     titles: ½
     sackos: 0
     playoff_apps: 9
+    trades: 1
+    trades_known: false
     seasons: 12
     best_finish:
       type: cochamp
@@ -2325,6 +2868,20 @@ schirmerj:
     win_color: '#f6a148'
     avg_pf: 106.3
     avg_pa: 102.2
+  trades:
+  - year: 2019
+    week: 8
+    got:
+    - Carlos Hyde
+    - Mark Ingram II
+    gave:
+    - Le'Veon Bell
+    - Benny Snell Jr.
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Lamar's Donger
+  trades_known: false
 shawne2520997:
   name: Shawnee
   nickname: ''
@@ -2350,6 +2907,8 @@ shawne2520997:
     titles: '2'
     sackos: 2
     playoff_apps: 8
+    trades: 3
+    trades_known: false
     seasons: 10
     best_finish:
       type: shiva
@@ -2536,6 +3095,26 @@ shawne2520997:
     win_color: '#fac066'
     avg_pf: 96.9
     avg_pa: 102.4
+  trades:
+  - year: 2024
+    week: 0
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2020
+    week: 11
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2019
+    week: 0
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  trades_known: false
 unclebadtouch38:
   name: Fletcher
   nickname: ''
@@ -2544,7 +3123,7 @@ unclebadtouch38:
     text: 1× Shiva (2020)
     strong: true
   - emoji: 💩
-    text: 2× Sacko (2021, 2023)
+    text: 1× Sacko (2023)
     strong: true
   - emoji: ''
     text: 5× Playoffs
@@ -2553,8 +3132,10 @@ unclebadtouch38:
     all_time: 49-56-2
     win_pct: '.467'
     titles: '1'
-    sackos: 2
+    sackos: 1
     playoff_apps: 5
+    trades: 3
+    trades_known: false
     seasons: 8
     best_finish:
       type: shiva
@@ -2579,8 +3160,8 @@ unclebadtouch38:
     pa: 1290.3
   - year: 2021
     team: Set_The_ RAT_TRAP_!
-    tag: sacko
-    finish: 12th
+    tag: null
+    finish: 11th
     record: 4-10
     pf: 1112.9
     pf_color: '#fbd8a0'
@@ -2596,7 +3177,7 @@ unclebadtouch38:
   - year: 2019
     team: Set_The_ RAT_TRAP_!
     tag: null
-    finish: 11th
+    finish: 10th
     record: 5-7-1
     pf: 1036.2
     pf_color: '#fdf3e0'
@@ -2717,6 +3298,30 @@ unclebadtouch38:
     win_color: '#f7a84a'
     avg_pf: 99.0
     avg_pa: 95.4
+  trades:
+  - year: 2022
+    week: 9
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2020
+    week: 5
+    got:
+    - Jerick McKinnon
+    gave:
+    - Diontae Johnson
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Lickin Brown in my McLaurin
+  - year: 2019
+    week: 7
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  trades_known: false
 ajstewart04:
   name: Anthony
   nickname: ''
@@ -2727,6 +3332,8 @@ ajstewart04:
     titles: '0'
     sackos: 0
     playoff_apps: 0
+    trades: 0
+    trades_known: false
     seasons: 2
     best_finish:
       type: place
@@ -2828,6 +3435,8 @@ ajstewart04:
     win_color: '#f59d47'
     avg_pf: 116.6
     avg_pa: 77.1
+  trades: []
+  trades_known: false
 master-otis:
   name: Odie
   nickname: ''
@@ -2847,6 +3456,8 @@ master-otis:
     titles: '0'
     sackos: 1
     playoff_apps: 2
+    trades: 0
+    trades_known: false
     seasons: 3
     best_finish:
       type: place
@@ -2964,6 +3575,8 @@ master-otis:
     win_color: '#f59d47'
     avg_pf: 84.4
     avg_pa: 90.3
+  trades: []
+  trades_known: false
 thebragers:
   name: Brady
   nickname: ''
@@ -2977,6 +3590,8 @@ thebragers:
     titles: '0'
     sackos: 0
     playoff_apps: 2
+    trades: 0
+    trades_known: false
     seasons: 2
     best_finish:
       type: place
@@ -3064,3 +3679,5 @@ thebragers:
     win_color: '#fdf3e0'
     avg_pf: 85.0
     avg_pa: 107.4
+  trades: []
+  trades_known: false

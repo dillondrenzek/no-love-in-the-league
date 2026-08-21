@@ -11,3 +11,6 @@ nickname header is rendered by the `owner` layout.
 
 <h2>Head-to-head</h2>
 {% include h2h_table.html rows=p.h2h %}
+
+<h2>Trades</h2>
+{% include owner_trades.html trades=p.trades known=p.trades_known %}

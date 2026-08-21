@@ -1,9 +1,15 @@
-# 2021 — imported from ESPN by scripts/import_espn.py. Do not hand-edit;
-# re-run the importer to refresh. See ../../ARCHITECTURE.md.
+# 2021 — imported from ESPN by scripts/import_espn.py. Re-run the importer
+# to refresh; only the hand-edited `draft_order:` below is preserved across
+# imports. See ../../ARCHITECTURE.md.
 
 season: 2021
-source: espn-api
+source: the-league-espn-api
 weeks_in_regular_season: 14
+
+# Draft order (1st overall pick first), franchise ids. Optional and HAND-
+# EDITED — preserved across re-imports; remove the block to hide the draft
+# table on the season page.
+draft_order: []
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
@@ -44,8 +50,8 @@ final_standings:
   - whowonthelastsuperbowl
   - zachzoske
   - theoceanpulse
-  - lukstein
   - unclebadtouch38
+  - lukstein
 
 matchups:
   - { week:  1, home: jackperkins74, away: unclebadtouch38, home_score: 110.4, away_score: 86.4, playoff: false }
@@ -150,3 +156,62 @@ matchups:
   - { week: 17, home: schirmerj, away: jackperkins74, home_score: 100.6, away_score: 133.2, playoff: true }
   - { week: 17, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 120.2, away_score: 78.3, playoff: true }
   - { week: 17, home: zachzoske, away: theoceanpulse, home_score: 117.1, away_score: 75.1, playoff: true }
+
+# Completed trades this season (franchise-keyed). ESPN reveals a trade's
+# contents only to its participants, so trades no merged account was in
+# come through as `complete: false` with empty assets and just the
+# accepting franchise — counted (shown as 'Trade Accepted'), but the
+# players/picks are unknown. `trades_complete` is true only when every
+# trade this season is fully detailed. `trades_known_for` lists the
+# franchises whose manager cookie was merged: their count is EXACT even
+# in an incomplete season (an undetailed trade is one they weren't in),
+# while everyone else's count is a floor ('at least N'). Merge more
+# managers' cookies (.cookies/) to fill gaps.
+trades_complete: false
+trades_known_for:
+  - sturmanator15
+  - theoceanpulse
+trades:
+- week: 1
+  teams:
+  - lukstein
+  assets: []
+  complete: false
+- week: 4
+  teams:
+  - zachzoske
+  assets: []
+  complete: false
+- week: 8
+  teams:
+  - purpsworth
+  - theoceanpulse
+  assets:
+  - from: theoceanpulse
+    to: purpsworth
+    label: Joe Mixon
+  - from: theoceanpulse
+    to: purpsworth
+    label: Keenan Allen
+  - from: purpsworth
+    to: theoceanpulse
+    label: A.J. Brown
+  - from: purpsworth
+    to: theoceanpulse
+    label: Kenyan Drake
+- week: 10
+  teams:
+  - whowonthelastsuperbowl
+  assets: []
+  complete: false
+- week: 11
+  teams:
+  - theoceanpulse
+  - zachzoske
+  assets:
+  - from: theoceanpulse
+    to: zachzoske
+    label: Michael Pittman Jr.
+  - from: zachzoske
+    to: theoceanpulse
+    label: Damien Harris

@@ -151,11 +151,15 @@ def _profile_data(p, profiles):
             "titles": fmt_titles(p["titles"]),
             "sackos": p["sackos"],
             "playoff_apps": p["berths"],
+            "trades": p.get("trades", 0),
+            "trades_known": p.get("trades_known", True),
             "seasons": p["seasons_count"],
             "best_finish": _best_finish_data(p),
         },
         "seasons": _season_rows(p),
         "h2h": _h2h_rows(p, profiles),
+        "trades": p.get("trade_log", []),
+        "trades_known": p.get("trades_known", True),
     }
 
 

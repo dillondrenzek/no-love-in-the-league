@@ -17,5 +17,6 @@ owner_profiles record).
     <div class="tile"><div class="tile__label">Playoff Apps</div><div class="tile__val">{{ p.resume.playoff_apps }}</div></div>
     <div class="tile"><div class="tile__label">Seasons</div><div class="tile__val">{{ p.resume.seasons }}</div></div>
     <div class="tile"><div class="tile__label">Best Finish</div><div class="tile__val">{% include best_finish.html bf=p.resume.best_finish %}</div></div>
+    <div class="tile"><div class="tile__label">Trades</div><div class="tile__val">{{ p.resume.trades }}{% unless p.resume.trades_known %}<span class="muted" title="At least this many — some of this owner's trades are accepted deals ESPN won't detail for us. Merge more managers' cookies to confirm the exact count.">+</span>{% endunless %}</div></div>
   </div>
 </div>

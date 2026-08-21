@@ -52,6 +52,82 @@ def matchup_season(year=2025):
     }
 
 
+def test_trade_counts_and_most_trades_record():
+    from lib.teams import compute_profiles
+    s = matchup_season(2025)
+    # Trades with no `complete: false` flag are treated as fully detailed; every
+    # listed participant gets credit.
+    s["trades"] = [
+        {"week": 3, "teams": ["a", "b"], "assets": []},
+        {"week": 5, "teams": ["a", "c"], "assets": []},
+    ]
+    profiles = compute_profiles([s], {})
+    assert profiles["a"]["trades"] == 2          # participated in two trades
+    assert profiles["a"]["trades_known"] is True # all their seasons fully detailed
+    assert len(profiles["a"]["trade_log"]) == 2  # ...with a detail entry each
+    assert profiles["b"]["trades"] == 1
+    assert profiles["c"]["trades"] == 1
+    assert profiles["d"]["trades"] == 0
+
+    recs = {r["category"]: r for r in compute_records([s], {})}
+    assert recs["Most Trades"]["value"] == "2"
+
+
+def test_incomplete_trades_credit_and_log_accepted():
+    from lib.teams import compute_profiles
+    s = matchup_season(2025)
+    s["trades_complete"] = False        # importer couldn't detail every trade
+    s["trades"] = [
+        {"week": 3, "teams": ["a", "b"],
+         "assets": [{"from": "a", "to": "b", "label": "RB X"}]},        # complete
+        {"week": 6, "teams": ["c"], "assets": [], "complete": False},   # c accepted; hidden proposer
+    ]
+    profiles = compute_profiles([s], {})
+    # No cookie tied to a franchise -> everyone who played is a floor.
+    for fid in ("a", "b", "c", "d"):
+        assert profiles[fid]["trades_known"] is False
+    # Counts credit every listed participant, including the accepting team.
+    assert profiles["a"]["trades"] == 1
+    assert profiles["c"]["trades"] == 1
+    # The accepted-but-undetailed trade still shows in c's history as a bare
+    # "Trade Accepted" entry (no parties, no flow).
+    assert len(profiles["c"]["trade_log"]) == 1
+    acc = profiles["c"]["trade_log"][0]
+    assert acc["accepted"] is True and acc["with"] == [] and acc["got"] == []
+    # The detailed trade logs a full entry, not an accepted stub.
+    assert len(profiles["a"]["trade_log"]) == 1
+    assert profiles["a"]["trade_log"][0].get("accepted") is not True
+    # "Most Trades" is withheld while any season is incomplete.
+    recs = {r["category"]: r for r in compute_records([s], {})}
+    assert "Most Trades" not in recs
+
+
+def test_cookie_holder_count_is_exact_in_incomplete_season():
+    from lib.teams import compute_profiles
+    s = matchup_season(2025)
+    s["trades_complete"] = False
+    s["trades_known_for"] = ["a"]       # a's manager cookie was merged
+    s["trades"] = [
+        {"week": 3, "teams": ["a", "b"],
+         "assets": [{"from": "a", "to": "b", "label": "RB X"}]},
+        {"week": 6, "teams": ["c"], "assets": [], "complete": False},
+    ]
+    profiles = compute_profiles([s], {})
+    # a supplied a cookie, so an undetailed trade can't be theirs -> exact count.
+    assert profiles["a"]["trades_known"] is True
+    # Everyone else who played is still a floor.
+    for fid in ("b", "c", "d"):
+        assert profiles[fid]["trades_known"] is False
+
+
+def test_season_trades_complete_inference():
+    from lib.data import season_trades_complete
+    assert season_trades_complete({"trades": [{"teams": ["a", "b"]}]}) is True
+    assert season_trades_complete({"trades": [{"teams": ["a"], "complete": False}]}) is False
+    assert season_trades_complete({"trades_complete": False, "trades": []}) is False
+    assert season_trades_complete({"trades_complete": True}) is True
+
+
 def test_parse_record():
     assert parse_record("9-5-0") == (9, 5, 0)
     assert parse_record("7-6-1") == (7, 6, 1)
