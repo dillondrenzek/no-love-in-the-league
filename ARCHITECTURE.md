@@ -14,6 +14,7 @@ data/
   franchises.yml       owner ↔ franchise mapping (stable across years)
   overrides.yml        league rulings ESPN doesn't record
   season_notes.yml     per-year event bullets shown on History
+  settings.yml         per-season scoring & roster settings (rulebook)
 ```
 
 ### `seasons/<year>.yml`
@@ -73,6 +74,24 @@ importer never touches this file), applied by `lib/rulings.py`:
   final-week consolation games are *meaningless* (placement already decided) and
   are excluded from records, head-to-head, and playoff counts.
 
+### `settings.yml` — scoring & roster history
+
+Written by `scripts/import_settings.py`, one entry per season, holding the **raw
+ESPN stat/slot ids** for that year's scoring and lineup construction. Labels
+aren't stored — `scripts/lib/rules.py` maps ids → names at build time, so fixing
+or adding a label never needs a re-import. `generate_rules.py` diffs consecutive
+seasons into the rulebook's "current settings" block and its "Rule changes" log.
+Unlike the season files, this is refreshed on its own yearly cadence (see
+"Yearly: rules" below), not every week.
+
+```yaml
+seasons:
+  - season: 2025
+    format: H2H_POINTS
+    scoring: {3: 0.04, 4: 5, 24: 0.1, 43: 6, 53: 0.5}   # statId -> points
+    roster:  {0: 1, 2: 2, 4: 2, 6: 1, 23: 1, 16: 1, 17: 1, 20: 6, 21: 1}  # slotId -> count
+```
+
 ### In-progress seasons
 
 Mid-year ESPN hasn't assigned final placements, so the importer orders by current
@@ -96,11 +115,19 @@ scripts/
   generate_standings.py -> docs/_data/standings.yml      (per-season, History)
   generate_teams.py     -> owners.yml, owner_profiles.yml (+ owner stub pages)
   generate_seasons.py   -> seasons.yml                    (+ season stub pages)
+  generate_rules.py     -> rules.yml                       (rulebook settings + log)
   build.py                 runs every generator in order
   import_espn.py           pull a season from ESPN into data/seasons/ (via the
                            the-league-espn-api client; a dev-only dependency)
+  import_settings.py       pull scoring & roster settings into data/settings.yml
   update_season.sh         weekly: import one season + rebuild
+  refresh_rules.sh         yearly: import settings + rebuild
+  inspect_scoring.py       print the scoring/roster change history (diagnostic)
 ```
+
+`generate_rules.py` degrades gracefully: with no `data/settings.yml` yet it writes
+an empty `rules.yml` and the rulebook simply omits the generated blocks, so the
+build never fails on a fresh checkout.
 
 **Generators are thin; `lib/` does the thinking.** What counts as a win, a chip's
 color, half-titles — all live once in `lib/` with a test in `tests/test_lib.py`.
@@ -147,6 +174,25 @@ interleave your own markdown to customize a page.
 2. It runs `build.py`, regenerating `docs/_data/*.yml`.
 3. Review `git diff`, commit the `data/` and `docs/` changes, push. GitHub Pages
    redeploys automatically.
+
+### Yearly: rules
+
+The rulebook's scoring/roster block and change log come from `data/settings.yml`,
+which changes at most once a year. Refresh it in the offseason, **after** any new
+rules are live on ESPN:
+
+1. `scripts/refresh_rules.sh` — fetches every season's settings into
+   `data/settings.yml`, then runs `build.py` (which regenerates
+   `docs/_data/rules.yml`). Pass a span like `scripts/refresh_rules.sh 2008 2026`
+   to reach seasons older than those in `data/seasons/`.
+2. `git diff data/settings.yml docs/_data/rules.yml` — a new season entry and, if
+   anything actually changed, a new row in the "Rule changes" log.
+3. Commit and push.
+
+If the log shows an unlabeled `stat #N` / `slot #N`, add the id to the maps in
+`scripts/lib/rules.py` and re-run `build.py` — no re-import needed, since
+`settings.yml` stores raw ids. `scripts/inspect_scoring.py` prints the same
+history to the terminal without touching any files, handy for a quick check.
 
 ## Conventions
 

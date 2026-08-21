@@ -128,6 +128,87 @@ def test_season_trades_complete_inference():
     assert season_trades_complete({"trades_complete": True}) is True
 
 
+# --- Rules: scoring & roster history (lib/rules.py) --------------------------
+
+def _rules_entry(year, passtd, ppr, flex, bench, fmt="H2H_POINTS"):
+    scoring = {3: 0.04, 4: passtd, 24: 0.1, 43: 6}
+    if ppr:
+        scoring[53] = ppr
+    roster = {0: 1, 2: 2, 4: 2, 6: 1, 16: 1, 17: 1, 20: bench, 21: 1}
+    if flex:
+        roster[23] = flex
+    return {"season": year, "format": fmt, "scoring": scoring, "roster": roster}
+
+
+def test_compute_rules_current_and_change_log():
+    from lib.rules import compute_rules
+    entries = [
+        _rules_entry(2013, 4, 0, 0, 7),      # baseline: 4-pt pass TD, no FLEX
+        _rules_entry(2014, 6, 0, 1, 6),      # pass TD 4->6, +FLEX, bench 7->6
+        _rules_entry(2015, 6, 0.5, 1, 6),    # +half PPR
+        _rules_entry(2016, 6, 0.5, 1, 6),    # no change this year
+    ]
+    r = compute_rules(entries)
+
+    # current = the latest season, labeled (ESPN's official stat names).
+    assert r["current"]["season"] == 2016
+    pts = {s["label"]: s["points"] for s in r["current"]["scoring"]}
+    assert pts["TD Pass"] == "6" and pts["Each reception"] == "0.5"
+    rv = r["current"]["roster"]
+    assert (rv["starters"], rv["bench"], rv["ir"], rv["total"]) == (9, 6, 1, 16)
+
+    # Each current scoring row is flagged whether the league ever changed it, so
+    # the rulebook can show just the house tweaks and route the rest to ESPN.
+    changed = {s["label"]: s["changed"] for s in r["current"]["scoring"]}
+    assert changed["TD Pass"] is True and changed["Each reception"] is True
+    assert changed["Passing Yards"] is False and changed["Rushing Yards"] is False
+    assert r["current"]["scoring_changed_count"] == 2
+
+    # change log is newest-first and only lists years that actually moved.
+    assert [c["season"] for c in r["changes"]] == [2015, 2014]
+    y2014 = {i["label"]: i for i in r["changes"][1]["items"]}
+    assert y2014["TD Pass"]["text"] == "TD Pass: 4 → 6"
+    assert y2014["FLEX"]["op"] == "added" and y2014["FLEX"]["kind"] == "roster"
+    assert y2014["Bench"]["text"] == "Bench: 7 → 6"
+    y2015 = r["changes"][0]["items"]
+    assert any(i["label"] == "Each reception" and i["op"] == "added" for i in y2015)
+
+
+def test_compute_rules_format_change_and_empty():
+    from lib.rules import compute_rules
+    assert compute_rules([]) == {"current": None, "changes": []}
+    assert compute_rules(None) == {"current": None, "changes": []}
+    e = [_rules_entry(2013, 6, 0.5, 1, 6, "H2H_POINTS"),
+         _rules_entry(2014, 6, 0.5, 1, 6, "H2H_CATEGORY")]
+    item = compute_rules(e)["changes"][0]["items"][0]
+    assert item["kind"] == "format"
+    assert "H2H_POINTS → H2H_CATEGORY" in item["text"]
+
+
+def test_scoring_map_reads_points_overrides():
+    # ESPN's post-2023 format stores some items' value in pointsOverrides with a
+    # base points of 0. Those must still count, or a scored stat looks "removed".
+    from lib.rules import scoring_map_from_settings
+    settings = {"scoringSettings": {"scoringItems": [
+        {"statId": 4, "points": 5, "pointsOverrides": {"16": 5}},     # normal base
+        {"statId": 98, "points": 0, "pointsOverrides": {"16": 2}},    # value only in override
+        {"statId": 99, "points": 0.0, "pointsOverrides": {"16": 0}},  # genuinely unscored
+        {"statId": 20, "points": -2, "pointsOverrides": {"16": -2}},  # negative base kept
+    ]}}
+    m = scoring_map_from_settings(settings)
+    assert m[4] == 5
+    assert m[98] == 2          # picked up from the override despite points: 0
+    assert 99 not in m         # both zero -> not scored
+    assert m[20] == -2
+
+
+def test_compute_rules_unknown_id_falls_back():
+    from lib.rules import compute_rules
+    r = compute_rules([{"season": 2020, "format": "x",
+                        "scoring": {999: 3}, "roster": {0: 1, 20: 6}}])
+    assert any(s["label"] == "stat #999" for s in r["current"]["scoring"])
+
+
 def test_parse_record():
     assert parse_record("9-5-0") == (9, 5, 0)
     assert parse_record("7-6-1") == (7, 6, 1)
