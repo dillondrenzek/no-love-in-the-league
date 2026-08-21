@@ -1,9 +1,15 @@
-# 2023 — imported from ESPN by scripts/import_espn.py. Do not hand-edit;
-# re-run the importer to refresh. See ../../ARCHITECTURE.md.
+# 2023 — imported from ESPN by scripts/import_espn.py. Re-run the importer
+# to refresh; only the hand-edited `draft_order:` below is preserved across
+# imports. See ../../ARCHITECTURE.md.
 
 season: 2023
-source: espn-api
+source: the-league-espn-api
 weeks_in_regular_season: 14
+
+# Draft order (1st overall pick first), franchise ids. Optional and HAND-
+# EDITED — preserved across re-imports; remove the block to hide the draft
+# table on the season page.
+draft_order: []
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
@@ -147,3 +153,102 @@ matchups:
   - { week: 17, home: schirmerj, away: purpsworth, home_score: 146.1, away_score: 118.4, playoff: true }
   - { week: 17, home: sturmanator15, away: theoceanpulse, home_score: 86.6, away_score: 130.0, playoff: true }
   - { week: 17, home: zachzoske, away: whowonthelastsuperbowl, home_score: 108.5, away_score: 115.6, playoff: true }
+
+# Completed trades this season (franchise-keyed). ESPN reveals a trade's
+# contents only to its participants, so trades no merged account was in
+# come through as `complete: false` with empty assets and just the
+# accepting franchise — counted (shown as 'Trade Accepted'), but the
+# players/picks are unknown. `trades_complete` is true only when every
+# trade this season is fully detailed. `trades_known_for` lists the
+# franchises whose manager cookie was merged: their count is EXACT even
+# in an incomplete season (an undetailed trade is one they weren't in),
+# while everyone else's count is a floor ('at least N'). Merge more
+# managers' cookies (.cookies/) to fill gaps.
+trades_complete: false
+trades_known_for:
+  - sturmanator15
+  - theoceanpulse
+trades:
+- week: 0
+  teams:
+  - jackperkins74
+  - theoceanpulse
+  assets:
+  - from: theoceanpulse
+    to: jackperkins74
+    label: Tony Pollard
+  - from: jackperkins74
+    to: theoceanpulse
+    label: 3.08 pick
+  - from: theoceanpulse
+    to: jackperkins74
+    label: 6.01 pick
+- week: 1
+  teams:
+  - lukstein
+  - theoceanpulse
+  assets:
+  - from: lukstein
+    to: theoceanpulse
+    label: Elijah Moore
+  - from: lukstein
+    to: theoceanpulse
+    label: Saints D/ST
+  - from: theoceanpulse
+    to: lukstein
+    label: Eagles D/ST
+- week: 4
+  teams:
+  - zachzoske
+  assets: []
+  complete: false
+- week: 11
+  teams:
+  - jackperkins74
+  - theoceanpulse
+  assets:
+  - from: jackperkins74
+    to: theoceanpulse
+    label: Brandon Aiyuk
+  - from: jackperkins74
+    to: theoceanpulse
+    label: Tony Pollard
+  - from: theoceanpulse
+    to: jackperkins74
+    label: James Conner
+  - from: theoceanpulse
+    to: jackperkins74
+    label: Davante Adams
+- week: 11
+  teams:
+  - theoceanpulse
+  - zachzoske
+  assets:
+  - from: theoceanpulse
+    to: zachzoske
+    label: Marquise Brown
+  - from: zachzoske
+    to: theoceanpulse
+    label: James Conner
+- week: 11
+  teams:
+  - zachzoske
+  assets: []
+  complete: false
+- week: 13
+  teams:
+  - lukstein
+  - sturmanator15
+  assets:
+  - from: sturmanator15
+    to: lukstein
+    label: Chuba Hubbard
+  - from: sturmanator15
+    to: lukstein
+    label: Rashee Rice
+  - from: sturmanator15
+    to: lukstein
+    label: Joe Mixon
+  - from: lukstein
+    to: sturmanator15
+    label: D'Andre Swift

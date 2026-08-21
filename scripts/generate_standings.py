@@ -38,7 +38,7 @@ def _tag(finish, team_count, is_co):
     return None
 
 
-def season_rows(season, franchises, overrides, notes):
+def season_rows(season, franchises, overrides, notes, trade_note=True):
     rows = get_standings(season, franchises)
     points = has_points(rows)
     co = set(co_champions(season["season"], overrides))
@@ -61,9 +61,16 @@ def season_rows(season, franchises, overrides, notes):
             row["pf_color"] = heat_color(r["points_for"], lo, hi)
             row["pa"] = r["points_against"]
         out.append(row)
+    # Hand-written notes, plus an auto "N trades completed" bullet when any went
+    # through that season.
+    season_notes = list(notes.get(season["season"]) or [])
+    n_trades = len(season.get("trades") or [])
+    if trade_note and n_trades:
+        season_notes.append(f"{n_trades} trade{'s' if n_trades != 1 else ''} completed")
+
     return {
         "year": season["season"], "points": points, "rows": out,
-        "notes": notes.get(season["season"]) or [],
+        "notes": season_notes,
     }
 
 

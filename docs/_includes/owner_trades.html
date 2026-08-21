@@ -1,0 +1,55 @@
+{%- comment -%}
+An owner's trade history, newest first. Params: trades (list of
+{year, week, got:[labels], gave:[labels], with:[{id, name, team}]} for detailed
+deals, or {year, week, accepted: true} for accepted deals ESPN won't detail);
+known (bool) — false means their exact count is a floor. Renders an empty state
+when the owner has never traded.
+{%- endcomment -%}
+{%- assign trades = include.trades -%}
+{%- if include.known == false -%}
+<p class="empty-state">This data might be incomplete. The deals marked <em>Trade Accepted</em> below are real trades this owner made, but we get incomplete data from the ESPN API — so the players and picks can't be shown. Ask Dillon how you can get your actual trades listed here.</p>
+{%- endif -%}
+{%- if trades and trades.size > 0 -%}
+<div class="trades">
+  {%- for t in trades %}
+  {%- if t.accepted %}
+  <article class="trade trade--accepted">
+    <div class="trade__head">
+      <span class="trade__when">
+        <a href="{{ '/seasons/' | append: t.year | append: '/' | relative_url }}">{{ t.year }}</a>{% if t.week and t.week > 0 %} · Week {{ t.week }}{% endif %}
+      </span>
+      <span class="trade__parties muted">Trade Accepted</span>
+    </div>
+    <ul class="trade__flow">
+      <li class="muted">Details not shared by ESPN</li>
+    </ul>
+  </article>
+  {%- else %}
+  <article class="trade">
+    <div class="trade__head">
+      <span class="trade__when">
+        <a href="{{ '/seasons/' | append: t.year | append: '/' | relative_url }}">{{ t.year }}</a>{% if t.week and t.week > 0 %} · Week {{ t.week }}{% endif %}
+      </span>
+      <span class="trade__parties">
+        with
+        {%- for o in t.with -%}
+          {%- unless forloop.first %}, {% endunless -%}
+          {%- if o.id %} <a href="{{ '/teams/' | append: o.id | append: '/' | relative_url }}">{{ o.name }}</a>{% else %} {{ o.name }}{% endif -%}
+        {%- endfor -%}
+      </span>
+    </div>
+    <ul class="trade__flow">
+      {%- if t.got and t.got.size > 0 %}
+      <li><span class="trade__giver">Got</span> {{ t.got | join: ", " }}</li>
+      {%- endif -%}
+      {%- if t.gave and t.gave.size > 0 %}
+      <li><span class="trade__giver">Sent</span> {{ t.gave | join: ", " }}</li>
+      {%- endif -%}
+    </ul>
+  </article>
+  {%- endif %}
+  {%- endfor %}
+</div>
+{%- else -%}
+<p class="empty-state">No trades on record — never made a deal.</p>
+{%- endif -%}

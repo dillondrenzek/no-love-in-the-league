@@ -1,0 +1,29 @@
+{%- comment -%}
+Completed trades for a season, full breakdown. Param: trades (list of
+{week, parties:[{owner_id, owner_name, team, gave:[labels]}]}).
+{%- endcomment -%}
+{%- assign trades = include.trades -%}
+{%- if trades and trades.size > 0 -%}
+<div class="trades">
+  {%- for t in trades %}
+  <article class="trade">
+    <div class="trade__head">
+      <span class="trade__when">{% if t.week and t.week > 0 %}Week {{ t.week }}{% else %}Preseason{% endif %}</span>
+      <span class="trade__parties">
+        {%- for p in t.parties -%}
+          {%- unless forloop.first %} <span class="trade__swap">⇄</span> {% endunless -%}
+          {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.owner_name }}</a>{%- else -%}{{ p.owner_name }}{%- endif -%}
+        {%- endfor -%}
+      </span>
+    </div>
+    <ul class="trade__flow">
+      {%- for p in t.parties -%}
+        {%- if p.gave and p.gave.size > 0 %}
+        <li><span class="trade__giver">{{ p.owner_name }} sent</span> {{ p.gave | join: ", " }}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </article>
+  {%- endfor %}
+</div>
+{%- endif -%}

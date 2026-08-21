@@ -96,6 +96,7 @@ detail:
       owner_id: whowonthelastsuperbowl
       owner_name: Nate
       team: Trick or Trick It’s Mike Vick
+    trades: []
     champ: null
     sacko: null
   2025:
@@ -217,6 +218,49 @@ detail:
     notes: []
     weeks_played: 14
     draft_order: []
+    trades:
+    - week: 0
+      parties:
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - 1.04 pick
+        - 4.09 pick
+        - 6.09 pick
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Big Brown Dak Makes em Waddle
+        gave:
+        - Nico Collins
+        - 1.09 pick
+        - 4.04 pick
+        - 6.04 pick
+    - week: 8
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Pukkake
+        gave:
+        - Rachaad White
+        - Breece Hall
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Derrick Henry
+    - week: 11
+      parties:
+      - owner_id: whowonthelastsuperbowl
+        owner_name: Nate
+        team: Trick or Trick It’s Mike Vick
+        gave: []
+    - week: 11
+      parties:
+      - owner_id: whowonthelastsuperbowl
+        owner_name: Nate
+        team: Trick or Trick It’s Mike Vick
+        gave: []
     champ: *id001
     sacko: *id002
   2024:
@@ -339,6 +383,39 @@ detail:
     - Grant joined the league; Fletcher departed.
     weeks_played: 14
     draft_order: []
+    trades:
+    - week: 0
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Pukkake
+        gave:
+        - 1.10 pick
+        - Sam LaPorta
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - 1.11 pick
+        - Puka Nacua
+    - week: 0
+      parties:
+      - owner_id: purpsworth
+        owner_name: Trevor
+        team: I am dead inside
+        gave: []
+    - week: 0
+      parties:
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: Save a horse, Ride the Cowboys
+        gave: []
+    - week: 7
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: 2x Runner Up
+        gave: []
     champ: *id003
     sacko: *id004
   2023:
@@ -462,6 +539,85 @@ detail:
     - Dropped the IDP slot and added a third WR starter.
     weeks_played: 14
     draft_order: []
+    trades:
+    - week: 0
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Vinegar Strokes
+        gave:
+        - 3.08 pick
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Tony Pollard
+        - 6.01 pick
+    - week: 1
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: 2x Runner Up
+        gave:
+        - Elijah Moore
+        - Saints D/ST
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Eagles D/ST
+    - week: 4
+      parties:
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Zach's Juicy Fantasy Teamussy
+        gave: []
+    - week: 11
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Vinegar Strokes
+        gave:
+        - Brandon Aiyuk
+        - Tony Pollard
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - James Conner
+        - Davante Adams
+    - week: 11
+      parties:
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Marquise Brown
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Zach's Juicy Fantasy Teamussy
+        gave:
+        - James Conner
+    - week: 11
+      parties:
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Zach's Juicy Fantasy Teamussy
+        gave: []
+    - week: 13
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: 2x Runner Up
+        gave:
+        - D'Andre Swift
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: In Goff we trust
+        gave:
+        - Chuba Hubbard
+        - Rashee Rice
+        - Joe Mixon
     champ: *id005
     sacko: *id006
   2022:
@@ -585,6 +741,58 @@ detail:
     - Bench expanded from 4 spots to 5.
     weeks_played: 14
     draft_order: []
+    trades:
+    - week: 0
+      parties:
+      - owner_id: henpen28
+        owner_name: Henry
+        team: Consensual Trades
+        gave: []
+    - week: 8
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Allen's Deep Balls
+        gave:
+        - Tony Pollard
+        - Raheem Mostert
+        - Jaylen Waddle
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Brandin Cooks
+        - Christian McCaffrey
+    - week: 9
+      parties:
+      - owner_id: purpsworth
+        owner_name: Trevor
+        team: Used Napkin
+        gave:
+        - Kyler Murray
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Amon-Ra St. Brown
+    - week: 9
+      parties:
+      - owner_id: unclebadtouch38
+        owner_name: Fletcher
+        team: Mr. Irrelevant
+        gave: []
+    - week: 10
+      parties:
+      - owner_id: henpen28
+        owner_name: Henry
+        team: Consensual Trades
+        gave:
+        - Amari Cooper
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: Trey Lanced my ❤️
+        gave:
+        - Najee Harris
     champ: *id007
     sacko: *id008
   2021:
@@ -707,6 +915,51 @@ detail:
     - Injured-reserve slots trimmed from 4 to 1.
     weeks_played: 14
     draft_order: []
+    trades:
+    - week: 1
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: Autodraft Monster
+        gave: []
+    - week: 4
+      parties:
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: ESPN 8 The Ocho
+        gave: []
+    - week: 8
+      parties:
+      - owner_id: purpsworth
+        owner_name: Trevor
+        team: WA Fantasy Football Team
+        gave:
+        - A.J. Brown
+        - Kenyan Drake
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Hot Chubb Time Machine
+        gave:
+        - Joe Mixon
+        - Keenan Allen
+    - week: 10
+      parties:
+      - owner_id: whowonthelastsuperbowl
+        owner_name: Nate
+        team: Trick or Trick It’s Mike Vick
+        gave: []
+    - week: 11
+      parties:
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Hot Chubb Time Machine
+        gave:
+        - Michael Pittman Jr.
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: ESPN 8 The Ocho
+        gave:
+        - Damien Harris
     champ: *id009
     sacko: *id010
   2020:
@@ -829,6 +1082,61 @@ detail:
     - Added injured-reserve (IR) slots.
     weeks_played: 13
     draft_order: []
+    trades:
+    - week: 5
+      parties:
+      - owner_id: henpen28
+        owner_name: Henry
+        team: Scat Play
+        gave: []
+    - week: 5
+      parties:
+      - owner_id: henpen28
+        owner_name: Henry
+        team: Scat Play
+        gave: []
+    - week: 5
+      parties:
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: Lickin Brown in my McLaurin
+        gave:
+        - Jerick McKinnon
+      - owner_id: unclebadtouch38
+        owner_name: Fletcher
+        team: Set_The_ RAT_TRAP_!
+        gave:
+        - Diontae Johnson
+    - week: 9
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: Show Me Your TDs
+        gave:
+        - Melvin Gordon III
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: Lickin Brown in my McLaurin
+        gave:
+        - Miles Sanders
+    - week: 9
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: Show Me Your TDs
+        gave:
+        - Mike Williams
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Trick-Ass Marks
+        gave:
+        - Noah Fant
+    - week: 11
+      parties:
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: Koo Koo Kachoo
+        gave: []
     champ: *id011
     sacko: *id012
   2019:
@@ -951,6 +1259,79 @@ detail:
     - Trevor joined the league; Anthony departed.
     weeks_played: 13
     draft_order: []
+    trades:
+    - week: 0
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Vladimir Putin
+        gave:
+        - 2.01 pick
+        - 5.12 pick
+        - 7.12 pick
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: Lamar's Donger
+        gave:
+        - 2.07 pick
+        - 5.06 pick
+        - 7.06 pick
+    - week: 0
+      parties:
+      - owner_id: purpsworth
+        owner_name: Trevor
+        team: AB’s Helmet
+        gave: []
+    - week: 0
+      parties:
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: Mixon it up
+        gave: []
+    - week: 4
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: Show Me Your TDs
+        gave: []
+    - week: 4
+      parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: Show Me Your TDs
+        gave:
+        - Matt Breida
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: Lamar's Donger
+        gave:
+        - Marquise Brown
+    - week: 7
+      parties:
+      - owner_id: unclebadtouch38
+        owner_name: Fletcher
+        team: Set_The_ RAT_TRAP_!
+        gave: []
+    - week: 8
+      parties:
+      - owner_id: henpen28
+        owner_name: Henry
+        team: Tom Brady's Fluffer
+        gave: []
+    - week: 8
+      parties:
+      - owner_id: schirmerj
+        owner_name: Jono
+        team: Tank4Picks .
+        gave:
+        - Le'Veon Bell
+        - Benny Snell Jr.
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: Lamar's Donger
+        gave:
+        - Carlos Hyde
+        - Mark Ingram II
     champ: *id013
     sacko: *id014
   2018:
@@ -1072,6 +1453,7 @@ detail:
     notes: []
     weeks_played: 13
     draft_order: []
+    trades: []
     champ: *id015
     sacko: *id016
   2017:
@@ -1197,6 +1579,7 @@ detail:
     - Anthony joined the league; Odie departed.
     weeks_played: 13
     draft_order: []
+    trades: []
     champ: *id017
     sacko: *id018
   2016:
@@ -1322,6 +1705,7 @@ detail:
     - Wade and Jono tied the championship game 114.8–114.8 — officially ruled a **co-championship**.
     weeks_played: 13
     draft_order: []
+    trades: []
     champ: *id019
     sacko: *id020
   2015:
@@ -1425,6 +1809,7 @@ detail:
     notes: []
     weeks_played: 13
     draft_order: []
+    trades: []
     champ: *id021
     sacko: *id022
   2014:
@@ -1529,5 +1914,6 @@ detail:
     - The league is founded — 10 teams, with 6 making the playoffs.
     weeks_played: 13
     draft_order: []
+    trades: []
     champ: *id023
     sacko: *id024

@@ -6,7 +6,7 @@ head-to-head vs every other owner. This only produces meaningful output for
 seasons that have matchups (level 2).
 """
 
-from .data import name_of, short_name_of
+from .data import name_of, short_name_of, season_trades_complete
 from .standings import get_standings
 from .rulings import co_champions, meaningless_keys, matchup_key
 
@@ -22,6 +22,9 @@ def _blank(fid, franchises):
         "titles": 0.0, "runner_ups": 0, "thirds": 0, "berths": 0,
         "sackos": 0, "sacko_years": [],                 # dead-last finishes
         "champ_years": [],                              # list of (year, is_co)
+        "trades": 0,                                    # trades participated in (a floor if not trades_known)
+        "trades_known": True,                           # False if any season they played has undetailed trades
+        "trade_log": [],                                # per-trade detail for the profile
         "h2h": {},                                      # opp id -> {w,l,t,pf,pa}
     }
 
@@ -96,6 +99,53 @@ def compute_profiles(seasons, franchises, overrides=None):
         for fid in (seeded if seeded is not None else in_playoffs):
             prof(fid)["berths"] += 1
 
+        # Trades: every franchise on a trade gets credit; complete trades also get
+        # a per-owner detail entry. ESPN scopes a trade's contents to its
+        # participants, so a trade no cookie-holder was in lists only its
+        # accepting team (credited) and carries no assets — it shows in that
+        # owner's history as "Trade Accepted" with no detail.
+        #
+        # Certainty is decided per owner, not per season. An undetailed trade is
+        # by definition one no cookie-holder participated in, so a cookie-holder's
+        # count is EXACT even in an incomplete season. `trades_known_for` lists the
+        # franchises whose manager cookie was supplied; everyone else in a season
+        # with any undetailed trade is a floor (they might be a hidden proposer),
+        # so trades_known=False for them and the count reads "at least N".
+        season_complete = season_trades_complete(season)
+        known_for = set(season.get("trades_known_for") or [])
+        if not season_complete:
+            for fid in rows:
+                if fid not in known_for:
+                    prof(fid)["trades_known"] = False
+        for trade in season.get("trades") or []:
+            members = trade.get("teams") or []
+            assets = trade.get("assets") or []
+            trade_complete = trade.get("complete", True)
+            for fid in members:
+                p = prof(fid)
+                p["trades"] += 1
+                if not trade_complete:
+                    # No contents to show, but the accepted trade is real — log a
+                    # bare "accepted" entry so it still appears in their history.
+                    p["trade_log"].append({
+                        "year": year,
+                        "week": trade.get("week") or 0,
+                        "accepted": True,
+                        "got": [],
+                        "gave": [],
+                        "with": [],
+                    })
+                    continue
+                others = [o for o in members if o != fid]
+                p["trade_log"].append({
+                    "year": year,
+                    "week": trade.get("week") or 0,
+                    "got": [a["label"] for a in assets if a.get("to") == fid],
+                    "gave": [a["label"] for a in assets if a.get("from") == fid],
+                    "with": [{"id": o, "name": short_name_of(o, franchises),
+                              "team": teams_map.get(o)} for o in others],
+                })
+
     for p in profiles.values():
         p["reg"]["pf"] = round(p["reg"]["pf"], 1)
         p["reg"]["pa"] = round(p["reg"]["pa"], 1)
@@ -103,6 +153,7 @@ def compute_profiles(seasons, franchises, overrides=None):
         p["best_finish"] = min(finishes) if finishes else None
         p["worst_finish"] = max(finishes) if finishes else None
         p["seasons_count"] = len(p["seasons"])
+        p["trade_log"].sort(key=lambda t: (t["year"], t["week"]), reverse=True)
         p["reg"]["win_pct"] = win_pct(p["reg"]["w"], p["reg"]["l"], p["reg"]["t"])
         for rec in p["h2h"].values():
             rec["pf"] = round(rec["pf"], 1)

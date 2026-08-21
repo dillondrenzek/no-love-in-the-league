@@ -80,3 +80,19 @@ def short_name_of(franchise_id, franchises):
 def regular_season_matchups(season):
     """Matchups that count toward standings (i.e. not playoff games)."""
     return [m for m in (season.get("matchups") or []) if not m.get("playoff")]
+
+
+def season_trades_complete(season):
+    """True when this season's trade data is fully known.
+
+    ESPN only reveals a trade's contents to its participants, so a single
+    account can't see every trade (see the importer). The importer records
+    `trades_complete: true` only when it fetched trades AND every one came back
+    fully detailed. When some trades are still unknown, per-owner trade counts
+    for anyone who played this season can't be trusted, so the site shows
+    "unavailable" for them. Older season files without the explicit key are
+    inferred from the per-trade `complete` flags (absent flag = complete)."""
+    flag = season.get("trades_complete")
+    if flag is not None:
+        return bool(flag)
+    return all(t.get("complete", True) for t in (season.get("trades") or []))

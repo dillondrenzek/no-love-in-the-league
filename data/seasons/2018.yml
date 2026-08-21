@@ -1,9 +1,15 @@
-# 2018 — imported from ESPN by scripts/import_espn.py. Do not hand-edit;
-# re-run the importer to refresh. See ../../ARCHITECTURE.md.
+# 2018 — imported from ESPN by scripts/import_espn.py. Re-run the importer
+# to refresh; only the hand-edited `draft_order:` below is preserved across
+# imports. See ../../ARCHITECTURE.md.
 
 season: 2018
-source: espn-api
+source: the-league-espn-api
 weeks_in_regular_season: 13
+
+# Draft order (1st overall pick first), franchise ids. Optional and HAND-
+# EDITED — preserved across re-imports; remove the block to hide the draft
+# table on the season page.
+draft_order: []
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
@@ -144,3 +150,19 @@ matchups:
   - { week: 16, home: schirmerj, away: henpen28, home_score: 127.7, away_score: 108.4, playoff: true }
   - { week: 16, home: sturmanator15, away: unclebadtouch38, home_score: 44.2, away_score: 104.4, playoff: true }
   - { week: 16, home: zachzoske, away: shawne2520997, home_score: 110.4, away_score: 86.5, playoff: true }
+
+# Completed trades this season (franchise-keyed). ESPN reveals a trade's
+# contents only to its participants, so trades no merged account was in
+# come through as `complete: false` with empty assets and just the
+# accepting franchise — counted (shown as 'Trade Accepted'), but the
+# players/picks are unknown. `trades_complete` is true only when every
+# trade this season is fully detailed. `trades_known_for` lists the
+# franchises whose manager cookie was merged: their count is EXACT even
+# in an incomplete season (an undetailed trade is one they weren't in),
+# while everyone else's count is a floor ('at least N'). Merge more
+# managers' cookies (.cookies/) to fill gaps.
+trades_complete: true
+trades_known_for:
+  - sturmanator15
+  - theoceanpulse
+trades: []  # none this season

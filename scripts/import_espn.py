@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Import one season of scores from ESPN into data/seasons/<year>.yml.
+"""Import one season from ESPN into data/seasons/<year>.yml.
 
-This is a LOCAL dev tool, not part of the published site. It uses the `espn-api`
-library (see requirements-dev.txt) to pull a season, then writes:
+This is a LOCAL dev tool, not part of the published site. It pulls a season
+through `the_league_espn_api` — The League's own dependency-free ESPN client
+(see requirements-dev.txt) — then writes:
 
-  - data/seasons/<year>.yml : final_standings + every matchup with scores
-  - data/franchises.yml      : owner -> franchise mapping, merged by ESPN SWID
+  - data/seasons/<year>.yml  : matchups + standings order + season metadata
+  - data/franchises.yml       : owner -> franchise mapping, merged by ESPN SWID
 
 Nothing here runs at site-build time; the site only reads the YAML it produces.
 
@@ -13,15 +14,12 @@ Usage:
     python scripts/import_espn.py 2025            # write the files
     python scripts/import_espn.py 2025 --stdout   # preview YAML, write nothing
 
-Private league? Export your ESPN cookies first (they're only used locally to
-authenticate the read request):
-    export ESPN_S2='...'      # the espn_s2 cookie value
-    export ESPN_SWID='{...}'  # the SWID cookie value, braces included
+Private league? Put your two ESPN cookies in .espn-cookies (see
+.espn-cookies.example). The client reads them from there — nothing to export.
 
-Franchise identity: teams get a stable id from their owner's ESPN SWID, so the
-same person keeps one franchise across seasons even as their team name changes.
-Owner names only come through when cookies are supplied; without them the tool
-falls back to that season's team name and can't link owners across years.
+Franchise identity: every team is keyed by its owner's ESPN SWID (`manager_id`),
+so the same person keeps one franchise across seasons even as their team name
+changes. The client returns owner names only when cookies are supplied.
 """
 
 import argparse
@@ -33,37 +31,30 @@ from pathlib import Path
 import yaml
 
 try:
-    from espn_api.football import League
+    from the_league_espn_api import League, ApiError, merge_trades, load_cookies
 except ImportError:
-    sys.exit("espn-api is not installed. Run: pip install -r requirements-dev.txt")
+    sys.exit("the-league-espn-api is not installed. Run: pip install -r requirements-dev.txt")
 
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
 FRANCHISES_PATH = ROOT / "data" / "franchises.yml"
 COOKIES_PATH = ROOT / ".espn-cookies"
-LEAGUE_ID = 236302
+# Extra managers' cookie files. ESPN reveals a trade's contents only to its
+# participants, so merging several managers' accounts fills in more trades.
+COOKIES_DIR = ROOT / ".cookies"
 
 
-def load_cookies():
-    """(espn_s2, swid) read from the .espn-cookies file, falling back to the
-    environment. The file holds `ESPN_S2='...'` / `ESPN_SWID='{...}'` lines (a
-    leading `export` is fine); keeping the values there means they never need to
-    be exported into your shell or saved in shell history. Override the path
-    with the ESPN_COOKIES_FILE env var."""
-    values = {}
-    path = Path(os.environ.get("ESPN_COOKIES_FILE") or COOKIES_PATH)
-    if path.exists():
-        for raw in path.read_text().splitlines():
-            line = raw.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            if line.startswith("export "):
-                line = line[len("export "):].lstrip()
-            key, val = line.split("=", 1)
-            values[key.strip()] = val.strip().strip('"').strip("'")
-    s2 = values.get("ESPN_S2") or os.environ.get("ESPN_S2")
-    swid = values.get("ESPN_SWID") or os.environ.get("ESPN_SWID")
-    return s2, swid
+def cookie_files():
+    """All cookie files to merge trades across: the default `.espn-cookies`
+    plus every file in `.cookies/`. Returns absolute path strings; empty when
+    none exist (the client then falls back to env vars)."""
+    files = []
+    if COOKIES_PATH.is_file():
+        files.append(str(COOKIES_PATH))
+    if COOKIES_DIR.is_dir():
+        files += sorted(str(p) for p in COOKIES_DIR.iterdir()
+                        if p.is_file() and "cookie" in p.name.lower())
+    return files
 
 
 def clean_name(text):
@@ -72,22 +63,8 @@ def clean_name(text):
 
 
 def slug(text):
-    s = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
     return s or "unknown"
-
-
-def owner_of(team):
-    """(swid, display_name) for a team's primary owner, or (None, None)."""
-    owners = getattr(team, "owners", []) or []
-    if not owners:
-        return None, None
-    o = owners[0]
-    if isinstance(o, dict):
-        name = o.get("displayName") or " ".join(
-            filter(None, [o.get("firstName"), o.get("lastName")])
-        ).strip()
-        return o.get("id"), (name or None)
-    return str(o), None  # older payloads: bare id string
 
 
 def load_franchises():
@@ -107,84 +84,151 @@ def existing_draft_order(year):
     return []
 
 
-def resolve_franchises(teams, registry):
+def resolve_franchises(team_rows, registry):
     """Map each team_id -> franchise id, updating `registry` (list of dicts).
 
     Matches an existing franchise by SWID so the same owner keeps one id across
-    seasons; records each season's team name as an alias.
+    seasons; records each season's team name as an alias. A brand-new owner is
+    seeded with their first name (our public display convention).
     """
     by_swid = {f["espn_swid"]: f for f in registry if f.get("espn_swid")}
     used_ids = {f["id"] for f in registry}
     team_to_fid = {}
 
-    for team in teams:
-        swid, name = owner_of(team)
-        team_name = clean_name(team.team_name)
+    for t in team_rows:
+        swid = t.get("manager_id") or None
+        team_name = clean_name(t.get("team_name"))
+        display = (t.get("first_name") or "").strip() or clean_name(t.get("user_name")) or team_name
         entry = by_swid.get(swid) if swid else None
 
         if entry is None:
-            base = slug(name or team_name)
+            base = slug(display or team_name)
             fid = base
             i = 2
-            while fid in used_ids and (not swid):
+            while fid in used_ids and not swid:
                 fid, i = f"{base}-{i}", i + 1
-            entry = {"id": fid, "name": name or team_name, "aliases": []}
+            entry = {"id": fid, "name": display or team_name, "aliases": []}
             if swid:
                 entry["espn_swid"] = swid
                 by_swid[swid] = entry
             registry.append(entry)
             used_ids.add(fid)
 
-        if name and (not entry.get("name") or entry["name"] == entry["id"]):
-            entry["name"] = name
-        if team_name not in entry.setdefault("aliases", []):
+        if display and (not entry.get("name") or entry["name"] == entry["id"]):
+            entry["name"] = display
+        if team_name and team_name not in entry.setdefault("aliases", []):
             entry["aliases"].append(team_name)
 
-        team_to_fid[team.team_id] = entry["id"]
+        team_to_fid[t["team_id"]] = entry["id"]
 
     return team_to_fid
 
 
-def build_matchups(teams, team_to_fid, reg_season_count):
-    seen = set()
-    matchups = []
-    for team in teams:
-        for wk_idx, opp in enumerate(team.schedule):
-            week = wk_idx + 1
-            if opp is None or opp.team_id == team.team_id:
-                continue
-            key = (week, frozenset((team.team_id, opp.team_id)))
-            if key in seen:
-                continue
-            ts, os_ = team.scores[wk_idx], opp.scores[wk_idx]
-            if not ts and not os_:  # unplayed / bye (0-0 never happens in fantasy)
-                continue
-            seen.add(key)
-            # home/away is meaningless for fantasy scoring; assign deterministically.
-            home, away = (team, opp) if team.team_id < opp.team_id else (opp, team)
-            hs = home.scores[wk_idx]
-            as_ = away.scores[wk_idx]
-            matchups.append({
+def _pick_label(overall, team_count):
+    """A traded draft pick as 'round.pick' (e.g. 1.11), from its overall number."""
+    try:
+        o = int(overall)
+    except (TypeError, ValueError):
+        return "draft pick"
+    if team_count and team_count > 0:
+        rnd, pir = (o - 1) // team_count + 1, (o - 1) % team_count + 1
+        return f"{rnd}.{pir:02d} pick"
+    return f"pick {o}"
+
+
+def build_trades(trade_rows, team_to_fid, team_count):
+    """Group the client's per-asset trade rows into one entry per completed trade,
+    franchise-keyed: {week, teams (participants), assets [{from, to, label}]}.
+
+    ESPN only reveals a trade's contents to its participants, so trades the
+    merged accounts didn't take part in come back with `contents_available:
+    False`. We keep those too, marked `complete: false` with `assets: []` and
+    only the accepting franchise in `teams` (the one side ESPN does tell us) —
+    so the trade still counts, but downstream knows its details are unknown.
+    Every entry has an explicit `complete` flag."""
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for r in trade_rows:
+        groups[r["trade_id"]].append(r)
+
+    trades = []
+    for items in groups.values():
+        week = items[0].get("scoring_period") or 0
+        participants, assets = set(), []
+        for r in items:
+            if r.get("asset_type") not in ("player", "draft_pick"):
+                continue  # 'unavailable' row — no item detail for this account
+            f = team_to_fid.get(r.get("from_team_id"))
+            t = team_to_fid.get(r.get("to_team_id"))
+            for fid in (f, t):
+                if fid:
+                    participants.add(fid)
+            if r.get("asset_type") == "player":
+                label = r.get("player_name") or "player"
+            else:
+                label = _pick_label(r.get("draft_pick_overall"), team_count)
+            assets.append({"from": f, "to": t, "label": label})
+
+        if assets:
+            # Fully detailed — no `complete` flag needed (absent == complete).
+            trades.append({
                 "week": week,
-                "home": team_to_fid[home.team_id],
-                "away": team_to_fid[away.team_id],
-                "home_score": round(hs, 2),
-                "away_score": round(as_, 2),
-                "playoff": week > reg_season_count,
+                "teams": sorted(participants),
+                "assets": assets,
             })
-    matchups.sort(key=lambda m: (m["week"], m["home"]))
-    return matchups
+        else:
+            # Contents unknown to us: record it with just the accepting side so
+            # the trade is still counted, flagged incomplete.
+            acceptor = next((team_to_fid.get(r.get("to_team_id")) for r in items
+                             if team_to_fid.get(r.get("to_team_id"))), None)
+            trades.append({
+                "week": week,
+                "teams": [acceptor] if acceptor else [],
+                "assets": [],
+                "complete": False,
+            })
+    trades.sort(key=lambda x: (x["week"], x["teams"]))
+    return trades
+
+
+def build_matchups(matchup_rows, team_to_fid):
+    """Franchise-keyed regular-season + playoff games, skipping byes and unplayed
+    weeks. Home/away is cosmetic in fantasy, so it's assigned deterministically by
+    team id to keep re-imports diff-clean."""
+    out = []
+    for m in matchup_rows:
+        if m.get("winner") == "BYE":
+            continue
+        h_id, a_id = m.get("home_team_id"), m.get("away_team_id")
+        if not h_id or not a_id:
+            continue
+        hs, as_ = m.get("home_score"), m.get("away_score")
+        if not hs and not as_:      # unplayed / future week (0-0 never happens live)
+            continue
+        if a_id < h_id:             # normalize: lower team id is "home"
+            h_id, a_id, hs, as_ = a_id, h_id, as_, hs
+        out.append({
+            "week": m["week"],
+            "home": team_to_fid.get(h_id),
+            "away": team_to_fid.get(a_id),
+            "home_score": round(float(hs), 2),
+            "away_score": round(float(as_), 2),
+            "playoff": bool(m.get("is_playoff")),
+        })
+    out.sort(key=lambda x: (x["week"], x["home"] or ""))
+    return out
 
 
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
-                     status=None, draft_order=None):
+                     status=None, draft_order=None, trades=None, trades_complete=True,
+                     trades_known_for=None):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
         f"# to refresh; only the hand-edited `draft_order:` below is preserved across",
         f"# imports. See ../../ARCHITECTURE.md.",
         "",
         f"season: {year}",
-        "source: espn-api",
+        "source: the-league-espn-api",
         f"weeks_in_regular_season: {reg_count}",
     ]
     if status:
@@ -237,16 +281,40 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
             )
     else:
         lines += ["", "matchups: []  # no games played yet"]
+    lines += [
+        "",
+        "# Completed trades this season (franchise-keyed). ESPN reveals a trade's",
+        "# contents only to its participants, so trades no merged account was in",
+        "# come through as `complete: false` with empty assets and just the",
+        "# accepting franchise — counted (shown as 'Trade Accepted'), but the",
+        "# players/picks are unknown. `trades_complete` is true only when every",
+        "# trade this season is fully detailed. `trades_known_for` lists the",
+        "# franchises whose manager cookie was merged: their count is EXACT even",
+        "# in an incomplete season (an undetailed trade is one they weren't in),",
+        "# while everyone else's count is a floor ('at least N'). Merge more",
+        "# managers' cookies (.cookies/) to fill gaps.",
+        f"trades_complete: {'true' if trades_complete else 'false'}",
+    ]
+    if trades_known_for:
+        lines += ["trades_known_for:"] + [f"  - {fid}" for fid in trades_known_for]
+    else:
+        lines += ["trades_known_for: []  # no manager cookie tied to a franchise"]
+    if trades:
+        # Nested structure — let PyYAML format it rather than hand-align by string.
+        lines.append(yaml.safe_dump({"trades": trades}, sort_keys=False,
+                                    allow_unicode=True, default_flow_style=False).rstrip())
+    else:
+        lines += ["trades: []  # none this season"]
     return "\n".join(lines) + "\n"
 
 
-def validation_table(matchups, team_to_fid):
+def validation_table(matchups):
+    """Regular-season W-L-PF tally from the matchups, for eyeballing vs ESPN."""
     tally = {}
     for m in matchups:
         if m["playoff"]:
             continue
-        h, a = m["home"], m["away"]
-        hs, as_ = m["home_score"], m["away_score"]
+        h, a, hs, as_ = m["home"], m["away"], m["home_score"], m["away_score"]
         for fid in (h, a):
             tally.setdefault(fid, {"w": 0, "l": 0, "t": 0, "pf": 0.0})
         tally[h]["pf"] += hs
@@ -268,56 +336,112 @@ def validation_table(matchups, team_to_fid):
 def main():
     ap = argparse.ArgumentParser(description="Import an ESPN season into season YAML.")
     ap.add_argument("year", type=int)
-    ap.add_argument("--league-id", type=int, default=LEAGUE_ID)
+    ap.add_argument("--league-id", type=int, default=None,
+                    help="override the default league id")
     ap.add_argument("--stdout", action="store_true", help="print YAML, write nothing")
     args = ap.parse_args()
 
-    espn_s2, swid = load_cookies()
-    league = League(league_id=args.league_id, year=args.year, espn_s2=espn_s2, swid=swid)
+    cookies_file = os.environ.get("ESPN_COOKIES_FILE") or str(COOKIES_PATH)
+    lg_kwargs = {"year": args.year, "cookies_file": cookies_file}
+    if args.league_id:
+        lg_kwargs["league_id"] = args.league_id
+    lg = League(**lg_kwargs)
 
-    reg_count = league.settings.reg_season_count
-    teams = league.teams
+    team_rows = lg.teams()
+    season = lg.season()                    # {complete, standings, matchups}
+    settings = lg.league_json("mSettings").get("settings", {})
+    sched = settings.get("scheduleSettings", {})
+    complete = season["complete"]
+    standings = season["standings"]
 
     registry = load_franchises()
-    team_to_fid = resolve_franchises(teams, registry)
-    matchups = build_matchups(teams, team_to_fid, reg_count)
+    team_to_fid = resolve_franchises(team_rows, registry)
+    matchups = build_matchups(season["matchups"], team_to_fid)
 
-    # A season is "complete" once ESPN has assigned every team a final placement.
-    # Until then we order by the current standing and flag the file in-progress.
-    complete = bool(teams) and all(getattr(t, "final_standing", 0) for t in teams)
+    # Trades: ESPN reveals a trade's contents only to its participants, so merge
+    # across every managers' cookie file we have — more accounts detail more
+    # trades. The transactions endpoint 404s for very old seasons; treat that as
+    # "trades unknown this year" rather than failing the whole import.
+    files = cookie_files() or [cookies_file]
+    # SWID -> franchise id, so a manager's cookie can be tied to their franchise.
+    # ESPN returns the owner SWID (manager_id) and the cookie's ESPN_SWID in the
+    # same braced form; normalise both just in case.
+    def _norm_swid(s):
+        return (s or "").strip().strip("{}").upper()
+    swid_to_fid = {}
+    for t in team_rows:
+        swid = _norm_swid(t.get("manager_id"))
+        if swid and t.get("team_id") in team_to_fid:
+            swid_to_fid[swid] = team_to_fid[t["team_id"]]
+
+    trade_lists, fetched = [], False
+    known_for = set()   # franchises whose manager cookie detailed this season
+    for cf in files:
+        tkw = {"year": args.year, "cookies_file": cf}
+        if args.league_id:
+            tkw["league_id"] = args.league_id
+        try:
+            trade_lists.append(League(**tkw).trades())
+            fetched = True
+        except ApiError as e:
+            print(f"NOTE: trades for {args.year} via {os.path.basename(cf)} "
+                  f"unavailable (ESPN {e.status}).", file=sys.stderr)
+            continue
+        # This cookie's owner participated in nothing they couldn't see, so their
+        # count is exact for this season — record their franchise as "known".
+        _, cf_swid = load_cookies(cf)
+        fid = swid_to_fid.get(_norm_swid(cf_swid))
+        if fid:
+            known_for.add(fid)
+    trade_rows = merge_trades(*trade_lists) if trade_lists else []
+    trades = build_trades(trade_rows, team_to_fid, len(team_to_fid))
+    # Complete only if we fetched trades AND every one came back fully detailed.
+    trades_complete = fetched and all(t.get("complete", True) for t in trades)
+    incomplete = sum(1 for t in trades if not t.get("complete", True))
+
+    reg_count = (sched.get("matchupPeriodCount")
+                 or max((m["week"] for m in matchups if not m["playoff"]), default=0))
+
+    # Final placement when complete; otherwise the current standing (wins, PF).
     if complete:
-        order_key = lambda t: getattr(t, "final_standing", 0) or 999
+        ordered = sorted(standings, key=lambda r: r.get("final_rank") or 999)
     else:
-        order_key = lambda t: getattr(t, "standing", 0) or 999
-    final_sorted = sorted(teams, key=order_key)
-    final_order = [team_to_fid[t.team_id] for t in final_sorted]
-    season_teams = {team_to_fid[t.team_id]: clean_name(t.team_name) for t in teams}
+        ordered = sorted(standings, key=lambda r: (-(r.get("wins") or 0),
+                                                   -(r.get("points_for") or 0.0)))
+    final_order = [team_to_fid.get(r["team_id"]) for r in ordered]
 
-    # Winners-bracket teams = top seeds. team.standing is ESPN's playoffSeed.
-    playoff_count = league.settings.playoff_team_count
+    season_teams = {team_to_fid[t["team_id"]]: clean_name(t["team_name"]) for t in team_rows}
+
+    # Winners-bracket seeds = ESPN playoffSeed within 1..playoffTeamCount.
+    playoff_count = sched.get("playoffTeamCount") or 0
     seeded = sorted(
-        (t for t in teams if getattr(t, "standing", 0) and t.standing <= playoff_count),
-        key=lambda t: t.standing,
+        (r for r in standings if 0 < (r.get("playoff_seed") or 0) <= playoff_count),
+        key=lambda r: r["playoff_seed"],
     )
-    playoff_ids = [team_to_fid[t.team_id] for t in seeded]
+    playoff_ids = [team_to_fid.get(r["team_id"]) for r in seeded]
 
     season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups,
                                    season_teams, playoff_ids,
                                    status=None if complete else "in_progress",
-                                   draft_order=existing_draft_order(args.year))
+                                   draft_order=existing_draft_order(args.year),
+                                   trades=trades, trades_complete=trades_complete,
+                                   trades_known_for=sorted(known_for))
 
-    if not any(o for _, o in map(owner_of, teams)):
-        print("WARNING: no owner names/SWIDs found — franchise ids fell back to team "
-              "names and won't link across seasons. Set ESPN_S2 / ESPN_SWID for a "
-              "private league.\n", file=sys.stderr)
+    if not lg.authenticated:
+        print("WARNING: no ESPN cookies found — a private league won't return owner "
+              "names/SWIDs, so franchises can't link across seasons. Fill in "
+              ".espn-cookies.\n", file=sys.stderr)
 
-    print(f"Parsed {args.year}: {len(teams)} teams, {len(matchups)} matchups, "
-          f"{reg_count} regular-season weeks — "
+    trade_note = ("all detailed" if trades_complete
+                  else f"{incomplete} unavailable — merge more cookies" if fetched
+                  else "not fetched for this season")
+    print(f"Parsed {args.year}: {len(team_rows)} teams, {len(matchups)} matchups, "
+          f"{len(trades)} trades ({trade_note}), {reg_count} regular-season weeks — "
           f"{'COMPLETE' if complete else 'IN PROGRESS (ordered by current standing)'}.\n",
           file=sys.stderr)
-    print("Computed regular-season standings (verify against the ESPN final standings):",
+    print("Computed regular-season standings (verify against ESPN's final standings):",
           file=sys.stderr)
-    print(validation_table(matchups, team_to_fid) + "\n", file=sys.stderr)
+    print(validation_table(matchups) + "\n", file=sys.stderr)
 
     if args.stdout:
         print(season_yaml)

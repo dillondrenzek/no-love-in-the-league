@@ -110,7 +110,8 @@ seasons:
     pf: 1542.5
     pf_color: '#fac675'
     pa: 1669.3
-  notes: []
+  notes:
+  - 4 trades completed
 - year: 2024
   points: true
   rows:
@@ -224,6 +225,7 @@ seasons:
     pa: 1450.6
   notes:
   - Grant joined the league; Fletcher departed.
+  - 4 trades completed
 - year: 2023
   points: true
   rows:
@@ -338,6 +340,7 @@ seasons:
   notes:
   - Playoff field cut back from 8 teams to 6.
   - Dropped the IDP slot and added a third WR starter.
+  - 7 trades completed
 - year: 2022
   points: true
   rows:
@@ -452,6 +455,7 @@ seasons:
   notes:
   - NFL season expanded to 17 games, giving us one more week of fantasy.
   - Bench expanded from 4 spots to 5.
+  - 5 trades completed
 - year: 2021
   points: true
   rows:
@@ -565,6 +569,7 @@ seasons:
     pa: 1392.7
   notes:
   - Injured-reserve slots trimmed from 4 to 1.
+  - 5 trades completed
 - year: 2020
   points: true
   rows:
@@ -678,6 +683,7 @@ seasons:
     pa: 1296.8
   notes:
   - Added injured-reserve (IR) slots.
+  - 6 trades completed
 - year: 2019
   points: true
   rows:
@@ -791,6 +797,7 @@ seasons:
     pa: 1320.7
   notes:
   - Trevor joined the league; Anthony departed.
+  - 8 trades completed
 - year: 2018
   points: true
   rows:

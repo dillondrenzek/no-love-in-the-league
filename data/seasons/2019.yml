@@ -1,9 +1,15 @@
-# 2019 — imported from ESPN by scripts/import_espn.py. Do not hand-edit;
-# re-run the importer to refresh. See ../../ARCHITECTURE.md.
+# 2019 — imported from ESPN by scripts/import_espn.py. Re-run the importer
+# to refresh; only the hand-edited `draft_order:` below is preserved across
+# imports. See ../../ARCHITECTURE.md.
 
 season: 2019
-source: espn-api
+source: the-league-espn-api
 weeks_in_regular_season: 13
+
+# Draft order (1st overall pick first), franchise ids. Optional and HAND-
+# EDITED — preserved across re-imports; remove the block to hide the draft
+# table on the season page.
+draft_order: []
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
@@ -144,3 +150,95 @@ matchups:
   - { week: 16, home: sturmanator15, away: schirmerj, home_score: 88.1, away_score: 109.8, playoff: true }
   - { week: 16, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 71.5, away_score: 83.9, playoff: true }
   - { week: 16, home: zachzoske, away: lukstein, home_score: 117.9, away_score: 110.1, playoff: true }
+
+# Completed trades this season (franchise-keyed). ESPN reveals a trade's
+# contents only to its participants, so trades no merged account was in
+# come through as `complete: false` with empty assets and just the
+# accepting franchise — counted (shown as 'Trade Accepted'), but the
+# players/picks are unknown. `trades_complete` is true only when every
+# trade this season is fully detailed. `trades_known_for` lists the
+# franchises whose manager cookie was merged: their count is EXACT even
+# in an incomplete season (an undetailed trade is one they weren't in),
+# while everyone else's count is a floor ('at least N'). Merge more
+# managers' cookies (.cookies/) to fill gaps.
+trades_complete: false
+trades_known_for:
+  - sturmanator15
+  - theoceanpulse
+trades:
+- week: 0
+  teams:
+  - jackperkins74
+  - sturmanator15
+  assets:
+  - from: sturmanator15
+    to: jackperkins74
+    label: 2.07 pick
+  - from: sturmanator15
+    to: jackperkins74
+    label: 5.06 pick
+  - from: sturmanator15
+    to: jackperkins74
+    label: 7.06 pick
+  - from: jackperkins74
+    to: sturmanator15
+    label: 2.01 pick
+  - from: jackperkins74
+    to: sturmanator15
+    label: 5.12 pick
+  - from: jackperkins74
+    to: sturmanator15
+    label: 7.12 pick
+- week: 0
+  teams:
+  - purpsworth
+  assets: []
+  complete: false
+- week: 0
+  teams:
+  - shawne2520997
+  assets: []
+  complete: false
+- week: 4
+  teams:
+  - lukstein
+  assets: []
+  complete: false
+- week: 4
+  teams:
+  - lukstein
+  - sturmanator15
+  assets:
+  - from: sturmanator15
+    to: lukstein
+    label: Marquise Brown
+  - from: lukstein
+    to: sturmanator15
+    label: Matt Breida
+- week: 7
+  teams:
+  - unclebadtouch38
+  assets: []
+  complete: false
+- week: 8
+  teams:
+  - henpen28
+  assets: []
+  complete: false
+- week: 8
+  teams:
+  - schirmerj
+  - sturmanator15
+  assets:
+  - from: sturmanator15
+    to: schirmerj
+    label: Carlos Hyde
+  - from: sturmanator15
+    to: schirmerj
+    label: Mark Ingram II
+  - from: schirmerj
+    to: sturmanator15
+    label: Le'Veon Bell
+  - from: schirmerj
+    to: sturmanator15
+    label: Benny Snell Jr.
