@@ -113,6 +113,26 @@ makes one request per week, so imports are a little slower. Trades only exist in
 season file once it's imported under this version — re-run the importer once per
 past season (or `scripts/import_all.sh`) to backfill them.
 
+### Filling in trade detail, one manager at a time
+
+ESPN reveals a trade's *contents* (the players and picks) only to the accounts
+that were in it. With just your cookie, trades you weren't part of show up as
+"Trade Accepted" with no detail. As other managers hand over their cookie, import
+each one and it **merges in** — additively, by ESPN trade id, so a new manager's
+detail never clobbers what an earlier import recorded:
+
+```
+scripts/import_manager.sh ~/zach-cookies            # trade-era seasons, then build
+scripts/import_manager.sh ~/zach-cookies 2023 2024  # just these seasons
+```
+
+You don't have to keep anyone's cookie afterward — the detail is already written to
+the season files. Each season tracks `trades_known_for` (whose count is exact) and
+`trades_complete` (every trade detailed). One-time note: season files imported
+*before* trades carried an `id` are re-established with ids on the next full
+import, so run `scripts/import_all.sh` once (with whatever cookies you have) before
+relying on the one-at-a-time merge.
+
 ## Keeping the site current during the season
 
 Run the weekly updater — it imports the one season and rebuilds:

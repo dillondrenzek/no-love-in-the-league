@@ -35,6 +35,18 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+- category: Most Trades
+  value: 15
+  sub_value: null
+  season: null
+  week: null
+  holder: Zach
+  owner_id: zachzoske
+  owner_name: Zach
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
 - category: Most Points in a Week
   value: '184.90'
   sub_value: null

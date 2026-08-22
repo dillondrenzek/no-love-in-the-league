@@ -84,6 +84,45 @@ def existing_draft_order(year):
     return []
 
 
+def existing_trades(year):
+    """Trades already recorded in a season's file, for on-disk accumulation. Files
+    written before trades carried an `id` can't be merged safely, so they're
+    treated as absent — a fresh full import re-establishes them with ids."""
+    path = SEASONS_DIR / f"{year}.yml"
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text()) or {}
+    trades = data.get("trades") or []
+    if any("id" not in t for t in trades):
+        return []
+    return trades
+
+
+def existing_known_for(year):
+    """The `trades_known_for` franchises already recorded for a season."""
+    path = SEASONS_DIR / f"{year}.yml"
+    if path.exists():
+        data = yaml.safe_load(path.read_text()) or {}
+        return data.get("trades_known_for") or []
+    return []
+
+
+def merge_trade_sets(existing, fresh):
+    """Union trades by ESPN trade id, preferring the fully-detailed version over an
+    undetailed 'accepted' stub. This is what lets managers' cookies arrive one at a
+    time: each import fills in the trades that account can see without dropping
+    detail an earlier import already recorded."""
+    by_id = {}
+    for t in list(existing) + list(fresh):
+        tid = t.get("id")
+        if tid is None:
+            continue
+        cur = by_id.get(tid)
+        if cur is None or (not cur.get("assets") and t.get("assets")):
+            by_id[tid] = t
+    return sorted(by_id.values(), key=lambda x: (x.get("week") or 0, x.get("teams") or []))
+
+
 def resolve_franchises(team_rows, registry):
     """Map each team_id -> franchise id, updating `registry` (list of dicts).
 
@@ -152,7 +191,7 @@ def build_trades(trade_rows, team_to_fid, team_count):
         groups[r["trade_id"]].append(r)
 
     trades = []
-    for items in groups.values():
+    for tid, items in groups.items():
         week = items[0].get("scoring_period") or 0
         participants, assets = set(), []
         for r in items:
@@ -172,6 +211,7 @@ def build_trades(trade_rows, team_to_fid, team_count):
         if assets:
             # Fully detailed — no `complete` flag needed (absent == complete).
             trades.append({
+                "id": tid,
                 "week": week,
                 "teams": sorted(participants),
                 "assets": assets,
@@ -182,6 +222,7 @@ def build_trades(trade_rows, team_to_fid, team_count):
             acceptor = next((team_to_fid.get(r.get("to_team_id")) for r in items
                              if team_to_fid.get(r.get("to_team_id"))), None)
             trades.append({
+                "id": tid,
                 "week": week,
                 "teams": [acceptor] if acceptor else [],
                 "assets": [],
@@ -291,8 +332,9 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         "# trade this season is fully detailed. `trades_known_for` lists the",
         "# franchises whose manager cookie was merged: their count is EXACT even",
         "# in an incomplete season (an undetailed trade is one they weren't in),",
-        "# while everyone else's count is a floor ('at least N'). Merge more",
-        "# managers' cookies (.cookies/) to fill gaps.",
+        "# while everyone else's count is a floor ('at least N'). Feed managers'",
+        "# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each",
+        "# trade's `id` is ESPN's trade id, used to merge imports without clobbering.",
         f"trades_complete: {'true' if trades_complete else 'false'}",
     ]
     if trades_known_for:
@@ -338,10 +380,14 @@ def main():
     ap.add_argument("year", type=int)
     ap.add_argument("--league-id", type=int, default=None,
                     help="override the default league id")
+    ap.add_argument("--cookies", metavar="FILE",
+                    help="use ONE manager's cookie file for the whole import and "
+                         "merge their trade detail into the season on disk; without "
+                         "it, all cookie files in .cookies/ are merged in one run")
     ap.add_argument("--stdout", action="store_true", help="print YAML, write nothing")
     args = ap.parse_args()
 
-    cookies_file = os.environ.get("ESPN_COOKIES_FILE") or str(COOKIES_PATH)
+    cookies_file = args.cookies or os.environ.get("ESPN_COOKIES_FILE") or str(COOKIES_PATH)
     lg_kwargs = {"year": args.year, "cookies_file": cookies_file}
     if args.league_id:
         lg_kwargs["league_id"] = args.league_id
@@ -362,7 +408,7 @@ def main():
     # across every managers' cookie file we have — more accounts detail more
     # trades. The transactions endpoint 404s for very old seasons; treat that as
     # "trades unknown this year" rather than failing the whole import.
-    files = cookie_files() or [cookies_file]
+    files = [args.cookies] if args.cookies else (cookie_files() or [cookies_file])
     # SWID -> franchise id, so a manager's cookie can be tied to their franchise.
     # ESPN returns the owner SWID (manager_id) and the cookie's ESPN_SWID in the
     # same braced form; normalise both just in case.
@@ -394,9 +440,13 @@ def main():
         if fid:
             known_for.add(fid)
     trade_rows = merge_trades(*trade_lists) if trade_lists else []
-    trades = build_trades(trade_rows, team_to_fid, len(team_to_fid))
-    # Complete only if we fetched trades AND every one came back fully detailed.
-    trades_complete = fetched and all(t.get("complete", True) for t in trades)
+    fresh = build_trades(trade_rows, team_to_fid, len(team_to_fid))
+    # Accumulate on disk: merge this run's detail into what earlier imports
+    # recorded (by ESPN trade id), and grow the "known" set. This is what makes a
+    # single-manager cookie safe to run on its own — it fills gaps, never clobbers.
+    trades = merge_trade_sets(existing_trades(args.year), fresh)
+    known_for |= set(existing_known_for(args.year))
+    trades_complete = all(t.get("complete", True) for t in trades)
     incomplete = sum(1 for t in trades if not t.get("complete", True))
 
     reg_count = (sched.get("matchupPeriodCount")
