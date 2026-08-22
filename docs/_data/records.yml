@@ -36,7 +36,7 @@ records:
   opp_owner_name: null
   opp_team: null
 - category: Most Trades
-  value: 15
+  value: '15'
   sub_value: null
   season: null
   week: null

@@ -7,6 +7,7 @@ active:
   win_color: '#f9bd5d'
   titles: '3'
   sackos: 1
+  trades: 6
   best_finish:
     type: shiva
     years:
@@ -21,6 +22,7 @@ active:
   win_color: '#f38f44'
   titles: '2'
   sackos: 2
+  trades: 3
   best_finish:
     type: shiva
     years:
@@ -34,6 +36,7 @@ active:
   win_color: '#f6a549'
   titles: '2'
   sackos: 1
+  trades: 6
   best_finish:
     type: shiva
     years:
@@ -47,6 +50,7 @@ active:
   win_color: '#f28a42'
   titles: '1'
   sackos: 0
+  trades: 12
   best_finish:
     type: shiva
     years:
@@ -59,6 +63,7 @@ active:
   win_color: '#f9b64d'
   titles: '1'
   sackos: 2
+  trades: 15
   best_finish:
     type: shiva
     years:
@@ -71,6 +76,7 @@ active:
   win_color: '#fac066'
   titles: '1'
   sackos: 1
+  trades: 8
   best_finish:
     type: shiva
     years:
@@ -83,6 +89,7 @@ active:
   win_color: '#f49545'
   titles: ½
   sackos: 0
+  trades: 7
   best_finish:
     type: cochamp
     years:
@@ -95,6 +102,7 @@ active:
   win_color: '#f9b64d'
   titles: ½
   sackos: 0
+  trades: 1
   best_finish:
     type: cochamp
     years:
@@ -107,6 +115,7 @@ active:
   win_color: '#f59b47'
   titles: '0'
   sackos: 0
+  trades: 0
   best_finish:
     type: place
     ordinal: 4th
@@ -120,6 +129,7 @@ active:
   win_color: '#fac36c'
   titles: '0'
   sackos: 0
+  trades: 5
   best_finish:
     type: place
     ordinal: 2nd
@@ -133,6 +143,7 @@ active:
   win_color: '#fbd496'
   titles: '0'
   sackos: 0
+  trades: 0
   best_finish:
     type: place
     ordinal: 2nd
@@ -146,6 +157,7 @@ active:
   win_color: '#fbd9a1'
   titles: '0'
   sackos: 2
+  trades: 4
   best_finish:
     type: place
     ordinal: 4th
@@ -160,6 +172,7 @@ inactive:
   win_color: '#fac065'
   titles: '1'
   sackos: 2
+  trades: 3
   best_finish:
     type: shiva
     years:
@@ -172,6 +185,7 @@ inactive:
   win_color: '#f38b43'
   titles: '0'
   sackos: 0
+  trades: 0
   best_finish:
     type: place
     ordinal: 5th
@@ -185,6 +199,7 @@ inactive:
   win_color: '#f9ba56'
   titles: '0'
   sackos: 1
+  trades: 0
   best_finish:
     type: place
     ordinal: 2nd
@@ -199,6 +214,7 @@ inactive:
   win_color: '#fdf1da'
   titles: '0'
   sackos: 0
+  trades: 0
   best_finish:
     type: place
     ordinal: 9th
