@@ -340,6 +340,20 @@ tbody td a:hover { color: var(--brand); }
 .trade__flow li { margin: 2px 0; line-height: 1.45; }
 .trade__giver { color: var(--muted); }
 
+// ---- Keeper-cost screenshots (season page) ----------------------------------
+// Full-width responsive images; each links to the full-size file so phones can
+// tap to zoom rather than squint at a shrunken screenshot.
+.keepers { margin: 0.6em 0 1.8em; }
+.keepers__hint { color: var(--muted); font-size: 0.9rem; margin: -0.2em 0 1em; }
+.keepers__shot { display: block; margin: 0 0 14px; }
+.keepers__shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
 // Empty state for a section with no rows yet (e.g. an owner with no trades).
 .empty-state {
   color: var(--muted);
