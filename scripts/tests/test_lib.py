@@ -97,9 +97,11 @@ def test_incomplete_trades_credit_and_log_accepted():
     # The detailed trade logs a full entry, not an accepted stub.
     assert len(profiles["a"]["trade_log"]) == 1
     assert profiles["a"]["trade_log"][0].get("accepted") is not True
-    # "Most Trades" is withheld while any season is incomplete.
+    # "Most Trades" still shows while a season is incomplete, but a non-cookie
+    # holder's total reads as a floor ("N+"), since they might be a hidden proposer.
     recs = {r["category"]: r for r in compute_records([s], {})}
-    assert "Most Trades" not in recs
+    assert "Most Trades" in recs
+    assert recs["Most Trades"]["value"].endswith("+")
 
 
 def test_cookie_holder_count_is_exact_in_incomplete_season():

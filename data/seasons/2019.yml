@@ -165,6 +165,7 @@ trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
+  - zachzoske
 trades:
 - week: 0
   teams:
@@ -192,8 +193,26 @@ trades:
 - week: 0
   teams:
   - purpsworth
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: purpsworth
+    to: zachzoske
+    label: 2.08 pick
+  - from: purpsworth
+    to: zachzoske
+    label: 3.05 pick
+  - from: purpsworth
+    to: zachzoske
+    label: 5.05 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 2.05 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 3.08 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 5.08 pick
 - week: 0
   teams:
   - shawne2520997
@@ -218,13 +237,28 @@ trades:
 - week: 7
   teams:
   - unclebadtouch38
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: unclebadtouch38
+    to: zachzoske
+    label: Zach Ertz
+  - from: zachzoske
+    to: unclebadtouch38
+    label: Austin Ekeler
 - week: 8
   teams:
   - henpen28
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: henpen28
+    to: zachzoske
+    label: Ezekiel Elliott
+  - from: zachzoske
+    to: henpen28
+    label: Chris Carson
+  - from: zachzoske
+    to: henpen28
+    label: Chase Edmonds
 - week: 8
   teams:
   - schirmerj

@@ -254,13 +254,26 @@ detail:
       - owner_id: whowonthelastsuperbowl
         owner_name: Nate
         team: Trick or Trick It’s Mike Vick
-        gave: []
+        gave:
+        - Chase Brown
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Big Brown Dak Makes em Waddle
+        gave:
+        - Kenneth Walker III
+        - Zach Charbonnet
     - week: 11
       parties:
       - owner_id: whowonthelastsuperbowl
         owner_name: Nate
         team: Trick or Trick It’s Mike Vick
-        gave: []
+        gave:
+        - Dalton Kincaid
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Big Brown Dak Makes em Waddle
+        gave:
+        - Stefon Diggs
     champ: *id001
     sacko: *id002
   2024:
@@ -403,7 +416,20 @@ detail:
       - owner_id: purpsworth
         owner_name: Trevor
         team: I am dead inside
-        gave: []
+        gave:
+        - Nico Collins
+        - 2.08 pick
+        - 4.08 pick
+        - 6.08 pick
+        - 8.08 pick
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Nix Out For Harambe
+        gave:
+        - 2.05 pick
+        - 4.05 pick
+        - 6.05 pick
+        - 8.05 pick
     - week: 0
       parties:
       - owner_id: shawne2520997
@@ -569,10 +595,31 @@ detail:
         - Eagles D/ST
     - week: 4
       parties:
+      - owner_id: whowonthelastsuperbowl
+        owner_name: Nate
+        team: Trick or Trick It’s Mike Vick
+        gave:
+        - Romeo Doubs
+        - Christian Watson
+        - Josh Jacobs
       - owner_id: zachzoske
         owner_name: Zach
         team: Zach's Juicy Fantasy Teamussy
-        gave: []
+        gave:
+        - Jaylen Warren
+        - Ja'Marr Chase
+    - week: 11
+      parties:
+      - owner_id: henpen28
+        owner_name: Henry
+        team: Three's Company
+        gave:
+        - Jaylen Waddle
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Zach's Juicy Fantasy Teamussy
+        gave:
+        - C.J. Stroud
     - week: 11
       parties:
       - owner_id: jackperkins74
@@ -599,12 +646,6 @@ detail:
         team: Zach's Juicy Fantasy Teamussy
         gave:
         - James Conner
-    - week: 11
-      parties:
-      - owner_id: zachzoske
-        owner_name: Zach
-        team: Zach's Juicy Fantasy Teamussy
-        gave: []
     - week: 13
       parties:
       - owner_id: lukstein
@@ -748,7 +789,15 @@ detail:
       - owner_id: henpen28
         owner_name: Henry
         team: Consensual Trades
-        gave: []
+        gave:
+        - 1.12 pick
+        - 2.01 pick
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Risk it for The Biscuit
+        gave:
+        - 1.06 pick
+        - 2.07 pick
     - week: 8
       parties:
       - owner_id: jackperkins74
@@ -781,7 +830,16 @@ detail:
       - owner_id: unclebadtouch38
         owner_name: Fletcher
         team: Mr. Irrelevant
-        gave: []
+        gave:
+        - Tee Higgins
+        - Devin Singletary
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Risk it for The Biscuit
+        gave:
+        - D'Andre Swift
+        - Eno Benjamin
+        - Tyler Boyd
     - week: 10
       parties:
       - owner_id: henpen28
@@ -925,10 +983,16 @@ detail:
         gave: []
     - week: 4
       parties:
+      - owner_id: purpsworth
+        owner_name: Trevor
+        team: WA Fantasy Football Team
+        gave:
+        - George Kittle
       - owner_id: zachzoske
         owner_name: Zach
         team: ESPN 8 The Ocho
-        gave: []
+        gave:
+        - Jamaal Williams
     - week: 8
       parties:
       - owner_id: purpsworth
@@ -1095,7 +1159,16 @@ detail:
       - owner_id: henpen28
         owner_name: Henry
         team: Scat Play
-        gave: []
+        gave:
+        - Davante Adams
+        - Mark Andrews
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Calvin and (Jac)Obs
+        gave:
+        - Travis Kelce
+        - Marquise Brown
+        - Damien Harris
     - week: 5
       parties:
       - owner_id: sturmanator15
@@ -1282,7 +1355,17 @@ detail:
       - owner_id: purpsworth
         owner_name: Trevor
         team: AB’s Helmet
-        gave: []
+        gave:
+        - 2.08 pick
+        - 3.05 pick
+        - 5.05 pick
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Eleven In Crocks
+        gave:
+        - 2.05 pick
+        - 3.08 pick
+        - 5.08 pick
     - week: 0
       parties:
       - owner_id: shawne2520997
@@ -1312,13 +1395,26 @@ detail:
       - owner_id: unclebadtouch38
         owner_name: Fletcher
         team: Set_The_ RAT_TRAP_!
-        gave: []
+        gave:
+        - Zach Ertz
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Eleven In Crocks
+        gave:
+        - Austin Ekeler
     - week: 8
       parties:
       - owner_id: henpen28
         owner_name: Henry
         team: Tom Brady's Fluffer
-        gave: []
+        gave:
+        - Ezekiel Elliott
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Eleven In Crocks
+        gave:
+        - Chris Carson
+        - Chase Edmonds
     - week: 8
       parties:
       - owner_id: schirmerj

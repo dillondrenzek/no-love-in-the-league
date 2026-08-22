@@ -168,6 +168,7 @@ trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
+  - zachzoske
 trades:
 - week: 0
   teams:
@@ -189,8 +190,35 @@ trades:
 - week: 0
   teams:
   - purpsworth
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: purpsworth
+    to: zachzoske
+    label: Nico Collins
+  - from: purpsworth
+    to: zachzoske
+    label: 2.08 pick
+  - from: purpsworth
+    to: zachzoske
+    label: 4.08 pick
+  - from: purpsworth
+    to: zachzoske
+    label: 6.08 pick
+  - from: purpsworth
+    to: zachzoske
+    label: 8.08 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 2.05 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 4.05 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 6.05 pick
+  - from: zachzoske
+    to: purpsworth
+    label: 8.05 pick
 - week: 0
   teams:
   - shawne2520997

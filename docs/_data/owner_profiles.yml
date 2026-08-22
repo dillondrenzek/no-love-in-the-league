@@ -560,7 +560,7 @@ purpsworth:
     titles: '0'
     sackos: 0
     playoff_apps: 4
-    trades: 4
+    trades: 5
     trades_known: false
     seasons: 7
     best_finish:
@@ -713,10 +713,21 @@ purpsworth:
   trades:
   - year: 2024
     week: 0
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - 2.05 pick
+    - 4.05 pick
+    - 6.05 pick
+    - 8.05 pick
+    gave:
+    - Nico Collins
+    - 2.08 pick
+    - 4.08 pick
+    - 6.08 pick
+    - 8.08 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Nix Out For Harambe
   - year: 2022
     week: 9
     got:
@@ -739,12 +750,30 @@ purpsworth:
     - id: theoceanpulse
       name: Dillon
       team: Hot Chubb Time Machine
+  - year: 2021
+    week: 4
+    got:
+    - Jamaal Williams
+    gave:
+    - George Kittle
+    with:
+    - id: zachzoske
+      name: Zach
+      team: ESPN 8 The Ocho
   - year: 2019
     week: 0
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - 2.05 pick
+    - 3.08 pick
+    - 5.08 pick
+    gave:
+    - 2.08 pick
+    - 3.05 pick
+    - 5.05 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Eleven In Crocks
   trades_known: false
 gganoom:
   name: Grant
@@ -1234,7 +1263,7 @@ zachzoske:
     titles: '1'
     sackos: 2
     playoff_apps: 5
-    trades: 6
+    trades: 15
     trades_known: false
     seasons: 12
     best_finish:
@@ -1446,6 +1475,27 @@ zachzoske:
     avg_pa: 98.9
   trades:
   - year: 2025
+    week: 11
+    got:
+    - Chase Brown
+    gave:
+    - Kenneth Walker III
+    - Zach Charbonnet
+    with:
+    - id: whowonthelastsuperbowl
+      name: Nate
+      team: Trick or Trick It’s Mike Vick
+  - year: 2025
+    week: 11
+    got:
+    - Dalton Kincaid
+    gave:
+    - Stefon Diggs
+    with:
+    - id: whowonthelastsuperbowl
+      name: Nate
+      team: Trick or Trick It’s Mike Vick
+  - year: 2025
     week: 0
     got:
     - 1.04 pick
@@ -1460,6 +1510,33 @@ zachzoske:
     - id: theoceanpulse
       name: Dillon
       team: Thoughts and Players
+  - year: 2024
+    week: 0
+    got:
+    - Nico Collins
+    - 2.08 pick
+    - 4.08 pick
+    - 6.08 pick
+    - 8.08 pick
+    gave:
+    - 2.05 pick
+    - 4.05 pick
+    - 6.05 pick
+    - 8.05 pick
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: I am dead inside
+  - year: 2023
+    week: 11
+    got:
+    - Jaylen Waddle
+    gave:
+    - C.J. Stroud
+    with:
+    - id: henpen28
+      name: Henry
+      team: Three's Company
   - year: 2023
     week: 11
     got:
@@ -1471,17 +1548,43 @@ zachzoske:
       name: Dillon
       team: Thoughts and Players
   - year: 2023
-    week: 11
-    accepted: true
-    got: []
-    gave: []
-    with: []
-  - year: 2023
     week: 4
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Romeo Doubs
+    - Christian Watson
+    - Josh Jacobs
+    gave:
+    - Jaylen Warren
+    - Ja'Marr Chase
+    with:
+    - id: whowonthelastsuperbowl
+      name: Nate
+      team: Trick or Trick It’s Mike Vick
+  - year: 2022
+    week: 9
+    got:
+    - Tee Higgins
+    - Devin Singletary
+    gave:
+    - D'Andre Swift
+    - Eno Benjamin
+    - Tyler Boyd
+    with:
+    - id: unclebadtouch38
+      name: Fletcher
+      team: Mr. Irrelevant
+  - year: 2022
+    week: 0
+    got:
+    - 1.12 pick
+    - 2.01 pick
+    gave:
+    - 1.06 pick
+    - 2.07 pick
+    with:
+    - id: henpen28
+      name: Henry
+      team: Consensual Trades
   - year: 2021
     week: 11
     got:
@@ -1494,10 +1597,62 @@ zachzoske:
       team: Hot Chubb Time Machine
   - year: 2021
     week: 4
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - George Kittle
+    gave:
+    - Jamaal Williams
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: WA Fantasy Football Team
+  - year: 2020
+    week: 5
+    got:
+    - Davante Adams
+    - Mark Andrews
+    gave:
+    - Travis Kelce
+    - Marquise Brown
+    - Damien Harris
+    with:
+    - id: henpen28
+      name: Henry
+      team: Scat Play
+  - year: 2019
+    week: 8
+    got:
+    - Ezekiel Elliott
+    gave:
+    - Chris Carson
+    - Chase Edmonds
+    with:
+    - id: henpen28
+      name: Henry
+      team: Tom Brady's Fluffer
+  - year: 2019
+    week: 7
+    got:
+    - Zach Ertz
+    gave:
+    - Austin Ekeler
+    with:
+    - id: unclebadtouch38
+      name: Fletcher
+      team: Set_The_ RAT_TRAP_!
+  - year: 2019
+    week: 0
+    got:
+    - 2.08 pick
+    - 3.05 pick
+    - 5.05 pick
+    gave:
+    - 2.05 pick
+    - 3.08 pick
+    - 5.08 pick
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: AB’s Helmet
   trades_known: false
 henpen28:
   name: Henry
@@ -1524,7 +1679,7 @@ henpen28:
     titles: '3'
     sackos: 1
     playoff_apps: 7
-    trades: 5
+    trades: 6
     trades_known: false
     seasons: 12
     best_finish:
@@ -1737,6 +1892,16 @@ henpen28:
     avg_pf: 103.9
     avg_pa: 101.5
   trades:
+  - year: 2023
+    week: 11
+    got:
+    - C.J. Stroud
+    gave:
+    - Jaylen Waddle
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Zach's Juicy Fantasy Teamussy
   - year: 2022
     week: 10
     got:
@@ -1749,10 +1914,16 @@ henpen28:
       team: Trey Lanced my ❤️
   - year: 2022
     week: 0
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - 1.06 pick
+    - 2.07 pick
+    gave:
+    - 1.12 pick
+    - 2.01 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Risk it for The Biscuit
   - year: 2020
     week: 5
     accepted: true
@@ -1761,16 +1932,28 @@ henpen28:
     with: []
   - year: 2020
     week: 5
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Travis Kelce
+    - Marquise Brown
+    - Damien Harris
+    gave:
+    - Davante Adams
+    - Mark Andrews
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Calvin and (Jac)Obs
   - year: 2019
     week: 8
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Chris Carson
+    - Chase Edmonds
+    gave:
+    - Ezekiel Elliott
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Eleven In Crocks
   trades_known: false
 lukstein:
   name: Luke
@@ -2096,7 +2279,7 @@ whowonthelastsuperbowl:
     titles: '0'
     sackos: 2
     playoff_apps: 4
-    trades: 3
+    trades: 4
     trades_known: false
     seasons: 12
     best_finish:
@@ -2310,16 +2493,38 @@ whowonthelastsuperbowl:
   trades:
   - year: 2025
     week: 11
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Kenneth Walker III
+    - Zach Charbonnet
+    gave:
+    - Chase Brown
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Big Brown Dak Makes em Waddle
   - year: 2025
     week: 11
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Stefon Diggs
+    gave:
+    - Dalton Kincaid
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Big Brown Dak Makes em Waddle
+  - year: 2023
+    week: 4
+    got:
+    - Jaylen Warren
+    - Ja'Marr Chase
+    gave:
+    - Romeo Doubs
+    - Christian Watson
+    - Josh Jacobs
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Zach's Juicy Fantasy Teamussy
   - year: 2021
     week: 10
     accepted: true
@@ -3298,10 +3503,17 @@ unclebadtouch38:
   trades:
   - year: 2022
     week: 9
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - D'Andre Swift
+    - Eno Benjamin
+    - Tyler Boyd
+    gave:
+    - Tee Higgins
+    - Devin Singletary
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Risk it for The Biscuit
   - year: 2020
     week: 5
     got:
@@ -3314,10 +3526,14 @@ unclebadtouch38:
       team: Lickin Brown in my McLaurin
   - year: 2019
     week: 7
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Austin Ekeler
+    gave:
+    - Zach Ertz
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Eleven In Crocks
   trades_known: false
 ajstewart04:
   name: Anthony
