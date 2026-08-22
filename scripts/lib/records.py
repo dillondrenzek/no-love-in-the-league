@@ -87,19 +87,10 @@ def _standings_records(seasons, franchises, overrides):
 
 
 def _most_trades(seasons, franchises):
-    """Franchise with the most trades participated in (both sides count).
-
-    Counts every recorded trade. A franchise's total is a floor when it played a
-    season with undetailed trades and wasn't a cookie-holder there (it could be a
-    hidden proposer) — shown as 'N+'. A cookie-holder's count is exact even in an
-    incomplete season, so it shows plainly."""
-    counts, floor = {}, set()
+    """Franchise with the most trades participated in (both sides count), over
+    every recorded trade."""
+    counts = {}
     for season in seasons:
-        if not season_trades_complete(season):
-            known_for = set(season.get("trades_known_for") or [])
-            for r in get_standings(season, franchises):
-                if r["id"] not in known_for:
-                    floor.add(r["id"])
         for trade in season.get("trades") or []:
             for fid in trade.get("teams") or []:
                 counts[fid] = counts.get(fid, 0) + 1
@@ -107,8 +98,7 @@ def _most_trades(seasons, franchises):
         return None
     fid, n = max(counts.items(), key=lambda kv: kv[1])
     name = short_name_of(fid, franchises) if fid in franchises else fid
-    value = f"{n}+" if fid in floor else str(n)
-    return {"category": "Most Trades", "holder": name, "value": value,
+    return {"category": "Most Trades", "holder": name, "value": str(n),
             "season": None, "week": None,
             "owner_id": fid if fid in franchises else None,
             "owner_name": name, "team": None}

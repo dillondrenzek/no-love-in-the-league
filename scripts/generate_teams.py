@@ -74,6 +74,7 @@ def _owner_row(p):
         "record": rec_str(reg["w"], reg["l"], reg["t"]),
         "win_pct": pct(reg["win_pct"]), "win_color": heat_color(reg["win_pct"], 0.3, 0.7),
         "titles": fmt_titles(p["titles"]), "sackos": p["sackos"],
+        "trades": p.get("trades", 0),
         "best_finish": _best_finish_data(p),
     }
 
