@@ -165,6 +165,7 @@ trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
+  - zachzoske
 trades:
 - week: 5
   teams:
@@ -174,8 +175,23 @@ trades:
 - week: 5
   teams:
   - henpen28
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: henpen28
+    to: zachzoske
+    label: Davante Adams
+  - from: henpen28
+    to: zachzoske
+    label: Mark Andrews
+  - from: zachzoske
+    to: henpen28
+    label: Travis Kelce
+  - from: zachzoske
+    to: henpen28
+    label: Marquise Brown
+  - from: zachzoske
+    to: henpen28
+    label: Damien Harris
 - week: 5
   teams:
   - sturmanator15

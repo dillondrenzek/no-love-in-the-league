@@ -164,10 +164,11 @@ matchups:
 # in an incomplete season (an undetailed trade is one they weren't in),
 # while everyone else's count is a floor ('at least N'). Merge more
 # managers' cookies (.cookies/) to fill gaps.
-trades_complete: false
+trades_complete: true
 trades_known_for:
   - sturmanator15
   - theoceanpulse
+  - zachzoske
 trades:
 - week: 0
   teams:
@@ -199,9 +200,35 @@ trades:
     label: Eagles D/ST
 - week: 4
   teams:
+  - whowonthelastsuperbowl
   - zachzoske
-  assets: []
-  complete: false
+  assets:
+  - from: whowonthelastsuperbowl
+    to: zachzoske
+    label: Romeo Doubs
+  - from: whowonthelastsuperbowl
+    to: zachzoske
+    label: Christian Watson
+  - from: whowonthelastsuperbowl
+    to: zachzoske
+    label: Josh Jacobs
+  - from: zachzoske
+    to: whowonthelastsuperbowl
+    label: Jaylen Warren
+  - from: zachzoske
+    to: whowonthelastsuperbowl
+    label: Ja'Marr Chase
+- week: 11
+  teams:
+  - henpen28
+  - zachzoske
+  assets:
+  - from: henpen28
+    to: zachzoske
+    label: Jaylen Waddle
+  - from: zachzoske
+    to: henpen28
+    label: C.J. Stroud
 - week: 11
   teams:
   - jackperkins74
@@ -230,11 +257,6 @@ trades:
   - from: zachzoske
     to: theoceanpulse
     label: James Conner
-- week: 11
-  teams:
-  - zachzoske
-  assets: []
-  complete: false
 - week: 13
   teams:
   - lukstein

@@ -171,6 +171,7 @@ trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
+  - zachzoske
 trades:
 - week: 1
   teams:
@@ -179,9 +180,15 @@ trades:
   complete: false
 - week: 4
   teams:
+  - purpsworth
   - zachzoske
-  assets: []
-  complete: false
+  assets:
+  - from: purpsworth
+    to: zachzoske
+    label: George Kittle
+  - from: zachzoske
+    to: purpsworth
+    label: Jamaal Williams
 - week: 8
   teams:
   - purpsworth

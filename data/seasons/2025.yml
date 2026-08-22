@@ -164,10 +164,11 @@ matchups:
 # in an incomplete season (an undetailed trade is one they weren't in),
 # while everyone else's count is a floor ('at least N'). Merge more
 # managers' cookies (.cookies/) to fill gaps.
-trades_complete: false
+trades_complete: true
 trades_known_for:
   - sturmanator15
   - theoceanpulse
+  - zachzoske
 trades:
 - week: 0
   teams:
@@ -212,10 +213,25 @@ trades:
 - week: 11
   teams:
   - whowonthelastsuperbowl
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: zachzoske
+    to: whowonthelastsuperbowl
+    label: Kenneth Walker III
+  - from: zachzoske
+    to: whowonthelastsuperbowl
+    label: Zach Charbonnet
+  - from: whowonthelastsuperbowl
+    to: zachzoske
+    label: Chase Brown
 - week: 11
   teams:
   - whowonthelastsuperbowl
-  assets: []
-  complete: false
+  - zachzoske
+  assets:
+  - from: zachzoske
+    to: whowonthelastsuperbowl
+    label: Stefon Diggs
+  - from: whowonthelastsuperbowl
+    to: zachzoske
+    label: Dalton Kincaid
