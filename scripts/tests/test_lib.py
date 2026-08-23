@@ -73,6 +73,22 @@ def test_trade_counts_and_most_trades_record():
     assert recs["Most Trades"]["value"] == "2"
 
 
+def test_in_progress_season_trades_still_count():
+    from lib.teams import compute_profiles
+    done = matchup_season(2025)                       # finished, no trades
+    live = {"season": 2026, "status": "in_progress",
+            "teams": {"a": "A", "b": "B"}, "matchups": [],
+            "trades": [{"id": "x", "week": 1, "teams": ["a", "b"],
+                        "assets": [{"from": "a", "to": "b", "label": "Player"}]}]}
+    # Standings/records come from finished seasons; trades from both.
+    profiles = compute_profiles([done], {}, trade_seasons=[done, live])
+    assert profiles["a"]["trades"] == 1 and profiles["b"]["trades"] == 1  # 2026 counts
+    assert profiles["a"]["seasons_count"] == 1        # but 2026 adds no season row
+    assert profiles["a"]["trade_log"][0]["year"] == 2026
+    recs = {r["category"]: r for r in compute_records([done], {}, trade_seasons=[done, live])}
+    assert recs["Most Trades"]["value"] == "1"
+
+
 def test_incomplete_trades_credit_and_log_accepted():
     from lib.teams import compute_profiles
     s = matchup_season(2025)

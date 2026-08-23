@@ -3,7 +3,7 @@
 # imports. See ../../ARCHITECTURE.md.
 
 season: 2026
-source: espn-api
+source: the-league-espn-api
 weeks_in_regular_season: 14
 
 # Season still in progress: standings reflect the current order and this
@@ -62,3 +62,42 @@ final_standings:
   - shawne2520997
 
 matchups: []  # no games played yet
+
+# Completed trades this season (franchise-keyed). ESPN reveals a trade's
+# contents only to its participants, so trades no merged account was in
+# come through as `complete: false` with empty assets and just the
+# accepting franchise — counted (shown as 'Trade Accepted'), but the
+# players/picks are unknown. `trades_complete` is true only when every
+# trade this season is fully detailed. `trades_known_for` lists the
+# franchises whose manager cookie was merged: their count is EXACT even
+# in an incomplete season (an undetailed trade is one they weren't in),
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
+trades_complete: true
+trades_known_for:
+  - sturmanator15
+  - theoceanpulse
+  - zachzoske
+trades:
+- id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
+  week: 0
+  teams:
+  - shawne2520997
+  - theoceanpulse
+  assets:
+  - from: theoceanpulse
+    to: shawne2520997
+    label: Nico Collins
+  - from: theoceanpulse
+    to: shawne2520997
+    label: 5.10 pick
+  - from: theoceanpulse
+    to: shawne2520997
+    label: 9.10 pick
+  - from: shawne2520997
+    to: theoceanpulse
+    label: 5.04 pick
+  - from: shawne2520997
+    to: theoceanpulse
+    label: 9.04 pick

@@ -57,7 +57,7 @@ def _standings_row_entry(category, year, row, value, franchises):
             "team": row["name"]}
 
 
-def _standings_records(seasons, franchises, overrides):
+def _standings_records(seasons, franchises, overrides, trade_seasons=None):
     all_rows = [(s["season"], r) for s in seasons for r in get_standings(s, franchises)]
     if not all_rows:
         return []
@@ -80,7 +80,7 @@ def _standings_records(seasons, franchises, overrides):
                             "owner_id": champ_id if champ_id in franchises else None,
                             "owner_name": display.get(champ_id), "team": None})
 
-    trade_rec = _most_trades(seasons, franchises)
+    trade_rec = _most_trades(trade_seasons if trade_seasons is not None else seasons, franchises)
     if trade_rec:
         records.append(trade_rec)
     return records
@@ -193,9 +193,11 @@ def _score_records(seasons, franchises, overrides):
     ]
 
 
-def compute_records(seasons, franchises=None, overrides=None):
-    """All currently-computable record-book entries."""
+def compute_records(seasons, franchises=None, overrides=None, trade_seasons=None):
+    """All currently-computable record-book entries. Standings/score records use
+    `seasons` (finished only); the trades record uses `trade_seasons` (defaults to
+    `seasons`) so in-progress trades still count."""
     franchises = franchises or {}
     overrides = overrides or {}
-    return (_standings_records(seasons, franchises, overrides)
-            + _score_records(seasons, franchises, overrides))
+    records = _standings_records(seasons, franchises, overrides, trade_seasons)
+    return records + _score_records(seasons, franchises, overrides)

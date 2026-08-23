@@ -24,13 +24,14 @@ DATA_PATH = ROOT / "docs" / "_data" / "records.yml"
 def main():
     franchises = load_franchises()
     seasons = load_seasons()
+    trade_seasons = load_seasons(include_in_progress=True)  # trades count mid-season
     overrides = load_overrides()
 
     keep = ("category", "value", "sub_value", "season", "week", "holder",
             "owner_id", "owner_name", "team",
             "opp_owner_id", "opp_owner_name", "opp_team")
     records = [{k: r.get(k) for k in keep}
-               for r in compute_records(seasons, franchises, overrides)]
+               for r in compute_records(seasons, franchises, overrides, trade_seasons=trade_seasons)]
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(yaml.safe_dump({"records": records}, sort_keys=False, allow_unicode=True),
                          encoding="utf-8")
