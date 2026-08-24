@@ -49,7 +49,7 @@ someone takes it from you. The Shiva may add a rule to be implemented in the lea
 
 Last place. Finishing last earns you the **Sacko** — the mark of shame that lives on forever.
 
-**Punishment:** A beer or milk mile. If the punishment is not completed by draft day the next year - with video proof - the league selects your 2nd round pick.
+**Punishment:** A beer or milk mile. If the punishment is not completed by draft day the next year - with video proof - the league selects your 2nd round pick. Additionally, the Sacko's team for the entire following year will be named by the Shiva.
 
 ## Playoffs
 
