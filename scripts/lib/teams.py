@@ -41,8 +41,13 @@ def _apply_game(profiles, fid, opp, pts, opp_pts):
         rec["t"] += 1
 
 
-def compute_profiles(seasons, franchises, overrides=None):
-    """Return {franchise_id: profile}, richest first is up to the caller."""
+def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
+    """Return {franchise_id: profile}, richest first is up to the caller.
+
+    Standings/records/head-to-head are built from `seasons` (finished seasons
+    only — a half-season shouldn't skew all-time stats). Trades are complete
+    events even mid-season, so they're counted from `trade_seasons` (defaults to
+    `seasons`) — pass the in-progress seasons too so their trades still count."""
     overrides = overrides or {}
     profiles = {}
 
@@ -99,22 +104,25 @@ def compute_profiles(seasons, franchises, overrides=None):
         for fid in (seeded if seeded is not None else in_playoffs):
             prof(fid)["berths"] += 1
 
-        # Trades: every franchise on a trade gets credit; complete trades also get
-        # a per-owner detail entry. ESPN scopes a trade's contents to its
-        # participants, so a trade no cookie-holder was in lists only its
-        # accepting team (credited) and carries no assets — it shows in that
-        # owner's history as "Trade Accepted" with no detail.
-        #
-        # Certainty is decided per owner, not per season. An undetailed trade is
-        # by definition one no cookie-holder participated in, so a cookie-holder's
-        # count is EXACT even in an incomplete season. `trades_known_for` lists the
-        # franchises whose manager cookie was supplied; everyone else in a season
-        # with any undetailed trade is a floor (they might be a hidden proposer),
-        # so trades_known=False for them and the count reads "at least N".
-        season_complete = season_trades_complete(season)
-        known_for = set(season.get("trades_known_for") or [])
-        if not season_complete:
-            for fid in rows:
+    # Trades: counted from every season (finished OR in-progress), since a trade
+    # is a complete event even mid-season. Every franchise on a trade gets credit;
+    # complete trades also get a per-owner detail entry. ESPN scopes a trade's
+    # contents to its participants, so a trade no cookie-holder was in lists only
+    # its accepting team (credited) and carries no assets — it shows in that
+    # owner's history as "Trade Accepted".
+    #
+    # Certainty is per owner: an undetailed trade is one no cookie-holder was in,
+    # so a cookie-holder's count is exact even in an incomplete season. Everyone
+    # else in a season with any undetailed trade is a floor (they might be a hidden
+    # proposer), so trades_known=False for them.
+    for season in sorted(trade_seasons if trade_seasons is not None else seasons,
+                         key=lambda s: s["season"], reverse=True):
+        year = season["season"]
+        teams_map = season.get("teams", {})
+        played = {r["id"] for r in get_standings(season, franchises)}
+        if not season_trades_complete(season):
+            known_for = set(season.get("trades_known_for") or [])
+            for fid in played:
                 if fid not in known_for:
                     prof(fid)["trades_known"] = False
         for trade in season.get("trades") or []:
@@ -125,21 +133,14 @@ def compute_profiles(seasons, franchises, overrides=None):
                 p = prof(fid)
                 p["trades"] += 1
                 if not trade_complete:
-                    # No contents to show, but the accepted trade is real — log a
-                    # bare "accepted" entry so it still appears in their history.
                     p["trade_log"].append({
-                        "year": year,
-                        "week": trade.get("week") or 0,
-                        "accepted": True,
-                        "got": [],
-                        "gave": [],
-                        "with": [],
+                        "year": year, "week": trade.get("week") or 0,
+                        "accepted": True, "got": [], "gave": [], "with": [],
                     })
                     continue
                 others = [o for o in members if o != fid]
                 p["trade_log"].append({
-                    "year": year,
-                    "week": trade.get("week") or 0,
+                    "year": year, "week": trade.get("week") or 0,
                     "got": [a["label"] for a in assets if a.get("to") == fid],
                     "gave": [a["label"] for a in assets if a.get("from") == fid],
                     "with": [{"id": o, "name": short_name_of(o, franchises),

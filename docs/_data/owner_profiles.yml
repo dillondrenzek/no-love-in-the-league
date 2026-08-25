@@ -912,7 +912,7 @@ theoceanpulse:
     titles: '1'
     sackos: 0
     playoff_apps: 8
-    trades: 12
+    trades: 13
     trades_known: false
     seasons: 10
     best_finish:
@@ -1100,6 +1100,19 @@ theoceanpulse:
     avg_pf: 100.9
     avg_pa: 104.9
   trades:
+  - year: 2026
+    week: 0
+    got:
+    - 5.04 pick
+    - 9.04 pick
+    gave:
+    - Nico Collins
+    - 5.10 pick
+    - 9.10 pick
+    with:
+    - id: shawne2520997
+      name: Shawnee
+      team: D***er my Sufficient Tight End
   - year: 2025
     week: 8
     got:
@@ -3109,7 +3122,7 @@ shawne2520997:
     titles: '2'
     sackos: 2
     playoff_apps: 8
-    trades: 3
+    trades: 4
     trades_known: false
     seasons: 10
     best_finish:
@@ -3298,6 +3311,19 @@ shawne2520997:
     avg_pf: 96.9
     avg_pa: 102.4
   trades:
+  - year: 2026
+    week: 0
+    got:
+    - Nico Collins
+    - 5.10 pick
+    - 9.10 pick
+    gave:
+    - 5.04 pick
+    - 9.04 pick
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
   - year: 2024
     week: 0
     accepted: true

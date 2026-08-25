@@ -96,7 +96,22 @@ detail:
       owner_id: whowonthelastsuperbowl
       owner_name: Nate
       team: Trick or Trick It’s Mike Vick
-    trades: []
+    trades:
+    - week: 0
+      parties:
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: D***er my Sufficient Tight End
+        gave:
+        - 5.04 pick
+        - 9.04 pick
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: Thoughts and Players
+        gave:
+        - Nico Collins
+        - 5.10 pick
+        - 9.10 pick
     champ: null
     sacko: null
   2025:

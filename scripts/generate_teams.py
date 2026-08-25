@@ -178,8 +178,10 @@ owner_id: {id}
 def main():
     franchises = load_franchises()
     seasons = load_seasons()
+    # Trades count even from the in-progress season, so pass it too.
+    trade_seasons = load_seasons(include_in_progress=True)
     overrides = load_overrides()
-    profiles = compute_profiles(seasons, franchises, overrides)
+    profiles = compute_profiles(seasons, franchises, overrides, trade_seasons=trade_seasons)
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "owners.yml").write_text(
