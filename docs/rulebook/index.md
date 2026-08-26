@@ -20,9 +20,11 @@ _House rules — the things we do that [ESPN](https://fantasy.espn.com/football/
 
 ## Keepers
 
-Teams may keep a single player from their rosters to be on their teams the following year at the **cost of two rounds earlier than the player was drafted** the previous year. Undrafted players cost a 13th-round pick. Players taken in the 1st and 2nd rounds are ineligible for keepers.
+Teams may keep a single player from their rosters to be on their teams the following year at the **cost of two rounds earlier than the player was drafted** the previous year. Trades or drops do not affect this cost. Undrafted players cost a 13th-round pick. Players taken in the 1st and 2nd rounds are ineligible for keepers.
 
-_For example:_ If a player was drafted in the 5th round, they can be kept for a 3rd round the following year.
+Rule implemented in [2022](/seasons/2022), first year of keepers was [2023](/seasons/2023).
+
+> **Example:** If a player was drafted in the **5th round**, they can be kept for a **3rd round** the following year.
 
 ## FAAB Waivers
 
