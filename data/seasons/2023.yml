@@ -162,15 +162,17 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: true
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
-- week: 0
+- id: 98708f9c-1cf1-49aa-8bc1-f51e6e503ddc
+  week: 0
   teams:
   - jackperkins74
   - theoceanpulse
@@ -184,7 +186,8 @@ trades:
   - from: theoceanpulse
     to: jackperkins74
     label: 6.01 pick
-- week: 1
+- id: d99ab1f6-fdf4-4489-b09d-961d78a5286c
+  week: 1
   teams:
   - lukstein
   - theoceanpulse
@@ -198,7 +201,8 @@ trades:
   - from: theoceanpulse
     to: lukstein
     label: Eagles D/ST
-- week: 4
+- id: 0ba3a01c-a811-4207-b41d-4061c9d8f964
+  week: 4
   teams:
   - whowonthelastsuperbowl
   - zachzoske
@@ -218,7 +222,8 @@ trades:
   - from: zachzoske
     to: whowonthelastsuperbowl
     label: Ja'Marr Chase
-- week: 11
+- id: 458ede89-de16-42e1-82ce-a24b34571398
+  week: 11
   teams:
   - henpen28
   - zachzoske
@@ -229,7 +234,8 @@ trades:
   - from: zachzoske
     to: henpen28
     label: C.J. Stroud
-- week: 11
+- id: 4bbccb57-0a8d-49e0-8c0a-c515a03f87f5
+  week: 11
   teams:
   - jackperkins74
   - theoceanpulse
@@ -246,7 +252,8 @@ trades:
   - from: theoceanpulse
     to: jackperkins74
     label: Davante Adams
-- week: 11
+- id: 3635a181-88ae-4afa-b0e5-7b053cc2ba8e
+  week: 11
   teams:
   - theoceanpulse
   - zachzoske
@@ -257,7 +264,8 @@ trades:
   - from: zachzoske
     to: theoceanpulse
     label: James Conner
-- week: 13
+- id: af56c7fd-1311-44a3-ab8b-c7b39f99b854
+  week: 13
   teams:
   - lukstein
   - sturmanator15
@@ -274,3 +282,16 @@ trades:
   - from: lukstein
     to: sturmanator15
     label: D'Andre Swift
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers:
+  - { fid: purpsworth, round: 4, player: "Amon-Ra St. Brown" }
+  - { fid: jackperkins74, round: 5, player: "Tony Pollard" }
+  - { fid: theoceanpulse, round: 7, player: "Chris Olave" }
+  - { fid: kevbots22, round: 8, player: "Joe Burrow" }
+  - { fid: shawne2520997, round: 9, player: "Alexander Mattison" }
+  - { fid: lukstein, round: 9, player: "Garrett Wilson" }
+  - { fid: schirmerj, round: 9, player: "Isiah Pacheco" }
+  - { fid: zachzoske, round: 13, player: "Calvin Ridley" }
+  - { fid: sturmanator15, round: 13, player: "Trevor Lawrence" }

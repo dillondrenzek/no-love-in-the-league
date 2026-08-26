@@ -43,7 +43,12 @@ trades:                    # completed trades (franchise-keyed); [] when none.
     teams: [jackperkins74, theoceanpulse]   # participants (both get credit)
     assets:
       - { from: theoceanpulse, to: jackperkins74, label: "Puka Nacua" }
+keepers:                   # players kept this season (from the draft); [] pre-keepers
+  - { fid: jackperkins74, round: 13, player: "Puka Nacua" }   # round = keeper cost
 ```
+
+Trades and keepers are counted even from the in-progress season (they're complete
+events), so they surface on owner profiles and season pages before the year ends.
 
 `home`/`away`/`final_standings`/`draft_order` reference franchise ids;
 `teams` maps each id to its name that season (so pages show "Pukkake" while the id

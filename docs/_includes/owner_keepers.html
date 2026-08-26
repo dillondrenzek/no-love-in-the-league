@@ -1,0 +1,21 @@
+{%- comment -%}
+An owner's keeper history, newest first. Param: rows (list of {year, player,
+round}). The round is what the keeper cost.
+{%- endcomment -%}
+{%- assign rows = include.rows -%}
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Season</th><th>Kept</th><th class="num">Round</th></tr>
+  </thead>
+  <tbody>
+    {%- for k in rows %}
+    <tr>
+      <td><a href="{{ '/seasons/' | append: k.year | append: '/' | relative_url }}">{{ k.year }}</a></td>
+      <td>{{ k.player }}</td>
+      <td class="num">R{{ k.round }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>

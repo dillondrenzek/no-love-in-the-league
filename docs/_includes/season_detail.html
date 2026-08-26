@@ -36,3 +36,8 @@ d (a site.data.seasons.detail record). The season masthead is rendered by the
 <h2>Trades</h2>
 {% include trades_list.html trades=d.trades %}
 {%- endif -%}
+
+{%- if d.keepers and d.keepers.size > 0 -%}
+<h2>Keepers</h2>
+{% include keepers_table.html rows=d.keepers %}
+{%- endif -%}

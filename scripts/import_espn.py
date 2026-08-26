@@ -232,6 +232,23 @@ def build_trades(trade_rows, team_to_fid, team_count):
     return trades
 
 
+def build_keepers(draft_rows, team_to_fid):
+    """Kept players this season, franchise-keyed: {fid, round, player}. A keeper is
+    a drafted pick flagged keeper=True, and its round is the cost. Empty before the
+    league started keeping players."""
+    out = []
+    for p in draft_rows or []:
+        if not p.get("keeper"):
+            continue
+        out.append({
+            "fid": team_to_fid.get(p.get("team_id")),
+            "round": p.get("round"),
+            "player": clean_name(p.get("player_name")),
+        })
+    out.sort(key=lambda k: (k["round"] or 0, k["player"]))
+    return out
+
+
 def build_matchups(matchup_rows, team_to_fid):
     """Franchise-keyed regular-season + playoff games, skipping byes and unplayed
     weeks. Home/away is cosmetic in fantasy, so it's assigned deterministically by
@@ -262,7 +279,7 @@ def build_matchups(matchup_rows, team_to_fid):
 
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
                      status=None, draft_order=None, trades=None, trades_complete=True,
-                     trades_known_for=None):
+                     trades_known_for=None, keepers=None):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
         f"# to refresh; only the hand-edited `draft_order:` below is preserved across",
@@ -347,6 +364,18 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
                                     allow_unicode=True, default_flow_style=False).rstrip())
     else:
         lines += ["trades: []  # none this season"]
+    lines += [
+        "",
+        "# Keepers this season (franchise-keyed): the player each team kept and the",
+        "# round it cost. From ESPN's draft; empty before the league kept players.",
+    ]
+    if keepers:
+        lines += ["keepers:"]
+        for k in keepers:
+            player = (k.get("player") or "").replace('"', '\\"')
+            lines.append(f'  - {{ fid: {k["fid"]}, round: {k["round"]}, player: "{player}" }}')
+    else:
+        lines += ["keepers: []"]
     return "\n".join(lines) + "\n"
 
 
@@ -403,6 +432,16 @@ def main():
     registry = load_franchises()
     team_to_fid = resolve_franchises(team_rows, registry)
     matchups = build_matchups(season["matchups"], team_to_fid)
+
+    # Keepers come from the draft (one request; works for old seasons via
+    # leagueHistory). A keeper is a drafted pick flagged keeper=True.
+    try:
+        draft_rows = lg.draft()
+    except ApiError as e:
+        print(f"NOTE: draft for {args.year} unavailable (ESPN {e.status}); no keepers.",
+              file=sys.stderr)
+        draft_rows = []
+    keepers = build_keepers(draft_rows, team_to_fid)
 
     # Trades: ESPN reveals a trade's contents only to its participants, so merge
     # across every managers' cookie file we have — more accounts detail more
@@ -475,7 +514,7 @@ def main():
                                    status=None if complete else "in_progress",
                                    draft_order=existing_draft_order(args.year),
                                    trades=trades, trades_complete=trades_complete,
-                                   trades_known_for=sorted(known_for))
+                                   trades_known_for=sorted(known_for), keepers=keepers)
 
     if not lg.authenticated:
         print("WARNING: no ESPN cookies found — a private league won't return owner "

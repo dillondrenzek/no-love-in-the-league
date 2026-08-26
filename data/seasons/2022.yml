@@ -165,15 +165,17 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: true
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
-- week: 0
+- id: 35191a11-aef6-4028-ac86-53aadfff1d0f
+  week: 0
   teams:
   - henpen28
   - zachzoske
@@ -190,7 +192,8 @@ trades:
   - from: zachzoske
     to: henpen28
     label: 2.07 pick
-- week: 8
+- id: c8af8d3f-27e6-4e5b-8aa6-f4c3568c98fc
+  week: 8
   teams:
   - jackperkins74
   - theoceanpulse
@@ -210,7 +213,8 @@ trades:
   - from: theoceanpulse
     to: jackperkins74
     label: Christian McCaffrey
-- week: 9
+- id: fb058463-5928-485c-97e1-3610f6983672
+  week: 9
   teams:
   - purpsworth
   - theoceanpulse
@@ -221,7 +225,8 @@ trades:
   - from: purpsworth
     to: theoceanpulse
     label: Kyler Murray
-- week: 9
+- id: 3c4510af-2e39-42e8-afad-ec166725c80a
+  week: 9
   teams:
   - unclebadtouch38
   - zachzoske
@@ -241,7 +246,8 @@ trades:
   - from: zachzoske
     to: unclebadtouch38
     label: Tyler Boyd
-- week: 10
+- id: 639b5013-2543-43e4-b30a-5160ce825092
+  week: 10
   teams:
   - henpen28
   - sturmanator15
@@ -252,3 +258,7 @@ trades:
   - from: henpen28
     to: sturmanator15
     label: Amari Cooper
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers: []

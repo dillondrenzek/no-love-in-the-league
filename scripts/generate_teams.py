@@ -161,6 +161,7 @@ def _profile_data(p, profiles):
         "h2h": _h2h_rows(p, profiles),
         "trades": p.get("trade_log", []),
         "trades_known": p.get("trades_known", True),
+        "keepers": p.get("keeper_log", []),
     }
 
 

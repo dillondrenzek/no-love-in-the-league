@@ -71,6 +71,24 @@ def season_trades(season, franchises):
     return out
 
 
+def season_keepers(season, franchises):
+    """This season's keepers: {round, player, owner_id, owner_name, team}, sorted
+    by round then manager. Empty before the league kept players."""
+    teams_map = season.get("teams", {})
+    out = []
+    for k in season.get("keepers") or []:
+        fid = k.get("fid")
+        out.append({
+            "round": k.get("round"),
+            "player": k.get("player"),
+            "owner_id": fid if fid in franchises else None,
+            "owner_name": short_name_of(fid, franchises) if fid else None,
+            "team": teams_map.get(fid),
+        })
+    out.sort(key=lambda x: (x["round"] or 0, x["owner_name"] or ""))
+    return out
+
+
 def season_detail(season, franchises, overrides, notes):
     """Page data for one season — completed or still in progress."""
     year = season["season"]
@@ -92,6 +110,7 @@ def season_detail(season, franchises, overrides, notes):
         "weeks_played": max(weeks) if weeks else 0,
         "draft_order": draft_rows(season.get("draft_order"), franchises, season.get("teams")),
         "trades": season_trades(season, franchises),
+        "keepers": season_keepers(season, franchises),
         "champ": None if in_progress else (rows[0] if rows else None),
         "sacko": None if in_progress else (rows[-1] if rows else None),
     }
