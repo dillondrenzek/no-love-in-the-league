@@ -14,3 +14,8 @@ nickname header is rendered by the `owner` layout.
 
 <h2>Trades</h2>
 {% include owner_trades.html trades=p.trades known=p.trades_known %}
+
+{%- if p.keepers and p.keepers.size > 0 %}
+<h2>Keepers</h2>
+{% include owner_keepers.html rows=p.keepers %}
+{%- endif %}

@@ -162,15 +162,17 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: true
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
-- week: 0
+- id: 2e419d23-159c-4f98-962e-a129900b5007
+  week: 0
   teams:
   - theoceanpulse
   - zachzoske
@@ -196,7 +198,8 @@ trades:
   - from: theoceanpulse
     to: zachzoske
     label: 6.09 pick
-- week: 8
+- id: 713ac126-2fde-47ed-bc1d-fd4edc5d5482
+  week: 8
   teams:
   - jackperkins74
   - theoceanpulse
@@ -210,7 +213,8 @@ trades:
   - from: theoceanpulse
     to: jackperkins74
     label: Derrick Henry
-- week: 11
+- id: 87b49867-d6d9-4969-955d-dcdbca8a39ae
+  week: 11
   teams:
   - whowonthelastsuperbowl
   - zachzoske
@@ -224,7 +228,8 @@ trades:
   - from: whowonthelastsuperbowl
     to: zachzoske
     label: Chase Brown
-- week: 11
+- id: 9bf09f1a-a529-44b0-ab4c-9a5cf4de1480
+  week: 11
   teams:
   - whowonthelastsuperbowl
   - zachzoske
@@ -235,3 +240,18 @@ trades:
   - from: whowonthelastsuperbowl
     to: zachzoske
     label: Dalton Kincaid
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers:
+  - { fid: kevbots22, round: 4, player: "Joe Burrow" }
+  - { fid: gganoom, round: 7, player: "Brock Bowers" }
+  - { fid: theoceanpulse, round: 7, player: "Nico Collins" }
+  - { fid: purpsworth, round: 10, player: "De'Von Achane" }
+  - { fid: schirmerj, round: 10, player: "Kyren Williams" }
+  - { fid: jackperkins74, round: 11, player: "Puka Nacua" }
+  - { fid: sturmanator15, round: 11, player: "Trey McBride" }
+  - { fid: lukstein, round: 13, player: "Baker Mayfield" }
+  - { fid: zachzoske, round: 13, player: "Bucky Irving" }
+  - { fid: whowonthelastsuperbowl, round: 13, player: "Drake Maye" }
+  - { fid: shawne2520997, round: 13, player: "Ricky Pearsall" }

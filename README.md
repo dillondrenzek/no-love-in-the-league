@@ -108,10 +108,12 @@ ESPN's final standings. Supplying cookies is what populates owner names and lets
 the same owner keep one franchise id across seasons.
 
 It also captures each season's **completed trades** (used for the record book,
-owner profiles, History notes, and a per-season trades section). Fetching trades
-makes one request per week, so imports are a little slower. Trades only exist in a
-season file once it's imported under this version — re-run the importer once per
-past season (or `scripts/import_all.sh`) to backfill them.
+owner profiles, History notes, and a per-season trades section) and **keepers**
+(the player each team kept and the round it cost, shown on owner profiles and at
+the bottom of season pages). Fetching trades makes one request per week, so imports
+are a little slower. Trades and keepers only exist in a season file once it's
+imported under this version — re-run the importer once per past season (or
+`scripts/import_all.sh`) to backfill them. (Keepers began in 2023.)
 
 ### Filling in trade detail, one manager at a time
 

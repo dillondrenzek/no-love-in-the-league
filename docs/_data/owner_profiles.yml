@@ -309,6 +309,16 @@ jackperkins74:
       name: Wade
       team: Lamar's Donger
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 11
+    player: Puka Nacua
+  - year: 2024
+    round: 13
+    player: Puka Nacua
+  - year: 2023
+    round: 5
+    player: Tony Pollard
 kevbots22:
   name: Kevin
   nickname: ''
@@ -541,6 +551,13 @@ kevbots22:
     avg_pa: 103.3
   trades: []
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 4
+    player: Joe Burrow
+  - year: 2023
+    round: 8
+    player: Joe Burrow
 purpsworth:
   name: Trevor
   nickname: ''
@@ -775,6 +792,16 @@ purpsworth:
       name: Zach
       team: Eleven In Crocks
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 10
+    player: De'Von Achane
+  - year: 2024
+    round: 12
+    player: De'Von Achane
+  - year: 2023
+    round: 4
+    player: Amon-Ra St. Brown
 gganoom:
   name: Grant
   nickname: ''
@@ -893,6 +920,13 @@ gganoom:
     avg_pa: 123.6
   trades: []
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 7
+    player: Brock Bowers
+  - year: 2024
+    round: 5
+    player: Chris Olave
 theoceanpulse:
   name: Dillon
   nickname: ''
@@ -1251,6 +1285,16 @@ theoceanpulse:
       name: Luke
       team: Show Me Your TDs
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 7
+    player: Nico Collins
+  - year: 2024
+    round: 13
+    player: Sam LaPorta
+  - year: 2023
+    round: 7
+    player: Chris Olave
 zachzoske:
   name: Zach
   nickname: ''
@@ -1667,6 +1711,16 @@ zachzoske:
       name: Trevor
       team: AB’s Helmet
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 13
+    player: Bucky Irving
+  - year: 2024
+    round: 9
+    player: Nico Collins
+  - year: 2023
+    round: 13
+    player: Calvin Ridley
 henpen28:
   name: Henry
   nickname: ''
@@ -1968,6 +2022,7 @@ henpen28:
       name: Zach
       team: Eleven In Crocks
   trades_known: false
+  keepers: []
 lukstein:
   name: Luke
   nickname: ''
@@ -2276,6 +2331,16 @@ lukstein:
       name: Wade
       team: Lamar's Donger
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 13
+    player: Baker Mayfield
+  - year: 2024
+    round: 7
+    player: Garrett Wilson
+  - year: 2023
+    round: 9
+    player: Garrett Wilson
 whowonthelastsuperbowl:
   name: Nate
   nickname: ''
@@ -2545,6 +2610,10 @@ whowonthelastsuperbowl:
     gave: []
     with: []
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 13
+    player: Drake Maye
 sturmanator15:
   name: Wade
   nickname: ''
@@ -2851,6 +2920,16 @@ sturmanator15:
       name: Jack
       team: Vladimir Putin
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 11
+    player: Trey McBride
+  - year: 2024
+    round: 13
+    player: Trey McBride
+  - year: 2023
+    round: 13
+    player: Trevor Lawrence
 schirmerj:
   name: Jono
   nickname: ''
@@ -3097,6 +3176,16 @@ schirmerj:
       name: Wade
       team: Lamar's Donger
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 10
+    player: Kyren Williams
+  - year: 2024
+    round: 12
+    player: Kyren Williams
+  - year: 2023
+    round: 9
+    player: Isiah Pacheco
 shawne2520997:
   name: Shawnee
   nickname: ''
@@ -3343,6 +3432,16 @@ shawne2520997:
     gave: []
     with: []
   trades_known: false
+  keepers:
+  - year: 2025
+    round: 13
+    player: Ricky Pearsall
+  - year: 2024
+    round: 2
+    player: Breece Hall
+  - year: 2023
+    round: 9
+    player: Alexander Mattison
 unclebadtouch38:
   name: Fletcher
   nickname: ''
@@ -3561,6 +3660,7 @@ unclebadtouch38:
       name: Zach
       team: Eleven In Crocks
   trades_known: false
+  keepers: []
 ajstewart04:
   name: Anthony
   nickname: ''
@@ -3676,6 +3776,7 @@ ajstewart04:
     avg_pa: 77.1
   trades: []
   trades_known: false
+  keepers: []
 master-otis:
   name: Odie
   nickname: ''
@@ -3816,6 +3917,7 @@ master-otis:
     avg_pa: 90.3
   trades: []
   trades_known: false
+  keepers: []
 thebragers:
   name: Brady
   nickname: ''
@@ -3920,3 +4022,4 @@ thebragers:
     avg_pa: 107.4
   trades: []
   trades_known: false
+  keepers: []

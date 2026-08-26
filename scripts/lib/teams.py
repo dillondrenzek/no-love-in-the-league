@@ -25,6 +25,7 @@ def _blank(fid, franchises):
         "trades": 0,                                    # trades participated in (a floor if not trades_known)
         "trades_known": True,                           # False if any season they played has undetailed trades
         "trade_log": [],                                # per-trade detail for the profile
+        "keeper_log": [],                               # players kept, per season
         "h2h": {},                                      # opp id -> {w,l,t,pf,pa}
     }
 
@@ -147,6 +148,14 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
                               "team": teams_map.get(o)} for o in others],
                 })
 
+        # Keepers: the player each team kept that season, and the round it cost.
+        for k in season.get("keepers") or []:
+            fid = k.get("fid")
+            if fid:
+                prof(fid)["keeper_log"].append({
+                    "year": year, "round": k.get("round"), "player": k.get("player"),
+                })
+
     for p in profiles.values():
         p["reg"]["pf"] = round(p["reg"]["pf"], 1)
         p["reg"]["pa"] = round(p["reg"]["pa"], 1)
@@ -155,6 +164,7 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
         p["worst_finish"] = max(finishes) if finishes else None
         p["seasons_count"] = len(p["seasons"])
         p["trade_log"].sort(key=lambda t: (t["year"], t["week"]), reverse=True)
+        p["keeper_log"].sort(key=lambda k: (-k["year"], k["round"] or 0))
         p["reg"]["win_pct"] = win_pct(p["reg"]["w"], p["reg"]["l"], p["reg"]["t"])
         for rec in p["h2h"].values():
             rec["pf"] = round(rec["pf"], 1)

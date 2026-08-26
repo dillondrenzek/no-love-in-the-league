@@ -89,6 +89,19 @@ def test_in_progress_season_trades_still_count():
     assert recs["Most Trades"]["value"] == "1"
 
 
+def test_keeper_history_across_seasons():
+    from lib.teams import compute_profiles
+    done = matchup_season(2025)
+    done["keepers"] = [{"fid": "a", "round": 2, "player": "RB X"},
+                       {"fid": "b", "round": 13, "player": "WR Y"}]
+    live = {"season": 2026, "status": "in_progress", "teams": {"a": "A"},
+            "matchups": [], "keepers": [{"fid": "a", "round": 5, "player": "QB Z"}]}
+    profiles = compute_profiles([done], {}, trade_seasons=[done, live])
+    a = profiles["a"]["keeper_log"]
+    assert [k["year"] for k in a] == [2026, 2025]        # newest first, in-progress counts
+    assert profiles["b"]["keeper_log"][0]["player"] == "WR Y"
+
+
 def test_incomplete_trades_credit_and_log_accepted():
     from lib.teams import compute_profiles
     s = matchup_season(2025)

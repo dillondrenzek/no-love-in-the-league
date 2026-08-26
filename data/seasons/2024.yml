@@ -162,15 +162,17 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
-- week: 0
+- id: 59706461-57e5-44d5-a1ce-d0b486f0030e
+  week: 0
   teams:
   - jackperkins74
   - theoceanpulse
@@ -187,7 +189,8 @@ trades:
   - from: jackperkins74
     to: theoceanpulse
     label: Sam LaPorta
-- week: 0
+- id: 5a1c1e1c-cfdd-40e0-bb92-d61881428196
+  week: 0
   teams:
   - purpsworth
   - zachzoske
@@ -219,13 +222,28 @@ trades:
   - from: zachzoske
     to: purpsworth
     label: 8.05 pick
-- week: 0
+- id: 11359078-1885-4609-b7ca-2599364a8859
+  week: 0
   teams:
   - shawne2520997
   assets: []
   complete: false
-- week: 7
+- id: ab4456fc-4a9a-4d24-be8b-656ae17979eb
+  week: 7
   teams:
   - lukstein
   assets: []
   complete: false
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers:
+  - { fid: shawne2520997, round: 2, player: "Breece Hall" }
+  - { fid: gganoom, round: 5, player: "Chris Olave" }
+  - { fid: lukstein, round: 7, player: "Garrett Wilson" }
+  - { fid: zachzoske, round: 9, player: "Nico Collins" }
+  - { fid: purpsworth, round: 12, player: "De'Von Achane" }
+  - { fid: schirmerj, round: 12, player: "Kyren Williams" }
+  - { fid: jackperkins74, round: 13, player: "Puka Nacua" }
+  - { fid: theoceanpulse, round: 13, player: "Sam LaPorta" }
+  - { fid: sturmanator15, round: 13, player: "Trey McBride" }

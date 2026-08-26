@@ -1,0 +1,25 @@
+{%- comment -%}
+A season's keepers. Param: rows (list of {round, player, owner_id, owner_name,
+team}), sorted by round. The round is what the keeper cost.
+{%- endcomment -%}
+{%- assign rows = include.rows -%}
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th class="num">Round</th><th>Kept</th><th>Manager</th></tr>
+  </thead>
+  <tbody>
+    {%- for k in rows %}
+    <tr>
+      <td class="num">R{{ k.round }}</td>
+      <td>{{ k.player }}</td>
+      <td>
+        {%- if k.owner_id -%}
+        <a href="{{ '/teams/' | append: k.owner_id | append: '/' | relative_url }}">{{ k.owner_name }}</a>
+        {%- else -%}{{ k.owner_name }}{%- endif -%}
+      </td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
