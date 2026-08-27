@@ -33,7 +33,7 @@ teams:
   zachzoske: "Zoinks"
   schirmerj: "IDPs Forever"
   lukstein: "2x Runner Up"
-  jackperkins74: "Golden Tempo"
+  jackperkins74: "Gibbed for your pleasure"
   kevbots22: "Keeping up with the McCalferies"
   henpen28: "Dump it on my Chest"
   purpsworth: "I am dead inside"
@@ -101,3 +101,7 @@ trades:
   - from: shawne2520997
     to: theoceanpulse
     label: 9.04 pick
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers: []
