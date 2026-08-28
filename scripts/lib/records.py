@@ -83,7 +83,32 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
     trade_rec = _most_trades(trade_seasons if trade_seasons is not None else seasons, franchises)
     if trade_rec:
         records.append(trade_rec)
+
+    first_overall = _most_first_overall(trade_seasons if trade_seasons is not None else seasons, franchises)
+    if first_overall:
+        records.append(first_overall)
     return records
+
+
+def _most_first_overall(seasons, franchises):
+    """Franchise that has drafted from the 1.01 (first slot in a season's draft
+    order) the most times, across every season on record including an in-progress
+    one's projected order. None until someone's done it more than once."""
+    counts = {}
+    for season in seasons:
+        order = season.get("draft_order") or []
+        if order:
+            counts[order[0]] = counts.get(order[0], 0) + 1
+    if not counts:
+        return None
+    fid, n = max(counts.items(), key=lambda kv: kv[1])
+    if n < 2:
+        return None
+    name = short_name_of(fid, franchises) if fid in franchises else fid
+    return {"category": "Most Times Drafting 1.01", "holder": name, "value": str(n),
+            "season": None, "week": None,
+            "owner_id": fid if fid in franchises else None,
+            "owner_name": name, "team": None}
 
 
 def _most_trades(seasons, franchises):

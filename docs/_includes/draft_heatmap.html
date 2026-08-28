@@ -1,0 +1,34 @@
+{%- comment -%}
+Draft Order History heatmap. Param: data (site.data.owners.draft_heatmap) with
+{slots:[1..N], max, rows:[{id, name, total, cells:[{slot, count, color}]}]}.
+Owners down the left, draft slot (1 = the 1.01) across the top; each cell is
+shaded by how often that owner drafted from that slot.
+{%- endcomment -%}
+{%- assign hm = include.data -%}
+{%- if hm and hm.rows and hm.rows.size > 0 -%}
+<div class="table-scroll">
+<table class="heatmap">
+  <thead>
+    <tr>
+      <th>Owner</th>
+      {%- for s in hm.slots %}<th class="num">{{ s }}</th>{%- endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in hm.rows %}
+    <tr>
+      <td>
+        {%- if r.id -%}<a href="{{ '/teams/' | append: r.id | append: '/' | relative_url }}">{{ r.name }}</a>
+        {%- else -%}{{ r.name }}{%- endif -%}
+      </td>
+      {%- for c in r.cells %}
+      <td class="num heatmap__cell"{% if c.color %} style="background: {{ c.color }}"{% endif %}>{% if c.count > 0 %}{{ c.count }}{% endif %}</td>
+      {%- endfor %}
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+{%- else -%}
+<p class="empty-state">No draft history on record yet.</p>
+{%- endif -%}

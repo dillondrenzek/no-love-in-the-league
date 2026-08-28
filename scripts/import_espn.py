@@ -297,8 +297,8 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
                      trades_known_for=None, keepers=None):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
-        f"# to refresh; only the hand-edited `draft_order:` below is preserved across",
-        f"# imports. See ../../ARCHITECTURE.md.",
+        f"# to refresh; the locked, hand-maintained `draft_order:` below is preserved",
+        f"# verbatim across imports. See ../../ARCHITECTURE.md.",
         "",
         f"season: {year}",
         "source: the-league-espn-api",
@@ -313,8 +313,8 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         ]
     lines += [
         "",
-        "# Draft order (1st overall pick first), franchise ids. Optional and HAND-",
-        "# EDITED — preserved across re-imports; remove the block to hide the draft",
+        "# Draft order (1.01 first), franchise ids. Locked, hand-maintained data —",
+        "# preserved verbatim across re-imports; remove the block to hide the draft",
         "# table on the season page.",
     ]
     if draft_order:
@@ -521,6 +521,9 @@ def main():
     # re-keys teams/standings/trades automatically, but the hand-edited
     # `draft_order` is preserved verbatim — so a departed owner still listed there
     # is now stale and must be swapped to the new franchise by hand.
+    # Draft order is locked, hand-maintained data: whatever the season file holds
+    # is preserved verbatim across re-imports (an empty/absent block stays empty,
+    # so removing it hides the draft table).
     draft_order = existing_draft_order(args.year)
     departed = [fid for fid in existing_teams(args.year) if fid not in season_teams]
     if departed:

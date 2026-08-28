@@ -233,3 +233,699 @@ inactive:
     ordinal: 9th
     years:
     - 2017
+draft_heatmap:
+  slots:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  max: 6
+  rows:
+  - id: jackperkins74
+    name: Jack
+    total: 13
+    cells:
+    - slot: 1
+      count: 4
+      color: '#f59d47'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 2
+      color: '#faca7e'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 1
+      color: '#fcdfaf'
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: schirmerj
+    name: Jono
+    total: 13
+    cells:
+    - slot: 1
+      count: 1
+      color: '#fcdfaf'
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 2
+      color: '#faca7e'
+    - slot: 5
+      count: 3
+      color: '#f9b64d'
+    - slot: 6
+      count: 3
+      color: '#f9b64d'
+    - slot: 7
+      count: 1
+      color: '#fcdfaf'
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 1
+      color: '#fcdfaf'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 0
+      color: null
+  - id: kevbots22
+    name: Kevin
+    total: 13
+    cells:
+    - slot: 1
+      count: 3
+      color: '#f9b64d'
+    - slot: 2
+      count: 2
+      color: '#faca7e'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 2
+      color: '#faca7e'
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: lukstein
+    name: Luke
+    total: 13
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 2
+      color: '#faca7e'
+    - slot: 6
+      count: 1
+      color: '#fcdfaf'
+    - slot: 7
+      count: 2
+      color: '#faca7e'
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 2
+      color: '#faca7e'
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 0
+      color: null
+  - id: whowonthelastsuperbowl
+    name: Nate
+    total: 13
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 2
+      color: '#faca7e'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 6
+      color: '#ee6b3b'
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: sturmanator15
+    name: Wade
+    total: 13
+    cells:
+    - slot: 1
+      count: 1
+      color: '#fcdfaf'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 1
+      color: '#fcdfaf'
+    - slot: 7
+      count: 3
+      color: '#f9b64d'
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 3
+      color: '#f9b64d'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 2
+      color: '#faca7e'
+  - id: zachzoske
+    name: Zach
+    total: 13
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 2
+      color: '#faca7e'
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 1
+      color: '#fcdfaf'
+    - slot: 6
+      count: 2
+      color: '#faca7e'
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 3
+      color: '#f9b64d'
+    - slot: 9
+      count: 3
+      color: '#f9b64d'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: theoceanpulse
+    name: Dillon
+    total: 11
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 2
+      color: '#faca7e'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 2
+      color: '#faca7e'
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 2
+      color: '#faca7e'
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 2
+      color: '#faca7e'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: shawne2520997
+    name: Shawnee
+    total: 11
+    cells:
+    - slot: 1
+      count: 2
+      color: '#faca7e'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 3
+      color: '#f9b64d'
+    - slot: 4
+      count: 2
+      color: '#faca7e'
+    - slot: 5
+      count: 1
+      color: '#fcdfaf'
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: purpsworth
+    name: Trevor
+    total: 8
+    cells:
+    - slot: 1
+      count: 1
+      color: '#fcdfaf'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 2
+      color: '#faca7e'
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 1
+      color: '#fcdfaf'
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 1
+      color: '#fcdfaf'
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: gganoom
+    name: Grant
+    total: 3
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 1
+      color: '#fcdfaf'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 0
+      color: null
+  - id: alexandra
+    name: Lexi
+    total: 1
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 0
+      color: null
+  - id: henpen28
+    name: Henry
+    total: 12
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 2
+      color: '#faca7e'
+    - slot: 5
+      count: 2
+      color: '#faca7e'
+    - slot: 6
+      count: 2
+      color: '#faca7e'
+    - slot: 7
+      count: 3
+      color: '#f9b64d'
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 1
+      color: '#fcdfaf'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: unclebadtouch38
+    name: Fletcher
+    total: 8
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 2
+      color: '#faca7e'
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 1
+      color: '#fcdfaf'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 2
+      color: '#faca7e'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: master-otis
+    name: Odie
+    total: 3
+    cells:
+    - slot: 1
+      count: 1
+      color: '#fcdfaf'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 1
+      color: '#fcdfaf'
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 0
+      color: null
+  - id: ajstewart04
+    name: Anthony
+    total: 2
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 0
+      color: null
+  - id: thebragers
+    name: Brady
+    total: 2
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 1
+      color: '#fcdfaf'
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 0
+      color: null

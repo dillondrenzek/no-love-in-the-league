@@ -15,3 +15,7 @@ Every manager in league history. Click a name for their full profile.
 ## Inactive Owners
 
 {% include owners_table.html rows=site.data.owners.inactive %}
+
+## Draft Order History
+
+{% include draft_heatmap.html data=site.data.owners.draft_heatmap %}
