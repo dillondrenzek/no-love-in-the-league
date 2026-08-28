@@ -104,4 +104,15 @@ trades:
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
-keepers: []
+keepers:
+  - { fid: kevbots22, round: 5, player: "Chris Olave" }
+  - { fid: gganoom, round: 5, player: "Brock Bowers" }
+  - { fid: theoceanpulse, round: 8, player: "Colston Loveland" }
+  - { fid: purpsworth, round: 8, player: "De'Von Achane" }
+  - { fid: schirmerj, round: 8, player: "Kyren Williams" }
+  - { fid: jackperkins74, round: 9, player: "Puka Nacua" }
+  - { fid: sturmanator15, round: 9, player: "Trey McBride" }
+  - { fid: lukstein, round: 12, player: "Kyle Pitts Sr." }
+  - { fid: zachzoske, round: 9, player: "Bhayshul Tuten" }
+  - { fid: whowonthelastsuperbowl, round: 11, player: "Drake Maye" }
+  - { fid: shawne2520997, round: 5, player: "Nico Collins" }

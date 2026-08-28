@@ -310,6 +310,9 @@ jackperkins74:
       team: Lamar's Donger
   trades_known: false
   keepers:
+  - year: 2026
+    round: 9
+    player: Puka Nacua
   - year: 2025
     round: 11
     player: Puka Nacua
@@ -552,6 +555,9 @@ kevbots22:
   trades: []
   trades_known: false
   keepers:
+  - year: 2026
+    round: 5
+    player: Chris Olave
   - year: 2025
     round: 4
     player: Joe Burrow
@@ -793,6 +799,9 @@ purpsworth:
       team: Eleven In Crocks
   trades_known: false
   keepers:
+  - year: 2026
+    round: 8
+    player: De'Von Achane
   - year: 2025
     round: 10
     player: De'Von Achane
@@ -921,6 +930,9 @@ gganoom:
   trades: []
   trades_known: false
   keepers:
+  - year: 2026
+    round: 5
+    player: Brock Bowers
   - year: 2025
     round: 7
     player: Brock Bowers
@@ -1286,6 +1298,9 @@ theoceanpulse:
       team: Show Me Your TDs
   trades_known: false
   keepers:
+  - year: 2026
+    round: 8
+    player: Colston Loveland
   - year: 2025
     round: 7
     player: Nico Collins
@@ -1712,6 +1727,9 @@ zachzoske:
       team: AB’s Helmet
   trades_known: false
   keepers:
+  - year: 2026
+    round: 9
+    player: Bhayshul Tuten
   - year: 2025
     round: 13
     player: Bucky Irving
@@ -2332,6 +2350,9 @@ lukstein:
       team: Lamar's Donger
   trades_known: false
   keepers:
+  - year: 2026
+    round: 12
+    player: Kyle Pitts Sr.
   - year: 2025
     round: 13
     player: Baker Mayfield
@@ -2611,6 +2632,9 @@ whowonthelastsuperbowl:
     with: []
   trades_known: false
   keepers:
+  - year: 2026
+    round: 11
+    player: Drake Maye
   - year: 2025
     round: 13
     player: Drake Maye
@@ -2921,6 +2945,9 @@ sturmanator15:
       team: Vladimir Putin
   trades_known: false
   keepers:
+  - year: 2026
+    round: 9
+    player: Trey McBride
   - year: 2025
     round: 11
     player: Trey McBride
@@ -3177,6 +3204,9 @@ schirmerj:
       team: Lamar's Donger
   trades_known: false
   keepers:
+  - year: 2026
+    round: 8
+    player: Kyren Williams
   - year: 2025
     round: 10
     player: Kyren Williams
@@ -3433,6 +3463,9 @@ shawne2520997:
     with: []
   trades_known: false
   keepers:
+  - year: 2026
+    round: 5
+    player: Nico Collins
   - year: 2025
     round: 13
     player: Ricky Pearsall
