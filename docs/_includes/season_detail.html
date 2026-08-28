@@ -28,16 +28,13 @@ d (a site.data.seasons.detail record). The season masthead is rendered by the
 {%- endif -%}
 
 {%- if d.draft_order and d.draft_order.size > 0 -%}
+{%- assign show_keeper = false -%}
+{%- if d.keepers and d.keepers.size > 0 %}{% assign show_keeper = true %}{% endif -%}
 <h2>Draft order</h2>
-{% include draft_table.html rows=d.draft_order %}
+{% include draft_table.html rows=d.draft_order show_keeper=show_keeper %}
 {%- endif -%}
 
 {%- if d.trades and d.trades.size > 0 -%}
 <h2>Trades</h2>
 {% include trades_list.html trades=d.trades %}
-{%- endif -%}
-
-{%- if d.keepers and d.keepers.size > 0 -%}
-<h2>Keepers</h2>
-{% include keepers_table.html rows=d.keepers %}
 {%- endif -%}

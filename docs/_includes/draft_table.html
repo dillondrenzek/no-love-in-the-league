@@ -1,11 +1,14 @@
 {%- comment -%}
-Draft order table. Param: rows (list of {pick, owner_id, owner_name, team}).
-Shows the team name (with the manager in small text) like the History tables.
+Draft order table. Param: rows (list of {pick, owner_id, owner_name, team,
+keepers:[{player, round}]}); show_keeper (bool) adds a Keeper column (kept
+player) and a Round column (the round it cost, e.g. R3). Shows the team name
+(with the manager in small text) like the History tables.
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
+{%- assign show_keeper = include.show_keeper -%}
 <div class="table-scroll">
 <table>
-  <thead><tr><th>Pick</th><th>Team</th></tr></thead>
+  <thead><tr><th>Pick</th><th>Team</th>{% if show_keeper %}<th>Keeper</th><th class="num">Round</th>{% endif %}</tr></thead>
   <tbody>
     {%- for p in rows %}
     <tr>
@@ -18,6 +21,18 @@ Shows the team name (with the manager in small text) like the History tables.
         {%- if p.owner_id -%}<a href="{{ '/teams/' | append: p.owner_id | append: '/' | relative_url }}">{{ p.owner_name }}</a>{%- else -%}{{ p.owner_name }}{%- endif -%}
         {%- endif -%}
       </td>
+      {%- if show_keeper -%}
+      <td>
+        {%- if p.keepers and p.keepers.size > 0 -%}
+        {%- for k in p.keepers -%}{%- unless forloop.first %}, {% endunless -%}{{ k.player }}{%- endfor -%}
+        {%- else -%}<span class="muted">—</span>{%- endif -%}
+      </td>
+      <td class="num">
+        {%- if p.keepers and p.keepers.size > 0 -%}
+        {%- for k in p.keepers -%}{%- unless forloop.first %}, {% endunless -%}{% if k.round %}{{ k.round }}{% else %}—{% endif %}{%- endfor -%}
+        {%- else -%}<span class="muted">—</span>{%- endif -%}
+      </td>
+      {%- endif -%}
     </tr>
     {%- endfor %}
   </tbody>

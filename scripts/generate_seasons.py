@@ -34,13 +34,23 @@ def season_no(year):
     return year - FIRST_SEASON + 1
 
 
-def draft_rows(fids, franchises, teams=None):
-    """[{pick, owner_id, owner_name, team}] for franchise ids in pick order.
+def draft_rows(fids, franchises, teams=None, keepers=None):
+    """[{pick, owner_id, owner_name, team, keepers}] for franchise ids in pick order.
 
     `teams` is the season's franchise-id -> team-name map (when known), used to
-    show each manager's current team name alongside their pick.
+    show each manager's current team name alongside their pick. `keepers` is the
+    season's keeper list ({fid, round, player}); each row carries its owner's kept
+    players (usually one, occasionally more) as [{player, round}] for a keeper
+    column.
     """
     teams = teams or {}
+    kept = {}
+    for k in keepers or []:
+        fid = k.get("fid")
+        if fid:
+            kept.setdefault(fid, []).append({"player": k.get("player"), "round": k.get("round")})
+    for group in kept.values():
+        group.sort(key=lambda x: (x["round"] or 0, x["player"] or ""))
     rows = []
     for i, fid in enumerate(fids or [], start=1):
         rows.append({
@@ -48,6 +58,7 @@ def draft_rows(fids, franchises, teams=None):
             "owner_id": fid if fid in franchises else None,
             "owner_name": name_of(fid, franchises),
             "team": teams.get(fid),
+            "keepers": kept.get(fid, []),
         })
     return rows
 
@@ -108,7 +119,8 @@ def season_detail(season, franchises, overrides, notes):
         "rows": rows,
         "notes": sr["notes"],
         "weeks_played": max(weeks) if weeks else 0,
-        "draft_order": draft_rows(season.get("draft_order"), franchises, season.get("teams")),
+        "draft_order": draft_rows(season.get("draft_order"), franchises,
+                                   season.get("teams"), season.get("keepers")),
         "trades": season_trades(season, franchises),
         "keepers": season_keepers(season, franchises),
         "champ": None if in_progress else (rows[0] if rows else None),
