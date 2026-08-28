@@ -16,7 +16,7 @@ status: in_progress
 draft_order:
   - jackperkins74
   - gganoom
-  - henpen28
+  - alexandra
   - shawne2520997
   - schirmerj
   - lukstein
@@ -35,7 +35,7 @@ teams:
   lukstein: "2x Runner Up"
   jackperkins74: "Gibbed for your pleasure"
   kevbots22: "Keeping up with the McCalferies"
-  henpen28: "Dump it on my Chest"
+  alexandra: "Dump it on my Chest"
   purpsworth: "I am dead inside"
   whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
   theoceanpulse: "Thoughts and Players"
@@ -44,7 +44,7 @@ teams:
 
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
-playoff_teams: []  # not seeded yet
+playoff_teams: [] # not seeded yet
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:
@@ -54,14 +54,14 @@ final_standings:
   - lukstein
   - jackperkins74
   - kevbots22
-  - henpen28
+  - alexandra
   - purpsworth
   - whowonthelastsuperbowl
   - theoceanpulse
   - gganoom
   - shawne2520997
 
-matchups: []  # no games played yet
+matchups: [] # no games played yet
 
 # Completed trades this season (franchise-keyed). ESPN reveals a trade's
 # contents only to its participants, so trades no merged account was in
@@ -80,27 +80,27 @@ trades_known_for:
   - theoceanpulse
   - zachzoske
 trades:
-- id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
-  week: 0
-  teams:
-  - shawne2520997
-  - theoceanpulse
-  assets:
-  - from: theoceanpulse
-    to: shawne2520997
-    label: Nico Collins
-  - from: theoceanpulse
-    to: shawne2520997
-    label: 5.10 pick
-  - from: theoceanpulse
-    to: shawne2520997
-    label: 9.10 pick
-  - from: shawne2520997
-    to: theoceanpulse
-    label: 5.04 pick
-  - from: shawne2520997
-    to: theoceanpulse
-    label: 9.04 pick
+  - id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
+    week: 0
+    teams:
+      - shawne2520997
+      - theoceanpulse
+    assets:
+      - from: theoceanpulse
+        to: shawne2520997
+        label: Nico Collins
+      - from: theoceanpulse
+        to: shawne2520997
+        label: 5.10 pick
+      - from: theoceanpulse
+        to: shawne2520997
+        label: 9.10 pick
+      - from: shawne2520997
+        to: theoceanpulse
+        label: 5.04 pick
+      - from: shawne2520997
+        to: theoceanpulse
+        label: 9.04 pick
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.

@@ -1,19 +1,4 @@
 active:
-- id: henpen28
-  name: Henry
-  seasons: 12
-  record: 77-84
-  win_pct: '.478'
-  win_color: '#f9bd5d'
-  titles: '3'
-  sackos: 1
-  trades: 6
-  best_finish:
-    type: shiva
-    years:
-    - 2014
-    - 2017
-    - 2022
 - id: shawne2520997
   name: Shawnee
   seasons: 10
@@ -163,7 +148,35 @@ active:
     ordinal: 4th
     years:
     - 2022
+- id: alexandra
+  name: Lexi
+  seasons: 0
+  record: 0-0
+  win_pct: '.000'
+  win_color: '#fdf3e0'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: —
+    years: []
 inactive:
+- id: henpen28
+  name: Henry
+  seasons: 12
+  record: 77-84
+  win_pct: '.478'
+  win_color: '#f9bd5d'
+  titles: '3'
+  sackos: 1
+  trades: 6
+  best_finish:
+    type: shiva
+    years:
+    - 2014
+    - 2017
+    - 2022
 - id: unclebadtouch38
   name: Fletcher
   seasons: 8

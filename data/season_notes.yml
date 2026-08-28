@@ -8,6 +8,9 @@
 # The playoff-field, league-size, manager-change, and roster notes below were
 # derived from the ESPN data (see scripts/inspect_settings.py for rosters).
 
+2026:
+  - "Lexi joined the league; Henry departed (RIP King of the league)."
+
 2025: []
 
 2024:

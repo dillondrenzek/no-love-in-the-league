@@ -4023,3 +4023,25 @@ thebragers:
   trades: []
   trades_known: false
   keepers: []
+alexandra:
+  name: Lexi
+  nickname: ''
+  honors: []
+  resume:
+    all_time: 0-0
+    win_pct: '.000'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 0
+    trades: 0
+    trades_known: true
+    seasons: 0
+    best_finish:
+      type: place
+      ordinal: —
+      years: []
+  seasons: []
+  h2h: []
+  trades: []
+  trades_known: true
+  keepers: []

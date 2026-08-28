@@ -211,3 +211,8 @@
   - KillDilly Elegy
   - One Big Beautiful Dill
   espn_swid: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
+- id: alexandra
+  name: Lexi
+  aliases:
+  - Dump it on my Chest
+  espn_swid: '{3E84ED1A-962A-4601-84ED-1A962A160116}'

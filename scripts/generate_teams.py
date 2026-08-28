@@ -16,7 +16,7 @@ from pathlib import Path
 import yaml
 
 from lib.data import load_franchises, load_seasons
-from lib.teams import compute_profiles, win_pct, rec_str, fmt_titles, split_titles
+from lib.teams import compute_profiles, empty_profile, win_pct, rec_str, fmt_titles, split_titles
 from lib.rulings import load_overrides
 from lib.render import warm_heat, heat_color
 
@@ -79,12 +79,22 @@ def _owner_row(p):
     }
 
 
-def owners_data(profiles):
+def current_roster(seasons):
+    """Franchise ids fielding a team in the most recent season on record —
+    including an in-progress one — i.e. the league's current membership. This is
+    what makes an owner 'active': a mid-season ownership change (a new manager in
+    this year's `teams:`) flips who's active even before the season is final."""
+    if not seasons:
+        return set()
+    latest = max(seasons, key=lambda s: s["season"])
+    return set((latest.get("teams") or {}).keys())
+
+
+def owners_data(profiles, roster):
     ranked = sorted_profiles(profiles)
-    latest = max(p["seasons"][0]["year"] for p in ranked)
     return {
-        "active": [_owner_row(p) for p in ranked if p["seasons"][0]["year"] == latest],
-        "inactive": [_owner_row(p) for p in ranked if p["seasons"][0]["year"] != latest],
+        "active": [_owner_row(p) for p in ranked if p["id"] in roster],
+        "inactive": [_owner_row(p) for p in ranked if p["id"] not in roster],
     }
 
 
@@ -184,9 +194,16 @@ def main():
     overrides = load_overrides()
     profiles = compute_profiles(seasons, franchises, overrides, trade_seasons=trade_seasons)
 
+    # A current owner with no completed season yet (just joined an in-progress
+    # season) has no profile — seed a zero-stat one so they list as active.
+    roster = current_roster(trade_seasons)
+    for fid in roster:
+        if fid not in profiles:
+            profiles[fid] = empty_profile(fid, franchises)
+
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "owners.yml").write_text(
-        yaml.safe_dump(owners_data(profiles), sort_keys=False, allow_unicode=True), encoding="utf-8")
+        yaml.safe_dump(owners_data(profiles, roster), sort_keys=False, allow_unicode=True), encoding="utf-8")
     (DATA_DIR / "owner_profiles.yml").write_text(
         yaml.safe_dump({pid: _profile_data(p, profiles) for pid, p in profiles.items()},
                        sort_keys=False, allow_unicode=True), encoding="utf-8")
