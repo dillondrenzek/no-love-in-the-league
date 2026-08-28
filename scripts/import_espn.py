@@ -98,6 +98,17 @@ def existing_trades(year):
     return trades
 
 
+def existing_teams(year):
+    """Franchise ids that fielded a team in the season file on disk. Used to spot
+    an ownership change: a franchise that was here last import but isn't now was
+    replaced, and any hand-edited reference to it (e.g. draft_order) is stale."""
+    path = SEASONS_DIR / f"{year}.yml"
+    if path.exists():
+        data = yaml.safe_load(path.read_text()) or {}
+        return list((data.get("teams") or {}).keys())
+    return []
+
+
 def existing_known_for(year):
     """The `trades_known_for` franchises already recorded for a season."""
     path = SEASONS_DIR / f"{year}.yml"
@@ -144,7 +155,11 @@ def resolve_franchises(team_rows, registry):
             base = slug(display or team_name)
             fid = base
             i = 2
-            while fid in used_ids and not swid:
+            # Always de-dupe against ids already in use — even for a SWID owner.
+            # A new owner whose first name slugs to an id another franchise already
+            # holds (e.g. a second "Lexi") must get a distinct id, or two registry
+            # entries would collide on one id and share a /teams/<id>/ page.
+            while fid in used_ids:
                 fid, i = f"{base}-{i}", i + 1
             entry = {"id": fid, "name": display or team_name, "aliases": []}
             if swid:
@@ -501,6 +516,24 @@ def main():
 
     season_teams = {team_to_fid[t["team_id"]]: clean_name(t["team_name"]) for t in team_rows}
 
+    # Ownership change guard: a franchise that fielded a team here last import but
+    # isn't in this year's roster was replaced by a new manager. The importer
+    # re-keys teams/standings/trades automatically, but the hand-edited
+    # `draft_order` is preserved verbatim — so a departed owner still listed there
+    # is now stale and must be swapped to the new franchise by hand.
+    draft_order = existing_draft_order(args.year)
+    departed = [fid for fid in existing_teams(args.year) if fid not in season_teams]
+    if departed:
+        arrived = [fid for fid in season_teams if fid not in existing_teams(args.year)]
+        print(f"NOTE: ownership change in {args.year} — {', '.join(departed)} no longer "
+              f"fields a team" + (f" (new: {', '.join(arrived)})" if arrived else "") + ".",
+              file=sys.stderr)
+        stale = [fid for fid in departed if fid in draft_order]
+        if stale:
+            print(f"      draft_order still lists {', '.join(stale)} — edit "
+                  f"data/seasons/{args.year}.yml to point at the new franchise.",
+                  file=sys.stderr)
+
     # Winners-bracket seeds = ESPN playoffSeed within 1..playoffTeamCount.
     playoff_count = sched.get("playoffTeamCount") or 0
     seeded = sorted(
@@ -512,7 +545,7 @@ def main():
     season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups,
                                    season_teams, playoff_ids,
                                    status=None if complete else "in_progress",
-                                   draft_order=existing_draft_order(args.year),
+                                   draft_order=draft_order,
                                    trades=trades, trades_complete=trades_complete,
                                    trades_known_for=sorted(known_for), keepers=keepers)
 

@@ -173,6 +173,16 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
     return profiles
 
 
+def empty_profile(fid, franchises):
+    """A finalized, zero-stat profile for a franchise with no completed season
+    yet — e.g. an owner who just took over a team in an in-progress season. Lets
+    the owners index list them as an active member before they have a record."""
+    p = _blank(fid, franchises)
+    p.update(best_finish=None, worst_finish=None, seasons_count=0)
+    p["reg"]["win_pct"] = 0.0
+    return p
+
+
 def win_pct(w, l, t):
     games = w + l + t
     return (w + 0.5 * t) / games if games else 0.0

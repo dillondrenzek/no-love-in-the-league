@@ -5,10 +5,14 @@ owner_profiles record).
 {%- assign p = include.p -%}
 <div class="resume">
   <div class="resume__honors">
+    {%- if p.honors.size > 0 -%}
     {%- for h in p.honors -%}
       {%- unless forloop.first %} · {% endunless -%}
       {{ h.emoji }} {% if h.strong %}<b>{{ h.text }}</b>{% else %}{{ h.text }}{% endif %}
     {%- endfor -%}
+    {%- else -%}
+    <span class="muted">No honors yet — welcome newbie.</span>
+    {%- endif -%}
   </div>
   <div class="resume__grid">
     <div class="tile"><div class="tile__label">All-Time</div><div class="tile__val">{{ p.resume.all_time }} <span class="muted">({{ p.resume.win_pct }})</span></div></div>

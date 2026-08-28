@@ -3,6 +3,7 @@ An owner's season-by-season table. Param: rows (list with year, team, tag,
 finish, record, pf, pf_color, pa).
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
+{%- if rows and rows.size > 0 -%}
 <div class="table-scroll">
 <table>
   <thead>
@@ -22,3 +23,6 @@ finish, record, pf, pf_color, pa).
   </tbody>
 </table>
 </div>
+{%- else -%}
+<p class="empty-state">No seasons on record yet.</p>
+{%- endif -%}

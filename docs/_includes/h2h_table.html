@@ -3,6 +3,7 @@ Head-to-head table. Param: rows (list of {opp_id, opp_short, record, win_pct,
 win_color, avg_pf, avg_pa}).
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
+{%- if rows and rows.size > 0 -%}
 <div class="table-scroll">
 <table>
   <thead>
@@ -21,3 +22,6 @@ win_color, avg_pf, avg_pa}).
   </tbody>
 </table>
 </div>
+{%- else -%}
+<p class="empty-state">No head-to-head games yet.</p>
+{%- endif -%}
