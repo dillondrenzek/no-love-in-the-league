@@ -9,7 +9,17 @@ weeks_in_regular_season: 13
 # Draft order (1st overall pick first), franchise ids. Optional and HAND-
 # EDITED — preserved across re-imports; remove the block to hide the draft
 # table on the season page.
-draft_order: []
+draft_order:
+  - schirmerj
+  - thebragers
+  - kevbots22
+  - jackperkins74
+  - zachzoske
+  - master-otis
+  - henpen28
+  - lukstein
+  - sturmanator15
+  - whowonthelastsuperbowl
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:

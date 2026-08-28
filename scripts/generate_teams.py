@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons
+from lib.data import load_franchises, load_seasons, short_name_of
 from lib.teams import compute_profiles, empty_profile, win_pct, rec_str, fmt_titles, split_titles
 from lib.rulings import load_overrides
 from lib.render import warm_heat, heat_color
@@ -90,6 +90,40 @@ def current_roster(seasons):
         return set()
     latest = max(seasons, key=lambda s: s["season"])
     return set((latest.get("teams") or {}).keys())
+
+
+def draft_heatmap(seasons, franchises, roster=None):
+    """Owners × draft-slot grid: how many times each owner drafted from each slot
+    (slot 1 = the 1.01), across every draft on record — including an in-progress
+    season's projected order. Active owners (in `roster`) come first, then
+    inactive; within each group by total picks then name. Each cell carries a heat
+    color scaled to the busiest cell. Returns None when no draft data exists."""
+    roster = roster or set()
+    counts = {}                       # fid -> {slot: n}
+    max_slot = 0
+    for season in seasons:
+        order = season.get("draft_order") or []
+        max_slot = max(max_slot, len(order))
+        for slot, fid in enumerate(order, start=1):
+            row = counts.setdefault(fid, {})
+            row[slot] = row.get(slot, 0) + 1
+    if not counts:
+        return None
+
+    slots = list(range(1, max_slot + 1))
+    max_count = max(n for d in counts.values() for n in d.values())
+    rows = []
+    for fid, d in counts.items():
+        cells = [{"slot": s, "count": d.get(s, 0),
+                  "color": heat_color(d.get(s, 0), 0, max_count) if d.get(s) else None}
+                 for s in slots]
+        rows.append({
+            "id": fid if fid in franchises else None,
+            "name": short_name_of(fid, franchises),
+            "total": sum(d.values()), "cells": cells,
+        })
+    rows.sort(key=lambda r: (r["id"] not in roster, -r["total"], r["name"].lower()))
+    return {"slots": slots, "max": max_count, "rows": rows}
 
 
 def owners_data(profiles, roster):
@@ -205,9 +239,16 @@ def main():
         if fid not in profiles:
             profiles[fid] = empty_profile(fid, franchises)
 
+    owners = owners_data(profiles, roster)
+    # Draft Order History heatmap — every draft on record, including 2026's
+    # projected order; active owners first, then inactive.
+    heatmap = draft_heatmap(seasons, franchises, roster)
+    if heatmap:
+        owners["draft_heatmap"] = heatmap
+
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "owners.yml").write_text(
-        yaml.safe_dump(owners_data(profiles, roster), sort_keys=False, allow_unicode=True), encoding="utf-8")
+        yaml.safe_dump(owners, sort_keys=False, allow_unicode=True), encoding="utf-8")
     (DATA_DIR / "owner_profiles.yml").write_text(
         yaml.safe_dump({pid: _profile_data(p, profiles) for pid, p in profiles.items()},
                        sort_keys=False, allow_unicode=True), encoding="utf-8")

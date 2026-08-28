@@ -398,6 +398,24 @@ def test_meaningless_games_excluded_from_records_and_h2h():
     assert (profiles["e"]["h2h"]["f"]["w"], profiles["e"]["h2h"]["f"]["l"]) == (1, 0)
 
 
+def test_most_first_overall_record():
+    def s(year, order):
+        return {"season": year,
+                "standings": [{"finish": 1, "team": "X", "record": "1-0-0"}],
+                "draft_order": order}
+    # 'a' holds the 1.01 in 2019 and 2020; 'b' once in 2021.
+    seasons = [s(2019, ["a", "b", "c"]), s(2020, ["a", "c", "b"]), s(2021, ["b", "a", "c"])]
+    recs = {r["category"]: r for r in compute_records(seasons, {})}
+    assert "Most Times Drafting 1.01" in recs, recs.keys()
+    assert recs["Most Times Drafting 1.01"]["value"] == "2"
+    assert recs["Most Times Drafting 1.01"]["owner_name"] == "a"
+
+    # Not a record until someone's done it more than once.
+    once = [s(2019, ["a", "b"]), s(2020, ["b", "a"])]
+    recs2 = {r["category"] for r in compute_records(once, {})}
+    assert "Most Times Drafting 1.01" not in recs2
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

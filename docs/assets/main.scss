@@ -240,6 +240,21 @@ tbody td a:hover { color: var(--brand); }
   text-align: right;
 }
 
+// Draft Order History heatmap: owners down the left, draft slot across the top,
+// each cell shaded by frequency (color comes inline from the generator).
+.heatmap { border-collapse: separate; border-spacing: 2px; }
+.heatmap th, .heatmap td { text-align: center; }
+.heatmap th:first-child, .heatmap td:first-child { text-align: left; white-space: nowrap; }
+.heatmap th.num { text-align: center; }
+// Keep cells compact (~30px tall) rather than inheriting the roomy table padding.
+.heatmap td { height: 30px; padding-top: 0; padding-bottom: 0; line-height: 1; }
+.heatmap__cell {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--chip-ink);
+  min-width: 2.1em;
+  border-radius: 5px;
+}
 // The "Shiva" (championship) label used in the best-finish column.
 .shiva { color: var(--brand); font-weight: 700; }
 

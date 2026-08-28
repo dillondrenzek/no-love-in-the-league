@@ -28,7 +28,7 @@ nothing drifts out of sync.
 season: 2025
 weeks_in_regular_season: 14
 status: in_progress        # present only mid-season (see below); omit when final
-draft_order:               # optional, HAND-EDITED; preserved across re-imports
+draft_order:               # 1.01 first; locked, hand-maintained, preserved across re-imports
   - jackperkins74
 teams:                     # this season's team name per franchise id
   jackperkins74: "Pukkake"
@@ -53,7 +53,10 @@ events), so they surface on owner profiles and season pages before the year ends
 `home`/`away`/`final_standings`/`draft_order` reference franchise ids;
 `teams` maps each id to its name that season (so pages show "Pukkake" while the id
 links the owner across years). Scores are the only numbers typed by hand — win/loss
-is computed. Everything except `draft_order` is importer-owned; don't hand-edit it.
+is computed. The importer owns every field except `draft_order`, which is locked,
+hand-maintained data preserved verbatim across re-imports (remove the block to hide
+the draft table). Draft slots feed the Draft Order History heatmap and the 1.01
+record.
 
 *(A season can instead carry an explicit `standings:` block of finish/team/record
 rows with no scores — a legacy path still supported by `lib/standings.py` — but

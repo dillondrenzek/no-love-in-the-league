@@ -47,6 +47,18 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+- category: Most Times Drafting 1.01
+  value: '4'
+  sub_value: null
+  season: null
+  week: null
+  holder: Jack
+  owner_id: jackperkins74
+  owner_name: Jack
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
 - category: Most Points in a Week
   value: '184.90'
   sub_value: null

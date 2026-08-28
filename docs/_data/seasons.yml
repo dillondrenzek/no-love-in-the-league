@@ -323,7 +323,89 @@ detail:
       pa: 1669.3
     notes: []
     weeks_played: 14
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Dont spit just swallow
+      keepers:
+      - player: Trey McBride
+        round: 11
+    - pick: 2
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Pukkake
+      keepers:
+      - player: Puka Nacua
+        round: 11
+    - pick: 3
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: D***er my Sufficient Tight End
+      keepers:
+      - player: Ricky Pearsall
+        round: 13
+    - pick: 4
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Thoughts and Players
+      keepers:
+      - player: Nico Collins
+        round: 7
+    - pick: 5
+      owner_id: schirmerj
+      owner_name: Jono
+      team: IDPs Forever
+      keepers:
+      - player: Kyren Williams
+        round: 10
+    - pick: 6
+      owner_id: henpen28
+      owner_name: Henry
+      team: Dump it on my Chest
+      keepers: []
+    - pick: 7
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Keeping up with the McCalferies
+      keepers:
+      - player: Joe Burrow
+        round: 4
+    - pick: 8
+      owner_id: lukstein
+      owner_name: Luke
+      team: 2x Runner Up
+      keepers:
+      - player: Baker Mayfield
+        round: 13
+    - pick: 9
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Big Brown Dak Makes em Waddle
+      keepers:
+      - player: Bucky Irving
+        round: 13
+    - pick: 10
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Trick or Trick It’s Mike Vick
+      keepers:
+      - player: Drake Maye
+        round: 13
+    - pick: 11
+      owner_id: gganoom
+      owner_name: Grant
+      team: One Big Beautiful Dill
+      keepers:
+      - player: Brock Bowers
+        round: 7
+    - pick: 12
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: I am dead inside
+      keepers:
+      - player: De'Von Achane
+        round: 10
     trades:
     - week: 0
       parties:
@@ -557,7 +639,85 @@ detail:
     notes:
     - Grant joined the league; Fletcher departed.
     weeks_played: 14
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Tom Bradys Only Fans
+      keepers: []
+    - pick: 2
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Trick or Trick It’s Mike Vick
+      keepers: []
+    - pick: 3
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Save a horse, Ride the Cowboys
+      keepers:
+      - player: Breece Hall
+        round: 2
+    - pick: 4
+      owner_id: henpen28
+      owner_name: Henry
+      team: Three's Company
+      keepers: []
+    - pick: 5
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: I am dead inside
+      keepers:
+      - player: De'Von Achane
+        round: 12
+    - pick: 6
+      owner_id: schirmerj
+      owner_name: Jono
+      team: 5 Star Men
+      keepers:
+      - player: Kyren Williams
+        round: 12
+    - pick: 7
+      owner_id: lukstein
+      owner_name: Luke
+      team: 2x Runner Up
+      keepers:
+      - player: Garrett Wilson
+        round: 7
+    - pick: 8
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Nix Out For Harambe
+      keepers:
+      - player: Nico Collins
+        round: 9
+    - pick: 9
+      owner_id: gganoom
+      owner_name: Grant
+      team: KillDilly Elegy
+      keepers:
+      - player: Chris Olave
+        round: 5
+    - pick: 10
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Pukkake
+      keepers:
+      - player: Puka Nacua
+        round: 13
+    - pick: 11
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Thoughts and Players
+      keepers:
+      - player: Sam LaPorta
+        round: 13
+    - pick: 12
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: All Hail the King
+      keepers:
+      - player: Trey McBride
+        round: 13
     trades:
     - week: 0
       parties:
@@ -774,7 +934,85 @@ detail:
     - Increase QB TDs from 4 points to 5
     - Dropped the IDP slot and added a third WR starter.
     weeks_played: 14
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Save a horse, Ride the Cowboys
+      keepers:
+      - player: Alexander Mattison
+        round: 9
+    - pick: 2
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Zach's Juicy Fantasy Teamussy
+      keepers:
+      - player: Calvin Ridley
+        round: 13
+    - pick: 3
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Mr. Irrelevant
+      keepers: []
+    - pick: 4
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Tom Bradys Only Fans
+      keepers:
+      - player: Joe Burrow
+        round: 8
+    - pick: 5
+      owner_id: lukstein
+      owner_name: Luke
+      team: 2x Runner Up
+      keepers:
+      - player: Garrett Wilson
+        round: 9
+    - pick: 6
+      owner_id: schirmerj
+      owner_name: Jono
+      team: IDP'd My Pants
+      keepers:
+      - player: Isiah Pacheco
+        round: 9
+    - pick: 7
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: In Goff we trust
+      keepers:
+      - player: Trevor Lawrence
+        round: 13
+    - pick: 8
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Vinegar Strokes
+      keepers:
+      - player: Tony Pollard
+        round: 5
+    - pick: 9
+      owner_id: henpen28
+      owner_name: Henry
+      team: Three's Company
+      keepers: []
+    - pick: 10
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: Used Napkin
+      keepers:
+      - player: Amon-Ra St. Brown
+        round: 4
+    - pick: 11
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Trick or Trick It’s Mike Vick
+      keepers: []
+    - pick: 12
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Thoughts and Players
+      keepers:
+      - player: Chris Olave
+        round: 7
     trades:
     - week: 0
       parties:
@@ -1037,7 +1275,67 @@ detail:
     - NFL season expanded to 17 games, giving us one more week of fantasy.
     - Bench expanded from 4 spots to 5.
     weeks_played: 14
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Allen's Deep Balls
+      keepers: []
+    - pick: 2
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Naggar's In Paris
+      keepers: []
+    - pick: 3
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Thoughts and Players
+      keepers: []
+    - pick: 4
+      owner_id: lukstein
+      owner_name: Luke
+      team: Fly Eagles Fly
+      keepers: []
+    - pick: 5
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Koo Koo Kachoo
+      keepers: []
+    - pick: 6
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Risk it for The Biscuit
+      keepers: []
+    - pick: 7
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Trey Lanced my ❤️
+      keepers: []
+    - pick: 8
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Make Dalvin Cook Again
+      keepers: []
+    - pick: 9
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: Used Napkin
+      keepers: []
+    - pick: 10
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Trick or Trick It’s Mike Vick
+      keepers: []
+    - pick: 11
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Mr. Irrelevant
+      keepers: []
+    - pick: 12
+      owner_id: henpen28
+      owner_name: Henry
+      team: Consensual Trades
+      keepers: []
     trades:
     - week: 0
       parties:
@@ -1229,7 +1527,67 @@ detail:
     notes:
     - Injured-reserve slots trimmed from 4 to 1.
     weeks_played: 14
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: WA Fantasy Football Team
+      keepers: []
+    - pick: 2
+      owner_id: zachzoske
+      owner_name: Zach
+      team: ESPN 8 The Ocho
+      keepers: []
+    - pick: 3
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Purple Cobras and Michel
+      keepers: []
+    - pick: 4
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Jackie PooPooPants
+      keepers: []
+    - pick: 5
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Set_The_ RAT_TRAP_!
+      keepers: []
+    - pick: 6
+      owner_id: henpen28
+      owner_name: Henry
+      team: Scat Play
+      keepers: []
+    - pick: 7
+      owner_id: lukstein
+      owner_name: Luke
+      team: Autodraft Monster
+      keepers: []
+    - pick: 8
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Post Mahomes
+      keepers: []
+    - pick: 9
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Hot Chubb Time Machine
+      keepers: []
+    - pick: 10
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Trick or Trick It’s Mike Vick
+      keepers: []
+    - pick: 11
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Koo Koo Kachoo
+      keepers: []
+    - pick: 12
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Fantasy Judas
+      keepers: []
     trades:
     - week: 1
       parties:
@@ -1403,7 +1761,67 @@ detail:
     notes:
     - Added injured-reserve (IR) slots.
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Ram It In
+      keepers: []
+    - pick: 2
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: AB’s Helmet
+      keepers: []
+    - pick: 3
+      owner_id: lukstein
+      owner_name: Luke
+      team: Show Me Your TDs
+      keepers: []
+    - pick: 4
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Koo Koo Kachoo
+      keepers: []
+    - pick: 5
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Set_The_ RAT_TRAP_!
+      keepers: []
+    - pick: 6
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Folklore Bandits
+      keepers: []
+    - pick: 7
+      owner_id: henpen28
+      owner_name: Henry
+      team: Scat Play
+      keepers: []
+    - pick: 8
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Fantasy Judas
+      keepers: []
+    - pick: 9
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Calvin and (Jac)Obs
+      keepers: []
+    - pick: 10
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Wadgerach Sturdellske
+      keepers: []
+    - pick: 11
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Trick-Ass Marks
+      keepers: []
+    - pick: 12
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Lickin Brown in my McLaurin
+      keepers: []
     trades:
     - week: 5
       parties:
@@ -1590,7 +2008,67 @@ detail:
     notes:
     - Trevor joined the league; Anthony departed.
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: The Antonio ClownExperience
+      keepers: []
+    - pick: 2
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Mixon it up
+      keepers: []
+    - pick: 3
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Hans Blitz! Ohh noo!
+      keepers: []
+    - pick: 4
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Wadgerach Sturdellske
+      keepers: []
+    - pick: 5
+      owner_id: purpsworth
+      owner_name: Trevor
+      team: AB’s Helmet
+      keepers: []
+    - pick: 6
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Lamar's Donger
+      keepers: []
+    - pick: 7
+      owner_id: henpen28
+      owner_name: Henry
+      team: Tom Brady's Fluffer
+      keepers: []
+    - pick: 8
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Eleven In Crocks
+      keepers: []
+    - pick: 9
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Tank4Picks .
+      keepers: []
+    - pick: 10
+      owner_id: lukstein
+      owner_name: Luke
+      team: Show Me Your TDs
+      keepers: []
+    - pick: 11
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Set_The_ RAT_TRAP_!
+      keepers: []
+    - pick: 12
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Vladimir Putin
+      keepers: []
     trades:
     - week: 0
       parties:
@@ -1808,7 +2286,67 @@ detail:
       pa: 1295.5
     notes: []
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Mixon's Gurley Fight Club
+      keepers: []
+    - pick: 2
+      owner_id: lukstein
+      owner_name: Luke
+      team: Graham Slam
+      keepers: []
+    - pick: 3
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Wadgerach Sturdellske
+      keepers: []
+    - pick: 4
+      owner_id: ajstewart04
+      owner_name: Anthony
+      team: Tacos Food Truck
+      keepers: []
+    - pick: 5
+      owner_id: henpen28
+      owner_name: Henry
+      team: Tom Brady's Fluffer
+      keepers: []
+    - pick: 6
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Sackos Auto Draft Experiene
+      keepers: []
+    - pick: 7
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Hammed Up .
+      keepers: []
+    - pick: 8
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Cleveland Mcpussysmasher
+      keepers: []
+    - pick: 9
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Hans Blitz! Ohh noo!
+      keepers: []
+    - pick: 10
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Team Kevin with a K
+      keepers: []
+    - pick: 11
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Chubbin out (no more Hydin)
+      keepers: []
+    - pick: 12
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Queen of the Hill
+      keepers: []
     trades: []
     keepers: []
     champ: *id015
@@ -1935,7 +2473,67 @@ detail:
     - Bench shrank from 7 spots to 4.
     - Anthony joined the league; Odie departed.
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: Dislocated Johnson
+      keepers: []
+    - pick: 2
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Russian Roiders
+      keepers: []
+    - pick: 3
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Wadgerach Sturdellske
+      keepers: []
+    - pick: 4
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Browning out .
+      keepers: []
+    - pick: 5
+      owner_id: lukstein
+      owner_name: Luke
+      team: My Cox Will Ertz You
+      keepers: []
+    - pick: 6
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Hans Blitz! Ohh noo!
+      keepers: []
+    - pick: 7
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Jacking Goff
+      keepers: []
+    - pick: 8
+      owner_id: henpen28
+      owner_name: Henry
+      team: Forceable Entry
+      keepers: []
+    - pick: 9
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: The People's Champion
+      keepers: []
+    - pick: 10
+      owner_id: ajstewart04
+      owner_name: Anthony
+      team: Tacos Food Truck
+      keepers: []
+    - pick: 11
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Injury Reserve
+      keepers: []
+    - pick: 12
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Cleveland Mcpussysmasher
+      keepers: []
     trades: []
     keepers: []
     champ: *id017
@@ -2062,7 +2660,67 @@ detail:
     - Dillon, Fletcher, and Shawnee joined; Brady departed.
     - Wade and Jono tied the championship game 114.8–114.8 — officially ruled a **co-championship**.
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Russian Roiders
+      keepers: []
+    - pick: 2
+      owner_id: master-otis
+      owner_name: Odie
+      team: Brown Lives Matter
+      keepers: []
+    - pick: 3
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      team: GONNA DEFLATE YO BALLS!!
+      keepers: []
+    - pick: 4
+      owner_id: henpen28
+      owner_name: Henry
+      team: Forceable Entry
+      keepers: []
+    - pick: 5
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Lick my Rawls .
+      keepers: []
+    - pick: 6
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      team: Hillary Has The 2nd Clinton-Dix
+      keepers: []
+    - pick: 7
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Wadger Sturdell
+      keepers: []
+    - pick: 8
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: The Toddfather
+      keepers: []
+    - pick: 9
+      owner_id: unclebadtouch38
+      owner_name: Fletcher
+      team: Cleveland Mcpussysmasher
+      keepers: []
+    - pick: 10
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Wadgerach Sturdellske
+      keepers: []
+    - pick: 11
+      owner_id: lukstein
+      owner_name: Luke
+      team: My Cox Will Ertz You
+      keepers: []
+    - pick: 12
+      owner_id: zachzoske
+      owner_name: Zach
+      team: The Mighty Cucks
+      keepers: []
     trades: []
     keepers: []
     champ: *id019
@@ -2167,7 +2825,57 @@ detail:
       pa: 1236.9
     notes: []
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: master-otis
+      owner_name: Odie
+      team: I Waxed My Child For This
+      keepers: []
+    - pick: 2
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: The People's Commissioner
+      keepers: []
+    - pick: 3
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Jenner's Man Meat
+      keepers: []
+    - pick: 4
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Wilson's Magic Water
+      keepers: []
+    - pick: 5
+      owner_id: henpen28
+      owner_name: Henry
+      team: Jared's Kids
+      keepers: []
+    - pick: 6
+      owner_id: thebragers
+      owner_name: Brady
+      team: The Bragers
+      keepers: []
+    - pick: 7
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: MasterDeflater And_Commander
+      keepers: []
+    - pick: 8
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: He's Quick He's Slick He's Mike
+      keepers: []
+    - pick: 9
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Gronkey Punch
+      keepers: []
+    - pick: 10
+      owner_id: lukstein
+      owner_name: Luke
+      team: Polk Me Til I Goregasm
+      keepers: []
     trades: []
     keepers: []
     champ: *id021
@@ -2273,7 +2981,57 @@ detail:
     notes:
     - The league is founded — 10 teams, with 6 making the playoffs.
     weeks_played: 13
-    draft_order: []
+    draft_order:
+    - pick: 1
+      owner_id: schirmerj
+      owner_name: Jono
+      team: Arian nation .
+      keepers: []
+    - pick: 2
+      owner_id: thebragers
+      owner_name: Brady
+      team: Team TheBragers
+      keepers: []
+    - pick: 3
+      owner_id: kevbots22
+      owner_name: Kevin
+      team: Luck her right in the Pussy
+      keepers: []
+    - pick: 4
+      owner_id: jackperkins74
+      owner_name: Jack
+      team: Turn down for Watt
+      keepers: []
+    - pick: 5
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Spaceball One
+      keepers: []
+    - pick: 6
+      owner_id: master-otis
+      owner_name: Odie
+      team: Lynched by Le' Bell
+      keepers: []
+    - pick: 7
+      owner_id: henpen28
+      owner_name: Henry
+      team: Uncle Grabby
+      keepers: []
+    - pick: 8
+      owner_id: lukstein
+      owner_name: Luke
+      team: Washington Blowskins
+      keepers: []
+    - pick: 9
+      owner_id: sturmanator15
+      owner_name: Wade
+      team: Ben there raped that
+      keepers: []
+    - pick: 10
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      team: Haters Gonna Hate
+      keepers: []
     trades: []
     keepers: []
     champ: *id023

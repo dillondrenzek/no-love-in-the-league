@@ -18,9 +18,11 @@ build scripts compute standings, records, and owner stats from those.
 - `data/franchises.yml` — owners; edit the `name` field freely.
 - `data/overrides.yml` — league rulings (co-champions, double-elim years).
 - `data/season_notes.yml` — the per-year event bullets shown on the History page.
-- `data/seasons/<year>.yml` `draft_order:` — an optional, hand-edited draft order
-  (franchise ids, first pick first). The importer preserves it across re-imports;
-  seasons without one just don't show a draft table.
+- `data/seasons/<year>.yml` `draft_order:` — the draft board (franchise ids, 1.01
+  first). Locked, hand-maintained data: the importer preserves it verbatim across
+  re-imports (remove the block to hide the draft table). It drives the season-page
+  draft table, the Draft Order History heatmap, and the "Most Times Drafting 1.01"
+  record.
 - `docs/_layouts/`, `docs/_includes/`, `docs/*.md` templates (incl. the
   hand-written `docs/rulebook/index.md`), `docs/assets/main.scss` — the site's
   presentation (HTML/Liquid/CSS).
