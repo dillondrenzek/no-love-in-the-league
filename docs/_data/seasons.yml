@@ -97,18 +97,18 @@ detail:
       - player: De'Von Achane
         round: 8
     - pick: 8
-      owner_id: zachzoske
-      owner_name: Zach
-      team: Zoinks
-      keepers:
-      - player: Bhayshul Tuten
-        round: 9
-    - pick: 9
       owner_id: sturmanator15
       owner_name: Wade
       team: The People's Commissioner
       keepers:
       - player: Trey McBride
+        round: 9
+    - pick: 9
+      owner_id: zachzoske
+      owner_name: Zach
+      team: Zoinks
+      keepers:
+      - player: Bhayshul Tuten
         round: 9
     - pick: 10
       owner_id: theoceanpulse
