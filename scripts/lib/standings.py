@@ -101,6 +101,23 @@ def get_standings(season, franchises=None):
     return _from_explicit(season)
 
 
+def provisional_standings(season, franchises=None):
+    """Preseason rows for an in-progress season with no games yet: every team at
+    0-0 (no points), ordered by the season's `final_standings` (its current
+    order) and named from `teams`. Lets a not-yet-kicked-off season still list
+    its owners with their team + record, e.g. in season-by-season profiles."""
+    order = season.get("final_standings") or []
+    teams = season.get("teams", {})
+    rows = []
+    for i, fid in enumerate(order, start=1):
+        rows.append({
+            "id": fid, "name": teams.get(fid) or short_name_of(fid, franchises or {}),
+            "finish": i, "wins": 0, "losses": 0, "ties": 0, "record": "0-0",
+            "points_for": None, "points_against": None,
+        })
+    return rows
+
+
 def has_points(rows):
     """True when every row has points data (i.e. came from matchups)."""
     return bool(rows) and all(r.get("points_for") is not None for r in rows)
