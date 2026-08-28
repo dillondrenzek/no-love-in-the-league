@@ -7,7 +7,7 @@ seasons that have matchups (level 2).
 """
 
 from .data import name_of, short_name_of, season_trades_complete
-from .standings import get_standings
+from .standings import get_standings, provisional_standings
 from .rulings import co_champions, meaningless_keys, matchup_key
 
 
@@ -45,10 +45,11 @@ def _apply_game(profiles, fid, opp, pts, opp_pts):
 def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
     """Return {franchise_id: profile}, richest first is up to the caller.
 
-    Standings/records/head-to-head are built from `seasons` (finished seasons
-    only — a half-season shouldn't skew all-time stats). Trades are complete
-    events even mid-season, so they're counted from `trade_seasons` (defaults to
-    `seasons`) — pass the in-progress seasons too so their trades still count."""
+    Standings/record/PF/head-to-head are built from every season in `seasons`,
+    including an in-progress one — its live results count toward all-time totals
+    and show as a season-by-season row — but an undecided season awards no
+    title/sacko/runner-up/berth. Trades are complete events even mid-season, so
+    they're counted from `trade_seasons` (defaults to `seasons`)."""
     overrides = overrides or {}
     profiles = {}
 
@@ -59,8 +60,12 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
 
     for season in sorted(seasons, key=lambda s: s["season"], reverse=True):
         year = season["season"]
+        in_progress = season.get("status") == "in_progress"
         teams_map = season.get("teams", {})
-        rows = {r["id"]: r for r in get_standings(season, franchises)}
+        standings_rows = get_standings(season, franchises)
+        if not standings_rows and in_progress:      # preseason: no games yet
+            standings_rows = provisional_standings(season, franchises)
+        rows = {r["id"]: r for r in standings_rows}
         co = set(co_champions(year, overrides))
         skip = meaningless_keys(season, overrides)
         team_count = len(rows)
@@ -72,20 +77,24 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
                 "finish": r["finish"], "record": r["record"],
                 "pf": r["points_for"], "pa": r["points_against"],
                 "team_count": team_count, "is_co": fid in co,
+                "in_progress": in_progress,
             })
             p["reg"]["w"] += r["wins"]; p["reg"]["l"] += r["losses"]; p["reg"]["t"] += r["ties"]
             if r["points_for"] is not None:
                 p["reg"]["pf"] += r["points_for"]; p["reg"]["pa"] += r["points_against"]
-            if fid in co:
-                p["titles"] += 0.5; p["champ_years"].append((year, True))
-            elif not co and r["finish"] == 1:
-                p["titles"] += 1; p["champ_years"].append((year, False))
-            elif r["finish"] == 2 and fid not in co:
-                p["runner_ups"] += 1
-            elif r["finish"] == 3:
-                p["thirds"] += 1
-            if r["finish"] == team_count:      # dead last = Sacko
-                p["sackos"] += 1; p["sacko_years"].append(year)
+            # An in-progress season counts toward record/PF/best-finish, but nothing
+            # is decided yet — no Shiva/Sacko/runner-up until it's re-imported final.
+            if not in_progress:
+                if fid in co:
+                    p["titles"] += 0.5; p["champ_years"].append((year, True))
+                elif not co and r["finish"] == 1:
+                    p["titles"] += 1; p["champ_years"].append((year, False))
+                elif r["finish"] == 2 and fid not in co:
+                    p["runner_ups"] += 1
+                elif r["finish"] == 3:
+                    p["thirds"] += 1
+                if r["finish"] == team_count:      # dead last = Sacko
+                    p["sackos"] += 1; p["sacko_years"].append(year)
 
         in_playoffs = set()
         for m in season.get("matchups", []):
@@ -159,7 +168,9 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
     for p in profiles.values():
         p["reg"]["pf"] = round(p["reg"]["pf"], 1)
         p["reg"]["pa"] = round(p["reg"]["pa"], 1)
-        finishes = [s["finish"] for s in p["seasons"]]
+        # An in-progress season counts toward record/PF and the season list, but
+        # has no final placement yet — so it's left out of best/worst finish.
+        finishes = [s["finish"] for s in p["seasons"] if not s.get("in_progress")]
         p["best_finish"] = min(finishes) if finishes else None
         p["worst_finish"] = max(finishes) if finishes else None
         p["seasons_count"] = len(p["seasons"])

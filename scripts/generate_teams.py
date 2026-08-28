@@ -56,6 +56,8 @@ def _best_finish_data(p):
 
 
 def _season_tag(s):
+    if s.get("in_progress"):     # nothing decided yet — no Shiva/Sacko tag
+        return None
     if s["is_co"]:
         return "cochamp"
     if s["finish"] == 1:
@@ -125,7 +127,8 @@ def _season_rows(p):
     rows = []
     for s in p["seasons"]:
         row = {"year": s["year"], "team": s["team"], "tag": _season_tag(s),
-               "finish": ordinal(s["finish"]), "record": s["record"]}
+               "finish": ordinal(s["finish"]), "record": s["record"],
+               "in_progress": s.get("in_progress", False)}
         if s["pf"] is not None:
             row["pf"] = s["pf"]
             row["pf_color"] = heat_color(s["pf"], lo, hi)
@@ -188,15 +191,16 @@ owner_id: {id}
 
 def main():
     franchises = load_franchises()
-    seasons = load_seasons()
-    # Trades count even from the in-progress season, so pass it too.
-    trade_seasons = load_seasons(include_in_progress=True)
+    # Include the in-progress season: its live record counts toward all-time
+    # totals and shows as a season-by-season row (compute_profiles awards no
+    # title/sacko for it). Trades already counted from the same list.
+    seasons = load_seasons(include_in_progress=True)
     overrides = load_overrides()
-    profiles = compute_profiles(seasons, franchises, overrides, trade_seasons=trade_seasons)
+    profiles = compute_profiles(seasons, franchises, overrides)
 
-    # A current owner with no completed season yet (just joined an in-progress
-    # season) has no profile — seed a zero-stat one so they list as active.
-    roster = current_roster(trade_seasons)
+    # A current owner with no season at all yet still lists as active via a
+    # zero-stat profile (safety net; a rostered owner normally has a live row).
+    roster = current_roster(seasons)
     for fid in roster:
         if fid not in profiles:
             profiles[fid] = empty_profile(fid, franchises)

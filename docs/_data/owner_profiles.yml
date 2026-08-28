@@ -1,1315 +1,340 @@
-jackperkins74:
-  name: Jack
+sturmanator15:
+  name: Wade
   nickname: ''
   honors:
-  - emoji: 🏆
-    text: 2× Shiva (2015, 2025)
+  - emoji: 🤝
+    text: Co-champ (2016)
     strong: true
-  - emoji: 🥈
-    text: 1× Runner-Up
-    strong: false
-  - emoji: 🥉
-    text: 2× Third
-    strong: false
-  - emoji: 💩
-    text: 1× Sacko (2020)
-    strong: true
-  - emoji: ''
-    text: 9× Playoffs
-    strong: false
-  resume:
-    all_time: 88-73
-    win_pct: '.547'
-    titles: '2'
-    sackos: 1
-    playoff_apps: 9
-    trades: 6
-    trades_known: false
-    seasons: 12
-    best_finish:
-      type: shiva
-      years:
-      - 2015
-      - 2025
-  seasons:
-  - year: 2025
-    team: Pukkake
-    tag: shiva
-    finish: 1st
-    record: 9-5
-    pf: 1769.9
-    pf_color: '#ee6b3b'
-    pa: 1579.4
-  - year: 2024
-    team: Pukkake
-    tag: null
-    finish: 3rd
-    record: 7-7
-    pf: 1661.3
-    pf_color: '#f28742'
-    pa: 1686.1
-  - year: 2023
-    team: Vinegar Strokes
-    tag: null
-    finish: 7th
-    record: 7-7
-    pf: 1522.5
-    pf_color: '#f8ac4b'
-    pa: 1610.4
-  - year: 2022
-    team: Allen's Deep Balls
-    tag: null
-    finish: 6th
-    record: 10-4
-    pf: 1535.0
-    pf_color: '#f7a94a'
-    pa: 1340.4
-  - year: 2021
-    team: Jackie PooPooPants
-    tag: null
-    finish: 5th
-    record: 7-7
-    pf: 1428.8
-    pf_color: '#fac269'
-    pa: 1315.6
-  - year: 2020
-    team: Ram It In
-    tag: sacko
-    finish: 12th
-    record: 5-8
-    pf: 1278.1
-    pf_color: '#fce2b6'
-    pa: 1296.8
-  - year: 2019
-    team: Vladimir Putin
-    tag: null
-    finish: 3rd
-    record: 6-7
-    pf: 1197.1
-    pf_color: '#fdf3e0'
-    pa: 1160.2
-  - year: 2018
-    team: Mixon's Gurley Fight Club
-    tag: null
-    finish: 2nd
-    record: 11-2
-    pf: 1581.3
-    pf_color: '#f59c47'
-    pa: 1444.2
-  - year: 2017
-    team: Jacking Goff
-    tag: null
-    finish: 5th
-    record: 6-7
-    pf: 1220.5
-    pf_color: '#fdeed4'
-    pa: 1170.3
-  - year: 2016
-    team: The Toddfather
-    tag: null
-    finish: 4th
-    record: 8-5
-    pf: 1255.4
-    pf_color: '#fce7c2'
-    pa: 1208.1
-  - year: 2015
-    team: Jenner's Man Meat
-    tag: shiva
-    finish: 1st
-    record: 6-7
-    pf: 1218.3
-    pf_color: '#fdeed5'
-    pa: 1187.3
-  - year: 2014
-    team: Turn down for Watt
-    tag: null
-    finish: 9th
-    record: 6-7
-    pf: 1254.7
-    pf_color: '#fce7c2'
-    pa: 1333.1
-  h2h:
-  - opp_id: ajstewart04
-    opp_short: Anthony
-    record: 2-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 125.1
-    avg_pa: 97.3
-  - opp_id: thebragers
-    opp_short: Brady
-    record: 2-3
-    win_pct: '.400'
-    win_color: '#fac26a'
-    avg_pf: 108.3
-    avg_pa: 103.6
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 10-8
-    win_pct: '.556'
-    win_color: '#f8ae4b'
-    avg_pf: 103.8
-    avg_pa: 107.8
-  - opp_id: unclebadtouch38
-    opp_short: Fletcher
-    record: 4-5
-    win_pct: '.444'
-    win_color: '#f9bd5d'
-    avg_pf: 100.7
-    avg_pa: 94.8
-  - opp_id: gganoom
-    opp_short: Grant
-    record: 3-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 142.2
-    avg_pa: 112.2
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 9-7
-    win_pct: '.562'
-    win_color: '#f8ad4b'
-    avg_pf: 99.0
-    avg_pa: 93.6
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 13-9
-    win_pct: '.591'
-    win_color: '#f7a84a'
-    avg_pf: 112.9
-    avg_pa: 101.5
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 16-3
-    win_pct: '.842'
-    win_color: '#f18341'
-    avg_pf: 115.4
-    avg_pa: 95.4
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 11-10
-    win_pct: '.524'
-    win_color: '#f8b24c'
-    avg_pf: 98.1
-    avg_pa: 99.4
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 9-8
-    win_pct: '.529'
-    win_color: '#f8b24c'
-    avg_pf: 108.0
-    avg_pa: 104.2
-  - opp_id: master-otis
-    opp_short: Odie
-    record: 3-3
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 90.3
-    avg_pa: 94.7
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 7-6
-    win_pct: '.538'
-    win_color: '#f8b04c'
-    avg_pf: 103.3
-    avg_pa: 100.5
-  - opp_id: purpsworth
-    opp_short: Trevor
-    record: 7-7
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 105.8
-    avg_pa: 103.7
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 8-5
-    win_pct: '.615'
-    win_color: '#f6a549'
-    avg_pf: 102.5
-    avg_pa: 97.4
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 4-12
-    win_pct: '.250'
-    win_color: '#fbd496'
-    avg_pf: 98.4
-    avg_pa: 108.0
-  trades:
-  - year: 2025
-    week: 8
-    got:
-    - Derrick Henry
-    gave:
-    - Rachaad White
-    - Breece Hall
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2024
-    week: 0
-    got:
-    - 1.11 pick
-    - Puka Nacua
-    gave:
-    - 1.10 pick
-    - Sam LaPorta
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2023
-    week: 11
-    got:
-    - James Conner
-    - Davante Adams
-    gave:
-    - Brandon Aiyuk
-    - Tony Pollard
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2023
-    week: 0
-    got:
-    - Tony Pollard
-    - 6.01 pick
-    gave:
-    - 3.08 pick
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2022
-    week: 8
-    got:
-    - Brandin Cooks
-    - Christian McCaffrey
-    gave:
-    - Tony Pollard
-    - Raheem Mostert
-    - Jaylen Waddle
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2019
-    week: 0
-    got:
-    - 2.07 pick
-    - 5.06 pick
-    - 7.06 pick
-    gave:
-    - 2.01 pick
-    - 5.12 pick
-    - 7.12 pick
-    with:
-    - id: sturmanator15
-      name: Wade
-      team: Lamar's Donger
-  trades_known: false
-  keepers:
-  - year: 2026
-    round: 9
-    player: Puka Nacua
-  - year: 2025
-    round: 11
-    player: Puka Nacua
-  - year: 2024
-    round: 13
-    player: Puka Nacua
-  - year: 2023
-    round: 5
-    player: Tony Pollard
-kevbots22:
-  name: Kevin
-  nickname: ''
-  honors:
-  - emoji: 🥈
-    text: 1× Runner-Up
-    strong: false
-  - emoji: 🥉
-    text: 1× Third
-    strong: false
-  - emoji: ''
-    text: 5× Playoffs
-    strong: false
-  resume:
-    all_time: 64-96-1
-    win_pct: '.401'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 5
-    trades: 0
-    trades_known: false
-    seasons: 12
-    best_finish:
-      type: place
-      ordinal: 2nd
-      years:
-      - 2025
-  seasons:
-  - year: 2025
-    team: Keeping up with the McCalferies
-    tag: null
-    finish: 2nd
-    record: 10-4
-    pf: 1626.2
-    pf_color: '#ee6b3b'
-    pa: 1504.3
-  - year: 2024
-    team: Tom Bradys Only Fans
-    tag: null
-    finish: 11th
-    record: 2-12
-    pf: 1428.1
-    pf_color: '#f7a549'
-    pa: 1667.3
-  - year: 2023
-    team: Tom Bradys Only Fans
-    tag: null
-    finish: 8th
-    record: 4-10
-    pf: 1507.9
-    pf_color: '#f38e43'
-    pa: 1608.6
-  - year: 2022
-    team: Naggar's In Paris
-    tag: null
-    finish: 9th
-    record: 2-12
-    pf: 1222.3
-    pf_color: '#fbd9a2'
-    pa: 1398.7
-  - year: 2021
-    team: Fantasy Judas
-    tag: null
-    finish: 4th
-    record: 7-6-1
-    pf: 1334.7
-    pf_color: '#fabf62'
-    pa: 1395.1
-  - year: 2020
-    team: Fantasy Judas
-    tag: null
-    finish: 4th
-    record: 8-5
-    pf: 1357.0
-    pf_color: '#f9b955'
-    pa: 1148.6
-  - year: 2019
-    team: The Antonio ClownExperience
-    tag: null
-    finish: 9th
-    record: 4-9
-    pf: 1181.7
-    pf_color: '#fce3ba'
-    pa: 1411.7
-  - year: 2018
-    team: Team Kevin with a K
-    tag: null
-    finish: 10th
-    record: 4-9
-    pf: 1210.9
-    pf_color: '#fbdca9'
-    pa: 1446.7
-  - year: 2017
-    team: Russian Roiders
-    tag: null
-    finish: 6th
-    record: 7-6
-    pf: 1228.6
-    pf_color: '#fbd89f'
-    pa: 1187.0
-  - year: 2016
-    team: Russian Roiders
-    tag: null
-    finish: 9th
-    record: 4-9
-    pf: 1177.7
-    pf_color: '#fce4bc'
-    pa: 1353.8
-  - year: 2015
-    team: MasterDeflater And_Commander
-    tag: null
-    finish: 9th
-    record: 5-8
-    pf: 1115.0
-    pf_color: '#fdf3e0'
-    pa: 1259.0
-  - year: 2014
-    team: Luck her right in the Pussy
-    tag: null
-    finish: 3rd
-    record: 7-6
-    pf: 1369.3
-    pf_color: '#f9b64e'
-    pa: 1168.4
-  h2h:
-  - opp_id: ajstewart04
-    opp_short: Anthony
-    record: 3-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 112.6
-    avg_pa: 74.3
-  - opp_id: thebragers
-    opp_short: Brady
-    record: 1-3
-    win_pct: '.250'
-    win_color: '#fbd496'
-    avg_pf: 96.4
-    avg_pa: 95.7
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 3-8
-    win_pct: '.273'
-    win_color: '#fbd290'
-    avg_pf: 96.6
-    avg_pa: 111.4
-  - opp_id: unclebadtouch38
-    opp_short: Fletcher
-    record: 6-3
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 102.1
-    avg_pa: 84.2
-  - opp_id: gganoom
-    opp_short: Grant
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 108.8
-    avg_pa: 91.0
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 11-12
-    win_pct: '.478'
-    win_color: '#f9b953'
-    avg_pf: 97.3
-    avg_pa: 99.8
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 3-16
-    win_pct: '.158'
-    win_color: '#fce0b2'
-    avg_pf: 95.4
-    avg_pa: 115.4
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 12-5
-    win_pct: '.706'
-    win_color: '#f49746'
-    avg_pf: 106.1
-    avg_pa: 94.6
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 12-5
-    win_pct: '.706'
-    win_color: '#f49746'
-    avg_pf: 108.4
-    avg_pa: 95.7
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 8-8
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 98.9
-    avg_pa: 100.2
-  - opp_id: master-otis
-    opp_short: Odie
-    record: 2-5
-    win_pct: '.286'
-    win_color: '#fbd08c'
-    avg_pf: 89.2
-    avg_pa: 108.0
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 6-13
-    win_pct: '.316'
-    win_color: '#facc83'
-    avg_pf: 101.4
-    avg_pa: 106.2
-  - opp_id: purpsworth
-    opp_short: Trevor
-    record: 4-6
-    win_pct: '.400'
-    win_color: '#fac26a'
-    avg_pf: 98.1
-    avg_pa: 118.8
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 4-18-1
-    win_pct: '.196'
-    win_color: '#fbdba6'
-    avg_pf: 86.1
-    avg_pa: 97.9
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 7-8
-    win_pct: '.467'
-    win_color: '#f9ba57'
-    avg_pf: 97.3
-    avg_pa: 103.3
-  trades: []
-  trades_known: false
-  keepers:
-  - year: 2026
-    round: 5
-    player: Chris Olave
-  - year: 2025
-    round: 4
-    player: Joe Burrow
-  - year: 2023
-    round: 8
-    player: Joe Burrow
-purpsworth:
-  name: Trevor
-  nickname: ''
-  honors:
-  - emoji: 🥈
-    text: 1× Runner-Up
-    strong: false
-  - emoji: 🥉
-    text: 1× Third
-    strong: false
-  - emoji: ''
-    text: 4× Playoffs
-    strong: false
-  resume:
-    all_time: 44-52
-    win_pct: '.458'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 4
-    trades: 5
-    trades_known: false
-    seasons: 7
-    best_finish:
-      type: place
-      ordinal: 2nd
-      years:
-      - 2021
-  seasons:
-  - year: 2025
-    team: I am dead inside
-    tag: null
-    finish: 3rd
-    record: 6-8
-    pf: 1566.2
-    pf_color: '#f59846'
-    pa: 1526.0
-  - year: 2024
-    team: I am dead inside
-    tag: null
-    finish: 9th
-    record: 5-9
-    pf: 1606.7
-    pf_color: '#f38c43'
-    pa: 1663.6
-  - year: 2023
-    team: Used Napkin
-    tag: null
-    finish: 6th
-    record: 9-5
-    pf: 1714.6
-    pf_color: '#ee6b3b'
-    pa: 1505.6
-  - year: 2022
-    team: Used Napkin
-    tag: null
-    finish: 7th
-    record: 7-7
-    pf: 1355.2
-    pf_color: '#fbd28f'
-    pa: 1319.5
-  - year: 2021
-    team: WA Fantasy Football Team
-    tag: null
-    finish: 2nd
-    record: 7-7
-    pf: 1372.6
-    pf_color: '#fbcd85'
-    pa: 1433.8
-  - year: 2020
-    team: AB’s Helmet
-    tag: null
-    finish: 7th
-    record: 6-7
-    pf: 1219.5
-    pf_color: '#fdf3e0'
-    pa: 1311.4
-  - year: 2019
-    team: AB’s Helmet
-    tag: null
-    finish: 10th
-    record: 4-9
-    pf: 1240.3
-    pf_color: '#fdeed4'
-    pa: 1344.1
-  h2h:
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 5-10
-    win_pct: '.333'
-    win_color: '#faca7e'
-    avg_pf: 100.7
-    avg_pa: 108.5
-  - opp_id: unclebadtouch38
-    opp_short: Fletcher
-    record: 6-5
-    win_pct: '.545'
-    win_color: '#f8af4b'
-    avg_pf: 99.5
-    avg_pa: 89.3
-  - opp_id: gganoom
-    opp_short: Grant
-    record: 2-3
-    win_pct: '.400'
-    win_color: '#fac26a'
-    avg_pf: 105.9
-    avg_pa: 116.5
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 4-7
-    win_pct: '.364'
-    win_color: '#fac775'
-    avg_pf: 96.1
-    avg_pa: 99.9
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 7-7
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 103.7
-    avg_pa: 105.8
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 4-5
-    win_pct: '.444'
-    win_color: '#f9bd5d'
-    avg_pf: 111.5
-    avg_pa: 113.8
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 6-4
-    win_pct: '.600'
-    win_color: '#f7a749'
-    avg_pf: 118.8
-    avg_pa: 98.1
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 2-5
-    win_pct: '.286'
-    win_color: '#fbd08c'
-    avg_pf: 109.0
-    avg_pa: 109.0
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 8-1
-    win_pct: '.889'
-    win_color: '#f07c3f'
-    avg_pf: 106.1
-    avg_pa: 91.8
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 1-8
-    win_pct: '.111'
-    win_color: '#fce5bf'
-    avg_pf: 97.1
-    avg_pa: 112.7
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 5-3
-    win_pct: '.625'
-    win_color: '#f6a348'
-    avg_pf: 110.3
-    avg_pa: 100.2
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 5-3
-    win_pct: '.625'
-    win_color: '#f6a348'
-    avg_pf: 113.9
-    avg_pa: 102.4
-  trades:
-  - year: 2024
-    week: 0
-    got:
-    - 2.05 pick
-    - 4.05 pick
-    - 6.05 pick
-    - 8.05 pick
-    gave:
-    - Nico Collins
-    - 2.08 pick
-    - 4.08 pick
-    - 6.08 pick
-    - 8.08 pick
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Nix Out For Harambe
-  - year: 2022
-    week: 9
-    got:
-    - Amon-Ra St. Brown
-    gave:
-    - Kyler Murray
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2021
-    week: 8
-    got:
-    - Joe Mixon
-    - Keenan Allen
-    gave:
-    - A.J. Brown
-    - Kenyan Drake
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Hot Chubb Time Machine
-  - year: 2021
-    week: 4
-    got:
-    - Jamaal Williams
-    gave:
-    - George Kittle
-    with:
-    - id: zachzoske
-      name: Zach
-      team: ESPN 8 The Ocho
-  - year: 2019
-    week: 0
-    got:
-    - 2.05 pick
-    - 3.08 pick
-    - 5.08 pick
-    gave:
-    - 2.08 pick
-    - 3.05 pick
-    - 5.05 pick
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Eleven In Crocks
-  trades_known: false
-  keepers:
-  - year: 2026
-    round: 8
-    player: De'Von Achane
-  - year: 2025
-    round: 10
-    player: De'Von Achane
-  - year: 2024
-    round: 12
-    player: De'Von Achane
-  - year: 2023
-    round: 4
-    player: Amon-Ra St. Brown
-gganoom:
-  name: Grant
-  nickname: ''
-  honors:
-  - emoji: ''
-    text: 1× Playoffs
-    strong: false
-  resume:
-    all_time: 16-12
-    win_pct: '.571'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 1
-    trades: 0
-    trades_known: false
-    seasons: 2
-    best_finish:
-      type: place
-      ordinal: 4th
-      years:
-      - 2025
-  seasons:
-  - year: 2025
-    team: One Big Beautiful Dill
-    tag: null
-    finish: 4th
-    record: 9-5
-    pf: 1587.6
-    pf_color: '#fdf3e0'
-    pa: 1494.2
-  - year: 2024
-    team: KillDilly Elegy
-    tag: null
-    finish: 8th
-    record: 7-7
-    pf: 1622.6
-    pf_color: '#ee6b3b'
-    pa: 1550.1
-  h2h:
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 2-1
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 115.6
-    avg_pa: 102.2
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 112.2
-    avg_pa: 103.5
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 0-3
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 112.2
-    avg_pa: 142.2
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 141.1
-    avg_pa: 126.0
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 91.0
-    avg_pa: 108.8
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 2-2
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 112.0
-    avg_pa: 112.2
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 3-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 141.4
-    avg_pa: 97.1
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 3-1
-    win_pct: '.750'
-    win_color: '#f49044'
-    avg_pf: 116.7
-    avg_pa: 99.2
-  - opp_id: purpsworth
-    opp_short: Trevor
-    record: 3-2
-    win_pct: '.600'
-    win_color: '#f7a749'
-    avg_pf: 116.5
-    avg_pa: 105.9
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 0-2
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 104.9
-    avg_pa: 119.5
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 2-1
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 124.0
-    avg_pa: 123.6
-  trades: []
-  trades_known: false
-  keepers:
-  - year: 2026
-    round: 5
-    player: Brock Bowers
-  - year: 2025
-    round: 7
-    player: Brock Bowers
-  - year: 2024
-    round: 5
-    player: Chris Olave
-theoceanpulse:
-  name: Dillon
-  nickname: ''
-  honors:
-  - emoji: 🏆
-    text: 1× Shiva (2018)
-    strong: true
-  - emoji: 🥉
-    text: 1× Third
-    strong: false
   - emoji: ''
     text: 8× Playoffs
     strong: false
   resume:
-    all_time: 83-51-1
-    win_pct: '.619'
-    titles: '1'
+    all_time: 94-66-1
+    win_pct: '.587'
+    titles: ½
     sackos: 0
     playoff_apps: 8
-    trades: 13
+    trades: 7
     trades_known: false
-    seasons: 10
+    seasons: 13
     best_finish:
-      type: shiva
+      type: cochamp
       years:
-      - 2018
+      - 2016
   seasons:
+  - year: 2026
+    team: The People's Commissioner
+    tag: null
+    finish: 1st
+    record: 0-0
+    in_progress: true
   - year: 2025
-    team: Thoughts and Players
+    team: Dont spit just swallow
+    tag: null
+    finish: 10th
+    record: 7-7
+    in_progress: false
+    pf: 1537.3
+    pf_color: '#f59946'
+    pa: 1592.9
+  - year: 2024
+    team: All Hail the King
     tag: null
     finish: 5th
     record: 8-6
-    pf: 1612.9
-    pf_color: '#f49144'
-    pa: 1495.9
-  - year: 2024
-    team: Thoughts and Players
+    in_progress: false
+    pf: 1560.8
+    pf_color: '#f49445'
+    pa: 1507.7
+  - year: 2023
+    team: In Goff we trust
     tag: null
     finish: 4th
-    record: 8-6
-    pf: 1569.8
-    pf_color: '#f59d47'
-    pa: 1502.7
-  - year: 2023
-    team: Thoughts and Players
-    tag: null
-    finish: 3rd
-    record: 12-2
-    pf: 1748.5
+    record: 9-5
+    in_progress: false
+    pf: 1733.5
     pf_color: '#ee6b3b'
-    pa: 1480.6
+    pa: 1508.8
   - year: 2022
-    team: Thoughts and Players
-    tag: null
-    finish: 5th
-    record: 7-7
-    pf: 1312.8
-    pf_color: '#fbdca7'
-    pa: 1371.1
-  - year: 2021
-    team: Hot Chubb Time Machine
+    team: Trey Lanced my ❤️
     tag: null
     finish: 10th
     record: 5-9
-    pf: 1489.3
-    pf_color: '#f9b34c'
-    pa: 1463.8
-  - year: 2020
-    team: Trick-Ass Marks
-    tag: null
-    finish: 6th
-    record: 6-7
-    pf: 1208.9
-    pf_color: '#fdf3e0'
-    pa: 1249.7
-  - year: 2019
-    team: Hans Blitz! Ohh noo!
-    tag: null
-    finish: 4th
-    record: 11-1-1
-    pf: 1592.1
-    pf_color: '#f49645'
-    pa: 1197.2
-  - year: 2018
-    team: Hans Blitz! Ohh noo!
-    tag: shiva
-    finish: 1st
-    record: 9-4
-    pf: 1453.7
-    pf_color: '#f9bc5b'
-    pa: 1211.3
-  - year: 2017
-    team: Hans Blitz! Ohh noo!
+    in_progress: false
+    pf: 1299.8
+    pf_color: '#facc81'
+    pa: 1507.5
+  - year: 2021
+    team: Purple Cobras and Michel
     tag: null
     finish: 7th
+    record: 7-6-1
+    in_progress: false
+    pf: 1341.5
+    pf_color: '#fac46e'
+    pa: 1271.9
+  - year: 2020
+    team: Lickin Brown in my McLaurin
+    tag: null
+    finish: 9th
+    record: 5-8
+    in_progress: false
+    pf: 1093.9
+    pf_color: '#fdf3e0'
+    pa: 1284.1
+  - year: 2019
+    team: Lamar's Donger
+    tag: null
+    finish: 6th
     record: 11-2
-    pf: 1241.2
-    pf_color: '#fdecce'
-    pa: 1097.6
-  - year: 2016
-    team: Hillary Has The 2nd Clinton-Dix
+    in_progress: false
+    pf: 1402.9
+    pf_color: '#f9b852'
+    pa: 1160.6
+  - year: 2018
+    team: Chubbin out (no more Hydin)
+    tag: null
+    finish: 8th
+    record: 7-6
+    in_progress: false
+    pf: 1302.1
+    pf_color: '#facb80'
+    pa: 1255.9
+  - year: 2017
+    team: The People's Champion
     tag: null
     finish: 10th
-    record: 6-7
-    pf: 1304.7
-    pf_color: '#fcddac'
-    pa: 1281.6
+    record: 5-8
+    in_progress: false
+    pf: 1151.0
+    pf_color: '#fce8c6'
+    pa: 1331.7
+  - year: 2016
+    team: Wadger Sturdell
+    tag: cochamp
+    finish: 1st
+    record: 11-2
+    in_progress: false
+    pf: 1296.1
+    pf_color: '#facc83'
+    pa: 1063.9
+  - year: 2015
+    team: The People's Commissioner
+    tag: null
+    finish: 4th
+    record: 8-5
+    in_progress: false
+    pf: 1296.7
+    pf_color: '#facc83'
+    pa: 1097.6
+  - year: 2014
+    team: Ben there raped that
+    tag: null
+    finish: 4th
+    record: 11-2
+    in_progress: false
+    pf: 1358.7
+    pf_color: '#fac066'
+    pa: 1135.6
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
-    record: 4-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 110.2
-    avg_pa: 75.0
-  - opp_id: unclebadtouch38
-    opp_short: Fletcher
-    record: 5-5
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 86.7
-    avg_pa: 80.2
-  - opp_id: gganoom
-    opp_short: Grant
     record: 1-2
     win_pct: '.333'
     win_color: '#faca7e'
-    avg_pf: 102.2
-    avg_pa: 115.6
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 10-6
-    win_pct: '.625'
-    win_color: '#f6a348'
-    avg_pf: 108.4
-    avg_pa: 102.3
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 8-10
-    win_pct: '.444'
-    win_color: '#f9bd5d'
-    avg_pf: 107.8
-    avg_pa: 103.8
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 7-5-1
-    win_pct: '.577'
-    win_color: '#f7aa4a'
-    avg_pf: 103.7
-    avg_pa: 106.8
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 8-3
-    win_pct: '.727'
-    win_color: '#f49445'
-    avg_pf: 111.4
-    avg_pa: 96.6
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 8-4
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 118.5
-    avg_pa: 98.2
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 10-1
-    win_pct: '.909'
-    win_color: '#f0793e'
-    avg_pf: 119.4
-    avg_pa: 90.3
-  - opp_id: master-otis
-    opp_short: Odie
+    avg_pf: 81.5
+    avg_pa: 87.6
+  - opp_id: thebragers
+    opp_short: Brady
     record: 2-0
     win_pct: '1.000'
     win_color: '#ee6b3b'
-    avg_pf: 86.0
-    avg_pa: 78.2
+    avg_pf: 126.7
+    avg_pa: 80.9
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 5-9
+    win_pct: '.357'
+    win_color: '#fac777'
+    avg_pf: 95.3
+    avg_pa: 103.8
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-4
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 98.8
+    avg_pa: 84.2
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 119.5
+    avg_pa: 104.9
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 10-7
+    win_pct: '.588'
+    win_color: '#f7a94a'
+    avg_pf: 99.1
+    avg_pa: 98.4
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 5-8
+    win_pct: '.385'
+    win_color: '#fac46f'
+    avg_pf: 97.4
+    avg_pa: 102.5
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 11-12-1
+    win_pct: '.479'
+    win_color: '#f9b953'
+    avg_pf: 97.1
+    avg_pa: 100.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 18-4-1
+    win_pct: '.804'
+    win_color: '#f28842'
+    avg_pf: 97.9
+    avg_pa: 86.1
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 5-11
+    win_pct: '.312'
+    win_color: '#facd84'
+    avg_pf: 95.7
+    avg_pa: 105.8
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 14-8
+    win_pct: '.636'
+    win_color: '#f6a248'
+    avg_pf: 102.5
+    avg_pa: 101.3
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 3-1
+    win_pct: '.750'
+    win_color: '#f49044'
+    avg_pf: 108.7
+    avg_pa: 71.0
   - opp_id: shawne2520997
     opp_short: Shawnee
-    record: 9-10
-    win_pct: '.474'
-    win_color: '#f9b955'
-    avg_pf: 99.9
-    avg_pa: 101.3
+    record: 6-6
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 107.9
+    avg_pa: 102.6
   - opp_id: purpsworth
     opp_short: Trevor
-    record: 10-5
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 108.5
-    avg_pa: 100.7
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 9-5
-    win_pct: '.643'
-    win_color: '#f6a148'
-    avg_pf: 103.8
-    avg_pa: 95.3
+    record: 3-5
+    win_pct: '.375'
+    win_color: '#fac572'
+    avg_pf: 100.2
+    avg_pa: 110.3
   - opp_id: zachzoske
     opp_short: Zach
-    record: 5-10
-    win_pct: '.333'
-    win_color: '#faca7e'
-    avg_pf: 100.9
-    avg_pa: 104.9
+    record: 13-10
+    win_pct: '.565'
+    win_color: '#f8ac4b'
+    avg_pf: 98.9
+    avg_pa: 96.0
   trades:
-  - year: 2026
-    week: 0
-    got:
-    - 5.04 pick
-    - 9.04 pick
-    gave:
-    - Nico Collins
-    - 5.10 pick
-    - 9.10 pick
-    with:
-    - id: shawne2520997
-      name: Shawnee
-      team: D***er my Sufficient Tight End
-  - year: 2025
-    week: 8
-    got:
-    - Rachaad White
-    - Breece Hall
-    gave:
-    - Derrick Henry
-    with:
-    - id: jackperkins74
-      name: Jack
-      team: Pukkake
-  - year: 2025
-    week: 0
-    got:
-    - Nico Collins
-    - 1.09 pick
-    - 4.04 pick
-    - 6.04 pick
-    gave:
-    - 1.04 pick
-    - 4.09 pick
-    - 6.09 pick
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Big Brown Dak Makes em Waddle
-  - year: 2024
-    week: 0
-    got:
-    - 1.10 pick
-    - Sam LaPorta
-    gave:
-    - 1.11 pick
-    - Puka Nacua
-    with:
-    - id: jackperkins74
-      name: Jack
-      team: Pukkake
   - year: 2023
-    week: 11
+    week: 13
     got:
-    - Brandon Aiyuk
-    - Tony Pollard
+    - D'Andre Swift
     gave:
-    - James Conner
-    - Davante Adams
-    with:
-    - id: jackperkins74
-      name: Jack
-      team: Vinegar Strokes
-  - year: 2023
-    week: 11
-    got:
-    - James Conner
-    gave:
-    - Marquise Brown
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Zach's Juicy Fantasy Teamussy
-  - year: 2023
-    week: 1
-    got:
-    - Elijah Moore
-    - Saints D/ST
-    gave:
-    - Eagles D/ST
+    - Chuba Hubbard
+    - Rashee Rice
+    - Joe Mixon
     with:
     - id: lukstein
       name: Luke
       team: 2x Runner Up
-  - year: 2023
-    week: 0
-    got:
-    - 3.08 pick
-    gave:
-    - Tony Pollard
-    - 6.01 pick
-    with:
-    - id: jackperkins74
-      name: Jack
-      team: Vinegar Strokes
   - year: 2022
-    week: 9
+    week: 10
     got:
-    - Kyler Murray
+    - Amari Cooper
     gave:
-    - Amon-Ra St. Brown
+    - Najee Harris
     with:
-    - id: purpsworth
-      name: Trevor
-      team: Used Napkin
-  - year: 2022
-    week: 8
-    got:
-    - Tony Pollard
-    - Raheem Mostert
-    - Jaylen Waddle
-    gave:
-    - Brandin Cooks
-    - Christian McCaffrey
-    with:
-    - id: jackperkins74
-      name: Jack
-      team: Allen's Deep Balls
-  - year: 2021
-    week: 11
-    got:
-    - Damien Harris
-    gave:
-    - Michael Pittman Jr.
-    with:
-    - id: zachzoske
-      name: Zach
-      team: ESPN 8 The Ocho
-  - year: 2021
-    week: 8
-    got:
-    - A.J. Brown
-    - Kenyan Drake
-    gave:
-    - Joe Mixon
-    - Keenan Allen
-    with:
-    - id: purpsworth
-      name: Trevor
-      team: WA Fantasy Football Team
+    - id: henpen28
+      name: Henry
+      team: Consensual Trades
   - year: 2020
     week: 9
     got:
-    - Mike Williams
+    - Melvin Gordon III
     gave:
-    - Noah Fant
+    - Miles Sanders
     with:
     - id: lukstein
       name: Luke
       team: Show Me Your TDs
+  - year: 2020
+    week: 5
+    got:
+    - Diontae Johnson
+    gave:
+    - Jerick McKinnon
+    with:
+    - id: unclebadtouch38
+      name: Fletcher
+      team: Set_The_ RAT_TRAP_!
+  - year: 2019
+    week: 8
+    got:
+    - Le'Veon Bell
+    - Benny Snell Jr.
+    gave:
+    - Carlos Hyde
+    - Mark Ingram II
+    with:
+    - id: schirmerj
+      name: Jono
+      team: Tank4Picks .
+  - year: 2019
+    week: 4
+    got:
+    - Matt Breida
+    gave:
+    - Marquise Brown
+    with:
+    - id: lukstein
+      name: Luke
+      team: Show Me Your TDs
+  - year: 2019
+    week: 0
+    got:
+    - 2.01 pick
+    - 5.12 pick
+    - 7.12 pick
+    gave:
+    - 2.07 pick
+    - 5.06 pick
+    - 7.06 pick
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vladimir Putin
   trades_known: false
   keepers:
   - year: 2026
-    round: 8
-    player: Colston Loveland
+    round: 9
+    player: Trey McBride
   - year: 2025
-    round: 7
-    player: Nico Collins
+    round: 11
+    player: Trey McBride
   - year: 2024
     round: 13
-    player: Sam LaPorta
+    player: Trey McBride
   - year: 2023
-    round: 7
-    player: Chris Olave
+    round: 13
+    player: Trevor Lawrence
 zachzoske:
   name: Zach
   nickname: ''
@@ -1337,17 +362,24 @@ zachzoske:
     playoff_apps: 5
     trades: 15
     trades_known: false
-    seasons: 12
+    seasons: 13
     best_finish:
       type: shiva
       years:
       - 2019
   seasons:
+  - year: 2026
+    team: Zoinks
+    tag: null
+    finish: 2nd
+    record: 0-0
+    in_progress: true
   - year: 2025
     team: Big Brown Dak Makes em Waddle
     tag: null
     finish: 6th
     record: 9-5
+    in_progress: false
     pf: 1703.3
     pf_color: '#ee6b3b'
     pa: 1511.2
@@ -1356,6 +388,7 @@ zachzoske:
     tag: null
     finish: 7th
     record: 7-7
+    in_progress: false
     pf: 1509.0
     pf_color: '#f59c47'
     pa: 1511.3
@@ -1364,6 +397,7 @@ zachzoske:
     tag: null
     finish: 10th
     record: 7-7
+    in_progress: false
     pf: 1562.1
     pf_color: '#f38e43'
     pa: 1635.0
@@ -1372,6 +406,7 @@ zachzoske:
     tag: sacko
     finish: 12th
     record: 6-8
+    in_progress: false
     pf: 1311.0
     pf_color: '#fac97a'
     pa: 1321.0
@@ -1380,6 +415,7 @@ zachzoske:
     tag: null
     finish: 9th
     record: 5-9
+    in_progress: false
     pf: 1346.7
     pf_color: '#fac169'
     pa: 1455.0
@@ -1388,6 +424,7 @@ zachzoske:
     tag: null
     finish: 2nd
     record: 9-4
+    in_progress: false
     pf: 1502.4
     pf_color: '#f59d47'
     pa: 1276.8
@@ -1396,6 +433,7 @@ zachzoske:
     tag: shiva
     finish: 1st
     record: 6-7
+    in_progress: false
     pf: 1358.9
     pf_color: '#fabf63'
     pa: 1269.3
@@ -1404,6 +442,7 @@ zachzoske:
     tag: null
     finish: 3rd
     record: 7-6
+    in_progress: false
     pf: 1359.5
     pf_color: '#fabf62'
     pa: 1357.5
@@ -1412,6 +451,7 @@ zachzoske:
     tag: sacko
     finish: 12th
     record: 3-9-1
+    in_progress: false
     pf: 1103.0
     pf_color: '#fdf3e0'
     pa: 1266.4
@@ -1420,6 +460,7 @@ zachzoske:
     tag: null
     finish: 7th
     record: 7-6
+    in_progress: false
     pf: 1168.4
     pf_color: '#fce6c0'
     pa: 1209.2
@@ -1428,6 +469,7 @@ zachzoske:
     tag: null
     finish: 3rd
     record: 8-5
+    in_progress: false
     pf: 1367.2
     pf_color: '#f9bd5f'
     pa: 1277.5
@@ -1436,6 +478,7 @@ zachzoske:
     tag: null
     finish: 7th
     record: 6-7
+    in_progress: false
     pf: 1253.9
     pf_color: '#fbd496'
     pa: 1252.9
@@ -1739,12 +782,12 @@ zachzoske:
   - year: 2023
     round: 13
     player: Calvin Ridley
-henpen28:
-  name: Henry
+schirmerj:
+  name: Jono
   nickname: ''
   honors:
-  - emoji: 🏆
-    text: 3× Shiva (2014, 2017, 2022)
+  - emoji: 🤝
+    text: Co-champ (2016)
     strong: true
   - emoji: 🥈
     text: 1× Runner-Up
@@ -1752,295 +795,270 @@ henpen28:
   - emoji: 🥉
     text: 1× Third
     strong: false
-  - emoji: 💩
-    text: 1× Sacko (2019)
-    strong: true
   - emoji: ''
-    text: 7× Playoffs
+    text: 9× Playoffs
     strong: false
   resume:
-    all_time: 77-84
-    win_pct: '.478'
-    titles: '3'
-    sackos: 1
-    playoff_apps: 7
-    trades: 6
+    all_time: 80-80-1
+    win_pct: '.500'
+    titles: ½
+    sackos: 0
+    playoff_apps: 9
+    trades: 1
     trades_known: false
-    seasons: 12
+    seasons: 13
     best_finish:
-      type: shiva
+      type: cochamp
       years:
-      - 2014
-      - 2017
-      - 2022
+      - 2016
   seasons:
-  - year: 2025
-    team: Dump it on my Chest
-    tag: null
-    finish: 7th
-    record: 5-9
-    pf: 1411.9
-    pf_color: '#f7a94a'
-    pa: 1606.0
-  - year: 2024
-    team: Three's Company
-    tag: null
-    finish: 6th
-    record: 9-5
-    pf: 1644.2
-    pf_color: '#ee6b3b'
-    pa: 1603.1
-  - year: 2023
-    team: Three's Company
-    tag: null
-    finish: 2nd
-    record: 7-7
-    pf: 1569.6
-    pf_color: '#f17f40'
-    pa: 1605.2
-  - year: 2022
-    team: Consensual Trades
-    tag: shiva
-    finish: 1st
-    record: 7-7
-    pf: 1360.5
-    pf_color: '#f9b74f'
-    pa: 1300.7
-  - year: 2021
-    team: Scat Play
+  - year: 2026
+    team: Return of the IDP
     tag: null
     finish: 3rd
-    record: 11-3
-    pf: 1490.0
-    pf_color: '#f49445'
-    pa: 1327.2
-  - year: 2020
-    team: Scat Play
-    tag: null
-    finish: 10th
-    record: 4-9
-    pf: 1163.4
-    pf_color: '#fce2b7'
-    pa: 1318.5
-  - year: 2019
-    team: Tom Brady's Fluffer
-    tag: sacko
-    finish: 12th
-    record: 4-9
-    pf: 1288.2
-    pf_color: '#fac776'
-    pa: 1320.7
-  - year: 2018
-    team: Tom Brady's Fluffer
-    tag: null
-    finish: 6th
-    record: 8-5
-    pf: 1309.2
-    pf_color: '#fac26b'
-    pa: 1255.2
-  - year: 2017
-    team: Forceable Entry
-    tag: shiva
-    finish: 1st
-    record: 6-7
-    pf: 1155.7
-    pf_color: '#fce4bb'
-    pa: 1134.6
-  - year: 2016
-    team: Forceable Entry
+    record: 0-0
+    in_progress: true
+  - year: 2025
+    team: IDPs Forever
     tag: null
     finish: 11th
-    record: 5-8
-    pf: 1229.8
-    pf_color: '#fbd494'
-    pa: 1201.5
+    record: 5-9
+    in_progress: false
+    pf: 1546.0
+    pf_color: '#f59d47'
+    pa: 1701.4
+  - year: 2024
+    team: 5 Star Men
+    tag: null
+    finish: 2nd
+    record: 9-5
+    in_progress: false
+    pf: 1764.6
+    pf_color: '#ee6b3b'
+    pa: 1661.4
+  - year: 2023
+    team: IDP'd My Pants
+    tag: null
+    finish: 5th
+    record: 8-6
+    in_progress: false
+    pf: 1658.4
+    pf_color: '#f28341'
+    pa: 1546.3
+  - year: 2022
+    team: Make Dalvin Cook Again
+    tag: null
+    finish: 11th
+    record: 4-10
+    in_progress: false
+    pf: 1317.0
+    pf_color: '#facc81'
+    pa: 1350.7
+  - year: 2021
+    team: Post Mahomes
+    tag: null
+    finish: 6th
+    record: 8-6
+    in_progress: false
+    pf: 1341.1
+    pf_color: '#fac776'
+    pa: 1376.5
+  - year: 2020
+    team: Folklore Bandits
+    tag: null
+    finish: 3rd
+    record: 8-5
+    in_progress: false
+    pf: 1370.3
+    pf_color: '#fac269'
+    pa: 1305.0
+  - year: 2019
+    team: Tank4Picks .
+    tag: null
+    finish: 5th
+    record: 5-7-1
+    in_progress: false
+    pf: 1183.5
+    pf_color: '#fce4bc'
+    pa: 1194.4
+  - year: 2018
+    team: Hammed Up .
+    tag: null
+    finish: 5th
+    record: 6-7
+    in_progress: false
+    pf: 1311.7
+    pf_color: '#facd83'
+    pa: 1360.6
+  - year: 2017
+    team: Browning out .
+    tag: null
+    finish: 8th
+    record: 7-6
+    in_progress: false
+    pf: 1375.9
+    pf_color: '#fac167'
+    pa: 1273.8
+  - year: 2016
+    team: Lick my Rawls .
+    tag: cochamp
+    finish: 2nd
+    record: 9-4
+    in_progress: false
+    pf: 1403.8
+    pf_color: '#f9bc5a'
+    pa: 1229.1
   - year: 2015
-    team: Jared's Kids
+    team: Wilson's Magic Water
+    tag: null
+    finish: 5th
+    record: 7-6
+    in_progress: false
+    pf: 1243.2
+    pf_color: '#fbd9a2'
+    pa: 1210.2
+  - year: 2014
+    team: Arian nation .
     tag: null
     finish: 8th
     record: 4-9
-    pf: 1086.2
+    in_progress: false
+    pf: 1103.1
     pf_color: '#fdf3e0'
-    pa: 1207.2
-  - year: 2014
-    team: Uncle Grabby
-    tag: shiva
-    finish: 1st
-    record: 7-6
-    pf: 1337.1
-    pf_color: '#f9bc5c'
-    pa: 1293.6
+    pa: 1267.0
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
     record: 1-1
     win_pct: '.500'
     win_color: '#f9b64d'
-    avg_pf: 116.7
-    avg_pa: 99.4
+    avg_pf: 97.1
+    avg_pa: 101.2
   - opp_id: thebragers
     opp_short: Brady
-    record: 2-3
-    win_pct: '.400'
-    win_color: '#fac26a'
-    avg_pf: 79.2
-    avg_pa: 81.7
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 101.0
+    avg_pa: 88.7
   - opp_id: theoceanpulse
     opp_short: Dillon
-    record: 6-10
-    win_pct: '.375'
-    win_color: '#fac572'
-    avg_pf: 102.3
-    avg_pa: 108.4
+    record: 5-7-1
+    win_pct: '.423'
+    win_color: '#fabf64'
+    avg_pf: 106.8
+    avg_pa: 103.7
   - opp_id: unclebadtouch38
     opp_short: Fletcher
-    record: 8-6
-    win_pct: '.571'
-    win_color: '#f7ab4a'
-    avg_pf: 96.0
-    avg_pa: 86.4
+    record: 5-4
+    win_pct: '.556'
+    win_color: '#f8ae4b'
+    avg_pf: 93.1
+    avg_pa: 88.9
   - opp_id: gganoom
     opp_short: Grant
     record: 1-1
     win_pct: '.500'
     win_color: '#f9b64d'
-    avg_pf: 103.5
-    avg_pa: 112.2
+    avg_pf: 126.0
+    avg_pa: 141.1
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 8-5
+    win_pct: '.615'
+    win_color: '#f6a549'
+    avg_pf: 106.9
+    avg_pa: 105.8
   - opp_id: jackperkins74
     opp_short: Jack
+    record: 9-13
+    win_pct: '.409'
+    win_color: '#fac168'
+    avg_pf: 101.5
+    avg_pa: 112.9
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 5-12
+    win_pct: '.294'
+    win_color: '#fbcf8a'
+    avg_pf: 94.6
+    avg_pa: 106.1
+  - opp_id: lukstein
+    opp_short: Luke
     record: 7-9
     win_pct: '.438'
     win_color: '#fabe5f'
-    avg_pf: 93.6
-    avg_pa: 99.0
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 5-8
-    win_pct: '.385'
-    win_color: '#fac46f'
-    avg_pf: 105.8
-    avg_pa: 106.9
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 12-11
-    win_pct: '.522'
-    win_color: '#f9b34c'
-    avg_pf: 99.8
-    avg_pa: 97.3
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 10-7
-    win_pct: '.588'
-    win_color: '#f7a94a'
-    avg_pf: 98.9
-    avg_pa: 100.2
+    avg_pf: 108.1
+    avg_pa: 110.9
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
-    record: 9-7
-    win_pct: '.562'
-    win_color: '#f8ad4b'
-    avg_pf: 98.0
-    avg_pa: 99.0
+    record: 11-11
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 105.7
+    avg_pa: 91.6
   - opp_id: master-otis
     opp_short: Odie
-    record: 4-3
-    win_pct: '.571'
-    win_color: '#f7ab4a'
-    avg_pf: 93.8
-    avg_pa: 101.3
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 96.3
+    avg_pa: 87.2
   - opp_id: shawne2520997
     opp_short: Shawnee
-    record: 8-10
-    win_pct: '.444'
-    win_color: '#f9bd5d'
-    avg_pf: 100.3
-    avg_pa: 99.5
+    record: 8-5
+    win_pct: '.615'
+    win_color: '#f6a549'
+    avg_pf: 112.0
+    avg_pa: 102.8
   - opp_id: purpsworth
     opp_short: Trevor
-    record: 7-4
-    win_pct: '.636'
-    win_color: '#f6a248'
-    avg_pf: 99.9
-    avg_pa: 96.1
+    record: 5-4
+    win_pct: '.556'
+    win_color: '#f8ae4b'
+    avg_pf: 113.8
+    avg_pa: 111.5
   - opp_id: sturmanator15
     opp_short: Wade
-    record: 7-10
-    win_pct: '.412'
-    win_color: '#fac167'
-    avg_pf: 98.4
-    avg_pa: 99.1
+    record: 12-11-1
+    win_pct: '.521'
+    win_color: '#f9b34c'
+    avg_pf: 100.0
+    avg_pa: 97.1
   - opp_id: zachzoske
     opp_short: Zach
-    record: 11-7
-    win_pct: '.611'
-    win_color: '#f7a549'
-    avg_pf: 103.9
-    avg_pa: 101.5
+    record: 16-9
+    win_pct: '.640'
+    win_color: '#f6a148'
+    avg_pf: 106.3
+    avg_pa: 102.2
   trades:
-  - year: 2023
-    week: 11
-    got:
-    - C.J. Stroud
-    gave:
-    - Jaylen Waddle
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Zach's Juicy Fantasy Teamussy
-  - year: 2022
-    week: 10
-    got:
-    - Najee Harris
-    gave:
-    - Amari Cooper
-    with:
-    - id: sturmanator15
-      name: Wade
-      team: Trey Lanced my ❤️
-  - year: 2022
-    week: 0
-    got:
-    - 1.06 pick
-    - 2.07 pick
-    gave:
-    - 1.12 pick
-    - 2.01 pick
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Risk it for The Biscuit
-  - year: 2020
-    week: 5
-    accepted: true
-    got: []
-    gave: []
-    with: []
-  - year: 2020
-    week: 5
-    got:
-    - Travis Kelce
-    - Marquise Brown
-    - Damien Harris
-    gave:
-    - Davante Adams
-    - Mark Andrews
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Calvin and (Jac)Obs
   - year: 2019
     week: 8
     got:
-    - Chris Carson
-    - Chase Edmonds
+    - Carlos Hyde
+    - Mark Ingram II
     gave:
-    - Ezekiel Elliott
+    - Le'Veon Bell
+    - Benny Snell Jr.
     with:
-    - id: zachzoske
-      name: Zach
-      team: Eleven In Crocks
+    - id: sturmanator15
+      name: Wade
+      team: Lamar's Donger
   trades_known: false
-  keepers: []
+  keepers:
+  - year: 2026
+    round: 8
+    player: Kyren Williams
+  - year: 2025
+    round: 10
+    player: Kyren Williams
+  - year: 2024
+    round: 12
+    player: Kyren Williams
+  - year: 2023
+    round: 9
+    player: Isiah Pacheco
 lukstein:
   name: Luke
   nickname: ''
@@ -2068,17 +1086,24 @@ lukstein:
     playoff_apps: 7
     trades: 8
     trades_known: false
-    seasons: 12
+    seasons: 13
     best_finish:
       type: shiva
       years:
       - 2024
   seasons:
+  - year: 2026
+    team: 2x Runner Up
+    tag: null
+    finish: 4th
+    record: 0-0
+    in_progress: true
   - year: 2025
     team: 2x Runner Up
     tag: null
     finish: 8th
     record: 8-6
+    in_progress: false
     pf: 1479.8
     pf_color: '#f9b751'
     pa: 1472.9
@@ -2087,6 +1112,7 @@ lukstein:
     tag: shiva
     finish: 1st
     record: 9-5
+    in_progress: false
     pf: 1890.9
     pf_color: '#ee6b3b'
     pa: 1711.1
@@ -2095,6 +1121,7 @@ lukstein:
     tag: null
     finish: 11th
     record: 3-11
+    in_progress: false
     pf: 1428.2
     pf_color: '#fabf63'
     pa: 1719.9
@@ -2103,6 +1130,7 @@ lukstein:
     tag: null
     finish: 3rd
     record: 11-3
+    in_progress: false
     pf: 1501.3
     pf_color: '#f9b44c'
     pa: 1367.6
@@ -2111,6 +1139,7 @@ lukstein:
     tag: null
     finish: 11th
     record: 4-10
+    in_progress: false
     pf: 1302.7
     pf_color: '#fbd291'
     pa: 1465.5
@@ -2119,6 +1148,7 @@ lukstein:
     tag: null
     finish: 11th
     record: 5-8
+    in_progress: false
     pf: 1291.1
     pf_color: '#fbd496'
     pa: 1309.2
@@ -2127,6 +1157,7 @@ lukstein:
     tag: null
     finish: 2nd
     record: 6-7
+    in_progress: false
     pf: 1121.6
     pf_color: '#fdeed4'
     pa: 1170.5
@@ -2135,6 +1166,7 @@ lukstein:
     tag: sacko
     finish: 12th
     record: 3-10
+    in_progress: false
     pf: 1184.6
     pf_color: '#fce4bd'
     pa: 1295.5
@@ -2143,6 +1175,7 @@ lukstein:
     tag: null
     finish: 2nd
     record: 9-4
+    in_progress: false
     pf: 1386.7
     pf_color: '#fac673'
     pa: 1095.3
@@ -2151,6 +1184,7 @@ lukstein:
     tag: null
     finish: 6th
     record: 7-6
+    in_progress: false
     pf: 1224.4
     pf_color: '#fcdeae'
     pa: 1234.7
@@ -2159,6 +1193,7 @@ lukstein:
     tag: null
     finish: 7th
     record: 3-10
+    in_progress: false
     pf: 1087.9
     pf_color: '#fdf3e0'
     pa: 1296.0
@@ -2167,6 +1202,7 @@ lukstein:
     tag: null
     finish: 6th
     record: 7-6
+    in_progress: false
     pf: 1168.4
     pf_color: '#fce7c3'
     pa: 1213.1
@@ -2362,6 +1398,896 @@ lukstein:
   - year: 2023
     round: 9
     player: Garrett Wilson
+jackperkins74:
+  name: Jack
+  nickname: ''
+  honors:
+  - emoji: 🏆
+    text: 2× Shiva (2015, 2025)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 2× Third
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2020)
+    strong: true
+  - emoji: ''
+    text: 9× Playoffs
+    strong: false
+  resume:
+    all_time: 88-73
+    win_pct: '.547'
+    titles: '2'
+    sackos: 1
+    playoff_apps: 9
+    trades: 6
+    trades_known: false
+    seasons: 13
+    best_finish:
+      type: shiva
+      years:
+      - 2015
+      - 2025
+  seasons:
+  - year: 2026
+    team: Gibbed for your pleasure
+    tag: null
+    finish: 5th
+    record: 0-0
+    in_progress: true
+  - year: 2025
+    team: Pukkake
+    tag: shiva
+    finish: 1st
+    record: 9-5
+    in_progress: false
+    pf: 1769.9
+    pf_color: '#ee6b3b'
+    pa: 1579.4
+  - year: 2024
+    team: Pukkake
+    tag: null
+    finish: 3rd
+    record: 7-7
+    in_progress: false
+    pf: 1661.3
+    pf_color: '#f28742'
+    pa: 1686.1
+  - year: 2023
+    team: Vinegar Strokes
+    tag: null
+    finish: 7th
+    record: 7-7
+    in_progress: false
+    pf: 1522.5
+    pf_color: '#f8ac4b'
+    pa: 1610.4
+  - year: 2022
+    team: Allen's Deep Balls
+    tag: null
+    finish: 6th
+    record: 10-4
+    in_progress: false
+    pf: 1535.0
+    pf_color: '#f7a94a'
+    pa: 1340.4
+  - year: 2021
+    team: Jackie PooPooPants
+    tag: null
+    finish: 5th
+    record: 7-7
+    in_progress: false
+    pf: 1428.8
+    pf_color: '#fac269'
+    pa: 1315.6
+  - year: 2020
+    team: Ram It In
+    tag: sacko
+    finish: 12th
+    record: 5-8
+    in_progress: false
+    pf: 1278.1
+    pf_color: '#fce2b6'
+    pa: 1296.8
+  - year: 2019
+    team: Vladimir Putin
+    tag: null
+    finish: 3rd
+    record: 6-7
+    in_progress: false
+    pf: 1197.1
+    pf_color: '#fdf3e0'
+    pa: 1160.2
+  - year: 2018
+    team: Mixon's Gurley Fight Club
+    tag: null
+    finish: 2nd
+    record: 11-2
+    in_progress: false
+    pf: 1581.3
+    pf_color: '#f59c47'
+    pa: 1444.2
+  - year: 2017
+    team: Jacking Goff
+    tag: null
+    finish: 5th
+    record: 6-7
+    in_progress: false
+    pf: 1220.5
+    pf_color: '#fdeed4'
+    pa: 1170.3
+  - year: 2016
+    team: The Toddfather
+    tag: null
+    finish: 4th
+    record: 8-5
+    in_progress: false
+    pf: 1255.4
+    pf_color: '#fce7c2'
+    pa: 1208.1
+  - year: 2015
+    team: Jenner's Man Meat
+    tag: shiva
+    finish: 1st
+    record: 6-7
+    in_progress: false
+    pf: 1218.3
+    pf_color: '#fdeed5'
+    pa: 1187.3
+  - year: 2014
+    team: Turn down for Watt
+    tag: null
+    finish: 9th
+    record: 6-7
+    in_progress: false
+    pf: 1254.7
+    pf_color: '#fce7c2'
+    pa: 1333.1
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 125.1
+    avg_pa: 97.3
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-3
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 108.3
+    avg_pa: 103.6
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 10-8
+    win_pct: '.556'
+    win_color: '#f8ae4b'
+    avg_pf: 103.8
+    avg_pa: 107.8
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 4-5
+    win_pct: '.444'
+    win_color: '#f9bd5d'
+    avg_pf: 100.7
+    avg_pa: 94.8
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 142.2
+    avg_pa: 112.2
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 9-7
+    win_pct: '.562'
+    win_color: '#f8ad4b'
+    avg_pf: 99.0
+    avg_pa: 93.6
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 13-9
+    win_pct: '.591'
+    win_color: '#f7a84a'
+    avg_pf: 112.9
+    avg_pa: 101.5
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 16-3
+    win_pct: '.842'
+    win_color: '#f18341'
+    avg_pf: 115.4
+    avg_pa: 95.4
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 11-10
+    win_pct: '.524'
+    win_color: '#f8b24c'
+    avg_pf: 98.1
+    avg_pa: 99.4
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 9-8
+    win_pct: '.529'
+    win_color: '#f8b24c'
+    avg_pf: 108.0
+    avg_pa: 104.2
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 3-3
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 90.3
+    avg_pa: 94.7
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 7-6
+    win_pct: '.538'
+    win_color: '#f8b04c'
+    avg_pf: 103.3
+    avg_pa: 100.5
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 7-7
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 105.8
+    avg_pa: 103.7
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 8-5
+    win_pct: '.615'
+    win_color: '#f6a549'
+    avg_pf: 102.5
+    avg_pa: 97.4
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 4-12
+    win_pct: '.250'
+    win_color: '#fbd496'
+    avg_pf: 98.4
+    avg_pa: 108.0
+  trades:
+  - year: 2025
+    week: 8
+    got:
+    - Derrick Henry
+    gave:
+    - Rachaad White
+    - Breece Hall
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2024
+    week: 0
+    got:
+    - 1.11 pick
+    - Puka Nacua
+    gave:
+    - 1.10 pick
+    - Sam LaPorta
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2023
+    week: 11
+    got:
+    - James Conner
+    - Davante Adams
+    gave:
+    - Brandon Aiyuk
+    - Tony Pollard
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2023
+    week: 0
+    got:
+    - Tony Pollard
+    - 6.01 pick
+    gave:
+    - 3.08 pick
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2022
+    week: 8
+    got:
+    - Brandin Cooks
+    - Christian McCaffrey
+    gave:
+    - Tony Pollard
+    - Raheem Mostert
+    - Jaylen Waddle
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2019
+    week: 0
+    got:
+    - 2.07 pick
+    - 5.06 pick
+    - 7.06 pick
+    gave:
+    - 2.01 pick
+    - 5.12 pick
+    - 7.12 pick
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Lamar's Donger
+  trades_known: false
+  keepers:
+  - year: 2026
+    round: 9
+    player: Puka Nacua
+  - year: 2025
+    round: 11
+    player: Puka Nacua
+  - year: 2024
+    round: 13
+    player: Puka Nacua
+  - year: 2023
+    round: 5
+    player: Tony Pollard
+kevbots22:
+  name: Kevin
+  nickname: ''
+  honors:
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: ''
+    text: 5× Playoffs
+    strong: false
+  resume:
+    all_time: 64-96-1
+    win_pct: '.401'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 5
+    trades: 0
+    trades_known: false
+    seasons: 13
+    best_finish:
+      type: place
+      ordinal: 2nd
+      years:
+      - 2025
+  seasons:
+  - year: 2026
+    team: Keeping up with the McCalferies
+    tag: null
+    finish: 6th
+    record: 0-0
+    in_progress: true
+  - year: 2025
+    team: Keeping up with the McCalferies
+    tag: null
+    finish: 2nd
+    record: 10-4
+    in_progress: false
+    pf: 1626.2
+    pf_color: '#ee6b3b'
+    pa: 1504.3
+  - year: 2024
+    team: Tom Bradys Only Fans
+    tag: null
+    finish: 11th
+    record: 2-12
+    in_progress: false
+    pf: 1428.1
+    pf_color: '#f7a549'
+    pa: 1667.3
+  - year: 2023
+    team: Tom Bradys Only Fans
+    tag: null
+    finish: 8th
+    record: 4-10
+    in_progress: false
+    pf: 1507.9
+    pf_color: '#f38e43'
+    pa: 1608.6
+  - year: 2022
+    team: Naggar's In Paris
+    tag: null
+    finish: 9th
+    record: 2-12
+    in_progress: false
+    pf: 1222.3
+    pf_color: '#fbd9a2'
+    pa: 1398.7
+  - year: 2021
+    team: Fantasy Judas
+    tag: null
+    finish: 4th
+    record: 7-6-1
+    in_progress: false
+    pf: 1334.7
+    pf_color: '#fabf62'
+    pa: 1395.1
+  - year: 2020
+    team: Fantasy Judas
+    tag: null
+    finish: 4th
+    record: 8-5
+    in_progress: false
+    pf: 1357.0
+    pf_color: '#f9b955'
+    pa: 1148.6
+  - year: 2019
+    team: The Antonio ClownExperience
+    tag: null
+    finish: 9th
+    record: 4-9
+    in_progress: false
+    pf: 1181.7
+    pf_color: '#fce3ba'
+    pa: 1411.7
+  - year: 2018
+    team: Team Kevin with a K
+    tag: null
+    finish: 10th
+    record: 4-9
+    in_progress: false
+    pf: 1210.9
+    pf_color: '#fbdca9'
+    pa: 1446.7
+  - year: 2017
+    team: Russian Roiders
+    tag: null
+    finish: 6th
+    record: 7-6
+    in_progress: false
+    pf: 1228.6
+    pf_color: '#fbd89f'
+    pa: 1187.0
+  - year: 2016
+    team: Russian Roiders
+    tag: null
+    finish: 9th
+    record: 4-9
+    in_progress: false
+    pf: 1177.7
+    pf_color: '#fce4bc'
+    pa: 1353.8
+  - year: 2015
+    team: MasterDeflater And_Commander
+    tag: null
+    finish: 9th
+    record: 5-8
+    in_progress: false
+    pf: 1115.0
+    pf_color: '#fdf3e0'
+    pa: 1259.0
+  - year: 2014
+    team: Luck her right in the Pussy
+    tag: null
+    finish: 3rd
+    record: 7-6
+    in_progress: false
+    pf: 1369.3
+    pf_color: '#f9b64e'
+    pa: 1168.4
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 112.6
+    avg_pa: 74.3
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 1-3
+    win_pct: '.250'
+    win_color: '#fbd496'
+    avg_pf: 96.4
+    avg_pa: 95.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 3-8
+    win_pct: '.273'
+    win_color: '#fbd290'
+    avg_pf: 96.6
+    avg_pa: 111.4
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-3
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 102.1
+    avg_pa: 84.2
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 108.8
+    avg_pa: 91.0
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 11-12
+    win_pct: '.478'
+    win_color: '#f9b953'
+    avg_pf: 97.3
+    avg_pa: 99.8
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 3-16
+    win_pct: '.158'
+    win_color: '#fce0b2'
+    avg_pf: 95.4
+    avg_pa: 115.4
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 12-5
+    win_pct: '.706'
+    win_color: '#f49746'
+    avg_pf: 106.1
+    avg_pa: 94.6
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 12-5
+    win_pct: '.706'
+    win_color: '#f49746'
+    avg_pf: 108.4
+    avg_pa: 95.7
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 8-8
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 98.9
+    avg_pa: 100.2
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 2-5
+    win_pct: '.286'
+    win_color: '#fbd08c'
+    avg_pf: 89.2
+    avg_pa: 108.0
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 6-13
+    win_pct: '.316'
+    win_color: '#facc83'
+    avg_pf: 101.4
+    avg_pa: 106.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 4-6
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 98.1
+    avg_pa: 118.8
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 4-18-1
+    win_pct: '.196'
+    win_color: '#fbdba6'
+    avg_pf: 86.1
+    avg_pa: 97.9
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 7-8
+    win_pct: '.467'
+    win_color: '#f9ba57'
+    avg_pf: 97.3
+    avg_pa: 103.3
+  trades: []
+  trades_known: false
+  keepers:
+  - year: 2026
+    round: 5
+    player: Chris Olave
+  - year: 2025
+    round: 4
+    player: Joe Burrow
+  - year: 2023
+    round: 8
+    player: Joe Burrow
+alexandra:
+  name: Lexi
+  nickname: ''
+  honors: []
+  resume:
+    all_time: 0-0
+    win_pct: '.000'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 0
+    trades: 0
+    trades_known: true
+    seasons: 1
+    best_finish:
+      type: place
+      ordinal: —
+      years: []
+  seasons:
+  - year: 2026
+    team: Dump it on my Chest
+    tag: null
+    finish: 7th
+    record: 0-0
+    in_progress: true
+  h2h: []
+  trades: []
+  trades_known: true
+  keepers: []
+purpsworth:
+  name: Trevor
+  nickname: ''
+  honors:
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: ''
+    text: 4× Playoffs
+    strong: false
+  resume:
+    all_time: 44-52
+    win_pct: '.458'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 4
+    trades: 5
+    trades_known: false
+    seasons: 8
+    best_finish:
+      type: place
+      ordinal: 2nd
+      years:
+      - 2021
+  seasons:
+  - year: 2026
+    team: I am dead inside
+    tag: null
+    finish: 8th
+    record: 0-0
+    in_progress: true
+  - year: 2025
+    team: I am dead inside
+    tag: null
+    finish: 3rd
+    record: 6-8
+    in_progress: false
+    pf: 1566.2
+    pf_color: '#f59846'
+    pa: 1526.0
+  - year: 2024
+    team: I am dead inside
+    tag: null
+    finish: 9th
+    record: 5-9
+    in_progress: false
+    pf: 1606.7
+    pf_color: '#f38c43'
+    pa: 1663.6
+  - year: 2023
+    team: Used Napkin
+    tag: null
+    finish: 6th
+    record: 9-5
+    in_progress: false
+    pf: 1714.6
+    pf_color: '#ee6b3b'
+    pa: 1505.6
+  - year: 2022
+    team: Used Napkin
+    tag: null
+    finish: 7th
+    record: 7-7
+    in_progress: false
+    pf: 1355.2
+    pf_color: '#fbd28f'
+    pa: 1319.5
+  - year: 2021
+    team: WA Fantasy Football Team
+    tag: null
+    finish: 2nd
+    record: 7-7
+    in_progress: false
+    pf: 1372.6
+    pf_color: '#fbcd85'
+    pa: 1433.8
+  - year: 2020
+    team: AB’s Helmet
+    tag: null
+    finish: 7th
+    record: 6-7
+    in_progress: false
+    pf: 1219.5
+    pf_color: '#fdf3e0'
+    pa: 1311.4
+  - year: 2019
+    team: AB’s Helmet
+    tag: null
+    finish: 10th
+    record: 4-9
+    in_progress: false
+    pf: 1240.3
+    pf_color: '#fdeed4'
+    pa: 1344.1
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 5-10
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 100.7
+    avg_pa: 108.5
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-5
+    win_pct: '.545'
+    win_color: '#f8af4b'
+    avg_pf: 99.5
+    avg_pa: 89.3
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 2-3
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 105.9
+    avg_pa: 116.5
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 4-7
+    win_pct: '.364'
+    win_color: '#fac775'
+    avg_pf: 96.1
+    avg_pa: 99.9
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 7-7
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 103.7
+    avg_pa: 105.8
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 4-5
+    win_pct: '.444'
+    win_color: '#f9bd5d'
+    avg_pf: 111.5
+    avg_pa: 113.8
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 6-4
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 118.8
+    avg_pa: 98.1
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 2-5
+    win_pct: '.286'
+    win_color: '#fbd08c'
+    avg_pf: 109.0
+    avg_pa: 109.0
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 8-1
+    win_pct: '.889'
+    win_color: '#f07c3f'
+    avg_pf: 106.1
+    avg_pa: 91.8
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 1-8
+    win_pct: '.111'
+    win_color: '#fce5bf'
+    avg_pf: 97.1
+    avg_pa: 112.7
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 5-3
+    win_pct: '.625'
+    win_color: '#f6a348'
+    avg_pf: 110.3
+    avg_pa: 100.2
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 5-3
+    win_pct: '.625'
+    win_color: '#f6a348'
+    avg_pf: 113.9
+    avg_pa: 102.4
+  trades:
+  - year: 2024
+    week: 0
+    got:
+    - 2.05 pick
+    - 4.05 pick
+    - 6.05 pick
+    - 8.05 pick
+    gave:
+    - Nico Collins
+    - 2.08 pick
+    - 4.08 pick
+    - 6.08 pick
+    - 8.08 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Nix Out For Harambe
+  - year: 2022
+    week: 9
+    got:
+    - Amon-Ra St. Brown
+    gave:
+    - Kyler Murray
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2021
+    week: 8
+    got:
+    - Joe Mixon
+    - Keenan Allen
+    gave:
+    - A.J. Brown
+    - Kenyan Drake
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Hot Chubb Time Machine
+  - year: 2021
+    week: 4
+    got:
+    - Jamaal Williams
+    gave:
+    - George Kittle
+    with:
+    - id: zachzoske
+      name: Zach
+      team: ESPN 8 The Ocho
+  - year: 2019
+    week: 0
+    got:
+    - 2.05 pick
+    - 3.08 pick
+    - 5.08 pick
+    gave:
+    - 2.08 pick
+    - 3.05 pick
+    - 5.05 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Eleven In Crocks
+  trades_known: false
+  keepers:
+  - year: 2026
+    round: 8
+    player: De'Von Achane
+  - year: 2025
+    round: 10
+    player: De'Von Achane
+  - year: 2024
+    round: 12
+    player: De'Von Achane
+  - year: 2023
+    round: 4
+    player: Amon-Ra St. Brown
 whowonthelastsuperbowl:
   name: Nate
   nickname: ''
@@ -2380,18 +2306,25 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: false
-    seasons: 12
+    seasons: 13
     best_finish:
       type: place
       ordinal: 4th
       years:
       - 2022
   seasons:
+  - year: 2026
+    team: Trick or Trick It’s Mike Vick
+    tag: null
+    finish: 9th
+    record: 0-0
+    in_progress: true
   - year: 2025
     team: Trick or Trick It’s Mike Vick
     tag: null
     finish: 9th
     record: 3-11
+    in_progress: false
     pf: 1445.6
     pf_color: '#f39044'
     pa: 1675.7
@@ -2400,6 +2333,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 10th
     record: 6-8
+    in_progress: false
     pf: 1617.1
     pf_color: '#ee6b3b'
     pa: 1794.0
@@ -2408,6 +2342,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 9th
     record: 5-9
+    in_progress: false
     pf: 1566.3
     pf_color: '#f0763e'
     pa: 1630.8
@@ -2416,6 +2351,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 4th
     record: 7-7
+    in_progress: false
     pf: 1331.2
     pf_color: '#f7a94a'
     pa: 1302.5
@@ -2424,6 +2360,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 6-8
+    in_progress: false
     pf: 1405.3
     pf_color: '#f59946'
     pa: 1450.5
@@ -2432,6 +2369,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 6-7
+    in_progress: false
     pf: 1298.8
     pf_color: '#f8b04b'
     pa: 1350.4
@@ -2440,6 +2378,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 7-6
+    in_progress: false
     pf: 1201.0
     pf_color: '#fac26a'
     pa: 1342.3
@@ -2448,6 +2387,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 9th
     record: 5-8
+    in_progress: false
     pf: 1240.9
     pf_color: '#f9bb59'
     pa: 1378.4
@@ -2456,6 +2396,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 11th
     record: 4-9
+    in_progress: false
     pf: 1160.5
     pf_color: '#fac97b'
     pa: 1279.7
@@ -2464,6 +2405,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 6-7
+    in_progress: false
     pf: 1299.0
     pf_color: '#f8af4b'
     pa: 1278.2
@@ -2472,6 +2414,7 @@ whowonthelastsuperbowl:
     tag: sacko
     finish: 10th
     record: 6-7
+    in_progress: false
     pf: 1176.3
     pf_color: '#fac674'
     pa: 1236.9
@@ -2480,6 +2423,7 @@ whowonthelastsuperbowl:
     tag: sacko
     finish: 10th
     record: 1-12
+    in_progress: false
     pf: 920.5
     pf_color: '#fdf3e0'
     pa: 1206.1
@@ -2638,584 +2582,529 @@ whowonthelastsuperbowl:
   - year: 2025
     round: 13
     player: Drake Maye
-sturmanator15:
-  name: Wade
+theoceanpulse:
+  name: Dillon
   nickname: ''
   honors:
-  - emoji: 🤝
-    text: Co-champ (2016)
+  - emoji: 🏆
+    text: 1× Shiva (2018)
     strong: true
-  - emoji: ''
-    text: 8× Playoffs
-    strong: false
-  resume:
-    all_time: 94-66-1
-    win_pct: '.587'
-    titles: ½
-    sackos: 0
-    playoff_apps: 8
-    trades: 7
-    trades_known: false
-    seasons: 12
-    best_finish:
-      type: cochamp
-      years:
-      - 2016
-  seasons:
-  - year: 2025
-    team: Dont spit just swallow
-    tag: null
-    finish: 10th
-    record: 7-7
-    pf: 1537.3
-    pf_color: '#f59946'
-    pa: 1592.9
-  - year: 2024
-    team: All Hail the King
-    tag: null
-    finish: 5th
-    record: 8-6
-    pf: 1560.8
-    pf_color: '#f49445'
-    pa: 1507.7
-  - year: 2023
-    team: In Goff we trust
-    tag: null
-    finish: 4th
-    record: 9-5
-    pf: 1733.5
-    pf_color: '#ee6b3b'
-    pa: 1508.8
-  - year: 2022
-    team: Trey Lanced my ❤️
-    tag: null
-    finish: 10th
-    record: 5-9
-    pf: 1299.8
-    pf_color: '#facc81'
-    pa: 1507.5
-  - year: 2021
-    team: Purple Cobras and Michel
-    tag: null
-    finish: 7th
-    record: 7-6-1
-    pf: 1341.5
-    pf_color: '#fac46e'
-    pa: 1271.9
-  - year: 2020
-    team: Lickin Brown in my McLaurin
-    tag: null
-    finish: 9th
-    record: 5-8
-    pf: 1093.9
-    pf_color: '#fdf3e0'
-    pa: 1284.1
-  - year: 2019
-    team: Lamar's Donger
-    tag: null
-    finish: 6th
-    record: 11-2
-    pf: 1402.9
-    pf_color: '#f9b852'
-    pa: 1160.6
-  - year: 2018
-    team: Chubbin out (no more Hydin)
-    tag: null
-    finish: 8th
-    record: 7-6
-    pf: 1302.1
-    pf_color: '#facb80'
-    pa: 1255.9
-  - year: 2017
-    team: The People's Champion
-    tag: null
-    finish: 10th
-    record: 5-8
-    pf: 1151.0
-    pf_color: '#fce8c6'
-    pa: 1331.7
-  - year: 2016
-    team: Wadger Sturdell
-    tag: cochamp
-    finish: 1st
-    record: 11-2
-    pf: 1296.1
-    pf_color: '#facc83'
-    pa: 1063.9
-  - year: 2015
-    team: The People's Commissioner
-    tag: null
-    finish: 4th
-    record: 8-5
-    pf: 1296.7
-    pf_color: '#facc83'
-    pa: 1097.6
-  - year: 2014
-    team: Ben there raped that
-    tag: null
-    finish: 4th
-    record: 11-2
-    pf: 1358.7
-    pf_color: '#fac066'
-    pa: 1135.6
-  h2h:
-  - opp_id: ajstewart04
-    opp_short: Anthony
-    record: 1-2
-    win_pct: '.333'
-    win_color: '#faca7e'
-    avg_pf: 81.5
-    avg_pa: 87.6
-  - opp_id: thebragers
-    opp_short: Brady
-    record: 2-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 126.7
-    avg_pa: 80.9
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 5-9
-    win_pct: '.357'
-    win_color: '#fac777'
-    avg_pf: 95.3
-    avg_pa: 103.8
-  - opp_id: unclebadtouch38
-    opp_short: Fletcher
-    record: 6-4
-    win_pct: '.600'
-    win_color: '#f7a749'
-    avg_pf: 98.8
-    avg_pa: 84.2
-  - opp_id: gganoom
-    opp_short: Grant
-    record: 2-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 119.5
-    avg_pa: 104.9
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 10-7
-    win_pct: '.588'
-    win_color: '#f7a94a'
-    avg_pf: 99.1
-    avg_pa: 98.4
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 5-8
-    win_pct: '.385'
-    win_color: '#fac46f'
-    avg_pf: 97.4
-    avg_pa: 102.5
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 11-12-1
-    win_pct: '.479'
-    win_color: '#f9b953'
-    avg_pf: 97.1
-    avg_pa: 100.0
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 18-4-1
-    win_pct: '.804'
-    win_color: '#f28842'
-    avg_pf: 97.9
-    avg_pa: 86.1
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 5-11
-    win_pct: '.312'
-    win_color: '#facd84'
-    avg_pf: 95.7
-    avg_pa: 105.8
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 14-8
-    win_pct: '.636'
-    win_color: '#f6a248'
-    avg_pf: 102.5
-    avg_pa: 101.3
-  - opp_id: master-otis
-    opp_short: Odie
-    record: 3-1
-    win_pct: '.750'
-    win_color: '#f49044'
-    avg_pf: 108.7
-    avg_pa: 71.0
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 6-6
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 107.9
-    avg_pa: 102.6
-  - opp_id: purpsworth
-    opp_short: Trevor
-    record: 3-5
-    win_pct: '.375'
-    win_color: '#fac572'
-    avg_pf: 100.2
-    avg_pa: 110.3
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 13-10
-    win_pct: '.565'
-    win_color: '#f8ac4b'
-    avg_pf: 98.9
-    avg_pa: 96.0
-  trades:
-  - year: 2023
-    week: 13
-    got:
-    - D'Andre Swift
-    gave:
-    - Chuba Hubbard
-    - Rashee Rice
-    - Joe Mixon
-    with:
-    - id: lukstein
-      name: Luke
-      team: 2x Runner Up
-  - year: 2022
-    week: 10
-    got:
-    - Amari Cooper
-    gave:
-    - Najee Harris
-    with:
-    - id: henpen28
-      name: Henry
-      team: Consensual Trades
-  - year: 2020
-    week: 9
-    got:
-    - Melvin Gordon III
-    gave:
-    - Miles Sanders
-    with:
-    - id: lukstein
-      name: Luke
-      team: Show Me Your TDs
-  - year: 2020
-    week: 5
-    got:
-    - Diontae Johnson
-    gave:
-    - Jerick McKinnon
-    with:
-    - id: unclebadtouch38
-      name: Fletcher
-      team: Set_The_ RAT_TRAP_!
-  - year: 2019
-    week: 8
-    got:
-    - Le'Veon Bell
-    - Benny Snell Jr.
-    gave:
-    - Carlos Hyde
-    - Mark Ingram II
-    with:
-    - id: schirmerj
-      name: Jono
-      team: Tank4Picks .
-  - year: 2019
-    week: 4
-    got:
-    - Matt Breida
-    gave:
-    - Marquise Brown
-    with:
-    - id: lukstein
-      name: Luke
-      team: Show Me Your TDs
-  - year: 2019
-    week: 0
-    got:
-    - 2.01 pick
-    - 5.12 pick
-    - 7.12 pick
-    gave:
-    - 2.07 pick
-    - 5.06 pick
-    - 7.06 pick
-    with:
-    - id: jackperkins74
-      name: Jack
-      team: Vladimir Putin
-  trades_known: false
-  keepers:
-  - year: 2026
-    round: 9
-    player: Trey McBride
-  - year: 2025
-    round: 11
-    player: Trey McBride
-  - year: 2024
-    round: 13
-    player: Trey McBride
-  - year: 2023
-    round: 13
-    player: Trevor Lawrence
-schirmerj:
-  name: Jono
-  nickname: ''
-  honors:
-  - emoji: 🤝
-    text: Co-champ (2016)
-    strong: true
-  - emoji: 🥈
-    text: 1× Runner-Up
-    strong: false
   - emoji: 🥉
     text: 1× Third
     strong: false
   - emoji: ''
-    text: 9× Playoffs
+    text: 8× Playoffs
     strong: false
   resume:
-    all_time: 80-80-1
-    win_pct: '.500'
-    titles: ½
+    all_time: 83-51-1
+    win_pct: '.619'
+    titles: '1'
     sackos: 0
-    playoff_apps: 9
-    trades: 1
+    playoff_apps: 8
+    trades: 13
     trades_known: false
-    seasons: 12
+    seasons: 11
     best_finish:
-      type: cochamp
+      type: shiva
       years:
-      - 2016
+      - 2018
   seasons:
+  - year: 2026
+    team: Thoughts and Players
+    tag: null
+    finish: 10th
+    record: 0-0
+    in_progress: true
   - year: 2025
-    team: IDPs Forever
-    tag: null
-    finish: 11th
-    record: 5-9
-    pf: 1546.0
-    pf_color: '#f59d47'
-    pa: 1701.4
-  - year: 2024
-    team: 5 Star Men
-    tag: null
-    finish: 2nd
-    record: 9-5
-    pf: 1764.6
-    pf_color: '#ee6b3b'
-    pa: 1661.4
-  - year: 2023
-    team: IDP'd My Pants
+    team: Thoughts and Players
     tag: null
     finish: 5th
     record: 8-6
-    pf: 1658.4
-    pf_color: '#f28341'
-    pa: 1546.3
-  - year: 2022
-    team: Make Dalvin Cook Again
+    in_progress: false
+    pf: 1612.9
+    pf_color: '#f49144'
+    pa: 1495.9
+  - year: 2024
+    team: Thoughts and Players
     tag: null
-    finish: 11th
-    record: 4-10
-    pf: 1317.0
-    pf_color: '#facc81'
-    pa: 1350.7
-  - year: 2021
-    team: Post Mahomes
-    tag: null
-    finish: 6th
+    finish: 4th
     record: 8-6
-    pf: 1341.1
-    pf_color: '#fac776'
-    pa: 1376.5
-  - year: 2020
-    team: Folklore Bandits
+    in_progress: false
+    pf: 1569.8
+    pf_color: '#f59d47'
+    pa: 1502.7
+  - year: 2023
+    team: Thoughts and Players
     tag: null
     finish: 3rd
-    record: 8-5
-    pf: 1370.3
-    pf_color: '#fac269'
-    pa: 1305.0
-  - year: 2019
-    team: Tank4Picks .
+    record: 12-2
+    in_progress: false
+    pf: 1748.5
+    pf_color: '#ee6b3b'
+    pa: 1480.6
+  - year: 2022
+    team: Thoughts and Players
     tag: null
     finish: 5th
-    record: 5-7-1
-    pf: 1183.5
-    pf_color: '#fce4bc'
-    pa: 1194.4
-  - year: 2018
-    team: Hammed Up .
+    record: 7-7
+    in_progress: false
+    pf: 1312.8
+    pf_color: '#fbdca7'
+    pa: 1371.1
+  - year: 2021
+    team: Hot Chubb Time Machine
     tag: null
-    finish: 5th
+    finish: 10th
+    record: 5-9
+    in_progress: false
+    pf: 1489.3
+    pf_color: '#f9b34c'
+    pa: 1463.8
+  - year: 2020
+    team: Trick-Ass Marks
+    tag: null
+    finish: 6th
     record: 6-7
-    pf: 1311.7
-    pf_color: '#facd83'
-    pa: 1360.6
-  - year: 2017
-    team: Browning out .
-    tag: null
-    finish: 8th
-    record: 7-6
-    pf: 1375.9
-    pf_color: '#fac167'
-    pa: 1273.8
-  - year: 2016
-    team: Lick my Rawls .
-    tag: cochamp
-    finish: 2nd
-    record: 9-4
-    pf: 1403.8
-    pf_color: '#f9bc5a'
-    pa: 1229.1
-  - year: 2015
-    team: Wilson's Magic Water
-    tag: null
-    finish: 5th
-    record: 7-6
-    pf: 1243.2
-    pf_color: '#fbd9a2'
-    pa: 1210.2
-  - year: 2014
-    team: Arian nation .
-    tag: null
-    finish: 8th
-    record: 4-9
-    pf: 1103.1
+    in_progress: false
+    pf: 1208.9
     pf_color: '#fdf3e0'
-    pa: 1267.0
+    pa: 1249.7
+  - year: 2019
+    team: Hans Blitz! Ohh noo!
+    tag: null
+    finish: 4th
+    record: 11-1-1
+    in_progress: false
+    pf: 1592.1
+    pf_color: '#f49645'
+    pa: 1197.2
+  - year: 2018
+    team: Hans Blitz! Ohh noo!
+    tag: shiva
+    finish: 1st
+    record: 9-4
+    in_progress: false
+    pf: 1453.7
+    pf_color: '#f9bc5b'
+    pa: 1211.3
+  - year: 2017
+    team: Hans Blitz! Ohh noo!
+    tag: null
+    finish: 7th
+    record: 11-2
+    in_progress: false
+    pf: 1241.2
+    pf_color: '#fdecce'
+    pa: 1097.6
+  - year: 2016
+    team: Hillary Has The 2nd Clinton-Dix
+    tag: null
+    finish: 10th
+    record: 6-7
+    in_progress: false
+    pf: 1304.7
+    pf_color: '#fcddac'
+    pa: 1281.6
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 97.1
-    avg_pa: 101.2
-  - opp_id: thebragers
-    opp_short: Brady
-    record: 2-2
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 101.0
-    avg_pa: 88.7
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 5-7-1
-    win_pct: '.423'
-    win_color: '#fabf64'
-    avg_pf: 106.8
-    avg_pa: 103.7
+    record: 4-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 110.2
+    avg_pa: 75.0
   - opp_id: unclebadtouch38
     opp_short: Fletcher
-    record: 5-4
-    win_pct: '.556'
-    win_color: '#f8ae4b'
-    avg_pf: 93.1
-    avg_pa: 88.9
+    record: 5-5
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 86.7
+    avg_pa: 80.2
   - opp_id: gganoom
     opp_short: Grant
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 126.0
-    avg_pa: 141.1
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 102.2
+    avg_pa: 115.6
   - opp_id: henpen28
     opp_short: Henry
-    record: 8-5
-    win_pct: '.615'
-    win_color: '#f6a549'
-    avg_pf: 106.9
-    avg_pa: 105.8
+    record: 10-6
+    win_pct: '.625'
+    win_color: '#f6a348'
+    avg_pf: 108.4
+    avg_pa: 102.3
   - opp_id: jackperkins74
     opp_short: Jack
-    record: 9-13
-    win_pct: '.409'
-    win_color: '#fac168'
-    avg_pf: 101.5
-    avg_pa: 112.9
+    record: 8-10
+    win_pct: '.444'
+    win_color: '#f9bd5d'
+    avg_pf: 107.8
+    avg_pa: 103.8
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 7-5-1
+    win_pct: '.577'
+    win_color: '#f7aa4a'
+    avg_pf: 103.7
+    avg_pa: 106.8
   - opp_id: kevbots22
     opp_short: Kevin
-    record: 5-12
-    win_pct: '.294'
-    win_color: '#fbcf8a'
-    avg_pf: 94.6
-    avg_pa: 106.1
+    record: 8-3
+    win_pct: '.727'
+    win_color: '#f49445'
+    avg_pf: 111.4
+    avg_pa: 96.6
   - opp_id: lukstein
     opp_short: Luke
-    record: 7-9
-    win_pct: '.438'
-    win_color: '#fabe5f'
-    avg_pf: 108.1
-    avg_pa: 110.9
+    record: 8-4
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 118.5
+    avg_pa: 98.2
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
-    record: 11-11
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 105.7
-    avg_pa: 91.6
+    record: 10-1
+    win_pct: '.909'
+    win_color: '#f0793e'
+    avg_pf: 119.4
+    avg_pa: 90.3
   - opp_id: master-otis
     opp_short: Odie
-    record: 2-2
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 96.3
-    avg_pa: 87.2
+    record: 2-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 86.0
+    avg_pa: 78.2
   - opp_id: shawne2520997
     opp_short: Shawnee
-    record: 8-5
-    win_pct: '.615'
-    win_color: '#f6a549'
-    avg_pf: 112.0
-    avg_pa: 102.8
+    record: 9-10
+    win_pct: '.474'
+    win_color: '#f9b955'
+    avg_pf: 99.9
+    avg_pa: 101.3
   - opp_id: purpsworth
     opp_short: Trevor
-    record: 5-4
-    win_pct: '.556'
-    win_color: '#f8ae4b'
-    avg_pf: 113.8
-    avg_pa: 111.5
+    record: 10-5
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 108.5
+    avg_pa: 100.7
   - opp_id: sturmanator15
     opp_short: Wade
-    record: 12-11-1
-    win_pct: '.521'
-    win_color: '#f9b34c'
-    avg_pf: 100.0
-    avg_pa: 97.1
+    record: 9-5
+    win_pct: '.643'
+    win_color: '#f6a148'
+    avg_pf: 103.8
+    avg_pa: 95.3
   - opp_id: zachzoske
     opp_short: Zach
-    record: 16-9
-    win_pct: '.640'
-    win_color: '#f6a148'
-    avg_pf: 106.3
-    avg_pa: 102.2
+    record: 5-10
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 100.9
+    avg_pa: 104.9
   trades:
-  - year: 2019
+  - year: 2026
+    week: 0
+    got:
+    - 5.04 pick
+    - 9.04 pick
+    gave:
+    - Nico Collins
+    - 5.10 pick
+    - 9.10 pick
+    with:
+    - id: shawne2520997
+      name: Shawnee
+      team: D***er my Sufficient Tight End
+  - year: 2025
     week: 8
     got:
-    - Carlos Hyde
-    - Mark Ingram II
+    - Rachaad White
+    - Breece Hall
     gave:
-    - Le'Veon Bell
-    - Benny Snell Jr.
+    - Derrick Henry
     with:
-    - id: sturmanator15
-      name: Wade
-      team: Lamar's Donger
+    - id: jackperkins74
+      name: Jack
+      team: Pukkake
+  - year: 2025
+    week: 0
+    got:
+    - Nico Collins
+    - 1.09 pick
+    - 4.04 pick
+    - 6.04 pick
+    gave:
+    - 1.04 pick
+    - 4.09 pick
+    - 6.09 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Big Brown Dak Makes em Waddle
+  - year: 2024
+    week: 0
+    got:
+    - 1.10 pick
+    - Sam LaPorta
+    gave:
+    - 1.11 pick
+    - Puka Nacua
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Pukkake
+  - year: 2023
+    week: 11
+    got:
+    - Brandon Aiyuk
+    - Tony Pollard
+    gave:
+    - James Conner
+    - Davante Adams
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vinegar Strokes
+  - year: 2023
+    week: 11
+    got:
+    - James Conner
+    gave:
+    - Marquise Brown
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Zach's Juicy Fantasy Teamussy
+  - year: 2023
+    week: 1
+    got:
+    - Elijah Moore
+    - Saints D/ST
+    gave:
+    - Eagles D/ST
+    with:
+    - id: lukstein
+      name: Luke
+      team: 2x Runner Up
+  - year: 2023
+    week: 0
+    got:
+    - 3.08 pick
+    gave:
+    - Tony Pollard
+    - 6.01 pick
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vinegar Strokes
+  - year: 2022
+    week: 9
+    got:
+    - Kyler Murray
+    gave:
+    - Amon-Ra St. Brown
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: Used Napkin
+  - year: 2022
+    week: 8
+    got:
+    - Tony Pollard
+    - Raheem Mostert
+    - Jaylen Waddle
+    gave:
+    - Brandin Cooks
+    - Christian McCaffrey
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Allen's Deep Balls
+  - year: 2021
+    week: 11
+    got:
+    - Damien Harris
+    gave:
+    - Michael Pittman Jr.
+    with:
+    - id: zachzoske
+      name: Zach
+      team: ESPN 8 The Ocho
+  - year: 2021
+    week: 8
+    got:
+    - A.J. Brown
+    - Kenyan Drake
+    gave:
+    - Joe Mixon
+    - Keenan Allen
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: WA Fantasy Football Team
+  - year: 2020
+    week: 9
+    got:
+    - Mike Williams
+    gave:
+    - Noah Fant
+    with:
+    - id: lukstein
+      name: Luke
+      team: Show Me Your TDs
   trades_known: false
   keepers:
   - year: 2026
     round: 8
-    player: Kyren Williams
+    player: Colston Loveland
   - year: 2025
-    round: 10
-    player: Kyren Williams
+    round: 7
+    player: Nico Collins
   - year: 2024
-    round: 12
-    player: Kyren Williams
+    round: 13
+    player: Sam LaPorta
   - year: 2023
-    round: 9
-    player: Isiah Pacheco
+    round: 7
+    player: Chris Olave
+gganoom:
+  name: Grant
+  nickname: ''
+  honors:
+  - emoji: ''
+    text: 1× Playoffs
+    strong: false
+  resume:
+    all_time: 16-12
+    win_pct: '.571'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 1
+    trades: 0
+    trades_known: false
+    seasons: 3
+    best_finish:
+      type: place
+      ordinal: 4th
+      years:
+      - 2025
+  seasons:
+  - year: 2026
+    team: One Big Beautiful Dill
+    tag: null
+    finish: 11th
+    record: 0-0
+    in_progress: true
+  - year: 2025
+    team: One Big Beautiful Dill
+    tag: null
+    finish: 4th
+    record: 9-5
+    in_progress: false
+    pf: 1587.6
+    pf_color: '#fdf3e0'
+    pa: 1494.2
+  - year: 2024
+    team: KillDilly Elegy
+    tag: null
+    finish: 8th
+    record: 7-7
+    in_progress: false
+    pf: 1622.6
+    pf_color: '#ee6b3b'
+    pa: 1550.1
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 115.6
+    avg_pa: 102.2
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 112.2
+    avg_pa: 103.5
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 0-3
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 112.2
+    avg_pa: 142.2
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 141.1
+    avg_pa: 126.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 91.0
+    avg_pa: 108.8
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 2-2
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 112.0
+    avg_pa: 112.2
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 3-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 141.4
+    avg_pa: 97.1
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 3-1
+    win_pct: '.750'
+    win_color: '#f49044'
+    avg_pf: 116.7
+    avg_pa: 99.2
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 3-2
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 116.5
+    avg_pa: 105.9
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 104.9
+    avg_pa: 119.5
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 124.0
+    avg_pa: 123.6
+  trades: []
+  trades_known: false
+  keepers:
+  - year: 2026
+    round: 5
+    player: Brock Bowers
+  - year: 2025
+    round: 7
+    player: Brock Bowers
+  - year: 2024
+    round: 5
+    player: Chris Olave
 shawne2520997:
   name: Shawnee
   nickname: ''
@@ -3243,18 +3132,25 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: false
-    seasons: 10
+    seasons: 11
     best_finish:
       type: shiva
       years:
       - 2021
       - 2023
   seasons:
+  - year: 2026
+    team: D***er my Sufficient Tight End
+    tag: null
+    finish: 12th
+    record: 0-0
+    in_progress: true
   - year: 2025
     team: D***er my Sufficient Tight End
     tag: sacko
     finish: 12th
     record: 5-9
+    in_progress: false
     pf: 1542.5
     pf_color: '#f28441'
     pa: 1669.3
@@ -3263,6 +3159,7 @@ shawne2520997:
     tag: sacko
     finish: 12th
     record: 7-7
+    in_progress: false
     pf: 1433.9
     pf_color: '#f7a749'
     pa: 1450.6
@@ -3271,6 +3168,7 @@ shawne2520997:
     tag: shiva
     finish: 1st
     record: 9-5
+    in_progress: false
     pf: 1606.6
     pf_color: '#ef6f3c'
     pa: 1510.0
@@ -3279,6 +3177,7 @@ shawne2520997:
     tag: null
     finish: 2nd
     record: 11-3
+    in_progress: false
     pf: 1438.2
     pf_color: '#f7a649'
     pa: 1258.8
@@ -3287,6 +3186,7 @@ shawne2520997:
     tag: shiva
     finish: 1st
     record: 12-2
+    in_progress: false
     pf: 1619.5
     pf_color: '#ee6b3b'
     pa: 1237.5
@@ -3295,6 +3195,7 @@ shawne2520997:
     tag: null
     finish: 5th
     record: 7-6
+    in_progress: false
     pf: 1204.8
     pf_color: '#fce6c1'
     pa: 1261.8
@@ -3303,6 +3204,7 @@ shawne2520997:
     tag: null
     finish: 7th
     record: 7-5-1
+    in_progress: false
     pf: 1279.9
     pf_color: '#fbd291'
     pa: 1296.9
@@ -3311,6 +3213,7 @@ shawne2520997:
     tag: null
     finish: 4th
     record: 7-6
+    in_progress: false
     pf: 1327.0
     pf_color: '#fac673'
     pa: 1245.1
@@ -3319,6 +3222,7 @@ shawne2520997:
     tag: null
     finish: 3rd
     record: 9-4
+    in_progress: false
     pf: 1155.7
     pf_color: '#fdf3e0'
     pa: 1193.0
@@ -3327,6 +3231,7 @@ shawne2520997:
     tag: null
     finish: 3rd
     record: 7-6
+    in_progress: false
     pf: 1317.2
     pf_color: '#fac97a'
     pa: 1276.8
@@ -3475,6 +3380,320 @@ shawne2520997:
   - year: 2023
     round: 9
     player: Alexander Mattison
+henpen28:
+  name: Henry
+  nickname: ''
+  honors:
+  - emoji: 🏆
+    text: 3× Shiva (2014, 2017, 2022)
+    strong: true
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: 💩
+    text: 1× Sacko (2019)
+    strong: true
+  - emoji: ''
+    text: 7× Playoffs
+    strong: false
+  resume:
+    all_time: 77-84
+    win_pct: '.478'
+    titles: '3'
+    sackos: 1
+    playoff_apps: 7
+    trades: 6
+    trades_known: false
+    seasons: 12
+    best_finish:
+      type: shiva
+      years:
+      - 2014
+      - 2017
+      - 2022
+  seasons:
+  - year: 2025
+    team: Dump it on my Chest
+    tag: null
+    finish: 7th
+    record: 5-9
+    in_progress: false
+    pf: 1411.9
+    pf_color: '#f7a94a'
+    pa: 1606.0
+  - year: 2024
+    team: Three's Company
+    tag: null
+    finish: 6th
+    record: 9-5
+    in_progress: false
+    pf: 1644.2
+    pf_color: '#ee6b3b'
+    pa: 1603.1
+  - year: 2023
+    team: Three's Company
+    tag: null
+    finish: 2nd
+    record: 7-7
+    in_progress: false
+    pf: 1569.6
+    pf_color: '#f17f40'
+    pa: 1605.2
+  - year: 2022
+    team: Consensual Trades
+    tag: shiva
+    finish: 1st
+    record: 7-7
+    in_progress: false
+    pf: 1360.5
+    pf_color: '#f9b74f'
+    pa: 1300.7
+  - year: 2021
+    team: Scat Play
+    tag: null
+    finish: 3rd
+    record: 11-3
+    in_progress: false
+    pf: 1490.0
+    pf_color: '#f49445'
+    pa: 1327.2
+  - year: 2020
+    team: Scat Play
+    tag: null
+    finish: 10th
+    record: 4-9
+    in_progress: false
+    pf: 1163.4
+    pf_color: '#fce2b7'
+    pa: 1318.5
+  - year: 2019
+    team: Tom Brady's Fluffer
+    tag: sacko
+    finish: 12th
+    record: 4-9
+    in_progress: false
+    pf: 1288.2
+    pf_color: '#fac776'
+    pa: 1320.7
+  - year: 2018
+    team: Tom Brady's Fluffer
+    tag: null
+    finish: 6th
+    record: 8-5
+    in_progress: false
+    pf: 1309.2
+    pf_color: '#fac26b'
+    pa: 1255.2
+  - year: 2017
+    team: Forceable Entry
+    tag: shiva
+    finish: 1st
+    record: 6-7
+    in_progress: false
+    pf: 1155.7
+    pf_color: '#fce4bb'
+    pa: 1134.6
+  - year: 2016
+    team: Forceable Entry
+    tag: null
+    finish: 11th
+    record: 5-8
+    in_progress: false
+    pf: 1229.8
+    pf_color: '#fbd494'
+    pa: 1201.5
+  - year: 2015
+    team: Jared's Kids
+    tag: null
+    finish: 8th
+    record: 4-9
+    in_progress: false
+    pf: 1086.2
+    pf_color: '#fdf3e0'
+    pa: 1207.2
+  - year: 2014
+    team: Uncle Grabby
+    tag: shiva
+    finish: 1st
+    record: 7-6
+    in_progress: false
+    pf: 1337.1
+    pf_color: '#f9bc5c'
+    pa: 1293.6
+  h2h:
+  - opp_id: ajstewart04
+    opp_short: Anthony
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 116.7
+    avg_pa: 99.4
+  - opp_id: thebragers
+    opp_short: Brady
+    record: 2-3
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 79.2
+    avg_pa: 81.7
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 6-10
+    win_pct: '.375'
+    win_color: '#fac572'
+    avg_pf: 102.3
+    avg_pa: 108.4
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 8-6
+    win_pct: '.571'
+    win_color: '#f7ab4a'
+    avg_pf: 96.0
+    avg_pa: 86.4
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 103.5
+    avg_pa: 112.2
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 7-9
+    win_pct: '.438'
+    win_color: '#fabe5f'
+    avg_pf: 93.6
+    avg_pa: 99.0
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 5-8
+    win_pct: '.385'
+    win_color: '#fac46f'
+    avg_pf: 105.8
+    avg_pa: 106.9
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 12-11
+    win_pct: '.522'
+    win_color: '#f9b34c'
+    avg_pf: 99.8
+    avg_pa: 97.3
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 10-7
+    win_pct: '.588'
+    win_color: '#f7a94a'
+    avg_pf: 98.9
+    avg_pa: 100.2
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 9-7
+    win_pct: '.562'
+    win_color: '#f8ad4b'
+    avg_pf: 98.0
+    avg_pa: 99.0
+  - opp_id: master-otis
+    opp_short: Odie
+    record: 4-3
+    win_pct: '.571'
+    win_color: '#f7ab4a'
+    avg_pf: 93.8
+    avg_pa: 101.3
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 8-10
+    win_pct: '.444'
+    win_color: '#f9bd5d'
+    avg_pf: 100.3
+    avg_pa: 99.5
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 7-4
+    win_pct: '.636'
+    win_color: '#f6a248'
+    avg_pf: 99.9
+    avg_pa: 96.1
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 7-10
+    win_pct: '.412'
+    win_color: '#fac167'
+    avg_pf: 98.4
+    avg_pa: 99.1
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 11-7
+    win_pct: '.611'
+    win_color: '#f7a549'
+    avg_pf: 103.9
+    avg_pa: 101.5
+  trades:
+  - year: 2023
+    week: 11
+    got:
+    - C.J. Stroud
+    gave:
+    - Jaylen Waddle
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Zach's Juicy Fantasy Teamussy
+  - year: 2022
+    week: 10
+    got:
+    - Najee Harris
+    gave:
+    - Amari Cooper
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: Trey Lanced my ❤️
+  - year: 2022
+    week: 0
+    got:
+    - 1.06 pick
+    - 2.07 pick
+    gave:
+    - 1.12 pick
+    - 2.01 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Risk it for The Biscuit
+  - year: 2020
+    week: 5
+    accepted: true
+    got: []
+    gave: []
+    with: []
+  - year: 2020
+    week: 5
+    got:
+    - Travis Kelce
+    - Marquise Brown
+    - Damien Harris
+    gave:
+    - Davante Adams
+    - Mark Andrews
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Calvin and (Jac)Obs
+  - year: 2019
+    week: 8
+    got:
+    - Chris Carson
+    - Chase Edmonds
+    gave:
+    - Ezekiel Elliott
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Eleven In Crocks
+  trades_known: false
+  keepers: []
 unclebadtouch38:
   name: Fletcher
   nickname: ''
@@ -3507,6 +3726,7 @@ unclebadtouch38:
     tag: sacko
     finish: 12th
     record: 4-10
+    in_progress: false
     pf: 1297.6
     pf_color: '#f49244'
     pa: 1554.6
@@ -3515,6 +3735,7 @@ unclebadtouch38:
     tag: null
     finish: 8th
     record: 7-7
+    in_progress: false
     pf: 1144.5
     pf_color: '#fbce86'
     pa: 1290.3
@@ -3523,6 +3744,7 @@ unclebadtouch38:
     tag: sacko
     finish: 12th
     record: 4-10
+    in_progress: false
     pf: 1112.9
     pf_color: '#fbd8a0'
     pa: 1392.7
@@ -3531,6 +3753,7 @@ unclebadtouch38:
     tag: shiva
     finish: 1st
     record: 9-4
+    in_progress: false
     pf: 1389.2
     pf_color: '#ee6b3b'
     pa: 1265.1
@@ -3539,6 +3762,7 @@ unclebadtouch38:
     tag: null
     finish: 11th
     record: 5-7-1
+    in_progress: false
     pf: 1036.2
     pf_color: '#fdf3e0'
     pa: 1215.5
@@ -3547,6 +3771,7 @@ unclebadtouch38:
     tag: null
     finish: 7th
     record: 7-6
+    in_progress: false
     pf: 1327.9
     pf_color: '#f28541'
     pa: 1210.7
@@ -3555,6 +3780,7 @@ unclebadtouch38:
     tag: null
     finish: 4th
     record: 6-6-1
+    in_progress: false
     pf: 1105.6
     pf_color: '#fbdba6'
     pa: 1120.6
@@ -3563,6 +3789,7 @@ unclebadtouch38:
     tag: null
     finish: 5th
     record: 7-6
+    in_progress: false
     pf: 1238.7
     pf_color: '#f7ab4a'
     pa: 1269.9
@@ -3718,6 +3945,7 @@ ajstewart04:
     tag: null
     finish: 11th
     record: 4-9
+    in_progress: false
     pf: 1269.9
     pf_color: '#ee6b3b'
     pa: 1417.6
@@ -3726,6 +3954,7 @@ ajstewart04:
     tag: null
     finish: 9th
     record: 4-9
+    in_progress: false
     pf: 1143.7
     pf_color: '#fdf3e0'
     pa: 1278.1
@@ -3844,6 +4073,7 @@ master-otis:
     tag: sacko
     finish: 12th
     record: 1-12
+    in_progress: false
     pf: 953.6
     pf_color: '#fdf3e0'
     pa: 1262.0
@@ -3852,6 +4082,7 @@ master-otis:
     tag: null
     finish: 2nd
     record: 9-4
+    in_progress: false
     pf: 1425.0
     pf_color: '#ee6b3b'
     pa: 1200.2
@@ -3860,6 +4091,7 @@ master-otis:
     tag: null
     finish: 2nd
     record: 9-4
+    in_progress: false
     pf: 1297.1
     pf_color: '#f49445'
     pa: 1202.4
@@ -3978,6 +4210,7 @@ thebragers:
     tag: null
     finish: 6th
     record: 9-4
+    in_progress: false
     pf: 1219.6
     pf_color: '#ee6b3b'
     pa: 1263.5
@@ -3986,6 +4219,7 @@ thebragers:
     tag: null
     finish: 5th
     record: 7-6
+    in_progress: false
     pf: 1197.9
     pf_color: '#fdf3e0'
     pa: 1188.5
@@ -4055,26 +4289,4 @@ thebragers:
     avg_pa: 107.4
   trades: []
   trades_known: false
-  keepers: []
-alexandra:
-  name: Lexi
-  nickname: ''
-  honors: []
-  resume:
-    all_time: 0-0
-    win_pct: '.000'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 0
-    trades: 0
-    trades_known: true
-    seasons: 0
-    best_finish:
-      type: place
-      ordinal: —
-      years: []
-  seasons: []
-  h2h: []
-  trades: []
-  trades_known: true
   keepers: []

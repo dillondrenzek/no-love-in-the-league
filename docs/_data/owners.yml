@@ -1,7 +1,7 @@
 active:
 - id: shawne2520997
   name: Shawnee
-  seasons: 10
+  seasons: 11
   record: 81-53-1
   win_pct: '.604'
   win_color: '#f38f44'
@@ -15,7 +15,7 @@ active:
     - 2023
 - id: jackperkins74
   name: Jack
-  seasons: 12
+  seasons: 13
   record: 88-73
   win_pct: '.547'
   win_color: '#f6a549'
@@ -29,7 +29,7 @@ active:
     - 2025
 - id: theoceanpulse
   name: Dillon
-  seasons: 10
+  seasons: 11
   record: 83-51-1
   win_pct: '.619'
   win_color: '#f28a42'
@@ -42,7 +42,7 @@ active:
     - 2018
 - id: zachzoske
   name: Zach
-  seasons: 12
+  seasons: 13
   record: 80-80-1
   win_pct: '.500'
   win_color: '#f9b64d'
@@ -55,7 +55,7 @@ active:
     - 2019
 - id: lukstein
   name: Luke
-  seasons: 12
+  seasons: 13
   record: 75-86
   win_pct: '.466'
   win_color: '#fac066'
@@ -68,7 +68,7 @@ active:
     - 2024
 - id: sturmanator15
   name: Wade
-  seasons: 12
+  seasons: 13
   record: 94-66-1
   win_pct: '.587'
   win_color: '#f49545'
@@ -81,7 +81,7 @@ active:
     - 2016
 - id: schirmerj
   name: Jono
-  seasons: 12
+  seasons: 13
   record: 80-80-1
   win_pct: '.500'
   win_color: '#f9b64d'
@@ -94,7 +94,7 @@ active:
     - 2016
 - id: gganoom
   name: Grant
-  seasons: 2
+  seasons: 3
   record: 16-12
   win_pct: '.571'
   win_color: '#f59b47'
@@ -108,7 +108,7 @@ active:
     - 2025
 - id: purpsworth
   name: Trevor
-  seasons: 7
+  seasons: 8
   record: 44-52
   win_pct: '.458'
   win_color: '#fac36c'
@@ -122,7 +122,7 @@ active:
     - 2021
 - id: kevbots22
   name: Kevin
-  seasons: 12
+  seasons: 13
   record: 64-96-1
   win_pct: '.401'
   win_color: '#fbd496'
@@ -136,7 +136,7 @@ active:
     - 2025
 - id: whowonthelastsuperbowl
   name: Nate
-  seasons: 12
+  seasons: 13
   record: 62-99
   win_pct: '.385'
   win_color: '#fbd9a1'
@@ -150,7 +150,7 @@ active:
     - 2022
 - id: alexandra
   name: Lexi
-  seasons: 0
+  seasons: 1
   record: 0-0
   win_pct: '.000'
   win_color: '#fdf3e0'
