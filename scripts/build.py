@@ -13,6 +13,7 @@ import generate_standings
 import generate_teams
 import generate_seasons
 import generate_rules
+import generate_weeks
 
 GENERATORS = [
     generate_records,
@@ -20,6 +21,7 @@ GENERATORS = [
     generate_teams,
     generate_seasons,
     generate_rules,
+    generate_weeks,
 ]
 
 

@@ -255,6 +255,41 @@ tbody td a:hover { color: var(--brand); }
   min-width: 2.1em;
   border-radius: 5px;
 }
+// Weekly recap: scoreboard table, highlights strip, and the season-page links.
+.scoreboard__side { display: inline-block; }
+.scoreboard__side--win { font-weight: 700; }
+.scoreboard__side--win .owner-name { font-weight: 400; }
+.scoreboard__vs { color: var(--faint); margin: 0 0.4em; font-size: 0.85em; }
+.scoreboard__dash { margin: 0 0.15em; color: var(--faint); }
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 1.2em 0 1.8em;
+}
+.highlight {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--gold-bg);
+}
+.highlight__label { font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.highlight__value { font-family: var(--mono); font-size: 1.3rem; font-weight: 600; color: var(--ink); margin: 2px 0; }
+.highlight__owner { font-size: 0.9rem; }
+.highlight__team { font-size: 0.8rem; color: var(--muted); }
+.highlight__sub { font-size: 0.72rem; color: var(--faint); margin-top: 2px; }
+
+.week-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.week-links li a {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
 // The "Shiva" (championship) label used in the best-finish column.
 .shiva { color: var(--brand); font-weight: 700; }
 

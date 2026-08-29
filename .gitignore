@@ -7,6 +7,9 @@ __pycache__/
 .espn-cookies
 .cookies/
 
+# Weekly recap prompt scratch (assembled by scripts/weekly_recap.py)
+recaps/
+
 # Jekyll
 docs/_site/
 docs/.jekyll-cache/

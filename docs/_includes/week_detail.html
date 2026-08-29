@@ -1,0 +1,47 @@
+{%- comment -%}
+A week's scoreboard + highlights strip. Param: wk = a site.data.weeks["<year>-<n>"]
+record ({scoreboard, highlights}). The AI recap is written below this on the page.
+{%- endcomment -%}
+{%- assign wk = include.wk -%}
+{%- if wk and wk.scoreboard and wk.scoreboard.size > 0 -%}
+<div class="table-scroll">
+<table class="scoreboard">
+  <thead><tr><th>Matchup</th><th class="num">Final</th></tr></thead>
+  <tbody>
+    {%- for g in wk.scoreboard %}
+    <tr>
+      <td>
+        <span class="scoreboard__side{% if g.winner_id and g.winner_id == g.home_id %} scoreboard__side--win{% endif %}">
+          {%- if g.home_id -%}<a href="{{ '/teams/' | append: g.home_id | append: '/' | relative_url }}">{{ g.home_team }}</a>{%- else -%}{{ g.home_team }}{%- endif -%}
+          <span class="owner-name">{{ g.home_owner }}</span>
+        </span>
+        <span class="scoreboard__vs">vs</span>
+        <span class="scoreboard__side{% if g.winner_id and g.winner_id == g.away_id %} scoreboard__side--win{% endif %}">
+          {%- if g.away_id -%}<a href="{{ '/teams/' | append: g.away_id | append: '/' | relative_url }}">{{ g.away_team }}</a>{%- else -%}{{ g.away_team }}{%- endif -%}
+          <span class="owner-name">{{ g.away_owner }}</span>
+        </span>
+        {%- if g.playoff %} <span class="tag tag--shiva">Playoff</span>{%- endif -%}
+      </td>
+      <td class="num">{{ g.home_score }}<span class="scoreboard__dash">–</span>{{ g.away_score }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+
+<div class="highlights">
+  {%- for h in wk.highlights %}
+  <div class="highlight">
+    <div class="highlight__label">{{ h.label }}</div>
+    <div class="highlight__value">{{ h.value }}</div>
+    {%- if h.owner_name %}
+    <div class="highlight__owner">{%- if h.owner_id -%}<a href="{{ '/teams/' | append: h.owner_id | append: '/' | relative_url }}">{{ h.owner_name }}</a>{%- else -%}{{ h.owner_name }}{%- endif -%}</div>
+    {%- if h.team %}<div class="highlight__team">{{ h.team }}</div>{%- endif %}
+    {%- endif %}
+    {%- if h.sub %}<div class="highlight__sub">{{ h.sub }}</div>{%- endif %}
+  </div>
+  {%- endfor %}
+</div>
+{%- else -%}
+<p class="empty-state">No games are in for this week yet — run the importer, then rebuild.</p>
+{%- endif -%}
