@@ -240,6 +240,42 @@ def test_compute_rules_unknown_id_falls_back():
     assert any(s["label"] == "stat #999" for s in r["current"]["scoring"])
 
 
+# --- Schedule generation (lib/schedule.py) ----------------------------------
+
+def test_schedule_balanced_12_team_14_week():
+    from lib.schedule import generate_schedule, validate, pair_counts
+    teams = [f"t{i}" for i in range(12)]
+    s = generate_schedule(teams, weeks=14, seed=1)
+    assert validate(s, teams, 14)                 # raises if unbalanced
+    assert len(s) == 14 and all(len(w) == 6 for w in s)
+    pc = pair_counts(s)
+    assert sum(1 for v in pc.values() if v == 2) == 18   # 18 pairs meet twice
+    assert sum(1 for v in pc.values() if v == 1) == 48   # 48 meet once
+    assert len(pc) == 66                                  # every pair meets
+
+
+def test_schedule_deterministic_by_seed():
+    from lib.schedule import generate_schedule
+    teams = [f"t{i}" for i in range(12)]
+    assert generate_schedule(teams, 14, seed=5) == generate_schedule(teams, 14, seed=5)
+    assert generate_schedule(teams, 14, seed=5) != generate_schedule(teams, 14, seed=6)
+
+
+def test_schedule_other_formats_and_odd_rejected():
+    from lib.schedule import generate_schedule, validate, per_team
+    # 10 teams / 13 weeks — the 2014-2015 format (4 rematches each).
+    teams = [f"t{i}" for i in range(10)]
+    s = generate_schedule(teams, weeks=13, seed=3)
+    assert validate(s, teams, 13)
+    assert all(len(v["twice"]) == 4 for v in per_team(s).values())
+    # Odd team counts are rejected (league runs even, no byes).
+    try:
+        generate_schedule([f"t{i}" for i in range(11)], weeks=14)
+        assert False, "odd team count should raise"
+    except ValueError:
+        pass
+
+
 def test_parse_record():
     assert parse_record("9-5-0") == (9, 5, 0)
     assert parse_record("7-6-1") == (7, 6, 1)
