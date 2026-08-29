@@ -128,19 +128,32 @@ scripts/
   generate_teams.py     -> owners.yml, owner_profiles.yml (+ owner stub pages)
   generate_seasons.py   -> seasons.yml                    (+ season stub pages)
   generate_rules.py     -> rules.yml   (rulebook: settings, rule-change log, schedule history)
+  generate_weeks.py     -> weeks.yml    (per-week scoreboard + highlights, live season)
   build.py                 runs every generator in order
   import_espn.py           pull a season from ESPN into data/seasons/ (via the
                            the-league-espn-api client; a dev-only dependency)
   import_settings.py       pull scoring & roster settings into data/settings.yml
   generate_schedule.py     draw a fresh, balanced schedule for a year (prints; for ESPN)
+  weekly_recap.py          scaffold a week page + build the recap prompt (see below)
   update_season.sh         weekly: import one season + rebuild
   refresh_rules.sh         yearly: import settings + rebuild
   inspect_scoring.py       print the scoring/roster change history (diagnostic)
+
+agents/
+  weekly-recap.md          reusable trash-talk recap agent spec (persona + format)
 ```
 
 `lib/schedule.py`'s `generate_schedule` draws a fresh, balanced schedule (full
 round-robin + rematch weeks, no repeated whole weeks) when the league reshuffles
 each year; `scripts/generate_schedule.py` prints one (and a CSV) to enter into ESPN.
+
+Weekly recaps: `generate_weeks.py` turns the live season's imported matchups into
+per-week scoreboards + highlights (`weeks.yml`, keyed `"<year>-<week>"`).
+`weekly_recap.py <year> <week>` isolates a week, scaffolds
+`docs/seasons/<year>/week-<n>.md`, and writes a paste-ready prompt (the
+`agents/weekly-recap.md` spec + the week's data) to `recaps/` (git-ignored). The
+recap prose is pasted onto the page by hand; the scoreboard/highlights regenerate
+from data each build, and the season page auto-lists any week pages that exist.
 
 `generate_rules.py` degrades gracefully: with no `data/settings.yml` yet it writes
 an empty `rules.yml` and the rulebook simply omits the generated blocks, so the

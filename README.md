@@ -174,6 +174,34 @@ franchise ids (first pick first) to that `data/seasons/<year>.yml`. It's the one
 field in a season file you hand-edit — the importer preserves it on every
 re-import. Leave it out and no draft table appears.
 
+## Weekly recaps
+
+Each week of the live season can get its own page at `/seasons/<year>/week-<n>/`
+with a scoreboard, a highlights strip (top/low score, biggest blowout, closest
+call), and an AI-written trash-talk recap (a chaotic column plus an awards block).
+
+The recap voice is a repo-stored, reusable spec: `agents/weekly-recap.md`. Anyone
+can run it — paste the spec plus a week's data into a chat model and it returns
+the recap markdown.
+
+Weekly workflow:
+
+1. **Import the week** — run the updater so this week's matchups land in
+   `data/seasons/<year>.yml` (this is the "hit the API" step).
+2. **Prep the recap** — `python scripts/weekly_recap.py <year> <week>`. It isolates
+   the week's scoreboard + highlights, scaffolds `docs/seasons/<year>/week-<n>.md`
+   (once; then hand-editable), and writes a ready-to-paste prompt to
+   `recaps/<year>-week-<nn>.prompt.md` (git-ignored) — the agent spec plus this
+   week's data.
+3. **Generate** — paste that prompt into Claude (or hand the spec to anyone), and
+   paste the reply into the week page under "The Recap".
+4. **Build** — `python scripts/build.py`. The scoreboard/highlights refresh from
+   the imported matchups (`scripts/generate_weeks.py` → `docs/_data/weeks.yml`);
+   the season page auto-lists any week pages that exist.
+
+The scoreboard and highlights are always regenerated from data; only the recap
+prose is hand-pasted, so re-importing a corrected score just needs a rebuild.
+
 ## Running the tests
 
 ```

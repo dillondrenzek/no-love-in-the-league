@@ -535,6 +535,31 @@ def test_profile_aggregation_gated_by_state():
            "final_standings": ["a"]}
     profs2 = compute_profiles([pre, done], {})
     assert all(s["year"] != 2027 for s in profs2["a"]["seasons"])  # not in profiles yet
+def test_week_summary_scoreboard_and_highlights():
+    from lib.weeks import week_summary, played_weeks
+    season = matchup_season()  # weeks 1-2 regular, week 3 playoff
+    fr = {k: {"name": k.upper()} for k in ("a", "b", "c", "d")}
+    assert played_weeks(season) == [1, 2, 3]
+
+    wk1 = week_summary(season, 1, fr)
+    assert wk1["played"] is True
+    assert len(wk1["scoreboard"]) == 2
+    # a(100) def b(90); d(120) def c(80)
+    g = wk1["scoreboard"][0]
+    assert g["winner_id"] in ("a", "d") and g["tie"] is False
+    hi = {h["key"]: h for h in wk1["highlights"]}
+    assert hi["top"]["value"] == "120.00"      # Delta's 120 is the week's best
+    assert hi["low"]["value"] == "80.00"       # Charlie's 80 the worst
+    assert hi["blowout"]["value"] == "+40.00"  # 120-80
+    assert hi["closest"]["value"] == "10.00"   # 100-90
+
+    # A tie week (week 2 has b 95 - d 95) still summarizes cleanly.
+    wk2 = week_summary(season, 2, fr)
+    tie_game = [g for g in wk2["scoreboard"] if g["tie"]]
+    assert tie_game and tie_game[0]["winner_id"] is None
+
+    # A week with no games is marked not played.
+    assert week_summary(season, 9, fr)["played"] is False
 
 
 def run():
