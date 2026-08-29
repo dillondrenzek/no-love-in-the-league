@@ -53,6 +53,10 @@ Last place. Finishing last earns you the **Sacko** — the mark of shame that li
 
 **Punishment:** A beer or milk mile. If the punishment is not completed by draft day the next year - with video proof - the league selects your 2nd round pick. Additionally, the Sacko's team for the entire following year will be named by the Shiva.
 
+## Schedule
+
+Every year the regular-season schedule is a full round-robin where everyone plays everyone at least once, plus three rematch weeks that give each team exactly three opponents twice. Only _who plays whom, and when_ changes, and it's drawn at random before the season.
+
 ## Playoffs
 
 Six teams make the playoffs. The top-5 are placed by record. The **6th seed** is given to the team with the highest remaining Points For. **First-round byes** are given to the top 2 seeds. Second rounds are re-seeded.
