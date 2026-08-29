@@ -369,7 +369,7 @@ zachzoske:
       - 2019
   seasons:
   - year: 2026
-    team: Zoinks
+    team: Tuten Your Mom
     tag: null
     finish: 2nd
     record: 0-0
@@ -2610,7 +2610,7 @@ theoceanpulse:
       - 2018
   seasons:
   - year: 2026
-    team: Thoughts and Players
+    team: The ChoSimba Ones
     tag: null
     finish: 10th
     record: 0-0
@@ -3347,7 +3347,7 @@ shawne2520997:
     with:
     - id: theoceanpulse
       name: Dillon
-      team: Thoughts and Players
+      team: The ChoSimba Ones
   - year: 2024
     week: 0
     accepted: true
