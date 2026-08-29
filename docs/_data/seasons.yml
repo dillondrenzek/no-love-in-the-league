@@ -106,14 +106,14 @@ detail:
     - pick: 9
       owner_id: zachzoske
       owner_name: Zach
-      team: Zoinks
+      team: Tuten Your Mom
       keepers:
       - player: Bhayshul Tuten
         round: 9
     - pick: 10
       owner_id: theoceanpulse
       owner_name: Dillon
-      team: Thoughts and Players
+      team: The ChoSimba Ones
       keepers:
       - player: Colston Loveland
         round: 8
@@ -142,7 +142,7 @@ detail:
         - 9.04 pick
       - owner_id: theoceanpulse
         owner_name: Dillon
-        team: Thoughts and Players
+        team: The ChoSimba Ones
         gave:
         - Nico Collins
         - 5.10 pick
@@ -167,7 +167,7 @@ detail:
       player: Colston Loveland
       owner_id: theoceanpulse
       owner_name: Dillon
-      team: Thoughts and Players
+      team: The ChoSimba Ones
     - round: 8
       player: Kyren Williams
       owner_id: schirmerj
@@ -192,7 +192,7 @@ detail:
       player: Bhayshul Tuten
       owner_id: zachzoske
       owner_name: Zach
-      team: Zoinks
+      team: Tuten Your Mom
     - round: 11
       player: Drake Maye
       owner_id: whowonthelastsuperbowl
