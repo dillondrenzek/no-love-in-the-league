@@ -475,11 +475,11 @@ draft_heatmap:
       count: 3
       color: '#f9b64d'
     - slot: 8
-      count: 0
-      color: null
+      count: 1
+      color: '#fcdfaf'
     - slot: 9
-      count: 3
-      color: '#f9b64d'
+      count: 2
+      color: '#faca7e'
     - slot: 10
       count: 0
       color: null
@@ -515,11 +515,11 @@ draft_heatmap:
       count: 0
       color: null
     - slot: 8
-      count: 3
-      color: '#f9b64d'
+      count: 2
+      color: '#faca7e'
     - slot: 9
-      count: 3
-      color: '#f9b64d'
+      count: 4
+      color: '#f59d47'
     - slot: 10
       count: 0
       color: null
