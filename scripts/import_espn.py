@@ -35,6 +35,8 @@ try:
 except ImportError:
     sys.exit("the-league-espn-api is not installed. Run: pip install -r requirements-dev.txt")
 
+from lib.state import state_of, detect_state, advance_state
+
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
 FRANCHISES_PATH = ROOT / "data" / "franchises.yml"
@@ -96,6 +98,25 @@ def existing_trades(year):
     if any("id" not in t for t in trades):
         return []
     return trades
+
+
+def _existing_season(year):
+    path = SEASONS_DIR / f"{year}.yml"
+    if path.exists():
+        return yaml.safe_load(path.read_text()) or {}
+    return {}
+
+
+def existing_state(year):
+    """The lifecycle state already stored for a season (defaults to `preseason`
+    for a brand-new season file so a fresh import advances up from the bottom)."""
+    data = _existing_season(year)
+    return state_of(data) if data else "preseason"
+
+
+def existing_state_locked(year):
+    """Whether the season file pins its state against auto-advance."""
+    return bool(_existing_season(year).get("state_locked"))
 
 
 def existing_teams(year):
@@ -293,8 +314,8 @@ def build_matchups(matchup_rows, team_to_fid):
 
 
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
-                     status=None, draft_order=None, trades=None, trades_complete=True,
-                     trades_known_for=None, keepers=None):
+                     state="season", state_locked=False, draft_order=None, trades=None,
+                     trades_complete=True, trades_known_for=None, keepers=None):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
         f"# to refresh; the locked, hand-maintained `draft_order:` below is preserved",
@@ -303,14 +324,14 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         f"season: {year}",
         "source: the-league-espn-api",
         f"weeks_in_regular_season: {reg_count}",
+        "",
+        "# Lifecycle state (see design/season-state.md) — the site renders off this,",
+        "# and the importer advances it forward automatically. Set `drafting` by hand;",
+        "# add `state_locked: true` to pin the state against auto-advance.",
+        f"state: {state}",
     ]
-    if status:
-        lines += [
-            "",
-            "# Season still in progress: standings reflect the current order and this",
-            "# season is left out of all-time stats until it's re-imported as final.",
-            f"status: {status}",
-        ]
+    if state_locked:
+        lines.append("state_locked: true")
     lines += [
         "",
         "# Draft order (1.01 first), franchise ids. Locked, hand-maintained data —",
@@ -429,7 +450,16 @@ def main():
                          "merge their trade detail into the season on disk; without "
                          "it, all cookie files in .cookies/ are merged in one run")
     ap.add_argument("--stdout", action="store_true", help="print YAML, write nothing")
+    ap.add_argument("--patch", action="store_true",
+                    help="re-import a season already marked `complete` (history is "
+                         "left alone by default)")
     args = ap.parse_args()
+
+    # Complete seasons are frozen: a routine import doesn't rewrite finished
+    # history. `--patch` (or `--stdout` preview) overrides.
+    if existing_state(args.year) == "complete" and not args.patch and not args.stdout:
+        sys.exit(f"{args.year} is marked complete — skipping so history isn't rewritten. "
+                 f"Re-import anyway with: scripts/import_espn.py {args.year} --patch")
 
     cookies_file = args.cookies or os.environ.get("ESPN_COOKIES_FILE") or str(COOKIES_PATH)
     lg_kwargs = {"year": args.year, "cookies_file": cookies_file}
@@ -457,6 +487,28 @@ def main():
               file=sys.stderr)
         draft_rows = []
     keepers = build_keepers(draft_rows, team_to_fid)
+
+    # --- Lifecycle state ---------------------------------------------------
+    # Detect from robust signals (draft actually run, games actually decided),
+    # never from pre-filled seeds/ranks; then advance the stored state forward
+    # only (respecting a manual `drafting` or a `state_locked` pin).
+    reg_weeks = sched.get("matchupPeriodCount") or 0
+    raw_games = season["matchups"]
+    reg_games = [m for m in raw_games
+                 if m.get("week", 0) <= reg_weeks and m.get("winner") != "BYE"]
+    reg_season_done = bool(reg_games) and all(
+        m.get("winner") not in ("UNDECIDED", None) for m in reg_games)
+    playoffs_scheduled = any(m.get("week", 0) > reg_weeks for m in raw_games)
+    draft_run = any(p.get("player_id") not in (None, -1) for p in (draft_rows or []))
+    pick_order = settings.get("draftSettings", {}).get("pickOrder") or []
+
+    detected = detect_state(
+        draft_order_set=bool(pick_order), draft_run=draft_run,
+        reg_season_done=reg_season_done, playoffs_scheduled=playoffs_scheduled,
+        all_games_complete=complete)
+    prior_state = existing_state(args.year)
+    state_locked = existing_state_locked(args.year)
+    state = advance_state(prior_state, detected, locked=state_locked)
 
     # Trades: ESPN reveals a trade's contents only to its participants, so merge
     # across every managers' cookie file we have — more accounts detail more
@@ -547,7 +599,7 @@ def main():
 
     season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups,
                                    season_teams, playoff_ids,
-                                   status=None if complete else "in_progress",
+                                   state=state, state_locked=state_locked,
                                    draft_order=draft_order,
                                    trades=trades, trades_complete=trades_complete,
                                    trades_known_for=sorted(known_for), keepers=keepers)
@@ -560,10 +612,15 @@ def main():
     trade_note = ("all detailed" if trades_complete
                   else f"{incomplete} unavailable — merge more cookies" if fetched
                   else "not fetched for this season")
+    state_note = (f"state: {state}" if state == prior_state
+                  else f"state: {prior_state} → {state}")
+    if state_locked:
+        state_note += " (locked)"
+    elif detected != state:
+        state_note += f" (detected {detected}, kept forward-only)"
     print(f"Parsed {args.year}: {len(team_rows)} teams, {len(matchups)} matchups, "
           f"{len(trades)} trades ({trade_note}), {reg_count} regular-season weeks — "
-          f"{'COMPLETE' if complete else 'IN PROGRESS (ordered by current standing)'}.\n",
-          file=sys.stderr)
+          f"{state_note}.\n", file=sys.stderr)
     print("Computed regular-season standings (verify against ESPN's final standings):",
           file=sys.stderr)
     print(validation_table(matchups) + "\n", file=sys.stderr)

@@ -6,9 +6,9 @@ season: 2026
 source: the-league-espn-api
 weeks_in_regular_season: 14
 
-# Season still in progress: standings reflect the current order and this
-# season is left out of all-time stats until it's re-imported as final.
-status: in_progress
+# Lifecycle state (see design/season-state.md). Source of truth for how
+# this season renders and how much of it counts toward all-time stats.
+state: season
 
 # Draft order (1.01 first), franchise ids. Locked, hand-maintained data —
 # preserved verbatim across re-imports; remove the block to hide the draft

@@ -1,48 +1,48 @@
 list:
 - year: 2026
   season_no: 13
-  status: in_progress
+  state: season
 - year: 2025
   season_no: 12
-  status: complete
+  state: complete
 - year: 2024
   season_no: 11
-  status: complete
+  state: complete
 - year: 2023
   season_no: 10
-  status: complete
+  state: complete
 - year: 2022
   season_no: 9
-  status: complete
+  state: complete
 - year: 2021
   season_no: 8
-  status: complete
+  state: complete
 - year: 2020
   season_no: 7
-  status: complete
+  state: complete
 - year: 2019
   season_no: 6
-  status: complete
+  state: complete
 - year: 2018
   season_no: 5
-  status: complete
+  state: complete
 - year: 2017
   season_no: 4
-  status: complete
+  state: complete
 - year: 2016
   season_no: 3
-  status: complete
+  state: complete
 - year: 2015
   season_no: 2
-  status: complete
+  state: complete
 - year: 2014
   season_no: 1
-  status: complete
+  state: complete
 detail:
   2026:
     year: 2026
     season_no: 13
-    status: in_progress
+    state: season
     points: false
     rows: []
     notes:
@@ -208,7 +208,7 @@ detail:
   2025:
     year: 2025
     season_no: 12
-    status: complete
+    state: complete
     points: true
     rows:
     - &id001
@@ -523,7 +523,7 @@ detail:
   2024:
     year: 2024
     season_no: 11
-    status: complete
+    state: complete
     points: true
     rows:
     - &id003
@@ -815,7 +815,7 @@ detail:
   2023:
     year: 2023
     season_no: 10
-    status: complete
+    state: complete
     points: true
     rows:
     - &id005
@@ -1158,7 +1158,7 @@ detail:
   2022:
     year: 2022
     season_no: 9
-    status: complete
+    state: complete
     points: true
     rows:
     - &id007
@@ -1411,7 +1411,7 @@ detail:
   2021:
     year: 2021
     season_no: 8
-    status: complete
+    state: complete
     points: true
     rows:
     - &id009
@@ -1645,7 +1645,7 @@ detail:
   2020:
     year: 2020
     season_no: 7
-    status: complete
+    state: complete
     points: true
     rows:
     - &id011
@@ -1892,7 +1892,7 @@ detail:
   2019:
     year: 2019
     season_no: 6
-    status: complete
+    state: complete
     points: true
     rows:
     - &id013
@@ -2171,7 +2171,7 @@ detail:
   2018:
     year: 2018
     season_no: 5
-    status: complete
+    state: complete
     points: true
     rows:
     - &id015
@@ -2354,7 +2354,7 @@ detail:
   2017:
     year: 2017
     season_no: 4
-    status: complete
+    state: complete
     points: true
     rows:
     - &id017
@@ -2541,7 +2541,7 @@ detail:
   2016:
     year: 2016
     season_no: 3
-    status: complete
+    state: complete
     points: true
     rows:
     - &id019
@@ -2728,7 +2728,7 @@ detail:
   2015:
     year: 2015
     season_no: 2
-    status: complete
+    state: complete
     points: true
     rows:
     - &id021
@@ -2883,7 +2883,7 @@ detail:
   2014:
     year: 2014
     season_no: 1
-    status: complete
+    state: complete
     points: true
     rows:
     - &id023

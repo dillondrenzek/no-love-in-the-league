@@ -8,6 +8,7 @@ seasons that have matchups (level 2).
 
 from .data import name_of, short_name_of, season_trades_complete
 from .standings import get_standings, provisional_standings
+from .state import is_in_progress, state_of, state_at_least
 from .rulings import co_champions, meaningless_keys, matchup_key
 
 
@@ -45,11 +46,12 @@ def _apply_game(profiles, fid, opp, pts, opp_pts):
 def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
     """Return {franchise_id: profile}, richest first is up to the caller.
 
-    Standings/record/PF/head-to-head are built from every season in `seasons`,
-    including an in-progress one — its live results count toward all-time totals
-    and show as a season-by-season row — but an undecided season awards no
-    title/sacko/runner-up/berth. Trades are complete events even mid-season, so
-    they're counted from `trade_seasons` (defaults to `seasons`)."""
+    Everything is gated on the season's lifecycle state (see lib/state):
+      - standings / record / PF / head-to-head / trades / keepers: state >= season
+        (a preseason/pre_draft/drafting season contributes nothing yet),
+      - playoff berths: state >= playoffs (ESPN pre-fills seeds, so gate on state),
+      - titles / runner-up / Sacko: state == complete.
+    Trades are counted from `trade_seasons` (defaults to `seasons`)."""
     overrides = overrides or {}
     profiles = {}
 
@@ -60,7 +62,11 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
 
     for season in sorted(seasons, key=lambda s: s["season"], reverse=True):
         year = season["season"]
-        in_progress = season.get("status") == "in_progress"
+        # A season enters profiles only once it's live (>= season); preseason /
+        # pre_draft / drafting contribute nothing yet.
+        if not state_at_least(season, "season"):
+            continue
+        in_progress = is_in_progress(season)
         teams_map = season.get("teams", {})
         standings_rows = get_standings(season, franchises)
         if not standings_rows and in_progress:      # preseason: no games yet
@@ -82,9 +88,8 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
             p["reg"]["w"] += r["wins"]; p["reg"]["l"] += r["losses"]; p["reg"]["t"] += r["ties"]
             if r["points_for"] is not None:
                 p["reg"]["pf"] += r["points_for"]; p["reg"]["pa"] += r["points_against"]
-            # An in-progress season counts toward record/PF/best-finish, but nothing
-            # is decided yet — no Shiva/Sacko/runner-up until it's re-imported final.
-            if not in_progress:
+            # Titles / runner-up / third / Sacko are only awarded once complete.
+            if state_of(season) == "complete":
                 if fid in co:
                     p["titles"] += 0.5; p["champ_years"].append((year, True))
                 elif not co and r["finish"] == 1:
@@ -107,12 +112,13 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
             _apply_game(profiles, a, h, as_, hs)
             if m.get("playoff"):
                 in_playoffs.update((h, a))
-        # A "playoff appearance" means the winners bracket (top seeds). Use the
-        # imported seed list when present; otherwise fall back to "played any
-        # post-season game" (over-counts consolation — re-import to fix).
-        seeded = season.get("playoff_teams")
-        for fid in (seeded if seeded is not None else in_playoffs):
-            prof(fid)["berths"] += 1
+        # A "playoff appearance" means the winners bracket (top seeds), and only
+        # counts once the season has actually reached the playoffs — ESPN pre-fills
+        # `playoff_teams` well before then, so gate on state, not its presence.
+        if state_at_least(season, "playoffs"):
+            seeded = season.get("playoff_teams")
+            for fid in (seeded if seeded is not None else in_playoffs):
+                prof(fid)["berths"] += 1
 
     # Trades: counted from every season (finished OR in-progress), since a trade
     # is a complete event even mid-season. Every franchise on a trade gets credit;
@@ -128,6 +134,8 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
     for season in sorted(trade_seasons if trade_seasons is not None else seasons,
                          key=lambda s: s["season"], reverse=True):
         year = season["season"]
+        if not state_at_least(season, "season"):
+            continue                      # no trades/keepers before the season is live
         teams_map = season.get("teams", {})
         played = {r["id"] for r in get_standings(season, franchises)}
         if not season_trades_complete(season):

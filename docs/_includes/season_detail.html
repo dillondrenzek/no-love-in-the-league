@@ -1,40 +1,70 @@
 {%- comment -%}
-Season page body — composes notes, standings, and the draft table. Param:
-d (a site.data.seasons.detail record). The season masthead is rendered by the
-`season` layout.
+Season page body, rendered per lifecycle state (d.state; see design/season-state.md):
+  preseason  — league live for the year, nothing set yet
+  pre_draft  — draft order set (rosters lock at the draft)
+  drafting   — lockdown: draft order only, no standings/trades
+  season     — current standings once games are in; before Week 1, the draft board
+  playoffs   — current standings, playoffs underway
+  complete   — final standings
+Param: d (a site.data.seasons.detail record). The masthead is the `season` layout.
 {%- endcomment -%}
 {%- assign d = include.d -%}
+{%- assign state = d.state -%}
 {%- assign has_rows = false -%}
 {%- if d.rows and d.rows.size > 0 %}{% assign has_rows = true %}{% endif -%}
+{%- assign has_draft = false -%}
+{%- if d.draft_order and d.draft_order.size > 0 %}{% assign has_draft = true %}{% endif -%}
+{%- assign live_or_done = false -%}
+{%- if state == "season" or state == "playoffs" or state == "complete" %}{% assign live_or_done = true %}{% endif -%}
 
-{%- unless has_rows -%}
-{%- if d.draft_order and d.draft_order.size > 0 -%}
-<p class="season-status">This season hasn't kicked off yet — here's the draft order.</p>
-{%- else -%}
-<p class="season-status">This season hasn't kicked off yet.</p>
+{%- comment -%} Status banner, per state {%- endcomment -%}
+{%- if state == "preseason" -%}
+<p class="season-status">Season {{ d.season_no }} is live for {{ d.year }} — the draft order and rosters aren’t set yet.</p>
+{%- elsif state == "pre_draft" -%}
+<p class="season-status">The draft order is set. Rosters lock once the draft runs.</p>
+{%- elsif state == "drafting" -%}
+<p class="season-status">Draft in progress — rosters and matchups appear once it’s done.</p>
+{%- elsif state == "season" and has_rows == false -%}
+<p class="season-status">The draft’s in the books and rosters are set — standings post once Week 1 is in.</p>
 {%- endif -%}
-{%- endunless -%}
 
 {% include season_notes.html notes=d.notes %}
 
+{%- comment -%} Standings — season / playoffs / complete, once there are rows {%- endcomment -%}
 {%- if has_rows -%}
-{%- if d.status == "in_progress" -%}
+{%- if state == "complete" -%}
+<h2>Final standings</h2>
+{%- elsif state == "playoffs" -%}
+<h2>Standings</h2>
+<p class="season-status">Playoffs underway — through week {{ d.weeks_played }}.</p>
+{%- else -%}
 <h2>Current standings</h2>
 <p class="season-status">Season in progress — through week {{ d.weeks_played }}.</p>
-{%- else -%}
-<h2>Final standings</h2>
 {%- endif -%}
-{% include standings_table.html rows=d.rows points=d.points %}
+{% include standings_table.html rows=d.rows points=d.points rank_label="Rank" %}
 {%- endif -%}
 
-{%- if d.draft_order and d.draft_order.size > 0 -%}
+{%- comment -%} Weekly recaps — any week pages that exist for this season {%- endcomment -%}
+{%- assign weekpages = site.pages | where: "season_year", d.year | where_exp: "p", "p.week" | sort: "week" | reverse -%}
+{%- if weekpages and weekpages.size > 0 -%}
+<h2>Weekly recaps</h2>
+<ul class="week-links">
+  {%- for p in weekpages %}
+  <li><a href="{{ p.url | relative_url }}">Week {{ p.week }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endif -%}
+
+{%- comment -%} Draft order — wherever the draft is set, except a bare preseason {%- endcomment -%}
+{%- if has_draft and state != "preseason" -%}
 {%- assign show_keeper = false -%}
 {%- if d.keepers and d.keepers.size > 0 %}{% assign show_keeper = true %}{% endif -%}
 <h2>Draft order</h2>
 {% include draft_table.html rows=d.draft_order show_keeper=show_keeper %}
 {%- endif -%}
 
-{%- if d.trades and d.trades.size > 0 -%}
+{%- comment -%} Trades — once the season is live (not during the draft lockdown) {%- endcomment -%}
+{%- if d.trades and d.trades.size > 0 and live_or_done -%}
 <h2>Trades</h2>
 {% include trades_list.html trades=d.trades %}
 {%- endif -%}

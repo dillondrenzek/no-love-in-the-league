@@ -27,7 +27,7 @@ nothing drifts out of sync.
 ```yaml
 season: 2025
 weeks_in_regular_season: 14
-status: in_progress        # present only mid-season (see below); omit when final
+state: season              # lifecycle state (see "Season lifecycle state" below)
 draft_order:               # 1.01 first; locked, hand-maintained, preserved across re-imports
   - jackperkins74
 teams:                     # this season's team name per franchise id
@@ -100,14 +100,18 @@ seasons:
     roster:  {0: 1, 2: 2, 4: 2, 6: 1, 23: 1, 16: 1, 17: 1, 20: 6, 21: 1}  # slotId -> count
 ```
 
-### In-progress seasons
+### Season lifecycle state
 
-Mid-year ESPN hasn't assigned final placements, so the importer orders by current
-standing and writes `status: in_progress`. Such a season is **excluded** from the
-all-time pool (`load_seasons()` skips it) — standings, records, owner profiles, and
-the homepage hero only count finished seasons — but its own `/seasons/<year>/` page
-shows current standings. Re-importing after the season ends drops the flag and
-folds it into the all-time numbers.
+Every season carries a `state:` — `preseason → pre_draft → drafting → season →
+playoffs → complete` — which the whole site renders off and which gates all-time
+stats. The importer detects it from ESPN each run and advances it forward only;
+`load_seasons()` excludes anything not yet `complete` from the all-time pool
+(standings, records, owner profiles, homepage hero), so a half-season never skews
+history, while its own `/seasons/<year>/` page still shows current data. `drafting`
+is hand-set and `state_locked: true` pins a state; complete seasons are frozen
+(imports skip them without `--patch`). Full design + detection signals:
+[design/season-state.md](../design/season-state.md). `lib/state.py` owns the
+helpers (`state_of`, `state_at_least`, `detect_state`, `advance_state`).
 
 ## Compute in Python → `docs/_data/`
 

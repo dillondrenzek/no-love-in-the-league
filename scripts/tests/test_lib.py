@@ -452,6 +452,91 @@ def test_most_first_overall_record():
     assert "Most Times Drafting 1.01" not in recs2
 
 
+def test_season_state_normalization_and_ordering():
+    from lib.state import state_of, state_at_least, is_in_progress, STATE_ORDER
+    # Explicit state wins.
+    assert state_of({"state": "playoffs"}) == "playoffs"
+    # Legacy fallbacks: status flag -> season; nothing -> complete.
+    assert state_of({"status": "in_progress"}) == "season"
+    assert state_of({"season": 2019}) == "complete"
+    # Unknown/empty state falls through to the legacy rules.
+    assert state_of({"state": "", "status": "in_progress"}) == "season"
+
+    assert state_at_least({"state": "complete"}, "playoffs") is True
+    assert state_at_least({"state": "season"}, "playoffs") is False
+    assert state_at_least({"state": "season"}, "season") is True
+
+    # is_in_progress = anything not yet complete.
+    assert is_in_progress({"state": "season"}) is True
+    assert is_in_progress({"state": "pre_draft"}) is True
+    assert is_in_progress({"state": "complete"}) is False
+    assert STATE_ORDER[0] == "preseason" and STATE_ORDER[-1] == "complete"
+
+
+def test_load_seasons_state_filtering():
+    import tempfile, yaml as _yaml
+    from pathlib import Path as _Path
+    from lib.data import load_seasons
+    with tempfile.TemporaryDirectory() as d:
+        d = _Path(d)
+        (d / "2019.yml").write_text(_yaml.safe_dump({"season": 2019, "state": "complete"}))
+        (d / "2026.yml").write_text(_yaml.safe_dump({"season": 2026, "state": "season"}))
+        # Default excludes the not-yet-complete season; the flag includes it.
+        assert [s["season"] for s in load_seasons(d)] == [2019]
+        assert [s["season"] for s in load_seasons(d, include_in_progress=True)] == [2026, 2019]
+
+
+def test_detect_state_from_signals():
+    from lib.state import detect_state
+    base = dict(draft_order_set=False, draft_run=False, reg_season_done=False,
+                playoffs_scheduled=False, all_games_complete=False)
+    assert detect_state(**base) == "preseason"
+    assert detect_state(**{**base, "draft_order_set": True}) == "pre_draft"
+    assert detect_state(**{**base, "draft_order_set": True, "draft_run": True}) == "season"
+    assert detect_state(**{**base, "draft_run": True, "reg_season_done": True,
+                           "playoffs_scheduled": True}) == "playoffs"
+    assert detect_state(**{**base, "all_games_complete": True}) == "complete"
+    # Never emits `drafting` — that's manual-only.
+    assert detect_state(**base) != "drafting"
+
+
+def test_advance_state_forward_only_and_lock():
+    from lib.state import advance_state
+    # Advances forward.
+    assert advance_state("preseason", "season") == "season"
+    # Never regresses (API blip reporting an earlier phase).
+    assert advance_state("playoffs", "season") == "playoffs"
+    # A manual `drafting` is kept until the draft actually runs.
+    assert advance_state("drafting", "pre_draft") == "drafting"
+    assert advance_state("drafting", "season") == "season"
+    # Locked pins the stored state regardless of detection.
+    assert advance_state("pre_draft", "season", locked=True) == "pre_draft"
+
+
+def test_profile_aggregation_gated_by_state():
+    # A live (season-state) year with ESPN's pre-filled playoff seeds must NOT
+    # grant berths or titles, but still appears as a season row. A complete year
+    # grants titles/Sacko/berths. A pre_draft year contributes nothing at all.
+    live = {"season": 2026, "state": "season",
+            "teams": {"a": "A", "b": "B"},
+            "final_standings": ["a", "b"], "playoff_teams": ["a", "b"], "matchups": []}
+    done = {"season": 2025, "state": "complete", "teams": {"a": "A", "b": "B"},
+            "standings": [{"finish": 1, "team": "a", "record": "2-0"},
+                          {"finish": 2, "team": "b", "record": "0-2"}],
+            "playoff_teams": ["a"]}
+    profs = compute_profiles([live, done], {})
+    assert profs["a"]["titles"] == 1          # only from the complete season
+    assert profs["a"]["berths"] == 1          # 2026's pre-filled seeds don't count
+    assert profs["b"]["sackos"] == 1
+    assert profs["b"]["berths"] == 0
+    assert len(profs["a"]["seasons"]) == 2    # live season still shows as a row
+
+    pre = {"season": 2027, "state": "pre_draft", "teams": {"a": "A"},
+           "final_standings": ["a"]}
+    profs2 = compute_profiles([pre, done], {})
+    assert all(s["year"] != 2027 for s in profs2["a"]["seasons"])  # not in profiles yet
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:
