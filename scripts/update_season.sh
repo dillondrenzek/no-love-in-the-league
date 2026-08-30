@@ -12,9 +12,10 @@
 #   scripts/update_season.sh          # the current calendar year
 #   scripts/update_season.sh 2026     # a specific season
 #
-# A mid-season import is written with `status: in_progress`: it shows current
-# standings on that season's page but is kept out of all-time stats until you
-# re-run it after the season finishes (when ESPN posts final placements).
+# The importer detects the season's lifecycle `state:` (preseason … complete) and
+# advances it forward automatically. A season that isn't `complete` yet is kept
+# out of all-time stats until it finishes. Complete seasons are skipped (history
+# isn't rewritten) — use `import_espn.py <year> --patch` to force one.
 
 set -euo pipefail
 

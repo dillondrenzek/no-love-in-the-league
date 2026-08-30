@@ -7,6 +7,8 @@ on plain dicts/lists so it's easy to test with in-memory data.
 import yaml
 from pathlib import Path
 
+from .state import is_in_progress
+
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
 SEASONS_DIR = DATA_DIR / "seasons"
@@ -26,15 +28,15 @@ def load_franchises(data_dir=DATA_DIR):
 def load_seasons(seasons_dir=SEASONS_DIR, include_in_progress=False):
     """Return a list of season dicts, most recent season first.
 
-    In-progress seasons (`status: in_progress`, written by the importer mid-year)
-    are left out by default so partial results don't skew all-time standings,
-    records, or owner profiles. The per-season pages pass include_in_progress=True
-    to show the live season on its own page.
+    In-progress seasons (anything whose lifecycle `state` isn't `complete` yet —
+    see lib/state) are left out by default so partial results don't skew all-time
+    standings, records, or owner profiles. The per-season pages pass
+    include_in_progress=True to show the live season on its own page.
     """
     seasons = []
     for path in sorted(Path(seasons_dir).glob("*.yml")):
         season = _read_yaml(path)
-        if not include_in_progress and season.get("status") == "in_progress":
+        if not include_in_progress and is_in_progress(season):
             continue
         seasons.append(season)
     seasons.sort(key=lambda s: s["season"], reverse=True)

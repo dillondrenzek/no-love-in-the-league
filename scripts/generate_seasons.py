@@ -20,6 +20,7 @@ from pathlib import Path
 import yaml
 
 from lib.data import load_franchises, load_seasons, name_of, short_name_of
+from lib.state import state_of, is_in_progress
 from lib.rulings import load_overrides
 from generate_standings import season_rows, load_season_notes
 
@@ -103,7 +104,8 @@ def season_keepers(season, franchises):
 def season_detail(season, franchises, overrides, notes):
     """Page data for one season — completed or still in progress."""
     year = season["season"]
-    in_progress = season.get("status") == "in_progress"
+    state = state_of(season)
+    in_progress = is_in_progress(season)   # anything not yet `complete`
     # trade_note=False: the page has a full Trades section, so skip the count bullet.
     sr = season_rows(season, franchises, overrides, notes, trade_note=False)
     rows = sr["rows"]
@@ -114,7 +116,7 @@ def season_detail(season, franchises, overrides, notes):
     return {
         "year": year,
         "season_no": season_no(year),
-        "status": "in_progress" if in_progress else "complete",
+        "state": state,
         "points": sr["points"],
         "rows": rows,
         "notes": sr["notes"],
@@ -148,9 +150,9 @@ def main():
 
     detail = {s["season"]: season_detail(s, franchises, overrides, notes) for s in seasons}
 
-    # Newest year first, whatever its status (in_progress → complete).
+    # Newest year first, whatever its lifecycle state.
     years = sorted(detail.keys(), reverse=True)
-    index = [{"year": y, "season_no": season_no(y), "status": detail[y]["status"]}
+    index = [{"year": y, "season_no": season_no(y), "state": detail[y]["state"]}
              for y in years]
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)

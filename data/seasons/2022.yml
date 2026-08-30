@@ -6,6 +6,10 @@ season: 2022
 source: the-league-espn-api
 weeks_in_regular_season: 14
 
+# Lifecycle state (see design/season-state.md). Source of truth for how
+# this season renders and how much of it counts toward all-time stats.
+state: complete
+
 # Draft order (1st overall pick first), franchise ids. Optional and HAND-
 # EDITED — preserved across re-imports; remove the block to hide the draft
 # table on the season page.

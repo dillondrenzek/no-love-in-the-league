@@ -149,22 +149,19 @@ scripts/update_season.sh 2026         # a specific season
 Then review with `git diff` and push; GitHub Pages redeploys automatically.
 About once a week during the season is plenty.
 
-**In-progress vs. final.** Mid-season, ESPN hasn't assigned final placements, so
-the importer orders teams by their current standing and writes `status:
-in_progress` into `data/seasons/<year>.yml`. An in-progress season:
+**Lifecycle state.** Every season carries a `state:` (`preseason → pre_draft →
+drafting → season → playoffs → complete`) that the whole site renders off — see
+[design/season-state.md](design/season-state.md). The importer detects the state
+from ESPN each run and advances it **forward only**; a season that isn't yet
+`complete` is deliberately **left out** of all-time standings, records, owner
+profiles, and the homepage hero, so a half-season never skews the record book. It
+flows into the all-time numbers once it reaches `complete`.
 
-- shows **current standings** on its own page at `/seasons/<year>/`, but
-- is deliberately **left out** of all-time standings, records, owner profiles,
-  and the homepage's reigning-champ/Sacko hero — so a half-season never skews
-  the record book.
-
-When the season ends, re-run the updater once more. ESPN now reports final
-placements, the importer drops the `in_progress` flag, and the season flows into
-the all-time numbers automatically.
-
-**Before games are played** (e.g. right after the draft), the season imports with
-no matchups; its page just shows the draft order (if you've filled one in) until
-results start coming in.
+Two states are hand-controlled: set `state: drafting` yourself in the ~day between
+keepers locking and the draft (ESPN can't tell us that), and add `state_locked:
+true` to pin a state against auto-advance. **Complete seasons are frozen** — a
+routine `update_season.sh` skips them so history isn't rewritten; pass `--patch`
+to `import_espn.py` to re-import one on purpose.
 
 ## Season pages
 
