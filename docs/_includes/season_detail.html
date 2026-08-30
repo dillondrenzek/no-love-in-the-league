@@ -17,16 +17,6 @@ Param: d (a site.data.seasons.detail record). The masthead is the `season` layou
 {%- assign live_or_done = false -%}
 {%- if state == "season" or state == "playoffs" or state == "complete" %}{% assign live_or_done = true %}{% endif -%}
 
-{%- comment -%} Status banner, per state {%- endcomment -%}
-{%- if state == "preseason" -%}
-<p class="season-status">Season {{ d.season_no }} is live for {{ d.year }} — the draft order and rosters aren’t set yet.</p>
-{%- elsif state == "pre_draft" -%}
-<p class="season-status">The draft order is set. Rosters lock once the draft runs.</p>
-{%- elsif state == "drafting" -%}
-<p class="season-status">Draft in progress — rosters and matchups appear once it’s done.</p>
-{%- elsif state == "season" and has_rows == false -%}
-<p class="season-status">The draft’s in the books and rosters are set — standings post once Week 1 is in.</p>
-{%- endif -%}
 
 {% include season_notes.html notes=d.notes %}
 
