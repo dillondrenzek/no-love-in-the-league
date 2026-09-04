@@ -1,27 +1,57 @@
 {%- comment -%}
-Season page body, rendered per lifecycle state (d.state; see design/season-state.md):
-  preseason  — league live for the year, nothing set yet
-  pre_draft  — draft order set (rosters lock at the draft)
-  drafting   — lockdown: draft order only, no standings/trades
-  season     — current standings once games are in; before Week 1, the draft board
-  playoffs   — current standings, playoffs underway
-  complete   — final standings
-Param: d (a site.data.seasons.detail record). The masthead is the `season` layout.
+Season page body — a shared shell that every lifecycle state (d.state; see
+design/season-state.md) plugs sections into. Intro (state banner + notes), an
+optional jump-nav, then uniform `.season-section` blocks: standings, weekly
+recaps, draft order, trades — each shown only when it has content for this state.
+Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- endcomment -%}
 {%- assign d = include.d -%}
 {%- assign state = d.state -%}
+
+{%- comment -%} Which sections have content in this state {%- endcomment -%}
 {%- assign has_rows = false -%}
 {%- if d.rows and d.rows.size > 0 %}{% assign has_rows = true %}{% endif -%}
-{%- assign has_draft = false -%}
-{%- if d.draft_order and d.draft_order.size > 0 %}{% assign has_draft = true %}{% endif -%}
+{%- assign weekpages = site.pages | where: "season_year", d.year | where_exp: "p", "p.week" | sort: "week" | reverse -%}
+{%- assign has_weeks = false -%}
+{%- if weekpages and weekpages.size > 0 %}{% assign has_weeks = true %}{% endif -%}
+{%- assign show_draft = false -%}
+{%- if d.draft_order and d.draft_order.size > 0 and state != "preseason" %}{% assign show_draft = true %}{% endif -%}
 {%- assign live_or_done = false -%}
 {%- if state == "season" or state == "playoffs" or state == "complete" %}{% assign live_or_done = true %}{% endif -%}
+{%- assign show_trades = false -%}
+{%- if d.trades and d.trades.size > 0 and live_or_done %}{% assign show_trades = true %}{% endif -%}
+{%- assign section_count = 0 -%}
+{%- if has_rows %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
+{%- if has_weeks %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
+{%- if show_draft %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
+{%- if show_trades %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 
+{%- comment -%} Intro: state banner {%- endcomment -%}
+{%- if state == "preseason" -%}
+<p class="season-status">Season {{ d.season_no }} is live for {{ d.year }} — the draft order and rosters aren’t set yet.</p>
+{%- elsif state == "pre_draft" -%}
+<p class="season-status">The draft order is set. Rosters lock once the draft runs.</p>
+{%- elsif state == "drafting" -%}
+<p class="season-status">Draft in progress — rosters and matchups appear once it’s done.</p>
+{%- elsif state == "season" and has_rows == false -%}
+<p class="season-status">The draft’s in the books and rosters are set — standings post once Week 1 is in.</p>
+{%- endif -%}
 
 {% include season_notes.html notes=d.notes %}
 
+{%- comment -%} Jump-nav — only worthwhile with a few sections {%- endcomment -%}
+{%- if section_count >= 2 -%}
+<nav class="season-nav" aria-label="Sections">
+  {%- if has_rows %}<a href="#standings">Standings</a>{% endif -%}
+  {%- if has_weeks %}<a href="#weekly">Weekly</a>{% endif -%}
+  {%- if show_draft %}<a href="#draft">Draft</a>{% endif -%}
+  {%- if show_trades %}<a href="#trades">Trades</a>{% endif -%}
+</nav>
+{%- endif -%}
+
 {%- comment -%} Standings — season / playoffs / complete, once there are rows {%- endcomment -%}
 {%- if has_rows -%}
+<section class="season-section" id="standings">
 {%- if state == "complete" -%}
 <h2>Final standings</h2>
 {%- elsif state == "playoffs" -%}
@@ -32,29 +62,35 @@ Param: d (a site.data.seasons.detail record). The masthead is the `season` layou
 <p class="season-status">Season in progress — through week {{ d.weeks_played }}.</p>
 {%- endif -%}
 {% include standings_table.html rows=d.rows points=d.points rank_label="Rank" %}
+</section>
 {%- endif -%}
 
 {%- comment -%} Weekly recaps — any week pages that exist for this season {%- endcomment -%}
-{%- assign weekpages = site.pages | where: "season_year", d.year | where_exp: "p", "p.week" | sort: "week" | reverse -%}
-{%- if weekpages and weekpages.size > 0 -%}
+{%- if has_weeks -%}
+<section class="season-section" id="weekly">
 <h2>Weekly recaps</h2>
 <ul class="week-links">
   {%- for p in weekpages %}
   <li><a href="{{ p.url | relative_url }}">Week {{ p.week }}</a></li>
   {%- endfor %}
 </ul>
+</section>
 {%- endif -%}
 
 {%- comment -%} Draft order — wherever the draft is set, except a bare preseason {%- endcomment -%}
-{%- if has_draft and state != "preseason" -%}
+{%- if show_draft -%}
+<section class="season-section" id="draft">
 {%- assign show_keeper = false -%}
 {%- if d.keepers and d.keepers.size > 0 %}{% assign show_keeper = true %}{% endif -%}
 <h2>Draft order</h2>
 {% include draft_table.html rows=d.draft_order show_keeper=show_keeper %}
+</section>
 {%- endif -%}
 
 {%- comment -%} Trades — once the season is live (not during the draft lockdown) {%- endcomment -%}
-{%- if d.trades and d.trades.size > 0 and live_or_done -%}
+{%- if show_trades -%}
+<section class="season-section" id="trades">
 <h2>Trades</h2>
 {% include trades_list.html trades=d.trades %}
+</section>
 {%- endif -%}

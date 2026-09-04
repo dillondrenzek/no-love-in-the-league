@@ -1,10 +1,25 @@
 ---
 layout: default
 ---
+{%- assign sd = site.data.seasons.detail[page.season_year] -%}
 <article class="post">
   <header class="season-head">
-    <h1 class="season-head__title">{{ site.title }}</h1>
-    <span class="season-head__label">Season {{ page.season_no }}</span>
+    <h1 class="season-head__title">Season {{ page.season_no }}</h1>
+    <span class="season-head__label">{{ page.season_year }}</span>
+    {%- assign st = sd.state -%}
+    {%- if st == "complete" -%}
+    <span class="season-badge season-badge--final">Final</span>
+    {%- elsif st == "playoffs" -%}
+    <span class="season-badge season-badge--live">Playoffs</span>
+    {%- elsif st == "season" -%}
+    <span class="season-badge season-badge--live">In progress</span>
+    {%- elsif st == "drafting" -%}
+    <span class="season-badge">Drafting</span>
+    {%- elsif st == "pre_draft" -%}
+    <span class="season-badge">Pre-draft</span>
+    {%- elsif st == "preseason" -%}
+    <span class="season-badge">Preseason</span>
+    {%- endif -%}
   </header>
   <div class="post-content">
     {{ content }}
