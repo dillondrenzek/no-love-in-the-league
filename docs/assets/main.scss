@@ -614,6 +614,44 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
   font-size: clamp(0.8rem, 3.4vw, 1.2rem);
   line-height: 1.05;
 }
+// State badge in the season masthead.
+.season-badge {
+  align-self: center;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--code-bg);
+  color: var(--muted);
+}
+.season-badge--live { background: var(--brand); color: #fff; }
+.season-badge--final { background: var(--rule-strong); color: #fff; }
+
+// Season page shell: in-page jump-nav + uniform section blocks.
+.season-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 1.8em;
+  padding-bottom: 1.1em;
+  border-bottom: 1px solid var(--rule);
+}
+.season-nav a {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding: 3px 11px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+.season-nav a:hover { color: var(--brand); border-color: var(--brand); }
+.season-section { margin: 0 0 2.4em; scroll-margin-top: 1.5em; }
+.season-section > h2 { margin-top: 0; }
 
 // ---- Record book (two-up grid, name above each card) ------------------------
 .records-list {
