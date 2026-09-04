@@ -9,6 +9,16 @@ week: 6
 {% assign wk = site.data.weeks["2026-6"] %}
 {% include week_detail.html wk=wk %}
 
+{% if wk.state != "complete" %}
+<h2>The Preview</h2>
+
+<!-- Paste the preview below. Build the prompt with:
+     python scripts/weekly_preview.py 2026 6
+     Shows until the week is complete, then the recap takes over. -->
+
+_Preview coming soon._
+{% endif %}
+
 {% if wk.state == "complete" %}
 <h2>The Recap</h2>
 
