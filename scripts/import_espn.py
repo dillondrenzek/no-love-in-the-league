@@ -286,14 +286,17 @@ def build_keepers(draft_rows, team_to_fid):
 
 
 def build_matchups(matchup_rows, team_to_fid):
-    """Franchise-keyed games — the full schedule, including fixtures not yet played.
+    """Franchise-keyed games — the full schedule in three states:
 
-    A game is "played" when ESPN has decided a winner (HOME/AWAY/TIE); an
-    UNDECIDED fixture is recorded with `played: false` and no scores (its 0-0 is a
-    placeholder, not a result). Played games carry scores and omit the flag, so
-    finished seasons dump byte-identically. Byes are skipped. Home/away is cosmetic
-    in fantasy, so it's assigned deterministically by team id for diff-clean
-    re-imports. Consumers must skip unplayed games (see lib.data.game_played)."""
+      - final   : ESPN decided a winner (HOME/AWAY/TIE) → carries scores, no flag.
+      - live     : undecided but points are on the board (game in progress) →
+                   carries live scores + `final: false` (shown, but never counted).
+      - future  : undecided with no points yet → `played: false`, no scores.
+
+    Only complete weeks (all games final) count toward season stats — see
+    lib.data.complete_weeks. Final games omit the flags so finished seasons dump
+    byte-identically. Byes are skipped; home/away is assigned by team id for
+    diff-clean re-imports."""
     out = []
     for m in matchup_rows:
         winner = m.get("winner")
@@ -302,8 +305,9 @@ def build_matchups(matchup_rows, team_to_fid):
         h_id, a_id = m.get("home_team_id"), m.get("away_team_id")
         if not h_id or not a_id:
             continue
-        played = winner in ("HOME", "AWAY", "TIE")
+        final = winner in ("HOME", "AWAY", "TIE")
         hs, as_ = m.get("home_score"), m.get("away_score")
+        live = (not final) and bool((hs or 0) or (as_ or 0))   # undecided w/ points
         if a_id < h_id:             # normalize: lower team id is "home"
             h_id, a_id, hs, as_ = a_id, h_id, as_, hs
         row = {
@@ -312,9 +316,11 @@ def build_matchups(matchup_rows, team_to_fid):
             "away": team_to_fid.get(a_id),
             "playoff": bool(m.get("is_playoff")),
         }
-        if played:
-            row["home_score"] = round(float(hs), 2)
-            row["away_score"] = round(float(as_), 2)
+        if final or live:
+            row["home_score"] = round(float(hs or 0), 2)
+            row["away_score"] = round(float(as_ or 0), 2)
+            if live:
+                row["final"] = False
         else:
             row["played"] = False
         out.append(row)
@@ -375,14 +381,22 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
     else:
         lines += ["final_standings: []"]
     if matchups:
-        lines += ["", "# The full schedule. Played games carry scores; an unplayed fixture is",
-                  "# `played: false` with no scores (skipped by standings/records/H2H).", "matchups:"]
+        lines += ["", "# The full schedule in three states: a final game carries scores; a live",
+                  "# (in-progress) game carries scores + `final: false`; a future fixture is",
+                  "# `played: false` with no scores. Only complete weeks (all games final)",
+                  "# count toward standings/records/H2H.", "matchups:"]
         for m in matchups:
             pf = "true" if m["playoff"] else "false"
             if m.get("played", True) is False:
                 lines.append(
                     f"  - {{ week: {m['week']:>2}, home: {m['home']}, away: {m['away']}, "
                     f"playoff: {pf}, played: false }}"
+                )
+            elif m.get("final", True) is False:
+                lines.append(
+                    f"  - {{ week: {m['week']:>2}, home: {m['home']}, away: {m['away']}, "
+                    f"home_score: {m['home_score']}, away_score: {m['away_score']}, "
+                    f"playoff: {pf}, final: false }}"
                 )
             else:
                 lines.append(
@@ -435,7 +449,8 @@ def validation_table(matchups):
     """Regular-season W-L-PF tally from the matchups, for eyeballing vs ESPN."""
     tally = {}
     for m in matchups:
-        if m["playoff"] or m.get("played", True) is False:
+        # Regular-season, final games only (skip playoffs, future and live games).
+        if m["playoff"] or m.get("played", True) is False or m.get("final", True) is False:
             continue
         h, a, hs, as_ = m["home"], m["away"], m["home_score"], m["away_score"]
         for fid in (h, a):

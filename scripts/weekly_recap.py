@@ -37,18 +37,19 @@ season_year: %%YEAR%%
 season_no: %%NO%%
 week: %%WEEK%%
 ---
-<p class="back-link"><a href="{{ '/seasons/%%YEAR%%/' | relative_url }}">← Season %%NO%% · %%YEAR%%</a></p>
-
 {% assign wk = site.data.weeks["%%YEAR%%-%%WEEK%%"] %}
 {% include week_detail.html wk=wk %}
 
+{% if wk.state == "complete" %}
 <h2>The Recap</h2>
 
-<!-- Paste the agent's recap below. Regenerate the prompt any time with:
+<!-- Paste the agent's recap below. Build the prompt with:
      python scripts/weekly_recap.py %%YEAR%% %%WEEK%%
-     It's Markdown: a chaotic column, then a "### 🏆 Awards" list. -->
+     It's Markdown: a chaotic column, then a "### 🏆 Awards" list. The recap only
+     renders once the week is complete. -->
 
 _Recap coming soon._
+{% endif %}
 """
 
 
@@ -106,9 +107,10 @@ def main():
         sys.exit(f"No season file for {args.year} (data/seasons/{args.year}.yml).")
 
     summary = week_summary(season, args.week, franchises)
-    if not summary["played"]:
-        sys.exit(f"No games found for {args.year} week {args.week}. "
-                 f"Import the week first (see scripts/import_manager.sh), then re-run.")
+    if summary["state"] != "complete":
+        sys.exit(f"{args.year} week {args.week} is {summary['state']}, not complete — "
+                 f"recaps are only written for a complete week. Import the finished "
+                 f"week first, then re-run.")
 
     path, created = scaffold_page(args.year, args.week)
 

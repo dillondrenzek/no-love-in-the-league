@@ -6,7 +6,7 @@ head-to-head vs every other owner. This only produces meaningful output for
 seasons that have matchups (level 2).
 """
 
-from .data import name_of, short_name_of, season_trades_complete, game_played
+from .data import name_of, short_name_of, season_trades_complete, countable_matchups
 from .standings import get_standings, provisional_standings
 from .state import is_in_progress, state_of, state_at_least
 from .rulings import co_champions, meaningless_keys, matchup_key
@@ -102,9 +102,7 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
                     p["sackos"] += 1; p["sacko_years"].append(year)
 
         in_playoffs = set()
-        for m in season.get("matchups", []):
-            if not game_played(m):          # unplayed fixture — no result yet
-                continue
+        for m in countable_matchups(season):   # complete-week games only
             if matchup_key(m) in skip:      # meaningless consolation game
                 continue
             h, a = m["home"], m["away"]
