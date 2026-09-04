@@ -66,12 +66,14 @@ detail:
     - pick: 3
       owner_id: alexandra
       owner_name: Lexi
-      team: Dump it on my Chest
-      keepers: []
+      team: Cornstar
+      keepers:
+      - player: Javonte Williams
+        round: 7
     - pick: 4
       owner_id: shawne2520997
       owner_name: Shawnee
-      team: D***er my Sufficient Tight End
+      team: Swift kick in the Dak
       keepers:
       - player: Nico Collins
         round: 5
@@ -120,7 +122,7 @@ detail:
     - pick: 11
       owner_id: kevbots22
       owner_name: Kevin
-      team: Keeping up with the McCalferies
+      team: Josh Jacobs Alibi
       keepers:
       - player: Chris Olave
         round: 5
@@ -136,7 +138,7 @@ detail:
       parties:
       - owner_id: shawne2520997
         owner_name: Shawnee
-        team: D***er my Sufficient Tight End
+        team: Swift kick in the Dak
         gave:
         - 5.04 pick
         - 9.04 pick
@@ -157,12 +159,17 @@ detail:
       player: Chris Olave
       owner_id: kevbots22
       owner_name: Kevin
-      team: Keeping up with the McCalferies
+      team: Josh Jacobs Alibi
     - round: 5
       player: Nico Collins
       owner_id: shawne2520997
       owner_name: Shawnee
-      team: D***er my Sufficient Tight End
+      team: Swift kick in the Dak
+    - round: 7
+      player: Javonte Williams
+      owner_id: alexandra
+      owner_name: Lexi
+      team: Cornstar
     - round: 8
       player: Colston Loveland
       owner_id: theoceanpulse

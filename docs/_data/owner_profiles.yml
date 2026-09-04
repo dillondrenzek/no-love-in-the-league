@@ -1769,7 +1769,7 @@ kevbots22:
       - 2025
   seasons:
   - year: 2026
-    team: Keeping up with the McCalferies
+    team: Josh Jacobs Alibi
     tag: null
     finish: 6th
     record: 0-0
@@ -2019,7 +2019,7 @@ alexandra:
       years: []
   seasons:
   - year: 2026
-    team: Dump it on my Chest
+    team: Cornstar
     tag: null
     finish: 7th
     record: 0-0
@@ -2027,7 +2027,10 @@ alexandra:
   h2h: []
   trades: []
   trades_known: true
-  keepers: []
+  keepers:
+  - year: 2026
+    round: 7
+    player: Javonte Williams
 purpsworth:
   name: Trevor
   nickname: ''
@@ -2817,7 +2820,7 @@ theoceanpulse:
     with:
     - id: shawne2520997
       name: Shawnee
-      team: D***er my Sufficient Tight End
+      team: Swift kick in the Dak
   - year: 2025
     week: 8
     got:
@@ -3140,7 +3143,7 @@ shawne2520997:
       - 2023
   seasons:
   - year: 2026
-    team: D***er my Sufficient Tight End
+    team: Swift kick in the Dak
     tag: null
     finish: 12th
     record: 0-0
