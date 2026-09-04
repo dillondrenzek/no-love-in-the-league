@@ -68,7 +68,93 @@ final_standings:
   - gganoom
   - shawne2520997
 
-matchups: []  # no games played yet
+# The full schedule. Played games carry scores; an unplayed fixture is
+# `played: false` with no scores (skipped by standings/records/H2H).
+matchups:
+  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false }
+  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false }
+  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false }
+  - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false }
+  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false }
+  - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false }
+  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false }
+  - { week:  2, home: zachzoske, away: schirmerj, playoff: false, played: false }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
+  - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }
+  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false }
+  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false }
+  - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
+  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
+  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false }
+  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false }
+  - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false }
+  - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false }
+  - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false }
+  - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false }
+  - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false }
+  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  5, home: zachzoske, away: theoceanpulse, playoff: false, played: false }
+  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false }
+  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
+  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false }
+  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false }
+  - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false }
+  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
+  - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }
+  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false }
+  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false }
+  - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
+  - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
+  - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  8, home: schirmerj, away: purpsworth, playoff: false, played: false }
+  - { week:  8, home: sturmanator15, away: lukstein, playoff: false, played: false }
+  - { week:  8, home: zachzoske, away: gganoom, playoff: false, played: false }
+  - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false }
+  - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
+  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false }
+  - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false }
+  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false }
+  - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false }
+  - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false }
+  - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false }
+  - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week: 10, home: sturmanator15, away: gganoom, playoff: false, played: false }
+  - { week: 10, home: zachzoske, away: kevbots22, playoff: false, played: false }
+  - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false }
+  - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false }
+  - { week: 11, home: sturmanator15, away: shawne2520997, playoff: false, played: false }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, playoff: false, played: false }
+  - { week: 11, home: zachzoske, away: purpsworth, playoff: false, played: false }
+  - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
+  - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
+  - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
+  - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false }
+  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false }
+  - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false }
+  - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
+  - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
+  - { week: 13, home: schirmerj, away: alexandra, playoff: false, played: false }
+  - { week: 13, home: sturmanator15, away: kevbots22, playoff: false, played: false }
+  - { week: 13, home: theoceanpulse, away: gganoom, playoff: false, played: false }
+  - { week: 13, home: zachzoske, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week: 14, home: lukstein, away: kevbots22, playoff: false, played: false }
+  - { week: 14, home: purpsworth, away: shawne2520997, playoff: false, played: false }
+  - { week: 14, home: schirmerj, away: theoceanpulse, playoff: false, played: false }
+  - { week: 14, home: sturmanator15, away: alexandra, playoff: false, played: false }
+  - { week: 14, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false }
+  - { week: 14, home: zachzoske, away: jackperkins74, playoff: false, played: false }
 
 # Completed trades this season (franchise-keyed). ESPN reveals a trade's
 # contents only to its participants, so trades no merged account was in

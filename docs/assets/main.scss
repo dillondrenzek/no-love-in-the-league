@@ -614,22 +614,6 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
   font-size: clamp(0.8rem, 3.4vw, 1.2rem);
   line-height: 1.05;
 }
-// State badge in the season masthead.
-.season-badge {
-  align-self: center;
-  font-family: var(--mono);
-  font-size: 0.62rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: var(--code-bg);
-  color: var(--muted);
-}
-.season-badge--live { background: var(--brand); color: #fff; }
-.season-badge--final { background: var(--rule-strong); color: #fff; }
-
 // Season page shell: in-page jump-nav + uniform section blocks.
 .season-nav {
   display: flex;

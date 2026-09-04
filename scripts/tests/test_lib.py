@@ -562,6 +562,48 @@ def test_week_summary_scoreboard_and_highlights():
     assert week_summary(season, 9, fr)["played"] is False
 
 
+def test_unplayed_matchups_are_ignored():
+    from lib.standings import get_standings
+    from lib.data import regular_season_matchups, game_played
+    season = {"season": 2026, "state": "season",
+              "teams": {"a": "A", "b": "B"},
+              "matchups": [
+                  {"week": 1, "home": "a", "away": "b", "home_score": 100.0, "away_score": 90.0},
+                  {"week": 2, "home": "a", "away": "b", "playoff": False, "played": False},
+              ]}
+    assert game_played(season["matchups"][0]) is True
+    assert game_played(season["matchups"][1]) is False
+    # Only the played week counts — the scheduled week is skipped (no phantom 0-0 tie).
+    assert len(regular_season_matchups(season)) == 1
+    rows = {r["id"]: r for r in get_standings(season, {})}
+    assert rows["a"]["record"] == "1-0"
+    assert rows["b"]["record"] == "0-1"
+    assert rows["a"]["ties"] == 0 and rows["b"]["ties"] == 0
+
+    # Score records ignore the unplayed fixture too.
+    from lib.records import compute_records
+    cats = {r["category"] for r in compute_records([season], {})}
+    assert "Most Points in a Week" in cats  # from the one real game, not the 0-0
+
+
+def test_season_rows_provisional_table_for_live_season():
+    from generate_standings import season_rows
+    fr = {"a": {"name": "A"}, "b": {"name": "B"}}
+    # A live season with no games yet shows a 0-0 table in final_standings order.
+    live = {"season": 2026, "state": "season", "teams": {"a": "A", "b": "B"},
+            "final_standings": ["b", "a"], "matchups": []}
+    sr = season_rows(live, fr, {}, {})
+    assert [r["team"] for r in sr["rows"]] == ["B", "A"]     # current order
+    assert all(r["record"] == "0-0" for r in sr["rows"])
+    # PF/PA columns show at 0 for the live season (fill in as games play).
+    assert sr["points"] is True
+    assert all(r["pf"] == 0.0 for r in sr["rows"])
+    # A not-yet-live season (preseason) gets no provisional table.
+    pre = {"season": 2027, "state": "preseason", "teams": {"a": "A"},
+           "final_standings": ["a"], "matchups": []}
+    assert season_rows(pre, fr, {}, {})["rows"] == []
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

@@ -13,9 +13,10 @@ from pathlib import Path
 import yaml
 
 from lib.data import load_franchises, load_seasons, DATA_DIR
-from lib.standings import get_standings, has_points
+from lib.standings import get_standings, has_points, provisional_standings
 from lib.render import heat_color
 from lib.rulings import load_overrides, co_champions
+from lib.state import state_of
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "docs" / "_data" / "standings.yml"
@@ -40,6 +41,11 @@ def _tag(finish, team_count, is_co):
 
 def season_rows(season, franchises, overrides, notes, trade_note=True):
     rows = get_standings(season, franchises)
+    # A live season (season/playoffs) shows a standings table even before any game
+    # is played: fall back to a 0-0 provisional table in the current order, which
+    # fills in with real records as games come in.
+    if not rows and state_of(season) in ("season", "playoffs"):
+        rows = provisional_standings(season, franchises, zero_points=True)
     points = has_points(rows)
     co = set(co_champions(season["season"], overrides))
     team_count = len(rows)

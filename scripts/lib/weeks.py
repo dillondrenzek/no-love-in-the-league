@@ -6,12 +6,14 @@ call). This is the factual layer under /seasons/<year>/week-<n>/ — the AI reca
 is written on top of it by a human running the agent spec (see agents/).
 """
 
-from .data import short_name_of
+from .data import short_name_of, game_played
 
 
 def week_matchups(season, week):
-    """All of a season's games in `week` (regular season + any playoff)."""
-    return [m for m in (season.get("matchups") or []) if m.get("week") == week]
+    """A season's PLAYED games in `week` (regular season + any playoff). Unplayed
+    fixtures on the schedule are skipped — a recap needs results."""
+    return [m for m in (season.get("matchups") or [])
+            if m.get("week") == week and game_played(m)]
 
 
 def _side(season, franchises, fid, score, opp_fid, opp_score):
@@ -100,6 +102,8 @@ def week_summary(season, week, franchises):
 
 
 def played_weeks(season):
-    """Sorted list of week numbers that have at least one game."""
-    weeks = {m.get("week") for m in (season.get("matchups") or []) if m.get("week")}
+    """Sorted week numbers that have at least one played game (scheduled-only
+    weeks don't count — there's nothing to recap yet)."""
+    weeks = {m.get("week") for m in (season.get("matchups") or [])
+             if m.get("week") and game_played(m)}
     return sorted(weeks)

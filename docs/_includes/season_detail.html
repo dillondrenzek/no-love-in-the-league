@@ -1,14 +1,14 @@
 {%- comment -%}
-Season page body — a shared shell that every lifecycle state (d.state; see
-design/season-state.md) plugs sections into. Intro (state banner + notes), an
-optional jump-nav, then uniform `.season-section` blocks: standings, weekly
-recaps, draft order, trades — each shown only when it has content for this state.
+Season page body — a shared shell that every lifecycle state (d.state) plugs
+sections into. State is internal: it only decides WHICH sections have data to
+show, never the wording. No state is narrated to the reader — the data speaks for
+itself. Sections: standings, weekly recaps, draft order, trades.
 Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- endcomment -%}
 {%- assign d = include.d -%}
 {%- assign state = d.state -%}
 
-{%- comment -%} Which sections have content in this state {%- endcomment -%}
+{%- comment -%} Which sections have data in this state {%- endcomment -%}
 {%- assign has_rows = false -%}
 {%- if d.rows and d.rows.size > 0 %}{% assign has_rows = true %}{% endif -%}
 {%- assign weekpages = site.pages | where: "season_year", d.year | where_exp: "p", "p.week" | sort: "week" | reverse -%}
@@ -26,17 +26,6 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- if show_draft %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_trades %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 
-{%- comment -%} Intro: state banner {%- endcomment -%}
-{%- if state == "preseason" -%}
-<p class="season-status">Season {{ d.season_no }} is live for {{ d.year }} — the draft order and rosters aren’t set yet.</p>
-{%- elsif state == "pre_draft" -%}
-<p class="season-status">The draft order is set. Rosters lock once the draft runs.</p>
-{%- elsif state == "drafting" -%}
-<p class="season-status">Draft in progress — rosters and matchups appear once it’s done.</p>
-{%- elsif state == "season" and has_rows == false -%}
-<p class="season-status">The draft’s in the books and rosters are set — standings post once Week 1 is in.</p>
-{%- endif -%}
-
 {% include season_notes.html notes=d.notes %}
 
 {%- comment -%} Jump-nav — only worthwhile with a few sections {%- endcomment -%}
@@ -49,19 +38,11 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 </nav>
 {%- endif -%}
 
-{%- comment -%} Standings — season / playoffs / complete, once there are rows {%- endcomment -%}
+{%- comment -%} Standings — whenever there are rows (real or provisional) {%- endcomment -%}
 {%- if has_rows -%}
 <section class="season-section" id="standings">
-{%- if state == "complete" -%}
-<h2>Final standings</h2>
-{%- elsif state == "playoffs" -%}
 <h2>Standings</h2>
-<p class="season-status">Playoffs underway — through week {{ d.weeks_played }}.</p>
-{%- else -%}
-<h2>Current standings</h2>
-<p class="season-status">Season in progress — through week {{ d.weeks_played }}.</p>
-{%- endif -%}
-{% include standings_table.html rows=d.rows points=d.points rank_label="Rank" %}
+{% include standings_table.html rows=d.rows points=d.points %}
 </section>
 {%- endif -%}
 
