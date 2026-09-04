@@ -174,33 +174,53 @@ franchise ids (first pick first) to that `data/seasons/<year>.yml`. It's the one
 field in a season file you hand-edit — the importer preserves it on every
 re-import. Leave it out and no draft table appears.
 
-## Weekly recaps
+## Weekly pages (previews & recaps)
 
-Each week of the live season can get its own page at `/seasons/<year>/week-<n>/`
-with a scoreboard, a highlights strip (top/low score, biggest blowout, closest
-call), and an AI-written trash-talk recap (a chaotic column plus an awards block).
+For a live season (2026+), every regular-season week gets its own page at
+`/seasons/<year>/week-<n>/`, scaffolded automatically by the build. Each week has
+a **state** derived from its games:
 
-The recap voice is a repo-stored, reusable spec: `agents/weekly-recap.md`. Anyone
-can run it — paste the spec plus a week's data into a chat model and it returns
-the recap markdown.
+- **future** — no game has a score yet; the scoreboard lists the matchups (no
+  scores) and the page shows a **Preview**.
+- **in_progress** — some games have live scores but not all are final; the
+  scoreboard shows live scores. Still a **Preview**; season stats don't move yet.
+- **complete** — every game is final; the scoreboard shows finals + a winner and
+  a highlights strip (top/low score, biggest blowout, closest call), and the page
+  shows a **Recap** instead of the preview. Season stats fold in now.
 
-Weekly workflow:
+So each page carries two hand-written, AI-generated pieces that swap on state: a
+**Preview** while the week is upcoming/live, then a **Recap** once it's done. Both
+are repo-stored, reusable agent specs anyone can run:
 
-1. **Import the week** — run the updater so this week's matchups land in
-   `data/seasons/<year>.yml` (this is the "hit the API" step).
-2. **Prep the recap** — `python scripts/weekly_recap.py <year> <week>`. It isolates
-   the week's scoreboard + highlights, scaffolds `docs/seasons/<year>/week-<n>.md`
-   (once; then hand-editable), and writes a ready-to-paste prompt to
-   `recaps/<year>-week-<nn>.prompt.md` (git-ignored) — the agent spec plus this
-   week's data.
-3. **Generate** — paste that prompt into Claude (or hand the spec to anyone), and
-   paste the reply into the week page under "The Recap".
-4. **Build** — `python scripts/build.py`. The scoreboard/highlights refresh from
-   the imported matchups (`scripts/generate_weeks.py` → `docs/_data/weeks.yml`);
-   the season page auto-lists any week pages that exist.
+- `agents/weekly-preview.md` — a forward-looking hype/oddsmaker voice (column +
+  Game of the Week / Lock / Upset / Bold Prediction).
+- `agents/weekly-recap.md` — a backward-looking trash-talk voice (column + awards).
 
-The scoreboard and highlights are always regenerated from data; only the recap
-prose is hand-pasted, so re-importing a corrected score just needs a rebuild.
+**Writing a preview** (week is future or in progress):
+
+1. `python scripts/weekly_preview.py <year> <week>` — writes a ready-to-paste
+   prompt to `recaps/<year>-week-<nn>.preview.prompt.md` (git-ignored): the
+   preview spec + each matchup's context (both owners' all-time record, titles,
+   best finish, and the all-time head-to-head).
+2. Paste it into Claude (or any model) → paste the reply into the week page under
+   **The Preview**.
+3. `python scripts/build.py`.
+
+**Writing a recap** (week is complete):
+
+1. **Import the finished week** — `scripts/update_season.sh <year>` so its final
+   scores land in `data/seasons/<year>.yml` and the week flips to complete.
+2. `python scripts/weekly_recap.py <year> <week>` — writes
+   `recaps/<year>-week-<nn>.prompt.md`: the recap spec + the week's scoreboard and
+   highlights. (Refuses to run until the week is complete.)
+3. Paste it into Claude → paste the reply into the week page under **The Recap**.
+4. `python scripts/build.py`.
+
+The scoreboard/highlights and each week's state are always regenerated from the
+imported matchups (`scripts/generate_weeks.py` → `docs/_data/weeks.yml`); only the
+preview/recap prose is hand-pasted, and each shows only in the right state, so a
+re-import that corrects a score or flips a week to complete just needs a rebuild.
+Playoff weeks are handled separately (not yet built).
 
 ## Running the tests
 
