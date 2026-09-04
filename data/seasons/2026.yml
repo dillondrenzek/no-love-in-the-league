@@ -6,8 +6,9 @@ season: 2026
 source: the-league-espn-api
 weeks_in_regular_season: 14
 
-# Lifecycle state (see design/season-state.md). Source of truth for how
-# this season renders and how much of it counts toward all-time stats.
+# Lifecycle state (see design/season-state.md) — the site renders off this,
+# and the importer advances it forward automatically. Set `drafting` by hand;
+# add `state_locked: true` to pin the state against auto-advance.
 state: season
 
 # Draft order (1.01 first), franchise ids. Locked, hand-maintained data —
@@ -34,17 +35,23 @@ teams:
   schirmerj: "Return of the IDP"
   lukstein: "2x Runner Up"
   jackperkins74: "Gibbed for your pleasure"
-  kevbots22: "Keeping up with the McCalferies"
-  alexandra: "Dump it on my Chest"
+  kevbots22: "Josh Jacobs Alibi"
+  alexandra: "Cornstar"
   purpsworth: "I am dead inside"
   whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
   theoceanpulse: "The ChoSimba Ones"
   gganoom: "One Big Beautiful Dill"
-  shawne2520997: "D***er my Sufficient Tight End"
+  shawne2520997: "Swift kick in the Dak"
 
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
-playoff_teams: [] # not seeded yet
+playoff_teams:
+  - shawne2520997
+  - gganoom
+  - theoceanpulse
+  - whowonthelastsuperbowl
+  - purpsworth
+  - alexandra
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:
@@ -61,7 +68,7 @@ final_standings:
   - gganoom
   - shawne2520997
 
-matchups: [] # no games played yet
+matchups: []  # no games played yet
 
 # Completed trades this season (franchise-keyed). ESPN reveals a trade's
 # contents only to its participants, so trades no merged account was in
@@ -80,39 +87,40 @@ trades_known_for:
   - theoceanpulse
   - zachzoske
 trades:
-  - id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
-    week: 0
-    teams:
-      - shawne2520997
-      - theoceanpulse
-    assets:
-      - from: theoceanpulse
-        to: shawne2520997
-        label: Nico Collins
-      - from: theoceanpulse
-        to: shawne2520997
-        label: 5.10 pick
-      - from: theoceanpulse
-        to: shawne2520997
-        label: 9.10 pick
-      - from: shawne2520997
-        to: theoceanpulse
-        label: 5.04 pick
-      - from: shawne2520997
-        to: theoceanpulse
-        label: 9.04 pick
+- id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
+  week: 0
+  teams:
+  - shawne2520997
+  - theoceanpulse
+  assets:
+  - from: theoceanpulse
+    to: shawne2520997
+    label: Nico Collins
+  - from: theoceanpulse
+    to: shawne2520997
+    label: 5.10 pick
+  - from: theoceanpulse
+    to: shawne2520997
+    label: 9.10 pick
+  - from: shawne2520997
+    to: theoceanpulse
+    label: 5.04 pick
+  - from: shawne2520997
+    to: theoceanpulse
+    label: 9.04 pick
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
 keepers:
-  - { fid: kevbots22, round: 5, player: "Chris Olave" }
   - { fid: gganoom, round: 5, player: "Brock Bowers" }
+  - { fid: kevbots22, round: 5, player: "Chris Olave" }
+  - { fid: shawne2520997, round: 5, player: "Nico Collins" }
+  - { fid: alexandra, round: 7, player: "Javonte Williams" }
   - { fid: theoceanpulse, round: 8, player: "Colston Loveland" }
   - { fid: purpsworth, round: 8, player: "De'Von Achane" }
   - { fid: schirmerj, round: 8, player: "Kyren Williams" }
+  - { fid: zachzoske, round: 9, player: "Bhayshul Tuten" }
   - { fid: jackperkins74, round: 9, player: "Puka Nacua" }
   - { fid: sturmanator15, round: 9, player: "Trey McBride" }
-  - { fid: lukstein, round: 12, player: "Kyle Pitts Sr." }
-  - { fid: zachzoske, round: 9, player: "Bhayshul Tuten" }
   - { fid: whowonthelastsuperbowl, round: 11, player: "Drake Maye" }
-  - { fid: shawne2520997, round: 5, player: "Nico Collins" }
+  - { fid: lukstein, round: 12, player: "Kyle Pitts Sr." }
