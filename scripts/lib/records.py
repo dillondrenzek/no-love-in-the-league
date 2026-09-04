@@ -14,7 +14,7 @@ score records. Co-champions each count as half a title.
 automatically as richer data (scores) is added.
 """
 
-from .data import name_of, short_name_of, season_trades_complete, game_played
+from .data import name_of, short_name_of, season_trades_complete, countable_matchups
 from .standings import get_standings, parse_record
 from .rulings import co_champions, meaningless_keys, matchup_key
 
@@ -133,9 +133,7 @@ def _team_games(seasons, overrides):
     for season in seasons:
         year = season["season"]
         skip = meaningless_keys(season, overrides)
-        for m in season.get("matchups", []) or []:
-            if not game_played(m):          # unplayed fixture — no scores yet
-                continue
+        for m in countable_matchups(season):    # complete-week games only
             if matchup_key(m) in skip:
                 continue
             hs, as_ = m["home_score"], m["away_score"]

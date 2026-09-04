@@ -79,18 +79,46 @@ def short_name_of(franchise_id, franchises):
     return f.get("short") or f["name"].split()[0]
 
 
-def game_played(matchup):
-    """True for a game that's actually been played. The schedule now includes
-    unplayed fixtures (`played: false`, no scores); everything downstream that
-    computes results must skip those. Older/played rows omit the flag → True."""
-    return matchup.get("played", True) is not False
+def game_final(matchup):
+    """A game with a final result — the only kind that counts toward season stats
+    (and only once its whole week is complete). Future fixtures (`played: false`,
+    no scores) and live/in-progress games (`final: false`, live scores) are not
+    final. A played row with neither flag is final (historical/finished games)."""
+    return (matchup.get("played", True) is not False
+            and matchup.get("final", True) is not False)
+
+
+def game_has_score(matchup):
+    """A game with a score to show — final OR live/in-progress. A future fixture
+    carries no scores, so it's excluded."""
+    return matchup.get("home_score") is not None
+
+
+def _matchups_by_week(season):
+    by_week = {}
+    for m in season.get("matchups") or []:
+        by_week.setdefault(m.get("week"), []).append(m)
+    return by_week
+
+
+def complete_weeks(season):
+    """Week numbers whose games are ALL final. Season stats fold in a week only
+    when it's complete — a week with any live/unplayed game stays out entirely
+    (its live scores show on the week page but never touch standings)."""
+    return {wk for wk, games in _matchups_by_week(season).items()
+            if games and all(game_final(g) for g in games)}
+
+
+def countable_matchups(season):
+    """Games that count toward season standings / records / head-to-head: every
+    game in a complete week (all such games are final by definition)."""
+    complete = complete_weeks(season)
+    return [m for m in (season.get("matchups") or []) if m.get("week") in complete]
 
 
 def regular_season_matchups(season):
-    """Played regular-season games (not playoff games, not unplayed fixtures) —
-    i.e. the games that count toward standings."""
-    return [m for m in (season.get("matchups") or [])
-            if not m.get("playoff") and game_played(m)]
+    """Countable regular-season games — what standings are computed from."""
+    return [m for m in countable_matchups(season) if not m.get("playoff")]
 
 
 def season_trades_complete(season):

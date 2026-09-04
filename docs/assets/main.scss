@@ -255,12 +255,66 @@ tbody td a:hover { color: var(--brand); }
   min-width: 2.1em;
   border-radius: 5px;
 }
-// Weekly recap: scoreboard table, highlights strip, and the season-page links.
-.scoreboard__side { display: inline-block; }
-.scoreboard__side--win { font-weight: 700; }
-.scoreboard__side--win .owner-name { font-weight: 400; }
-.scoreboard__vs { color: var(--faint); margin: 0 0.4em; font-size: 0.85em; }
-.scoreboard__dash { margin: 0 0.15em; color: var(--faint); }
+// Weekly scoreboard: one card per matchup, big bold scores. Full width on small
+// screens, two-up (half width) on larger ones.
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 1.1em 0 1.8em;
+}
+@media (min-width: 640px) {
+  .scoreboard { grid-template-columns: 1fr 1fr; }
+}
+.matchup {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 18px;
+  background: var(--bg);
+}
+.matchup__side { text-align: center; min-width: 0; }
+.matchup__team { font-size: 0.9rem; font-weight: 600; line-height: 1.2; }
+.matchup__team a { color: var(--brand); }
+.matchup__owner { display: block; font-size: 0.78rem; margin-top: 1px; }
+.matchup__score {
+  font-family: var(--sans);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-top: 8px;
+  color: var(--ink);
+}
+// In a finished matchup, dim the loser's score so the winner's number pops.
+.matchup--final .matchup__score { color: var(--faint); }
+.matchup--final .matchup__side--win .matchup__score { color: var(--ink); }
+.matchup__mid {
+  align-self: center;
+  text-align: center;
+}
+.matchup__vs {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+.scoreboard__live {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: var(--brand);
+  padding: 1px 6px;
+  border-radius: 999px;
+  margin-left: 6px;
+  vertical-align: 1px;
+}
 
 .highlights {
   display: grid;
@@ -279,6 +333,39 @@ tbody td a:hover { color: var(--brand); }
 .highlight__owner { font-size: 0.9rem; }
 .highlight__team { font-size: 0.8rem; color: var(--muted); }
 .highlight__sub { font-size: 0.72rem; color: var(--faint); margin-top: 2px; }
+
+// Week navigation bar on a week page (Season home + every week, current marked).
+.week-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 1.6em;
+  padding-bottom: 1.1em;
+  border-bottom: 1px solid var(--rule);
+}
+.week-nav a {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  min-width: 1.9em;
+  text-align: center;
+  padding: 3px 9px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  color: var(--muted);
+}
+.week-nav a:hover { color: var(--brand); border-color: var(--brand); }
+.week-nav__home {
+  color: var(--brand);
+  border-color: transparent;
+  padding-left: 0;
+  min-width: 0;
+  margin-right: 4px;
+}
+.week-nav__current, .week-nav__current:hover {
+  color: var(--brand);
+  border-color: var(--brand);
+}
 
 .week-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .week-links li a {

@@ -1,0 +1,12 @@
+{%- comment -%}
+Week navigation bar for a week page: a "Season home" link plus a numbered link to
+every week in the season, with the current week marked. Reads page.season_year /
+page.week and finds the sibling week pages from site.pages.
+{%- endcomment -%}
+{%- assign wkpages = site.pages | where: "season_year", page.season_year | where_exp: "p", "p.week" | sort: "week" -%}
+<nav class="week-nav" aria-label="Weeks">
+  <a class="week-nav__home" href="{{ '/seasons/' | append: page.season_year | append: '/' | relative_url }}">← Season home</a>
+  {%- for p in wkpages -%}
+  <a href="{{ p.url | relative_url }}"{% if p.week == page.week %} class="week-nav__current" aria-current="page"{% endif %}>{{ p.week }}</a>
+  {%- endfor -%}
+</nav>

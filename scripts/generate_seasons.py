@@ -19,7 +19,7 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons, name_of, short_name_of, game_played
+from lib.data import load_franchises, load_seasons, name_of, short_name_of, complete_weeks
 from lib.state import state_of, is_in_progress
 from lib.rulings import load_overrides
 from generate_standings import season_rows, load_season_notes
@@ -112,8 +112,9 @@ def season_detail(season, franchises, overrides, notes):
     if in_progress:
         for r in rows:      # nothing is decided yet — no Shiva/Sacko tags
             r["tag"] = None
+    cw = complete_weeks(season)
     weeks = [m["week"] for m in (season.get("matchups") or [])
-             if not m.get("playoff") and game_played(m)]
+             if not m.get("playoff") and m["week"] in cw]
     return {
         "year": year,
         "season_no": season_no(year),

@@ -1,34 +1,32 @@
 {%- comment -%}
-A week's scoreboard + highlights strip. Param: wk = a site.data.weeks["<year>-<n>"]
-record ({scoreboard, highlights}). The AI recap is written below this on the page.
+A week's scoreboard + (complete-only) highlights. Param: wk = a
+site.data.weeks["<year>-<n>"] record {state, scoreboard, highlights}. The
+scoreboard renders in every state — future fixtures show no scores, live/final
+games show scores, a final game marks the winner. Highlights appear only for a
+complete week. The AI recap lives on the page, below this include.
 {%- endcomment -%}
 {%- assign wk = include.wk -%}
+{% include week_nav.html %}
 {%- if wk and wk.scoreboard and wk.scoreboard.size > 0 -%}
-<div class="table-scroll">
-<table class="scoreboard">
-  <thead><tr><th>Matchup</th><th class="num">Final</th></tr></thead>
-  <tbody>
-    {%- for g in wk.scoreboard %}
-    <tr>
-      <td>
-        <span class="scoreboard__side{% if g.winner_id and g.winner_id == g.home_id %} scoreboard__side--win{% endif %}">
-          {%- if g.home_id -%}<a href="{{ '/teams/' | append: g.home_id | append: '/' | relative_url }}">{{ g.home_team }}</a>{%- else -%}{{ g.home_team }}{%- endif -%}
-          <span class="owner-name">{{ g.home_owner }}</span>
-        </span>
-        <span class="scoreboard__vs">vs</span>
-        <span class="scoreboard__side{% if g.winner_id and g.winner_id == g.away_id %} scoreboard__side--win{% endif %}">
-          {%- if g.away_id -%}<a href="{{ '/teams/' | append: g.away_id | append: '/' | relative_url }}">{{ g.away_team }}</a>{%- else -%}{{ g.away_team }}{%- endif -%}
-          <span class="owner-name">{{ g.away_owner }}</span>
-        </span>
-        {%- if g.playoff %} <span class="tag tag--shiva">Playoff</span>{%- endif -%}
-      </td>
-      <td class="num">{{ g.home_score }}<span class="scoreboard__dash">–</span>{{ g.away_score }}</td>
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
+<div class="scoreboard">
+  {%- for g in wk.scoreboard %}
+  <div class="matchup{% if g.final %} matchup--final{% endif %}">
+    <div class="matchup__side{% if g.winner_id and g.winner_id == g.home_id %} matchup__side--win{% endif %}">
+      <div class="matchup__team">{%- if g.home_id -%}<a href="{{ '/teams/' | append: g.home_id | append: '/' | relative_url }}">{{ g.home_team }}</a>{%- else -%}{{ g.home_team }}{%- endif -%}</div>
+      <div class="matchup__owner owner-name">{{ g.home_owner }}</div>
+      <div class="matchup__score">{% if g.scored %}{{ g.home_score }}{% elsif wk.state == "in_progress" %}0.0{% else %}<span class="muted">—</span>{% endif %}</div>
+    </div>
+    <div class="matchup__mid">{% if g.live %}<span class="scoreboard__live">live</span>{% else %}<span class="matchup__vs">vs</span>{% endif %}</div>
+    <div class="matchup__side{% if g.winner_id and g.winner_id == g.away_id %} matchup__side--win{% endif %}">
+      <div class="matchup__team">{%- if g.away_id -%}<a href="{{ '/teams/' | append: g.away_id | append: '/' | relative_url }}">{{ g.away_team }}</a>{%- else -%}{{ g.away_team }}{%- endif -%}</div>
+      <div class="matchup__owner owner-name">{{ g.away_owner }}</div>
+      <div class="matchup__score">{% if g.scored %}{{ g.away_score }}{% elsif wk.state == "in_progress" %}0.0{% else %}<span class="muted">—</span>{% endif %}</div>
+    </div>
+  </div>
+  {%- endfor %}
 </div>
 
+{%- if wk.highlights and wk.highlights.size > 0 -%}
 <div class="highlights">
   {%- for h in wk.highlights %}
   <div class="highlight">
@@ -42,6 +40,8 @@ record ({scoreboard, highlights}). The AI recap is written below this on the pag
   </div>
   {%- endfor %}
 </div>
+{%- endif -%}
+
 {%- else -%}
-<p class="empty-state">No games are in for this week yet — run the importer, then rebuild.</p>
+<p class="empty-state">Matchups for this week aren’t set yet.</p>
 {%- endif -%}

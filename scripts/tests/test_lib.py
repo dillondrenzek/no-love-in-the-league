@@ -542,7 +542,7 @@ def test_week_summary_scoreboard_and_highlights():
     assert played_weeks(season) == [1, 2, 3]
 
     wk1 = week_summary(season, 1, fr)
-    assert wk1["played"] is True
+    assert wk1["state"] == "complete"
     assert len(wk1["scoreboard"]) == 2
     # a(100) def b(90); d(120) def c(80)
     g = wk1["scoreboard"][0]
@@ -558,32 +558,74 @@ def test_week_summary_scoreboard_and_highlights():
     tie_game = [g for g in wk2["scoreboard"] if g["tie"]]
     assert tie_game and tie_game[0]["winner_id"] is None
 
-    # A week with no games is marked not played.
-    assert week_summary(season, 9, fr)["played"] is False
+    # A week with no games is Future with an empty scoreboard.
+    wk9 = week_summary(season, 9, fr)
+    assert wk9["state"] == "future" and wk9["scoreboard"] == []
 
 
-def test_unplayed_matchups_are_ignored():
-    from lib.standings import get_standings
-    from lib.data import regular_season_matchups, game_played
-    season = {"season": 2026, "state": "season",
-              "teams": {"a": "A", "b": "B"},
+def test_week_states_future_live_complete():
+    from lib.weeks import week_summary, week_state
+    season = {"season": 2026, "state": "season", "teams": {"a": "A", "b": "B", "c": "C", "d": "D"},
               "matchups": [
                   {"week": 1, "home": "a", "away": "b", "home_score": 100.0, "away_score": 90.0},
-                  {"week": 2, "home": "a", "away": "b", "playoff": False, "played": False},
+                  {"week": 2, "home": "a", "away": "c", "home_score": 110.0, "away_score": 70.0},
+                  {"week": 2, "home": "b", "away": "d", "home_score": 60.0, "away_score": 55.0, "final": False},
+                  {"week": 3, "home": "a", "away": "d", "played": False},
               ]}
-    assert game_played(season["matchups"][0]) is True
-    assert game_played(season["matchups"][1]) is False
-    # Only the played week counts — the scheduled week is skipped (no phantom 0-0 tie).
-    assert len(regular_season_matchups(season)) == 1
-    rows = {r["id"]: r for r in get_standings(season, {})}
-    assert rows["a"]["record"] == "1-0"
-    assert rows["b"]["record"] == "0-1"
-    assert rows["a"]["ties"] == 0 and rows["b"]["ties"] == 0
+    fr = {k: {"name": k.upper()} for k in ("a", "b", "c", "d")}
+    assert week_state(season, 1) == "complete"
+    assert week_state(season, 2) == "in_progress"
+    assert week_state(season, 3) == "future"
 
-    # Score records ignore the unplayed fixture too.
+    # Complete week: scoreboard has a winner + highlights.
+    w1 = week_summary(season, 1, fr)
+    assert w1["scoreboard"][0]["winner_id"] == "a" and w1["scoreboard"][0]["scored"] is True
+    assert len(w1["highlights"]) == 4
+
+    # In-progress week: live score shown, live flag set, NO highlights.
+    w2 = week_summary(season, 2, fr)
+    live = [g for g in w2["scoreboard"] if g["live"]]
+    assert live and live[0]["scored"] is True and live[0].get("winner_id") is None
+    assert w2["highlights"] == []
+
+    # Future week: fixture listed, no score, no highlights.
+    w3 = week_summary(season, 3, fr)
+    assert w3["scoreboard"][0]["scored"] is False
+    assert w3["highlights"] == []
+
+
+def test_week_completeness_gates_season_stats():
+    from lib.standings import get_standings
     from lib.records import compute_records
-    cats = {r["category"] for r in compute_records([season], {})}
-    assert "Most Points in a Week" in cats  # from the one real game, not the 0-0
+    from lib.data import (regular_season_matchups, game_final, game_has_score,
+                          complete_weeks)
+    season = {"season": 2026, "state": "season",
+              "teams": {"a": "A", "b": "B", "c": "C", "d": "D"},
+              "matchups": [
+                  # Week 1: both games final -> complete week, counts toward stats.
+                  {"week": 1, "home": "a", "away": "b", "home_score": 100.0, "away_score": 90.0},
+                  {"week": 1, "home": "c", "away": "d", "home_score": 80.0, "away_score": 120.0},
+                  # Week 2: one final + one LIVE -> week NOT complete, neither counts yet.
+                  {"week": 2, "home": "a", "away": "c", "home_score": 110.0, "away_score": 70.0},
+                  {"week": 2, "home": "b", "away": "d", "home_score": 60.0, "away_score": 55.0, "final": False},
+                  # Week 3: all future fixtures.
+                  {"week": 3, "home": "a", "away": "d", "playoff": False, "played": False},
+                  {"week": 3, "home": "b", "away": "c", "playoff": False, "played": False},
+              ]}
+    # Game-level helpers.
+    assert game_final(season["matchups"][0]) is True     # final
+    assert game_final(season["matchups"][3]) is False    # live
+    assert game_has_score(season["matchups"][3]) is True    # live carries a score
+    assert game_has_score(season["matchups"][4]) is False   # future carries none
+    # Only week 1 is complete; week 2 (a live game) and week 3 (future) don't count.
+    assert complete_weeks(season) == {1}
+    assert len(regular_season_matchups(season)) == 2
+    rows = {r["id"]: r for r in get_standings(season, {})}
+    assert rows["a"]["record"] == "1-0"   # week-2 win is live, not counted
+    assert rows["c"]["record"] == "0-1"
+    # Score records come from week 1 only (120), not the live 110 in week 2.
+    recs = {r["category"]: r for r in compute_records([season], {})}
+    assert recs["Most Points in a Week"]["value"] == "120.00"
 
 
 def test_season_rows_provisional_table_for_live_season():
