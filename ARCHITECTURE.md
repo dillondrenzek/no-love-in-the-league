@@ -36,8 +36,9 @@ playoff_teams:             # winners-bracket seeds (top ESPN playoffSeed), in or
   - jackperkins74
 final_standings:           # finish order (ESPN's final placement)
   - jackperkins74
-matchups:
+matchups:                  # the full schedule; played games carry scores,
   - { week: 1, home: jackperkins74, away: kevbots22, home_score: 122.4, away_score: 98.1, playoff: false }
+  - { week: 2, home: jackperkins74, away: lukstein, playoff: false, played: false }  # unplayed fixture
 trades:                    # completed trades (franchise-keyed); [] when none.
   - week: 3                # trades ESPN didn't fully detail are dropped at import
     teams: [jackperkins74, theoceanpulse]   # participants (both get credit)

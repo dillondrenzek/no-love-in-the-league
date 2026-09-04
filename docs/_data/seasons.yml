@@ -43,8 +43,116 @@ detail:
     year: 2026
     season_no: 13
     state: season
-    points: false
-    rows: []
+    points: true
+    rows:
+    - finish: 1
+      team: The People's Commissioner
+      owner_id: sturmanator15
+      owner_name: Wade
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 2
+      team: Tuten Your Mom
+      owner_id: zachzoske
+      owner_name: Zach
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 3
+      team: Return of the IDP
+      owner_id: schirmerj
+      owner_name: Jono
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 4
+      team: 2x Runner Up
+      owner_id: lukstein
+      owner_name: Luke
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 5
+      team: Gibbed for your pleasure
+      owner_id: jackperkins74
+      owner_name: Jack
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 6
+      team: Josh Jacobs Alibi
+      owner_id: kevbots22
+      owner_name: Kevin
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 7
+      team: Cornstar
+      owner_id: alexandra
+      owner_name: Lexi
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 8
+      team: I am dead inside
+      owner_id: purpsworth
+      owner_name: Trevor
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 9
+      team: Trick or Trick It’s Mike Vick
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 10
+      team: The ChoSimba Ones
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 11
+      team: One Big Beautiful Dill
+      owner_id: gganoom
+      owner_name: Grant
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
+    - finish: 12
+      team: Swift kick in the Dak
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      record: 0-0
+      tag: null
+      pf: 0.0
+      pf_color: '#fdf3e0'
+      pa: 0.0
     notes:
     - Lexi joined the league; Henry departed (RIP King of the league).
     weeks_played: 0

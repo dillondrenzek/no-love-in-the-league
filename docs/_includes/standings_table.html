@@ -1,15 +1,15 @@
 {%- comment -%}
-Standings table. Params: rows (standings rows), points (bool — show PF/PA),
-rank_label (header for the rank column; defaults to "Finish", season pages pass
-"Rank"). Row shape: finish, team, owner_id, owner_name, record, tag, pf,
-pf_color, pa. Shared by the History page and each season page.
+Standings table, shared identically by the History page and each season page —
+same format, same data. Params: rows (standings rows), points (bool — show
+PF/PA), rank_label (rank-column header; defaults to "Rank"). Row shape: finish,
+team, owner_id, owner_name, record, tag, pf, pf_color, pa.
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
 <div class="table-scroll">
 <table>
   <thead>
     <tr>
-      <th>{{ include.rank_label | default: "Finish" }}</th>
+      <th>{{ include.rank_label | default: "Rank" }}</th>
       <th>Team</th>
       <th class="num">Record</th>
       {%- if include.points %}

@@ -79,9 +79,18 @@ def short_name_of(franchise_id, franchises):
     return f.get("short") or f["name"].split()[0]
 
 
+def game_played(matchup):
+    """True for a game that's actually been played. The schedule now includes
+    unplayed fixtures (`played: false`, no scores); everything downstream that
+    computes results must skip those. Older/played rows omit the flag → True."""
+    return matchup.get("played", True) is not False
+
+
 def regular_season_matchups(season):
-    """Matchups that count toward standings (i.e. not playoff games)."""
-    return [m for m in (season.get("matchups") or []) if not m.get("playoff")]
+    """Played regular-season games (not playoff games, not unplayed fixtures) —
+    i.e. the games that count toward standings."""
+    return [m for m in (season.get("matchups") or [])
+            if not m.get("playoff") and game_played(m)]
 
 
 def season_trades_complete(season):
