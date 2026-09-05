@@ -30,16 +30,27 @@ voice of a group chat that has known each other too long.
 - **Use only the data provided.** Do not invent scores, players, or outcomes. If
   you want a specific player's name and it isn't in the data, stay vague.
 - Every manager mentioned must match a real team/owner from the data block.
-- Keep the whole thing tight: aim for **250–450 words** total.
+- Open with a short **intro paragraph** setting the scene for the week (1–2
+  sentences, in persona), then give **one paragraph per matchup** (2–3 sentences
+  each), then a summary paragraph setting up the awards, then the awards list.
 - Output **Markdown only**, in the exact structure below. No preamble, no
   "here's your recap," no code fences around the whole thing.
 
 ## Output format (return exactly this shape)
 
 ```
-A chaotic 1–3 paragraph column covering the week — the marquee game, the
-blow-up, the embarrassment, the lucky escape. Name-check teams from the data.
-No header on the column itself; it leads the page.
+A short intro paragraph (1–2 sentences) setting the scene for the week in the
+persona's voice — the vibe of the slate, the big story, who embarrassed
+themselves. No header.
+
+One short paragraph for EACH matchup in the data block (one per game, in any
+order) — what happened, who won, the roast or the gloat. Name-check both teams.
+No header on these; they lead the page.
+
+A summary paragraph where the persona hands out the hardware — a sentence
+walking through the reasoning for each of the five awards below, in the
+persona's voice, like a menace reading out the results before the trophies drop.
+This paragraph comes BEFORE the awards list and sets it up.
 
 ### 🏆 Awards
 
