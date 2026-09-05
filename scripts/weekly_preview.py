@@ -70,6 +70,9 @@ def data_block(year, week, games, season, franchises, profiles):
         h, a = m["home"], m["away"]
         hn, an = short_name_of(h, franchises), short_name_of(a, franchises)
         lines.append(f"- {team_name(h)} ({hn}) vs {team_name(a)} ({an})")
+        if m.get("home_proj") is not None and m.get("away_proj") is not None:
+            lines.append(f"    ESPN projection: {team_name(h)} {m['home_proj']:.1f} "
+                         f"– {team_name(a)} {m['away_proj']:.1f}")
         lines.append(f"    {_owner_line(hn, profiles.get(h))}")
         lines.append(f"    {_owner_line(an, profiles.get(a))}")
         lines.append(f"    {_h2h_line(hn, profiles.get(h), a, an)}")

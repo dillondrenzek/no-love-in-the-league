@@ -68,15 +68,17 @@ final_standings:
   - gganoom
   - shawne2520997
 
-# The full schedule. Played games carry scores; an unplayed fixture is
-# `played: false` with no scores (skipped by standings/records/H2H).
+# The full schedule in three states: a final game carries scores; a live
+# (in-progress) game carries scores + `final: false`; a future fixture is
+# `played: false` with no scores. Only complete weeks (all games final)
+# count toward standings/records/H2H.
 matchups:
-  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false }
-  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false }
-  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false }
-  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false }
-  - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false }
-  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false }
+  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 119.87, away_proj: 112.43 }
+  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 110.45, away_proj: 107.94 }
+  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false, home_proj: 112.07, away_proj: 113.66 }
+  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false, home_proj: 114.55, away_proj: 120.09 }
+  - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 110.02, away_proj: 126.21 }
+  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false, home_proj: 122.63, away_proj: 116.96 }
   - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false }

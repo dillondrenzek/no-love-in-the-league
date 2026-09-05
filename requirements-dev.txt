@@ -5,9 +5,9 @@
 # Private repo over HTTPS — pip reuses the GitHub credentials you already push/pull
 # with (credential helper / keychain), so no SSH key or token needs to live here.
 # Pin to a PUSHED tag for reproducible imports; bump it when the client changes.
-#   push the tag first:  git -C ~/Codebase/espn-fantasy-cli push origin v0.1.2
+#   push the tag first:  git -C ~/Codebase/espn-fantasy-cli push origin v0.1.5
 #
 # Co-developing both repos? Skip the network entirely and install it editable
 # from your local clone instead of the line below:
 #   pip install -e ~/Codebase/espn-fantasy-cli
-the-league-espn-api @ git+https://github.com/dillondrenzek/espn-fantasy-cli.git@v0.1.2
+the-league-espn-api @ git+https://github.com/dillondrenzek/espn-fantasy-cli.git@v0.1.5

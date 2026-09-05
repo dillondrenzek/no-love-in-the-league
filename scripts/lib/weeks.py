@@ -58,6 +58,10 @@ def _scoreboard(season, franchises, games):
             entry["winner_id"] = winner if winner in franchises else None
             entry["tie"] = final and winner is None
             entry["margin"] = round(abs(hs - as_), 2)
+        if m.get("home_proj") is not None:
+            entry["home_proj"] = m["home_proj"]
+        if m.get("away_proj") is not None:
+            entry["away_proj"] = m["away_proj"]
         board.append(entry)
     return board
 

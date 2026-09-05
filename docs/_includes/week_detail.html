@@ -15,12 +15,14 @@ complete week. The AI recap lives on the page, below this include.
       <div class="matchup__team">{%- if g.home_id -%}<a href="{{ '/teams/' | append: g.home_id | append: '/' | relative_url }}">{{ g.home_team }}</a>{%- else -%}{{ g.home_team }}{%- endif -%}</div>
       <div class="matchup__owner owner-name">{{ g.home_owner }}</div>
       <div class="matchup__score">{% if g.scored %}{{ g.home_score }}{% else %}0.0{% endif %}</div>
+      {%- if g.home_proj %}<div class="matchup__proj">{{ g.home_proj }}</div>{% endif -%}
     </div>
     <div class="matchup__mid">{% if g.live %}<span class="scoreboard__live">live</span>{% else %}<span class="matchup__vs">vs</span>{% endif %}</div>
     <div class="matchup__side{% if g.winner_id and g.winner_id == g.away_id %} matchup__side--win{% endif %}">
       <div class="matchup__team">{%- if g.away_id -%}<a href="{{ '/teams/' | append: g.away_id | append: '/' | relative_url }}">{{ g.away_team }}</a>{%- else -%}{{ g.away_team }}{%- endif -%}</div>
       <div class="matchup__owner owner-name">{{ g.away_owner }}</div>
       <div class="matchup__score">{% if g.scored %}{{ g.away_score }}{% else %}0.0{% endif %}</div>
+      {%- if g.away_proj %}<div class="matchup__proj">{{ g.away_proj }}</div>{% endif -%}
     </div>
   </div>
   {%- endfor %}
