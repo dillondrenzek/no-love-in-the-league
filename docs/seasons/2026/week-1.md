@@ -16,22 +16,26 @@ week: 1
      python scripts/weekly_preview.py 2026 1
      Shows until the week is complete, then the recap takes over. -->
 
-Football's back, and so is your worst decision-making. Let's set the table.
+The marquee, as ever, is **The People's Commissioner** vs **Tuten Your Mom** — 23rd meeting, Wade up 13-10, and this year the projection likes Wade too. It's the league's best win rate against the guy with the 2019 Shiva, it's close, and it's personal. Watch this one.
 
-The marquee is **The People's Commissioner** vs **Tuten Your Mom** — Wade and Zach have played *twenty-three* times and Wade leads by a nervous 13-10, which is fantasy-speak for "these two hate each other and it's Week 1." Winner talks trash for a month; loser pretends the season is long. Meanwhile the reigning Shiva **Gibbed for your pleasure** opens against **Return of the IDP**, and Jack owns Jono 13-9 — Jono's still starting defensive players like it's a lifestyle, and Jack will happily punish the sentiment.
+**Gibbed for your pleasure** is the week's biggest chalk — the model loves Jack over **Return of the IDP**, and it should: two rings and a 13-9 stranglehold on Jono, who's *still* starting defenders on principle. The projection is being polite.
 
-Grudge alert in **One Big Beautiful Dill** vs **Swift kick in the Dak**: on paper Shawnee's the grown-up here with two Shivas, but somehow Grant is *3-1* against her all-time. Records don't care about your trophy case. Elsewhere **The ChoSimba Ones** should feast — Dillon's a .619 machine who's beaten Kevin eight of eleven, and **Josh Jacobs Alibi** is a great team name for a squad that's going to need one. **2x Runner Up** over **I am dead inside** feels academic (Luke's up 5-2 and owns a ring), which is exactly the kind of game Luke autodrafts his way into losing.
+**I am dead inside** vs **2x Runner Up** is where the tape and the history throw hands. The projection favors Trevor — but Luke owns this matchup 5-2 *and* is holding a 2024 title, while Trevor's a career .458 who peaks at "runner-up." I'm not buying the number here.
 
-And then there's the debut: **Cornstar** (welcome, Lexi) draws **Trick or Trick It's Mike Vick**, a first meeting against a man whose career high-water mark is *fourth place*. Nate, respectfully, this is the softest landing a rookie will ever get. Don't blow it.
+**Josh Jacobs Alibi** vs **The ChoSimba Ones** grades out as a near coin flip, and the model leans Dillon by a hair. History leans harder: Dillon's a .619 assassin who's beaten Kevin eight of eleven, so that toss-up has a heavy thumb on the scale.
 
-Twelve teams, one Week 1, eleven future excuses. Let's ride.
+**One Big Beautiful Dill** vs **Swift kick in the Dak** is the grudge game. On paper Shawnee's the grown-up with two Shivas, and the projection barely favors Grant — which tracks, because somehow Grant is 3-1 against her all-time. Trophies don't win Week 1.
+
+And the debut: **Cornstar** vs **Trick or Trick It's Mike Vick**. Welcome, Lexi — you're a projected favorite in your first-ever start, against a man whose career ceiling is fourth place. First meeting, softest landing in league history. Don't blow it.
+
+So here's how I'm lining up the card. **People's Commissioner vs Tuten Your Mom** is the Game of the Week because 23 meetings and one point of separation is what a rivalry looks like. I'm slamming **Gibbed for your pleasure** as the Lock — favored by the model, owns Jono head-to-head, and hunting a third ring, so mortgage the house. Give me **2x Runner Up** on the upset, because the projection actually has Luke *losing* to Trevor and I'm fading that hard — the ring and the 5-2 series say the model's got it backwards. And write this down as the bold one: the rookie **Lexi**, a projected favorite in her debut, outscores nearly the whole league in her first-ever start.
 
 ### 🔮 Picks
 
-- **Game of the Week** — People's Commissioner vs Tuten Your Mom — 23 meetings, one point of separation, zero chill.
-- **Lock of the Week** — The ChoSimba Ones — Dillon's 8-3 on Kevin and it hasn't been close; book it.
-- **Upset Alert** — One Big Beautiful Dill — Grant's 3-1 on the two-time champ, and history is history.
-- **Bold Prediction** — Lexi drops 130 in her debut and Nate spends Week 2 explaining variance.
+- **Game of the Week** — People's Commissioner vs Tuten Your Mom
+- **Lock of the Week** — Gibbed for your pleasure
+- **Upset Alert** — 2x Runner Up
+- **Bold Prediction** — Lexi posts a top-3 score in her first-ever start
 {% endif %}
 
 {% if wk.state == "complete" %}

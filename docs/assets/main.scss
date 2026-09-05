@@ -291,6 +291,12 @@ tbody td a:hover { color: var(--brand); }
 // In a finished matchup, dim the loser's score so the winner's number pops.
 .matchup--final .matchup__score { color: var(--faint); }
 .matchup--final .matchup__side--win .matchup__score { color: var(--ink); }
+.matchup__proj {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  color: var(--faint);
+  margin-top: 3px;
+}
 .matchup__mid {
   align-self: center;
   text-align: center;

@@ -328,6 +328,47 @@ def build_matchups(matchup_rows, team_to_fid):
     return out
 
 
+def attach_projections(lg, matchups, team_to_fid):
+    """Attach `home_proj`/`away_proj` to the current week's not-yet-final games,
+    summing each team's starters' projected points from `lg.rosters()`. Quietly
+    no-ops if the client lacks projections or ESPN can't return them."""
+    if not hasattr(lg, "rosters"):
+        print("NOTE: the installed the-league-espn-api has no rosters() — projections "
+              "skipped. Reinstall it (editable: pip install -e ~/Codebase/espn-fantasy-cli, "
+              "or bump the pin in requirements-dev.txt).", file=sys.stderr)
+        return
+    try:
+        rows = lg.rosters()          # current scoring period
+    except ApiError as e:
+        print(f"NOTE: projections unavailable (ESPN {getattr(e, 'status', e)}); skipping.",
+              file=sys.stderr)
+        return
+    if not rows:
+        print("NOTE: rosters() returned no rows — projections skipped.", file=sys.stderr)
+        return
+    week = rows[0].get("week")
+    team_proj = {}
+    for r in rows:
+        if r.get("starter") and isinstance(r.get("projected"), (int, float)):
+            team_proj[r["team_id"]] = team_proj.get(r["team_id"], 0.0) + r["projected"]
+    proj = {team_to_fid.get(tid): round(v, 2)
+            for tid, v in team_proj.items() if team_to_fid.get(tid)}
+    n = 0
+    for m in matchups:
+        if m.get("week") != week:
+            continue
+        is_final = (m.get("played", True) is not False
+                    and m.get("final", True) is not False)
+        if is_final:
+            continue
+        if proj.get(m["home"]) is not None:
+            m["home_proj"] = proj[m["home"]]
+            n += 1
+        if proj.get(m["away"]) is not None:
+            m["away_proj"] = proj[m["away"]]
+    print(f"Projections: week {week}, attached to {n} game(s).", file=sys.stderr)
+
+
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
                      state="season", state_locked=False, draft_order=None, trades=None,
                      trades_complete=True, trades_known_for=None, keepers=None):
@@ -387,16 +428,19 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
                   "# count toward standings/records/H2H.", "matchups:"]
         for m in matchups:
             pf = "true" if m["playoff"] else "false"
+            proj = ""
+            if "home_proj" in m or "away_proj" in m:
+                proj = f", home_proj: {m.get('home_proj', 0.0)}, away_proj: {m.get('away_proj', 0.0)}"
             if m.get("played", True) is False:
                 lines.append(
                     f"  - {{ week: {m['week']:>2}, home: {m['home']}, away: {m['away']}, "
-                    f"playoff: {pf}, played: false }}"
+                    f"playoff: {pf}, played: false{proj} }}"
                 )
             elif m.get("final", True) is False:
                 lines.append(
                     f"  - {{ week: {m['week']:>2}, home: {m['home']}, away: {m['away']}, "
                     f"home_score: {m['home_score']}, away_score: {m['away_score']}, "
-                    f"playoff: {pf}, final: false }}"
+                    f"playoff: {pf}, final: false{proj} }}"
                 )
             else:
                 lines.append(
@@ -518,6 +562,11 @@ def main():
               file=sys.stderr)
         draft_rows = []
     keepers = build_keepers(draft_rows, team_to_fid)
+
+    # Projected scores for the current/upcoming week (feeds the weekly preview).
+    # Sum each team's starters' projections; attach to that week's not-yet-final
+    # games. Degrades quietly if the client/ESPN can't provide them.
+    attach_projections(lg, matchups, team_to_fid)
 
     # --- Lifecycle state ---------------------------------------------------
     # Detect from robust signals (draft actually run, games actually decided),
