@@ -16,6 +16,8 @@ week: 1
      python scripts/weekly_preview.py 2026 1
      Shows until the week is complete, then the recap takes over. -->
 
+The wait is over — the draft's in the books and the 2026 season is finally live. No more mock-draft grades, no more "on paper" — twelve teams, six matchups, and the rubber meets the road. Let's read the tea leaves.
+
 The marquee, as ever, is **The People's Commissioner** vs **Tuten Your Mom** — 23rd meeting, Wade up 13-10, and this year the projection likes Wade too. It's the league's best win rate against the guy with the 2019 Shiva, it's close, and it's personal. Watch this one.
 
 **Gibbed for your pleasure** is the week's biggest chalk — the model loves Jack over **Return of the IDP**, and it should: two rings and a 13-9 stranglehold on Jono, who's *still* starting defenders on principle. The projection is being polite.
