@@ -12,8 +12,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 119.87
-    away_proj: 112.43
+    home_proj: 120.12
+    away_proj: 112.49
   - home_id: gganoom
     home_team: One Big Beautiful Dill
     home_owner: Grant
@@ -24,7 +24,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 110.45
+    home_proj: 109.55
     away_proj: 107.94
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -36,8 +36,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 112.07
-    away_proj: 113.66
+    home_proj: 115.23
+    away_proj: 113.41
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -48,7 +48,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 114.55
+    home_proj: 114.31
     away_proj: 120.09
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -60,8 +60,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 110.02
-    away_proj: 126.21
+    home_proj: 109.91
+    away_proj: 127.05
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -72,8 +72,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 122.63
-    away_proj: 116.96
+    home_proj: 122.37
+    away_proj: 116.97
   highlights: []
 2026-2:
   week: 2

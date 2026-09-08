@@ -19,3 +19,9 @@ Every manager in league history. Click a name for their full profile.
 ## Draft Order History
 
 {% include draft_heatmap.html data=site.data.owners.draft_heatmap %}
+
+## Transaction History
+
+_Transaction history is only available for 2018 and beyond_
+
+{% include tx_heatmap.html data=site.data.owners.tx_heatmap %}

@@ -126,6 +126,39 @@ def draft_heatmap(seasons, franchises, roster=None):
     return {"slots": slots, "max": max_count, "rows": rows}
 
 
+def tx_heatmap(profiles, roster=None):
+    """Owners × season grid of waiver/FA moves (adds + drops), built from the
+    per-year totals on each profile — so only seasons with known transaction data
+    appear as columns, plus a trailing Tx/yr figure. Rows are sorted by Tx/yr
+    (busiest managers first), then name. Each cell is heat-scaled to the busiest
+    cell; a cell is blank when the owner didn't play that year or made no moves
+    (matching the draft heatmap). Returns None until any transaction data exists."""
+    roster = roster or set()
+    year_set = set()
+    for p in profiles.values():
+        year_set |= set(p.get("tx_year", {}))
+    years = sorted(year_set)
+    if not years:
+        return None
+
+    all_counts = [n for p in profiles.values() for n in p.get("tx_year", {}).values()]
+    max_count = max(all_counts) if all_counts else 0
+    rows = []
+    for p in profiles.values():
+        d = p.get("tx_year", {})
+        if not d:
+            continue
+        cells = [{"year": y, "count": d.get(y),
+                  "color": heat_color(d[y], 0, max_count) if d.get(y) else None}
+                 for y in years]
+        rows.append({"id": p["id"], "name": p["short"],
+                     "total": sum(d.values()), "tx_per_year": p.get("tx_per_year", 0.0),
+                     "cells": cells})
+    # Sorted by Tx/yr (busiest managers first), then name.
+    rows.sort(key=lambda r: (-r["tx_per_year"], r["name"].lower()))
+    return {"years": years, "max": max_count, "rows": rows}
+
+
 def owners_data(profiles, roster):
     ranked = sorted_profiles(profiles)
     return {
@@ -162,6 +195,7 @@ def _season_rows(p):
     for s in p["seasons"]:
         row = {"year": s["year"], "team": s["team"], "tag": _season_tag(s),
                "finish": ordinal(s["finish"]), "record": s["record"],
+               "tx": s.get("tx"),      # moves that year; None when no data (renders "—")
                "in_progress": s.get("in_progress", False)}
         if s["pf"] is not None:
             row["pf"] = s["pf"]
@@ -201,6 +235,8 @@ def _profile_data(p, profiles):
             "playoff_apps": p["berths"],
             "trades": p.get("trades", 0),
             "trades_known": p.get("trades_known", True),
+            "tx_per_year": p.get("tx_per_year", 0.0),
+            "tx_known": p.get("transactions_known", True),
             "seasons": p["seasons_count"],
             "best_finish": _best_finish_data(p),
         },
@@ -245,6 +281,11 @@ def main():
     heatmap = draft_heatmap(seasons, franchises, roster)
     if heatmap:
         owners["draft_heatmap"] = heatmap
+    # Transaction History heatmap — waiver/FA moves per owner per season, over the
+    # years we have data for. Same layout as the draft heatmap.
+    tx_hm = tx_heatmap(profiles, roster)
+    if tx_hm:
+        owners["tx_heatmap"] = tx_hm
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "owners.yml").write_text(

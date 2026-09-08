@@ -1,17 +1,18 @@
 # 2019 — imported from ESPN by scripts/import_espn.py. Re-run the importer
-# to refresh; only the hand-edited `draft_order:` below is preserved across
-# imports. See ../../ARCHITECTURE.md.
+# to refresh; the locked, hand-maintained `draft_order:` below is preserved
+# verbatim across imports. See ../../ARCHITECTURE.md.
 
 season: 2019
 source: the-league-espn-api
 weeks_in_regular_season: 13
 
-# Lifecycle state (see design/season-state.md). Source of truth for how
-# this season renders and how much of it counts toward all-time stats.
+# Lifecycle state (see design/season-state.md) — the site renders off this,
+# and the importer advances it forward automatically. Set `drafting` by hand;
+# add `state_locked: true` to pin the state against auto-advance.
 state: complete
 
-# Draft order (1st overall pick first), franchise ids. Optional and HAND-
-# EDITED — preserved across re-imports; remove the block to hide the draft
+# Draft order (1.01 first), franchise ids. Locked, hand-maintained data —
+# preserved verbatim across re-imports; remove the block to hide the draft
 # table on the season page.
 draft_order:
   - kevbots22
@@ -69,6 +70,10 @@ final_standings:
   - unclebadtouch38
   - henpen28
 
+# The full schedule in three states: a final game carries scores; a live
+# (in-progress) game carries scores + `final: false`; a future fixture is
+# `played: false` with no scores. Only complete weeks (all games final)
+# count toward standings/records/H2H.
 matchups:
   - { week:  1, home: jackperkins74, away: purpsworth, home_score: 90.4, away_score: 85.1, playoff: false }
   - { week:  1, home: kevbots22, away: shawne2520997, home_score: 92.1, away_score: 103.0, playoff: false }
@@ -175,15 +180,17 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
-- week: 0
+- id: 72a256d4-34fe-40e1-b00b-5fe4070c76bf
+  week: 0
   teams:
   - jackperkins74
   - sturmanator15
@@ -206,7 +213,8 @@ trades:
   - from: jackperkins74
     to: sturmanator15
     label: 7.12 pick
-- week: 0
+- id: 723d5689-e703-4c0d-880e-e7fedaa48acd
+  week: 0
   teams:
   - purpsworth
   - zachzoske
@@ -229,17 +237,20 @@ trades:
   - from: zachzoske
     to: purpsworth
     label: 5.08 pick
-- week: 0
+- id: d1a268a2-19e7-41f4-870f-bfbf8965d14b
+  week: 0
   teams:
   - shawne2520997
   assets: []
   complete: false
-- week: 4
+- id: e4f081d5-851e-4161-9ddf-a590c75de70e
+  week: 4
   teams:
   - lukstein
   assets: []
   complete: false
-- week: 4
+- id: b58112c6-736d-4809-a92b-08f05ecfe9af
+  week: 4
   teams:
   - lukstein
   - sturmanator15
@@ -250,7 +261,8 @@ trades:
   - from: lukstein
     to: sturmanator15
     label: Matt Breida
-- week: 7
+- id: 5b841d7c-eb46-4edf-8c7e-bc377f7db96d
+  week: 7
   teams:
   - unclebadtouch38
   - zachzoske
@@ -261,7 +273,8 @@ trades:
   - from: zachzoske
     to: unclebadtouch38
     label: Austin Ekeler
-- week: 8
+- id: 964bc884-239c-4da9-a84b-9d0102ea6c51
+  week: 8
   teams:
   - henpen28
   - zachzoske
@@ -275,7 +288,8 @@ trades:
   - from: zachzoske
     to: henpen28
     label: Chase Edmonds
-- week: 8
+- id: 418b466c-b6a2-4903-ac80-43c896b70df1
+  week: 8
   teams:
   - schirmerj
   - sturmanator15
@@ -292,3 +306,28 @@ trades:
   - from: schirmerj
     to: sturmanator15
     label: Benny Snell Jr.
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers: []
+
+# Waiver / free-agent activity this season (franchise-keyed): adds, drops,
+# and moves (adds + drops) per team. Adds and drops are league-wide on ESPN,
+# so these counts are EXACT whenever fetched. `transactions_known` is false
+# for seasons ESPN's transaction endpoint doesn't cover (very old years) —
+# those seasons don't contribute to the all-time transaction records or the
+# Tx/yr rate.
+transactions_known: true
+transactions:
+  henpen28: { adds: 28, drops: 28, moves: 56 }
+  jackperkins74: { adds: 73, drops: 65, moves: 138 }
+  kevbots22: { adds: 22, drops: 22, moves: 44 }
+  lukstein: { adds: 27, drops: 26, moves: 53 }
+  purpsworth: { adds: 36, drops: 27, moves: 63 }
+  schirmerj: { adds: 22, drops: 22, moves: 44 }
+  shawne2520997: { adds: 24, drops: 24, moves: 48 }
+  sturmanator15: { adds: 47, drops: 47, moves: 94 }
+  theoceanpulse: { adds: 17, drops: 17, moves: 34 }
+  unclebadtouch38: { adds: 17, drops: 16, moves: 33 }
+  whowonthelastsuperbowl: { adds: 21, drops: 21, moves: 42 }
+  zachzoske: { adds: 81, drops: 70, moves: 151 }

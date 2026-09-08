@@ -15,7 +15,9 @@ sturmanator15:
     sackos: 0
     playoff_apps: 8
     trades: 7
-    trades_known: false
+    trades_known: true
+    tx_per_year: 97.1
+    tx_known: false
     seasons: 13
     best_finish:
       type: cochamp
@@ -27,12 +29,14 @@ sturmanator15:
     tag: null
     finish: 1st
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: Dont spit just swallow
     tag: null
     finish: 10th
     record: 7-7
+    tx: 52
     in_progress: false
     pf: 1537.3
     pf_color: '#f59946'
@@ -42,6 +46,7 @@ sturmanator15:
     tag: null
     finish: 5th
     record: 8-6
+    tx: 80
     in_progress: false
     pf: 1560.8
     pf_color: '#f49445'
@@ -51,6 +56,7 @@ sturmanator15:
     tag: null
     finish: 4th
     record: 9-5
+    tx: 84
     in_progress: false
     pf: 1733.5
     pf_color: '#ee6b3b'
@@ -60,6 +66,7 @@ sturmanator15:
     tag: null
     finish: 10th
     record: 5-9
+    tx: 58
     in_progress: false
     pf: 1299.8
     pf_color: '#facc81'
@@ -69,6 +76,7 @@ sturmanator15:
     tag: null
     finish: 7th
     record: 7-6-1
+    tx: 139
     in_progress: false
     pf: 1341.5
     pf_color: '#fac46e'
@@ -78,6 +86,7 @@ sturmanator15:
     tag: null
     finish: 9th
     record: 5-8
+    tx: 160
     in_progress: false
     pf: 1093.9
     pf_color: '#fdf3e0'
@@ -87,6 +96,7 @@ sturmanator15:
     tag: null
     finish: 6th
     record: 11-2
+    tx: 94
     in_progress: false
     pf: 1402.9
     pf_color: '#f9b852'
@@ -96,6 +106,7 @@ sturmanator15:
     tag: null
     finish: 8th
     record: 7-6
+    tx: 110
     in_progress: false
     pf: 1302.1
     pf_color: '#facb80'
@@ -105,6 +116,7 @@ sturmanator15:
     tag: null
     finish: 10th
     record: 5-8
+    tx: null
     in_progress: false
     pf: 1151.0
     pf_color: '#fce8c6'
@@ -114,6 +126,7 @@ sturmanator15:
     tag: cochamp
     finish: 1st
     record: 11-2
+    tx: null
     in_progress: false
     pf: 1296.1
     pf_color: '#facc83'
@@ -123,6 +136,7 @@ sturmanator15:
     tag: null
     finish: 4th
     record: 8-5
+    tx: null
     in_progress: false
     pf: 1296.7
     pf_color: '#facc83'
@@ -132,6 +146,7 @@ sturmanator15:
     tag: null
     finish: 4th
     record: 11-2
+    tx: null
     in_progress: false
     pf: 1358.7
     pf_color: '#fac066'
@@ -321,7 +336,7 @@ sturmanator15:
     - id: jackperkins74
       name: Jack
       team: Vladimir Putin
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 9
@@ -361,7 +376,9 @@ zachzoske:
     sackos: 2
     playoff_apps: 5
     trades: 15
-    trades_known: false
+    trades_known: true
+    tx_per_year: 114.2
+    tx_known: false
     seasons: 13
     best_finish:
       type: shiva
@@ -373,12 +390,14 @@ zachzoske:
     tag: null
     finish: 2nd
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: Big Brown Dak Makes em Waddle
     tag: null
     finish: 6th
     record: 9-5
+    tx: 110
     in_progress: false
     pf: 1703.3
     pf_color: '#ee6b3b'
@@ -388,6 +407,7 @@ zachzoske:
     tag: null
     finish: 7th
     record: 7-7
+    tx: 102
     in_progress: false
     pf: 1509.0
     pf_color: '#f59c47'
@@ -397,6 +417,7 @@ zachzoske:
     tag: null
     finish: 10th
     record: 7-7
+    tx: 83
     in_progress: false
     pf: 1562.1
     pf_color: '#f38e43'
@@ -406,6 +427,7 @@ zachzoske:
     tag: sacko
     finish: 12th
     record: 6-8
+    tx: 116
     in_progress: false
     pf: 1311.0
     pf_color: '#fac97a'
@@ -415,6 +437,7 @@ zachzoske:
     tag: null
     finish: 9th
     record: 5-9
+    tx: 119
     in_progress: false
     pf: 1346.7
     pf_color: '#fac169'
@@ -424,6 +447,7 @@ zachzoske:
     tag: null
     finish: 2nd
     record: 9-4
+    tx: 103
     in_progress: false
     pf: 1502.4
     pf_color: '#f59d47'
@@ -433,6 +457,7 @@ zachzoske:
     tag: shiva
     finish: 1st
     record: 6-7
+    tx: 151
     in_progress: false
     pf: 1358.9
     pf_color: '#fabf63'
@@ -442,6 +467,7 @@ zachzoske:
     tag: null
     finish: 3rd
     record: 7-6
+    tx: 130
     in_progress: false
     pf: 1359.5
     pf_color: '#fabf62'
@@ -451,6 +477,7 @@ zachzoske:
     tag: sacko
     finish: 12th
     record: 3-9-1
+    tx: null
     in_progress: false
     pf: 1103.0
     pf_color: '#fdf3e0'
@@ -460,6 +487,7 @@ zachzoske:
     tag: null
     finish: 7th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1168.4
     pf_color: '#fce6c0'
@@ -469,6 +497,7 @@ zachzoske:
     tag: null
     finish: 3rd
     record: 8-5
+    tx: null
     in_progress: false
     pf: 1367.2
     pf_color: '#f9bd5f'
@@ -478,6 +507,7 @@ zachzoske:
     tag: null
     finish: 7th
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1253.9
     pf_color: '#fbd496'
@@ -768,7 +798,7 @@ zachzoske:
     - id: purpsworth
       name: Trevor
       team: AB’s Helmet
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 9
@@ -806,6 +836,8 @@ schirmerj:
     playoff_apps: 9
     trades: 1
     trades_known: false
+    tx_per_year: 57.0
+    tx_known: false
     seasons: 13
     best_finish:
       type: cochamp
@@ -817,12 +849,14 @@ schirmerj:
     tag: null
     finish: 3rd
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: IDPs Forever
     tag: null
     finish: 11th
     record: 5-9
+    tx: 61
     in_progress: false
     pf: 1546.0
     pf_color: '#f59d47'
@@ -832,6 +866,7 @@ schirmerj:
     tag: null
     finish: 2nd
     record: 9-5
+    tx: 69
     in_progress: false
     pf: 1764.6
     pf_color: '#ee6b3b'
@@ -841,6 +876,7 @@ schirmerj:
     tag: null
     finish: 5th
     record: 8-6
+    tx: 19
     in_progress: false
     pf: 1658.4
     pf_color: '#f28341'
@@ -850,6 +886,7 @@ schirmerj:
     tag: null
     finish: 11th
     record: 4-10
+    tx: 57
     in_progress: false
     pf: 1317.0
     pf_color: '#facc81'
@@ -859,6 +896,7 @@ schirmerj:
     tag: null
     finish: 6th
     record: 8-6
+    tx: 66
     in_progress: false
     pf: 1341.1
     pf_color: '#fac776'
@@ -868,6 +906,7 @@ schirmerj:
     tag: null
     finish: 3rd
     record: 8-5
+    tx: 62
     in_progress: false
     pf: 1370.3
     pf_color: '#fac269'
@@ -877,6 +916,7 @@ schirmerj:
     tag: null
     finish: 5th
     record: 5-7-1
+    tx: 44
     in_progress: false
     pf: 1183.5
     pf_color: '#fce4bc'
@@ -886,6 +926,7 @@ schirmerj:
     tag: null
     finish: 5th
     record: 6-7
+    tx: 78
     in_progress: false
     pf: 1311.7
     pf_color: '#facd83'
@@ -895,6 +936,7 @@ schirmerj:
     tag: null
     finish: 8th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1375.9
     pf_color: '#fac167'
@@ -904,6 +946,7 @@ schirmerj:
     tag: cochamp
     finish: 2nd
     record: 9-4
+    tx: null
     in_progress: false
     pf: 1403.8
     pf_color: '#f9bc5a'
@@ -913,6 +956,7 @@ schirmerj:
     tag: null
     finish: 5th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1243.2
     pf_color: '#fbd9a2'
@@ -922,6 +966,7 @@ schirmerj:
     tag: null
     finish: 8th
     record: 4-9
+    tx: null
     in_progress: false
     pf: 1103.1
     pf_color: '#fdf3e0'
@@ -1086,6 +1131,8 @@ lukstein:
     playoff_apps: 7
     trades: 8
     trades_known: false
+    tx_per_year: 49.5
+    tx_known: false
     seasons: 13
     best_finish:
       type: shiva
@@ -1097,12 +1144,14 @@ lukstein:
     tag: null
     finish: 4th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: 2x Runner Up
     tag: null
     finish: 8th
     record: 8-6
+    tx: 34
     in_progress: false
     pf: 1479.8
     pf_color: '#f9b751'
@@ -1112,6 +1161,7 @@ lukstein:
     tag: shiva
     finish: 1st
     record: 9-5
+    tx: 53
     in_progress: false
     pf: 1890.9
     pf_color: '#ee6b3b'
@@ -1121,6 +1171,7 @@ lukstein:
     tag: null
     finish: 11th
     record: 3-11
+    tx: 53
     in_progress: false
     pf: 1428.2
     pf_color: '#fabf63'
@@ -1130,6 +1181,7 @@ lukstein:
     tag: null
     finish: 3rd
     record: 11-3
+    tx: 44
     in_progress: false
     pf: 1501.3
     pf_color: '#f9b44c'
@@ -1139,6 +1191,7 @@ lukstein:
     tag: null
     finish: 11th
     record: 4-10
+    tx: 51
     in_progress: false
     pf: 1302.7
     pf_color: '#fbd291'
@@ -1148,6 +1201,7 @@ lukstein:
     tag: null
     finish: 11th
     record: 5-8
+    tx: 38
     in_progress: false
     pf: 1291.1
     pf_color: '#fbd496'
@@ -1157,6 +1211,7 @@ lukstein:
     tag: null
     finish: 2nd
     record: 6-7
+    tx: 53
     in_progress: false
     pf: 1121.6
     pf_color: '#fdeed4'
@@ -1166,6 +1221,7 @@ lukstein:
     tag: sacko
     finish: 12th
     record: 3-10
+    tx: 70
     in_progress: false
     pf: 1184.6
     pf_color: '#fce4bd'
@@ -1175,6 +1231,7 @@ lukstein:
     tag: null
     finish: 2nd
     record: 9-4
+    tx: null
     in_progress: false
     pf: 1386.7
     pf_color: '#fac673'
@@ -1184,6 +1241,7 @@ lukstein:
     tag: null
     finish: 6th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1224.4
     pf_color: '#fcdeae'
@@ -1193,6 +1251,7 @@ lukstein:
     tag: null
     finish: 7th
     record: 3-10
+    tx: null
     in_progress: false
     pf: 1087.9
     pf_color: '#fdf3e0'
@@ -1202,6 +1261,7 @@ lukstein:
     tag: null
     finish: 6th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1168.4
     pf_color: '#fce7c3'
@@ -1425,6 +1485,8 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
+    tx_per_year: 125.6
+    tx_known: false
     seasons: 13
     best_finish:
       type: shiva
@@ -1437,12 +1499,14 @@ jackperkins74:
     tag: null
     finish: 5th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: Pukkake
     tag: shiva
     finish: 1st
     record: 9-5
+    tx: 130
     in_progress: false
     pf: 1769.9
     pf_color: '#ee6b3b'
@@ -1452,6 +1516,7 @@ jackperkins74:
     tag: null
     finish: 3rd
     record: 7-7
+    tx: 126
     in_progress: false
     pf: 1661.3
     pf_color: '#f28742'
@@ -1461,6 +1526,7 @@ jackperkins74:
     tag: null
     finish: 7th
     record: 7-7
+    tx: 101
     in_progress: false
     pf: 1522.5
     pf_color: '#f8ac4b'
@@ -1470,6 +1536,7 @@ jackperkins74:
     tag: null
     finish: 6th
     record: 10-4
+    tx: 117
     in_progress: false
     pf: 1535.0
     pf_color: '#f7a94a'
@@ -1479,6 +1546,7 @@ jackperkins74:
     tag: null
     finish: 5th
     record: 7-7
+    tx: 158
     in_progress: false
     pf: 1428.8
     pf_color: '#fac269'
@@ -1488,6 +1556,7 @@ jackperkins74:
     tag: sacko
     finish: 12th
     record: 5-8
+    tx: 160
     in_progress: false
     pf: 1278.1
     pf_color: '#fce2b6'
@@ -1497,6 +1566,7 @@ jackperkins74:
     tag: null
     finish: 3rd
     record: 6-7
+    tx: 138
     in_progress: false
     pf: 1197.1
     pf_color: '#fdf3e0'
@@ -1506,6 +1576,7 @@ jackperkins74:
     tag: null
     finish: 2nd
     record: 11-2
+    tx: 75
     in_progress: false
     pf: 1581.3
     pf_color: '#f59c47'
@@ -1515,6 +1586,7 @@ jackperkins74:
     tag: null
     finish: 5th
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1220.5
     pf_color: '#fdeed4'
@@ -1524,6 +1596,7 @@ jackperkins74:
     tag: null
     finish: 4th
     record: 8-5
+    tx: null
     in_progress: false
     pf: 1255.4
     pf_color: '#fce7c2'
@@ -1533,6 +1606,7 @@ jackperkins74:
     tag: shiva
     finish: 1st
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1218.3
     pf_color: '#fdeed5'
@@ -1542,6 +1616,7 @@ jackperkins74:
     tag: null
     finish: 9th
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1254.7
     pf_color: '#fce7c2'
@@ -1761,6 +1836,8 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: false
+    tx_per_year: 33.1
+    tx_known: false
     seasons: 13
     best_finish:
       type: place
@@ -1773,12 +1850,14 @@ kevbots22:
     tag: null
     finish: 6th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: Keeping up with the McCalferies
     tag: null
     finish: 2nd
     record: 10-4
+    tx: 29
     in_progress: false
     pf: 1626.2
     pf_color: '#ee6b3b'
@@ -1788,6 +1867,7 @@ kevbots22:
     tag: null
     finish: 11th
     record: 2-12
+    tx: 42
     in_progress: false
     pf: 1428.1
     pf_color: '#f7a549'
@@ -1797,6 +1877,7 @@ kevbots22:
     tag: null
     finish: 8th
     record: 4-10
+    tx: 21
     in_progress: false
     pf: 1507.9
     pf_color: '#f38e43'
@@ -1806,6 +1887,7 @@ kevbots22:
     tag: null
     finish: 9th
     record: 2-12
+    tx: 24
     in_progress: false
     pf: 1222.3
     pf_color: '#fbd9a2'
@@ -1815,6 +1897,7 @@ kevbots22:
     tag: null
     finish: 4th
     record: 7-6-1
+    tx: 41
     in_progress: false
     pf: 1334.7
     pf_color: '#fabf62'
@@ -1824,6 +1907,7 @@ kevbots22:
     tag: null
     finish: 4th
     record: 8-5
+    tx: 34
     in_progress: false
     pf: 1357.0
     pf_color: '#f9b955'
@@ -1833,6 +1917,7 @@ kevbots22:
     tag: null
     finish: 9th
     record: 4-9
+    tx: 44
     in_progress: false
     pf: 1181.7
     pf_color: '#fce3ba'
@@ -1842,6 +1927,7 @@ kevbots22:
     tag: null
     finish: 10th
     record: 4-9
+    tx: 30
     in_progress: false
     pf: 1210.9
     pf_color: '#fbdca9'
@@ -1851,6 +1937,7 @@ kevbots22:
     tag: null
     finish: 6th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1228.6
     pf_color: '#fbd89f'
@@ -1860,6 +1947,7 @@ kevbots22:
     tag: null
     finish: 9th
     record: 4-9
+    tx: null
     in_progress: false
     pf: 1177.7
     pf_color: '#fce4bc'
@@ -1869,6 +1957,7 @@ kevbots22:
     tag: null
     finish: 9th
     record: 5-8
+    tx: null
     in_progress: false
     pf: 1115.0
     pf_color: '#fdf3e0'
@@ -1878,6 +1967,7 @@ kevbots22:
     tag: null
     finish: 3rd
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1369.3
     pf_color: '#f9b64e'
@@ -2012,6 +2102,8 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
+    tx_per_year: 0.0
+    tx_known: true
     seasons: 1
     best_finish:
       type: place
@@ -2023,6 +2115,7 @@ alexandra:
     tag: null
     finish: 7th
     record: 0-0
+    tx: null
     in_progress: true
   h2h: []
   trades: []
@@ -2052,6 +2145,8 @@ purpsworth:
     playoff_apps: 4
     trades: 5
     trades_known: false
+    tx_per_year: 44.9
+    tx_known: true
     seasons: 8
     best_finish:
       type: place
@@ -2064,12 +2159,14 @@ purpsworth:
     tag: null
     finish: 8th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: I am dead inside
     tag: null
     finish: 3rd
     record: 6-8
+    tx: 41
     in_progress: false
     pf: 1566.2
     pf_color: '#f59846'
@@ -2079,6 +2176,7 @@ purpsworth:
     tag: null
     finish: 9th
     record: 5-9
+    tx: 35
     in_progress: false
     pf: 1606.7
     pf_color: '#f38c43'
@@ -2088,6 +2186,7 @@ purpsworth:
     tag: null
     finish: 6th
     record: 9-5
+    tx: 33
     in_progress: false
     pf: 1714.6
     pf_color: '#ee6b3b'
@@ -2097,6 +2196,7 @@ purpsworth:
     tag: null
     finish: 7th
     record: 7-7
+    tx: 44
     in_progress: false
     pf: 1355.2
     pf_color: '#fbd28f'
@@ -2106,6 +2206,7 @@ purpsworth:
     tag: null
     finish: 2nd
     record: 7-7
+    tx: 57
     in_progress: false
     pf: 1372.6
     pf_color: '#fbcd85'
@@ -2115,6 +2216,7 @@ purpsworth:
     tag: null
     finish: 7th
     record: 6-7
+    tx: 41
     in_progress: false
     pf: 1219.5
     pf_color: '#fdf3e0'
@@ -2124,6 +2226,7 @@ purpsworth:
     tag: null
     finish: 10th
     record: 4-9
+    tx: 63
     in_progress: false
     pf: 1240.3
     pf_color: '#fdeed4'
@@ -2309,6 +2412,8 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: false
+    tx_per_year: 37.0
+    tx_known: false
     seasons: 13
     best_finish:
       type: place
@@ -2321,12 +2426,14 @@ whowonthelastsuperbowl:
     tag: null
     finish: 9th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: Trick or Trick It’s Mike Vick
     tag: null
     finish: 9th
     record: 3-11
+    tx: 31
     in_progress: false
     pf: 1445.6
     pf_color: '#f39044'
@@ -2336,6 +2443,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 10th
     record: 6-8
+    tx: 45
     in_progress: false
     pf: 1617.1
     pf_color: '#ee6b3b'
@@ -2345,6 +2453,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 9th
     record: 5-9
+    tx: 26
     in_progress: false
     pf: 1566.3
     pf_color: '#f0763e'
@@ -2354,6 +2463,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 4th
     record: 7-7
+    tx: 28
     in_progress: false
     pf: 1331.2
     pf_color: '#f7a94a'
@@ -2363,6 +2473,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 6-8
+    tx: 58
     in_progress: false
     pf: 1405.3
     pf_color: '#f59946'
@@ -2372,6 +2483,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 6-7
+    tx: 48
     in_progress: false
     pf: 1298.8
     pf_color: '#f8b04b'
@@ -2381,6 +2493,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 7-6
+    tx: 42
     in_progress: false
     pf: 1201.0
     pf_color: '#fac26a'
@@ -2390,6 +2503,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 9th
     record: 5-8
+    tx: 18
     in_progress: false
     pf: 1240.9
     pf_color: '#f9bb59'
@@ -2399,6 +2513,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 11th
     record: 4-9
+    tx: null
     in_progress: false
     pf: 1160.5
     pf_color: '#fac97b'
@@ -2408,6 +2523,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 8th
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1299.0
     pf_color: '#f8af4b'
@@ -2417,6 +2533,7 @@ whowonthelastsuperbowl:
     tag: sacko
     finish: 10th
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1176.3
     pf_color: '#fac674'
@@ -2426,6 +2543,7 @@ whowonthelastsuperbowl:
     tag: sacko
     finish: 10th
     record: 1-12
+    tx: null
     in_progress: false
     pf: 920.5
     pf_color: '#fdf3e0'
@@ -2605,7 +2723,9 @@ theoceanpulse:
     sackos: 0
     playoff_apps: 8
     trades: 13
-    trades_known: false
+    trades_known: true
+    tx_per_year: 54.2
+    tx_known: false
     seasons: 11
     best_finish:
       type: shiva
@@ -2617,12 +2737,14 @@ theoceanpulse:
     tag: null
     finish: 10th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: Thoughts and Players
     tag: null
     finish: 5th
     record: 8-6
+    tx: 50
     in_progress: false
     pf: 1612.9
     pf_color: '#f49144'
@@ -2632,6 +2754,7 @@ theoceanpulse:
     tag: null
     finish: 4th
     record: 8-6
+    tx: 59
     in_progress: false
     pf: 1569.8
     pf_color: '#f59d47'
@@ -2641,6 +2764,7 @@ theoceanpulse:
     tag: null
     finish: 3rd
     record: 12-2
+    tx: 53
     in_progress: false
     pf: 1748.5
     pf_color: '#ee6b3b'
@@ -2650,6 +2774,7 @@ theoceanpulse:
     tag: null
     finish: 5th
     record: 7-7
+    tx: 54
     in_progress: false
     pf: 1312.8
     pf_color: '#fbdca7'
@@ -2659,6 +2784,7 @@ theoceanpulse:
     tag: null
     finish: 10th
     record: 5-9
+    tx: 65
     in_progress: false
     pf: 1489.3
     pf_color: '#f9b34c'
@@ -2668,6 +2794,7 @@ theoceanpulse:
     tag: null
     finish: 6th
     record: 6-7
+    tx: 87
     in_progress: false
     pf: 1208.9
     pf_color: '#fdf3e0'
@@ -2677,6 +2804,7 @@ theoceanpulse:
     tag: null
     finish: 4th
     record: 11-1-1
+    tx: 34
     in_progress: false
     pf: 1592.1
     pf_color: '#f49645'
@@ -2686,6 +2814,7 @@ theoceanpulse:
     tag: shiva
     finish: 1st
     record: 9-4
+    tx: 32
     in_progress: false
     pf: 1453.7
     pf_color: '#f9bc5b'
@@ -2695,6 +2824,7 @@ theoceanpulse:
     tag: null
     finish: 7th
     record: 11-2
+    tx: null
     in_progress: false
     pf: 1241.2
     pf_color: '#fdecce'
@@ -2704,6 +2834,7 @@ theoceanpulse:
     tag: null
     finish: 10th
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1304.7
     pf_color: '#fcddac'
@@ -2958,7 +3089,7 @@ theoceanpulse:
     - id: lukstein
       name: Luke
       team: Show Me Your TDs
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -2987,6 +3118,8 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: false
+    tx_per_year: 30.5
+    tx_known: true
     seasons: 3
     best_finish:
       type: place
@@ -2999,12 +3132,14 @@ gganoom:
     tag: null
     finish: 11th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: One Big Beautiful Dill
     tag: null
     finish: 4th
     record: 9-5
+    tx: 34
     in_progress: false
     pf: 1587.6
     pf_color: '#fdf3e0'
@@ -3014,6 +3149,7 @@ gganoom:
     tag: null
     finish: 8th
     record: 7-7
+    tx: 27
     in_progress: false
     pf: 1622.6
     pf_color: '#ee6b3b'
@@ -3135,6 +3271,8 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: false
+    tx_per_year: 51.9
+    tx_known: false
     seasons: 11
     best_finish:
       type: shiva
@@ -3147,12 +3285,14 @@ shawne2520997:
     tag: null
     finish: 12th
     record: 0-0
+    tx: null
     in_progress: true
   - year: 2025
     team: D***er my Sufficient Tight End
     tag: sacko
     finish: 12th
     record: 5-9
+    tx: 101
     in_progress: false
     pf: 1542.5
     pf_color: '#f28441'
@@ -3162,6 +3302,7 @@ shawne2520997:
     tag: sacko
     finish: 12th
     record: 7-7
+    tx: 48
     in_progress: false
     pf: 1433.9
     pf_color: '#f7a749'
@@ -3171,6 +3312,7 @@ shawne2520997:
     tag: shiva
     finish: 1st
     record: 9-5
+    tx: 41
     in_progress: false
     pf: 1606.6
     pf_color: '#ef6f3c'
@@ -3180,6 +3322,7 @@ shawne2520997:
     tag: null
     finish: 2nd
     record: 11-3
+    tx: 37
     in_progress: false
     pf: 1438.2
     pf_color: '#f7a649'
@@ -3189,6 +3332,7 @@ shawne2520997:
     tag: shiva
     finish: 1st
     record: 12-2
+    tx: 37
     in_progress: false
     pf: 1619.5
     pf_color: '#ee6b3b'
@@ -3198,6 +3342,7 @@ shawne2520997:
     tag: null
     finish: 5th
     record: 7-6
+    tx: 51
     in_progress: false
     pf: 1204.8
     pf_color: '#fce6c1'
@@ -3207,6 +3352,7 @@ shawne2520997:
     tag: null
     finish: 7th
     record: 7-5-1
+    tx: 48
     in_progress: false
     pf: 1279.9
     pf_color: '#fbd291'
@@ -3216,6 +3362,7 @@ shawne2520997:
     tag: null
     finish: 4th
     record: 7-6
+    tx: 52
     in_progress: false
     pf: 1327.0
     pf_color: '#fac673'
@@ -3225,6 +3372,7 @@ shawne2520997:
     tag: null
     finish: 3rd
     record: 9-4
+    tx: null
     in_progress: false
     pf: 1155.7
     pf_color: '#fdf3e0'
@@ -3234,6 +3382,7 @@ shawne2520997:
     tag: null
     finish: 3rd
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1317.2
     pf_color: '#fac97a'
@@ -3410,6 +3559,8 @@ henpen28:
     playoff_apps: 7
     trades: 6
     trades_known: false
+    tx_per_year: 45.0
+    tx_known: false
     seasons: 12
     best_finish:
       type: shiva
@@ -3423,6 +3574,7 @@ henpen28:
     tag: null
     finish: 7th
     record: 5-9
+    tx: 37
     in_progress: false
     pf: 1411.9
     pf_color: '#f7a94a'
@@ -3432,6 +3584,7 @@ henpen28:
     tag: null
     finish: 6th
     record: 9-5
+    tx: 35
     in_progress: false
     pf: 1644.2
     pf_color: '#ee6b3b'
@@ -3441,6 +3594,7 @@ henpen28:
     tag: null
     finish: 2nd
     record: 7-7
+    tx: 49
     in_progress: false
     pf: 1569.6
     pf_color: '#f17f40'
@@ -3450,6 +3604,7 @@ henpen28:
     tag: shiva
     finish: 1st
     record: 7-7
+    tx: 50
     in_progress: false
     pf: 1360.5
     pf_color: '#f9b74f'
@@ -3459,6 +3614,7 @@ henpen28:
     tag: null
     finish: 3rd
     record: 11-3
+    tx: 29
     in_progress: false
     pf: 1490.0
     pf_color: '#f49445'
@@ -3468,6 +3624,7 @@ henpen28:
     tag: null
     finish: 10th
     record: 4-9
+    tx: 48
     in_progress: false
     pf: 1163.4
     pf_color: '#fce2b7'
@@ -3477,6 +3634,7 @@ henpen28:
     tag: sacko
     finish: 12th
     record: 4-9
+    tx: 56
     in_progress: false
     pf: 1288.2
     pf_color: '#fac776'
@@ -3486,6 +3644,7 @@ henpen28:
     tag: null
     finish: 6th
     record: 8-5
+    tx: 56
     in_progress: false
     pf: 1309.2
     pf_color: '#fac26b'
@@ -3495,6 +3654,7 @@ henpen28:
     tag: shiva
     finish: 1st
     record: 6-7
+    tx: null
     in_progress: false
     pf: 1155.7
     pf_color: '#fce4bb'
@@ -3504,6 +3664,7 @@ henpen28:
     tag: null
     finish: 11th
     record: 5-8
+    tx: null
     in_progress: false
     pf: 1229.8
     pf_color: '#fbd494'
@@ -3513,6 +3674,7 @@ henpen28:
     tag: null
     finish: 8th
     record: 4-9
+    tx: null
     in_progress: false
     pf: 1086.2
     pf_color: '#fdf3e0'
@@ -3522,6 +3684,7 @@ henpen28:
     tag: shiva
     finish: 1st
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1337.1
     pf_color: '#f9bc5c'
@@ -3718,6 +3881,8 @@ unclebadtouch38:
     playoff_apps: 5
     trades: 3
     trades_known: false
+    tx_per_year: 36.0
+    tx_known: false
     seasons: 8
     best_finish:
       type: shiva
@@ -3729,6 +3894,7 @@ unclebadtouch38:
     tag: sacko
     finish: 12th
     record: 4-10
+    tx: 51
     in_progress: false
     pf: 1297.6
     pf_color: '#f49244'
@@ -3738,6 +3904,7 @@ unclebadtouch38:
     tag: null
     finish: 8th
     record: 7-7
+    tx: 38
     in_progress: false
     pf: 1144.5
     pf_color: '#fbce86'
@@ -3747,6 +3914,7 @@ unclebadtouch38:
     tag: sacko
     finish: 12th
     record: 4-10
+    tx: 42
     in_progress: false
     pf: 1112.9
     pf_color: '#fbd8a0'
@@ -3756,6 +3924,7 @@ unclebadtouch38:
     tag: shiva
     finish: 1st
     record: 9-4
+    tx: 26
     in_progress: false
     pf: 1389.2
     pf_color: '#ee6b3b'
@@ -3765,6 +3934,7 @@ unclebadtouch38:
     tag: null
     finish: 11th
     record: 5-7-1
+    tx: 33
     in_progress: false
     pf: 1036.2
     pf_color: '#fdf3e0'
@@ -3774,6 +3944,7 @@ unclebadtouch38:
     tag: null
     finish: 7th
     record: 7-6
+    tx: 26
     in_progress: false
     pf: 1327.9
     pf_color: '#f28541'
@@ -3783,6 +3954,7 @@ unclebadtouch38:
     tag: null
     finish: 4th
     record: 6-6-1
+    tx: null
     in_progress: false
     pf: 1105.6
     pf_color: '#fbdba6'
@@ -3792,6 +3964,7 @@ unclebadtouch38:
     tag: null
     finish: 5th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1238.7
     pf_color: '#f7ab4a'
@@ -3935,7 +4108,9 @@ ajstewart04:
     sackos: 0
     playoff_apps: 0
     trades: 0
-    trades_known: false
+    trades_known: true
+    tx_per_year: 22.0
+    tx_known: false
     seasons: 2
     best_finish:
       type: place
@@ -3948,6 +4123,7 @@ ajstewart04:
     tag: null
     finish: 11th
     record: 4-9
+    tx: 22
     in_progress: false
     pf: 1269.9
     pf_color: '#ee6b3b'
@@ -3957,6 +4133,7 @@ ajstewart04:
     tag: null
     finish: 9th
     record: 4-9
+    tx: null
     in_progress: false
     pf: 1143.7
     pf_color: '#fdf3e0'
@@ -4040,7 +4217,7 @@ ajstewart04:
     avg_pf: 116.6
     avg_pa: 77.1
   trades: []
-  trades_known: false
+  trades_known: true
   keepers: []
 master-otis:
   name: Odie
@@ -4062,7 +4239,9 @@ master-otis:
     sackos: 1
     playoff_apps: 2
     trades: 0
-    trades_known: false
+    trades_known: true
+    tx_per_year: 0.0
+    tx_known: false
     seasons: 3
     best_finish:
       type: place
@@ -4076,6 +4255,7 @@ master-otis:
     tag: sacko
     finish: 12th
     record: 1-12
+    tx: null
     in_progress: false
     pf: 953.6
     pf_color: '#fdf3e0'
@@ -4085,6 +4265,7 @@ master-otis:
     tag: null
     finish: 2nd
     record: 9-4
+    tx: null
     in_progress: false
     pf: 1425.0
     pf_color: '#ee6b3b'
@@ -4094,6 +4275,7 @@ master-otis:
     tag: null
     finish: 2nd
     record: 9-4
+    tx: null
     in_progress: false
     pf: 1297.1
     pf_color: '#f49445'
@@ -4184,7 +4366,7 @@ master-otis:
     avg_pf: 84.4
     avg_pa: 90.3
   trades: []
-  trades_known: false
+  trades_known: true
   keepers: []
 thebragers:
   name: Brady
@@ -4200,7 +4382,9 @@ thebragers:
     sackos: 0
     playoff_apps: 2
     trades: 0
-    trades_known: false
+    trades_known: true
+    tx_per_year: 0.0
+    tx_known: false
     seasons: 2
     best_finish:
       type: place
@@ -4213,6 +4397,7 @@ thebragers:
     tag: null
     finish: 6th
     record: 9-4
+    tx: null
     in_progress: false
     pf: 1219.6
     pf_color: '#ee6b3b'
@@ -4222,6 +4407,7 @@ thebragers:
     tag: null
     finish: 5th
     record: 7-6
+    tx: null
     in_progress: false
     pf: 1197.9
     pf_color: '#fdf3e0'
@@ -4291,5 +4477,5 @@ thebragers:
     avg_pf: 85.0
     avg_pa: 107.4
   trades: []
-  trades_known: false
+  trades_known: true
   keepers: []

@@ -929,3 +929,421 @@ draft_heatmap:
     - slot: 12
       count: 0
       color: null
+tx_heatmap:
+  years:
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  max: 160
+  rows:
+  - id: jackperkins74
+    name: Jack
+    total: 1005
+    tx_per_year: 125.6
+    cells:
+    - year: 2018
+      count: 75
+      color: '#f9ba56'
+    - year: 2019
+      count: 138
+      color: '#f18040'
+    - year: 2020
+      count: 160
+      color: '#ee6b3b'
+    - year: 2021
+      count: 158
+      color: '#ee6d3b'
+    - year: 2022
+      count: 117
+      color: '#f49345'
+    - year: 2023
+      count: 101
+      color: '#f6a248'
+    - year: 2024
+      count: 126
+      color: '#f38b43'
+    - year: 2025
+      count: 130
+      color: '#f28742'
+  - id: zachzoske
+    name: Zach
+    total: 914
+    tx_per_year: 114.2
+    cells:
+    - year: 2018
+      count: 130
+      color: '#f28742'
+    - year: 2019
+      count: 151
+      color: '#ef733d'
+    - year: 2020
+      count: 103
+      color: '#f6a048'
+    - year: 2021
+      count: 119
+      color: '#f49144'
+    - year: 2022
+      count: 116
+      color: '#f49445'
+    - year: 2023
+      count: 83
+      color: '#f9b34c'
+    - year: 2024
+      count: 102
+      color: '#f6a148'
+    - year: 2025
+      count: 110
+      color: '#f59a46'
+  - id: sturmanator15
+    name: Wade
+    total: 777
+    tx_per_year: 97.1
+    cells:
+    - year: 2018
+      count: 110
+      color: '#f59a46'
+    - year: 2019
+      count: 94
+      color: '#f7a94a'
+    - year: 2020
+      count: 160
+      color: '#ee6b3b'
+    - year: 2021
+      count: 139
+      color: '#f17f40'
+    - year: 2022
+      count: 58
+      color: '#fac775'
+    - year: 2023
+      count: 84
+      color: '#f8b24c'
+    - year: 2024
+      count: 80
+      color: '#f9b64d'
+    - year: 2025
+      count: 52
+      color: '#facb80'
+  - id: schirmerj
+    name: Jono
+    total: 456
+    tx_per_year: 57.0
+    cells:
+    - year: 2018
+      count: 78
+      color: '#f9b851'
+    - year: 2019
+      count: 44
+      color: '#fbd18f'
+    - year: 2020
+      count: 62
+      color: '#fac46e'
+    - year: 2021
+      count: 66
+      color: '#fac167'
+    - year: 2022
+      count: 57
+      color: '#fac877'
+    - year: 2023
+      count: 19
+      color: '#fce5bd'
+    - year: 2024
+      count: 69
+      color: '#fabe61'
+    - year: 2025
+      count: 61
+      color: '#fac470'
+  - id: theoceanpulse
+    name: Dillon
+    total: 434
+    tx_per_year: 54.2
+    cells:
+    - year: 2018
+      count: 32
+      color: '#fbdba5'
+    - year: 2019
+      count: 34
+      color: '#fbd9a2'
+    - year: 2020
+      count: 87
+      color: '#f8af4b'
+    - year: 2021
+      count: 65
+      color: '#fac169'
+    - year: 2022
+      count: 54
+      color: '#faca7d'
+    - year: 2023
+      count: 53
+      color: '#facb7f'
+    - year: 2024
+      count: 59
+      color: '#fac674'
+    - year: 2025
+      count: 50
+      color: '#facd84'
+  - id: shawne2520997
+    name: Shawnee
+    total: 415
+    tx_per_year: 51.9
+    cells:
+    - year: 2018
+      count: 52
+      color: '#facb80'
+    - year: 2019
+      count: 48
+      color: '#fbce88'
+    - year: 2020
+      count: 51
+      color: '#facc82'
+    - year: 2021
+      count: 37
+      color: '#fbd79c'
+    - year: 2022
+      count: 37
+      color: '#fbd79c'
+    - year: 2023
+      count: 41
+      color: '#fbd495'
+    - year: 2024
+      count: 48
+      color: '#fbce88'
+    - year: 2025
+      count: 101
+      color: '#f6a248'
+  - id: lukstein
+    name: Luke
+    total: 396
+    tx_per_year: 49.5
+    cells:
+    - year: 2018
+      count: 70
+      color: '#fabe5f'
+    - year: 2019
+      count: 53
+      color: '#facb7f'
+    - year: 2020
+      count: 38
+      color: '#fbd69a'
+    - year: 2021
+      count: 51
+      color: '#facc82'
+    - year: 2022
+      count: 44
+      color: '#fbd18f'
+    - year: 2023
+      count: 53
+      color: '#facb7f'
+    - year: 2024
+      count: 53
+      color: '#facb7f'
+    - year: 2025
+      count: 34
+      color: '#fbd9a2'
+  - id: henpen28
+    name: Henry
+    total: 360
+    tx_per_year: 45.0
+    cells:
+    - year: 2018
+      count: 56
+      color: '#fac879'
+    - year: 2019
+      count: 56
+      color: '#fac879'
+    - year: 2020
+      count: 48
+      color: '#fbce88'
+    - year: 2021
+      count: 29
+      color: '#fcddab'
+    - year: 2022
+      count: 50
+      color: '#facd84'
+    - year: 2023
+      count: 49
+      color: '#fbce86'
+    - year: 2024
+      count: 35
+      color: '#fbd8a0'
+    - year: 2025
+      count: 37
+      color: '#fbd79c'
+  - id: purpsworth
+    name: Trevor
+    total: 314
+    tx_per_year: 44.9
+    cells:
+    - year: 2018
+      count: null
+      color: null
+    - year: 2019
+      count: 63
+      color: '#fac36c'
+    - year: 2020
+      count: 41
+      color: '#fbd495'
+    - year: 2021
+      count: 57
+      color: '#fac877'
+    - year: 2022
+      count: 44
+      color: '#fbd18f'
+    - year: 2023
+      count: 33
+      color: '#fbdaa3'
+    - year: 2024
+      count: 35
+      color: '#fbd8a0'
+    - year: 2025
+      count: 41
+      color: '#fbd495'
+  - id: whowonthelastsuperbowl
+    name: Nate
+    total: 296
+    tx_per_year: 37.0
+    cells:
+    - year: 2018
+      count: 18
+      color: '#fce5bf'
+    - year: 2019
+      count: 42
+      color: '#fbd393'
+    - year: 2020
+      count: 48
+      color: '#fbce88'
+    - year: 2021
+      count: 58
+      color: '#fac775'
+    - year: 2022
+      count: 28
+      color: '#fcdead'
+    - year: 2023
+      count: 26
+      color: '#fcdfb0'
+    - year: 2024
+      count: 45
+      color: '#fbd18d'
+    - year: 2025
+      count: 31
+      color: '#fbdba7'
+  - id: unclebadtouch38
+    name: Fletcher
+    total: 216
+    tx_per_year: 36.0
+    cells:
+    - year: 2018
+      count: 26
+      color: '#fcdfb0'
+    - year: 2019
+      count: 33
+      color: '#fbdaa3'
+    - year: 2020
+      count: 26
+      color: '#fcdfb0'
+    - year: 2021
+      count: 42
+      color: '#fbd393'
+    - year: 2022
+      count: 38
+      color: '#fbd69a'
+    - year: 2023
+      count: 51
+      color: '#facc82'
+    - year: 2024
+      count: null
+      color: null
+    - year: 2025
+      count: null
+      color: null
+  - id: kevbots22
+    name: Kevin
+    total: 265
+    tx_per_year: 33.1
+    cells:
+    - year: 2018
+      count: 30
+      color: '#fcdca9'
+    - year: 2019
+      count: 44
+      color: '#fbd18f'
+    - year: 2020
+      count: 34
+      color: '#fbd9a2'
+    - year: 2021
+      count: 41
+      color: '#fbd495'
+    - year: 2022
+      count: 24
+      color: '#fce1b4'
+    - year: 2023
+      count: 21
+      color: '#fce3b9'
+    - year: 2024
+      count: 42
+      color: '#fbd393'
+    - year: 2025
+      count: 29
+      color: '#fcddab'
+  - id: gganoom
+    name: Grant
+    total: 61
+    tx_per_year: 30.5
+    cells:
+    - year: 2018
+      count: null
+      color: null
+    - year: 2019
+      count: null
+      color: null
+    - year: 2020
+      count: null
+      color: null
+    - year: 2021
+      count: null
+      color: null
+    - year: 2022
+      count: null
+      color: null
+    - year: 2023
+      count: null
+      color: null
+    - year: 2024
+      count: 27
+      color: '#fcdeae'
+    - year: 2025
+      count: 34
+      color: '#fbd9a2'
+  - id: ajstewart04
+    name: Anthony
+    total: 22
+    tx_per_year: 22.0
+    cells:
+    - year: 2018
+      count: 22
+      color: '#fce2b8'
+    - year: 2019
+      count: null
+      color: null
+    - year: 2020
+      count: null
+      color: null
+    - year: 2021
+      count: null
+      color: null
+    - year: 2022
+      count: null
+      color: null
+    - year: 2023
+      count: null
+      color: null
+    - year: 2024
+      count: null
+      color: null
+    - year: 2025
+      count: null
+      color: null

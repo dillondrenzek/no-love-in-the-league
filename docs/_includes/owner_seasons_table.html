@@ -1,13 +1,14 @@
 {%- comment -%}
 An owner's season-by-season table. Param: rows (list with year, team, tag,
-finish, record, pf, pf_color, pa).
+finish, record, pf, pf_color, pa, tx). `tx` is that year's waiver/FA move count;
+nil means we have no transaction data for that year (renders "—").
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
 {%- if rows and rows.size > 0 -%}
 <div class="table-scroll">
 <table>
   <thead>
-    <tr><th>Season</th><th>Team</th><th>Finish</th><th class="num">Record</th><th class="num">PF</th><th class="num">PA</th></tr>
+    <tr><th>Season</th><th>Team</th><th>Finish</th><th class="num">Record</th><th class="num">PF</th><th class="num">PA</th><th class="num">Tx</th></tr>
   </thead>
   <tbody>
     {%- for s in rows %}
@@ -18,6 +19,7 @@ finish, record, pf, pf_color, pa).
       <td class="num">{{ s.record }}</td>
       <td class="num">{% if s.pf %}{% include chip.html text=s.pf bg=s.pf_color %}{% else %}—{% endif %}</td>
       <td class="num">{% if s.pa %}{{ s.pa }}{% else %}—{% endif %}</td>
+      <td class="num">{% if s.tx == nil %}—{% else %}{{ s.tx }}{% endif %}</td>
     </tr>
     {%- endfor %}
   </tbody>

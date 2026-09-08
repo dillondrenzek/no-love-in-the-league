@@ -73,12 +73,12 @@ final_standings:
 # `played: false` with no scores. Only complete weeks (all games final)
 # count toward standings/records/H2H.
 matchups:
-  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 119.87, away_proj: 112.43 }
-  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 110.45, away_proj: 107.94 }
-  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false, home_proj: 112.07, away_proj: 113.66 }
-  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false, home_proj: 114.55, away_proj: 120.09 }
-  - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 110.02, away_proj: 126.21 }
-  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false, home_proj: 122.63, away_proj: 116.96 }
+  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 120.12, away_proj: 112.49 }
+  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 109.55, away_proj: 107.94 }
+  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false, home_proj: 115.23, away_proj: 113.41 }
+  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false, home_proj: 114.31, away_proj: 120.09 }
+  - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 109.91, away_proj: 127.05 }
+  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false, home_proj: 122.37, away_proj: 116.97 }
   - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -212,3 +212,21 @@ keepers:
   - { fid: sturmanator15, round: 9, player: "Trey McBride" }
   - { fid: whowonthelastsuperbowl, round: 11, player: "Drake Maye" }
   - { fid: lukstein, round: 12, player: "Kyle Pitts Sr." }
+
+# Waiver / free-agent activity this season (franchise-keyed): adds, drops,
+# and moves (adds + drops) per team. Adds and drops are league-wide on ESPN,
+# so these counts are EXACT whenever fetched. `transactions_known` is false
+# for seasons ESPN's transaction endpoint doesn't cover (very old years) —
+# those seasons don't contribute to the all-time transaction records or the
+# Tx/yr rate.
+transactions_known: true
+transactions:
+  jackperkins74: { adds: 11, drops: 8, moves: 19 }
+  kevbots22: { adds: 1, drops: 0, moves: 1 }
+  lukstein: { adds: 5, drops: 2, moves: 7 }
+  purpsworth: { adds: 1, drops: 0, moves: 1 }
+  schirmerj: { adds: 1, drops: 0, moves: 1 }
+  shawne2520997: { adds: 1, drops: 1, moves: 2 }
+  sturmanator15: { adds: 1, drops: 0, moves: 1 }
+  theoceanpulse: { adds: 1, drops: 0, moves: 1 }
+  zachzoske: { adds: 4, drops: 3, moves: 7 }

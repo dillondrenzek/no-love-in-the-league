@@ -14,7 +14,8 @@ score records. Co-champions each count as half a title.
 automatically as richer data (scores) is added.
 """
 
-from .data import name_of, short_name_of, season_trades_complete, countable_matchups
+from .data import (name_of, short_name_of, season_trades_complete,
+                   season_transactions_known, countable_matchups)
 from .standings import get_standings, parse_record
 from .rulings import co_champions, meaningless_keys, matchup_key
 
@@ -87,6 +88,11 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
     first_overall = _most_first_overall(trade_seasons if trade_seasons is not None else seasons, franchises)
     if first_overall:
         records.append(first_overall)
+
+    tx_pool = trade_seasons if trade_seasons is not None else seasons
+    most_tx = _transaction_record(tx_pool, franchises, most=True)
+    if most_tx:
+        records.append(most_tx)
     return records
 
 
@@ -125,6 +131,35 @@ def _most_trades(seasons, franchises):
     name = short_name_of(fid, franchises) if fid in franchises else fid
     return {"category": "Most Trades", "holder": name, "value": str(n),
             "season": None, "week": None,
+            "owner_id": fid if fid in franchises else None,
+            "owner_name": name, "team": None}
+
+
+def _transaction_totals(seasons, franchises):
+    """{fid: total waiver/FA moves} over the seasons whose transactions are known.
+    Transaction data starts in 2018 (older seasons 404 on ESPN), so this is a
+    total over the available years — the accepted baseline for these records."""
+    totals = {}
+    for season in seasons:
+        if not season_transactions_known(season):
+            continue
+        txmap = season.get("transactions") or {}
+        for fid in {r["id"] for r in get_standings(season, franchises)}:
+            totals[fid] = totals.get(fid, 0) + (txmap.get(fid) or {}).get("moves", 0)
+    return totals
+
+
+def _transaction_record(seasons, franchises, most):
+    """Most (or least) waiver/FA moves over the years we have data for (2018+).
+    Every owner with at least one known-transaction season is ranked."""
+    totals = _transaction_totals(seasons, franchises)
+    if not totals:
+        return None
+    pick = max if most else min
+    fid, n = pick(totals.items(), key=lambda kv: kv[1])
+    name = short_name_of(fid, franchises) if fid in franchises else fid
+    return {"category": "Most Transactions" if most else "Fewest Transactions",
+            "holder": name, "value": str(n), "season": None, "week": None,
             "owner_id": fid if fid in franchises else None,
             "owner_name": name, "team": None}
 

@@ -1,17 +1,18 @@
 # 2021 — imported from ESPN by scripts/import_espn.py. Re-run the importer
-# to refresh; only the hand-edited `draft_order:` below is preserved across
-# imports. See ../../ARCHITECTURE.md.
+# to refresh; the locked, hand-maintained `draft_order:` below is preserved
+# verbatim across imports. See ../../ARCHITECTURE.md.
 
 season: 2021
 source: the-league-espn-api
 weeks_in_regular_season: 14
 
-# Lifecycle state (see design/season-state.md). Source of truth for how
-# this season renders and how much of it counts toward all-time stats.
+# Lifecycle state (see design/season-state.md) — the site renders off this,
+# and the importer advances it forward automatically. Set `drafting` by hand;
+# add `state_locked: true` to pin the state against auto-advance.
 state: complete
 
-# Draft order (1st overall pick first), franchise ids. Optional and HAND-
-# EDITED — preserved across re-imports; remove the block to hide the draft
+# Draft order (1.01 first), franchise ids. Locked, hand-maintained data —
+# preserved verbatim across re-imports; remove the block to hide the draft
 # table on the season page.
 draft_order:
   - purpsworth
@@ -69,6 +70,10 @@ final_standings:
   - lukstein
   - unclebadtouch38
 
+# The full schedule in three states: a final game carries scores; a live
+# (in-progress) game carries scores + `final: false`; a future fixture is
+# `played: false` with no scores. Only complete weeks (all games final)
+# count toward standings/records/H2H.
 matchups:
   - { week:  1, home: jackperkins74, away: unclebadtouch38, home_score: 110.4, away_score: 86.4, playoff: false }
   - { week:  1, home: lukstein, away: henpen28, home_score: 99.2, away_score: 135.7, playoff: false }
@@ -181,20 +186,23 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: false
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
-- week: 1
+- id: d332c7cd-80ab-4da1-993f-0a2a21f26311
+  week: 1
   teams:
   - lukstein
   assets: []
   complete: false
-- week: 4
+- id: dc235e8d-e6e8-44fe-b8cc-93c6389b4884
+  week: 4
   teams:
   - purpsworth
   - zachzoske
@@ -205,7 +213,8 @@ trades:
   - from: zachzoske
     to: purpsworth
     label: Jamaal Williams
-- week: 8
+- id: b70506cb-d358-4db9-8f29-f35476623880
+  week: 8
   teams:
   - purpsworth
   - theoceanpulse
@@ -222,12 +231,14 @@ trades:
   - from: purpsworth
     to: theoceanpulse
     label: Kenyan Drake
-- week: 10
+- id: 0133d7ea-349f-4f30-b007-c0637aaeb55f
+  week: 10
   teams:
   - whowonthelastsuperbowl
   assets: []
   complete: false
-- week: 11
+- id: 96a77d2d-db15-47a9-932e-d818f90933f4
+  week: 11
   teams:
   - theoceanpulse
   - zachzoske
@@ -238,3 +249,28 @@ trades:
   - from: zachzoske
     to: theoceanpulse
     label: Damien Harris
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers: []
+
+# Waiver / free-agent activity this season (franchise-keyed): adds, drops,
+# and moves (adds + drops) per team. Adds and drops are league-wide on ESPN,
+# so these counts are EXACT whenever fetched. `transactions_known` is false
+# for seasons ESPN's transaction endpoint doesn't cover (very old years) —
+# those seasons don't contribute to the all-time transaction records or the
+# Tx/yr rate.
+transactions_known: true
+transactions:
+  henpen28: { adds: 15, drops: 14, moves: 29 }
+  jackperkins74: { adds: 87, drops: 71, moves: 158 }
+  kevbots22: { adds: 21, drops: 20, moves: 41 }
+  lukstein: { adds: 32, drops: 19, moves: 51 }
+  purpsworth: { adds: 36, drops: 21, moves: 57 }
+  schirmerj: { adds: 34, drops: 32, moves: 66 }
+  shawne2520997: { adds: 21, drops: 16, moves: 37 }
+  sturmanator15: { adds: 73, drops: 66, moves: 139 }
+  theoceanpulse: { adds: 38, drops: 27, moves: 65 }
+  unclebadtouch38: { adds: 21, drops: 21, moves: 42 }
+  whowonthelastsuperbowl: { adds: 40, drops: 18, moves: 58 }
+  zachzoske: { adds: 70, drops: 49, moves: 119 }

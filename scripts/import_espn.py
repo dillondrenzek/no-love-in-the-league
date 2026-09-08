@@ -139,6 +139,17 @@ def existing_known_for(year):
     return []
 
 
+def existing_transactions(year):
+    """(transactions, known) already recorded for a season, so a run that can't
+    fetch them (old-season 404, or a client without the method) preserves what's
+    on disk instead of wiping it. `known` is None when the file predates the key."""
+    path = SEASONS_DIR / f"{year}.yml"
+    if not path.exists():
+        return {}, None
+    data = yaml.safe_load(path.read_text()) or {}
+    return (data.get("transactions") or {}), data.get("transactions_known")
+
+
 def merge_trade_sets(existing, fresh):
     """Union trades by ESPN trade id, preferring the fully-detailed version over an
     undetailed 'accepted' stub. This is what lets managers' cookies arrive one at a
@@ -268,6 +279,27 @@ def build_trades(trade_rows, team_to_fid, team_count):
     return trades
 
 
+def build_transactions(tx_rows, team_to_fid):
+    """Per-franchise waiver/free-agent activity from `League.transactions()` rows:
+    {fid: {adds, drops, moves}}. Every add and every drop is one move (a claim
+    that drops a player is two moves). Adds/drops are league-wide on ESPN, so
+    these counts are exact whenever the endpoint returns."""
+    counts = {}
+    for r in tx_rows or []:
+        fid = team_to_fid.get(r.get("team_id"))
+        if not fid:
+            continue
+        c = counts.setdefault(fid, {"adds": 0, "drops": 0})
+        action = r.get("action")
+        if action == "ADD":
+            c["adds"] += 1
+        elif action == "DROP":
+            c["drops"] += 1
+    for c in counts.values():
+        c["moves"] = c["adds"] + c["drops"]
+    return counts
+
+
 def build_keepers(draft_rows, team_to_fid):
     """Kept players this season, franchise-keyed: {fid, round, player}. A keeper is
     a drafted pick flagged keeper=True, and its round is the cost. Empty before the
@@ -371,7 +403,8 @@ def attach_projections(lg, matchups, team_to_fid):
 
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
                      state="season", state_locked=False, draft_order=None, trades=None,
-                     trades_complete=True, trades_known_for=None, keepers=None):
+                     trades_complete=True, trades_known_for=None, keepers=None,
+                     transactions=None, transactions_known=False):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
         f"# to refresh; the locked, hand-maintained `draft_order:` below is preserved",
@@ -486,6 +519,24 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
             lines.append(f'  - {{ fid: {k["fid"]}, round: {k["round"]}, player: "{player}" }}')
     else:
         lines += ["keepers: []"]
+    lines += [
+        "",
+        "# Waiver / free-agent activity this season (franchise-keyed): adds, drops,",
+        "# and moves (adds + drops) per team. Adds and drops are league-wide on ESPN,",
+        "# so these counts are EXACT whenever fetched. `transactions_known` is false",
+        "# for seasons ESPN's transaction endpoint doesn't cover (very old years) —",
+        "# those seasons don't contribute to the all-time transaction records or the",
+        "# Tx/yr rate.",
+        f"transactions_known: {'true' if transactions_known else 'false'}",
+    ]
+    if transactions:
+        lines += ["transactions:"]
+        for fid in sorted(transactions):
+            c = transactions[fid]
+            lines.append(f'  {fid}: {{ adds: {c.get("adds", 0)}, '
+                         f'drops: {c.get("drops", 0)}, moves: {c.get("moves", 0)} }}')
+    else:
+        lines += ["transactions: {}  # none fetched this season"]
     return "\n".join(lines) + "\n"
 
 
@@ -635,6 +686,26 @@ def main():
     trades_complete = all(t.get("complete", True) for t in trades)
     incomplete = sum(1 for t in trades if not t.get("complete", True))
 
+    # Waiver / free-agent activity. Unlike trades, adds/drops are league-wide, so
+    # a single account sees everything and no cookie-merging is needed — the counts
+    # are exact whenever the endpoint returns. Old seasons 404 (and an older client
+    # lacks the method); in either case keep whatever's already on disk rather than
+    # wiping it, and mark the season's transactions unknown when we've never had them.
+    prior_tx, prior_tx_known = existing_transactions(args.year)
+    transactions, transactions_known = prior_tx, bool(prior_tx_known)
+    if not hasattr(lg, "transactions"):
+        print("NOTE: installed the-league-espn-api has no transactions() — skipping "
+              "waiver activity (reinstall: pip install -r requirements-dev.txt).",
+              file=sys.stderr)
+    else:
+        try:
+            transactions = build_transactions(lg.transactions(), team_to_fid)
+            transactions_known = True
+        except ApiError as e:
+            print(f"NOTE: transactions for {args.year} unavailable (ESPN {e.status}) — "
+                  f"keeping {len(prior_tx)} on file.", file=sys.stderr)
+    tx_moves = sum(c.get("moves", 0) for c in transactions.values())
+
     reg_count = (sched.get("matchupPeriodCount")
                  or max((m["week"] for m in matchups if not m["playoff"]), default=0))
 
@@ -682,7 +753,9 @@ def main():
                                    state=state, state_locked=state_locked,
                                    draft_order=draft_order,
                                    trades=trades, trades_complete=trades_complete,
-                                   trades_known_for=sorted(known_for), keepers=keepers)
+                                   trades_known_for=sorted(known_for), keepers=keepers,
+                                   transactions=transactions,
+                                   transactions_known=transactions_known)
 
     if not lg.authenticated:
         print("WARNING: no ESPN cookies found — a private league won't return owner "
@@ -698,9 +771,11 @@ def main():
         state_note += " (locked)"
     elif detected != state:
         state_note += f" (detected {detected}, kept forward-only)"
+    tx_note = (f"{tx_moves} moves / {len(transactions)} teams"
+               if transactions_known else "not fetched")
     print(f"Parsed {args.year}: {len(team_rows)} teams, {len(matchups)} matchups, "
-          f"{len(trades)} trades ({trade_note}), {reg_count} regular-season weeks — "
-          f"{state_note}.\n", file=sys.stderr)
+          f"{len(trades)} trades ({trade_note}), transactions ({tx_note}), "
+          f"{reg_count} regular-season weeks — {state_note}.\n", file=sys.stderr)
     print("Computed regular-season standings (verify against ESPN's final standings):",
           file=sys.stderr)
     print(validation_table(matchups) + "\n", file=sys.stderr)
