@@ -19,6 +19,13 @@ from .data import (name_of, short_name_of, season_trades_complete,
 from .standings import get_standings, parse_record
 from .rulings import co_champions, meaningless_keys, matchup_key
 
+# Record-book sections, in display order. Each record carries a `section` so the
+# records page can group the cards under headings.
+SEC_STANDINGS = "Standings & Titles"
+SEC_SCORING = "Scoring"
+SEC_MOVES = "Roster & Draft"
+SECTION_ORDER = [SEC_STANDINGS, SEC_SCORING, SEC_MOVES]
+
 
 def _win_pct(w, l, t):
     games = w + l + t
@@ -55,7 +62,7 @@ def _standings_row_entry(category, year, row, value, franchises):
             "season": year, "week": None,
             "owner_id": fid if fid in franchises else None,
             "owner_name": short_name_of(fid, franchises),
-            "team": row["name"]}
+            "team": row["name"], "section": SEC_STANDINGS}
 
 
 def _standings_records(seasons, franchises, overrides, trade_seasons=None):
@@ -79,7 +86,8 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
             records.append({"category": "Most Championships", "holder": display.get(champ_id),
                             "value": _fmt_titles(champ_count), "season": None, "week": None,
                             "owner_id": champ_id if champ_id in franchises else None,
-                            "owner_name": display.get(champ_id), "team": None})
+                            "owner_name": display.get(champ_id), "team": None,
+                            "section": SEC_STANDINGS})
 
     trade_rec = _most_trades(trade_seasons if trade_seasons is not None else seasons, franchises)
     if trade_rec:
@@ -93,6 +101,9 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
     most_tx = _transaction_record(tx_pool, franchises, most=True)
     if most_tx:
         records.append(most_tx)
+    most_tx_season = _most_transactions_in_season(tx_pool, franchises)
+    if most_tx_season:
+        records.append(most_tx_season)
     return records
 
 
@@ -114,7 +125,7 @@ def _most_first_overall(seasons, franchises):
     return {"category": "Most Times Drafting 1.01", "holder": name, "value": str(n),
             "season": None, "week": None,
             "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None}
+            "owner_name": name, "team": None, "section": SEC_MOVES}
 
 
 def _most_trades(seasons, franchises):
@@ -132,7 +143,7 @@ def _most_trades(seasons, franchises):
     return {"category": "Most Trades", "holder": name, "value": str(n),
             "season": None, "week": None,
             "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None}
+            "owner_name": name, "team": None, "section": SEC_MOVES}
 
 
 def _transaction_totals(seasons, franchises):
@@ -161,7 +172,27 @@ def _transaction_record(seasons, franchises, most):
     return {"category": "Most Transactions" if most else "Fewest Transactions",
             "holder": name, "value": str(n), "season": None, "week": None,
             "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None}
+            "owner_name": name, "team": None, "section": SEC_MOVES}
+
+
+def _most_transactions_in_season(seasons, franchises):
+    """Single-season high for waiver/FA moves by one owner (over 2018+ data)."""
+    best = None      # (moves, year, fid)
+    for season in seasons:
+        if not season_transactions_known(season):
+            continue
+        for fid, c in (season.get("transactions") or {}).items():
+            moves = c.get("moves", 0)
+            if best is None or moves > best[0]:
+                best = (moves, season["season"], fid)
+    if not best or best[0] <= 0:
+        return None
+    moves, year, fid = best
+    name = short_name_of(fid, franchises) if fid in franchises else fid
+    return {"category": "Most Transactions in a Season", "holder": name,
+            "value": str(moves), "season": year, "week": None,
+            "owner_id": fid if fid in franchises else None,
+            "owner_name": name, "team": None, "section": SEC_MOVES}
 
 
 def _team_games(seasons, overrides):
@@ -210,7 +241,8 @@ def _score_records(seasons, franchises, overrides):
              "owner_id": g["id"] if g["id"] in franchises else None,
              "owner_name": short_name_of(g["id"], franchises),
              "team": team_for(g["id"], g["season"]),
-             "opp_owner_id": None, "opp_owner_name": None, "opp_team": None}
+             "opp_owner_id": None, "opp_owner_name": None, "opp_team": None,
+             "section": SEC_SCORING}
         if with_opp:
             oid = g["opp_id"]
             e["opp_owner_id"] = oid if oid in franchises else None
@@ -240,6 +272,7 @@ def _score_records(seasons, franchises, overrides):
         "owner_name": short_name_of(top_fid, franchises),
         "team": team_for(top_fid, top_year),
         "opp_owner_id": None, "opp_owner_name": None, "opp_team": None,
+        "section": SEC_SCORING,
     }
 
     return [
