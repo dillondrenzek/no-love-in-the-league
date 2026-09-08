@@ -59,6 +59,30 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+- category: Most Transactions
+  value: '314'
+  sub_value: null
+  season: null
+  week: null
+  holder: Trevor
+  owner_id: purpsworth
+  owner_name: Trevor
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
+- category: Fewest Transactions
+  value: '61'
+  sub_value: null
+  season: null
+  week: null
+  holder: Grant
+  owner_id: gganoom
+  owner_name: Grant
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
 - category: Most Points in a Week
   value: '184.90'
   sub_value: null

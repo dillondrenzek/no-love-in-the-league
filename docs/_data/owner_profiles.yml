@@ -15,7 +15,9 @@ sturmanator15:
     sackos: 0
     playoff_apps: 8
     trades: 7
-    trades_known: false
+    trades_known: true
+    tx_per_year: 97.1
+    tx_known: false
     seasons: 13
     best_finish:
       type: cochamp
@@ -321,7 +323,7 @@ sturmanator15:
     - id: jackperkins74
       name: Jack
       team: Vladimir Putin
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 9
@@ -361,7 +363,9 @@ zachzoske:
     sackos: 2
     playoff_apps: 5
     trades: 15
-    trades_known: false
+    trades_known: true
+    tx_per_year: 114.2
+    tx_known: false
     seasons: 13
     best_finish:
       type: shiva
@@ -768,7 +772,7 @@ zachzoske:
     - id: purpsworth
       name: Trevor
       team: AB’s Helmet
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 9
@@ -806,6 +810,8 @@ schirmerj:
     playoff_apps: 9
     trades: 1
     trades_known: false
+    tx_per_year: 57.0
+    tx_known: false
     seasons: 13
     best_finish:
       type: cochamp
@@ -1086,6 +1092,8 @@ lukstein:
     playoff_apps: 7
     trades: 8
     trades_known: false
+    tx_per_year: 49.5
+    tx_known: false
     seasons: 13
     best_finish:
       type: shiva
@@ -1425,6 +1433,8 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
+    tx_per_year: 125.6
+    tx_known: false
     seasons: 13
     best_finish:
       type: shiva
@@ -1761,6 +1771,8 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: false
+    tx_per_year: 33.1
+    tx_known: false
     seasons: 13
     best_finish:
       type: place
@@ -2012,6 +2024,8 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
+    tx_per_year: 0.0
+    tx_known: true
     seasons: 1
     best_finish:
       type: place
@@ -2052,6 +2066,8 @@ purpsworth:
     playoff_apps: 4
     trades: 5
     trades_known: false
+    tx_per_year: 44.9
+    tx_known: true
     seasons: 8
     best_finish:
       type: place
@@ -2309,6 +2325,8 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: false
+    tx_per_year: 37.0
+    tx_known: false
     seasons: 13
     best_finish:
       type: place
@@ -2605,7 +2623,9 @@ theoceanpulse:
     sackos: 0
     playoff_apps: 8
     trades: 13
-    trades_known: false
+    trades_known: true
+    tx_per_year: 54.2
+    tx_known: false
     seasons: 11
     best_finish:
       type: shiva
@@ -2958,7 +2978,7 @@ theoceanpulse:
     - id: lukstein
       name: Luke
       team: Show Me Your TDs
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -2987,6 +3007,8 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: false
+    tx_per_year: 30.5
+    tx_known: true
     seasons: 3
     best_finish:
       type: place
@@ -3135,6 +3157,8 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: false
+    tx_per_year: 51.9
+    tx_known: false
     seasons: 11
     best_finish:
       type: shiva
@@ -3410,6 +3434,8 @@ henpen28:
     playoff_apps: 7
     trades: 6
     trades_known: false
+    tx_per_year: 45.0
+    tx_known: false
     seasons: 12
     best_finish:
       type: shiva
@@ -3718,6 +3744,8 @@ unclebadtouch38:
     playoff_apps: 5
     trades: 3
     trades_known: false
+    tx_per_year: 36.0
+    tx_known: false
     seasons: 8
     best_finish:
       type: shiva
@@ -3935,7 +3963,9 @@ ajstewart04:
     sackos: 0
     playoff_apps: 0
     trades: 0
-    trades_known: false
+    trades_known: true
+    tx_per_year: 22.0
+    tx_known: false
     seasons: 2
     best_finish:
       type: place
@@ -4040,7 +4070,7 @@ ajstewart04:
     avg_pf: 116.6
     avg_pa: 77.1
   trades: []
-  trades_known: false
+  trades_known: true
   keepers: []
 master-otis:
   name: Odie
@@ -4062,7 +4092,9 @@ master-otis:
     sackos: 1
     playoff_apps: 2
     trades: 0
-    trades_known: false
+    trades_known: true
+    tx_per_year: 0.0
+    tx_known: false
     seasons: 3
     best_finish:
       type: place
@@ -4184,7 +4216,7 @@ master-otis:
     avg_pf: 84.4
     avg_pa: 90.3
   trades: []
-  trades_known: false
+  trades_known: true
   keepers: []
 thebragers:
   name: Brady
@@ -4200,7 +4232,9 @@ thebragers:
     sackos: 0
     playoff_apps: 2
     trades: 0
-    trades_known: false
+    trades_known: true
+    tx_per_year: 0.0
+    tx_known: false
     seasons: 2
     best_finish:
       type: place
@@ -4291,5 +4325,5 @@ thebragers:
     avg_pf: 85.0
     avg_pa: 107.4
   trades: []
-  trades_known: false
+  trades_known: true
   keepers: []

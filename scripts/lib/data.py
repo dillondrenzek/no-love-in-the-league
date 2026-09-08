@@ -135,3 +135,13 @@ def season_trades_complete(season):
     if flag is not None:
         return bool(flag)
     return all(t.get("complete", True) for t in (season.get("trades") or []))
+
+
+def season_transactions_known(season):
+    """True when this season's waiver/free-agent counts were fetched from ESPN.
+
+    Adds and drops are league-wide, so a fetched season's counts are exact. The
+    importer sets `transactions_known: true` only when it fetched them; very old
+    seasons (ESPN's transaction endpoint 404s) and files written before this data
+    existed are unknown, and don't feed the all-time records or the Tx/yr rate."""
+    return bool(season.get("transactions_known"))

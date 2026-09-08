@@ -1,17 +1,18 @@
 # 2018 — imported from ESPN by scripts/import_espn.py. Re-run the importer
-# to refresh; only the hand-edited `draft_order:` below is preserved across
-# imports. See ../../ARCHITECTURE.md.
+# to refresh; the locked, hand-maintained `draft_order:` below is preserved
+# verbatim across imports. See ../../ARCHITECTURE.md.
 
 season: 2018
 source: the-league-espn-api
 weeks_in_regular_season: 13
 
-# Lifecycle state (see design/season-state.md). Source of truth for how
-# this season renders and how much of it counts toward all-time stats.
+# Lifecycle state (see design/season-state.md) — the site renders off this,
+# and the importer advances it forward automatically. Set `drafting` by hand;
+# add `state_locked: true` to pin the state against auto-advance.
 state: complete
 
-# Draft order (1st overall pick first), franchise ids. Optional and HAND-
-# EDITED — preserved across re-imports; remove the block to hide the draft
+# Draft order (1.01 first), franchise ids. Locked, hand-maintained data —
+# preserved verbatim across re-imports; remove the block to hide the draft
 # table on the season page.
 draft_order:
   - jackperkins74
@@ -69,6 +70,10 @@ final_standings:
   - ajstewart04
   - lukstein
 
+# The full schedule in three states: a final game carries scores; a live
+# (in-progress) game carries scores + `final: false`; a future fixture is
+# `played: false` with no scores. Only complete weeks (all games final)
+# count toward standings/records/H2H.
 matchups:
   - { week:  1, home: jackperkins74, away: ajstewart04, home_score: 128.7, away_score: 117.4, playoff: false }
   - { week:  1, home: kevbots22, away: shawne2520997, home_score: 86.6, away_score: 130.0, playoff: false }
@@ -175,11 +180,37 @@ matchups:
 # trade this season is fully detailed. `trades_known_for` lists the
 # franchises whose manager cookie was merged: their count is EXACT even
 # in an incomplete season (an undetailed trade is one they weren't in),
-# while everyone else's count is a floor ('at least N'). Merge more
-# managers' cookies (.cookies/) to fill gaps.
+# while everyone else's count is a floor ('at least N'). Feed managers'
+# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
+# trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: true
 trades_known_for:
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades: []  # none this season
+
+# Keepers this season (franchise-keyed): the player each team kept and the
+# round it cost. From ESPN's draft; empty before the league kept players.
+keepers: []
+
+# Waiver / free-agent activity this season (franchise-keyed): adds, drops,
+# and moves (adds + drops) per team. Adds and drops are league-wide on ESPN,
+# so these counts are EXACT whenever fetched. `transactions_known` is false
+# for seasons ESPN's transaction endpoint doesn't cover (very old years) —
+# those seasons don't contribute to the all-time transaction records or the
+# Tx/yr rate.
+transactions_known: true
+transactions:
+  ajstewart04: { adds: 11, drops: 11, moves: 22 }
+  henpen28: { adds: 28, drops: 28, moves: 56 }
+  jackperkins74: { adds: 38, drops: 37, moves: 75 }
+  kevbots22: { adds: 15, drops: 15, moves: 30 }
+  lukstein: { adds: 35, drops: 35, moves: 70 }
+  schirmerj: { adds: 39, drops: 39, moves: 78 }
+  shawne2520997: { adds: 26, drops: 26, moves: 52 }
+  sturmanator15: { adds: 55, drops: 55, moves: 110 }
+  theoceanpulse: { adds: 16, drops: 16, moves: 32 }
+  unclebadtouch38: { adds: 13, drops: 13, moves: 26 }
+  whowonthelastsuperbowl: { adds: 9, drops: 9, moves: 18 }
+  zachzoske: { adds: 65, drops: 65, moves: 130 }

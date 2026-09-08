@@ -6,7 +6,8 @@ head-to-head vs every other owner. This only produces meaningful output for
 seasons that have matchups (level 2).
 """
 
-from .data import name_of, short_name_of, season_trades_complete, countable_matchups
+from .data import (name_of, short_name_of, season_trades_complete,
+                   season_transactions_known, countable_matchups)
 from .standings import get_standings, provisional_standings
 from .state import is_in_progress, state_of, state_at_least
 from .rulings import co_champions, meaningless_keys, matchup_key
@@ -26,6 +27,9 @@ def _blank(fid, franchises):
         "trades": 0,                                    # trades participated in (a floor if not trades_known)
         "trades_known": True,                           # False if any season they played has undetailed trades
         "trade_log": [],                                # per-trade detail for the profile
+        "transactions": 0,                              # waiver/FA moves (adds+drops) over known-tx seasons
+        "tx_seasons": 0,                                # seasons played whose transactions are known
+        "transactions_known": True,                     # False if any season they played has no tx data
         "keeper_log": [],                               # players kept, per season
         "h2h": {},                                      # opp id -> {w,l,t,pf,pa}
     }
@@ -143,6 +147,20 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
             for fid in played:
                 if fid not in known_for:
                     prof(fid)["trades_known"] = False
+
+        # Waiver/FA activity: exact when the season was fetched (adds/drops are
+        # league-wide). A known season adds to each player's move total and their
+        # Tx/yr denominator; an unknown one just flags them as a floor so they
+        # sit out the exact all-time transaction records.
+        if season_transactions_known(season):
+            txmap = season.get("transactions") or {}
+            for fid in played:
+                p = prof(fid)
+                p["tx_seasons"] += 1
+                p["transactions"] += (txmap.get(fid) or {}).get("moves", 0)
+        else:
+            for fid in played:
+                prof(fid)["transactions_known"] = False
         for trade in season.get("trades") or []:
             members = trade.get("teams") or []
             assets = trade.get("assets") or []
@@ -182,6 +200,8 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
         p["best_finish"] = min(finishes) if finishes else None
         p["worst_finish"] = max(finishes) if finishes else None
         p["seasons_count"] = len(p["seasons"])
+        # Transactions per year, over the seasons whose activity we actually have.
+        p["tx_per_year"] = round(p["transactions"] / p["tx_seasons"], 1) if p["tx_seasons"] else 0.0
         p["trade_log"].sort(key=lambda t: (t["year"], t["week"]), reverse=True)
         p["keeper_log"].sort(key=lambda k: (-k["year"], k["round"] or 0))
         p["reg"]["win_pct"] = win_pct(p["reg"]["w"], p["reg"]["l"], p["reg"]["t"])
@@ -197,7 +217,7 @@ def empty_profile(fid, franchises):
     yet — e.g. an owner who just took over a team in an in-progress season. Lets
     the owners index list them as an active member before they have a record."""
     p = _blank(fid, franchises)
-    p.update(best_finish=None, worst_finish=None, seasons_count=0)
+    p.update(best_finish=None, worst_finish=None, seasons_count=0, tx_per_year=0.0)
     p["reg"]["win_pct"] = 0.0
     return p
 

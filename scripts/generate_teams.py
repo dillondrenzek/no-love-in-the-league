@@ -201,6 +201,8 @@ def _profile_data(p, profiles):
             "playoff_apps": p["berths"],
             "trades": p.get("trades", 0),
             "trades_known": p.get("trades_known", True),
+            "tx_per_year": p.get("tx_per_year", 0.0),
+            "tx_known": p.get("transactions_known", True),
             "seasons": p["seasons_count"],
             "best_finish": _best_finish_data(p),
         },

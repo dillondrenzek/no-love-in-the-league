@@ -133,6 +133,53 @@ def test_incomplete_trades_credit_and_log_accepted():
     assert recs["Most Trades"]["value"] == "1"
 
 
+def test_transactions_aggregate_and_records():
+    from lib.teams import compute_profiles
+    s = matchup_season(2025)
+    s["transactions_known"] = True
+    s["transactions"] = {
+        "a": {"adds": 5, "drops": 4, "moves": 9},
+        "b": {"adds": 1, "drops": 1, "moves": 2},
+        "c": {"adds": 0, "drops": 0, "moves": 0},
+        # d omitted: played a known season with zero moves -> counts as 0, exact.
+    }
+    profiles = compute_profiles([s], {})
+    assert profiles["a"]["transactions"] == 9      # moves = adds + drops
+    assert profiles["a"]["tx_seasons"] == 1
+    assert profiles["a"]["tx_per_year"] == 9.0
+    assert profiles["d"]["transactions"] == 0 and profiles["d"]["transactions_known"] is True
+    recs = {r["category"]: r for r in compute_records([s], {})}
+    assert recs["Most Transactions"]["value"] == "9"
+    assert recs["Most Transactions"]["holder"] == "a"   # owner_id is None w/o a franchise map
+    assert recs["Fewest Transactions"]["value"] == "0"
+
+
+def test_transactions_tx_per_year_averages_over_known_seasons():
+    from lib.teams import compute_profiles
+    s1 = matchup_season(2024); s1["transactions_known"] = True
+    s1["transactions"] = {"a": {"adds": 6, "drops": 4, "moves": 10}}
+    s2 = matchup_season(2025); s2["transactions_known"] = True
+    s2["transactions"] = {"a": {"adds": 3, "drops": 1, "moves": 4}}
+    profiles = compute_profiles([s1, s2], {})
+    assert profiles["a"]["transactions"] == 14
+    assert profiles["a"]["tx_seasons"] == 2
+    assert profiles["a"]["tx_per_year"] == 7.0     # 14 moves / 2 known seasons
+
+
+def test_transactions_unknown_season_excludes_from_exact_records():
+    from lib.teams import compute_profiles
+    known = matchup_season(2025); known["transactions_known"] = True
+    known["transactions"] = {"a": {"adds": 2, "drops": 1, "moves": 3},
+                             "b": {"adds": 8, "drops": 8, "moves": 16}}
+    old = matchup_season(2014)                     # no tx data -> unknown for all
+    profiles = compute_profiles([known, old], {})
+    assert profiles["a"]["transactions_known"] is False   # played an unknown season
+    assert profiles["a"]["tx_seasons"] == 1 and profiles["a"]["tx_per_year"] == 3.0
+    # Every owner has an unknown season, so no one is exact -> no record emitted.
+    recs = {r["category"] for r in compute_records([known, old], {})}
+    assert "Most Transactions" not in recs and "Fewest Transactions" not in recs
+
+
 def test_cookie_holder_count_is_exact_in_incomplete_season():
     from lib.teams import compute_profiles
     s = matchup_season(2025)
