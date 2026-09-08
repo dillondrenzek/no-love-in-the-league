@@ -1,0 +1,37 @@
+{%- comment -%}
+Transaction History heatmap. Param: data (site.data.owners.tx_heatmap) with
+{years:[..], max, rows:[{id, name, total, cells:[{year, count, color}]}]}.
+Owners down the left, season across the top; each cell is shaded by how many
+waiver/free-agent moves (adds + drops) that owner made that year. A blank cell
+means no moves (or they didn't play that year).
+{%- endcomment -%}
+{%- assign hm = include.data -%}
+{%- if hm and hm.rows and hm.rows.size > 0 -%}
+<div class="table-scroll">
+<table class="heatmap">
+  <thead>
+    <tr>
+      <th>Owner</th>
+      {%- for y in hm.years %}<th class="num">{{ y }}</th>{%- endfor %}
+      <th class="num">Tx/yr</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in hm.rows %}
+    <tr>
+      <td>
+        {%- if r.id -%}<a href="{{ '/teams/' | append: r.id | append: '/' | relative_url }}">{{ r.name }}</a>
+        {%- else -%}{{ r.name }}{%- endif -%}
+      </td>
+      {%- for c in r.cells %}
+      <td class="num heatmap__cell"{% if c.color %} style="background: {{ c.color }}"{% endif %}>{% if c.count > 0 %}{{ c.count }}{% endif %}</td>
+      {%- endfor %}
+      <td class="num"><strong>{{ r.tx_per_year }}</strong></td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+{%- else -%}
+<p class="empty-state">No transaction history on record yet.</p>
+{%- endif -%}

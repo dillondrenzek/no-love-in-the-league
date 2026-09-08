@@ -60,25 +60,13 @@ records:
   opp_owner_name: null
   opp_team: null
 - category: Most Transactions
-  value: '314'
+  value: '1005'
   sub_value: null
   season: null
   week: null
-  holder: Trevor
-  owner_id: purpsworth
-  owner_name: Trevor
-  team: null
-  opp_owner_id: null
-  opp_owner_name: null
-  opp_team: null
-- category: Fewest Transactions
-  value: '61'
-  sub_value: null
-  season: null
-  week: null
-  holder: Grant
-  owner_id: gganoom
-  owner_name: Grant
+  holder: Jack
+  owner_id: jackperkins74
+  owner_name: Jack
   team: null
   opp_owner_id: null
   opp_owner_name: null

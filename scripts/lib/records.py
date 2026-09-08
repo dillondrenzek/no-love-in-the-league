@@ -90,10 +90,9 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
         records.append(first_overall)
 
     tx_pool = trade_seasons if trade_seasons is not None else seasons
-    for most in (True, False):
-        rec = _transaction_record(tx_pool, franchises, most)
-        if rec:
-            records.append(rec)
+    most_tx = _transaction_record(tx_pool, franchises, most=True)
+    if most_tx:
+        records.append(most_tx)
     return records
 
 
@@ -137,31 +136,27 @@ def _most_trades(seasons, franchises):
 
 
 def _transaction_totals(seasons, franchises):
-    """{fid: total waiver/FA moves} over seasons whose transactions are known,
-    plus the set of fids with any *unknown* transaction season. An owner in that
-    set has a floor, not an exact total, so they're excluded from the exact
-    all-time records below."""
-    totals, unknown = {}, set()
+    """{fid: total waiver/FA moves} over the seasons whose transactions are known.
+    Transaction data starts in 2018 (older seasons 404 on ESPN), so this is a
+    total over the available years — the accepted baseline for these records."""
+    totals = {}
     for season in seasons:
-        played = {r["id"] for r in get_standings(season, franchises)}
-        if season_transactions_known(season):
-            txmap = season.get("transactions") or {}
-            for fid in played:
-                totals[fid] = totals.get(fid, 0) + (txmap.get(fid) or {}).get("moves", 0)
-        else:
-            unknown |= played
-    return totals, unknown
+        if not season_transactions_known(season):
+            continue
+        txmap = season.get("transactions") or {}
+        for fid in {r["id"] for r in get_standings(season, franchises)}:
+            totals[fid] = totals.get(fid, 0) + (txmap.get(fid) or {}).get("moves", 0)
+    return totals
 
 
 def _transaction_record(seasons, franchises, most):
-    """Most (or least) all-time waiver/FA moves. Only owners whose every played
-    season has known transaction data are eligible, so both ends are exact."""
-    totals, unknown = _transaction_totals(seasons, franchises)
-    eligible = {fid: n for fid, n in totals.items() if fid not in unknown}
-    if not eligible:
+    """Most (or least) waiver/FA moves over the years we have data for (2018+).
+    Every owner with at least one known-transaction season is ranked."""
+    totals = _transaction_totals(seasons, franchises)
+    if not totals:
         return None
     pick = max if most else min
-    fid, n = pick(eligible.items(), key=lambda kv: kv[1])
+    fid, n = pick(totals.items(), key=lambda kv: kv[1])
     name = short_name_of(fid, franchises) if fid in franchises else fid
     return {"category": "Most Transactions" if most else "Fewest Transactions",
             "holder": name, "value": str(n), "season": None, "week": None,

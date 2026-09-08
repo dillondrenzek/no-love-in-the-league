@@ -151,7 +151,7 @@ def test_transactions_aggregate_and_records():
     recs = {r["category"]: r for r in compute_records([s], {})}
     assert recs["Most Transactions"]["value"] == "9"
     assert recs["Most Transactions"]["holder"] == "a"   # owner_id is None w/o a franchise map
-    assert recs["Fewest Transactions"]["value"] == "0"
+    assert "Fewest Transactions" not in recs
 
 
 def test_transactions_tx_per_year_averages_over_known_seasons():
@@ -166,18 +166,39 @@ def test_transactions_tx_per_year_averages_over_known_seasons():
     assert profiles["a"]["tx_per_year"] == 7.0     # 14 moves / 2 known seasons
 
 
-def test_transactions_unknown_season_excludes_from_exact_records():
+def test_transactions_records_rank_over_available_years():
     from lib.teams import compute_profiles
     known = matchup_season(2025); known["transactions_known"] = True
     known["transactions"] = {"a": {"adds": 2, "drops": 1, "moves": 3},
                              "b": {"adds": 8, "drops": 8, "moves": 16}}
-    old = matchup_season(2014)                     # no tx data -> unknown for all
+    old = matchup_season(2014)                     # no tx data (pre-2018 baseline)
     profiles = compute_profiles([known, old], {})
-    assert profiles["a"]["transactions_known"] is False   # played an unknown season
+    # The unknown pre-2018 season doesn't feed the rate or the record.
     assert profiles["a"]["tx_seasons"] == 1 and profiles["a"]["tx_per_year"] == 3.0
-    # Every owner has an unknown season, so no one is exact -> no record emitted.
-    recs = {r["category"] for r in compute_records([known, old], {})}
-    assert "Most Transactions" not in recs and "Fewest Transactions" not in recs
+    # Records rank everyone with known data, even though all played an unknown year.
+    recs = {r["category"]: r for r in compute_records([known, old], {})}
+    assert recs["Most Transactions"]["holder"] == "b" and recs["Most Transactions"]["value"] == "16"
+    assert "Fewest Transactions" not in recs
+
+
+def test_season_row_tx_and_tx_heatmap():
+    from lib.teams import compute_profiles
+    from generate_teams import tx_heatmap, _season_rows
+    known = matchup_season(2025); known["transactions_known"] = True
+    known["transactions"] = {"a": {"adds": 3, "drops": 2, "moves": 5},
+                             "b": {"adds": 1, "drops": 0, "moves": 1}}  # c,d played, 0 moves
+    old = matchup_season(2024)                     # no tx data for 2024
+    profiles = compute_profiles([known, old], {})
+    # Per-season rows: known year carries the count (0 is real), unknown year -> None.
+    a_rows = {r["year"]: r["tx"] for r in _season_rows(profiles["a"])}
+    assert a_rows[2025] == 5 and a_rows[2024] is None
+    c_rows = {r["year"]: r["tx"] for r in _season_rows(profiles["c"])}
+    assert c_rows[2025] == 0                        # played 2025, made no moves
+    # Heatmap: only 2025 is a column; row totals + cell counts line up.
+    hm = tx_heatmap(profiles, roster={"a", "b", "c", "d"})
+    assert hm["years"] == [2025] and hm["max"] == 5
+    a_row = next(r for r in hm["rows"] if r["name"].startswith("a") or r["id"] == "a")
+    assert a_row["total"] == 5 and a_row["cells"][0]["count"] == 5
 
 
 def test_cookie_holder_count_is_exact_in_incomplete_season():

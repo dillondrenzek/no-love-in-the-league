@@ -30,6 +30,7 @@ def _blank(fid, franchises):
         "transactions": 0,                              # waiver/FA moves (adds+drops) over known-tx seasons
         "tx_seasons": 0,                                # seasons played whose transactions are known
         "transactions_known": True,                     # False if any season they played has no tx data
+        "tx_year": {},                                  # year -> moves, only for seasons with known tx data
         "keeper_log": [],                               # players kept, per season
         "h2h": {},                                      # opp id -> {w,l,t,pf,pa}
     }
@@ -156,8 +157,10 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
             txmap = season.get("transactions") or {}
             for fid in played:
                 p = prof(fid)
+                moves = (txmap.get(fid) or {}).get("moves", 0)
                 p["tx_seasons"] += 1
-                p["transactions"] += (txmap.get(fid) or {}).get("moves", 0)
+                p["transactions"] += moves
+                p["tx_year"][year] = moves      # 0 is a real value (played, no moves)
         else:
             for fid in played:
                 prof(fid)["transactions_known"] = False
@@ -202,6 +205,9 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
         p["seasons_count"] = len(p["seasons"])
         # Transactions per year, over the seasons whose activity we actually have.
         p["tx_per_year"] = round(p["transactions"] / p["tx_seasons"], 1) if p["tx_seasons"] else 0.0
+        # Tag each season row with that year's move count (None = no data → "—").
+        for s in p["seasons"]:
+            s["tx"] = p["tx_year"].get(s["year"])
         p["trade_log"].sort(key=lambda t: (t["year"], t["week"]), reverse=True)
         p["keeper_log"].sort(key=lambda k: (-k["year"], k["round"] or 0))
         p["reg"]["win_pct"] = win_pct(p["reg"]["w"], p["reg"]["l"], p["reg"]["t"])
