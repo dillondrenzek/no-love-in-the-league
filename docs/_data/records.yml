@@ -11,6 +11,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Standings & Titles
 - category: Worst Regular-Season Record
   value: 1-12
   sub_value: null
@@ -23,6 +24,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Standings & Titles
 - category: Most Championships
   value: '3'
   sub_value: null
@@ -35,6 +37,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Standings & Titles
 - category: Most Trades
   value: '15'
   sub_value: null
@@ -47,6 +50,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Roster & Draft
 - category: Most Times Drafting 1.01
   value: '4'
   sub_value: null
@@ -59,6 +63,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Roster & Draft
 - category: Most Transactions
   value: '1005'
   sub_value: null
@@ -71,6 +76,20 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Roster & Draft
+- category: Most Transactions in a Season
+  value: '160'
+  sub_value: null
+  season: 2020
+  week: null
+  holder: Jack
+  owner_id: jackperkins74
+  owner_name: Jack
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
+  section: Roster & Draft
 - category: Most Points in a Week
   value: '184.90'
   sub_value: null
@@ -83,6 +102,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Scoring
 - category: Most Points in a Season
   value: '1890.90'
   sub_value: null
@@ -95,6 +115,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Scoring
 - category: Fewest Points in a Week
   value: '19.30'
   sub_value: null
@@ -107,6 +128,7 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
+  section: Scoring
 - category: Biggest Blowout
   value: '126.10'
   sub_value: 184.9–58.8
@@ -119,6 +141,7 @@ records:
   opp_owner_id: shawne2520997
   opp_owner_name: Shawnee
   opp_team: Save a horse, Ride the Cowboys
+  section: Scoring
 - category: Highest Combined Score
   value: '330.10'
   sub_value: 184.0–146.1
@@ -131,3 +154,4 @@ records:
   opp_owner_id: gganoom
   opp_owner_name: Grant
   opp_team: KillDilly Elegy
+  section: Scoring

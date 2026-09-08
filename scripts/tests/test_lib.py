@@ -181,6 +181,22 @@ def test_transactions_records_rank_over_available_years():
     assert "Fewest Transactions" not in recs
 
 
+def test_most_transactions_in_a_season_record_and_sections():
+    from lib.records import SEC_MOVES, SEC_STANDINGS, SEC_SCORING
+    s1 = matchup_season(2024); s1["transactions_known"] = True
+    s1["transactions"] = {"a": {"adds": 5, "drops": 4, "moves": 9}}
+    s2 = matchup_season(2025); s2["transactions_known"] = True
+    s2["transactions"] = {"a": {"adds": 10, "drops": 8, "moves": 18},   # single-season high
+                          "b": {"adds": 2, "drops": 2, "moves": 4}}
+    recs = {r["category"]: r for r in compute_records([s1, s2], {})}
+    hi = recs["Most Transactions in a Season"]
+    assert hi["value"] == "18" and hi["holder"] == "a" and hi["season"] == 2025
+    # Every record is tagged with one of the three known sections.
+    valid = {SEC_MOVES, SEC_STANDINGS, SEC_SCORING}
+    assert all(r["section"] in valid for r in recs.values())
+    assert hi["section"] == SEC_MOVES
+
+
 def test_season_row_tx_and_tx_heatmap():
     from lib.teams import compute_profiles
     from generate_teams import tx_heatmap, _season_rows

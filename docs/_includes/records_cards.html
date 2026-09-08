@@ -1,39 +1,29 @@
 {%- comment -%}
-Record book as a vertical list: each row is the record's name (h3) on the left
-and a centered info card on the right. Reads site.data.records.records.
+Record book grouped into sections. Each record carries a `section`; we render a
+heading per section (in a fixed order), then its records as rows — the record's
+name (h3) on the left and a centered info card on the right. Any record whose
+section isn't in the list below falls through to a catch-all "Other" group so
+nothing is ever silently dropped. Reads site.data.records.records.
 {%- endcomment -%}
+{%- assign section_order = "Standings & Titles,Scoring,Roster & Draft" | split: "," -%}
+{%- assign shown = 0 -%}
+{%- for sec in section_order %}
+  {%- assign rows = site.data.records.records | where: "section", sec -%}
+  {%- if rows.size > 0 %}
+<h2 class="records-section">{{ sec }}</h2>
+<div class="records-list">
+  {%- for r in rows %}{% include record_card.html r=r %}{%- endfor %}
+</div>
+  {%- assign shown = shown | plus: rows.size -%}
+  {%- endif %}
+{%- endfor %}
+{%- assign total = site.data.records.records | size -%}
+{%- if shown < total %}
+{%- assign placed = "Standings & Titles,Scoring,Roster & Draft" | split: "," -%}
+<h2 class="records-section">Other</h2>
 <div class="records-list">
   {%- for r in site.data.records.records %}
-  <section class="record-row">
-    <h3 class="record-row__name">{{ r.category }}</h3>
-    <article class="record-card">
-      <div class="record-card__value">{{ r.value }}</div>
-      {%- if r.sub_value %}
-      <div class="record-card__subvalue">{{ r.sub_value }}</div>
-      {%- endif %}
-      <div class="record-card__owner">
-        {%- if r.owner_id -%}
-        <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.owner_name }}</a>
-        {%- else -%}{{ r.owner_name | default: r.holder }}{%- endif -%}
-      </div>
-      {%- if r.team %}
-      <div class="record-card__team">{{ r.team }}</div>
-      {%- endif %}
-      {%- if r.opp_owner_name %}
-      <div class="record-card__opponent">
-        vs
-        {%- if r.opp_owner_id %}
-        <a href="{{ '/teams/' | append: r.opp_owner_id | append: '/' | relative_url }}">{{ r.opp_owner_name }}</a>
-        {%- else %} {{ r.opp_owner_name }}{%- endif %}
-        {%- if r.opp_team %} <span class="record-card__opp-team">({{ r.opp_team }})</span>{%- endif %}
-      </div>
-      {%- endif %}
-      {%- if r.season %}
-      <div class="record-card__meta">
-        <a href="{{ '/seasons/' | append: r.season | append: '/' | relative_url }}">{{ r.season }}{% if r.week %} · Week {{ r.week }}{% endif %}</a>
-      </div>
-      {%- endif %}
-    </article>
-  </section>
+  {%- unless placed contains r.section %}{% include record_card.html r=r %}{%- endunless %}
   {%- endfor %}
 </div>
+{%- endif %}

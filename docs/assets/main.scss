@@ -731,6 +731,13 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 .season-section > h2 { margin-top: 0; }
 
 // ---- Record book (two-up grid, name above each card) ------------------------
+.records-section {
+  margin: 1.8em 0 0;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--rule-strong);
+  font-size: 1.35rem;
+}
+.records-section + .records-list { margin-top: 1.1em; }
 .records-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
