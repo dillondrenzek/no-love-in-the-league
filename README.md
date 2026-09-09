@@ -150,6 +150,29 @@ scripts/update_season.sh 2026         # a specific season
 Then review with `git diff` and push; GitHub Pages redeploys automatically.
 About once a week during the season is plenty.
 
+### Automated updates (GitHub Actions)
+
+Two in-season workflows keep the site fresh without running anything by hand
+(both also have a **Run workflow** button for manual triggers):
+
+- **`.github/workflows/daily-update.yml`** — every morning Sept–Jan, imports the
+  current season, rebuilds, and commits `data/` + `docs/` to `main` (Pages
+  redeploys). No-ops with no commit when nothing changed.
+- **`.github/workflows/weekly-projection-snapshot.yml`** — Thursday afternoons,
+  runs `scripts/snapshot_projections.py` to save that week's pre-game projection
+  "line" into `data/projections/<year>-week-<nn>.yml` (write-once per week).
+
+**Required repository secrets** (Settings → Secrets and variables → Actions):
+
+- `ESPN_S2`, `ESPN_SWID` — your two ESPN cookie values (same as `.espn-cookies`).
+  These **expire periodically**; when a run fails auth, refresh them and re-run.
+- `CLI_REPO_TOKEN` — a token with **read** access to the private
+  `espn-fantasy-cli` repo, so CI can `pip install` the client. A fine-grained PAT
+  scoped to that one repo (Contents: read) is enough.
+
+Cookies are written to a git-ignored `.espn-cookies` at runtime and removed
+before committing. Both jobs share a concurrency group so they never overlap.
+
 **Lifecycle state.** Every season carries a `state:` (`preseason → pre_draft →
 drafting → season → playoffs → complete`) that the whole site renders off — see
 [design/season-state.md](design/season-state.md). The importer detects the state

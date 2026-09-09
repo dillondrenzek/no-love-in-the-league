@@ -242,6 +242,35 @@ If the log shows an unlabeled `stat #N` / `slot #N`, add the id to the maps in
 `settings.yml` stores raw ids. `scripts/inspect_scoring.py` prints the same
 history to the terminal without touching any files, handy for a quick check.
 
+## The ESPN CLI
+
+Raw data originates from **`the-league-espn-api`** (repo `espn-fantasy-cli`,
+reference at dillondrenzek.github.io/espn-fantasy-cli), but the site depends on it
+**only at import time**. `scripts/import_espn.py` (and `import_settings.py`) call
+the client to write `data/seasons/*.yml` and `data/settings.yml`; after that the
+data is committed YAML. `build.py` never imports the client — the site builds
+and deploys with no dependency on the tool.
+
+Everything the site *shows* about that data — all-time records, standings,
+head-to-head, the record book, heatmaps — is **computed by the site** in
+`scripts/lib/` from the stored YAML, then has league-specific overrides layered on
+(co-champions and half-titles, "meaningless" consolation games, Shiva/Sacko
+naming, season-lifecycle gating).
+
+The CLI *also* ships league-agnostic multi-year analytics as views —
+`franchises` (career records), `h2h`, `records` — computed from its own raw data,
+usable by any multi-year ESPN league. The site does **not** consume these at build
+time; it recomputes equivalent numbers itself so the build stays dependency-free
+(the tool's neutral output also can't express our overrides without extra work).
+
+Division of responsibility: **the CLI owns facts that are true for any league;
+the site owns our league's rulings and how they're presented.** The going-forward
+pattern is to add an analytic as a CLI view first (the reusable artifact), then
+decide whether to consume it. Consuming a view at build time would make the CLI a
+build-time dependency — hold that line until there's a strong reason, and prefer
+consuming at the import boundary (which already depends on the CLI) so the build
+stays pure.
+
 ## Conventions
 
 - Franchise `id`s are lowercase, stable, and never reused. Add `aliases` rather
