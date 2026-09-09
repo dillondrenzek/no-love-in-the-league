@@ -52,6 +52,39 @@ def load_season_notes(data_dir=DATA_DIR):
     return {}
 
 
+def load_projections(year, franchises, data_dir=DATA_DIR):
+    """Pre-game projection snapshots for a season:
+    {week: {"captured_at": <iso str or None>, "proj": {fid: projected}}}.
+
+    Reads data/projections/<year>-week-<nn>.yml (written by
+    scripts/snapshot_projections.py), keyed by owner SWID, and re-keys each team's
+    projected total to its franchise id via franchises' `espn_swid`. Empty when no
+    snapshots exist yet — the projection section simply doesn't render.
+    """
+    swid_to_fid = {}
+    for fid, f in (franchises or {}).items():
+        swid = (f or {}).get("espn_swid")
+        if swid:
+            swid_to_fid[swid.strip().upper()] = fid
+    out = {}
+    pdir = Path(data_dir) / "projections"
+    if not pdir.is_dir():
+        return out
+    for path in sorted(pdir.glob(f"{year}-week-*.yml")):
+        doc = _read_yaml(path) or {}
+        week = doc.get("week")
+        if week is None:
+            continue
+        wk_map = {}
+        for e in doc.get("projections") or []:
+            fid = swid_to_fid.get((e.get("manager_id") or "").strip().upper())
+            if fid and isinstance(e.get("projected"), (int, float)):
+                wk_map[fid] = round(float(e["projected"]), 1)
+        if wk_map:
+            out[week] = {"captured_at": doc.get("captured_at"), "proj": wk_map}
+    return out
+
+
 def load_settings(data_dir=DATA_DIR):
     """Per-season ESPN scoring/roster settings from data/settings.yml (written by
     scripts/import_settings.py). Returns the seasons list, or [] when the file was

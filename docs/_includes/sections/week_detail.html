@@ -28,6 +28,43 @@ complete week. The AI recap lives on the page, below this include.
   {%- endfor %}
 </div>
 
+{%- comment -%} ESPN projection line + accuracy (below the scoreboard). Green
+when the projection called the winner, red on an upset; neutral until the week
+is complete. Structured so a parallel prediction source (Claude's picks) can
+render the same way later. {%- endcomment -%}
+{%- if wk.projections and wk.projections.size > 0 -%}
+<section class="proj">
+  <h3 class="proj__title">ESPN Projections</h3>
+  <table class="proj-table">
+    <thead>
+      <tr><th>Projected line</th><th class="num">Projection</th><th>Call</th></tr>
+    </thead>
+    <tbody>
+      {%- for p in wk.projections %}
+      <tr class="proj-row{% if p.result == 'hit' %} proj-row--hit{% elsif p.result == 'miss' %} proj-row--miss{% endif %}">
+        <td>
+          {%- if p.pickem -%}<span class="muted">Pick’em</span>
+          {%- else -%}
+          <strong class="proj-fav">{{ p.fav_team }}</strong>
+          <span class="proj-spread">−{{ p.spread }}</span>
+          <span class="proj-under"><span class="proj-over">over</span><span class="proj-dog">{{ p.dog_team }}</span></span>
+          {%- endif -%}
+        </td>
+        <td class="num">{{ p.fav_proj }} – {{ p.dog_proj }}</td>
+        <td>
+          {%- if p.result == 'hit' %}<span class="proj-badge proj-badge--hit">Called it</span>
+          {%- elsif p.result == 'miss' %}<span class="proj-badge proj-badge--miss">Upset</span>
+          {%- elsif p.result == 'push' %}<span class="proj-badge">Push</span>
+          {%- else %}<span class="proj-badge">Undecided</span>{%- endif -%}
+        </td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+  {%- if wk.projected_at %}<p class="proj__caption">Captured {{ wk.projected_at }}, before kickoff</p>{% endif -%}
+</section>
+{%- endif -%}
+
 {%- if wk.highlights and wk.highlights.size > 0 -%}
 <div class="highlights">
   {%- for h in wk.highlights %}
