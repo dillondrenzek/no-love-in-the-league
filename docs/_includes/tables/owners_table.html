@@ -1,6 +1,6 @@
 {%- comment -%}
 Owners summary table. Param: rows = a list of owner records from
-site.data.owners (see scripts/generate_teams.py -> owners.yml).
+site.data.owners (see scripts/generate_owners.py -> owners.yml).
 {%- endcomment -%}
 <div class="table-scroll">
 <table>
@@ -22,11 +22,11 @@ site.data.owners (see scripts/generate_teams.py -> owners.yml).
       <td><a href="{{ '/teams/' | append: o.id | append: '/' | relative_url }}">{{ o.name }}</a></td>
       <td class="num">{{ o.seasons }}</td>
       <td class="num">{{ o.record }}</td>
-      <td class="num">{% include chip.html text=o.win_pct bg=o.win_color %}</td>
+      <td class="num">{% include bits/chip.html text=o.win_pct bg=o.win_color %}</td>
       <td class="num">{% if o.titles == "0" %}—{% else %}{{ o.titles }}{% endif %}</td>
       <td class="num">{% if o.sackos > 0 %}{{ o.sackos }}{% else %}—{% endif %}</td>
       <td class="num">{% if o.trades > 0 %}{{ o.trades }}{% else %}—{% endif %}</td>
-      <td>{% include best_finish.html bf=o.best_finish %}</td>
+      <td>{% include bits/best_finish.html bf=o.best_finish %}</td>
     </tr>
     {%- endfor %}
   </tbody>

@@ -1,0 +1,12 @@
+{%- comment -%}
+Full-width Draft-order section for a season page. Param: d (a seasons.detail
+record). Shows the keeper column when the season has keepers. Self-contained;
+the caller decides whether to show it.
+{%- endcomment -%}
+{%- assign d = include.d -%}
+{%- assign show_keeper = false -%}
+{%- if d.keepers and d.keepers.size > 0 %}{% assign show_keeper = true %}{% endif -%}
+<section class="season-section" id="draft">
+<h2>Draft order</h2>
+{% include tables/draft_table.html rows=d.draft_order show_keeper=show_keeper %}
+</section>

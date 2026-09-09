@@ -3,12 +3,12 @@
 
   docs/_data/owners.yml          - owners-index rows (rendered by docs/teams/index.md)
   docs/_data/owner_profiles.yml  - per-owner profile data, keyed by franchise id
-  docs/teams/<id>.md             - a stub page that includes _includes/owner_profile.html
+  docs/teams/<id>.md             - a stub page that includes _includes/sections/owner_profile.html
 
 Python computes every display value (records, chip colors, tags, honors, best
 finish); the Liquid templates only assemble markup.
 
-    .venv/bin/python scripts/generate_teams.py
+    .venv/bin/python scripts/generate_owners.py
 """
 
 from pathlib import Path
@@ -17,7 +17,7 @@ import yaml
 
 from lib.data import load_franchises, load_seasons, short_name_of
 from lib.teams import compute_profiles, empty_profile, win_pct, rec_str, fmt_titles, split_titles
-from lib.rulings import load_overrides
+from lib.overrides import load_overrides
 from lib.render import warm_heat, heat_color
 
 ROOT = Path(__file__).resolve().parent.parent

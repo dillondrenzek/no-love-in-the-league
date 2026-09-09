@@ -4,18 +4,18 @@ head-to-head table. Param: p (a site.data.owner_profiles record). The name +
 nickname header is rendered by the `owner` layout.
 {%- endcomment -%}
 {%- assign p = include.p -%}
-{% include resume_card.html p=p %}
+{% include sections/resume_card.html p=p %}
 
 <h2>Season by season</h2>
-{% include owner_seasons_table.html rows=p.seasons %}
+{% include tables/owner_seasons_table.html rows=p.seasons %}
 
 <h2>Head-to-head</h2>
-{% include h2h_table.html rows=p.h2h %}
+{% include tables/h2h_table.html rows=p.h2h %}
 
 <h2>Trades</h2>
-{% include owner_trades.html trades=p.trades known=p.trades_known %}
+{% include sections/owner_trades.html trades=p.trades known=p.trades_known %}
 
 {%- if p.keepers and p.keepers.size > 0 %}
 <h2>Keepers</h2>
-{% include owner_keepers.html rows=p.keepers %}
+{% include sections/owner_keepers.html rows=p.keepers %}
 {%- endif %}

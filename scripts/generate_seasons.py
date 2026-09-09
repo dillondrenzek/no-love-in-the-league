@@ -19,10 +19,11 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons, name_of, short_name_of, complete_weeks
+from lib.data import (load_franchises, load_seasons, load_season_notes,
+                      name_of, short_name_of, complete_weeks)
 from lib.state import state_of, is_in_progress
-from lib.rulings import load_overrides
-from generate_standings import season_rows, load_season_notes
+from lib.overrides import load_overrides
+from lib.seasons import season_rows
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "seasons"

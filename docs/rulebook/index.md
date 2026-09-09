@@ -16,7 +16,7 @@ _House rules — the things we do that [ESPN](https://fantasy.espn.com/football/
 
 ## Scoring & rosters
 
-{% include current_settings.html %}
+{% include sections/current_settings.html %}
 
 ## Keepers
 
@@ -81,4 +81,4 @@ _You guys **aren't** paying money every year?_
 
 _History of rule changes, pulled from ESPN each offseason._
 
-{% include rule_changes.html %}
+{% include sections/rule_changes.html %}

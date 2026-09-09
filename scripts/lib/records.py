@@ -7,7 +7,7 @@ Two kinds of records:
   - Score-based (available once seasons have game scores): most points in a
     week, biggest blowout, etc. Computed from matchups when present.
 
-Meaningless final-week consolation games (see lib/rulings) are excluded from the
+Meaningless final-week consolation games (see lib/overrides) are excluded from the
 score records. Co-champions each count as half a title.
 
 `compute_records` returns whichever are available, so the record book grows
@@ -17,7 +17,7 @@ automatically as richer data (scores) is added.
 from .data import (name_of, short_name_of, season_trades_complete,
                    season_transactions_known, countable_matchups)
 from .standings import get_standings, parse_record
-from .rulings import co_champions, meaningless_keys, matchup_key
+from .overrides import co_champions, meaningless_keys, matchup_key
 
 # Record-book sections, in display order. Each record carries a `section` so the
 # records page can group the cards under headings.

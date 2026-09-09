@@ -16,7 +16,7 @@ build scripts compute standings, records, and owner stats from those.
 
 - `data/seasons/*.yml` — season results (usually written by the importer).
 - `data/franchises.yml` — owners; edit the `name` field freely.
-- `data/overrides.yml` — league rulings (co-champions, double-elim years).
+- `data/overrides.yml` — league decisions ESPN doesn't record (co-champions, double-elim years).
 - `data/season_notes.yml` — the per-year event bullets shown on the History page.
 - `data/seasons/<year>.yml` `draft_order:` — the draft board (franchise ids, 1.01
   first). Locked, hand-maintained data: the importer preserves it verbatim across
@@ -50,14 +50,14 @@ lives in the Liquid templates + includes.
 data/                    <- hand-edited YAML (or importer-written); source of truth
   seasons/2014.yml … 2026.yml   one file per season (matchups + metadata)
   franchises.yml                owner ↔ franchise mapping
-  overrides.yml                 league rulings (co-champions, double-elim years)
+  overrides.yml                 league decisions (co-champions, double-elim years)
   season_notes.yml              per-year event bullets (History)
 
 scripts/
   lib/                      shared, tested pure functions (standings, records, teams, …)
   generate_records.py       record book
   generate_standings.py     per-season standings (History page)
-  generate_teams.py         owner index + per-owner pages
+  generate_owners.py        owner index + per-owner pages
   generate_seasons.py       per-season pages (/seasons/<year>/)
   import_espn.py            pull a season from ESPN
   update_season.sh          weekly: import one season + rebuild
@@ -66,7 +66,8 @@ scripts/
 
 docs/                    <- themeless Jekyll site (GitHub Pages source)
   _layouts/                 default · home · page · owner · season
-  _includes/                components + compositions + chrome (head/header/footer)
+  _includes/                bits/ (leaf primitives) · tables/ (shared tables) ·
+                            sections/ (full-width page blocks) · chrome (head/header/footer)
   _data/*.yml               generated — never hand-edit
   assets/main.scss          one stylesheet (:root color tokens, .num numeric cells)
   index.md · history/ · records/ · teams/ · rulebook/ · feedback/   pages

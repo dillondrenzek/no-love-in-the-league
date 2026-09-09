@@ -10,7 +10,7 @@ main() function, then add it to GENERATORS below.
 
 import generate_records
 import generate_standings
-import generate_teams
+import generate_owners
 import generate_seasons
 import generate_rules
 import generate_weeks
@@ -18,7 +18,7 @@ import generate_weeks
 GENERATORS = [
     generate_records,
     generate_standings,
-    generate_teams,
+    generate_owners,
     generate_seasons,
     generate_rules,
     generate_weeks,

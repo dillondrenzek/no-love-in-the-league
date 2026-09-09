@@ -14,7 +14,7 @@ win_color, avg_pf, avg_pa}).
     <tr>
       <td><a href="{{ '/teams/' | append: h.opp_id | append: '/' | relative_url }}">{{ h.opp_short }}</a></td>
       <td class="num">{{ h.record }}</td>
-      <td class="num">{% include chip.html text=h.win_pct bg=h.win_color %}</td>
+      <td class="num">{% include bits/chip.html text=h.win_pct bg=h.win_color %}</td>
       <td class="num">{{ h.avg_pf }}</td>
       <td class="num">{{ h.avg_pa }}</td>
     </tr>

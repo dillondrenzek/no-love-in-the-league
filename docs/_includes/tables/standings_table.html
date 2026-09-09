@@ -27,11 +27,11 @@ team, owner_id, owner_name, record, tag, pf, pf_color, pa.
         <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.team }}</a>
         {%- if r.owner_name %} <span class="owner-name">{{ r.owner_name }}</span>{% endif -%}
         {%- else -%}{{ r.team }}{%- endif -%}
-        {%- include finish_tag.html tag=r.tag -%}
+        {%- include bits/finish_tag.html tag=r.tag -%}
       </td>
       <td class="num">{{ r.record }}</td>
       {%- if include.points %}
-      <td class="num">{% include chip.html text=r.pf bg=r.pf_color %}</td>
+      <td class="num">{% include bits/chip.html text=r.pf bg=r.pf_color %}</td>
       <td class="num">{{ r.pa }}</td>
       {%- endif %}
     </tr>

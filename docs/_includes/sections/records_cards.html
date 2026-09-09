@@ -12,7 +12,7 @@ nothing is ever silently dropped. Reads site.data.records.records.
   {%- if rows.size > 0 %}
 <h2 class="records-section">{{ sec }}</h2>
 <div class="records-list">
-  {%- for r in rows %}{% include record_card.html r=r %}{%- endfor %}
+  {%- for r in rows %}{% include bits/record_card.html r=r %}{%- endfor %}
 </div>
   {%- assign shown = shown | plus: rows.size -%}
   {%- endif %}
@@ -23,7 +23,7 @@ nothing is ever silently dropped. Reads site.data.records.records.
 <h2 class="records-section">Other</h2>
 <div class="records-list">
   {%- for r in site.data.records.records %}
-  {%- unless placed contains r.section %}{% include record_card.html r=r %}{%- endunless %}
+  {%- unless placed contains r.section %}{% include bits/record_card.html r=r %}{%- endunless %}
   {%- endfor %}
 </div>
 {%- endif %}

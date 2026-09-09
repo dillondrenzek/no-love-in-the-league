@@ -9,6 +9,6 @@ standings table.
     <h3>{{ s.year }}</h3>
     <a href="{{ '/seasons/' | append: s.year | append: '/' | relative_url }}">Go to page</a>
   </div>
-{% include season_notes.html notes=s.notes %}
-{% include standings_table.html rows=s.rows points=s.points %}
+{% include bits/season_notes.html notes=s.notes %}
+{% include tables/standings_table.html rows=s.rows points=s.points %}
 </div>

@@ -9,7 +9,7 @@ week: 1
 <p class="back-link"><a href="{{ '/seasons/2025/' | relative_url }}">← Season 12 · 2025</a></p>
 
 {% assign wk = site.data.weeks["2025-1"] %}
-{% include week_detail.html wk=wk %}
+{% include sections/week_detail.html wk=wk %}
 
 <h2>The Recap</h2>
 

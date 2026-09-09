@@ -3,7 +3,7 @@
 Heat-shaded table cells are the signature of the look: one warm magnitude ramp
 (cream -> gold -> red-orange) drives every colored value — points, win
 percentages, all of it. These functions return hex colors; the templates render
-them as chips inside the cell (see _includes/chip.html). All the color logic
+them as chips inside the cell (see _includes/bits/chip.html). All the color logic
 lives here so every table shades consistently.
 """
 
