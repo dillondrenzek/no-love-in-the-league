@@ -257,6 +257,18 @@ detail:
         - Nico Collins
         - 5.10 pick
         - 9.10 pick
+    - week: 1
+      parties:
+      - owner_id: purpsworth
+        owner_name: Trevor
+        team: I am dead inside
+        gave:
+        - Ashton Jeanty
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mom
+        gave:
+        - Drake London
     keepers:
     - round: 5
       player: Brock Bowers

@@ -12,7 +12,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 120.12
+    home_proj: 115.44
     away_proj: 112.49
   - home_id: gganoom
     home_team: One Big Beautiful Dill
@@ -49,7 +49,7 @@
     live: false
     playoff: false
     home_proj: 114.31
-    away_proj: 120.09
+    away_proj: 119.78
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -73,7 +73,7 @@
     live: false
     playoff: false
     home_proj: 122.37
-    away_proj: 116.97
+    away_proj: 120.63
   highlights: []
 2026-2:
   week: 2

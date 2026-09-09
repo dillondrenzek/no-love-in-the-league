@@ -375,7 +375,7 @@ zachzoske:
     titles: '1'
     sackos: 2
     playoff_apps: 5
-    trades: 15
+    trades: 16
     trades_known: true
     tx_per_year: 114.2
     tx_known: false
@@ -619,6 +619,16 @@ zachzoske:
     avg_pf: 96.0
     avg_pa: 98.9
   trades:
+  - year: 2026
+    week: 1
+    got:
+    - Ashton Jeanty
+    gave:
+    - Drake London
+    with:
+    - id: purpsworth
+      name: Trevor
+      team: I am dead inside
   - year: 2025
     week: 11
     got:
@@ -2143,7 +2153,7 @@ purpsworth:
     titles: '0'
     sackos: 0
     playoff_apps: 4
-    trades: 5
+    trades: 6
     trades_known: false
     tx_per_year: 44.9
     tx_known: true
@@ -2317,6 +2327,16 @@ purpsworth:
     avg_pf: 113.9
     avg_pa: 102.4
   trades:
+  - year: 2026
+    week: 1
+    got:
+    - Drake London
+    gave:
+    - Ashton Jeanty
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mom
   - year: 2024
     week: 0
     got:

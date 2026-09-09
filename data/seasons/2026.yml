@@ -73,12 +73,12 @@ final_standings:
 # `played: false` with no scores. Only complete weeks (all games final)
 # count toward standings/records/H2H.
 matchups:
-  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 120.12, away_proj: 112.49 }
+  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 115.44, away_proj: 112.49 }
   - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 109.55, away_proj: 107.94 }
   - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false, home_proj: 115.23, away_proj: 113.41 }
-  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false, home_proj: 114.31, away_proj: 120.09 }
+  - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false, home_proj: 114.31, away_proj: 119.78 }
   - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 109.91, away_proj: 127.05 }
-  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false, home_proj: 122.37, away_proj: 116.97 }
+  - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false, home_proj: 122.37, away_proj: 120.63 }
   - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -196,6 +196,18 @@ trades:
   - from: shawne2520997
     to: theoceanpulse
     label: 9.04 pick
+- id: 64f2fd97-eec0-4271-b035-f660ea91a959
+  week: 1
+  teams:
+  - purpsworth
+  - zachzoske
+  assets:
+  - from: zachzoske
+    to: purpsworth
+    label: Drake London
+  - from: purpsworth
+    to: zachzoske
+    label: Ashton Jeanty
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
@@ -221,7 +233,7 @@ keepers:
 # Tx/yr rate.
 transactions_known: true
 transactions:
-  jackperkins74: { adds: 11, drops: 8, moves: 19 }
+  jackperkins74: { adds: 12, drops: 9, moves: 21 }
   kevbots22: { adds: 1, drops: 0, moves: 1 }
   lukstein: { adds: 5, drops: 2, moves: 7 }
   purpsworth: { adds: 1, drops: 0, moves: 1 }
@@ -229,4 +241,4 @@ transactions:
   shawne2520997: { adds: 1, drops: 1, moves: 2 }
   sturmanator15: { adds: 1, drops: 0, moves: 1 }
   theoceanpulse: { adds: 1, drops: 0, moves: 1 }
-  zachzoske: { adds: 4, drops: 3, moves: 7 }
+  zachzoske: { adds: 5, drops: 4, moves: 9 }
