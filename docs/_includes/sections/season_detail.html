@@ -1,8 +1,13 @@
 {%- comment -%}
-Season page body — a shared shell that every lifecycle state (d.state) plugs
-sections into. State is internal: it only decides WHICH sections have data to
-show, never the wording. No state is narrated to the reader — the data speaks for
-itself. Sections: standings, weekly recaps, draft order, trades.
+Season page template — the ONE place the season page's layout lives. It decides
+which full-width sections have data to show, renders the jump-nav, and composes
+the self-contained section components (in _includes/sections/season/) in order.
+To reorder or restyle season pages, edit this file — the per-season .md pages
+stay thin and never need touching.
+
+State (d.state) is internal: it only gates WHICH sections appear, never any
+wording — no state is narrated to the reader. Section order below: weekly recaps,
+standings, trades, draft.
 Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- endcomment -%}
 {%- assign d = include.d -%}
@@ -26,7 +31,7 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- if show_draft %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_trades %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 
-{% include season_notes.html notes=d.notes %}
+{% include bits/season_notes.html notes=d.notes %}
 
 {%- comment -%} Jump-nav — only worthwhile with a few sections {%- endcomment -%}
 {%- if section_count >= 2 -%}
@@ -38,41 +43,8 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 </nav>
 {%- endif -%}
 
-{%- comment -%} Weekly recaps — any week pages that exist for this season {%- endcomment -%}
-{%- if has_weeks -%}
-<section class="season-section" id="weekly">
-<ul class="week-links">
-  {%- for p in weekpages %}
-  <li><a href="{{ p.url | relative_url }}">Week {{ p.week }}</a></li>
-  {%- endfor %}
-</ul>
-</section>
-{%- endif -%}
-
-{%- comment -%} Standings — whenever there are rows (real or provisional) {%- endcomment -%}
-{%- if has_rows -%}
-<section class="season-section" id="standings">
-<h2>Standings</h2>
-{% include standings_table.html rows=d.rows points=d.points %}
-</section>
-{%- endif -%}
-
-{%- comment -%} Trades — once the season is live (not during the draft lockdown) {%- endcomment -%}
-{%- if show_trades -%}
-<section class="season-section" id="trades">
-<h2>Trades</h2>
-{% include trades_list.html trades=d.trades %}
-</section>
-{%- endif -%}
-
-
-{%- comment -%} Draft order — wherever the draft is set, except a bare preseason {%- endcomment -%}
-{%- if show_draft -%}
-<section class="season-section" id="draft">
-{%- assign show_keeper = false -%}
-{%- if d.keepers and d.keepers.size > 0 %}{% assign show_keeper = true %}{% endif -%}
-<h2>Draft order</h2>
-{% include draft_table.html rows=d.draft_order show_keeper=show_keeper %}
-</section>
-{%- endif -%}
+{%- if has_weeks %}{% include sections/season/weeks.html pages=weekpages %}{% endif -%}
+{%- if has_rows %}{% include sections/season/standings.html d=d %}{% endif -%}
+{%- if show_trades %}{% include sections/season/trades.html d=d %}{% endif -%}
+{%- if show_draft %}{% include sections/season/draft.html d=d %}{% endif -%}
 

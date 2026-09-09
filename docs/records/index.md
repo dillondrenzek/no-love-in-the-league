@@ -9,4 +9,4 @@ permalink: /records/
 
 The league record book.
 
-{% include records_cards.html %}
+{% include sections/records_cards.html %}

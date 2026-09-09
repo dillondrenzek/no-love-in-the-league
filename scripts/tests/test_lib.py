@@ -17,7 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from lib.standings import get_standings, record_string, parse_record, has_points
 from lib.records import compute_records
 from lib.teams import compute_profiles, rec_str, fmt_titles
-from lib.rulings import meaningless_keys, co_champions
+from lib.overrides import meaningless_keys, co_champions
 
 
 # --- Explicit-standings season (the ESPN-import shape, no scores) ------------
@@ -199,7 +199,7 @@ def test_most_transactions_in_a_season_record_and_sections():
 
 def test_season_row_tx_and_tx_heatmap():
     from lib.teams import compute_profiles
-    from generate_teams import tx_heatmap, _season_rows
+    from generate_owners import tx_heatmap, _season_rows
     known = matchup_season(2025); known["transactions_known"] = True
     known["transactions"] = {"a": {"adds": 3, "drops": 2, "moves": 5},
                              "b": {"adds": 1, "drops": 0, "moves": 1}}  # c,d played, 0 moves

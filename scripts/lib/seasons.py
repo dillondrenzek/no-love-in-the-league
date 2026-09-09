@@ -9,7 +9,7 @@ structure from one place instead of importing it from each other.
 
 from .standings import get_standings, has_points, provisional_standings
 from .render import heat_color
-from .rulings import co_champions
+from .overrides import co_champions
 from .state import state_of
 
 

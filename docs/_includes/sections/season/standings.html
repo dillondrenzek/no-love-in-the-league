@@ -1,0 +1,10 @@
+{%- comment -%}
+Full-width Standings section for a season page. Param: d (a seasons.detail
+record). Self-contained: owns its heading, wrapper, and the standings table.
+The caller (sections/season_detail.html) decides whether to show it.
+{%- endcomment -%}
+{%- assign d = include.d -%}
+<section class="season-section" id="standings">
+<h2>Standings</h2>
+{% include tables/standings_table.html rows=d.rows points=d.points %}
+</section>

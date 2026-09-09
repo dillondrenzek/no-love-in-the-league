@@ -3,7 +3,7 @@
 
 Reads data/settings.yml (written by scripts/import_settings.py), labels the raw
 ESPN ids and diffs consecutive seasons via lib.rules. Rendered by the rulebook
-page through _includes/current_settings.html and _includes/rule_changes.html.
+page through _includes/sections/current_settings.html and _includes/sections/rule_changes.html.
 
 Degrades gracefully: if data/settings.yml is missing (settings never imported),
 writes an empty structure so the build still succeeds and the rulebook simply

@@ -1,0 +1,13 @@
+{%- comment -%}
+Full-width Weekly recaps section for a season page: a link per week page that
+exists for this season. Param: pages (the season's week pages, pre-sorted by
+week). Self-contained; the caller decides whether to show it.
+{%- endcomment -%}
+{%- assign pages = include.pages -%}
+<section class="season-section" id="weekly">
+<ul class="week-links">
+  {%- for p in pages %}
+  <li><a href="{{ p.url | relative_url }}">Week {{ p.week }}</a></li>
+  {%- endfor %}
+</ul>
+</section>

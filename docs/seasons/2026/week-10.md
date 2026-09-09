@@ -7,7 +7,7 @@ season_no: 13
 week: 10
 ---
 {% assign wk = site.data.weeks["2026-10"] %}
-{% include week_detail.html wk=wk %}
+{% include sections/week_detail.html wk=wk %}
 
 {% if wk.state != "complete" %}
 <h2>The Preview</h2>

@@ -1,7 +1,7 @@
-"""League rulings that override or augment the ESPN-imported data.
+"""League overrides that adjust or augment the ESPN-imported data.
 
 Loaded from data/overrides.yml (which the importer never touches), so these
-survive re-imports. Two rulings today:
+survive re-imports. Two overrides today:
 
   - co-champions: a tied championship game ruled a shared title.
   - meaningless games: final-week consolation games between 5th-8th place teams

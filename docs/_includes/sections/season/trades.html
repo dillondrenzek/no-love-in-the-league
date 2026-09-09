@@ -1,0 +1,9 @@
+{%- comment -%}
+Full-width Trades section for a season page. Param: d (a seasons.detail record).
+Self-contained; the caller decides whether to show it.
+{%- endcomment -%}
+{%- assign d = include.d -%}
+<section class="season-section" id="trades">
+<h2>Trades</h2>
+{% include tables/trades_list.html trades=d.trades %}
+</section>

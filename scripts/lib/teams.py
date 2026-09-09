@@ -10,7 +10,7 @@ from .data import (name_of, short_name_of, season_trades_complete,
                    season_transactions_known, countable_matchups)
 from .standings import get_standings, provisional_standings
 from .state import is_in_progress, state_of, state_at_least
-from .rulings import co_champions, meaningless_keys, matchup_key
+from .overrides import co_champions, meaningless_keys, matchup_key
 
 
 def _blank(fid, franchises):

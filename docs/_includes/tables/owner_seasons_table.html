@@ -14,10 +14,10 @@ nil means we have no transaction data for that year (renders "—").
     {%- for s in rows %}
     <tr>
       <td>{{ s.year }}</td>
-      <td>{{ s.team }}{% include finish_tag.html tag=s.tag %}</td>
+      <td>{{ s.team }}{% include bits/finish_tag.html tag=s.tag %}</td>
       <td>{% if s.in_progress %}<span class="muted">—</span>{% else %}{{ s.finish }}{% endif %}</td>
       <td class="num">{{ s.record }}</td>
-      <td class="num">{% if s.pf %}{% include chip.html text=s.pf bg=s.pf_color %}{% else %}—{% endif %}</td>
+      <td class="num">{% if s.pf %}{% include bits/chip.html text=s.pf bg=s.pf_color %}{% else %}—{% endif %}</td>
       <td class="num">{% if s.pa %}{{ s.pa }}{% else %}—{% endif %}</td>
       <td class="num">{% if s.tx == nil %}—{% else %}{{ s.tx }}{% endif %}</td>
     </tr>
