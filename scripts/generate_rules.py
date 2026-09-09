@@ -16,19 +16,11 @@ from pathlib import Path
 
 import yaml
 
+from lib.data import load_settings
 from lib.rules import compute_rules
 
 ROOT = Path(__file__).resolve().parent.parent
-SETTINGS_PATH = ROOT / "data" / "settings.yml"
 OUT_PATH = ROOT / "docs" / "_data" / "rules.yml"
-
-
-def load_settings():
-    if not SETTINGS_PATH.is_file():
-        return []
-    with open(SETTINGS_PATH) as f:
-        data = yaml.safe_load(f) or {}
-    return data.get("seasons") or []
 
 
 def main():

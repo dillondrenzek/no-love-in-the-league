@@ -713,7 +713,7 @@ def test_week_completeness_gates_season_stats():
 
 
 def test_season_rows_provisional_table_for_live_season():
-    from generate_standings import season_rows
+    from lib.seasons import season_rows
     fr = {"a": {"name": "A"}, "b": {"name": "B"}}
     # A live season with no games yet shows a 0-0 table in final_standings order.
     live = {"season": 2026, "state": "season", "teams": {"a": "A", "b": "B"},

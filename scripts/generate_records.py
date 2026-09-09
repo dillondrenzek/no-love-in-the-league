@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Emit docs/_data/records.yml — the league record book.
 
-Rendered by docs/records/index.md via _includes/records_cards.html (or the
-legacy records_table.html). Each row carries: category, value, season, week,
-holder (the display name — team when applicable), and owner_id/owner_name/team
-so the card view can link the person and show the team as context.
+Rendered by docs/records/index.md via _includes/records_cards.html. Each row
+carries: category, value, season, week, holder (the display name — team when
+applicable), section, and owner_id/owner_name/team so the card view can link
+the person and show the team as context.
 
     .venv/bin/python scripts/generate_records.py
 """

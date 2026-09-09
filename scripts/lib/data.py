@@ -43,6 +43,25 @@ def load_seasons(seasons_dir=SEASONS_DIR, include_in_progress=False):
     return seasons
 
 
+def load_season_notes(data_dir=DATA_DIR):
+    """Hand-edited per-year note bullets from data/season_notes.yml:
+    {year: [bullet, ...]}. Empty when the file is absent."""
+    path = Path(data_dir) / "season_notes.yml"
+    if path.exists():
+        return _read_yaml(path) or {}
+    return {}
+
+
+def load_settings(data_dir=DATA_DIR):
+    """Per-season ESPN scoring/roster settings from data/settings.yml (written by
+    scripts/import_settings.py). Returns the seasons list, or [] when the file was
+    never imported so the build still succeeds."""
+    path = Path(data_dir) / "settings.yml"
+    if not path.is_file():
+        return []
+    return (_read_yaml(path) or {}).get("seasons") or []
+
+
 def name_of(franchise_id, franchises):
     """Full display name for a franchise id, falling back to the id itself."""
     f = franchises.get(franchise_id)
