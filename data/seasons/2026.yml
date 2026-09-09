@@ -74,8 +74,8 @@ final_standings:
 # count toward standings/records/H2H.
 matchups:
   - { week:  1, home: alexandra, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 115.44, away_proj: 112.49 }
-  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 109.55, away_proj: 107.94 }
-  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false, home_proj: 115.23, away_proj: 113.41 }
+  - { week:  1, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 112.73, away_proj: 107.94 }
+  - { week:  1, home: kevbots22, away: theoceanpulse, playoff: false, played: false, home_proj: 115.23, away_proj: 112.59 }
   - { week:  1, home: lukstein, away: purpsworth, playoff: false, played: false, home_proj: 114.31, away_proj: 119.78 }
   - { week:  1, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 109.91, away_proj: 127.05 }
   - { week:  1, home: sturmanator15, away: zachzoske, playoff: false, played: false, home_proj: 122.37, away_proj: 120.63 }
@@ -233,6 +233,7 @@ keepers:
 # Tx/yr rate.
 transactions_known: true
 transactions:
+  gganoom: { adds: 1, drops: 0, moves: 1 }
   jackperkins74: { adds: 12, drops: 9, moves: 21 }
   kevbots22: { adds: 1, drops: 0, moves: 1 }
   lukstein: { adds: 5, drops: 2, moves: 7 }

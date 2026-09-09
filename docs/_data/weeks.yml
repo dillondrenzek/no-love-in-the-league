@@ -24,7 +24,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 109.5
+    home_proj: 112.7
     away_proj: 107.9
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -37,7 +37,7 @@
     live: false
     playoff: false
     home_proj: 115.2
-    away_proj: 113.4
+    away_proj: 112.6
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
