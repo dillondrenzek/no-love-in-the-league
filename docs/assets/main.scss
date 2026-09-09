@@ -333,6 +333,56 @@ tbody td a:hover { color: var(--brand); }
 }
 
 // =============================================================================
+// Projection accuracy (ESPN line under the scoreboard; green hit / red miss)
+// =============================================================================
+.proj { margin: 0 0 1.8em; }
+.proj__title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 0.4em;
+}
+.proj__caption {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  color: var(--faint);
+  margin: 0.5em 0 0;
+}
+.proj-table { margin: 0; font-size: 0.8rem; }
+.proj-row { line-height: 1; color: var(--muted); }
+.proj-table thead th { font-size: 0.62rem; }
+.proj-table td:first-child { color: var(--ink); width: auto; white-space: normal; }
+// Both team names read the same (font, size, colour) — only the projected
+// winner is bold, so the line has a gentle rather than shouty hierarchy.
+.proj-fav { color: var(--ink); font-weight: 700; }
+.proj-dog { color: var(--muted); font-weight: 400; margin-left: 6px; }
+.proj-over { color: var(--faint); margin-left: 6px; }   // the connector, kept quiet
+.proj-spread {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--brand);
+  margin-left: 6px;
+}
+// Tint the whole row once the week is graded.
+.proj-row--hit td { background: var(--tag-added-bg); }
+.proj-row--miss td { background: var(--tag-removed-bg); }
+.proj-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 7px;
+  border-radius: 5px;
+  color: var(--muted);
+  background: var(--code-bg);
+}
+.proj-badge--hit { background: var(--tag-added-bg); color: var(--tag-added-ink); }
+.proj-badge--miss { background: var(--tag-removed-bg); color: var(--tag-removed-ink); }
+
+// =============================================================================
 // Week highlights (top / low / blowout / closest)
 // =============================================================================
 .highlights {
@@ -981,6 +1031,10 @@ h4:hover > .heading-anchor,
   .chip { min-width: 3.2em; padding: 2px 7px; }
   .owner-name { font-size: 0.68rem; }
   .tag { font-size: 0.56rem; }
+
+  // Projection line: drop "over <underdog>" to its own line.
+  .proj-under { display: block; }
+  .proj-under .proj-over { margin-left: 0; }
 
   // Roomier tap targets on the hero links
   .hero__links a { padding: 16px 10px; }

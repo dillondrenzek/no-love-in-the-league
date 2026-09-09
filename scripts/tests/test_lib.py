@@ -10,6 +10,7 @@ Uses small in-memory fixtures so it never touches the real data files.
 """
 
 import sys
+import yaml
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -195,6 +196,61 @@ def test_most_transactions_in_a_season_record_and_sections():
     valid = {SEC_MOVES, SEC_STANDINGS, SEC_SCORING}
     assert all(r["section"] in valid for r in recs.values())
     assert hi["section"] == SEC_MOVES
+
+
+def test_projection_report_line_and_calls():
+    from lib.weeks import _projection_report
+    s = matchup_season(2026)      # complete: wk1 a>b (100-90), d>c (120-80)
+    wk_proj = {"a": 120.0, "b": 110.0, "c": 130.0, "d": 100.0}
+    rows = {r["fav_team"]: r for r in _projection_report(s, 1, {}, wk_proj)}
+    # a favored by 10 and a won -> hit; c favored by 30 but d won -> miss (upset).
+    assert rows["Alpha Cats"]["spread"] == 10.0
+    assert rows["Alpha Cats"]["decided"] is True and rows["Alpha Cats"]["result"] == "hit"
+    assert rows["Charlie Birds"]["spread"] == 30.0 and rows["Charlie Birds"]["result"] == "miss"
+
+
+def test_projection_report_pickem_missing_and_playoff():
+    from lib.weeks import _projection_report
+    s = matchup_season(2026)
+    # Equal projections -> pick'em, no call even when decided.
+    pk = _projection_report(s, 1, {}, {"a": 100.0, "b": 100.0})
+    assert len(pk) == 1 and pk[0]["pickem"] is True and pk[0]["result"] is None
+    # A matchup missing one team's projection is skipped entirely.
+    assert _projection_report(s, 1, {}, {"a": 120.0}) == []
+    # Playoff games never get a projection row.
+    po = {"season": 2026, "teams": {"a": "A", "b": "B"},
+          "matchups": [{"week": 1, "home": "a", "away": "b",
+                        "home_score": 100, "away_score": 90, "playoff": True}]}
+    assert _projection_report(po, 1, {}, {"a": 120.0, "b": 110.0}) == []
+
+
+def test_projection_report_pending_before_final():
+    from lib.weeks import _projection_report
+    live = {"season": 2026, "teams": {"a": "A", "b": "B"},
+            "matchups": [{"week": 1, "home": "a", "away": "b",
+                          "playoff": False, "played": False}]}
+    rows = _projection_report(live, 1, {}, {"a": 120.0, "b": 110.0})
+    assert rows[0]["decided"] is False and rows[0]["result"] is None
+    assert rows[0]["spread"] == 10.0 and rows[0]["fav_team"] == "A"
+
+
+def test_load_projections_maps_swid_to_fid():
+    import os
+    import tempfile
+    from lib.data import load_projections
+    fr = {"jack": {"id": "jack", "espn_swid": "{ABC}"},
+          "zach": {"id": "zach", "espn_swid": "{def}"}}   # mixed case on purpose
+    with tempfile.TemporaryDirectory() as d:
+        pdir = os.path.join(d, "projections")
+        os.makedirs(pdir)
+        with open(os.path.join(pdir, "2026-week-03.yml"), "w") as f:
+            yaml.safe_dump({"season": 2026, "week": 3, "projections": [
+                {"manager_id": "{abc}", "projected": 120.4},   # normalizes to jack
+                {"manager_id": "{DEF}", "projected": 110.0},   # normalizes to zach
+                {"manager_id": "{ZZZ}", "projected": 99.0},    # unknown -> dropped
+            ]}, f)
+        out = load_projections(2026, fr, data_dir=d)
+    assert out == {3: {"captured_at": None, "proj": {"jack": 120.4, "zach": 110.0}}}
 
 
 def test_season_row_tx_and_tx_heatmap():
