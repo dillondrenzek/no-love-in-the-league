@@ -169,7 +169,9 @@ h3 {
   color: #333;
 }
 
-// ---- Tables (the heart of the site) ----------------------------------------
+// =============================================================================
+// Tables — shared base (chips, heatmaps, scoreboards build on this)
+// =============================================================================
 table {
   width: 100%;
   border-collapse: collapse;
@@ -225,7 +227,9 @@ th.num { color: var(--muted); font-size: 0.68rem; }
 tbody td a { font-weight: 600; color: var(--ink); }
 tbody td a:hover { color: var(--brand); }
 
-// ---- Value chips (heat-shaded pills inside a cell) --------------------------
+// =============================================================================
+// Value chips (heat-shaded pills)
+// =============================================================================
 // The shade is precomputed in lib/render.py; dark text keeps its contrast
 // across the cream→red-orange range.
 .chip {
@@ -240,6 +244,9 @@ tbody td a:hover { color: var(--brand); }
   text-align: right;
 }
 
+// =============================================================================
+// Heatmaps (draft order + transactions)
+// =============================================================================
 // Draft Order History heatmap: owners down the left, draft slot across the top,
 // each cell shaded by frequency (color comes inline from the generator).
 .heatmap { border-collapse: separate; border-spacing: 2px; }
@@ -255,6 +262,9 @@ tbody td a:hover { color: var(--brand); }
   min-width: 2.1em;
   border-radius: 5px;
 }
+// =============================================================================
+// Weekly scoreboard (matchup cards)
+// =============================================================================
 // Weekly scoreboard: one card per matchup, big bold scores. Full width on small
 // screens, two-up (half width) on larger ones.
 .scoreboard {
@@ -322,6 +332,9 @@ tbody td a:hover { color: var(--brand); }
   vertical-align: 1px;
 }
 
+// =============================================================================
+// Week highlights (top / low / blowout / closest)
+// =============================================================================
 .highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -340,6 +353,9 @@ tbody td a:hover { color: var(--brand); }
 .highlight__team { font-size: 0.8rem; color: var(--muted); }
 .highlight__sub { font-size: 0.72rem; color: var(--faint); margin-top: 2px; }
 
+// =============================================================================
+// Week navigation + week links
+// =============================================================================
 // Week navigation bar on a week page (Season home + every week, current marked).
 .week-nav {
   display: flex;
@@ -383,6 +399,9 @@ tbody td a:hover { color: var(--brand); }
   font-size: 0.8rem;
 }
 
+// =============================================================================
+// Inline tags & labels (shiva · finish tags · owner name)
+// =============================================================================
 // The "Shiva" (championship) label used in the best-finish column.
 .shiva { color: var(--brand); font-weight: 700; }
 
@@ -412,6 +431,9 @@ tbody td a:hover { color: var(--brand); }
   white-space: nowrap;
 }
 
+// =============================================================================
+// History — season notes
+// =============================================================================
 // Per-year event bullets under a standings table (History page).
 .history__season-container {
   margin-bottom: 6rem;
@@ -443,7 +465,9 @@ tbody td a:hover { color: var(--brand); }
 }
 .season-notes li p { display: inline; margin: 0; }
 
-// ---- Trades (season page) ---------------------------------------------------
+// =============================================================================
+// Trades (season page)
+// =============================================================================
 .trades {
   display: flex;
   flex-direction: column;
@@ -483,7 +507,9 @@ tbody td a:hover { color: var(--brand); }
 .trade__flow li { margin: 2px 0; line-height: 1.45; }
 .trade__giver { color: var(--muted); }
 
-// ---- Keeper-cost screenshots (season page) ----------------------------------
+// =============================================================================
+// Keeper-cost screenshots (season page)
+// =============================================================================
 // Full-width responsive images; each links to the full-size file so phones can
 // tap to zoom rather than squint at a shrunken screenshot.
 .keepers { margin: 0.6em 0 1.8em; }
@@ -497,6 +523,9 @@ tbody td a:hover { color: var(--brand); }
   border-radius: 8px;
 }
 
+// =============================================================================
+// Page states (empty state · season status note)
+// =============================================================================
 // Empty state for a section with no rows yet (e.g. an owner with no trades).
 .empty-state {
   color: var(--muted);
@@ -512,6 +541,9 @@ tbody td a:hover { color: var(--brand); }
   margin: -0.2em 0 1.6em;
 }
 
+// =============================================================================
+// Blockquote callouts
+// =============================================================================
 // Blockquotes (`>` in markdown) double as notice / callout boxes: a brand-color
 // left rule, a light warm-gray fill, and italic text.
 blockquote {
@@ -526,7 +558,9 @@ blockquote {
 blockquote > :first-child { margin-top: 0; }
 blockquote > :last-child { margin-bottom: 0; }
 
-// ---- Forms (feedback page) --------------------------------------------------
+// =============================================================================
+// Forms (feedback page)
+// =============================================================================
 .feedback-form { max-width: 460px; margin: 1.8em 0; }
 .feedback-form label {
   display: block;
@@ -581,6 +615,9 @@ blockquote > :last-child { margin-bottom: 0; }
   to   { opacity: 1; transform: none; }
 }
 
+// =============================================================================
+// Owner page — subtitle + back link
+// =============================================================================
 // Monospace subtitle under an owner-page title (their latest team name).
 .owner-sub {
   font-family: var(--mono);
@@ -595,7 +632,9 @@ blockquote > :last-child { margin-bottom: 0; }
   margin: 0 0 0.6em;
 }
 
-// ---- Home hero --------------------------------------------------------------
+// =============================================================================
+// Home hero
+// =============================================================================
 .hero { text-align: center; padding: 2.4rem 0 1.5rem; }
 .hero__title {
   font-size: clamp(2rem, 9vw, 3.2rem);
@@ -684,7 +723,9 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 }
 .hero__links a:hover { background: var(--brand); color: #fff; }
 
-// ---- Season page masthead (the hero style, but inline) ----------------------
+// =============================================================================
+// Season page — masthead + section shell
+// =============================================================================
 .season-head {
   display: flex;
   align-items: baseline;
@@ -730,7 +771,9 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 .season-section { margin: 0 0 2.4em; scroll-margin-top: 1.5em; }
 .season-section > h2 { margin-top: 0; }
 
-// ---- Record book (two-up grid, name above each card) ------------------------
+// =============================================================================
+// Record book (two-up grid, name above each card)
+// =============================================================================
 .records-section {
   margin: 1.8em 0 0;
   padding-bottom: 0.3em;
@@ -816,7 +859,9 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
   .record-row__name { font-size: 1.05rem; }
 }
 
-// ---- Owner "resume" card ----------------------------------------------------
+// =============================================================================
+// Owner résumé card
+// =============================================================================
 .resume {
   border: 1px solid var(--rule);
   border-radius: 12px;
@@ -843,10 +888,14 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 .tile__val { font-size: 1.05rem; font-weight: 700; margin-top: 3px; }
 .tile__val .muted { color: var(--muted); font-weight: 500; font-size: 0.85rem; }
 
-// ---- Trophy line / stats line -----------------------------------------------
+// =============================================================================
+// Prose helpers (post-content)
+// =============================================================================
 .post-content strong { font-weight: 700; }
 
-// ---- Footer -----------------------------------------------------------------
+// =============================================================================
+// Footer
+// =============================================================================
 .site-footer {
   border-top: 1px solid var(--rule);
   color: var(--muted);
@@ -864,7 +913,9 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 }
 .site-footer .footer-heading { font-weight: 800; }
 
-// ---- Heading anchor links (added by assets/anchors.js) ----------------------
+// =============================================================================
+// Heading anchor links (added by assets/anchors.js)
+// =============================================================================
 .heading-anchor {
   opacity: 0;
   margin-left: 0.32em;
@@ -895,7 +946,9 @@ h4:hover > .heading-anchor,
 // Touch devices have no hover — keep it faintly visible so it's still tappable.
 @media (hover: none) { .heading-anchor { opacity: 0.35; } }
 
-// ---- Tables that are too wide scroll inside their own box -------------------
+// =============================================================================
+// Wide-table horizontal scroll
+// =============================================================================
 // (Text columns wrap; number columns stay intact. The wrapper is a safety net
 // so a wide table never pushes the whole page sideways.)
 .table-scroll {
@@ -904,7 +957,9 @@ h4:hover > .heading-anchor,
 }
 .table-scroll > table { margin: 1em 0 1.6em; }
 
-// ---- Small screens ----------------------------------------------------------
+// =============================================================================
+// Responsive — small screens
+// =============================================================================
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .wrapper { padding: 0 16px; }
@@ -931,7 +986,9 @@ h4:hover > .heading-anchor,
   .hero__links a { padding: 16px 10px; }
 }
 
-// --- Rulebook: current settings + rule-changes log -------------------------
+// =============================================================================
+// Rulebook — current settings + rule-change log
+// =============================================================================
 .settings-note,
 .settings-total {
   color: var(--muted);
