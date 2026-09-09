@@ -10,4 +10,4 @@
 # Co-developing both repos? Skip the network entirely and install it editable
 # from your local clone instead of the line below:
 #   pip install -e ~/Codebase/espn-fantasy-cli
-the-league-espn-api @ git+https://github.com/dillondrenzek/espn-fantasy-cli.git@v0.1.5
+the-league-espn-api @ git+https://github.com/dillondrenzek/espn-fantasy-cli.git@v0.3.0
