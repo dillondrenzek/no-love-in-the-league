@@ -1,0 +1,52 @@
+season: 2026
+week: 1
+captured_at: '2026-09-09T07:14:58+00:00'
+projections:
+- team_id: 1
+  manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
+  team_name: The People's Commissioner
+  projected: 122.37
+- team_id: 2
+  manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
+  team_name: Tuten Your Mom
+  projected: 120.63
+- team_id: 3
+  manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
+  team_name: Return of the IDP
+  projected: 109.91
+- team_id: 4
+  manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
+  team_name: 2x Runner Up
+  projected: 114.31
+- team_id: 6
+  manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
+  team_name: Gibbed for your pleasure
+  projected: 127.05
+- team_id: 7
+  manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
+  team_name: 'Josh Jacobs Alibi '
+  projected: 115.23
+- team_id: 9
+  manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
+  team_name: Cornstar
+  projected: 115.44
+- team_id: 10
+  manager_id: '{06571853-E276-48AA-9202-F06B0AD927ED}'
+  team_name: I am dead inside
+  projected: 119.78
+- team_id: 11
+  manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
+  team_name: Trick or Trick It’s Mike Vick
+  projected: 112.49
+- team_id: 12
+  manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
+  team_name: The ChoSimba Ones
+  projected: 113.41
+- team_id: 13
+  manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
+  team_name: One Big Beautiful Dill
+  projected: 109.55
+- team_id: 14
+  manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
+  team_name: Swift kick in the Dak
+  projected: 107.94
