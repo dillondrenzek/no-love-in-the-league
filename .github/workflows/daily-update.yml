@@ -1,10 +1,13 @@
-name: Daily site update
+name: Site update
 
 # Imports the current ESPN season and rebuilds docs/_data, then commits to main
-# (GitHub Pages redeploys from /docs on main automatically). In-season only.
+# (GitHub Pages redeploys from /docs on main automatically) — only when something
+# changed. Runs every 4 hours in-season so the scoreboard tracks live scores
+# through game days; timezone-agnostic (no DST math), and no-op runs commit
+# nothing.
 on:
   schedule:
-    - cron: "0 12 * 9-12,1 *"   # ~7-8am ET daily, Sept–Jan
+    - cron: "0 */4 * 9-12,1 *"   # every 4 hours, Sept–Jan
   workflow_dispatch:             # manual "Run workflow" button, any time
 
 permissions:

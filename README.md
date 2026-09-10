@@ -155,9 +155,11 @@ About once a week during the season is plenty.
 Two in-season workflows keep the site fresh without running anything by hand
 (both also have a **Run workflow** button for manual triggers):
 
-- **`.github/workflows/daily-update.yml`** — every morning Sept–Jan, imports the
+- **`.github/workflows/daily-update.yml`** — every 4 hours Sept–Jan, imports the
   current season, rebuilds, and commits `data/` + `docs/` to `main` (Pages
-  redeploys). No-ops with no commit when nothing changed.
+  redeploys) so the scoreboard tracks live scores through game days. No-ops with
+  no commit when nothing changed. Change the interval in the `cron` line
+  (e.g. `0 */2 * 9-12,1 *` for every 2 hours).
 - **`.github/workflows/weekly-projection-snapshot.yml`** — Thursday afternoons,
   runs `scripts/snapshot_projections.py` to save that week's pre-game projection
   "line" into `data/projections/<year>-week-<nn>.yml` (write-once per week).
