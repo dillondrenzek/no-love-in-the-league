@@ -1,0 +1,24 @@
+{%- comment -%}
+Roster history for an owner: one collapsible block per season (newest first),
+listing every player they rostered that year with how the player arrived.
+Param: seasons (p.rosters) — [{year, players: [{player, via, round?, week?, waiver?}]}].
+{%- endcomment -%}
+{%- assign seasons = include.seasons -%}
+{%- for s in seasons %}
+<details class="roster"{% if forloop.first %} open{% endif %}>
+  <summary class="roster__summary">{{ s.year }} <span class="roster__count">{{ s.players.size }} players</span></summary>
+  <ul class="roster__list">
+    {%- for pl in s.players %}
+    <li class="roster__player">
+      <span class="roster__name">{{ pl.player }}</span>
+      <span class="roster__via roster__via--{{ pl.via }}">
+        {%- if pl.via == "draft" %}Draft{% if pl.round %} · R{{ pl.round }}{% endif %}
+        {%- elsif pl.via == "trade" %}Trade{% if pl.week %} · Wk {{ pl.week }}{% endif %}
+        {%- elsif pl.via == "add" %}{% if pl.waiver %}Waiver{% else %}Free agent{% endif %}{% if pl.week %} · Wk {{ pl.week }}{% endif %}
+        {%- endif -%}
+      </span>
+    </li>
+    {%- endfor %}
+  </ul>
+</details>
+{%- endfor %}

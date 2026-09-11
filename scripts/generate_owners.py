@@ -287,12 +287,23 @@ def main():
     if tx_hm:
         owners["tx_heatmap"] = tx_hm
 
+    # Roster history: every player a franchise rostered each season (see the
+    # importer's `rosters:` block), newest year first. Only years with data show.
+    owner_rosters = {}
+    for s in seasons:
+        for fid, entries in (s.get("rosters") or {}).items():
+            owner_rosters.setdefault(fid, {})[s["season"]] = entries
+    profiles_data = {pid: _profile_data(p, profiles) for pid, p in profiles.items()}
+    for fid, by_year in owner_rosters.items():
+        if fid in profiles_data:
+            profiles_data[fid]["rosters"] = [
+                {"year": y, "players": by_year[y]} for y in sorted(by_year, reverse=True)]
+
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "owners.yml").write_text(
         yaml.safe_dump(owners, sort_keys=False, allow_unicode=True), encoding="utf-8")
     (DATA_DIR / "owner_profiles.yml").write_text(
-        yaml.safe_dump({pid: _profile_data(p, profiles) for pid, p in profiles.items()},
-                       sort_keys=False, allow_unicode=True), encoding="utf-8")
+        yaml.safe_dump(profiles_data, sort_keys=False, allow_unicode=True), encoding="utf-8")
 
     # Owner pages are scaffolded once, then hand-editable: only create a stub
     # for an owner that doesn't have a page yet. Delete a page to regenerate it.

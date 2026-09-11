@@ -401,10 +401,68 @@ def attach_projections(lg, matchups, team_to_fid):
     print(f"Projections: week {week}, attached to {n} game(s).", file=sys.stderr)
 
 
+def build_rosters(draft_rows, tx_rows, trades, team_to_fid):
+    """Everyone who was on each franchise's roster this season, franchise-keyed:
+    {fid: [{player, via, round|week, waiver?}]}.
+
+    The union of three sources, deduped by player name and tagged with how the
+    player *first* arrived (earliest wins; draft is treated as before week 1):
+      - drafted picks (from the draft),
+      - waiver / free-agent ADDs (from transactions; 2018+ only),
+      - trade acquisitions (assets received; draft-pick assets are skipped).
+    Players are ordered by arrival. Recomputed in full each import — the sources
+    are league-wide/complete, so no on-disk merge is needed."""
+    rosters = {}   # fid -> {name_key: entry (+ _sort)}
+
+    def consider(fid, name, sort_key, entry):
+        if not fid or not name:
+            return
+        team = rosters.setdefault(fid, {})
+        key = name.strip().lower()
+        cur = team.get(key)
+        if cur is None or sort_key < cur["_sort"]:
+            team[key] = {**entry, "_sort": sort_key}
+
+    for p in draft_rows or []:
+        if p.get("player_id") in (None, -1):
+            continue
+        # Sort drafted players by draft order (overall pick, else round), and keep
+        # them ahead of any in-season trade/add — this whole band stays < 0.5.
+        overall = p.get("overall_pick")
+        rnd = p.get("round") or 0
+        sort_key = (overall if overall is not None else rnd * 100) / 10000.0
+        consider(team_to_fid.get(p.get("team_id")), p.get("player_name"), sort_key,
+                 {"player": p.get("player_name"), "via": "draft", "round": rnd})
+
+    for t in trades or []:
+        week = t.get("week") or 0
+        for a in t.get("assets") or []:
+            label = a.get("label") or ""
+            if a.get("to") and label and not label.lower().startswith("pick"):
+                consider(a["to"], label, week + 0.5,
+                         {"player": label, "via": "trade", "week": week})
+
+    for r in tx_rows or []:
+        if r.get("action") != "ADD":
+            continue
+        week = r.get("scoring_period") or 0
+        consider(team_to_fid.get(r.get("team_id")), r.get("player_name"), week + 0.6,
+                 {"player": r.get("player_name"), "via": "add", "week": week,
+                  "waiver": r.get("type") == "WAIVER"})
+
+    out = {}
+    for fid, players in rosters.items():
+        entries = sorted(players.values(), key=lambda e: (e["_sort"], e["player"].lower()))
+        for e in entries:
+            e.pop("_sort", None)
+        out[fid] = entries
+    return out
+
+
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
                      state="season", state_locked=False, draft_order=None, trades=None,
                      trades_complete=True, trades_known_for=None, keepers=None,
-                     transactions=None, transactions_known=False):
+                     transactions=None, transactions_known=False, rosters=None):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
         f"# to refresh; the locked, hand-maintained `draft_order:` below is preserved",
@@ -537,6 +595,19 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
                          f'drops: {c.get("drops", 0)}, moves: {c.get("moves", 0)} }}')
     else:
         lines += ["transactions: {}  # none fetched this season"]
+    lines += [
+        "",
+        "# Everyone rostered this season per franchise: the union of drafted players,",
+        "# waiver/FA adds, and trade acquisitions, deduped by player and tagged with",
+        "# how they first arrived (via: draft|add|trade). Adds need the transactions",
+        "# endpoint (2018+); trades need a merged cookie; the draft is always present,",
+        "# so an older season may be draft-only. Recomputed in full each import.",
+    ]
+    if rosters:
+        lines.append(yaml.safe_dump({"rosters": rosters}, sort_keys=False,
+                                    allow_unicode=True, default_flow_style=False).rstrip())
+    else:
+        lines += ["rosters: {}  # none captured"]
     return "\n".join(lines) + "\n"
 
 
@@ -693,18 +764,23 @@ def main():
     # wiping it, and mark the season's transactions unknown when we've never had them.
     prior_tx, prior_tx_known = existing_transactions(args.year)
     transactions, transactions_known = prior_tx, bool(prior_tx_known)
+    tx_rows = []          # raw add/drop rows, retained for roster reconstruction
     if not hasattr(lg, "transactions"):
         print("NOTE: installed the-league-espn-api has no transactions() — skipping "
               "waiver activity (reinstall: pip install -r requirements-dev.txt).",
               file=sys.stderr)
     else:
         try:
-            transactions = build_transactions(lg.transactions(), team_to_fid)
+            tx_rows = lg.transactions()
+            transactions = build_transactions(tx_rows, team_to_fid)
             transactions_known = True
         except ApiError as e:
             print(f"NOTE: transactions for {args.year} unavailable (ESPN {e.status}) — "
                   f"keeping {len(prior_tx)} on file.", file=sys.stderr)
     tx_moves = sum(c.get("moves", 0) for c in transactions.values())
+
+    # Everyone rostered this season: drafted ∪ waiver/FA adds ∪ trade acquisitions.
+    rosters = build_rosters(draft_rows, tx_rows, trades, team_to_fid)
 
     reg_count = (sched.get("matchupPeriodCount")
                  or max((m["week"] for m in matchups if not m["playoff"]), default=0))
@@ -755,7 +831,8 @@ def main():
                                    trades=trades, trades_complete=trades_complete,
                                    trades_known_for=sorted(known_for), keepers=keepers,
                                    transactions=transactions,
-                                   transactions_known=transactions_known)
+                                   transactions_known=transactions_known,
+                                   rosters=rosters)
 
     if not lg.authenticated:
         print("WARNING: no ESPN cookies found — a private league won't return owner "

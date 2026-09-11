@@ -174,3 +174,500 @@ keepers: []
 # Tx/yr rate.
 transactions_known: false
 transactions: {}  # none fetched this season
+
+# Everyone rostered this season per franchise: the union of drafted players,
+# waiver/FA adds, and trade acquisitions, deduped by player and tagged with
+# how they first arrived (via: draft|add|trade). Adds need the transactions
+# endpoint (2018+); trades need a merged cookie; the draft is always present,
+# so an older season may be draft-only. Recomputed in full each import.
+rosters:
+  schirmerj:
+  - player: Adrian Peterson
+    via: draft
+    round: 1
+  - player: Dez Bryant
+    via: draft
+    round: 2
+  - player: Matthew Stafford
+    via: draft
+    round: 3
+  - player: Larry Fitzgerald
+    via: draft
+    round: 4
+  - player: Frank Gore
+    via: draft
+    round: 5
+  - player: Trent Richardson
+    via: draft
+    round: 6
+  - player: Jason Witten
+    via: draft
+    round: 7
+  - player: 49ers D/ST
+    via: draft
+    round: 8
+  - player: Knowshon Moreno
+    via: draft
+    round: 9
+  - player: DeAndre Hopkins
+    via: draft
+    round: 10
+  - player: Stephen Gostkowski
+    via: draft
+    round: 11
+  - player: Greg Jennings
+    via: draft
+    round: 12
+  - player: Jarrett Boykin
+    via: draft
+    round: 13
+  - player: Jordan Reed
+    via: draft
+    round: 14
+  - player: Joe Flacco
+    via: draft
+    round: 15
+  - player: Saints D/ST
+    via: draft
+    round: 16
+  thebragers:
+  - player: LeSean McCoy
+    via: draft
+    round: 1
+  - player: Brandon Marshall
+    via: draft
+    round: 2
+  - player: Jordy Nelson
+    via: draft
+    round: 3
+  - player: Nick Foles
+    via: draft
+    round: 4
+  - player: Seahawks D/ST
+    via: draft
+    round: 5
+  - player: Rashad Jennings
+    via: draft
+    round: 6
+  - player: Jordan Cameron
+    via: draft
+    round: 7
+  - player: Wes Welker
+    via: draft
+    round: 8
+  - player: Golden Tate
+    via: draft
+    round: 9
+  - player: Tom Brady
+    via: draft
+    round: 10
+  - player: Mike Wallace
+    via: draft
+    round: 11
+  - player: Khiry Robinson
+    via: draft
+    round: 12
+  - player: Lamar Miller
+    via: draft
+    round: 13
+  - player: Darren McFadden
+    via: draft
+    round: 14
+  - player: Bernard Pierce
+    via: draft
+    round: 15
+  - player: Dan Bailey
+    via: draft
+    round: 16
+  kevbots22:
+  - player: Jamaal Charles
+    via: draft
+    round: 1
+  - player: DeMarco Murray
+    via: draft
+    round: 2
+  - player: Julio Jones
+    via: draft
+    round: 3
+  - player: Andrew Luck
+    via: draft
+    round: 4
+  - player: Cordarrelle Patterson
+    via: draft
+    round: 5
+  - player: Torrey Smith
+    via: draft
+    round: 6
+  - player: Martellus Bennett
+    via: draft
+    round: 7
+  - player: Joique Bell
+    via: draft
+    round: 8
+  - player: Broncos D/ST
+    via: draft
+    round: 9
+  - player: Anquan Boldin
+    via: draft
+    round: 10
+  - player: Mason Crosby
+    via: draft
+    round: 11
+  - player: Alex Smith
+    via: draft
+    round: 12
+  - player: Charles Clay
+    via: draft
+    round: 13
+  - player: Shonn Greene
+    via: draft
+    round: 14
+  - player: Mark Ingram
+    via: draft
+    round: 15
+  - player: Terrance West
+    via: draft
+    round: 16
+  jackperkins74:
+  - player: Peyton Manning
+    via: draft
+    round: 1
+  - player: Arian Foster
+    via: draft
+    round: 2
+  - player: Alshon Jeffery
+    via: draft
+    round: 3
+  - player: Roddy White
+    via: draft
+    round: 4
+  - player: Toby Gerhart
+    via: draft
+    round: 5
+  - player: Ryan Mathews
+    via: draft
+    round: 6
+  - player: Julian Edelman
+    via: draft
+    round: 7
+  - player: Kyle Rudolph
+    via: draft
+    round: 8
+  - player: Sammy Watkins
+    via: draft
+    round: 9
+  - player: Chris Ivory
+    via: draft
+    round: 10
+  - player: Chiefs D/ST
+    via: draft
+    round: 11
+  - player: Tony Romo
+    via: draft
+    round: 12
+  - player: Tavon Austin
+    via: draft
+    round: 13
+  - player: Danny Woodhead
+    via: draft
+    round: 14
+  - player: Jeremy Hill
+    via: draft
+    round: 15
+  - player: Nick Novak
+    via: draft
+    round: 16
+  zachzoske:
+  - player: Eddie Lacy
+    via: draft
+    round: 1
+  - player: Drew Brees
+    via: draft
+    round: 2
+  - player: Reggie Bush
+    via: draft
+    round: 3
+  - player: Vincent Jackson
+    via: draft
+    round: 4
+  - player: Andre Johnson
+    via: draft
+    round: 5
+  - player: Keenan Allen
+    via: draft
+    round: 6
+  - player: Panthers D/ST
+    via: draft
+    round: 7
+  - player: Emmanuel Sanders
+    via: draft
+    round: 8
+  - player: Greg Olsen
+    via: draft
+    round: 9
+  - player: DeAngelo Williams
+    via: draft
+    round: 10
+  - player: Steven Hauschka
+    via: draft
+    round: 11
+  - player: Philip Rivers
+    via: draft
+    round: 12
+  - player: Danny Amendola
+    via: draft
+    round: 13
+  - player: James Jones
+    via: draft
+    round: 14
+  - player: Antonio Gates
+    via: draft
+    round: 15
+  - player: James Starks
+    via: draft
+    round: 16
+  master-otis:
+  - player: Marshawn Lynch
+    via: draft
+    round: 1
+  - player: Jimmy Graham
+    via: draft
+    round: 2
+  - player: Le'Veon Bell
+    via: draft
+    round: 3
+  - player: Randall Cobb
+    via: draft
+    round: 4
+  - player: Cam Newton
+    via: draft
+    round: 5
+  - player: Pierre Garcon
+    via: draft
+    round: 6
+  - player: Chris Johnson
+    via: draft
+    round: 7
+  - player: Shane Vereen
+    via: draft
+    round: 8
+  - player: Stevan Ridley
+    via: draft
+    round: 9
+  - player: Terrance Williams
+    via: draft
+    round: 10
+  - player: Steve Smith Sr.
+    via: draft
+    round: 11
+  - player: Cecil Shorts III
+    via: draft
+    round: 12
+  - player: Eli Manning
+    via: draft
+    round: 13
+  - player: Bills D/ST
+    via: draft
+    round: 14
+  - player: LeGarrette Blount
+    via: draft
+    round: 15
+  - player: Adam Vinatieri
+    via: draft
+    round: 16
+  henpen28:
+  - player: Matt Forte
+    via: draft
+    round: 1
+  - player: Demaryius Thomas
+    via: draft
+    round: 2
+  - player: Russell Wilson
+    via: draft
+    round: 3
+  - player: Rob Gronkowski
+    via: draft
+    round: 4
+  - player: Ray Rice
+    via: draft
+    round: 5
+  - player: DeSean Jackson
+    via: draft
+    round: 6
+  - player: Colin Kaepernick
+    via: draft
+    round: 7
+  - player: Pierre Thomas
+    via: draft
+    round: 8
+  - player: Marques Colston
+    via: draft
+    round: 9
+  - player: Darren Sproles
+    via: draft
+    round: 10
+  - player: Kendall Wright
+    via: draft
+    round: 11
+  - player: Dennis Pitta
+    via: draft
+    round: 12
+  - player: Cardinals D/ST
+    via: draft
+    round: 13
+  - player: Justin Tucker
+    via: draft
+    round: 14
+  - player: Buccaneers D/ST
+    via: draft
+    round: 15
+  - player: Phil Dawson
+    via: draft
+    round: 16
+  lukstein:
+  - player: Zac Stacy
+    via: draft
+    round: 1
+  - player: A.J. Green
+    via: draft
+    round: 2
+  - player: Alfred Morris
+    via: draft
+    round: 3
+  - player: Vernon Davis
+    via: draft
+    round: 4
+  - player: Matt Ryan
+    via: draft
+    round: 5
+  - player: Percy Harvin
+    via: draft
+    round: 6
+  - player: Maurice Jones-Drew
+    via: draft
+    round: 7
+  - player: Jeremy Maclin
+    via: draft
+    round: 8
+  - player: Rams D/ST
+    via: draft
+    round: 9
+  - player: Eric Decker
+    via: draft
+    round: 10
+  - player: Hakeem Nicks
+    via: draft
+    round: 11
+  - player: Devonta Freeman
+    via: draft
+    round: 12
+  - player: Andy Dalton
+    via: draft
+    round: 13
+  - player: Donald Brown
+    via: draft
+    round: 14
+  - player: Mike Evans
+    via: draft
+    round: 15
+  - player: Cody Parkey
+    via: draft
+    round: 16
+  sturmanator15:
+  - player: Aaron Rodgers
+    via: draft
+    round: 1
+  - player: Calvin Johnson
+    via: draft
+    round: 2
+  - player: Giovani Bernard
+    via: draft
+    round: 3
+  - player: Antonio Brown
+    via: draft
+    round: 4
+  - player: Andre Ellington
+    via: draft
+    round: 5
+  - player: Michael Crabtree
+    via: draft
+    round: 6
+  - player: Bishop Sankey
+    via: draft
+    round: 7
+  - player: Steven Jackson
+    via: draft
+    round: 8
+  - player: Reggie Wayne
+    via: draft
+    round: 9
+  - player: Brandin Cooks
+    via: draft
+    round: 10
+  - player: Kelvin Benjamin
+    via: draft
+    round: 11
+  - player: Coby Fleener
+    via: draft
+    round: 12
+  - player: Carlos Hyde
+    via: draft
+    round: 13
+  - player: Patriots D/ST
+    via: draft
+    round: 14
+  - player: Blair Walsh
+    via: draft
+    round: 15
+  - player: Ryan Tannehill
+    via: draft
+    round: 16
+  whowonthelastsuperbowl:
+  - player: Doug Martin
+    via: draft
+    round: 1
+  - player: Montee Ball
+    via: draft
+    round: 2
+  - player: Julius Thomas
+    via: draft
+    round: 3
+  - player: Ben Tate
+    via: draft
+    round: 4
+  - player: C.J. Spiller
+    via: draft
+    round: 5
+  - player: Victor Cruz
+    via: draft
+    round: 6
+  - player: Michael Floyd
+    via: draft
+    round: 7
+  - player: T.Y. Hilton
+    via: draft
+    round: 8
+  - player: Fred Jackson
+    via: draft
+    round: 9
+  - player: Riley Cooper
+    via: draft
+    round: 10
+  - player: Robert Griffin
+    via: draft
+    round: 11
+  - player: Dwayne Bowe
+    via: draft
+    round: 12
+  - player: Bengals D/ST
+    via: draft
+    round: 13
+  - player: Jay Cutler
+    via: draft
+    round: 14
+  - player: Michael Vick
+    via: draft
+    round: 15
+  - player: Brandon McManus
+    via: draft
+    round: 16
