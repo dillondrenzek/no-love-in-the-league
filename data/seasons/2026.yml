@@ -74,11 +74,11 @@ final_standings:
 # count toward standings/records/H2H.
 matchups:
   - { week:  1, home: alexandra, away: whowonthelastsuperbowl, home_score: 14.0, away_score: 10.7, playoff: false, final: false, home_proj: 115.27, away_proj: 112.48 }
-  - { week:  1, home: gganoom, away: shawne2520997, home_score: 4.1, away_score: 0.0, playoff: false, final: false, home_proj: 106.43, away_proj: 108.66 }
-  - { week:  1, home: kevbots22, away: theoceanpulse, home_score: 19.0, away_score: 4.1, playoff: false, final: false, home_proj: 115.09, away_proj: 112.59 }
+  - { week:  1, home: gganoom, away: shawne2520997, home_score: 12.9, away_score: 7.0, playoff: false, final: false, home_proj: 106.43, away_proj: 108.66 }
+  - { week:  1, home: kevbots22, away: theoceanpulse, home_score: 19.0, away_score: 5.1, playoff: false, final: false, home_proj: 115.09, away_proj: 112.59 }
   - { week:  1, home: lukstein, away: purpsworth, home_score: 6.8, away_score: 0.0, playoff: false, final: false, home_proj: 114.49, away_proj: 119.79 }
-  - { week:  1, home: schirmerj, away: jackperkins74, home_score: 7.0, away_score: 6.0, playoff: false, final: false, home_proj: 110.0, away_proj: 127.41 }
-  - { week:  1, home: sturmanator15, away: zachzoske, home_score: 22.2, away_score: 0.0, playoff: false, final: false, home_proj: 122.34, away_proj: 120.81 }
+  - { week:  1, home: schirmerj, away: jackperkins74, home_score: 24.8, away_score: 11.5, playoff: false, final: false, home_proj: 110.0, away_proj: 127.41 }
+  - { week:  1, home: sturmanator15, away: zachzoske, home_score: 26.2, away_score: 0.0, playoff: false, final: false, home_proj: 122.34, away_proj: 120.81 }
   - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false }
