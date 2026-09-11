@@ -351,6 +351,57 @@ sturmanator15:
     round: 13
     player: Trevor Lawrence
   rosters:
+  - year: 2026
+    players:
+    - player: Jaxon Smith-Njigba
+      via: draft
+      round: 1
+    - player: Kenneth Walker III
+      via: draft
+      round: 2
+    - player: Ladd McConkey
+      via: draft
+      round: 3
+    - player: Zay Flowers
+      via: draft
+      round: 4
+    - player: Mike Evans
+      via: draft
+      round: 5
+    - player: Tony Pollard
+      via: draft
+      round: 6
+    - player: Justin Herbert
+      via: draft
+      round: 7
+    - player: Blake Corum
+      via: draft
+      round: 8
+    - player: Trey McBride
+      via: draft
+      round: 9
+    - player: Kyle Monangai
+      via: draft
+      round: 10
+    - player: MarShawn Lloyd
+      via: draft
+      round: 11
+    - player: Jonah Coleman
+      via: draft
+      round: 12
+    - player: Jordyn Tyson
+      via: draft
+      round: 13
+    - player: Eddy Pineiro
+      via: draft
+      round: 14
+    - player: Chargers D/ST
+      via: draft
+      round: 15
+    - player: Malik Washington
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -2807,6 +2858,72 @@ zachzoske:
     round: 13
     player: Calvin Ridley
   rosters:
+  - year: 2026
+    players:
+    - player: Amon-Ra St. Brown
+      via: draft
+      round: 1
+    - player: Drake London
+      via: draft
+      round: 2
+    - player: Tee Higgins
+      via: draft
+      round: 3
+    - player: Cam Skattebo
+      via: draft
+      round: 4
+    - player: Joe Burrow
+      via: draft
+      round: 5
+    - player: Jonathon Brooks
+      via: draft
+      round: 6
+    - player: George Kittle
+      via: draft
+      round: 7
+    - player: Michael Pittman Jr.
+      via: draft
+      round: 8
+    - player: Bhayshul Tuten
+      via: draft
+      round: 9
+    - player: Isaiah Likely
+      via: draft
+      round: 10
+    - player: Cam Little
+      via: draft
+      round: 11
+    - player: Woody Marks
+      via: draft
+      round: 12
+    - player: Steelers D/ST
+      via: draft
+      round: 13
+    - player: Jaylin Noel
+      via: draft
+      round: 14
+    - player: Jaydon Blue
+      via: draft
+      round: 15
+    - player: Ashton Jeanty
+      via: trade
+      week: 1
+    - player: Caleb Douglas
+      via: add
+      week: 1
+      waiver: false
+    - player: Chris Brooks
+      via: add
+      week: 1
+      waiver: false
+    - player: George Holani
+      via: add
+      week: 1
+      waiver: false
+    - player: Tyreek Hill
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: CeeDee Lamb
@@ -5270,6 +5387,57 @@ schirmerj:
     round: 9
     player: Isiah Pacheco
   rosters:
+  - year: 2026
+    players:
+    - player: Christian McCaffrey
+      via: draft
+      round: 1
+    - player: Josh Allen
+      via: draft
+      round: 2
+    - player: Jaylen Waddle
+      via: draft
+      round: 3
+    - player: Jameson Williams
+      via: draft
+      round: 4
+    - player: Carnell Tate
+      via: draft
+      round: 5
+    - player: Tucker Kraft
+      via: draft
+      round: 6
+    - player: Rachaad White
+      via: draft
+      round: 7
+    - player: Kyren Williams
+      via: draft
+      round: 8
+    - player: Xavier Worthy
+      via: draft
+      round: 9
+    - player: Jason Myers
+      via: draft
+      round: 10
+    - player: Keaton Mitchell
+      via: draft
+      round: 11
+    - player: Jalen McMillan
+      via: draft
+      round: 12
+    - player: Ravens D/ST
+      via: draft
+      round: 13
+    - player: Emmett Johnson
+      via: draft
+      round: 14
+    - player: Adam Randall
+      via: draft
+      round: 15
+    - player: Devaughn Vele
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Bijan Robinson
@@ -6972,6 +7140,69 @@ lukstein:
     round: 9
     player: Garrett Wilson
   rosters:
+  - year: 2026
+    players:
+    - player: Saquon Barkley
+      via: draft
+      round: 1
+    - player: DeVonta Smith
+      via: draft
+      round: 2
+    - player: Jadarian Price
+      via: draft
+      round: 3
+    - player: DJ Moore
+      via: draft
+      round: 4
+    - player: Jalen Hurts
+      via: draft
+      round: 5
+    - player: Marvin Harrison Jr.
+      via: draft
+      round: 6
+    - player: RJ Harvey
+      via: draft
+      round: 7
+    - player: Matthew Golden
+      via: draft
+      round: 8
+    - player: Alec Pierce
+      via: draft
+      round: 9
+    - player: Tank Dell
+      via: draft
+      round: 10
+    - player: Tank Bigsby
+      via: draft
+      round: 11
+    - player: Kyle Pitts Sr.
+      via: draft
+      round: 12
+    - player: Eagles D/ST
+      via: draft
+      round: 13
+    - player: Harrison Butker
+      via: draft
+      round: 14
+    - player: Dontayvion Wicks
+      via: draft
+      round: 15
+    - player: J.J. McCarthy
+      via: add
+      week: 0
+      waiver: false
+    - player: Jeremiyah Love
+      via: add
+      week: 0
+      waiver: false
+    - player: Tez Johnson
+      via: add
+      week: 0
+      waiver: false
+    - player: Kyler Murray
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Amon-Ra St. Brown
@@ -8696,6 +8927,101 @@ jackperkins74:
     round: 5
     player: Tony Pollard
   rosters:
+  - year: 2026
+    players:
+    - player: Jahmyr Gibbs
+      via: draft
+      round: 1
+    - player: Breece Hall
+      via: draft
+      round: 2
+    - player: Travis Etienne Jr.
+      via: draft
+      round: 3
+    - player: Luther Burden III
+      via: draft
+      round: 4
+    - player: Parker Washington
+      via: draft
+      round: 5
+    - player: De'Zhaun Stribling
+      via: draft
+      round: 6
+    - player: Trevor Lawrence
+      via: draft
+      round: 7
+    - player: Dallas Goedert
+      via: draft
+      round: 8
+    - player: Puka Nacua
+      via: draft
+      round: 9
+    - player: Mike Washington Jr.
+      via: draft
+      round: 10
+    - player: Caleb Douglas
+      via: draft
+      round: 11
+    - player: Dalton Kincaid
+      via: draft
+      round: 12
+    - player: Jaguars D/ST
+      via: draft
+      round: 13
+    - player: Cairo Santos
+      via: draft
+      round: 14
+    - player: Deebo Samuel Sr.
+      via: draft
+      round: 15
+    - player: Andy Borregales
+      via: add
+      week: 1
+      waiver: false
+    - player: Braelon Allen
+      via: add
+      week: 1
+      waiver: false
+    - player: Brandon Aiyuk
+      via: add
+      week: 1
+      waiver: false
+    - player: Chris Bell
+      via: add
+      week: 1
+      waiver: false
+    - player: George Holani
+      via: add
+      week: 1
+      waiver: false
+    - player: Jacob Saylors
+      via: add
+      week: 1
+      waiver: false
+    - player: James Conner
+      via: add
+      week: 1
+      waiver: false
+    - player: Kaleb Johnson
+      via: add
+      week: 1
+      waiver: true
+    - player: Keenan Allen
+      via: add
+      week: 1
+      waiver: false
+    - player: Malik Davis
+      via: add
+      week: 1
+      waiver: false
+    - player: Roschon Johnson
+      via: add
+      week: 1
+      waiver: false
+    - player: Ted Hurst III
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -11351,6 +11677,57 @@ kevbots22:
     round: 8
     player: Joe Burrow
   rosters:
+  - year: 2026
+    players:
+    - player: Chase Brown
+      via: draft
+      round: 1
+    - player: Justin Jefferson
+      via: draft
+      round: 2
+    - player: Josh Jacobs
+      via: draft
+      round: 3
+    - player: Tetairoa McMillan
+      via: draft
+      round: 4
+    - player: Chris Olave
+      via: draft
+      round: 5
+    - player: Rhamondre Stevenson
+      via: draft
+      round: 6
+    - player: Jaxson Dart
+      via: draft
+      round: 7
+    - player: Travis Kelce
+      via: draft
+      round: 8
+    - player: Chuba Hubbard
+      via: draft
+      round: 9
+    - player: Brian Thomas Jr.
+      via: draft
+      round: 10
+    - player: Jayden Reed
+      via: draft
+      round: 11
+    - player: Isiah Pacheco
+      via: draft
+      round: 12
+    - player: Cameron Dicker
+      via: draft
+      round: 13
+    - player: Matthew Stafford
+      via: draft
+      round: 14
+    - player: Patriots D/ST
+      via: draft
+      round: 15
+    - player: Samaje Perine
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Christian McCaffrey
@@ -12470,6 +12847,54 @@ alexandra:
   - year: 2026
     round: 7
     player: Javonte Williams
+  rosters:
+  - year: 2026
+    players:
+    - player: Ja'Marr Chase
+      via: draft
+      round: 1
+    - player: Jeremiyah Love
+      via: draft
+      round: 2
+    - player: Rashee Rice
+      via: draft
+      round: 3
+    - player: Lamar Jackson
+      via: draft
+      round: 4
+    - player: Tyler Warren
+      via: draft
+      round: 5
+    - player: DK Metcalf
+      via: draft
+      round: 6
+    - player: Javonte Williams
+      via: draft
+      round: 7
+    - player: J.K. Dobbins
+      via: draft
+      round: 8
+    - player: Jordan Addison
+      via: draft
+      round: 9
+    - player: Denzel Boston
+      via: draft
+      round: 10
+    - player: Tyjae Spears
+      via: draft
+      round: 11
+    - player: Travis Hunter
+      via: draft
+      round: 12
+    - player: Seahawks D/ST
+      via: draft
+      round: 13
+    - player: Ja'Kobi Lane
+      via: draft
+      round: 14
+    - player: Tyler Loop
+      via: draft
+      round: 15
 purpsworth:
   name: Trevor
   nickname: ''
@@ -12751,6 +13176,60 @@ purpsworth:
     round: 4
     player: Amon-Ra St. Brown
   rosters:
+  - year: 2026
+    players:
+    - player: Jonathan Taylor
+      via: draft
+      round: 1
+    - player: Ashton Jeanty
+      via: draft
+      round: 2
+    - player: Emeka Egbuka
+      via: draft
+      round: 3
+    - player: Rome Odunze
+      via: draft
+      round: 4
+    - player: Harold Fannin Jr.
+      via: draft
+      round: 5
+    - player: Rico Dowdle
+      via: draft
+      round: 6
+    - player: Jayden Daniels
+      via: draft
+      round: 7
+    - player: De'Von Achane
+      via: draft
+      round: 8
+    - player: Makai Lemon
+      via: draft
+      round: 9
+    - player: KC Concepcion
+      via: draft
+      round: 10
+    - player: Mark Andrews
+      via: draft
+      round: 11
+    - player: Bo Nix
+      via: draft
+      round: 12
+    - player: Ka'imi Fairbairn
+      via: draft
+      round: 13
+    - player: Kenyon Sadiq
+      via: draft
+      round: 14
+    - player: Browns D/ST
+      via: draft
+      round: 15
+    - player: Drake London
+      via: trade
+      week: 1
+    - player: Deebo Samuel Sr.
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Malik Nabers
@@ -14170,6 +14649,53 @@ whowonthelastsuperbowl:
     round: 13
     player: Drake Maye
   rosters:
+  - year: 2026
+    players:
+    - player: Derrick Henry
+      via: draft
+      round: 1
+    - player: CeeDee Lamb
+      via: draft
+      round: 2
+    - player: Davante Adams
+      via: draft
+      round: 3
+    - player: Bucky Irving
+      via: draft
+      round: 4
+    - player: Sam LaPorta
+      via: draft
+      round: 5
+    - player: Courtland Sutton
+      via: draft
+      round: 6
+    - player: Aaron Jones Sr.
+      via: draft
+      round: 7
+    - player: Quentin Johnston
+      via: draft
+      round: 8
+    - player: Stefon Diggs
+      via: draft
+      round: 9
+    - player: Brandon Aubrey
+      via: draft
+      round: 10
+    - player: Drake Maye
+      via: draft
+      round: 11
+    - player: Texans D/ST
+      via: draft
+      round: 12
+    - player: Jake Ferguson
+      via: draft
+      round: 13
+    - player: Justice Hill
+      via: draft
+      round: 14
+    - player: Khalil Shakir
+      via: draft
+      round: 15
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -15855,6 +16381,67 @@ theoceanpulse:
     round: 7
     player: Chris Olave
   rosters:
+  - year: 2026
+    players:
+    - player: Omarion Hampton
+      via: draft
+      round: 1
+    - player: A.J. Brown
+      via: draft
+      round: 2
+    - player: Garrett Wilson
+      via: draft
+      round: 3
+    - player: David Montgomery
+      via: draft
+      round: 4
+    - player: Christian Watson
+      via: draft
+      round: 5
+    - player: Kenny Gainwell
+      via: draft
+      round: 6
+    - player: Caleb Williams
+      via: draft
+      round: 7
+    - player: Colston Loveland
+      via: draft
+      round: 8
+    - player: Jordan Mason
+      via: draft
+      round: 9
+    - player: Josh Downs
+      via: draft
+      round: 10
+    - player: Rashid Shaheed
+      via: draft
+      round: 11
+    - player: Tyler Allgeier
+      via: draft
+      round: 12
+    - player: Lions D/ST
+      via: draft
+      round: 13
+    - player: Harrison Mevis
+      via: draft
+      round: 14
+    - player: Zach Charbonnet
+      via: draft
+      round: 15
+    - player: 5.04 pick
+      via: trade
+      week: 0
+    - player: 9.04 pick
+      via: trade
+      week: 0
+    - player: Cyrus Allen
+      via: add
+      week: 1
+      waiver: true
+    - player: Malachi Fields
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Derrick Henry
@@ -17374,6 +17961,61 @@ gganoom:
     round: 5
     player: Chris Olave
   rosters:
+  - year: 2026
+    players:
+    - player: Bijan Robinson
+      via: draft
+      round: 1
+    - player: Malik Nabers
+      via: draft
+      round: 2
+    - player: Quinshon Judkins
+      via: draft
+      round: 3
+    - player: TreVeyon Henderson
+      via: draft
+      round: 4
+    - player: Brock Bowers
+      via: draft
+      round: 5
+    - player: Michael Wilson
+      via: draft
+      round: 6
+    - player: Jaylen Warren
+      via: draft
+      round: 7
+    - player: Jakobi Meyers
+      via: draft
+      round: 8
+    - player: Wan'Dale Robinson
+      via: draft
+      round: 9
+    - player: Brock Purdy
+      via: draft
+      round: 10
+    - player: Patrick Mahomes
+      via: draft
+      round: 11
+    - player: Romeo Doubs
+      via: draft
+      round: 12
+    - player: Broncos D/ST
+      via: draft
+      round: 13
+    - player: Brian Robinson Jr.
+      via: draft
+      round: 14
+    - player: Chris Boswell
+      via: draft
+      round: 15
+    - player: Adonai Mitchell
+      via: add
+      week: 1
+      waiver: false
+    - player: Hunter Henry
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Ashton Jeanty
@@ -17889,6 +18531,63 @@ shawne2520997:
     round: 9
     player: Alexander Mattison
   rosters:
+  - year: 2026
+    players:
+    - player: James Cook III
+      via: draft
+      round: 1
+    - player: George Pickens
+      via: draft
+      round: 2
+    - player: D'Andre Swift
+      via: draft
+      round: 3
+    - player: Terry McLaurin
+      via: draft
+      round: 4
+    - player: Nico Collins
+      via: draft
+      round: 5
+    - player: Dak Prescott
+      via: draft
+      round: 6
+    - player: Chris Godwin Jr.
+      via: draft
+      round: 7
+    - player: Jacory Croskey-Merritt
+      via: draft
+      round: 8
+    - player: Jalen Coker
+      via: draft
+      round: 9
+    - player: Chris Rodriguez Jr.
+      via: draft
+      round: 10
+    - player: Juwan Johnson
+      via: draft
+      round: 11
+    - player: Rams D/ST
+      via: draft
+      round: 12
+    - player: Keenan Allen
+      via: draft
+      round: 13
+    - player: Jake Bates
+      via: draft
+      round: 14
+    - player: Tre Tucker
+      via: draft
+      round: 15
+    - player: 5.10 pick
+      via: trade
+      week: 0
+    - player: 9.10 pick
+      via: trade
+      week: 0
+    - player: Kaelon Black
+      via: add
+      week: 1
+      waiver: false
   - year: 2025
     players:
     - player: Jahmyr Gibbs
