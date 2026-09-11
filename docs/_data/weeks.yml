@@ -17,8 +17,8 @@
     winner_id: null
     tie: false
     margin: 0.8
-    home_proj: 115.3
-    away_proj: 112.5
+    home_proj: 115.4
+    away_proj: 113.6
   - home_id: gganoom
     home_team: One Big Beautiful Dill
     home_owner: Grant
@@ -34,8 +34,8 @@
     winner_id: null
     tie: false
     margin: 27.2
-    home_proj: 106.4
-    away_proj: 108.7
+    home_proj: 106.2
+    away_proj: 109.2
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -52,7 +52,7 @@
     tie: false
     margin: 13.9
     home_proj: 115.1
-    away_proj: 112.6
+    away_proj: 112.5
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -68,8 +68,8 @@
     winner_id: null
     tie: false
     margin: 6.8
-    home_proj: 114.5
-    away_proj: 119.8
+    home_proj: 114.4
+    away_proj: 118.8
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -86,7 +86,7 @@
     tie: false
     margin: 16.4
     home_proj: 110.0
-    away_proj: 127.4
+    away_proj: 126.8
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -102,8 +102,8 @@
     winner_id: null
     tie: false
     margin: 32.2
-    home_proj: 122.3
-    away_proj: 120.8
+    home_proj: 122.5
+    away_proj: 119.6
   highlights: []
   projections:
   - home_id: alexandra
