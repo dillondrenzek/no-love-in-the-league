@@ -289,3 +289,1980 @@ transactions:
   theoceanpulse: { adds: 36, drops: 23, moves: 59 }
   whowonthelastsuperbowl: { adds: 37, drops: 8, moves: 45 }
   zachzoske: { adds: 63, drops: 39, moves: 102 }
+
+# Everyone rostered this season per franchise: the union of drafted players,
+# waiver/FA adds, and trade acquisitions, deduped by player and tagged with
+# how they first arrived (via: draft|add|trade). Adds need the transactions
+# endpoint (2018+); trades need a merged cookie; the draft is always present,
+# so an older season may be draft-only. Recomputed in full each import.
+rosters:
+  kevbots22:
+  - player: Christian McCaffrey
+    via: draft
+    round: 1
+  - player: Michael Pittman Jr.
+    via: draft
+    round: 2
+  - player: Malik Nabers
+    via: draft
+    round: 3
+  - player: Tee Higgins
+    via: draft
+    round: 4
+  - player: George Pickens
+    via: draft
+    round: 5
+  - player: Joe Burrow
+    via: draft
+    round: 6
+  - player: Brian Robinson Jr.
+    via: draft
+    round: 7
+  - player: Dallas Goedert
+    via: draft
+    round: 8
+  - player: Jordan Addison
+    via: draft
+    round: 9
+  - player: Mike Williams
+    via: draft
+    round: 10
+  - player: Tyler Lockett
+    via: draft
+    round: 11
+  - player: Justin Herbert
+    via: draft
+    round: 12
+  - player: Kirk Cousins
+    via: draft
+    round: 13
+  - player: Saints D/ST
+    via: draft
+    round: 14
+  - player: Greg Zuerlein
+    via: draft
+    round: 15
+  - player: Allen Lazard
+    via: add
+    week: 2
+    waiver: true
+  - player: Miles Sanders
+    via: add
+    week: 2
+    waiver: false
+  - player: Carson Steele
+    via: add
+    week: 3
+    waiver: true
+  - player: Colby Parkinson
+    via: add
+    week: 5
+    waiver: false
+  - player: Jaleel McLaughlin
+    via: add
+    week: 6
+    waiver: false
+  - player: Jeremy McNichols
+    via: add
+    week: 6
+    waiver: false
+  - player: Grant Calcaterra
+    via: add
+    week: 7
+    waiver: false
+  - player: Trey Sermon
+    via: add
+    week: 7
+    waiver: true
+  - player: D'Ernest Johnson
+    via: add
+    week: 8
+    waiver: false
+  - player: Trayveon Williams
+    via: add
+    week: 9
+    waiver: false
+  - player: Alec Pierce
+    via: add
+    week: 10
+    waiver: false
+  - player: Cameron Dicker
+    via: add
+    week: 10
+    waiver: true
+  - player: Roschon Johnson
+    via: add
+    week: 10
+    waiver: true
+  - player: Zach Ertz
+    via: add
+    week: 10
+    waiver: true
+  - player: 49ers D/ST
+    via: add
+    week: 12
+    waiver: false
+  - player: Isaiah Davis
+    via: add
+    week: 14
+    waiver: false
+  - player: Jamaal Williams
+    via: add
+    week: 14
+    waiver: false
+  - player: Mike Gesicki
+    via: add
+    week: 14
+    waiver: true
+  - player: Sincere McCormick
+    via: add
+    week: 14
+    waiver: false
+  - player: Calvin Austin III
+    via: add
+    week: 16
+    waiver: false
+  - player: Patrick Taylor Jr.
+    via: add
+    week: 16
+    waiver: true
+  - player: Antonio Gibson
+    via: add
+    week: 17
+    waiver: false
+  whowonthelastsuperbowl:
+  - player: Bijan Robinson
+    via: draft
+    round: 1
+  - player: James Cook
+    via: draft
+    round: 2
+  - player: DK Metcalf
+    via: draft
+    round: 3
+  - player: Zay Flowers
+    via: draft
+    round: 4
+  - player: Evan Engram
+    via: draft
+    round: 5
+  - player: Dak Prescott
+    via: draft
+    round: 6
+  - player: Christian Watson
+    via: draft
+    round: 7
+  - player: J.K. Dobbins
+    via: draft
+    round: 8
+  - player: Gus Edwards
+    via: draft
+    round: 9
+  - player: Hollywood Brown
+    via: draft
+    round: 10
+  - player: Chiefs D/ST
+    via: draft
+    round: 11
+  - player: Trevor Lawrence
+    via: draft
+    round: 12
+  - player: Dalton Schultz
+    via: draft
+    round: 13
+  - player: Xavier Legette
+    via: draft
+    round: 14
+  - player: Evan McPherson
+    via: draft
+    round: 15
+  - player: Bears D/ST
+    via: add
+    week: 1
+    waiver: false
+  - player: Brandin Cooks
+    via: add
+    week: 2
+    waiver: true
+  - player: Chris Boswell
+    via: add
+    week: 2
+    waiver: false
+  - player: Demarcus Robinson
+    via: add
+    week: 2
+    waiver: true
+  - player: Seahawks D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Tyler Johnson
+    via: add
+    week: 2
+    waiver: true
+  - player: Packers D/ST
+    via: add
+    week: 3
+    waiver: false
+  - player: Texans D/ST
+    via: add
+    week: 4
+    waiver: false
+  - player: Brenton Strange
+    via: add
+    week: 5
+    waiver: false
+  - player: Dolphins D/ST
+    via: add
+    week: 5
+    waiver: false
+  - player: Dontayvion Wicks
+    via: add
+    week: 5
+    waiver: true
+  - player: Jordan Whittington
+    via: add
+    week: 5
+    waiver: false
+  - player: Romeo Doubs
+    via: add
+    week: 5
+    waiver: false
+  - player: Chargers D/ST
+    via: add
+    week: 6
+    waiver: true
+  - player: Kimani Vidal
+    via: add
+    week: 6
+    waiver: false
+  - player: Ty Johnson
+    via: add
+    week: 6
+    waiver: false
+  - player: Zamir White
+    via: add
+    week: 6
+    waiver: false
+  - player: Jalen Tolbert
+    via: add
+    week: 8
+    waiver: false
+  - player: Joshua Palmer
+    via: add
+    week: 8
+    waiver: false
+  - player: Quentin Johnston
+    via: add
+    week: 8
+    waiver: false
+  - player: Jake Elliott
+    via: add
+    week: 9
+    waiver: false
+  - player: Aaron Rodgers
+    via: add
+    week: 10
+    waiver: false
+  - player: Noah Brown
+    via: add
+    week: 10
+    waiver: false
+  - player: Drake Maye
+    via: add
+    week: 11
+    waiver: false
+  - player: Ameer Abdullah
+    via: add
+    week: 12
+    waiver: false
+  - player: Jonnu Smith
+    via: add
+    week: 12
+    waiver: true
+  - player: Justice Hill
+    via: add
+    week: 12
+    waiver: false
+  - player: Buccaneers D/ST
+    via: add
+    week: 14
+    waiver: false
+  - player: Caleb Williams
+    via: add
+    week: 14
+    waiver: false
+  - player: Sterling Shepard
+    via: add
+    week: 14
+    waiver: false
+  - player: Rashod Bateman
+    via: add
+    week: 15
+    waiver: false
+  shawne2520997:
+  - player: CeeDee Lamb
+    via: draft
+    round: 1
+  - player: Breece Hall
+    via: draft
+    round: 2
+  - player: Cooper Kupp
+    via: draft
+    round: 3
+  - player: James Conner
+    via: draft
+    round: 5
+  - player: Christian Kirk
+    via: draft
+    round: 6
+  - player: Jordan Love
+    via: draft
+    round: 7
+  - player: Jake Ferguson
+    via: draft
+    round: 8
+  - player: Jerome Ford
+    via: draft
+    round: 9
+  - player: Romeo Doubs
+    via: draft
+    round: 9
+  - player: Antonio Gibson
+    via: draft
+    round: 10
+  - player: Taysom Hill
+    via: draft
+    round: 11
+  - player: Ja'Lynn Polk
+    via: draft
+    round: 12
+  - player: Cowboys D/ST
+    via: draft
+    round: 13
+  - player: Younghoe Koo
+    via: draft
+    round: 14
+  - player: Tyrone Tracy Jr.
+    via: draft
+    round: 15
+  - player: Tua Tagovailoa
+    via: add
+    week: 2
+    waiver: false
+  - player: Adam Thielen
+    via: add
+    week: 3
+    waiver: false
+  - player: Andrei Iosivas
+    via: add
+    week: 3
+    waiver: false
+  - player: Braelon Allen
+    via: add
+    week: 3
+    waiver: false
+  - player: Buccaneers D/ST
+    via: add
+    week: 3
+    waiver: false
+  - player: Jared Goff
+    via: add
+    week: 3
+    waiver: false
+  - player: DeAndre Hopkins
+    via: add
+    week: 4
+    waiver: true
+  - player: Tre Tucker
+    via: add
+    week: 4
+    waiver: false
+  - player: Xavier Legette
+    via: add
+    week: 4
+    waiver: true
+  - player: Justin Fields
+    via: add
+    week: 5
+    waiver: true
+  - player: Dalton Schultz
+    via: add
+    week: 7
+    waiver: false
+  - player: Lions D/ST
+    via: add
+    week: 7
+    waiver: false
+  - player: Titans D/ST
+    via: add
+    week: 9
+    waiver: false
+  - player: Daniel Jones
+    via: add
+    week: 10
+    waiver: false
+  - player: Austin Seibert
+    via: add
+    week: 12
+    waiver: false
+  - player: Isaiah Likely
+    via: add
+    week: 12
+    waiver: false
+  - player: Will Dissly
+    via: add
+    week: 13
+    waiver: false
+  - player: Isaac Guerendo
+    via: add
+    week: 14
+    waiver: true
+  - player: Jason Myers
+    via: add
+    week: 14
+    waiver: false
+  - player: Ravens D/ST
+    via: add
+    week: 14
+    waiver: false
+  - player: Will Levis
+    via: add
+    week: 14
+    waiver: false
+  - player: Aaron Rodgers
+    via: add
+    week: 15
+    waiver: false
+  - player: Blake Corum
+    via: add
+    week: 16
+    waiver: false
+  - player: Jalen McMillan
+    via: add
+    week: 16
+    waiver: true
+  - player: Ricky Pearsall
+    via: add
+    week: 17
+    waiver: false
+  henpen28:
+  - player: Tyreek Hill
+    via: draft
+    round: 1
+  - player: Davante Adams
+    via: draft
+    round: 2
+  - player: Alvin Kamara
+    via: draft
+    round: 3
+  - player: Stefon Diggs
+    via: draft
+    round: 4
+  - player: Chris Godwin
+    via: draft
+    round: 5
+  - player: Anthony Richardson
+    via: draft
+    round: 6
+  - player: Jaylen Warren
+    via: draft
+    round: 7
+  - player: David Njoku
+    via: draft
+    round: 8
+  - player: Austin Ekeler
+    via: draft
+    round: 9
+  - player: Brock Purdy
+    via: draft
+    round: 10
+  - player: T.J. Hockenson
+    via: draft
+    round: 11
+  - player: Aaron Rodgers
+    via: draft
+    round: 12
+  - player: Jerry Jeudy
+    via: draft
+    round: 13
+  - player: Dolphins D/ST
+    via: draft
+    round: 14
+  - player: Jake Moody
+    via: draft
+    round: 15
+  - player: Alexander Mattison
+    via: add
+    week: 2
+    waiver: false
+  - player: Colby Parkinson
+    via: add
+    week: 2
+    waiver: false
+  - player: Commanders D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Foster Moreau
+    via: add
+    week: 2
+    waiver: false
+  - player: Bills D/ST
+    via: add
+    week: 3
+    waiver: false
+  - player: Hunter Henry
+    via: add
+    week: 3
+    waiver: false
+  - player: Mike Gesicki
+    via: add
+    week: 4
+    waiver: false
+  - player: Broncos D/ST
+    via: add
+    week: 5
+    waiver: true
+  - player: Kirk Cousins
+    via: add
+    week: 6
+    waiver: true
+  - player: Wil Lutz
+    via: add
+    week: 6
+    waiver: true
+  - player: Cade Otton
+    via: add
+    week: 7
+    waiver: false
+  - player: Bears D/ST
+    via: add
+    week: 9
+    waiver: false
+  - player: Demarcus Robinson
+    via: add
+    week: 10
+    waiver: false
+  - player: Kayshon Boutte
+    via: add
+    week: 12
+    waiver: false
+  - player: Matthew Stafford
+    via: add
+    week: 12
+    waiver: false
+  - player: Tua Tagovailoa
+    via: add
+    week: 12
+    waiver: false
+  - player: Jason Sanders
+    via: add
+    week: 14
+    waiver: false
+  - player: Steelers D/ST
+    via: add
+    week: 14
+    waiver: true
+  - player: Tank Dell
+    via: add
+    week: 15
+    waiver: false
+  purpsworth:
+  - player: Amon-Ra St. Brown
+    via: draft
+    round: 1
+  - player: Rachaad White
+    via: draft
+    round: 2
+  - player: DJ Moore
+    via: draft
+    round: 3
+  - player: Travis Kelce
+    via: draft
+    round: 4
+  - player: Aaron Jones
+    via: draft
+    round: 5
+  - player: D'Andre Swift
+    via: draft
+    round: 6
+  - player: Keon Coleman
+    via: draft
+    round: 7
+  - player: Tyjae Spears
+    via: draft
+    round: 8
+  - player: DeMario Douglas
+    via: draft
+    round: 9
+  - player: Gabe Davis
+    via: draft
+    round: 10
+  - player: Caleb Williams
+    via: draft
+    round: 11
+  - player: De'Von Achane
+    via: draft
+    round: 12
+  - player: Harrison Butker
+    via: draft
+    round: 13
+  - player: Steelers D/ST
+    via: draft
+    round: 14
+  - player: Tre Tucker
+    via: draft
+    round: 15
+  - player: 2.05 pick
+    via: trade
+    week: 0
+  - player: 4.05 pick
+    via: trade
+    week: 0
+  - player: 6.05 pick
+    via: trade
+    week: 0
+  - player: 8.05 pick
+    via: trade
+    week: 0
+  - player: Wan'Dale Robinson
+    via: add
+    week: 2
+    waiver: false
+  - player: Josh Downs
+    via: add
+    week: 3
+    waiver: false
+  - player: Kirk Cousins
+    via: add
+    week: 3
+    waiver: false
+  - player: Quentin Johnston
+    via: add
+    week: 3
+    waiver: true
+  - player: Cole Kmet
+    via: add
+    week: 4
+    waiver: false
+  - player: Sam Darnold
+    via: add
+    week: 4
+    waiver: false
+  - player: Greg Joseph
+    via: add
+    week: 6
+    waiver: false
+  - player: Jalen Tolbert
+    via: add
+    week: 6
+    waiver: true
+  - player: Drake Maye
+    via: add
+    week: 7
+    waiver: false
+  - player: Sean Tucker
+    via: add
+    week: 7
+    waiver: false
+  - player: Cedric Tillman
+    via: add
+    week: 8
+    waiver: false
+  - player: Dontayvion Wicks
+    via: add
+    week: 8
+    waiver: false
+  - player: Bengals D/ST
+    via: add
+    week: 9
+    waiver: false
+  - player: Giants D/ST
+    via: add
+    week: 10
+    waiver: false
+  - player: Blake Grupe
+    via: add
+    week: 11
+    waiver: false
+  - player: Jared Goff
+    via: add
+    week: 11
+    waiver: false
+  - player: Jets D/ST
+    via: add
+    week: 11
+    waiver: false
+  - player: Cardinals D/ST
+    via: add
+    week: 12
+    waiver: false
+  - player: Chase McLaughlin
+    via: add
+    week: 12
+    waiver: false
+  - player: Keenan Allen
+    via: add
+    week: 13
+    waiver: true
+  schirmerj:
+  - player: Ja'Marr Chase
+    via: draft
+    round: 1
+  - player: Deebo Samuel Sr.
+    via: draft
+    round: 2
+  - player: Kenneth Walker III
+    via: draft
+    round: 3
+  - player: Patrick Mahomes
+    via: draft
+    round: 4
+  - player: Najee Harris
+    via: draft
+    round: 5
+  - player: Kyle Pitts
+    via: draft
+    round: 6
+  - player: Rome Odunze
+    via: draft
+    round: 7
+  - player: Chuba Hubbard
+    via: draft
+    round: 8
+  - player: Joshua Palmer
+    via: draft
+    round: 9
+  - player: Rashid Shaheed
+    via: draft
+    round: 10
+  - player: Justin Tucker
+    via: draft
+    round: 11
+  - player: Kyren Williams
+    via: draft
+    round: 12
+  - player: Ray Davis
+    via: draft
+    round: 13
+  - player: Jets D/ST
+    via: draft
+    round: 14
+  - player: Jamaal Williams
+    via: draft
+    round: 15
+  - player: Kareem Hunt
+    via: add
+    week: 3
+    waiver: true
+  - player: Tutu Atwell
+    via: add
+    week: 3
+    waiver: true
+  - player: Pat Freiermuth
+    via: add
+    week: 5
+    waiver: true
+  - player: Daniel Jones
+    via: add
+    week: 6
+    waiver: true
+  - player: Calvin Ridley
+    via: add
+    week: 7
+    waiver: false
+  - player: Clyde Edwards-Helaire
+    via: add
+    week: 7
+    waiver: false
+  - player: D'Ernest Johnson
+    via: add
+    week: 7
+    waiver: false
+  - player: Gabe Davis
+    via: add
+    week: 7
+    waiver: true
+  - player: Ray-Ray McCloud III
+    via: add
+    week: 7
+    waiver: false
+  - player: Isaiah Likely
+    via: add
+    week: 8
+    waiver: false
+  - player: Khalil Herbert
+    via: add
+    week: 9
+    waiver: false
+  - player: Taysom Hill
+    via: add
+    week: 9
+    waiver: true
+  - player: Texans D/ST
+    via: add
+    week: 9
+    waiver: true
+  - player: Zack Moss
+    via: add
+    week: 9
+    waiver: true
+  - player: 49ers D/ST
+    via: add
+    week: 10
+    waiver: true
+  - player: Hunter Henry
+    via: add
+    week: 12
+    waiver: true
+  - player: Steelers D/ST
+    via: add
+    week: 12
+    waiver: true
+  - player: Seahawks D/ST
+    via: add
+    week: 13
+    waiver: true
+  - player: Spencer Shrader
+    via: add
+    week: 13
+    waiver: true
+  - player: Juwan Johnson
+    via: add
+    week: 14
+    waiver: false
+  - player: Mike Gesicki
+    via: add
+    week: 14
+    waiver: true
+  - player: Nick Folk
+    via: add
+    week: 14
+    waiver: true
+  - player: Kirk Cousins
+    via: add
+    week: 15
+    waiver: false
+  - player: Rams D/ST
+    via: add
+    week: 15
+    waiver: true
+  - player: Anthony Richardson
+    via: add
+    week: 16
+    waiver: true
+  - player: Harrison Butker
+    via: add
+    week: 16
+    waiver: false
+  - player: Jaleel McLaughlin
+    via: add
+    week: 17
+    waiver: false
+  - player: Raheem Mostert
+    via: add
+    week: 17
+    waiver: false
+  lukstein:
+  - player: Saquon Barkley
+    via: draft
+    round: 1
+  - player: Joe Mixon
+    via: draft
+    round: 2
+  - player: DeVonta Smith
+    via: draft
+    round: 3
+  - player: Terry McLaurin
+    via: draft
+    round: 4
+  - player: George Kittle
+    via: draft
+    round: 5
+  - player: C.J. Stroud
+    via: draft
+    round: 6
+  - player: Garrett Wilson
+    via: draft
+    round: 7
+  - player: Courtland Sutton
+    via: draft
+    round: 8
+  - player: Nick Chubb
+    via: draft
+    round: 9
+  - player: Ezekiel Elliott
+    via: draft
+    round: 10
+  - player: Curtis Samuel
+    via: draft
+    round: 11
+  - player: Eagles D/ST
+    via: draft
+    round: 12
+  - player: Adam Thielen
+    via: draft
+    round: 13
+  - player: Ka'imi Fairbairn
+    via: draft
+    round: 14
+  - player: Jordan Mason
+    via: draft
+    round: 15
+  - player: Dalvin Cook
+    via: add
+    week: 1
+    waiver: false
+  - player: Baker Mayfield
+    via: add
+    week: 2
+    waiver: true
+  - player: Alec Pierce
+    via: add
+    week: 3
+    waiver: false
+  - player: Eric Saubert
+    via: add
+    week: 3
+    waiver: false
+  - player: Jauan Jennings
+    via: add
+    week: 3
+    waiver: true
+  - player: Zach Ertz
+    via: add
+    week: 4
+    waiver: false
+  - player: Cam Akers
+    via: add
+    week: 5
+    waiver: false
+  - player: Dameon Pierce
+    via: add
+    week: 5
+    waiver: false
+  - player: Vikings D/ST
+    via: add
+    week: 5
+    waiver: true
+  - player: Texans D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Isaac Guerendo
+    via: add
+    week: 7
+    waiver: false
+  - player: Sean Tucker
+    via: add
+    week: 7
+    waiver: false
+  - player: Keon Coleman
+    via: add
+    week: 8
+    waiver: true
+  - player: Dallas Goedert
+    via: add
+    week: 10
+    waiver: false
+  - player: Dawson Knox
+    via: add
+    week: 11
+    waiver: false
+  - player: Hunter Henry
+    via: add
+    week: 11
+    waiver: false
+  - player: Wan'Dale Robinson
+    via: add
+    week: 12
+    waiver: false
+  - player: Jameis Winston
+    via: add
+    week: 14
+    waiver: false
+  - player: Jerome Ford
+    via: add
+    week: 16
+    waiver: true
+  - player: Kenneth Gainwell
+    via: add
+    week: 16
+    waiver: true
+  - player: Olamide Zaccheaus
+    via: add
+    week: 17
+    waiver: false
+  - player: Raheem Blackshear
+    via: add
+    week: 17
+    waiver: false
+  - player: Jaleel McLaughlin
+    via: add
+    week: 18
+    waiver: true
+  - player: Marvin Mims Jr.
+    via: add
+    week: 18
+    waiver: true
+  - player: Xavier Legette
+    via: add
+    week: 18
+    waiver: false
+  zachzoske:
+  - player: Jonathan Taylor
+    via: draft
+    round: 1
+  - player: Drake London
+    via: draft
+    round: 2
+  - player: Brandon Aiyuk
+    via: draft
+    round: 3
+  - player: Mark Andrews
+    via: draft
+    round: 4
+  - player: Zamir White
+    via: draft
+    round: 5
+  - player: Xavier Worthy
+    via: draft
+    round: 6
+  - player: Brian Thomas Jr.
+    via: draft
+    round: 7
+  - player: Jonathon Brooks
+    via: draft
+    round: 8
+  - player: Nico Collins
+    via: draft
+    round: 9
+  - player: Trey Benson
+    via: draft
+    round: 10
+  - player: Brandon Aubrey
+    via: draft
+    round: 11
+  - player: Jaylen Wright
+    via: draft
+    round: 12
+  - player: Jared Goff
+    via: draft
+    round: 13
+  - player: 49ers D/ST
+    via: draft
+    round: 14
+  - player: Bucky Irving
+    via: draft
+    round: 15
+  - player: 2.08 pick
+    via: trade
+    week: 0
+  - player: 4.08 pick
+    via: trade
+    week: 0
+  - player: 6.08 pick
+    via: trade
+    week: 0
+  - player: 8.08 pick
+    via: trade
+    week: 0
+  - player: Andrei Iosivas
+    via: add
+    week: 1
+    waiver: false
+  - player: Vikings D/ST
+    via: add
+    week: 1
+    waiver: false
+  - player: Matthew Stafford
+    via: add
+    week: 2
+    waiver: false
+  - player: Bears D/ST
+    via: add
+    week: 3
+    waiver: false
+  - player: Derek Carr
+    via: add
+    week: 3
+    waiver: false
+  - player: Geno Smith
+    via: add
+    week: 4
+    waiver: false
+  - player: T.J. Hockenson
+    via: add
+    week: 5
+    waiver: false
+  - player: Trey Sermon
+    via: add
+    week: 5
+    waiver: false
+  - player: Tucker Kraft
+    via: add
+    week: 5
+    waiver: false
+  - player: Michael Wilson
+    via: add
+    week: 6
+    waiver: false
+  - player: Rams D/ST
+    via: add
+    week: 7
+    waiver: false
+  - player: Ray Davis
+    via: add
+    week: 7
+    waiver: false
+  - player: Tyler Goodson
+    via: add
+    week: 7
+    waiver: false
+  - player: Will Reichard
+    via: add
+    week: 7
+    waiver: false
+  - player: Blake Corum
+    via: add
+    week: 8
+    waiver: false
+  - player: Calvin Ridley
+    via: add
+    week: 8
+    waiver: false
+  - player: Chiefs D/ST
+    via: add
+    week: 8
+    waiver: true
+  - player: Hunter Henry
+    via: add
+    week: 8
+    waiver: false
+  - player: Jalen McMillan
+    via: add
+    week: 8
+    waiver: false
+  - player: Jalen Tolbert
+    via: add
+    week: 8
+    waiver: false
+  - player: Sean Tucker
+    via: add
+    week: 8
+    waiver: false
+  - player: Bo Nix
+    via: add
+    week: 9
+    waiver: false
+  - player: Ricky Pearsall
+    via: add
+    week: 9
+    waiver: false
+  - player: Michael Mayer
+    via: add
+    week: 10
+    waiver: false
+  - player: Odell Beckham Jr.
+    via: add
+    week: 10
+    waiver: false
+  - player: Tim Patrick
+    via: add
+    week: 10
+    waiver: false
+  - player: Audric Estime
+    via: add
+    week: 11
+    waiver: true
+  - player: Cam Akers
+    via: add
+    week: 11
+    waiver: false
+  - player: Devin Singletary
+    via: add
+    week: 13
+    waiver: false
+  - player: Marquez Valdes-Scantling
+    via: add
+    week: 13
+    waiver: false
+  - player: Noah Gray
+    via: add
+    week: 13
+    waiver: false
+  - player: Anthony Richardson
+    via: add
+    week: 15
+    waiver: false
+  - player: Bengals D/ST
+    via: add
+    week: 15
+    waiver: false
+  - player: Jaleel McLaughlin
+    via: add
+    week: 15
+    waiver: true
+  - player: Justice Hill
+    via: add
+    week: 15
+    waiver: false
+  - player: Patrick Taylor Jr.
+    via: add
+    week: 15
+    waiver: true
+  - player: Ameer Abdullah
+    via: add
+    week: 16
+    waiver: false
+  - player: Bills D/ST
+    via: add
+    week: 16
+    waiver: false
+  - player: Buccaneers D/ST
+    via: add
+    week: 16
+    waiver: false
+  - player: Michael Penix Jr.
+    via: add
+    week: 16
+    waiver: false
+  - player: Dolphins D/ST
+    via: add
+    week: 17
+    waiver: true
+  - player: Jalen Coker
+    via: add
+    week: 17
+    waiver: false
+  - player: Malik Washington
+    via: add
+    week: 17
+    waiver: false
+  - player: Isaiah Likely
+    via: add
+    week: 18
+    waiver: false
+  gganoom:
+  - player: Justin Jefferson
+    via: draft
+    round: 1
+  - player: Mike Evans
+    via: draft
+    round: 2
+  - player: Josh Jacobs
+    via: draft
+    round: 3
+  - player: Josh Allen
+    via: draft
+    round: 4
+  - player: Chris Olave
+    via: draft
+    round: 5
+  - player: Raheem Mostert
+    via: draft
+    round: 6
+  - player: Javonte Williams
+    via: draft
+    round: 8
+  - player: Jayden Daniels
+    via: draft
+    round: 9
+  - player: Brock Bowers
+    via: draft
+    round: 9
+  - player: Jakobi Meyers
+    via: draft
+    round: 10
+  - player: Jameson Williams
+    via: draft
+    round: 11
+  - player: Ty Chandler
+    via: draft
+    round: 12
+  - player: Adonai Mitchell
+    via: draft
+    round: 13
+  - player: Browns D/ST
+    via: draft
+    round: 14
+  - player: Matt Gay
+    via: draft
+    round: 15
+  - player: Cairo Santos
+    via: add
+    week: 1
+    waiver: false
+  - player: Jaleel McLaughlin
+    via: add
+    week: 1
+    waiver: false
+  - player: Rico Dowdle
+    via: add
+    week: 2
+    waiver: true
+  - player: Matt Prater
+    via: add
+    week: 4
+    waiver: true
+  - player: Evan McPherson
+    via: add
+    week: 5
+    waiver: true
+  - player: Justice Hill
+    via: add
+    week: 5
+    waiver: true
+  - player: Seahawks D/ST
+    via: add
+    week: 5
+    waiver: true
+  - player: Bills D/ST
+    via: add
+    week: 6
+    waiver: true
+  - player: Rashod Bateman
+    via: add
+    week: 8
+    waiver: true
+  - player: Jake Bates
+    via: add
+    week: 9
+    waiver: true
+  - player: Jonnu Smith
+    via: add
+    week: 10
+    waiver: true
+  - player: Quentin Johnston
+    via: add
+    week: 10
+    waiver: true
+  - player: Emanuel Wilson
+    via: add
+    week: 11
+    waiver: false
+  - player: Packers D/ST
+    via: add
+    week: 11
+    waiver: true
+  - player: Adam Thielen
+    via: add
+    week: 13
+    waiver: true
+  theoceanpulse:
+  - player: A.J. Brown
+    via: draft
+    round: 1
+  - player: Travis Etienne Jr.
+    via: draft
+    round: 2
+  - player: Jalen Hurts
+    via: draft
+    round: 3
+  - player: Amari Cooper
+    via: draft
+    round: 4
+  - player: David Montgomery
+    via: draft
+    round: 5
+  - player: Jayden Reed
+    via: draft
+    round: 6
+  - player: Tony Pollard
+    via: draft
+    round: 7
+  - player: Jaxon Smith-Njigba
+    via: draft
+    round: 7
+  - player: Ladd McConkey
+    via: draft
+    round: 8
+  - player: Zack Moss
+    via: draft
+    round: 10
+  - player: MarShawn Lloyd
+    via: draft
+    round: 11
+  - player: Michael Wilson
+    via: draft
+    round: 12
+  - player: Sam LaPorta
+    via: draft
+    round: 13
+  - player: Ravens D/ST
+    via: draft
+    round: 14
+  - player: Jake Bates
+    via: draft
+    round: 15
+  - player: 1.10 pick
+    via: trade
+    week: 0
+  - player: Pat Freiermuth
+    via: add
+    week: 1
+    waiver: false
+  - player: Justin Fields
+    via: add
+    week: 2
+    waiver: false
+  - player: Cam Akers
+    via: add
+    week: 3
+    waiver: false
+  - player: Mike Williams
+    via: add
+    week: 3
+    waiver: false
+  - player: Keenan Allen
+    via: add
+    week: 4
+    waiver: true
+  - player: Aaron Rodgers
+    via: add
+    week: 5
+    waiver: false
+  - player: Austin Seibert
+    via: add
+    week: 5
+    waiver: false
+  - player: Deshaun Watson
+    via: add
+    week: 5
+    waiver: false
+  - player: Tyler Conklin
+    via: add
+    week: 5
+    waiver: false
+  - player: 49ers D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Ja'Lynn Polk
+    via: add
+    week: 6
+    waiver: false
+  - player: Keon Coleman
+    via: add
+    week: 6
+    waiver: false
+  - player: T.J. Hockenson
+    via: add
+    week: 6
+    waiver: false
+  - player: Mark Andrews
+    via: add
+    week: 7
+    waiver: false
+  - player: Vikings D/ST
+    via: add
+    week: 9
+    waiver: true
+  - player: Jake Moody
+    via: add
+    week: 10
+    waiver: false
+  - player: Michael Pittman Jr.
+    via: add
+    week: 11
+    waiver: false
+  - player: Evan McPherson
+    via: add
+    week: 13
+    waiver: false
+  - player: Jake Elliott
+    via: add
+    week: 13
+    waiver: false
+  - player: Kenneth Gainwell
+    via: add
+    week: 13
+    waiver: false
+  - player: Andrei Iosivas
+    via: add
+    week: 14
+    waiver: false
+  - player: Brandin Cooks
+    via: add
+    week: 14
+    waiver: false
+  - player: Jerome Ford
+    via: add
+    week: 15
+    waiver: false
+  - player: Trey Benson
+    via: add
+    week: 15
+    waiver: false
+  - player: Younghoe Koo
+    via: add
+    week: 15
+    waiver: false
+  - player: Craig Reynolds
+    via: add
+    week: 16
+    waiver: false
+  - player: Justice Hill
+    via: add
+    week: 16
+    waiver: true
+  - player: Tim Patrick
+    via: add
+    week: 16
+    waiver: false
+  - player: Bryce Young
+    via: add
+    week: 17
+    waiver: false
+  - player: Dontayvion Wicks
+    via: add
+    week: 17
+    waiver: false
+  - player: Mike Boone
+    via: add
+    week: 17
+    waiver: false
+  jackperkins74:
+  - player: Jahmyr Gibbs
+    via: draft
+    round: 1
+  - player: Marvin Harrison Jr.
+    via: draft
+    round: 2
+  - player: Jaylen Waddle
+    via: draft
+    round: 3
+  - player: Lamar Jackson
+    via: draft
+    round: 4
+  - player: Rashee Rice
+    via: draft
+    round: 4
+  - player: Rhamondre Stevenson
+    via: draft
+    round: 5
+  - player: Dalton Kincaid
+    via: draft
+    round: 6
+  - player: Devin Singletary
+    via: draft
+    round: 7
+  - player: Blake Corum
+    via: draft
+    round: 8
+  - player: DeAndre Hopkins
+    via: draft
+    round: 10
+  - player: Tyler Allgeier
+    via: draft
+    round: 11
+  - player: Jaleel McLaughlin
+    via: draft
+    round: 12
+  - player: Puka Nacua
+    via: draft
+    round: 13
+  - player: Cameron Dicker
+    via: draft
+    round: 14
+  - player: Seahawks D/ST
+    via: draft
+    round: 15
+  - player: 1.11 pick
+    via: trade
+    week: 0
+  - player: Luke McCaffrey
+    via: add
+    week: 1
+    waiver: false
+  - player: Chargers D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Isaiah Likely
+    via: add
+    week: 2
+    waiver: true
+  - player: Jeff Wilson Jr.
+    via: add
+    week: 2
+    waiver: false
+  - player: Jordan Whittington
+    via: add
+    week: 2
+    waiver: false
+  - player: Joshua Karty
+    via: add
+    week: 2
+    waiver: false
+  - player: D'Onta Foreman
+    via: add
+    week: 3
+    waiver: false
+  - player: Emanuel Wilson
+    via: add
+    week: 3
+    waiver: false
+  - player: Christian Kirk
+    via: add
+    week: 4
+    waiver: true
+  - player: Dolphins D/ST
+    via: add
+    week: 4
+    waiver: false
+  - player: Evan McPherson
+    via: add
+    week: 4
+    waiver: false
+  - player: Titans D/ST
+    via: add
+    week: 4
+    waiver: true
+  - player: Wan'Dale Robinson
+    via: add
+    week: 4
+    waiver: false
+  - player: Commanders D/ST
+    via: add
+    week: 5
+    waiver: false
+  - player: Ray-Ray McCloud III
+    via: add
+    week: 5
+    waiver: false
+  - player: Tyrone Tracy Jr.
+    via: add
+    week: 5
+    waiver: false
+  - player: 49ers D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Colts D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Jake Bates
+    via: add
+    week: 6
+    waiver: false
+  - player: Jason Myers
+    via: add
+    week: 6
+    waiver: false
+  - player: JuJu Smith-Schuster
+    via: add
+    week: 6
+    waiver: true
+  - player: Kyle Pitts
+    via: add
+    week: 6
+    waiver: true
+  - player: Adam Thielen
+    via: add
+    week: 8
+    waiver: false
+  - player: Packers D/ST
+    via: add
+    week: 8
+    waiver: false
+  - player: Ricky Pearsall
+    via: add
+    week: 8
+    waiver: true
+  - player: Will Reichard
+    via: add
+    week: 8
+    waiver: false
+  - player: Gabe Davis
+    via: add
+    week: 9
+    waiver: false
+  - player: Rams D/ST
+    via: add
+    week: 9
+    waiver: false
+  - player: Cardinals D/ST
+    via: add
+    week: 10
+    waiver: false
+  - player: Ravens D/ST
+    via: add
+    week: 10
+    waiver: false
+  - player: Tyler Bass
+    via: add
+    week: 10
+    waiver: false
+  - player: Rashod Bateman
+    via: add
+    week: 11
+    waiver: true
+  - player: Giants D/ST
+    via: add
+    week: 12
+    waiver: false
+  - player: Matt Gay
+    via: add
+    week: 12
+    waiver: false
+  - player: Will Dissly
+    via: add
+    week: 12
+    waiver: false
+  - player: Bengals D/ST
+    via: add
+    week: 13
+    waiver: false
+  - player: Derek Carr
+    via: add
+    week: 13
+    waiver: false
+  - player: Jeremy McNichols
+    via: add
+    week: 13
+    waiver: false
+  - player: John Parker Romo
+    via: add
+    week: 13
+    waiver: false
+  - player: Zach Charbonnet
+    via: add
+    week: 13
+    waiver: false
+  - player: Dawson Knox
+    via: add
+    week: 14
+    waiver: false
+  - player: Jets D/ST
+    via: add
+    week: 14
+    waiver: true
+  - player: Mark Andrews
+    via: add
+    week: 14
+    waiver: true
+  - player: Matthew Wright
+    via: add
+    week: 14
+    waiver: false
+  - player: Russell Wilson
+    via: add
+    week: 14
+    waiver: true
+  - player: Falcons D/ST
+    via: add
+    week: 15
+    waiver: false
+  - player: Hollywood Brown
+    via: add
+    week: 15
+    waiver: false
+  - player: Kendre Miller
+    via: add
+    week: 15
+    waiver: false
+  - player: Raiders D/ST
+    via: add
+    week: 15
+    waiver: false
+  - player: Brandon McManus
+    via: add
+    week: 16
+    waiver: false
+  - player: Marquez Valdes-Scantling
+    via: add
+    week: 16
+    waiver: false
+  - player: Tim Patrick
+    via: add
+    week: 16
+    waiver: true
+  sturmanator15:
+  - player: Isiah Pacheco
+    via: draft
+    round: 1
+  - player: Derrick Henry
+    via: draft
+    round: 2
+  - player: Tank Dell
+    via: draft
+    round: 3
+  - player: Calvin Ridley
+    via: draft
+    round: 4
+  - player: Kyler Murray
+    via: draft
+    round: 5
+  - player: Diontae Johnson
+    via: draft
+    round: 6
+  - player: Chase Brown
+    via: draft
+    round: 7
+  - player: Keenan Allen
+    via: draft
+    round: 8
+  - player: Darnell Mooney
+    via: draft
+    round: 9
+  - player: Khalil Shakir
+    via: draft
+    round: 10
+  - player: Rico Dowdle
+    via: draft
+    round: 11
+  - player: Zach Charbonnet
+    via: draft
+    round: 12
+  - player: Trey McBride
+    via: draft
+    round: 13
+  - player: Jake Elliott
+    via: draft
+    round: 14
+  - player: Bengals D/ST
+    via: draft
+    round: 15
+  - player: Jaguars D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Tank Bigsby
+    via: add
+    week: 2
+    waiver: true
+  - player: Raiders D/ST
+    via: add
+    week: 3
+    waiver: true
+  - player: Samaje Perine
+    via: add
+    week: 3
+    waiver: true
+  - player: Roschon Johnson
+    via: add
+    week: 4
+    waiver: true
+  - player: Tyler Conklin
+    via: add
+    week: 4
+    waiver: false
+  - player: Chase McLaughlin
+    via: add
+    week: 5
+    waiver: true
+  - player: Patriots D/ST
+    via: add
+    week: 5
+    waiver: false
+  - player: Darius Slayton
+    via: add
+    week: 6
+    waiver: false
+  - player: Eagles D/ST
+    via: add
+    week: 6
+    waiver: true
+  - player: Ravens D/ST
+    via: add
+    week: 7
+    waiver: true
+  - player: Sterling Shepard
+    via: add
+    week: 8
+    waiver: false
+  - player: Tua Tagovailoa
+    via: add
+    week: 8
+    waiver: false
+  - player: Mike Gesicki
+    via: add
+    week: 9
+    waiver: false
+  - player: Falcons D/ST
+    via: add
+    week: 10
+    waiver: true
+  - player: Browns D/ST
+    via: add
+    week: 11
+    waiver: false
+  - player: Buccaneers D/ST
+    via: add
+    week: 11
+    waiver: false
+  - player: Michael Pittman Jr.
+    via: add
+    week: 11
+    waiver: false
+  - player: Mike Williams
+    via: add
+    week: 11
+    waiver: false
+  - player: Russell Wilson
+    via: add
+    week: 11
+    waiver: true
+  - player: Cam Akers
+    via: add
+    week: 12
+    waiver: true
+  - player: Devin Singletary
+    via: add
+    week: 12
+    waiver: false
+  - player: Elijah Moore
+    via: add
+    week: 12
+    waiver: false
+  - player: Jalen Tolbert
+    via: add
+    week: 12
+    waiver: true
+  - player: Jordan Mason
+    via: add
+    week: 12
+    waiver: false
+  - player: Kayshon Boutte
+    via: add
+    week: 12
+    waiver: true
+  - player: Nick Westbrook-Ikhine
+    via: add
+    week: 12
+    waiver: false
+  - player: Marquez Valdes-Scantling
+    via: add
+    week: 13
+    waiver: false
+  - player: Tyler Bass
+    via: add
+    week: 13
+    waiver: false
+  - player: Chris Brooks
+    via: add
+    week: 14
+    waiver: false
+  - player: Dolphins D/ST
+    via: add
+    week: 14
+    waiver: false
+  - player: Ricky Pearsall
+    via: add
+    week: 14
+    waiver: true
+  - player: Commanders D/ST
+    via: add
+    week: 15
+    waiver: true
+  - player: Noah Gray
+    via: add
+    week: 15
+    waiver: false
+  - player: Romeo Doubs
+    via: add
+    week: 15
+    waiver: false

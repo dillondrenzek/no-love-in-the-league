@@ -198,6 +198,38 @@ def test_most_transactions_in_a_season_record_and_sections():
     assert hi["section"] == SEC_MOVES
 
 
+def test_build_rosters_union_dedup_and_via():
+    from import_espn import build_rosters
+    # "Apollo" sorts before "Zeus" alphabetically but was drafted much later —
+    # lets us prove draft picks are ordered by draft order, not by name.
+    draft = [{"team_id": 1, "player_name": "Zeus", "player_id": 11, "round": 1, "overall_pick": 1},
+             {"team_id": 1, "player_name": "Apollo", "player_id": 10, "round": 6, "overall_pick": 61},
+             {"team_id": 2, "player_name": "CMC", "player_id": 12, "round": 1, "overall_pick": 2}]
+    tx = [{"team_id": 1, "player_name": "Streamer", "player_id": 20,
+           "action": "ADD", "scoring_period": 3, "type": "WAIVER"},
+          {"team_id": 1, "player_name": "Apollo", "player_id": 10,
+           "action": "DROP", "scoring_period": 8},              # drops ignored
+          {"team_id": 2, "player_name": "FA Guy", "player_id": 21,
+           "action": "ADD", "scoring_period": 2, "type": "FREEAGENT"}]
+    # Trades already carry franchise ids in from/to (build_trades output).
+    trades = [{"week": 4, "teams": ["jack", "zach"],
+               "assets": [{"from": "zach", "to": "jack", "label": "Trade Star"},
+                          {"from": "jack", "to": "zach", "label": "pick 18"}]}]
+    out = build_rosters(draft, tx, trades, {1: "jack", 2: "zach"})
+
+    jack = {e["player"]: e for e in out["jack"]}
+    assert jack["Zeus"]["via"] == "draft" and jack["Zeus"]["round"] == 1
+    assert jack["Streamer"]["via"] == "add" and jack["Streamer"]["waiver"] is True
+    assert jack["Trade Star"]["via"] == "trade" and jack["Trade Star"]["week"] == 4
+    assert "pick 18" not in jack                    # draft-pick asset is not a roster player
+    # Draft picks ordered by draft order (Zeus #1 before Apollo #61), then the
+    # in-season arrivals; not alphabetical.
+    assert [e["player"] for e in out["jack"] if e["via"] == "draft"] == ["Zeus", "Apollo"]
+    assert out["jack"][0]["via"] == "draft"
+    zach = {e["player"]: e for e in out["zach"]}
+    assert zach["FA Guy"]["via"] == "add" and zach["FA Guy"]["waiver"] is False
+
+
 def test_projection_report_line_and_calls():
     from lib.weeks import _projection_report
     s = matchup_season(2026)      # complete: wk1 a>b (100-90), d>c (120-80)

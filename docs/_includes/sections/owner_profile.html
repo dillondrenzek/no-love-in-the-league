@@ -19,3 +19,8 @@ nickname header is rendered by the `owner` layout.
 <h2>Keepers</h2>
 {% include sections/owner_keepers.html rows=p.keepers %}
 {%- endif %}
+
+{%- if p.rosters and p.rosters.size > 0 %}
+<h2>Roster history</h2>
+{% include sections/owner_rosters.html seasons=p.rosters %}
+{%- endif %}
