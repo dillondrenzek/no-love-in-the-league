@@ -74,11 +74,11 @@ final_standings:
 # count toward standings/records/H2H.
 matchups:
   - { week:  1, home: alexandra, away: whowonthelastsuperbowl, home_score: 14.0, away_score: 14.8, playoff: false, final: false, home_proj: 115.36, away_proj: 113.63 }
-  - { week:  1, home: gganoom, away: shawne2520997, home_score: 28.2, away_score: 1.0, playoff: false, final: false, home_proj: 106.17, away_proj: 109.23 }
-  - { week:  1, home: kevbots22, away: theoceanpulse, home_score: 19.0, away_score: 5.1, playoff: false, final: false, home_proj: 115.14, away_proj: 112.5 }
-  - { week:  1, home: lukstein, away: purpsworth, home_score: 6.8, away_score: 0.0, playoff: false, final: false, home_proj: 114.39, away_proj: 118.76 }
-  - { week:  1, home: schirmerj, away: jackperkins74, home_score: 32.3, away_score: 15.9, playoff: false, final: false, home_proj: 109.97, away_proj: 126.85 }
-  - { week:  1, home: sturmanator15, away: zachzoske, home_score: 32.2, away_score: 0.0, playoff: false, final: false, home_proj: 122.51, away_proj: 119.64 }
+  - { week:  1, home: gganoom, away: shawne2520997, home_score: 28.2, away_score: 1.0, playoff: false, final: false, home_proj: 106.18, away_proj: 109.23 }
+  - { week:  1, home: kevbots22, away: theoceanpulse, home_score: 19.0, away_score: 5.1, playoff: false, final: false, home_proj: 115.14, away_proj: 112.49 }
+  - { week:  1, home: lukstein, away: purpsworth, home_score: 6.8, away_score: 0.0, playoff: false, final: false, home_proj: 114.37, away_proj: 118.76 }
+  - { week:  1, home: schirmerj, away: jackperkins74, home_score: 32.3, away_score: 15.9, playoff: false, final: false, home_proj: 109.98, away_proj: 126.86 }
+  - { week:  1, home: sturmanator15, away: zachzoske, home_score: 32.2, away_score: 0.0, playoff: false, final: false, home_proj: 122.49, away_proj: 119.29 }
   - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false }

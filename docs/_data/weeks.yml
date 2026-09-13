@@ -86,7 +86,7 @@
     tie: false
     margin: 16.4
     home_proj: 110.0
-    away_proj: 126.8
+    away_proj: 126.9
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -103,7 +103,7 @@
     tie: false
     margin: 32.2
     home_proj: 122.5
-    away_proj: 119.6
+    away_proj: 119.3
   highlights: []
   projections:
   - home_id: alexandra
