@@ -12,11 +12,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 14.0
-    away_score: 14.8
+    home_score: 47.1
+    away_score: 52.2
     winner_id: null
     tie: false
-    margin: 0.8
+    margin: 5.1
     home_proj: 115.4
     away_proj: 113.6
   - home_id: gganoom
@@ -29,12 +29,12 @@
     final: false
     live: true
     playoff: false
-    home_score: 28.2
-    away_score: 1.0
+    home_score: 58.9
+    away_score: 30.0
     winner_id: null
     tie: false
-    margin: 27.2
-    home_proj: 106.2
+    margin: 28.9
+    home_proj: 105.2
     away_proj: 109.2
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -46,11 +46,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 19.0
-    away_score: 5.1
+    home_score: 35.9
+    away_score: 57.1
     winner_id: null
     tie: false
-    margin: 13.9
+    margin: 21.2
     home_proj: 115.1
     away_proj: 112.5
   - home_id: lukstein
@@ -63,12 +63,12 @@
     final: false
     live: true
     playoff: false
-    home_score: 6.8
-    away_score: 0.0
+    home_score: 21.9
+    away_score: 30.1
     winner_id: null
     tie: false
-    margin: 6.8
-    home_proj: 114.4
+    margin: 8.2
+    home_proj: 114.3
     away_proj: 118.8
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -80,13 +80,13 @@
     final: false
     live: true
     playoff: false
-    home_score: 32.3
-    away_score: 15.9
+    home_score: 76.5
+    away_score: 90.2
     winner_id: null
     tie: false
-    margin: 16.4
+    margin: 13.7
     home_proj: 110.0
-    away_proj: 126.9
+    away_proj: 127.6
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -97,11 +97,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 32.2
-    away_score: 0.0
+    home_score: 57.1
+    away_score: 44.4
     winner_id: null
     tie: false
-    margin: 32.2
+    margin: 12.7
     home_proj: 122.5
     away_proj: 119.3
   highlights: []
