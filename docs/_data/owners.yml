@@ -2,9 +2,9 @@ active:
 - id: shawne2520997
   name: Shawnee
   seasons: 11
-  record: 81-53-1
-  win_pct: '.604'
-  win_color: '#f38f44'
+  record: 82-53-1
+  win_pct: '.607'
+  win_color: '#f38e43'
   titles: '2'
   sackos: 2
   trades: 4
@@ -16,9 +16,9 @@ active:
 - id: jackperkins74
   name: Jack
   seasons: 13
-  record: 88-73
-  win_pct: '.547'
-  win_color: '#f6a549'
+  record: 89-73
+  win_pct: '.549'
+  win_color: '#f6a349'
   titles: '2'
   sackos: 1
   trades: 6
@@ -30,9 +30,9 @@ active:
 - id: theoceanpulse
   name: Dillon
   seasons: 11
-  record: 83-51-1
-  win_pct: '.619'
-  win_color: '#f28a42'
+  record: 83-51-2
+  win_pct: '.618'
+  win_color: '#f38a42'
   titles: '1'
   sackos: 0
   trades: 13
@@ -43,9 +43,9 @@ active:
 - id: zachzoske
   name: Zach
   seasons: 13
-  record: 80-80-1
-  win_pct: '.500'
-  win_color: '#f9b64d'
+  record: 81-80-1
+  win_pct: '.503'
+  win_color: '#f9b54d'
   titles: '1'
   sackos: 2
   trades: 16
@@ -56,9 +56,9 @@ active:
 - id: lukstein
   name: Luke
   seasons: 13
-  record: 75-86
-  win_pct: '.466'
-  win_color: '#fac066'
+  record: 76-86
+  win_pct: '.469'
+  win_color: '#fabf64'
   titles: '1'
   sackos: 1
   trades: 8
@@ -69,9 +69,9 @@ active:
 - id: sturmanator15
   name: Wade
   seasons: 13
-  record: 94-66-1
-  win_pct: '.587'
-  win_color: '#f49545'
+  record: 94-67-1
+  win_pct: '.583'
+  win_color: '#f49746'
   titles: ½
   sackos: 0
   trades: 7
@@ -82,9 +82,9 @@ active:
 - id: schirmerj
   name: Jono
   seasons: 13
-  record: 80-80-1
-  win_pct: '.500'
-  win_color: '#f9b64d'
+  record: 80-81-1
+  win_pct: '.497'
+  win_color: '#f9b74f'
   titles: ½
   sackos: 0
   trades: 1
@@ -92,12 +92,25 @@ active:
     type: cochamp
     years:
     - 2016
+- id: alexandra
+  name: Lexi
+  seasons: 1
+  record: 1-0
+  win_pct: '1.000'
+  win_color: '#ee6b3b'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: —
+    years: []
 - id: gganoom
   name: Grant
   seasons: 3
-  record: 16-12
-  win_pct: '.571'
-  win_color: '#f59b47'
+  record: 16-13
+  win_pct: '.552'
+  win_color: '#f6a348'
   titles: '0'
   sackos: 0
   trades: 0
@@ -109,9 +122,9 @@ active:
 - id: purpsworth
   name: Trevor
   seasons: 8
-  record: 44-52
-  win_pct: '.458'
-  win_color: '#fac36c'
+  record: 44-53
+  win_pct: '.454'
+  win_color: '#fac46f'
   titles: '0'
   sackos: 0
   trades: 6
@@ -123,7 +136,7 @@ active:
 - id: kevbots22
   name: Kevin
   seasons: 13
-  record: 64-96-1
+  record: 64-96-2
   win_pct: '.401'
   win_color: '#fbd496'
   titles: '0'
@@ -137,9 +150,9 @@ active:
 - id: whowonthelastsuperbowl
   name: Nate
   seasons: 13
-  record: 62-99
-  win_pct: '.385'
-  win_color: '#fbd9a1'
+  record: 62-100
+  win_pct: '.383'
+  win_color: '#fbdaa3'
   titles: '0'
   sackos: 2
   trades: 4
@@ -148,19 +161,6 @@ active:
     ordinal: 4th
     years:
     - 2022
-- id: alexandra
-  name: Lexi
-  seasons: 1
-  record: 0-0
-  win_pct: '.000'
-  win_color: '#fdf3e0'
-  titles: '0'
-  sackos: 0
-  trades: 0
-  best_finish:
-    type: place
-    ordinal: —
-    years: []
 inactive:
 - id: henpen28
   name: Henry
@@ -939,12 +939,13 @@ tx_heatmap:
   - 2023
   - 2024
   - 2025
+  - 2026
   max: 160
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1005
-    tx_per_year: 125.6
+    total: 1026
+    tx_per_year: 114.0
     cells:
     - year: 2018
       count: 75
@@ -970,10 +971,13 @@ tx_heatmap:
     - year: 2025
       count: 130
       color: '#f28742'
+    - year: 2026
+      count: 21
+      color: '#fce3b9'
   - id: zachzoske
     name: Zach
-    total: 914
-    tx_per_year: 114.2
+    total: 923
+    tx_per_year: 102.6
     cells:
     - year: 2018
       count: 130
@@ -999,10 +1003,13 @@ tx_heatmap:
     - year: 2025
       count: 110
       color: '#f59a46'
+    - year: 2026
+      count: 9
+      color: '#fdeccf'
   - id: sturmanator15
     name: Wade
-    total: 777
-    tx_per_year: 97.1
+    total: 778
+    tx_per_year: 86.4
     cells:
     - year: 2018
       count: 110
@@ -1028,10 +1035,13 @@ tx_heatmap:
     - year: 2025
       count: 52
       color: '#facb80'
+    - year: 2026
+      count: 1
+      color: '#fdf2de'
   - id: schirmerj
     name: Jono
-    total: 456
-    tx_per_year: 57.0
+    total: 457
+    tx_per_year: 50.8
     cells:
     - year: 2018
       count: 78
@@ -1057,10 +1067,13 @@ tx_heatmap:
     - year: 2025
       count: 61
       color: '#fac470'
+    - year: 2026
+      count: 1
+      color: '#fdf2de'
   - id: theoceanpulse
     name: Dillon
-    total: 434
-    tx_per_year: 54.2
+    total: 437
+    tx_per_year: 48.6
     cells:
     - year: 2018
       count: 32
@@ -1086,10 +1099,13 @@ tx_heatmap:
     - year: 2025
       count: 50
       color: '#facd84'
+    - year: 2026
+      count: 3
+      color: '#fdf1da'
   - id: shawne2520997
     name: Shawnee
-    total: 415
-    tx_per_year: 51.9
+    total: 417
+    tx_per_year: 46.3
     cells:
     - year: 2018
       count: 52
@@ -1115,35 +1131,9 @@ tx_heatmap:
     - year: 2025
       count: 101
       color: '#f6a248'
-  - id: lukstein
-    name: Luke
-    total: 396
-    tx_per_year: 49.5
-    cells:
-    - year: 2018
-      count: 70
-      color: '#fabe5f'
-    - year: 2019
-      count: 53
-      color: '#facb7f'
-    - year: 2020
-      count: 38
-      color: '#fbd69a'
-    - year: 2021
-      count: 51
-      color: '#facc82'
-    - year: 2022
-      count: 44
-      color: '#fbd18f'
-    - year: 2023
-      count: 53
-      color: '#facb7f'
-    - year: 2024
-      count: 53
-      color: '#facb7f'
-    - year: 2025
-      count: 34
-      color: '#fbd9a2'
+    - year: 2026
+      count: 2
+      color: '#fdf1dc'
   - id: henpen28
     name: Henry
     total: 360
@@ -1173,10 +1163,45 @@ tx_heatmap:
     - year: 2025
       count: 37
       color: '#fbd79c'
+    - year: 2026
+      count: null
+      color: null
+  - id: lukstein
+    name: Luke
+    total: 403
+    tx_per_year: 44.8
+    cells:
+    - year: 2018
+      count: 70
+      color: '#fabe5f'
+    - year: 2019
+      count: 53
+      color: '#facb7f'
+    - year: 2020
+      count: 38
+      color: '#fbd69a'
+    - year: 2021
+      count: 51
+      color: '#facc82'
+    - year: 2022
+      count: 44
+      color: '#fbd18f'
+    - year: 2023
+      count: 53
+      color: '#facb7f'
+    - year: 2024
+      count: 53
+      color: '#facb7f'
+    - year: 2025
+      count: 34
+      color: '#fbd9a2'
+    - year: 2026
+      count: 7
+      color: '#fdeed3'
   - id: purpsworth
     name: Trevor
-    total: 314
-    tx_per_year: 44.9
+    total: 315
+    tx_per_year: 39.4
     cells:
     - year: 2018
       count: null
@@ -1202,35 +1227,9 @@ tx_heatmap:
     - year: 2025
       count: 41
       color: '#fbd495'
-  - id: whowonthelastsuperbowl
-    name: Nate
-    total: 296
-    tx_per_year: 37.0
-    cells:
-    - year: 2018
-      count: 18
-      color: '#fce5bf'
-    - year: 2019
-      count: 42
-      color: '#fbd393'
-    - year: 2020
-      count: 48
-      color: '#fbce88'
-    - year: 2021
-      count: 58
-      color: '#fac775'
-    - year: 2022
-      count: 28
-      color: '#fcdead'
-    - year: 2023
-      count: 26
-      color: '#fcdfb0'
-    - year: 2024
-      count: 45
-      color: '#fbd18d'
-    - year: 2025
-      count: 31
-      color: '#fbdba7'
+    - year: 2026
+      count: 1
+      color: '#fdf2de'
   - id: unclebadtouch38
     name: Fletcher
     total: 216
@@ -1260,10 +1259,45 @@ tx_heatmap:
     - year: 2025
       count: null
       color: null
+    - year: 2026
+      count: null
+      color: null
+  - id: whowonthelastsuperbowl
+    name: Nate
+    total: 296
+    tx_per_year: 32.9
+    cells:
+    - year: 2018
+      count: 18
+      color: '#fce5bf'
+    - year: 2019
+      count: 42
+      color: '#fbd393'
+    - year: 2020
+      count: 48
+      color: '#fbce88'
+    - year: 2021
+      count: 58
+      color: '#fac775'
+    - year: 2022
+      count: 28
+      color: '#fcdead'
+    - year: 2023
+      count: 26
+      color: '#fcdfb0'
+    - year: 2024
+      count: 45
+      color: '#fbd18d'
+    - year: 2025
+      count: 31
+      color: '#fbdba7'
+    - year: 2026
+      count: 0
+      color: null
   - id: kevbots22
     name: Kevin
-    total: 265
-    tx_per_year: 33.1
+    total: 266
+    tx_per_year: 29.6
     cells:
     - year: 2018
       count: 30
@@ -1289,35 +1323,9 @@ tx_heatmap:
     - year: 2025
       count: 29
       color: '#fcddab'
-  - id: gganoom
-    name: Grant
-    total: 61
-    tx_per_year: 30.5
-    cells:
-    - year: 2018
-      count: null
-      color: null
-    - year: 2019
-      count: null
-      color: null
-    - year: 2020
-      count: null
-      color: null
-    - year: 2021
-      count: null
-      color: null
-    - year: 2022
-      count: null
-      color: null
-    - year: 2023
-      count: null
-      color: null
-    - year: 2024
-      count: 27
-      color: '#fcdeae'
-    - year: 2025
-      count: 34
-      color: '#fbd9a2'
+    - year: 2026
+      count: 1
+      color: '#fdf2de'
   - id: ajstewart04
     name: Anthony
     total: 22
@@ -1346,4 +1354,71 @@ tx_heatmap:
       color: null
     - year: 2025
       count: null
+      color: null
+    - year: 2026
+      count: null
+      color: null
+  - id: gganoom
+    name: Grant
+    total: 64
+    tx_per_year: 21.3
+    cells:
+    - year: 2018
+      count: null
+      color: null
+    - year: 2019
+      count: null
+      color: null
+    - year: 2020
+      count: null
+      color: null
+    - year: 2021
+      count: null
+      color: null
+    - year: 2022
+      count: null
+      color: null
+    - year: 2023
+      count: null
+      color: null
+    - year: 2024
+      count: 27
+      color: '#fcdeae'
+    - year: 2025
+      count: 34
+      color: '#fbd9a2'
+    - year: 2026
+      count: 3
+      color: '#fdf1da'
+  - id: alexandra
+    name: Lexi
+    total: 0
+    tx_per_year: 0.0
+    cells:
+    - year: 2018
+      count: null
+      color: null
+    - year: 2019
+      count: null
+      color: null
+    - year: 2020
+      count: null
+      color: null
+    - year: 2021
+      count: null
+      color: null
+    - year: 2022
+      count: null
+      color: null
+    - year: 2023
+      count: null
+      color: null
+    - year: 2024
+      count: null
+      color: null
+    - year: 2025
+      count: null
+      color: null
+    - year: 2026
+      count: 0
       color: null

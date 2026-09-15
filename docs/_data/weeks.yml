@@ -1,6 +1,6 @@
 2026-1:
   week: 1
-  state: in_progress
+  state: complete
   scoreboard:
   - home_id: alexandra
     home_team: Cornstar
@@ -9,16 +9,14 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     scored: true
-    final: false
-    live: true
+    final: true
+    live: false
     playoff: false
     home_score: 105.0
     away_score: 87.4
-    winner_id: null
+    winner_id: alexandra
     tie: false
     margin: 17.6
-    home_proj: 115.3
-    away_proj: 113.6
   - home_id: gganoom
     home_team: One Big Beautiful Dill
     home_owner: Grant
@@ -26,16 +24,14 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     scored: true
-    final: false
-    live: true
+    final: true
+    live: false
     playoff: false
     home_score: 103.6
     away_score: 108.3
-    winner_id: null
+    winner_id: shawne2520997
     tie: false
     margin: 4.7
-    home_proj: 105.2
-    away_proj: 109.2
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -43,16 +39,14 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     scored: true
-    final: false
-    live: true
+    final: true
+    live: false
     playoff: false
     home_score: 137.4
     away_score: 137.4
     winner_id: null
-    tie: false
+    tie: true
     margin: 0.0
-    home_proj: 115.1
-    away_proj: 113.5
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -60,16 +54,14 @@
     away_team: I am dead inside
     away_owner: Trevor
     scored: true
-    final: false
-    live: true
+    final: true
+    live: false
     playoff: false
     home_score: 96.5
     away_score: 85.4
-    winner_id: null
+    winner_id: lukstein
     tie: false
     margin: 11.1
-    home_proj: 114.4
-    away_proj: 118.7
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -77,16 +69,14 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     scored: true
-    final: false
-    live: true
+    final: true
+    live: false
     playoff: false
     home_score: 103.5
     away_score: 166.7
-    winner_id: null
+    winner_id: jackperkins74
     tie: false
     margin: 63.2
-    home_proj: 110.0
-    away_proj: 127.6
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -94,17 +84,43 @@
     away_team: Tuten Your Mom
     away_owner: Zach
     scored: true
-    final: false
-    live: true
+    final: true
+    live: false
     playoff: false
     home_score: 146.7
     away_score: 161.3
-    winner_id: null
+    winner_id: zachzoske
     tie: false
     margin: 14.6
-    home_proj: 122.5
-    away_proj: 119.3
-  highlights: []
+  highlights:
+  - key: top
+    label: Top Score
+    value: '166.70'
+    sub: vs Return of the IDP
+    owner_id: jackperkins74
+    owner_name: Jack
+    team: Gibbed for your pleasure
+  - key: low
+    label: Low Score
+    value: '85.40'
+    sub: vs 2x Runner Up
+    owner_id: purpsworth
+    owner_name: Trevor
+    team: I am dead inside
+  - key: blowout
+    label: Biggest Blowout
+    value: '+63.20'
+    sub: 166.7–103.5 over Return of the IDP
+    owner_id: jackperkins74
+    owner_name: Jack
+    team: Gibbed for your pleasure
+  - key: closest
+    label: Closest Call
+    value: '0.00'
+    sub: 137.4–137.4
+    owner_id: null
+    owner_name: null
+    team: null
   projections:
   - home_id: alexandra
     away_id: whowonthelastsuperbowl
@@ -119,8 +135,9 @@
     fav_proj: 115.4
     dog_proj: 112.5
     spread: 2.9
-    decided: false
-    result: null
+    decided: true
+    result: hit
+    winner_id: alexandra
   - home_id: gganoom
     away_id: shawne2520997
     home_team: One Big Beautiful Dill
@@ -134,8 +151,9 @@
     fav_proj: 109.5
     dog_proj: 107.9
     spread: 1.6
-    decided: false
-    result: null
+    decided: true
+    result: miss
+    winner_id: shawne2520997
   - home_id: kevbots22
     away_id: theoceanpulse
     home_team: Josh Jacobs Alibi
@@ -149,8 +167,9 @@
     fav_proj: 115.2
     dog_proj: 113.4
     spread: 1.8
-    decided: false
-    result: null
+    decided: true
+    result: push
+    winner_id: null
   - home_id: lukstein
     away_id: purpsworth
     home_team: 2x Runner Up
@@ -164,8 +183,9 @@
     fav_proj: 119.8
     dog_proj: 114.3
     spread: 5.5
-    decided: false
-    result: null
+    decided: true
+    result: miss
+    winner_id: lukstein
   - home_id: schirmerj
     away_id: jackperkins74
     home_team: Return of the IDP
@@ -179,8 +199,9 @@
     fav_proj: 127.0
     dog_proj: 109.9
     spread: 17.1
-    decided: false
-    result: null
+    decided: true
+    result: hit
+    winner_id: jackperkins74
   - home_id: sturmanator15
     away_id: zachzoske
     home_team: The People's Commissioner
@@ -194,8 +215,9 @@
     fav_proj: 122.4
     dog_proj: 120.6
     spread: 1.8
-    decided: false
-    result: null
+    decided: true
+    result: miss
+    winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
 2026-2:
   week: 2
@@ -211,6 +233,8 @@
     final: false
     live: false
     playoff: false
+    home_proj: 122.1
+    away_proj: 114.1
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -221,6 +245,8 @@
     final: false
     live: false
     playoff: false
+    home_proj: 116.7
+    away_proj: 119.2
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -231,6 +257,8 @@
     final: false
     live: false
     playoff: false
+    home_proj: 112.2
+    away_proj: 120.3
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -241,6 +269,8 @@
     final: false
     live: false
     playoff: false
+    home_proj: 124.2
+    away_proj: 117.9
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
     home_owner: Dillon
@@ -251,6 +281,8 @@
     final: false
     live: false
     playoff: false
+    home_proj: 102.8
+    away_proj: 115.4
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -261,6 +293,8 @@
     final: false
     live: false
     playoff: false
+    home_proj: 111.4
+    away_proj: 118.0
   highlights: []
   projections: []
   projected_at: null
