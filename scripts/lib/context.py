@@ -23,8 +23,9 @@ def standings_snapshot(season, franchises):
     standings. A complete season keeps `get_standings`' order (real final finish)."""
     rows = get_standings(season, franchises)
     if is_in_progress(season):
-        rows = sorted(rows, key=lambda r: (r.get("wins", 0), r.get("points_for") or 0),
-                      reverse=True)
+        # Win% (a tie = half a win), then points-for — so a 0-0-1 outranks a 0-1.
+        rows = sorted(rows, key=lambda r: (r.get("wins", 0) + 0.5 * r.get("ties", 0),
+                                           r.get("points_for") or 0), reverse=True)
     teams = season.get("teams", {})
     out = []
     for i, r in enumerate(rows, 1):

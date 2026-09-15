@@ -414,9 +414,10 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
     read player scorelines offline instead of re-fetching from ESPN.
 
     Keyed by owner SWID (`manager_id`) so it stays joinable to a franchise even
-    when a team is renamed — the same join `data/projections/` uses. Unlike the
-    projection snapshot this is **refreshed every import**: rewritten in place so
-    actual points fill in as the week's games are played and go final.
+    when a team is renamed — the same join `data/projections/` uses. This writes
+    one week's file in place; `snapshot_rosters` decides which weeks to (re)write —
+    the current week is refreshed as actuals fill in, past weeks are kept once
+    captured.
 
     Each entry is one team: {manager_id, team_id, team_name, players:[{player,
     pos, starter, proj, actual}]}. Returns the written Path, or None if there was
@@ -465,6 +466,35 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
         shown = out
     print(f"Rosters: wrote {shown} — week {week}, {len(entries)} teams.", file=sys.stderr)
     return out
+
+
+def snapshot_rosters(lg, year, team_rows, current_week, current_rows, out_dir=ROSTERS_DIR):
+    """Persist a per-week roster snapshot for every week 1..current_week, so the
+    full season is kept on disk for future reference — not just the live week.
+
+    Past weeks are **write-once**: if their file already exists it's left alone
+    (their actuals are final and stable), so we don't clobber history and we only
+    ever back-fill the weeks we're missing. The current week is **refreshed** every
+    import so its actuals fill in as games go final; its rows were already fetched
+    for projections, so they're reused without a second call. Degrades quietly per
+    week if ESPN can't return an older week."""
+    if not current_week or not hasattr(lg, "rosters"):
+        return
+    for w in range(1, current_week + 1):
+        target = out_dir / f"{year}-week-{w:02d}.yml"
+        if w == current_week:
+            rows = current_rows
+        elif target.exists():
+            continue                       # already captured — leave final data intact
+        else:
+            try:
+                rows = lg.rosters(week=w)   # back-fill a week we never snapshotted
+            except Exception as e:          # network/auth/API — skip just this week
+                print(f"NOTE: rosters for week {w} unavailable ({e}); skipped.",
+                      file=sys.stderr)
+                continue
+        if rows:
+            write_week_rosters(rows, w, year, team_rows, out_dir=out_dir)
 
 
 def build_rosters(draft_rows, tx_rows, trades, team_to_fid):
@@ -755,12 +785,12 @@ def main():
     # Sum each team's starters' projections; attach to that week's not-yet-final
     # games. Degrades quietly if the client/ESPN can't provide them.
     roster_rows, roster_week = attach_projections(lg, matchups, team_to_fid)
-    # Persist this week's per-player rosters (projected + actual, by SWID) so the
+    # Persist per-player rosters (projected + actual, by SWID) for every week so the
     # weekly preview/recap builders read scorelines from disk instead of a live
-    # fetch. Refreshed every import so actuals fill in as games go final; skipped
-    # on --stdout previews since it writes a separate file.
-    if roster_rows and not args.stdout:
-        write_week_rosters(roster_rows, roster_week, args.year, team_rows)
+    # fetch, and the full season stays on record. Back-fills any missing past week
+    # and refreshes the current one; skipped on --stdout previews (writes files).
+    if roster_week and not args.stdout:
+        snapshot_rosters(lg, args.year, team_rows, roster_week, roster_rows)
 
     # --- Lifecycle state ---------------------------------------------------
     # Detect from robust signals (draft actually run, games actually decided),
