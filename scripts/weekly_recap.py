@@ -49,18 +49,7 @@ season_no: %%NO%%
 week: %%WEEK%%
 ---
 {% assign wk = site.data.weeks["%%YEAR%%-%%WEEK%%"] %}
-{% include week_detail.html wk=wk %}
-
-{% if wk.state != "complete" %}
-<h2>The Preview</h2>
-
-<!-- Paste the preview below. Prep the facts with:
-     python scripts/weekly_preview.py %%YEAR%% %%WEEK%%
-     then have your agent (agents/weekly-preview.md) write it.
-     Shows until the week is complete, then the recap takes over. -->
-
-_Preview coming soon._
-{% endif %}
+{% include sections/week_detail.html wk=wk %}
 
 {% if wk.state == "complete" %}
 <h2>The Recap</h2>
@@ -69,10 +58,19 @@ _Preview coming soon._
      python scripts/weekly_recap.py %%YEAR%% %%WEEK%%
      then have your agent (agents/weekly-recap.md) write it.
      It's Markdown: a chaotic column, then a "### 🏆 Awards" list. The recap only
-     renders once the week is complete. -->
+     renders once the week is complete, and sits above the preview. -->
 
 _Recap coming soon._
 {% endif %}
+
+<h2>The Preview</h2>
+
+<!-- Paste the preview below. Prep the facts with:
+     python scripts/weekly_preview.py %%YEAR%% %%WEEK%%
+     then have your agent (agents/weekly-preview.md) write it.
+     The preview stays at the bottom of the page all season, below the recap. -->
+
+_Preview coming soon._
 """
 
 
@@ -98,13 +96,15 @@ _PLACEHOLDERS = {"_Preview coming soon._", "_Recap coming soon._"}
 
 
 def _read_page_section(page_path, heading):
-    """Pull the prose pasted under `<h2>{heading}</h2>` on a week page, up to the
-    `{% endif %}` that closes its block. Strips the paste-instructions comment.
-    Returns the markdown, or None if it's missing or still the placeholder."""
+    """Pull the prose pasted under `<h2>{heading}</h2>` on a week page. A section
+    runs until the next `<h2>`, a closing `{% endif %}`, or end of file — so it
+    works whether the block is Liquid-gated (the recap) or ungated at the bottom of
+    the page (the preview). Strips the paste-instructions comment. Returns the
+    markdown, or None if it's missing or still the placeholder."""
     if not page_path or not Path(page_path).exists():
         return None
     text = Path(page_path).read_text(encoding="utf-8")
-    m = re.search(rf"<h2>\s*{re.escape(heading)}\s*</h2>(.*?)\{{%\s*endif\s*%\}}",
+    m = re.search(rf"<h2>\s*{re.escape(heading)}\s*</h2>(.*?)(?=<h2|\{{%\s*endif\s*%\}}|\Z)",
                   text, re.DOTALL)
     if not m:
         return None

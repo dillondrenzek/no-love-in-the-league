@@ -233,8 +233,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 122.1
-    away_proj: 114.1
+    home_proj: 121.8
+    away_proj: 114.5
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -245,8 +245,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 116.7
-    away_proj: 119.2
+    home_proj: 117.0
+    away_proj: 120.2
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -258,7 +258,7 @@
     live: false
     playoff: false
     home_proj: 112.2
-    away_proj: 120.3
+    away_proj: 119.9
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -269,8 +269,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 124.2
-    away_proj: 117.9
+    home_proj: 100.0
+    away_proj: 117.7
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
     home_owner: Dillon
@@ -281,7 +281,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 102.8
+    home_proj: 102.9
     away_proj: 115.4
   - home_id: zachzoske
     home_team: Tuten Your Mom
@@ -294,7 +294,7 @@
     live: false
     playoff: false
     home_proj: 111.4
-    away_proj: 118.0
+    away_proj: 117.4
   highlights: []
   projections: []
   projected_at: null

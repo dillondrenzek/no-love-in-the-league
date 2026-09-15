@@ -273,6 +273,21 @@ def test_standings_snapshot_live_season_sorts_by_record_not_seed():
     # Ana 2-0 must lead despite being seeded last; Cy 0-1 last despite seeded first.
     assert snap[0]["owner"] == "Ana" and snap[0]["record"] == "2-0"
     assert snap[-1]["owner"] == "Cy"
+
+    # A tie counts as half a win: a 0-0-1 team outranks a 0-1 team.
+    tie_season = {
+        "season": 2026, "state": "season", "teams": {"a": "A", "b": "B"},
+        "final_standings": ["a", "b"],
+        "matchups": [
+            {"week": 1, "home": "a", "away": "b", "home_score": 90.0,
+             "away_score": 90.0, "played": True, "final": True},   # a: 0-0-1
+            {"week": 2, "home": "a", "away": "b", "home_score": 80.0,
+             "away_score": 120.0, "played": True, "final": True},  # a: 0-1-1, b: 1-0-1
+        ],
+    }
+    # After wk2: B is 1-0-1, A is 0-1-1 — B leads. (Toy 2-team; checks tie weighting.)
+    ts = standings_snapshot(tie_season, fr)
+    assert ts[0]["owner"] == "Ben" and "-1" in ts[0]["record"]
     # A complete season keeps get_standings' authoritative final_standings order.
     done = dict(season, state="complete")
     assert [r["owner"] for r in standings_snapshot(done, fr)] == ["Cy", "Ben", "Ana"]
@@ -314,28 +329,35 @@ def test_team_form_streaks_and_last_week():
     assert team_form(season, fr, upto_week=1) == {}
 
 
-def test_read_preview_extracts_prose_and_skips_placeholder():
+def test_read_page_sections_recap_top_preview_bottom():
     import tempfile
-    from weekly_recap import read_preview
+    from weekly_recap import read_preview, _read_page_section
 
+    # New layout: recap gated on top, preview ungated at the very bottom.
     page = (
         "---\ntitle: Week 1\n---\n"
-        "{% include sections/week_detail.html %}\n\n"
-        "{% if wk.state != \"complete\" %}\n<h2>The Preview</h2>\n\n"
+        "{% include sections/week_detail.html wk=wk %}\n\n"
+        "{% if wk.state == \"complete\" %}\n<h2>The Recap</h2>\n\n"
+        "<!-- Paste the agent's recap below. -->\n\n"
+        "Jack torched the league for 166. Chaos reigns.\n\n"
+        "### 🏆 Awards\n\n- **Team of the Week** — Gibbed\n{% endif %}\n\n"
+        "<h2>The Preview</h2>\n\n"
         "<!-- Paste the preview below. python scripts/weekly_preview.py 2026 1 -->\n\n"
         "The wait is over. I've got Gibbed as the Lock.\n\n"
         "### 🔮 Picks\n\n- **Lock of the Week** — Gibbed for your pleasure\n"
-        "{% endif %}\n\n"
-        "{% if wk.state == \"complete\" %}\n<h2>The Recap</h2>\n\n_Recap coming soon._\n{% endif %}\n"
     )
     with tempfile.TemporaryDirectory() as d:
         p = Path(d) / "week-1.md"
         p.write_text(page, encoding="utf-8")
-        got = read_preview(p)
-        assert got and "I've got Gibbed as the Lock" in got
-        assert "Lock of the Week" in got            # picks come through
-        assert "Paste the preview below" not in got  # instructions comment stripped
-        assert "week_detail" not in got              # only the preview block
+        # Preview (ungated, at bottom) reads to end of file.
+        pv = read_preview(p)
+        assert pv and "I've got Gibbed as the Lock" in pv and "Lock of the Week" in pv
+        assert "Paste the preview" not in pv and "week_detail" not in pv
+        assert "Team of the Week" not in pv          # recap didn't bleed in
+        # Recap (gated) stops at {% endif %}, doesn't swallow the preview below it.
+        rc = _read_page_section(p, "The Recap")
+        assert rc and "torched the league for 166" in rc and "Team of the Week" in rc
+        assert "I've got Gibbed as the Lock" not in rc
 
     # A page still holding the placeholder yields None (no real preview yet).
     with tempfile.TemporaryDirectory() as d:
@@ -371,6 +393,40 @@ def test_week_roster_context_shapes():
     assert rec["bust"]["player"] == "Josh Allen" and rec["bust"]["proj"] == 24.0
     # Empty in, empty out.
     assert week_roster_context({}, want_actual=True) == {}
+
+
+def test_snapshot_rosters_backfills_missing_and_refreshes_current():
+    import tempfile
+    from import_espn import snapshot_rosters, write_week_rosters
+    from lib.data import load_week_rosters
+
+    team_rows = [{"team_id": 1, "manager_id": "{SWID-A}", "team_name": "A"}]
+    fr = {"aaa": {"espn_swid": "{SWID-A}"}}
+
+    def rows(pts):
+        return [{"team_id": 1, "manager_id": "{SWID-A}", "player_name": "P",
+                 "position": "QB", "starter": True, "projected": 10.0, "actual": pts}]
+
+    class FakeLeague:
+        def __init__(self): self.calls = []
+        def rosters(self, week=None):
+            self.calls.append(week)
+            return rows(50.0 + week)        # distinct actual per week
+
+    with tempfile.TemporaryDirectory() as d:
+        out = Path(d) / "rosters"          # loader reads <data_dir>/rosters/
+        # Week 1 already captured (final) — must be left untouched.
+        write_week_rosters(rows(99.0), 1, 2026, team_rows, out_dir=out)
+        lg = FakeLeague()
+        # Current week is 3; its rows are passed in (already fetched for projections).
+        snapshot_rosters(lg, 2026, team_rows, current_week=3,
+                         current_rows=rows(77.0), out_dir=out)
+        # Week 2 was missing -> back-filled via lg.rosters(week=2); week 1 skipped;
+        # week 3 written from current_rows (no fetch).
+        assert lg.calls == [2]
+        assert load_week_rosters(2026, 1, fr, data_dir=d)["aaa"][0]["actual"] == 99.0
+        assert load_week_rosters(2026, 2, fr, data_dir=d)["aaa"][0]["actual"] == 52.0
+        assert load_week_rosters(2026, 3, fr, data_dir=d)["aaa"][0]["actual"] == 77.0
 
 
 def test_write_and_load_week_rosters_roundtrip():
