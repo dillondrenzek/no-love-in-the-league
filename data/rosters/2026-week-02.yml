@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-15T19:21:52+00:00'
+captured_at: '2026-09-15T22:32:15+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -744,7 +744,7 @@ rosters:
     actual: null
   - player: A.J. Brown
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
   - player: Garrett Wilson
@@ -784,13 +784,8 @@ rosters:
     actual: null
   - player: Josh Downs
     pos: WR
-    starter: false
+    starter: true
     proj: 7.01
-    actual: null
-  - player: Rashid Shaheed
-    pos: WR
-    starter: false
-    proj: 8.96
     actual: null
   - player: Tyler Allgeier
     pos: RB

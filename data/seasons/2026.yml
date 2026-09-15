@@ -83,7 +83,7 @@ matchups:
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 116.96, away_proj: 120.2 }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 112.17, away_proj: 119.98 }
   - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 100.03, away_proj: 120.46 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 102.87, away_proj: 115.37 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 109.88, away_proj: 115.37 }
   - { week:  2, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 111.39, away_proj: 117.42 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
