@@ -85,6 +85,40 @@ def load_projections(year, franchises, data_dir=DATA_DIR):
     return out
 
 
+def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
+    """One week's persisted per-player rosters, re-keyed to franchise ids:
+    {fid: [{player, pos, starter, proj, actual}, ...]}.
+
+    Reads data/rosters/<year>-week-<nn>.yml (written by scripts/import_espn.py at
+    import time), joining each team to its franchise via the owner SWID
+    (`manager_id`) against franchises' `espn_swid` — the same join
+    load_projections uses. Returns {} when no snapshot exists yet, so the prompt
+    builders simply omit per-player detail.
+    """
+    swid_to_fid = {}
+    for fid, f in (franchises or {}).items():
+        swid = (f or {}).get("espn_swid")
+        if swid:
+            swid_to_fid[swid.strip().upper()] = fid
+
+    path = Path(data_dir) / "rosters" / f"{year}-week-{week:02d}.yml"
+    if not path.is_file():
+        return {}
+    doc = _read_yaml(path) or {}
+    out = {}
+    for e in doc.get("rosters") or []:
+        fid = swid_to_fid.get((e.get("manager_id") or "").strip().upper())
+        if not fid:
+            continue
+        out[fid] = [
+            {"player": p.get("player"), "pos": p.get("pos"),
+             "starter": bool(p.get("starter")),
+             "proj": p.get("proj"), "actual": p.get("actual")}
+            for p in (e.get("players") or [])
+        ]
+    return out
+
+
 def load_settings(data_dir=DATA_DIR):
     """Per-season ESPN scoring/roster settings from data/settings.yml (written by
     scripts/import_settings.py). Returns the seasons list, or [] when the file was

@@ -198,6 +198,29 @@ def test_most_transactions_in_a_season_record_and_sections():
     assert hi["section"] == SEC_MOVES
 
 
+def test_context_standings_moves_and_bests():
+    from lib.context import standings_snapshot, recent_moves, league_bests
+    s = matchup_season(2025)     # complete season
+    s["trades"] = [{"week": 3, "teams": ["a", "b"], "assets": [
+        {"from": "a", "to": "b", "label": "Player X"},
+        {"from": "b", "to": "a", "label": "pick 5"}]}]
+    s["rosters"] = {"a": [{"player": "Waiver Guy", "via": "add", "week": 4, "waiver": True},
+                          {"player": "Drafted", "via": "draft", "round": 1}]}
+    snap = standings_snapshot(s, {})
+    assert snap and snap[0]["rank"] == 1 and snap[0]["record"]
+    mv = recent_moves(s, {}, 3, 4)
+    assert any("Player X" in t["detail"] for t in mv["trades"])
+    assert mv["adds"] and mv["adds"][0]["player"] == "Waiver Guy"
+    # A window that excludes both should come back empty.
+    empty = recent_moves(s, {}, 6, 8)
+    assert empty["trades"] == [] and empty["adds"] == []
+    bests = league_bests([
+        {"category": "Most Points in a Week", "value": "184.90", "holder": "Jack", "season": 2020},
+        {"category": "Most Championships", "value": "3", "holder": "Henry"}])
+    cats = [b["category"] for b in bests]
+    assert "Most Points in a Week" in cats and "Most Championships" not in cats
+
+
 def test_build_rosters_union_dedup_and_via():
     from import_espn import build_rosters
     # "Apollo" sorts before "Zeus" alphabetically but was drafted much later —
@@ -228,6 +251,155 @@ def test_build_rosters_union_dedup_and_via():
     assert out["jack"][0]["via"] == "draft"
     zach = {e["player"]: e for e in out["zach"]}
     assert zach["FA Guy"]["via"] == "add" and zach["FA Guy"]["waiver"] is False
+
+
+def test_standings_snapshot_live_season_sorts_by_record_not_seed():
+    from lib.context import standings_snapshot
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}, "c": {"name": "Cy"}}
+    # In-progress season: final_standings holds the PRESEASON/seeded order (c,b,a),
+    # but after week 1 the live table must reflect actual W-L, not the seed.
+    season = {
+        "season": 2026, "state": "season",
+        "teams": {"a": "A", "b": "B", "c": "C"},
+        "final_standings": ["c", "b", "a"],          # seeded order, not results
+        "matchups": [
+            {"week": 1, "home": "a", "away": "b", "home_score": 130.0,
+             "away_score": 90.0, "played": True, "final": True},
+            {"week": 1, "home": "c", "away": "a", "home_score": 80.0,   # bye-less 3-team toy
+             "away_score": 100.0, "played": True, "final": True},
+        ],
+    }
+    snap = standings_snapshot(season, fr)
+    # Ana 2-0 must lead despite being seeded last; Cy 0-1 last despite seeded first.
+    assert snap[0]["owner"] == "Ana" and snap[0]["record"] == "2-0"
+    assert snap[-1]["owner"] == "Cy"
+    # A complete season keeps get_standings' authoritative final_standings order.
+    done = dict(season, state="complete")
+    assert [r["owner"] for r in standings_snapshot(done, fr)] == ["Cy", "Ben", "Ana"]
+
+
+def test_perceived_strength_ranks_by_projection():
+    from lib.context import perceived_strength
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}, "c": {"name": "Cy"}}
+    rosters_ctx = {
+        "a": {"proj_total": 120.5},
+        "b": {"proj_total": 141.2},
+        "c": {"proj_total": None},        # no projection — excluded from the ranking
+    }
+    rank = perceived_strength(rosters_ctx, fr)
+    assert [r["owner"] for r in rank] == ["Ben", "Ana"]
+    assert rank[0]["rank"] == 1 and rank[0]["proj_total"] == 141.2
+
+
+def test_team_form_streaks_and_last_week():
+    from lib.context import team_form
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}}
+    # Two complete regular-season weeks; Ana wins both, Ben loses both.
+    season = {"season": 2026, "teams": {"a": "A", "b": "B"}, "matchups": [
+        {"week": 1, "home": "a", "away": "b", "home_score": 130.0, "away_score": 90.0,
+         "played": True, "final": True},
+        {"week": 2, "home": "b", "away": "a", "home_score": 100.0, "away_score": 150.0,
+         "played": True, "final": True},
+    ]}
+    # Projection snapshot for week 2 so last_vs_proj computes.
+    projections = {2: {"proj": {"a": 140.0, "b": 110.0}}}
+    form = team_form(season, fr, upto_week=3, projections=projections)
+    assert form["a"]["streak"] == "W2" and form["a"]["record"] == "2-0"
+    assert form["b"]["streak"] == "L2"
+    # Week 2 is the latest completed: Ana 150 (league high, +10 vs proj), Ben 100 (low).
+    assert form["a"]["last_points"] == 150.0 and form["a"]["last_high"] is True
+    assert form["a"]["last_vs_proj"] == 10.0
+    assert form["b"]["last_low"] is True and form["b"]["last_vs_proj"] == -10.0
+    # A future/early week with nothing complete before it yields empty form.
+    assert team_form(season, fr, upto_week=1) == {}
+
+
+def test_read_preview_extracts_prose_and_skips_placeholder():
+    import tempfile
+    from weekly_recap import read_preview
+
+    page = (
+        "---\ntitle: Week 1\n---\n"
+        "{% include sections/week_detail.html %}\n\n"
+        "{% if wk.state != \"complete\" %}\n<h2>The Preview</h2>\n\n"
+        "<!-- Paste the preview below. python scripts/weekly_preview.py 2026 1 -->\n\n"
+        "The wait is over. I've got Gibbed as the Lock.\n\n"
+        "### 🔮 Picks\n\n- **Lock of the Week** — Gibbed for your pleasure\n"
+        "{% endif %}\n\n"
+        "{% if wk.state == \"complete\" %}\n<h2>The Recap</h2>\n\n_Recap coming soon._\n{% endif %}\n"
+    )
+    with tempfile.TemporaryDirectory() as d:
+        p = Path(d) / "week-1.md"
+        p.write_text(page, encoding="utf-8")
+        got = read_preview(p)
+        assert got and "I've got Gibbed as the Lock" in got
+        assert "Lock of the Week" in got            # picks come through
+        assert "Paste the preview below" not in got  # instructions comment stripped
+        assert "week_detail" not in got              # only the preview block
+
+    # A page still holding the placeholder yields None (no real preview yet).
+    with tempfile.TemporaryDirectory() as d:
+        p = Path(d) / "week-2.md"
+        p.write_text(page.replace(
+            "The wait is over. I've got Gibbed as the Lock.\n\n### 🔮 Picks\n\n"
+            "- **Lock of the Week** — Gibbed for your pleasure\n",
+            "_Preview coming soon._\n"), encoding="utf-8")
+        assert read_preview(p) is None
+    assert read_preview(Path(d) / "missing.md") is None
+
+
+def test_week_roster_context_shapes():
+    from lib.context import week_roster_context
+    week_rosters = {
+        "jack": [
+            {"player": "Josh Allen", "pos": "QB", "starter": True, "proj": 24.0, "actual": 9.1},
+            {"player": "CMC", "pos": "RB", "starter": True, "proj": 18.0, "actual": 31.2},
+            {"player": "Benchy", "pos": "WR", "starter": False, "proj": 8.0, "actual": 20.0},
+        ],
+    }
+    # Preview shape: starters + totals, no top/bust.
+    prev = week_roster_context(week_rosters, want_actual=False)["jack"]
+    assert prev["proj_total"] == 42.0
+    assert len(prev["starters"]) == 2
+    assert "top" not in prev and "bust" not in prev
+
+    # Recap shape: top scorer, biggest bust, bench points.
+    rec = week_roster_context(week_rosters, want_actual=True)["jack"]
+    assert rec["actual_total"] == 40.3
+    assert rec["bench_points"] == 20.0
+    assert rec["top"]["player"] == "CMC" and rec["top"]["actual"] == 31.2
+    assert rec["bust"]["player"] == "Josh Allen" and rec["bust"]["proj"] == 24.0
+    # Empty in, empty out.
+    assert week_roster_context({}, want_actual=True) == {}
+
+
+def test_write_and_load_week_rosters_roundtrip():
+    import tempfile
+    from import_espn import write_week_rosters
+    from lib.data import load_week_rosters
+
+    rows = [
+        {"team_id": 1, "manager_id": "{SWID-A}", "player_name": "Josh Allen",
+         "position": "QB", "starter": True, "projected": 24.0, "actual": 9.1},
+        {"team_id": 1, "manager_id": "{SWID-A}", "player_name": "Benchy",
+         "position": "WR", "starter": False, "projected": 8.0, "actual": 20.0},
+        {"team_id": 2, "manager_id": "{SWID-B}", "player_name": "CMC",
+         "position": "RB", "starter": True, "projected": 18.0, "actual": 31.2},
+    ]
+    team_rows = [{"team_id": 1, "manager_id": "{SWID-A}", "team_name": "Team A"},
+                 {"team_id": 2, "manager_id": "{SWID-B}", "team_name": "Team B"}]
+    with tempfile.TemporaryDirectory() as d:
+        out = write_week_rosters(rows, 1, 2026, team_rows, out_dir=Path(d) / "rosters")
+        assert out and out.exists()
+        # SWID join re-keys to franchise ids (case-insensitive, like projections).
+        fr = {"aaa": {"espn_swid": "{swid-a}"}, "bbb": {"espn_swid": "{SWID-B}"}}
+        loaded = load_week_rosters(2026, 1, fr, data_dir=d)
+        assert set(loaded) == {"aaa", "bbb"}
+        assert {p["player"] for p in loaded["aaa"]} == {"Josh Allen", "Benchy"}
+        allen = next(p for p in loaded["aaa"] if p["player"] == "Josh Allen")
+        assert allen["starter"] is True and allen["proj"] == 24.0 and allen["actual"] == 9.1
+        # A missing week returns {} (builders then omit per-player detail).
+        assert load_week_rosters(2026, 9, fr, data_dir=d) == {}
 
 
 def test_projection_report_line_and_calls():

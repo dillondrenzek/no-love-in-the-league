@@ -216,30 +216,41 @@ a **state** derived from its games:
 
 So each page carries two hand-written, AI-generated pieces that swap on state: a
 **Preview** while the week is upcoming/live, then a **Recap** once it's done. Both
-are repo-stored, reusable agent specs anyone can run:
+are written by an **agent** working from repo-stored operating manuals:
 
 - `agents/weekly-preview.md` — a forward-looking hype/oddsmaker voice (column +
   Game of the Week / Lock / Upset / Bold Prediction).
 - `agents/weekly-recap.md` — a backward-looking trash-talk voice (column + awards).
 
+The split of labor: a prep script computes the week's **facts file** (the
+correctness-critical stuff — scoreboard, standings, form/streaks, projected
+strength, records — from the tested `scripts/lib` code), and the agent writes the
+prose, reading the facts file plus the season's earlier editions straight from the
+repo. That keeps each prompt lean and bounded (the story so far isn't re-pasted
+every week) while the numbers stay computed, not guessed. The facts files land in
+`recaps/` (git-ignored).
+
 **Writing a preview** (week is future or in progress):
 
-1. `python scripts/weekly_preview.py <year> <week>` — writes a ready-to-paste
-   prompt to `recaps/<year>-week-<nn>.preview.prompt.md` (git-ignored): the
-   preview spec + each matchup's context (both owners' all-time record, titles,
-   best finish, and the all-time head-to-head).
-2. Paste it into Claude (or any model) → paste the reply into the week page under
-   **The Preview**.
+1. `python scripts/weekly_preview.py <year> <week>` — writes the facts file
+   `recaps/<year>-week-<nn>.preview.data.md` (per-matchup context: each owner's
+   résumé + last-season standing, the head-to-head, projected lineups/strength, and
+   form once the season's underway).
+2. Point your agent at `agents/weekly-preview.md` and ask it to write the week's
+   preview; it reads the facts file plus prior editions from `docs/seasons/`. Paste
+   the reply into the week page under **The Preview**.
 3. `python scripts/build.py`.
 
 **Writing a recap** (week is complete):
 
 1. **Import the finished week** — `scripts/update_season.sh <year>` so its final
    scores land in `data/seasons/<year>.yml` and the week flips to complete.
-2. `python scripts/weekly_recap.py <year> <week>` — writes
-   `recaps/<year>-week-<nn>.prompt.md`: the recap spec + the week's scoreboard and
-   highlights. (Refuses to run until the week is complete.)
-3. Paste it into Claude → paste the reply into the week page under **The Recap**.
+2. `python scripts/weekly_recap.py <year> <week>` — writes the facts file
+   `recaps/<year>-week-<nn>.recap.data.md` (scoreboard, per-player boom/bust,
+   highlights, standings, streaks). (Refuses to run until the week is complete.)
+3. Point your agent at `agents/weekly-recap.md` and ask it to write the recap; it
+   reads the facts file, this week's preview (to grade its calls), and prior
+   editions from `docs/seasons/`. Paste the reply under **The Recap**.
 4. `python scripts/build.py`.
 
 The scoreboard/highlights and each week's state are always regenerated from the
