@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-15T15:53:29+00:00'
+captured_at: '2026-09-15T19:21:52+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -596,12 +596,12 @@ rosters:
     actual: null
   - player: Harold Fannin Jr.
     pos: TE
-    starter: true
+    starter: false
     proj: 7.85
     actual: null
   - player: Rico Dowdle
     pos: RB
-    starter: true
+    starter: false
     proj: 9.15
     actual: null
   - player: Jayden Daniels
@@ -626,7 +626,7 @@ rosters:
     actual: null
   - player: Mark Andrews
     pos: TE
-    starter: false
+    starter: true
     proj: 8.44
     actual: null
   - player: Bo Nix
@@ -646,7 +646,7 @@ rosters:
     actual: null
   - player: Deebo Samuel Sr.
     pos: WR
-    starter: false
+    starter: true
     proj: 11.33
     actual: null
   - player: Drake London
@@ -685,12 +685,12 @@ rosters:
     actual: null
   - player: Courtland Sutton
     pos: WR
-    starter: true
+    starter: false
     proj: 9.7
     actual: null
   - player: Aaron Jones Sr.
     pos: RB
-    starter: false
+    starter: true
     proj: 9.8
     actual: null
   - player: Quentin Johnston
