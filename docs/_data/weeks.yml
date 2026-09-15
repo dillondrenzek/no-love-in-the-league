@@ -12,11 +12,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 104.4
-    away_score: 86.4
+    home_score: 105.0
+    away_score: 87.4
     winner_id: null
     tie: false
-    margin: 18.0
+    margin: 17.6
     home_proj: 115.3
     away_proj: 113.6
   - home_id: gganoom
@@ -46,11 +46,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 136.3
+    home_score: 137.4
     away_score: 137.4
     winner_id: null
     tie: false
-    margin: 1.1
+    margin: 0.0
     home_proj: 115.1
     away_proj: 113.5
   - home_id: lukstein
@@ -63,11 +63,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 92.5
+    home_score: 96.5
     away_score: 85.4
     winner_id: null
     tie: false
-    margin: 7.1
+    margin: 11.1
     home_proj: 114.4
     away_proj: 118.7
   - home_id: schirmerj
@@ -97,11 +97,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 137.8
+    home_score: 146.7
     away_score: 161.3
     winner_id: null
     tie: false
-    margin: 23.5
+    margin: 14.6
     home_proj: 122.5
     away_proj: 119.3
   highlights: []
