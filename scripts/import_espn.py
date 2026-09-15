@@ -23,6 +23,7 @@ changes. The client returns owner names only when cookies are supplied.
 """
 
 import argparse
+import datetime
 import os
 import re
 import sys
@@ -39,6 +40,7 @@ from lib.state import state_of, detect_state, advance_state
 
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
+ROSTERS_DIR = ROOT / "data" / "rosters"
 FRANCHISES_PATH = ROOT / "data" / "franchises.yml"
 COOKIES_PATH = ROOT / ".espn-cookies"
 # Extra managers' cookie files. ESPN reveals a trade's contents only to its
@@ -362,22 +364,26 @@ def build_matchups(matchup_rows, team_to_fid):
 
 def attach_projections(lg, matchups, team_to_fid):
     """Attach `home_proj`/`away_proj` to the current week's not-yet-final games,
-    summing each team's starters' projected points from `lg.rosters()`. Quietly
-    no-ops if the client lacks projections or ESPN can't return them."""
+    summing each team's starters' projected points from `lg.rosters()`.
+
+    Returns `(rows, week)` — the raw per-player roster rows and their scoring
+    period — so the caller can persist them (see `write_week_rosters`) without a
+    second fetch. Returns `(None, None)` and quietly no-ops on the matchups if the
+    client lacks projections or ESPN can't return them."""
     if not hasattr(lg, "rosters"):
         print("NOTE: the installed the-league-espn-api has no rosters() — projections "
               "skipped. Reinstall it (editable: pip install -e ~/Codebase/espn-fantasy-cli, "
               "or bump the pin in requirements-dev.txt).", file=sys.stderr)
-        return
+        return None, None
     try:
         rows = lg.rosters()          # current scoring period
     except ApiError as e:
         print(f"NOTE: projections unavailable (ESPN {getattr(e, 'status', e)}); skipping.",
               file=sys.stderr)
-        return
+        return None, None
     if not rows:
         print("NOTE: rosters() returned no rows — projections skipped.", file=sys.stderr)
-        return
+        return None, None
     week = rows[0].get("week")
     team_proj = {}
     for r in rows:
@@ -399,6 +405,66 @@ def attach_projections(lg, matchups, team_to_fid):
         if proj.get(m["away"]) is not None:
             m["away_proj"] = proj[m["away"]]
     print(f"Projections: week {week}, attached to {n} game(s).", file=sys.stderr)
+    return rows, week
+
+
+def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
+    """Persist a week's per-player roster rows to
+    data/rosters/<year>-week-<nn>.yml so the weekly preview/recap builders can
+    read player scorelines offline instead of re-fetching from ESPN.
+
+    Keyed by owner SWID (`manager_id`) so it stays joinable to a franchise even
+    when a team is renamed — the same join `data/projections/` uses. Unlike the
+    projection snapshot this is **refreshed every import**: rewritten in place so
+    actual points fill in as the week's games are played and go final.
+
+    Each entry is one team: {manager_id, team_id, team_name, players:[{player,
+    pos, starter, proj, actual}]}. Returns the written Path, or None if there was
+    nothing joinable to write."""
+    tid_to_swid = {t.get("team_id"): (t.get("manager_id") or "") for t in (team_rows or [])}
+    tid_to_name = {t.get("team_id"): t.get("team_name", "") for t in (team_rows or [])}
+
+    def num(v):
+        return round(float(v), 2) if isinstance(v, (int, float)) else None
+
+    by_team = {}
+    for r in rows or []:
+        tid = r.get("team_id")
+        swid = r.get("manager_id") or tid_to_swid.get(tid) or ""
+        key = (tid, swid)
+        entry = by_team.setdefault(key, {
+            "manager_id": swid,
+            "team_id": tid,
+            "team_name": tid_to_name.get(tid, ""),
+            "players": [],
+        })
+        entry["players"].append({
+            "player": r.get("player_name"),
+            "pos": r.get("position"),
+            "starter": bool(r.get("starter")),
+            "proj": num(r.get("projected")),
+            "actual": num(r.get("actual")),
+        })
+
+    entries = [v for _, v in sorted(by_team.items(), key=lambda kv: kv[0][0] or 0)]
+    if not entries:
+        return None
+
+    doc = {
+        "season": year,
+        "week": week,
+        "captured_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "rosters": entries,
+    }
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out = out_dir / f"{year}-week-{week:02d}.yml"
+    out.write_text(yaml.safe_dump(doc, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    try:
+        shown = out.relative_to(ROOT)
+    except ValueError:
+        shown = out
+    print(f"Rosters: wrote {shown} — week {week}, {len(entries)} teams.", file=sys.stderr)
+    return out
 
 
 def build_rosters(draft_rows, tx_rows, trades, team_to_fid):
@@ -688,7 +754,13 @@ def main():
     # Projected scores for the current/upcoming week (feeds the weekly preview).
     # Sum each team's starters' projections; attach to that week's not-yet-final
     # games. Degrades quietly if the client/ESPN can't provide them.
-    attach_projections(lg, matchups, team_to_fid)
+    roster_rows, roster_week = attach_projections(lg, matchups, team_to_fid)
+    # Persist this week's per-player rosters (projected + actual, by SWID) so the
+    # weekly preview/recap builders read scorelines from disk instead of a live
+    # fetch. Refreshed every import so actuals fill in as games go final; skipped
+    # on --stdout previews since it writes a separate file.
+    if roster_rows and not args.stdout:
+        write_week_rosters(roster_rows, roster_week, args.year, team_rows)
 
     # --- Lifecycle state ---------------------------------------------------
     # Detect from robust signals (draft actually run, games actually decided),
