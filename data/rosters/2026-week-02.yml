@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-16T08:55:52+00:00'
+captured_at: '2026-09-16T15:45:10+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -81,10 +81,10 @@ rosters:
     starter: true
     proj: 6.79
     actual: null
-  - player: Malik Washington
+  - player: Mack Hollins
     pos: WR
     starter: false
-    proj: 7.47
+    proj: 6.8
     actual: null
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
@@ -122,7 +122,7 @@ rosters:
     actual: null
   - player: Michael Pittman Jr.
     pos: WR
-    starter: true
+    starter: false
     proj: 8.93
     actual: null
   - player: Bhayshul Tuten
@@ -132,7 +132,7 @@ rosters:
     actual: null
   - player: Isaiah Likely
     pos: TE
-    starter: true
+    starter: false
     proj: 9.33
     actual: null
   - player: Cam Little
@@ -397,11 +397,6 @@ rosters:
     starter: false
     proj: 0.53
     actual: null
-  - player: Andy Borregales
-    pos: K
-    starter: true
-    proj: 7.32
-    actual: null
   - player: Buccaneers D/ST
     pos: D/ST
     starter: true
@@ -411,6 +406,11 @@ rosters:
     pos: WR
     starter: false
     proj: 4.57
+    actual: null
+  - player: Cairo Santos
+    pos: K
+    starter: true
+    proj: 8.82
     actual: null
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7

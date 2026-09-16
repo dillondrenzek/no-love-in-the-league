@@ -233,7 +233,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 125.1
+    home_proj: 126.6
     away_proj: 112.8
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -293,7 +293,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 113.8
+    home_proj: 95.6
     away_proj: 117.2
   highlights: []
   projections: []

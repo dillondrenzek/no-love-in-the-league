@@ -25,7 +25,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
-    tx_per_year: 114.3
+    tx_per_year: 114.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -39,7 +39,7 @@ jackperkins74:
     tag: null
     finish: 1st
     record: 1-0
-    tx: 24
+    tx: 26
     in_progress: true
     pf: 166.7
     pf_color: '#fdf3e0'
@@ -9056,7 +9056,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 86.4
+    tx_per_year: 86.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -9069,7 +9069,7 @@ sturmanator15:
     tag: null
     finish: 6th
     record: 0-1
-    tx: 1
+    tx: 3
     in_progress: true
     pf: 146.7
     pf_color: '#fdf3e0'
@@ -9444,6 +9444,10 @@ sturmanator15:
     - player: Malik Washington
       via: add
       week: 1
+      waiver: false
+    - player: Mack Hollins
+      via: add
+      week: 2
       waiver: false
   - year: 2025
     players:
