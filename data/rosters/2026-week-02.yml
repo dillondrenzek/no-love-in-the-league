@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-15T22:32:15+00:00'
+captured_at: '2026-09-16T02:18:19+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -458,7 +458,7 @@ rosters:
     actual: null
   - player: Chuba Hubbard
     pos: RB
-    starter: false
+    starter: true
     proj: 12.82
     actual: null
   - player: Brian Thomas Jr.
@@ -468,7 +468,7 @@ rosters:
     actual: null
   - player: Jayden Reed
     pos: WR
-    starter: true
+    starter: false
     proj: 8.22
     actual: null
   - player: Isiah Pacheco
@@ -917,7 +917,7 @@ rosters:
     actual: null
   - player: Terry McLaurin
     pos: WR
-    starter: true
+    starter: false
     proj: 10.2
     actual: null
   - player: Nico Collins
@@ -942,7 +942,7 @@ rosters:
     actual: null
   - player: Jalen Coker
     pos: WR
-    starter: false
+    starter: true
     proj: 9.17
     actual: null
   - player: Chris Rodriguez Jr.

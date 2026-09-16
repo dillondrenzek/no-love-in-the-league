@@ -245,7 +245,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 117.0
+    home_proj: 121.6
     away_proj: 120.2
   - home_id: lukstein
     home_team: 2x Runner Up
@@ -282,7 +282,7 @@
     live: false
     playoff: false
     home_proj: 109.9
-    away_proj: 115.4
+    away_proj: 114.3
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
