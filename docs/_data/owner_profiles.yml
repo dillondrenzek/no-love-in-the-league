@@ -16835,7 +16835,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: false
-    tx_per_year: 32.9
+    tx_per_year: 33.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -16849,7 +16849,7 @@ whowonthelastsuperbowl:
     tag: null
     finish: 11th
     record: 0-1
-    tx: 0
+    tx: 2
     in_progress: true
     pf: 87.4
     pf_color: '#fdf3e0'
@@ -17184,6 +17184,10 @@ whowonthelastsuperbowl:
     - player: Khalil Shakir
       via: draft
       round: 15
+    - player: George Holani
+      via: add
+      week: 2
+      waiver: false
   - year: 2025
     players:
     - player: Jonathan Taylor

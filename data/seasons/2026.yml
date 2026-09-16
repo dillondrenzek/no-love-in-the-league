@@ -83,7 +83,7 @@ matchups:
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.45, away_proj: 120.48 }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 113.32, away_proj: 121.02 }
   - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 100.61, away_proj: 121.85 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 114.14, away_proj: 114.81 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 112.65, away_proj: 114.81 }
   - { week:  2, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 95.59, away_proj: 117.21 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
@@ -242,6 +242,7 @@ transactions:
   shawne2520997: { adds: 2, drops: 2, moves: 4 }
   sturmanator15: { adds: 2, drops: 1, moves: 3 }
   theoceanpulse: { adds: 4, drops: 2, moves: 6 }
+  whowonthelastsuperbowl: { adds: 1, drops: 1, moves: 2 }
   zachzoske: { adds: 6, drops: 5, moves: 11 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
@@ -964,3 +965,7 @@ rosters:
   - player: Khalil Shakir
     via: draft
     round: 15
+  - player: George Holani
+    via: add
+    week: 2
+    waiver: false

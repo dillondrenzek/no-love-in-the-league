@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-16T15:45:10+00:00'
+captured_at: '2026-09-16T19:12:00+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -728,10 +728,10 @@ rosters:
     starter: false
     proj: 6.44
     actual: null
-  - player: Khalil Shakir
-    pos: WR
+  - player: George Holani
+    pos: RB
     starter: false
-    proj: 8.16
+    proj: 7.47
     actual: null
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
   team_id: 12
@@ -764,7 +764,7 @@ rosters:
     actual: null
   - player: Kenny Gainwell
     pos: RB
-    starter: false
+    starter: true
     proj: 8.12
     actual: null
   - player: Caleb Williams
@@ -779,7 +779,7 @@ rosters:
     actual: null
   - player: Jordan Mason
     pos: RB
-    starter: true
+    starter: false
     proj: 9.61
     actual: null
   - player: Josh Downs
