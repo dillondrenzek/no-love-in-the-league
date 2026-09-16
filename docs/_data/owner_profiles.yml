@@ -25,7 +25,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
-    tx_per_year: 114.0
+    tx_per_year: 114.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -39,7 +39,7 @@ jackperkins74:
     tag: null
     finish: 1st
     record: 1-0
-    tx: 21
+    tx: 24
     in_progress: true
     pf: 166.7
     pf_color: '#fdf3e0'
@@ -454,6 +454,14 @@ jackperkins74:
       via: add
       week: 1
       waiver: false
+    - player: Antonio Williams
+      via: add
+      week: 2
+      waiver: true
+    - player: Buccaneers D/ST
+      via: add
+      week: 2
+      waiver: true
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -2860,7 +2868,7 @@ zachzoske:
     playoff_apps: 5
     trades: 16
     trades_known: true
-    tx_per_year: 102.6
+    tx_per_year: 102.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -2873,7 +2881,7 @@ zachzoske:
     tag: null
     finish: 2nd
     record: 1-0
-    tx: 9
+    tx: 11
     in_progress: true
     pf: 161.3
     pf_color: '#fdf3e0'
@@ -3374,6 +3382,10 @@ zachzoske:
     - player: Tyreek Hill
       via: add
       week: 1
+      waiver: false
+    - player: Chiefs D/ST
+      via: add
+      week: 2
       waiver: false
   - year: 2025
     players:
@@ -5572,7 +5584,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: false
-    tx_per_year: 46.3
+    tx_per_year: 46.6
     tx_known: false
     seasons: 11
     best_finish:
@@ -5586,7 +5598,7 @@ shawne2520997:
     tag: null
     finish: 3rd
     record: 1-0
-    tx: 2
+    tx: 4
     in_progress: true
     pf: 108.3
     pf_color: '#fdf3e0'
@@ -5894,6 +5906,10 @@ shawne2520997:
       via: add
       week: 1
       waiver: false
+    - player: Adonai Mitchell
+      via: add
+      week: 2
+      waiver: true
   - year: 2025
     players:
     - player: Jahmyr Gibbs
@@ -12848,7 +12864,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 13
     trades_known: true
-    tx_per_year: 48.6
+    tx_per_year: 48.9
     tx_known: false
     seasons: 11
     best_finish:
@@ -12861,7 +12877,7 @@ theoceanpulse:
     tag: null
     finish: 8th
     record: 0-0-1
-    tx: 3
+    tx: 6
     in_progress: true
     pf: 137.4
     pf_color: '#fdf3e0'
@@ -13292,6 +13308,14 @@ theoceanpulse:
       via: add
       week: 1
       waiver: false
+    - player: 49ers D/ST
+      via: add
+      week: 2
+      waiver: true
+    - player: Pat Bryant
+      via: add
+      week: 2
+      waiver: true
   - year: 2025
     players:
     - player: Derrick Henry

@@ -79,12 +79,12 @@ matchups:
   - { week:  1, home: lukstein, away: purpsworth, home_score: 96.5, away_score: 85.4, playoff: false }
   - { week:  1, home: schirmerj, away: jackperkins74, home_score: 103.5, away_score: 166.7, playoff: false }
   - { week:  1, home: sturmanator15, away: zachzoske, home_score: 146.7, away_score: 161.3, playoff: false }
-  - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false, home_proj: 121.78, away_proj: 114.55 }
-  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.56, away_proj: 120.2 }
-  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 112.17, away_proj: 119.98 }
-  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 100.03, away_proj: 120.46 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 109.88, away_proj: 114.34 }
-  - { week:  2, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 111.39, away_proj: 117.42 }
+  - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false, home_proj: 125.14, away_proj: 112.84 }
+  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.45, away_proj: 120.48 }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 113.32, away_proj: 121.02 }
+  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 100.61, away_proj: 121.85 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 114.14, away_proj: 114.81 }
+  - { week:  2, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 113.85, away_proj: 117.21 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }
@@ -234,15 +234,15 @@ keepers:
 transactions_known: true
 transactions:
   gganoom: { adds: 2, drops: 1, moves: 3 }
-  jackperkins74: { adds: 12, drops: 9, moves: 21 }
+  jackperkins74: { adds: 14, drops: 10, moves: 24 }
   kevbots22: { adds: 1, drops: 0, moves: 1 }
   lukstein: { adds: 5, drops: 2, moves: 7 }
   purpsworth: { adds: 1, drops: 0, moves: 1 }
   schirmerj: { adds: 1, drops: 0, moves: 1 }
-  shawne2520997: { adds: 1, drops: 1, moves: 2 }
+  shawne2520997: { adds: 2, drops: 2, moves: 4 }
   sturmanator15: { adds: 1, drops: 0, moves: 1 }
-  theoceanpulse: { adds: 2, drops: 1, moves: 3 }
-  zachzoske: { adds: 5, drops: 4, moves: 9 }
+  theoceanpulse: { adds: 4, drops: 2, moves: 6 }
+  zachzoske: { adds: 6, drops: 5, moves: 11 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -344,6 +344,14 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Antonio Williams
+    via: add
+    week: 2
+    waiver: true
+  - player: Buccaneers D/ST
+    via: add
+    week: 2
+    waiver: true
   gganoom:
   - player: Bijan Robinson
     via: draft
@@ -500,6 +508,10 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Adonai Mitchell
+    via: add
+    week: 2
+    waiver: true
   schirmerj:
   - player: Christian McCaffrey
     via: draft
@@ -780,6 +792,10 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Chiefs D/ST
+    via: add
+    week: 2
+    waiver: false
   theoceanpulse:
   - player: Omarion Hampton
     via: draft
@@ -840,6 +856,14 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: 49ers D/ST
+    via: add
+    week: 2
+    waiver: true
+  - player: Pat Bryant
+    via: add
+    week: 2
+    waiver: true
   kevbots22:
   - player: Chase Brown
     via: draft
