@@ -293,6 +293,21 @@ def test_standings_snapshot_live_season_sorts_by_record_not_seed():
     assert [r["owner"] for r in standings_snapshot(done, fr)] == ["Cy", "Ben", "Ana"]
 
 
+def test_week_superlatives_picks_single_league_bests():
+    from lib.context import week_superlatives
+    rc = {
+        "a": {"bench_points": 45.0, "top": {"player": "Allen", "actual": 30.0}},
+        "b": {"bench_points": 55.4, "top": {"player": "Williams", "actual": 39.1}},
+        "c": {"bench_points": 20.0, "top": {"player": "Gibbs", "actual": 31.1}},
+    }
+    s = week_superlatives(rc)
+    # Exactly one league-high each: Williams' 39.1 and B's 55.4 bench — not A's 45.
+    assert s["best_player"]["player"] == "Williams" and s["best_player"]["fid"] == "b"
+    assert s["bench_leader"]["fid"] == "b" and s["bench_leader"]["points"] == 55.4
+    # No per-player data -> nothing claimed.
+    assert week_superlatives({}) == {"best_player": None, "bench_leader": None}
+
+
 def test_perceived_strength_ranks_by_projection():
     from lib.context import perceived_strength
     fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}, "c": {"name": "Cy"}}

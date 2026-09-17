@@ -39,6 +39,26 @@ def standings_snapshot(season, franchises):
     return out
 
 
+def week_superlatives(rosters_ctx):
+    """League-wide bests from a week's per-player data, so a recap only claims a
+    superlative that's actually true: the single best individual game and the most
+    points left on a bench. `rosters_ctx` is week_roster_context output. Returns
+    {best_player: {fid, player, actual} | None, bench_leader: {fid, points} | None};
+    both None when there's no per-player data (no roster snapshot)."""
+    rc = rosters_ctx or {}
+    best = None
+    for fid, e in rc.items():
+        t = e.get("top")
+        if t and t.get("actual") is not None and (best is None or t["actual"] > best["actual"]):
+            best = {"fid": fid, "player": t["player"], "actual": t["actual"]}
+    bench = None
+    for fid, e in rc.items():
+        bp = e.get("bench_points")
+        if bp is not None and (bench is None or bp > bench["points"]):
+            bench = {"fid": fid, "points": bp}
+    return {"best_player": best, "bench_leader": bench}
+
+
 def recent_moves(season, franchises, lo_week, hi_week):
     """Trades and waiver/FA adds with a week in [lo_week, hi_week] inclusive:
     {trades: [{week, parties, detail}], adds: [{week, owner, player, kind}]}.
