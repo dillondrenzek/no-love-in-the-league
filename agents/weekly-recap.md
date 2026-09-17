@@ -72,6 +72,13 @@ recap that worked.
 - **Use only the data you gather** (see "Gathering your data"). Do not invent
   scores, players, or outcomes. If you want a player's name and it isn't in the
   facts file, stay vague.
+- **Superlatives must be verified, never eyeballed.** Only one thing can be *the*
+  league-high. Call something "league-high", "league-low", "the most", "the
+  biggest", or "the best" ONLY if the facts file marks it so — the **Top/Low
+  Score** highlights and the **Week superlatives** block (best individual game,
+  most points left on the bench) are the sanctioned bests. For any other number,
+  describe it without a superlative ("a hefty 45 on the bench", not "a league-high
+  45"). If you're unsure it's the max, it isn't.
 - Every manager mentioned must match a real team/owner from the facts file.
 - Open with a short **intro paragraph** setting the scene for the week (1–2
   sentences, in persona), then give **one paragraph per matchup** (2–3 sentences

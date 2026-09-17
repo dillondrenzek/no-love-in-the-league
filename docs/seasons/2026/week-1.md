@@ -20,13 +20,13 @@ week: 1
 
 Week 1 is in the books, and your humble oddsmaker went 2-for-4 on the card while the league cooked up a 166-burger, a stone-cold tie, and a reigning sacko clawing out of the grave. Grab a chair.
 
-I called **Gibbed for your pleasure** the Lock of the Week and told you to mortgage the house — Jack cashed it with a league-high **166.7**, Jahmyr Gibbs (31.1) doing the honors on the team that bears his name, and a 63-point curb-stomping of **Return of the IDP**. The cruel twist for Jono: he got the single biggest star turn in the league, Josh Allen going for **37.5**, and still got buried by 63 — one superstar can't paper over a lineup of no-shows. Title defense number three is off to a rude start for everyone else.
+I called **Gibbed for your pleasure** the Lock of the Week and told you to mortgage the house — Jack cashed it with a league-high **166.7**, Jahmyr Gibbs (31.1) doing the honors on the team that bears his name, and a 63-point curb-stomping of **Return of the IDP**. The cruel twist for Jono: he got a monster game from Josh Allen (**37.5**) and still got buried by 63 — one superstar can't paper over a lineup of no-shows. Title defense number three is off to a rude start for everyone else.
 
-I made **The People's Commissioner** vs **Tuten Your Mom** my Game of the Week and it delivered the shootout I promised — I just bet on the wrong gun. Wade poured in **146.7** and still lost, in no small part because he left a **league-high 45 points rotting on his bench**; set that lineup and we're telling a different story. **Tuten Your Mom** answered with 161.3, led by Ashton Jeanty (29.7) — the very back Zach traded for on the eve of kickoff, paying off before the ink dried.
+I made **The People's Commissioner** vs **Tuten Your Mom** my Game of the Week and it delivered the shootout I promised — I just bet on the wrong gun. Wade poured in **146.7** and still lost, in no small part because he left a **hefty 45 points rotting on his bench**; set that lineup and we're telling a different story. **Tuten Your Mom** answered with 161.3, led by Ashton Jeanty (29.7) — the very back Zach traded for on the eve of kickoff, paying off before the ink dried.
 
 I swore the assassin would strike — **The ChoSimba Ones** owns **Josh Jacobs Alibi** and doesn't blink — and instead we got the rarest line on the board: a **137.4–137.4 dead heat**. Dillon got the best individual game in the whole league, Caleb Williams dropping **39.1**, and it *still* only bought him a draw, because Kevin's Jaxson Dart (29.6) answered every haymaker. History says Dillon puts Kevin away; the scoreboard says everybody exhale.
 
-So much for "trophies don't win Week 1." I told you Grant had Shawnee's number, and **Swift kick in the Dak** tore the page out — fittingly behind D'Andre Swift's 31.9. The reigning sacko walked into **One Big Beautiful Dill**, walked out 108.3–103.6, and did it while leaving a comical **55 on her own bench** — she flipped a series she'd been losing with points to spare. The basement door's open and Shawnee's already halfway up the stairs.
+So much for "trophies don't win Week 1." I told you Grant had Shawnee's number, and **Swift kick in the Dak** tore the page out — fittingly behind D'Andre Swift's 31.9. The reigning sacko walked into **One Big Beautiful Dill**, walked out 108.3–103.6, and did it while leaving a comical **55 on her own bench** — the most any team stranded all week — flipping a series she'd been losing with points to spare. The basement door's open and Shawnee's already halfway up the stairs.
 
 Chalk one up for the fade: I took **2x Runner Up** as the Upset Alert against the model, and Luke delivered — if you can call 96.5 "delivering." Jalen Hurts (27.6) did the heavy lifting in what was less a football game than two guys slap-fighting in a parking lot. **I am dead inside** brought the week's lowest score to the scrap and went home with it. Luke wins ugly; Trevor just wins the team-name accuracy award.
 
@@ -40,7 +40,7 @@ So here's the hardware. Jack's coronation writes itself; from there it turns mea
 - **Biggest Choke** — One Big Beautiful Dill — owns Shawnee all-time and still let the reigning sacko rewrite the grudge.
 - **Sacko of the Week** — I am dead inside — a league-low 85.4 in a rock fight you were built to win. The name's carrying the load.
 - **Lucky Bastard** — 2x Runner Up — 96.5 gets you buried most weeks; Luke just happened to draw the one team scoring less.
-- **Bold Strategy** — The People's Commissioner — 146.7 on the field, a league-high 45 on the bench, and an L to show for it. Imagine setting the lineup.
+- **Bold Strategy** — The People's Commissioner — 146.7 on the field, 45 stranded on the bench, and an L to show for it. Imagine setting the lineup.
 {% endif %}
 
 <h2>The Preview</h2>

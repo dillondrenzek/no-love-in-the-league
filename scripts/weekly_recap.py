@@ -31,7 +31,7 @@ from lib.data import (load_franchises, load_seasons, load_week_rosters,
                       load_projections, short_name_of)
 from lib.weeks import week_summary
 from lib.context import (standings_snapshot, recent_moves, league_bests,
-                         week_roster_context, team_form)
+                         week_roster_context, team_form, week_superlatives)
 
 ROOT = Path(__file__).resolve().parent.parent
 SEASON_PAGE_DIR = ROOT / "docs" / "seasons"
@@ -158,6 +158,20 @@ def data_block(year, week, summary, ctx):
         sub = f" [{h['sub']}]" if h["sub"] else ""
         lines.append(f"- {h['label']}: {h['value']}{who}{sub}")
 
+    sup = ctx.get("superlatives") or {}
+    if sup.get("best_player") or sup.get("bench_leader"):
+        lines += ["", "Week superlatives (these — plus Top/Low Score above — are the "
+                  "ONLY true league-highs; do NOT call any other number 'league-high', "
+                  "'the most', or 'biggest'):"]
+        bp = sup.get("best_player")
+        if bp:
+            lines.append(f"- Best individual game (whole league): {bp['player']} "
+                         f"{bp['actual']:.1f} — {bp['owner']}")
+        bl = sup.get("bench_leader")
+        if bl:
+            lines.append(f"- Most points left on the bench (whole league): "
+                         f"{bl['points']:.1f} — {bl['owner']}")
+
     moves = ctx.get("moves") or {}
     if moves.get("trades") or moves.get("adds"):
         lines += ["", "Recent moves:"]
@@ -223,12 +237,19 @@ def main():
          for fid, e in form.items()
          if e.get("streak") and int(e["streak"][1:]) >= 2),
         key=lambda s: s["owner"])
+    # League-wide superlatives (best individual game, biggest bench) resolved to
+    # owner names — so the recap only labels the *real* league-highs.
+    sup = week_superlatives(rosters)
+    for key in ("best_player", "bench_leader"):
+        if sup.get(key):
+            sup[key]["owner"] = short_name_of(sup[key]["fid"], franchises)
     ctx = {
         "rosters": rosters,
         "standings": standings_snapshot(season, franchises),
         "moves": recent_moves(season, franchises, max(0, args.week - 1), args.week),
         "bests": league_bests(records),
         "streaks": streaks,
+        "superlatives": sup,
     }
     if not read_preview(path):
         print("NOTE: no preview found on the week page — the recap can't grade "

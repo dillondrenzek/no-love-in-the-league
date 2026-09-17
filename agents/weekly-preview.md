@@ -81,6 +81,11 @@ that's too close to call, the manager who can't lose lately — or can't win.
 
 - **Use only the data you gather** (see "Gathering your data"). Don't invent
   records, scores, or history. If a matchup is a first meeting, say so and riff.
+- **Superlatives must be verified, never eyeballed.** Only one team can be the
+  top-ranked "team to beat" (that's rank 1 in Projected strength) and only one mark
+  can be a record. Call something "the highest", "the most", or "the best" only if
+  the facts back it; otherwise describe it without the superlative. If you're not
+  sure it's the max, it isn't.
 - Every team/owner named must come from the facts file.
 - No final scores or results — nothing has happened yet. Predictions are fine
   ("I've got Pukkake winning"), stated as opinion.
