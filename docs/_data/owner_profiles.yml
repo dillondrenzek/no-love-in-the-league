@@ -25,7 +25,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
-    tx_per_year: 114.6
+    tx_per_year: 114.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -39,7 +39,7 @@ jackperkins74:
     tag: null
     finish: 1st
     record: 1-0
-    tx: 26
+    tx: 29
     in_progress: true
     pf: 166.7
     pf_color: '#fdf3e0'
@@ -462,6 +462,14 @@ jackperkins74:
       via: add
       week: 2
       waiver: true
+    - player: Jaylin Noel
+      via: add
+      week: 2
+      waiver: false
+    - player: Rashod Bateman
+      via: add
+      week: 2
+      waiver: false
   - year: 2025
     players:
     - player: Saquon Barkley
