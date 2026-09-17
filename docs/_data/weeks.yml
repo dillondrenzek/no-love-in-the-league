@@ -296,8 +296,98 @@
     home_proj: 114.5
     away_proj: 117.4
   highlights: []
-  projections: []
-  projected_at: null
+  projections:
+  - home_id: jackperkins74
+    away_id: gganoom
+    home_team: Gibbed for your pleasure
+    away_team: One Big Beautiful Dill
+    home_proj: 126.7
+    away_proj: 113.0
+    pickem: false
+    fav_id: jackperkins74
+    fav_team: Gibbed for your pleasure
+    dog_team: One Big Beautiful Dill
+    fav_proj: 126.7
+    dog_proj: 113.0
+    spread: 13.7
+    decided: false
+    result: null
+  - home_id: kevbots22
+    away_id: alexandra
+    home_team: Josh Jacobs Alibi
+    away_team: Cornstar
+    home_proj: 121.3
+    away_proj: 120.5
+    pickem: false
+    fav_id: kevbots22
+    fav_team: Josh Jacobs Alibi
+    dog_team: Cornstar
+    fav_proj: 121.3
+    dog_proj: 120.5
+    spread: 0.8
+    decided: false
+    result: null
+  - home_id: lukstein
+    away_id: whowonthelastsuperbowl
+    home_team: 2x Runner Up
+    away_team: Trick or Trick It’s Mike Vick
+    home_proj: 113.3
+    away_proj: 125.1
+    pickem: false
+    fav_id: whowonthelastsuperbowl
+    fav_team: Trick or Trick It’s Mike Vick
+    dog_team: 2x Runner Up
+    fav_proj: 125.1
+    dog_proj: 113.3
+    spread: 11.8
+    decided: false
+    result: null
+  - home_id: sturmanator15
+    away_id: purpsworth
+    home_team: The People's Commissioner
+    away_team: I am dead inside
+    home_proj: 101.7
+    away_proj: 121.8
+    pickem: false
+    fav_id: purpsworth
+    fav_team: I am dead inside
+    dog_team: The People's Commissioner
+    fav_proj: 121.8
+    dog_proj: 101.7
+    spread: 20.1
+    decided: false
+    result: null
+  - home_id: theoceanpulse
+    away_id: shawne2520997
+    home_team: The ChoSimba Ones
+    away_team: Swift kick in the Dak
+    home_proj: 112.9
+    away_proj: 114.9
+    pickem: false
+    fav_id: shawne2520997
+    fav_team: Swift kick in the Dak
+    dog_team: The ChoSimba Ones
+    fav_proj: 114.9
+    dog_proj: 112.9
+    spread: 2.0
+    decided: false
+    result: null
+  - home_id: zachzoske
+    away_id: schirmerj
+    home_team: Tuten Your Mom
+    away_team: Return of the IDP
+    home_proj: 114.5
+    away_proj: 117.4
+    pickem: false
+    fav_id: schirmerj
+    fav_team: Return of the IDP
+    dog_team: Tuten Your Mom
+    fav_proj: 117.4
+    dog_proj: 114.5
+    spread: 2.9
+    decided: false
+    result: null
+  projected_at: Sep 17, 2026 · 1:57 PM PDT
 2026-3:
   week: 3
   state: future
