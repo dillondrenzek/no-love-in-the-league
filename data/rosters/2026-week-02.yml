@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-16T22:29:19+00:00'
+captured_at: '2026-09-17T02:22:33+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -685,7 +685,7 @@ rosters:
     actual: null
   - player: Courtland Sutton
     pos: WR
-    starter: false
+    starter: true
     proj: 9.93
     actual: null
   - player: Aaron Jones Sr.
@@ -695,7 +695,7 @@ rosters:
     actual: null
   - player: Quentin Johnston
     pos: WR
-    starter: true
+    starter: false
     proj: 8.48
     actual: null
   - player: Stefon Diggs
