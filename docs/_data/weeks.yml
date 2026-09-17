@@ -269,7 +269,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 100.6
+    home_proj: 101.7
     away_proj: 121.8
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
@@ -293,7 +293,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 96.3
+    home_proj: 114.5
     away_proj: 117.4
   highlights: []
   projections: []

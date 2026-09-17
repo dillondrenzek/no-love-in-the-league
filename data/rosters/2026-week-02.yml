@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-17T15:52:11+00:00'
+captured_at: '2026-09-17T19:23:58+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -33,7 +33,7 @@ rosters:
     actual: null
   - player: Tony Pollard
     pos: RB
-    starter: false
+    starter: true
     proj: 10.16
     actual: null
   - player: Justin Herbert
@@ -53,7 +53,7 @@ rosters:
     actual: null
   - player: Kyle Monangai
     pos: RB
-    starter: true
+    starter: false
     proj: 9.1
     actual: null
   - player: MarShawn Lloyd
@@ -122,7 +122,7 @@ rosters:
     actual: null
   - player: Michael Pittman Jr.
     pos: WR
-    starter: false
+    starter: true
     proj: 8.93
     actual: null
   - player: Bhayshul Tuten
@@ -132,7 +132,7 @@ rosters:
     actual: null
   - player: Isaiah Likely
     pos: TE
-    starter: false
+    starter: true
     proj: 9.23
     actual: null
   - player: Cam Little
