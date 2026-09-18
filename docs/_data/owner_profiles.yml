@@ -9125,7 +9125,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 86.7
+    tx_per_year: 86.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -9139,7 +9139,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 6th
     record: 0-1
-    tx: 3
+    tx: 5
     in_progress: true
     pf: 146.7
     pf_color: '#fdf3e0'
@@ -9526,6 +9526,10 @@ sturmanator15:
     - player: Malik Washington
       via: add
       week: 1
+      waiver: false
+    - player: Chase McLaughlin
+      via: add
+      week: 2
       waiver: false
     - player: Mack Hollins
       via: add

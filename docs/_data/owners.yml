@@ -1025,8 +1025,8 @@ tx_heatmap:
       color: '#fcebcc'
   - id: sturmanator15
     name: Wade
-    total: 780
-    tx_per_year: 86.7
+    total: 782
+    tx_per_year: 86.9
     cells:
     - year: 2018
       count: 110
@@ -1053,8 +1053,8 @@ tx_heatmap:
       count: 52
       color: '#facb80'
     - year: 2026
-      count: 3
-      color: '#fdf1da'
+      count: 5
+      color: '#fdefd7'
   - id: schirmerj
     name: Jono
     total: 457

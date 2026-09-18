@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-18T15:25:44+00:00'
+captured_at: '2026-09-18T18:44:22+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -43,7 +43,7 @@ rosters:
     actual: null
   - player: Blake Corum
     pos: RB
-    starter: false
+    starter: true
     proj: 8.66
     actual: null
   - player: Trey McBride
@@ -71,11 +71,6 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-  - player: Eddy Pineiro
-    pos: K
-    starter: true
-    proj: 9.68
-    actual: null
   - player: Chargers D/ST
     pos: D/ST
     starter: true
@@ -83,8 +78,13 @@ rosters:
     actual: null
   - player: Mack Hollins
     pos: WR
-    starter: false
+    starter: true
     proj: 6.81
+    actual: null
+  - player: Chase McLaughlin
+    pos: K
+    starter: true
+    proj: 8.57
     actual: null
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
@@ -122,7 +122,7 @@ rosters:
     actual: null
   - player: Michael Pittman Jr.
     pos: WR
-    starter: true
+    starter: false
     proj: 8.93
     actual: null
   - player: Bhayshul Tuten
@@ -152,7 +152,7 @@ rosters:
     actual: null
   - player: Caleb Douglas
     pos: WR
-    starter: false
+    starter: true
     proj: 7.17
     actual: null
   - player: Ashton Jeanty
