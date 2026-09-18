@@ -131,11 +131,10 @@ def season_detail(season, franchises, overrides, notes):
         "keepers": season_keepers(season, franchises),
         "champ": None if in_progress else (rows[0] if rows else None),
         "sacko": None if in_progress else (rows[-1] if rows else None),
-        # Shiva + Sacko brackets, once the playoffs are underway (None for other
-        # states or a non-6-team-playoff season the league rules don't cover).
-        # The current 6-team seeding system took effect in 2023; skip earlier years.
+        # Shiva + Sacko brackets, reconstructed from the actual playoff matchups
+        # (None outside the playoffs, or when the season's format isn't usable).
         "bracket": (playoff_bracket(season, franchises)
-                    if state in ("playoffs", "complete") and year >= 2023 else None),
+                    if state in ("playoffs", "complete") else None),
     }
 
 

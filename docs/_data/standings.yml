@@ -379,8 +379,7 @@ seasons:
   notes:
   - First year of Keepers rule
   - 'Playoff field cut back from 8 teams to 6. New seeding: top 5 by record make it,
-    and the 6th seed is the highest-scoring team of the rest — the bracket layout
-    used on this site starts here.'
+    and the 6th seed is the highest-scoring team of the rest.'
   - Increase QB TDs from 4 points to 5
   - Dropped the IDP slot and added a third WR starter.
   - 7 trades completed
@@ -478,16 +477,6 @@ seasons:
     pf_color: '#fbdba5'
     pa: 1398.7
   - finish: 10
-    team: Trey Lanced my ❤️
-    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
-    owner_id: sturmanator15
-    owner_name: Wade
-    record: 5-9
-    tag: null
-    pf: 1299.8
-    pf_color: '#fac26b'
-    pa: 1507.5
-  - finish: 11
     team: Make Dalvin Cook Again
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     owner_id: schirmerj
@@ -497,6 +486,16 @@ seasons:
     pf: 1317.0
     pf_color: '#f9bd5e'
     pa: 1350.7
+  - finish: 11
+    team: Trey Lanced my ❤️
+    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
+    owner_id: sturmanator15
+    owner_name: Wade
+    record: 5-9
+    tag: null
+    pf: 1299.8
+    pf_color: '#fac26b'
+    pa: 1507.5
   - finish: 12
     team: Risk it for The Biscuit
     logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
@@ -595,16 +594,6 @@ seasons:
     pf_color: '#f7aa4a'
     pa: 1450.5
   - finish: 9
-    team: ESPN 8 The Ocho
-    logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
-    owner_id: zachzoske
-    owner_name: Zach
-    record: 5-9
-    tag: null
-    pf: 1346.7
-    pf_color: '#f9bb58'
-    pa: 1455.0
-  - finish: 10
     team: Hot Chubb Time Machine
     logo: https://images.static-bluray.com/reviews/2991_1.jpg
     owner_id: theoceanpulse
@@ -614,7 +603,7 @@ seasons:
     pf: 1489.3
     pf_color: '#f49244'
     pa: 1463.8
-  - finish: 11
+  - finish: 10
     team: Autodraft Monster
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     owner_id: lukstein
@@ -624,6 +613,16 @@ seasons:
     pf: 1302.7
     pf_color: '#fac572'
     pa: 1465.5
+  - finish: 11
+    team: ESPN 8 The Ocho
+    logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
+    owner_id: zachzoske
+    owner_name: Zach
+    record: 5-9
+    tag: null
+    pf: 1346.7
+    pf_color: '#f9bb58'
+    pa: 1455.0
   - finish: 12
     team: Set_The_ RAT_TRAP_!
     logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
@@ -721,16 +720,6 @@ seasons:
     pf_color: '#f9b64d'
     pa: 1350.4
   - finish: 9
-    team: Lickin Brown in my McLaurin
-    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
-    owner_id: sturmanator15
-    owner_name: Wade
-    record: 5-8
-    tag: null
-    pf: 1093.9
-    pf_color: '#fdf3e0'
-    pa: 1284.1
-  - finish: 10
     team: Scat Play
     logo: https://i.redd.it/gc1lal601z941.jpg
     owner_id: henpen28
@@ -740,7 +729,7 @@ seasons:
     pf: 1163.4
     pf_color: '#fcdeae'
     pa: 1318.5
-  - finish: 11
+  - finish: 10
     team: Show Me Your TDs
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     owner_id: lukstein
@@ -750,6 +739,16 @@ seasons:
     pf: 1291.1
     pf_color: '#f9b852'
     pa: 1309.2
+  - finish: 11
+    team: Lickin Brown in my McLaurin
+    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
+    owner_id: sturmanator15
+    owner_name: Wade
+    record: 5-8
+    tag: null
+    pf: 1093.9
+    pf_color: '#fdf3e0'
+    pa: 1284.1
   - finish: 12
     team: Ram It In
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/GridironWarriors-MartinLaksman/warriors-09.svg
@@ -847,15 +846,15 @@ seasons:
     pf_color: '#fbcf89'
     pa: 1342.3
   - finish: 9
-    team: The Antonio ClownExperience
-    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-    owner_id: kevbots22
-    owner_name: Kevin
-    record: 4-9
+    team: Set_The_ RAT_TRAP_!
+    logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
+    owner_id: unclebadtouch38
+    owner_name: Fletcher
+    record: 5-7-1
     tag: null
-    pf: 1181.7
-    pf_color: '#fbd393'
-    pa: 1411.7
+    pf: 1036.2
+    pf_color: '#fdf3e0'
+    pa: 1215.5
   - finish: 10
     team: AB’s Helmet
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
@@ -867,15 +866,15 @@ seasons:
     pf_color: '#fac674'
     pa: 1344.1
   - finish: 11
-    team: Set_The_ RAT_TRAP_!
-    logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
-    owner_id: unclebadtouch38
-    owner_name: Fletcher
-    record: 5-7-1
+    team: The Antonio ClownExperience
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    owner_id: kevbots22
+    owner_name: Kevin
+    record: 4-9
     tag: null
-    pf: 1036.2
-    pf_color: '#fdf3e0'
-    pa: 1215.5
+    pf: 1181.7
+    pf_color: '#fbd393'
+    pa: 1411.7
   - finish: 12
     team: Tom Brady's Fluffer
     logo: https://lipstickandscoreboards.files.wordpress.com/2014/04/12.jpg
@@ -973,16 +972,6 @@ seasons:
     pf_color: '#fbcf89'
     pa: 1255.9
   - finish: 9
-    team: Wadgerach Sturdellske
-    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-    owner_id: whowonthelastsuperbowl
-    owner_name: Nate
-    record: 5-8
-    tag: null
-    pf: 1240.9
-    pf_color: '#fce2b6'
-    pa: 1378.4
-  - finish: 10
     team: Team Kevin with a K
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     owner_id: kevbots22
@@ -992,7 +981,7 @@ seasons:
     pf: 1210.9
     pf_color: '#fcebcd'
     pa: 1446.7
-  - finish: 11
+  - finish: 10
     team: Tacos Food Truck
     logo: ''
     owner_id: ajstewart04
@@ -1002,6 +991,16 @@ seasons:
     pf: 1269.9
     pf_color: '#fbd9a1'
     pa: 1417.6
+  - finish: 11
+    team: Wadgerach Sturdellske
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    owner_id: whowonthelastsuperbowl
+    owner_name: Nate
+    record: 5-8
+    tag: null
+    pf: 1240.9
+    pf_color: '#fce2b6'
+    pa: 1378.4
   - finish: 12
     team: Graham Slam
     logo: http://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -1107,16 +1106,6 @@ seasons:
     pf_color: '#fce1b6'
     pa: 1278.1
   - finish: 10
-    team: The People's Champion
-    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
-    owner_id: sturmanator15
-    owner_name: Wade
-    record: 5-8
-    tag: null
-    pf: 1151.0
-    pf_color: '#fcdeae'
-    pa: 1331.7
-  - finish: 11
     team: Wadgerach Sturdellske
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     owner_id: whowonthelastsuperbowl
@@ -1126,6 +1115,16 @@ seasons:
     pf: 1160.5
     pf_color: '#fbdaa4'
     pa: 1279.7
+  - finish: 11
+    team: The People's Champion
+    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
+    owner_id: sturmanator15
+    owner_name: Wade
+    record: 5-8
+    tag: null
+    pf: 1151.0
+    pf_color: '#fcdeae'
+    pa: 1331.7
   - finish: 12
     team: Injury Reserve
     logo: https://lh6.ggpht.com/QVeflxy2dhEk672mgEEuLcuEFyqQJOv9VlfKJ4kPsPCzIV1dsqTi_XOaHvS_U0_kKCE=w300
@@ -1343,16 +1342,6 @@ seasons:
     pf_color: '#fdf2df'
     pa: 1296.0
   - finish: 8
-    team: Jared's Kids
-    logo: http://cdn.hiphopsince1987.com/wp-content/uploads/2015/07/Jared-1-0-0-443-428750.jpg
-    owner_id: henpen28
-    owner_name: Henry
-    record: 4-9
-    tag: null
-    pf: 1086.2
-    pf_color: '#fdf3e0'
-    pa: 1207.2
-  - finish: 9
     team: MasterDeflater And_Commander
     logo: http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_01a.svg
     owner_id: kevbots22
@@ -1362,6 +1351,16 @@ seasons:
     pf: 1115.0
     pf_color: '#fce9c7'
     pa: 1259.0
+  - finish: 9
+    team: Jared's Kids
+    logo: http://cdn.hiphopsince1987.com/wp-content/uploads/2015/07/Jared-1-0-0-443-428750.jpg
+    owner_id: henpen28
+    owner_name: Henry
+    record: 4-9
+    tag: null
+    pf: 1086.2
+    pf_color: '#fdf3e0'
+    pa: 1207.2
   - finish: 10
     team: He's Quick He's Slick He's Mike
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -1437,16 +1436,6 @@ seasons:
     pf_color: '#f8ae4b'
     pa: 1213.1
   - finish: 7
-    team: Spaceball One
-    logo: http://img3.wikia.nocookie.net/__cb20120310153846/villains/images/b/b7/Dark_Helmet_unmasked.jpg
-    owner_id: zachzoske
-    owner_name: Zach
-    record: 6-7
-    tag: null
-    pf: 1253.9
-    pf_color: '#f49244'
-    pa: 1252.9
-  - finish: 8
     team: Arian nation .
     logo: http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg
     owner_id: schirmerj
@@ -1456,7 +1445,7 @@ seasons:
     pf: 1103.1
     pf_color: '#fac168'
     pa: 1267.0
-  - finish: 9
+  - finish: 8
     team: Turn down for Watt
     logo: ''
     owner_id: jackperkins74
@@ -1466,6 +1455,16 @@ seasons:
     pf: 1254.7
     pf_color: '#f49144'
     pa: 1333.1
+  - finish: 9
+    team: Spaceball One
+    logo: http://img3.wikia.nocookie.net/__cb20120310153846/villains/images/b/b7/Dark_Helmet_unmasked.jpg
+    owner_id: zachzoske
+    owner_name: Zach
+    record: 6-7
+    tag: null
+    pf: 1253.9
+    pf_color: '#f49244'
+    pa: 1252.9
   - finish: 10
     team: Haters Gonna Hate
     logo: http://o.onionstatic.com/images/8/8005/original/700.hq.jpg?3837

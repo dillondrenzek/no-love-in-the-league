@@ -1,18 +1,20 @@
 """Reconstruct the league's playoff brackets for a season.
 
-The league runs its own bracket, seeded by league rules (not ESPN's): the top
-five by regular-season record make it, the sixth seed is the highest-points-for
-team among the remaining seven, and the other six are seeded 7-12 by record. Both
-a **Shiva** (championship, seeds 1-6) and a **Sacko** (toilet bowl, seeds 7-12)
-bracket are played over the three playoff weeks, each a 6-team bracket with byes
-for the top two seeds. Advancement uses each team's actual score that week.
+Every year the league plays two brackets over the three playoff weeks: a
+**Shiva** (championship — the teams that finish in the top playoff seats) and a
+**Sacko** (toilet bowl — everyone else, playing to avoid finishing last). The
+field size has changed over the years (a 6-team championship in most seasons, an
+8-team championship in 2017-2022, and 10-team leagues in 2014-2015), so this
+module doesn't assume a fixed shape. It reads the *actual* ESPN matchups as the
+real games, groups each bracket's teams by round, and captions the games from the
+final standings — the authoritative placement — so the bracket always agrees with
+how the season actually finished.
 
 `playoff_bracket(season, franchises)` returns the two brackets as nested game
-dicts, or None when the season isn't a 6-team-playoff season (the only format
-these rules describe). Pure — no network, no rendering.
+dicts, or None when the season has no usable playoff data. Pure — no network.
 """
 
-from .data import regular_season_matchups, short_name_of, game_final
+from .data import regular_season_matchups, short_name_of
 
 
 def _reg_stats(season):
@@ -32,37 +34,32 @@ def _reg_stats(season):
     return stats
 
 
-def _seeds(season):
-    """League seeding 1-12: seeds 1-5 by record; seed 6 = highest PF of the rest;
-    seeds 7-12 = the remaining, by record. Returns (seed_by_fid, shiva[6], sacko[6])
-    or None if there aren't 12 ranked teams."""
+def _reg_seeds(season):
+    """{fid: seed} for the whole league, 1..N by regular-season record then PF.
+    Used only for the small seed labels shown on the bracket."""
     stats = _reg_stats(season)
-    if len(stats) < 12:
-        return None
-    def rec_key(fid):
-        d = stats[fid]
-        return (d["w"] + 0.5 * d["t"], d["pf"])
-    by_record = sorted(stats, key=rec_key, reverse=True)
-    top5 = by_record[:5]
-    rest = by_record[5:]
-    seed6 = max(rest, key=lambda f: stats[f]["pf"])
-    shiva = top5 + [seed6]
-    sacko = [f for f in by_record if f not in shiva]     # remaining 6, record order
-    seed = {}
-    for i, fid in enumerate(shiva, 1):
-        seed[fid] = i
-    for i, fid in enumerate(sacko, 7):
-        seed[fid] = i
-    return seed, shiva, sacko
+    order = sorted(stats, key=lambda f: (stats[f]["w"] + 0.5 * stats[f]["t"],
+                                         stats[f]["pf"]), reverse=True)
+    return {fid: i + 1 for i, fid in enumerate(order)}
 
 
-def _playoff_games(season, members, reg):
+def _playoff_weeks(season):
+    """The playoff weeks actually played (weeks past the regular season with
+    reported scores), in order."""
+    reg = season.get("weeks_in_regular_season") or 14
+    weeks = sorted({m["week"] for m in season.get("matchups") or []
+                    if m.get("week", 0) > reg and m.get("home_score") is not None})
+    return weeks
+
+
+def _playoff_games(season, members, weeks):
     """Actual head-to-head games played *among* `members` in the playoff weeks,
     grouped by week: {week: [(home, away, home_score, away_score)...]}."""
+    wset = set(weeks)
     by_week = {}
     for m in season.get("matchups") or []:
         w = m.get("week")
-        if not w or w <= reg or m.get("home_score") is None:
+        if w not in wset or m.get("home_score") is None:
             continue
         if m["home"] in members and m["away"] in members:
             by_week.setdefault(w, []).append(
@@ -70,23 +67,31 @@ def _playoff_games(season, members, reg):
     return by_week
 
 
-def _bracket(season, franchises, members, seed, title, kind):
-    """Reconstruct one bracket (Shiva or Sacko) from the *actual* games played
-    among its six teams, so advancement follows real results — not a re-pairing.
+_ORD = {1: "1st", 3: "3rd", 5: "5th", 7: "7th", 9: "9th", 11: "11th",
+        13: "13th", 15: "15th"}
 
-    kind='shiva': winning advances; the team that wins all its games is champion.
-    kind='sacko': losing advances toward last; the team that loses all its games
-    is the Sacko. Returns {'title', 'rounds': [...]} or None if the six teams
-    didn't play a recognizable three-week bracket among themselves."""
-    reg = season.get("weeks_in_regular_season") or 14
+
+def _bracket(season, franchises, members, seeds, weeks, kind, n_teams):
+    """Reconstruct one bracket from the *actual* games played among its teams.
+
+    kind='shiva' (championship, top finishers) or 'sacko' (consolation, bottom
+    finishers). Advancement follows the real ESPN results; games are captioned
+    from the final standings. Returns {'title', 'rounds': [...]} or None if the
+    bracket didn't play a recognizable set of games."""
     logos = season.get("team_logos") or {}
-    weeks = [reg + 1, reg + 2, reg + 3]
-    by_week = _playoff_games(season, members, reg)
-    if not all(by_week.get(w) for w in weeks):
+    # A 4-team Sacko (the 8-team-playoff and 10-team-league eras) settled 9th and
+    # the Sacko in the second-to-last week; the final week is just exhibition, so
+    # we don't show it.
+    if kind == "sacko" and len(members) == 4 and len(weeks) >= 3:
+        weeks = weeks[:-1]
+    by_week = _playoff_games(season, members, weeks)
+    played_weeks = [w for w in weeks if by_week.get(w)]
+    if len(played_weeks) < 2 or len(members) < 2:
         return None
+    weeks = played_weeks
 
     def side(fid, score):
-        return {"seed": seed.get(fid), "fid": fid,
+        return {"seed": seeds.get(fid), "fid": fid,
                 "name": (season.get("teams", {}).get(fid) or short_name_of(fid, franchises)),
                 "logo": logos.get(fid, ""), "score": score}
 
@@ -102,85 +107,120 @@ def _bracket(season, franchises, members, seed, title, kind):
                 "winner_fid": fid, "loser_fid": None}
 
     # Final standings are the authoritative placement. Two teams sit in adjacent
-    # seats (1-2, 3-4, ... 11-12) exactly when the game between them decides that
-    # placement, so we caption a game from the seats of its two teams. Advancement
-    # itself stays driven by the real results above.
+    # seats (1-2, 3-4, ...) exactly when the game between them decides that
+    # placement; caption a game from the seats of its two teams. The top seat is
+    # the Shiva (champion), the very last seat is the Sacko.
     rank = {f: i for i, f in enumerate(season.get("final_standings") or [])}
-    PLACE = {0: "Shiva", 2: "3rd Place", 4: "5th Place",
-             6: "7th Place", 8: "9th Place", 10: "Sacko"}
-    # Final-round order: the title game (Shiva / Sacko) on top, then the next
-    # placement game down (3rd / 9th), then the rest.
-    FINAL_ORDER = {"Shiva": 0, "3rd Place": 1, "5th Place": 2,
-                   "Sacko": 0, "9th Place": 1, "7th Place": 2}
 
-    def placement(h, a):
+    def placement(h, a, winner):
+        # Caption a game only when it truly decided a placement: the two teams
+        # sit in adjacent final seats AND the team that won the game finished
+        # ahead. In the old round-robin consolations, order came from cumulative
+        # record, not one game, so those games stay uncaptioned rather than wrong.
         if h not in rank or a not in rank:
             return None
         lo, hi = sorted((rank[h], rank[a]))
-        return PLACE.get(lo) if lo % 2 == 0 and hi == lo + 1 else None
+        if lo % 2 != 0 or hi != lo + 1 or rank[winner] != lo:
+            return None
+        if lo == 0:
+            return "Shiva"
+        if hi == n_teams - 1:
+            return "Sacko"
+        return _ORD.get(lo + 1, "%dth" % (lo + 1)) + " Place"
 
-    # The two bye seeds (top of the Shiva, bottom of the Sacko) sit out round 1;
-    # ESPN still schedules them a meaningless game, which we show as byes instead.
-    ordered = sorted(members, key=lambda f: seed.get(f, 99))
-    byes = set(ordered[:2]) if kind == "shiva" else set(ordered[-2:])
+    # Round-1 byes go to the strongest championship seeds / the weakest Sacko
+    # seeds; the count is whatever a standard bracket needs (size minus the
+    # largest power of two that fits). ESPN still schedules them a meaningless
+    # game that week, so we render byes instead of that game.
+    size = len(members)
+    pow2 = 1
+    while pow2 * 2 <= size:
+        pow2 *= 2
+    n_byes = size - pow2
+    ordered = sorted(members, key=lambda f: seeds.get(f, 99))   # best seed first
+    if kind == "shiva":
+        bye_fids = ordered[:n_byes]
+    else:                                                       # Sacko: worst seeds bye
+        bye_fids = ordered[len(ordered) - n_byes:] if n_byes else []
+    byes = set(bye_fids)
 
-    # ESPN makes some pairs play twice (a placement game and a dead rematch the
+    # ESPN makes some pairs play twice (a placement game plus a dead rematch the
     # next week). Keep only the standings-consistent copy — the one whose winner
-    # actually finished ahead — so the bracket shows each result once, correctly.
-    seen = {}                                    # frozenset(pair) -> chosen (week,h,a)
+    # actually finished ahead — so each result shows once, correctly.
+    seen = {}
     for w in weeks:
         for h, a, hs, as_ in by_week[w]:
             pair = frozenset((h, a))
             winner = h if hs >= as_ else a
             loser = a if winner == h else h
             consistent = rank.get(winner, 99) < rank.get(loser, 99)
-            prev = seen.get(pair)
-            if prev is None or consistent:
+            if pair not in seen or consistent:
                 seen[pair] = (w, h, a)
     keep = set(seen.values())
 
+    def order_key(g):                                 # title game first each round
+        lab = g["label"]
+        if lab == ("Shiva" if kind == "shiva" else "Sacko"):
+            return -1
+        pair = (g["home"]["fid"], g["away"]["fid"] if g["away"] else None)
+        base = min(rank.get(pair[0], 99), rank.get(pair[1], 99))
+        return base if kind == "shiva" else -base
+
     rounds = []
+    last = len(weeks) - 1
     for i, w in enumerate(weeks):
         games = []
         playing = set()
-        wk_games = sorted(by_week[w],
-                          key=lambda g: (seed.get(g[0], 99) + seed.get(g[1], 99)))
-        for h, a, hs, as_ in wk_games:
+        for h, a, hs, as_ in by_week[w]:
             if i == 0 and h in byes and a in byes:
-                continue                          # bye pairing: shown as byes below
+                continue                              # bye pairing: shown as byes
             if (w, h, a) not in keep:
-                continue                          # dead rematch of an earlier game
+                continue                              # dead rematch
             playing.add(h)
             playing.add(a)
-            games.append(make_game(w, h, a, hs, as_, placement(h, a)))
-        if i == 0:                                # round 1: byes bookend the games
-            top_bye = ordered[0] if kind == "shiva" else ordered[-2]
-            bottom_bye = ordered[1] if kind == "shiva" else ordered[-1]
+            winner = h if hs >= as_ else a
+            games.append(make_game(w, h, a, hs, as_, placement(h, a, winner)))
+        if i == 0 and n_byes:                         # round 1: byes bookend
+            tops = [f for f in bye_fids if f not in playing]
             middle = sorted(games, key=lambda g: g["home"]["seed"] or 99)
-            games = [bye(w, top_bye)] + middle + [bye(w, bottom_bye)]
-        elif i == len(weeks) - 1:                 # final round: title game on top
-            games.sort(key=lambda g: FINAL_ORDER.get(g["label"], 99))
-        rounds.append({"week": w, "label": "Round %d" % (i + 1),
-                       "games": games, "consolation": []})
-    return {"title": title, "rounds": rounds}
+            half = (len(tops) + 1) // 2
+            games = ([bye(w, f) for f in tops[:half]] + middle
+                     + [bye(w, f) for f in tops[half:]])
+        elif i == last:                               # final round: title on top
+            games.sort(key=order_key)
+        else:
+            games.sort(key=lambda g: (g["home"]["seed"] or 99) + (g["away"]["seed"] or 99)
+                       if g["away"] else 99)
+        rounds.append({"week": w, "games": games, "consolation": []})
+    rounds = [r for r in rounds if r["games"]]     # drop rounds with no games
+    if len(rounds) < 2:
+        return None
+    for n, r in enumerate(rounds, 1):
+        r["label"] = "Round %d" % n
+    return {"title": title_for(kind), "rounds": rounds}
+
+
+def title_for(kind):
+    return "Shiva Bracket" if kind == "shiva" else "Sacko Bracket"
 
 
 def playoff_bracket(season, franchises):
     """{'shiva': {...}, 'sacko': {...}, 'seeds': {fid: n}} or None.
 
-    Each bracket is {'title', 'rounds': [{'week', 'label', 'games': [game...]}...]}
-    where a game is {label, week, home/away: {seed, fid, name, score}, winner_fid,
-    loser_fid, decided}. A bye is a game with away=None. Advancement mirrors the
-    actual playoff results, so the brackets agree with the final standings."""
-    seeded = _seeds(season)
-    if not seeded:
+    Membership comes from the final standings: the championship bracket is the
+    teams that finished in the top playoff seats, the Sacko is everyone else.
+    That needs no seeding rules and works for every era's field size."""
+    fs = season.get("final_standings") or []
+    weeks = _playoff_weeks(season)
+    n_playoff = len(season.get("playoff_teams") or [])
+    if len(fs) < 4 or len(weeks) < 2 or n_playoff not in (6, 8):
         return None
-    seed, shiva, sacko = seeded
-    # Only handle the 6-team format these rules describe (12 teams, 6 in each half).
-    if len(shiva) != 6 or len(sacko) != 6:
-        return None
-    shiva_b = _bracket(season, franchises, set(shiva), seed, "Shiva Bracket", "shiva")
-    sacko_b = _bracket(season, franchises, set(sacko), seed, "Sacko Bracket", "sacko")
+    n = len(fs)
+    shiva_members = set(fs[:n_playoff])
+    sacko_members = set(fs[n_playoff:])
+    seeds = _reg_seeds(season)
+    shiva_b = _bracket(season, franchises, shiva_members, seeds, weeks, "shiva", n)
+    sacko_b = _bracket(season, franchises, sacko_members, seeds, weeks, "sacko", n)
     if not shiva_b or not sacko_b:
         return None
-    return {"shiva": shiva_b, "sacko": sacko_b, "seeds": seed}
+    return {"shiva": shiva_b, "sacko": sacko_b, "seeds": seeds}
