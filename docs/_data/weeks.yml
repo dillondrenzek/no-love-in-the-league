@@ -13,6 +13,8 @@
     home_record: null
     away_record: null
     scored: true
+    home_yet: null
+    away_yet: null
     final: true
     live: false
     playoff: false
@@ -32,6 +34,8 @@
     home_record: null
     away_record: null
     scored: true
+    home_yet: null
+    away_yet: null
     final: true
     live: false
     playoff: false
@@ -51,6 +55,8 @@
     home_record: null
     away_record: null
     scored: true
+    home_yet: null
+    away_yet: null
     final: true
     live: false
     playoff: false
@@ -70,6 +76,8 @@
     home_record: null
     away_record: null
     scored: true
+    home_yet: null
+    away_yet: null
     final: true
     live: false
     playoff: false
@@ -89,6 +97,8 @@
     home_record: null
     away_record: null
     scored: true
+    home_yet: null
+    away_yet: null
     final: true
     live: false
     playoff: false
@@ -108,6 +118,8 @@
     home_record: null
     away_record: null
     scored: true
+    home_yet: null
+    away_yet: null
     final: true
     live: false
     playoff: false
@@ -258,6 +270,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
+    home_yet: 8
+    away_yet: 10
     final: false
     live: true
     playoff: false
@@ -279,6 +293,8 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: false
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
@@ -295,6 +311,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
+    home_yet: 9
+    away_yet: 9
     final: false
     live: true
     playoff: false
@@ -316,6 +334,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
@@ -332,6 +352,8 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: true
+    home_yet: 10
+    away_yet: 8
     final: false
     live: true
     playoff: false
@@ -353,6 +375,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
+    home_yet: 9
+    away_yet: 8
     final: false
     live: true
     playoff: false
@@ -471,6 +495,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -485,6 +511,8 @@
     home_record: 0-0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -499,6 +527,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -513,6 +543,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -527,6 +559,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -541,6 +575,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -562,6 +598,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -576,6 +614,8 @@
     home_record: 0-0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -590,6 +630,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -604,6 +646,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -618,6 +662,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -632,6 +678,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -653,6 +701,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -667,6 +717,8 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -681,6 +733,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -695,6 +749,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -709,6 +765,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -723,6 +781,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -744,6 +804,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -758,6 +820,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -772,6 +836,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -786,6 +852,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -800,6 +868,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -814,6 +884,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -835,6 +907,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -849,6 +923,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -863,6 +939,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -877,6 +955,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -891,6 +971,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -905,6 +987,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -926,6 +1010,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -940,6 +1026,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -954,6 +1042,8 @@
     home_record: 0-0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -968,6 +1058,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -982,6 +1074,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -996,6 +1090,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1017,6 +1113,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1031,6 +1129,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1045,6 +1145,8 @@
     home_record: 0-0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1059,6 +1161,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1073,6 +1177,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1087,6 +1193,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1108,6 +1216,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1122,6 +1232,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1136,6 +1248,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1150,6 +1264,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1164,6 +1280,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1178,6 +1296,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1199,6 +1319,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1213,6 +1335,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1227,6 +1351,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1241,6 +1367,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1255,6 +1383,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1269,6 +1399,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1290,6 +1422,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1304,6 +1438,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1318,6 +1454,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1332,6 +1470,8 @@
     home_record: 0-0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1346,6 +1486,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1360,6 +1502,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1381,6 +1525,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1395,6 +1541,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1409,6 +1557,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1423,6 +1573,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1437,6 +1589,8 @@
     home_record: 0-0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1451,6 +1605,8 @@
     home_record: 1-0
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1472,6 +1628,8 @@
     home_record: 1-0
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1486,6 +1644,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1500,6 +1660,8 @@
     home_record: 0-1
     away_record: 0-0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1514,6 +1676,8 @@
     home_record: 0-1
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1528,6 +1692,8 @@
     home_record: 0-1
     away_record: 0-1
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false
@@ -1542,6 +1708,8 @@
     home_record: 1-0
     away_record: 1-0
     scored: false
+    home_yet: null
+    away_yet: null
     final: false
     live: false
     playoff: false

@@ -34,6 +34,7 @@ jackperkins74:
       years:
       - 2015
       - 2025
+    avg_finish: 4.8
   seasons:
   - year: 2026
     team: Gibbed for your pleasure
@@ -2897,6 +2898,7 @@ zachzoske:
       type: shiva
       years:
       - 2019
+    avg_finish: 6.8
   seasons:
   - year: 2026
     team: Tuten Your Mom
@@ -5627,6 +5629,7 @@ shawne2520997:
       years:
       - 2021
       - 2023
+    avg_finish: 5.0
   seasons:
   - year: 2026
     team: Swift kick in the Dak
@@ -7224,6 +7227,7 @@ alexandra:
       type: place
       ordinal: —
       years: []
+    avg_finish: null
   seasons:
   - year: 2026
     team: Cornstar
@@ -7332,6 +7336,7 @@ lukstein:
       type: shiva
       years:
       - 2024
+    avg_finish: 6.4
   seasons:
   - year: 2026
     team: 2x Runner Up
@@ -9127,6 +9132,7 @@ sturmanator15:
       type: cochamp
       years:
       - 2016
+    avg_finish: 6.7
   seasons:
   - year: 2026
     team: The People's Commissioner
@@ -11542,6 +11548,7 @@ kevbots22:
       ordinal: 2nd
       years:
       - 2025
+    avg_finish: 7.0
   seasons:
   - year: 2026
     team: Josh Jacobs Alibi
@@ -12969,6 +12976,7 @@ theoceanpulse:
       type: shiva
       years:
       - 2018
+    avg_finish: 5.5
   seasons:
   - year: 2026
     team: The ChoSimba Ones
@@ -14825,6 +14833,7 @@ gganoom:
       ordinal: 4th
       years:
       - 2025
+    avg_finish: 6.0
   seasons:
   - year: 2026
     team: One Big Beautiful Dill
@@ -15262,6 +15271,7 @@ schirmerj:
       type: cochamp
       years:
       - 2016
+    avg_finish: 5.8
   seasons:
   - year: 2026
     team: Return of the IDP
@@ -16964,6 +16974,7 @@ whowonthelastsuperbowl:
       ordinal: 4th
       years:
       - 2022
+    avg_finish: 8.8
   seasons:
   - year: 2026
     team: Trick or Trick It’s Mike Vick
@@ -18635,6 +18646,7 @@ purpsworth:
       ordinal: 2nd
       years:
       - 2021
+    avg_finish: 6.3
   seasons:
   - year: 2026
     team: I am dead inside
@@ -20101,6 +20113,7 @@ henpen28:
       - 2014
       - 2017
       - 2022
+    avg_finish: 5.9
   seasons:
   - year: 2025
     team: Dump it on my Chest
@@ -21707,6 +21720,7 @@ unclebadtouch38:
       type: shiva
       years:
       - 2020
+    avg_finish: 7.2
   seasons:
   - year: 2023
     team: Mr. Irrelevant
@@ -22760,6 +22774,7 @@ ajstewart04:
       ordinal: 9th
       years:
       - 2017
+    avg_finish: 9.5
   seasons:
   - year: 2018
     team: Tacos Food Truck
@@ -23028,6 +23043,7 @@ master-otis:
       years:
       - 2014
       - 2015
+    avg_finish: 5.3
   seasons:
   - year: 2016
     team: Brown Lives Matter
@@ -23328,6 +23344,7 @@ thebragers:
       ordinal: 5th
       years:
       - 2014
+    avg_finish: 5.5
   seasons:
   - year: 2015
     team: The Bragers

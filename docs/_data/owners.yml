@@ -14,6 +14,7 @@ active:
     years:
     - 2021
     - 2023
+  avg_finish: 5.0
 - id: jackperkins74
   name: Jack
   seasons: 13
@@ -29,6 +30,7 @@ active:
     years:
     - 2015
     - 2025
+  avg_finish: 4.8
 - id: theoceanpulse
   name: Dillon
   seasons: 11
@@ -43,6 +45,7 @@ active:
     type: shiva
     years:
     - 2018
+  avg_finish: 5.5
 - id: zachzoske
   name: Zach
   seasons: 13
@@ -57,6 +60,7 @@ active:
     type: shiva
     years:
     - 2019
+  avg_finish: 6.8
 - id: lukstein
   name: Luke
   seasons: 13
@@ -71,6 +75,7 @@ active:
     type: shiva
     years:
     - 2024
+  avg_finish: 6.4
 - id: sturmanator15
   name: Wade
   seasons: 13
@@ -85,6 +90,7 @@ active:
     type: cochamp
     years:
     - 2016
+  avg_finish: 6.7
 - id: schirmerj
   name: Jono
   seasons: 13
@@ -99,6 +105,7 @@ active:
     type: cochamp
     years:
     - 2016
+  avg_finish: 5.8
 - id: alexandra
   name: Lexi
   seasons: 1
@@ -113,6 +120,7 @@ active:
     type: place
     ordinal: —
     years: []
+  avg_finish: null
 - id: gganoom
   name: Grant
   seasons: 3
@@ -128,6 +136,7 @@ active:
     ordinal: 4th
     years:
     - 2025
+  avg_finish: 6.0
 - id: purpsworth
   name: Trevor
   seasons: 8
@@ -143,6 +152,7 @@ active:
     ordinal: 2nd
     years:
     - 2021
+  avg_finish: 6.3
 - id: kevbots22
   name: Kevin
   seasons: 13
@@ -158,6 +168,7 @@ active:
     ordinal: 2nd
     years:
     - 2025
+  avg_finish: 7.0
 - id: whowonthelastsuperbowl
   name: Nate
   seasons: 13
@@ -173,6 +184,7 @@ active:
     ordinal: 4th
     years:
     - 2022
+  avg_finish: 8.8
 inactive:
 - id: henpen28
   name: Henry
@@ -190,6 +202,7 @@ inactive:
     - 2014
     - 2017
     - 2022
+  avg_finish: 5.9
 - id: unclebadtouch38
   name: Fletcher
   seasons: 8
@@ -204,6 +217,7 @@ inactive:
     type: shiva
     years:
     - 2020
+  avg_finish: 7.2
 - id: thebragers
   name: Brady
   seasons: 2
@@ -219,6 +233,7 @@ inactive:
     ordinal: 5th
     years:
     - 2014
+  avg_finish: 5.5
 - id: master-otis
   name: Odie
   seasons: 3
@@ -235,6 +250,7 @@ inactive:
     years:
     - 2014
     - 2015
+  avg_finish: 5.3
 - id: ajstewart04
   name: Anthony
   seasons: 2
@@ -250,6 +266,7 @@ inactive:
     ordinal: 9th
     years:
     - 2017
+  avg_finish: 9.5
 draft_heatmap:
   slots:
   - 1

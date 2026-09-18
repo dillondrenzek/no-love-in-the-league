@@ -23,7 +23,7 @@ complete week. The AI recap lives on the page, below this include.
       </div>
       <div class="matchup__pts">
         <div class="matchup__score">{% if g.scored %}{{ g.home_score }}{% else %}0.0{% endif %}</div>
-        {%- if g.home_proj %}<div class="matchup__proj">proj {{ g.home_proj }}</div>{% endif -%}
+        {%- if g.home_proj or g.home_yet %}<div class="matchup__proj">{% if g.home_proj %}proj {{ g.home_proj }}{% endif %}{% if g.home_yet %}{% if g.home_proj %} - {% endif %}{{ g.home_yet }} to play{% endif %}</div>{% endif -%}
       </div>
     </div>
     <div class="matchup__side{% if g.winner_id and g.winner_id == g.away_id %} matchup__side--win{% endif %}">
@@ -36,7 +36,7 @@ complete week. The AI recap lives on the page, below this include.
       </div>
       <div class="matchup__pts">
         <div class="matchup__score">{% if g.scored %}{{ g.away_score }}{% else %}0.0{% endif %}</div>
-        {%- if g.away_proj %}<div class="matchup__proj">proj {{ g.away_proj }}</div>{% endif -%}
+        {%- if g.away_proj or g.away_yet %}<div class="matchup__proj">{% if g.away_proj %}proj {{ g.away_proj }}{% endif %}{% if g.away_yet %}{% if g.away_proj %} - {% endif %}{{ g.away_yet }} to play{% endif %}</div>{% endif -%}
       </div>
     </div>
   </div>

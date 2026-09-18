@@ -202,6 +202,7 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
         finishes = [s["finish"] for s in p["seasons"] if not s.get("in_progress")]
         p["best_finish"] = min(finishes) if finishes else None
         p["worst_finish"] = max(finishes) if finishes else None
+        p["avg_finish"] = round(sum(finishes) / len(finishes), 1) if finishes else None
         p["seasons_count"] = len(p["seasons"])
         # Transactions per year, over the seasons whose activity we actually have.
         p["tx_per_year"] = round(p["transactions"] / p["tx_seasons"], 1) if p["tx_seasons"] else 0.0
@@ -223,7 +224,8 @@ def empty_profile(fid, franchises):
     yet — e.g. an owner who just took over a team in an in-progress season. Lets
     the owners index list them as an active member before they have a record."""
     p = _blank(fid, franchises)
-    p.update(best_finish=None, worst_finish=None, seasons_count=0, tx_per_year=0.0)
+    p.update(best_finish=None, worst_finish=None, avg_finish=None,
+             seasons_count=0, tx_per_year=0.0)
     p["reg"]["win_pct"] = 0.0
     return p
 

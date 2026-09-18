@@ -91,6 +91,7 @@ def _owner_row(p, logos=None):
         "titles": fmt_titles(p["titles"]), "sackos": p["sackos"],
         "trades": p.get("trades", 0),
         "best_finish": _best_finish_data(p),
+        "avg_finish": p.get("avg_finish"),
     }
 
 
@@ -260,6 +261,7 @@ def _profile_data(p, profiles, logos=None, logos_by_year=None):
             "tx_known": p.get("transactions_known", True),
             "seasons": p["seasons_count"],
             "best_finish": _best_finish_data(p),
+            "avg_finish": p.get("avg_finish"),
         },
         "seasons": _season_rows(p, logos_by_year),
         "h2h": _h2h_rows(p, profiles),

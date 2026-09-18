@@ -61,11 +61,21 @@ def _rec_str(r):
     return f"{r[0]}-{r[1]}-{r[2]}" if r[2] else f"{r[0]}-{r[1]}"
 
 
-def _scoreboard(season, franchises, games):
+def _yet_to_play(roster):
+    """How many of a team's starters have not started yet — a starter whose game
+    hasn't kicked off has no `actual` score. Meaningful only for a live week
+    (every starter has an actual once the week is complete)."""
+    if not roster:
+        return None
+    return sum(1 for p in roster if p.get("starter") and p.get("actual") is None)
+
+
+def _scoreboard(season, franchises, games, week_rosters=None):
     teams = season.get("teams", {})
     logos = season.get("team_logos") or {}
     week = games[0].get("week") if games else None
     records = _records_before(season, week) if week else {}
+    week_rosters = week_rosters or {}
     board = []
     for m in games:
         h, a = m["home"], m["away"]
@@ -84,6 +94,8 @@ def _scoreboard(season, franchises, games):
             "home_record": _rec_str(records.get(h)),
             "away_record": _rec_str(records.get(a)),
             "scored": scored,
+            "home_yet": None if final else _yet_to_play(week_rosters.get(h)),
+            "away_yet": None if final else _yet_to_play(week_rosters.get(a)),
             "final": final,
             "live": scored and not final,
             "playoff": bool(m.get("playoff")),
@@ -242,19 +254,20 @@ def _fmt_captured(iso):
     return f"{dt.strftime('%b')} {dt.day}, {dt.year} · {hour}:{dt.minute:02d} {ampm} {tz_abbr}"
 
 
-def week_summary(season, week, franchises, week_proj=None):
+def week_summary(season, week, franchises, week_proj=None, week_rosters=None):
     """{'week', 'state', 'scoreboard', 'highlights', 'projections', 'projected_at'}
     for one week. Highlights are populated only for a complete week; projections
     come from the week's snapshot (see _projection_report) and are empty when none
     was taken. `week_proj` is that week's load_projections entry
-    ({'captured_at', 'proj'}) or None."""
+    ({'captured_at', 'proj'}) or None. `week_rosters` is load_week_rosters output
+    ({fid: [players]}) used for the live 'yet to play' count."""
     games = _games_in_week(season, week)
     state = week_state(season, week)
     highlights = _highlights(season, franchises, games) if state == "complete" else []
     proj_map = (week_proj or {}).get("proj")
     rows = _projection_report(season, week, franchises, proj_map)
     return {"week": week, "state": state,
-            "scoreboard": _scoreboard(season, franchises, games),
+            "scoreboard": _scoreboard(season, franchises, games, week_rosters),
             "highlights": highlights,
             "projections": rows,
             "projected_at": _fmt_captured((week_proj or {}).get("captured_at")) if rows else None}
