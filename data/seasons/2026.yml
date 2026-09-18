@@ -79,12 +79,12 @@ matchups:
   - { week:  1, home: lukstein, away: purpsworth, home_score: 96.5, away_score: 85.4, playoff: false }
   - { week:  1, home: schirmerj, away: jackperkins74, home_score: 103.5, away_score: 166.7, playoff: false }
   - { week:  1, home: sturmanator15, away: zachzoske, home_score: 146.7, away_score: 161.3, playoff: false }
-  - { week:  2, home: jackperkins74, away: gganoom, playoff: false, played: false, home_proj: 126.71, away_proj: 112.96 }
-  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.32, away_proj: 120.48 }
-  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 113.26, away_proj: 125.08 }
-  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 101.65, away_proj: 121.85 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, playoff: false, played: false, home_proj: 112.94, away_proj: 114.88 }
-  - { week:  2, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 114.5, away_proj: 117.39 }
+  - { week:  2, home: jackperkins74, away: gganoom, home_score: 31.9, away_score: 0.0, playoff: false, final: false, home_proj: 127.14, away_proj: 112.84 }
+  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.54, away_proj: 120.39 }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: -0.1, away_score: 4.1, playoff: false, final: false, home_proj: 112.51, away_proj: 124.96 }
+  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 101.52, away_proj: 120.25 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 0.0, away_score: 14.1, playoff: false, final: false, home_proj: 112.97, away_proj: 116.42 }
+  - { week:  2, home: zachzoske, away: schirmerj, home_score: 4.3, away_score: 33.5, playoff: false, final: false, home_proj: 113.91, away_proj: 117.42 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }
