@@ -1,0 +1,892 @@
+season: 2018
+week: 18
+captured_at: '2026-09-18T04:36:11+00:00'
+rosters:
+- manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
+  team_id: 1
+  team_name: Chubbin out (no more Hydin)
+  players:
+  - player: Melvin Gordon
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Odell Beckham Jr.
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Trey Burton
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Tyler Boyd
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Nick Chubb
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Austin Ekeler
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Cam Newton
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Royce Freeman
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Theo Riddick
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Brett Maher
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Broncos D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Justin Jackson
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Bobby Wagner
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Curtis Samuel
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+- manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
+  team_id: 2
+  team_name: Sackos Auto Draft Experiene
+  players:
+  - player: Saquon Barkley
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Michael Thomas
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: T.Y. Hilton
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Greg Zuerlein
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Kirk Cousins
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Sony Michel
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Darius Leonard
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Cameron Brate
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: DJ Moore
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Spencer Ware
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Ravens D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Packers D/ST
+    pos: D/ST
+    starter: false
+    proj: null
+    actual: null
+  - player: Damien Williams
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Mike Williams
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+- manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
+  team_id: 3
+  team_name: Hammed Up   .
+  players:
+  - player: Leonard Fournette
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Doug Baldwin
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: JuJu Smith-Schuster
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Russell Wilson
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Kyle Rudolph
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Stephen Gostkowski
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: James Conner
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Giovani Bernard
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Marlon Mack
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Avery Williamson
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Saints D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Isaiah Crowell
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Sterling Shepard
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Stevan Ridley
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+- manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
+  team_id: 4
+  team_name: Graham Slam
+  players:
+  - player: Kenyan Drake
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Lamar Miller
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Jimmy Graham
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Patrick Mahomes
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Kenny Golladay
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Josh Adams
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: J.J. Watt
+    pos: DE
+    starter: true
+    proj: null
+    actual: null
+  - player: Matt Bryant
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Gus Edwards
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Jarvis Landry
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Falcons D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Gerald Everett
+    pos: TE
+    starter: false
+    proj: null
+    actual: null
+  - player: Kalen Ballage
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Chris Hogan
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+- manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
+  team_id: 6
+  team_name: Mixon's Gurley Fight Club
+  players:
+  - player: Todd Gurley II
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Joe Mixon
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Robert Woods
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Drew Brees
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Adrian Peterson
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: George Kittle
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Tyreek Hill
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Dalvin Cook
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Justin Tucker
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Cory Littleton
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Titans D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: John Kelly
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: C.J. Anderson
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Alfred Blue
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+- manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
+  team_id: 7
+  team_name: Team Kevin  with a K
+  players:
+  - player: DeAndre Hopkins
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Stefon Diggs
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Jordan Reed
+    pos: TE
+    starter: false
+    proj: null
+    actual: null
+  - player: Jared Cook
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Harrison Smith
+    pos: S
+    starter: false
+    proj: null
+    actual: null
+  - player: Matt Ryan
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Graham Gano
+    pos: K
+    starter: false
+    proj: null
+    actual: null
+  - player: Frank Gore
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Allen Robinson
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Aaron Donald
+    pos: DT
+    starter: true
+    proj: null
+    actual: null
+  - player: Doug Martin
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Phillip Lindsay
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Steelers D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Jaylen Samuels
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+- manager_id: '{821EBE27-2BE3-49D4-9EBE-272BE3B9D412}'
+  team_id: 9
+  team_name: Tom Brady's Fluffer
+  players:
+  - player: Antonio Brown
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Davante Adams
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Dion Lewis
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Mark Ingram II
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Alshon Jeffery
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: James White
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Philip Rivers
+    pos: QB
+    starter: false
+    proj: null
+    actual: null
+  - player: Mitchell Trubisky
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Tyrell Williams
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Texans D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Leighton Vander Esch
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: John Ross
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Ian Thomas
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Ka'imi Fairbairn
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+- manager_id: '{960BDC58-9F03-47E5-8A85-7969929EE689}'
+  team_id: 10
+  team_name: Tacos Food Truck
+  players:
+  - player: Ezekiel Elliott
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Rob Gronkowski
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Travis Kelce
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Golden Tate
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Marvin Jones Jr.
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Andrew Luck
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Bears D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Matt Breida
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Sammy Watkins
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Jaylon Smith
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Jordan Howard
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Calvin Ridley
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Matthew Stafford
+    pos: QB
+    starter: false
+    proj: null
+    actual: null
+  - player: Ryan Succop
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+- manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
+  team_id: 11
+  team_name: 'Wadgerach  Sturdellske '
+  players:
+  - player: David Johnson
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Mike Evans
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: LeSean McCoy
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Brandin Cooks
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Aaron Rodgers
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Chris Carson
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Julian Edelman
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Jaguars D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Wil Lutz
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Tyrann Mathieu
+    pos: S
+    starter: true
+    proj: null
+    actual: null
+  - player: Austin Hooper
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Vance McDonald
+    pos: TE
+    starter: false
+    proj: null
+    actual: null
+  - player: Jalen Richard
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Elijah McGuire
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+- manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
+  team_id: 12
+  team_name: Hans Blitz! Ohh noo!
+  players:
+  - player: Christian McCaffrey
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Zach Ertz
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Amari Cooper
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Deshaun Watson
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Devin Funchess
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Rams D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Tyler Lockett
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Telvin Smith
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Jake Elliott
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Bills D/ST
+    pos: D/ST
+    starter: false
+    proj: null
+    actual: null
+  - player: Tarik Cohen
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Derrick Henry
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Adam Humphries
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Jamaal Williams
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+- manager_id: '{2E4B888F-67D7-44C1-8B88-8F67D7C4C160}'
+  team_id: 13
+  team_name: Cleveland Mcpussysmasher
+  players:
+  - player: Alvin Kamara
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Keenan Allen
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Adam Thielen
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Demaryius Thomas
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Khalil Mack
+    pos: DE
+    starter: false
+    proj: null
+    actual: null
+  - player: Marquise Goodwin
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Ben Roethlisberger
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: David Njoku
+    pos: TE
+    starter: false
+    proj: null
+    actual: null
+  - player: Harrison Butker
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Peyton Barber
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Nyheim Hines
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Evan Engram
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Kiko Alonso
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Cardinals D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+- manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
+  team_id: 14
+  team_name: Queen of the  Hill
+  players:
+  - player: Julio Jones
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Tevin Coleman
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Tom Brady
+    pos: QB
+    starter: false
+    proj: null
+    actual: null
+  - player: Eric Ebron
+    pos: TE
+    starter: true
+    proj: null
+    actual: null
+  - player: Luke Kuechly
+    pos: LB
+    starter: true
+    proj: null
+    actual: null
+  - player: Jared Goff
+    pos: QB
+    starter: true
+    proj: null
+    actual: null
+  - player: Chris Thompson
+    pos: RB
+    starter: false
+    proj: null
+    actual: null
+  - player: Anthony Miller
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+  - player: Josh Reynolds
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Aldrick Rosas
+    pos: K
+    starter: true
+    proj: null
+    actual: null
+  - player: Vikings D/ST
+    pos: D/ST
+    starter: true
+    proj: null
+    actual: null
+  - player: Zach Zenner
+    pos: RB
+    starter: true
+    proj: null
+    actual: null
+  - player: Robby Anderson
+    pos: WR
+    starter: true
+    proj: null
+    actual: null
+  - player: Mohamed Sanu
+    pos: WR
+    starter: false
+    proj: null
+    actual: null

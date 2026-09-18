@@ -277,26 +277,86 @@ tbody td a:hover { color: var(--brand); }
   .scoreboard { grid-template-columns: 1fr 1fr; }
 }
 .matchup {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   border: 1px solid var(--rule);
   border-radius: 12px;
-  padding: 16px 18px;
+  padding: 14px 18px;
   background: var(--bg);
 }
-.matchup__side { text-align: center; min-width: 0; }
+// Each team is one row: badge + name/owner on the left, score on the right; the
+// two rows stack so the scores sit above/below each other.
+.matchup__side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+}
+// Thin rule + balanced space between the two stacked teams.
+.matchup__side + .matchup__side {
+  border-top: 1px solid var(--rule);
+  margin-top: 11px;
+  padding-top: 11px;
+}
+.matchup__who { display: flex; align-items: center; gap: 10px; min-width: 0; }
+// Badge spans the row height; name (top) + owner (bottom) split it beside it.
+.matchup__who .team-logo--row { width: 40px; height: 40px; }
+.matchup__id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+.matchup__pts { text-align: right; flex: 0 0 auto; }
 .matchup__team { font-size: 0.9rem; font-weight: 600; line-height: 1.2; }
+// One "live" badge centered above the whole scoreboard when any game is live.
+.scoreboard__status { text-align: center; margin: 0 0 10px; }
 .matchup__team a { color: var(--brand); }
+
+// Small team badge (ESPN logo) framed in a circle. Renders next to a team/owner
+// name; degrades to nothing when no logo has been imported.
+.team-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid var(--rule);
+  vertical-align: middle;
+  flex: 0 0 auto;
+}
+.team-logo--lg { width: 52px; height: 52px; border-width: 2px; }
+// Fallback when a logo 404s / is blocked: on error JS swaps in a transparent
+// pixel (kills the broken-image icon) and adds this class, so the badge shows as
+// a plain soft-gray circle inside the same frame.
+.team-logo--empty { background: #cfccc2; }
+.matchup__team {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  min-width: 0;
+}
+.matchup__team a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.owner-cell .team-logo,
+.team-cell .team-logo { margin-right: 8px; }
+// Owner profile header: badge beside the name.
+.owner-header { display: flex; align-items: center; gap: 14px; }
+.owner-header__text { min-width: 0; }
 .matchup__owner { display: block; font-size: 0.78rem; margin-top: 1px; }
 .matchup__score {
   font-family: var(--sans);
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
-  line-height: 1.05;
-  margin-top: 8px;
+  line-height: 1;
   color: var(--ink);
+  font-variant-numeric: tabular-nums;
 }
 // In a finished matchup, dim the loser's score so the winner's number pops.
 .matchup--final .matchup__score { color: var(--faint); }
@@ -307,17 +367,6 @@ tbody td a:hover { color: var(--brand); }
   color: var(--faint);
   margin-top: 3px;
 }
-.matchup__mid {
-  align-self: center;
-  text-align: center;
-}
-.matchup__vs {
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--faint);
-}
 .scoreboard__live {
   font-family: var(--mono);
   font-size: 0.58rem;
@@ -326,10 +375,9 @@ tbody td a:hover { color: var(--brand); }
   letter-spacing: 0.04em;
   color: #fff;
   background: var(--brand);
-  padding: 1px 6px;
+  padding: 2px 8px;
   border-radius: 999px;
-  margin-left: 6px;
-  vertical-align: 1px;
+  display: inline-block;
 }
 
 // =============================================================================

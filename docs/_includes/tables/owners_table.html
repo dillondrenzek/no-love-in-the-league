@@ -19,7 +19,7 @@ site.data.owners (see scripts/generate_owners.py -> owners.yml).
   <tbody>
     {%- for o in include.rows %}
     <tr>
-      <td><a href="{{ '/teams/' | append: o.id | append: '/' | relative_url }}">{{ o.name }}</a></td>
+      <td class="owner-cell">{% include bits/team_logo.html src=o.logo %}<a href="{{ '/teams/' | append: o.id | append: '/' | relative_url }}">{{ o.name }}</a></td>
       <td class="num">{{ o.seasons }}</td>
       <td class="num">{{ o.record }}</td>
       <td class="num">{% include bits/chip.html text=o.win_pct bg=o.win_color %}</td>

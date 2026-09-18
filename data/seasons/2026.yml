@@ -43,6 +43,22 @@ teams:
   gganoom: "One Big Beautiful Dill"
   shawne2520997: "Swift kick in the Dak"
 
+# ESPN team logo URL per franchise this season — small badges on the
+# owners table and weekly scoreboard. Refreshed each import.
+team_logos:
+  sturmanator15: "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg"
+  zachzoske: "https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png"
+  schirmerj: "http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg"
+  lukstein: "https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg"
+  jackperkins74: "https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg"
+  kevbots22: "http://news.images.itv.com/image/file/662476/stream_img.jpg"
+  alexandra: "https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg"
+  purpsworth: "https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg"
+  whowonthelastsuperbowl: "http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg"
+  theoceanpulse: "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c"
+  gganoom: "https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg"
+  shawne2520997: "https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg"
+
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:
@@ -79,12 +95,12 @@ matchups:
   - { week:  1, home: lukstein, away: purpsworth, home_score: 96.5, away_score: 85.4, playoff: false }
   - { week:  1, home: schirmerj, away: jackperkins74, home_score: 103.5, away_score: 166.7, playoff: false }
   - { week:  1, home: sturmanator15, away: zachzoske, home_score: 146.7, away_score: 161.3, playoff: false }
-  - { week:  2, home: jackperkins74, away: gganoom, home_score: 31.9, away_score: 0.0, playoff: false, final: false, home_proj: 127.14, away_proj: 112.84 }
+  - { week:  2, home: jackperkins74, away: gganoom, home_score: 39.3, away_score: 0.0, playoff: false, final: false, home_proj: 127.14, away_proj: 112.84 }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.54, away_proj: 120.39 }
-  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: -0.1, away_score: 4.1, playoff: false, final: false, home_proj: 112.51, away_proj: 124.96 }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: -0.1, away_score: 14.2, playoff: false, final: false, home_proj: 112.51, away_proj: 124.96 }
   - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 101.52, away_proj: 120.25 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 0.0, away_score: 14.1, playoff: false, final: false, home_proj: 112.97, away_proj: 116.42 }
-  - { week:  2, home: zachzoske, away: schirmerj, home_score: 4.3, away_score: 33.5, playoff: false, final: false, home_proj: 113.91, away_proj: 117.42 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 0.0, away_score: 27.4, playoff: false, final: false, home_proj: 112.97, away_proj: 116.42 }
+  - { week:  2, home: zachzoske, away: schirmerj, home_score: 30.7, away_score: 48.0, playoff: false, final: false, home_proj: 113.91, away_proj: 117.42 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }

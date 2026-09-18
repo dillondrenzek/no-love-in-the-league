@@ -385,6 +385,29 @@ def test_read_page_sections_recap_top_preview_bottom():
     assert read_preview(Path(d) / "missing.md") is None
 
 
+def test_team_logos_latest_and_on_scoreboard():
+    from generate_owners import latest_logos
+    from lib.weeks import week_summary
+
+    seasons = [
+        {"season": 2024, "team_logos": {"a": "old-a.svg", "b": "b.svg"}},
+        {"season": 2025, "team_logos": {"a": "new-a.svg"}},   # a updated, b unchanged
+    ]
+    logos = latest_logos(seasons)
+    assert logos["a"] == "new-a.svg" and logos["b"] == "b.svg"
+
+    season = {"season": 2026, "teams": {"a": "A", "b": "B"},
+              "team_logos": {"a": "a.svg", "b": "b.svg"},
+              "matchups": [{"week": 1, "home": "a", "away": "b", "home_score": 100.0,
+                            "away_score": 90.0, "played": True, "final": True}]}
+    board = week_summary(season, 1, {"a": {"name": "A"}, "b": {"name": "B"}})["scoreboard"]
+    assert board[0]["home_logo"] == "a.svg" and board[0]["away_logo"] == "b.svg"
+    # No logo block -> blank, not an error.
+    bare = dict(season); bare.pop("team_logos")
+    board2 = week_summary(bare, 1, {"a": {"name": "A"}, "b": {"name": "B"}})["scoreboard"]
+    assert board2[0]["home_logo"] == "" and board2[0]["away_logo"] == ""
+
+
 def test_week_roster_context_shapes():
     from lib.context import week_roster_context
     week_rosters = {

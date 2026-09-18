@@ -39,6 +39,19 @@ teams:
   master-otis: "I Waxed My Child For This"
   whowonthelastsuperbowl: "He's Quick He's Slick He's Mike"
 
+# ESPN team logo URL per franchise this season — small badges on the
+# owners table and weekly scoreboard. Refreshed each import.
+team_logos:
+  sturmanator15: "http://imgick.nola.com/home/nola-media/width620/img/saints_impact/photo/15721934-mmmain.jpg"
+  zachzoske: "http://sports.cbsimg.net/images/blogs/aa-ron.jpg"
+  schirmerj: "http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg"
+  lukstein: "http://static.comicvine.com/uploads/original/7/70582/1293699-retard_baby1.jpg"
+  jackperkins74: "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg"
+  kevbots22: "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_01a.svg"
+  thebragers: "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg"
+  henpen28: "http://cdn.hiphopsince1987.com/wp-content/uploads/2015/07/Jared-1-0-0-443-428750.jpg"
+  whowonthelastsuperbowl: "http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg"
+
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:

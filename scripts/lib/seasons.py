@@ -33,6 +33,7 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
     points = has_points(rows)
     co = set(co_champions(season["season"], overrides))
     team_count = len(rows)
+    logos = season.get("team_logos") or {}
     pfs = [r["points_for"] for r in rows if r["points_for"] is not None]
     lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
 
@@ -41,6 +42,7 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
         row = {
             "finish": r["finish"],
             "team": r["name"],
+            "logo": logos.get(r["id"], ""),
             "owner_id": r["id"] if r["id"] in franchises else None,
             "owner_name": franchises[r["id"]]["name"] if r["id"] in franchises else None,
             "record": r["record"],

@@ -1,46 +1,68 @@
 #!/usr/bin/env bash
 #
-# Import every season from ESPN and rebuild the site.
+# Bulk import: pull EVERY season from ESPN (or just the years you list) and
+# rebuild the site once at the end. Handy for a first-time backfill or after a
+# change to the importer (e.g. capturing a new field like team logos) that you
+# want reflected across all of league history.
 #
-# Setup (once):
-#   cp .espn-cookies.example .espn-cookies   # then paste your cookie values in
+# Uses --patch, so completed seasons are re-imported too: import_espn.py skips a
+# season marked `complete` by default (so routine runs don't rewrite history),
+# and --patch overrides that. Hand-maintained bits like `draft_order:` are still
+# preserved verbatim across re-imports.
+#
+# Cookies are read from .espn-cookies (and .cookies/) by the importer — nothing to
+# export into your shell. Set them up once:
+#   cp .espn-cookies.example .espn-cookies    # paste your two cookie values
 #   .venv/bin/pip install -r requirements-dev.txt
 #
 # Usage:
-#   scripts/import_all.sh                 # import the default season range
-#   scripts/import_all.sh 2023 2024 2025  # import only these seasons
+#   scripts/import_all.sh                 # every season in data/seasons/
+#   scripts/import_all.sh 2023 2024 2025  # just these years
 #
-# Cookies are read straight from `.espn-cookies` (git-ignored) by the importer,
-# so nothing is exported into your shell or saved in shell history.
+# A year that fails (ESPN hiccup, expired cookies, an endpoint 404ing on an old
+# season) is reported and skipped; the remaining years still import and the site
+# still builds. Review with `git diff`, then commit & push to publish.
 
-set -euo pipefail
+set -uo pipefail
 
-# Repo root = parent of this script's directory, regardless of where it's run.
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-if [[ ! -f "${ESPN_COOKIES_FILE:-$ROOT/.espn-cookies}" ]]; then
-  echo "No cookies file at ${ESPN_COOKIES_FILE:-$ROOT/.espn-cookies}." >&2
-  echo "Copy .espn-cookies.example to .espn-cookies and fill it in (private league)," >&2
-  echo "or continue without it if your league is public." >&2
-fi
-
-# Prefer the project venv's Python if it exists.
 PY="$ROOT/.venv/bin/python"
 [[ -x "$PY" ]] || PY="python3"
 
-# Seasons: use CLI args if given, otherwise the full range.
+# Years to import: the ones passed on the command line, else every season file
+# on disk (so this stays correct as new seasons are added).
 if [[ $# -gt 0 ]]; then
-  SEASONS=("$@")
+  YEARS=("$@")
 else
-  SEASONS=(2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025)
+  YEARS=()
+  for f in data/seasons/*.yml; do
+    [[ -e "$f" ]] || continue
+    YEARS+=("$(basename "$f" .yml)")
+  done
 fi
 
-for year in "${SEASONS[@]}"; do
-  echo "==================== $year ===================="
-  "$PY" scripts/import_espn.py "$year"
+if [[ ${#YEARS[@]} -eq 0 ]]; then
+  echo "No seasons to import (no data/seasons/*.yml and no years given)." >&2
+  exit 1
+fi
+
+failed=()
+for y in "${YEARS[@]}"; do
+  echo "==================== import $y ===================="
+  if ! "$PY" scripts/import_espn.py "$y" --patch; then
+    echo "!! import failed for $y — skipping" >&2
+    failed+=("$y")
+  fi
 done
 
 echo "==================== build ===================="
 "$PY" scripts/build.py
-echo "Done. Review changes with: git diff"
+
+echo
+echo "Done: attempted ${#YEARS[@]} season(s)."
+if [[ ${#failed[@]} -gt 0 ]]; then
+  echo "Failed (re-run individually, e.g. scripts/import_espn.py <year> --patch): ${failed[*]}" >&2
+fi
+echo "Review with: git diff   (then commit & push to publish)"

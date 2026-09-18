@@ -2,6 +2,7 @@ active:
 - id: shawne2520997
   name: Shawnee
   seasons: 11
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
   record: 82-53-1
   win_pct: '.607'
   win_color: '#f38e43'
@@ -16,6 +17,7 @@ active:
 - id: jackperkins74
   name: Jack
   seasons: 13
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
   record: 89-73
   win_pct: '.549'
   win_color: '#f6a349'
@@ -30,6 +32,7 @@ active:
 - id: theoceanpulse
   name: Dillon
   seasons: 11
+  logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
   record: 83-51-2
   win_pct: '.618'
   win_color: '#f38a42'
@@ -43,6 +46,7 @@ active:
 - id: zachzoske
   name: Zach
   seasons: 13
+  logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
   record: 81-80-1
   win_pct: '.503'
   win_color: '#f9b54d'
@@ -56,6 +60,7 @@ active:
 - id: lukstein
   name: Luke
   seasons: 13
+  logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
   record: 76-86
   win_pct: '.469'
   win_color: '#fabf64'
@@ -69,6 +74,7 @@ active:
 - id: sturmanator15
   name: Wade
   seasons: 13
+  logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
   record: 94-67-1
   win_pct: '.583'
   win_color: '#f49746'
@@ -82,6 +88,7 @@ active:
 - id: schirmerj
   name: Jono
   seasons: 13
+  logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
   record: 80-81-1
   win_pct: '.497'
   win_color: '#f9b74f'
@@ -95,6 +102,7 @@ active:
 - id: alexandra
   name: Lexi
   seasons: 1
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
   record: 1-0
   win_pct: '1.000'
   win_color: '#ee6b3b'
@@ -108,6 +116,7 @@ active:
 - id: gganoom
   name: Grant
   seasons: 3
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
   record: 16-13
   win_pct: '.552'
   win_color: '#f6a348'
@@ -122,6 +131,7 @@ active:
 - id: purpsworth
   name: Trevor
   seasons: 8
+  logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
   record: 44-53
   win_pct: '.454'
   win_color: '#fac46f'
@@ -136,6 +146,7 @@ active:
 - id: kevbots22
   name: Kevin
   seasons: 13
+  logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
   record: 64-96-2
   win_pct: '.401'
   win_color: '#fbd496'
@@ -150,6 +161,7 @@ active:
 - id: whowonthelastsuperbowl
   name: Nate
   seasons: 13
+  logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
   record: 62-100
   win_pct: '.383'
   win_color: '#fbdaa3'
@@ -165,6 +177,7 @@ inactive:
 - id: henpen28
   name: Henry
   seasons: 12
+  logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
   record: 77-84
   win_pct: '.478'
   win_color: '#f9bd5d'
@@ -180,6 +193,7 @@ inactive:
 - id: unclebadtouch38
   name: Fletcher
   seasons: 8
+  logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
   record: 49-56-2
   win_pct: '.467'
   win_color: '#fac065'
@@ -193,6 +207,7 @@ inactive:
 - id: thebragers
   name: Brady
   seasons: 2
+  logo: http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg
   record: 16-10
   win_pct: '.615'
   win_color: '#f38b43'
@@ -207,6 +222,7 @@ inactive:
 - id: master-otis
   name: Odie
   seasons: 3
+  logo: ''
   record: 19-20
   win_pct: '.487'
   win_color: '#f9ba56'
@@ -222,6 +238,7 @@ inactive:
 - id: ajstewart04
   name: Anthony
   seasons: 2
+  logo: ''
   record: 8-18
   win_pct: '.308'
   win_color: '#fdf1da'

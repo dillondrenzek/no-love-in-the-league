@@ -1,0 +1,18 @@
+{%- comment -%}
+A team logo badge, framed in a circle. Params:
+  src   = a logo URL (may be blank/absent → renders nothing)
+  class = extra CSS class(es), e.g. "team-logo--lg" (optional)
+  px    = pixel width/height (optional, default 24). Not named `size` — that
+          collides with Liquid's built-in `.size` on the include object.
+
+Robustness: http URLs are upgraded to https so they aren't blocked as mixed
+content on the https site, and any image that still fails to load (some are old
+hotlinks to dead third-party hosts) falls back to a plain gray circle via
+`onerror` rather than a broken-image icon.
+{%- endcomment -%}
+{%- assign src = include.src -%}
+{%- if src and src != "" -%}
+{%- assign src = src | replace: 'http://', 'https://' -%}
+{%- assign sz = include.px | default: 24 -%}
+<img class="team-logo{% if include.class %} {{ include.class }}{% endif %}" src="{{ src }}" alt="" width="{{ sz }}" height="{{ sz }}" loading="lazy" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';this.classList.add('team-logo--empty')">
+{%- endif -%}
