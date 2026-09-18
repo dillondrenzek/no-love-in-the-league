@@ -344,6 +344,7 @@ detail:
       team: 2x Runner Up
     champ: null
     sacko: null
+    bracket: null
   2025:
     year: 2025
     season_no: 12
@@ -472,7 +473,10 @@ detail:
       pf: 1542.5
       pf_color: '#fac675'
       pa: 1669.3
-    notes: []
+    notes:
+    - 'Luke''s Rule takes effect: the playoff bracket reseeds in the second round,
+      so the top remaining seed always draws the weakest survivor (in both the Shiva
+      and Sacko brackets).'
     weeks_played: 14
     draft_order:
     - pick: 1
@@ -671,6 +675,357 @@ detail:
       team: Big Brown Dak Makes em Waddle
     champ: *id001
     sacko: *id002
+    bracket:
+      shiva:
+        title: Shiva Bracket
+        rounds:
+        - week: 15
+          label: Round 1
+          games:
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 1
+              fid: kevbots22
+              name: Keeping up with the McCalferies
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: null
+            away: null
+            winner_fid: kevbots22
+            loser_fid: null
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 3
+              fid: zachzoske
+              name: Big Brown Dak Makes em Waddle
+              logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+              score: 94.9
+            away:
+              seed: 6
+              fid: purpsworth
+              name: I am dead inside
+              logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+              score: 139.7
+            winner_fid: purpsworth
+            loser_fid: zachzoske
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 5
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 97.6
+            away:
+              seed: 4
+              fid: gganoom
+              name: One Big Beautiful Dill
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+              score: 124.9
+            winner_fid: gganoom
+            loser_fid: theoceanpulse
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 2
+              fid: jackperkins74
+              name: Pukkake
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/1stStringAllStars-SportsManias/henry-01.svg
+              score: null
+            away: null
+            winner_fid: jackperkins74
+            loser_fid: null
+          consolation: []
+        - week: 16
+          label: Round 2
+          games:
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 2
+              fid: jackperkins74
+              name: Pukkake
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/1stStringAllStars-SportsManias/henry-01.svg
+              score: 156.9
+            away:
+              seed: 4
+              fid: gganoom
+              name: One Big Beautiful Dill
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+              score: 133.7
+            winner_fid: jackperkins74
+            loser_fid: gganoom
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 1
+              fid: kevbots22
+              name: Keeping up with the McCalferies
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 150.5
+            away:
+              seed: 6
+              fid: purpsworth
+              name: I am dead inside
+              logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+              score: 124.6
+            winner_fid: kevbots22
+            loser_fid: purpsworth
+          consolation: []
+        - week: 17
+          label: Round 3
+          games:
+          - label: Shiva
+            week: 17
+            decided: true
+            home:
+              seed: 2
+              fid: jackperkins74
+              name: Pukkake
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/1stStringAllStars-SportsManias/henry-01.svg
+              score: 152.3
+            away:
+              seed: 1
+              fid: kevbots22
+              name: Keeping up with the McCalferies
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 115.4
+            winner_fid: jackperkins74
+            loser_fid: kevbots22
+          - label: 3rd Place
+            week: 17
+            decided: true
+            home:
+              seed: 6
+              fid: purpsworth
+              name: I am dead inside
+              logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+              score: 91.9
+            away:
+              seed: 4
+              fid: gganoom
+              name: One Big Beautiful Dill
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+              score: 88.1
+            winner_fid: purpsworth
+            loser_fid: gganoom
+          - label: 5th Place
+            week: 17
+            decided: true
+            home:
+              seed: 3
+              fid: zachzoske
+              name: Big Brown Dak Makes em Waddle
+              logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+              score: 109.9
+            away:
+              seed: 5
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 131.3
+            winner_fid: theoceanpulse
+            loser_fid: zachzoske
+          consolation: []
+      sacko:
+        title: Sacko Bracket
+        rounds:
+        - week: 15
+          label: Round 1
+          games:
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 11
+              fid: henpen28
+              name: Dump it on my Chest
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: null
+            away: null
+            winner_fid: henpen28
+            loser_fid: null
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 7
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 160.1
+            away:
+              seed: 10
+              fid: shawne2520997
+              name: D***er my Sufficient Tight End
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 71.3
+            winner_fid: lukstein
+            loser_fid: shawne2520997
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 8
+              fid: sturmanator15
+              name: Dont spit just swallow
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 146.6
+            away:
+              seed: 9
+              fid: schirmerj
+              name: IDPs Forever
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 138.9
+            winner_fid: sturmanator15
+            loser_fid: schirmerj
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 12
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: null
+            away: null
+            winner_fid: whowonthelastsuperbowl
+            loser_fid: null
+          consolation: []
+        - week: 16
+          label: Round 2
+          games:
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 8
+              fid: sturmanator15
+              name: Dont spit just swallow
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 90.2
+            away:
+              seed: 7
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 104.3
+            winner_fid: lukstein
+            loser_fid: sturmanator15
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 11
+              fid: henpen28
+              name: Dump it on my Chest
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 132.0
+            away:
+              seed: 10
+              fid: shawne2520997
+              name: D***er my Sufficient Tight End
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 77.4
+            winner_fid: henpen28
+            loser_fid: shawne2520997
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 9
+              fid: schirmerj
+              name: IDPs Forever
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 105.2
+            away:
+              seed: 12
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 134.9
+            winner_fid: whowonthelastsuperbowl
+            loser_fid: schirmerj
+          consolation: []
+        - week: 17
+          label: Round 3
+          games:
+          - label: Sacko
+            week: 17
+            decided: true
+            home:
+              seed: 9
+              fid: schirmerj
+              name: IDPs Forever
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 128.7
+            away:
+              seed: 10
+              fid: shawne2520997
+              name: D***er my Sufficient Tight End
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 86.2
+            winner_fid: schirmerj
+            loser_fid: shawne2520997
+          - label: 9th Place
+            week: 17
+            decided: true
+            home:
+              seed: 8
+              fid: sturmanator15
+              name: Dont spit just swallow
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 99.3
+            away:
+              seed: 12
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 122.8
+            winner_fid: whowonthelastsuperbowl
+            loser_fid: sturmanator15
+          - label: 7th Place
+            week: 17
+            decided: true
+            home:
+              seed: 7
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 84.3
+            away:
+              seed: 11
+              fid: henpen28
+              name: Dump it on my Chest
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 109.3
+            winner_fid: henpen28
+            loser_fid: lukstein
+          consolation: []
+      seeds:
+        kevbots22: 1
+        jackperkins74: 2
+        zachzoske: 3
+        gganoom: 4
+        theoceanpulse: 5
+        purpsworth: 6
+        lukstein: 7
+        sturmanator15: 8
+        schirmerj: 9
+        shawne2520997: 10
+        henpen28: 11
+        whowonthelastsuperbowl: 12
   2024:
     year: 2024
     season_no: 11
@@ -975,6 +1330,340 @@ detail:
       team: All Hail the King
     champ: *id003
     sacko: *id004
+    bracket:
+      shiva:
+        title: Shiva Bracket
+        rounds:
+        - week: 15
+          label: Round 1
+          games:
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 1
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: null
+            away: null
+            winner_fid: lukstein
+            loser_fid: null
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 5
+              fid: sturmanator15
+              name: All Hail the King
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 102.5
+            away:
+              seed: 4
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 125.0
+            winner_fid: theoceanpulse
+            loser_fid: sturmanator15
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 6
+              fid: jackperkins74
+              name: Pukkake
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/FrozenTundra-ToddDetwiler/TundraPack_03_01.svg
+              score: 118.9
+            away:
+              seed: 3
+              fid: henpen28
+              name: Three's Company
+              logo: https://i.redd.it/1jt31reylse21.jpg
+              score: 114.1
+            winner_fid: jackperkins74
+            loser_fid: henpen28
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 2
+              fid: schirmerj
+              name: 5 Star Men
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: null
+            away: null
+            winner_fid: schirmerj
+            loser_fid: null
+          consolation: []
+        - week: 16
+          label: Round 2
+          games:
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 1
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 123.5
+            away:
+              seed: 4
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 112.5
+            winner_fid: lukstein
+            loser_fid: theoceanpulse
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 2
+              fid: schirmerj
+              name: 5 Star Men
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 140.2
+            away:
+              seed: 6
+              fid: jackperkins74
+              name: Pukkake
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/FrozenTundra-ToddDetwiler/TundraPack_03_01.svg
+              score: 136.0
+            winner_fid: schirmerj
+            loser_fid: jackperkins74
+          consolation: []
+        - week: 17
+          label: Round 3
+          games:
+          - label: Shiva
+            week: 17
+            decided: true
+            home:
+              seed: 2
+              fid: schirmerj
+              name: 5 Star Men
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 114.5
+            away:
+              seed: 1
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 149.7
+            winner_fid: lukstein
+            loser_fid: schirmerj
+          - label: 3rd Place
+            week: 17
+            decided: true
+            home:
+              seed: 6
+              fid: jackperkins74
+              name: Pukkake
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/FrozenTundra-ToddDetwiler/TundraPack_03_01.svg
+              score: 109.3
+            away:
+              seed: 4
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 103.6
+            winner_fid: jackperkins74
+            loser_fid: theoceanpulse
+          - label: 5th Place
+            week: 17
+            decided: true
+            home:
+              seed: 5
+              fid: sturmanator15
+              name: All Hail the King
+              logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+              score: 109.7
+            away:
+              seed: 3
+              fid: henpen28
+              name: Three's Company
+              logo: https://i.redd.it/1jt31reylse21.jpg
+              score: 73.3
+            winner_fid: sturmanator15
+            loser_fid: henpen28
+          consolation: []
+      sacko:
+        title: Sacko Bracket
+        rounds:
+        - week: 15
+          label: Round 1
+          games:
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 11
+              fid: purpsworth
+              name: I am dead inside
+              logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+              score: null
+            away: null
+            winner_fid: purpsworth
+            loser_fid: null
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 8
+              fid: zachzoske
+              name: Nix Out For Harambe
+              logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+              score: 143.3
+            away:
+              seed: 9
+              fid: shawne2520997
+              name: Save a horse, Ride the Cowboys
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 124.6
+            winner_fid: zachzoske
+            loser_fid: shawne2520997
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 10
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 112.0
+            away:
+              seed: 7
+              fid: gganoom
+              name: KillDilly Elegy
+              logo: https://g.espncdn.com/lm-static/ffl/images/default_logos/6.svg
+              score: 172.5
+            winner_fid: gganoom
+            loser_fid: whowonthelastsuperbowl
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 12
+              fid: kevbots22
+              name: Tom Bradys Only Fans
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: null
+            away: null
+            winner_fid: kevbots22
+            loser_fid: null
+          consolation: []
+        - week: 16
+          label: Round 2
+          games:
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 11
+              fid: purpsworth
+              name: I am dead inside
+              logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+              score: 137.2
+            away:
+              seed: 9
+              fid: shawne2520997
+              name: Save a horse, Ride the Cowboys
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 95.7
+            winner_fid: purpsworth
+            loser_fid: shawne2520997
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 12
+              fid: kevbots22
+              name: Tom Bradys Only Fans
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 84.0
+            away:
+              seed: 10
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 132.9
+            winner_fid: whowonthelastsuperbowl
+            loser_fid: kevbots22
+          consolation: []
+        - week: 17
+          label: Round 3
+          games:
+          - label: Sacko
+            week: 17
+            decided: true
+            home:
+              seed: 12
+              fid: kevbots22
+              name: Tom Bradys Only Fans
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 184.9
+            away:
+              seed: 9
+              fid: shawne2520997
+              name: Save a horse, Ride the Cowboys
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 58.8
+            winner_fid: kevbots22
+            loser_fid: shawne2520997
+          - label: 9th Place
+            week: 17
+            decided: true
+            home:
+              seed: 11
+              fid: purpsworth
+              name: I am dead inside
+              logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+              score: 112.7
+            away:
+              seed: 10
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 68.3
+            winner_fid: purpsworth
+            loser_fid: whowonthelastsuperbowl
+          - label: 7th Place
+            week: 17
+            decided: true
+            home:
+              seed: 8
+              fid: zachzoske
+              name: Nix Out For Harambe
+              logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+              score: 150.4
+            away:
+              seed: 7
+              fid: gganoom
+              name: KillDilly Elegy
+              logo: https://g.espncdn.com/lm-static/ffl/images/default_logos/6.svg
+              score: 138.7
+            winner_fid: zachzoske
+            loser_fid: gganoom
+          consolation: []
+      seeds:
+        lukstein: 1
+        schirmerj: 2
+        henpen28: 3
+        theoceanpulse: 4
+        sturmanator15: 5
+        jackperkins74: 6
+        gganoom: 7
+        zachzoske: 8
+        shawne2520997: 9
+        whowonthelastsuperbowl: 10
+        purpsworth: 11
+        kevbots22: 12
   2023:
     year: 2023
     season_no: 10
@@ -1105,7 +1794,9 @@ detail:
       pa: 1554.6
     notes:
     - First year of Keepers rule
-    - Playoff field cut back from 8 teams to 6.
+    - 'Playoff field cut back from 8 teams to 6. New seeding: top 5 by record make
+      it, and the 6th seed is the highest-scoring team of the rest — the bracket layout
+      used on this site starts here.'
     - Increase QB TDs from 4 points to 5
     - Dropped the IDP slot and added a third WR starter.
     weeks_played: 14
@@ -1330,6 +2021,357 @@ detail:
       team: Zach's Juicy Fantasy Teamussy
     champ: *id005
     sacko: *id006
+    bracket:
+      shiva:
+        title: Shiva Bracket
+        rounds:
+        - week: 15
+          label: Round 1
+          games:
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 1
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: null
+            away: null
+            winner_fid: theoceanpulse
+            loser_fid: null
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 5
+              fid: schirmerj
+              name: IDP'd My Pants
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 111.5
+            away:
+              seed: 4
+              fid: shawne2520997
+              name: Save a horse, Ride the Cowboys
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 122.0
+            winner_fid: shawne2520997
+            loser_fid: schirmerj
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 6
+              fid: henpen28
+              name: Three's Company
+              logo: https://i.redd.it/1jt31reylse21.jpg
+              score: 130.8
+            away:
+              seed: 3
+              fid: purpsworth
+              name: Used Napkin
+              logo: https://i.imgur.com/qda7YBj.jpg
+              score: 114.7
+            winner_fid: henpen28
+            loser_fid: purpsworth
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 2
+              fid: sturmanator15
+              name: In Goff we trust
+              logo: https://media.kare11.com/assets/WXIA/images/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7_1920x1080.jpg
+              score: null
+            away: null
+            winner_fid: sturmanator15
+            loser_fid: null
+          consolation: []
+        - week: 16
+          label: Round 2
+          games:
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 1
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 114.0
+            away:
+              seed: 4
+              fid: shawne2520997
+              name: Save a horse, Ride the Cowboys
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 118.1
+            winner_fid: shawne2520997
+            loser_fid: theoceanpulse
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 2
+              fid: sturmanator15
+              name: In Goff we trust
+              logo: https://media.kare11.com/assets/WXIA/images/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7_1920x1080.jpg
+              score: 88.5
+            away:
+              seed: 6
+              fid: henpen28
+              name: Three's Company
+              logo: https://i.redd.it/1jt31reylse21.jpg
+              score: 96.6
+            winner_fid: henpen28
+            loser_fid: sturmanator15
+          consolation: []
+        - week: 17
+          label: Round 3
+          games:
+          - label: Shiva
+            week: 17
+            decided: true
+            home:
+              seed: 6
+              fid: henpen28
+              name: Three's Company
+              logo: https://i.redd.it/1jt31reylse21.jpg
+              score: 83.6
+            away:
+              seed: 4
+              fid: shawne2520997
+              name: Save a horse, Ride the Cowboys
+              logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+              score: 125.8
+            winner_fid: shawne2520997
+            loser_fid: henpen28
+          - label: 3rd Place
+            week: 17
+            decided: true
+            home:
+              seed: 2
+              fid: sturmanator15
+              name: In Goff we trust
+              logo: https://media.kare11.com/assets/WXIA/images/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7_1920x1080.jpg
+              score: 86.6
+            away:
+              seed: 1
+              fid: theoceanpulse
+              name: Thoughts and Players
+              logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+              score: 130.0
+            winner_fid: theoceanpulse
+            loser_fid: sturmanator15
+          - label: 5th Place
+            week: 17
+            decided: true
+            home:
+              seed: 5
+              fid: schirmerj
+              name: IDP'd My Pants
+              logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+              score: 146.1
+            away:
+              seed: 3
+              fid: purpsworth
+              name: Used Napkin
+              logo: https://i.imgur.com/qda7YBj.jpg
+              score: 118.4
+            winner_fid: schirmerj
+            loser_fid: purpsworth
+          consolation: []
+      sacko:
+        title: Sacko Bracket
+        rounds:
+        - week: 15
+          label: Round 1
+          games:
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 11
+              fid: unclebadtouch38
+              name: Mr. Irrelevant
+              logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
+              score: null
+            away: null
+            winner_fid: unclebadtouch38
+            loser_fid: null
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 7
+              fid: zachzoske
+              name: Zach's Juicy Fantasy Teamussy
+              logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
+              score: 154.6
+            away:
+              seed: 10
+              fid: kevbots22
+              name: Tom Bradys Only Fans
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 139.0
+            winner_fid: zachzoske
+            loser_fid: kevbots22
+          - label: null
+            week: 15
+            decided: true
+            home:
+              seed: 8
+              fid: jackperkins74
+              name: Vinegar Strokes
+              logo: https://cdn.quotesgram.com/img/85/34/1948657521-ruxin-meme-generator-stroke-face-unlocked-74b1f7-340x320.png
+              score: 166.6
+            away:
+              seed: 9
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 81.5
+            winner_fid: jackperkins74
+            loser_fid: whowonthelastsuperbowl
+          - label: null
+            week: 15
+            decided: false
+            bye: true
+            home:
+              seed: 12
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: null
+            away: null
+            winner_fid: lukstein
+            loser_fid: null
+          consolation: []
+        - week: 16
+          label: Round 2
+          games:
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 7
+              fid: zachzoske
+              name: Zach's Juicy Fantasy Teamussy
+              logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
+              score: 109.3
+            away:
+              seed: 8
+              fid: jackperkins74
+              name: Vinegar Strokes
+              logo: https://cdn.quotesgram.com/img/85/34/1948657521-ruxin-meme-generator-stroke-face-unlocked-74b1f7-340x320.png
+              score: 119.8
+            winner_fid: jackperkins74
+            loser_fid: zachzoske
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 9
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 113.9
+            away:
+              seed: 11
+              fid: unclebadtouch38
+              name: Mr. Irrelevant
+              logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
+              score: 109.1
+            winner_fid: whowonthelastsuperbowl
+            loser_fid: unclebadtouch38
+          - label: null
+            week: 16
+            decided: true
+            home:
+              seed: 12
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 97.9
+            away:
+              seed: 10
+              fid: kevbots22
+              name: Tom Bradys Only Fans
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 135.0
+            winner_fid: kevbots22
+            loser_fid: lukstein
+          consolation: []
+        - week: 17
+          label: Round 3
+          games:
+          - label: Sacko
+            week: 17
+            decided: true
+            home:
+              seed: 12
+              fid: lukstein
+              name: 2x Runner Up
+              logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+              score: 118.0
+            away:
+              seed: 11
+              fid: unclebadtouch38
+              name: Mr. Irrelevant
+              logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
+              score: 91.3
+            winner_fid: lukstein
+            loser_fid: unclebadtouch38
+          - label: 9th Place
+            week: 17
+            decided: true
+            home:
+              seed: 7
+              fid: zachzoske
+              name: Zach's Juicy Fantasy Teamussy
+              logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
+              score: 108.5
+            away:
+              seed: 9
+              fid: whowonthelastsuperbowl
+              name: Trick or Trick It’s Mike Vick
+              logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+              score: 115.6
+            winner_fid: whowonthelastsuperbowl
+            loser_fid: zachzoske
+          - label: 7th Place
+            week: 17
+            decided: true
+            home:
+              seed: 8
+              fid: jackperkins74
+              name: Vinegar Strokes
+              logo: https://cdn.quotesgram.com/img/85/34/1948657521-ruxin-meme-generator-stroke-face-unlocked-74b1f7-340x320.png
+              score: 114.5
+            away:
+              seed: 10
+              fid: kevbots22
+              name: Tom Bradys Only Fans
+              logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+              score: 86.2
+            winner_fid: jackperkins74
+            loser_fid: kevbots22
+          consolation: []
+      seeds:
+        theoceanpulse: 1
+        sturmanator15: 2
+        purpsworth: 3
+        shawne2520997: 4
+        schirmerj: 5
+        henpen28: 6
+        zachzoske: 7
+        jackperkins74: 8
+        whowonthelastsuperbowl: 9
+        kevbots22: 10
+        unclebadtouch38: 11
+        lukstein: 12
   2022:
     year: 2022
     season_no: 9
@@ -1595,6 +2637,7 @@ detail:
     keepers: []
     champ: *id007
     sacko: *id008
+    bracket: null
   2021:
     year: 2021
     season_no: 8
@@ -1841,6 +2884,7 @@ detail:
     keepers: []
     champ: *id009
     sacko: *id010
+    bracket: null
   2020:
     year: 2020
     season_no: 7
@@ -2100,6 +3144,7 @@ detail:
     keepers: []
     champ: *id011
     sacko: *id012
+    bracket: null
   2019:
     year: 2019
     season_no: 6
@@ -2391,6 +3436,7 @@ detail:
     keepers: []
     champ: *id013
     sacko: *id014
+    bracket: null
   2018:
     year: 2018
     season_no: 5
@@ -2586,6 +3632,7 @@ detail:
     keepers: []
     champ: *id015
     sacko: *id016
+    bracket: null
   2017:
     year: 2017
     season_no: 4
@@ -2785,6 +3832,7 @@ detail:
     keepers: []
     champ: *id017
     sacko: *id018
+    bracket: null
   2016:
     year: 2016
     season_no: 3
@@ -2984,6 +4032,7 @@ detail:
     keepers: []
     champ: *id019
     sacko: *id020
+    bracket: null
   2015:
     year: 2015
     season_no: 2
@@ -3149,6 +4198,7 @@ detail:
     keepers: []
     champ: *id021
     sacko: *id022
+    bracket: null
   2014:
     year: 2014
     season_no: 1
@@ -3315,3 +4365,4 @@ detail:
     keepers: []
     champ: *id023
     sacko: *id024
+    bracket: null

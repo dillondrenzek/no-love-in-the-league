@@ -385,6 +385,36 @@ def test_read_page_sections_recap_top_preview_bottom():
     assert read_preview(Path(d) / "missing.md") is None
 
 
+def test_playoff_bracket_matches_final_standings():
+    """Every placement game the bracket labels must agree, winner then loser,
+    with the two seats it decides in the real final standings. Advancement is
+    driven by the actual playoff matchups, so the brackets can never crown a
+    champion (or a Sacko) that contradicts the standings."""
+    import yaml as _yaml
+    from lib.playoffs import playoff_bracket
+    labels = [("shiva", "Shiva", 0), ("shiva", "3rd Place", 2),
+              ("shiva", "5th Place", 4), ("sacko", "7th Place", 6),
+              ("sacko", "9th Place", 8), ("sacko", "Sacko", 10)]
+    seen_any = False
+    for year in (2023, 2024, 2025):
+        p = Path(__file__).resolve().parents[2] / "data" / "seasons" / f"{year}.yml"
+        if not p.exists():
+            continue
+        seen_any = True
+        season = _yaml.safe_load(p.read_text())
+        fs = season["final_standings"]
+        b = playoff_bracket(season, {})
+        assert b is not None, f"{year}: expected a bracket"
+        for bracket, label, pos in labels:
+            games = [g for rnd in b[bracket]["rounds"]
+                     for g in rnd["games"] if g.get("label") == label]
+            assert len(games) == 1, f"{year} {label}: found {len(games)}"
+            g = games[0]
+            assert g["winner_fid"] == fs[pos], f"{year} {label} winner"
+            assert g["loser_fid"] == fs[pos + 1], f"{year} {label} loser"
+    assert seen_any, "no season fixtures found to check"
+
+
 def test_team_logos_latest_and_on_scoreboard():
     from generate_owners import latest_logos
     from lib.weeks import week_summary

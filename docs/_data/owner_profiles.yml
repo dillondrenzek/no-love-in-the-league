@@ -44,7 +44,6 @@ jackperkins74:
     tx: 29
     in_progress: true
     pf: 166.7
-    pf_color: '#fdf3e0'
     pa: 103.5
   - year: 2025
     team: Pukkake
@@ -55,8 +54,8 @@ jackperkins74:
     tx: 130
     in_progress: false
     pf: 1769.9
-    pf_color: '#ee6b3b'
     pa: 1579.4
+    pf_color: '#ee6b3b'
   - year: 2024
     team: Pukkake
     tag: null
@@ -66,8 +65,8 @@ jackperkins74:
     tx: 126
     in_progress: false
     pf: 1661.3
-    pf_color: '#ef753d'
     pa: 1686.1
+    pf_color: '#f28742'
   - year: 2023
     team: Vinegar Strokes
     tag: null
@@ -77,8 +76,8 @@ jackperkins74:
     tx: 101
     in_progress: false
     pf: 1522.5
-    pf_color: '#f18241'
     pa: 1610.4
+    pf_color: '#f8ac4b'
   - year: 2022
     team: Allen's Deep Balls
     tag: null
@@ -88,8 +87,8 @@ jackperkins74:
     tx: 117
     in_progress: false
     pf: 1535.0
-    pf_color: '#f18140'
     pa: 1340.4
+    pf_color: '#f7a94a'
   - year: 2021
     team: Jackie PooPooPants
     tag: null
@@ -99,8 +98,8 @@ jackperkins74:
     tx: 158
     in_progress: false
     pf: 1428.8
-    pf_color: '#f38b43'
     pa: 1315.6
+    pf_color: '#fac269'
   - year: 2020
     team: Ram It In
     tag: sacko
@@ -110,8 +109,8 @@ jackperkins74:
     tx: 160
     in_progress: false
     pf: 1278.1
-    pf_color: '#f59946'
     pa: 1296.8
+    pf_color: '#fce2b6'
   - year: 2019
     team: Vladimir Putin
     tag: null
@@ -121,8 +120,8 @@ jackperkins74:
     tx: 138
     in_progress: false
     pf: 1197.1
-    pf_color: '#f6a148'
     pa: 1160.2
+    pf_color: '#fdf3e0'
   - year: 2018
     team: Mixon's Gurley Fight Club
     tag: null
@@ -132,8 +131,8 @@ jackperkins74:
     tx: 75
     in_progress: false
     pf: 1581.3
-    pf_color: '#f17d3f'
     pa: 1444.2
+    pf_color: '#f59c47'
   - year: 2017
     team: Jacking Goff
     tag: null
@@ -143,8 +142,8 @@ jackperkins74:
     tx: null
     in_progress: false
     pf: 1220.5
-    pf_color: '#f69e47'
     pa: 1170.3
+    pf_color: '#fdeed4'
   - year: 2016
     team: The Toddfather
     tag: null
@@ -154,8 +153,8 @@ jackperkins74:
     tx: null
     in_progress: false
     pf: 1255.4
-    pf_color: '#f59b47'
     pa: 1208.1
+    pf_color: '#fce7c2'
   - year: 2015
     team: Jenner's Man Meat
     tag: shiva
@@ -165,8 +164,8 @@ jackperkins74:
     tx: null
     in_progress: false
     pf: 1218.3
-    pf_color: '#f69f47'
     pa: 1187.3
+    pf_color: '#fdeed5'
   - year: 2014
     team: Turn down for Watt
     tag: null
@@ -176,8 +175,8 @@ jackperkins74:
     tx: null
     in_progress: false
     pf: 1254.7
-    pf_color: '#f59b47'
     pa: 1333.1
+    pf_color: '#fce7c2'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -2908,7 +2907,6 @@ zachzoske:
     tx: 11
     in_progress: true
     pf: 161.3
-    pf_color: '#fdf3e0'
     pa: 146.7
   - year: 2025
     team: Big Brown Dak Makes em Waddle
@@ -2919,8 +2917,8 @@ zachzoske:
     tx: 110
     in_progress: false
     pf: 1703.3
-    pf_color: '#ee6b3b'
     pa: 1511.2
+    pf_color: '#ee6b3b'
   - year: 2024
     team: Nix Out For Harambe
     tag: null
@@ -2930,8 +2928,8 @@ zachzoske:
     tx: 102
     in_progress: false
     pf: 1509.0
-    pf_color: '#f17e40'
     pa: 1511.3
+    pf_color: '#f59c47'
   - year: 2023
     team: Zach's Juicy Fantasy Teamussy
     tag: null
@@ -2941,8 +2939,8 @@ zachzoske:
     tx: 83
     in_progress: false
     pf: 1562.1
-    pf_color: '#f0793e'
     pa: 1635.0
+    pf_color: '#f38e43'
   - year: 2022
     team: Risk it for The Biscuit
     tag: sacko
@@ -2952,8 +2950,8 @@ zachzoske:
     tx: 116
     in_progress: false
     pf: 1311.0
-    pf_color: '#f49144'
     pa: 1321.0
+    pf_color: '#fac97a'
   - year: 2021
     team: ESPN 8 The Ocho
     tag: null
@@ -2963,8 +2961,8 @@ zachzoske:
     tx: 119
     in_progress: false
     pf: 1346.7
-    pf_color: '#f38e43'
     pa: 1455.0
+    pf_color: '#fac169'
   - year: 2020
     team: Calvin and (Jac)Obs
     tag: null
@@ -2974,8 +2972,8 @@ zachzoske:
     tx: 103
     in_progress: false
     pf: 1502.4
-    pf_color: '#f17f40'
     pa: 1276.8
+    pf_color: '#f59d47'
   - year: 2019
     team: Eleven In Crocks
     tag: shiva
@@ -2985,8 +2983,8 @@ zachzoske:
     tx: 151
     in_progress: false
     pf: 1358.9
-    pf_color: '#f38d43'
     pa: 1269.3
+    pf_color: '#fabf63'
   - year: 2018
     team: Sackos Auto Draft Experiene
     tag: null
@@ -2996,8 +2994,8 @@ zachzoske:
     tx: 130
     in_progress: false
     pf: 1359.5
-    pf_color: '#f38c43'
     pa: 1357.5
+    pf_color: '#fabf62'
   - year: 2017
     team: Injury Reserve
     tag: sacko
@@ -3007,8 +3005,8 @@ zachzoske:
     tx: null
     in_progress: false
     pf: 1103.0
-    pf_color: '#f7a549'
     pa: 1266.4
+    pf_color: '#fdf3e0'
   - year: 2016
     team: The Mighty Cucks
     tag: null
@@ -3018,8 +3016,8 @@ zachzoske:
     tx: null
     in_progress: false
     pf: 1168.4
-    pf_color: '#f69f47'
     pa: 1209.2
+    pf_color: '#fce6c0'
   - year: 2015
     team: Gronkey Punch
     tag: null
@@ -3029,8 +3027,8 @@ zachzoske:
     tx: null
     in_progress: false
     pf: 1367.2
-    pf_color: '#f38c43'
     pa: 1277.5
+    pf_color: '#f9bd5f'
   - year: 2014
     team: Spaceball One
     tag: null
@@ -3040,8 +3038,8 @@ zachzoske:
     tx: null
     in_progress: false
     pf: 1253.9
-    pf_color: '#f49745'
     pa: 1252.9
+    pf_color: '#fbd496'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -5639,7 +5637,6 @@ shawne2520997:
     tx: 4
     in_progress: true
     pf: 108.3
-    pf_color: '#fdf3e0'
     pa: 103.6
   - year: 2025
     team: D***er my Sufficient Tight End
@@ -5650,8 +5647,8 @@ shawne2520997:
     tx: 101
     in_progress: false
     pf: 1542.5
-    pf_color: '#ef733d'
     pa: 1669.3
+    pf_color: '#f28441'
   - year: 2024
     team: Save a horse, Ride the Cowboys
     tag: sacko
@@ -5661,8 +5658,8 @@ shawne2520997:
     tx: 48
     in_progress: false
     pf: 1433.9
-    pf_color: '#f17d3f'
     pa: 1450.6
+    pf_color: '#f7a749'
   - year: 2023
     team: Save a horse, Ride the Cowboys
     tag: shiva
@@ -5672,8 +5669,8 @@ shawne2520997:
     tx: 41
     in_progress: false
     pf: 1606.6
-    pf_color: '#ee6c3b'
     pa: 1510.0
+    pf_color: '#ef6f3c'
   - year: 2022
     team: Koo Koo Kachoo
     tag: null
@@ -5683,8 +5680,8 @@ shawne2520997:
     tx: 37
     in_progress: false
     pf: 1438.2
-    pf_color: '#f17d3f'
     pa: 1258.8
+    pf_color: '#f7a649'
   - year: 2021
     team: Koo Koo Kachoo
     tag: shiva
@@ -5694,8 +5691,8 @@ shawne2520997:
     tx: 37
     in_progress: false
     pf: 1619.5
-    pf_color: '#ee6b3b'
     pa: 1237.5
+    pf_color: '#ee6b3b'
   - year: 2020
     team: Koo Koo Kachoo
     tag: null
@@ -5705,8 +5702,8 @@ shawne2520997:
     tx: 51
     in_progress: false
     pf: 1204.8
-    pf_color: '#f49445'
     pa: 1261.8
+    pf_color: '#fce6c1'
   - year: 2019
     team: Mixon it up
     tag: null
@@ -5716,8 +5713,8 @@ shawne2520997:
     tx: 48
     in_progress: false
     pf: 1279.9
-    pf_color: '#f38d43'
     pa: 1296.9
+    pf_color: '#fbd291'
   - year: 2018
     team: Queen of the Hill
     tag: null
@@ -5727,8 +5724,8 @@ shawne2520997:
     tx: 52
     in_progress: false
     pf: 1327.0
-    pf_color: '#f28842'
     pa: 1245.1
+    pf_color: '#fac673'
   - year: 2017
     team: Dislocated Johnson
     tag: null
@@ -5738,8 +5735,8 @@ shawne2520997:
     tx: null
     in_progress: false
     pf: 1155.7
-    pf_color: '#f59946'
     pa: 1193.0
+    pf_color: '#fdf3e0'
   - year: 2016
     team: GONNA DEFLATE YO BALLS!!
     tag: null
@@ -5749,8 +5746,8 @@ shawne2520997:
     tx: null
     in_progress: false
     pf: 1317.2
-    pf_color: '#f28942'
     pa: 1276.8
+    pf_color: '#fac97a'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -7237,7 +7234,6 @@ alexandra:
     tx: 0
     in_progress: true
     pf: 105.0
-    pf_color: '#fdf3e0'
     pa: 87.4
   h2h:
   - opp_id: whowonthelastsuperbowl
@@ -7346,7 +7342,6 @@ lukstein:
     tx: 7
     in_progress: true
     pf: 96.5
-    pf_color: '#fdf3e0'
     pa: 85.4
   - year: 2025
     team: 2x Runner Up
@@ -7357,8 +7352,8 @@ lukstein:
     tx: 34
     in_progress: false
     pf: 1479.8
-    pf_color: '#f38d43'
     pa: 1472.9
+    pf_color: '#f9b751'
   - year: 2024
     team: 2x Runner Up
     tag: shiva
@@ -7368,8 +7363,8 @@ lukstein:
     tx: 53
     in_progress: false
     pf: 1890.9
-    pf_color: '#ee6b3b'
     pa: 1711.1
+    pf_color: '#ee6b3b'
   - year: 2023
     team: 2x Runner Up
     tag: null
@@ -7379,8 +7374,8 @@ lukstein:
     tx: 53
     in_progress: false
     pf: 1428.2
-    pf_color: '#f49244'
     pa: 1719.9
+    pf_color: '#fabf63'
   - year: 2022
     team: Fly Eagles Fly
     tag: null
@@ -7390,8 +7385,8 @@ lukstein:
     tx: 44
     in_progress: false
     pf: 1501.3
-    pf_color: '#f38c43'
     pa: 1367.6
+    pf_color: '#f9b44c'
   - year: 2021
     team: Autodraft Monster
     tag: null
@@ -7401,8 +7396,8 @@ lukstein:
     tx: 51
     in_progress: false
     pf: 1302.7
-    pf_color: '#f59c47'
     pa: 1465.5
+    pf_color: '#fbd291'
   - year: 2020
     team: Show Me Your TDs
     tag: null
@@ -7412,8 +7407,8 @@ lukstein:
     tx: 38
     in_progress: false
     pf: 1291.1
-    pf_color: '#f59d47'
     pa: 1309.2
+    pf_color: '#fbd496'
   - year: 2019
     team: Show Me Your TDs
     tag: null
@@ -7423,8 +7418,8 @@ lukstein:
     tx: 53
     in_progress: false
     pf: 1121.6
-    pf_color: '#f7ab4a'
     pa: 1170.5
+    pf_color: '#fdeed4'
   - year: 2018
     team: Graham Slam
     tag: sacko
@@ -7434,8 +7429,8 @@ lukstein:
     tx: 70
     in_progress: false
     pf: 1184.6
-    pf_color: '#f7a649'
     pa: 1295.5
+    pf_color: '#fce4bd'
   - year: 2017
     team: My Cox Will Ertz You
     tag: null
@@ -7445,8 +7440,8 @@ lukstein:
     tx: null
     in_progress: false
     pf: 1386.7
-    pf_color: '#f49545'
     pa: 1095.3
+    pf_color: '#fac673'
   - year: 2016
     team: My Cox Will Ertz You
     tag: null
@@ -7456,8 +7451,8 @@ lukstein:
     tx: null
     in_progress: false
     pf: 1224.4
-    pf_color: '#f6a348'
     pa: 1234.7
+    pf_color: '#fcdeae'
   - year: 2015
     team: Polk Me Til I Goregasm
     tag: null
@@ -7467,8 +7462,8 @@ lukstein:
     tx: null
     in_progress: false
     pf: 1087.9
-    pf_color: '#f8ae4b'
     pa: 1296.0
+    pf_color: '#fdf3e0'
   - year: 2014
     team: Washington Blowskins
     tag: null
@@ -7478,8 +7473,8 @@ lukstein:
     tx: null
     in_progress: false
     pf: 1168.4
-    pf_color: '#f7a749'
     pa: 1213.1
+    pf_color: '#fce7c3'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -9138,7 +9133,6 @@ sturmanator15:
     tx: 3
     in_progress: true
     pf: 146.7
-    pf_color: '#fdf3e0'
     pa: 161.3
   - year: 2025
     team: Dont spit just swallow
@@ -9149,8 +9143,8 @@ sturmanator15:
     tx: 52
     in_progress: false
     pf: 1537.3
-    pf_color: '#f17e3f'
     pa: 1592.9
+    pf_color: '#f59946'
   - year: 2024
     team: All Hail the King
     tag: null
@@ -9160,8 +9154,8 @@ sturmanator15:
     tx: 80
     in_progress: false
     pf: 1560.8
-    pf_color: '#f07b3f'
     pa: 1507.7
+    pf_color: '#f49445'
   - year: 2023
     team: In Goff we trust
     tag: null
@@ -9171,8 +9165,8 @@ sturmanator15:
     tx: 84
     in_progress: false
     pf: 1733.5
-    pf_color: '#ee6b3b'
     pa: 1508.8
+    pf_color: '#ee6b3b'
   - year: 2022
     team: Trey Lanced my ❤️
     tag: null
@@ -9182,8 +9176,8 @@ sturmanator15:
     tx: 58
     in_progress: false
     pf: 1299.8
-    pf_color: '#f49445'
     pa: 1507.5
+    pf_color: '#facc81'
   - year: 2021
     team: Purple Cobras and Michel
     tag: null
@@ -9193,8 +9187,8 @@ sturmanator15:
     tx: 139
     in_progress: false
     pf: 1341.5
-    pf_color: '#f39044'
     pa: 1271.9
+    pf_color: '#fac46e'
   - year: 2020
     team: Lickin Brown in my McLaurin
     tag: null
@@ -9204,8 +9198,8 @@ sturmanator15:
     tx: 160
     in_progress: false
     pf: 1093.9
-    pf_color: '#f7a74a'
     pa: 1284.1
+    pf_color: '#fdf3e0'
   - year: 2019
     team: Lamar's Donger
     tag: null
@@ -9215,8 +9209,8 @@ sturmanator15:
     tx: 94
     in_progress: false
     pf: 1402.9
-    pf_color: '#f38a43'
     pa: 1160.6
+    pf_color: '#f9b852'
   - year: 2018
     team: Chubbin out (no more Hydin)
     tag: null
@@ -9226,8 +9220,8 @@ sturmanator15:
     tx: 110
     in_progress: false
     pf: 1302.1
-    pf_color: '#f49445'
     pa: 1255.9
+    pf_color: '#facb80'
   - year: 2017
     team: The People's Champion
     tag: null
@@ -9237,8 +9231,8 @@ sturmanator15:
     tx: null
     in_progress: false
     pf: 1151.0
-    pf_color: '#f6a248'
     pa: 1331.7
+    pf_color: '#fce8c6'
   - year: 2016
     team: Wadger Sturdell
     tag: cochamp
@@ -9248,8 +9242,8 @@ sturmanator15:
     tx: null
     in_progress: false
     pf: 1296.1
-    pf_color: '#f49445'
     pa: 1063.9
+    pf_color: '#facc83'
   - year: 2015
     team: The People's Commissioner
     tag: null
@@ -9259,8 +9253,8 @@ sturmanator15:
     tx: null
     in_progress: false
     pf: 1296.7
-    pf_color: '#f49445'
     pa: 1097.6
+    pf_color: '#facc83'
   - year: 2014
     team: Ben there raped that
     tag: null
@@ -9270,8 +9264,8 @@ sturmanator15:
     tx: null
     in_progress: false
     pf: 1358.7
-    pf_color: '#f38e44'
     pa: 1135.6
+    pf_color: '#fac066'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -11550,7 +11544,6 @@ kevbots22:
     tx: 1
     in_progress: true
     pf: 137.4
-    pf_color: '#fdf3e0'
     pa: 137.4
   - year: 2025
     team: Keeping up with the McCalferies
@@ -11561,8 +11554,8 @@ kevbots22:
     tx: 29
     in_progress: false
     pf: 1626.2
-    pf_color: '#ee6b3b'
     pa: 1504.3
+    pf_color: '#ee6b3b'
   - year: 2024
     team: Tom Bradys Only Fans
     tag: null
@@ -11572,8 +11565,8 @@ kevbots22:
     tx: 42
     in_progress: false
     pf: 1428.1
-    pf_color: '#f17f40'
     pa: 1667.3
+    pf_color: '#f7a549'
   - year: 2023
     team: Tom Bradys Only Fans
     tag: null
@@ -11583,8 +11576,8 @@ kevbots22:
     tx: 21
     in_progress: false
     pf: 1507.9
-    pf_color: '#f0773e'
     pa: 1608.6
+    pf_color: '#f38e43'
   - year: 2022
     team: Naggar's In Paris
     tag: null
@@ -11594,8 +11587,8 @@ kevbots22:
     tx: 24
     in_progress: false
     pf: 1222.3
-    pf_color: '#f49445'
     pa: 1398.7
+    pf_color: '#fbd9a2'
   - year: 2021
     team: Fantasy Judas
     tag: null
@@ -11605,8 +11598,8 @@ kevbots22:
     tx: 41
     in_progress: false
     pf: 1334.7
-    pf_color: '#f28842'
     pa: 1395.1
+    pf_color: '#fabf62'
   - year: 2020
     team: Fantasy Judas
     tag: null
@@ -11616,8 +11609,8 @@ kevbots22:
     tx: 34
     in_progress: false
     pf: 1357.0
-    pf_color: '#f28642'
     pa: 1148.6
+    pf_color: '#f9b955'
   - year: 2019
     team: The Antonio ClownExperience
     tag: null
@@ -11627,8 +11620,8 @@ kevbots22:
     tx: 44
     in_progress: false
     pf: 1181.7
-    pf_color: '#f59846'
     pa: 1411.7
+    pf_color: '#fce3ba'
   - year: 2018
     team: Team Kevin with a K
     tag: null
@@ -11638,8 +11631,8 @@ kevbots22:
     tx: 30
     in_progress: false
     pf: 1210.9
-    pf_color: '#f49545'
     pa: 1446.7
+    pf_color: '#fbdca9'
   - year: 2017
     team: Russian Roiders
     tag: null
@@ -11649,8 +11642,8 @@ kevbots22:
     tx: null
     in_progress: false
     pf: 1228.6
-    pf_color: '#f49345'
     pa: 1187.0
+    pf_color: '#fbd89f'
   - year: 2016
     team: Russian Roiders
     tag: null
@@ -11660,8 +11653,8 @@ kevbots22:
     tx: null
     in_progress: false
     pf: 1177.7
-    pf_color: '#f59846'
     pa: 1353.8
+    pf_color: '#fce4bc'
   - year: 2015
     team: MasterDeflater And_Commander
     tag: null
@@ -11671,8 +11664,8 @@ kevbots22:
     tx: null
     in_progress: false
     pf: 1115.0
-    pf_color: '#f69f47'
     pa: 1259.0
+    pf_color: '#fdf3e0'
   - year: 2014
     team: Luck her right in the Pussy
     tag: null
@@ -11682,8 +11675,8 @@ kevbots22:
     tx: null
     in_progress: false
     pf: 1369.3
-    pf_color: '#f28541'
     pa: 1168.4
+    pf_color: '#f9b64e'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -12978,7 +12971,6 @@ theoceanpulse:
     tx: 6
     in_progress: true
     pf: 137.4
-    pf_color: '#fdf3e0'
     pa: 137.4
   - year: 2025
     team: Thoughts and Players
@@ -12989,8 +12981,8 @@ theoceanpulse:
     tx: 50
     in_progress: false
     pf: 1612.9
-    pf_color: '#f0783e'
     pa: 1495.9
+    pf_color: '#f49144'
   - year: 2024
     team: Thoughts and Players
     tag: null
@@ -13000,8 +12992,8 @@ theoceanpulse:
     tx: 59
     in_progress: false
     pf: 1569.8
-    pf_color: '#f07c3f'
     pa: 1502.7
+    pf_color: '#f59d47'
   - year: 2023
     team: Thoughts and Players
     tag: null
@@ -13011,8 +13003,8 @@ theoceanpulse:
     tx: 53
     in_progress: false
     pf: 1748.5
-    pf_color: '#ee6b3b'
     pa: 1480.6
+    pf_color: '#ee6b3b'
   - year: 2022
     team: Thoughts and Players
     tag: null
@@ -13022,8 +13014,8 @@ theoceanpulse:
     tx: 54
     in_progress: false
     pf: 1312.8
-    pf_color: '#f49445'
     pa: 1371.1
+    pf_color: '#fbdca7'
   - year: 2021
     team: Hot Chubb Time Machine
     tag: null
@@ -13033,8 +13025,8 @@ theoceanpulse:
     tx: 65
     in_progress: false
     pf: 1489.3
-    pf_color: '#f28341'
     pa: 1463.8
+    pf_color: '#f9b34c'
   - year: 2020
     team: Trick-Ass Marks
     tag: null
@@ -13044,8 +13036,8 @@ theoceanpulse:
     tx: 87
     in_progress: false
     pf: 1208.9
-    pf_color: '#f59d47'
     pa: 1249.7
+    pf_color: '#fdf3e0'
   - year: 2019
     team: Hans Blitz! Ohh noo!
     tag: null
@@ -13055,8 +13047,8 @@ theoceanpulse:
     tx: 34
     in_progress: false
     pf: 1592.1
-    pf_color: '#f07a3e'
     pa: 1197.2
+    pf_color: '#f49645'
   - year: 2018
     team: Hans Blitz! Ohh noo!
     tag: shiva
@@ -13066,8 +13058,8 @@ theoceanpulse:
     tx: 32
     in_progress: false
     pf: 1453.7
-    pf_color: '#f28642'
     pa: 1211.3
+    pf_color: '#f9bc5b'
   - year: 2017
     team: Hans Blitz! Ohh noo!
     tag: null
@@ -13077,8 +13069,8 @@ theoceanpulse:
     tx: null
     in_progress: false
     pf: 1241.2
-    pf_color: '#f59a46'
     pa: 1097.6
+    pf_color: '#fdecce'
   - year: 2016
     team: Hillary Has The 2nd Clinton-Dix
     tag: null
@@ -13088,8 +13080,8 @@ theoceanpulse:
     tx: null
     in_progress: false
     pf: 1304.7
-    pf_color: '#f49445'
     pa: 1281.6
+    pf_color: '#fcddac'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -14835,7 +14827,6 @@ gganoom:
     tx: 3
     in_progress: true
     pf: 103.6
-    pf_color: '#fdf3e0'
     pa: 108.3
   - year: 2025
     team: One Big Beautiful Dill
@@ -14846,8 +14837,8 @@ gganoom:
     tx: 34
     in_progress: false
     pf: 1587.6
-    pf_color: '#ef6e3c'
     pa: 1494.2
+    pf_color: '#fdf3e0'
   - year: 2024
     team: KillDilly Elegy
     tag: null
@@ -14857,8 +14848,8 @@ gganoom:
     tx: 27
     in_progress: false
     pf: 1622.6
-    pf_color: '#ee6b3b'
     pa: 1550.1
+    pf_color: '#ee6b3b'
   h2h:
   - opp_id: theoceanpulse
     opp_short: Dillon
@@ -15273,7 +15264,6 @@ schirmerj:
     tx: 1
     in_progress: true
     pf: 103.5
-    pf_color: '#fdf3e0'
     pa: 166.7
   - year: 2025
     team: IDPs Forever
@@ -15284,8 +15274,8 @@ schirmerj:
     tx: 61
     in_progress: false
     pf: 1546.0
-    pf_color: '#f17f40'
     pa: 1701.4
+    pf_color: '#f59d47'
   - year: 2024
     team: 5 Star Men
     tag: null
@@ -15295,8 +15285,8 @@ schirmerj:
     tx: 69
     in_progress: false
     pf: 1764.6
-    pf_color: '#ee6b3b'
     pa: 1661.4
+    pf_color: '#ee6b3b'
   - year: 2023
     team: IDP'd My Pants
     tag: null
@@ -15306,8 +15296,8 @@ schirmerj:
     tx: 19
     in_progress: false
     pf: 1658.4
-    pf_color: '#ef753d'
     pa: 1546.3
+    pf_color: '#f28341'
   - year: 2022
     team: Make Dalvin Cook Again
     tag: null
@@ -15317,8 +15307,8 @@ schirmerj:
     tx: 57
     in_progress: false
     pf: 1317.0
-    pf_color: '#f49345'
     pa: 1350.7
+    pf_color: '#facc81'
   - year: 2021
     team: Post Mahomes
     tag: null
@@ -15328,8 +15318,8 @@ schirmerj:
     tx: 66
     in_progress: false
     pf: 1341.1
-    pf_color: '#f49144'
     pa: 1376.5
+    pf_color: '#fac776'
   - year: 2020
     team: Folklore Bandits
     tag: null
@@ -15339,8 +15329,8 @@ schirmerj:
     tx: 62
     in_progress: false
     pf: 1370.3
-    pf_color: '#f38f44'
     pa: 1305.0
+    pf_color: '#fac269'
   - year: 2019
     team: Tank4Picks .
     tag: null
@@ -15350,8 +15340,8 @@ schirmerj:
     tx: 44
     in_progress: false
     pf: 1183.5
-    pf_color: '#f69f48'
     pa: 1194.4
+    pf_color: '#fce4bc'
   - year: 2018
     team: Hammed Up .
     tag: null
@@ -15361,8 +15351,8 @@ schirmerj:
     tx: 78
     in_progress: false
     pf: 1311.7
-    pf_color: '#f49445'
     pa: 1360.6
+    pf_color: '#facd83'
   - year: 2017
     team: Browning out .
     tag: null
@@ -15372,8 +15362,8 @@ schirmerj:
     tx: null
     in_progress: false
     pf: 1375.9
-    pf_color: '#f38e43'
     pa: 1273.8
+    pf_color: '#fac167'
   - year: 2016
     team: Lick my Rawls .
     tag: cochamp
@@ -15383,8 +15373,8 @@ schirmerj:
     tx: null
     in_progress: false
     pf: 1403.8
-    pf_color: '#f38c43'
     pa: 1229.1
+    pf_color: '#f9bc5a'
   - year: 2015
     team: Wilson's Magic Water
     tag: null
@@ -15394,8 +15384,8 @@ schirmerj:
     tx: null
     in_progress: false
     pf: 1243.2
-    pf_color: '#f59a46'
     pa: 1210.2
+    pf_color: '#fbd9a2'
   - year: 2014
     team: Arian nation .
     tag: null
@@ -15405,8 +15395,8 @@ schirmerj:
     tx: null
     in_progress: false
     pf: 1103.1
-    pf_color: '#f7a749'
     pa: 1267.0
+    pf_color: '#fdf3e0'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -16976,7 +16966,6 @@ whowonthelastsuperbowl:
     tx: 2
     in_progress: true
     pf: 87.4
-    pf_color: '#fdf3e0'
     pa: 105.0
   - year: 2025
     team: Trick or Trick It’s Mike Vick
@@ -16987,8 +16976,8 @@ whowonthelastsuperbowl:
     tx: 31
     in_progress: false
     pf: 1445.6
-    pf_color: '#f07c3f'
     pa: 1675.7
+    pf_color: '#f39044'
   - year: 2024
     team: Trick or Trick It’s Mike Vick
     tag: null
@@ -16998,8 +16987,8 @@ whowonthelastsuperbowl:
     tx: 45
     in_progress: false
     pf: 1617.1
-    pf_color: '#ee6b3b'
     pa: 1794.0
+    pf_color: '#ee6b3b'
   - year: 2023
     team: Trick or Trick It’s Mike Vick
     tag: null
@@ -17009,8 +16998,8 @@ whowonthelastsuperbowl:
     tx: 26
     in_progress: false
     pf: 1566.3
-    pf_color: '#ef703c'
     pa: 1630.8
+    pf_color: '#f0763e'
   - year: 2022
     team: Trick or Trick It’s Mike Vick
     tag: null
@@ -17020,8 +17009,8 @@ whowonthelastsuperbowl:
     tx: 28
     in_progress: false
     pf: 1331.2
-    pf_color: '#f28742'
     pa: 1302.5
+    pf_color: '#f7a94a'
   - year: 2021
     team: Trick or Trick It’s Mike Vick
     tag: null
@@ -17031,8 +17020,8 @@ whowonthelastsuperbowl:
     tx: 58
     in_progress: false
     pf: 1405.3
-    pf_color: '#f18040'
     pa: 1450.5
+    pf_color: '#f59946'
   - year: 2020
     team: Wadgerach Sturdellske
     tag: null
@@ -17042,8 +17031,8 @@ whowonthelastsuperbowl:
     tx: 48
     in_progress: false
     pf: 1298.8
-    pf_color: '#f38a42'
     pa: 1350.4
+    pf_color: '#f8b04b'
   - year: 2019
     team: Wadgerach Sturdellske
     tag: null
@@ -17053,8 +17042,8 @@ whowonthelastsuperbowl:
     tx: 42
     in_progress: false
     pf: 1201.0
-    pf_color: '#f49445'
     pa: 1342.3
+    pf_color: '#fac26a'
   - year: 2018
     team: Wadgerach Sturdellske
     tag: null
@@ -17064,8 +17053,8 @@ whowonthelastsuperbowl:
     tx: 18
     in_progress: false
     pf: 1240.9
-    pf_color: '#f39044'
     pa: 1378.4
+    pf_color: '#f9bb59'
   - year: 2017
     team: Wadgerach Sturdellske
     tag: null
@@ -17075,8 +17064,8 @@ whowonthelastsuperbowl:
     tx: null
     in_progress: false
     pf: 1160.5
-    pf_color: '#f59846'
     pa: 1279.7
+    pf_color: '#fac97b'
   - year: 2016
     team: Wadgerach Sturdellske
     tag: null
@@ -17086,8 +17075,8 @@ whowonthelastsuperbowl:
     tx: null
     in_progress: false
     pf: 1299.0
-    pf_color: '#f38a42'
     pa: 1278.2
+    pf_color: '#f8af4b'
   - year: 2015
     team: He's Quick He's Slick He's Mike
     tag: sacko
@@ -17097,8 +17086,8 @@ whowonthelastsuperbowl:
     tx: null
     in_progress: false
     pf: 1176.3
-    pf_color: '#f49645'
     pa: 1236.9
+    pf_color: '#fac674'
   - year: 2014
     team: Haters Gonna Hate
     tag: sacko
@@ -17108,8 +17097,8 @@ whowonthelastsuperbowl:
     tx: null
     in_progress: false
     pf: 920.5
-    pf_color: '#f8af4b'
     pa: 1206.1
+    pf_color: '#fdf3e0'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -18648,7 +18637,6 @@ purpsworth:
     tx: 1
     in_progress: true
     pf: 85.4
-    pf_color: '#fdf3e0'
     pa: 96.5
   - year: 2025
     team: I am dead inside
@@ -18659,8 +18647,8 @@ purpsworth:
     tx: 41
     in_progress: false
     pf: 1566.2
-    pf_color: '#f0793e'
     pa: 1526.0
+    pf_color: '#f59846'
   - year: 2024
     team: I am dead inside
     tag: null
@@ -18670,8 +18658,8 @@ purpsworth:
     tx: 35
     in_progress: false
     pf: 1606.7
-    pf_color: '#ef753d'
     pa: 1663.6
+    pf_color: '#f38c43'
   - year: 2023
     team: Used Napkin
     tag: null
@@ -18681,8 +18669,8 @@ purpsworth:
     tx: 33
     in_progress: false
     pf: 1714.6
-    pf_color: '#ee6b3b'
     pa: 1505.6
+    pf_color: '#ee6b3b'
   - year: 2022
     team: Used Napkin
     tag: null
@@ -18692,8 +18680,8 @@ purpsworth:
     tx: 44
     in_progress: false
     pf: 1355.2
-    pf_color: '#f38c43'
     pa: 1319.5
+    pf_color: '#fbd28f'
   - year: 2021
     team: WA Fantasy Football Team
     tag: null
@@ -18703,8 +18691,8 @@ purpsworth:
     tx: 57
     in_progress: false
     pf: 1372.6
-    pf_color: '#f38a43'
     pa: 1433.8
+    pf_color: '#fbcd85'
   - year: 2020
     team: AB’s Helmet
     tag: null
@@ -18714,8 +18702,8 @@ purpsworth:
     tx: 41
     in_progress: false
     pf: 1219.5
-    pf_color: '#f59946'
     pa: 1311.4
+    pf_color: '#fdf3e0'
   - year: 2019
     team: AB’s Helmet
     tag: null
@@ -18725,8 +18713,8 @@ purpsworth:
     tx: 63
     in_progress: false
     pf: 1240.3
-    pf_color: '#f49745'
     pa: 1344.1
+    pf_color: '#fdeed4'
   h2h:
   - opp_id: theoceanpulse
     opp_short: Dillon
@@ -20111,8 +20099,8 @@ henpen28:
     tx: 37
     in_progress: false
     pf: 1411.9
-    pf_color: '#f7a94a'
     pa: 1606.0
+    pf_color: '#f7a94a'
   - year: 2024
     team: Three's Company
     tag: null
@@ -20122,8 +20110,8 @@ henpen28:
     tx: 35
     in_progress: false
     pf: 1644.2
-    pf_color: '#ee6b3b'
     pa: 1603.1
+    pf_color: '#ee6b3b'
   - year: 2023
     team: Three's Company
     tag: null
@@ -20133,8 +20121,8 @@ henpen28:
     tx: 49
     in_progress: false
     pf: 1569.6
-    pf_color: '#f17f40'
     pa: 1605.2
+    pf_color: '#f17f40'
   - year: 2022
     team: Consensual Trades
     tag: shiva
@@ -20144,8 +20132,8 @@ henpen28:
     tx: 50
     in_progress: false
     pf: 1360.5
-    pf_color: '#f9b74f'
     pa: 1300.7
+    pf_color: '#f9b74f'
   - year: 2021
     team: Scat Play
     tag: null
@@ -20155,8 +20143,8 @@ henpen28:
     tx: 29
     in_progress: false
     pf: 1490.0
-    pf_color: '#f49445'
     pa: 1327.2
+    pf_color: '#f49445'
   - year: 2020
     team: Scat Play
     tag: null
@@ -20166,8 +20154,8 @@ henpen28:
     tx: 48
     in_progress: false
     pf: 1163.4
-    pf_color: '#fce2b7'
     pa: 1318.5
+    pf_color: '#fce2b7'
   - year: 2019
     team: Tom Brady's Fluffer
     tag: sacko
@@ -20177,8 +20165,8 @@ henpen28:
     tx: 56
     in_progress: false
     pf: 1288.2
-    pf_color: '#fac776'
     pa: 1320.7
+    pf_color: '#fac776'
   - year: 2018
     team: Tom Brady's Fluffer
     tag: null
@@ -20188,8 +20176,8 @@ henpen28:
     tx: 56
     in_progress: false
     pf: 1309.2
-    pf_color: '#fac26b'
     pa: 1255.2
+    pf_color: '#fac26b'
   - year: 2017
     team: Forceable Entry
     tag: shiva
@@ -20199,8 +20187,8 @@ henpen28:
     tx: null
     in_progress: false
     pf: 1155.7
-    pf_color: '#fce4bb'
     pa: 1134.6
+    pf_color: '#fce4bb'
   - year: 2016
     team: Forceable Entry
     tag: null
@@ -20210,8 +20198,8 @@ henpen28:
     tx: null
     in_progress: false
     pf: 1229.8
-    pf_color: '#fbd494'
     pa: 1201.5
+    pf_color: '#fbd494'
   - year: 2015
     team: Jared's Kids
     tag: null
@@ -20221,8 +20209,8 @@ henpen28:
     tx: null
     in_progress: false
     pf: 1086.2
-    pf_color: '#fdf3e0'
     pa: 1207.2
+    pf_color: '#fdf3e0'
   - year: 2014
     team: Uncle Grabby
     tag: shiva
@@ -20232,8 +20220,8 @@ henpen28:
     tx: null
     in_progress: false
     pf: 1337.1
-    pf_color: '#f9bc5c'
     pa: 1293.6
+    pf_color: '#f9bc5c'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -21717,8 +21705,8 @@ unclebadtouch38:
     tx: 51
     in_progress: false
     pf: 1297.6
-    pf_color: '#f49244'
     pa: 1554.6
+    pf_color: '#f49244'
   - year: 2022
     team: Mr. Irrelevant
     tag: null
@@ -21728,8 +21716,8 @@ unclebadtouch38:
     tx: 38
     in_progress: false
     pf: 1144.5
-    pf_color: '#fbce86'
     pa: 1290.3
+    pf_color: '#fbce86'
   - year: 2021
     team: Set_The_ RAT_TRAP_!
     tag: sacko
@@ -21739,8 +21727,8 @@ unclebadtouch38:
     tx: 42
     in_progress: false
     pf: 1112.9
-    pf_color: '#fbd8a0'
     pa: 1392.7
+    pf_color: '#fbd8a0'
   - year: 2020
     team: Set_The_ RAT_TRAP_!
     tag: shiva
@@ -21750,8 +21738,8 @@ unclebadtouch38:
     tx: 26
     in_progress: false
     pf: 1389.2
-    pf_color: '#ee6b3b'
     pa: 1265.1
+    pf_color: '#ee6b3b'
   - year: 2019
     team: Set_The_ RAT_TRAP_!
     tag: null
@@ -21761,8 +21749,8 @@ unclebadtouch38:
     tx: 33
     in_progress: false
     pf: 1036.2
-    pf_color: '#fdf3e0'
     pa: 1215.5
+    pf_color: '#fdf3e0'
   - year: 2018
     team: Cleveland Mcpussysmasher
     tag: null
@@ -21772,8 +21760,8 @@ unclebadtouch38:
     tx: 26
     in_progress: false
     pf: 1327.9
-    pf_color: '#f28541'
     pa: 1210.7
+    pf_color: '#f28541'
   - year: 2017
     team: Cleveland Mcpussysmasher
     tag: null
@@ -21783,8 +21771,8 @@ unclebadtouch38:
     tx: null
     in_progress: false
     pf: 1105.6
-    pf_color: '#fbdba6'
     pa: 1120.6
+    pf_color: '#fbdba6'
   - year: 2016
     team: Cleveland Mcpussysmasher
     tag: null
@@ -21794,8 +21782,8 @@ unclebadtouch38:
     tx: null
     in_progress: false
     pf: 1238.7
-    pf_color: '#f7ab4a'
     pa: 1269.9
+    pf_color: '#f7ab4a'
   h2h:
   - opp_id: ajstewart04
     opp_short: Anthony
@@ -22770,8 +22758,8 @@ ajstewart04:
     tx: 22
     in_progress: false
     pf: 1269.9
-    pf_color: '#ee6b3b'
     pa: 1417.6
+    pf_color: '#ee6b3b'
   - year: 2017
     team: Tacos Food Truck
     tag: null
@@ -22781,8 +22769,8 @@ ajstewart04:
     tx: null
     in_progress: false
     pf: 1143.7
-    pf_color: '#fdf3e0'
     pa: 1278.1
+    pf_color: '#fdf3e0'
   h2h:
   - opp_id: theoceanpulse
     opp_short: Dillon
@@ -23038,8 +23026,8 @@ master-otis:
     tx: null
     in_progress: false
     pf: 953.6
-    pf_color: '#fdf3e0'
     pa: 1262.0
+    pf_color: '#fdf3e0'
   - year: 2015
     team: I Waxed My Child For This
     tag: null
@@ -23049,8 +23037,8 @@ master-otis:
     tx: null
     in_progress: false
     pf: 1425.0
-    pf_color: '#ee6b3b'
     pa: 1200.2
+    pf_color: '#ee6b3b'
   - year: 2014
     team: Lynched by Le' Bell
     tag: null
@@ -23060,8 +23048,8 @@ master-otis:
     tx: null
     in_progress: false
     pf: 1297.1
-    pf_color: '#f49445'
     pa: 1202.4
+    pf_color: '#f49445'
   h2h:
   - opp_id: thebragers
     opp_short: Brady
@@ -23338,8 +23326,8 @@ thebragers:
     tx: null
     in_progress: false
     pf: 1219.6
-    pf_color: '#ee6b3b'
     pa: 1263.5
+    pf_color: '#ee6b3b'
   - year: 2014
     team: Team TheBragers
     tag: null
@@ -23349,8 +23337,8 @@ thebragers:
     tx: null
     in_progress: false
     pf: 1197.9
-    pf_color: '#fdf3e0'
     pa: 1188.5
+    pf_color: '#fdf3e0'
   h2h:
   - opp_id: henpen28
     opp_short: Henry

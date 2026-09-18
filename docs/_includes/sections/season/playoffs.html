@@ -1,0 +1,27 @@
+{%- comment -%}
+Playoff brackets for a season in the playoffs (or complete): the Shiva
+(championship) and Sacko (toilet bowl) brackets, each laid out as round columns.
+Param: d (a site.data.seasons.detail record); reads d.bracket (lib/playoffs).
+{%- endcomment -%}
+{%- assign b = include.d.bracket -%}
+{%- if b -%}
+<section id="playoffs" class="season-section">
+  <h2>Playoffs</h2>
+  {%- assign brackets = "shiva,sacko" | split: "," -%}
+  {%- for key in brackets -%}
+  {%- assign br = b[key] -%}
+  <h3 class="bracket__title">{{ br.title }}</h3>
+  <div class="table-scroll">
+  <div class="bracket">
+    {%- for rnd in br.rounds -%}
+    <div class="bracket-col">
+      <div class="bracket-col__head">{{ rnd.label }}<span class="bracket-col__wk"> · Wk {{ rnd.week }}</span></div>
+      {%- for g in rnd.games -%}{% include bits/bracket_game.html g=g %}{%- endfor -%}
+      {%- for g in rnd.consolation -%}{% include bits/bracket_game.html g=g %}{%- endfor -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  </div>
+  {%- endfor -%}
+</section>
+{%- endif -%}

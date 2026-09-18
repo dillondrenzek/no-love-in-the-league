@@ -24,6 +24,7 @@ from lib.data import (load_franchises, load_seasons, load_season_notes,
 from lib.state import state_of, is_in_progress
 from lib.overrides import load_overrides
 from lib.seasons import season_rows
+from lib.playoffs import playoff_bracket
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "seasons"
@@ -130,6 +131,11 @@ def season_detail(season, franchises, overrides, notes):
         "keepers": season_keepers(season, franchises),
         "champ": None if in_progress else (rows[0] if rows else None),
         "sacko": None if in_progress else (rows[-1] if rows else None),
+        # Shiva + Sacko brackets, once the playoffs are underway (None for other
+        # states or a non-6-team-playoff season the league rules don't cover).
+        # The current 6-team seeding system took effect in 2023; skip earlier years.
+        "bracket": (playoff_bracket(season, franchises)
+                    if state in ("playoffs", "complete") and year >= 2023 else None),
     }
 
 

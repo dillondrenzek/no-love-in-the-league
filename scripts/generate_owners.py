@@ -203,7 +203,11 @@ def _honors(p):
 
 def _season_rows(p, logos_by_year=None):
     logos_by_year = logos_by_year or {}
-    pfs = [s["pf"] for s in p["seasons"] if s["pf"] is not None]
+    # Heat-scale the PF chips over completed seasons only — an in-progress season
+    # has a partial (low) total that would skew the scale and mis-color itself, so
+    # it shows its running PF without a heat chip.
+    pfs = [s["pf"] for s in p["seasons"]
+           if s["pf"] is not None and not s.get("in_progress")]
     lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
     rows = []
     for s in p["seasons"]:
@@ -214,8 +218,9 @@ def _season_rows(p, logos_by_year=None):
                "in_progress": s.get("in_progress", False)}
         if s["pf"] is not None:
             row["pf"] = s["pf"]
-            row["pf_color"] = heat_color(s["pf"], lo, hi)
             row["pa"] = s["pa"]
+            if not s.get("in_progress"):
+                row["pf_color"] = heat_color(s["pf"], lo, hi)
         rows.append(row)
     return rows
 

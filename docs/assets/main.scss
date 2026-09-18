@@ -1195,3 +1195,89 @@ h4:hover > .heading-anchor,
   background: var(--tag-removed-bg);
   color: var(--tag-removed-ink);
 }
+
+// =============================================================================
+// Playoff brackets (season page — Shiva + Sacko)
+// =============================================================================
+.bracket__title { margin: 1.5em 0 0.3em; font-size: 1.15rem; }
+.bracket {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  padding: 4px 2px 10px;
+  min-width: min-content;
+}
+.bracket-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   // rough pyramid: later rounds center on their feeders
+  gap: 20px;
+  min-width: 220px;
+}
+.bracket-col__head {
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 700;
+}
+.bracket-col__wk { color: var(--faint); font-weight: 400; }
+.bgame {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg);
+}
+.bgame__label {
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--row-hover);
+  padding: 3px 6px;
+}
+.bteam {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  font-size: 0.85rem;
+}
+.bteam + .bteam { border-top: 1px solid var(--rule); }
+.bteam__seed {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--faint);
+  width: 1.5em;
+  text-align: center;
+  flex: 0 0 auto;
+}
+.bteam .team-logo { width: 20px; height: 20px; }
+.bteam__name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ink);
+  text-decoration: none;
+}
+.bteam__name:hover { color: var(--brand); }
+.bteam__name--tbd { color: var(--faint); }
+.bteam__score {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: var(--muted);
+  flex: 0 0 auto;
+}
+.bteam--win { background: var(--row-hover); }
+.bteam--win .bteam__name { font-weight: 700; }
+.bteam--win .bteam__score { color: var(--ink); font-weight: 700; }
+.bteam--lose .bteam__name,
+.bteam--lose .bteam__score { color: var(--faint); }
+.bteam--empty .bteam__name { color: var(--faint); font-style: italic; padding-left: 4px; }
