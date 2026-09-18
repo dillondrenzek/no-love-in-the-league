@@ -29,7 +29,8 @@ def main():
 
     keep = ("category", "value", "sub_value", "season", "week", "holder",
             "owner_id", "owner_name", "team",
-            "opp_owner_id", "opp_owner_name", "opp_team", "section")
+            "opp_owner_id", "opp_owner_name", "opp_team", "section", "tabular",
+            "leaders")
     records = [{k: r.get(k) for k in keep}
                for r in compute_records(seasons, franchises, overrides, trade_seasons=trade_seasons)]
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)

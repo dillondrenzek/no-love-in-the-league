@@ -10,6 +10,10 @@ Two kinds of records:
 Meaningless final-week consolation games (see lib/overrides) are excluded from the
 score records. Co-champions each count as half a title.
 
+Every record carries a `leaders` list: the record holder first, then the next few
+runners-up (up to `LEADER_N`), so the record book can render each record as a
+short leaderboard table. The record's own top-level fields mirror `leaders[0]`.
+
 `compute_records` returns whichever are available, so the record book grows
 automatically as richer data (scores) is added.
 """
@@ -20,16 +24,50 @@ from .standings import get_standings, parse_record
 from .overrides import co_champions, meaningless_keys, matchup_key
 
 # Record-book sections, in display order. Each record carries a `section` so the
-# records page can group the cards under headings.
-SEC_STANDINGS = "Standings & Titles"
+# records page can group the tables under headings.
+SEC_TITLES = "Titles"
+SEC_STANDINGS = "Standings"
 SEC_SCORING = "Scoring"
 SEC_MOVES = "Roster & Draft"
-SECTION_ORDER = [SEC_STANDINGS, SEC_SCORING, SEC_MOVES]
+SECTION_ORDER = [SEC_TITLES, SEC_STANDINGS, SEC_SCORING, SEC_MOVES]
+
+# How many rows each record's leaderboard shows: the holder plus runners-up.
+LEADER_N = 5
 
 
 def _win_pct(w, l, t):
     games = w + l + t
     return (w + 0.5 * t) / games if games else 0.0
+
+
+def _leader(value, *, team=None, owner_name=None, owner_id=None, season=None,
+            week=None, sub_value=None, opp_team=None, opp_owner_name=None,
+            opp_owner_id=None):
+    """One row of a record's leaderboard (the holder or a runner-up)."""
+    return {"value": value, "team": team, "owner_name": owner_name,
+            "owner_id": owner_id, "season": season, "week": week,
+            "sub_value": sub_value, "opp_team": opp_team,
+            "opp_owner_name": opp_owner_name, "opp_owner_id": opp_owner_id}
+
+
+def _record(category, section, leaders):
+    """A record whose top-level fields mirror its top leader, plus the full
+    `leaders` list (holder + runners-up)."""
+    top = leaders[0]
+    return {"category": category, "section": section,
+            # `tabular`: the holder has a team and/or season, so the record fits the
+            # Team·Owner·Season·Value table. All-time franchise aggregates (Most
+            # Championships, Most Trades, …) have neither and are hidden from the page.
+            "tabular": bool(top.get("team") or top.get("season")),
+            "holder": top.get("team") or top.get("owner_name"),
+            "value": top["value"], "sub_value": top.get("sub_value"),
+            "season": top.get("season"), "week": top.get("week"),
+            "owner_id": top.get("owner_id"), "owner_name": top.get("owner_name"),
+            "team": top.get("team"),
+            "opp_owner_id": top.get("opp_owner_id"),
+            "opp_owner_name": top.get("opp_owner_name"),
+            "opp_team": top.get("opp_team"),
+            "leaders": leaders}
 
 
 def _title_count(seasons, franchises, overrides):
@@ -56,13 +94,19 @@ def _fmt_titles(n):
     return f"{whole}½" if half else str(whole)
 
 
-def _standings_row_entry(category, year, row, value, franchises):
-    fid = row["id"]
-    return {"category": category, "holder": row["name"], "value": value,
-            "season": year, "week": None,
-            "owner_id": fid if fid in franchises else None,
-            "owner_name": short_name_of(fid, franchises),
-            "team": row["name"], "section": SEC_STANDINGS}
+def _sacko_count(seasons, franchises):
+    """franchise id -> number of dead-last (Sacko) finishes, plus a display name.
+    Seasons passed in are already complete, so every last place is awarded."""
+    counts, display = {}, {}
+    for season in seasons:
+        rows = get_standings(season, franchises)
+        team_count = len(rows)
+        for r in rows:
+            if r["finish"] == team_count:                # dead last = Sacko
+                fid = r["id"]
+                counts[fid] = counts.get(fid, 0) + 1
+                display[fid] = short_name_of(fid, franchises) if fid in franchises else r["name"]
+    return counts, display
 
 
 def _standings_records(seasons, franchises, overrides, trade_seasons=None):
@@ -70,24 +114,41 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
     if not all_rows:
         return []
 
-    best = max(all_rows, key=lambda sr: (_win_pct(sr[1]["wins"], sr[1]["losses"], sr[1]["ties"]), sr[1]["wins"]))
-    worst = min(all_rows, key=lambda sr: (_win_pct(sr[1]["wins"], sr[1]["losses"], sr[1]["ties"]), -sr[1]["losses"]))
+    def wp(r):
+        return _win_pct(r["wins"], r["losses"], r["ties"])
+
+    def std_leader(yr, r):
+        return _leader(r["record"], team=r["name"],
+                       owner_name=short_name_of(r["id"], franchises),
+                       owner_id=r["id"] if r["id"] in franchises else None, season=yr)
+
+    best = sorted(all_rows, key=lambda sr: (wp(sr[1]), sr[1]["wins"]), reverse=True)
+    worst = sorted(all_rows, key=lambda sr: (wp(sr[1]), -sr[1]["losses"]))
 
     records = [
-        _standings_row_entry("Best Regular-Season Record", best[0], best[1], best[1]["record"], franchises),
-        _standings_row_entry("Worst Regular-Season Record", worst[0], worst[1], worst[1]["record"], franchises),
+        _record("Best Regular-Season Record", SEC_STANDINGS,
+                [std_leader(yr, r) for yr, r in best[:LEADER_N]]),
+        _record("Worst Regular-Season Record", SEC_STANDINGS,
+                [std_leader(yr, r) for yr, r in worst[:LEADER_N]]),
     ]
 
     titles, display = _title_count(seasons, franchises, overrides)
     if titles:
-        champ_id, champ_count = max(titles.items(), key=lambda kv: kv[1])
+        ranked = sorted(titles.items(), key=lambda kv: kv[1], reverse=True)
         # Only interesting once someone has more than a single title.
-        if champ_count > 1:
-            records.append({"category": "Most Championships", "holder": display.get(champ_id),
-                            "value": _fmt_titles(champ_count), "season": None, "week": None,
-                            "owner_id": champ_id if champ_id in franchises else None,
-                            "owner_name": display.get(champ_id), "team": None,
-                            "section": SEC_STANDINGS})
+        if ranked[0][1] > 1:
+            leaders = [_leader(_fmt_titles(cnt), owner_name=display.get(fid),
+                               owner_id=fid if fid in franchises else None)
+                       for fid, cnt in ranked[:LEADER_N] if cnt > 0]
+            records.append(_record("Most Championships", SEC_TITLES, leaders))
+
+    sackos, sacko_names = _sacko_count(seasons, franchises)
+    if sackos and max(sackos.values()) > 0:
+        ranked = sorted(sackos.items(), key=lambda kv: kv[1], reverse=True)
+        leaders = [_leader(str(cnt), owner_name=sacko_names.get(fid),
+                           owner_id=fid if fid in franchises else None)
+                   for fid, cnt in ranked[:LEADER_N] if cnt > 0]
+        records.append(_record("Most Sackos", SEC_TITLES, leaders))
 
     trade_rec = _most_trades(trade_seasons if trade_seasons is not None else seasons, franchises)
     if trade_rec:
@@ -107,6 +168,17 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
     return records
 
 
+def _franchise_leaders(counts, franchises, n=LEADER_N):
+    """Top-n (fid, count) as leader rows, count rendered as a plain string."""
+    ranked = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)
+    out = []
+    for fid, c in ranked[:n]:
+        name = short_name_of(fid, franchises) if fid in franchises else fid
+        out.append(_leader(str(c), owner_name=name,
+                           owner_id=fid if fid in franchises else None))
+    return out
+
+
 def _most_first_overall(seasons, franchises):
     """Franchise that has drafted from the 1.01 (first slot in a season's draft
     order) the most times, across every season on record including an in-progress
@@ -118,14 +190,11 @@ def _most_first_overall(seasons, franchises):
             counts[order[0]] = counts.get(order[0], 0) + 1
     if not counts:
         return None
-    fid, n = max(counts.items(), key=lambda kv: kv[1])
-    if n < 2:
+    ranked = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)
+    if ranked[0][1] < 2:
         return None
-    name = short_name_of(fid, franchises) if fid in franchises else fid
-    return {"category": "Most Times Drafting 1.01", "holder": name, "value": str(n),
-            "season": None, "week": None,
-            "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None, "section": SEC_MOVES}
+    leaders = _franchise_leaders({fid: c for fid, c in counts.items() if c >= 1}, franchises)
+    return _record("Most Times Drafting 1.01", SEC_MOVES, leaders)
 
 
 def _most_trades(seasons, franchises):
@@ -138,12 +207,7 @@ def _most_trades(seasons, franchises):
                 counts[fid] = counts.get(fid, 0) + 1
     if not counts:
         return None
-    fid, n = max(counts.items(), key=lambda kv: kv[1])
-    name = short_name_of(fid, franchises) if fid in franchises else fid
-    return {"category": "Most Trades", "holder": name, "value": str(n),
-            "season": None, "week": None,
-            "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None, "section": SEC_MOVES}
+    return _record("Most Trades", SEC_MOVES, _franchise_leaders(counts, franchises))
 
 
 def _transaction_totals(seasons, franchises):
@@ -166,33 +230,35 @@ def _transaction_record(seasons, franchises, most):
     totals = _transaction_totals(seasons, franchises)
     if not totals:
         return None
-    pick = max if most else min
-    fid, n = pick(totals.items(), key=lambda kv: kv[1])
-    name = short_name_of(fid, franchises) if fid in franchises else fid
-    return {"category": "Most Transactions" if most else "Fewest Transactions",
-            "holder": name, "value": str(n), "season": None, "week": None,
-            "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None, "section": SEC_MOVES}
+    ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=most)
+    leaders = []
+    for fid, c in ranked[:LEADER_N]:
+        name = short_name_of(fid, franchises) if fid in franchises else fid
+        leaders.append(_leader(str(c), owner_name=name,
+                               owner_id=fid if fid in franchises else None))
+    return _record("Most Transactions" if most else "Fewest Transactions",
+                   SEC_MOVES, leaders)
 
 
 def _most_transactions_in_season(seasons, franchises):
     """Single-season high for waiver/FA moves by one owner (over 2018+ data)."""
-    best = None      # (moves, year, fid)
+    rows = []      # (moves, year, fid)
     for season in seasons:
         if not season_transactions_known(season):
             continue
         for fid, c in (season.get("transactions") or {}).items():
             moves = c.get("moves", 0)
-            if best is None or moves > best[0]:
-                best = (moves, season["season"], fid)
-    if not best or best[0] <= 0:
+            if moves > 0:
+                rows.append((moves, season["season"], fid))
+    if not rows:
         return None
-    moves, year, fid = best
-    name = short_name_of(fid, franchises) if fid in franchises else fid
-    return {"category": "Most Transactions in a Season", "holder": name,
-            "value": str(moves), "season": year, "week": None,
-            "owner_id": fid if fid in franchises else None,
-            "owner_name": name, "team": None, "section": SEC_MOVES}
+    rows.sort(key=lambda x: x[0], reverse=True)
+    leaders = []
+    for moves, year, fid in rows[:LEADER_N]:
+        name = short_name_of(fid, franchises) if fid in franchises else fid
+        leaders.append(_leader(str(moves), owner_name=name,
+                               owner_id=fid if fid in franchises else None, season=year))
+    return _record("Most Transactions in a Season", SEC_MOVES, leaders)
 
 
 def _team_games(seasons, overrides):
@@ -231,65 +297,67 @@ def _score_records(seasons, franchises, overrides):
     def team_for(fid, year):
         return teams_by_year.get(year, {}).get(fid)
 
-    def holder_for(fid, year):
-        return team_for(fid, year) or short_name_of(fid, franchises)
-
-    def entry(category, g, value, sub_value=None, with_opp=False):
-        e = {"category": category, "holder": holder_for(g["id"], g["season"]),
-             "value": value, "sub_value": sub_value,
-             "season": g["season"], "week": g["week"],
-             "owner_id": g["id"] if g["id"] in franchises else None,
-             "owner_name": short_name_of(g["id"], franchises),
-             "team": team_for(g["id"], g["season"]),
-             "opp_owner_id": None, "opp_owner_name": None, "opp_team": None,
-             "section": SEC_SCORING}
+    def game_leader(g, value, sub_value=None, with_opp=False):
+        opp = {}
         if with_opp:
             oid = g["opp_id"]
-            e["opp_owner_id"] = oid if oid in franchises else None
-            e["opp_owner_name"] = short_name_of(oid, franchises)
-            e["opp_team"] = team_for(oid, g["season"])
-        return e
+            opp = {"opp_team": team_for(oid, g["season"]),
+                   "opp_owner_name": short_name_of(oid, franchises),
+                   "opp_owner_id": oid if oid in franchises else None}
+        return _leader(value, team=team_for(g["id"], g["season"]),
+                       owner_name=short_name_of(g["id"], franchises),
+                       owner_id=g["id"] if g["id"] in franchises else None,
+                       season=g["season"], week=g["week"], sub_value=sub_value, **opp)
 
     def score_pair(g):
         hi, lo = sorted((g["score"], g["opp_score"]), reverse=True)
         return f"{hi:.1f}–{lo:.1f}"
 
-    most = max(games, key=lambda g: g["score"])
-    fewest = min(games, key=lambda g: g["score"])
-    blowout = max(games, key=lambda g: g["margin"])
-    combined = max(games, key=lambda g: g["combined"])
+    most = sorted(games, key=lambda g: g["score"], reverse=True)
+    fewest = sorted(games, key=lambda g: g["score"])
+    blowout = sorted(games, key=lambda g: g["margin"], reverse=True)
+
+    # Combined score is identical for both sides of a game, so de-dupe by matchup
+    # before ranking (otherwise every top game would appear twice).
+    seen, combined = set(), []
+    for g in sorted(games, key=lambda g: g["combined"], reverse=True):
+        key = (g["season"], g["week"], frozenset((g["id"], g["opp_id"])))
+        if key in seen:
+            continue
+        seen.add(key)
+        combined.append(g)
 
     # "Most Points in a Season" is regular-season points-for only, so playoff
-    # games are excluded from the sum even though they still count toward the
-    # per-week records above.
+    # games are excluded from the sum even though they still count per-week above.
     totals = _season_totals(g for g in games if not g["playoff"])
-    (top_year, top_fid), top_points = max(totals.items(), key=lambda kv: kv[1])
-    season_leader = {
-        "category": "Most Points in a Season", "holder": holder_for(top_fid, top_year),
-        "value": f"{top_points:.2f}", "sub_value": None,
-        "season": top_year, "week": None,
-        "owner_id": top_fid if top_fid in franchises else None,
-        "owner_name": short_name_of(top_fid, franchises),
-        "team": team_for(top_fid, top_year),
-        "opp_owner_id": None, "opp_owner_name": None, "opp_team": None,
-        "section": SEC_SCORING,
-    }
+    season_ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)
+    season_leaders = [
+        _leader(f"{pts:.2f}", team=team_for(fid, yr),
+                owner_name=short_name_of(fid, franchises),
+                owner_id=fid if fid in franchises else None, season=yr)
+        for (yr, fid), pts in season_ranked[:LEADER_N]]
 
     return [
-        entry("Most Points in a Week", most, f"{most['score']:.2f}"),
-        season_leader,
-        entry("Fewest Points in a Week", fewest, f"{fewest['score']:.2f}"),
-        entry("Biggest Blowout", blowout, f"{blowout['margin']:.2f}",
-              sub_value=score_pair(blowout), with_opp=True),
-        entry("Highest Combined Score", combined, f"{combined['combined']:.2f}",
-              sub_value=score_pair(combined), with_opp=True),
+        _record("Most Points in a Week", SEC_SCORING,
+                [game_leader(g, f"{g['score']:.2f}") for g in most[:LEADER_N]]),
+        _record("Most Points in a Season", SEC_SCORING, season_leaders),
+        _record("Fewest Points in a Week", SEC_SCORING,
+                [game_leader(g, f"{g['score']:.2f}") for g in fewest[:LEADER_N]]),
+        _record("Biggest Blowout", SEC_SCORING,
+                [game_leader(g, f"{g['margin']:.2f}", sub_value=score_pair(g), with_opp=True)
+                 for g in blowout[:LEADER_N]]),
+        _record("Highest Combined Score", SEC_SCORING,
+                [game_leader(g, f"{g['combined']:.2f}", sub_value=score_pair(g), with_opp=True)
+                 for g in combined[:LEADER_N]]),
     ]
 
 
 def compute_records(seasons, franchises=None, overrides=None, trade_seasons=None):
     """All currently-computable record-book entries. Standings/score records use
     `seasons` (finished only); the trades record uses `trade_seasons` (defaults to
-    `seasons`) so in-progress trades still count."""
+    `seasons`) so in-progress trades still count.
+
+    Each record includes a `leaders` list (holder first, then runners-up)."""
     franchises = franchises or {}
     overrides = overrides or {}
     records = _standings_records(seasons, franchises, overrides, trade_seasons)

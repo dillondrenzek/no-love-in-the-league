@@ -183,7 +183,7 @@ def test_transactions_records_rank_over_available_years():
 
 
 def test_most_transactions_in_a_season_record_and_sections():
-    from lib.records import SEC_MOVES, SEC_STANDINGS, SEC_SCORING
+    from lib.records import SEC_MOVES, SEC_STANDINGS, SEC_SCORING, SEC_TITLES
     s1 = matchup_season(2024); s1["transactions_known"] = True
     s1["transactions"] = {"a": {"adds": 5, "drops": 4, "moves": 9}}
     s2 = matchup_season(2025); s2["transactions_known"] = True
@@ -193,7 +193,7 @@ def test_most_transactions_in_a_season_record_and_sections():
     hi = recs["Most Transactions in a Season"]
     assert hi["value"] == "18" and hi["holder"] == "a" and hi["season"] == 2025
     # Every record is tagged with one of the three known sections.
-    valid = {SEC_MOVES, SEC_STANDINGS, SEC_SCORING}
+    valid = {SEC_MOVES, SEC_STANDINGS, SEC_SCORING, SEC_TITLES}
     assert all(r["section"] in valid for r in recs.values())
     assert hi["section"] == SEC_MOVES
 
@@ -747,12 +747,42 @@ def test_records_standings_based():
     assert recs["Most Championships"]["value"] == "2"
 
 
+def test_most_sackos_record():
+    from lib.records import SEC_TITLES
+    # Delta finishes last (4th of 4) in both seasons -> 2 sackos.
+    recs = {r["category"]: r
+            for r in compute_records([explicit_season(2024), explicit_season(2025)])}
+    sack = recs["Most Sackos"]
+    assert sack["section"] == SEC_TITLES
+    assert sack["holder"] == "Delta" and sack["value"] == "2"
+    assert sack["tabular"] is False              # owner-only (no team/season columns)
+    assert sack["leaders"][0]["value"] == "2"
+
+
 def test_records_score_based_appear_with_matchups():
     recs = {r["category"]: r for r in compute_records([matchup_season()], {})}
     assert recs["Most Points in a Week"]["value"] == "200.00"
     assert recs["Biggest Blowout"]["holder"] == "Delta Fish"
     assert "Most Points in a Season" in recs
     assert recs["Most Points in a Season"]["week"] is None
+
+
+def test_records_carry_ranked_leaders():
+    # Three complete seasons so score records have several candidates to rank.
+    recs = {r["category"]: r
+            for r in compute_records([matchup_season(2023), matchup_season(2024),
+                                      matchup_season(2025)], {})}
+    wk = recs["Most Points in a Week"]
+    lead = wk["leaders"]
+    assert 1 < len(lead) <= 5                      # holder + runners-up, capped at 5
+    assert lead[0]["value"] == wk["value"]          # top leader mirrors the record
+    vals = [float(x["value"]) for x in lead]
+    assert vals == sorted(vals, reverse=True)       # ranked, best first
+    for L in lead:                                  # each row has the table's columns
+        assert set(("team", "owner_name", "season", "value")) <= set(L)
+    # Fewest Points is ranked ascending (worst = lowest first).
+    fp = [float(x["value"]) for x in recs["Fewest Points in a Week"]["leaders"]]
+    assert fp == sorted(fp)
 
 
 def test_owner_profiles_totals_and_h2h():
