@@ -1185,8 +1185,8 @@ tx_heatmap:
       color: null
   - id: lukstein
     name: Luke
-    total: 403
-    tx_per_year: 44.8
+    total: 405
+    tx_per_year: 45.0
     cells:
     - year: 2018
       count: 70
@@ -1213,12 +1213,12 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 7
-      color: '#fdeed3'
+      count: 9
+      color: '#fdeccf'
   - id: purpsworth
     name: Trevor
-    total: 315
-    tx_per_year: 39.4
+    total: 317
+    tx_per_year: 39.6
     cells:
     - year: 2018
       count: null
@@ -1245,8 +1245,8 @@ tx_heatmap:
       count: 41
       color: '#fbd495'
     - year: 2026
-      count: 1
-      color: '#fdf2de'
+      count: 3
+      color: '#fdf1da'
   - id: unclebadtouch38
     name: Fletcher
     total: 216
