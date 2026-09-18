@@ -14,5 +14,5 @@ hotlinks to dead third-party hosts) falls back to a plain gray circle via
 {%- if src and src != "" -%}
 {%- assign src = src | replace: 'http://', 'https://' -%}
 {%- assign sz = include.px | default: 24 -%}
-<img class="team-logo{% if include.class %} {{ include.class }}{% endif %}" src="{{ src }}" alt="" width="{{ sz }}" height="{{ sz }}" loading="lazy" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('team-logo--empty')">
+<img class="team-logo{% if include.class %} {{ include.class }}{% endif %}" src="{{ src }}" alt="" width="{{ sz }}" height="{{ sz }}" loading="lazy" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';this.classList.add('team-logo--empty')">
 {%- endif -%}

@@ -303,9 +303,10 @@ tbody td a:hover { color: var(--brand); }
   flex: 0 0 auto;
 }
 .team-logo--lg { width: 52px; height: 52px; border-width: 2px; }
-// Fallback when a logo 404s / is blocked: a plain gray circle (JS strips the
-// broken src and adds this class on error).
-.team-logo--empty { background: var(--rule-strong); }
+// Fallback when a logo 404s / is blocked: on error JS swaps in a transparent
+// pixel (kills the broken-image icon) and adds this class, so the badge shows as
+// a plain soft-gray circle inside the same frame.
+.team-logo--empty { background: #cfccc2; }
 .matchup__team {
   display: flex;
   align-items: center;
