@@ -37,6 +37,7 @@ except ImportError:
     sys.exit("the-league-espn-api is not installed. Run: pip install -r requirements-dev.txt")
 
 from lib.state import state_of, detect_state, advance_state
+from lib.playoff_order import corrected_standings
 
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
@@ -938,6 +939,18 @@ def main():
         key=lambda r: r["playoff_seed"],
     )
     playoff_ids = [team_to_fid.get(r["team_id"]) for r in seeded]
+
+    # The four-team Sacko years (8-team-playoff / 10-team leagues) ran a two-week
+    # single-elimination toilet bowl; ESPN ranked those seats by cumulative points
+    # across all three weeks, which disagrees with the bracket. Rewrite that tail
+    # from the bracket so the written file is already correct — no manual fix-ups.
+    if complete:
+        final_order = corrected_standings({
+            "final_standings": final_order,
+            "playoff_teams": playoff_ids,
+            "weeks_in_regular_season": reg_count,
+            "matchups": matchups,
+        })
 
     season_yaml = dump_season_yaml(args.year, reg_count, final_order, matchups,
                                    season_teams, playoff_ids,

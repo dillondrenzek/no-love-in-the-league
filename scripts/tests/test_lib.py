@@ -385,6 +385,41 @@ def test_read_page_sections_recap_top_preview_bottom():
     assert read_preview(Path(d) / "missing.md") is None
 
 
+def test_playoff_bracket_matches_final_standings():
+    """Across every season and playoff format (6- and 8-team fields, 10- and
+    12-team leagues), each captioned placement game must agree with the final
+    standings: its winner finished exactly one seat ahead of its loser, and the
+    Shiva/Sacko captions name the actual champion and last-place team. Advancement
+    is driven by the real ESPN matchups, so the brackets can't contradict how the
+    season finished."""
+    import glob
+    import yaml as _yaml
+    from lib.playoffs import playoff_bracket
+    files = sorted(glob.glob(str(Path(__file__).resolve().parents[2]
+                                 / "data" / "seasons" / "*.yml")))
+    checked = 0
+    for p in files:
+        season = _yaml.safe_load(Path(p).read_text())
+        b = playoff_bracket(season, {})
+        if b is None:
+            continue
+        checked += 1
+        fs = season["final_standings"]
+        pos = {f: i for i, f in enumerate(fs)}
+        labelled = [g for key in ("shiva", "sacko")
+                    for rnd in b[key]["rounds"] for g in rnd["games"] if g.get("label")]
+        for g in labelled:
+            pw, pl = pos[g["winner_fid"]], pos[g["loser_fid"]]
+            assert pw < pl and pl - pw == 1, (p, g["label"], pw + 1, pl + 1)
+            if g["label"] == "Shiva":
+                assert pw == 0, (p, "Shiva winner not champion")
+            if g["label"] == "Sacko":
+                assert pl == len(fs) - 1, (p, "Sacko loser not last")
+        # Every season with a bracket at least crowns its champion.
+        assert any(g["label"] == "Shiva" for g in labelled), (p, "no Shiva game")
+    assert checked >= 10, f"expected many seasons, checked {checked}"
+
+
 def test_team_logos_latest_and_on_scoreboard():
     from generate_owners import latest_logos
     from lib.weeks import week_summary

@@ -1,0 +1,37 @@
+{%- comment -%}
+One bracket game (or a bye). Param: g (a game dict from lib/playoffs). Two team
+rows — seed, logo, name, score — with the winner emphasized and the loser dimmed.
+A placement/round label (Shiva, Sacko, 3rd Place, …) sits above when present.
+{%- endcomment -%}
+{%- assign g = include.g -%}
+{%- comment -%} In the Sacko, a "sinking" game is one where losing drops you toward
+last — every game except the 7th- and 9th-place games, which are normal placement
+games. Sinking games flag the loser in red; the rest use normal winner highlight.
+{%- endcomment -%}
+{%- assign sink = false -%}
+{%- if include.sacko and g.label != '7th Place' and g.label != '9th Place' %}{% assign sink = true %}{% endif -%}
+<div class="bgame{% if sink %} bgame--sink{% endif %}">
+  {%- if g.label %}<div class="bgame__label">{{ g.label }}</div>{% endif -%}
+  {%- assign h = g.home -%}
+  <div class="bteam{% if h and g.winner_fid == h.fid %} bteam--win{% elsif g.decided %} bteam--lose{% endif %}">
+    {%- if h -%}
+    <span class="bteam__seed">{{ h.seed }}</span>
+    {%- include bits/team_logo.html src=h.logo px=20 -%}
+    <a class="bteam__name" href="{{ '/teams/' | append: h.fid | append: '/' | relative_url }}">{{ h.name }}</a>
+    <span class="bteam__score">{% if h.score %}{{ h.score }}{% endif %}</span>
+    {%- else -%}<span class="bteam__name bteam__name--tbd">TBD</span>{%- endif -%}
+  </div>
+  {%- if g.bye -%}
+  <div class="bteam bteam--empty"><span class="bteam__name">BYE</span></div>
+  {%- else -%}
+  {%- assign a = g.away -%}
+  <div class="bteam{% if a and g.winner_fid == a.fid %} bteam--win{% elsif g.decided %} bteam--lose{% endif %}">
+    {%- if a -%}
+    <span class="bteam__seed">{{ a.seed }}</span>
+    {%- include bits/team_logo.html src=a.logo px=20 -%}
+    <a class="bteam__name" href="{{ '/teams/' | append: a.fid | append: '/' | relative_url }}">{{ a.name }}</a>
+    <span class="bteam__score">{% if a.score %}{{ a.score }}{% endif %}</span>
+    {%- else -%}<span class="bteam__name bteam__name--tbd">TBD</span>{%- endif -%}
+  </div>
+  {%- endif -%}
+</div>

@@ -25,9 +25,12 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- if state == "season" or state == "playoffs" or state == "complete" %}{% assign live_or_done = true %}{% endif -%}
 {%- assign show_trades = false -%}
 {%- if d.trades and d.trades.size > 0 and live_or_done %}{% assign show_trades = true %}{% endif -%}
+{%- assign show_bracket = false -%}
+{%- if d.bracket %}{% assign show_bracket = true %}{% endif -%}
 {%- assign section_count = 0 -%}
 {%- if has_rows %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if has_weeks %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
+{%- if show_bracket %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_draft %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_trades %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 
@@ -38,6 +41,7 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 <nav class="season-nav" aria-label="Sections">
   {%- if has_rows %}<a href="#standings">Standings</a>{% endif -%}
   {%- if has_weeks %}<a href="#weekly">Weeks</a>{% endif -%}
+  {%- if show_bracket %}<a href="#playoffs">Playoffs</a>{% endif -%}
   {%- if show_draft %}<a href="#draft">Draft</a>{% endif -%}
   {%- if show_trades %}<a href="#trades">Trades</a>{% endif -%}
 </nav>
@@ -45,6 +49,7 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 
 {%- if has_weeks %}{% include sections/season/weeks.html pages=weekpages %}{% endif -%}
 {%- if has_rows %}{% include sections/season/standings.html d=d %}{% endif -%}
+{%- if show_bracket %}{% include sections/season/playoffs.html d=d %}{% endif -%}
 {%- if show_trades %}{% include sections/season/trades.html d=d %}{% endif -%}
 {%- if show_draft %}{% include sections/season/draft.html d=d %}{% endif -%}
 
