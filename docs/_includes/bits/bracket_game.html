@@ -4,7 +4,13 @@ rows — seed, logo, name, score — with the winner emphasized and the loser di
 A placement/round label (Shiva, Sacko, 3rd Place, …) sits above when present.
 {%- endcomment -%}
 {%- assign g = include.g -%}
-<div class="bgame">
+{%- comment -%} In the Sacko, a "sinking" game is one where losing drops you toward
+last — every game except the 7th- and 9th-place games, which are normal placement
+games. Sinking games flag the loser in red; the rest use normal winner highlight.
+{%- endcomment -%}
+{%- assign sink = false -%}
+{%- if include.sacko and g.label != '7th Place' and g.label != '9th Place' %}{% assign sink = true %}{% endif -%}
+<div class="bgame{% if sink %} bgame--sink{% endif %}">
   {%- if g.label %}<div class="bgame__label">{{ g.label }}</div>{% endif -%}
   {%- assign h = g.home -%}
   <div class="bteam{% if h and g.winner_fid == h.fid %} bteam--win{% elsif g.decided %} bteam--lose{% endif %}">

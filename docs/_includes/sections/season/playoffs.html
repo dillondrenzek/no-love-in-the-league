@@ -16,8 +16,9 @@ Param: d (a site.data.seasons.detail record); reads d.bracket (lib/playoffs).
     {%- for rnd in br.rounds -%}
     <div class="bracket-col">
       <div class="bracket-col__head">{{ rnd.label }}<span class="bracket-col__wk"> · Wk {{ rnd.week }}</span></div>
-      {%- for g in rnd.games -%}{% include bits/bracket_game.html g=g %}{%- endfor -%}
-      {%- for g in rnd.consolation -%}{% include bits/bracket_game.html g=g %}{%- endfor -%}
+      {%- assign is_sacko = false -%}{% if key == 'sacko' %}{% assign is_sacko = true %}{% endif -%}
+      {%- for g in rnd.games -%}{% include bits/bracket_game.html g=g sacko=is_sacko %}{%- endfor -%}
+      {%- for g in rnd.consolation -%}{% include bits/bracket_game.html g=g sacko=is_sacko %}{%- endfor -%}
     </div>
     {%- endfor -%}
   </div>
