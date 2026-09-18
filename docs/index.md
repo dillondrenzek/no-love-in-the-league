@@ -7,6 +7,19 @@ title: Home
 {% assign champ = latest.rows[0] %}
 {% assign sacko = latest.rows | last %}
 
+{%- comment -%} Current week = the latest week that has started (live or done). {%- endcomment -%}
+{%- assign cur_week = 0 -%}
+{%- assign cur_year = "" -%}
+{%- for w in site.data.weeks -%}
+  {%- assign wd = w[1] -%}
+  {%- if wd.state == "in_progress" or wd.state == "complete" -%}
+    {%- if wd.week > cur_week -%}
+      {%- assign cur_week = wd.week -%}
+      {%- assign cur_year = w[0] | split: "-" | first -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
 <section class="hero">
   <h1 class="hero__title">The League</h1>
   <a class="hero__subtitle hero__subtitle--link" href="{{ '/seasons/2026/' | relative_url }}">Season 13</a>
@@ -25,6 +38,8 @@ title: Home
   </div>
 
   <nav class="hero__links">
+    {%- if cur_week > 0 %}<a href="{{ '/seasons/' | append: cur_year | append: '/week-' | append: cur_week | append: '/' | relative_url }}">Current Week</a>{% endif %}
+    <a href="{{ '/seasons/2026/' | relative_url }}">Season 13</a>
     <a href="{{ '/history/' | relative_url }}">History</a>
     <a href="{{ '/records/' | relative_url }}">Records</a>
     <a href="{{ '/teams/' | relative_url }}">Owners</a>
