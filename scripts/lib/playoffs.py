@@ -15,6 +15,7 @@ dicts, or None when the season has no usable playoff data. Pure — no network.
 """
 
 from .data import regular_season_matchups, short_name_of
+from .playoff_order import six_team_playoff
 
 
 def _reg_stats(season):
@@ -85,6 +86,16 @@ def _bracket(season, franchises, members, seeds, weeks, kind, n_teams):
     if kind == "sacko" and len(members) == 4 and len(weeks) >= 3:
         weeks = weeks[:-1]
     by_week = _playoff_games(season, members, weeks)
+    # From 2024 on, the 5th/7th-place games are the second-to-last week's; the
+    # final-week rematch between two 5th-8th teams is meaningless, so drop it and
+    # let the real placement game stand.
+    fs_all = season.get("final_standings") or []
+    if len(fs_all) == 12 and (season.get("season") or 0) >= 2024 and weeks:
+        mid = set(fs_all[4:8])
+        fw = weeks[-1]
+        if by_week.get(fw):
+            by_week[fw] = [g for g in by_week[fw]
+                           if g[0] not in mid and g[1] not in mid]
     played_weeks = [w for w in weeks if by_week.get(w)]
     if len(played_weeks) < 2 or len(members) < 2:
         return None
@@ -172,14 +183,18 @@ def _bracket(season, franchises, members, seeds, weeks, kind, n_teams):
         games = []
         playing = set()
         for h, a, hs, as_ in by_week[w]:
-            if i == 0 and h in byes and a in byes:
-                continue                              # bye pairing: shown as byes
+            winner = h if hs >= as_ else a
+            label = placement(h, a, winner)
+            # The two bye seeds are shown as byes — unless their one meeting was
+            # itself a placement decider (e.g. the 9th-place game the sinker path
+            # never replayed), in which case show it as that game.
+            if i == 0 and h in byes and a in byes and label is None:
+                continue
             if (w, h, a) not in keep:
                 continue                              # dead rematch
             playing.add(h)
             playing.add(a)
-            winner = h if hs >= as_ else a
-            games.append(make_game(w, h, a, hs, as_, placement(h, a, winner)))
+            games.append(make_game(w, h, a, hs, as_, label))
         if i == 0 and n_byes:                         # round 1: byes bookend
             tops = [f for f in bye_fids if f not in playing]
             middle = sorted(games, key=lambda g: g["home"]["seed"] or 99)
@@ -204,12 +219,48 @@ def title_for(kind):
     return "Shiva Bracket" if kind == "shiva" else "Sacko Bracket"
 
 
+def _render_six_team(season, franchises, sim):
+    """Turn the rule-based six-team simulation (lib/playoff_order) into the display
+    shape the templates expect. The games already carry each team's real weekly
+    score, including games ESPN never scheduled."""
+    logos = season.get("team_logos") or {}
+    teams = season.get("teams", {})
+    seeds = sim["seeds"]
+
+    def side(fid, score):
+        return {"seed": seeds.get(fid), "fid": fid,
+                "name": teams.get(fid) or short_name_of(fid, franchises),
+                "logo": logos.get(fid, ""), "score": score}
+
+    def conv(g):
+        if g["bye"]:
+            return {"label": None, "week": g["week"], "decided": False, "bye": True,
+                    "home": side(g["home"], None), "away": None,
+                    "winner_fid": g["home"], "loser_fid": None}
+        return {"label": g["label"], "week": g["week"], "decided": True,
+                "home": side(g["home"], g["hs"]), "away": side(g["away"], g["as"]),
+                "winner_fid": g["winner"], "loser_fid": g["loser"]}
+
+    def rounds(rlist):
+        return [{"label": r["label"], "week": r["week"],
+                 "games": [conv(g) for g in r["games"]], "consolation": []}
+                for r in rlist]
+
+    return {"shiva": {"title": "Shiva Bracket", "rounds": rounds(sim["shiva"])},
+            "sacko": {"title": "Sacko Bracket", "rounds": rounds(sim["sacko"])},
+            "seeds": seeds}
+
+
 def playoff_bracket(season, franchises):
     """{'shiva': {...}, 'sacko': {...}, 'seeds': {fid: n}} or None.
 
-    Membership comes from the final standings: the championship bracket is the
-    teams that finished in the top playoff seats, the Sacko is everyone else.
-    That needs no seeding rules and works for every era's field size."""
+    From 2024 on, six-team seasons are reconstructed strictly from the league's
+    bracket rules (lib/playoff_order.six_team_playoff), using each team's real
+    weekly score and ignoring ESPN's pairings. Older seasons are rebuilt from the
+    actual ESPN matchups, with membership taken from the final standings."""
+    sim = six_team_playoff(season)
+    if sim:
+        return _render_six_team(season, franchises, sim)
     fs = season.get("final_standings") or []
     weeks = _playoff_weeks(season)
     n_playoff = len(season.get("playoff_teams") or [])

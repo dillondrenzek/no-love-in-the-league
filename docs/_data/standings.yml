@@ -43,16 +43,6 @@ seasons:
     pf_color: '#f9b750'
     pa: 1494.2
   - finish: 5
-    team: Thoughts and Players
-    logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
-    owner_id: theoceanpulse
-    owner_name: Dillon
-    record: 8-6
-    tag: null
-    pf: 1612.9
-    pf_color: '#f8ad4b'
-    pa: 1495.9
-  - finish: 6
     team: Big Brown Dak Makes em Waddle
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     owner_id: zachzoske
@@ -62,17 +52,17 @@ seasons:
     pf: 1703.3
     pf_color: '#f28742'
     pa: 1511.2
-  - finish: 7
-    team: Dump it on my Chest
-    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    owner_id: henpen28
-    owner_name: Henry
-    record: 5-9
+  - finish: 6
+    team: Thoughts and Players
+    logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
+    owner_id: theoceanpulse
+    owner_name: Dillon
+    record: 8-6
     tag: null
-    pf: 1411.9
-    pf_color: '#fdf3e0'
-    pa: 1606.0
-  - finish: 8
+    pf: 1612.9
+    pf_color: '#f8ad4b'
+    pa: 1495.9
+  - finish: 7
     team: 2x Runner Up
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     owner_id: lukstein
@@ -82,6 +72,16 @@ seasons:
     pf: 1479.8
     pf_color: '#fbdca8'
     pa: 1472.9
+  - finish: 8
+    team: Dont spit just swallow
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    owner_id: sturmanator15
+    owner_name: Wade
+    record: 7-7
+    tag: null
+    pf: 1537.3
+    pf_color: '#fac879'
+    pa: 1592.9
   - finish: 9
     team: Trick or Trick It’s Mike Vick
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -93,15 +93,15 @@ seasons:
     pf_color: '#fce8c4'
     pa: 1675.7
   - finish: 10
-    team: Dont spit just swallow
+    team: Dump it on my Chest
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    owner_id: sturmanator15
-    owner_name: Wade
-    record: 7-7
+    owner_id: henpen28
+    owner_name: Henry
+    record: 5-9
     tag: null
-    pf: 1537.3
-    pf_color: '#fac879'
-    pa: 1592.9
+    pf: 1411.9
+    pf_color: '#fdf3e0'
+    pa: 1606.0
   - finish: 11
     team: IDPs Forever
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg

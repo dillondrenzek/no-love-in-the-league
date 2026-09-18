@@ -12,7 +12,7 @@ Param: d (a site.data.seasons.detail record); reads d.bracket (lib/playoffs).
   {%- assign br = b[key] -%}
   <h3 class="bracket__title">{{ br.title }}</h3>
   <div class="table-scroll">
-  <div class="bracket">
+  <div class="bracket{% if key == 'sacko' %} bracket--sacko{% endif %}">
     {%- for rnd in br.rounds -%}
     <div class="bracket-col">
       <div class="bracket-col__head">{{ rnd.label }}<span class="bracket-col__wk"> · Wk {{ rnd.week }}</span></div>

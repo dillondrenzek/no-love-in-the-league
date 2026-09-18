@@ -229,11 +229,11 @@ jackperkins74:
     avg_pa: 101.6
   - opp_id: kevbots22
     opp_short: Kevin
-    record: 16-3
-    win_pct: '.842'
-    win_color: '#f18341'
-    avg_pf: 115.4
-    avg_pa: 95.4
+    record: 17-3
+    win_pct: '.850'
+    win_color: '#f18240'
+    avg_pf: 115.3
+    avg_pa: 95.0
   - opp_id: lukstein
     opp_short: Luke
     record: 11-10
@@ -2912,7 +2912,7 @@ zachzoske:
     team: Big Brown Dak Makes em Waddle
     tag: null
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-    finish: 6th
+    finish: 5th
     record: 9-5
     tx: 110
     in_progress: false
@@ -7347,7 +7347,7 @@ lukstein:
     team: 2x Runner Up
     tag: null
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-    finish: 8th
+    finish: 7th
     record: 8-6
     tx: 34
     in_progress: false
@@ -7513,11 +7513,11 @@ lukstein:
     avg_pa: 112.0
   - opp_id: henpen28
     opp_short: Henry
-    record: 7-10
-    win_pct: '.412'
-    win_color: '#fac167'
-    avg_pf: 100.2
-    avg_pa: 98.9
+    record: 7-11
+    win_pct: '.389'
+    win_color: '#fac46e'
+    avg_pf: 99.3
+    avg_pa: 99.4
   - opp_id: jackperkins74
     opp_short: Jack
     record: 10-11
@@ -9138,7 +9138,7 @@ sturmanator15:
     team: Dont spit just swallow
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    finish: 10th
+    finish: 8th
     record: 7-7
     tx: 52
     in_progress: false
@@ -11722,11 +11722,11 @@ kevbots22:
     avg_pa: 99.8
   - opp_id: jackperkins74
     opp_short: Jack
-    record: 3-16
-    win_pct: '.158'
-    win_color: '#fce0b2'
-    avg_pf: 95.4
-    avg_pa: 115.4
+    record: 3-17
+    win_pct: '.150'
+    win_color: '#fce1b4'
+    avg_pf: 95.0
+    avg_pa: 115.3
   - opp_id: schirmerj
     opp_short: Jono
     record: 12-5
@@ -12976,7 +12976,7 @@ theoceanpulse:
     team: Thoughts and Players
     tag: null
     logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
-    finish: 5th
+    finish: 6th
     record: 8-6
     tx: 50
     in_progress: false
@@ -15484,11 +15484,11 @@ schirmerj:
     avg_pa: 102.8
   - opp_id: purpsworth
     opp_short: Trevor
-    record: 5-4
-    win_pct: '.556'
-    win_color: '#f8ae4b'
-    avg_pf: 113.8
-    avg_pa: 111.5
+    record: 6-4
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 117.0
+    avg_pa: 112.2
   - opp_id: sturmanator15
     opp_short: Wade
     record: 12-11-1
@@ -18753,11 +18753,11 @@ purpsworth:
     avg_pa: 105.8
   - opp_id: schirmerj
     opp_short: Jono
-    record: 4-5
-    win_pct: '.444'
-    win_color: '#f9bd5d'
-    avg_pf: 111.5
-    avg_pa: 113.8
+    record: 4-6
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 112.2
+    avg_pa: 117.0
   - opp_id: kevbots22
     opp_short: Kevin
     record: 6-4
@@ -20094,7 +20094,7 @@ henpen28:
     team: Dump it on my Chest
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    finish: 7th
+    finish: 10th
     record: 5-9
     tx: 37
     in_progress: false
@@ -20281,11 +20281,11 @@ henpen28:
     avg_pa: 97.3
   - opp_id: lukstein
     opp_short: Luke
-    record: 10-7
-    win_pct: '.588'
-    win_color: '#f7a94a'
-    avg_pf: 98.9
-    avg_pa: 100.2
+    record: 11-7
+    win_pct: '.611'
+    win_color: '#f7a549'
+    avg_pf: 99.4
+    avg_pa: 99.3
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 9-7

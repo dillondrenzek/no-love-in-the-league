@@ -1280,4 +1280,12 @@ h4:hover > .heading-anchor,
 .bteam--win .bteam__score { color: var(--ink); font-weight: 700; }
 .bteam--lose .bteam__name,
 .bteam--lose .bteam__score { color: var(--faint); }
+/* Sacko bracket only: losing sinks you toward last, so flag the loser in red
+   (kept bold, not dimmed) and leave the winner unhighlighted. */
+.bracket--sacko .bteam--win { background: none; }
+.bracket--sacko .bteam--win .bteam__name,
+.bracket--sacko .bteam--win .bteam__score { font-weight: 400; }
+.bracket--sacko .bteam--lose { background: #f7dcdc; }
+.bracket--sacko .bteam--lose .bteam__name { color: var(--ink); font-weight: 700; }
+.bracket--sacko .bteam--lose .bteam__score { color: var(--ink); font-weight: 700; }
 .bteam--empty .bteam__name { color: var(--faint); font-style: italic; padding-left: 4px; }
