@@ -128,14 +128,18 @@ paragraph settles on the page.
 </div>
 
 <div class="records-list">
-  <section class="record-row">
-    <h3 class="record-row__name">Most Points in a Week</h3>
-    <article class="record-card">
-      <div class="record-card__value">184.90</div>
-      <div class="record-card__owner"><a href="#">Kevin</a></div>
-      <div class="record-card__team">Tom Bradys Only Fans</div>
-      <div class="record-card__meta"><a href="#">2024 · Week 17</a></div>
-    </article>
+  <section class="record-block">
+    <h3 class="record-block__name">Most Points in a Week</h3>
+    <div class="table-scroll">
+    <table class="record-leaders">
+      <thead><tr><th>Team</th><th>Owner</th><th>Season</th><th class="num">Value</th></tr></thead>
+      <tbody>
+        <tr class="is-record"><td>Tom Bradys Only Fans</td><td><a href="#">Kevin</a></td><td><a href="#">2024 · Wk 17</a></td><td class="num">184.90</td></tr>
+        <tr><td>Pukkake</td><td><a href="#">Jack</a></td><td><a href="#">2025 · Wk 3</a></td><td class="num">177.20</td></tr>
+        <tr><td>2x Runner Up</td><td><a href="#">Luke</a></td><td><a href="#">2024 · Wk 9</a></td><td class="num">172.40</td></tr>
+      </tbody>
+    </table>
+    </div>
   </section>
 </div>
 

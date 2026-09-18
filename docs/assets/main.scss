@@ -822,91 +822,57 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 .season-section > h2 { margin-top: 0; }
 
 // =============================================================================
-// Record book (two-up grid, name above each card)
+// Record book (two-up grid of leaderboard tables)
 // =============================================================================
+.records-nav { margin: 1.2em 0 0; }
 .records-section {
-  margin: 1.8em 0 0;
+  margin: 3em 0 0;                     // roomy separation between sections
   padding-bottom: 0.3em;
   border-bottom: 2px solid var(--rule-strong);
   font-size: 1.35rem;
+  scroll-margin-top: 1.2em;            // jump-nav anchors don't hug the top
 }
-.records-section + .records-list { margin-top: 1.1em; }
+.records-nav + .records-section { margin-top: 1.4em; }  // tighter right after the nav
+.records-section + .records-list { margin-top: 2.1em; }
 .records-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px 24px;
-  margin: 1.6em 0 2em;
+  grid-template-columns: 1fr;         // one full-width table per row
+  gap: 34px;                          // let the tables breathe
+  margin: 1.6em 0 2.8em;
 }
-.record-row {
+.record-block {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
-.record-row__name {
-  margin: 0;                 // override the h3 top margin inside a card row
-  font-size: 1.15rem;
-  text-align: center;
+.record-block__name {
+  margin: 0;
+  font-size: 1.1rem;
 }
-.record-card {
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-  padding: 18px 20px;
-  background: var(--bg);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-.record-card__value {
-  font-family: var(--mono);
-  font-variant-numeric: tabular-nums;
-  font-weight: 800;
-  font-size: 2rem;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
+// The record + runners-up table. Compact so two fit side by side.
+.record-leaders { margin: 0.2em 0 0; font-size: 0.9rem; }
+.record-leaders thead th { font-size: 0.6rem; padding: 0 8px 6px; }
+.record-leaders tbody td { padding: 6px 8px; }
+// First column here is the Team, not a quiet index — undo the base td:first-child.
+.record-leaders tbody td:first-child {
   color: var(--ink);
-  margin-bottom: 8px;
+  width: auto;
+  white-space: normal;
 }
-.record-card__subvalue {
-  font-family: var(--mono);
-  font-variant-numeric: tabular-nums;
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin: -6px 0 6px;
+.record-leaders td.num { color: var(--ink); }
+// The record holder: the top row, larger and emphasized above the runners-up.
+.record-leaders tr.is-record td {
+  font-weight: 700;
+  font-size: 1.28rem;
+  background: var(--row-hover);
+  border-bottom: 2px solid var(--rule-strong);
 }
-.record-card__owner { font-weight: 700; font-size: 1.05rem; }
-.record-card__owner a { color: var(--ink); text-decoration: none; }
-.record-card__owner a:hover { color: var(--brand); }
-.record-card__team {
-  font-family: var(--mono);
-  color: var(--muted);
-  font-size: 0.75rem;
-}
-.record-card__opponent {
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-top: 2px;
-}
-.record-card__opponent a { color: var(--muted); text-decoration: none; }
-.record-card__opponent a:hover { color: var(--brand); }
-.record-card__opp-team {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-}
-.record-card__meta {
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 6px;
-}
-.record-card__meta a { color: var(--muted); text-decoration: none; }
-.record-card__meta a:hover { color: var(--brand); }
+.record-leaders tr.is-record td.num { font-size: 1.55rem; }
+.record-leaders__vs { color: var(--muted); font-size: 0.75rem; }
+.record-leaders__sub { color: var(--muted); font-size: 0.72rem; font-weight: 400; }
 @media (max-width: 640px) {
   .records-list { grid-template-columns: 1fr; }
-  .record-row__name { font-size: 1.05rem; }
+  .record-block__name { font-size: 1rem; }
 }
 
 // =============================================================================

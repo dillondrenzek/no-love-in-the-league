@@ -1,0 +1,67 @@
+{%- comment -%}
+One record as a short leaderboard: the record holder (top, highlighted) plus a few
+runners-up. Param: r (a record from site.data.records.records, which carries a
+`leaders` list and a `tabular` flag).
+
+Records tied to a team-season (best record, scoring marks, …) show
+Team · Owner · Season · Value. All-time franchise aggregates (Most Championships,
+Most Trades, …) have no team or season, so they show just Owner · Value.
+{%- endcomment -%}
+{%- assign r = include.r -%}
+<section class="record-block">
+  <h3 class="record-block__name">{{ r.category }}</h3>
+  <div class="table-scroll">
+  <table class="record-leaders">
+    {%- if r.tabular %}
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>Owner</th>
+        <th>Season</th>
+        <th class="num">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for L in r.leaders %}
+      <tr{% if forloop.first %} class="is-record"{% endif %}>
+        <td>
+          {%- if L.team %}{{ L.team }}{% else %}—{% endif -%}
+          {%- if L.opp_owner_name %} <span class="record-leaders__vs">vs {{ L.opp_team | default: L.opp_owner_name }}</span>{% endif -%}
+        </td>
+        <td>
+          {%- if L.owner_id -%}
+          <a href="{{ '/teams/' | append: L.owner_id | append: '/' | relative_url }}">{{ L.owner_name }}</a>
+          {%- else -%}{{ L.owner_name }}{%- endif -%}
+        </td>
+        <td>
+          {%- if L.season -%}
+          <a href="{{ '/seasons/' | append: L.season | append: '/' | relative_url }}">{{ L.season }}{% if L.week %} · Wk {{ L.week }}{% endif %}</a>
+          {%- else -%}—{%- endif -%}
+        </td>
+        <td class="num">{{ L.value }}{% if L.sub_value %} <span class="record-leaders__sub">{{ L.sub_value }}</span>{% endif %}</td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+    {%- else %}
+    <thead>
+      <tr>
+        <th>Owner</th>
+        <th class="num">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for L in r.leaders %}
+      <tr{% if forloop.first %} class="is-record"{% endif %}>
+        <td>
+          {%- if L.owner_id -%}
+          <a href="{{ '/teams/' | append: L.owner_id | append: '/' | relative_url }}">{{ L.owner_name }}</a>
+          {%- else -%}{{ L.owner_name }}{%- endif -%}
+        </td>
+        <td class="num">{{ L.value }}</td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+    {%- endif %}
+  </table>
+  </div>
+</section>

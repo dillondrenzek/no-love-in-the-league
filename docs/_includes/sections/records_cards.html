@@ -1,29 +1,46 @@
 {%- comment -%}
 Record book grouped into sections. Each record carries a `section`; we render a
-heading per section (in a fixed order), then its records as rows — the record's
-name (h3) on the left and a centered info card on the right. Any record whose
-section isn't in the list below falls through to a catch-all "Other" group so
-nothing is ever silently dropped. Reads site.data.records.records.
+jump-nav to the sections that have records, then a heading per section (in a fixed
+order) with an anchor id, then its records as a stack of short leaderboard tables
+(the holder on top, a few runners-up below). Records tied to a team-season show
+Team · Owner · Season · Value; all-time franchise aggregates show just
+Owner · Value (see bits/record_table.html). Any record in an unlisted section
+falls through to a catch-all "Other" group so nothing is dropped. Reads
+site.data.records.records.
 {%- endcomment -%}
-{%- assign section_order = "Standings & Titles,Scoring,Roster & Draft" | split: "," -%}
+{%- assign section_order = "Titles,Scoring,Standings,Roster & Draft" | split: "," -%}
+{%- assign placed_count = 0 -%}
+{%- for sec in section_order -%}
+  {%- assign rows = site.data.records.records | where: "section", sec -%}
+  {%- assign placed_count = placed_count | plus: rows.size -%}
+{%- endfor -%}
+{%- assign total = site.data.records.records | size -%}
+
+<nav class="records-nav season-nav" aria-label="Record sections">
+  {%- for sec in section_order -%}
+    {%- assign rows = site.data.records.records | where: "section", sec -%}
+    {%- if rows.size > 0 %}<a href="#{{ sec | slugify }}">{{ sec }}</a>{% endif -%}
+  {%- endfor -%}
+  {%- if placed_count < total %}<a href="#other">Other</a>{% endif -%}
+</nav>
+
 {%- assign shown = 0 -%}
 {%- for sec in section_order %}
   {%- assign rows = site.data.records.records | where: "section", sec -%}
   {%- if rows.size > 0 %}
-<h2 class="records-section">{{ sec }}</h2>
+<h2 class="records-section" id="{{ sec | slugify }}">{{ sec }}</h2>
 <div class="records-list">
-  {%- for r in rows %}{% include bits/record_card.html r=r %}{%- endfor %}
+  {%- for r in rows %}{% include bits/record_table.html r=r %}{%- endfor %}
 </div>
   {%- assign shown = shown | plus: rows.size -%}
   {%- endif %}
 {%- endfor %}
-{%- assign total = site.data.records.records | size -%}
 {%- if shown < total %}
-{%- assign placed = "Standings & Titles,Scoring,Roster & Draft" | split: "," -%}
-<h2 class="records-section">Other</h2>
+{%- assign placed = "Titles,Scoring,Standings,Roster & Draft" | split: "," -%}
+<h2 class="records-section" id="other">Other</h2>
 <div class="records-list">
   {%- for r in site.data.records.records %}
-  {%- unless placed contains r.section %}{% include bits/record_card.html r=r %}{%- endunless %}
+  {%- unless placed contains r.section %}{% include bits/record_table.html r=r %}{%- endunless %}
   {%- endfor %}
 </div>
 {%- endif %}

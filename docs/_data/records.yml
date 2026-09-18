@@ -11,7 +11,59 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
-  section: Standings & Titles
+  section: Standings
+  tabular: true
+  leaders:
+  - value: 11-1-1
+    team: Hans Blitz! Ohh noo!
+    owner_name: Dillon
+    owner_id: theoceanpulse
+    season: 2019
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 12-2
+    team: Thoughts and Players
+    owner_name: Dillon
+    owner_id: theoceanpulse
+    season: 2023
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 12-2
+    team: Koo Koo Kachoo
+    owner_name: Shawnee
+    owner_id: shawne2520997
+    season: 2021
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 11-2
+    team: Lamar's Donger
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: 2019
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 11-2
+    team: Mixon's Gurley Fight Club
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2018
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Worst Regular-Season Record
   value: 1-12
   sub_value: null
@@ -24,7 +76,59 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
-  section: Standings & Titles
+  section: Standings
+  tabular: true
+  leaders:
+  - value: 1-12
+    team: Brown Lives Matter
+    owner_name: Odie
+    owner_id: master-otis
+    season: 2016
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 1-12
+    team: Haters Gonna Hate
+    owner_name: Nate
+    owner_id: whowonthelastsuperbowl
+    season: 2014
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 2-12
+    team: Tom Bradys Only Fans
+    owner_name: Kevin
+    owner_id: kevbots22
+    season: 2024
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 2-12
+    team: Naggar's In Paris
+    owner_name: Kevin
+    owner_id: kevbots22
+    season: 2022
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: 3-11
+    team: Trick or Trick It’s Mike Vick
+    owner_name: Nate
+    owner_id: whowonthelastsuperbowl
+    season: 2025
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Championships
   value: '3'
   sub_value: null
@@ -37,7 +141,124 @@ records:
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
-  section: Standings & Titles
+  section: Titles
+  tabular: false
+  leaders:
+  - value: '3'
+    team: null
+    owner_name: Henry
+    owner_id: henpen28
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '2'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '2'
+    team: null
+    owner_name: Shawnee
+    owner_id: shawne2520997
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1'
+    team: null
+    owner_name: Luke
+    owner_id: lukstein
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1'
+    team: null
+    owner_name: Fletcher
+    owner_id: unclebadtouch38
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+- category: Most Sackos
+  value: '2'
+  sub_value: null
+  season: null
+  week: null
+  holder: Shawnee
+  owner_id: shawne2520997
+  owner_name: Shawnee
+  team: null
+  opp_owner_id: null
+  opp_owner_name: null
+  opp_team: null
+  section: Titles
+  tabular: false
+  leaders:
+  - value: '2'
+    team: null
+    owner_name: Shawnee
+    owner_id: shawne2520997
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '2'
+    team: null
+    owner_name: Fletcher
+    owner_id: unclebadtouch38
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '2'
+    team: null
+    owner_name: Zach
+    owner_id: zachzoske
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '2'
+    team: null
+    owner_name: Nate
+    owner_id: whowonthelastsuperbowl
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Trades
   value: '16'
   sub_value: null
@@ -51,6 +272,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Roster & Draft
+  tabular: false
+  leaders:
+  - value: '16'
+    team: null
+    owner_name: Zach
+    owner_id: zachzoske
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '13'
+    team: null
+    owner_name: Dillon
+    owner_id: theoceanpulse
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '8'
+    team: null
+    owner_name: Luke
+    owner_id: lukstein
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '7'
+    team: null
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '6'
+    team: null
+    owner_name: Trevor
+    owner_id: purpsworth
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Times Drafting 1.01
   value: '4'
   sub_value: null
@@ -64,6 +337,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Roster & Draft
+  tabular: false
+  leaders:
+  - value: '4'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '3'
+    team: null
+    owner_name: Kevin
+    owner_id: kevbots22
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '2'
+    team: null
+    owner_name: Shawnee
+    owner_id: shawne2520997
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1'
+    team: null
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1'
+    team: null
+    owner_name: Trevor
+    owner_id: purpsworth
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Transactions
   value: '1034'
   sub_value: null
@@ -77,6 +402,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Roster & Draft
+  tabular: false
+  leaders:
+  - value: '1034'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '925'
+    team: null
+    owner_name: Zach
+    owner_id: zachzoske
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '780'
+    team: null
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '457'
+    team: null
+    owner_name: Jono
+    owner_id: schirmerj
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '440'
+    team: null
+    owner_name: Dillon
+    owner_id: theoceanpulse
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Transactions in a Season
   value: '160'
   sub_value: null
@@ -90,6 +467,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Roster & Draft
+  tabular: true
+  leaders:
+  - value: '160'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2020
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '160'
+    team: null
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: 2020
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '158'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2021
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '151'
+    team: null
+    owner_name: Zach
+    owner_id: zachzoske
+    season: 2019
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '139'
+    team: null
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: 2021
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Points in a Week
   value: '184.90'
   sub_value: null
@@ -103,6 +532,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Scoring
+  tabular: true
+  leaders:
+  - value: '184.90'
+    team: Tom Bradys Only Fans
+    owner_name: Kevin
+    owner_id: kevbots22
+    season: 2024
+    week: 17
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '184.00'
+    team: Nix Out For Harambe
+    owner_name: Zach
+    owner_id: zachzoske
+    season: 2024
+    week: 16
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '182.40'
+    team: Used Napkin
+    owner_name: Trevor
+    owner_id: purpsworth
+    season: 2023
+    week: 13
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '182.10'
+    team: IDP'd My Pants
+    owner_name: Jono
+    owner_id: schirmerj
+    season: 2023
+    week: 13
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '179.60'
+    team: Hans Blitz! Ohh noo!
+    owner_name: Dillon
+    owner_id: theoceanpulse
+    season: 2018
+    week: 12
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Most Points in a Season
   value: '1890.90'
   sub_value: null
@@ -116,6 +597,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Scoring
+  tabular: true
+  leaders:
+  - value: '1890.90'
+    team: 2x Runner Up
+    owner_name: Luke
+    owner_id: lukstein
+    season: 2024
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1769.90'
+    team: Pukkake
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2025
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1764.60'
+    team: 5 Star Men
+    owner_name: Jono
+    owner_id: schirmerj
+    season: 2024
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1748.50'
+    team: Thoughts and Players
+    owner_name: Dillon
+    owner_id: theoceanpulse
+    season: 2023
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '1733.50'
+    team: In Goff we trust
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: 2023
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Fewest Points in a Week
   value: '19.30'
   sub_value: null
@@ -129,6 +662,58 @@ records:
   opp_owner_name: null
   opp_team: null
   section: Scoring
+  tabular: true
+  leaders:
+  - value: '19.30'
+    team: The People's Commissioner
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: 2015
+    week: 16
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '22.00'
+    team: Gronkey Punch
+    owner_name: Zach
+    owner_id: zachzoske
+    season: 2015
+    week: 16
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '32.20'
+    team: Brown Lives Matter
+    owner_name: Odie
+    owner_id: master-otis
+    season: 2016
+    week: 11
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '35.20'
+    team: Wadgerach Sturdellske
+    owner_name: Nate
+    owner_id: whowonthelastsuperbowl
+    season: 2019
+    week: 11
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
+  - value: '36.00'
+    team: Haters Gonna Hate
+    owner_name: Nate
+    owner_id: whowonthelastsuperbowl
+    season: 2014
+    week: 11
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
 - category: Biggest Blowout
   value: '126.10'
   sub_value: 184.9–58.8
@@ -142,6 +727,58 @@ records:
   opp_owner_name: Shawnee
   opp_team: Save a horse, Ride the Cowboys
   section: Scoring
+  tabular: true
+  leaders:
+  - value: '126.10'
+    team: Tom Bradys Only Fans
+    owner_name: Kevin
+    owner_id: kevbots22
+    season: 2024
+    week: 17
+    sub_value: 184.9–58.8
+    opp_team: Save a horse, Ride the Cowboys
+    opp_owner_name: Shawnee
+    opp_owner_id: shawne2520997
+  - value: '107.50'
+    team: Tank4Picks .
+    owner_name: Jono
+    owner_id: schirmerj
+    season: 2019
+    week: 11
+    sub_value: 142.7–35.2
+    opp_team: Wadgerach Sturdellske
+    opp_owner_name: Nate
+    opp_owner_id: whowonthelastsuperbowl
+  - value: '100.80'
+    team: Pukkake
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2025
+    week: 14
+    sub_value: 177.2–76.4
+    opp_team: IDPs Forever
+    opp_owner_name: Jono
+    opp_owner_id: schirmerj
+  - value: '93.50'
+    team: Jackie PooPooPants
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2021
+    week: 6
+    sub_value: 155.1–61.6
+    opp_team: WA Fantasy Football Team
+    opp_owner_name: Trevor
+    opp_owner_id: purpsworth
+  - value: '92.00'
+    team: Wadger Sturdell
+    owner_name: Wade
+    owner_id: sturmanator15
+    season: 2016
+    week: 11
+    sub_value: 124.2–32.2
+    opp_team: Brown Lives Matter
+    opp_owner_name: Odie
+    opp_owner_id: master-otis
 - category: Highest Combined Score
   value: '330.10'
   sub_value: 184.0–146.1
@@ -155,3 +792,55 @@ records:
   opp_owner_name: Grant
   opp_team: KillDilly Elegy
   section: Scoring
+  tabular: true
+  leaders:
+  - value: '330.10'
+    team: Nix Out For Harambe
+    owner_name: Zach
+    owner_id: zachzoske
+    season: 2024
+    week: 16
+    sub_value: 184.0–146.1
+    opp_team: KillDilly Elegy
+    opp_owner_name: Grant
+    opp_owner_id: gganoom
+  - value: '309.00'
+    team: Trick or Trick It’s Mike Vick
+    owner_name: Nate
+    owner_id: whowonthelastsuperbowl
+    season: 2025
+    week: 10
+    sub_value: 158.7–150.3
+    opp_team: D***er my Sufficient Tight End
+    opp_owner_name: Shawnee
+    opp_owner_id: shawne2520997
+  - value: '307.80'
+    team: I am dead inside
+    owner_name: Trevor
+    owner_id: purpsworth
+    season: 2024
+    week: 13
+    sub_value: 167.0–140.8
+    opp_team: KillDilly Elegy
+    opp_owner_name: Grant
+    opp_owner_id: gganoom
+  - value: '306.80'
+    team: 2x Runner Up
+    owner_name: Luke
+    owner_id: lukstein
+    season: 2024
+    week: 9
+    sub_value: 161.3–145.5
+    opp_team: Thoughts and Players
+    opp_owner_name: Dillon
+    opp_owner_id: theoceanpulse
+  - value: '304.90'
+    team: Vinegar Strokes
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: 2023
+    week: 3
+    sub_value: 177.8–127.1
+    opp_team: Thoughts and Players
+    opp_owner_name: Dillon
+    opp_owner_id: theoceanpulse
