@@ -37,9 +37,35 @@ def week_state(season, week):
     return "future"
 
 
+def _records_before(season, week):
+    """{fid: [w, l, t]} from each team's completed regular-season games *before*
+    `week` — the record each team carries into this week's matchup."""
+    rec = {}
+    for m in season.get("matchups") or []:
+        if m.get("week", 0) >= week or m.get("playoff"):
+            continue
+        if not game_final(m):
+            continue
+        hs, as_ = m.get("home_score"), m.get("away_score")
+        if hs is None or as_ is None:
+            continue
+        for fid, pf, pa in ((m["home"], hs, as_), (m["away"], as_, hs)):
+            r = rec.setdefault(fid, [0, 0, 0])
+            r[0 if pf > pa else 1 if pa > pf else 2] += 1
+    return rec
+
+
+def _rec_str(r):
+    if not r or sum(r) == 0:
+        return None
+    return f"{r[0]}-{r[1]}-{r[2]}" if r[2] else f"{r[0]}-{r[1]}"
+
+
 def _scoreboard(season, franchises, games):
     teams = season.get("teams", {})
     logos = season.get("team_logos") or {}
+    week = games[0].get("week") if games else None
+    records = _records_before(season, week) if week else {}
     board = []
     for m in games:
         h, a = m["home"], m["away"]
@@ -55,6 +81,8 @@ def _scoreboard(season, franchises, games):
             "away_team": teams.get(a) or short_name_of(a, franchises),
             "away_owner": short_name_of(a, franchises),
             "away_logo": logos.get(a, ""),
+            "home_record": _rec_str(records.get(h)),
+            "away_record": _rec_str(records.get(a)),
             "scored": scored,
             "final": final,
             "live": scored and not final,

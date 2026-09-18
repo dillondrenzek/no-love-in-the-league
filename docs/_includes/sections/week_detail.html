@@ -18,7 +18,7 @@ complete week. The AI recap lives on the page, below this include.
         {% include bits/team_logo.html src=g.home_logo class="team-logo--row" px=40 %}
         <div class="matchup__id">
           <div class="matchup__team">{%- if g.home_id -%}<a href="{{ '/teams/' | append: g.home_id | append: '/' | relative_url }}">{{ g.home_team }}</a>{%- else -%}{{ g.home_team }}{%- endif -%}</div>
-          <div class="matchup__owner owner-name">{{ g.home_owner }}</div>
+          <div class="matchup__owner owner-name">{{ g.home_owner }}{%- if g.home_record %} <span class="matchup__record">({{ g.home_record }})</span>{% endif -%}</div>
         </div>
       </div>
       <div class="matchup__pts">
@@ -31,7 +31,7 @@ complete week. The AI recap lives on the page, below this include.
         {% include bits/team_logo.html src=g.away_logo class="team-logo--row" px=40 %}
         <div class="matchup__id">
           <div class="matchup__team">{%- if g.away_id -%}<a href="{{ '/teams/' | append: g.away_id | append: '/' | relative_url }}">{{ g.away_team }}</a>{%- else -%}{{ g.away_team }}{%- endif -%}</div>
-          <div class="matchup__owner owner-name">{{ g.away_owner }}</div>
+          <div class="matchup__owner owner-name">{{ g.away_owner }}{%- if g.away_record %} <span class="matchup__record">({{ g.away_record }})</span>{% endif -%}</div>
         </div>
       </div>
       <div class="matchup__pts">

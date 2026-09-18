@@ -10,6 +10,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: null
+    away_record: null
     scored: true
     final: true
     live: false
@@ -27,6 +29,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: null
+    away_record: null
     scored: true
     final: true
     live: false
@@ -44,6 +48,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: null
+    away_record: null
     scored: true
     final: true
     live: false
@@ -61,6 +67,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: null
+    away_record: null
     scored: true
     final: true
     live: false
@@ -78,6 +86,8 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    home_record: null
+    away_record: null
     scored: true
     final: true
     live: false
@@ -95,6 +105,8 @@
     away_team: Tuten Your Mom
     away_owner: Zach
     away_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    home_record: null
+    away_record: null
     scored: true
     final: true
     live: false
@@ -243,6 +255,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 1-0
+    away_record: 0-1
     scored: true
     final: false
     live: true
@@ -262,6 +276,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 0-0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -276,6 +292,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: true
     final: false
     live: true
@@ -295,6 +313,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -309,6 +329,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-0-1
+    away_record: 1-0
     scored: true
     final: false
     live: true
@@ -328,6 +350,8 @@
     away_team: Return of the IDP
     away_owner: Jono
     away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: true
     final: false
     live: true
@@ -444,6 +468,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -456,6 +482,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 0-0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -468,6 +496,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -480,6 +510,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -492,6 +524,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -504,6 +538,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -523,6 +559,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -535,6 +573,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -547,6 +587,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -559,6 +601,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -571,6 +615,8 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -583,6 +629,8 @@
     away_team: 2x Runner Up
     away_owner: Luke
     away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -602,6 +650,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -614,6 +664,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -626,6 +678,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -638,6 +692,8 @@
     away_team: 2x Runner Up
     away_owner: Luke
     away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -650,6 +706,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -662,6 +720,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -681,6 +741,8 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -693,6 +755,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -705,6 +769,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -717,6 +783,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -729,6 +797,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -741,6 +811,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -760,6 +832,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -772,6 +846,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -784,6 +860,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -796,6 +874,8 @@
     away_team: Return of the IDP
     away_owner: Jono
     away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -808,6 +888,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -820,6 +902,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -839,6 +923,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -851,6 +937,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -863,6 +951,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 0-0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -875,6 +965,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -887,6 +979,8 @@
     away_team: 2x Runner Up
     away_owner: Luke
     away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -899,6 +993,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -918,6 +1014,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -930,6 +1028,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -942,6 +1042,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 0-0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -954,6 +1056,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -966,6 +1070,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -978,6 +1084,8 @@
     away_team: Return of the IDP
     away_owner: Jono
     away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -997,6 +1105,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1009,6 +1119,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1021,6 +1133,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1033,6 +1147,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1045,6 +1161,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1057,6 +1175,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1076,6 +1196,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1088,6 +1210,8 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1100,6 +1224,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1112,6 +1238,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1124,6 +1252,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1136,6 +1266,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1155,6 +1287,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1167,6 +1301,8 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1179,6 +1315,8 @@
     away_team: 2x Runner Up
     away_owner: Luke
     away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1191,6 +1329,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1203,6 +1343,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1215,6 +1357,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1234,6 +1378,8 @@
     away_team: I am dead inside
     away_owner: Trevor
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1246,6 +1392,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1258,6 +1406,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1270,6 +1420,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1282,6 +1434,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1294,6 +1448,8 @@
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    home_record: 1-0
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1313,6 +1469,8 @@
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    home_record: 1-0
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1325,6 +1483,8 @@
     away_team: Swift kick in the Dak
     away_owner: Shawnee
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1337,6 +1497,8 @@
     away_team: The ChoSimba Ones
     away_owner: Dillon
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    home_record: 0-1
+    away_record: 0-0-1
     scored: false
     final: false
     live: false
@@ -1349,6 +1511,8 @@
     away_team: Cornstar
     away_owner: Lexi
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    home_record: 0-1
+    away_record: 1-0
     scored: false
     final: false
     live: false
@@ -1361,6 +1525,8 @@
     away_team: One Big Beautiful Dill
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    home_record: 0-1
+    away_record: 0-1
     scored: false
     final: false
     live: false
@@ -1373,6 +1539,8 @@
     away_team: Gibbed for your pleasure
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    home_record: 1-0
+    away_record: 1-0
     scored: false
     final: false
     live: false

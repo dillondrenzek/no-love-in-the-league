@@ -350,6 +350,7 @@ tbody td a:hover { color: var(--brand); }
 .owner-header { display: flex; align-items: center; gap: 14px; }
 .owner-header__text { min-width: 0; }
 .matchup__owner { display: block; font-size: 0.78rem; margin-top: 1px; }
+.matchup__record { font-family: var(--mono); font-size: 0.7rem; color: var(--faint); }
 .matchup__score {
   font-family: var(--sans);
   font-size: 1.9rem;
