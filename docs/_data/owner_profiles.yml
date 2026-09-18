@@ -7325,7 +7325,7 @@ lukstein:
     playoff_apps: 7
     trades: 8
     trades_known: false
-    tx_per_year: 44.8
+    tx_per_year: 45.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -7339,7 +7339,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 5th
     record: 1-0
-    tx: 7
+    tx: 9
     in_progress: true
     pf: 96.5
     pa: 85.4
@@ -7730,6 +7730,10 @@ lukstein:
     - player: Kyler Murray
       via: add
       week: 1
+      waiver: false
+    - player: Kyle Williams
+      via: add
+      week: 2
       waiver: false
   - year: 2025
     players:
@@ -9116,7 +9120,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 86.7
+    tx_per_year: 86.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -9130,7 +9134,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 6th
     record: 0-1
-    tx: 3
+    tx: 5
     in_progress: true
     pf: 146.7
     pa: 161.3
@@ -9516,6 +9520,10 @@ sturmanator15:
     - player: Malik Washington
       via: add
       week: 1
+      waiver: false
+    - player: Chase McLaughlin
+      via: add
+      week: 2
       waiver: false
     - player: Mack Hollins
       via: add
@@ -18619,7 +18627,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: false
-    tx_per_year: 39.4
+    tx_per_year: 39.6
     tx_known: true
     seasons: 8
     best_finish:
@@ -18634,7 +18642,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 12th
     record: 0-1
-    tx: 1
+    tx: 3
     in_progress: true
     pf: 85.4
     pa: 96.5
@@ -18943,6 +18951,10 @@ purpsworth:
       via: add
       week: 1
       waiver: false
+    - player: Steelers D/ST
+      via: add
+      week: 2
+      waiver: true
   - year: 2025
     players:
     - player: Malik Nabers

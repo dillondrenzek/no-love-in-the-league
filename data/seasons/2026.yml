@@ -98,9 +98,9 @@ matchups:
   - { week:  2, home: jackperkins74, away: gganoom, home_score: 39.3, away_score: 0.0, playoff: false, final: false, home_proj: 127.14, away_proj: 112.84 }
   - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.54, away_proj: 120.39 }
   - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: -0.1, away_score: 14.2, playoff: false, final: false, home_proj: 112.51, away_proj: 124.96 }
-  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 101.52, away_proj: 120.25 }
+  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 115.88, away_proj: 121.76 }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 0.0, away_score: 27.4, playoff: false, final: false, home_proj: 112.97, away_proj: 116.42 }
-  - { week:  2, home: zachzoske, away: schirmerj, home_score: 30.7, away_score: 48.0, playoff: false, final: false, home_proj: 113.91, away_proj: 117.42 }
+  - { week:  2, home: zachzoske, away: schirmerj, home_score: 30.7, away_score: 48.0, playoff: false, final: false, home_proj: 112.15, away_proj: 117.42 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }
@@ -252,11 +252,11 @@ transactions:
   gganoom: { adds: 2, drops: 1, moves: 3 }
   jackperkins74: { adds: 17, drops: 12, moves: 29 }
   kevbots22: { adds: 1, drops: 0, moves: 1 }
-  lukstein: { adds: 5, drops: 2, moves: 7 }
-  purpsworth: { adds: 1, drops: 0, moves: 1 }
+  lukstein: { adds: 6, drops: 3, moves: 9 }
+  purpsworth: { adds: 2, drops: 1, moves: 3 }
   schirmerj: { adds: 1, drops: 0, moves: 1 }
   shawne2520997: { adds: 2, drops: 2, moves: 4 }
-  sturmanator15: { adds: 2, drops: 1, moves: 3 }
+  sturmanator15: { adds: 3, drops: 2, moves: 5 }
   theoceanpulse: { adds: 4, drops: 2, moves: 6 }
   whowonthelastsuperbowl: { adds: 1, drops: 1, moves: 2 }
   zachzoske: { adds: 6, drops: 5, moves: 11 }
@@ -649,6 +649,10 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Kyle Williams
+    via: add
+    week: 2
+    waiver: false
   purpsworth:
   - player: Jonathan Taylor
     via: draft
@@ -702,6 +706,10 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Steelers D/ST
+    via: add
+    week: 2
+    waiver: true
   sturmanator15:
   - player: Jaxon Smith-Njigba
     via: draft
@@ -751,6 +759,10 @@ rosters:
   - player: Malik Washington
     via: add
     week: 1
+    waiver: false
+  - player: Chase McLaughlin
+    via: add
+    week: 2
     waiver: false
   - player: Mack Hollins
     via: add
