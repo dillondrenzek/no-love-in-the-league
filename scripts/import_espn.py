@@ -558,7 +558,8 @@ def build_rosters(draft_rows, tx_rows, trades, team_to_fid):
 def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_teams,
                      state="season", state_locked=False, draft_order=None, trades=None,
                      trades_complete=True, trades_known_for=None, keepers=None,
-                     transactions=None, transactions_known=False, rosters=None):
+                     transactions=None, transactions_known=False, rosters=None,
+                     team_logos=None):
     lines = [
         f"# {year} — imported from ESPN by scripts/import_espn.py. Re-run the importer",
         f"# to refresh; the locked, hand-maintained `draft_order:` below is preserved",
@@ -591,6 +592,14 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         "teams:",
     ]
     lines += [f'  {fid}: "{name}"' for fid, name in teams.items()]
+    if team_logos:
+        lines += [
+            "",
+            "# ESPN team logo URL per franchise this season — small badges on the",
+            "# owners table and weekly scoreboard. Refreshed each import.",
+            "team_logos:",
+        ]
+        lines += [f'  {fid}: "{url}"' for fid, url in team_logos.items()]
     lines += [
         "",
         "# Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff",
@@ -896,6 +905,10 @@ def main():
     final_order = [team_to_fid.get(r["team_id"]) for r in ordered]
 
     season_teams = {team_to_fid[t["team_id"]]: clean_name(t["team_name"]) for t in team_rows}
+    # ESPN team logo URL per franchise (blank for older client versions / teams
+    # without one). Only non-empty ones are stored.
+    season_logos = {team_to_fid[t["team_id"]]: t["logo"]
+                    for t in team_rows if t.get("logo")}
 
     # Ownership change guard: a franchise that fielded a team here last import but
     # isn't in this year's roster was replaced by a new manager. The importer
@@ -934,7 +947,7 @@ def main():
                                    trades_known_for=sorted(known_for), keepers=keepers,
                                    transactions=transactions,
                                    transactions_known=transactions_known,
-                                   rosters=rosters)
+                                   rosters=rosters, team_logos=season_logos)
 
     if not lg.authenticated:
         print("WARNING: no ESPN cookies found — a private league won't return owner "

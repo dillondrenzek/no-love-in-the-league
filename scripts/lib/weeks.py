@@ -39,6 +39,7 @@ def week_state(season, week):
 
 def _scoreboard(season, franchises, games):
     teams = season.get("teams", {})
+    logos = season.get("team_logos") or {}
     board = []
     for m in games:
         h, a = m["home"], m["away"]
@@ -49,9 +50,11 @@ def _scoreboard(season, franchises, games):
             "home_id": h if h in franchises else None,
             "home_team": teams.get(h) or short_name_of(h, franchises),
             "home_owner": short_name_of(h, franchises),
+            "home_logo": logos.get(h, ""),
             "away_id": a if a in franchises else None,
             "away_team": teams.get(a) or short_name_of(a, franchises),
             "away_owner": short_name_of(a, franchises),
+            "away_logo": logos.get(a, ""),
             "scored": scored,
             "final": final,
             "live": scored and not final,

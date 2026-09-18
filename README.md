@@ -60,6 +60,7 @@ scripts/
   generate_owners.py        owner index + per-owner pages
   generate_seasons.py       per-season pages (/seasons/<year>/)
   import_espn.py            pull a season from ESPN
+  import_all.sh             backfill: import every season + rebuild once
   update_season.sh          weekly: import one season + rebuild
   build.py                  runs every generator
   tests/test_lib.py         plain-python tests for lib

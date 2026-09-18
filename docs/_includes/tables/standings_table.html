@@ -22,7 +22,8 @@ team, owner_id, owner_name, record, tag, pf, pf_color, pa.
     {%- for r in rows %}
     <tr>
       <td>{{ r.finish }}</td>
-      <td>
+      <td class="team-cell">
+        {%- include bits/team_logo.html src=r.logo -%}
         {%- if r.owner_id -%}
         <a href="{{ '/teams/' | append: r.owner_id | append: '/' | relative_url }}">{{ r.team }}</a>
         {%- if r.owner_name %} <span class="owner-name">{{ r.owner_name }}</span>{% endif -%}

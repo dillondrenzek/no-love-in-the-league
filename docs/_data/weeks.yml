@@ -5,9 +5,11 @@
   - home_id: alexandra
     home_team: Cornstar
     home_owner: Lexi
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: true
     final: true
     live: false
@@ -20,9 +22,11 @@
   - home_id: gganoom
     home_team: One Big Beautiful Dill
     home_owner: Grant
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: true
     final: true
     live: false
@@ -35,9 +39,11 @@
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: true
     final: true
     live: false
@@ -50,9 +56,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: true
     final: true
     live: false
@@ -65,9 +73,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: jackperkins74
     away_team: Gibbed for your pleasure
     away_owner: Jack
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     scored: true
     final: true
     live: false
@@ -80,9 +90,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: zachzoske
     away_team: Tuten Your Mom
     away_owner: Zach
+    away_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     scored: true
     final: true
     live: false
@@ -226,26 +238,30 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: true
     final: false
     live: true
     playoff: false
-    home_score: 31.9
+    home_score: 39.3
     away_score: 0.0
     winner_id: null
     tie: false
-    margin: 31.9
+    margin: 39.3
     home_proj: 127.1
     away_proj: 112.8
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -255,26 +271,30 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: true
     final: false
     live: true
     playoff: false
     home_score: -0.1
-    away_score: 4.1
+    away_score: 14.2
     winner_id: null
     tie: false
-    margin: 4.2
+    margin: 14.3
     home_proj: 112.5
     away_proj: 125.0
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -284,35 +304,39 @@
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
     home_owner: Dillon
+    home_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: true
     final: false
     live: true
     playoff: false
     home_score: 0.0
-    away_score: 14.1
+    away_score: 27.4
     winner_id: null
     tie: false
-    margin: 14.1
+    margin: 27.4
     home_proj: 113.0
     away_proj: 116.4
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: schirmerj
     away_team: Return of the IDP
     away_owner: Jono
+    away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     scored: true
     final: false
     live: true
     playoff: false
-    home_score: 4.3
-    away_score: 33.5
+    home_score: 30.7
+    away_score: 48.0
     winner_id: null
     tie: false
-    margin: 29.2
+    margin: 17.3
     home_proj: 113.9
     away_proj: 117.4
   highlights: []
@@ -415,9 +439,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -425,9 +451,11 @@
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -435,9 +463,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -445,9 +475,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -455,9 +487,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -465,9 +499,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -482,9 +518,11 @@
   - home_id: alexandra
     home_team: Cornstar
     home_owner: Lexi
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -492,9 +530,11 @@
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -502,9 +542,11 @@
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
+    home_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -512,9 +554,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -522,9 +566,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: jackperkins74
     away_team: Gibbed for your pleasure
     away_owner: Jack
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     scored: false
     final: false
     live: false
@@ -532,9 +578,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: lukstein
     away_team: 2x Runner Up
     away_owner: Luke
+    away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     scored: false
     final: false
     live: false
@@ -549,9 +597,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -559,9 +609,11 @@
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -569,9 +621,11 @@
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
+    home_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -579,9 +633,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: lukstein
     away_team: 2x Runner Up
     away_owner: Luke
+    away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     scored: false
     final: false
     live: false
@@ -589,9 +645,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -599,9 +657,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -616,9 +676,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: jackperkins74
     away_team: Gibbed for your pleasure
     away_owner: Jack
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     scored: false
     final: false
     live: false
@@ -626,9 +688,11 @@
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
+    home_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -636,9 +700,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -646,9 +712,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -656,9 +724,11 @@
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
+    home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -666,9 +736,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -683,9 +755,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -693,9 +767,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -703,9 +779,11 @@
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
+    home_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -713,9 +791,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: schirmerj
     away_team: Return of the IDP
     away_owner: Jono
+    away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     scored: false
     final: false
     live: false
@@ -723,9 +803,11 @@
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
+    home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -733,9 +815,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -750,9 +834,11 @@
   - home_id: alexandra
     home_team: Cornstar
     home_owner: Lexi
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -760,9 +846,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -770,9 +858,11 @@
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -780,9 +870,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -790,9 +882,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: lukstein
     away_team: 2x Runner Up
     away_owner: Luke
+    away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     scored: false
     final: false
     live: false
@@ -800,9 +894,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -817,9 +913,11 @@
   - home_id: gganoom
     home_team: One Big Beautiful Dill
     home_owner: Grant
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -827,9 +925,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -837,9 +937,11 @@
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
+    home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -847,9 +949,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -857,9 +961,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -867,9 +973,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: schirmerj
     away_team: Return of the IDP
     away_owner: Jono
+    away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     scored: false
     final: false
     live: false
@@ -884,9 +992,11 @@
   - home_id: alexandra
     home_team: Cornstar
     home_owner: Lexi
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -894,9 +1004,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -904,9 +1016,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -914,9 +1028,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -924,9 +1040,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -934,9 +1052,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -951,9 +1071,11 @@
   - home_id: alexandra
     home_team: Cornstar
     home_owner: Lexi
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -961,9 +1083,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: jackperkins74
     away_team: Gibbed for your pleasure
     away_owner: Jack
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     scored: false
     final: false
     live: false
@@ -971,9 +1095,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -981,9 +1107,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -991,9 +1119,11 @@
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
+    home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -1001,9 +1131,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -1018,9 +1150,11 @@
   - home_id: alexandra
     home_team: Cornstar
     home_owner: Lexi
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -1028,9 +1162,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: jackperkins74
     away_team: Gibbed for your pleasure
     away_owner: Jack
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     scored: false
     final: false
     live: false
@@ -1038,9 +1174,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: lukstein
     away_team: 2x Runner Up
     away_owner: Luke
+    away_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     scored: false
     final: false
     live: false
@@ -1048,9 +1186,11 @@
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
     home_owner: Dillon
+    home_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -1058,9 +1198,11 @@
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
+    home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -1068,9 +1210,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -1085,9 +1229,11 @@
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: purpsworth
     away_team: I am dead inside
     away_owner: Trevor
+    away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     scored: false
     final: false
     live: false
@@ -1095,9 +1241,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -1105,9 +1253,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -1115,9 +1265,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -1125,9 +1277,11 @@
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
     home_owner: Dillon
+    home_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -1135,9 +1289,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: whowonthelastsuperbowl
     away_team: Trick or Trick It’s Mike Vick
     away_owner: Nate
+    away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     scored: false
     final: false
     live: false
@@ -1152,9 +1308,11 @@
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
+    home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: kevbots22
     away_team: Josh Jacobs Alibi
     away_owner: Kevin
+    away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     scored: false
     final: false
     live: false
@@ -1162,9 +1320,11 @@
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
+    home_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     away_id: shawne2520997
     away_team: Swift kick in the Dak
     away_owner: Shawnee
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     scored: false
     final: false
     live: false
@@ -1172,9 +1332,11 @@
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
+    home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: theoceanpulse
     away_team: The ChoSimba Ones
     away_owner: Dillon
+    away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     scored: false
     final: false
     live: false
@@ -1182,9 +1344,11 @@
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
+    home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: alexandra
     away_team: Cornstar
     away_owner: Lexi
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     scored: false
     final: false
     live: false
@@ -1192,9 +1356,11 @@
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
+    home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: gganoom
     away_team: One Big Beautiful Dill
     away_owner: Grant
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     scored: false
     final: false
     live: false
@@ -1202,9 +1368,11 @@
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
+    home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: jackperkins74
     away_team: Gibbed for your pleasure
     away_owner: Jack
+    away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     scored: false
     final: false
     live: false

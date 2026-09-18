@@ -43,6 +43,21 @@ teams:
   unclebadtouch38: "Cleveland Mcpussysmasher"
   shawne2520997: "Queen of the Hill"
 
+# ESPN team logo URL per franchise this season — small badges on the
+# owners table and weekly scoreboard. Refreshed each import.
+team_logos:
+  sturmanator15: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg"
+  zachzoske: "https://consequenceofsound.files.wordpress.com/2018/05/rick-moranis-as-dark-helmet-in-spaceballs.png?w=807"
+  schirmerj: "http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg"
+  lukstein: "http://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg"
+  jackperkins74: "https://cdn.totalfratmove.com/wp-content/uploads/2016/12/0132132ecc8423cfd7a85419fa60e421.jpg"
+  kevbots22: "http://news.images.itv.com/image/file/662476/stream_img.jpg"
+  henpen28: "https://lipstickandscoreboards.files.wordpress.com/2014/04/12.jpg"
+  whowonthelastsuperbowl: "http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg"
+  theoceanpulse: "http://media.washtimes.com.s3.amazonaws.com/media/image/2014/12/17/teamamerican20f-1-web.jpg"
+  unclebadtouch38: "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg"
+  shawne2520997: "http://g.espncdn.com/lm-static/logo-packs/core/CatsAndDogs/cats_dogs-5.svg"
+
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:

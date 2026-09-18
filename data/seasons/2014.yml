@@ -39,6 +39,16 @@ teams:
   henpen28: "Uncle Grabby"
   master-otis: "Lynched by Le' Bell"
 
+# ESPN team logo URL per franchise this season — small badges on the
+# owners table and weekly scoreboard. Refreshed each import.
+team_logos:
+  zachzoske: "http://img3.wikia.nocookie.net/__cb20120310153846/villains/images/b/b7/Dark_Helmet_unmasked.jpg"
+  schirmerj: "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg"
+  whowonthelastsuperbowl: "http://o.onionstatic.com/images/8/8005/original/700.hq.jpg?3837"
+  kevbots22: "http://i.imgur.com/R9cyExM.jpg"
+  thebragers: "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg"
+  henpen28: "http://s2.quickmeme.com/img/76/763a4b082f07c926055fa6ea60285ce9e2c9fd3d9f8f0d948a64adb6ddf45122.jpg"
+
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:

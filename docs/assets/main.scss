@@ -289,6 +289,34 @@ tbody td a:hover { color: var(--brand); }
 .matchup__side { text-align: center; min-width: 0; }
 .matchup__team { font-size: 0.9rem; font-weight: 600; line-height: 1.2; }
 .matchup__team a { color: var(--brand); }
+
+// Small team badge (ESPN logo) framed in a circle. Renders next to a team/owner
+// name; degrades to nothing when no logo has been imported.
+.team-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid var(--rule);
+  vertical-align: middle;
+  flex: 0 0 auto;
+}
+.team-logo--lg { width: 52px; height: 52px; border-width: 2px; }
+// Fallback when a logo 404s / is blocked: a plain gray circle (JS strips the
+// broken src and adds this class on error).
+.team-logo--empty { background: var(--rule-strong); }
+.matchup__team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.owner-cell .team-logo,
+.team-cell .team-logo { margin-right: 8px; }
+// Owner profile header: badge beside the name.
+.owner-header { display: flex; align-items: center; gap: 14px; }
+.owner-header__text { min-width: 0; }
 .matchup__owner { display: block; font-size: 0.78rem; margin-top: 1px; }
 .matchup__score {
   font-family: var(--sans);

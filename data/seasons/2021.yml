@@ -43,6 +43,22 @@ teams:
   unclebadtouch38: "Set_The_ RAT_TRAP_!"
   shawne2520997: "Koo Koo Kachoo"
 
+# ESPN team logo URL per franchise this season — small badges on the
+# owners table and weekly scoreboard. Refreshed each import.
+team_logos:
+  sturmanator15: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg"
+  zachzoske: "https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg"
+  schirmerj: "http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg"
+  lukstein: "https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg"
+  jackperkins74: "https://g.espncdn.com/lm-static/logo-packs/ffl/GridironWarriors-MartinLaksman/warriors-09.svg"
+  kevbots22: "http://news.images.itv.com/image/file/662476/stream_img.jpg"
+  henpen28: "https://i.redd.it/gc1lal601z941.jpg"
+  purpsworth: "https://i.redd.it/wad5aifmanj51.jpg"
+  whowonthelastsuperbowl: "http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg"
+  theoceanpulse: "https://images.static-bluray.com/reviews/2991_1.jpg"
+  unclebadtouch38: "https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg"
+  shawne2520997: "https://g.espncdn.com/lm-static/logo-packs/core/CatsAndDogs/cats_dogs-5.svg"
+
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:

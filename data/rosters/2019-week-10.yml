@@ -1,0 +1,887 @@
+season: 2019
+week: 10
+captured_at: '2026-09-18T03:47:49+00:00'
+rosters:
+- manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
+  team_id: 1
+  team_name: Lamar's  Donger
+  players:
+  - player: Davante Adams
+    pos: WR
+    starter: true
+    proj: 11.9
+    actual: 11.8
+  - player: Nick Chubb
+    pos: RB
+    starter: true
+    proj: 14.82
+    actual: 12.1
+  - player: David Montgomery
+    pos: RB
+    starter: true
+    proj: 14.5
+    actual: 6.0
+  - player: Tyler Boyd
+    pos: WR
+    starter: false
+    proj: 7.72
+    actual: 6.2
+  - player: Lamar Jackson
+    pos: QB
+    starter: true
+    proj: 23.52
+    actual: 33.3
+  - player: Darren Waller
+    pos: TE
+    starter: false
+    proj: 8.77
+    actual: 4.0
+  - player: Matt Breida
+    pos: RB
+    starter: false
+    proj: 9.44
+    actual: 2.5
+  - player: Courtland Sutton
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Hunter Henry
+    pos: TE
+    starter: true
+    proj: 10.76
+    actual: 9.5
+  - player: Le'Veon Bell
+    pos: RB
+    starter: true
+    proj: 13.22
+    actual: 12.8
+  - player: Ravens D/ST
+    pos: D/ST
+    starter: true
+    proj: 8.44
+    actual: 23.0
+  - player: Wil Lutz
+    pos: K
+    starter: true
+    proj: 8.19
+    actual: 10.0
+  - player: Minkah Fitzpatrick
+    pos: CB
+    starter: true
+    proj: 3.98
+    actual: 14.0
+  - player: Larry Fitzgerald
+    pos: WR
+    starter: true
+    proj: 6.65
+    actual: 7.1
+- manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
+  team_id: 2
+  team_name: Eleven In Crocks
+  players:
+  - player: Julio Jones
+    pos: WR
+    starter: true
+    proj: 12.41
+    actual: 7.9
+  - player: Josh Jacobs
+    pos: RB
+    starter: true
+    proj: 15.74
+    actual: 16.1
+  - player: Patrick Mahomes
+    pos: QB
+    starter: true
+    proj: 22.19
+    actual: 29.8
+  - player: Evan Engram
+    pos: TE
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: Greg Zuerlein
+    pos: K
+    starter: true
+    proj: 8.36
+    actual: 2.0
+  - player: Terry McLaurin
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: DJ Chark Jr.
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: 49ers D/ST
+    pos: D/ST
+    starter: true
+    proj: 5.15
+    actual: 19.0
+  - player: Zach Ertz
+    pos: TE
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Ty Johnson
+    pos: RB
+    starter: true
+    proj: 6.77
+    actual: 1.9
+  - player: Ezekiel Elliott
+    pos: RB
+    starter: true
+    proj: 16.54
+    actual: 6.3
+  - player: Luke Kuechly
+    pos: LB
+    starter: true
+    proj: 5.18
+    actual: 2.0
+  - player: Josh Reynolds
+    pos: WR
+    starter: true
+    proj: 6.07
+    actual: 4.9
+  - player: Jason Witten
+    pos: TE
+    starter: true
+    proj: 5.48
+    actual: 1.7
+- manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
+  team_id: 3
+  team_name: Tank4Picks   .
+  players:
+  - player: Travis Kelce
+    pos: TE
+    starter: true
+    proj: 11.2
+    actual: 13.5
+  - player: Brandin Cooks
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: Melvin Gordon
+    pos: RB
+    starter: true
+    proj: 12.29
+    actual: 19.3
+  - player: Kenyan Drake
+    pos: RB
+    starter: false
+    proj: 6.09
+    actual: 4.1
+  - player: A.J. Green
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: Devin Singletary
+    pos: RB
+    starter: true
+    proj: 9.5
+    actual: 5.0
+  - player: Marvin Jones Jr.
+    pos: WR
+    starter: true
+    proj: 7.15
+    actual: 7.7
+  - player: Golden Tate
+    pos: WR
+    starter: true
+    proj: 7.81
+    actual: 19.5
+  - player: Bobby Wagner
+    pos: LB
+    starter: true
+    proj: 5.95
+    actual: 5.5
+  - player: Zane Gonzalez
+    pos: K
+    starter: true
+    proj: 7.41
+    actual: 11.0
+  - player: Josh Allen
+    pos: QB
+    starter: true
+    proj: 18.04
+    actual: 25.4
+  - player: Carlos Hyde
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Mark Ingram II
+    pos: RB
+    starter: true
+    proj: 14.14
+    actual: 9.4
+  - player: Bills D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.92
+    actual: 3.0
+- manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
+  team_id: 4
+  team_name: Show Me Your TDs
+  players:
+  - player: Michael Thomas
+    pos: WR
+    starter: true
+    proj: 14.84
+    actual: 15.2
+  - player: Sony Michel
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Miles Sanders
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Carson Wentz
+    pos: QB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Eagles D/ST
+    pos: D/ST
+    starter: false
+    proj: null
+    actual: null
+  - player: Jamie Collins Sr.
+    pos: LB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Marquise Brown
+    pos: WR
+    starter: true
+    proj: 6.49
+    actual: 14.0
+  - player: Marlon Mack
+    pos: RB
+    starter: true
+    proj: 15.62
+    actual: 8.2
+  - player: Phillip Lindsay
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Michael Gallup
+    pos: WR
+    starter: true
+    proj: 7.89
+    actual: 13.6
+  - player: Jonnu Smith
+    pos: TE
+    starter: true
+    proj: 5.02
+    actual: 3.0
+  - player: Josh Gordon
+    pos: WR
+    starter: false
+    proj: 4.57
+    actual: 2.7
+  - player: Chris Boswell
+    pos: K
+    starter: true
+    proj: 7.84
+    actual: 5.0
+- manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
+  team_id: 6
+  team_name: Vladimir Putin
+  players:
+  - player: Todd Gurley II
+    pos: RB
+    starter: true
+    proj: 12.77
+    actual: 7.3
+  - player: Leonard Fournette
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Adam Thielen
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: Robert Woods
+    pos: WR
+    starter: true
+    proj: 8.14
+    actual: 10.0
+  - player: Alexander Mattison
+    pos: RB
+    starter: false
+    proj: 4.87
+    actual: 5.4
+  - player: Mason Crosby
+    pos: K
+    starter: true
+    proj: 7.09
+    actual: 7.0
+  - player: T.Y. Hilton
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: James Conner
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: Kareem Hunt
+    pos: RB
+    starter: true
+    proj: 5.62
+    actual: 7.4
+  - player: Jaylen Samuels
+    pos: RB
+    starter: true
+    proj: 11.36
+    actual: 4.0
+  - player: Kirk Cousins
+    pos: QB
+    starter: true
+    proj: 15.75
+    actual: 19.3
+  - player: Colts D/ST
+    pos: D/ST
+    starter: true
+    proj: 9.98
+    actual: 10.0
+  - player: Zach Pascal
+    pos: WR
+    starter: true
+    proj: 7.66
+    actual: 3.1
+  - player: Gerald Everett
+    pos: TE
+    starter: true
+    proj: 5.67
+    actual: 6.8
+- manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
+  team_id: 7
+  team_name: The Antonio ClownExperience
+  players:
+  - player: Saquon Barkley
+    pos: RB
+    starter: true
+    proj: 16.78
+    actual: 3.6
+  - player: Devonta Freeman
+    pos: RB
+    starter: true
+    proj: 9.95
+    actual: 4.8
+  - player: Cooper Kupp
+    pos: WR
+    starter: true
+    proj: 11.14
+    actual: 0.0
+  - player: Tyler Lockett
+    pos: WR
+    starter: true
+    proj: 10.75
+    actual: 3.4
+  - player: Russell Wilson
+    pos: QB
+    starter: true
+    proj: 18.3
+    actual: 16.5
+  - player: Bears D/ST
+    pos: D/ST
+    starter: true
+    proj: 8.97
+    actual: 6.0
+  - player: Justin Tucker
+    pos: K
+    starter: true
+    proj: 8.37
+    actual: 7.0
+  - player: Tom Brady
+    pos: QB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Adrian Peterson
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Kyle Rudolph
+    pos: TE
+    starter: true
+    proj: 5.05
+    actual: 15.4
+  - player: Joe Schobert
+    pos: LB
+    starter: true
+    proj: 5.75
+    actual: 2.5
+  - player: Curtis Samuel
+    pos: WR
+    starter: true
+    proj: 8.3
+    actual: 9.5
+  - player: Randall Cobb
+    pos: WR
+    starter: false
+    proj: 6.3
+    actual: 16.6
+  - player: DeVante Parker
+    pos: WR
+    starter: false
+    proj: 6.95
+    actual: 6.9
+- manager_id: '{821EBE27-2BE3-49D4-9EBE-272BE3B9D412}'
+  team_id: 9
+  team_name: Tom Brady's Fluffer
+  players:
+  - player: Mike Evans
+    pos: WR
+    starter: true
+    proj: 13.56
+    actual: 8.2
+  - player: Julian Edelman
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Alshon Jeffery
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Allen Robinson II
+    pos: WR
+    starter: true
+    proj: 8.11
+    actual: 8.6
+  - player: Mark Andrews
+    pos: TE
+    starter: true
+    proj: 8.44
+    actual: 17.3
+  - player: Matt Gay
+    pos: K
+    starter: true
+    proj: 7.98
+    actual: 14.0
+  - player: Kyler Murray
+    pos: QB
+    starter: false
+    proj: 18.93
+    actual: 26.6
+  - player: Duke Johnson
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Chris Carson
+    pos: RB
+    starter: true
+    proj: 11.84
+    actual: 16.1
+  - player: Chase Edmonds
+    pos: RB
+    starter: true
+    proj: 0.0
+    actual: 0.0
+  - player: Drew Brees
+    pos: QB
+    starter: true
+    proj: 19.9
+    actual: 11.4
+  - player: Jordan Hicks
+    pos: LB
+    starter: true
+    proj: 6.39
+    actual: 7.5
+  - player: Steelers D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.01
+    actual: 22.0
+  - player: A.J. Brown
+    pos: WR
+    starter: true
+    proj: 7.69
+    actual: 1.7
+- manager_id: '{06571853-E276-48AA-9202-F06B0AD927ED}'
+  team_id: 10
+  team_name: AB’s Helmet
+  players:
+  - player: DeAndre Hopkins
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: JuJu Smith-Schuster
+    pos: WR
+    starter: false
+    proj: 7.29
+    actual: 4.9
+  - player: Aaron Jones
+    pos: RB
+    starter: true
+    proj: 15.36
+    actual: 27.3
+  - player: Stefon Diggs
+    pos: WR
+    starter: true
+    proj: 9.78
+    actual: 4.9
+  - player: Matt Ryan
+    pos: QB
+    starter: false
+    proj: 19.24
+    actual: 14.5
+  - player: Dak Prescott
+    pos: QB
+    starter: true
+    proj: 17.58
+    actual: 25.8
+  - player: DK Metcalf
+    pos: WR
+    starter: true
+    proj: 7.69
+    actual: 5.0
+  - player: Tevin Coleman
+    pos: RB
+    starter: true
+    proj: 14.56
+    actual: 7.2
+  - player: Matt Prater
+    pos: K
+    starter: true
+    proj: 4.64
+    actual: 9.0
+  - player: Darius Leonard
+    pos: LB
+    starter: true
+    proj: 6.36
+    actual: 14.5
+  - player: Jared Cook
+    pos: TE
+    starter: false
+    proj: 6.14
+    actual: 7.4
+  - player: Jacob Hollister
+    pos: TE
+    starter: true
+    proj: 2.21
+    actual: 12.2
+  - player: Chiefs D/ST
+    pos: D/ST
+    starter: true
+    proj: 7.73
+    actual: 4.0
+  - player: Christian Kirk
+    pos: WR
+    starter: true
+    proj: 8.3
+    actual: 31.8
+- manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
+  team_id: 11
+  team_name: 'Wadgerach  Sturdellske '
+  players:
+  - player: David Johnson
+    pos: RB
+    starter: true
+    proj: 12.13
+    actual: -0.5
+  - player: Dalvin Cook
+    pos: RB
+    starter: true
+    proj: 16.62
+    actual: 24.3
+  - player: Damien Williams
+    pos: RB
+    starter: true
+    proj: 10.7
+    actual: 8.9
+  - player: Kenny Golladay
+    pos: WR
+    starter: true
+    proj: 8.56
+    actual: 11.7
+  - player: Deshaun Watson
+    pos: QB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Robby Anderson
+    pos: WR
+    starter: false
+    proj: 6.6
+    actual: 1.1
+  - player: Khalil Mack
+    pos: DE
+    starter: true
+    proj: 4.95
+    actual: 1.5
+  - player: Chargers D/ST
+    pos: D/ST
+    starter: true
+    proj: 4.32
+    actual: 5.0
+  - player: Greg Olsen
+    pos: TE
+    starter: true
+    proj: 5.59
+    actual: 9.8
+  - player: Sterling Shepard
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: 0.0
+  - player: Emmanuel Sanders
+    pos: WR
+    starter: true
+    proj: 8.2
+    actual: 2.4
+  - player: Mike Williams
+    pos: WR
+    starter: false
+    proj: 8.3
+    actual: 6.0
+  - player: Jameis Winston
+    pos: QB
+    starter: true
+    proj: 19.92
+    actual: 18.2
+  - player: Joey Slye
+    pos: K
+    starter: true
+    proj: 8.09
+    actual: 6.0
+- manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
+  team_id: 12
+  team_name: Hans Blitz! Ohh noo!
+  players:
+  - player: Christian McCaffrey
+    pos: RB
+    starter: true
+    proj: 20.08
+    actual: 20.1
+  - player: Derrick Henry
+    pos: RB
+    starter: true
+    proj: 13.9
+    actual: 31.1
+  - player: Amari Cooper
+    pos: WR
+    starter: true
+    proj: 10.15
+    actual: 20.7
+  - player: Chris Godwin
+    pos: WR
+    starter: true
+    proj: 10.85
+    actual: 8.4
+  - player: Aaron Rodgers
+    pos: QB
+    starter: true
+    proj: 21.2
+    actual: 9.9
+  - player: Austin Hooper
+    pos: TE
+    starter: true
+    proj: 8.89
+    actual: 7.7
+  - player: Jordan Howard
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Saints D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.51
+    actual: 3.0
+  - player: Harrison Butker
+    pos: K
+    starter: true
+    proj: 8.17
+    actual: 12.0
+  - player: Blake Martinez
+    pos: LB
+    starter: true
+    proj: 5.9
+    actual: 3.5
+  - player: John Brown
+    pos: WR
+    starter: false
+    proj: 8.53
+    actual: 7.7
+  - player: Jamaal Williams
+    pos: RB
+    starter: true
+    proj: 8.27
+    actual: 6.3
+  - player: Eric Ebron
+    pos: TE
+    starter: false
+    proj: 5.54
+    actual: 6.1
+  - player: Mohamed Sanu Sr.
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+- manager_id: '{2E4B888F-67D7-44C1-8B88-8F67D7C4C160}'
+  team_id: 13
+  team_name: Set_The_ RAT_TRAP_!
+  players:
+  - player: Odell Beckham Jr.
+    pos: WR
+    starter: false
+    proj: 8.37
+    actual: 5.7
+  - player: Tyreek Hill
+    pos: WR
+    starter: true
+    proj: 12.98
+    actual: 22.0
+  - player: George Kittle
+    pos: TE
+    starter: true
+    proj: 0.0
+    actual: 0.0
+  - player: DJ Moore
+    pos: WR
+    starter: true
+    proj: 8.64
+    actual: 12.0
+  - player: Royce Freeman
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Sammy Watkins
+    pos: WR
+    starter: true
+    proj: 8.87
+    actual: 5.1
+  - player: Ka'imi Fairbairn
+    pos: K
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Philip Rivers
+    pos: QB
+    starter: true
+    proj: 17.64
+    actual: 10.2
+  - player: Tarik Cohen
+    pos: RB
+    starter: true
+    proj: 6.31
+    actual: 9.7
+  - player: Austin Ekeler
+    pos: RB
+    starter: true
+    proj: 9.23
+    actual: 10.8
+  - player: Tyrell Williams
+    pos: WR
+    starter: false
+    proj: 8.14
+    actual: 2.5
+  - player: Joey Bosa
+    pos: DE
+    starter: true
+    proj: 3.99
+    actual: 1.0
+  - player: Michael Badgley
+    pos: K
+    starter: true
+    proj: 7.94
+    actual: 6.0
+  - player: Browns D/ST
+    pos: D/ST
+    starter: true
+    proj: 7.04
+    actual: 2.0
+- manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
+  team_id: 14
+  team_name: Mixon  it up
+  players:
+  - player: Alvin Kamara
+    pos: RB
+    starter: true
+    proj: 17.55
+    actual: 7.4
+  - player: Joe Mixon
+    pos: RB
+    starter: false
+    proj: 9.5
+    actual: 15.1
+  - player: Keenan Allen
+    pos: WR
+    starter: true
+    proj: 10.06
+    actual: 9.1
+  - player: Calvin Ridley
+    pos: WR
+    starter: true
+    proj: 8.13
+    actual: 4.7
+  - player: James White
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+  - player: Latavius Murray
+    pos: RB
+    starter: false
+    proj: 9.3
+    actual: 1.9
+  - player: Jarvis Landry
+    pos: WR
+    starter: false
+    proj: 7.39
+    actual: 15.7
+  - player: Jamison Crowder
+    pos: WR
+    starter: true
+    proj: 7.25
+    actual: 14.1
+  - player: Patriots D/ST
+    pos: D/ST
+    starter: false
+    proj: null
+    actual: null
+  - player: Ronald Jones II
+    pos: RB
+    starter: true
+    proj: 11.13
+    actual: 14.6
+  - player: Jimmy Graham
+    pos: TE
+    starter: true
+    proj: 5.74
+    actual: 5.9
+  - player: Brian Hoyer
+    pos: QB
+    starter: true
+    proj: 16.55
+    actual: 6.0
+  - player: Brett Maher
+    pos: K
+    starter: true
+    proj: 7.27
+    actual: 4.0
+  - player: Rams D/ST
+    pos: D/ST
+    starter: true
+    proj: 5.23
+    actual: 20.0

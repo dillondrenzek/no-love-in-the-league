@@ -43,6 +43,22 @@ teams:
   gganoom: "One Big Beautiful Dill"
   shawne2520997: "D***er my Sufficient Tight End"
 
+# ESPN team logo URL per franchise this season — small badges on the
+# owners table and weekly scoreboard. Refreshed each import.
+team_logos:
+  sturmanator15: "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg"
+  zachzoske: "https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png"
+  schirmerj: "http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg"
+  lukstein: "https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg"
+  jackperkins74: "https://g.espncdn.com/lm-static/logo-packs/ffl/1stStringAllStars-SportsManias/henry-01.svg"
+  kevbots22: "http://news.images.itv.com/image/file/662476/stream_img.jpg"
+  henpen28: "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg"
+  purpsworth: "https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg"
+  whowonthelastsuperbowl: "http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg"
+  theoceanpulse: "https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg"
+  gganoom: "https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg"
+  shawne2520997: "https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg"
+
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:

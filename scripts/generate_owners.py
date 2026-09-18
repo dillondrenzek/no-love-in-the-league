@@ -69,10 +69,23 @@ def _season_tag(s):
 
 # --- Owners index -----------------------------------------------------------
 
-def _owner_row(p):
+def latest_logos(seasons):
+    """{fid: logo URL} using each franchise's most recent season logo (later years
+    win), from the season YAML `team_logos:` blocks. Empty until an import with a
+    logo-aware client has run."""
+    out = {}
+    for s in sorted(seasons, key=lambda s: s["season"]):
+        for fid, url in (s.get("team_logos") or {}).items():
+            if url:
+                out[fid] = url
+    return out
+
+
+def _owner_row(p, logos=None):
     reg = p["reg"]
     return {
         "id": p["id"], "name": p["name"], "seasons": p["seasons_count"],
+        "logo": (logos or {}).get(p["id"], ""),
         "record": rec_str(reg["w"], reg["l"], reg["t"]),
         "win_pct": pct(reg["win_pct"]), "win_color": heat_color(reg["win_pct"], 0.3, 0.7),
         "titles": fmt_titles(p["titles"]), "sackos": p["sackos"],
@@ -159,11 +172,11 @@ def tx_heatmap(profiles, roster=None):
     return {"years": years, "max": max_count, "rows": rows}
 
 
-def owners_data(profiles, roster):
+def owners_data(profiles, roster, logos=None):
     ranked = sorted_profiles(profiles)
     return {
-        "active": [_owner_row(p) for p in ranked if p["id"] in roster],
-        "inactive": [_owner_row(p) for p in ranked if p["id"] not in roster],
+        "active": [_owner_row(p, logos) for p in ranked if p["id"] in roster],
+        "inactive": [_owner_row(p, logos) for p in ranked if p["id"] not in roster],
     }
 
 
@@ -188,12 +201,14 @@ def _honors(p):
     return bits
 
 
-def _season_rows(p):
+def _season_rows(p, logos_by_year=None):
+    logos_by_year = logos_by_year or {}
     pfs = [s["pf"] for s in p["seasons"] if s["pf"] is not None]
     lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
     rows = []
     for s in p["seasons"]:
         row = {"year": s["year"], "team": s["team"], "tag": _season_tag(s),
+               "logo": logos_by_year.get(s["year"], {}).get(p["id"], ""),
                "finish": ordinal(s["finish"]), "record": s["record"],
                "tx": s.get("tx"),      # moves that year; None when no data (renders "—")
                "in_progress": s.get("in_progress", False)}
@@ -221,11 +236,12 @@ def _h2h_rows(p, profiles):
     return rows
 
 
-def _profile_data(p, profiles):
+def _profile_data(p, profiles, logos=None, logos_by_year=None):
     reg = p["reg"]
     return {
         "name": p["name"],
         "nickname": p.get("nickname", ""),
+        "logo": (logos or {}).get(p["id"], ""),
         "honors": _honors(p),
         "resume": {
             "all_time": rec_str(reg["w"], reg["l"], reg["t"]),
@@ -240,7 +256,7 @@ def _profile_data(p, profiles):
             "seasons": p["seasons_count"],
             "best_finish": _best_finish_data(p),
         },
-        "seasons": _season_rows(p),
+        "seasons": _season_rows(p, logos_by_year),
         "h2h": _h2h_rows(p, profiles),
         "trades": p.get("trade_log", []),
         "trades_known": p.get("trades_known", True),
@@ -275,7 +291,9 @@ def main():
         if fid not in profiles:
             profiles[fid] = empty_profile(fid, franchises)
 
-    owners = owners_data(profiles, roster)
+    logos = latest_logos(seasons)
+    logos_by_year = {s["season"]: (s.get("team_logos") or {}) for s in seasons}
+    owners = owners_data(profiles, roster, logos)
     # Draft Order History heatmap — every draft on record, including 2026's
     # projected order; active owners first, then inactive.
     heatmap = draft_heatmap(seasons, franchises, roster)
@@ -293,7 +311,8 @@ def main():
     for s in seasons:
         for fid, entries in (s.get("rosters") or {}).items():
             owner_rosters.setdefault(fid, {})[s["season"]] = entries
-    profiles_data = {pid: _profile_data(p, profiles) for pid, p in profiles.items()}
+    profiles_data = {pid: _profile_data(p, profiles, logos, logos_by_year)
+                     for pid, p in profiles.items()}
     for fid, by_year in owner_rosters.items():
         if fid in profiles_data:
             profiles_data[fid]["rosters"] = [
