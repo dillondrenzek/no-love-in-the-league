@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-19T18:17:03+00:00'
+captured_at: '2026-09-19T21:55:52+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -43,7 +43,7 @@ rosters:
     actual: null
   - player: Blake Corum
     pos: RB
-    starter: true
+    starter: false
     proj: 8.67
     actual: null
   - player: Trey McBride
@@ -58,7 +58,7 @@ rosters:
     actual: null
   - player: MarShawn Lloyd
     pos: RB
-    starter: false
+    starter: true
     proj: 10.46
     actual: null
   - player: Jonah Coleman
@@ -366,11 +366,6 @@ rosters:
     pos: WR
     starter: true
     proj: 9.98
-    actual: null
-  - player: De'Zhaun Stribling
-    pos: WR
-    starter: false
-    proj: 0.0
     actual: null
   - player: Trevor Lawrence
     pos: QB
