@@ -259,7 +259,7 @@ transactions:
   sturmanator15: { adds: 3, drops: 2, moves: 5 }
   theoceanpulse: { adds: 4, drops: 2, moves: 6 }
   whowonthelastsuperbowl: { adds: 1, drops: 1, moves: 2 }
-  zachzoske: { adds: 6, drops: 5, moves: 11 }
+  zachzoske: { adds: 8, drops: 6, moves: 14 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -838,6 +838,14 @@ rosters:
     week: 1
     waiver: false
   - player: Chiefs D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Kayshon Boutte
+    via: add
+    week: 2
+    waiver: false
+  - player: Tyler Shough
     via: add
     week: 2
     waiver: false

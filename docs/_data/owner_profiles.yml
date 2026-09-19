@@ -2891,7 +2891,7 @@ zachzoske:
     playoff_apps: 5
     trades: 16
     trades_known: true
-    tx_per_year: 102.8
+    tx_per_year: 103.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -2906,7 +2906,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 1-0
-    tx: 11
+    tx: 14
     in_progress: true
     pf: 161.3
     pa: 146.7
@@ -3420,6 +3420,14 @@ zachzoske:
       week: 1
       waiver: false
     - player: Chiefs D/ST
+      via: add
+      week: 2
+      waiver: false
+    - player: Kayshon Boutte
+      via: add
+      week: 2
+      waiver: false
+    - player: Tyler Shough
       via: add
       week: 2
       waiver: false
