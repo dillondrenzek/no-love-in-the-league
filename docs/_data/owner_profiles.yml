@@ -2891,7 +2891,7 @@ zachzoske:
     playoff_apps: 5
     trades: 16
     trades_known: true
-    tx_per_year: 103.1
+    tx_per_year: 103.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -2906,7 +2906,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 1-0
-    tx: 14
+    tx: 16
     in_progress: true
     pf: 161.3
     pa: 146.7
@@ -7232,7 +7232,7 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
-    tx_per_year: 0.0
+    tx_per_year: 2.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -7247,7 +7247,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 4th
     record: 1-0
-    tx: 0
+    tx: 2
     in_progress: true
     pf: 105.0
     pa: 87.4
@@ -7313,6 +7313,10 @@ alexandra:
     - player: Tyler Loop
       via: draft
       round: 15
+    - player: Rashid Shaheed
+      via: add
+      week: 2
+      waiver: false
 lukstein:
   name: Luke
   nickname: ''

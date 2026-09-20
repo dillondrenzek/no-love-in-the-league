@@ -95,12 +95,12 @@ matchups:
   - { week:  1, home: lukstein, away: purpsworth, home_score: 96.5, away_score: 85.4, playoff: false }
   - { week:  1, home: schirmerj, away: jackperkins74, home_score: 103.5, away_score: 166.7, playoff: false }
   - { week:  1, home: sturmanator15, away: zachzoske, home_score: 146.7, away_score: 161.3, playoff: false }
-  - { week:  2, home: jackperkins74, away: gganoom, home_score: 39.3, away_score: 0.0, playoff: false, final: false, home_proj: 127.69, away_proj: 113.06 }
-  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.48, away_proj: 122.72 }
-  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: -0.1, away_score: 14.2, playoff: false, final: false, home_proj: 112.51, away_proj: 124.79 }
-  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 117.28, away_proj: 120.7 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 0.0, away_score: 27.4, playoff: false, final: false, home_proj: 113.28, away_proj: 111.69 }
-  - { week:  2, home: zachzoske, away: schirmerj, home_score: 30.7, away_score: 48.0, playoff: false, final: false, home_proj: 113.18, away_proj: 117.67 }
+  - { week:  2, home: jackperkins74, away: gganoom, home_score: 59.8, away_score: 11.8, playoff: false, final: false, home_proj: 110.52, away_proj: 113.07 }
+  - { week:  2, home: kevbots22, away: alexandra, home_score: 45.0, away_score: 27.5, playoff: false, final: false, home_proj: 121.48, away_proj: 125.22 }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: 35.6, away_score: 52.2, playoff: false, final: false, home_proj: 112.49, away_proj: 126.35 }
+  - { week:  2, home: sturmanator15, away: purpsworth, home_score: 20.9, away_score: 19.0, playoff: false, final: false, home_proj: 117.28, away_proj: 120.7 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 14.8, away_score: 53.2, playoff: false, final: false, home_proj: 113.28, away_proj: 111.7 }
+  - { week:  2, home: zachzoske, away: schirmerj, home_score: 48.0, away_score: 57.0, playoff: false, final: false, home_proj: 113.18, away_proj: 117.89 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }
@@ -249,6 +249,7 @@ keepers:
 # Tx/yr rate.
 transactions_known: true
 transactions:
+  alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 2, drops: 1, moves: 3 }
   jackperkins74: { adds: 17, drops: 12, moves: 29 }
   kevbots22: { adds: 1, drops: 0, moves: 1 }
@@ -259,7 +260,7 @@ transactions:
   sturmanator15: { adds: 3, drops: 2, moves: 5 }
   theoceanpulse: { adds: 4, drops: 2, moves: 6 }
   whowonthelastsuperbowl: { adds: 1, drops: 1, moves: 2 }
-  zachzoske: { adds: 8, drops: 6, moves: 14 }
+  zachzoske: { adds: 9, drops: 7, moves: 16 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -477,6 +478,10 @@ rosters:
   - player: Tyler Loop
     via: draft
     round: 15
+  - player: Rashid Shaheed
+    via: add
+    week: 2
+    waiver: false
   shawne2520997:
   - player: James Cook III
     via: draft

@@ -270,17 +270,17 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 8
-    away_yet: 10
+    home_yet: 3
+    away_yet: 4
     final: false
     live: true
     playoff: false
-    home_score: 39.3
-    away_score: 0.0
+    home_score: 59.8
+    away_score: 11.8
     winner_id: null
     tie: false
-    margin: 39.3
-    home_proj: 127.7
+    margin: 48.0
+    home_proj: 110.5
     away_proj: 113.1
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -292,14 +292,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     home_record: 0-0-1
     away_record: 1-0
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 3
+    away_yet: 6
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 45.0
+    away_score: 27.5
+    winner_id: null
+    tie: false
+    margin: 17.5
     home_proj: 121.5
-    away_proj: 122.7
+    away_proj: 125.2
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -311,18 +316,18 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 9
-    away_yet: 9
+    home_yet: 3
+    away_yet: 4
     final: false
     live: true
     playoff: false
-    home_score: -0.1
-    away_score: 14.2
+    home_score: 35.6
+    away_score: 52.2
     winner_id: null
     tie: false
-    margin: 14.3
+    margin: 16.6
     home_proj: 112.5
-    away_proj: 124.8
+    away_proj: 126.3
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -333,12 +338,17 @@
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     home_record: 0-1
     away_record: 0-1
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 6
+    away_yet: 4
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 20.9
+    away_score: 19.0
+    winner_id: null
+    tie: false
+    margin: 1.9
     home_proj: 117.3
     away_proj: 120.7
   - home_id: theoceanpulse
@@ -352,16 +362,16 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: true
-    home_yet: 10
-    away_yet: 8
+    home_yet: 4
+    away_yet: 3
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 27.4
+    home_score: 14.8
+    away_score: 53.2
     winner_id: null
     tie: false
-    margin: 27.4
+    margin: 38.4
     home_proj: 113.3
     away_proj: 111.7
   - home_id: zachzoske
@@ -375,18 +385,18 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 9
-    away_yet: 8
+    home_yet: 7
+    away_yet: 6
     final: false
     live: true
     playoff: false
-    home_score: 30.7
-    away_score: 48.0
+    home_score: 48.0
+    away_score: 57.0
     winner_id: null
     tie: false
-    margin: 17.3
+    margin: 9.0
     home_proj: 113.2
-    away_proj: 117.7
+    away_proj: 117.9
   highlights: []
   projections:
   - home_id: jackperkins74
