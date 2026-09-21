@@ -275,11 +275,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 88.9
-    away_score: 65.5
+    home_score: 92.0
+    away_score: 78.7
     winner_id: null
     tie: false
-    margin: 23.4
+    margin: 13.3
     home_proj: 115.5
     away_proj: 113.1
   - home_id: kevbots22
@@ -293,16 +293,16 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: true
-    home_yet: 2
-    away_yet: 2
+    home_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 85.4
-    away_score: 64.9
+    home_score: 96.2
+    away_score: 88.2
     winner_id: null
     tie: false
-    margin: 20.5
+    margin: 8.0
     home_proj: 121.5
     away_proj: 125.2
   - home_id: lukstein
@@ -316,16 +316,16 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 1
+    home_yet: 0
     away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 57.1
-    away_score: 92.1
+    home_score: 67.4
+    away_score: 118.1
     winner_id: null
     tie: false
-    margin: 35.0
+    margin: 50.7
     home_proj: 112.5
     away_proj: 126.3
   - home_id: sturmanator15
@@ -339,16 +339,16 @@
     home_record: 0-1
     away_record: 0-1
     scored: true
-    home_yet: 1
-    away_yet: 1
+    home_yet: 0
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 84.3
-    away_score: 70.8
+    home_score: 114.3
+    away_score: 89.8
     winner_id: null
     tie: false
-    margin: 13.5
+    margin: 24.5
     home_proj: 117.3
     away_proj: 120.7
   - home_id: theoceanpulse
@@ -362,16 +362,16 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: true
-    home_yet: 2
+    home_yet: 1
     away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 70.0
-    away_score: 104.9
+    home_score: 74.2
+    away_score: 123.7
     winner_id: null
     tie: false
-    margin: 34.9
+    margin: 49.5
     home_proj: 113.3
     away_proj: 111.7
   - home_id: zachzoske
@@ -385,16 +385,16 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 3
-    away_yet: 2
+    home_yet: 2
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 86.7
-    away_score: 88.7
+    home_score: 97.2
+    away_score: 122.9
     winner_id: null
     tie: false
-    margin: 2.0
+    margin: 25.7
     home_proj: 113.2
     away_proj: 117.9
   highlights: []
