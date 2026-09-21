@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-21T02:18:28+00:00'
+captured_at: '2026-09-21T09:24:35+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -15,7 +15,7 @@ rosters:
     pos: RB
     starter: true
     proj: 16.38
-    actual: 9.3
+    actual: 20.8
   - player: Ladd McConkey
     pos: WR
     starter: false
@@ -164,7 +164,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.21
-    actual: 5.0
+    actual: 1.0
   - player: Kayshon Boutte
     pos: WR
     starter: false
@@ -218,7 +218,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.34
-    actual: 10.7
+    actual: 11.0
   - player: Jason Myers
     pos: K
     starter: true
@@ -243,7 +243,7 @@ rosters:
     pos: RB
     starter: false
     proj: 5.76
-    actual: 1.8
+    actual: 5.0
   - player: Adam Randall
     pos: RB
     starter: false
@@ -327,7 +327,7 @@ rosters:
     pos: K
     starter: true
     proj: 8.77
-    actual: 6.0
+    actual: 16.0
   - player: Dontayvion Wicks
     pos: WR
     starter: false
@@ -460,7 +460,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.45
-    actual: 10.8
+    actual: 20.6
   - player: Chuba Hubbard
     pos: RB
     starter: true
@@ -519,7 +519,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.34
-    actual: 5.6
+    actual: 10.3
   - player: Lamar Jackson
     pos: QB
     starter: true
@@ -529,7 +529,7 @@ rosters:
     pos: TE
     starter: true
     proj: 9.0
-    actual: 9.0
+    actual: 11.4
   - player: DK Metcalf
     pos: WR
     starter: true
@@ -588,7 +588,7 @@ rosters:
     pos: RB
     starter: true
     proj: 16.94
-    actual: 14.4
+    actual: 27.2
   - player: Emeka Egbuka
     pos: WR
     starter: true
@@ -791,7 +791,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.32
-    actual: 6.1
+    actual: 10.7
   - player: Tyler Allgeier
     pos: RB
     starter: false
@@ -880,7 +880,7 @@ rosters:
     pos: QB
     starter: false
     proj: 19.8
-    actual: 22.4
+    actual: 31.9
   - player: Romeo Doubs
     pos: WR
     starter: false

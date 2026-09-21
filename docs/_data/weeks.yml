@@ -298,11 +298,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 96.2
-    away_score: 88.2
+    home_score: 106.0
+    away_score: 95.3
     winner_id: null
     tie: false
-    margin: 8.0
+    margin: 10.7
     home_proj: 121.5
     away_proj: 125.2
   - home_id: lukstein
@@ -321,11 +321,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 67.4
+    home_score: 77.4
     away_score: 118.1
     winner_id: null
     tie: false
-    margin: 50.7
+    margin: 40.7
     home_proj: 112.5
     away_proj: 126.3
   - home_id: sturmanator15
@@ -344,11 +344,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 114.3
-    away_score: 89.8
+    home_score: 125.8
+    away_score: 102.6
     winner_id: null
     tie: false
-    margin: 24.5
+    margin: 23.2
     home_proj: 117.3
     away_proj: 120.7
   - home_id: theoceanpulse
@@ -367,11 +367,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 74.2
+    home_score: 78.8
     away_score: 123.7
     winner_id: null
     tie: false
-    margin: 49.5
+    margin: 44.9
     home_proj: 113.3
     away_proj: 111.7
   - home_id: zachzoske
@@ -390,11 +390,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 97.2
-    away_score: 122.9
+    home_score: 93.2
+    away_score: 123.2
     winner_id: null
     tie: false
-    margin: 25.7
+    margin: 30.0
     home_proj: 113.2
     away_proj: 117.9
   highlights: []
