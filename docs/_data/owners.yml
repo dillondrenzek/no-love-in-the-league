@@ -3,9 +3,9 @@ active:
   name: Shawnee
   seasons: 11
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-  record: 82-53-1
-  win_pct: '.607'
-  win_color: '#f38e43'
+  record: 83-53-1
+  win_pct: '.609'
+  win_color: '#f38d43'
   titles: '2'
   sackos: 2
   trades: 4
@@ -19,9 +19,9 @@ active:
   name: Jack
   seasons: 13
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-  record: 89-73
-  win_pct: '.549'
-  win_color: '#f6a349'
+  record: 90-73
+  win_pct: '.552'
+  win_color: '#f6a248'
   titles: '2'
   sackos: 1
   trades: 6
@@ -35,9 +35,9 @@ active:
   name: Dillon
   seasons: 11
   logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
-  record: 83-51-2
-  win_pct: '.618'
-  win_color: '#f38a42'
+  record: 83-52-2
+  win_pct: '.613'
+  win_color: '#f38c43'
   titles: '1'
   sackos: 0
   trades: 13
@@ -50,9 +50,9 @@ active:
   name: Zach
   seasons: 13
   logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-  record: 81-80-1
-  win_pct: '.503'
-  win_color: '#f9b54d'
+  record: 81-81-1
+  win_pct: '.500'
+  win_color: '#f9b64d'
   titles: '1'
   sackos: 2
   trades: 16
@@ -65,9 +65,9 @@ active:
   name: Luke
   seasons: 13
   logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-  record: 76-86
-  win_pct: '.469'
-  win_color: '#fabf64'
+  record: 76-87
+  win_pct: '.466'
+  win_color: '#fac066'
   titles: '1'
   sackos: 1
   trades: 8
@@ -80,9 +80,9 @@ active:
   name: Wade
   seasons: 13
   logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-  record: 94-67-1
-  win_pct: '.583'
-  win_color: '#f49746'
+  record: 95-67-1
+  win_pct: '.586'
+  win_color: '#f49645'
   titles: ½
   sackos: 0
   trades: 7
@@ -95,9 +95,9 @@ active:
   name: Jono
   seasons: 13
   logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-  record: 80-81-1
-  win_pct: '.497'
-  win_color: '#f9b74f'
+  record: 81-81-1
+  win_pct: '.500'
+  win_color: '#f9b64d'
   titles: ½
   sackos: 0
   trades: 1
@@ -106,28 +106,13 @@ active:
     years:
     - 2016
   avg_finish: 5.8
-- id: alexandra
-  name: Lexi
-  seasons: 1
-  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-  record: 1-0
-  win_pct: '1.000'
-  win_color: '#ee6b3b'
-  titles: '0'
-  sackos: 0
-  trades: 0
-  best_finish:
-    type: place
-    ordinal: —
-    years: []
-  avg_finish: null
 - id: gganoom
   name: Grant
   seasons: 3
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-  record: 16-13
-  win_pct: '.552'
-  win_color: '#f6a348'
+  record: 16-14
+  win_pct: '.533'
+  win_color: '#f7aa4a'
   titles: '0'
   sackos: 0
   trades: 0
@@ -137,13 +122,28 @@ active:
     years:
     - 2025
   avg_finish: 6.0
+- id: alexandra
+  name: Lexi
+  seasons: 1
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+  record: 1-1
+  win_pct: '.500'
+  win_color: '#f9b64d'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: —
+    years: []
+  avg_finish: null
 - id: purpsworth
   name: Trevor
   seasons: 8
   logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-  record: 44-53
-  win_pct: '.454'
-  win_color: '#fac46f'
+  record: 44-54
+  win_pct: '.449'
+  win_color: '#fac672'
   titles: '0'
   sackos: 0
   trades: 6
@@ -157,9 +157,9 @@ active:
   name: Kevin
   seasons: 13
   logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-  record: 64-96-2
-  win_pct: '.401'
-  win_color: '#fbd496'
+  record: 65-96-2
+  win_pct: '.405'
+  win_color: '#fbd393'
   titles: '0'
   sackos: 0
   trades: 0
@@ -173,9 +173,9 @@ active:
   name: Nate
   seasons: 13
   logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-  record: 62-100
-  win_pct: '.383'
-  win_color: '#fbdaa3'
+  record: 63-100
+  win_pct: '.387'
+  win_color: '#fbd9a0'
   titles: '0'
   sackos: 2
   trades: 4
