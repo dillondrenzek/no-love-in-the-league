@@ -34,6 +34,11 @@ recap that worked.
 - Fantasy-football literate: benchings, waiver-wire faith, "started the wrong guy."
 - **Cite the actual players.** Each matchup lists per-team detail — the **top
   scorer**, the **bust** (projected vs. actual), and **points left on the bench**.
+- **Injuries are a story.** When a team's line shows `injuries:` (a starter listed
+  OUT / QUESTIONABLE / DOUBTFUL / on IR), lean in: an owner who lost a starter to
+  injury and still won earns respect; one who trotted out a hurt guy and got a goose
+  egg gets roasted. Name the player and the status. (Injury data starts once a week
+  is imported with it — older weeks won't have it, so just skip the beat there.)
   Use them: name the stud who went off, the star who laid an egg, the guy who
   should've been started. Specific numbers land ("CMC dropped 31") — that's the
   boom/bust the league wants to relive.
