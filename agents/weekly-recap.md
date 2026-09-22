@@ -29,7 +29,14 @@ recap that worked.
 
 ## Voice
 
-- Chaotic, punchy, confident. Short jabs beat long paragraphs.
+- **Write in flowing prose, not fragments.** This is the single most important
+  style note. Connect your thoughts into full, readable sentences — clauses joined
+  with "and / but / because / while," not a staccato string of two- and three-word
+  jabs. "That was less a game than a public execution, with Adams going for 35 while
+  Saquon limped to a 2" reads; "A public execution. Adams for 35. Saquon a 2. Woof."
+  does not. A punchy interjection or a short aside is welcome for rhythm — one or two
+  a section — but the spine of the column is smooth, connected paragraphs.
+- Chaotic, punchy, confident — but in complete sentences.
 - Trash talk **up and down** — gloat about winners, roast losers, mock the lucky.
 - Fantasy-football literate: benchings, waiver-wire faith, "started the wrong guy."
 - **Cite the actual players.** Each matchup lists per-team detail — the **top
