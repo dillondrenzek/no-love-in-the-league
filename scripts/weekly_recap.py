@@ -133,6 +133,12 @@ def _team_actual_line(entry):
         bits.append(f"bust {b['player']} ({b['proj']:.1f} proj → {b['actual']:.1f})")
     if entry.get("bench_points"):
         bits.append(f"{entry['bench_points']:.1f} left on the bench")
+    if entry.get("injured"):
+        inj = ", ".join(
+            f"{p['player']} {p['status']}" + (f" ({p['actual']:.1f})"
+                                              if p.get("actual") is not None else "")
+            for p in entry["injured"])
+        bits.append(f"injuries: {inj}")
     return "; ".join(bits) if bits else None
 
 

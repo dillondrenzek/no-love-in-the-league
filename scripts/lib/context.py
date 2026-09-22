@@ -193,12 +193,16 @@ def week_roster_context(week_rosters, *, want_actual=False):
 
     out = {}
     for fid, players in (week_rosters or {}).items():
-        starters, bench_points = [], 0.0
+        starters, bench_points, injured = [], 0.0, []
         for p in players or []:
             proj, act = num(p.get("proj")), num(p.get("actual"))
+            inj = (p.get("injury") or "").strip()
             if p.get("starter"):
                 starters.append({"player": p.get("player"), "pos": p.get("pos"),
-                                 "proj": proj, "actual": act})
+                                 "proj": proj, "actual": act, "injury": inj})
+                if inj:
+                    injured.append({"player": p.get("player"), "pos": p.get("pos"),
+                                    "status": inj, "proj": proj, "actual": act})
             elif act is not None:
                 bench_points += act
 
@@ -208,6 +212,7 @@ def week_roster_context(week_rosters, *, want_actual=False):
             "proj_total": round(sum(s["proj"] or 0.0 for s in starters), 1),
             "actual_total": round(sum(acts), 1) if acts else None,
             "bench_points": round(bench_points, 1),
+            "injured": injured,
         }
         if want_actual and acts:
             scored = [s for s in starters if s["actual"] is not None]

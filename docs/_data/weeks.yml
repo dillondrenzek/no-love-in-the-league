@@ -367,8 +367,8 @@
     final: false
     live: true
     playoff: false
-    home_score: 79.8
-    away_score: 133.7
+    home_score: 80.8
+    away_score: 134.7
     winner_id: null
     tie: false
     margin: 53.9
@@ -390,11 +390,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 103.1
-    away_score: 134.4
+    home_score: 106.5
+    away_score: 137.9
     winner_id: null
     tie: false
-    margin: 31.3
+    margin: 31.4
     home_proj: 113.2
     away_proj: 117.9
   highlights: []

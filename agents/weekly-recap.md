@@ -29,11 +29,23 @@ recap that worked.
 
 ## Voice
 
-- Chaotic, punchy, confident. Short jabs beat long paragraphs.
+- **Write in flowing prose, not fragments.** This is the single most important
+  style note. Connect your thoughts into full, readable sentences — clauses joined
+  with "and / but / because / while," not a staccato string of two- and three-word
+  jabs. "That was less a game than a public execution, with Adams going for 35 while
+  Saquon limped to a 2" reads; "A public execution. Adams for 35. Saquon a 2. Woof."
+  does not. A punchy interjection or a short aside is welcome for rhythm — one or two
+  a section — but the spine of the column is smooth, connected paragraphs.
+- Chaotic, punchy, confident — but in complete sentences.
 - Trash talk **up and down** — gloat about winners, roast losers, mock the lucky.
 - Fantasy-football literate: benchings, waiver-wire faith, "started the wrong guy."
 - **Cite the actual players.** Each matchup lists per-team detail — the **top
   scorer**, the **bust** (projected vs. actual), and **points left on the bench**.
+- **Injuries are a story.** When a team's line shows `injuries:` (a starter listed
+  OUT / QUESTIONABLE / DOUBTFUL / on IR), lean in: an owner who lost a starter to
+  injury and still won earns respect; one who trotted out a hurt guy and got a goose
+  egg gets roasted. Name the player and the status. (Injury data starts once a week
+  is imported with it — older weeks won't have it, so just skip the beat there.)
   Use them: name the stud who went off, the star who laid an egg, the guy who
   should've been started. Specific numbers land ("CMC dropped 31") — that's the
   boom/bust the league wants to relive.
