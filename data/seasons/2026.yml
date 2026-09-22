@@ -101,12 +101,12 @@ matchups:
   - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
-  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 116.05, away_proj: 123.06 }
-  - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 120.95, away_proj: 103.42 }
-  - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 109.12, away_proj: 119.37 }
-  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 114.95, away_proj: 112.95 }
-  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 112.17, away_proj: 88.33 }
-  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 118.11, away_proj: 102.47 }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 128.01, away_proj: 123.68 }
+  - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 121.17, away_proj: 103.15 }
+  - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 108.92, away_proj: 118.71 }
+  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 114.34, away_proj: 111.88 }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 113.47, away_proj: 88.41 }
+  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 116.93, away_proj: 103.21 }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
   - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
   - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false }

@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-22T08:53:21+00:00'
+captured_at: '2026-09-22T15:56:04+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -9,7 +9,7 @@ rosters:
   - player: Jaxon Smith-Njigba
     pos: WR
     starter: true
-    proj: 17.17
+    proj: 17.18
     actual: null
     injury: ''
   - player: Kenneth Walker III
@@ -26,8 +26,8 @@ rosters:
     injury: ''
   - player: Zay Flowers
     pos: WR
-    starter: false
-    proj: 13.0
+    starter: true
+    proj: 13.02
     actual: null
     injury: ''
   - player: Mike Evans
@@ -38,8 +38,8 @@ rosters:
     injury: ''
   - player: Tony Pollard
     pos: RB
-    starter: false
-    proj: 8.97
+    starter: true
+    proj: 9.67
     actual: null
     injury: ''
   - player: Justin Herbert
@@ -51,31 +51,31 @@ rosters:
   - player: Blake Corum
     pos: RB
     starter: false
-    proj: 7.71
+    proj: 8.17
     actual: null
     injury: ''
   - player: Trey McBride
     pos: TE
     starter: true
-    proj: 12.83
+    proj: 12.78
     actual: null
     injury: ''
   - player: Kyle Monangai
     pos: RB
-    starter: true
+    starter: false
     proj: 7.58
     actual: null
     injury: ''
   - player: MarShawn Lloyd
     pos: RB
-    starter: true
+    starter: false
     proj: 8.05
     actual: null
     injury: ''
   - player: Jonah Coleman
     pos: RB
-    starter: false
-    proj: 1.5
+    starter: true
+    proj: 1.43
     actual: null
     injury: ''
   - player: Jordyn Tyson
@@ -92,14 +92,14 @@ rosters:
     injury: ''
   - player: Mack Hollins
     pos: WR
-    starter: true
-    proj: 7.14
+    starter: false
+    proj: 7.15
     actual: null
     injury: ''
   - player: Chase McLaughlin
     pos: K
     starter: true
-    proj: 8.22
+    proj: 8.21
     actual: null
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
@@ -109,7 +109,7 @@ rosters:
   - player: Amon-Ra St. Brown
     pos: WR
     starter: true
-    proj: 16.23
+    proj: 16.22
     actual: null
     injury: ''
   - player: Tee Higgins
@@ -121,7 +121,7 @@ rosters:
   - player: Cam Skattebo
     pos: RB
     starter: true
-    proj: 14.16
+    proj: 13.11
     actual: null
     injury: ''
   - player: Joe Burrow
@@ -133,7 +133,7 @@ rosters:
   - player: Jonathon Brooks
     pos: RB
     starter: false
-    proj: 6.49
+    proj: 0.0
     actual: null
     injury: ''
   - player: George Kittle
@@ -145,7 +145,7 @@ rosters:
   - player: Michael Pittman Jr.
     pos: WR
     starter: false
-    proj: 8.95
+    proj: 8.94
     actual: null
     injury: ''
   - player: Bhayshul Tuten
@@ -157,13 +157,13 @@ rosters:
   - player: Isaiah Likely
     pos: TE
     starter: false
-    proj: 9.52
+    proj: 9.94
     actual: null
     injury: ''
   - player: Cam Little
     pos: K
     starter: true
-    proj: 8.48
+    proj: 8.46
     actual: null
     injury: ''
   - player: Woody Marks
@@ -193,7 +193,7 @@ rosters:
   - player: Chiefs D/ST
     pos: D/ST
     starter: true
-    proj: 6.47
+    proj: 6.37
     actual: null
     injury: ''
   - player: Kayshon Boutte
@@ -221,7 +221,7 @@ rosters:
   - player: Jaylen Waddle
     pos: WR
     starter: true
-    proj: 10.83
+    proj: 10.56
     actual: null
     injury: ''
   - player: Jameson Williams
@@ -233,7 +233,7 @@ rosters:
   - player: Carnell Tate
     pos: WR
     starter: false
-    proj: 9.4
+    proj: 9.61
     actual: null
     injury: ''
   - player: Tucker Kraft
@@ -251,7 +251,7 @@ rosters:
   - player: Kyren Williams
     pos: RB
     starter: true
-    proj: 11.68
+    proj: 11.42
     actual: null
     injury: ''
   - player: Xavier Worthy
@@ -263,7 +263,7 @@ rosters:
   - player: Jason Myers
     pos: K
     starter: true
-    proj: 9.21
+    proj: 9.19
     actual: null
     injury: ''
   - player: Keaton Mitchell
@@ -281,7 +281,7 @@ rosters:
   - player: Ravens D/ST
     pos: D/ST
     starter: true
-    proj: 4.43
+    proj: 4.37
     actual: null
     injury: ''
   - player: Emmett Johnson
@@ -321,7 +321,7 @@ rosters:
   - player: Jadarian Price
     pos: RB
     starter: true
-    proj: 11.27
+    proj: 11.28
     actual: null
     injury: ''
   - player: DJ Moore
@@ -333,25 +333,25 @@ rosters:
   - player: Jalen Hurts
     pos: QB
     starter: true
-    proj: 21.18
+    proj: 21.19
     actual: null
     injury: ''
   - player: Marvin Harrison Jr.
     pos: WR
     starter: true
-    proj: 5.76
+    proj: 5.75
     actual: null
     injury: ''
   - player: RJ Harvey
     pos: RB
     starter: false
-    proj: 8.19
+    proj: 8.9
     actual: null
     injury: ''
   - player: Matthew Golden
     pos: WR
     starter: true
-    proj: 9.51
+    proj: 9.5
     actual: null
     injury: ''
   - player: Alec Pierce
@@ -381,13 +381,13 @@ rosters:
   - player: Eagles D/ST
     pos: D/ST
     starter: true
-    proj: 5.53
+    proj: 5.36
     actual: null
     injury: ''
   - player: Harrison Butker
     pos: K
     starter: true
-    proj: 8.68
+    proj: 8.65
     actual: null
     injury: ''
   - player: Dontayvion Wicks
@@ -399,7 +399,7 @@ rosters:
   - player: Kyle Williams
     pos: WR
     starter: false
-    proj: 5.35
+    proj: 5.82
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -409,13 +409,13 @@ rosters:
   - player: Jahmyr Gibbs
     pos: RB
     starter: true
-    proj: 23.4
+    proj: 23.39
     actual: null
     injury: ''
   - player: Breece Hall
     pos: RB
     starter: true
-    proj: 14.57
+    proj: 14.58
     actual: null
     injury: ''
   - player: Travis Etienne Jr.
@@ -450,8 +450,8 @@ rosters:
     injury: ''
   - player: Puka Nacua
     pos: WR
-    starter: false
-    proj: 16.4
+    starter: true
+    proj: 16.32
     actual: null
     injury: ''
   - player: Mike Washington Jr.
@@ -469,37 +469,31 @@ rosters:
   - player: Kaleb Johnson
     pos: RB
     starter: false
-    proj: 7.55
+    proj: 7.54
     actual: null
     injury: ''
   - player: Buccaneers D/ST
     pos: D/ST
     starter: true
-    proj: 5.61
+    proj: 5.44
     actual: null
     injury: ''
   - player: Antonio Williams
     pos: WR
-    starter: true
+    starter: false
     proj: 4.17
     actual: null
     injury: ''
   - player: Cairo Santos
     pos: K
     starter: true
-    proj: 7.64
+    proj: 7.62
     actual: null
     injury: ''
   - player: Jaylin Noel
     pos: WR
     starter: false
-    proj: 3.72
-    actual: null
-    injury: ''
-  - player: Devin Singletary
-    pos: RB
-    starter: false
-    proj: 6.04
+    proj: 3.73
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -509,7 +503,7 @@ rosters:
   - player: Chase Brown
     pos: RB
     starter: true
-    proj: 14.64
+    proj: 14.65
     actual: null
     injury: ''
   - player: Justin Jefferson
@@ -527,7 +521,7 @@ rosters:
   - player: Tetairoa McMillan
     pos: WR
     starter: true
-    proj: 11.97
+    proj: 11.92
     actual: null
     injury: ''
   - player: Chris Olave
@@ -539,13 +533,13 @@ rosters:
   - player: Rhamondre Stevenson
     pos: RB
     starter: true
-    proj: 10.63
+    proj: 10.64
     actual: null
     injury: ''
   - player: Jaxson Dart
     pos: QB
     starter: false
-    proj: 22.03
+    proj: 0.0
     actual: null
     injury: ''
   - player: Travis Kelce
@@ -557,7 +551,7 @@ rosters:
   - player: Chuba Hubbard
     pos: RB
     starter: true
-    proj: 12.56
+    proj: 13.03
     actual: null
     injury: ''
   - player: Brian Thomas Jr.
@@ -581,25 +575,25 @@ rosters:
   - player: Cameron Dicker
     pos: K
     starter: true
-    proj: 8.91
+    proj: 8.88
     actual: null
     injury: ''
   - player: Matthew Stafford
     pos: QB
     starter: true
-    proj: 17.32
+    proj: 17.27
     actual: null
     injury: ''
   - player: Patriots D/ST
     pos: D/ST
     starter: true
-    proj: 5.15
+    proj: 5.01
     actual: null
     injury: ''
   - player: Samaje Perine
     pos: RB
     starter: false
-    proj: 4.05
+    proj: 4.06
     actual: null
     injury: ''
 - manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
@@ -615,19 +609,19 @@ rosters:
   - player: Jeremiyah Love
     pos: RB
     starter: true
-    proj: 11.21
+    proj: 11.17
     actual: null
     injury: ''
   - player: Rashee Rice
     pos: WR
     starter: true
-    proj: 10.5
+    proj: 10.51
     actual: null
     injury: ''
   - player: Lamar Jackson
     pos: QB
     starter: true
-    proj: 22.63
+    proj: 22.64
     actual: null
     injury: ''
   - player: Tyler Warren
@@ -639,7 +633,7 @@ rosters:
   - player: DK Metcalf
     pos: WR
     starter: true
-    proj: 9.58
+    proj: 9.57
     actual: null
     injury: ''
   - player: Javonte Williams
@@ -651,7 +645,7 @@ rosters:
   - player: J.K. Dobbins
     pos: RB
     starter: true
-    proj: 10.58
+    proj: 9.99
     actual: null
     injury: ''
   - player: Jordan Addison
@@ -669,7 +663,7 @@ rosters:
   - player: Tyjae Spears
     pos: RB
     starter: false
-    proj: 7.78
+    proj: 8.2
     actual: null
     injury: ''
   - player: Travis Hunter
@@ -687,13 +681,13 @@ rosters:
   - player: Tyler Loop
     pos: K
     starter: true
-    proj: 8.36
+    proj: 8.32
     actual: null
     injury: ''
   - player: Rashid Shaheed
     pos: WR
     starter: false
-    proj: 10.88
+    proj: 10.89
     actual: null
     injury: ''
 - manager_id: '{06571853-E276-48AA-9202-F06B0AD927ED}'
@@ -709,7 +703,7 @@ rosters:
   - player: Emeka Egbuka
     pos: WR
     starter: true
-    proj: 10.47
+    proj: 10.46
     actual: null
     injury: ''
   - player: Rome Odunze
@@ -757,19 +751,19 @@ rosters:
   - player: Mark Andrews
     pos: TE
     starter: true
-    proj: 8.26
+    proj: 8.28
     actual: null
     injury: ''
   - player: Bo Nix
     pos: QB
     starter: false
-    proj: 18.74
+    proj: 17.94
     actual: null
     injury: ''
   - player: Ka'imi Fairbairn
     pos: K
     starter: true
-    proj: 9.08
+    proj: 9.06
     actual: null
     injury: ''
   - player: Deebo Samuel Sr.
@@ -781,13 +775,13 @@ rosters:
   - player: Drake London
     pos: WR
     starter: true
-    proj: 12.53
+    proj: 12.52
     actual: null
     injury: ''
   - player: Steelers D/ST
     pos: D/ST
     starter: true
-    proj: 6.53
+    proj: 6.28
     actual: null
     injury: ''
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
@@ -797,7 +791,7 @@ rosters:
   - player: Derrick Henry
     pos: RB
     starter: true
-    proj: 16.96
+    proj: 17.0
     actual: null
     injury: ''
   - player: CeeDee Lamb
@@ -809,25 +803,25 @@ rosters:
   - player: Davante Adams
     pos: WR
     starter: true
-    proj: 10.67
+    proj: 11.52
     actual: null
     injury: ''
   - player: Bucky Irving
     pos: RB
     starter: true
-    proj: 14.21
+    proj: 14.2
     actual: null
     injury: ''
   - player: Sam LaPorta
     pos: TE
     starter: true
-    proj: 8.99
+    proj: 8.98
     actual: null
     injury: ''
   - player: Courtland Sutton
     pos: WR
     starter: true
-    proj: 9.24
+    proj: 9.0
     actual: null
     injury: ''
   - player: Aaron Jones Sr.
@@ -851,7 +845,7 @@ rosters:
   - player: Brandon Aubrey
     pos: K
     starter: true
-    proj: 9.51
+    proj: 9.5
     actual: null
     injury: ''
   - player: Drake Maye
@@ -875,7 +869,7 @@ rosters:
   - player: Justice Hill
     pos: RB
     starter: false
-    proj: 5.66
+    proj: 5.67
     actual: null
     injury: ''
   - player: George Holani
@@ -909,7 +903,7 @@ rosters:
   - player: David Montgomery
     pos: RB
     starter: true
-    proj: 11.1
+    proj: 11.11
     actual: null
     injury: ''
   - player: Christian Watson
@@ -951,13 +945,13 @@ rosters:
   - player: Tyler Allgeier
     pos: RB
     starter: false
-    proj: 6.73
+    proj: 6.71
     actual: null
     injury: ''
   - player: Harrison Mevis
     pos: K
     starter: true
-    proj: 8.18
+    proj: 7.99
     actual: null
     injury: ''
   - player: Zach Charbonnet
@@ -969,19 +963,19 @@ rosters:
   - player: Malachi Fields
     pos: WR
     starter: false
-    proj: 5.22
+    proj: 6.85
     actual: null
     injury: ''
   - player: Pat Bryant
     pos: WR
     starter: false
-    proj: 4.74
+    proj: 4.61
     actual: null
     injury: ''
   - player: 49ers D/ST
     pos: D/ST
     starter: true
-    proj: 7.21
+    proj: 7.47
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
@@ -991,19 +985,19 @@ rosters:
   - player: Bijan Robinson
     pos: RB
     starter: true
-    proj: 17.33
+    proj: 17.31
     actual: null
     injury: ''
   - player: Malik Nabers
     pos: WR
     starter: true
-    proj: 12.76
+    proj: 12.09
     actual: null
     injury: ''
   - player: Quinshon Judkins
     pos: RB
     starter: true
-    proj: 12.56
+    proj: 12.57
     actual: null
     injury: ''
   - player: TreVeyon Henderson
@@ -1015,13 +1009,13 @@ rosters:
   - player: Brock Bowers
     pos: TE
     starter: false
-    proj: 11.16
+    proj: 11.15
     actual: null
     injury: ''
   - player: Michael Wilson
     pos: WR
     starter: true
-    proj: 8.97
+    proj: 8.94
     actual: null
     injury: ''
   - player: Jaylen Warren
@@ -1039,7 +1033,7 @@ rosters:
   - player: Wan'Dale Robinson
     pos: WR
     starter: true
-    proj: 5.92
+    proj: 6.13
     actual: null
     injury: ''
   - player: Brock Purdy
@@ -1063,7 +1057,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 3.79
+    proj: 3.72
     actual: null
     injury: ''
   - player: Brian Robinson Jr.
@@ -1075,13 +1069,13 @@ rosters:
   - player: Chris Boswell
     pos: K
     starter: true
-    proj: 8.27
+    proj: 8.25
     actual: null
     injury: ''
   - player: Hunter Henry
     pos: TE
     starter: true
-    proj: 8.58
+    proj: 8.1
     actual: null
     injury: ''
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
@@ -1091,7 +1085,7 @@ rosters:
   - player: James Cook III
     pos: RB
     starter: true
-    proj: 15.91
+    proj: 15.9
     actual: null
     injury: ''
   - player: George Pickens
@@ -1103,7 +1097,7 @@ rosters:
   - player: D'Andre Swift
     pos: RB
     starter: true
-    proj: 11.54
+    proj: 11.53
     actual: null
     injury: ''
   - player: Terry McLaurin
@@ -1121,7 +1115,7 @@ rosters:
   - player: Dak Prescott
     pos: QB
     starter: true
-    proj: 18.77
+    proj: 18.57
     actual: null
     injury: ''
   - player: Chris Godwin Jr.
@@ -1139,7 +1133,7 @@ rosters:
   - player: Jalen Coker
     pos: WR
     starter: true
-    proj: 11.19
+    proj: 11.14
     actual: null
     injury: ''
   - player: Chris Rodriguez Jr.
@@ -1157,13 +1151,13 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: true
-    proj: 4.33
+    proj: 5.37
     actual: null
     injury: ''
   - player: Jake Bates
     pos: K
     starter: true
-    proj: 8.48
+    proj: 8.44
     actual: null
     injury: ''
   - player: Kaelon Black
@@ -1181,6 +1175,6 @@ rosters:
   - player: Rashod Bateman
     pos: WR
     starter: true
-    proj: 6.37
+    proj: 6.38
     actual: null
     injury: ''
