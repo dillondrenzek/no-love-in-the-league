@@ -95,12 +95,12 @@ matchups:
   - { week:  1, home: lukstein, away: purpsworth, home_score: 96.5, away_score: 85.4, playoff: false }
   - { week:  1, home: schirmerj, away: jackperkins74, home_score: 103.5, away_score: 166.7, playoff: false }
   - { week:  1, home: sturmanator15, away: zachzoske, home_score: 146.7, away_score: 161.3, playoff: false }
-  - { week:  2, home: jackperkins74, away: gganoom, home_score: 39.3, away_score: 0.0, playoff: false, final: false, home_proj: 127.14, away_proj: 112.84 }
-  - { week:  2, home: kevbots22, away: alexandra, playoff: false, played: false, home_proj: 121.54, away_proj: 120.39 }
-  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: -0.1, away_score: 14.2, playoff: false, final: false, home_proj: 112.51, away_proj: 124.96 }
-  - { week:  2, home: sturmanator15, away: purpsworth, playoff: false, played: false, home_proj: 115.88, away_proj: 121.76 }
-  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 0.0, away_score: 27.4, playoff: false, final: false, home_proj: 112.97, away_proj: 116.42 }
-  - { week:  2, home: zachzoske, away: schirmerj, home_score: 30.7, away_score: 48.0, playoff: false, final: false, home_proj: 112.15, away_proj: 117.42 }
+  - { week:  2, home: jackperkins74, away: gganoom, home_score: 92.0, away_score: 79.3, playoff: false, final: false, home_proj: 115.46, away_proj: 113.07 }
+  - { week:  2, home: kevbots22, away: alexandra, home_score: 106.8, away_score: 95.3, playoff: false, final: false, home_proj: 121.48, away_proj: 125.22 }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: 77.4, away_score: 153.6, playoff: false, final: false, home_proj: 112.49, away_proj: 126.35 }
+  - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false, final: false, home_proj: 117.27, away_proj: 120.7 }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 79.8, away_score: 133.7, playoff: false, final: false, home_proj: 113.28, away_proj: 111.7 }
+  - { week:  2, home: zachzoske, away: schirmerj, home_score: 103.1, away_score: 134.4, playoff: false, final: false, home_proj: 113.18, away_proj: 117.89 }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false }
@@ -249,17 +249,18 @@ keepers:
 # Tx/yr rate.
 transactions_known: true
 transactions:
+  alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 2, drops: 1, moves: 3 }
-  jackperkins74: { adds: 17, drops: 12, moves: 29 }
+  jackperkins74: { adds: 18, drops: 12, moves: 30 }
   kevbots22: { adds: 1, drops: 0, moves: 1 }
   lukstein: { adds: 6, drops: 3, moves: 9 }
   purpsworth: { adds: 2, drops: 1, moves: 3 }
   schirmerj: { adds: 1, drops: 0, moves: 1 }
-  shawne2520997: { adds: 2, drops: 2, moves: 4 }
+  shawne2520997: { adds: 3, drops: 2, moves: 5 }
   sturmanator15: { adds: 3, drops: 2, moves: 5 }
   theoceanpulse: { adds: 4, drops: 2, moves: 6 }
   whowonthelastsuperbowl: { adds: 1, drops: 1, moves: 2 }
-  zachzoske: { adds: 6, drops: 5, moves: 11 }
+  zachzoske: { adds: 9, drops: 7, moves: 16 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -369,6 +370,10 @@ rosters:
     via: add
     week: 2
     waiver: true
+  - player: Devin Singletary
+    via: add
+    week: 2
+    waiver: false
   - player: Jaylin Noel
     via: add
     week: 2
@@ -477,6 +482,10 @@ rosters:
   - player: Tyler Loop
     via: draft
     round: 15
+  - player: Rashid Shaheed
+    via: add
+    week: 2
+    waiver: false
   shawne2520997:
   - player: James Cook III
     via: draft
@@ -537,6 +546,10 @@ rosters:
     via: add
     week: 2
     waiver: true
+  - player: Rashod Bateman
+    via: add
+    week: 2
+    waiver: false
   schirmerj:
   - player: Christian McCaffrey
     via: draft
@@ -834,6 +847,14 @@ rosters:
     week: 1
     waiver: false
   - player: Chiefs D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Kayshon Boutte
+    via: add
+    week: 2
+    waiver: false
+  - player: Tyler Shough
     via: add
     week: 2
     waiver: false

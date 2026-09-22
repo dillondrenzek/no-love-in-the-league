@@ -271,18 +271,18 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 8
-    away_yet: 10
+    home_yet: 0
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 39.3
-    away_score: 0.0
+    home_score: 92.0
+    away_score: 79.3
     winner_id: null
     tie: false
-    margin: 39.3
-    home_proj: 127.1
-    away_proj: 112.8
+    margin: 12.7
+    home_proj: 115.5
+    away_proj: 113.1
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -293,14 +293,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     home_record: 0-0-1
     away_record: 1-0
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 0
+    away_yet: 0
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 106.8
+    away_score: 95.3
+    winner_id: null
+    tie: false
+    margin: 11.5
     home_proj: 121.5
-    away_proj: 120.4
+    away_proj: 125.2
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -312,18 +317,18 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 9
-    away_yet: 9
+    home_yet: 0
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: -0.1
-    away_score: 14.2
+    home_score: 77.4
+    away_score: 153.6
     winner_id: null
     tie: false
-    margin: 14.3
+    margin: 76.2
     home_proj: 112.5
-    away_proj: 125.0
+    away_proj: 126.3
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -334,14 +339,19 @@
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     home_record: 0-1
     away_record: 0-1
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 0
+    away_yet: 0
     final: false
-    live: false
+    live: true
     playoff: false
-    home_proj: 115.9
-    away_proj: 121.8
+    home_score: 125.8
+    away_score: 102.6
+    winner_id: null
+    tie: false
+    margin: 23.2
+    home_proj: 117.3
+    away_proj: 120.7
   - home_id: theoceanpulse
     home_team: The ChoSimba Ones
     home_owner: Dillon
@@ -353,18 +363,18 @@
     home_record: 0-0-1
     away_record: 1-0
     scored: true
-    home_yet: 10
-    away_yet: 8
+    home_yet: 0
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 27.4
+    home_score: 79.8
+    away_score: 133.7
     winner_id: null
     tie: false
-    margin: 27.4
-    home_proj: 113.0
-    away_proj: 116.4
+    margin: 53.9
+    home_proj: 113.3
+    away_proj: 111.7
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -376,18 +386,18 @@
     home_record: 1-0
     away_record: 0-1
     scored: true
-    home_yet: 9
-    away_yet: 8
+    home_yet: 0
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 30.7
-    away_score: 48.0
+    home_score: 103.1
+    away_score: 134.4
     winner_id: null
     tie: false
-    margin: 17.3
-    home_proj: 112.2
-    away_proj: 117.4
+    margin: 31.3
+    home_proj: 113.2
+    away_proj: 117.9
   highlights: []
   projections:
   - home_id: jackperkins74

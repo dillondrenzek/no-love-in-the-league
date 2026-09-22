@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
-    tx_per_year: 114.9
+    tx_per_year: 115.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -42,7 +42,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 1-0
-    tx: 29
+    tx: 30
     in_progress: true
     pf: 166.7
     pa: 103.5
@@ -476,6 +476,10 @@ jackperkins74:
       via: add
       week: 2
       waiver: true
+    - player: Devin Singletary
+      via: add
+      week: 2
+      waiver: false
     - player: Jaylin Noel
       via: add
       week: 2
@@ -2891,7 +2895,7 @@ zachzoske:
     playoff_apps: 5
     trades: 16
     trades_known: true
-    tx_per_year: 102.8
+    tx_per_year: 103.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -2906,7 +2910,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 1-0
-    tx: 11
+    tx: 16
     in_progress: true
     pf: 161.3
     pa: 146.7
@@ -3420,6 +3424,14 @@ zachzoske:
       week: 1
       waiver: false
     - player: Chiefs D/ST
+      via: add
+      week: 2
+      waiver: false
+    - player: Kayshon Boutte
+      via: add
+      week: 2
+      waiver: false
+    - player: Tyler Shough
       via: add
       week: 2
       waiver: false
@@ -5621,7 +5633,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: false
-    tx_per_year: 46.6
+    tx_per_year: 46.7
     tx_known: false
     seasons: 11
     best_finish:
@@ -5637,7 +5649,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 3rd
     record: 1-0
-    tx: 4
+    tx: 5
     in_progress: true
     pf: 108.3
     pa: 103.6
@@ -5958,6 +5970,10 @@ shawne2520997:
       via: add
       week: 2
       waiver: true
+    - player: Rashod Bateman
+      via: add
+      week: 2
+      waiver: false
   - year: 2025
     players:
     - player: Jahmyr Gibbs
@@ -7220,7 +7236,7 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
-    tx_per_year: 0.0
+    tx_per_year: 2.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -7235,7 +7251,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 4th
     record: 1-0
-    tx: 0
+    tx: 2
     in_progress: true
     pf: 105.0
     pa: 87.4
@@ -7301,6 +7317,10 @@ alexandra:
     - player: Tyler Loop
       via: draft
       round: 15
+    - player: Rashid Shaheed
+      via: add
+      week: 2
+      waiver: false
 lukstein:
   name: Luke
   nickname: ''
