@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-22T19:26:09+00:00'
+captured_at: '2026-09-22T22:30:47+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -726,7 +726,7 @@ rosters:
     injury: ''
   - player: Jayden Daniels
     pos: QB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
