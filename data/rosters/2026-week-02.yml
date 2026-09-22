@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-21T22:55:33+00:00'
+captured_at: '2026-09-22T02:22:27+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -45,7 +45,7 @@ rosters:
     pos: RB
     starter: false
     proj: 9.33
-    actual: null
+    actual: 2.7
   - player: Trey McBride
     pos: TE
     starter: true
@@ -104,7 +104,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.0
-    actual: null
+    actual: 6.2
   - player: Joe Burrow
     pos: QB
     starter: true
@@ -134,7 +134,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.78
-    actual: null
+    actual: 3.7
   - player: Cam Little
     pos: K
     starter: true
@@ -213,7 +213,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.31
-    actual: null
+    actual: 11.2
   - player: Xavier Worthy
     pos: WR
     starter: true
@@ -381,7 +381,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
   - player: Mike Washington Jr.
     pos: RB
     starter: false
@@ -417,6 +417,11 @@ rosters:
     starter: false
     proj: 7.88
     actual: 5.9
+  - player: Devin Singletary
+    pos: RB
+    starter: false
+    proj: 5.56
+    actual: 0.9
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: 'Josh Jacobs Alibi '
@@ -455,7 +460,7 @@ rosters:
     pos: QB
     starter: true
     proj: 19.28
-    actual: null
+    actual: 0.8
   - player: Travis Kelce
     pos: TE
     starter: true
@@ -490,7 +495,7 @@ rosters:
     pos: QB
     starter: false
     proj: 20.32
-    actual: null
+    actual: 23.8
   - player: Patriots D/ST
     pos: D/ST
     starter: true
@@ -677,7 +682,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.14
-    actual: null
+    actual: 35.5
   - player: Bucky Irving
     pos: RB
     starter: true
@@ -801,7 +806,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.16
-    actual: null
+    actual: 1.0
   - player: Zach Charbonnet
     pos: RB
     starter: false
@@ -811,7 +816,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.0
-    actual: null
+    actual: 1.9
   - player: Pat Bryant
     pos: WR
     starter: false
@@ -835,7 +840,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.26
-    actual: null
+    actual: 0.6
   - player: Quinshon Judkins
     pos: RB
     starter: true
@@ -969,7 +974,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.74
-    actual: null
+    actual: 10.0
   - player: Jake Bates
     pos: K
     starter: true

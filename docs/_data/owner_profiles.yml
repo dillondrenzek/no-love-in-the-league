@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 6
     trades_known: false
-    tx_per_year: 114.9
+    tx_per_year: 115.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -42,7 +42,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 1-0
-    tx: 29
+    tx: 30
     in_progress: true
     pf: 166.7
     pa: 103.5
@@ -476,6 +476,10 @@ jackperkins74:
       via: add
       week: 2
       waiver: true
+    - player: Devin Singletary
+      via: add
+      week: 2
+      waiver: false
     - player: Jaylin Noel
       via: add
       week: 2
