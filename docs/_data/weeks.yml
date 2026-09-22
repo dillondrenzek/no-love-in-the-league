@@ -599,12 +599,12 @@
     home_record: 1-1
     away_record: 0-1-1
     scored: false
-    home_yet: 10
+    home_yet: 9
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 113.5
+    home_proj: 118.0
     away_proj: 88.4
   - home_id: zachzoske
     home_team: Tuten Your Mom

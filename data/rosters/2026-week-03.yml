@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-22T15:56:04+00:00'
+captured_at: '2026-09-22T19:26:09+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -20,7 +20,7 @@ rosters:
     injury: ''
   - player: Ladd McConkey
     pos: WR
-    starter: false
+    starter: true
     proj: 11.04
     actual: null
     injury: ''
@@ -32,7 +32,7 @@ rosters:
     injury: ''
   - player: Mike Evans
     pos: WR
-    starter: true
+    starter: false
     proj: 10.59
     actual: null
     injury: ''
@@ -50,7 +50,7 @@ rosters:
     injury: ''
   - player: Blake Corum
     pos: RB
-    starter: false
+    starter: true
     proj: 8.17
     actual: null
     injury: ''
@@ -74,7 +74,7 @@ rosters:
     injury: ''
   - player: Jonah Coleman
     pos: RB
-    starter: true
+    starter: false
     proj: 1.43
     actual: null
     injury: ''
@@ -86,7 +86,7 @@ rosters:
     injury: ''
   - player: Chargers D/ST
     pos: D/ST
-    starter: true
+    starter: false
     proj: 2.64
     actual: null
     injury: ''
