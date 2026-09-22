@@ -1,0 +1,38 @@
+{%- comment -%}
+Finish History heatmap. Param: data (site.data.owners.finish_heatmap) with
+{years:[..], rows:[{id, name, avg_finish, cells:[{year, finish, color}]}]}.
+Owners down the left, season across the top; each cell shows where that manager
+placed that year and is shaded by how good the finish was (hotter = better,
+normalized to that season's field size). Rows are sorted by average finish.
+A blank cell means the owner didn't play that year.
+{%- endcomment -%}
+{%- assign hm = include.data -%}
+{%- if hm and hm.rows and hm.rows.size > 0 -%}
+<div class="table-scroll">
+<table class="heatmap">
+  <thead>
+    <tr>
+      <th>Owner</th>
+      {%- for y in hm.years %}<th class="num">{{ y }}</th>{%- endfor %}
+      <th class="num">Avg</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in hm.rows %}
+    <tr>
+      <td>
+        {%- if r.id -%}<a href="{{ '/teams/' | append: r.id | append: '/' | relative_url }}">{{ r.name }}</a>
+        {%- else -%}{{ r.name }}{%- endif -%}
+      </td>
+      {%- for c in r.cells %}
+      <td class="num heatmap__cell"{% if c.color %} style="background: {{ c.color }}"{% endif %}>{% if c.finish %}{{ c.finish }}{% endif %}</td>
+      {%- endfor %}
+      <td class="num"><strong>{% if r.avg_finish %}{{ r.avg_finish }}{% else %}—{% endif %}</strong></td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+{%- else -%}
+<p class="empty-state">No finish history on record yet.</p>
+{%- endif -%}

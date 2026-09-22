@@ -17,7 +17,9 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons, load_projections, load_week_rosters
+from lib.data import (load_franchises, load_seasons, load_projections,
+                      load_week_rosters, load_power_blurbs)
+from lib.power import power_rankings
 from lib.state import state_at_least
 from lib.weeks import week_summary
 from weekly_recap import scaffold_page
@@ -39,9 +41,12 @@ def main():
             continue
         projections = load_projections(year, franchises)   # {week: {fid: proj}}
         for wk in range(1, (season.get("weeks_in_regular_season") or 0) + 1):
-            detail[f"{year}-{wk}"] = week_summary(
+            summary = week_summary(
                 season, wk, franchises, week_proj=projections.get(wk),
                 week_rosters=load_week_rosters(year, wk, franchises))
+            summary["power"] = power_rankings(
+                season, wk, franchises, load_power_blurbs(year, wk))
+            detail[f"{year}-{wk}"] = summary
             _, was_created = scaffold_page(year, wk)
             if was_created:
                 created += 1
