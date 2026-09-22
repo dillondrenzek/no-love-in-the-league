@@ -14,7 +14,6 @@ active:
     years:
     - 2021
     - 2023
-  avg_finish: 5.0
 - id: jackperkins74
   name: Jack
   seasons: 13
@@ -30,7 +29,6 @@ active:
     years:
     - 2015
     - 2025
-  avg_finish: 4.8
 - id: theoceanpulse
   name: Dillon
   seasons: 11
@@ -45,7 +43,6 @@ active:
     type: shiva
     years:
     - 2018
-  avg_finish: 5.5
 - id: zachzoske
   name: Zach
   seasons: 13
@@ -60,7 +57,6 @@ active:
     type: shiva
     years:
     - 2019
-  avg_finish: 6.8
 - id: lukstein
   name: Luke
   seasons: 13
@@ -75,7 +71,6 @@ active:
     type: shiva
     years:
     - 2024
-  avg_finish: 6.4
 - id: sturmanator15
   name: Wade
   seasons: 13
@@ -90,7 +85,6 @@ active:
     type: cochamp
     years:
     - 2016
-  avg_finish: 6.7
 - id: schirmerj
   name: Jono
   seasons: 13
@@ -105,7 +99,6 @@ active:
     type: cochamp
     years:
     - 2016
-  avg_finish: 5.8
 - id: alexandra
   name: Lexi
   seasons: 1
@@ -120,7 +113,6 @@ active:
     type: place
     ordinal: —
     years: []
-  avg_finish: null
 - id: gganoom
   name: Grant
   seasons: 3
@@ -136,7 +128,6 @@ active:
     ordinal: 4th
     years:
     - 2025
-  avg_finish: 6.0
 - id: purpsworth
   name: Trevor
   seasons: 8
@@ -152,7 +143,6 @@ active:
     ordinal: 2nd
     years:
     - 2021
-  avg_finish: 6.3
 - id: kevbots22
   name: Kevin
   seasons: 13
@@ -168,7 +158,6 @@ active:
     ordinal: 2nd
     years:
     - 2025
-  avg_finish: 7.0
 - id: whowonthelastsuperbowl
   name: Nate
   seasons: 13
@@ -184,7 +173,6 @@ active:
     ordinal: 4th
     years:
     - 2022
-  avg_finish: 8.8
 inactive:
 - id: henpen28
   name: Henry
@@ -202,7 +190,6 @@ inactive:
     - 2014
     - 2017
     - 2022
-  avg_finish: 5.9
 - id: unclebadtouch38
   name: Fletcher
   seasons: 8
@@ -217,7 +204,6 @@ inactive:
     type: shiva
     years:
     - 2020
-  avg_finish: 7.2
 - id: thebragers
   name: Brady
   seasons: 2
@@ -233,7 +219,6 @@ inactive:
     ordinal: 5th
     years:
     - 2014
-  avg_finish: 5.5
 - id: master-otis
   name: Odie
   seasons: 3
@@ -250,7 +235,6 @@ inactive:
     years:
     - 2014
     - 2015
-  avg_finish: 5.3
 - id: ajstewart04
   name: Anthony
   seasons: 2
@@ -266,7 +250,661 @@ inactive:
     ordinal: 9th
     years:
     - 2017
-  avg_finish: 9.5
+finish_heatmap:
+  years:
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  rows:
+  - id: jackperkins74
+    name: Jack
+    avg_finish: 4.8
+    cells:
+    - year: 2014
+      finish: 8
+      color: '#fbd89f'
+    - year: 2015
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2016
+      finish: 4
+      color: '#f49445'
+    - year: 2017
+      finish: 5
+      color: '#f6a248'
+    - year: 2018
+      finish: 2
+      color: '#f0793e'
+    - year: 2019
+      finish: 3
+      color: '#f28642'
+    - year: 2020
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2021
+      finish: 5
+      color: '#f6a248'
+    - year: 2022
+      finish: 6
+      color: '#f8af4b'
+    - year: 2023
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2024
+      finish: 3
+      color: '#f28642'
+    - year: 2025
+      finish: 1
+      color: '#ee6b3b'
+  - id: shawne2520997
+    name: Shawnee
+    avg_finish: 5.0
+    cells:
+    - year: 2014
+      finish: null
+      color: null
+    - year: 2015
+      finish: null
+      color: null
+    - year: 2016
+      finish: 3
+      color: '#f28642'
+    - year: 2017
+      finish: 3
+      color: '#f28642'
+    - year: 2018
+      finish: 4
+      color: '#f49445'
+    - year: 2019
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2020
+      finish: 5
+      color: '#f6a248'
+    - year: 2021
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2022
+      finish: 2
+      color: '#f0793e'
+    - year: 2023
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2024
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2025
+      finish: 12
+      color: '#fdf3e0'
+  - id: theoceanpulse
+    name: Dillon
+    avg_finish: 5.5
+    cells:
+    - year: 2014
+      finish: null
+      color: null
+    - year: 2015
+      finish: null
+      color: null
+    - year: 2016
+      finish: 10
+      color: '#fcddab'
+    - year: 2017
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2018
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2019
+      finish: 4
+      color: '#f49445'
+    - year: 2020
+      finish: 6
+      color: '#f8af4b'
+    - year: 2021
+      finish: 9
+      color: '#fbd290'
+    - year: 2022
+      finish: 5
+      color: '#f6a248'
+    - year: 2023
+      finish: 3
+      color: '#f28642'
+    - year: 2024
+      finish: 4
+      color: '#f49445'
+    - year: 2025
+      finish: 6
+      color: '#f8af4b'
+  - id: schirmerj
+    name: Jono
+    avg_finish: 5.8
+    cells:
+    - year: 2014
+      finish: 7
+      color: '#faca7e'
+    - year: 2015
+      finish: 5
+      color: '#f8ae4b'
+    - year: 2016
+      finish: 2
+      color: '#f0793e'
+    - year: 2017
+      finish: 8
+      color: '#fac775'
+    - year: 2018
+      finish: 5
+      color: '#f6a248'
+    - year: 2019
+      finish: 5
+      color: '#f6a248'
+    - year: 2020
+      finish: 3
+      color: '#f28642'
+    - year: 2021
+      finish: 6
+      color: '#f8af4b'
+    - year: 2022
+      finish: 10
+      color: '#fcddab'
+    - year: 2023
+      finish: 5
+      color: '#f6a248'
+    - year: 2024
+      finish: 2
+      color: '#f0793e'
+    - year: 2025
+      finish: 11
+      color: '#fce8c5'
+  - id: gganoom
+    name: Grant
+    avg_finish: 6.0
+    cells:
+    - year: 2014
+      finish: null
+      color: null
+    - year: 2015
+      finish: null
+      color: null
+    - year: 2016
+      finish: null
+      color: null
+    - year: 2017
+      finish: null
+      color: null
+    - year: 2018
+      finish: null
+      color: null
+    - year: 2019
+      finish: null
+      color: null
+    - year: 2020
+      finish: null
+      color: null
+    - year: 2021
+      finish: null
+      color: null
+    - year: 2022
+      finish: null
+      color: null
+    - year: 2023
+      finish: null
+      color: null
+    - year: 2024
+      finish: 8
+      color: '#fac775'
+    - year: 2025
+      finish: 4
+      color: '#f49445'
+  - id: purpsworth
+    name: Trevor
+    avg_finish: 6.3
+    cells:
+    - year: 2014
+      finish: null
+      color: null
+    - year: 2015
+      finish: null
+      color: null
+    - year: 2016
+      finish: null
+      color: null
+    - year: 2017
+      finish: null
+      color: null
+    - year: 2018
+      finish: null
+      color: null
+    - year: 2019
+      finish: 10
+      color: '#fcddab'
+    - year: 2020
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2021
+      finish: 2
+      color: '#f0793e'
+    - year: 2022
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2023
+      finish: 6
+      color: '#f8af4b'
+    - year: 2024
+      finish: 9
+      color: '#fbd290'
+    - year: 2025
+      finish: 3
+      color: '#f28642'
+  - id: lukstein
+    name: Luke
+    avg_finish: 6.4
+    cells:
+    - year: 2014
+      finish: 6
+      color: '#f9bd5d'
+    - year: 2015
+      finish: 7
+      color: '#faca7e'
+    - year: 2016
+      finish: 6
+      color: '#f8af4b'
+    - year: 2017
+      finish: 2
+      color: '#f0793e'
+    - year: 2018
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2019
+      finish: 2
+      color: '#f0793e'
+    - year: 2020
+      finish: 10
+      color: '#fcddab'
+    - year: 2021
+      finish: 10
+      color: '#fcddab'
+    - year: 2022
+      finish: 3
+      color: '#f28642'
+    - year: 2023
+      finish: 11
+      color: '#fce8c5'
+    - year: 2024
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2025
+      finish: 7
+      color: '#f9bc5a'
+  - id: sturmanator15
+    name: Wade
+    avg_finish: 6.7
+    cells:
+    - year: 2014
+      finish: 4
+      color: '#f59d47'
+    - year: 2015
+      finish: 4
+      color: '#f59d47'
+    - year: 2016
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2017
+      finish: 11
+      color: '#fce8c5'
+    - year: 2018
+      finish: 8
+      color: '#fac775'
+    - year: 2019
+      finish: 6
+      color: '#f8af4b'
+    - year: 2020
+      finish: 11
+      color: '#fce8c5'
+    - year: 2021
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2022
+      finish: 11
+      color: '#fce8c5'
+    - year: 2023
+      finish: 4
+      color: '#f49445'
+    - year: 2024
+      finish: 5
+      color: '#f6a248'
+    - year: 2025
+      finish: 8
+      color: '#fac775'
+  - id: zachzoske
+    name: Zach
+    avg_finish: 6.8
+    cells:
+    - year: 2014
+      finish: 9
+      color: '#fce5bf'
+    - year: 2015
+      finish: 3
+      color: '#f38c43'
+    - year: 2016
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2017
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2018
+      finish: 3
+      color: '#f28642'
+    - year: 2019
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2020
+      finish: 2
+      color: '#f0793e'
+    - year: 2021
+      finish: 11
+      color: '#fce8c5'
+    - year: 2022
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2023
+      finish: 10
+      color: '#fcddab'
+    - year: 2024
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2025
+      finish: 5
+      color: '#f6a248'
+  - id: kevbots22
+    name: Kevin
+    avg_finish: 7.0
+    cells:
+    - year: 2014
+      finish: 3
+      color: '#f38c43'
+    - year: 2015
+      finish: 8
+      color: '#fbd89f'
+    - year: 2016
+      finish: 9
+      color: '#fbd290'
+    - year: 2017
+      finish: 6
+      color: '#f8af4b'
+    - year: 2018
+      finish: 9
+      color: '#fbd290'
+    - year: 2019
+      finish: 11
+      color: '#fce8c5'
+    - year: 2020
+      finish: 4
+      color: '#f49445'
+    - year: 2021
+      finish: 4
+      color: '#f49445'
+    - year: 2022
+      finish: 9
+      color: '#fbd290'
+    - year: 2023
+      finish: 8
+      color: '#fac775'
+    - year: 2024
+      finish: 11
+      color: '#fce8c5'
+    - year: 2025
+      finish: 2
+      color: '#f0793e'
+  - id: whowonthelastsuperbowl
+    name: Nate
+    avg_finish: 8.8
+    cells:
+    - year: 2014
+      finish: 10
+      color: '#fdf3e0'
+    - year: 2015
+      finish: 10
+      color: '#fdf3e0'
+    - year: 2016
+      finish: 8
+      color: '#fac775'
+    - year: 2017
+      finish: 10
+      color: '#fcddab'
+    - year: 2018
+      finish: 11
+      color: '#fce8c5'
+    - year: 2019
+      finish: 8
+      color: '#fac775'
+    - year: 2020
+      finish: 8
+      color: '#fac775'
+    - year: 2021
+      finish: 8
+      color: '#fac775'
+    - year: 2022
+      finish: 4
+      color: '#f49445'
+    - year: 2023
+      finish: 9
+      color: '#fbd290'
+    - year: 2024
+      finish: 10
+      color: '#fcddab'
+    - year: 2025
+      finish: 9
+      color: '#fbd290'
+  - id: master-otis
+    name: Odie
+    avg_finish: 5.3
+    cells:
+    - year: 2014
+      finish: 2
+      color: '#f07c3f'
+    - year: 2015
+      finish: 2
+      color: '#f07c3f'
+    - year: 2016
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2017
+      finish: null
+      color: null
+    - year: 2018
+      finish: null
+      color: null
+    - year: 2019
+      finish: null
+      color: null
+    - year: 2020
+      finish: null
+      color: null
+    - year: 2021
+      finish: null
+      color: null
+    - year: 2022
+      finish: null
+      color: null
+    - year: 2023
+      finish: null
+      color: null
+    - year: 2024
+      finish: null
+      color: null
+    - year: 2025
+      finish: null
+      color: null
+  - id: thebragers
+    name: Brady
+    avg_finish: 5.5
+    cells:
+    - year: 2014
+      finish: 5
+      color: '#f8ae4b'
+    - year: 2015
+      finish: 6
+      color: '#f9bd5d'
+    - year: 2016
+      finish: null
+      color: null
+    - year: 2017
+      finish: null
+      color: null
+    - year: 2018
+      finish: null
+      color: null
+    - year: 2019
+      finish: null
+      color: null
+    - year: 2020
+      finish: null
+      color: null
+    - year: 2021
+      finish: null
+      color: null
+    - year: 2022
+      finish: null
+      color: null
+    - year: 2023
+      finish: null
+      color: null
+    - year: 2024
+      finish: null
+      color: null
+    - year: 2025
+      finish: null
+      color: null
+  - id: henpen28
+    name: Henry
+    avg_finish: 5.9
+    cells:
+    - year: 2014
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2015
+      finish: 9
+      color: '#fce5bf'
+    - year: 2016
+      finish: 11
+      color: '#fce8c5'
+    - year: 2017
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2018
+      finish: 6
+      color: '#f8af4b'
+    - year: 2019
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2020
+      finish: 9
+      color: '#fbd290'
+    - year: 2021
+      finish: 3
+      color: '#f28642'
+    - year: 2022
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2023
+      finish: 2
+      color: '#f0793e'
+    - year: 2024
+      finish: 6
+      color: '#f8af4b'
+    - year: 2025
+      finish: 10
+      color: '#fcddab'
+  - id: unclebadtouch38
+    name: Fletcher
+    avg_finish: 7.2
+    cells:
+    - year: 2014
+      finish: null
+      color: null
+    - year: 2015
+      finish: null
+      color: null
+    - year: 2016
+      finish: 5
+      color: '#f6a248'
+    - year: 2017
+      finish: 4
+      color: '#f49445'
+    - year: 2018
+      finish: 7
+      color: '#f9bc5a'
+    - year: 2019
+      finish: 9
+      color: '#fbd290'
+    - year: 2020
+      finish: 1
+      color: '#ee6b3b'
+    - year: 2021
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2022
+      finish: 8
+      color: '#fac775'
+    - year: 2023
+      finish: 12
+      color: '#fdf3e0'
+    - year: 2024
+      finish: null
+      color: null
+    - year: 2025
+      finish: null
+      color: null
+  - id: ajstewart04
+    name: Anthony
+    avg_finish: 9.5
+    cells:
+    - year: 2014
+      finish: null
+      color: null
+    - year: 2015
+      finish: null
+      color: null
+    - year: 2016
+      finish: null
+      color: null
+    - year: 2017
+      finish: 9
+      color: '#fbd290'
+    - year: 2018
+      finish: 10
+      color: '#fcddab'
+    - year: 2019
+      finish: null
+      color: null
+    - year: 2020
+      finish: null
+      color: null
+    - year: 2021
+      finish: null
+      color: null
+    - year: 2022
+      finish: null
+      color: null
+    - year: 2023
+      finish: null
+      color: null
+    - year: 2024
+      finish: null
+      color: null
+    - year: 2025
+      finish: null
+      color: null
 draft_heatmap:
   slots:
   - 1
@@ -1168,38 +1806,6 @@ tx_heatmap:
     - year: 2026
       count: 4
       color: '#fdf0d9'
-  - id: henpen28
-    name: Henry
-    total: 360
-    tx_per_year: 45.0
-    cells:
-    - year: 2018
-      count: 56
-      color: '#fac879'
-    - year: 2019
-      count: 56
-      color: '#fac879'
-    - year: 2020
-      count: 48
-      color: '#fbce88'
-    - year: 2021
-      count: 29
-      color: '#fcddab'
-    - year: 2022
-      count: 50
-      color: '#facd84'
-    - year: 2023
-      count: 49
-      color: '#fbce86'
-    - year: 2024
-      count: 35
-      color: '#fbd8a0'
-    - year: 2025
-      count: 37
-      color: '#fbd79c'
-    - year: 2026
-      count: null
-      color: null
   - id: lukstein
     name: Luke
     total: 405
@@ -1264,38 +1870,6 @@ tx_heatmap:
     - year: 2026
       count: 3
       color: '#fdf1da'
-  - id: unclebadtouch38
-    name: Fletcher
-    total: 216
-    tx_per_year: 36.0
-    cells:
-    - year: 2018
-      count: 26
-      color: '#fcdfb0'
-    - year: 2019
-      count: 33
-      color: '#fbdaa3'
-    - year: 2020
-      count: 26
-      color: '#fcdfb0'
-    - year: 2021
-      count: 42
-      color: '#fbd393'
-    - year: 2022
-      count: 38
-      color: '#fbd69a'
-    - year: 2023
-      count: 51
-      color: '#facc82'
-    - year: 2024
-      count: null
-      color: null
-    - year: 2025
-      count: null
-      color: null
-    - year: 2026
-      count: null
-      color: null
   - id: whowonthelastsuperbowl
     name: Nate
     total: 298
@@ -1360,38 +1934,6 @@ tx_heatmap:
     - year: 2026
       count: 1
       color: '#fdf2de'
-  - id: ajstewart04
-    name: Anthony
-    total: 22
-    tx_per_year: 22.0
-    cells:
-    - year: 2018
-      count: 22
-      color: '#fce2b8'
-    - year: 2019
-      count: null
-      color: null
-    - year: 2020
-      count: null
-      color: null
-    - year: 2021
-      count: null
-      color: null
-    - year: 2022
-      count: null
-      color: null
-    - year: 2023
-      count: null
-      color: null
-    - year: 2024
-      count: null
-      color: null
-    - year: 2025
-      count: null
-      color: null
-    - year: 2026
-      count: null
-      color: null
   - id: gganoom
     name: Grant
     total: 64
@@ -1455,4 +1997,100 @@ tx_heatmap:
       color: null
     - year: 2026
       count: 0
+      color: null
+  - id: henpen28
+    name: Henry
+    total: 360
+    tx_per_year: 45.0
+    cells:
+    - year: 2018
+      count: 56
+      color: '#fac879'
+    - year: 2019
+      count: 56
+      color: '#fac879'
+    - year: 2020
+      count: 48
+      color: '#fbce88'
+    - year: 2021
+      count: 29
+      color: '#fcddab'
+    - year: 2022
+      count: 50
+      color: '#facd84'
+    - year: 2023
+      count: 49
+      color: '#fbce86'
+    - year: 2024
+      count: 35
+      color: '#fbd8a0'
+    - year: 2025
+      count: 37
+      color: '#fbd79c'
+    - year: 2026
+      count: null
+      color: null
+  - id: unclebadtouch38
+    name: Fletcher
+    total: 216
+    tx_per_year: 36.0
+    cells:
+    - year: 2018
+      count: 26
+      color: '#fcdfb0'
+    - year: 2019
+      count: 33
+      color: '#fbdaa3'
+    - year: 2020
+      count: 26
+      color: '#fcdfb0'
+    - year: 2021
+      count: 42
+      color: '#fbd393'
+    - year: 2022
+      count: 38
+      color: '#fbd69a'
+    - year: 2023
+      count: 51
+      color: '#facc82'
+    - year: 2024
+      count: null
+      color: null
+    - year: 2025
+      count: null
+      color: null
+    - year: 2026
+      count: null
+      color: null
+  - id: ajstewart04
+    name: Anthony
+    total: 22
+    tx_per_year: 22.0
+    cells:
+    - year: 2018
+      count: 22
+      color: '#fce2b8'
+    - year: 2019
+      count: null
+      color: null
+    - year: 2020
+      count: null
+      color: null
+    - year: 2021
+      count: null
+      color: null
+    - year: 2022
+      count: null
+      color: null
+    - year: 2023
+      count: null
+      color: null
+    - year: 2024
+      count: null
+      color: null
+    - year: 2025
+      count: null
+      color: null
+    - year: 2026
+      count: null
       color: null

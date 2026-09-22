@@ -119,6 +119,17 @@ def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
     return out
 
 
+def load_power_blurbs(year, week, data_dir=DATA_DIR):
+    """Hand-edited one-line power-ranking blurbs for a week: {fid: blurb}. Read
+    from data/power/<year>-week-<nn>.yml (scaffolded by scripts/weekly_power.py and
+    filled in from the agent's output). Empty when none written yet."""
+    path = Path(data_dir) / "power" / f"{year}-week-{week:02d}.yml"
+    if not path.is_file():
+        return {}
+    doc = _read_yaml(path) or {}
+    return doc.get("blurbs") or {}
+
+
 def load_settings(data_dir=DATA_DIR):
     """Per-season ESPN scoring/roster settings from data/settings.yml (written by
     scripts/import_settings.py). Returns the seasons list, or [] when the file was

@@ -91,7 +91,6 @@ def _owner_row(p, logos=None):
         "titles": fmt_titles(p["titles"]), "sackos": p["sackos"],
         "trades": p.get("trades", 0),
         "best_finish": _best_finish_data(p),
-        "avg_finish": p.get("avg_finish"),
     }
 
 
@@ -168,9 +167,47 @@ def tx_heatmap(profiles, roster=None):
         rows.append({"id": p["id"], "name": p["short"],
                      "total": sum(d.values()), "tx_per_year": p.get("tx_per_year", 0.0),
                      "cells": cells})
-    # Sorted by Tx/yr (busiest managers first), then name.
-    rows.sort(key=lambda r: (-r["tx_per_year"], r["name"].lower()))
+    # Active owners first, then inactive; within each by Tx/yr (busiest first).
+    rows.sort(key=lambda r: (r["id"] not in roster, -r["tx_per_year"],
+                             r["name"].lower()))
     return {"years": years, "max": max_count, "rows": rows}
+
+
+def finish_heatmap(profiles, roster=None):
+    """Owners × season grid of where each manager finished that year (1 = Shiva,
+    last = Sacko). A hotter cell is a better finish, normalized within that
+    season's field size (10- and 12-team years are comparable). Rows are sorted by
+    average finish (best first), active owners above inactive; a blank cell means
+    the owner didn't play that year (or it's still in progress). Returns None until
+    there's a finished season."""
+    roster = roster or set()
+    year_tc = {}                       # year -> that season's team count
+    for p in profiles.values():
+        for s in p.get("seasons", []):
+            if s.get("in_progress"):
+                continue
+            year_tc[s["year"]] = max(year_tc.get(s["year"], 0), s.get("team_count") or 0)
+    years = sorted(year_tc)
+    if not years:
+        return None
+    rows = []
+    for p in profiles.values():
+        fin = {s["year"]: s["finish"] for s in p.get("seasons", [])
+               if not s.get("in_progress")}
+        if not fin:
+            continue
+        cells = []
+        for y in years:
+            f = fin.get(y)
+            tc = year_tc.get(y, 0)
+            color = heat_color(tc - f, 0, tc - 1) if f and tc > 1 else None
+            cells.append({"year": y, "finish": f, "color": color})
+        rows.append({"id": p["id"], "name": p["short"],
+                     "avg_finish": p.get("avg_finish"), "cells": cells})
+    rows.sort(key=lambda r: (r["id"] not in roster,
+                             r["avg_finish"] if r["avg_finish"] is not None else 99,
+                             r["name"].lower()))
+    return {"years": years, "rows": rows}
 
 
 def owners_data(profiles, roster, logos=None):
@@ -301,6 +338,11 @@ def main():
     logos = latest_logos(seasons)
     logos_by_year = {s["season"]: (s.get("team_logos") or {}) for s in seasons}
     owners = owners_data(profiles, roster, logos)
+    # Finish History heatmap — where each manager placed every year, sorted by
+    # average finish (active owners above inactive).
+    fin_hm = finish_heatmap(profiles, roster)
+    if fin_hm:
+        owners["finish_heatmap"] = fin_hm
     # Draft Order History heatmap — every draft on record, including 2026's
     # projected order; active owners first, then inactive.
     heatmap = draft_heatmap(seasons, franchises, roster)

@@ -99,3 +99,27 @@ render the same way later. {%- endcomment -%}
 {%- else -%}
 <p class="empty-state">Matchups for this week aren’t set yet.</p>
 {%- endif -%}
+
+{%- comment -%} Power Rankings: computed order + week-over-week movement (lib/power),
+with agent-written blurbs joined from data/power/. Sits just above the Preview.
+{%- endcomment -%}
+{%- if wk.power and wk.power.size > 0 -%}
+<section class="power">
+  <h2 class="power__title">Power Rankings</h2>
+  <ol class="power__list">
+    {%- for r in wk.power %}
+    <li class="power__row">
+      <span class="power__rank">{{ r.rank }}</span>
+      <span class="power__move{% if r.movement > 0 %} power__move--up{% elsif r.movement < 0 %} power__move--down{% endif %}">
+        {%- if r.is_new %}NEW{% elsif r.movement > 0 %}▲{{ r.movement }}{% elsif r.movement < 0 %}▼{{ r.movement | times: -1 }}{% else %}—{% endif -%}
+      </span>
+      {% include bits/team_logo.html src=r.logo px=28 %}
+      <div class="power__body">
+        <div class="power__team"><a href="{{ '/teams/' | append: r.fid | append: '/' | relative_url }}">{{ r.team }}</a> <span class="owner-name">{{ r.owner }}</span></div>
+        {%- if r.blurb %}<div class="power__blurb">{{ r.blurb }}</div>{% endif -%}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+{%- endif -%}

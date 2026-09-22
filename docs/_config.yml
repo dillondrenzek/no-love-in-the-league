@@ -1,5 +1,6 @@
 title: The League
 description: Where there is no love — league history, standings, and records.
+url: https://noloveintheleague.com
 
 # This site uses its own layouts (docs/_layouts + docs/_includes) and its own
 # stylesheet (assets/main.scss) — no Jekyll theme gem. Nav lives in

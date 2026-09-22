@@ -381,6 +381,38 @@ tbody td a:hover { color: var(--brand); }
   display: inline-block;
 }
 
+/* Power Rankings */
+.power { margin-top: 34px; }
+.power__title { margin-bottom: 10px; }
+.power__list { list-style: none; margin: 0; padding: 0; }
+.power__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--rule);
+}
+.power__rank {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  min-width: 1.6em;
+  text-align: right;
+}
+.power__move {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  min-width: 3.2em;
+  color: var(--faint);
+}
+.power__move--up { color: #1a7f37; }
+.power__move--down { color: var(--brand); }
+.power__row .team-logo { width: 28px; height: 28px; flex: 0 0 auto; }
+.power__body { min-width: 0; }
+.power__team { font-weight: 600; }
+.power__team .owner-name { font-weight: 400; margin-left: 4px; }
+.power__blurb { font-size: 0.86rem; color: var(--ink); margin-top: 1px; }
+
 // =============================================================================
 // Projection accuracy (ESPN line under the scoreboard; green hit / red miss)
 // =============================================================================

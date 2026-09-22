@@ -13,7 +13,6 @@ site.data.owners (see scripts/generate_owners.py -> owners.yml).
       <th class="num">Titles</th>
       <th class="num">Sackos</th>
       <th class="num">Trades</th>
-      <th class="num">Avg Finish</th>
       <th>Best Finish</th>
     </tr>
   </thead>
@@ -27,7 +26,6 @@ site.data.owners (see scripts/generate_owners.py -> owners.yml).
       <td class="num">{% if o.titles == "0" %}—{% else %}{{ o.titles }}{% endif %}</td>
       <td class="num">{% if o.sackos > 0 %}{{ o.sackos }}{% else %}—{% endif %}</td>
       <td class="num">{% if o.trades > 0 %}{{ o.trades }}{% else %}—{% endif %}</td>
-      <td class="num">{% if o.avg_finish %}{{ o.avg_finish }}{% else %}—{% endif %}</td>
       <td>{% include bits/best_finish.html bf=o.best_finish %}</td>
     </tr>
     {%- endfor %}
