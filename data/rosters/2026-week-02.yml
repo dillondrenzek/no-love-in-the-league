@@ -1,6 +1,6 @@
 season: 2026
 week: 2
-captured_at: '2026-09-22T02:22:27+00:00'
+captured_at: '2026-09-22T03:14:55+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -45,7 +45,7 @@ rosters:
     pos: RB
     starter: false
     proj: 9.33
-    actual: 2.7
+    actual: 9.7
   - player: Trey McBride
     pos: TE
     starter: true
@@ -104,7 +104,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.0
-    actual: 6.2
+    actual: 7.5
   - player: Joe Burrow
     pos: QB
     starter: true
@@ -134,7 +134,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.78
-    actual: 3.7
+    actual: 5.8
   - player: Cam Little
     pos: K
     starter: true
@@ -213,7 +213,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.31
-    actual: 11.2
+    actual: 14.7
   - player: Xavier Worthy
     pos: WR
     starter: true
@@ -495,7 +495,7 @@ rosters:
     pos: QB
     starter: false
     proj: 20.32
-    actual: 23.8
+    actual: 30.9
   - player: Patriots D/ST
     pos: D/ST
     starter: true
@@ -806,7 +806,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.16
-    actual: 1.0
+    actual: 2.0
   - player: Zach Charbonnet
     pos: RB
     starter: false
@@ -816,7 +816,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.0
-    actual: 1.9
+    actual: 4.0
   - player: Pat Bryant
     pos: WR
     starter: false
@@ -974,7 +974,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.74
-    actual: 10.0
+    actual: 11.0
   - player: Jake Bates
     pos: K
     starter: true
