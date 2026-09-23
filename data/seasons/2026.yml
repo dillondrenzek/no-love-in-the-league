@@ -101,12 +101,12 @@ matchups:
   - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
-  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 128.01, away_proj: 123.68 }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 129.14, away_proj: 123.68 }
   - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 121.17, away_proj: 103.15 }
   - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 108.92, away_proj: 118.71 }
-  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 114.34, away_proj: 111.88 }
-  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 118.02, away_proj: 88.41 }
-  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 116.93, away_proj: 103.21 }
+  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 117.12, away_proj: 111.88 }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 122.44, away_proj: 91.51 }
+  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 91.89, away_proj: 103.21 }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
   - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
   - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -252,16 +252,16 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 2, drops: 1, moves: 3 }
-  jackperkins74: { adds: 18, drops: 12, moves: 30 }
-  kevbots22: { adds: 1, drops: 0, moves: 1 }
-  lukstein: { adds: 6, drops: 3, moves: 9 }
+  jackperkins74: { adds: 19, drops: 13, moves: 32 }
+  kevbots22: { adds: 2, drops: 1, moves: 3 }
+  lukstein: { adds: 7, drops: 4, moves: 11 }
   purpsworth: { adds: 2, drops: 1, moves: 3 }
-  schirmerj: { adds: 1, drops: 0, moves: 1 }
+  schirmerj: { adds: 3, drops: 2, moves: 5 }
   shawne2520997: { adds: 3, drops: 2, moves: 5 }
-  sturmanator15: { adds: 3, drops: 2, moves: 5 }
-  theoceanpulse: { adds: 4, drops: 2, moves: 6 }
-  whowonthelastsuperbowl: { adds: 1, drops: 1, moves: 2 }
-  zachzoske: { adds: 9, drops: 7, moves: 16 }
+  sturmanator15: { adds: 5, drops: 4, moves: 9 }
+  theoceanpulse: { adds: 7, drops: 5, moves: 12 }
+  whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
+  zachzoske: { adds: 12, drops: 7, moves: 19 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -383,6 +383,10 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Vikings D/ST
+    via: add
+    week: 3
+    waiver: true
   gganoom:
   - player: Bijan Robinson
     via: draft
@@ -601,6 +605,14 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Joshua Palmer
+    via: add
+    week: 3
+    waiver: true
+  - player: Panthers D/ST
+    via: add
+    week: 3
+    waiver: true
   lukstein:
   - player: Saquon Barkley
     via: draft
@@ -667,6 +679,10 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Malik Washington
+    via: add
+    week: 3
+    waiver: true
   purpsworth:
   - player: Jonathan Taylor
     via: draft
@@ -782,6 +798,14 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Bryce Young
+    via: add
+    week: 3
+    waiver: true
+  - player: Packers D/ST
+    via: add
+    week: 3
+    waiver: true
   zachzoske:
   - player: Amon-Ra St. Brown
     via: draft
@@ -859,6 +883,18 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Chris Bell
+    via: add
+    week: 3
+    waiver: false
+  - player: Jared Goff
+    via: add
+    week: 3
+    waiver: true
+  - player: Keon Coleman
+    via: add
+    week: 3
+    waiver: false
   theoceanpulse:
   - player: Omarion Hampton
     via: draft
@@ -927,6 +963,18 @@ rosters:
     via: add
     week: 2
     waiver: true
+  - player: Eddy Pineiro
+    via: add
+    week: 3
+    waiver: true
+  - player: Emanuel Wilson
+    via: add
+    week: 3
+    waiver: true
+  - player: Khalil Shakir
+    via: add
+    week: 3
+    waiver: true
   kevbots22:
   - player: Chase Brown
     via: draft
@@ -977,6 +1025,10 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Tre Tucker
+    via: add
+    week: 3
+    waiver: true
   whowonthelastsuperbowl:
   - player: Derrick Henry
     via: draft
@@ -1027,3 +1079,7 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Tyler Shough
+    via: add
+    week: 3
+    waiver: true

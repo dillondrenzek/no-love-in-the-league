@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 115.0
+    tx_per_year: 115.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -42,7 +42,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 2-0
-    tx: 30
+    tx: 32
     in_progress: true
     pf: 258.7
     pa: 182.8
@@ -560,6 +560,10 @@ jackperkins74:
       via: add
       week: 2
       waiver: false
+    - player: Vikings D/ST
+      via: add
+      week: 3
+      waiver: true
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -4595,7 +4599,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 86.9
+    tx_per_year: 87.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -4610,7 +4614,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 1-1
-    tx: 5
+    tx: 9
     in_progress: true
     pf: 272.5
     pa: 263.9
@@ -5005,6 +5009,14 @@ sturmanator15:
       via: add
       week: 2
       waiver: false
+    - player: Bryce Young
+      via: add
+      week: 3
+      waiver: true
+    - player: Packers D/ST
+      via: add
+      week: 3
+      waiver: true
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -7016,7 +7028,7 @@ zachzoske:
     playoff_apps: 5
     trades: 16
     trades_known: true
-    tx_per_year: 103.3
+    tx_per_year: 103.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -7031,7 +7043,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 4th
     record: 1-1
-    tx: 16
+    tx: 19
     in_progress: true
     pf: 267.8
     pa: 284.6
@@ -7555,6 +7567,18 @@ zachzoske:
     - player: Tyler Shough
       via: add
       week: 2
+      waiver: false
+    - player: Chris Bell
+      via: add
+      week: 3
+      waiver: false
+    - player: Jared Goff
+      via: add
+      week: 3
+      waiver: true
+    - player: Keon Coleman
+      via: add
+      week: 3
       waiver: false
   - year: 2025
     players:
@@ -9748,7 +9772,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: false
-    tx_per_year: 29.6
+    tx_per_year: 29.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -9764,7 +9788,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 5th
     record: 1-0-1
-    tx: 1
+    tx: 3
     in_progress: true
     pf: 244.2
     pa: 232.7
@@ -10077,6 +10101,10 @@ kevbots22:
       via: add
       week: 1
       waiver: false
+    - player: Tre Tucker
+      via: add
+      week: 3
+      waiver: true
   - year: 2025
     players:
     - player: Christian McCaffrey
@@ -11187,7 +11215,7 @@ schirmerj:
     playoff_apps: 9
     trades: 1
     trades_known: false
-    tx_per_year: 50.8
+    tx_per_year: 51.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -11202,7 +11230,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 6th
     record: 1-1
-    tx: 1
+    tx: 5
     in_progress: true
     pf: 241.4
     pa: 273.2
@@ -11523,6 +11551,14 @@ schirmerj:
       via: add
       week: 1
       waiver: false
+    - player: Joshua Palmer
+      via: add
+      week: 3
+      waiver: true
+    - player: Panthers D/ST
+      via: add
+      week: 3
+      waiver: true
   - year: 2025
     players:
     - player: Bijan Robinson
@@ -12889,7 +12925,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: false
-    tx_per_year: 33.1
+    tx_per_year: 33.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -12905,7 +12941,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 7th
     record: 1-1
-    tx: 2
+    tx: 4
     in_progress: true
     pf: 241.0
     pa: 182.4
@@ -13255,6 +13291,10 @@ whowonthelastsuperbowl:
       via: add
       week: 2
       waiver: false
+    - player: Tyler Shough
+      via: add
+      week: 3
+      waiver: true
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -14672,7 +14712,7 @@ lukstein:
     playoff_apps: 7
     trades: 8
     trades_known: false
-    tx_per_year: 45.0
+    tx_per_year: 45.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -14687,7 +14727,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 9th
     record: 1-1
-    tx: 9
+    tx: 11
     in_progress: true
     pf: 173.9
     pa: 239.0
@@ -15095,6 +15135,10 @@ lukstein:
       via: add
       week: 2
       waiver: false
+    - player: Malik Washington
+      via: add
+      week: 3
+      waiver: true
   - year: 2025
     players:
     - player: Amon-Ra St. Brown
@@ -16483,7 +16527,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 13
     trades_known: true
-    tx_per_year: 48.9
+    tx_per_year: 49.6
     tx_known: false
     seasons: 11
     best_finish:
@@ -16498,7 +16542,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 0-1-1
-    tx: 6
+    tx: 12
     in_progress: true
     pf: 218.2
     pa: 272.1
@@ -16945,6 +16989,18 @@ theoceanpulse:
     - player: Pat Bryant
       via: add
       week: 2
+      waiver: true
+    - player: Eddy Pineiro
+      via: add
+      week: 3
+      waiver: true
+    - player: Emanuel Wilson
+      via: add
+      week: 3
+      waiver: true
+    - player: Khalil Shakir
+      via: add
+      week: 3
       waiver: true
   - year: 2025
     players:

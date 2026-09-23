@@ -532,7 +532,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 128.0
+    home_proj: 129.1
     away_proj: 123.7
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -586,7 +586,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 114.3
+    home_proj: 117.1
     away_proj: 111.9
   - home_id: sturmanator15
     home_team: The People's Commissioner
@@ -599,13 +599,13 @@
     home_record: 1-1
     away_record: 0-1-1
     scored: false
-    home_yet: 9
+    home_yet: 10
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 118.0
-    away_proj: 88.4
+    home_proj: 122.4
+    away_proj: 91.5
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -617,12 +617,12 @@
     home_record: 1-1
     away_record: 2-0
     scored: false
-    home_yet: 10
+    home_yet: 8
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 116.9
+    home_proj: 91.9
     away_proj: 103.2
   highlights: []
   projections: []
