@@ -101,12 +101,12 @@ matchups:
   - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
-  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 129.14, away_proj: 123.68 }
-  - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 121.17, away_proj: 103.15 }
-  - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 108.92, away_proj: 118.71 }
-  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 117.12, away_proj: 111.88 }
-  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 122.44, away_proj: 91.51 }
-  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 91.89, away_proj: 103.21 }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 129.53, away_proj: 123.68 }
+  - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 121.17, away_proj: 119.56 }
+  - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 112.07, away_proj: 118.71 }
+  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 117.12, away_proj: 118.95 }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 124.16, away_proj: 82.37 }
+  - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 118.82, away_proj: 103.21 }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
   - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
   - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -225,6 +225,18 @@ trades:
   - from: purpsworth
     to: zachzoske
     label: Ashton Jeanty
+- id: d166a646-a658-4aad-bfc6-9d9b5f1cc9fe
+  week: 3
+  teams:
+  - theoceanpulse
+  - zachzoske
+  assets:
+  - from: theoceanpulse
+    to: zachzoske
+    label: Josh Downs
+  - from: zachzoske
+    to: theoceanpulse
+    label: Jared Goff
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
@@ -251,14 +263,14 @@ keepers:
 transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
-  gganoom: { adds: 2, drops: 1, moves: 3 }
-  jackperkins74: { adds: 19, drops: 13, moves: 32 }
+  gganoom: { adds: 3, drops: 2, moves: 5 }
+  jackperkins74: { adds: 22, drops: 16, moves: 38 }
   kevbots22: { adds: 2, drops: 1, moves: 3 }
   lukstein: { adds: 7, drops: 4, moves: 11 }
-  purpsworth: { adds: 2, drops: 1, moves: 3 }
+  purpsworth: { adds: 3, drops: 2, moves: 5 }
   schirmerj: { adds: 3, drops: 2, moves: 5 }
   shawne2520997: { adds: 3, drops: 2, moves: 5 }
-  sturmanator15: { adds: 5, drops: 4, moves: 9 }
+  sturmanator15: { adds: 7, drops: 6, moves: 13 }
   theoceanpulse: { adds: 7, drops: 5, moves: 12 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
   zachzoske: { adds: 12, drops: 7, moves: 19 }
@@ -383,10 +395,22 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Alvin Kamara
+    via: add
+    week: 3
+    waiver: false
+  - player: Kyler Murray
+    via: add
+    week: 3
+    waiver: false
   - player: Vikings D/ST
     via: add
     week: 3
     waiver: true
+  - player: Will Reichard
+    via: add
+    week: 3
+    waiver: false
   gganoom:
   - player: Bijan Robinson
     via: draft
@@ -440,6 +464,10 @@ rosters:
   - player: Hunter Henry
     via: add
     week: 1
+    waiver: false
+  - player: Trey Smack
+    via: add
+    week: 3
     waiver: false
   alexandra:
   - player: Ja'Marr Chase
@@ -740,6 +768,10 @@ rosters:
     via: add
     week: 2
     waiver: true
+  - player: Evan McPherson
+    via: add
+    week: 3
+    waiver: false
   sturmanator15:
   - player: Jaxon Smith-Njigba
     via: draft
@@ -798,10 +830,18 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Bengals D/ST
+    via: add
+    week: 3
+    waiver: false
   - player: Bryce Young
     via: add
     week: 3
     waiver: true
+  - player: Jordan Love
+    via: add
+    week: 3
+    waiver: false
   - player: Packers D/ST
     via: add
     week: 3
@@ -883,6 +923,9 @@ rosters:
     via: add
     week: 2
     waiver: false
+  - player: Josh Downs
+    via: trade
+    week: 3
   - player: Chris Bell
     via: add
     week: 3
@@ -963,6 +1006,9 @@ rosters:
     via: add
     week: 2
     waiver: true
+  - player: Jared Goff
+    via: trade
+    week: 3
   - player: Eddy Pineiro
     via: add
     week: 3

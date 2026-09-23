@@ -532,7 +532,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 129.1
+    home_proj: 129.5
     away_proj: 123.7
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -546,12 +546,12 @@
     away_record: 0-2
     scored: false
     home_yet: 10
-    away_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
     home_proj: 121.2
-    away_proj: 103.2
+    away_proj: 119.6
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -568,7 +568,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 108.9
+    home_proj: 112.1
     away_proj: 118.7
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -587,7 +587,7 @@
     live: false
     playoff: false
     home_proj: 117.1
-    away_proj: 111.9
+    away_proj: 119.0
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -600,12 +600,12 @@
     away_record: 0-1-1
     scored: false
     home_yet: 10
-    away_yet: 10
+    away_yet: 9
     final: false
     live: false
     playoff: false
-    home_proj: 122.4
-    away_proj: 91.5
+    home_proj: 124.2
+    away_proj: 82.4
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -617,12 +617,12 @@
     home_record: 1-1
     away_record: 2-0
     scored: false
-    home_yet: 8
+    home_yet: 10
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 91.9
+    home_proj: 118.8
     away_proj: 103.2
   highlights: []
   projections: []

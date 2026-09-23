@@ -281,6 +281,18 @@ detail:
         team: Tuten Your Mom
         gave:
         - Drake London
+    - week: 3
+      parties:
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: The ChoSimba Ones
+        gave:
+        - Josh Downs
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mom
+        gave:
+        - Jared Goff
     keepers:
     - round: 5
       player: Brock Bowers

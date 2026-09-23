@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 115.2
+    tx_per_year: 115.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -42,7 +42,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 2-0
-    tx: 32
+    tx: 38
     in_progress: true
     pf: 258.7
     pa: 182.8
@@ -560,10 +560,22 @@ jackperkins74:
       via: add
       week: 2
       waiver: false
+    - player: Alvin Kamara
+      via: add
+      week: 3
+      waiver: false
+    - player: Kyler Murray
+      via: add
+      week: 3
+      waiver: false
     - player: Vikings D/ST
       via: add
       week: 3
       waiver: true
+    - player: Will Reichard
+      via: add
+      week: 3
+      waiver: false
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -4599,7 +4611,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 87.3
+    tx_per_year: 87.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -4614,7 +4626,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 1-1
-    tx: 9
+    tx: 13
     in_progress: true
     pf: 272.5
     pa: 263.9
@@ -5009,10 +5021,18 @@ sturmanator15:
       via: add
       week: 2
       waiver: false
+    - player: Bengals D/ST
+      via: add
+      week: 3
+      waiver: false
     - player: Bryce Young
       via: add
       week: 3
       waiver: true
+    - player: Jordan Love
+      via: add
+      week: 3
+      waiver: false
     - player: Packers D/ST
       via: add
       week: 3
@@ -7026,7 +7046,7 @@ zachzoske:
     titles: '1'
     sackos: 2
     playoff_apps: 5
-    trades: 16
+    trades: 17
     trades_known: true
     tx_per_year: 103.7
     tx_known: false
@@ -7286,6 +7306,16 @@ zachzoske:
     avg_pf: 98.7
     avg_pa: 100.9
   trades:
+  - year: 2026
+    week: 3
+    got:
+    - Josh Downs
+    gave:
+    - Jared Goff
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: The ChoSimba Ones
   - year: 2026
     week: 1
     got:
@@ -7568,6 +7598,9 @@ zachzoske:
       via: add
       week: 2
       waiver: false
+    - player: Josh Downs
+      via: trade
+      week: 3
     - player: Chris Bell
       via: add
       week: 3
@@ -16525,7 +16558,7 @@ theoceanpulse:
     titles: '1'
     sackos: 0
     playoff_apps: 8
-    trades: 13
+    trades: 14
     trades_known: true
     tx_per_year: 49.6
     tx_known: false
@@ -16756,6 +16789,16 @@ theoceanpulse:
     avg_pf: 100.9
     avg_pa: 104.9
   trades:
+  - year: 2026
+    week: 3
+    got:
+    - Jared Goff
+    gave:
+    - Josh Downs
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mom
   - year: 2026
     week: 0
     got:
@@ -16990,6 +17033,9 @@ theoceanpulse:
       via: add
       week: 2
       waiver: true
+    - player: Jared Goff
+      via: trade
+      week: 3
     - player: Eddy Pineiro
       via: add
       week: 3
@@ -18401,7 +18447,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: false
-    tx_per_year: 39.6
+    tx_per_year: 39.9
     tx_known: true
     seasons: 8
     best_finish:
@@ -18417,7 +18463,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 11th
     record: 0-2
-    tx: 3
+    tx: 5
     in_progress: true
     pf: 188.0
     pa: 222.3
@@ -18730,6 +18776,10 @@ purpsworth:
       via: add
       week: 2
       waiver: true
+    - player: Evan McPherson
+      via: add
+      week: 3
+      waiver: false
   - year: 2025
     players:
     - player: Malik Nabers
@@ -19855,7 +19905,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: false
-    tx_per_year: 21.3
+    tx_per_year: 22.0
     tx_known: true
     seasons: 3
     best_finish:
@@ -19871,7 +19921,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 12th
     record: 0-2
-    tx: 3
+    tx: 5
     in_progress: true
     pf: 182.9
     pa: 200.3
@@ -20042,6 +20092,10 @@ gganoom:
     - player: Hunter Henry
       via: add
       week: 1
+      waiver: false
+    - player: Trey Smack
+      via: add
+      week: 3
       waiver: false
   - year: 2025
     players:

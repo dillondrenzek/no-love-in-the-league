@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-23T08:55:22+00:00'
+captured_at: '2026-09-23T15:45:34+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -21,7 +21,7 @@ rosters:
   - player: Ladd McConkey
     pos: WR
     starter: true
-    proj: 11.04
+    proj: 11.05
     actual: null
     injury: ''
   - player: Zay Flowers
@@ -78,12 +78,6 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Mack Hollins
-    pos: WR
-    starter: false
-    proj: 7.15
-    actual: null
-    injury: ''
   - player: Chase McLaughlin
     pos: K
     starter: true
@@ -96,10 +90,16 @@ rosters:
     proj: 18.27
     actual: null
     injury: ''
-  - player: Packers D/ST
+  - player: Bengals D/ST
     pos: D/ST
     starter: true
-    proj: 4.75
+    proj: 6.46
+    actual: null
+    injury: ''
+  - player: Jordan Love
+    pos: QB
+    starter: false
+    proj: 19.1
     actual: null
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
@@ -126,7 +126,7 @@ rosters:
     injury: ''
   - player: Joe Burrow
     pos: QB
-    starter: false
+    starter: true
     proj: 17.86
     actual: null
     injury: ''
@@ -184,12 +184,6 @@ rosters:
     proj: 6.37
     actual: null
     injury: ''
-  - player: Jared Goff
-    pos: QB
-    starter: false
-    proj: 18.41
-    actual: null
-    injury: ''
   - player: Keon Coleman
     pos: WR
     starter: false
@@ -200,6 +194,12 @@ rosters:
     pos: WR
     starter: false
     proj: 4.7
+    actual: null
+    injury: ''
+  - player: Josh Downs
+    pos: WR
+    starter: true
+    proj: 9.07
     actual: null
     injury: ''
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -338,7 +338,7 @@ rosters:
     injury: ''
   - player: Marvin Harrison Jr.
     pos: WR
-    starter: true
+    starter: false
     proj: 5.75
     actual: null
     injury: ''
@@ -351,7 +351,7 @@ rosters:
   - player: Matthew Golden
     pos: WR
     starter: true
-    proj: 9.5
+    proj: 9.51
     actual: null
     injury: ''
   - player: Alec Pierce
@@ -398,7 +398,7 @@ rosters:
     injury: ''
   - player: Malik Washington
     pos: WR
-    starter: false
+    starter: true
     proj: 8.89
     actual: null
     injury: ''
@@ -415,7 +415,7 @@ rosters:
   - player: Breece Hall
     pos: RB
     starter: true
-    proj: 14.58
+    proj: 14.55
     actual: null
     injury: ''
   - player: Travis Etienne Jr.
@@ -472,28 +472,28 @@ rosters:
     proj: 7.54
     actual: null
     injury: ''
-  - player: Antonio Williams
-    pos: WR
-    starter: false
-    proj: 4.17
-    actual: null
-    injury: ''
-  - player: Cairo Santos
-    pos: K
-    starter: true
-    proj: 7.62
-    actual: null
-    injury: ''
-  - player: Jaylin Noel
-    pos: WR
-    starter: false
-    proj: 3.73
-    actual: null
-    injury: ''
   - player: Vikings D/ST
     pos: D/ST
     starter: true
     proj: 6.57
+    actual: null
+    injury: ''
+  - player: Kyler Murray
+    pos: QB
+    starter: false
+    proj: 18.59
+    actual: null
+    injury: ''
+  - player: Will Reichard
+    pos: K
+    starter: true
+    proj: 8.04
+    actual: null
+    injury: ''
+  - player: Alvin Kamara
+    pos: RB
+    starter: false
+    proj: 8.58
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -756,14 +756,8 @@ rosters:
     injury: ''
   - player: Bo Nix
     pos: QB
-    starter: false
-    proj: 17.94
-    actual: null
-    injury: ''
-  - player: Ka'imi Fairbairn
-    pos: K
     starter: true
-    proj: 9.06
+    proj: 17.94
     actual: null
     injury: ''
   - player: Deebo Samuel Sr.
@@ -781,7 +775,13 @@ rosters:
   - player: Steelers D/ST
     pos: D/ST
     starter: true
-    proj: 6.28
+    proj: 6.2
+    actual: null
+    injury: ''
+  - player: Evan McPherson
+    pos: K
+    starter: true
+    proj: 7.61
     actual: null
     injury: ''
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
@@ -833,7 +833,7 @@ rosters:
   - player: Quentin Johnston
     pos: WR
     starter: false
-    proj: 9.16
+    proj: 9.17
     actual: null
     injury: ''
   - player: Stefon Diggs
@@ -897,7 +897,7 @@ rosters:
   - player: Garrett Wilson
     pos: WR
     starter: true
-    proj: 11.93
+    proj: 11.86
     actual: null
     injury: ''
   - player: David Montgomery
@@ -928,12 +928,6 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
-    injury: ''
-  - player: Josh Downs
-    pos: WR
-    starter: true
-    proj: 9.07
     actual: null
     injury: ''
   - player: Tyler Allgeier
@@ -978,6 +972,12 @@ rosters:
     proj: 9.6
     actual: null
     injury: ''
+  - player: Jared Goff
+    pos: QB
+    starter: false
+    proj: 18.41
+    actual: null
+    injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dill
@@ -1008,7 +1008,7 @@ rosters:
     injury: ''
   - player: Brock Bowers
     pos: TE
-    starter: false
+    starter: true
     proj: 11.15
     actual: null
     injury: ''
@@ -1032,7 +1032,7 @@ rosters:
     injury: ''
   - player: Wan'Dale Robinson
     pos: WR
-    starter: true
+    starter: false
     proj: 6.13
     actual: null
     injury: ''
@@ -1050,7 +1050,7 @@ rosters:
     injury: ''
   - player: Romeo Doubs
     pos: WR
-    starter: false
+    starter: true
     proj: 9.49
     actual: null
     injury: ''
@@ -1066,16 +1066,10 @@ rosters:
     proj: 5.35
     actual: null
     injury: ''
-  - player: Chris Boswell
+  - player: Trey Smack
     pos: K
     starter: true
-    proj: 8.25
-    actual: null
-    injury: ''
-  - player: Hunter Henry
-    pos: TE
-    starter: true
-    proj: 8.1
+    proj: 8.91
     actual: null
     injury: ''
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
@@ -1169,7 +1163,7 @@ rosters:
   - player: Adonai Mitchell
     pos: WR
     starter: false
-    proj: 9.02
+    proj: 8.97
     actual: null
     injury: ''
   - player: Rashod Bateman

@@ -40,7 +40,7 @@ active:
   win_color: '#f38c43'
   titles: '1'
   sackos: 0
-  trades: 13
+  trades: 14
   best_finish:
     type: shiva
     years:
@@ -55,7 +55,7 @@ active:
   win_color: '#f9b64d'
   titles: '1'
   sackos: 2
-  trades: 16
+  trades: 17
   best_finish:
     type: shiva
     years:
@@ -978,8 +978,8 @@ tx_heatmap:
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1037
-    tx_per_year: 115.2
+    total: 1043
+    tx_per_year: 115.9
     cells:
     - year: 2018
       count: 75
@@ -1006,8 +1006,8 @@ tx_heatmap:
       count: 130
       color: '#f28742'
     - year: 2026
-      count: 32
-      color: '#fbdba5'
+      count: 38
+      color: '#fbd69a'
   - id: zachzoske
     name: Zach
     total: 933
@@ -1042,8 +1042,8 @@ tx_heatmap:
       color: '#fce5bd'
   - id: sturmanator15
     name: Wade
-    total: 786
-    tx_per_year: 87.3
+    total: 790
+    tx_per_year: 87.8
     cells:
     - year: 2018
       count: 110
@@ -1070,8 +1070,8 @@ tx_heatmap:
       count: 52
       color: '#facb80'
     - year: 2026
-      count: 9
-      color: '#fdeccf'
+      count: 13
+      color: '#fce9c8'
   - id: schirmerj
     name: Jono
     total: 461
@@ -1234,8 +1234,8 @@ tx_heatmap:
       color: null
   - id: purpsworth
     name: Trevor
-    total: 317
-    tx_per_year: 39.6
+    total: 319
+    tx_per_year: 39.9
     cells:
     - year: 2018
       count: null
@@ -1262,8 +1262,8 @@ tx_heatmap:
       count: 41
       color: '#fbd495'
     - year: 2026
-      count: 3
-      color: '#fdf1da'
+      count: 5
+      color: '#fdefd7'
   - id: unclebadtouch38
     name: Fletcher
     total: 216
@@ -1394,8 +1394,8 @@ tx_heatmap:
       color: null
   - id: gganoom
     name: Grant
-    total: 64
-    tx_per_year: 21.3
+    total: 66
+    tx_per_year: 22.0
     cells:
     - year: 2018
       count: null
@@ -1422,8 +1422,8 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 3
-      color: '#fdf1da'
+      count: 5
+      color: '#fdefd7'
   - id: alexandra
     name: Lexi
     total: 2

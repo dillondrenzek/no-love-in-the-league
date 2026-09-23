@@ -260,7 +260,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Trades
-  value: '16'
+  value: '17'
   sub_value: null
   season: null
   week: null
@@ -274,7 +274,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '16'
+  - value: '17'
     team: null
     owner_name: Zach
     owner_id: zachzoske
@@ -284,7 +284,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '13'
+  - value: '14'
     team: null
     owner_name: Dillon
     owner_id: theoceanpulse
@@ -390,7 +390,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Transactions
-  value: '1037'
+  value: '1043'
   sub_value: null
   season: null
   week: null
@@ -404,7 +404,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '1037'
+  - value: '1043'
     team: null
     owner_name: Jack
     owner_id: jackperkins74
@@ -424,7 +424,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '786'
+  - value: '790'
     team: null
     owner_name: Wade
     owner_id: sturmanator15
