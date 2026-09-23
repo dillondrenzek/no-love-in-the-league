@@ -205,9 +205,10 @@ matchups:
 # while everyone else's count is a floor ('at least N'). Feed managers'
 # cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
-trades_complete: false
+trades_complete: true
 trades_known_for:
   - jackperkins74
+  - lukstein
   - sturmanator15
   - theoceanpulse
   - zachzoske
@@ -260,9 +261,18 @@ trades:
 - id: 0133d7ea-349f-4f30-b007-c0637aaeb55f
   week: 10
   teams:
+  - lukstein
   - whowonthelastsuperbowl
-  assets: []
-  complete: false
+  assets:
+  - from: lukstein
+    to: whowonthelastsuperbowl
+    label: Mike Davis
+  - from: lukstein
+    to: whowonthelastsuperbowl
+    label: Odell Beckham Jr.
+  - from: whowonthelastsuperbowl
+    to: lukstein
+    label: Miles Sanders
 - id: 96a77d2d-db15-47a9-932e-d818f90933f4
   week: 11
   teams:

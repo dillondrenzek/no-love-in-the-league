@@ -2982,7 +2982,7 @@ shawne2520997:
     sackos: 2
     playoff_apps: 8
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 46.7
     tx_known: false
     seasons: 11
@@ -3263,7 +3263,7 @@ shawne2520997:
     - id: jackperkins74
       name: Jack
       team: Vladimir Putin
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -9804,7 +9804,7 @@ kevbots22:
     sackos: 0
     playoff_apps: 5
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 29.8
     tx_known: false
     seasons: 13
@@ -10071,7 +10071,7 @@ kevbots22:
     avg_pf: 97.3
     avg_pa: 103.3
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -11246,8 +11246,8 @@ schirmerj:
     titles: ½
     sackos: 0
     playoff_apps: 9
-    trades: 1
-    trades_known: false
+    trades: 2
+    trades_known: true
     tx_per_year: 51.2
     tx_known: false
     seasons: 13
@@ -11506,6 +11506,16 @@ schirmerj:
     avg_pf: 107.5
     avg_pa: 102.4
   trades:
+  - year: 2024
+    week: 7
+    got:
+    - Courtland Sutton
+    gave:
+    - Kareem Hunt
+    with:
+    - id: lukstein
+      name: Luke
+      team: 2x Runner Up
   - year: 2019
     week: 8
     got:
@@ -11518,7 +11528,7 @@ schirmerj:
     - id: sturmanator15
       name: Wade
       team: Lamar's Donger
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -12957,7 +12967,7 @@ whowonthelastsuperbowl:
     sackos: 2
     playoff_apps: 4
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 33.3
     tx_known: false
     seasons: 13
@@ -13260,11 +13270,16 @@ whowonthelastsuperbowl:
       team: Zach's Juicy Fantasy Teamussy
   - year: 2021
     week: 10
-    accepted: true
-    got: []
-    gave: []
-    with: []
-  trades_known: false
+    got:
+    - Mike Davis
+    - Odell Beckham Jr.
+    gave:
+    - Miles Sanders
+    with:
+    - id: lukstein
+      name: Luke
+      team: Autodraft Monster
+  trades_known: true
   keepers:
   - year: 2026
     round: 11
@@ -14743,8 +14758,8 @@ lukstein:
     titles: '1'
     sackos: 1
     playoff_apps: 7
-    trades: 8
-    trades_known: false
+    trades: 9
+    trades_known: true
     tx_per_year: 45.2
     tx_known: false
     seasons: 13
@@ -15005,10 +15020,14 @@ lukstein:
   trades:
   - year: 2024
     week: 7
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Kareem Hunt
+    gave:
+    - Courtland Sutton
+    with:
+    - id: schirmerj
+      name: Jono
+      team: 5 Star Men
   - year: 2023
     week: 13
     got:
@@ -15032,6 +15051,17 @@ lukstein:
     - id: theoceanpulse
       name: Dillon
       team: Thoughts and Players
+  - year: 2021
+    week: 10
+    got:
+    - Miles Sanders
+    gave:
+    - Mike Davis
+    - Odell Beckham Jr.
+    with:
+    - id: whowonthelastsuperbowl
+      name: Nate
+      team: Trick or Trick It’s Mike Vick
   - year: 2021
     week: 1
     got:
@@ -15086,7 +15116,7 @@ lukstein:
     - id: sturmanator15
       name: Wade
       team: Lamar's Donger
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 12
@@ -18446,7 +18476,7 @@ purpsworth:
     sackos: 0
     playoff_apps: 4
     trades: 6
-    trades_known: false
+    trades_known: true
     tx_per_year: 39.9
     tx_known: true
     seasons: 8
@@ -18703,7 +18733,7 @@ purpsworth:
     - id: zachzoske
       name: Zach
       team: Eleven In Crocks
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -19904,7 +19934,7 @@ gganoom:
     sackos: 0
     playoff_apps: 1
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 22.0
     tx_known: true
     seasons: 3
@@ -20026,7 +20056,7 @@ gganoom:
     avg_pf: 124.0
     avg_pa: 123.6
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -20350,7 +20380,7 @@ henpen28:
     sackos: 1
     playoff_apps: 7
     trades: 6
-    trades_known: false
+    trades_known: true
     tx_per_year: 45.0
     tx_known: false
     seasons: 12
@@ -20668,7 +20698,7 @@ henpen28:
     - id: zachzoske
       name: Zach
       team: Eleven In Crocks
-  trades_known: false
+  trades_known: true
   keepers: []
   rosters:
   - year: 2025
@@ -21964,7 +21994,7 @@ unclebadtouch38:
     sackos: 2
     playoff_apps: 5
     trades: 3
-    trades_known: false
+    trades_known: true
     tx_per_year: 36.0
     tx_known: false
     seasons: 8
@@ -22188,7 +22218,7 @@ unclebadtouch38:
     - id: zachzoske
       name: Zach
       team: Eleven In Crocks
-  trades_known: false
+  trades_known: true
   keepers: []
   rosters:
   - year: 2023

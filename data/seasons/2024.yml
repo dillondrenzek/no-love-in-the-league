@@ -202,9 +202,10 @@ matchups:
 # while everyone else's count is a floor ('at least N'). Feed managers'
 # cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
-trades_complete: false
+trades_complete: true
 trades_known_for:
   - jackperkins74
+  - lukstein
   - sturmanator15
   - theoceanpulse
   - zachzoske
@@ -279,8 +280,14 @@ trades:
   week: 7
   teams:
   - lukstein
-  assets: []
-  complete: false
+  - schirmerj
+  assets:
+  - from: schirmerj
+    to: lukstein
+    label: Kareem Hunt
+  - from: lukstein
+    to: schirmerj
+    label: Courtland Sutton
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.

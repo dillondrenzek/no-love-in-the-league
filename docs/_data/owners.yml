@@ -70,7 +70,7 @@ active:
   win_color: '#fac066'
   titles: '1'
   sackos: 1
-  trades: 8
+  trades: 9
   best_finish:
     type: shiva
     years:
@@ -100,7 +100,7 @@ active:
   win_color: '#f9b64d'
   titles: ½
   sackos: 0
-  trades: 1
+  trades: 2
   best_finish:
     type: cochamp
     years:
