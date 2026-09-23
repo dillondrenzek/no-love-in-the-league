@@ -1,4 +1,611 @@
 active:
+<<<<<<< HEAD
+=======
+- id: shawne2520997
+  name: Shawnee
+  seasons: 11
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+  record: 83-53-1
+  win_pct: '.609'
+  win_color: '#f38d43'
+  titles: '2'
+  sackos: 2
+  trades: 4
+  best_finish:
+    type: shiva
+    years:
+    - 2021
+    - 2023
+  avg_finish: 5.0
+- id: jackperkins74
+  name: Jack
+  seasons: 13
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+  record: 90-73
+  win_pct: '.552'
+  win_color: '#f6a248'
+  titles: '2'
+  sackos: 1
+  trades: 6
+  best_finish:
+    type: shiva
+    years:
+    - 2015
+    - 2025
+  avg_finish: 4.8
+- id: theoceanpulse
+  name: Dillon
+  seasons: 11
+  logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+  record: 83-52-2
+  win_pct: '.613'
+  win_color: '#f38c43'
+  titles: '1'
+  sackos: 0
+  trades: 13
+  best_finish:
+    type: shiva
+    years:
+    - 2018
+  avg_finish: 5.5
+- id: zachzoske
+  name: Zach
+  seasons: 13
+  logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+  record: 81-81-1
+  win_pct: '.500'
+  win_color: '#f9b64d'
+  titles: '1'
+  sackos: 2
+  trades: 16
+  best_finish:
+    type: shiva
+    years:
+    - 2019
+  avg_finish: 6.8
+- id: lukstein
+  name: Luke
+  seasons: 13
+  logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+  record: 76-87
+  win_pct: '.466'
+  win_color: '#fac066'
+  titles: '1'
+  sackos: 1
+  trades: 8
+  best_finish:
+    type: shiva
+    years:
+    - 2024
+  avg_finish: 6.4
+- id: sturmanator15
+  name: Wade
+  seasons: 13
+  logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+  record: 95-67-1
+  win_pct: '.586'
+  win_color: '#f49645'
+  titles: ½
+  sackos: 0
+  trades: 7
+  best_finish:
+    type: cochamp
+    years:
+    - 2016
+  avg_finish: 6.7
+- id: schirmerj
+  name: Jono
+  seasons: 13
+  logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+  record: 81-81-1
+  win_pct: '.500'
+  win_color: '#f9b64d'
+  titles: ½
+  sackos: 0
+  trades: 1
+  best_finish:
+    type: cochamp
+    years:
+    - 2016
+  avg_finish: 5.8
+- id: gganoom
+  name: Grant
+  seasons: 3
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+  record: 16-14
+  win_pct: '.533'
+  win_color: '#f7aa4a'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: 4th
+    years:
+    - 2025
+  avg_finish: 6.0
+- id: alexandra
+  name: Lexi
+  seasons: 1
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+  record: 1-1
+  win_pct: '.500'
+  win_color: '#f9b64d'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: —
+    years: []
+  avg_finish: null
+- id: purpsworth
+  name: Trevor
+  seasons: 8
+  logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+  record: 44-54
+  win_pct: '.449'
+  win_color: '#fac672'
+  titles: '0'
+  sackos: 0
+  trades: 6
+  best_finish:
+    type: place
+    ordinal: 2nd
+    years:
+    - 2021
+  avg_finish: 6.3
+- id: kevbots22
+  name: Kevin
+  seasons: 13
+  logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+  record: 65-96-2
+  win_pct: '.405'
+  win_color: '#fbd393'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: 2nd
+    years:
+    - 2025
+  avg_finish: 7.0
+- id: whowonthelastsuperbowl
+  name: Nate
+  seasons: 13
+  logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+  record: 63-100
+  win_pct: '.387'
+  win_color: '#fbd9a0'
+  titles: '0'
+  sackos: 2
+  trades: 4
+  best_finish:
+    type: place
+    ordinal: 4th
+    years:
+    - 2022
+  avg_finish: 8.8
+inactive:
+- id: henpen28
+  name: Henry
+  seasons: 12
+  logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+  record: 77-84
+  win_pct: '.478'
+  win_color: '#f9bd5d'
+  titles: '3'
+  sackos: 1
+  trades: 6
+  best_finish:
+    type: shiva
+    years:
+    - 2014
+    - 2017
+    - 2022
+  avg_finish: 5.9
+- id: unclebadtouch38
+  name: Fletcher
+  seasons: 8
+  logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
+  record: 49-56-2
+  win_pct: '.467'
+  win_color: '#fac065'
+  titles: '1'
+  sackos: 2
+  trades: 3
+  best_finish:
+    type: shiva
+    years:
+    - 2020
+  avg_finish: 7.2
+- id: thebragers
+  name: Brady
+  seasons: 2
+  logo: http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg
+  record: 16-10
+  win_pct: '.615'
+  win_color: '#f38b43'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: 5th
+    years:
+    - 2014
+  avg_finish: 5.5
+- id: master-otis
+  name: Odie
+  seasons: 3
+  logo: ''
+  record: 19-20
+  win_pct: '.487'
+  win_color: '#f9ba56'
+  titles: '0'
+  sackos: 1
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: 2nd
+    years:
+    - 2014
+    - 2015
+  avg_finish: 5.3
+- id: ajstewart04
+  name: Anthony
+  seasons: 2
+  logo: ''
+  record: 8-18
+  win_pct: '.308'
+  win_color: '#fdf1da'
+  titles: '0'
+  sackos: 0
+  trades: 0
+  best_finish:
+    type: place
+    ordinal: 9th
+    years:
+    - 2017
+  avg_finish: 9.5
+draft_heatmap:
+  slots:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  max: 6
+  rows:
+  - id: jackperkins74
+    name: Jack
+    total: 13
+    cells:
+    - slot: 1
+      count: 4
+      color: '#f59d47'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 2
+      color: '#faca7e'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 1
+      color: '#fcdfaf'
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: schirmerj
+    name: Jono
+    total: 13
+    cells:
+    - slot: 1
+      count: 1
+      color: '#fcdfaf'
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 2
+      color: '#faca7e'
+    - slot: 5
+      count: 3
+      color: '#f9b64d'
+    - slot: 6
+      count: 3
+      color: '#f9b64d'
+    - slot: 7
+      count: 1
+      color: '#fcdfaf'
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 1
+      color: '#fcdfaf'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 0
+      color: null
+    - slot: 12
+      count: 0
+      color: null
+  - id: kevbots22
+    name: Kevin
+    total: 13
+    cells:
+    - slot: 1
+      count: 3
+      color: '#f9b64d'
+    - slot: 2
+      count: 2
+      color: '#faca7e'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 2
+      color: '#faca7e'
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: lukstein
+    name: Luke
+    total: 13
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 2
+      color: '#faca7e'
+    - slot: 6
+      count: 1
+      color: '#fcdfaf'
+    - slot: 7
+      count: 2
+      color: '#faca7e'
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 2
+      color: '#faca7e'
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 0
+      color: null
+  - id: whowonthelastsuperbowl
+    name: Nate
+    total: 13
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 2
+      color: '#faca7e'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 0
+      color: null
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 0
+      color: null
+    - slot: 10
+      count: 6
+      color: '#ee6b3b'
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: sturmanator15
+    name: Wade
+    total: 13
+    cells:
+    - slot: 1
+      count: 1
+      color: '#fcdfaf'
+    - slot: 2
+      count: 1
+      color: '#fcdfaf'
+    - slot: 3
+      count: 1
+      color: '#fcdfaf'
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 1
+      color: '#fcdfaf'
+    - slot: 7
+      count: 3
+      color: '#f9b64d'
+    - slot: 8
+      count: 1
+      color: '#fcdfaf'
+    - slot: 9
+      count: 2
+      color: '#faca7e'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 2
+      color: '#faca7e'
+  - id: zachzoske
+    name: Zach
+    total: 13
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 2
+      color: '#faca7e'
+    - slot: 3
+      count: 0
+      color: null
+    - slot: 4
+      count: 0
+      color: null
+    - slot: 5
+      count: 1
+      color: '#fcdfaf'
+    - slot: 6
+      count: 2
+      color: '#faca7e'
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 2
+      color: '#faca7e'
+    - slot: 9
+      count: 4
+      color: '#f59d47'
+    - slot: 10
+      count: 0
+      color: null
+    - slot: 11
+      count: 1
+      color: '#fcdfaf'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+  - id: theoceanpulse
+    name: Dillon
+    total: 11
+    cells:
+    - slot: 1
+      count: 0
+      color: null
+    - slot: 2
+      count: 0
+      color: null
+    - slot: 3
+      count: 2
+      color: '#faca7e'
+    - slot: 4
+      count: 1
+      color: '#fcdfaf'
+    - slot: 5
+      count: 0
+      color: null
+    - slot: 6
+      count: 2
+      color: '#faca7e'
+    - slot: 7
+      count: 0
+      color: null
+    - slot: 8
+      count: 0
+      color: null
+    - slot: 9
+      count: 2
+      color: '#faca7e'
+    - slot: 10
+      count: 1
+      color: '#fcdfaf'
+    - slot: 11
+      count: 2
+      color: '#faca7e'
+    - slot: 12
+      count: 1
+      color: '#fcdfaf'
+>>>>>>> bdda43a532a89e2018e1e6782439fccd66fd8805
   - id: shawne2520997
     name: Shawnee
     seasons: 11

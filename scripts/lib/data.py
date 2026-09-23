@@ -113,7 +113,8 @@ def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
         out[fid] = [
             {"player": p.get("player"), "pos": p.get("pos"),
              "starter": bool(p.get("starter")),
-             "proj": p.get("proj"), "actual": p.get("actual")}
+             "proj": p.get("proj"), "actual": p.get("actual"),
+             "injury": p.get("injury") or ""}
             for p in (e.get("players") or [])
         ]
     return out

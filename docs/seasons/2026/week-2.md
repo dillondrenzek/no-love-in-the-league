@@ -20,8 +20,30 @@ week: 2
      It's Markdown: a chaotic column, then a "### 🏆 Awards" list. The recap only
      renders once the week is complete, and sits above the preview. -->
 
-_Recap coming soon._
-{% endif %}
+Week 2 came for the overreactions and cashed most of them, and it did it in a week where the injuries finally started to rear their nasty heads. I told you to price the drama; the drama priced right back.
+
+I should start where I got my face kicked in, because I put my Upset Alert on **Luke** on the strength of a 14-11 all-time edge over Nate, history over the model, and **Nate** answered by hanging **153.6** on Luke's **77.4**. That was less a game than a public execution, with Davante Adams going for 35 while Luke's Saquon Barkley limped to a 2 on a 16 projection like the whole roster had caught the same flu. I took the history and Nate took the week by seventy-six, so I'll tip my cap and keep my mouth shut for now.
+
+**Jono**, meanwhile, spent the afternoon quietly building a case against me, dropping **137.9** behind a filthy **43.7** from Josh Allen and handling **Zach** without ever breaking a sweat. Zach is the part that stings, because he strolled in a supposed powerhouse — a 160-burger in Week 1 and the No. 2 seat in my rankings — and then no-showed a **106.5** with Ashton Jeanty stumbling to an 8. I called this one a lean I didn't love, and for the second week running Jono's made me look too hard on him, so I'm watching.
+
+At the top of the board the champ survived, though only barely. **Jack** posted a **92**, his worst number of the young season, with Trevor Lawrence faceplanting for a 6, and he managed it while **Puka Nacua sat on his bench, out** — and _still_ got past Grant, because of course he did. That's four straight over Grant now, and it's stopped being a matchup and started being a restraining order. Somebody should probably check on **Grant**, though — is he even home? — because he left **67 points on his own bench** and watched Malik Nabers scrape a single point before vanishing entirely, and hurt stars over a bonfire bench are how a man ends up 0-2. The Lock cashed, ugly as it was.
+
+The Bold Prediction, on the other hand, was the cleanest call I made all week. I told you **Wade** would run out a skeleton lineup with half a training room on the shelf and still beat his number to bury Trevor, and that's exactly what he did, **125.8** with Jaxon Smith-Njigba going nuclear for 38. The banged-up commissioner sits at 1-1 and looking fine, while **Trevor**, the projection's Week 1 sweetheart, keeps living all the way up to "I am dead inside."
+
+The Game of the Week was _supposed_ to be the **Nico Collins revenge tour**, the whole pitch being Shawnee shipping picks to aim him back at his old team, and then Nico sat the thing out **inactive** and it didn't matter even a little. **Shawnee** dropped **134.7** on Dillon's **80.8** anyway, Dak Prescott going for 33, and the reigning Sacko is now 2-0 and strutting like she never saw the basement — revenge served hot without the weapon ever suiting up. Dillon's Caleb Williams did the very Caleb thing, an 8 on a 21, and last week's tie already looks like the good old days. Do better.
+
+And finally, the rookie caught a lesson. I leaned **Lexi**, but **Kevin** didn't much care about my feelings and hung **106.8** behind a vintage Kelce, reminding the first-timer that career owners — even the .401 ones — still know where the sticks are. Ja'Marr Chase's 23 wasn't nearly enough, so welcome to Week 2, kid, where 1-1 is the minimum and nobody's impressed yet.
+
+Injuries were the uninvited theme all afternoon — Puka on Jack's bench, Nico scratched from his own revenge game, Nabers ghosting Grant, and Saquon hobbling around for Luke. The managers who survived them get a nod (ahem, commish), and the ones who didn't get an L and my sympathy, which is worth exactly nothing. See you next week.
+
+### 🏆 Awards
+
+- **Team of the Week** — Nate, 153.6, the top number on the board.
+- **Game Ball** — Josh Allen (Jono), 43.7 — the loudest argument on the board.
+- **Escape Artist** — Jack, a 92 with Puka in a sling, still 4-0 over Grant. The champ finds a way.
+- **Bonfire Award** — Grant, 67.6 left on the bench in an 0-2 start. Woof.
+- **Crow, Eaten** — me, for locking the Upset on Luke the week Nate decided to end careers.
+  {% endif %}
 
 <h2>The Preview</h2>
 

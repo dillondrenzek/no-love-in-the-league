@@ -446,6 +446,7 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
             "starter": bool(r.get("starter")),
             "proj": num(r.get("projected")),
             "actual": num(r.get("actual")),
+            "injury": r.get("injury") or "",
         })
 
     entries = [v for _, v in sorted(by_team.items(), key=lambda kv: kv[0][0] or 0)]
