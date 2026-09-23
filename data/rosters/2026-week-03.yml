@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-23T15:45:34+00:00'
+captured_at: '2026-09-23T19:18:59+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -914,7 +914,7 @@ rosters:
     injury: ''
   - player: Caleb Williams
     pos: QB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -962,7 +962,7 @@ rosters:
     injury: ''
   - player: Khalil Shakir
     pos: WR
-    starter: false
+    starter: true
     proj: 8.32
     actual: null
     injury: ''
@@ -974,7 +974,7 @@ rosters:
     injury: ''
   - player: Jared Goff
     pos: QB
-    starter: false
+    starter: true
     proj: 18.41
     actual: null
     injury: ''
