@@ -294,6 +294,16 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
+  - value: '12'
+    team: null
+    owner_name: Jack
+    owner_id: jackperkins74
+    season: null
+    week: null
+    sub_value: null
+    opp_team: null
+    opp_owner_name: null
+    opp_owner_id: null
   - value: '8'
     team: null
     owner_name: Luke
@@ -308,16 +318,6 @@ records:
     team: null
     owner_name: Wade
     owner_id: sturmanator15
-    season: null
-    week: null
-    sub_value: null
-    opp_team: null
-    opp_owner_name: null
-    opp_owner_id: null
-  - value: '6'
-    team: null
-    owner_name: Trevor
-    owner_id: purpsworth
     season: null
     week: null
     sub_value: null

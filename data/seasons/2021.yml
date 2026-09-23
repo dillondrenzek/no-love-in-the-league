@@ -207,6 +207,7 @@ matchups:
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: false
 trades_known_for:
+  - jackperkins74
   - sturmanator15
   - theoceanpulse
   - zachzoske
@@ -214,9 +215,18 @@ trades:
 - id: d332c7cd-80ab-4da1-993f-0a2a21f26311
   week: 1
   teams:
+  - jackperkins74
   - lukstein
-  assets: []
-  complete: false
+  assets:
+  - from: jackperkins74
+    to: lukstein
+    label: Diontae Johnson
+  - from: jackperkins74
+    to: lukstein
+    label: Mike Davis
+  - from: lukstein
+    to: jackperkins74
+    label: Allen Robinson II
 - id: dc235e8d-e6e8-44fe-b8cc-93c6389b4884
   week: 4
   teams:

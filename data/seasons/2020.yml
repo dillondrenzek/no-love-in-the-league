@@ -199,8 +199,9 @@ matchups:
 # while everyone else's count is a floor ('at least N'). Feed managers'
 # cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
-trades_complete: false
+trades_complete: true
 trades_known_for:
+  - jackperkins74
   - sturmanator15
   - theoceanpulse
   - zachzoske
@@ -209,8 +210,17 @@ trades:
   week: 5
   teams:
   - henpen28
-  assets: []
-  complete: false
+  - jackperkins74
+  assets:
+  - from: henpen28
+    to: jackperkins74
+    label: Michael Thomas
+  - from: jackperkins74
+    to: henpen28
+    label: David Johnson
+  - from: jackperkins74
+    to: henpen28
+    label: DJ Chark Jr.
 - id: 6d3832de-80bd-449a-add4-d96178461ebc
   week: 5
   teams:
@@ -271,9 +281,21 @@ trades:
 - id: 0cc2906c-1f99-4c74-bfcf-196ad9fd65d5
   week: 11
   teams:
+  - jackperkins74
   - shawne2520997
-  assets: []
-  complete: false
+  assets:
+  - from: shawne2520997
+    to: jackperkins74
+    label: Taysom Hill
+  - from: shawne2520997
+    to: jackperkins74
+    label: Alexander Mattison
+  - from: jackperkins74
+    to: shawne2520997
+    label: Eric Ebron
+  - from: jackperkins74
+    to: shawne2520997
+    label: Chargers D/ST
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.

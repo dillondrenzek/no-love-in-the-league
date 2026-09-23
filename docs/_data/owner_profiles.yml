@@ -24,8 +24,8 @@ jackperkins74:
     titles: '2'
     sackos: 1
     playoff_apps: 9
-    trades: 6
-    trades_known: false
+    trades: 12
+    trades_known: true
     tx_per_year: 115.0
     tx_known: false
     seasons: 13
@@ -299,6 +299,17 @@ jackperkins74:
   - year: 2024
     week: 0
     got:
+    - 4.10 pick
+    gave:
+    - 9.10 pick
+    - Breece Hall
+    with:
+    - id: shawne2520997
+      name: Shawnee
+      team: Save a horse, Ride the Cowboys
+  - year: 2024
+    week: 0
+    got:
     - 1.11 pick
     - Puka Nacua
     gave:
@@ -344,6 +355,67 @@ jackperkins74:
     - id: theoceanpulse
       name: Dillon
       team: Thoughts and Players
+  - year: 2021
+    week: 1
+    got:
+    - Allen Robinson II
+    gave:
+    - Diontae Johnson
+    - Mike Davis
+    with:
+    - id: lukstein
+      name: Luke
+      team: Autodraft Monster
+  - year: 2020
+    week: 11
+    got:
+    - Taysom Hill
+    - Alexander Mattison
+    gave:
+    - Eric Ebron
+    - Chargers D/ST
+    with:
+    - id: shawne2520997
+      name: Shawnee
+      team: Koo Koo Kachoo
+  - year: 2020
+    week: 5
+    got:
+    - Michael Thomas
+    gave:
+    - David Johnson
+    - DJ Chark Jr.
+    with:
+    - id: henpen28
+      name: Henry
+      team: Scat Play
+  - year: 2019
+    week: 4
+    got:
+    - T.Y. Hilton
+    - James Conner
+    gave:
+    - Marlon Mack
+    - Phillip Lindsay
+    - John Ross III
+    with:
+    - id: lukstein
+      name: Luke
+      team: Show Me Your TDs
+  - year: 2019
+    week: 0
+    got:
+    - 3.02 pick
+    - 4.11 pick
+    - 5.02 pick
+    gave:
+    - 2.07 pick
+    - 5.06 pick
+    - 6.01 pick
+    with:
+    - id: shawne2520997
+      name: Shawnee
+      team: Mixon it up
   - year: 2019
     week: 0
     got:
@@ -358,7 +430,7 @@ jackperkins74:
     - id: sturmanator15
       name: Wade
       team: Lamar's Donger
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 9
@@ -3140,22 +3212,41 @@ shawne2520997:
       team: The ChoSimba Ones
   - year: 2024
     week: 0
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - 9.10 pick
+    - Breece Hall
+    gave:
+    - 4.10 pick
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Pukkake
   - year: 2020
     week: 11
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Eric Ebron
+    - Chargers D/ST
+    gave:
+    - Taysom Hill
+    - Alexander Mattison
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Ram It In
   - year: 2019
     week: 0
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - 2.07 pick
+    - 5.06 pick
+    - 6.01 pick
+    gave:
+    - 3.02 pick
+    - 4.11 pick
+    - 5.02 pick
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vladimir Putin
   trades_known: false
   keepers:
   - year: 2026
@@ -14870,10 +14961,15 @@ lukstein:
       team: Thoughts and Players
   - year: 2021
     week: 1
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Diontae Johnson
+    - Mike Davis
+    gave:
+    - Allen Robinson II
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Jackie PooPooPants
   - year: 2020
     week: 9
     got:
@@ -14896,10 +14992,17 @@ lukstein:
       team: Trick-Ass Marks
   - year: 2019
     week: 4
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Marlon Mack
+    - Phillip Lindsay
+    - John Ross III
+    gave:
+    - T.Y. Hilton
+    - James Conner
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Vladimir Putin
   - year: 2019
     week: 4
     got:
@@ -20422,10 +20525,15 @@ henpen28:
       team: Risk it for The Biscuit
   - year: 2020
     week: 5
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - David Johnson
+    - DJ Chark Jr.
+    gave:
+    - Michael Thomas
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Ram It In
   - year: 2020
     week: 5
     got:
