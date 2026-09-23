@@ -744,6 +744,82 @@ def validation_table(matchups):
     return "\n".join(out)
 
 
+def _splice_trades(year, trades, trades_complete, trades_known_for):
+    """Rewrite ONLY the three trade fields (`trades_complete`, `trades_known_for`,
+    `trades`) in an existing season file, byte-for-byte matching how
+    dump_season_yaml emits them, and leave everything else untouched."""
+    path = SEASONS_DIR / f"{year}.yml"
+    text = path.read_text(encoding="utf-8")
+    block = [f"trades_complete: {'true' if trades_complete else 'false'}"]
+    if trades_known_for:
+        block += ["trades_known_for:"] + [f"  - {fid}" for fid in trades_known_for]
+    else:
+        block += ["trades_known_for: []  # no manager cookie tied to a franchise"]
+    if trades:
+        block.append(yaml.safe_dump({"trades": trades}, sort_keys=False,
+                                    allow_unicode=True, default_flow_style=False).rstrip())
+    else:
+        block += ["trades: []  # none this season"]
+    new_block = "\n".join(block)
+    pat = re.compile(r"trades_complete:.*?(?=\n\n# Keepers this season)", re.DOTALL)
+    if not pat.search(text):
+        sys.exit(f"{year}: couldn't find the trades block to update — was this file "
+                 "written by a current importer?")
+    path.write_text(pat.sub(lambda _m: new_block, text), encoding="utf-8")
+
+
+def _import_trades_only(args):
+    """Fetch one manager's trade detail and merge it into an existing season file.
+    Trades are the only data ESPN scopes to a single account, so this is all a
+    manager's cookie can add; it accumulates by ESPN trade id and touches nothing
+    else, which makes it safe to run across every season including completed ones."""
+    if not (SEASONS_DIR / f"{args.year}.yml").is_file():
+        sys.exit(f"{args.year}: no season file yet — run a full import first.")
+    cookies_file = args.cookies or os.environ.get("ESPN_COOKIES_FILE") or str(COOKIES_PATH)
+    lg_kwargs = {"year": args.year, "cookies_file": cookies_file}
+    if args.league_id:
+        lg_kwargs["league_id"] = args.league_id
+    team_rows = League(**lg_kwargs).teams()
+    team_to_fid = resolve_franchises(team_rows, load_franchises())
+
+    def _norm_swid(s):
+        return (s or "").strip().strip("{}").upper()
+    swid_to_fid = {_norm_swid(t.get("manager_id")): team_to_fid[t["team_id"]]
+                   for t in team_rows
+                   if t.get("manager_id") and t.get("team_id") in team_to_fid}
+
+    files = [args.cookies] if args.cookies else (cookie_files() or [cookies_file])
+    trade_lists, known_for = [], set()
+    for cf in files:
+        tkw = {"year": args.year, "cookies_file": cf}
+        if args.league_id:
+            tkw["league_id"] = args.league_id
+        try:
+            trade_lists.append(League(**tkw).trades())
+        except ApiError as e:
+            print(f"NOTE: trades for {args.year} via {os.path.basename(cf)} "
+                  f"unavailable (ESPN {e.status}).", file=sys.stderr)
+            continue
+        _, cf_swid = load_cookies(cf)
+        fid = swid_to_fid.get(_norm_swid(cf_swid))
+        if fid:
+            known_for.add(fid)
+    if not trade_lists:
+        print(f"NOTE: {args.year}: no trade data returned (ESPN 404s very old "
+              "seasons) — left as-is.", file=sys.stderr)
+        return
+
+    fresh = build_trades(merge_trades(*trade_lists), team_to_fid, len(team_to_fid))
+    trades = merge_trade_sets(existing_trades(args.year), fresh)
+    known_for |= set(existing_known_for(args.year))
+    trades_complete = all(t.get("complete", True) for t in trades)
+    _splice_trades(args.year, trades, trades_complete, sorted(known_for))
+    incomplete = sum(1 for t in trades if not t.get("complete", True))
+    note = "all detailed" if trades_complete else f"{incomplete} still unavailable"
+    print(f"{args.year}: merged trades — {len(trades)} total ({note}); "
+          f"known_for now {sorted(known_for)}.", file=sys.stderr)
+
+
 def main():
     ap = argparse.ArgumentParser(description="Import an ESPN season into season YAML.")
     ap.add_argument("year", type=int)
@@ -757,7 +833,19 @@ def main():
     ap.add_argument("--patch", action="store_true",
                     help="re-import a season already marked `complete` (history is "
                          "left alone by default)")
+    ap.add_argument("--trades-only", action="store_true",
+                    help="fetch ONLY this manager's trade detail and merge it into "
+                         "the existing season file — the only per-account data. "
+                         "Leaves standings/matchups/rosters/state untouched, so it's "
+                         "safe on completed seasons.")
     args = ap.parse_args()
+
+    # Trades are the only data ESPN reveals per-account, so a manager's cookie only
+    # needs to touch that. This path merges their trade detail into an existing
+    # season and changes nothing else — including on frozen, completed seasons.
+    if args.trades_only:
+        _import_trades_only(args)
+        return
 
     # Complete seasons are frozen: a routine import doesn't rewrite finished
     # history. `--patch` (or `--stdout` preview) overrides.

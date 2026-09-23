@@ -1226,6 +1226,19 @@ detail:
         owner_name: Jack
         team: Pukkake
         gave:
+        - 9.10 pick
+        - Breece Hall
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: Save a horse, Ride the Cowboys
+        gave:
+        - 4.10 pick
+    - week: 0
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Pukkake
+        gave:
         - 1.10 pick
         - Sam LaPorta
       - owner_id: theoceanpulse
@@ -1253,12 +1266,6 @@ detail:
         - 4.05 pick
         - 6.05 pick
         - 8.05 pick
-    - week: 0
-      parties:
-      - owner_id: shawne2520997
-        owner_name: Shawnee
-        team: Save a horse, Ride the Cowboys
-        gave: []
     - week: 7
       parties:
       - owner_id: lukstein
@@ -3126,10 +3133,17 @@ detail:
     trades:
     - week: 1
       parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Jackie PooPooPants
+        gave:
+        - Diontae Johnson
+        - Mike Davis
       - owner_id: lukstein
         owner_name: Luke
         team: Autodraft Monster
-        gave: []
+        gave:
+        - Allen Robinson II
     - week: 4
       parties:
       - owner_id: purpsworth
@@ -3687,7 +3701,14 @@ detail:
       - owner_id: henpen28
         owner_name: Henry
         team: Scat Play
-        gave: []
+        gave:
+        - Michael Thomas
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Ram It In
+        gave:
+        - David Johnson
+        - DJ Chark Jr.
     - week: 5
       parties:
       - owner_id: henpen28
@@ -3741,10 +3762,18 @@ detail:
         - Noah Fant
     - week: 11
       parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Ram It In
+        gave:
+        - Eric Ebron
+        - Chargers D/ST
       - owner_id: shawne2520997
         owner_name: Shawnee
         team: Koo Koo Kachoo
-        gave: []
+        gave:
+        - Taysom Hill
+        - Alexander Mattison
     keepers: []
     champ: *id011
     sacko: *id012
@@ -4259,6 +4288,22 @@ detail:
         owner_name: Jack
         team: Vladimir Putin
         gave:
+        - 2.07 pick
+        - 5.06 pick
+        - 6.01 pick
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: Mixon it up
+        gave:
+        - 3.02 pick
+        - 4.11 pick
+        - 5.02 pick
+    - week: 0
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Vladimir Putin
+        gave:
         - 2.01 pick
         - 5.12 pick
         - 7.12 pick
@@ -4285,18 +4330,21 @@ detail:
         - 2.05 pick
         - 3.08 pick
         - 5.08 pick
-    - week: 0
-      parties:
-      - owner_id: shawne2520997
-        owner_name: Shawnee
-        team: Mixon it up
-        gave: []
     - week: 4
       parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Vladimir Putin
+        gave:
+        - Marlon Mack
+        - Phillip Lindsay
+        - John Ross III
       - owner_id: lukstein
         owner_name: Luke
         team: Show Me Your TDs
-        gave: []
+        gave:
+        - T.Y. Hilton
+        - James Conner
     - week: 4
       parties:
       - owner_id: lukstein

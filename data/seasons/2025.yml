@@ -204,6 +204,7 @@ matchups:
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: true
 trades_known_for:
+  - jackperkins74
   - sturmanator15
   - theoceanpulse
   - zachzoske
