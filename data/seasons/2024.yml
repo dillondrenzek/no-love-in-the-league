@@ -204,10 +204,26 @@ matchups:
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
 trades_complete: false
 trades_known_for:
+  - jackperkins74
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
+- id: 11359078-1885-4609-b7ca-2599364a8859
+  week: 0
+  teams:
+  - jackperkins74
+  - shawne2520997
+  assets:
+  - from: jackperkins74
+    to: shawne2520997
+    label: 9.10 pick
+  - from: jackperkins74
+    to: shawne2520997
+    label: Breece Hall
+  - from: shawne2520997
+    to: jackperkins74
+    label: 4.10 pick
 - id: 59706461-57e5-44d5-a1ce-d0b486f0030e
   week: 0
   teams:
@@ -259,12 +275,6 @@ trades:
   - from: zachzoske
     to: purpsworth
     label: 8.05 pick
-- id: 11359078-1885-4609-b7ca-2599364a8859
-  week: 0
-  teams:
-  - shawne2520997
-  assets: []
-  complete: false
 - id: ab4456fc-4a9a-4d24-be8b-656ae17979eb
   week: 7
   teams:

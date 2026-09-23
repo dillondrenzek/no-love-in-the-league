@@ -199,12 +199,37 @@ matchups:
 # while everyone else's count is a floor ('at least N'). Feed managers'
 # cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
-trades_complete: false
+trades_complete: true
 trades_known_for:
+  - jackperkins74
   - sturmanator15
   - theoceanpulse
   - zachzoske
 trades:
+- id: d1a268a2-19e7-41f4-870f-bfbf8965d14b
+  week: 0
+  teams:
+  - jackperkins74
+  - shawne2520997
+  assets:
+  - from: shawne2520997
+    to: jackperkins74
+    label: 3.02 pick
+  - from: shawne2520997
+    to: jackperkins74
+    label: 4.11 pick
+  - from: shawne2520997
+    to: jackperkins74
+    label: 5.02 pick
+  - from: jackperkins74
+    to: shawne2520997
+    label: 2.07 pick
+  - from: jackperkins74
+    to: shawne2520997
+    label: 5.06 pick
+  - from: jackperkins74
+    to: shawne2520997
+    label: 6.01 pick
 - id: 72a256d4-34fe-40e1-b00b-5fe4070c76bf
   week: 0
   teams:
@@ -253,18 +278,27 @@ trades:
   - from: zachzoske
     to: purpsworth
     label: 5.08 pick
-- id: d1a268a2-19e7-41f4-870f-bfbf8965d14b
-  week: 0
-  teams:
-  - shawne2520997
-  assets: []
-  complete: false
 - id: e4f081d5-851e-4161-9ddf-a590c75de70e
   week: 4
   teams:
+  - jackperkins74
   - lukstein
-  assets: []
-  complete: false
+  assets:
+  - from: lukstein
+    to: jackperkins74
+    label: T.Y. Hilton
+  - from: lukstein
+    to: jackperkins74
+    label: James Conner
+  - from: jackperkins74
+    to: lukstein
+    label: Marlon Mack
+  - from: jackperkins74
+    to: lukstein
+    label: Phillip Lindsay
+  - from: jackperkins74
+    to: lukstein
+    label: John Ross III
 - id: b58112c6-736d-4809-a92b-08f05ecfe9af
   week: 4
   teams:
