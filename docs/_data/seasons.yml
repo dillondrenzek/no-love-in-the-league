@@ -1283,7 +1283,13 @@ detail:
       - owner_id: lukstein
         owner_name: Luke
         team: 2x Runner Up
-        gave: []
+        gave:
+        - Courtland Sutton
+      - owner_id: schirmerj
+        owner_name: Jono
+        team: 5 Star Men
+        gave:
+        - Kareem Hunt
     keepers:
     - round: 2
       player: Breece Hall
@@ -3184,10 +3190,17 @@ detail:
         - Keenan Allen
     - week: 10
       parties:
+      - owner_id: lukstein
+        owner_name: Luke
+        team: Autodraft Monster
+        gave:
+        - Mike Davis
+        - Odell Beckham Jr.
       - owner_id: whowonthelastsuperbowl
         owner_name: Nate
         team: Trick or Trick It’s Mike Vick
-        gave: []
+        gave:
+        - Miles Sanders
     - week: 11
       parties:
       - owner_id: theoceanpulse
