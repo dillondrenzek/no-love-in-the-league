@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-22T22:30:47+00:00'
+captured_at: '2026-09-23T02:22:33+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -170,12 +170,6 @@ rosters:
     pos: RB
     starter: false
     proj: 8.13
-    actual: null
-    injury: ''
-  - player: Chris Brooks
-    pos: RB
-    starter: false
-    proj: 6.38
     actual: null
     injury: ''
   - player: Caleb Douglas
