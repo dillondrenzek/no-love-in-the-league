@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-24T08:51:01+00:00'
+captured_at: '2026-09-24T16:07:06+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -442,12 +442,6 @@ rosters:
     proj: 18.89
     actual: null
     injury: ''
-  - player: Dallas Goedert
-    pos: TE
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
   - player: Puka Nacua
     pos: WR
     starter: true
@@ -494,6 +488,12 @@ rosters:
     pos: TE
     starter: false
     proj: 6.44
+    actual: null
+    injury: ''
+  - player: Keenan Allen
+    pos: WR
+    starter: false
+    proj: 7.5
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -944,13 +944,13 @@ rosters:
     injury: ''
   - player: Emanuel Wilson
     pos: RB
-    starter: true
+    starter: false
     proj: 8.44
     actual: null
     injury: ''
   - player: Khalil Shakir
     pos: WR
-    starter: true
+    starter: false
     proj: 8.32
     actual: null
     injury: ''
@@ -968,13 +968,13 @@ rosters:
     injury: ''
   - player: Dalton Schultz
     pos: TE
-    starter: false
+    starter: true
     proj: 7.41
     actual: null
     injury: ''
   - player: Devaughn Vele
     pos: WR
-    starter: false
+    starter: true
     proj: 9.41
     actual: null
     injury: ''

@@ -390,7 +390,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Transactions
-  value: '1045'
+  value: '1047'
   sub_value: null
   season: null
   week: null
@@ -404,7 +404,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '1045'
+  - value: '1047'
     team: null
     owner_name: Jack
     owner_id: jackperkins74
