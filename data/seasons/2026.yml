@@ -265,14 +265,14 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 3, drops: 2, moves: 5 }
-  jackperkins74: { adds: 22, drops: 16, moves: 38 }
-  kevbots22: { adds: 2, drops: 1, moves: 3 }
+  jackperkins74: { adds: 23, drops: 17, moves: 40 }
+  kevbots22: { adds: 3, drops: 2, moves: 5 }
   lukstein: { adds: 7, drops: 4, moves: 11 }
   purpsworth: { adds: 3, drops: 2, moves: 5 }
   schirmerj: { adds: 3, drops: 2, moves: 5 }
   shawne2520997: { adds: 3, drops: 2, moves: 5 }
   sturmanator15: { adds: 7, drops: 6, moves: 13 }
-  theoceanpulse: { adds: 8, drops: 6, moves: 14 }
+  theoceanpulse: { adds: 9, drops: 7, moves: 16 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
   zachzoske: { adds: 12, drops: 7, moves: 19 }
 
@@ -401,6 +401,10 @@ rosters:
     week: 3
     waiver: false
   - player: Kyler Murray
+    via: add
+    week: 3
+    waiver: false
+  - player: Terrance Ferguson
     via: add
     week: 3
     waiver: false
@@ -1014,6 +1018,10 @@ rosters:
     via: add
     week: 3
     waiver: false
+  - player: Devaughn Vele
+    via: add
+    week: 3
+    waiver: true
   - player: Eddy Pineiro
     via: add
     week: 3
@@ -1076,6 +1084,10 @@ rosters:
     via: add
     week: 1
     waiver: false
+  - player: Justin Herbert
+    via: add
+    week: 3
+    waiver: true
   - player: Tre Tucker
     via: add
     week: 3

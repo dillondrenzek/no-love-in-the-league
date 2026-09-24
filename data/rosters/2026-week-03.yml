@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-24T02:10:38+00:00'
+captured_at: '2026-09-24T08:51:01+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -478,12 +478,6 @@ rosters:
     proj: 6.49
     actual: null
     injury: ''
-  - player: Kyler Murray
-    pos: QB
-    starter: false
-    proj: 18.59
-    actual: null
-    injury: ''
   - player: Will Reichard
     pos: K
     starter: true
@@ -494,6 +488,12 @@ rosters:
     pos: RB
     starter: false
     proj: 8.58
+    actual: null
+    injury: ''
+  - player: Terrance Ferguson
+    pos: TE
+    starter: false
+    proj: 6.44
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -534,12 +534,6 @@ rosters:
     pos: RB
     starter: true
     proj: 10.64
-    actual: null
-    injury: ''
-  - player: Jaxson Dart
-    pos: QB
-    starter: false
-    proj: 0.0
     actual: null
     injury: ''
   - player: Travis Kelce
@@ -594,6 +588,12 @@ rosters:
     pos: WR
     starter: false
     proj: 8.05
+    actual: null
+    injury: ''
+  - player: Justin Herbert
+    pos: QB
+    starter: false
+    proj: 18.6
     actual: null
     injury: ''
 - manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
@@ -930,12 +930,6 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Tyler Allgeier
-    pos: RB
-    starter: false
-    proj: 6.71
-    actual: null
-    injury: ''
   - player: Zach Charbonnet
     pos: RB
     starter: false
@@ -976,6 +970,12 @@ rosters:
     pos: TE
     starter: false
     proj: 7.41
+    actual: null
+    injury: ''
+  - player: Devaughn Vele
+    pos: WR
+    starter: false
+    proj: 9.41
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'

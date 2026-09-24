@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 115.9
+    tx_per_year: 116.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -42,7 +42,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 2-0
-    tx: 38
+    tx: 40
     in_progress: true
     pf: 258.7
     pa: 182.8
@@ -565,6 +565,10 @@ jackperkins74:
       week: 3
       waiver: false
     - player: Kyler Murray
+      via: add
+      week: 3
+      waiver: false
+    - player: Terrance Ferguson
       via: add
       week: 3
       waiver: false
@@ -9805,7 +9809,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 29.8
+    tx_per_year: 30.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -9821,7 +9825,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 5th
     record: 1-0-1
-    tx: 3
+    tx: 5
     in_progress: true
     pf: 244.2
     pa: 232.7
@@ -10134,6 +10138,10 @@ kevbots22:
       via: add
       week: 1
       waiver: false
+    - player: Justin Herbert
+      via: add
+      week: 3
+      waiver: true
     - player: Tre Tucker
       via: add
       week: 3
@@ -16590,7 +16598,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 14
     trades_known: true
-    tx_per_year: 49.8
+    tx_per_year: 50.0
     tx_known: false
     seasons: 11
     best_finish:
@@ -16605,7 +16613,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 0-1-1
-    tx: 14
+    tx: 16
     in_progress: true
     pf: 218.2
     pa: 272.1
@@ -17070,6 +17078,10 @@ theoceanpulse:
       via: add
       week: 3
       waiver: false
+    - player: Devaughn Vele
+      via: add
+      week: 3
+      waiver: true
     - player: Eddy Pineiro
       via: add
       week: 3
