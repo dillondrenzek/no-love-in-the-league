@@ -272,7 +272,7 @@ transactions:
   schirmerj: { adds: 3, drops: 2, moves: 5 }
   shawne2520997: { adds: 3, drops: 2, moves: 5 }
   sturmanator15: { adds: 7, drops: 6, moves: 13 }
-  theoceanpulse: { adds: 7, drops: 5, moves: 12 }
+  theoceanpulse: { adds: 8, drops: 6, moves: 14 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
   zachzoske: { adds: 12, drops: 7, moves: 19 }
 
@@ -1010,6 +1010,10 @@ rosters:
   - player: Jared Goff
     via: trade
     week: 3
+  - player: Dalton Schultz
+    via: add
+    week: 3
+    waiver: false
   - player: Eddy Pineiro
     via: add
     week: 3

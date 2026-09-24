@@ -1106,8 +1106,8 @@ tx_heatmap:
       color: '#fdefd7'
   - id: theoceanpulse
     name: Dillon
-    total: 446
-    tx_per_year: 49.6
+    total: 448
+    tx_per_year: 49.8
     cells:
     - year: 2018
       count: 32
@@ -1134,8 +1134,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 12
-      color: '#fceaca'
+      count: 14
+      color: '#fce8c6'
   - id: shawne2520997
     name: Shawnee
     total: 420

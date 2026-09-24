@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-23T22:33:09+00:00'
+captured_at: '2026-09-24T02:10:38+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -942,12 +942,6 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Malachi Fields
-    pos: WR
-    starter: false
-    proj: 6.85
-    actual: null
-    injury: ''
   - player: 49ers D/ST
     pos: D/ST
     starter: true
@@ -976,6 +970,12 @@ rosters:
     pos: QB
     starter: true
     proj: 18.41
+    actual: null
+    injury: ''
+  - player: Dalton Schultz
+    pos: TE
+    starter: false
+    proj: 7.41
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
