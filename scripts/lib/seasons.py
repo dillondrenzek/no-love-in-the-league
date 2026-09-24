@@ -7,7 +7,8 @@ table renders — so both generate_standings and generate_seasons build the same
 structure from one place instead of importing it from each other.
 """
 
-from .standings import get_standings, has_points, provisional_standings
+from .standings import (get_standings, has_points, provisional_standings,
+                        win_pct, pct_string)
 from .render import heat_color
 from .overrides import co_champions
 from .state import state_of
@@ -36,6 +37,8 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
     logos = season.get("team_logos") or {}
     pfs = [r["points_for"] for r in rows if r["points_for"] is not None]
     lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
+    pas = [r["points_against"] for r in rows if r["points_against"] is not None]
+    pa_lo, pa_hi = (min(pas), max(pas)) if pas else (0, 0)
 
     out = []
     for r in rows:
@@ -46,12 +49,15 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
             "owner_id": r["id"] if r["id"] in franchises else None,
             "owner_name": franchises[r["id"]]["name"] if r["id"] in franchises else None,
             "record": r["record"],
+            "pct": win_pct(r["wins"], r["losses"], r["ties"]),
             "tag": _tag(r["finish"], team_count, r["id"] in co),
         }
+        row["pct_str"] = pct_string(row["pct"])
         if points:
             row["pf"] = r["points_for"]
             row["pf_color"] = heat_color(r["points_for"], lo, hi)
             row["pa"] = r["points_against"]
+            row["pa_color"] = heat_color(r["points_against"], pa_lo, pa_hi)
         out.append(row)
     # Hand-written notes, plus an auto "N trades completed" bullet when any went
     # through that season.

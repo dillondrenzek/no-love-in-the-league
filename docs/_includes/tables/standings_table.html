@@ -1,8 +1,9 @@
 {%- comment -%}
 Standings table, shared identically by the History page and each season page —
 same format, same data. Params: rows (standings rows), points (bool — show
-PF/PA), rank_label (rank-column header; defaults to "Rank"). Row shape: finish,
-team, owner_id, owner_name, record, tag, pf, pf_color, pa.
+PF/PA), rank_label (rank-column header; defaults to "Rank"); pct (bool — show a Win %
+column, and expect rows already ordered by it). Row shape: finish, team,
+owner_id, owner_name, record, pct_str, tag, pf, pf_color, pa.
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
 <div class="table-scroll">
@@ -12,6 +13,9 @@ team, owner_id, owner_name, record, tag, pf, pf_color, pa.
       <th>{{ include.rank_label | default: "Rank" }}</th>
       <th>Team</th>
       <th class="num">Record</th>
+      {%- if include.pct %}
+      <th class="num">Pct</th>
+      {%- endif %}
       {%- if include.points %}
       <th class="num">PF</th>
       <th class="num">PA</th>
@@ -31,9 +35,12 @@ team, owner_id, owner_name, record, tag, pf, pf_color, pa.
         {%- include bits/finish_tag.html tag=r.tag -%}
       </td>
       <td class="num">{{ r.record }}</td>
+      {%- if include.pct %}
+      <td class="num">{{ r.pct_str }}</td>
+      {%- endif %}
       {%- if include.points %}
       <td class="num">{% include bits/chip.html text=r.pf bg=r.pf_color %}</td>
-      <td class="num">{{ r.pa }}</td>
+      <td class="num">{% include bits/chip.html text=r.pa bg=r.pa_color %}</td>
       {%- endif %}
     </tr>
     {%- endfor %}

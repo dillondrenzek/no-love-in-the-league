@@ -114,6 +114,18 @@ def season_detail(season, franchises, overrides, notes):
     if in_progress:
         for r in rows:      # nothing is decided yet — no Shiva/Sacko tags
             r["tag"] = None
+    # `rows` stays in finish order (champ/sacko + tags rely on it). While a season
+    # is still in progress there's no official finish yet, so we rank by win pct
+    # (points-for breaking ties) — which counts a tie as half a win, unlike ESPN's
+    # wins-then-PF order — and renumber Rank to match. Once complete, the final
+    # standings are the truth, so we keep finish order and the official rank.
+    if in_progress:
+        standings_rows = sorted(rows, key=lambda r: (r["pct"], r.get("pf") or 0),
+                                reverse=True)
+        for i, r in enumerate(standings_rows, start=1):
+            r["finish"] = i
+    else:
+        standings_rows = rows
     cw = complete_weeks(season)
     weeks = [m["week"] for m in (season.get("matchups") or [])
              if not m.get("playoff") and m["week"] in cw]
@@ -123,6 +135,7 @@ def season_detail(season, franchises, overrides, notes):
         "state": state,
         "points": sr["points"],
         "rows": rows,
+        "standings_rows": standings_rows,
         "notes": sr["notes"],
         "weeks_played": max(weeks) if weeks else 0,
         "draft_order": draft_rows(season.get("draft_order"), franchises,

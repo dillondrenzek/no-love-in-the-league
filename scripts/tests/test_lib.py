@@ -15,7 +15,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from lib.standings import get_standings, record_string, parse_record, has_points
+from lib.standings import (get_standings, record_string, parse_record,
+                           has_points, win_pct, pct_string)
 from lib.records import compute_records
 from lib.teams import compute_profiles, rec_str, fmt_titles
 from lib.overrides import meaningless_keys, co_champions
@@ -1147,6 +1148,35 @@ def test_season_rows_provisional_table_for_live_season():
     pre = {"season": 2027, "state": "preseason", "teams": {"a": "A"},
            "final_standings": ["a"], "matchups": []}
     assert season_rows(pre, fr, {}, {})["rows"] == []
+
+
+def test_win_pct_and_pct_string():
+    assert win_pct(9, 5) == 9 / 14
+    assert win_pct(7, 6, 1) == 7.5 / 14          # a tie is half a win
+    assert win_pct(0, 0) == 0.0                   # no games -> 0, no divide-by-zero
+    assert pct_string(0.75) == ".750"             # no leading zero
+    assert pct_string(1.0) == "1.000"
+    assert pct_string(0.0) == ".000"
+    assert pct_string(7.5 / 14) == ".536"
+
+
+def test_season_rows_carry_win_pct():
+    from lib.seasons import season_rows
+    fr = {"a": {"name": "A"}, "b": {"name": "B"}, "c": {"name": "C"}}
+    # a: 2-0, b: 1-1, c: 0-2 over a round robin.
+    season = {"season": 2030, "state": "complete",
+              "teams": {"a": "A", "b": "B", "c": "C"},
+              "matchups": [
+                  {"week": 1, "home": "a", "away": "b",
+                   "home_score": 100, "away_score": 90},
+                  {"week": 1, "home": "c", "away": "a",
+                   "home_score": 80, "away_score": 110},
+                  {"week": 2, "home": "b", "away": "c",
+                   "home_score": 95, "away_score": 70}]}
+    rows = {r["team"]: r for r in season_rows(season, fr, {}, {})["rows"]}
+    assert rows["A"]["pct_str"] == "1.000"
+    assert rows["B"]["pct_str"] == ".500"
+    assert rows["C"]["pct_str"] == ".000"
 
 
 def run():

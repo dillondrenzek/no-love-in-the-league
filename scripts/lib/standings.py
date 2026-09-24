@@ -30,6 +30,21 @@ def record_string(row):
     return f"{row['wins']}-{row['losses']}"
 
 
+def win_pct(wins, losses, ties=0):
+    """Win percentage, a tie counting as half a win. 0.0 when no games played."""
+    games = wins + losses + ties
+    if not games:
+        return 0.0
+    return (wins + 0.5 * ties) / games
+
+
+def pct_string(pct):
+    """Format a win pct sports-style: 3 decimals, no leading zero.
+    0.75 -> '.750', 1.0 -> '1.000', 0.0 -> '.000'."""
+    s = f"{pct:.3f}"
+    return s[1:] if s.startswith("0.") else s
+
+
 def _from_matchups(season, franchises):
     stats = {}
 
