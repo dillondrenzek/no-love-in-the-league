@@ -1106,8 +1106,8 @@ tx_heatmap:
       color: '#fdefd7'
   - id: theoceanpulse
     name: Dillon
-    total: 450
-    tx_per_year: 50.0
+    total: 452
+    tx_per_year: 50.2
     cells:
     - year: 2018
       count: 32
@@ -1134,8 +1134,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 16
-      color: '#fce7c3'
+      count: 18
+      color: '#fce5bf'
   - id: shawne2520997
     name: Shawnee
     total: 420
@@ -1234,8 +1234,8 @@ tx_heatmap:
       color: null
   - id: purpsworth
     name: Trevor
-    total: 319
-    tx_per_year: 39.9
+    total: 320
+    tx_per_year: 40.0
     cells:
     - year: 2018
       count: null
@@ -1262,8 +1262,8 @@ tx_heatmap:
       count: 41
       color: '#fbd495'
     - year: 2026
-      count: 5
-      color: '#fdefd7'
+      count: 6
+      color: '#fdeed5'
   - id: unclebadtouch38
     name: Fletcher
     total: 216

@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-24T16:11:37+00:00'
+captured_at: '2026-09-24T22:49:18+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -45,7 +45,7 @@ rosters:
   - player: Blake Corum
     pos: RB
     starter: true
-    proj: 8.17
+    proj: 8.58
     actual: null
     injury: ''
   - player: Trey McBride
@@ -163,13 +163,13 @@ rosters:
   - player: Woody Marks
     pos: RB
     starter: false
-    proj: 8.13
+    proj: 8.26
     actual: null
     injury: ''
   - player: Caleb Douglas
     pos: WR
     starter: false
-    proj: 7.18
+    proj: 0.0
     actual: null
     injury: ''
   - player: Ashton Jeanty
@@ -193,13 +193,13 @@ rosters:
   - player: Chris Bell
     pos: WR
     starter: false
-    proj: 4.7
+    proj: 5.99
     actual: null
     injury: ''
   - player: Josh Downs
     pos: WR
     starter: true
-    proj: 9.07
+    proj: 9.49
     actual: null
     injury: ''
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -251,7 +251,7 @@ rosters:
   - player: Kyren Williams
     pos: RB
     starter: true
-    proj: 11.42
+    proj: 11.76
     actual: null
     injury: ''
   - player: Xavier Worthy
@@ -399,7 +399,7 @@ rosters:
   - player: Malik Washington
     pos: WR
     starter: true
-    proj: 8.89
+    proj: 8.96
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -445,7 +445,7 @@ rosters:
   - player: Puka Nacua
     pos: WR
     starter: true
-    proj: 16.32
+    proj: 0.0
     actual: null
     injury: ''
   - player: Mike Washington Jr.
@@ -487,7 +487,7 @@ rosters:
   - player: Terrance Ferguson
     pos: TE
     starter: false
-    proj: 6.44
+    proj: 8.57
     actual: null
     injury: ''
   - player: Keenan Allen
@@ -733,7 +733,7 @@ rosters:
   - player: De'Von Achane
     pos: RB
     starter: true
-    proj: 17.26
+    proj: 17.32
     actual: null
     injury: ''
   - player: Makai Lemon
@@ -784,6 +784,12 @@ rosters:
     proj: 7.61
     actual: null
     injury: ''
+  - player: Kirk Cousins
+    pos: QB
+    starter: false
+    proj: 14.19
+    actual: null
+    injury: ''
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
   team_id: 11
   team_name: Trick or Trick It’s Mike Vick
@@ -803,7 +809,7 @@ rosters:
   - player: Davante Adams
     pos: WR
     starter: true
-    proj: 11.52
+    proj: 14.08
     actual: null
     injury: ''
   - player: Bucky Irving
@@ -903,7 +909,7 @@ rosters:
   - player: David Montgomery
     pos: RB
     starter: true
-    proj: 11.11
+    proj: 11.19
     actual: null
     injury: ''
   - player: Christian Watson
@@ -920,17 +926,11 @@ rosters:
     injury: ''
   - player: Colston Loveland
     pos: TE
-    starter: true
+    starter: false
     proj: 7.74
     actual: null
     injury: ''
   - player: Jordan Mason
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-  - player: Zach Charbonnet
     pos: RB
     starter: false
     proj: 0.0
@@ -950,7 +950,7 @@ rosters:
     injury: ''
   - player: Khalil Shakir
     pos: WR
-    starter: false
+    starter: true
     proj: 8.32
     actual: null
     injury: ''
@@ -969,13 +969,19 @@ rosters:
   - player: Dalton Schultz
     pos: TE
     starter: true
-    proj: 7.41
+    proj: 8.58
     actual: null
     injury: ''
   - player: Devaughn Vele
     pos: WR
     starter: true
     proj: 9.41
+    actual: null
+    injury: ''
+  - player: Kenny Gainwell
+    pos: RB
+    starter: false
+    proj: 6.95
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
@@ -1057,7 +1063,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 3.72
+    proj: 3.81
     actual: null
     injury: ''
   - player: Brian Robinson Jr.
@@ -1103,7 +1109,7 @@ rosters:
   - player: Nico Collins
     pos: WR
     starter: false
-    proj: 13.0
+    proj: 0.0
     actual: null
     injury: ''
   - player: Dak Prescott

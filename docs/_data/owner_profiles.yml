@@ -16598,7 +16598,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 14
     trades_known: true
-    tx_per_year: 50.0
+    tx_per_year: 50.2
     tx_known: false
     seasons: 11
     best_finish:
@@ -16613,7 +16613,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 0-1-1
-    tx: 16
+    tx: 18
     in_progress: true
     pf: 218.2
     pa: 272.1
@@ -18493,7 +18493,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: true
-    tx_per_year: 39.9
+    tx_per_year: 40.0
     tx_known: true
     seasons: 8
     best_finish:
@@ -18509,7 +18509,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 11th
     record: 0-2
-    tx: 5
+    tx: 6
     in_progress: true
     pf: 188.0
     pa: 222.3
@@ -18823,6 +18823,10 @@ purpsworth:
       week: 2
       waiver: true
     - player: Evan McPherson
+      via: add
+      week: 3
+      waiver: false
+    - player: Kirk Cousins
       via: add
       week: 3
       waiver: false
