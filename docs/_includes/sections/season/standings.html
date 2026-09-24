@@ -6,5 +6,5 @@ The caller (sections/season_detail.html) decides whether to show it.
 {%- assign d = include.d -%}
 <section class="season-section" id="standings">
 <h2>Standings</h2>
-{% include tables/standings_table.html rows=d.rows points=d.points %}
+{% include tables/standings_table.html rows=d.standings_rows points=d.points pct=true %}
 </section>
