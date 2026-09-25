@@ -7052,7 +7052,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 103.7
+    tx_per_year: 103.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -7067,7 +7067,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 4th
     record: 1-1
-    tx: 19
+    tx: 21
     in_progress: true
     pf: 267.8
     pa: 284.6
@@ -7614,6 +7614,10 @@ zachzoske:
       week: 3
       waiver: true
     - player: Keon Coleman
+      via: add
+      week: 3
+      waiver: false
+    - player: Sam Darnold
       via: add
       week: 3
       waiver: false
@@ -14768,7 +14772,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 45.2
+    tx_per_year: 45.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -14783,7 +14787,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 9th
     record: 1-1
-    tx: 11
+    tx: 12
     in_progress: true
     pf: 173.9
     pa: 239.0
