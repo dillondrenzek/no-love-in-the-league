@@ -444,6 +444,23 @@ def test_team_logos_latest_and_on_scoreboard():
     assert board2[0]["home_logo"] == "" and board2[0]["away_logo"] == ""
 
 
+def test_week_updated_at_from_season_import_stamp():
+    from lib.weeks import week_summary, _fmt_updated
+    # A UTC stamp formats to Pacific, date + time, no year.
+    assert _fmt_updated("2026-09-24T22:45:00+00:00") == "Sep 24, 3:45 PM PDT"
+    assert _fmt_updated(None) is None
+    assert _fmt_updated("not-a-date") is None
+    # week_summary surfaces the season's updated_at (formatted); absent -> None.
+    season = {"season": 2026, "teams": {"a": "A", "b": "B"},
+              "updated_at": "2026-09-24T22:45:00+00:00",
+              "matchups": [{"week": 1, "home": "a", "away": "b", "home_score": 55.0,
+                            "away_score": 40.0, "played": True, "final": False}]}
+    wk = week_summary(season, 1, {"a": {"name": "A"}, "b": {"name": "B"}})
+    assert wk["updated_at"] == "Sep 24, 3:45 PM PDT"
+    season.pop("updated_at")
+    assert week_summary(season, 1, {"a": {"name": "A"}, "b": {"name": "B"}})["updated_at"] is None
+
+
 def test_week_roster_context_shapes():
     from lib.context import week_roster_context
     week_rosters = {

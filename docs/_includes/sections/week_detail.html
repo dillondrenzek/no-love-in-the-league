@@ -9,7 +9,7 @@ complete week. The AI recap lives on the page, below this include.
 {% include bits/week_nav.html %}
 {%- if wk and wk.scoreboard and wk.scoreboard.size > 0 -%}
 {%- assign live_games = wk.scoreboard | where: "live", true -%}
-{%- if live_games.size > 0 %}<div class="scoreboard__status"><span class="scoreboard__live">live</span></div>{% endif -%}
+{%- if live_games.size > 0 %}<div class="scoreboard__status"><span class="scoreboard__live">live</span>{% if wk.updated_at %}<span class="scoreboard__updated">updated {{ wk.updated_at }}</span>{% endif %}</div>{% endif -%}
 <div class="scoreboard">
   {%- for g in wk.scoreboard %}
   <div class="matchup{% if g.final %} matchup--final{% endif %}">

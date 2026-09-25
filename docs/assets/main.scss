@@ -381,6 +381,14 @@ tbody td a:hover { color: var(--brand); }
   display: inline-block;
 }
 
+.scoreboard__updated {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: var(--muted);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 // =============================================================================
 // Projection accuracy (ESPN line under the scoreboard; green hit / red miss)
 // =============================================================================

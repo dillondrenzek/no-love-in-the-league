@@ -254,6 +254,28 @@ def _fmt_captured(iso):
     return f"{dt.strftime('%b')} {dt.day}, {dt.year} · {hour}:{dt.minute:02d} {ampm} {tz_abbr}"
 
 
+def _fmt_updated(iso):
+    """A short 'Sep 24, 3:45 PM PDT' from an ISO timestamp — the season's last
+    import time. Stored UTC, shown Pacific (PST/PDT resolved from the date), no
+    year. Falls back to UTC when the tz database isn't available; None on bad
+    input."""
+    if not iso:
+        return None
+    try:
+        dt = datetime.datetime.fromisoformat(iso)
+    except (ValueError, TypeError):
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    tz_abbr = "UTC"
+    if _PACIFIC is not None:
+        dt = dt.astimezone(_PACIFIC)
+        tz_abbr = dt.strftime("%Z") or "PT"
+    hour = dt.hour % 12 or 12
+    ampm = "AM" if dt.hour < 12 else "PM"
+    return f"{dt.strftime('%b')} {dt.day}, {hour}:{dt.minute:02d} {ampm} {tz_abbr}"
+
+
 def week_summary(season, week, franchises, week_proj=None, week_rosters=None):
     """{'week', 'state', 'scoreboard', 'highlights', 'projections', 'projected_at'}
     for one week. Highlights are populated only for a complete week; projections
@@ -270,7 +292,9 @@ def week_summary(season, week, franchises, week_proj=None, week_rosters=None):
             "scoreboard": _scoreboard(season, franchises, games, week_rosters),
             "highlights": highlights,
             "projections": rows,
-            "projected_at": _fmt_captured((week_proj or {}).get("captured_at")) if rows else None}
+            "projected_at": _fmt_captured((week_proj or {}).get("captured_at")) if rows else None,
+            # Last ESPN pull, shown beside the Live badge (template gates on live).
+            "updated_at": _fmt_updated(season.get("updated_at"))}
 
 
 def played_weeks(season):
