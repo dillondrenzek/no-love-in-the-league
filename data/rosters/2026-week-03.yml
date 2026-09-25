@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-25T03:49:04+00:00'
+captured_at: '2026-09-25T03:56:23+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -444,7 +444,7 @@ rosters:
     injury: ''
   - player: Puka Nacua
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -490,10 +490,10 @@ rosters:
     proj: 8.57
     actual: null
     injury: ''
-  - player: Keenan Allen
+  - player: Xavier Hutchinson
     pos: WR
-    starter: false
-    proj: 7.5
+    starter: true
+    proj: 7.93
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
