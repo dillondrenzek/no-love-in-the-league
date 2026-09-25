@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-25T16:07:39+00:00'
+captured_at: '2026-09-25T22:56:31+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -51,7 +51,7 @@ rosters:
   - player: Trey McBride
     pos: TE
     starter: true
-    proj: 12.78
+    proj: 12.81
     actual: null
     injury: ''
   - player: Kyle Monangai
@@ -187,7 +187,7 @@ rosters:
   - player: Josh Downs
     pos: WR
     starter: true
-    proj: 9.49
+    proj: 9.51
     actual: null
     injury: ''
   - player: Sam Darnold
@@ -245,7 +245,7 @@ rosters:
   - player: Rachaad White
     pos: RB
     starter: true
-    proj: 7.8
+    proj: 7.76
     actual: null
     injury: ''
   - player: Kyren Williams
@@ -339,7 +339,7 @@ rosters:
   - player: Marvin Harrison Jr.
     pos: WR
     starter: false
-    proj: 5.75
+    proj: 5.76
     actual: null
     injury: ''
   - player: RJ Harvey
@@ -399,7 +399,7 @@ rosters:
   - player: Kyler Murray
     pos: QB
     starter: false
-    proj: 18.59
+    proj: 18.6
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -420,7 +420,7 @@ rosters:
     injury: ''
   - player: Travis Etienne Jr.
     pos: RB
-    starter: true
+    starter: false
     proj: 10.77
     actual: null
     injury: ''
@@ -486,7 +486,7 @@ rosters:
     injury: ''
   - player: Terrance Ferguson
     pos: TE
-    starter: false
+    starter: true
     proj: 8.57
     actual: null
     injury: ''
@@ -609,7 +609,7 @@ rosters:
   - player: Jeremiyah Love
     pos: RB
     starter: true
-    proj: 11.17
+    proj: 11.18
     actual: null
     injury: ''
   - player: Rashee Rice
@@ -627,7 +627,7 @@ rosters:
   - player: Tyler Warren
     pos: TE
     starter: true
-    proj: 9.96
+    proj: 9.98
     actual: null
     injury: ''
   - player: DK Metcalf
@@ -733,7 +733,7 @@ rosters:
   - player: De'Von Achane
     pos: RB
     starter: true
-    proj: 17.32
+    proj: 17.27
     actual: null
     injury: ''
   - player: Makai Lemon
@@ -845,7 +845,7 @@ rosters:
   - player: Stefon Diggs
     pos: WR
     starter: false
-    proj: 8.36
+    proj: 8.34
     actual: null
     injury: ''
   - player: Brandon Aubrey
@@ -939,7 +939,7 @@ rosters:
   - player: 49ers D/ST
     pos: D/ST
     starter: true
-    proj: 7.46
+    proj: 7.26
     actual: null
     injury: ''
   - player: Emanuel Wilson
@@ -1021,7 +1021,7 @@ rosters:
   - player: Michael Wilson
     pos: WR
     starter: true
-    proj: 8.94
+    proj: 8.96
     actual: null
     injury: ''
   - player: Jaylen Warren
@@ -1103,7 +1103,7 @@ rosters:
   - player: Terry McLaurin
     pos: WR
     starter: false
-    proj: 9.77
+    proj: 9.68
     actual: null
     injury: ''
   - player: Nico Collins
@@ -1127,7 +1127,7 @@ rosters:
   - player: Jacory Croskey-Merritt
     pos: RB
     starter: false
-    proj: 8.3
+    proj: 8.29
     actual: null
     injury: ''
   - player: Jalen Coker
