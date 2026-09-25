@@ -514,7 +514,7 @@
   projected_at: Sep 17, 2026 · 1:57 PM PDT
 2026-3:
   week: 3
-  state: future
+  state: in_progress
   scoreboard:
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
@@ -544,12 +544,17 @@
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     home_record: 1-0-1
     away_record: 0-2
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 10.0
+    winner_id: null
+    tie: false
+    margin: 10.0
     home_proj: 121.1
     away_proj: 119.2
   - home_id: lukstein
@@ -562,12 +567,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     home_record: 1-1
     away_record: 1-1
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 8
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 9.0
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 9.0
     home_proj: 114.8
     away_proj: 118.6
   - home_id: schirmerj
@@ -580,12 +590,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-1
     away_record: 0-2
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 9
+    away_yet: 8
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 4.3
+    away_score: 23.7
+    winner_id: null
+    tie: false
+    margin: 19.4
     home_proj: 117.5
     away_proj: 120.7
   - home_id: sturmanator15
@@ -598,12 +613,17 @@
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     home_record: 1-1
     away_record: 0-1-1
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 10.6
+    winner_id: null
+    tie: false
+    margin: 10.6
     home_proj: 124.5
     away_proj: 110.8
   - home_id: zachzoske

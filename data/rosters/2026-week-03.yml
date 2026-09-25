@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-24T22:49:18+00:00'
+captured_at: '2026-09-25T02:27:32+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -64,7 +64,7 @@ rosters:
     pos: RB
     starter: false
     proj: 8.05
-    actual: null
+    actual: 2.8
     injury: ''
   - player: Jonah Coleman
     pos: RB
@@ -100,7 +100,7 @@ rosters:
     pos: QB
     starter: false
     proj: 19.1
-    actual: null
+    actual: 11.8
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
@@ -184,12 +184,6 @@ rosters:
     proj: 6.37
     actual: null
     injury: ''
-  - player: Keon Coleman
-    pos: WR
-    starter: false
-    proj: 5.39
-    actual: null
-    injury: ''
   - player: Chris Bell
     pos: WR
     starter: false
@@ -200,6 +194,12 @@ rosters:
     pos: WR
     starter: true
     proj: 9.49
+    actual: null
+    injury: ''
+  - player: Sam Darnold
+    pos: QB
+    starter: false
+    proj: 17.38
     actual: null
     injury: ''
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -240,7 +240,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.27
-    actual: null
+    actual: 4.3
     injury: ''
   - player: Rachaad White
     pos: RB
@@ -352,15 +352,9 @@ rosters:
     pos: WR
     starter: true
     proj: 9.5
-    actual: null
+    actual: 8.0
     injury: ''
   - player: Alec Pierce
-    pos: WR
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-  - player: Tank Dell
     pos: WR
     starter: false
     proj: 0.0
@@ -376,7 +370,7 @@ rosters:
     pos: TE
     starter: true
     proj: 7.85
-    actual: null
+    actual: 1.0
     injury: ''
   - player: Eagles D/ST
     pos: D/ST
@@ -400,6 +394,12 @@ rosters:
     pos: WR
     starter: true
     proj: 8.96
+    actual: null
+    injury: ''
+  - player: Kyler Murray
+    pos: QB
+    starter: false
+    proj: 18.59
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -464,7 +464,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.54
-    actual: null
+    actual: 2.1
     injury: ''
   - player: Vikings D/ST
     pos: D/ST
@@ -516,7 +516,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: ''
   - player: Tetairoa McMillan
     pos: WR
@@ -770,7 +770,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.52
-    actual: null
+    actual: 10.0
     injury: ''
   - player: Steelers D/ST
     pos: D/ST
@@ -916,7 +916,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.14
-    actual: null
+    actual: 10.6
     injury: ''
   - player: Caleb Williams
     pos: QB
@@ -992,7 +992,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.31
-    actual: null
+    actual: 24.7
     injury: ''
   - player: Malik Nabers
     pos: WR
@@ -1070,13 +1070,13 @@ rosters:
     pos: RB
     starter: false
     proj: 5.35
-    actual: null
+    actual: 11.0
     injury: ''
   - player: Trey Smack
     pos: K
     starter: true
     proj: 8.91
-    actual: null
+    actual: -1.0
     injury: ''
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
   team_id: 14

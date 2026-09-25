@@ -102,10 +102,10 @@ matchups:
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 112.76, away_proj: 126.16 }
-  - { week:  3, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 121.14, away_proj: 119.23 }
-  - { week:  3, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 114.79, away_proj: 118.56 }
-  - { week:  3, home: schirmerj, away: gganoom, playoff: false, played: false, home_proj: 117.46, away_proj: 120.69 }
-  - { week:  3, home: sturmanator15, away: theoceanpulse, playoff: false, played: false, home_proj: 124.5, away_proj: 110.82 }
+  - { week:  3, home: kevbots22, away: purpsworth, home_score: 0.0, away_score: 10.0, playoff: false, final: false, home_proj: 121.14, away_proj: 119.23 }
+  - { week:  3, home: lukstein, away: alexandra, home_score: 9.0, away_score: 0.0, playoff: false, final: false, home_proj: 114.79, away_proj: 118.56 }
+  - { week:  3, home: schirmerj, away: gganoom, home_score: 4.3, away_score: 23.7, playoff: false, final: false, home_proj: 117.46, away_proj: 120.69 }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 0.0, away_score: 10.6, playoff: false, final: false, home_proj: 124.5, away_proj: 110.82 }
   - { week:  3, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 119.18, away_proj: 103.3 }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
   - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
@@ -267,14 +267,14 @@ transactions:
   gganoom: { adds: 3, drops: 2, moves: 5 }
   jackperkins74: { adds: 24, drops: 18, moves: 42 }
   kevbots22: { adds: 3, drops: 2, moves: 5 }
-  lukstein: { adds: 7, drops: 4, moves: 11 }
+  lukstein: { adds: 8, drops: 4, moves: 12 }
   purpsworth: { adds: 4, drops: 2, moves: 6 }
   schirmerj: { adds: 3, drops: 2, moves: 5 }
   shawne2520997: { adds: 3, drops: 2, moves: 5 }
   sturmanator15: { adds: 7, drops: 6, moves: 13 }
   theoceanpulse: { adds: 10, drops: 8, moves: 18 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
-  zachzoske: { adds: 12, drops: 7, moves: 19 }
+  zachzoske: { adds: 13, drops: 8, moves: 21 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -944,6 +944,10 @@ rosters:
     week: 3
     waiver: true
   - player: Keon Coleman
+    via: add
+    week: 3
+    waiver: false
+  - player: Sam Darnold
     via: add
     week: 3
     waiver: false
