@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-09-25T03:56:31+00:00
+updated_at: 2026-09-25T09:11:37+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -103,7 +103,7 @@ matchups:
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
   - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 120.69, away_proj: 126.16 }
-  - { week:  3, home: kevbots22, away: purpsworth, home_score: 0.0, away_score: 23.9, playoff: false, final: false, home_proj: 121.14, away_proj: 119.23 }
+  - { week:  3, home: kevbots22, away: purpsworth, home_score: 0.0, away_score: 23.9, playoff: false, final: false, home_proj: 121.14, away_proj: 115.48 }
   - { week:  3, home: lukstein, away: alexandra, home_score: 19.5, away_score: 0.0, playoff: false, final: false, home_proj: 114.79, away_proj: 118.56 }
   - { week:  3, home: schirmerj, away: gganoom, home_score: 4.6, away_score: 34.3, playoff: false, final: false, home_proj: 117.46, away_proj: 120.69 }
   - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 0.0, away_score: 19.1, playoff: false, final: false, home_proj: 124.5, away_proj: 110.82 }
@@ -275,7 +275,7 @@ transactions:
   sturmanator15: { adds: 7, drops: 6, moves: 13 }
   theoceanpulse: { adds: 10, drops: 8, moves: 18 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
-  zachzoske: { adds: 13, drops: 8, moves: 21 }
+  zachzoske: { adds: 14, drops: 9, moves: 23 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -956,6 +956,10 @@ rosters:
     via: add
     week: 3
     waiver: false
+  - player: Tyler Allgeier
+    via: add
+    week: 3
+    waiver: true
   theoceanpulse:
   - player: Omarion Hampton
     via: draft
