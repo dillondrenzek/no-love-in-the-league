@@ -445,9 +445,13 @@ def test_team_logos_latest_and_on_scoreboard():
 
 
 def test_week_updated_at_from_season_import_stamp():
+    import datetime as _dt
     from lib.weeks import week_summary, _fmt_updated
-    # A UTC stamp formats to Pacific, date + time, no year.
+    # A UTC stamp formats to Pacific, date + time, no year — from a string...
     assert _fmt_updated("2026-09-24T22:45:00+00:00") == "Sep 24, 3:45 PM PDT"
+    # ...and from a datetime, which is what YAML parses an ISO timestamp into.
+    assert _fmt_updated(_dt.datetime(2026, 9, 24, 22, 45,
+                                     tzinfo=_dt.timezone.utc)) == "Sep 24, 3:45 PM PDT"
     assert _fmt_updated(None) is None
     assert _fmt_updated("not-a-date") is None
     # week_summary surfaces the season's updated_at (formatted); absent -> None.

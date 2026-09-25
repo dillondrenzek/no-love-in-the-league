@@ -255,16 +255,20 @@ def _fmt_captured(iso):
 
 
 def _fmt_updated(iso):
-    """A short 'Sep 24, 3:45 PM PDT' from an ISO timestamp — the season's last
-    import time. Stored UTC, shown Pacific (PST/PDT resolved from the date), no
+    """A short 'Sep 24, 3:45 PM PDT' from the season's last import time. Accepts
+    either an ISO string or a datetime (YAML parses an ISO timestamp straight to
+    a datetime). Stored UTC, shown Pacific (PST/PDT resolved from the date), no
     year. Falls back to UTC when the tz database isn't available; None on bad
     input."""
     if not iso:
         return None
-    try:
-        dt = datetime.datetime.fromisoformat(iso)
-    except (ValueError, TypeError):
-        return None
+    if isinstance(iso, datetime.datetime):
+        dt = iso
+    else:
+        try:
+            dt = datetime.datetime.fromisoformat(iso)
+        except (ValueError, TypeError):
+            return None
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=datetime.timezone.utc)
     tz_abbr = "UTC"
