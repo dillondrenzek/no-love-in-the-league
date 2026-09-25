@@ -255,6 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
+  updated_at: Sep 24, 8:56 PM PDT
 2026-2:
   week: 2
   state: complete
@@ -512,6 +513,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
+  updated_at: Sep 24, 8:56 PM PDT
 2026-3:
   week: 3
   state: in_progress
@@ -532,7 +534,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 112.8
+    home_proj: 120.7
     away_proj: 126.2
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -551,10 +553,10 @@
     live: true
     playoff: false
     home_score: 0.0
-    away_score: 10.0
+    away_score: 23.9
     winner_id: null
     tie: false
-    margin: 10.0
+    margin: 23.9
     home_proj: 121.1
     away_proj: 119.2
   - home_id: lukstein
@@ -573,11 +575,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 9.0
+    home_score: 19.5
     away_score: 0.0
     winner_id: null
     tie: false
-    margin: 9.0
+    margin: 19.5
     home_proj: 114.8
     away_proj: 118.6
   - home_id: schirmerj
@@ -596,11 +598,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 4.3
-    away_score: 23.7
+    home_score: 4.6
+    away_score: 34.3
     winner_id: null
     tie: false
-    margin: 19.4
+    margin: 29.7
     home_proj: 117.5
     away_proj: 120.7
   - home_id: sturmanator15
@@ -620,10 +622,10 @@
     live: true
     playoff: false
     home_score: 0.0
-    away_score: 10.6
+    away_score: 19.1
     winner_id: null
     tie: false
-    margin: 10.6
+    margin: 19.1
     home_proj: 124.5
     away_proj: 110.8
   - home_id: zachzoske
@@ -737,6 +739,7 @@
     decided: false
     result: null
   projected_at: Sep 24, 2026 · 9:10 AM PDT
+  updated_at: Sep 24, 8:56 PM PDT
 2026-4:
   week: 4
   state: future
@@ -840,6 +843,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-5:
   week: 5
   state: future
@@ -943,6 +947,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-6:
   week: 6
   state: future
@@ -1046,6 +1051,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-7:
   week: 7
   state: future
@@ -1149,6 +1155,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-8:
   week: 8
   state: future
@@ -1252,6 +1259,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-9:
   week: 9
   state: future
@@ -1355,6 +1363,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-10:
   week: 10
   state: future
@@ -1458,6 +1467,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-11:
   week: 11
   state: future
@@ -1561,6 +1571,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-12:
   week: 12
   state: future
@@ -1664,6 +1675,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-13:
   week: 13
   state: future
@@ -1767,6 +1779,7 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT
 2026-14:
   week: 14
   state: future
@@ -1870,3 +1883,4 @@
   highlights: []
   projections: []
   projected_at: null
+  updated_at: Sep 24, 8:56 PM PDT

@@ -569,6 +569,9 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         "",
         f"season: {year}",
         "source: the-league-espn-api",
+        # When this season was last pulled from ESPN (UTC). Shown next to the
+        # weekly scoreboard's Live badge so a live week says how fresh it is.
+        f"updated_at: {datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')}",
         f"weeks_in_regular_season: {reg_count}",
         "",
         "# Lifecycle state (see design/season-state.md) — the site renders off this,",

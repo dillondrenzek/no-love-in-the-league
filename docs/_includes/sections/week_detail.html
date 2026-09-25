@@ -8,8 +8,10 @@ complete week. The AI recap lives on the page, below this include.
 {%- assign wk = include.wk -%}
 {% include bits/week_nav.html %}
 {%- if wk and wk.scoreboard and wk.scoreboard.size > 0 -%}
-{%- assign live_games = wk.scoreboard | where: "live", true -%}
-{%- if live_games.size > 0 %}<div class="scoreboard__status"><span class="scoreboard__live">live</span></div>{% endif -%}
+{%- comment -%} The week is "live" for its whole in-progress window (first kickoff
+until the last game finals — roughly Thu–Mon), so the Live badge and the "updated"
+import stamp show the entire time, not just while a game is mid-play. {%- endcomment -%}
+{%- if wk.state == "in_progress" %}<div class="scoreboard__status"><span class="scoreboard__live">live</span>{% if wk.updated_at %}<span class="scoreboard__updated">updated {{ wk.updated_at }}</span>{% endif %}</div>{% endif -%}
 <div class="scoreboard">
   {%- for g in wk.scoreboard %}
   <div class="matchup{% if g.final %} matchup--final{% endif %}">

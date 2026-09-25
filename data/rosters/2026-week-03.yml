@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-25T02:27:32+00:00'
+captured_at: '2026-09-25T03:56:23+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -100,7 +100,7 @@ rosters:
     pos: QB
     starter: false
     proj: 19.1
-    actual: 11.8
+    actual: 20.4
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
@@ -240,7 +240,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.27
-    actual: 4.3
+    actual: 4.6
     injury: ''
   - player: Rachaad White
     pos: RB
@@ -352,7 +352,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.5
-    actual: 8.0
+    actual: 18.5
     injury: ''
   - player: Alec Pierce
     pos: WR
@@ -444,7 +444,7 @@ rosters:
     injury: ''
   - player: Puka Nacua
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -490,10 +490,10 @@ rosters:
     proj: 8.57
     actual: null
     injury: ''
-  - player: Keenan Allen
+  - player: Xavier Hutchinson
     pos: WR
-    starter: false
-    proj: 7.5
+    starter: true
+    proj: 7.93
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -770,7 +770,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.52
-    actual: 10.0
+    actual: 23.9
     injury: ''
   - player: Steelers D/ST
     pos: D/ST
@@ -916,7 +916,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.14
-    actual: 10.6
+    actual: 19.1
     injury: ''
   - player: Caleb Williams
     pos: QB
@@ -992,7 +992,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.31
-    actual: 24.7
+    actual: 34.3
     injury: ''
   - player: Malik Nabers
     pos: WR
@@ -1070,13 +1070,13 @@ rosters:
     pos: RB
     starter: false
     proj: 5.35
-    actual: 11.0
+    actual: 12.0
     injury: ''
   - player: Trey Smack
     pos: K
     starter: true
     proj: 8.91
-    actual: -1.0
+    actual: 0.0
     injury: ''
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
   team_id: 14
