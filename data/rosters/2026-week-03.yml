@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-26T18:50:21+00:00'
+captured_at: '2026-09-26T22:15:22+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -856,7 +856,7 @@ rosters:
     injury: ''
   - player: Drake Maye
     pos: QB
-    starter: true
+    starter: false
     proj: 20.08
     actual: null
     injury: ''
@@ -880,7 +880,7 @@ rosters:
     injury: ''
   - player: Tyler Shough
     pos: QB
-    starter: false
+    starter: true
     proj: 20.53
     actual: null
     injury: ''
