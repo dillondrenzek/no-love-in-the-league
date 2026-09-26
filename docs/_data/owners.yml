@@ -1010,8 +1010,8 @@ tx_heatmap:
       color: '#fbd18f'
   - id: zachzoske
     name: Zach
-    total: 937
-    tx_per_year: 104.1
+    total: 939
+    tx_per_year: 104.3
     cells:
     - year: 2018
       count: 130
@@ -1038,8 +1038,8 @@ tx_heatmap:
       count: 110
       color: '#f59a46'
     - year: 2026
-      count: 23
-      color: '#fce1b6'
+      count: 25
+      color: '#fce0b2'
   - id: sturmanator15
     name: Wade
     total: 790

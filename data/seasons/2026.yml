@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-09-26T15:21:01+00:00
+updated_at: 2026-09-26T18:50:24+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -102,7 +102,7 @@ matchups:
   - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
-  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 118.56, away_proj: 125.08 }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 118.56, away_proj: 125.2 }
   - { week:  3, home: kevbots22, away: purpsworth, home_score: 0.0, away_score: 23.9, playoff: false, final: false, home_proj: 121.15, away_proj: 115.42 }
   - { week:  3, home: lukstein, away: alexandra, home_score: 19.5, away_score: 0.0, playoff: false, final: false, home_proj: 115.81, away_proj: 118.77 }
   - { week:  3, home: schirmerj, away: gganoom, home_score: 4.6, away_score: 34.3, playoff: false, final: false, home_proj: 117.54, away_proj: 120.73 }
@@ -275,7 +275,7 @@ transactions:
   sturmanator15: { adds: 7, drops: 6, moves: 13 }
   theoceanpulse: { adds: 10, drops: 8, moves: 18 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
-  zachzoske: { adds: 14, drops: 9, moves: 23 }
+  zachzoske: { adds: 15, drops: 10, moves: 25 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -960,6 +960,10 @@ rosters:
     via: add
     week: 3
     waiver: true
+  - player: Zach Charbonnet
+    via: add
+    week: 3
+    waiver: false
   theoceanpulse:
   - player: Omarion Hampton
     via: draft

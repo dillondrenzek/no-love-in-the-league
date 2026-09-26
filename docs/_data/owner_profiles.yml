@@ -7056,7 +7056,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 104.1
+    tx_per_year: 104.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -7071,7 +7071,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 4th
     record: 1-1
-    tx: 23
+    tx: 25
     in_progress: true
     pf: 267.8
     pa: 284.6
@@ -7629,6 +7629,10 @@ zachzoske:
       via: add
       week: 3
       waiver: true
+    - player: Zach Charbonnet
+      via: add
+      week: 3
+      waiver: false
   - year: 2025
     players:
     - player: CeeDee Lamb
