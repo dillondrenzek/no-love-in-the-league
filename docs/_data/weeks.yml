@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-2:
   week: 2
   state: complete
@@ -513,7 +513,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-3:
   week: 3
   state: in_progress
@@ -528,13 +528,18 @@
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     home_record: 2-0
     away_record: 1-1
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 4
+    away_yet: 6
     final: false
-    live: false
+    live: true
     playoff: false
-    home_proj: 118.6
+    home_score: 75.9
+    away_score: 25.0
+    winner_id: null
+    tie: false
+    margin: 50.9
+    home_proj: 118.7
     away_proj: 125.2
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
@@ -547,18 +552,18 @@
     home_record: 1-0-1
     away_record: 0-2
     scored: true
-    home_yet: 10
-    away_yet: 9
+    home_yet: 3
+    away_yet: 5
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 23.9
+    home_score: 39.6
+    away_score: 43.4
     winner_id: null
     tie: false
-    margin: 23.9
+    margin: 3.8
     home_proj: 121.2
-    away_proj: 115.4
+    away_proj: 115.5
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -570,16 +575,16 @@
     home_record: 1-1
     away_record: 1-1
     scored: true
-    home_yet: 8
-    away_yet: 10
+    home_yet: 4
+    away_yet: 5
     final: false
     live: true
     playoff: false
-    home_score: 19.5
-    away_score: 0.0
+    home_score: 42.4
+    away_score: 45.6
     winner_id: null
     tie: false
-    margin: 19.5
+    margin: 3.2
     home_proj: 115.8
     away_proj: 118.8
   - home_id: schirmerj
@@ -593,18 +598,18 @@
     home_record: 1-1
     away_record: 0-2
     scored: true
-    home_yet: 9
-    away_yet: 8
+    home_yet: 3
+    away_yet: 4
     final: false
     live: true
     playoff: false
-    home_score: 4.6
-    away_score: 34.3
+    home_score: 47.7
+    away_score: 63.3
     winner_id: null
     tie: false
-    margin: 29.7
+    margin: 15.6
     home_proj: 117.5
-    away_proj: 120.7
+    away_proj: 121.4
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -616,18 +621,18 @@
     home_record: 1-1
     away_record: 0-1-1
     scored: true
-    home_yet: 10
-    away_yet: 9
+    home_yet: 4
+    away_yet: 3
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 19.1
+    home_score: 57.7
+    away_score: 58.7
     winner_id: null
     tie: false
-    margin: 19.1
-    home_proj: 124.5
-    away_proj: 110.6
+    margin: 1.0
+    home_proj: 122.1
+    away_proj: 111.9
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -638,14 +643,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     home_record: 1-1
     away_record: 2-0
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 2
+    away_yet: 6
     final: false
-    live: false
+    live: true
     playoff: false
-    home_proj: 119.1
-    away_proj: 105.9
+    home_score: 89.6
+    away_score: 29.9
+    winner_id: null
+    tie: false
+    margin: 59.7
+    home_proj: 119.2
+    away_proj: 107.0
   highlights: []
   projections:
   - home_id: jackperkins74
@@ -739,7 +749,7 @@
     decided: false
     result: null
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-4:
   week: 4
   state: future
@@ -843,7 +853,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-5:
   week: 5
   state: future
@@ -947,7 +957,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-6:
   week: 6
   state: future
@@ -1051,7 +1061,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-7:
   week: 7
   state: future
@@ -1155,7 +1165,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-8:
   week: 8
   state: future
@@ -1259,7 +1269,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-9:
   week: 9
   state: future
@@ -1363,7 +1373,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-10:
   week: 10
   state: future
@@ -1467,7 +1477,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-11:
   week: 11
   state: future
@@ -1571,7 +1581,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-12:
   week: 12
   state: future
@@ -1675,7 +1685,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-13:
   week: 13
   state: future
@@ -1779,7 +1789,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
 2026-14:
   week: 14
   state: future
@@ -1883,4 +1893,4 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 27, 8:59 AM PDT
+  updated_at: Sep 27, 12:37 PM PDT
