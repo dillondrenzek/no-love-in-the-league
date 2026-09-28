@@ -69,19 +69,29 @@ def _order_at(season, week):
     return sorted(score, key=lambda f: score[f], reverse=True)
 
 
-def power_rankings(season, week, franchises, blurbs=None):
-    """Ranked list of dicts for `week`: {rank, fid, team, owner, logo, movement,
-    is_new, blurb}. `movement` is last week's rank minus this week's (positive =
-    climbed); `is_new` marks a team with no prior ranking. Returns [] when the week
-    can't be ranked yet (e.g. week 1, before any games)."""
-    order = _order_at(season, week)
+def power_rankings(season, week, franchises, blurbs=None,
+                   order=None, prev_order=None, records=None):
+    """Ranked list of dicts for `week`, reflecting the state going *into* that week
+    (data from the weeks before it): {rank, fid, team, owner, logo, record,
+    movement, is_new, blurb}. `movement` is last week's rank minus this week's
+    (positive = climbed); `is_new` marks a team with no prior ranking.
+
+    Order is normally computed from prior results, but an explicit `order`/
+    `prev_order` (a list of fids, e.g. an editorial preseason ranking loaded from
+    the data file) takes precedence — that's how week 1, with no games to compute
+    from, gets ranked. `records` is an optional {fid: "W-L[-T]"} shown inline.
+    Returns [] when the week can't be ranked and no explicit order is given."""
+    if order is None:
+        order = _order_at(season, week)
     if not order:
         return []
-    prev = _order_at(season, week - 1)
-    prev_rank = {f: i + 1 for i, f in enumerate(prev)} if prev else {}
+    if prev_order is None:
+        prev_order = _order_at(season, week - 1)
+    prev_rank = {f: i + 1 for i, f in enumerate(prev_order)} if prev_order else {}
     teams = season.get("teams", {})
     logos = season.get("team_logos") or {}
     blurbs = blurbs or {}
+    records = records or {}
     rows = []
     for i, fid in enumerate(order):
         rank = i + 1
@@ -92,6 +102,7 @@ def power_rankings(season, week, franchises, blurbs=None):
             "team": teams.get(fid) or short_name_of(fid, franchises),
             "owner": short_name_of(fid, franchises),
             "logo": logos.get(fid, ""),
+            "record": records.get(fid, ""),
             "movement": (was - rank) if was else 0,
             "is_new": was is None,
             "blurb": blurbs.get(fid, ""),

@@ -19,6 +19,15 @@ average, recent form, win rate) and are what the site renders. Do not reorder, d
 not argue the math in the text, do not contradict a team's movement. You write
 flavor *around* the given rank and move.
 
+**Exception — editorial weeks.** When there's little or nothing to compute from
+(Week 1 is preseason, with no games), a `data/power/<year>-week-NN.yml` file may
+set an explicit `order:` (a list of franchise ids). That editorial order then
+drives the rank and the next week's movement arrows in place of the computed one.
+Base such an order only on what was known *going into* that week — prior-season
+finishes, roster composition, and offseason trades/keepers — never on results that
+hadn't happened yet. Each row also shows the team's record entering the week
+(0-0 in the preseason), rendered automatically; don't restate it in the blurb.
+
 ## Persona & voice
 
 Same league-insider voice as the preview: opinionated, a little mean, always

@@ -131,6 +131,18 @@ def load_power_blurbs(year, week, data_dir=DATA_DIR):
     return doc.get("blurbs") or {}
 
 
+def load_power_order(year, week, data_dir=DATA_DIR):
+    """An explicit editorial rank order (list of fids) for a week's power rankings,
+    or None when the file doesn't set one. Lets a week be ranked by hand — chiefly
+    week 1, which has no prior games for the computed order to work from. Read from
+    the same data/power/<year>-week-<nn>.yml file as the blurbs."""
+    path = Path(data_dir) / "power" / f"{year}-week-{week:02d}.yml"
+    if not path.is_file():
+        return None
+    doc = _read_yaml(path) or {}
+    return doc.get("order") or None
+
+
 def load_settings(data_dir=DATA_DIR):
     """Per-season ESPN scoring/roster settings from data/settings.yml (written by
     scripts/import_settings.py). Returns the seasons list, or [] when the file was

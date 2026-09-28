@@ -1215,6 +1215,29 @@ def test_season_rows_carry_win_pct():
     assert rows["C"]["pct_str"] == ".000"
 
 
+def test_power_rankings_explicit_order_and_movement():
+    from lib.power import power_rankings
+    season = {"season": 2026, "teams": {"a": "A", "b": "B", "c": "C"}}
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}, "c": {"name": "Cy"}}
+    # Week 1: explicit editorial order (no games to compute from), everyone NEW.
+    wk1 = power_rankings(season, 1, fr, {"a": "top"},
+                         order=["a", "b", "c"], records={"a": "0-0"})
+    assert [r["fid"] for r in wk1] == ["a", "b", "c"]
+    assert all(r["is_new"] for r in wk1)
+    assert wk1[0]["record"] == "0-0" and wk1[0]["blurb"] == "top"
+    # Week 2: new order, movement measured against week 1's explicit order.
+    wk2 = power_rankings(season, 2, fr, order=["c", "a", "b"],
+                         prev_order=["a", "b", "c"],
+                         records={"c": "1-0", "a": "0-0-1", "b": "0-1"})
+    by = {r["fid"]: r for r in wk2}
+    assert by["c"]["rank"] == 1 and by["c"]["movement"] == 2   # 3 -> 1, up 2
+    assert by["a"]["movement"] == -1                           # 1 -> 2, down 1
+    assert by["b"]["movement"] == -1 and by["c"]["record"] == "1-0"
+    assert not any(r["is_new"] for r in wk2)
+    # No order and no prior games -> nothing to rank.
+    assert power_rankings(season, 1, fr) == []
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:
