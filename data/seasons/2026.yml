@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-09-27T22:41:18+00:00
+updated_at: 2026-09-28T02:31:46+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -102,12 +102,12 @@ matchups:
   - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
-  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, home_score: 112.9, away_score: 72.0, playoff: false, final: false, home_proj: 118.65, away_proj: 125.2 }
-  - { week:  3, home: kevbots22, away: purpsworth, home_score: 60.7, away_score: 84.1, playoff: false, final: false, home_proj: 121.21, away_proj: 115.45 }
-  - { week:  3, home: lukstein, away: alexandra, home_score: 44.5, away_score: 108.6, playoff: false, final: false, home_proj: 115.8, away_proj: 118.78 }
-  - { week:  3, home: schirmerj, away: gganoom, home_score: 74.5, away_score: 126.9, playoff: false, final: false, home_proj: 117.54, away_proj: 121.43 }
-  - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 109.8, away_score: 92.4, playoff: false, final: false, home_proj: 122.07, away_proj: 111.89 }
-  - { week:  3, home: zachzoske, away: shawne2520997, home_score: 114.8, away_score: 88.5, playoff: false, final: false, home_proj: 119.16, away_proj: 106.95 }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, home_score: 125.3, away_score: 100.7, playoff: false, final: false, home_proj: 118.65, away_proj: 125.2 }
+  - { week:  3, home: kevbots22, away: purpsworth, home_score: 82.8, away_score: 103.4, playoff: false, final: false, home_proj: 121.21, away_proj: 115.45 }
+  - { week:  3, home: lukstein, away: alexandra, home_score: 44.5, away_score: 132.0, playoff: false, final: false, home_proj: 115.8, away_proj: 118.78 }
+  - { week:  3, home: schirmerj, away: gganoom, home_score: 93.9, away_score: 156.0, playoff: false, final: false, home_proj: 117.54, away_proj: 121.43 }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.3, away_score: 88.4, playoff: false, final: false, home_proj: 122.07, away_proj: 111.89 }
+  - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 108.5, playoff: false, final: false, home_proj: 119.16, away_proj: 106.95 }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
   - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
   - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -266,7 +266,7 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 3, drops: 2, moves: 5 }
-  jackperkins74: { adds: 25, drops: 19, moves: 44 }
+  jackperkins74: { adds: 26, drops: 19, moves: 45 }
   kevbots22: { adds: 3, drops: 2, moves: 5 }
   lukstein: { adds: 8, drops: 4, moves: 12 }
   purpsworth: { adds: 4, drops: 2, moves: 6 }
@@ -402,6 +402,10 @@ rosters:
     week: 3
     waiver: false
   - player: Kyler Murray
+    via: add
+    week: 3
+    waiver: false
+  - player: Pat Bryant
     via: add
     week: 3
     waiver: false
