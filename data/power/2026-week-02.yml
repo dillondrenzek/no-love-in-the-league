@@ -1,0 +1,31 @@
+# Power-ranking blurbs — 2026 week 2. Ranking reflects the state going *into*
+# Week 2: it weighs Week 1 results and scores plus roster and matchup history.
+# `order:` is the editorial rank; movement arrows compare it to Week 1's order.
+# Based only on data available after Week 1. Keyed by franchise id; the comment
+# shows rank + team.
+order:
+  - jackperkins74
+  - zachzoske
+  - sturmanator15
+  - kevbots22
+  - theoceanpulse
+  - lukstein
+  - purpsworth
+  - alexandra
+  - shawne2520997
+  - schirmerj
+  - gganoom
+  - whowonthelastsuperbowl
+blurbs:
+  jackperkins74: "Opened with a league-best 166.7 and looked every bit the champ, Gibbs and company burying Jono. Nothing to fix when you hang the week's top score. Now he draws Grant, a team he's never lost to at 3-0."   # 1. Gibbed for your pleasure
+  zachzoske: "Ashton Jeanty cashed in immediately for 30, and Zach's 161.3 trailed only the champ. The aggressive Week 1 trade for the rookie already looks like a steal. The catch: Week 2 brings Jono, who owns this series 16-9."   # 2. Tuten Your Mom
+  sturmanator15: "Scored 146.7 — third-most in the league — and still lost to Zach's buzzsaw, the definition of a good team caught on a bad week. The receiver room and McBride are humming. He should feast on a Trevor team that laid an egg."   # 3. The People's Commissioner
+  kevbots22: "A 137.4 was plenty of firepower, but it only bought a tie with Dillon. Jefferson and the core delivered; the schedule didn't cooperate. A get-right spot awaits against rookie Lexi."   # 4. Josh Jacobs Alibi
+  theoceanpulse: "Caleb Williams erupted for 39 and dragged Dillon to a 137.4 tie in a game that felt winnable. The ceiling is real when the quarterback pops. Now comes the revenge angle: Shawnee, and the Nico Collins he traded away."   # 5. The ChoSimba Ones
+  lukstein: "Won, but a modest 96.5 said more about Trevor's no-show than any statement. Hurts and Saquon are steady, if unspectacular so far. He faces Nate in a matchup he's historically owned."   # 6. 2x Runner Up
+  purpsworth: "A brutal 85.4 opener — second-worst in the league — sank a roster that's better than that on paper. Taylor and Achane have to wake up in a hurry. It doesn't get easier against a red-hot Wade."   # 7. I am dead inside
+  alexandra: "The rookie announced herself, riding Lamar to 105 and a debut win over Nate. No fear — and now a real measuring stick in loaded Kevin. Prove-it time in Week 2."   # 8. Cornstar
+  shawne2520997: "Last year's sacko is 1-0 and strutting, with Nico Collins already paying off the preseason trade. Momentum is a welcome change of scenery. Fittingly, Week 2 sends her at Dillon — the man she got Collins from."   # 9. Swift kick in the Dak
+  schirmerj: "Josh Allen went for 38 and it bought nothing — running into the champ's 166 wasted a monster week. The talent is obviously there; the draw wasn't. He gets a Zach team he's owned 16-9 to steady himself."   # 10. Return of the IDP
+  gganoom: "Bijan did his part, but 103.6 wasn't enough against Shawnee, and the rest of the lineup went quiet. A tough opener now turns brutal: the undefeated champ, whom Grant has never beaten. Long week ahead."   # 11. One Big Beautiful Dill
+  whowonthelastsuperbowl: "Derrick Henry's 35 was a lonely bright spot in an 87.4 dud against a rookie. The top two are fine; everything after is a problem. He'll need Luke to sleepwalk to turn it around."   # 12. Trick or Trick It's Mike Vick

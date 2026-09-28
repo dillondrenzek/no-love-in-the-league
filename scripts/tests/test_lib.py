@@ -1215,6 +1215,64 @@ def test_season_rows_carry_win_pct():
     assert rows["C"]["pct_str"] == ".000"
 
 
+def test_power_rankings_explicit_order_and_movement():
+    from lib.power import power_rankings
+    season = {"season": 2026, "teams": {"a": "A", "b": "B", "c": "C"}}
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}, "c": {"name": "Cy"}}
+    # Week 1: explicit editorial order (no games to compute from), everyone NEW.
+    wk1 = power_rankings(season, 1, fr, {"a": "top"},
+                         order=["a", "b", "c"], records={"a": "0-0"})
+    assert [r["fid"] for r in wk1] == ["a", "b", "c"]
+    assert all(r["is_new"] for r in wk1)
+    assert wk1[0]["record"] == "0-0" and wk1[0]["blurb"] == "top"
+    # Week 2: new order, movement measured against week 1's explicit order.
+    wk2 = power_rankings(season, 2, fr, order=["c", "a", "b"],
+                         prev_order=["a", "b", "c"],
+                         records={"c": "1-0", "a": "0-0-1", "b": "0-1"})
+    by = {r["fid"]: r for r in wk2}
+    assert by["c"]["rank"] == 1 and by["c"]["movement"] == 2   # 3 -> 1, up 2
+    assert by["a"]["movement"] == -1                           # 1 -> 2, down 1
+    assert by["b"]["movement"] == -1 and by["c"]["record"] == "1-0"
+    assert not any(r["is_new"] for r in wk2)
+    # No order and no prior games -> nothing to rank.
+    assert power_rankings(season, 1, fr) == []
+
+
+def test_trade_faab_asset_label_and_render():
+    from lib.data import trade_asset_label
+    assert trade_asset_label({"label": "Jared Goff"}) == "Jared Goff"
+    assert trade_asset_label({"faab": 1}) == "$1 FAAB"        # whole dollars, no .0
+    assert trade_asset_label({"faab": 2.5}) == "$2.5 FAAB"
+    assert trade_asset_label({}) == ""
+    # A FAAB asset flows through the season page's trade breakdown.
+    from generate_seasons import season_trades
+    season = {"season": 2026, "teams": {"a": "A", "b": "B"},
+              "trades": [{"id": "t1", "week": 3, "teams": ["a", "b"], "assets": [
+                  {"from": "a", "to": "b", "label": "Josh Downs"},
+                  {"from": "a", "to": "b", "faab": 1},
+                  {"from": "b", "to": "a", "label": "Jared Goff"}]}]}
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}}
+    parties = {p["owner_name"]: p for p in season_trades(season, fr)[0]["parties"]}
+    assert parties["Ana"]["gave"] == ["Josh Downs", "$1 FAAB"]
+    assert parties["Ben"]["gave"] == ["Jared Goff"]
+
+
+def test_manual_faab_survives_reimport_merge():
+    import import_espn
+    # On re-import ESPN yields the same trade without FAAB (it's not in the feed);
+    # the on-disk version with the hand-added FAAB must win.
+    existing = [{"id": "t1", "week": 3, "teams": ["a", "b"], "assets": [
+        {"from": "a", "to": "b", "label": "Josh Downs"},
+        {"from": "a", "to": "b", "faab": 1},
+        {"from": "b", "to": "a", "label": "Jared Goff"}]}]
+    fresh = [{"id": "t1", "week": 3, "teams": ["a", "b"], "assets": [
+        {"from": "a", "to": "b", "label": "Josh Downs"},
+        {"from": "b", "to": "a", "label": "Jared Goff"}]}]
+    merged = import_espn.merge_trade_sets(existing, fresh)
+    assert len(merged) == 1
+    assert any(a.get("faab") == 1 for a in merged[0]["assets"])
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

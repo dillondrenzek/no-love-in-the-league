@@ -7,7 +7,8 @@ seasons that have matchups (level 2).
 """
 
 from .data import (name_of, short_name_of, season_trades_complete,
-                   season_transactions_known, countable_matchups)
+                   season_transactions_known, countable_matchups,
+                   trade_asset_label)
 from .standings import get_standings, provisional_standings
 from .state import is_in_progress, state_of, state_at_least
 from .overrides import co_champions, meaningless_keys, matchup_key
@@ -196,8 +197,8 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
                 others = [o for o in members if o != fid]
                 p["trade_log"].append({
                     "year": year, "week": trade.get("week") or 0,
-                    "got": [a["label"] for a in assets if a.get("to") == fid],
-                    "gave": [a["label"] for a in assets if a.get("from") == fid],
+                    "got": [trade_asset_label(a) for a in assets if a.get("to") == fid],
+                    "gave": [trade_asset_label(a) for a in assets if a.get("from") == fid],
                     "with": [{"id": o, "name": short_name_of(o, franchises),
                               "team": teams_map.get(o)} for o in others],
                 })

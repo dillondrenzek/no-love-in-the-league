@@ -663,6 +663,9 @@ def dump_season_yaml(year, reg_count, final_order, matchups, teams, playoff_team
         "# while everyone else's count is a floor ('at least N'). Feed managers'",
         "# cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each",
         "# trade's `id` is ESPN's trade id, used to merge imports without clobbering.",
+        "# FAAB isn't in ESPN's trade feed: to record it, add an asset to that trade",
+        "# by hand — `- {from: <giver fid>, to: <receiver fid>, faab: 5}`. It renders",
+        "# as '$5 FAAB' and re-imports keep it (a trade's on-disk detail is preserved).",
         f"trades_complete: {'true' if trades_complete else 'false'}",
     ]
     if trades_known_for:

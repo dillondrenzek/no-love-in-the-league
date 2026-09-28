@@ -16,6 +16,12 @@ Every manager in league history. Click a name for their full profile.
 
 {% include tables/owners_table.html rows=site.data.owners.inactive %}
 
+## Finish History
+
+_Where each manager placed each year — hotter is better. Sorted by average finish._
+
+{% include tables/finish_heatmap.html data=site.data.owners.finish_heatmap %}
+
 ## Draft Order History
 
 {% include tables/draft_heatmap.html data=site.data.owners.draft_heatmap %}

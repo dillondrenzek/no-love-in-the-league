@@ -7354,6 +7354,7 @@ zachzoske:
     week: 3
     got:
     - Josh Downs
+    - $1 FAAB
     gave:
     - Jared Goff
     with:
@@ -16933,6 +16934,7 @@ theoceanpulse:
     - Jared Goff
     gave:
     - Josh Downs
+    - $1 FAAB
     with:
     - id: zachzoske
       name: Zach

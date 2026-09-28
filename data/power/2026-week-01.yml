@@ -1,0 +1,31 @@
+# Power-ranking blurbs — 2026 week 1 (preseason). No games have been played, so
+# `order:` is an explicit editorial ranking (there's nothing for the computed
+# order to work from); it drives the rank and next week's movement arrows. Based
+# only on what was known going into Week 1: 2025 finishes, roster composition, and
+# offseason trades/keepers. Keyed by franchise id; the comment shows rank + team.
+order:
+  - jackperkins74
+  - kevbots22
+  - purpsworth
+  - gganoom
+  - lukstein
+  - sturmanator15
+  - zachzoske
+  - schirmerj
+  - whowonthelastsuperbowl
+  - theoceanpulse
+  - alexandra
+  - shawne2520997
+blurbs:
+  jackperkins74: "The defending champ brings back the league's scariest backfield — Jahmyr Gibbs and Breece Hall behind Trevor Lawrence. There's no soft spot on this roster, so the crown stays on until someone knocks it off. He opens against Jono, an owner he leads 13-9 all-time."   # 1. Gibbed for your pleasure
+  kevbots22: "Last year's runner-up is loaded again with Justin Jefferson, Chris Olave and Chase Brown. The only real question is rookie Jaxson Dart under center — if he holds up, this is a title roster. A Week 1 date with Dillon is a genuine test out of the gate."   # 2. Josh Jacobs Alibi
+  purpsworth: "Third a year ago and stacked once more: Jonathan Taylor, De'Von Achane and Jayden Daniels give him three every-week difference-makers. The name is bleak; the roster is anything but. He opens with Luke, who leads their series 5-2."   # 3. I am dead inside
+  gganoom: "Bijan Robinson anchors a team that finished fourth last year, with Brock Purdy and Malik Nabers alongside. The ceiling is high if the supporting cast fires. He draws rebuilding Shawnee to start — a game he leads 3-1 and should win."   # 4. One Big Beautiful Dill
+  lukstein: "The perennial bridesmaid opens with Jalen Hurts and Saquon Barkley — a proven, high-floor spine. Twice a runner-up, he's still chasing the ring that keeps slipping away. He starts against Trevor, a matchup he leads 5-2."   # 5. 2x Runner Up
+  sturmanator15: "Deep and balanced: Zay Flowers, Jaxon Smith-Njigba and Ladd McConkey form one of the better receiver rooms, with Trey McBride the league's premier tight end and Kenneth Walker leading the ground game. There's no glaring weakness here. He opens against a dangerous Zach squad."   # 6. The People's Commissioner
+  zachzoske: "Amon-Ra St. Brown and Joe Burrow give him a rock-solid core, and he wasted no time swinging a deal for rookie sensation Ashton Jeanty. As aggressive as ever — this roster could climb fast. He kicks off against Wade in a coin-flip opener."   # 7. Tuten Your Mom
+  schirmerj: "All the talent in the world — Josh Allen, Christian McCaffrey and Kyren Williams — after an 11th-place faceplant a year ago. If the names play to their pedigree, this is a bounce-back team. But he opens against the champ Jack, who's beaten him 13 times."   # 8. Return of the IDP
+  whowonthelastsuperbowl: "Derrick Henry and CeeDee Lamb are a strong top two, but the depth behind them looks thin. He'll go as far as his stars carry him. A Week 1 meeting with rookie owner Lexi is a chance to start hot."   # 9. Trick or Trick It's Mike Vick
+  theoceanpulse: "Dealt Nico Collins to Shawnee in the preseason and is betting on Caleb Williams' ceiling, with Christian Watson and David Montgomery around him. Boom-or-bust is written all over it. He opens against loaded Kevin — no easy landing."   # 10. The ChoSimba Ones
+  alexandra: "The league's rookie owner leans on Lamar Jackson and Javonte Williams, with plenty still to prove around them. Fearless, unproven, and easy to underrate. She debuts against Nate, a winnable spot to announce herself."   # 11. Cornstar
+  shawne2520997: "Last year's sacko is rebuilding, and the first move was landing Nico Collins from Dillon to pair with D'Andre Swift and Dak Prescott. The only way out of the basement is up. She opens against Grant, who's had her number 3-1."   # 12. Swift kick in the Dak

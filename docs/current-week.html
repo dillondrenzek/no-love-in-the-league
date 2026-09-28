@@ -1,0 +1,42 @@
+---
+permalink: /current-week/
+sitemap: false
+---
+{%- comment -%}
+Evergreen redirect: /current-week/ always points at the latest week that has
+started. GitHub Pages is static (no server-side 301s), so this is a build-time
+redirect stub — an instant meta-refresh + a JS fallback + a canonical link to the
+real week page, regenerated on every deploy so it tracks the live week. It's
+marked noindex so search engines index the dated week page (the real content),
+not this stub, while still following through to it.
+{%- endcomment -%}
+{%- assign cur_week = 0 -%}
+{%- assign cur_year = "" -%}
+{%- for w in site.data.weeks -%}
+  {%- assign wd = w[1] -%}
+  {%- if wd.state == "in_progress" or wd.state == "complete" -%}
+    {%- if wd.week > cur_week -%}
+      {%- assign cur_week = wd.week -%}
+      {%- assign cur_year = w[0] | split: "-" | first -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if cur_week > 0 -%}
+  {%- assign target = "/seasons/" | append: cur_year | append: "/week-" | append: cur_week | append: "/" | relative_url -%}
+{%- else -%}
+  {%- assign target = "/seasons/2026/" | relative_url -%}
+{%- endif -%}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Current Week · The League</title>
+  <link rel="canonical" href="{{ target | absolute_url }}">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <script>window.location.replace({{ target | jsonify }});</script>
+</head>
+<body>
+  <p>Redirecting to <a href="{{ target }}">the current week</a>…</p>
+</body>
+</html>
