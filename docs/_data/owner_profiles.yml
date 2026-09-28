@@ -35,6 +35,14 @@ jackperkins74:
       - 2015
       - 2025
     avg_finish: 4.8
+    high_game:
+      score: 177.2
+      year: 2025
+      opp: Jono
+    low_game:
+      score: 53.8
+      year: 2019
+      opp: Luke
   seasons:
   - year: 2026
     team: Gibbed for your pleasure
@@ -3004,6 +3012,14 @@ shawne2520997:
       - 2021
       - 2023
     avg_finish: 5.0
+    high_game:
+      score: 158.7
+      year: 2025
+      opp: Nate
+    low_game:
+      score: 51.8
+      year: 2018
+      opp: Nate
   seasons:
   - year: 2026
     team: Swift kick in the Dak
@@ -4631,6 +4647,14 @@ sturmanator15:
       years:
       - 2016
     avg_finish: 6.7
+    high_game:
+      score: 160.8
+      year: 2023
+      opp: Fletcher
+    low_game:
+      score: 19.3
+      year: 2015
+      opp: Zach
   seasons:
   - year: 2026
     team: The People's Commissioner
@@ -7068,6 +7092,14 @@ zachzoske:
       years:
       - 2019
     avg_finish: 6.8
+    high_game:
+      score: 184.0
+      year: 2024
+      opp: Grant
+    low_game:
+      score: 22.0
+      year: 2015
+      opp: Wade
   seasons:
   - year: 2026
     team: Tuten Your Mom
@@ -9838,6 +9870,14 @@ kevbots22:
       years:
       - 2025
     avg_finish: 7.0
+    high_game:
+      score: 184.9
+      year: 2024
+      opp: Shawnee
+    low_game:
+      score: 53.1
+      year: 2021
+      opp: Wade
   seasons:
   - year: 2026
     team: Josh Jacobs Alibi
@@ -11284,6 +11324,14 @@ schirmerj:
       years:
       - 2016
     avg_finish: 5.8
+    high_game:
+      score: 182.1
+      year: 2023
+      opp: Nate
+    low_game:
+      score: 57.6
+      year: 2015
+      opp: Wade
   seasons:
   - year: 2026
     team: Return of the IDP
@@ -13005,6 +13053,14 @@ whowonthelastsuperbowl:
       years:
       - 2022
     avg_finish: 8.8
+    high_game:
+      score: 154.4
+      year: 2022
+      opp: Wade
+    low_game:
+      score: 35.2
+      year: 2019
+      opp: Jono
   seasons:
   - year: 2026
     team: Trick or Trick It’s Mike Vick
@@ -14676,6 +14732,14 @@ alexandra:
       ordinal: —
       years: []
     avg_finish: null
+    high_game:
+      score: 105.0
+      year: 2026
+      opp: Nate
+    low_game:
+      score: 95.3
+      year: 2026
+      opp: Kevin
   seasons:
   - year: 2026
     team: Cornstar
@@ -14796,6 +14860,14 @@ lukstein:
       years:
       - 2024
     avg_finish: 6.4
+    high_game:
+      score: 170.4
+      year: 2024
+      opp: Nate
+    low_game:
+      score: 48.3
+      year: 2015
+      opp: Nate
   seasons:
   - year: 2026
     team: 2x Runner Up
@@ -16626,6 +16698,14 @@ theoceanpulse:
       years:
       - 2018
     avg_finish: 5.5
+    high_game:
+      score: 179.6
+      year: 2018
+      opp: Jack
+    low_game:
+      score: 40.7
+      year: 2022
+      opp: Shawnee
   seasons:
   - year: 2026
     team: The ChoSimba Ones
@@ -18522,6 +18602,14 @@ purpsworth:
       years:
       - 2021
     avg_finish: 6.3
+    high_game:
+      score: 182.4
+      year: 2023
+      opp: Fletcher
+    low_game:
+      score: 44.5
+      year: 2022
+      opp: Jack
   seasons:
   - year: 2026
     team: I am dead inside
@@ -19984,6 +20072,14 @@ gganoom:
       years:
       - 2025
     avg_finish: 6.0
+    high_game:
+      score: 172.5
+      year: 2024
+      opp: Nate
+    low_game:
+      score: 66.5
+      year: 2025
+      opp: Luke
   seasons:
   - year: 2026
     team: One Big Beautiful Dill
@@ -20431,6 +20527,14 @@ henpen28:
       - 2017
       - 2022
     avg_finish: 5.9
+    high_game:
+      score: 159.0
+      year: 2024
+      opp: Luke
+    low_game:
+      score: 51.1
+      year: 2020
+      opp: Dillon
   seasons:
   - year: 2025
     team: Dump it on my Chest
@@ -22043,6 +22147,14 @@ unclebadtouch38:
       years:
       - 2020
     avg_finish: 7.2
+    high_game:
+      score: 148.0
+      year: 2016
+      opp: Zach
+    low_game:
+      score: 46.1
+      year: 2021
+      opp: Wade
   seasons:
   - year: 2023
     team: Mr. Irrelevant
@@ -23097,6 +23209,14 @@ ajstewart04:
       years:
       - 2017
     avg_finish: 9.5
+    high_game:
+      score: 138.9
+      year: 2018
+      opp: Nate
+    low_game:
+      score: 57.3
+      year: 2017
+      opp: Kevin
   seasons:
   - year: 2018
     team: Tacos Food Truck
@@ -23366,6 +23486,14 @@ master-otis:
       - 2014
       - 2015
     avg_finish: 5.3
+    high_game:
+      score: 159.0
+      year: 2015
+      opp: Brady
+    low_game:
+      score: 32.2
+      year: 2016
+      opp: Wade
   seasons:
   - year: 2016
     team: Brown Lives Matter
@@ -23667,6 +23795,14 @@ thebragers:
       years:
       - 2014
     avg_finish: 5.5
+    high_game:
+      score: 130.4
+      year: 2015
+      opp: Jack
+    low_game:
+      score: 50.0
+      year: 2015
+      opp: Wade
   seasons:
   - year: 2015
     team: The Bragers

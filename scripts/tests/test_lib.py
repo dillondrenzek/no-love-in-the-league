@@ -75,6 +75,21 @@ def test_trade_counts_and_most_trades_record():
     assert recs["Most Trades"]["value"] == "2"
 
 
+def test_profile_high_low_single_game_scores():
+    from lib.teams import compute_profiles
+    s = matchup_season(2025)   # a scores 100 (wk1), 110 (wk2), 60 (wk3 playoff)
+    profiles = compute_profiles([s], {})
+    hi, lo = profiles["a"]["high_game"], profiles["a"]["low_game"]
+    assert hi["score"] == 110.0 and hi["year"] == 2025 and hi["week"] == 2
+    assert lo["score"] == 60.0 and lo["week"] == 3          # playoff games count
+    # d's blowout win is its high; its tie its low.
+    assert profiles["d"]["high_game"]["score"] == 200.0
+    assert profiles["d"]["low_game"]["score"] == 95.0
+    # A franchise with no games has no high/low (None, not an error).
+    from lib.teams import empty_profile
+    assert empty_profile("z", {})["high_game"] is None
+
+
 def test_in_progress_season_trades_still_count():
     from lib.teams import compute_profiles
     done = matchup_season(2025)                       # finished, no trades
