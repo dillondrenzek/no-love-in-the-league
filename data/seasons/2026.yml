@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-09-28T02:31:46+00:00
+updated_at: 2026-09-28T10:17:44+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -102,12 +102,12 @@ matchups:
   - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
   - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
   - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
-  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, home_score: 125.3, away_score: 100.7, playoff: false, final: false, home_proj: 118.65, away_proj: 125.2 }
-  - { week:  3, home: kevbots22, away: purpsworth, home_score: 82.8, away_score: 103.4, playoff: false, final: false, home_proj: 121.21, away_proj: 115.45 }
-  - { week:  3, home: lukstein, away: alexandra, home_score: 44.5, away_score: 132.0, playoff: false, final: false, home_proj: 115.8, away_proj: 118.78 }
-  - { week:  3, home: schirmerj, away: gganoom, home_score: 93.9, away_score: 156.0, playoff: false, final: false, home_proj: 117.54, away_proj: 121.43 }
-  - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.3, away_score: 88.4, playoff: false, final: false, home_proj: 122.07, away_proj: 111.89 }
-  - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 108.5, playoff: false, final: false, home_proj: 119.16, away_proj: 106.95 }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, home_score: 125.3, away_score: 108.8, playoff: false, final: false, home_proj: 118.65, away_proj: 125.2 }
+  - { week:  3, home: kevbots22, away: purpsworth, home_score: 92.1, away_score: 103.4, playoff: false, final: false, home_proj: 121.21, away_proj: 115.45 }
+  - { week:  3, home: lukstein, away: alexandra, home_score: 44.5, away_score: 134.3, playoff: false, final: false, home_proj: 115.8, away_proj: 118.78 }
+  - { week:  3, home: schirmerj, away: gganoom, home_score: 101.2, away_score: 161.0, playoff: false, final: false, home_proj: 117.54, away_proj: 121.43 }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.7, away_score: 88.4, playoff: false, final: false, home_proj: 122.07, away_proj: 111.89 }
+  - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 106.5, playoff: false, final: false, home_proj: 119.16, away_proj: 106.95 }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false }
   - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false }
   - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -186,6 +186,9 @@ matchups:
 # while everyone else's count is a floor ('at least N'). Feed managers'
 # cookies one at a time (import_espn.py --cookies FILE) to fill gaps — each
 # trade's `id` is ESPN's trade id, used to merge imports without clobbering.
+# FAAB isn't in ESPN's trade feed: to record it, add an asset to that trade
+# by hand — `- {from: <giver fid>, to: <receiver fid>, faab: 5}`. It renders
+# as '$5 FAAB' and re-imports keep it (a trade's on-disk detail is preserved).
 trades_complete: true
 trades_known_for:
   - jackperkins74
@@ -238,7 +241,7 @@ trades:
     label: Josh Downs
   - from: theoceanpulse
     to: zachzoske
-    faab: 1                 # FAAB isn't in ESPN's feed — added by hand; renders "$1 FAAB"
+    faab: 1
   - from: zachzoske
     to: theoceanpulse
     label: Jared Goff

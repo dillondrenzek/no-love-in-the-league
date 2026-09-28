@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-28T02:31:44+00:00'
+captured_at: '2026-09-28T10:17:41+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -46,7 +46,7 @@ rosters:
     pos: RB
     starter: true
     proj: 8.58
-    actual: 2.1
+    actual: 2.5
     injury: ''
   - player: Trey McBride
     pos: TE
@@ -222,7 +222,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.58
-    actual: 4.0
+    actual: 5.4
     injury: ''
   - player: Jameson Williams
     pos: WR
@@ -252,7 +252,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.77
-    actual: 12.9
+    actual: 18.8
     injury: ''
   - player: Xavier Worthy
     pos: WR
@@ -346,7 +346,7 @@ rosters:
     pos: RB
     starter: false
     proj: 8.63
-    actual: 7.0
+    actual: 7.7
     injury: ''
   - player: Matthew Golden
     pos: WR
@@ -500,7 +500,7 @@ rosters:
     pos: WR
     starter: false
     proj: 4.61
-    actual: 7.0
+    actual: 13.4
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
@@ -576,7 +576,7 @@ rosters:
     pos: QB
     starter: true
     proj: 17.27
-    actual: 13.6
+    actual: 22.9
     injury: ''
   - player: Patriots D/ST
     pos: D/ST
@@ -652,7 +652,7 @@ rosters:
     pos: RB
     starter: true
     proj: 10.28
-    actual: 3.5
+    actual: 5.8
     injury: ''
   - player: Jordan Addison
     pos: WR
@@ -764,7 +764,7 @@ rosters:
     pos: QB
     starter: false
     proj: 17.94
-    actual: 10.5
+    actual: 26.1
     injury: ''
   - player: Deebo Samuel Sr.
     pos: WR
@@ -816,7 +816,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.04
-    actual: 9.1
+    actual: 17.2
     injury: ''
   - player: Bucky Irving
     pos: RB
@@ -834,7 +834,7 @@ rosters:
     pos: WR
     starter: false
     proj: 9.01
-    actual: 2.9
+    actual: 6.1
     injury: ''
   - player: Aaron Jones Sr.
     pos: RB
@@ -1070,7 +1070,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 3.81
-    actual: 4.0
+    actual: 9.0
     injury: ''
   - player: Brian Robinson Jr.
     pos: RB
@@ -1158,7 +1158,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.38
-    actual: 7.0
+    actual: 5.0
     injury: ''
   - player: Jake Bates
     pos: K
