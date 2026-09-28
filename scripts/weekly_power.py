@@ -25,7 +25,9 @@ from pathlib import Path
 import yaml
 
 from lib.data import (load_franchises, load_seasons, short_name_of,
-                      load_power_blurbs, load_projections)
+                      load_power_blurbs, load_power_order, load_projections,
+                      load_week_rosters)
+from lib.context import week_roster_context
 from lib.power import power_rankings, _metrics_before
 from lib.weeks import _games_in_week
 
@@ -54,30 +56,44 @@ def _opponent(season, franchises, fid, week):
     return "—"
 
 
-def _facts(season, week, franchises, rows):
+def _facts(season, week, franchises, rows, injuries=None):
     year = season["season"]
     metrics = _metrics_before(season, week)
+    injuries = injuries or {}
     lines = [
         f"# Power Rankings facts — {year} Week {week}",
         "",
         "Computed order and movement are FINAL — do not reorder. Write one short,",
         "punchy blurb per team justifying its spot and its move. Read the season's",
         "prior editions in docs/seasons/ for continuity and running bits.",
+        "Credit players by what they actually did: an OUT/IR player listed below did",
+        "not contribute, so don't praise a team for his production.",
         "",
     ]
     for r in rows:
         avg, last3, winpct = metrics.get(r["fid"], (0, 0, 0))
         opp = _opponent(season, franchises, r["fid"], week)
+        inj = injuries.get(r["fid"]) or []
+        inj_note = ("; OUT/inactive: "
+                    + ", ".join(f"{p['player']} ({p['status']})" for p in inj)
+                    ) if inj else ""
         lines.append(
             f"{r['rank']}. {r['team']} ({r['owner']}) — {_move_str(r)}; "
             f"avg {avg:.1f} PF, last-3 avg {last3:.1f}, win% {winpct:.3f}; "
-            f"this week vs {opp}. [fid: {r['fid']}]")
+            f"this week vs {opp}{inj_note}. [fid: {r['fid']}]")
     return "\n".join(lines) + "\n"
 
 
 def _scaffold_blurbs(year, week, rows):
     POWER_DIR.mkdir(parents=True, exist_ok=True)
     path = POWER_DIR / f"{year}-week-{week:02d}.yml"
+    # Never clobber a hand-authored editorial file: if it sets its own `order:`,
+    # the rank is the author's call (e.g. the preseason board), not the computed
+    # one, and re-scaffolding would reorder and reformat it. Leave it as-is.
+    if load_power_order(year, week):
+        print(f"  {path.relative_to(ROOT)} has an editorial order: — left untouched.",
+              file=sys.stderr)
+        return path
     existing = load_power_blurbs(year, week)
     lines = [
         f"# Power-ranking blurbs — {year} week {week}. One line per team, in the",
@@ -111,9 +127,17 @@ def main():
         sys.exit(f"Week {args.week} can't be ranked yet (no completed games "
                  "before it).")
 
+    # Current injury/inactive context, from the freshest roster snapshot available
+    # (this week's if captured, else last week's). Lets blurbs credit players by who
+    # actually suited up and flag a manager's IR/Out burden.
+    wr = (load_week_rosters(args.year, args.week, franchises)
+          or load_week_rosters(args.year, args.week - 1, franchises))
+    inj_ctx = week_roster_context(wr, want_actual=True) if wr else {}
+    injuries = {fid: e.get("injured") or [] for fid, e in inj_ctx.items()}
+
     PROMPT_DIR.mkdir(parents=True, exist_ok=True)
     facts = PROMPT_DIR / f"{args.year}-week-{args.week:02d}.power.data.md"
-    facts.write_text(_facts(season, args.week, franchises, rows))
+    facts.write_text(_facts(season, args.week, franchises, rows, injuries))
     blurbs = _scaffold_blurbs(args.year, args.week, rows)
 
     print(f"Wrote {facts.relative_to(ROOT)}")

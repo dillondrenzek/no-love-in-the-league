@@ -421,10 +421,32 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
     captured.
 
     Each entry is one team: {manager_id, team_id, team_name, players:[{player,
-    pos, starter, proj, actual}]}. Returns the written Path, or None if there was
-    nothing joinable to write."""
+    pos, starter, proj, actual, injury}]}. Returns the written Path, or None if
+    there was nothing joinable to write.
+
+    Injuries are preserved across re-imports: ESPN clears a player's injury status
+    once the week is final, so a post-game import would otherwise blank out the OUT/
+    QUESTIONABLE flags a mid-week import captured. When the fresh status is empty we
+    fall back to whatever this week's file already recorded — injuries are critical
+    fantasy context, so we never let a blank overwrite a known one. (Capture is still
+    best mid-week: run the update while the week is live to catch statuses first.)"""
     tid_to_swid = {t.get("team_id"): (t.get("manager_id") or "") for t in (team_rows or [])}
     tid_to_name = {t.get("team_id"): t.get("team_name", "") for t in (team_rows or [])}
+
+    # Injuries already recorded for this week — {(team_id, player): status} — so a
+    # later, injury-cleared import doesn't erase them.
+    prev_injury = {}
+    target = out_dir / f"{year}-week-{week:02d}.yml"
+    if target.exists():
+        try:
+            old = yaml.safe_load(target.read_text(encoding="utf-8")) or {}
+            for e in old.get("rosters") or []:
+                tid = e.get("team_id")
+                for p in e.get("players") or []:
+                    if p.get("injury"):
+                        prev_injury[(tid, p.get("player"))] = p["injury"]
+        except (OSError, yaml.YAMLError):
+            prev_injury = {}
 
     def num(v):
         return round(float(v), 2) if isinstance(v, (int, float)) else None
@@ -446,7 +468,8 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
             "starter": bool(r.get("starter")),
             "proj": num(r.get("projected")),
             "actual": num(r.get("actual")),
-            "injury": r.get("injury") or "",
+            # Fresh status wins; a blank falls back to what we already recorded.
+            "injury": r.get("injury") or prev_injury.get((tid, r.get("player_name")), ""),
         })
 
     entries = [v for _, v in sorted(by_team.items(), key=lambda kv: kv[0][0] or 0)]

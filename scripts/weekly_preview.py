@@ -88,7 +88,11 @@ def _lineup_line(entry):
     starters = sorted(entry["starters"], key=lambda s: (s.get("proj") or 0), reverse=True)
     bits = [f"{s['player']} ({s['pos']}) {s['proj']:.1f}" for s in starters
             if s.get("proj") is not None]
-    return ", ".join(bits) if bits else None
+    line = ", ".join(bits) if bits else None
+    out = [f"{p['player']} ({p['status']})" for p in entry.get("injured") or []]
+    if out and line:
+        line += f" — out/inactive: {', '.join(out)}"
+    return line
 
 
 def _form_line(entry):

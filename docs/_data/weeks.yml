@@ -1080,10 +1080,10 @@
     record: 2-0
     movement: 4
     is_new: false
-    blurb: 'Last year''s sacko is the surprise of the season, 2-0 and climbing after
-      a 134.7 outburst — Nico Collins looks like a heist. Momentum plus production
-      is a scary combo from the basement. The reward is a real test: a 1-1 Zach team
-      that leads their series 7-5.'
+    blurb: 'Last year''s sacko is the surprise of the season, 2-0 and climbing — and
+      the 134.7 outburst came with Nico Collins sidelined, so the depth is doing real
+      work. Momentum from the basement is a scary thing. The reward is a real test:
+      a 1-1 Zach team that leads their series 7-5.'
   - rank: 6
     fid: schirmerj
     team: Return of the IDP
@@ -1137,9 +1137,9 @@
     record: 0-1-1
     movement: -5
     is_new: false
-    blurb: The Caleb Williams rollercoaster bottomed out at 80.8 in the Nico Collins
-      revenge loss to Shawnee — a rough way to slip to 0-1-1. He added Jared Goff
-      from Zach, a swing at some quarterback stability. He faces Wade next, a matchup
+    blurb: Caleb Williams boomed for 39 in Week 1, then got hurt and cratered the
+      offense in a Week 2 loss, dropping Dillon to 0-1-1. He landed Jared Goff from
+      Zach — insurance with his quarterback banged up. He faces Wade next, a matchup
       he's historically owned (Dillon 9-5).
   - rank: 11
     fid: purpsworth
