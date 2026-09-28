@@ -480,6 +480,28 @@ def test_week_updated_at_from_season_import_stamp():
     assert week_summary(season, 1, {"a": {"name": "A"}, "b": {"name": "B"}})["updated_at"] is None
 
 
+def test_injury_note_and_roster_wide_detection():
+    from lib.context import _injury_note, week_roster_context
+    # Out / IR / Doubtful are always unavailable, whatever their line.
+    assert _injury_note("OUT", True, 0, 0) == "Out"
+    assert _injury_note("INJURY_RESERVE", False, 0, None) == "IR"
+    assert _injury_note("DOUBTFUL", True, 14.0, 0) == "Doubtful"
+    # Questionable but projected or scoring -> treated as played, not flagged.
+    assert _injury_note("QUESTIONABLE", True, 12.0, None) is None
+    assert _injury_note("QUESTIONABLE", True, 0, 8.4) is None
+    # Questionable and clearly didn't play -> flagged.
+    assert _injury_note("QUESTIONABLE", False, 0, 0) == "Questionable"
+    assert _injury_note("", True, 0, 0) is None          # no status -> nothing
+    # A benched IR player (not a starter) is surfaced in `injured`.
+    ctx = week_roster_context({"a": [
+        {"player": "Star WR", "pos": "WR", "starter": False, "proj": 0.0,
+         "actual": 0.0, "injury": "INJURY_RESERVE"},
+        {"player": "QB1", "pos": "QB", "starter": True, "proj": 20.0, "actual": 18.0},
+    ]})["a"]
+    inj = {p["player"]: p["status"] for p in ctx["injured"]}
+    assert inj == {"Star WR": "IR"}
+
+
 def test_week_roster_context_shapes():
     from lib.context import week_roster_context
     week_rosters = {
@@ -1271,6 +1293,29 @@ def test_manual_faab_survives_reimport_merge():
     merged = import_espn.merge_trade_sets(existing, fresh)
     assert len(merged) == 1
     assert any(a.get("faab") == 1 for a in merged[0]["assets"])
+
+
+def test_injury_status_preserved_across_reimport():
+    import tempfile, import_espn
+    from pathlib import Path as _P
+    teams = [{"team_id": 1, "manager_id": "S1", "team_name": "A"}]
+    def row(inj):
+        return [{"team_id": 1, "manager_id": "S1", "player_name": "Star WR",
+                 "position": "WR", "starter": True, "projected": 12.0,
+                 "actual": 0.0, "injury": inj}]
+    with tempfile.TemporaryDirectory() as d:
+        out = _P(d)
+        # Mid-week import captures the OUT status...
+        import_espn.write_week_rosters(row("OUT"), 3, 2026, teams, out_dir=out)
+        # ...then a post-game import comes back with the status cleared.
+        import_espn.write_week_rosters(row(""), 3, 2026, teams, out_dir=out)
+        doc = yaml.safe_load((out / "2026-week-03.yml").read_text())
+        p = doc["rosters"][0]["players"][0]
+        assert p["injury"] == "OUT"       # preserved, not blanked
+        # A fresh, different status still wins over the recorded one.
+        import_espn.write_week_rosters(row("QUESTIONABLE"), 3, 2026, teams, out_dir=out)
+        doc = yaml.safe_load((out / "2026-week-03.yml").read_text())
+        assert doc["rosters"][0]["players"][0]["injury"] == "QUESTIONABLE"
 
 
 def run():

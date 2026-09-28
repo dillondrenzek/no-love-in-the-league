@@ -40,6 +40,10 @@ fueling the group chat. But this is tighter — one line each, not a column.
 - **Lean on what the facts file gives you**: average points, last-3 form, record,
   and this week's opponent. "Back-to-back 140s" or "hasn't cracked 100 yet" is your
   bread and butter.
+- **Credit players by what they actually did.** The facts file lists each team's
+  OUT/inactive players — never praise a team for a guy who sat, and don't call a
+  player hurt if he wasn't listed (a Questionable who plays is just playing). A
+  manager juggling multiple IR/Out bodies is a fair, sympathetic angle.
 - **Continuity.** Skim the season's prior editions (previews/recaps in
   `docs/seasons/`, and last week's blurbs in `data/power/`) for running bits,
   nicknames, and grudges. Callbacks reward the regulars.

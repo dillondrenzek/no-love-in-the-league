@@ -177,6 +177,32 @@ def team_form(season, franchises, upto_week, projections=None):
     return out
 
 
+# ESPN injury designations that mean a player did not (or will not) suit up.
+_UNAVAILABLE = {"OUT", "DOUBTFUL", "INJURY_RESERVE", "IR", "SUSPENSION",
+                "SUSPENDED", "PUP", "NFI"}
+_PRETTY = {"INJURY_RESERVE": "IR", "IR": "IR", "SUSPENSION": "Susp",
+           "SUSPENDED": "Susp"}
+
+
+def _injury_note(injury, starter, proj, actual):
+    """A status label ('Out', 'IR', 'Doubtful', 'Questionable', …) when a player was
+    unavailable this week, else None — so previews/recaps credit players by what they
+    actually did. Out/IR/Doubtful always count as unavailable. A soft tag
+    (Questionable) is ignored when the player was projected or actually scored — the
+    league rule of thumb: if a questionable player made the active lineup, he played.
+    Works off whatever status was captured; empty when ESPN gave none."""
+    raw = (injury or "").strip().upper()
+    if not raw or raw == "ACTIVE":
+        return None
+    label = _PRETTY.get(raw) or raw.replace("_", " ").title()
+    if raw in _UNAVAILABLE:
+        return label
+    # Soft designation: treat as played (not flagged) if there's any sign he suited up.
+    if (actual or 0) > 0 or (proj or 0) > 0:
+        return None
+    return label
+
+
 def week_roster_context(week_rosters, *, want_actual=False):
     """Turn persisted per-player rosters into the per-team shape the preview/recap
     data blocks consume:
@@ -197,14 +223,20 @@ def week_roster_context(week_rosters, *, want_actual=False):
         for p in players or []:
             proj, act = num(p.get("proj")), num(p.get("actual"))
             inj = (p.get("injury") or "").strip()
-            if p.get("starter"):
+            starting = bool(p.get("starter"))
+            if starting:
                 starters.append({"player": p.get("player"), "pos": p.get("pos"),
                                  "proj": proj, "actual": act, "injury": inj})
-                if inj:
-                    injured.append({"player": p.get("player"), "pos": p.get("pos"),
-                                    "status": inj, "proj": proj, "actual": act})
             elif act is not None:
                 bench_points += act
+            # Injury/inactive detection spans the whole roster, not just starters —
+            # an IR or Out player is usually on the bench, and that's the context a
+            # manager's blurb needs. `status` is None for anyone deemed to have played.
+            status = _injury_note(inj, starting, proj, act)
+            if status:
+                injured.append({"player": p.get("player"), "pos": p.get("pos"),
+                                "status": status, "proj": proj, "actual": act,
+                                "starter": starting})
 
         acts = [s["actual"] for s in starters if s["actual"] is not None]
         entry = {
