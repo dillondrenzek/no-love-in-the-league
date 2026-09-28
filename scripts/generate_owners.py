@@ -55,6 +55,14 @@ def _best_finish_data(p):
     return {"type": "place", "ordinal": ordinal(best), "years": yrs}
 
 
+def _game_tile(g):
+    """Shape a best/worst single-game score for the résumé tile: the score plus
+    a compact context (short year + opponent). None when the owner has no games."""
+    if not g:
+        return None
+    return {"score": g["score"], "year": g["year"], "opp": g["opp"]}
+
+
 def _season_tag(s):
     if s.get("in_progress"):     # nothing decided yet — no Shiva/Sacko tag
         return None
@@ -262,6 +270,8 @@ def _profile_data(p, profiles, logos=None, logos_by_year=None):
             "seasons": p["seasons_count"],
             "best_finish": _best_finish_data(p),
             "avg_finish": p.get("avg_finish"),
+            "high_game": _game_tile(p.get("high_game")),
+            "low_game": _game_tile(p.get("low_game")),
         },
         "seasons": _season_rows(p, logos_by_year),
         "h2h": _h2h_rows(p, profiles),

@@ -33,7 +33,20 @@ def _blank(fid, franchises):
         "tx_year": {},                                  # year -> moves, only for seasons with known tx data
         "keeper_log": [],                               # players kept, per season
         "h2h": {},                                      # opp id -> {w,l,t,pf,pa}
+        "high_game": None,                              # best single-game score {score,year,week,opp}
+        "low_game": None,                               # worst single-game score, same shape
     }
+
+
+def _record_game(p, pts, opp_name, year, week):
+    """Track a franchise's best/worst single-game score across all real games."""
+    if pts is None:
+        return
+    g = {"score": round(pts, 1), "year": year, "week": week, "opp": opp_name}
+    if p["high_game"] is None or g["score"] > p["high_game"]["score"]:
+        p["high_game"] = g
+    if p["low_game"] is None or g["score"] < p["low_game"]["score"]:
+        p["low_game"] = g
 
 
 def _apply_game(profiles, fid, opp, pts, opp_pts):
@@ -115,6 +128,9 @@ def compute_profiles(seasons, franchises, overrides=None, trade_seasons=None):
             prof(h); prof(a)
             _apply_game(profiles, h, a, hs, as_)
             _apply_game(profiles, a, h, as_, hs)
+            wk = m.get("week")
+            _record_game(profiles[h], hs, short_name_of(a, franchises), year, wk)
+            _record_game(profiles[a], as_, short_name_of(h, franchises), year, wk)
             if m.get("playoff"):
                 in_playoffs.update((h, a))
         # A "playoff appearance" means the winners bracket (top seeds), and only
