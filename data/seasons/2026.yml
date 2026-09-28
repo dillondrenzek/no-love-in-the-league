@@ -236,6 +236,9 @@ trades:
   - from: theoceanpulse
     to: zachzoske
     label: Josh Downs
+  - from: theoceanpulse
+    to: zachzoske
+    faab: 1                 # FAAB isn't in ESPN's feed — added by hand; renders "$1 FAAB"
   - from: zachzoske
     to: theoceanpulse
     label: Jared Goff

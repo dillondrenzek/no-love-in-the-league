@@ -20,7 +20,7 @@ from pathlib import Path
 import yaml
 
 from lib.data import (load_franchises, load_seasons, load_season_notes,
-                      name_of, short_name_of, complete_weeks)
+                      name_of, short_name_of, complete_weeks, trade_asset_label)
 from lib.state import state_of, is_in_progress
 from lib.overrides import load_overrides
 from lib.seasons import season_rows
@@ -74,7 +74,8 @@ def season_trades(season, franchises):
     for t in season.get("trades") or []:
         parties = []
         for fid in t.get("teams") or []:
-            gave = [a["label"] for a in (t.get("assets") or []) if a.get("from") == fid]
+            gave = [trade_asset_label(a) for a in (t.get("assets") or [])
+                    if a.get("from") == fid]
             parties.append({
                 "owner_id": fid if fid in franchises else None,
                 "owner_name": short_name_of(fid, franchises),

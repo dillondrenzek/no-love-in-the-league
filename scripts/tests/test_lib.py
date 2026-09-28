@@ -1238,6 +1238,41 @@ def test_power_rankings_explicit_order_and_movement():
     assert power_rankings(season, 1, fr) == []
 
 
+def test_trade_faab_asset_label_and_render():
+    from lib.data import trade_asset_label
+    assert trade_asset_label({"label": "Jared Goff"}) == "Jared Goff"
+    assert trade_asset_label({"faab": 1}) == "$1 FAAB"        # whole dollars, no .0
+    assert trade_asset_label({"faab": 2.5}) == "$2.5 FAAB"
+    assert trade_asset_label({}) == ""
+    # A FAAB asset flows through the season page's trade breakdown.
+    from generate_seasons import season_trades
+    season = {"season": 2026, "teams": {"a": "A", "b": "B"},
+              "trades": [{"id": "t1", "week": 3, "teams": ["a", "b"], "assets": [
+                  {"from": "a", "to": "b", "label": "Josh Downs"},
+                  {"from": "a", "to": "b", "faab": 1},
+                  {"from": "b", "to": "a", "label": "Jared Goff"}]}]}
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}}
+    parties = {p["owner_name"]: p for p in season_trades(season, fr)[0]["parties"]}
+    assert parties["Ana"]["gave"] == ["Josh Downs", "$1 FAAB"]
+    assert parties["Ben"]["gave"] == ["Jared Goff"]
+
+
+def test_manual_faab_survives_reimport_merge():
+    import import_espn
+    # On re-import ESPN yields the same trade without FAAB (it's not in the feed);
+    # the on-disk version with the hand-added FAAB must win.
+    existing = [{"id": "t1", "week": 3, "teams": ["a", "b"], "assets": [
+        {"from": "a", "to": "b", "label": "Josh Downs"},
+        {"from": "a", "to": "b", "faab": 1},
+        {"from": "b", "to": "a", "label": "Jared Goff"}]}]
+    fresh = [{"id": "t1", "week": 3, "teams": ["a", "b"], "assets": [
+        {"from": "a", "to": "b", "label": "Josh Downs"},
+        {"from": "b", "to": "a", "label": "Jared Goff"}]}]
+    merged = import_espn.merge_trade_sets(existing, fresh)
+    assert len(merged) == 1
+    assert any(a.get("faab") == 1 for a in merged[0]["assets"])
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

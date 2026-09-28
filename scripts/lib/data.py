@@ -120,6 +120,23 @@ def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
     return out
 
 
+def trade_asset_label(asset):
+    """Display text for one traded asset. A player or pick carries a `label`
+    (what the importer records). FAAB has to be added by hand — ESPN's trade feed
+    doesn't expose it — as a `faab:` amount on an asset; it renders as '$N FAAB'.
+    To record FAAB on any trade, add an asset to that trade in the season file:
+        - {from: <giver fid>, to: <receiver fid>, faab: 5}
+    It survives re-imports (the importer keeps a trade's on-disk detail) and needs
+    no player name. Returns "" for an asset with neither."""
+    if asset.get("label"):
+        return asset["label"]
+    amt = asset.get("faab")
+    if amt is not None:
+        amt = int(amt) if float(amt).is_integer() else amt
+        return f"${amt} FAAB"
+    return ""
+
+
 def load_power_blurbs(year, week, data_dir=DATA_DIR):
     """Hand-edited one-line power-ranking blurbs for a week: {fid: blurb}. Read
     from data/power/<year>-week-<nn>.yml (scaffolded by scripts/weekly_power.py and
