@@ -8,7 +8,7 @@ data (from the ESPN client) on top of these.
 """
 
 from .standings import get_standings
-from .data import short_name_of, complete_weeks
+from .data import short_name_of, complete_weeks, trade_asset_label
 from .state import is_in_progress
 
 
@@ -75,7 +75,7 @@ def recent_moves(season, franchises, lo_week, hi_week):
         if lo_week <= wk <= hi_week and t.get("assets"):
             legs = []
             for f in t.get("teams") or []:
-                got = [a["label"] for a in t["assets"] if a.get("to") == f]
+                got = [trade_asset_label(a) for a in t["assets"] if a.get("to") == f]
                 if got:
                     legs.append(f"{nm(f)} got " + ", ".join(got))
             trades.append({"week": wk, "parties": " / ".join(nm(f) for f in (t.get("teams") or [])),
