@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-09-29T17:14:51+00:00
+updated_at: 2026-09-29T23:16:33+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -109,10 +109,10 @@ matchups:
   - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.7, away_score: 88.4, playoff: false }
   - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 116.3, playoff: false }
   - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false, home_proj: 124.2, away_proj: 104.7 }
-  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false, home_proj: 121.17, away_proj: 117.66 }
-  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 100.34, away_proj: 130.19 }
+  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false, home_proj: 121.17, away_proj: 118.41 }
+  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 109.23, away_proj: 130.19 }
   - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false, home_proj: 106.18, away_proj: 112.08 }
-  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 125.52, away_proj: 119.04 }
+  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 126.6, away_proj: 119.04 }
   - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false, home_proj: 128.59, away_proj: 102.76 }
   - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false }
   - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false }
