@@ -1,6 +1,6 @@
 season: 2026
 week: 3
-captured_at: '2026-09-29T00:02:50+00:00'
+captured_at: '2026-09-29T03:29:37+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -58,7 +58,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.67
-    actual: null
+    actual: 3.1
     injury: ''
   - player: MarShawn Lloyd
     pos: RB
@@ -310,13 +310,13 @@ rosters:
     pos: RB
     starter: true
     proj: 16.13
-    actual: null
+    actual: 8.5
     injury: ''
   - player: DeVonta Smith
     pos: WR
     starter: true
     proj: 12.73
-    actual: null
+    actual: 9.5
     injury: ''
   - player: Jadarian Price
     pos: RB
@@ -334,7 +334,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.18
-    actual: null
+    actual: 12.5
     injury: ''
   - player: Marvin Harrison Jr.
     pos: WR
@@ -364,7 +364,7 @@ rosters:
     pos: RB
     starter: false
     proj: 4.3
-    actual: null
+    actual: -1.0
     injury: ''
   - player: Kyle Pitts Sr.
     pos: TE
@@ -376,7 +376,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 8.02
-    actual: null
+    actual: -1.0
     injury: ''
   - player: Harrison Butker
     pos: K
@@ -388,7 +388,7 @@ rosters:
     pos: WR
     starter: false
     proj: 8.24
-    actual: null
+    actual: 4.2
     injury: ''
   - player: Malik Washington
     pos: WR
@@ -428,7 +428,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.89
-    actual: null
+    actual: 16.3
     injury: ''
   - player: Parker Washington
     pos: WR
@@ -716,7 +716,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.39
-    actual: null
+    actual: 5.9
     injury: ''
   - player: Harold Fannin Jr.
     pos: TE
@@ -746,7 +746,7 @@ rosters:
     pos: WR
     starter: false
     proj: 6.33
-    actual: null
+    actual: 4.4
     injury: ''
   - player: KC Concepcion
     pos: WR
@@ -928,13 +928,13 @@ rosters:
     pos: QB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: ''
   - player: Colston Loveland
     pos: TE
     starter: false
     proj: 7.74
-    actual: null
+    actual: 5.1
     injury: ''
   - player: Jordan Mason
     pos: RB
@@ -1104,7 +1104,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.7
-    actual: null
+    actual: 9.8
     injury: ''
   - player: Terry McLaurin
     pos: WR
