@@ -11,6 +11,16 @@ Weekly workflow for the live season (agentic):
        docs/seasons/2026/week-1.md (below "The Recap").
     4. Rebuild:                   python scripts/build.py
 
+Running early (right after the last game, before ESPN flips the week to complete):
+add `--finalize`. ESPN can lag hours in stamping the winners after the final
+whistle, which would otherwise block the recap and under-count records. `--finalize`
+marks the week's now-over games final locally (only if every game has a score), so
+the recap can be written and shown immediately. It's safe: a later import never
+un-finishes a game (import_espn.preserve_final_matchups), so ESPN catching up just
+confirms it. One caveat — a stat correction in the day(s) after can nudge a score;
+the daily rebuild refreshes the scoreboard numbers, but the hand-written prose is a
+snapshot, so eyeball a very close game before it's locked in.
+
 This script owns only the part that must be *computed and correct*: it reads the
 already-imported matchups (the "hit the API" part is the importer), isolates this
 week's scoreboard + highlights + league context (standings, moves, form/streaks,
@@ -34,6 +44,7 @@ from lib.context import (standings_snapshot, recent_moves, league_bests,
                          week_roster_context, team_form, week_superlatives)
 
 ROOT = Path(__file__).resolve().parent.parent
+SEASONS_DIR = ROOT / "data" / "seasons"
 SEASON_PAGE_DIR = ROOT / "docs" / "seasons"
 AGENT_SPEC = ROOT / "agents" / "weekly-recap.md"
 RECORDS_PATH = ROOT / "docs" / "_data" / "records.yml"
@@ -71,6 +82,8 @@ _Recap coming soon._
      The preview stays at the bottom of the page all season, below the recap. -->
 
 _Preview coming soon._
+
+{% include sections/week_power.html wk=wk %}
 """
 
 
@@ -210,10 +223,38 @@ def data_block(year, week, summary, ctx):
     return "\n".join(lines) + "\n"
 
 
+def _all_games_scored(season, week):
+    """True when every game in `week` has a score — i.e. the week is physically over,
+    even if ESPN hasn't stamped the winners yet (no `future` games left)."""
+    games = [m for m in (season.get("matchups") or []) if m.get("week") == week]
+    return bool(games) and all(m.get("home_score") is not None for m in games)
+
+
+def finalize_week(year, week):
+    """Promote a week's live games to final in data/seasons/<year>.yml by dropping
+    their `final: false` flag — what ESPN will do once it stamps the winners, done
+    early because the games are physically over. Surgical text edit (only this
+    week's matchup lines), so the file's comments and formatting are untouched. A
+    later import keeps it final (see import_espn.preserve_final_matchups). No-op if
+    the week still has unplayed games. Returns the number of games finalized."""
+    path = SEASONS_DIR / f"{year}.yml"
+    text = path.read_text(encoding="utf-8")
+    line_re = re.compile(rf"^(\s*- \{{ week:\s*{week},.*?), final: false(.*\}})$",
+                         re.MULTILINE)
+    new, n = line_re.subn(r"\1\2", text)
+    if n:
+        path.write_text(new, encoding="utf-8")
+    return n
+
+
 def main():
     ap = argparse.ArgumentParser(description="Prep a weekly recap (scaffold page + facts file).")
     ap.add_argument("year", type=int)
     ap.add_argument("week", type=int)
+    ap.add_argument("--finalize", action="store_true",
+                    help="Mark the week final now (all its games are over) so the "
+                         "recap can be written and shown before ESPN flips the week "
+                         "to complete. Safe: a later import won't undo it.")
     args = ap.parse_args()
 
     franchises = load_franchises()
@@ -223,10 +264,21 @@ def main():
         sys.exit(f"No season file for {args.year} (data/seasons/{args.year}.yml).")
 
     summary = week_summary(season, args.week, franchises)
+    if summary["state"] != "complete" and args.finalize:
+        if not _all_games_scored(season, args.week):
+            sys.exit(f"Can't finalize {args.year} week {args.week}: it still has games "
+                     f"with no score. Wait until every game is over.")
+        n = finalize_week(args.year, args.week)
+        print(f"Finalized {n} game(s) for week {args.week} (marked final locally).",
+              file=sys.stderr)
+        # Reload so the state, records and highlights reflect the now-final week.
+        seasons = {s["season"]: s for s in load_seasons(include_in_progress=True)}
+        season = seasons[args.year]
+        summary = week_summary(season, args.week, franchises)
     if summary["state"] != "complete":
         sys.exit(f"{args.year} week {args.week} is {summary['state']}, not complete — "
-                 f"recaps are only written for a complete week. Import the finished "
-                 f"week first, then re-run.")
+                 f"recaps are only written for a complete week. If the week's games "
+                 f"are all over but ESPN hasn't caught up, re-run with --finalize.")
 
     path, created = scaffold_page(args.year, args.week)
 

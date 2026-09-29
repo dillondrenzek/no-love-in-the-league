@@ -363,6 +363,33 @@ def build_matchups(matchup_rows, team_to_fid):
     return out
 
 
+def _is_final_row(m):
+    """A stored matchup that counts as final: has scores and neither the live nor
+    future flag."""
+    return (m.get("home_score") is not None
+            and m.get("final", True) is not False
+            and m.get("played", True) is not False)
+
+
+def preserve_final_matchups(existing, fresh):
+    """A game never un-finishes. If a matchup was already recorded final on disk,
+    keep that final row even when a later ESPN pull briefly reports it as still
+    live (ESPN can lag in stamping the winner after the last whistle). This is what
+    lets a week be finalized right after its final game — for an early recap —
+    without a subsequent import walking it back. Matched by (week, home, away)."""
+    was_final = {(m.get("week"), m.get("home"), m.get("away")): m
+                 for m in (existing or []) if _is_final_row(m)}
+    out = []
+    for m in fresh:
+        key = (m.get("week"), m.get("home"), m.get("away"))
+        prior = was_final.get(key)
+        if prior is not None and m.get("final") is False:
+            out.append(prior)          # keep the finalized row, don't demote it
+        else:
+            out.append(m)
+    return out
+
+
 def attach_projections(lg, matchups, team_to_fid):
     """Attach `home_proj`/`away_proj` to the current week's not-yet-final games,
     summing each team's starters' projected points from `lg.rosters()`.
@@ -898,6 +925,10 @@ def main():
     registry = load_franchises()
     team_to_fid = resolve_franchises(team_rows, registry)
     matchups = build_matchups(season["matchups"], team_to_fid)
+    # A game never un-finishes: keep any week already recorded final (e.g. finalized
+    # by hand for an early recap) even if ESPN still reports it live this pull.
+    matchups = preserve_final_matchups(_existing_season(args.year).get("matchups"),
+                                       matchups)
 
     # Keepers come from the draft (one request; works for old seasons via
     # leagueHistory). A keeper is a drafted pick flagged keeper=True.

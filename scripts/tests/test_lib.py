@@ -1318,6 +1318,54 @@ def test_injury_status_preserved_across_reimport():
         assert doc["rosters"][0]["players"][0]["injury"] == "QUESTIONABLE"
 
 
+def test_preserve_final_matchups_never_demotes():
+    import import_espn
+    existing = [{"week": 3, "home": "a", "away": "b",
+                 "home_score": 100.0, "away_score": 90.0}]          # final on disk
+    fresh = [{"week": 3, "home": "a", "away": "b", "home_score": 100.0,
+              "away_score": 90.0, "final": False}]                  # ESPN still live
+    merged = import_espn.preserve_final_matchups(existing, fresh)
+    assert merged[0].get("final") is not False                     # kept final
+    # A brand-new live game (no final version on disk) passes through unchanged.
+    live_new = [{"week": 4, "home": "a", "away": "b", "home_score": 5.0,
+                 "away_score": 4.0, "final": False}]
+    assert import_espn.preserve_final_matchups([], live_new)[0]["final"] is False
+
+
+def test_finalize_week_drops_live_flag():
+    import tempfile, weekly_recap
+    from pathlib import Path as _P
+    with tempfile.TemporaryDirectory() as d:
+        old = weekly_recap.SEASONS_DIR
+        weekly_recap.SEASONS_DIR = _P(d)
+        try:
+            (_P(d) / "2026.yml").write_text(
+                "matchups:\n"
+                "  - { week:  3, home: a, away: b, home_score: 100.0, away_score: 90.0, playoff: false, final: false }\n"
+                "  - { week:  3, home: c, away: e, home_score: 80.0, away_score: 95.0, playoff: false, final: false }\n"
+                "  - { week:  4, home: a, away: b, playoff: false, played: false }\n")
+            n = weekly_recap.finalize_week(2026, 3)
+            assert n == 2
+            txt = (_P(d) / "2026.yml").read_text()
+            assert "final: false" not in txt          # both week-3 games finalized
+            assert "home_score: 100.0" in txt         # scores untouched
+            assert "played: false" in txt             # future week untouched
+        finally:
+            weekly_recap.SEASONS_DIR = old
+
+
+def test_recent_moves_handles_faab_asset():
+    from lib.context import recent_moves
+    season = {"season": 2026, "teams": {"a": "A", "b": "B"},
+              "trades": [{"week": 3, "teams": ["a", "b"], "assets": [
+                  {"from": "a", "to": "b", "label": "Josh Downs"},
+                  {"from": "b", "to": "a", "faab": 1}]}]}
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}}
+    out = recent_moves(season, fr, 1, 5)          # must not KeyError on the FAAB leg
+    detail = " ".join(t["detail"] for t in out["trades"])
+    assert "$1 FAAB" in detail and "Josh Downs" in detail
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

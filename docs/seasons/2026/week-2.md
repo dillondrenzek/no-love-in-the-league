@@ -74,3 +74,5 @@ So here's the card. **Dillon–Shawnee** is the Game of the Week — a traded su
 - **Lock of the Week** — Gibbed for your pleasure — 3-0 all-time over Grant and coming off the week's top score. Just trust it.
 - **Upset Alert** — 2x Runner Up — the projection favors Nate, but Luke's 14-11 in the series and I'll take the history over one week's model.
 - **Bold Prediction** — Wade, down to eight healthy starters, still clears his projection and hands Trevor an 0-2 start.
+
+{% include sections/week_power.html wk=wk %}

@@ -72,3 +72,5 @@ So here's how I'm lining up the card. **People's Commissioner vs Tuten Your Mom*
 - **Lock of the Week** — Gibbed for your pleasure
 - **Upset Alert** — 2x Runner Up
 - **Bold Prediction** — Lexi posts a top-3 score in her first-ever start
+
+{% include sections/week_power.html wk=wk %}

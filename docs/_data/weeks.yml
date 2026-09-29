@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -653,7 +653,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -802,16 +802,16 @@
     home_record: 2-0
     away_record: 1-1
     scored: true
-    home_yet: 1
+    home_yet: 0
     away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 125.3
+    home_score: 141.6
     away_score: 108.8
     winner_id: null
     tie: false
-    margin: 16.5
+    margin: 32.8
     home_proj: 118.7
     away_proj: 125.2
   - home_id: kevbots22
@@ -826,15 +826,15 @@
     away_record: 0-2
     scored: true
     home_yet: 0
-    away_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
     home_score: 92.1
-    away_score: 103.4
+    away_score: 109.3
     winner_id: null
     tie: false
-    margin: 11.3
+    margin: 17.2
     home_proj: 121.2
     away_proj: 115.5
   - home_id: lukstein
@@ -848,16 +848,16 @@
     home_record: 1-1
     away_record: 1-1
     scored: true
-    home_yet: 4
+    home_yet: 0
     away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 44.5
+    home_score: 74.0
     away_score: 134.3
     winner_id: null
     tie: false
-    margin: 89.8
+    margin: 60.3
     home_proj: 115.8
     away_proj: 118.8
   - home_id: schirmerj
@@ -918,15 +918,15 @@
     away_record: 2-0
     scored: true
     home_yet: 0
-    away_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
     home_score: 136.1
-    away_score: 106.5
+    away_score: 116.3
     winner_id: null
     tie: false
-    margin: 29.6
+    margin: 19.8
     home_proj: 119.2
     away_proj: 107.0
   highlights: []
@@ -1022,7 +1022,7 @@
     decided: false
     result: null
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1266,7 +1266,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-5:
   week: 5
@@ -1371,7 +1371,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-6:
   week: 6
@@ -1476,7 +1476,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-7:
   week: 7
@@ -1581,7 +1581,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-8:
   week: 8
@@ -1686,7 +1686,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-9:
   week: 9
@@ -1791,7 +1791,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-10:
   week: 10
@@ -1896,7 +1896,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-11:
   week: 11
@@ -2001,7 +2001,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-12:
   week: 12
@@ -2106,7 +2106,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-13:
   week: 13
@@ -2211,7 +2211,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
 2026-14:
   week: 14
@@ -2316,5 +2316,5 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 28, 5:02 PM PDT
+  updated_at: Sep 28, 8:51 PM PDT
   power: []
