@@ -20,8 +20,31 @@ week: 3
      It's Markdown: a chaotic column, then a "### 🏆 Awards" list. The recap only
      renders once the week is complete, and sits above the preview. -->
 
-_Recap coming soon._
-{% endif %}
+The Household's joint perfect start is over, and there's a new pecking order taking shape — one built as much on who set their lineup as who drafted well. Jack stands alone at 3-0, the bottom of the standings is suddenly full of teams too talented to be there, and one of the week's best wins came with a gut-punch attached. Let's go matchup by matchup.
+
+The Game of the Week went chalk: **Gibbed for your pleasure** got 37.9 from Jahmyr Gibbs, cruised, and Jack owns first place outright at 3-0. After that pedestrian 92 in Week 2 had the group chat sniffing blood, the champ answered emphatically — a balanced 141.6 that was the kind of no-doubt Sunday that reminds everyone the crown isn't up for grabs yet. And he did it without even needing a big game from Puka Nacua, who watched a zero from the bench; when your throwaway weeks still win by 30, the floor is the other eleven teams' problem. But **Trick or Trick It's Mike Vick** will lie awake on this one, because Nate beat himself as much as Jack beat him — he started Drake Maye and his 3.6 while Tyler Shough put up 27.8 from the bench. A 24-point unforced error in a game he lost by 33. Set the lineup and it's at least a fight; instead it's a coronation.
+
+The feel-good story of the week belonged to **One Big Beautiful Dill**. Grant was 0-2 and gasping for air, and it was no coincidence he finally exhaled the week Brock Bowers returned to the field. The star tight end looked every bit himself (22.6), Brock Purdy went supernova (35.2), and suddenly the team that couldn't crack triple digits hung a league-high 161. Get your best player back, get your season back. **Return of the IDP**, meanwhile, had no answer — and no encore. A week after Josh Allen torched Zach for a statement win, he came back to earth (16.8) and nobody behind him picked up the slack; 101 would beat plenty of teams, just not a team that finally remembered how to score. Jono slides to 1-2, and the boom-one-week, bust-the-next whiplash is fast becoming his whole identity.
+
+**I am dead inside** got its first win — riding, of all people, a 25.1 from Kirk Cousins — but nobody's popping champagne. De'Von Achane went down with a torn ACL, and no first W is worth losing a cornerstone back for the year. It's the definition of bittersweet: on the board at last, and thinner for it. For **Josh Jacobs Alibi**, don't read too much into a 1-1-1 start — the roster's still loaded and this was one flat Sunday. The only thing worth a nervous glance is Justin Jefferson's 4.2; here's hoping that's a cold week and not something that lingers, because a healthy Jefferson fixes a lot.
+
+**Cornstar** didn't touch a thing — didn't need to. Lamar, a set roster, and a rookie who's now 2-1 and quietly running people off the field; no movement in the rankings this week and she's still crushing, which is its own kind of flex. **2x Runner Up**, meanwhile, leaned on his Eagles and the whole nest went quiet at once: Jalen Hurts (12.5), Saquon Barkley (8.5), and DeVonta Smith (9.5) combined for a whimper, and Luke bottomed out at 74. The response is the whole story now — how does he answer this?
+
+**The People's Commissioner** handled his business, exactly as advertised. Jaxon Smith-Njigba went for 30.2, the lineup behaved, and Wade sits at 2-1 while leading the league in total points — the powerhouse the record has been slow to reflect. Two weeks ago he was dumping 45 on his own bench; this week he set it and forgot it and cruised. Progress. **The ChoSimba Ones** stayed winless — and stayed the cautionary tale. The $133 Devaughn Vele splurge returned all of 5.4, and even a tidy 21.2 from the freshly-acquired Jared Goff couldn't cover for an offense running on fumes. At 0-2-1, the only team without a win _or_ a tie to lean on, it's getting late early for Dillon.
+
+And here's where the perfect household cracked: **Tuten Your Mom** handed **Swift kick in the Dak** her first loss of the year. Zach was simply the better team — Joe Burrow led the way (25.5), the Ashton Jeanty core kept humming, and 136 has him sitting second in the league in points and looking every bit a contender. The early loss to Jono is starting to feel like the outlier, not the trend. But there's no shame on the other side of this one: Shawnee dropped 116 and still lost, and doing it with Nico Collins _still_ sidelined only underlines how real her depth is. **Swift kick in the Dak** is 2-1 from the preseason Sacko slot — the best story in the league — and Cinderella only just learned that the clock ticks for everyone.
+
+Three weeks in, it's Jack alone at the top, a four-car pileup at 2-1, and a bottom of the standings where the talent is starting to outrun the record — Grant and Trevor served notice, even if Trevor paid a brutal price for his. Everybody else should be nervous. The season marches on.
+
+### 🏆 Awards
+
+- **🏆 Team of the Week** — One Big Beautiful Dill, 161.0. Got the tight end back and remembered how to score. Timing is everything.
+- **💥 Stud** — Jahmyr Gibbs, 37.9. The champ's floor keeps looking like everyone else's ceiling.
+- **🪑 Should've Started Him** — Nate's Tyler Shough put up 27.8 on the bench while Drake Maye managed 3.6. The lineup card giveth, the lineup card taketh away.
+- **🤕 Ouch** — De'Von Achane, done for the season. Trevor won the game and lost the war.
+- **💸 Waiver Regret** — Dillon's $133 Devaughn Vele: 5.4 points. The priciest 5.4 in league history, and it's not close.
+- **🦅 Eagles Tax** — Luke's Hurts, Saquon, and DeVonta combined for 30.5. Stack your favorite team all you want; it still has to show up.
+  {% endif %}
 
 <h2>The Preview</h2>
 
@@ -52,3 +75,5 @@ So here's the card. **Jack vs Nate** is the Game of the Week — the champ again
 - **Lock of the Week** — The People's Commissioner — the league's top scorer against a lineup built from the injury report and a $133 Vele. Don't overthink it, Wade.
 - **Upset Alert** — Swift kick in the Dak — projected dead last, undefeated anyway. Set the lineup, Shawnee, and this one's yours.
 - **Bold Prediction** — Jordan Love outscores Bryce Young from Wade's bench _and_ Justin Herbert outscores Matthew Stafford from Kevin's — two managers who got the QB scramble right and started the wrong guy.
+
+{% include sections/week_power.html wk=wk %}

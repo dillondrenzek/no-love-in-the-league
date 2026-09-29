@@ -82,6 +82,8 @@ _Recap coming soon._
      The preview stays at the bottom of the page all season, below the recap. -->
 
 _Preview coming soon._
+
+{% include sections/week_power.html wk=wk %}
 """
 
 
