@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-09-30T10:05:25+00:00
+updated_at: 2026-09-30T17:12:53+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -108,12 +108,12 @@ matchups:
   - { week:  3, home: schirmerj, away: gganoom, home_score: 101.2, away_score: 161.0, playoff: false }
   - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.7, away_score: 88.4, playoff: false }
   - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 116.3, playoff: false }
-  - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false, home_proj: 124.2, away_proj: 104.54 }
-  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false, home_proj: 121.17, away_proj: 118.41 }
-  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 93.9, away_proj: 130.19 }
+  - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false, home_proj: 124.15, away_proj: 104.18 }
+  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false, home_proj: 121.17, away_proj: 121.11 }
+  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 85.75, away_proj: 130.19 }
   - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false, home_proj: 110.67, away_proj: 112.08 }
-  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 128.54, away_proj: 130.95 }
-  - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false, home_proj: 128.59, away_proj: 102.76 }
+  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 127.46, away_proj: 130.93 }
+  - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false, home_proj: 128.61, away_proj: 104.2 }
   - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false }
   - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false }
   - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false }
@@ -272,14 +272,14 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 3, drops: 2, moves: 5 }
-  jackperkins74: { adds: 27, drops: 19, moves: 46 }
+  jackperkins74: { adds: 28, drops: 20, moves: 48 }
   kevbots22: { adds: 3, drops: 2, moves: 5 }
   lukstein: { adds: 9, drops: 5, moves: 14 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }
   schirmerj: { adds: 4, drops: 3, moves: 7 }
   shawne2520997: { adds: 5, drops: 4, moves: 9 }
-  sturmanator15: { adds: 8, drops: 7, moves: 15 }
-  theoceanpulse: { adds: 11, drops: 9, moves: 20 }
+  sturmanator15: { adds: 9, drops: 8, moves: 17 }
+  theoceanpulse: { adds: 13, drops: 11, moves: 24 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
   zachzoske: { adds: 16, drops: 11, moves: 27 }
 
@@ -430,6 +430,10 @@ rosters:
   - player: Xavier Hutchinson
     via: add
     week: 3
+    waiver: false
+  - player: Konata Mumpfield
+    via: add
+    week: 4
     waiver: false
   gganoom:
   - player: Bijan Robinson
@@ -886,6 +890,10 @@ rosters:
     via: add
     week: 4
     waiver: true
+  - player: Kendre Miller
+    via: add
+    week: 4
+    waiver: false
   zachzoske:
   - player: Amon-Ra St. Brown
     via: draft
@@ -1085,10 +1093,18 @@ rosters:
     via: add
     week: 3
     waiver: true
+  - player: Browns D/ST
+    via: add
+    week: 4
+    waiver: false
   - player: Kalif Raymond
     via: add
     week: 4
     waiver: true
+  - player: Spencer Shrader
+    via: add
+    week: 4
+    waiver: false
   kevbots22:
   - player: Chase Brown
     via: draft
