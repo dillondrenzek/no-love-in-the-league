@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 116.7
+    tx_per_year: 116.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 3-0
-    tx: 45
+    tx: 46
     in_progress: true
     pf: 400.3
     pa: 291.6
@@ -3003,7 +3003,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 104.3
+    tx_per_year: 104.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -3026,7 +3026,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 2-1
-    tx: 25
+    tx: 27
     in_progress: true
     pf: 403.9
     pa: 400.9
@@ -3589,6 +3589,10 @@ zachzoske:
       via: add
       week: 3
       waiver: false
+    - player: Jaylen Wright
+      via: add
+      week: 4
+      waiver: true
   - year: 2025
     players:
     - player: CeeDee Lamb
@@ -5778,7 +5782,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 87.8
+    tx_per_year: 88.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -5801,7 +5805,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 2-1
-    tx: 13
+    tx: 15
     in_progress: true
     pf: 395.2
     pa: 352.3
@@ -6211,6 +6215,10 @@ sturmanator15:
     - player: Packers D/ST
       via: add
       week: 3
+      waiver: true
+    - player: Bills D/ST
+      via: add
+      week: 4
       waiver: true
   - year: 2025
     players:
@@ -8223,7 +8231,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 46.7
+    tx_per_year: 47.1
     tx_known: false
     seasons: 11
     best_finish:
@@ -8247,7 +8255,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 4th
     record: 2-1
-    tx: 5
+    tx: 9
     in_progress: true
     pf: 359.3
     pa: 320.5
@@ -8591,6 +8599,10 @@ shawne2520997:
       via: add
       week: 2
       waiver: false
+    - player: Darren Waller
+      via: add
+      week: 4
+      waiver: true
   - year: 2025
     players:
     - player: Jahmyr Gibbs
@@ -12113,7 +12125,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 51.2
+    tx_per_year: 51.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -12136,7 +12148,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 8th
     record: 1-2
-    tx: 5
+    tx: 7
     in_progress: true
     pf: 342.6
     pa: 434.2
@@ -15296,7 +15308,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: true
-    tx_per_year: 40.0
+    tx_per_year: 40.2
     tx_known: true
     seasons: 8
     best_finish:
@@ -15320,7 +15332,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 10th
     record: 1-2
-    tx: 6
+    tx: 8
     in_progress: true
     pf: 297.3
     pa: 314.4
@@ -15641,6 +15653,10 @@ purpsworth:
       via: add
       week: 3
       waiver: false
+    - player: Ollie Gordon II
+      via: add
+      week: 4
+      waiver: true
   - year: 2025
     players:
     - player: Malik Nabers
@@ -16778,7 +16794,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 45.3
+    tx_per_year: 45.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -16801,7 +16817,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 11th
     record: 1-2
-    tx: 12
+    tx: 14
     in_progress: true
     pf: 247.9
     pa: 373.3
@@ -17234,6 +17250,10 @@ lukstein:
     - player: Malik Washington
       via: add
       week: 3
+      waiver: true
+    - player: Kenyon Sadiq
+      via: add
+      week: 4
       waiver: true
   - year: 2025
     players:
@@ -18623,7 +18643,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 14
     trades_known: true
-    tx_per_year: 50.2
+    tx_per_year: 50.4
     tx_known: false
     seasons: 11
     best_finish:
@@ -18646,7 +18666,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 12th
     record: 0-2-1
-    tx: 18
+    tx: 20
     in_progress: true
     pf: 306.6
     pa: 394.8
@@ -19127,6 +19147,10 @@ theoceanpulse:
     - player: Khalil Shakir
       via: add
       week: 3
+      waiver: true
+    - player: Kalif Raymond
+      via: add
+      week: 4
       waiver: true
   - year: 2025
     players:

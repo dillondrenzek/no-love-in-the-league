@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -653,7 +653,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1044,7 +1044,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1206,7 +1206,7 @@
     live: false
     playoff: false
     home_proj: 124.2
-    away_proj: 104.7
+    away_proj: 104.5
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -1236,12 +1236,12 @@
     home_record: 1-2
     away_record: 1-2
     scored: false
-    home_yet: 10
+    home_yet: 9
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 109.2
+    home_proj: 93.9
     away_proj: 130.2
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -1259,7 +1259,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 106.2
+    home_proj: 110.7
     away_proj: 112.1
   - home_id: sturmanator15
     home_team: The People's Commissioner
@@ -1273,12 +1273,12 @@
     away_record: 3-0
     scored: false
     home_yet: 10
-    away_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 126.6
-    away_proj: 119.0
+    home_proj: 128.5
+    away_proj: 130.9
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -1300,7 +1300,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-5:
   week: 5
@@ -1405,7 +1405,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-6:
   week: 6
@@ -1510,7 +1510,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-7:
   week: 7
@@ -1615,7 +1615,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-8:
   week: 8
@@ -1720,7 +1720,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-9:
   week: 9
@@ -1825,7 +1825,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-10:
   week: 10
@@ -1930,7 +1930,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-11:
   week: 11
@@ -2035,7 +2035,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-12:
   week: 12
@@ -2140,7 +2140,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-13:
   week: 13
@@ -2245,7 +2245,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []
 2026-14:
   week: 14
@@ -2350,5 +2350,5 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Sep 29, 7:57 PM PDT
+  updated_at: Sep 30, 3:05 AM PDT
   power: []

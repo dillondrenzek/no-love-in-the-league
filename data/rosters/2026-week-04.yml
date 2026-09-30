@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-09-30T02:57:01+00:00'
+captured_at: '2026-09-30T10:05:23+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -90,16 +90,16 @@ rosters:
     proj: 22.18
     actual: null
     injury: ''
-  - player: Bengals D/ST
-    pos: D/ST
-    starter: true
-    proj: 4.37
-    actual: null
-    injury: ''
   - player: Jordan Love
     pos: QB
     starter: false
     proj: 16.18
+    actual: null
+    injury: ''
+  - player: Bills D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.31
     actual: null
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
@@ -190,16 +190,16 @@ rosters:
     proj: 17.73
     actual: null
     injury: ''
-  - player: Tyler Allgeier
-    pos: RB
-    starter: false
-    proj: 7.0
-    actual: null
-    injury: ''
   - player: Zach Charbonnet
     pos: RB
     starter: false
     proj: 0.0
+    actual: null
+    injury: ''
+  - player: Jaylen Wright
+    pos: RB
+    starter: false
+    proj: 6.77
     actual: null
     injury: ''
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -290,16 +290,16 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Panthers D/ST
-    pos: D/ST
-    starter: true
-    proj: 2.47
-    actual: null
-    injury: ''
   - player: Joshua Palmer
     pos: WR
     starter: false
     proj: 2.1
+    actual: null
+    injury: ''
+  - player: Ravens D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.96
     actual: null
     injury: ''
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
@@ -396,10 +396,10 @@ rosters:
     proj: 9.12
     actual: null
     injury: ''
-  - player: Kyler Murray
-    pos: QB
+  - player: Kenyon Sadiq
+    pos: TE
     starter: false
-    proj: 20.94
+    proj: 7.32
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -494,6 +494,12 @@ rosters:
     pos: WR
     starter: false
     proj: 4.17
+    actual: null
+    injury: ''
+  - player: Braelon Allen
+    pos: RB
+    starter: true
+    proj: 11.91
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -784,10 +790,10 @@ rosters:
     proj: 8.22
     actual: null
     injury: ''
-  - player: Kirk Cousins
-    pos: QB
-    starter: true
-    proj: 15.33
+  - player: Ollie Gordon II
+    pos: RB
+    starter: false
+    proj: 8.36
     actual: null
     injury: ''
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
@@ -948,12 +954,6 @@ rosters:
     proj: 9.28
     actual: null
     injury: ''
-  - player: Khalil Shakir
-    pos: WR
-    starter: true
-    proj: 7.98
-    actual: null
-    injury: ''
   - player: Eddy Pineiro
     pos: K
     starter: true
@@ -982,6 +982,12 @@ rosters:
     pos: RB
     starter: false
     proj: 7.29
+    actual: null
+    injury: ''
+  - player: Kalif Raymond
+    pos: WR
+    starter: true
+    proj: 7.82
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
@@ -1118,12 +1124,6 @@ rosters:
     proj: 18.61
     actual: null
     injury: ''
-  - player: Chris Godwin Jr.
-    pos: WR
-    starter: false
-    proj: 5.73
-    actual: null
-    injury: ''
   - player: Jacory Croskey-Merritt
     pos: RB
     starter: false
@@ -1134,12 +1134,6 @@ rosters:
     pos: WR
     starter: true
     proj: 11.27
-    actual: null
-    injury: ''
-  - player: Chris Rodriguez Jr.
-    pos: RB
-    starter: false
-    proj: 4.84
     actual: null
     injury: ''
   - player: Juwan Johnson
@@ -1176,5 +1170,17 @@ rosters:
     pos: WR
     starter: true
     proj: 6.71
+    actual: null
+    injury: ''
+  - player: Keenan Allen
+    pos: WR
+    starter: false
+    proj: 8.94
+    actual: null
+    injury: ''
+  - player: Darren Waller
+    pos: TE
+    starter: false
+    proj: 6.01
     actual: null
     injury: ''
