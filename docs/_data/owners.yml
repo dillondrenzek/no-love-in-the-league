@@ -1616,8 +1616,8 @@ tx_heatmap:
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1053
-    tx_per_year: 117.0
+    total: 1057
+    tx_per_year: 117.4
     cells:
     - year: 2018
       count: 75
@@ -1644,8 +1644,8 @@ tx_heatmap:
       count: 130
       color: '#f28742'
     - year: 2026
-      count: 48
-      color: '#fbce88'
+      count: 52
+      color: '#facb80'
   - id: zachzoske
     name: Zach
     total: 941
@@ -1712,8 +1712,8 @@ tx_heatmap:
       color: '#fce6c1'
   - id: schirmerj
     name: Jono
-    total: 463
-    tx_per_year: 51.4
+    total: 465
+    tx_per_year: 51.7
     cells:
     - year: 2018
       count: 78
@@ -1740,8 +1740,8 @@ tx_heatmap:
       count: 61
       color: '#fac470'
     - year: 2026
-      count: 7
-      color: '#fdeed3'
+      count: 9
+      color: '#fdeccf'
   - id: theoceanpulse
     name: Dillon
     total: 458

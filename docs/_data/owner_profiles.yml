@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 117.0
+    tx_per_year: 117.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 3-0
-    tx: 48
+    tx: 52
     in_progress: true
     pf: 400.3
     pa: 291.6
@@ -596,7 +596,15 @@ jackperkins74:
       via: add
       week: 3
       waiver: false
+    - player: Austin Ekeler
+      via: add
+      week: 4
+      waiver: false
     - player: Konata Mumpfield
+      via: add
+      week: 4
+      waiver: false
+    - player: Tyreek Hill
       via: add
       week: 4
       waiver: false
@@ -12133,7 +12141,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 51.4
+    tx_per_year: 51.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -12156,7 +12164,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 8th
     record: 1-2
-    tx: 7
+    tx: 9
     in_progress: true
     pf: 342.6
     pa: 434.2
@@ -12495,6 +12503,10 @@ schirmerj:
       via: add
       week: 3
       waiver: true
+    - player: Najee Harris
+      via: add
+      week: 4
+      waiver: false
   - year: 2025
     players:
     - player: Bijan Robinson
