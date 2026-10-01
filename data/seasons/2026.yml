@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-01T17:42:14+00:00
+updated_at: 2026-10-01T23:33:45+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -108,12 +108,12 @@ matchups:
   - { week:  3, home: schirmerj, away: gganoom, home_score: 101.2, away_score: 161.0, playoff: false }
   - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.7, away_score: 88.4, playoff: false }
   - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 116.3, playoff: false }
-  - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false, home_proj: 124.13, away_proj: 105.14 }
-  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false, home_proj: 121.21, away_proj: 120.94 }
-  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 110.06, away_proj: 130.16 }
-  - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false, home_proj: 113.03, away_proj: 111.51 }
-  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 127.4, away_proj: 130.92 }
-  - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false, home_proj: 128.55, away_proj: 104.17 }
+  - { week:  4, home: alexandra, away: theoceanpulse, playoff: false, played: false, home_proj: 124.13, away_proj: 104.92 }
+  - { week:  4, home: kevbots22, away: gganoom, playoff: false, played: false, home_proj: 121.28, away_proj: 120.89 }
+  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 109.88, away_proj: 129.88 }
+  - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false, home_proj: 112.91, away_proj: 111.54 }
+  - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 127.53, away_proj: 130.92 }
+  - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false, home_proj: 128.32, away_proj: 104.65 }
   - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false }
   - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false }
   - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false }
@@ -272,7 +272,7 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 3, drops: 2, moves: 5 }
-  jackperkins74: { adds: 30, drops: 22, moves: 52 }
+  jackperkins74: { adds: 31, drops: 23, moves: 54 }
   kevbots22: { adds: 3, drops: 2, moves: 5 }
   lukstein: { adds: 9, drops: 5, moves: 14 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }
@@ -432,6 +432,10 @@ rosters:
     week: 3
     waiver: false
   - player: Austin Ekeler
+    via: add
+    week: 4
+    waiver: false
+  - player: Brandin Cooks
     via: add
     week: 4
     waiver: false
