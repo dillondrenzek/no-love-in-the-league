@@ -148,6 +148,13 @@ def load_power_blurbs(year, week, data_dir=DATA_DIR):
     return doc.get("blurbs") or {}
 
 
+def power_generated(year, week, data_dir=DATA_DIR):
+    """True once a week's power rankings have been generated — i.e. its
+    data/power/<year>-week-<nn>.yml exists (scripts/weekly_power.py writes it).
+    The week page shows the rankings from then on, whatever the week's state."""
+    return (Path(data_dir) / "power" / f"{year}-week-{week:02d}.yml").is_file()
+
+
 def load_power_order(year, week, data_dir=DATA_DIR):
     """An explicit editorial rank order (list of fids) for a week's power rankings,
     or None when the file doesn't set one. Lets a week be ranked by hand — chiefly

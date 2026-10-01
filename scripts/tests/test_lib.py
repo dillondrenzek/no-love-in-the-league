@@ -1366,6 +1366,84 @@ def test_recent_moves_handles_faab_asset():
     assert "$1 FAAB" in detail and "Josh Downs" in detail
 
 
+def test_power_prep_window():
+    from lib.power import prep_window_problem
+    def g(week, final, scored=True):
+        return {"week": week, "home": "a", "away": "b", "final": final,
+                "home_score": 100 if scored else None,
+                "away_score": 90 if scored else None}
+    # Week 3 final, week 4 not started -> the window is open.
+    season = {"season": 2026, "matchups": [g(3, True), g(4, False, scored=False)]}
+    assert prep_window_problem(season, 4) is None
+    # Week 3 still live -> too early.
+    season = {"season": 2026, "matchups": [g(3, False), g(4, False, scored=False)]}
+    assert "isn't final" in prep_window_problem(season, 4)
+    # Week 4 already kicked off -> too late.
+    season = {"season": 2026, "matchups": [g(3, True), g(4, False)]}
+    assert "kicked off" in prep_window_problem(season, 4)
+    # Week 1 has no prior week to wait on.
+    assert prep_window_problem({"season": 2026, "matchups": []}, 1) is None
+
+
+def test_power_generated():
+    import tempfile
+    from lib.data import power_generated
+    with tempfile.TemporaryDirectory() as d:
+        assert not power_generated(2026, 4, data_dir=d)
+        (Path(d) / "power").mkdir()
+        (Path(d) / "power" / "2026-week-04.yml").write_text("blurbs: {}\n")
+        assert power_generated(2026, 4, data_dir=d)
+
+
+def test_power_scaffold_roundtrips_long_blurbs():
+    import tempfile
+    import weekly_power
+    long = ("Wade's next: a long blurb with a colon, an apostrophe, and \"quotes\" "
+            "that runs well past eighty characters so a YAML dump would wrap it.")
+    rows = [{"fid": "a", "rank": 1, "team": "A"}, {"fid": "b", "rank": 2, "team": "B"}]
+    old = weekly_power.POWER_DIR
+    with tempfile.TemporaryDirectory() as d:
+        weekly_power.POWER_DIR = Path(d)
+        try:
+            path = weekly_power._scaffold_blurbs(2099, 1, rows)
+            doc = yaml.safe_load(path.read_text())
+            assert doc["blurbs"] == {"a": "", "b": ""}
+            # Re-scaffolding a filled file keeps every blurb intact.
+            orig = weekly_power.load_power_blurbs
+            weekly_power.load_power_blurbs = lambda y, w: {"a": long, "b": "short"}
+            try:
+                weekly_power._scaffold_blurbs(2099, 1, rows)
+            finally:
+                weekly_power.load_power_blurbs = orig
+            doc = yaml.safe_load(path.read_text())
+            assert doc["blurbs"] == {"a": long, "b": "short"}
+        finally:
+            weekly_power.POWER_DIR = old
+
+
+def test_week_power_rankings_moves_against_prior_editorial_order():
+    import tempfile
+    from lib.power import week_power_rankings, power_rankings
+    fr = {"a": {"name": "Ana"}, "b": {"name": "Ben"}, "c": {"name": "Cy"}}
+    g = lambda w, h, a, hs, as_: {"week": w, "home": h, "away": a,
+                                  "home_score": hs, "away_score": as_}
+    season = {"season": 2026, "teams": {"a": "A", "b": "B", "c": "C"},
+              "matchups": [g(1, "a", "b", 150, 100), g(1, "c", "a", 90, 120),
+                           g(2, "b", "c", 140, 80), g(2, "a", "c", 130, 70)]}
+    computed = [r["fid"] for r in power_rankings(season, 3, fr)]
+    with tempfile.TemporaryDirectory() as d:
+        (Path(d) / "power").mkdir()
+        # Week 2 was ranked by hand, in the reverse of what week 3 computes.
+        (Path(d) / "power" / "2026-week-02.yml").write_text(
+            "order: [" + ", ".join(reversed(computed)) + "]\n")
+        rows = week_power_rankings(season, 3, fr, data_dir=d)
+    assert [r["fid"] for r in rows] == computed      # this week's rank: computed
+    by = {r["fid"]: r for r in rows}
+    assert by[computed[0]]["movement"] == 2           # 3rd by hand -> 1st, up 2
+    assert by[computed[1]]["movement"] == 0
+    assert by[computed[2]]["movement"] == -2
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

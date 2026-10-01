@@ -10,6 +10,11 @@ You are an agent with read access to this repo. Run
 `recaps/<year>-week-NN.power.data.md`. Your only job is to write a **one-line
 blurb per team** — you do **not** decide or change the order.
 
+**Timing.** Generate them shortly before the week's Thursday kickoff — the script
+refuses unless the prior week is final and this week hasn't started (`--force`
+overrides). The week page shows the rankings as soon as the `data/power` file
+exists, so generating them is publishing them on the next build.
+
 ---
 
 ## The hard rule
@@ -34,11 +39,17 @@ Same league-insider voice as the preview: opinionated, a little mean, always
 fueling the group chat. But this is tighter — one line each, not a column.
 
 - **One sentence per team.** Punchy. Screenshot-bait. ~10–20 words.
+- **The matchup is a mention, not a reason.** The rank comes only from games
+  already played. You can name this week's opponent ("Wade's next"), but never
+  justify a rank or a move with it ("up because the schedule's soft" is wrong).
+- **Get the move exactly right.** Use the facts file's movement verbatim — "up 2"
+  is two spots, "even" means he didn't move. Don't say a team "climbed to No. 1"
+  if it was already there.
 - **Earn the rank and the move.** A team that jumped explains why (a boom week, a
   soft stretch behind them); a faller gets roasted for it; a team sitting still
   gets a "still here, still {good/mediocre}" beat.
-- **Lean on what the facts file gives you**: average points, last-3 form, record,
-  and this week's opponent. "Back-to-back 140s" or "hasn't cracked 100 yet" is your
+- **Lean on what the facts file gives you**: average points, last-3 form, and
+  record. "Back-to-back 140s" or "hasn't cracked 100 yet" is your
   bread and butter.
 - **Credit players by what they actually did.** The facts file lists each team's
   OUT/inactive players — never praise a team for a guy who sat, and don't call a

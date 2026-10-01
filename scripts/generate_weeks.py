@@ -18,8 +18,8 @@ from pathlib import Path
 import yaml
 
 from lib.data import (load_franchises, load_seasons, load_projections,
-                      load_week_rosters, load_power_blurbs, load_power_order)
-from lib.power import power_rankings
+                      load_week_rosters, power_generated)
+from lib.power import week_power_rankings
 from lib.state import state_at_least
 from lib.weeks import week_summary, _records_before, _rec_str
 from weekly_recap import scaffold_page
@@ -48,18 +48,17 @@ def main():
             # editorial order (if the data file sets one) overrides the computed
             # order, and the prior week's order — computed or editorial — drives
             # the movement arrows.
-            # Only show the rankings once the week is live or done — never on a
-            # future week, even if its blurb file is already written.
-            if summary["state"] == "future":
+            # Show the rankings as soon as they've been generated (the week's
+            # data/power file exists), whatever the week's state — they publish
+            # alongside the preview. weekly_power.py controls *when* that happens.
+            if not power_generated(year, wk):
                 summary["power"] = []
             else:
                 rb = _records_before(season, wk)
                 recs = {f: (_rec_str(rb.get(f)) or "0-0")
                         for f in (season.get("teams") or {})}
-                summary["power"] = power_rankings(
-                    season, wk, franchises, load_power_blurbs(year, wk),
-                    order=load_power_order(year, wk),
-                    prev_order=load_power_order(year, wk - 1), records=recs)
+                summary["power"] = week_power_rankings(
+                    season, wk, franchises, records=recs)
             detail[f"{year}-{wk}"] = summary
             _, was_created = scaffold_page(year, wk)
             if was_created:
