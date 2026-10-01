@@ -1,0 +1,16 @@
+# Power-ranking blurbs — 2026 week 4. One line per team, in the
+# computed rank order. Fill from the agent (agents/weekly-power.md), then
+# rebuild. Keyed by franchise id; the comment shows rank + team.
+blurbs:
+  jackperkins74: "Holds the top spot with the league's only perfect record and 133 a week. Wade gets the next crack."   # 1. Gibbed for your pleasure
+  zachzoske: "Up two on the league's best scoring average, and the record is finally catching up to the points."   # 2. Tuten Your Mom
+  sturmanator15: "Slips one despite two straight wins, nudged aside by Zach's scoring. The champ is up next."   # 3. The People's Commissioner
+  shawne2520997: "Up one: the reigning Sacko is 2-1, averaging nearly 120, and nobody's laughing anymore."   # 4. Swift kick in the Dak
+  alexandra: "Up three after a 60-point beatdown of Luke. That's two double-digit wins in three weeks for the rookie."   # 5. Cornstar
+  whowonthelastsuperbowl: "Up one in a loss, the Week 2 153 still propping up the average. Shough's finally in the lineup."   # 6. Trick or Trick It’s Mike Vick
+  kevbots22: "The week's biggest faller, down four after a 92 with Jefferson managing just 4.2."   # 7. Josh Jacobs Alibi
+  gganoom: "The week's biggest climber, up four on a league-high 161 with Purdy and Bowers finally producing."   # 8. One Big Beautiful Dill
+  schirmerj: "Down three as the Allen roller coaster dips again, leaving him 1-2 and averaging 114."   # 9. Return of the IDP
+  theoceanpulse: "Holds at ten, still the only winless team left: a career .609 owner stuck on zero."   # 10. The ChoSimba Ones
+  purpsworth: "Stays put after finally getting a win, but losing Achane for the year made it a costly one."   # 11. I am dead inside
+  lukstein: "Down three to the basement with the league's worst scoring average and a 74 last week."   # 12. 2x Runner Up

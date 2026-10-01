@@ -12,6 +12,11 @@ for each team. This script:
 
     python scripts/weekly_power.py 2026 2
 
+Run it shortly before the week's Thursday kickoff: it refuses unless the prior
+week is final and this week hasn't started (pass --force to override). The week
+page shows the rankings as soon as the data/power file exists, so generating them
+*is* publishing them on the next build.
+
 Then point your agent at agents/weekly-power.md; it reads the facts file plus the
 season's prior editions and returns a blurb per team. Paste each blurb into the
 data/power file, then rebuild — the week page renders rank + movement (computed) +
@@ -19,6 +24,7 @@ your blurbs.
 """
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -28,7 +34,7 @@ from lib.data import (load_franchises, load_seasons, short_name_of,
                       load_power_blurbs, load_power_order, load_projections,
                       load_week_rosters)
 from lib.context import week_roster_context
-from lib.power import power_rankings, _metrics_before
+from lib.power import week_power_rankings, prep_window_problem, _metrics_before
 from lib.weeks import _games_in_week
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -66,6 +72,8 @@ def _facts(season, week, franchises, rows, injuries=None):
         "Computed order and movement are FINAL — do not reorder. Write one short,",
         "punchy blurb per team justifying its spot and its move. Read the season's",
         "prior editions in docs/seasons/ for continuity and running bits.",
+        "The ranking comes only from games already played; this week's opponent",
+        "is listed so a blurb can mention it, never as a reason for the rank.",
         "Credit players by what they actually did: an OUT/IR player listed below did",
         "not contribute, so don't praise a team for his production.",
         "",
@@ -103,7 +111,9 @@ def _scaffold_blurbs(year, week, rows):
     ]
     for r in rows:
         val = existing.get(r["fid"], "")
-        dumped = yaml.safe_dump(val, default_flow_style=True).strip()
+        # A JSON string is a valid one-line YAML scalar; yaml.safe_dump would wrap
+        # a long blurb onto a second line, which breaks the trailing # comment.
+        dumped = json.dumps(val, ensure_ascii=False)
         lines.append(f"  {r['fid']}: {dumped}   # {r['rank']}. {r['team']}")
     path.write_text("\n".join(lines) + "\n")
     return path
@@ -113,6 +123,8 @@ def main():
     ap = argparse.ArgumentParser(description="Prep a week's power rankings.")
     ap.add_argument("year", type=int)
     ap.add_argument("week", type=int)
+    ap.add_argument("--force", action="store_true",
+                    help="generate even outside the pre-kickoff window")
     args = ap.parse_args()
 
     franchises = load_franchises()
@@ -121,8 +133,11 @@ def main():
     if not season:
         sys.exit(f"No season data for {args.year}.")
 
-    rows = power_rankings(season, args.week, franchises,
-                          load_power_blurbs(args.year, args.week))
+    problem = prep_window_problem(season, args.week)
+    if problem and not args.force:
+        sys.exit(f"{problem} (Use --force to generate anyway.)")
+
+    rows = week_power_rankings(season, args.week, franchises)
     if not rows:
         sys.exit(f"Week {args.week} can't be ranked yet (no completed games "
                  "before it).")

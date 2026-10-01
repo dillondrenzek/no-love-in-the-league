@@ -13,7 +13,22 @@ The score itself is intentionally not published — only the rank and the moveme
 
 import statistics
 
-from .data import game_final, short_name_of
+from .data import (DATA_DIR, game_final, short_name_of, load_power_blurbs,
+                   load_power_order)
+from .weeks import week_state
+
+def prep_window_problem(season, week):
+    """Why `week`'s power rankings shouldn't be generated right now, or None when
+    it's the right time. Rankings are a start-of-week snapshot, so they're
+    generated in the window between the prior week going final and this week's
+    first kickoff (Thursday night) — late enough to reflect the latest results,
+    early enough to be a true preview. Week 1 has no prior week to wait on."""
+    if week > 1 and week_state(season, week - 1) != "complete":
+        return f"Week {week - 1} isn't final yet — rank Week {week} once it is."
+    if week_state(season, week) != "future":
+        return f"Week {week} has already kicked off — its rankings would be stale."
+    return None
+
 
 # Weight the three signals. Scoring average dominates; recent form and win rate
 # nudge it.
@@ -108,3 +123,16 @@ def power_rankings(season, week, franchises, blurbs=None,
             "blurb": blurbs.get(fid, ""),
         })
     return rows
+
+
+def week_power_rankings(season, week, franchises, records=None, data_dir=DATA_DIR):
+    """power_rankings for `week` wired to its data/power files: that week's blurbs
+    and any editorial `order:`, with the *prior* week's editorial order (when it set
+    one) as the baseline for movement. The site build and scripts/weekly_power.py
+    both go through here, so the movement the agent writes about is the movement
+    the page renders."""
+    year = season["season"]
+    return power_rankings(
+        season, week, franchises, load_power_blurbs(year, week, data_dir),
+        order=load_power_order(year, week, data_dir),
+        prev_order=load_power_order(year, week - 1, data_dir), records=records)
