@@ -256,6 +256,7 @@
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power:
   - rank: 1
     fid: jackperkins74
@@ -654,6 +655,7 @@
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power:
   - rank: 1
     fid: jackperkins74
@@ -1045,6 +1047,7 @@
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power:
   - rank: 1
     fid: jackperkins74
@@ -1406,6 +1409,7 @@
     result: null
   projected_at: Oct 1, 2026 · 3:13 PM PDT
   updated_at: Oct 2, 4:24 PM PDT
+  current: true
   power:
   - rank: 1
     fid: jackperkins74
@@ -1631,6 +1635,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-6:
   week: 6
@@ -1736,6 +1741,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-7:
   week: 7
@@ -1841,6 +1847,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-8:
   week: 8
@@ -1946,6 +1953,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-9:
   week: 9
@@ -2051,6 +2059,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-10:
   week: 10
@@ -2156,6 +2165,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-11:
   week: 11
@@ -2261,6 +2271,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-12:
   week: 12
@@ -2366,6 +2377,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-13:
   week: 13
@@ -2471,6 +2483,7 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []
 2026-14:
   week: 14
@@ -2576,4 +2589,5 @@
   projections: []
   projected_at: null
   updated_at: Oct 2, 4:24 PM PDT
+  current: false
   power: []

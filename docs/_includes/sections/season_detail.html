@@ -52,7 +52,7 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 </nav>
 {%- endif -%}
 
-{%- if has_weeks %}{% include sections/season/weeks.html pages=weekpages %}{% endif -%}
+{%- if has_weeks %}{% include sections/season/weeks.html year=d.year %}{% endif -%}
 {%- if has_rows %}{% include sections/season/standings.html d=d %}{% endif -%}
 {%- if show_bracket %}{% include sections/season/playoffs.html d=d %}{% endif -%}
 {%- if show_trades %}{% include sections/season/trades.html d=d %}{% endif -%}

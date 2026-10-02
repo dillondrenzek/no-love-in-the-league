@@ -1536,6 +1536,22 @@ def test_odds_trend_arrows():
     assert all(r["cells"]["playoffs"]["trend"] is None for r in plain)
 
 
+def test_current_week_is_first_unfinished():
+    from lib.weeks import current_week
+    g = lambda w, final, scored: {"week": w, "home": "a", "away": "b",
+                                  "home_score": 100 if scored else None,
+                                  "away_score": 90 if scored else None, "final": final}
+    s = {"weeks_in_regular_season": 3,
+         "matchups": [g(1, True, True), g(2, True, True), g(3, False, False)]}
+    assert current_week(s) == 3                             # next up (not started)
+    s["matchups"][2] = g(3, False, True)
+    assert current_week(s) == 3                             # live
+    s["matchups"][1] = g(2, False, True)
+    assert current_week(s) == 2
+    s["matchups"] = [g(1, True, True), g(2, True, True), g(3, True, True)]
+    assert current_week(s) is None                          # regular season over
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:
