@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 117.7
+    tx_per_year: 117.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 3-0
-    tx: 54
+    tx: 56
     in_progress: true
     pf: 400.3
     pa: 291.6
@@ -605,6 +605,10 @@ jackperkins74:
       week: 4
       waiver: false
     - player: Konata Mumpfield
+      via: add
+      week: 4
+      waiver: false
+    - player: Tyler Allgeier
       via: add
       week: 4
       waiver: false
