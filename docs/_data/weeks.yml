@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -653,7 +653,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1044,7 +1044,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1187,7 +1187,7 @@
       say hurry. A pick'em with Jono (1-1) is the spot to finally break through.
 2026-4:
   week: 4
-  state: future
+  state: in_progress
   scoreboard:
   - home_id: alexandra
     home_team: Cornstar
@@ -1199,12 +1199,17 @@
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     home_record: 2-1
     away_record: 0-2-1
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 9
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 8.0
+    away_score: 10.0
+    winner_id: null
+    tie: false
+    margin: 2.0
     home_proj: 124.1
     away_proj: 104.9
   - home_id: kevbots22
@@ -1217,12 +1222,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-1-1
     away_record: 1-2
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 8
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 31.5
+    winner_id: null
+    tie: false
+    margin: 31.5
     home_proj: 121.3
     away_proj: 120.9
   - home_id: purpsworth
@@ -1235,12 +1245,17 @@
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     home_record: 1-2
     away_record: 1-2
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 8
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 13.5
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 13.5
     home_proj: 109.9
     away_proj: 129.9
   - home_id: schirmerj
@@ -1390,7 +1405,7 @@
     decided: false
     result: null
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1615,7 +1630,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-6:
   week: 6
@@ -1720,7 +1735,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-7:
   week: 7
@@ -1825,7 +1840,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-8:
   week: 8
@@ -1930,7 +1945,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-9:
   week: 9
@@ -2035,7 +2050,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-10:
   week: 10
@@ -2140,7 +2155,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-11:
   week: 11
@@ -2245,7 +2260,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-12:
   week: 12
@@ -2350,7 +2365,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-13:
   week: 13
@@ -2455,7 +2470,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
 2026-14:
   week: 14
@@ -2560,5 +2575,5 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 1, 4:33 PM PDT
+  updated_at: Oct 1, 8:05 PM PDT
   power: []
