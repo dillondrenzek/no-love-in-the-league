@@ -1511,8 +1511,9 @@ def test_odds_forecast_rows_sorted_with_colors():
     season = _odds_season(4)
     st, res = forecast(season, Params(), n=300, seed=3)
     rows = forecast_rows(season, {}, st, res)
-    assert [r["fid"] for r in rows][0] == "t11"
-    top = rows[0]
+    odds = [res[r["fid"]]["playoffs"] for r in rows]
+    assert odds == sorted(odds, reverse=True)               # best playoff odds first
+    top = next(r for r in rows if r["fid"] == "t11")
     assert top["record"] == "4-0" and top["cells"]["shiva"]["color"].startswith("#")
     assert "_key" not in top
 

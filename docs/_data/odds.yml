@@ -142,62 +142,6 @@
       shiva:
         text: 6%
         color: '#fdecd0'
-  - fid: schirmerj
-    team: Return of the IDP
-    owner: Jono
-    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-    record: 1-2
-    pf: '342.6'
-    pf_color: '#f7a649'
-    rating: 114.3
-    proj_wins: 6.5
-    cells:
-      sacko:
-        text: 5%
-        color: '#fdecd0'
-      playoffs:
-        text: 46%
-        color: '#f9bb5a'
-        trend:
-          dir: down
-          text: ▼16
-      bye:
-        text: 6%
-        color: '#fdebce'
-      top3:
-        text: 17%
-        color: '#fcdead'
-      shiva:
-        text: 5%
-        color: '#fdedd1'
-  - fid: gganoom
-    team: One Big Beautiful Dill
-    owner: Grant
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-    record: 1-2
-    pf: '343.9'
-    pf_color: '#f6a549'
-    rating: 114.5
-    proj_wins: 6.7
-    cells:
-      sacko:
-        text: 5%
-        color: '#fdecd0'
-      playoffs:
-        text: 48%
-        color: '#f9b953'
-        trend:
-          dir: up
-          text: ▲37
-      bye:
-        text: 7%
-        color: '#fcebcc'
-      top3:
-        text: 19%
-        color: '#fcdca9'
-      shiva:
-        text: 5%
-        color: '#fdedd1'
   - fid: alexandra
     team: Cornstar
     owner: Lexi
@@ -226,6 +170,62 @@
       shiva:
         text: 5%
         color: '#fdedd2'
+  - fid: gganoom
+    team: One Big Beautiful Dill
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 1-2
+    pf: '343.9'
+    pf_color: '#f6a549'
+    rating: 114.5
+    proj_wins: 6.7
+    cells:
+      sacko:
+        text: 5%
+        color: '#fdecd0'
+      playoffs:
+        text: 48%
+        color: '#f9b953'
+        trend:
+          dir: up
+          text: ▲37
+      bye:
+        text: 7%
+        color: '#fcebcc'
+      top3:
+        text: 19%
+        color: '#fcdca9'
+      shiva:
+        text: 5%
+        color: '#fdedd1'
+  - fid: schirmerj
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 1-2
+    pf: '342.6'
+    pf_color: '#f7a649'
+    rating: 114.3
+    proj_wins: 6.5
+    cells:
+      sacko:
+        text: 5%
+        color: '#fdecd0'
+      playoffs:
+        text: 46%
+        color: '#f9bb5a'
+        trend:
+          dir: down
+          text: ▼16
+      bye:
+        text: 6%
+        color: '#fdebce'
+      top3:
+        text: 17%
+        color: '#fcdead'
+      shiva:
+        text: 5%
+        color: '#fdedd1'
   - fid: kevbots22
     team: Josh Jacobs Alibi
     owner: Kevin
@@ -254,6 +254,32 @@
       shiva:
         text: 4%
         color: '#fdeed4'
+  - fid: purpsworth
+    team: I am dead inside
+    owner: Trevor
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    record: 1-2
+    pf: '297.3'
+    pf_color: '#facc83'
+    rating: 106.4
+    proj_wins: 5.3
+    cells:
+      sacko:
+        text: 16%
+        color: '#fce0b1'
+      playoffs:
+        text: 14%
+        color: '#fce2b6'
+        trend: null
+      bye:
+        text: 1%
+        color: '#fdf2dd'
+      top3:
+        text: 4%
+        color: '#fdeed3'
+      shiva:
+        text: 1%
+        color: '#fdf2dd'
   - fid: theoceanpulse
     team: The ChoSimba Ones
     owner: Dillon
@@ -279,32 +305,6 @@
       top3:
         text: 5%
         color: '#fdedd3'
-      shiva:
-        text: 1%
-        color: '#fdf2dd'
-  - fid: purpsworth
-    team: I am dead inside
-    owner: Trevor
-    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    record: 1-2
-    pf: '297.3'
-    pf_color: '#facc83'
-    rating: 106.4
-    proj_wins: 5.3
-    cells:
-      sacko:
-        text: 16%
-        color: '#fce0b1'
-      playoffs:
-        text: 14%
-        color: '#fce2b6'
-        trend: null
-      bye:
-        text: 1%
-        color: '#fdf2dd'
-      top3:
-        text: 4%
-        color: '#fdeed3'
       shiva:
         text: 1%
         color: '#fdf2dd'

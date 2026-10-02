@@ -222,7 +222,8 @@ def trend(now, before, threshold, scale=1, digits=0):
 
 
 def forecast_rows(season, franchises, strength, result, prev=None):
-    """Display rows for the season-page forecast table, best Shiva odds first.
+    """Display rows for the season-page forecast table, best playoff odds first
+    (ties broken by bye, then Shiva odds).
     Each: {fid, team, owner, logo, record, pf, rating, proj_wins, cells},
     where `cells` is {outcome: {text, color}} — the colour on the same warm heat
     ramp as every other table, scaled to the probability itself (0% cream .. 100%
@@ -257,7 +258,7 @@ def forecast_rows(season, franchises, strength, result, prev=None):
             "proj_wins": round(res["wins"], 1),
             "cells": {o: {"text": pct_label(res[o]), "color": warm_heat(res[o])}
                       for o in TABLE_OUTCOMES},
-            "_key": (-res["shiva"], -res["top3"], -res["playoffs"], res["sacko"]),
+            "_key": (-res["playoffs"], -res["bye"], -res["shiva"], res["sacko"]),
         })
     for r in rows:
         before = prev_res.get(r["fid"], {}).get("playoffs")
