@@ -14,6 +14,7 @@ import generate_owners
 import generate_seasons
 import generate_rules
 import generate_weeks
+import generate_odds
 
 GENERATORS = [
     generate_records,
@@ -22,6 +23,7 @@ GENERATORS = [
     generate_seasons,
     generate_rules,
     generate_weeks,
+    generate_odds,
 ]
 
 

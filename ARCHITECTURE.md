@@ -124,13 +124,15 @@ Python.
 scripts/
   lib/                     pure, tested functions:
                              data (all file loaders), standings, seasons, records,
-                             teams, overrides, rules, weeks, state, render, schedule
+                             teams, overrides, rules, weeks, state, render, schedule,
+                             odds (season forecast)
   generate_records.py   -> docs/_data/records.yml        (record book)
   generate_standings.py -> docs/_data/standings.yml      (per-season, History)
   generate_owners.py    -> owners.yml, owner_profiles.yml (+ owner stub pages)
   generate_seasons.py   -> seasons.yml                    (+ season stub pages)
   generate_rules.py     -> rules.yml   (rulebook: settings, rule-change log, schedule history)
   generate_weeks.py     -> weeks.yml    (per-week scoreboard + highlights, live season)
+  generate_odds.py      -> odds.yml     (season forecast table, live regular season)
   build.py                 runs every generator in order
   import_espn.py           pull a season from ESPN into data/seasons/ (via the
                            the-league-espn-api client; a dev-only dependency)
@@ -141,6 +143,7 @@ scripts/
   update_season.sh         weekly: import one season + rebuild
   refresh_rules.sh         yearly: import settings + rebuild
   inspect_scoring.py       print the scoring/roster change history (diagnostic)
+  backtest_odds.py         fit + grade the forecast model against past seasons
 
 agents/
   weekly-recap.md          reusable trash-talk recap agent spec (persona + format)
@@ -161,6 +164,19 @@ complete, then a **Recap** once it is. `weekly_preview.py` / `weekly_recap.py`
 `<year> <week>` write paste-ready prompts (the matching `agents/weekly-*.md` spec
 plus the week's context/data) to `recaps/` (git-ignored); the prose is pasted onto
 the page, everything else regenerates from data each build.
+
+Season forecast (live regular season): `generate_odds.py` writes `odds.yml`, the
+FiveThirtyEight-style table on the season page — each team's chance at the Sacko,
+the Sacko bracket, the playoffs, a top-3 finish, and the Shiva. `lib/odds.py`
+estimates each team's true scoring level (shrinking early results toward the
+league average) and simulates the rest of the season 10,000 times, seeding and
+bracketing each run with `lib.playoff_order.six_team_playoff` — the same rules
+code as real brackets. It only moves when a week goes final, and a fixed seed per
+(season, week) keeps rebuilds identical. The model's constants (`Params`) are
+chosen by `scripts/backtest_odds.py`: `fit` checks predicted scoring levels
+against 2018-2025, `grade` scores forecasts against what actually happened in
+2023-2025 (Brier score vs a coin-flip baseline). ESPN's own playoff odds are a
+reference point only, not the target.
 
 `generate_rules.py` degrades gracefully: with no `data/settings.yml` yet it writes
 an empty `rules.yml` and the rulebook simply omits the generated blocks, so the
