@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-02T03:05:41+00:00'
+captured_at: '2026-10-02T10:08:31+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -640,7 +640,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.48
-    actual: 8.0
+    actual: 14.0
     injury: ''
   - player: Javonte Williams
     pos: RB
@@ -664,7 +664,7 @@ rosters:
     pos: WR
     starter: false
     proj: 8.6
-    actual: 8.9
+    actual: 10.9
     injury: ''
   - player: Tyjae Spears
     pos: RB
@@ -722,7 +722,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.88
-    actual: 8.5
+    actual: 10.2
     injury: ''
   - player: Rico Dowdle
     pos: RB
@@ -752,7 +752,7 @@ rosters:
     pos: WR
     starter: false
     proj: 7.59
-    actual: 7.8
+    actual: 8.9
     injury: ''
   - player: Mark Andrews
     pos: TE
@@ -988,7 +988,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.5
-    actual: 10.0
+    actual: 8.0
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
@@ -1010,7 +1010,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.41
-    actual: 17.9
+    actual: 18.6
     injury: ''
   - player: TreVeyon Henderson
     pos: RB
@@ -1034,7 +1034,7 @@ rosters:
     pos: RB
     starter: true
     proj: 14.95
-    actual: 13.6
+    actual: 14.1
     injury: ''
   - player: Jakobi Meyers
     pos: WR
