@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-02T10:08:31+00:00'
+captured_at: '2026-10-02T17:01:15+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -309,13 +309,13 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 13.27
+    proj: 13.32
     actual: null
     injury: ''
   - player: DeVonta Smith
     pos: WR
     starter: true
-    proj: 12.5
+    proj: 0.0
     actual: null
     injury: ''
   - player: Jadarian Price
@@ -363,7 +363,7 @@ rosters:
   - player: Tank Bigsby
     pos: RB
     starter: false
-    proj: 3.15
+    proj: 3.17
     actual: null
     injury: ''
   - player: Kyle Pitts Sr.
@@ -387,7 +387,7 @@ rosters:
   - player: Dontayvion Wicks
     pos: WR
     starter: false
-    proj: 8.17
+    proj: 9.2
     actual: null
     injury: ''
   - player: Malik Washington
@@ -745,7 +745,7 @@ rosters:
   - player: Makai Lemon
     pos: WR
     starter: false
-    proj: 6.24
+    proj: 8.63
     actual: null
     injury: ''
   - player: KC Concepcion
@@ -1033,7 +1033,7 @@ rosters:
   - player: Jaylen Warren
     pos: RB
     starter: true
-    proj: 14.95
+    proj: 15.4
     actual: 14.1
     injury: ''
   - player: Jakobi Meyers

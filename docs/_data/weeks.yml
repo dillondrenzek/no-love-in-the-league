@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -653,7 +653,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1044,7 +1044,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1234,7 +1234,7 @@
     tie: false
     margin: 32.7
     home_proj: 121.3
-    away_proj: 120.9
+    away_proj: 121.3
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -1311,7 +1311,7 @@
     live: false
     playoff: false
     home_proj: 128.3
-    away_proj: 104.7
+    away_proj: 92.2
   highlights: []
   projections:
   - home_id: alexandra
@@ -1405,7 +1405,7 @@
     decided: false
     result: null
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power:
   - rank: 1
     fid: jackperkins74
@@ -1630,7 +1630,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-6:
   week: 6
@@ -1735,7 +1735,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-7:
   week: 7
@@ -1840,7 +1840,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-8:
   week: 8
@@ -1945,7 +1945,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-9:
   week: 9
@@ -2050,7 +2050,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-10:
   week: 10
@@ -2155,7 +2155,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-11:
   week: 11
@@ -2260,7 +2260,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-12:
   week: 12
@@ -2365,7 +2365,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-13:
   week: 13
@@ -2470,7 +2470,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
 2026-14:
   week: 14
@@ -2575,5 +2575,5 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 2, 3:08 AM PDT
+  updated_at: Oct 2, 10:01 AM PDT
   power: []
