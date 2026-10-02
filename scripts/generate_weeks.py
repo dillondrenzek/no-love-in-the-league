@@ -21,7 +21,7 @@ from lib.data import (load_franchises, load_seasons, load_projections,
                       load_week_rosters, power_generated)
 from lib.power import week_power_rankings
 from lib.state import state_at_least
-from lib.weeks import week_summary, _records_before, _rec_str
+from lib.weeks import week_summary, current_week, _records_before, _rec_str
 from weekly_recap import scaffold_page
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -40,10 +40,12 @@ def main():
         if year < FIRST_WEEKLY_YEAR or not state_at_least(season, "season"):
             continue
         projections = load_projections(year, franchises)   # {week: {fid: proj}}
+        cur = current_week(season)
         for wk in range(1, (season.get("weeks_in_regular_season") or 0) + 1):
             summary = week_summary(
                 season, wk, franchises, week_proj=projections.get(wk),
                 week_rosters=load_week_rosters(year, wk, franchises))
+            summary["current"] = wk == cur
             # Records entering the week (before its games), shown inline. Explicit
             # editorial order (if the data file sets one) overrides the computed
             # order, and the prior week's order — computed or editorial — drives

@@ -1,12 +1,29 @@
 {%- comment -%}
-Week navigation bar for a week page: a "Season home" link plus a numbered link to
-every week in the season, with the current week marked. Reads page.season_year /
-page.week and finds the sibling week pages from site.pages.
+Week navigation, shared by the week pages and the season page: a numbered pill
+per week of the season. Completed weeks are lightly filled, the week the league
+is on (weeks.yml `current`) is bold, and the week being viewed is outlined.
+Params:
+  year   = the season year
+  active = the week being viewed (week pages; omit on the season page)
+  home   = true to lead with a "← Season home" link (week pages); otherwise the
+           row is labelled "Weeks:" (season page)
 {%- endcomment -%}
-{%- assign wkpages = site.pages | where: "season_year", page.season_year | where_exp: "p", "p.week" | sort: "week" -%}
+{%- assign year = include.year -%}
+{%- assign wkpages = site.pages | where: "season_year", year | where_exp: "p", "p.week" | sort: "week" -%}
 <nav class="week-nav" aria-label="Weeks">
-  <a class="week-nav__home" href="{{ '/seasons/' | append: page.season_year | append: '/' | relative_url }}">← Season home</a>
+  {%- if include.home %}
+  <a class="week-nav__home" href="{{ '/seasons/' | append: year | append: '/' | relative_url }}">← Season home</a>
+  {%- else %}
+  <span class="week-nav__label">Weeks:</span>
+  {%- endif -%}
   {%- for p in wkpages -%}
-  <a href="{{ p.url | relative_url }}"{% if p.week == page.week %} class="week-nav__current" aria-current="page"{% endif %}>{{ p.week }}</a>
-  {%- endfor -%}
+  {%- assign key = year | append: "-" | append: p.week -%}
+  {%- assign w = site.data.weeks[key] -%}
+  {%- capture cls -%}
+    {%- if w.state == "complete" %} week-nav__done{% endif -%}
+    {%- if w.current %} week-nav__now{% endif -%}
+    {%- if p.week == include.active %} week-nav__current{% endif -%}
+  {%- endcapture %}
+  <a href="{{ p.url | relative_url }}"{% if cls != "" %} class="{{ cls | strip }}"{% endif %}{% if p.week == include.active %} aria-current="page"{% endif %}{% if w.current %} title="This week"{% endif %}>{{ p.week }}</a>
+  {%- endfor %}
 </nav>

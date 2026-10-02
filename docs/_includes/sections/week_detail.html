@@ -6,7 +6,7 @@ games show scores, a final game marks the winner. Highlights appear only for a
 complete week. The AI recap lives on the page, below this include.
 {%- endcomment -%}
 {%- assign wk = include.wk -%}
-{% include bits/week_nav.html %}
+{% include bits/week_nav.html year=page.season_year active=page.week home=true %}
 {%- if wk and wk.scoreboard and wk.scoreboard.size > 0 -%}
 {%- comment -%} The week is "live" for its whole in-progress window (first kickoff
 until the last game finals — roughly Thu–Mon), so the Live badge and the "updated"

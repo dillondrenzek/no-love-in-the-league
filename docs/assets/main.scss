@@ -14,6 +14,8 @@
   --rule: #e7e4de;        // thin row dividers
   --rule-strong: #1a1a1a; // header underline / section rules
   --brand: #d94f30;       // links, accents
+  --brand-tint: #fbebe6;        // light brand wash (completed weeks)
+  --brand-tint-border: #f2c9bd;
   --row-hover: #faf7f3;   // warm hover
   --bg: #ffffff;
 
@@ -545,9 +547,10 @@ tbody td a:hover { color: var(--brand); }
 .highlight__sub { font-size: 0.72rem; color: var(--faint); margin-top: 2px; }
 
 // =============================================================================
-// Week navigation + week links
+// Week navigation (week pages + season page — _includes/bits/week_nav.html)
 // =============================================================================
-// Week navigation bar on a week page (Season home + every week, current marked).
+// One numbered pill per week. Completed weeks are lightly filled, the week the
+// league is on is bold, and the week being viewed gets the brand outline.
 .week-nav {
   display: flex;
   flex-wrap: wrap;
@@ -560,35 +563,32 @@ tbody td a:hover { color: var(--brand); }
 .week-nav a {
   font-family: var(--mono);
   font-size: 0.75rem;
-  min-width: 1.9em;
+  min-width: 2.4em;
   text-align: center;
-  padding: 3px 9px;
+  padding: 3px 8px;
   border: 1px solid var(--rule);
   border-radius: 6px;
   color: var(--muted);
+  text-decoration: none;
 }
 .week-nav a:hover { color: var(--brand); border-color: var(--brand); }
-.week-nav__home {
+.week-nav__label,
+.week-nav a.week-nav__home {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  margin-right: 4px;
+}
+.week-nav__label { color: var(--muted); }
+.week-nav a.week-nav__home {
   color: var(--brand);
   border-color: transparent;
   padding-left: 0;
   min-width: 0;
-  margin-right: 4px;
 }
-.week-nav__current, .week-nav__current:hover {
-  color: var(--brand);
-  border-color: var(--brand);
-}
-
-.week-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.week-links li a {
-  display: inline-block;
-  padding: 4px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  font-family: var(--mono);
-  font-size: 0.8rem;
-}
+.week-nav a.week-nav__done { background: var(--brand-tint); border-color: var(--brand-tint-border); color: var(--ink); }
+.week-nav a.week-nav__now { font-weight: 700; color: var(--ink); border-color: var(--ink); }
+.week-nav a.week-nav__current,
+.week-nav a.week-nav__current:hover { color: var(--brand); border-color: var(--brand); box-shadow: inset 0 0 0 1px var(--brand); }
 
 // =============================================================================
 // Inline tags & labels (shiva · finish tags · owner name)

@@ -37,6 +37,17 @@ def week_state(season, week):
     return "future"
 
 
+def current_week(season):
+    """The week the league is on: the first regular-season week that isn't
+    complete (live, or next up once the prior week is final). None once the whole
+    regular season is complete. Drives the bold week in the week navigation."""
+    reg = season.get("weeks_in_regular_season") or 0
+    for w in range(1, reg + 1):
+        if week_state(season, w) != "complete":
+            return w
+    return None
+
+
 def _records_before(season, week):
     """{fid: [w, l, t]} from each team's completed regular-season games *before*
     `week` — the record each team carries into this week's matchup."""
