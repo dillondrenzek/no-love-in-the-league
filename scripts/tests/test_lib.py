@@ -1444,6 +1444,98 @@ def test_week_power_rankings_moves_against_prior_editorial_order():
     assert by[computed[2]]["movement"] == -2
 
 
+def _odds_season(weeks_played, reg=14):
+    """12 teams, circle-method schedule; team tNN always scores 100 + 5*NN, so
+    higher numbers always win. Weeks after `weeks_played` are unscored."""
+    teams = [f"t{i:02d}" for i in range(12)]
+    ms, rot = [], teams[1:]
+    for w in range(1, reg + 1):
+        order = [teams[0]] + rot
+        for i in range(6):
+            h, a = order[i], order[11 - i]
+            m = {"week": w, "home": h, "away": a, "home_score": None, "away_score": None}
+            if w <= weeks_played:
+                m["home_score"] = 100 + 5 * int(h[1:])
+                m["away_score"] = 100 + 5 * int(a[1:])
+            ms.append(m)
+        rot = rot[-1:] + rot[:-1]
+    return {"season": 2026, "teams": {t: t.upper() for t in teams},
+            "weeks_in_regular_season": reg, "matchups": ms}
+
+
+def test_odds_strengths_shrink_toward_center():
+    from lib.odds import Params, strengths
+    p = Params(sigma=20, tau=10)
+    st = strengths(["a", "b"], {"a": [140, 140], "b": [100, 100]}, p)
+    assert 100 < st["b"][0] < 120 < st["a"][0] < 140      # pulled toward 120
+    assert st["a"][1] < 10                                  # data narrows the prior
+    # No games yet: everyone sits at the fallback center, unless projections say otherwise.
+    st = strengths(["a", "b"], {}, p)
+    assert abs(st["a"][0] - p.league_mean) < 1e-9 and abs(st["b"][0] - p.league_mean) < 1e-9
+    st = strengths(["a", "b"], {}, Params(proj_weight=1.0), proj={"a": 130, "b": 110})
+    assert abs(st["a"][0] - (p.league_mean + 10)) < 1e-9
+    assert abs(st["b"][0] - (p.league_mean - 10)) < 1e-9
+
+
+def test_odds_simulation_follows_league_rules():
+    from lib.odds import Params, forecast, complete_through, OUTCOMES
+    season = _odds_season(14)                      # regular season fully played
+    assert complete_through(season) == 14
+    _, res = forecast(season, Params(), n=300, seed=1)
+    # Exactly one Shiva and one Sacko per sim; six teams on each side.
+    for o, total in (("shiva", 1), ("sacko", 1), ("top3", 3), ("bye", 2),
+                     ("playoffs", 6), ("sacko_bracket", 6)):
+        assert abs(sum(r[o] for r in res.values()) - total) < 1e-9, o
+    # Seeds are locked: t11..t07 by record, then the points wildcard (t06).
+    made = {f for f, r in res.items() if r["playoffs"] == 1.0}
+    assert made == {f"t{i:02d}" for i in range(6, 12)}
+    assert all(res[f"t{i:02d}"]["playoffs"] == 0.0 for i in range(6))
+    assert res["t11"]["bye"] == res["t10"]["bye"] == 1.0 and res["t09"]["bye"] == 0.0
+    assert all(set(r) >= set(OUTCOMES) for r in res.values())
+
+
+def test_odds_partial_season_and_labels():
+    from lib.odds import Params, forecast, complete_through, pct_label, truncate
+    season = _odds_season(3)
+    assert complete_through(season) == 3
+    _, res = forecast(season, Params(), n=500, seed=2)
+    assert res["t11"]["playoffs"] > res["t00"]["playoffs"]
+    assert res["t00"]["sacko"] > res["t11"]["sacko"]
+    assert complete_through(truncate(_odds_season(14), 5)) == 5
+    assert pct_label(0) == "<1%" and pct_label(0.004) == "<1%"
+    assert pct_label(1) == ">99%" and pct_label(0.234) == "23%"
+
+
+def test_odds_forecast_rows_sorted_with_colors():
+    from lib.odds import Params, forecast, forecast_rows
+    season = _odds_season(4)
+    st, res = forecast(season, Params(), n=300, seed=3)
+    rows = forecast_rows(season, {}, st, res)
+    odds = [res[r["fid"]]["playoffs"] for r in rows]
+    assert odds == sorted(odds, reverse=True)               # best playoff odds first
+    top = next(r for r in rows if r["fid"] == "t11")
+    assert top["record"] == "4-0" and top["cells"]["shiva"]["color"].startswith("#")
+    assert "_key" not in top
+
+
+def test_odds_trend_arrows():
+    from lib.odds import Params, forecast, forecast_rows, trend, truncate
+    assert trend(0.50, None, 0.02) is None                 # no prior week
+    assert trend(0.51, 0.50, 0.02, scale=100) is None      # inside the noise
+    assert trend(0.56, 0.50, 0.02, scale=100) == {"dir": "up", "text": "▲6"}
+    assert trend(110.0, 112.3, 0.5, digits=1) == {"dir": "down", "text": "▼2.3"}
+    season = _odds_season(4)
+    now = forecast(season, Params(), n=400, seed=4)
+    prev = forecast(truncate(season, 3), Params(), n=400, seed=3)
+    rows = {r["fid"]: r for r in forecast_rows(season, {}, *now, prev=prev)}
+    assert "trend" in rows["t00"]["cells"]["playoffs"]
+    assert rows["t11"]["pf"] == "620.0"                     # 4 games x 155
+    assert rows["t11"]["pf_color"] == "#ee6b3b" and rows["t00"]["pf_color"] == "#fdf3e0"
+    # Without a prior week there are no arrows at all.
+    plain = forecast_rows(season, {}, *now)
+    assert all(r["cells"]["playoffs"]["trend"] is None for r in plain)
+
+
 def run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

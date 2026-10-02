@@ -1,0 +1,57 @@
+{%- comment -%}
+Full-width Season Forecast section: each team's odds, from 10,000 simulations of
+the rest of the season (lib/odds via scripts/generate_odds.py). Laid out like
+FiveThirtyEight's round-by-round tables — the Sacko side on the left, the Shiva
+side on the right — in the site's own heat ramp. Every value, colour and label is
+precomputed. Param: f (a site.data.odds record).
+{%- endcomment -%}
+{%- assign f = include.f -%}
+{%- assign outcomes = "sacko,playoffs,bye,top3,shiva" | split: "," -%}
+<section class="season-section" id="forecast">
+<h2>Season Forecast</h2>
+<p class="forecast__note">From {{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of the end of Week {{ f.as_of_week }}, using the league's real seeding, wildcard and bracket rules. <strong>Rating</strong> is the model's estimate of a team's true points per week; early in the season it leans on the league average, since a few weeks of scores are mostly noise. Arrows mark teams whose playoff odds rose or fell since last week. Updates when each week goes final.</p>
+<div class="table-scroll">
+<table class="forecast">
+  <thead>
+    <tr class="forecast__groups">
+      <th colspan="3" class="forecast__lead"></th>
+      <th colspan="2" class="forecast__aux"></th>
+      <th class="forecast__group">Sacko watch</th>
+      <th colspan="4" class="forecast__group forecast__group--shiva">Shiva chase</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th class="num">Rec</th>
+      <th class="num" title="Points scored so far — the 6th playoff seed goes to the top scorer outside the top five">PF</th>
+      <th class="num forecast__aux" title="The model's estimate of the team's true points per week">Rating</th>
+      <th class="num forecast__aux" title="Average final regular-season wins across the simulations">Proj W</th>
+      <th class="num forecast__p">Sacko</th>
+      <th class="num forecast__p forecast__split"><span class="forecast__aux">Make playoffs</span><span class="forecast__short">Playoffs</span></th>
+      <th class="num forecast__p" title="A top-2 regular-season seed, which skips the first playoff round">Bye</th>
+      <th class="num forecast__p" title="Final standings after the playoffs: Shiva winner, runner-up, or 3rd-place game winner">Top 3</th>
+      <th class="num forecast__p forecast__key">Win Shiva</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in f.rows %}
+    <tr>
+      <td class="team-cell">
+        {%- include bits/team_logo.html src=r.logo -%}
+        {%- assign href = '/teams/' | append: r.fid | append: '/' | relative_url -%}
+        <a class="forecast__aux" href="{{ href }}">{{ r.team }}</a> <span class="owner-name forecast__aux">{{ r.owner }}</span>
+        <a class="forecast__short" href="{{ href }}" title="{{ r.team }}">{{ r.owner }}</a>
+      </td>
+      <td class="num">{{ r.record }}</td>
+      <td class="num">{% include bits/chip.html text=r.pf bg=r.pf_color %}</td>
+      <td class="num forecast__aux forecast__minor">{{ r.rating }}</td>
+      <td class="num forecast__aux forecast__minor">{{ r.proj_wins }}</td>
+      {%- for o in outcomes %}
+      {%- assign c = r.cells[o] %}
+      <td class="num forecast__cell{% if o == 'playoffs' %} forecast__split{% endif %}" style="background: {{ c.color }}">{% if c.trend %}<span class="forecast__trend forecast__trend--{{ c.trend.dir }}" title="{{ c.trend.text | slice: 1, 9 }} pts since last week">{% if c.trend.dir == "up" %}▲{% else %}▼{% endif %}</span>{% endif %}{{ c.text }}</td>
+      {%- endfor %}
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+</section>

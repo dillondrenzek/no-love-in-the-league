@@ -263,6 +263,56 @@ tbody td a:hover { color: var(--brand); }
   border-radius: 5px;
 }
 // =============================================================================
+// Season forecast (FiveThirtyEight-style odds table)
+// =============================================================================
+// Probability cells are filled edge to edge with the heat ramp (colour inline
+// from lib/odds), separated by thin white gutters like the heatmaps. A group row
+// labels the Sacko side and the Shiva side; "Win Shiva" gets the dark header.
+.forecast { border-collapse: separate; border-spacing: 0; }
+.forecast thead .forecast__groups th {
+  border-bottom: none;
+  padding-bottom: 4px;
+}
+.forecast__group {
+  text-align: center;
+  border-bottom: 1px solid var(--rule) !important;
+}
+.forecast th.forecast__p { text-align: center; white-space: normal; min-width: 4.6em; line-height: 1.2; }
+.forecast th.forecast__key { background: var(--rule-strong); color: #fff; border-radius: 4px 4px 0 0; }
+.forecast td.forecast__cell {
+  text-align: center;
+  color: var(--chip-ink);
+  font-size: 0.82rem;
+  border-bottom: 2px solid var(--bg);
+  border-left: 2px solid var(--bg);
+}
+.forecast .forecast__split { box-shadow: inset 2px 0 0 var(--rule-strong); }
+// Playoff-odds trend arrows vs last week's forecast: bright and bold.
+.forecast__trend { font-size: 0.68rem; font-weight: 700; margin-right: 3px; }
+.forecast__trend--up { color: #0f9d3a; }
+.forecast__trend--down { color: #e0311c; }
+// Supporting stats (rating, projected wins): smaller and muted next to the main numbers.
+.forecast td.forecast__minor { font-size: 0.74rem; color: var(--faint); }
+.forecast__short { display: none; }
+.forecast__note { font-size: 0.8rem; color: var(--muted); margin-top: -0.8em; }
+// Phones: keep the odds on screen — drop the model columns and owner names, let
+// team names wrap, and tighten the probability cells.
+@media (max-width: 640px) {
+  .forecast .forecast__aux { display: none; }
+  .forecast .forecast__short { display: inline; }
+  .forecast td.num:not(.forecast__cell) { padding-left: 4px; padding-right: 4px; font-size: 0.74rem; }
+  .forecast thead th.num:not(.forecast__p) { padding-left: 4px; padding-right: 4px; }
+  .forecast .chip { min-width: 0; padding: 2px 4px; font-size: 0.7rem; }
+  .forecast thead th { letter-spacing: 0; }
+  .forecast .team-cell { white-space: nowrap; padding-left: 0; }
+  .forecast .team-cell .team-logo { display: none; }
+  .forecast th.forecast__p { min-width: 0; font-size: 0.56rem; padding: 0 2px 6px; }
+  .forecast td.forecast__cell { font-size: 0.72rem; padding: 8px 2px; }
+  .forecast td.forecast__cell .forecast__trend { margin-right: 1px; font-size: 0.58rem; }
+  .forecast__group { font-size: 0.56rem !important; }
+}
+
+// =============================================================================
 // Weekly scoreboard (matchup cards)
 // =============================================================================
 // Weekly scoreboard: one card per matchup, big bold scores. Full width on small
