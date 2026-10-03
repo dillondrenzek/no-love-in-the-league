@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-03T15:24:02+00:00'
+captured_at: '2026-10-03T18:53:24+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -84,12 +84,6 @@ rosters:
     proj: 22.29
     actual: null
     injury: ''
-  - player: Jordan Love
-    pos: QB
-    starter: false
-    proj: 16.05
-    actual: null
-    injury: ''
   - player: Bills D/ST
     pos: D/ST
     starter: true
@@ -100,6 +94,12 @@ rosters:
     pos: RB
     starter: false
     proj: 8.09
+    actual: null
+    injury: ''
+  - player: Jauan Jennings
+    pos: WR
+    starter: false
+    proj: 7.94
     actual: null
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'

@@ -5802,7 +5802,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 88.2
+    tx_per_year: 88.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -5825,7 +5825,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 2-1
-    tx: 17
+    tx: 19
     in_progress: true
     pf: 395.2
     pa: 352.3
@@ -6240,6 +6240,10 @@ sturmanator15:
       via: add
       week: 4
       waiver: true
+    - player: Jauan Jennings
+      via: add
+      week: 4
+      waiver: false
     - player: Kendre Miller
       via: add
       week: 4
