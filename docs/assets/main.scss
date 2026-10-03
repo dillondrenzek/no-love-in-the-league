@@ -267,10 +267,12 @@ tbody td a:hover { color: var(--brand); }
 // =============================================================================
 // Season forecast (FiveThirtyEight-style odds table)
 // =============================================================================
-// Probability cells are filled edge to edge with the heat ramp (colour inline
-// from lib/odds), separated by thin white gutters like the heatmaps. A group row
-// labels the Sacko side and the Shiva side; "Win Shiva" gets the dark header.
-.forecast { border-collapse: separate; border-spacing: 0; }
+// Probability cells match the Owners-page heatmaps: compact rounded tiles on the
+// heat ramp (colour inline from lib/odds) with 2px gutters. A group row labels
+// the Sacko side and the Shiva side; "Win Shiva" gets the dark header.
+.forecast { border-collapse: separate; border-spacing: 2px; }
+// Rows sized like the site's other tables so team names have room.
+.forecast tbody td { height: 40px; padding-top: 0; padding-bottom: 0; line-height: 1.2; }
 .forecast thead .forecast__groups th {
   border-bottom: none;
   padding-bottom: 4px;
@@ -281,14 +283,18 @@ tbody td a:hover { color: var(--brand); }
 }
 .forecast th.forecast__p { text-align: center; white-space: normal; min-width: 4.6em; line-height: 1.2; }
 .forecast th.forecast__key { background: var(--rule-strong); color: #fff; border-radius: 4px 4px 0 0; }
+// PF uses the same full-cell tile as the probabilities, on its own
+// lowest-to-highest scale (as in the standings table).
+.forecast td.forecast__pf { min-width: 4.2em; }
 .forecast td.forecast__cell {
   text-align: center;
+  font-family: var(--mono);
+  font-size: 0.8rem;
   color: var(--chip-ink);
-  font-size: 0.82rem;
-  border-bottom: 2px solid var(--bg);
-  border-left: 2px solid var(--bg);
+  border-radius: 5px;
 }
-.forecast .forecast__split { box-shadow: inset 2px 0 0 var(--rule-strong); }
+// Rule between the Sacko side and the Shiva side, in the header only.
+.forecast th.forecast__split { box-shadow: inset 2px 0 0 var(--rule-strong); }
 // Playoff-odds trend arrows vs last week's forecast: bright and bold.
 .forecast__trend { font-size: 0.68rem; font-weight: 700; margin-right: 3px; }
 .forecast__trend--up { color: #0f9d3a; }
@@ -302,14 +308,15 @@ tbody td a:hover { color: var(--brand); }
 @media (max-width: 640px) {
   .forecast .forecast__aux { display: none; }
   .forecast .forecast__short { display: inline; }
-  .forecast td.num:not(.forecast__cell) { padding-left: 4px; padding-right: 4px; font-size: 0.74rem; }
+  .forecast td.num:not(.forecast__cell) { padding-left: 3px; padding-right: 3px; font-size: 0.74rem; }
   .forecast thead th.num:not(.forecast__p) { padding-left: 4px; padding-right: 4px; }
-  .forecast .chip { min-width: 0; padding: 2px 4px; font-size: 0.7rem; }
+  .forecast { border-spacing: 1px; }
+  .forecast td.forecast__pf { min-width: 0; }
   .forecast thead th { letter-spacing: 0; }
   .forecast .team-cell { white-space: nowrap; padding-left: 0; }
   .forecast .team-cell .team-logo { display: none; }
   .forecast th.forecast__p { min-width: 0; font-size: 0.56rem; padding: 0 2px 6px; }
-  .forecast td.forecast__cell { font-size: 0.72rem; padding: 8px 2px; }
+  .forecast td.forecast__cell { font-size: 0.72rem; padding: 0 2px; }
   .forecast td.forecast__cell .forecast__trend { margin-right: 1px; font-size: 0.58rem; }
   .forecast__group { font-size: 0.56rem !important; }
 }
@@ -655,6 +662,7 @@ tbody td a:hover { color: var(--brand); }
   color: var(--brand);
 }
 .season-notes li p { display: inline; margin: 0; }
+#notes .season-notes { margin-top: 0.6em; }
 
 // =============================================================================
 // Trades (season page)

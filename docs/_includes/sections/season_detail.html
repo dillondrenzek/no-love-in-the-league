@@ -7,7 +7,7 @@ stay thin and never need touching.
 
 State (d.state) is internal: it only gates WHICH sections appear, never any
 wording — no state is narrated to the reader. Section order below: weekly recaps,
-standings, playoffs, trades, forecast (live regular season only), draft.
+standings, season notes, playoffs, trades, forecast (live regular season only), draft.
 Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- endcomment -%}
 {%- assign d = include.d -%}
@@ -30,20 +30,23 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 {%- assign forecast = site.data.odds[d.year] -%}
 {%- assign show_forecast = false -%}
 {%- if forecast and forecast.rows.size > 0 %}{% assign show_forecast = true %}{% endif -%}
+{%- assign show_notes = false -%}
+{%- if d.notes and d.notes.size > 0 %}{% assign show_notes = true %}{% endif -%}
 {%- assign section_count = 0 -%}
 {%- if has_rows %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if has_weeks %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_forecast %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
+{%- if show_notes %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_bracket %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_draft %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 {%- if show_trades %}{% assign section_count = section_count | plus: 1 %}{% endif -%}
 
-{% include bits/season_notes.html notes=d.notes %}
 
 {%- comment -%} Jump-nav — only worthwhile with a few sections {%- endcomment -%}
 {%- if section_count >= 2 -%}
 <nav class="season-nav" aria-label="Sections">
   {%- if has_rows %}<a href="#standings">Standings</a>{% endif -%}
+  {%- if show_notes %}<a href="#notes">Notes</a>{% endif -%}
   {%- if has_weeks %}<a href="#weekly">Weeks</a>{% endif -%}
   {%- if show_forecast %}<a href="#forecast">Forecast</a>{% endif -%}
   {%- if show_bracket %}<a href="#playoffs">Playoffs</a>{% endif -%}
@@ -54,6 +57,7 @@ Param: d (a site.data.seasons.detail record). Masthead is the `season` layout.
 
 {%- if has_weeks %}{% include sections/season/weeks.html year=d.year %}{% endif -%}
 {%- if has_rows %}{% include sections/season/standings.html d=d %}{% endif -%}
+{%- if show_notes %}{% include sections/season/notes.html d=d %}{% endif -%}
 {%- if show_bracket %}{% include sections/season/playoffs.html d=d %}{% endif -%}
 {%- if show_trades %}{% include sections/season/trades.html d=d %}{% endif -%}
 {%- if show_forecast %}{% include sections/season/forecast.html f=forecast %}{% endif -%}
