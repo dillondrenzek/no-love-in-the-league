@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-03T02:52:24+00:00'
+captured_at: '2026-10-03T09:31:13+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -954,12 +954,6 @@ rosters:
     proj: 19.07
     actual: null
     injury: ''
-  - player: Dalton Schultz
-    pos: TE
-    starter: false
-    proj: 6.99
-    actual: null
-    injury: ''
   - player: Devaughn Vele
     pos: WR
     starter: true
@@ -989,6 +983,12 @@ rosters:
     starter: true
     proj: 6.5
     actual: 8.0
+    injury: ''
+  - player: Chris Bell
+    pos: WR
+    starter: false
+    proj: 7.02
+    actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13

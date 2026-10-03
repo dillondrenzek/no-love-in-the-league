@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-03T02:52:27+00:00
+updated_at: 2026-10-03T09:31:16+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -279,7 +279,7 @@ transactions:
   schirmerj: { adds: 5, drops: 4, moves: 9 }
   shawne2520997: { adds: 5, drops: 4, moves: 9 }
   sturmanator15: { adds: 9, drops: 8, moves: 17 }
-  theoceanpulse: { adds: 13, drops: 11, moves: 24 }
+  theoceanpulse: { adds: 14, drops: 12, moves: 26 }
   whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
   zachzoske: { adds: 16, drops: 11, moves: 27 }
 
@@ -1114,6 +1114,10 @@ rosters:
     week: 3
     waiver: true
   - player: Browns D/ST
+    via: add
+    week: 4
+    waiver: false
+  - player: Chris Bell
     via: add
     week: 4
     waiver: false

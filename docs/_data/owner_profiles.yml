@@ -18671,7 +18671,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 14
     trades_known: true
-    tx_per_year: 50.9
+    tx_per_year: 51.1
     tx_known: false
     seasons: 11
     best_finish:
@@ -18694,7 +18694,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 12th
     record: 0-2-1
-    tx: 24
+    tx: 26
     in_progress: true
     pf: 306.6
     pa: 394.8
@@ -19177,6 +19177,10 @@ theoceanpulse:
       week: 3
       waiver: true
     - player: Browns D/ST
+      via: add
+      week: 4
+      waiver: false
+    - player: Chris Bell
       via: add
       week: 4
       waiver: false
