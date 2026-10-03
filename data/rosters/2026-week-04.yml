@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-03T09:31:13+00:00'
+captured_at: '2026-10-03T15:24:02+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -45,7 +45,7 @@ rosters:
   - player: Blake Corum
     pos: RB
     starter: false
-    proj: 7.6
+    proj: 7.61
     actual: null
     injury: ''
   - player: Trey McBride
@@ -133,7 +133,7 @@ rosters:
   - player: George Kittle
     pos: TE
     starter: true
-    proj: 11.29
+    proj: 11.3
     actual: null
     injury: ''
   - player: Michael Pittman Jr.
@@ -181,13 +181,13 @@ rosters:
   - player: Josh Downs
     pos: WR
     starter: true
-    proj: 11.1
+    proj: 10.99
     actual: null
     injury: ''
   - player: Sam Darnold
     pos: QB
     starter: false
-    proj: 18.85
+    proj: 18.84
     actual: null
     injury: ''
   - player: Zach Charbonnet
@@ -251,7 +251,7 @@ rosters:
   - player: Kyren Williams
     pos: RB
     starter: true
-    proj: 11.86
+    proj: 11.88
     actual: null
     injury: ''
   - player: Xavier Worthy
@@ -309,7 +309,7 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 13.33
+    proj: 13.35
     actual: null
     injury: ''
   - player: DeVonta Smith
@@ -375,7 +375,7 @@ rosters:
   - player: Eagles D/ST
     pos: D/ST
     starter: true
-    proj: 4.03
+    proj: 4.07
     actual: null
     injury: ''
   - player: Harrison Butker
@@ -387,7 +387,7 @@ rosters:
   - player: Dontayvion Wicks
     pos: WR
     starter: true
-    proj: 9.21
+    proj: 9.29
     actual: null
     injury: ''
   - player: Malik Washington
@@ -445,7 +445,7 @@ rosters:
   - player: Puka Nacua
     pos: WR
     starter: true
-    proj: 17.13
+    proj: 14.94
     actual: null
     injury: ''
   - player: Mike Washington Jr.
@@ -575,7 +575,7 @@ rosters:
   - player: Matthew Stafford
     pos: QB
     starter: true
-    proj: 18.23
+    proj: 18.2
     actual: null
     injury: ''
   - player: Patriots D/ST
@@ -633,7 +633,7 @@ rosters:
   - player: Tyler Warren
     pos: TE
     starter: true
-    proj: 10.39
+    proj: 10.33
     actual: null
     injury: ''
   - player: DK Metcalf
@@ -703,7 +703,7 @@ rosters:
   - player: Jonathan Taylor
     pos: RB
     starter: true
-    proj: 18.89
+    proj: 18.86
     actual: null
     injury: ''
   - player: Emeka Egbuka
@@ -745,7 +745,7 @@ rosters:
   - player: Makai Lemon
     pos: WR
     starter: false
-    proj: 8.64
+    proj: 8.71
     actual: null
     injury: ''
   - player: KC Concepcion
@@ -815,7 +815,7 @@ rosters:
   - player: Davante Adams
     pos: WR
     starter: true
-    proj: 12.52
+    proj: 13.19
     actual: null
     injury: ''
   - player: Bucky Irving
@@ -851,7 +851,7 @@ rosters:
   - player: Stefon Diggs
     pos: WR
     starter: true
-    proj: 9.31
+    proj: 10.27
     actual: null
     injury: ''
   - player: Brandon Aubrey
@@ -945,7 +945,7 @@ rosters:
   - player: Emanuel Wilson
     pos: RB
     starter: true
-    proj: 11.1
+    proj: 11.08
     actual: null
     injury: ''
   - player: Jared Goff
@@ -1069,7 +1069,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 3.17
+    proj: 3.16
     actual: null
     injury: ''
   - player: Brian Robinson Jr.
@@ -1109,7 +1109,7 @@ rosters:
   - player: Terry McLaurin
     pos: WR
     starter: true
-    proj: 10.94
+    proj: 0.0
     actual: null
     injury: ''
   - player: Nico Collins
@@ -1175,7 +1175,7 @@ rosters:
   - player: Keenan Allen
     pos: WR
     starter: false
-    proj: 8.94
+    proj: 0.0
     actual: null
     injury: ''
   - player: Darren Waller
