@@ -42,7 +42,7 @@ precomputed. Param: f (a site.data.odds record).
         <a class="forecast__short" href="{{ href }}" title="{{ r.team }}">{{ r.owner }}</a>
       </td>
       <td class="num">{{ r.record }}</td>
-      <td class="num">{% include bits/chip.html text=r.pf bg=r.pf_color %}</td>
+      <td class="num forecast__cell forecast__pf" style="background: {{ r.pf_color }}">{{ r.pf }}</td>
       <td class="num forecast__aux forecast__minor">{{ r.rating }}</td>
       <td class="num forecast__aux forecast__minor">{{ r.proj_wins }}</td>
       {%- for o in outcomes %}

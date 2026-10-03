@@ -1,0 +1,9 @@
+{%- comment -%}
+Full-width Season Notes section for a season page: the season's event bullets
+(hand-written notes plus the auto trade count). Param: d (a seasons.detail
+record). The caller (sections/season_detail.html) decides whether to show it.
+{%- endcomment -%}
+<section class="season-section" id="notes">
+<h2>Season Notes</h2>
+{% include bits/season_notes.html notes=include.d.notes %}
+</section>
