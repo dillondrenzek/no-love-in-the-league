@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power:
   - rank: 1
@@ -1203,18 +1203,18 @@
     home_record: 2-1
     away_record: 0-2-1
     scored: true
-    home_yet: 8
-    away_yet: 8
+    home_yet: 0
+    away_yet: 2
     final: false
     live: true
     playoff: false
-    home_score: 19.3
-    away_score: 20.0
+    home_score: 104.0
+    away_score: 72.0
     winner_id: null
     tie: false
-    margin: 0.7
+    margin: 32.0
     home_proj: 124.1
-    away_proj: 108.9
+    away_proj: 109.0
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -1226,17 +1226,17 @@
     home_record: 1-1-1
     away_record: 1-2
     scored: true
-    home_yet: 10
-    away_yet: 8
+    home_yet: 3
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 32.7
+    home_score: 56.5
+    away_score: 103.1
     winner_id: null
     tie: false
-    margin: 32.7
-    home_proj: 114.2
+    margin: 46.6
+    home_proj: 114.1
     away_proj: 121.3
   - home_id: purpsworth
     home_team: I am dead inside
@@ -1249,16 +1249,16 @@
     home_record: 1-2
     away_record: 1-2
     scored: true
-    home_yet: 7
-    away_yet: 9
+    home_yet: 1
+    away_yet: 2
     final: false
     live: true
     playoff: false
-    home_score: 37.3
-    away_score: 4.5
+    home_score: 93.6
+    away_score: 97.9
     winner_id: null
     tie: false
-    margin: 32.8
+    margin: 4.3
     home_proj: 109.8
     away_proj: 132.8
   - home_id: schirmerj
@@ -1272,17 +1272,17 @@
     home_record: 1-2
     away_record: 2-1
     scored: true
-    home_yet: 10
-    away_yet: 9
+    home_yet: 1
+    away_yet: 3
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 5.5
+    home_score: 107.1
+    away_score: 89.6
     winner_id: null
     tie: false
-    margin: 5.5
-    home_proj: 112.8
+    margin: 17.5
+    home_proj: 112.7
     away_proj: 106.3
   - home_id: sturmanator15
     home_team: The People's Commissioner
@@ -1294,14 +1294,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 2-1
     away_record: 3-0
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 1
+    away_yet: 2
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 95.3
+    away_score: 86.0
+    winner_id: null
+    tie: false
+    margin: 9.3
     home_proj: 129.0
-    away_proj: 128.8
+    away_proj: 128.9
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -1313,18 +1318,18 @@
     home_record: 2-1
     away_record: 1-2
     scored: true
-    home_yet: 9
-    away_yet: 10
+    home_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 3.1
-    away_score: 0.0
+    home_score: 96.4
+    away_score: 54.7
     winner_id: null
     tie: false
-    margin: 3.1
+    margin: 41.7
     home_proj: 128.2
-    away_proj: 100.5
+    away_proj: 100.4
   highlights: []
   projections:
   - home_id: alexandra
@@ -1418,7 +1423,7 @@
     decided: false
     result: null
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: true
   power:
   - rank: 1
@@ -1644,7 +1649,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-6:
@@ -1750,7 +1755,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-7:
@@ -1856,7 +1861,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-8:
@@ -1962,7 +1967,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-9:
@@ -2068,7 +2073,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-10:
@@ -2174,7 +2179,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-11:
@@ -2280,7 +2285,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-12:
@@ -2386,7 +2391,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-13:
@@ -2492,7 +2497,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
 2026-14:
@@ -2598,6 +2603,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 9:08 AM PDT
+  updated_at: Oct 4, 3:36 PM PDT
   current: false
   power: []
