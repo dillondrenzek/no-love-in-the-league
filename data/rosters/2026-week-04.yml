@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-03T22:32:02+00:00'
+captured_at: '2026-10-04T03:22:37+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -81,7 +81,7 @@ rosters:
   - player: Bryce Young
     pos: QB
     starter: true
-    proj: 22.29
+    proj: 22.28
     actual: null
     injury: ''
   - player: Bills D/ST
@@ -514,7 +514,7 @@ rosters:
     injury: ''
   - player: Justin Jefferson
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -527,7 +527,7 @@ rosters:
   - player: Tetairoa McMillan
     pos: WR
     starter: true
-    proj: 12.74
+    proj: 13.5
     actual: null
     injury: ''
   - player: Chris Olave
@@ -551,7 +551,7 @@ rosters:
   - player: Chuba Hubbard
     pos: RB
     starter: true
-    proj: 14.87
+    proj: 15.07
     actual: null
     injury: ''
   - player: Brian Thomas Jr.
@@ -592,7 +592,7 @@ rosters:
     injury: ''
   - player: Tre Tucker
     pos: WR
-    starter: false
+    starter: true
     proj: 7.57
     actual: null
     injury: ''
@@ -775,7 +775,7 @@ rosters:
   - player: Drake London
     pos: WR
     starter: true
-    proj: 13.71
+    proj: 13.72
     actual: null
     injury: ''
   - player: Steelers D/ST
@@ -997,7 +997,7 @@ rosters:
   - player: Bijan Robinson
     pos: RB
     starter: true
-    proj: 19.45
+    proj: 19.46
     actual: null
     injury: ''
   - player: Malik Nabers
@@ -1133,7 +1133,7 @@ rosters:
   - player: Jalen Coker
     pos: WR
     starter: true
-    proj: 10.7
+    proj: 0.0
     actual: null
     injury: ''
   - player: Juwan Johnson
@@ -1181,6 +1181,6 @@ rosters:
   - player: Darren Waller
     pos: TE
     starter: false
-    proj: 7.55
+    proj: 8.19
     actual: null
     injury: ''
