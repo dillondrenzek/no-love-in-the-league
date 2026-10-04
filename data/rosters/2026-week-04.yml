@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-04T03:22:37+00:00'
+captured_at: '2026-10-04T10:17:49+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -842,12 +842,6 @@ rosters:
     proj: 16.65
     actual: null
     injury: ''
-  - player: Quentin Johnston
-    pos: WR
-    starter: false
-    proj: 7.02
-    actual: null
-    injury: ''
   - player: Stefon Diggs
     pos: WR
     starter: true
@@ -868,7 +862,7 @@ rosters:
     injury: ''
   - player: Texans D/ST
     pos: D/ST
-    starter: true
+    starter: false
     proj: 4.89
     actual: null
     injury: ''
@@ -888,6 +882,12 @@ rosters:
     pos: QB
     starter: true
     proj: 20.28
+    actual: null
+    injury: ''
+  - player: Packers D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.19
     actual: null
     injury: ''
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
@@ -1108,13 +1108,13 @@ rosters:
     injury: ''
   - player: Terry McLaurin
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
   - player: Nico Collins
     pos: WR
-    starter: false
+    starter: true
     proj: 12.63
     actual: null
     injury: ''
@@ -1126,7 +1126,7 @@ rosters:
     injury: ''
   - player: Jacory Croskey-Merritt
     pos: RB
-    starter: false
+    starter: true
     proj: 10.64
     actual: null
     injury: ''
@@ -1168,19 +1168,19 @@ rosters:
     injury: ''
   - player: Rashod Bateman
     pos: WR
-    starter: true
-    proj: 6.71
-    actual: null
-    injury: ''
-  - player: Keenan Allen
-    pos: WR
     starter: false
-    proj: 0.0
+    proj: 6.71
     actual: null
     injury: ''
   - player: Darren Waller
     pos: TE
     starter: false
     proj: 8.19
+    actual: null
+    injury: ''
+  - player: Brycen Tremayne
+    pos: WR
+    starter: false
+    proj: 7.58
     actual: null
     injury: ''

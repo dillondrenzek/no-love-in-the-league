@@ -8259,7 +8259,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 47.1
+    tx_per_year: 47.3
     tx_known: false
     seasons: 11
     best_finish:
@@ -8283,7 +8283,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 4th
     record: 2-1
-    tx: 9
+    tx: 11
     in_progress: true
     pf: 359.3
     pa: 320.5
@@ -8626,6 +8626,10 @@ shawne2520997:
     - player: Rashod Bateman
       via: add
       week: 2
+      waiver: false
+    - player: Brycen Tremayne
+      via: add
+      week: 4
       waiver: false
     - player: Darren Waller
       via: add
@@ -10019,7 +10023,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 33.3
+    tx_per_year: 33.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -10043,7 +10047,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 1-2
-    tx: 4
+    tx: 6
     in_progress: true
     pf: 349.8
     pa: 324.0
@@ -10402,6 +10406,10 @@ whowonthelastsuperbowl:
       via: add
       week: 3
       waiver: true
+    - player: Packers D/ST
+      via: add
+      week: 4
+      waiver: false
   - year: 2025
     players:
     - player: Jonathan Taylor

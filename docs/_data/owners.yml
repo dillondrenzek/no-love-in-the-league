@@ -1776,8 +1776,8 @@ tx_heatmap:
       color: '#fcdfb0'
   - id: shawne2520997
     name: Shawnee
-    total: 424
-    tx_per_year: 47.1
+    total: 426
+    tx_per_year: 47.3
     cells:
     - year: 2018
       count: 52
@@ -1804,8 +1804,8 @@ tx_heatmap:
       count: 101
       color: '#f6a248'
     - year: 2026
-      count: 9
-      color: '#fdeccf'
+      count: 11
+      color: '#fcebcc'
   - id: lukstein
     name: Luke
     total: 410
@@ -1872,8 +1872,8 @@ tx_heatmap:
       color: '#fdedd1'
   - id: whowonthelastsuperbowl
     name: Nate
-    total: 300
-    tx_per_year: 33.3
+    total: 302
+    tx_per_year: 33.6
     cells:
     - year: 2018
       count: 18
@@ -1900,8 +1900,8 @@ tx_heatmap:
       count: 31
       color: '#fbdba7'
     - year: 2026
-      count: 4
-      color: '#fdf0d9'
+      count: 6
+      color: '#fdeed5'
   - id: kevbots22
     name: Kevin
     total: 270

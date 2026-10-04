@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-04T03:22:40+00:00
+updated_at: 2026-10-04T10:17:52+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -110,8 +110,8 @@ matchups:
   - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 116.3, playoff: false }
   - { week:  4, home: alexandra, away: theoceanpulse, home_score: 14.0, away_score: 8.0, playoff: false, final: false, home_proj: 124.07, away_proj: 108.94 }
   - { week:  4, home: kevbots22, away: gganoom, home_score: 0.0, away_score: 32.7, playoff: false, final: false, home_proj: 114.17, away_proj: 121.34 }
-  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, home_score: 15.2, away_score: 0.0, playoff: false, final: false, home_proj: 109.78, away_proj: 131.51 }
-  - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false, home_proj: 112.77, away_proj: 89.73 }
+  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, home_score: 15.2, away_score: 0.0, playoff: false, final: false, home_proj: 109.78, away_proj: 132.81 }
+  - { week:  4, home: schirmerj, away: shawne2520997, playoff: false, played: false, home_proj: 112.77, away_proj: 106.29 }
   - { week:  4, home: sturmanator15, away: jackperkins74, playoff: false, played: false, home_proj: 128.32, away_proj: 128.84 }
   - { week:  4, home: zachzoske, away: lukstein, playoff: false, played: false, home_proj: 128.22, away_proj: 100.45 }
   - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false }
@@ -277,10 +277,10 @@ transactions:
   lukstein: { adds: 9, drops: 5, moves: 14 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }
   schirmerj: { adds: 5, drops: 4, moves: 9 }
-  shawne2520997: { adds: 5, drops: 4, moves: 9 }
+  shawne2520997: { adds: 6, drops: 5, moves: 11 }
   sturmanator15: { adds: 10, drops: 9, moves: 19 }
   theoceanpulse: { adds: 14, drops: 12, moves: 26 }
-  whowonthelastsuperbowl: { adds: 2, drops: 2, moves: 4 }
+  whowonthelastsuperbowl: { adds: 3, drops: 3, moves: 6 }
   zachzoske: { adds: 16, drops: 11, moves: 27 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
@@ -622,6 +622,10 @@ rosters:
   - player: Rashod Bateman
     via: add
     week: 2
+    waiver: false
+  - player: Brycen Tremayne
+    via: add
+    week: 4
     waiver: false
   - player: Darren Waller
     via: add
@@ -1245,3 +1249,7 @@ rosters:
     via: add
     week: 3
     waiver: true
+  - player: Packers D/ST
+    via: add
+    week: 4
+    waiver: false
