@@ -1,6 +1,6 @@
 season: 2026
 week: 4
-captured_at: '2026-10-05T02:58:58+00:00'
+captured_at: '2026-10-05T10:58:21+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -82,7 +82,7 @@ rosters:
     pos: QB
     starter: true
     proj: 22.28
-    actual: 22.9
+    actual: 23.3
     injury: ''
   - player: Bills D/ST
     pos: D/ST
@@ -110,7 +110,7 @@ rosters:
     pos: WR
     starter: true
     proj: 16.49
-    actual: 7.6
+    actual: 11.5
     injury: ''
   - player: Tee Higgins
     pos: WR
@@ -228,7 +228,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.73
-    actual: 11.3
+    actual: 13.2
     injury: ''
   - player: Carnell Tate
     pos: WR
@@ -410,7 +410,7 @@ rosters:
     pos: RB
     starter: true
     proj: 23.79
-    actual: 12.5
+    actual: 15.7
     injury: ''
   - player: Breece Hall
     pos: RB
@@ -528,7 +528,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.5
-    actual: 35.0
+    actual: 38.2
     injury: ''
   - player: Chris Olave
     pos: WR
@@ -552,7 +552,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.07
-    actual: 25.0
+    actual: 25.4
     injury: ''
   - player: Brian Thomas Jr.
     pos: WR
@@ -828,7 +828,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.98
-    actual: 3.1
+    actual: 18.4
     injury: ''
   - player: Courtland Sutton
     pos: WR
@@ -952,7 +952,7 @@ rosters:
     pos: QB
     starter: true
     proj: 19.07
-    actual: 10.0
+    actual: 21.4
     injury: ''
   - player: Devaughn Vele
     pos: WR
@@ -1152,7 +1152,7 @@ rosters:
     pos: K
     starter: true
     proj: 8.4
-    actual: 17.0
+    actual: 18.0
     injury: ''
   - player: Kaelon Black
     pos: RB
