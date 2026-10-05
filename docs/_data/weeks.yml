@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power:
   - rank: 1
@@ -1204,15 +1204,15 @@
     away_record: 0-2-1
     scored: true
     home_yet: 0
-    away_yet: 2
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 104.0
-    away_score: 72.0
+    home_score: 104.6
+    away_score: 95.2
     winner_id: null
     tie: false
-    margin: 32.0
+    margin: 9.4
     home_proj: 124.1
     away_proj: 109.0
   - home_id: kevbots22
@@ -1226,16 +1226,16 @@
     home_record: 1-1-1
     away_record: 1-2
     scored: true
-    home_yet: 3
+    home_yet: 1
     away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 56.5
-    away_score: 103.1
+    home_score: 126.0
+    away_score: 117.8
     winner_id: null
     tie: false
-    margin: 46.6
+    margin: 8.2
     home_proj: 114.1
     away_proj: 121.3
   - home_id: purpsworth
@@ -1250,15 +1250,15 @@
     away_record: 1-2
     scored: true
     home_yet: 1
-    away_yet: 2
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 93.6
-    away_score: 97.9
+    home_score: 104.5
+    away_score: 102.9
     winner_id: null
     tie: false
-    margin: 4.3
+    margin: 1.6
     home_proj: 109.8
     away_proj: 132.8
   - home_id: schirmerj
@@ -1272,18 +1272,18 @@
     home_record: 1-2
     away_record: 2-1
     scored: true
-    home_yet: 1
-    away_yet: 3
+    home_yet: 0
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 107.1
-    away_score: 89.6
+    home_score: 139.4
+    away_score: 110.8
     winner_id: null
     tie: false
-    margin: 17.5
+    margin: 28.6
     home_proj: 112.7
-    away_proj: 106.3
+    away_proj: 113.8
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -1295,16 +1295,16 @@
     home_record: 2-1
     away_record: 3-0
     scored: true
-    home_yet: 1
-    away_yet: 2
+    home_yet: 0
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 95.3
-    away_score: 86.0
+    home_score: 144.4
+    away_score: 98.5
     winner_id: null
     tie: false
-    margin: 9.3
+    margin: 45.9
     home_proj: 129.0
     away_proj: 128.9
   - home_id: zachzoske
@@ -1318,16 +1318,16 @@
     home_record: 2-1
     away_record: 1-2
     scored: true
-    home_yet: 1
+    home_yet: 0
     away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 96.4
-    away_score: 54.7
+    home_score: 119.3
+    away_score: 65.4
     winner_id: null
     tie: false
-    margin: 41.7
+    margin: 53.9
     home_proj: 128.2
     away_proj: 100.4
   highlights: []
@@ -1423,7 +1423,7 @@
     decided: false
     result: null
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: true
   power:
   - rank: 1
@@ -1649,7 +1649,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-6:
@@ -1755,7 +1755,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-7:
@@ -1861,7 +1861,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-8:
@@ -1967,7 +1967,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-9:
@@ -2073,7 +2073,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-10:
@@ -2179,7 +2179,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-11:
@@ -2285,7 +2285,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-12:
@@ -2391,7 +2391,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-13:
@@ -2497,7 +2497,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
 2026-14:
@@ -2603,6 +2603,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 4, 3:36 PM PDT
+  updated_at: Oct 4, 7:59 PM PDT
   current: false
   power: []
