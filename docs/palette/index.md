@@ -75,9 +75,9 @@ paragraph settles on the page.
     <tr><th>Finish</th><th>Team</th><th class="num">Record</th><th class="num">PF</th><th class="num">PA</th></tr>
   </thead>
   <tbody>
-    <tr><td>1</td><td><a href="#">Pukkake</a> <span class="owner-name">Jack</span> <span class="tag tag--shiva">Shiva</span></td><td class="num">11-3</td><td class="num tile-cell" style="--tile: #ee6b3b"><span>1742.4</span></td><td class="num">1520.1</td></tr>
-    <tr><td>2</td><td><a href="#">2x Runner Up</a> <span class="owner-name">Luke</span></td><td class="num">10-4</td><td class="num tile-cell" style="--tile: #f7a749"><span>1690.8</span></td><td class="num">1544.9</td></tr>
-    <tr><td>12</td><td><a href="#">I am dead inside</a> <span class="owner-name">Trevor</span> <span class="tag tag--sacko">Sacko</span></td><td class="num">3-11</td><td class="num tile-cell" style="--tile: #fdf3e0"><span>1201.7</span></td><td class="num">1633.2</td></tr>
+    <tr><td>1</td><td><a href="#">Pukkake</a> <span class="owner-name">Jack</span> <span class="tag tag--shiva">Shiva</span></td><td class="num">11-3</td><td class="num tile-cell" style="--tile: #ee6b3b; --chars: 6"><span>1742.4</span></td><td class="num">1520.1</td></tr>
+    <tr><td>2</td><td><a href="#">2x Runner Up</a> <span class="owner-name">Luke</span></td><td class="num">10-4</td><td class="num tile-cell" style="--tile: #f7a749; --chars: 6"><span>1690.8</span></td><td class="num">1544.9</td></tr>
+    <tr><td>12</td><td><a href="#">I am dead inside</a> <span class="owner-name">Trevor</span> <span class="tag tag--sacko">Sacko</span></td><td class="num">3-11</td><td class="num tile-cell" style="--tile: #fdf3e0; --chars: 6"><span>1201.7</span></td><td class="num">1633.2</td></tr>
   </tbody>
 </table>
 </div>
