@@ -24,7 +24,7 @@
     tie: false
     margin: 17.6
   - home_id: gganoom
-    home_team: One Big Beautiful Dill
+    home_team: One Big Beautiful Dillbot
     home_owner: Grant
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     away_id: shawne2520997
@@ -176,13 +176,13 @@
     winner_id: alexandra
   - home_id: gganoom
     away_id: shawne2520997
-    home_team: One Big Beautiful Dill
+    home_team: One Big Beautiful Dillbot
     away_team: Swift kick in the Dak
     home_proj: 109.5
     away_proj: 107.9
     pickem: false
     fav_id: gganoom
-    fav_team: One Big Beautiful Dill
+    fav_team: One Big Beautiful Dillbot
     dog_team: Swift kick in the Dak
     fav_proj: 109.5
     dog_proj: 107.9
@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power:
   - rank: 1
@@ -296,7 +296,7 @@
       5-2.'
   - rank: 4
     fid: gganoom
-    team: One Big Beautiful Dill
+    team: One Big Beautiful Dillbot
     owner: Grant
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     record: 0-0
@@ -406,7 +406,7 @@
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-0
@@ -560,13 +560,13 @@
   - home_id: jackperkins74
     away_id: gganoom
     home_team: Gibbed for your pleasure
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     home_proj: 126.7
     away_proj: 113.0
     pickem: false
     fav_id: jackperkins74
     fav_team: Gibbed for your pleasure
-    dog_team: One Big Beautiful Dill
+    dog_team: One Big Beautiful Dillbot
     fav_proj: 126.7
     dog_proj: 113.0
     spread: 13.7
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power:
   - rank: 1
@@ -769,7 +769,7 @@
       gets a Zach team he's owned 16-9 to steady himself.
   - rank: 11
     fid: gganoom
-    team: One Big Beautiful Dill
+    team: One Big Beautiful Dillbot
     owner: Grant
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     record: 0-1
@@ -861,7 +861,7 @@
     home_owner: Jono
     home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-1
@@ -926,7 +926,7 @@
     sub: vs Return of the IDP
     owner_id: gganoom
     owner_name: Grant
-    team: One Big Beautiful Dill
+    team: One Big Beautiful Dillbot
   - key: low
     label: Low Score
     value: '74.00'
@@ -1000,12 +1000,12 @@
   - home_id: schirmerj
     away_id: gganoom
     home_team: Return of the IDP
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     home_proj: 117.1
     away_proj: 120.6
     pickem: false
     fav_id: gganoom
-    fav_team: One Big Beautiful Dill
+    fav_team: One Big Beautiful Dillbot
     dog_team: Return of the IDP
     fav_proj: 120.6
     dog_proj: 117.1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power:
   - rank: 1
@@ -1179,7 +1179,7 @@
       Week 3 offers hope — he owns Kevin 6-4 all-time, and he needs it badly.'
   - rank: 12
     fid: gganoom
-    team: One Big Beautiful Dill
+    team: One Big Beautiful Dillbot
     owner: Grant
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     record: 0-2
@@ -1213,14 +1213,12 @@
     winner_id: theoceanpulse
     tie: false
     margin: 16.4
-    home_proj: 124.1
-    away_proj: 109.0
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
     home_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-1-1
@@ -1236,8 +1234,6 @@
     winner_id: kevbots22
     tie: false
     margin: 0.2
-    home_proj: 114.1
-    away_proj: 121.3
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -1259,8 +1255,6 @@
     winner_id: whowonthelastsuperbowl
     tie: false
     margin: 18.5
-    home_proj: 109.8
-    away_proj: 132.8
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -1282,8 +1276,6 @@
     winner_id: schirmerj
     tie: false
     margin: 20.6
-    home_proj: 112.7
-    away_proj: 113.8
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -1305,8 +1297,6 @@
     winner_id: sturmanator15
     tie: false
     margin: 22.8
-    home_proj: 129.0
-    away_proj: 128.9
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -1328,13 +1318,11 @@
     winner_id: zachzoske
     tie: false
     margin: 57.8
-    home_proj: 128.2
-    away_proj: 100.4
   highlights:
   - key: top
     label: Top Score
     value: '145.20'
-    sub: vs One Big Beautiful Dill
+    sub: vs One Big Beautiful Dillbot
     owner_id: kevbots22
     owner_name: Kevin
     team: Josh Jacobs Alibi
@@ -1379,13 +1367,13 @@
   - home_id: kevbots22
     away_id: gganoom
     home_team: Josh Jacobs Alibi
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     home_proj: 121.3
     away_proj: 120.9
     pickem: false
     fav_id: kevbots22
     fav_team: Josh Jacobs Alibi
-    dog_team: One Big Beautiful Dill
+    dog_team: One Big Beautiful Dillbot
     fav_proj: 121.3
     dog_proj: 120.9
     spread: 0.4
@@ -1457,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power:
   - rank: 1
@@ -1532,7 +1520,7 @@
       just 4.2.
   - rank: 8
     fid: gganoom
-    team: One Big Beautiful Dill
+    team: One Big Beautiful Dillbot
     owner: Grant
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     record: 1-2
@@ -1595,11 +1583,13 @@
     home_record: 3-1
     away_record: 2-2
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 123.6
+    away_proj: 109.7
   - home_id: kevbots22
     home_team: Josh Jacobs Alibi
     home_owner: Kevin
@@ -1611,27 +1601,31 @@
     home_record: 2-1-1
     away_record: 2-2
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 83.2
+    away_proj: 101.2
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
     home_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-3
     away_record: 1-3
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 111.9
+    away_proj: 125.6
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -1643,11 +1637,13 @@
     home_record: 2-2
     away_record: 1-3
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 103.5
+    away_proj: 76.6
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -1659,11 +1655,13 @@
     home_record: 3-1
     away_record: 2-2
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 88.4
+    away_proj: 133.0
   - home_id: zachzoske
     home_team: Tuten Your Mom
     home_owner: Zach
@@ -1675,15 +1673,17 @@
     home_record: 3-1
     away_record: 1-2-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 121.6
+    away_proj: 110.0
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: true
   power: []
 2026-6:
@@ -1759,7 +1759,7 @@
     home_owner: Nate
     home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 2-2
@@ -1789,7 +1789,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-7:
@@ -1817,7 +1817,7 @@
     home_owner: Luke
     home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-3
@@ -1895,7 +1895,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-8:
@@ -1987,7 +1987,7 @@
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 3-1
@@ -2001,7 +2001,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-9:
@@ -2009,7 +2009,7 @@
   state: future
   scoreboard:
   - home_id: gganoom
-    home_team: One Big Beautiful Dill
+    home_team: One Big Beautiful Dillbot
     home_owner: Grant
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     away_id: shawne2520997
@@ -2107,7 +2107,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-10:
@@ -2183,7 +2183,7 @@
     home_owner: Wade
     home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 3-1
@@ -2213,7 +2213,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-11:
@@ -2225,7 +2225,7 @@
     home_owner: Lexi
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 2-2
@@ -2319,7 +2319,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-12:
@@ -2379,7 +2379,7 @@
     home_owner: Dillon
     home_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-2-1
@@ -2425,7 +2425,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-13:
@@ -2501,7 +2501,7 @@
     home_owner: Dillon
     home_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 1-2-1
@@ -2531,7 +2531,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
 2026-14:
@@ -2607,7 +2607,7 @@
     home_owner: Nate
     home_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     away_id: gganoom
-    away_team: One Big Beautiful Dill
+    away_team: One Big Beautiful Dillbot
     away_owner: Grant
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 2-2
@@ -2637,6 +2637,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 5, 8:37 PM PDT
+  updated_at: Oct 6, 3:53 AM PDT
   current: false
   power: []
