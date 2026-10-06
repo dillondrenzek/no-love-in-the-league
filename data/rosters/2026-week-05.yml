@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-06T17:35:20+00:00'
+captured_at: '2026-10-06T23:26:56+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -20,7 +20,7 @@ rosters:
     injury: ''
   - player: Ladd McConkey
     pos: WR
-    starter: false
+    starter: true
     proj: 8.54
     actual: null
     injury: ''
@@ -44,7 +44,7 @@ rosters:
     injury: ''
   - player: Blake Corum
     pos: RB
-    starter: true
+    starter: false
     proj: 7.88
     actual: null
     injury: ''
@@ -474,7 +474,7 @@ rosters:
     injury: ''
   - player: Alvin Kamara
     pos: RB
-    starter: true
+    starter: false
     proj: 9.66
     actual: null
     injury: ''
@@ -498,13 +498,13 @@ rosters:
     injury: ''
   - player: Tyler Allgeier
     pos: RB
-    starter: false
+    starter: true
     proj: 7.82
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
-  team_name: 'Josh Jacobs Alibi '
+  team_name: Remember the Nice Guys, ChatGPT
   players:
   - player: Chase Brown
     pos: RB

@@ -117,7 +117,7 @@ detail:
       pa_color: '#ee6b3b'
     - &id004
       finish: 4
-      team: Josh Jacobs Alibi
+      team: Remember the Nice Guys, ChatGPT
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
       owner_id: kevbots22
       owner_name: Kevin
@@ -303,7 +303,7 @@ detail:
     - pick: 11
       owner_id: kevbots22
       owner_name: Kevin
-      team: Josh Jacobs Alibi
+      team: Remember the Nice Guys, ChatGPT
       keepers:
       - player: Chris Olave
         round: 5
@@ -365,7 +365,7 @@ detail:
       player: Chris Olave
       owner_id: kevbots22
       owner_name: Kevin
-      team: Josh Jacobs Alibi
+      team: Remember the Nice Guys, ChatGPT
     - round: 5
       player: Nico Collins
       owner_id: shawne2520997
