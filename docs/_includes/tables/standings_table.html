@@ -39,8 +39,8 @@ owner_id, owner_name, record, pct_str, tag, pf, pf_color, pa.
       <td class="num">{{ r.pct_str }}</td>
       {%- endif %}
       {%- if include.points %}
-      <td class="num">{% include bits/chip.html text=r.pf bg=r.pf_color %}</td>
-      <td class="num">{% include bits/chip.html text=r.pa bg=r.pa_color %}</td>
+      {% include bits/tile_cell.html text=r.pf bg=r.pf_color %}
+      {% include bits/tile_cell.html text=r.pa bg=r.pa_color %}
       {%- endif %}
     </tr>
     {%- endfor %}

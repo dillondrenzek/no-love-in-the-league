@@ -246,6 +246,40 @@ tbody td a:hover { color: var(--brand); }
   text-align: right;
 }
 
+// Heat tiles: the shade fills the cell's full height as a rounded tile, like
+// the forecast's PF cell, but only as wide as the number — the column keeps its
+// natural width and the tile sits at its right edge, under the right-aligned
+// header. Drawn on a pseudo-element so it works in border-collapse tables.
+// Inputs (inline, from bits/tile_cell.html): --tile (colour), --chars (the
+// value's length; the font is monospaced, so the tile is --chars × 1ch wide
+// plus a --bleed of colour either side). --pad tracks the cell's right padding.
+td.tile-cell {
+  --pad: 10px;
+  --bleed: 7px;
+  position: relative;
+  padding-right: var(--pad);
+  text-align: right;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--chip-ink);
+}
+td.tile-cell::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  right: calc(var(--pad) - var(--bleed));
+  width: calc(max(var(--chars), 5) * 1ch + 2 * var(--bleed));  // ≥5 chars so .333 and 1.000 tiles match
+  border-radius: 5px;
+  background: var(--tile);
+}
+// Centre a short value inside its (≥5-char) tile: pad the right by half the
+// unused width. The cell stays right-aligned, so the tile's edge doesn't move.
+td.tile-cell > span {
+  position: relative;
+  padding-right: calc((max(var(--chars), 5) - var(--chars)) * 0.5ch);
+}
+
 // =============================================================================
 // Heatmaps (draft order + transactions)
 // =============================================================================
@@ -1195,6 +1229,7 @@ h4:hover > .heading-anchor,
   table { font-size: 0.86rem; }
   thead th { padding: 0 7px 7px; font-size: 0.62rem; }
   tbody td { padding: 8px 7px; }
+  td.tile-cell { --pad: 7px; --bleed: 5px; }
   th.num, td.num { font-size: 0.82rem; }
   .chip { min-width: 3.2em; padding: 2px 7px; }
   .owner-name { font-size: 0.68rem; }

@@ -1,0 +1,7 @@
+{%- comment -%}
+Heat-tile cell: a whole <td> whose colour fills the cell's full height as a
+rounded tile (same look as the forecast's PF cell). Params: text (display
+string), bg (hex color, precomputed in lib/render.py). Renders the <td> itself,
+so use it in place of a cell, not inside one.
+{%- endcomment -%}
+<td class="num tile-cell" style="--tile: {{ include.bg }}; --chars: {{ include.text | append: "" | size }}"><span>{{ include.text }}</span></td>

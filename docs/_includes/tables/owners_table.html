@@ -22,7 +22,7 @@ site.data.owners (see scripts/generate_owners.py -> owners.yml).
       <td class="owner-cell">{% include bits/team_logo.html src=o.logo %}<a href="{{ '/teams/' | append: o.id | append: '/' | relative_url }}">{{ o.name }}</a></td>
       <td class="num">{{ o.seasons }}</td>
       <td class="num">{{ o.record }}</td>
-      <td class="num">{% include bits/chip.html text=o.win_pct bg=o.win_color %}</td>
+      {% include bits/tile_cell.html text=o.win_pct bg=o.win_color %}
       <td class="num">{% if o.titles == "0" %}—{% else %}{{ o.titles }}{% endif %}</td>
       <td class="num">{% if o.sackos > 0 %}{{ o.sackos }}{% else %}—{% endif %}</td>
       <td class="num">{% if o.trades > 0 %}{{ o.trades }}{% else %}—{% endif %}</td>
