@@ -246,6 +246,26 @@ tbody td a:hover { color: var(--brand); }
   text-align: right;
 }
 
+// Heat tiles: the shade fills the cell's full height as a rounded tile, like
+// the forecast's PF cell. Drawn on a pseudo-element inset from the cell edges so
+// it works inside border-collapse tables. Colour comes in as --tile.
+td.tile-cell {
+  position: relative;
+  min-width: 4.2em;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--chip-ink);
+}
+td.tile-cell::before {
+  content: "";
+  position: absolute;
+  inset: 3px 2px;
+  border-radius: 5px;
+  background: var(--tile);
+}
+td.tile-cell > span { position: relative; }
+
 // =============================================================================
 // Heatmaps (draft order + transactions)
 // =============================================================================
