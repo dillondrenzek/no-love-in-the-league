@@ -1649,8 +1649,8 @@ tx_heatmap:
       color: '#fac775'
   - id: zachzoske
     name: Zach
-    total: 945
-    tx_per_year: 105.0
+    total: 947
+    tx_per_year: 105.2
     cells:
     - year: 2018
       count: 130
@@ -1677,12 +1677,12 @@ tx_heatmap:
       count: 110
       color: '#f59a46'
     - year: 2026
-      count: 31
-      color: '#fbdba7'
+      count: 33
+      color: '#fbdaa3'
   - id: sturmanator15
     name: Wade
-    total: 806
-    tx_per_year: 89.6
+    total: 808
+    tx_per_year: 89.8
     cells:
     - year: 2018
       count: 110
@@ -1709,8 +1709,8 @@ tx_heatmap:
       count: 52
       color: '#facb80'
     - year: 2026
-      count: 29
-      color: '#fcddab'
+      count: 31
+      color: '#fbdba7'
   - id: schirmerj
     name: Jono
     total: 467
@@ -1745,8 +1745,8 @@ tx_heatmap:
       color: '#fcebcc'
   - id: theoceanpulse
     name: Dillon
-    total: 460
-    tx_per_year: 51.1
+    total: 462
+    tx_per_year: 51.3
     cells:
     - year: 2018
       count: 32
@@ -1773,8 +1773,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 26
-      color: '#fcdfb0'
+      count: 28
+      color: '#fcdead'
   - id: shawne2520997
     name: Shawnee
     total: 430

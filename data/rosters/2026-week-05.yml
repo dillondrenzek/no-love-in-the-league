@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-07T18:06:43+00:00'
+captured_at: '2026-10-07T23:55:25+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -20,7 +20,7 @@ rosters:
     injury: ''
   - player: Ladd McConkey
     pos: WR
-    starter: true
+    starter: false
     proj: 8.54
     actual: null
     injury: ''
@@ -86,20 +86,20 @@ rosters:
     injury: ''
   - player: Dohnte Meyers
     pos: WR
-    starter: false
-    proj: 6.58
-    actual: null
-    injury: ''
-  - player: Aaron Rodgers
-    pos: QB
     starter: true
-    proj: 17.52
+    proj: 6.58
     actual: null
     injury: ''
   - player: Chris Boswell
     pos: K
     starter: true
     proj: 8.26
+    actual: null
+    injury: ''
+  - player: Jacoby Brissett
+    pos: QB
+    starter: true
+    proj: 20.75
     actual: null
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
@@ -184,12 +184,6 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Jaylen Wright
-    pos: RB
-    starter: false
-    proj: 8.04
-    actual: null
-    injury: ''
   - player: Khalil Shakir
     pos: WR
     starter: false
@@ -200,6 +194,12 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.46
+    actual: null
+    injury: ''
+  - player: Antonio Williams
+    pos: WR
+    starter: false
+    proj: 5.0
     actual: null
     injury: ''
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -375,7 +375,7 @@ rosters:
   - player: Dontayvion Wicks
     pos: WR
     starter: true
-    proj: 8.39
+    proj: 8.13
     actual: null
     injury: ''
   - player: Malik Washington
@@ -399,7 +399,7 @@ rosters:
   - player: Dameon Pierce
     pos: RB
     starter: true
-    proj: 4.93
+    proj: 4.88
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -739,7 +739,7 @@ rosters:
   - player: Makai Lemon
     pos: WR
     starter: false
-    proj: 8.44
+    proj: 8.19
     actual: null
     injury: ''
   - player: KC Concepcion
@@ -960,12 +960,6 @@ rosters:
     proj: 7.09
     actual: null
     injury: ''
-  - player: Kalif Raymond
-    pos: WR
-    starter: false
-    proj: 6.12
-    actual: null
-    injury: ''
   - player: Spencer Shrader
     pos: K
     starter: true
@@ -982,6 +976,12 @@ rosters:
     pos: WR
     starter: false
     proj: 7.37
+    actual: null
+    injury: ''
+  - player: Tank Dell
+    pos: WR
+    starter: false
+    proj: 0.0
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
@@ -1169,7 +1169,7 @@ rosters:
   - player: Will Shipley
     pos: RB
     starter: false
-    proj: 10.62
+    proj: 10.52
     actual: null
     injury: ''
   - player: Roman Wilson

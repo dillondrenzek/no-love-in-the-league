@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 89.6
+    tx_per_year: 89.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 3-1
-    tx: 29
+    tx: 31
     in_progress: true
     pf: 540.0
     pa: 474.3
@@ -479,6 +479,10 @@ sturmanator15:
       via: add
       week: 5
       waiver: true
+    - player: Jacoby Brissett
+      via: add
+      week: 5
+      waiver: false
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -2490,7 +2494,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 105.0
+    tx_per_year: 105.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -2513,7 +2517,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 3-1
-    tx: 31
+    tx: 33
     in_progress: true
     pf: 527.1
     pa: 466.3
@@ -3080,6 +3084,10 @@ zachzoske:
       via: add
       week: 4
       waiver: true
+    - player: Antonio Williams
+      via: add
+      week: 5
+      waiver: false
     - player: Bears D/ST
       via: add
       week: 5
@@ -15408,7 +15416,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 14
     trades_known: true
-    tx_per_year: 51.1
+    tx_per_year: 51.3
     tx_known: false
     seasons: 11
     best_finish:
@@ -15431,7 +15439,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 1-2-1
-    tx: 26
+    tx: 28
     in_progress: true
     pf: 427.6
     pa: 499.4
@@ -15935,6 +15943,10 @@ theoceanpulse:
     - player: Spencer Shrader
       via: add
       week: 4
+      waiver: false
+    - player: Tank Dell
+      via: add
+      week: 5
       waiver: false
   - year: 2025
     players:
