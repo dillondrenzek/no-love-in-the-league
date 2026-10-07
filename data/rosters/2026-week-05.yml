@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-07T03:16:04+00:00'
+captured_at: '2026-10-07T10:41:18+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -72,34 +72,34 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Chase McLaughlin
-    pos: K
-    starter: true
-    proj: 7.83
-    actual: null
-    injury: ''
   - player: Bryce Young
     pos: QB
     starter: true
     proj: 0.0
     actual: null
     injury: ''
-  - player: Bills D/ST
+  - player: Bengals D/ST
     pos: D/ST
     starter: true
-    proj: 3.3
+    proj: 6.8
     actual: null
     injury: ''
-  - player: Kendre Miller
-    pos: RB
-    starter: false
-    proj: 7.08
-    actual: null
-    injury: ''
-  - player: Tre' Harris
+  - player: Dohnte Meyers
     pos: WR
     starter: false
-    proj: 5.56
+    proj: 6.58
+    actual: null
+    injury: ''
+  - player: Aaron Rodgers
+    pos: QB
+    starter: false
+    proj: 17.52
+    actual: null
+    injury: ''
+  - player: Chris Boswell
+    pos: K
+    starter: true
+    proj: 8.26
     actual: null
     injury: ''
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
@@ -136,12 +136,6 @@ rosters:
     proj: 11.16
     actual: null
     injury: ''
-  - player: Michael Pittman Jr.
-    pos: WR
-    starter: false
-    proj: 6.68
-    actual: null
-    injury: ''
   - player: Bhayshul Tuten
     pos: RB
     starter: true
@@ -172,12 +166,6 @@ rosters:
     proj: 15.66
     actual: null
     injury: ''
-  - player: Chiefs D/ST
-    pos: D/ST
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: ''
   - player: Josh Downs
     pos: WR
     starter: true
@@ -200,6 +188,18 @@ rosters:
     pos: RB
     starter: false
     proj: 8.02
+    actual: null
+    injury: ''
+  - player: Khalil Shakir
+    pos: WR
+    starter: false
+    proj: 7.49
+    actual: null
+    injury: ''
+  - player: Bears D/ST
+    pos: D/ST
+    starter: true
+    proj: 5.46
     actual: null
     injury: ''
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -290,16 +290,16 @@ rosters:
     proj: 2.03
     actual: null
     injury: ''
-  - player: Ravens D/ST
-    pos: D/ST
-    starter: true
-    proj: 2.66
-    actual: null
-    injury: ''
   - player: Najee Harris
     pos: RB
     starter: false
     proj: 5.06
+    actual: null
+    injury: ''
+  - player: Jaguars D/ST
+    pos: D/ST
+    starter: true
+    proj: 7.21
     actual: null
     injury: ''
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
@@ -378,12 +378,6 @@ rosters:
     proj: 3.84
     actual: null
     injury: ''
-  - player: Harrison Butker
-    pos: K
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: ''
   - player: Dontayvion Wicks
     pos: WR
     starter: true
@@ -400,6 +394,12 @@ rosters:
     pos: TE
     starter: true
     proj: 7.0
+    actual: null
+    injury: ''
+  - player: Matt Gay
+    pos: K
+    starter: true
+    proj: 7.72
     actual: null
     injury: ''
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -490,16 +490,16 @@ rosters:
     proj: null
     actual: null
     injury: ''
-  - player: Brandin Cooks
-    pos: WR
-    starter: false
-    proj: 2.21
-    actual: null
-    injury: ''
   - player: Tyler Allgeier
     pos: RB
     starter: true
     proj: 7.82
+    actual: null
+    injury: ''
+  - player: Mike Gesicki
+    pos: TE
+    starter: false
+    proj: 5.38
     actual: null
     injury: ''
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -578,12 +578,6 @@ rosters:
     proj: 5.98
     actual: null
     injury: ''
-  - player: Samaje Perine
-    pos: RB
-    starter: false
-    proj: 5.1
-    actual: null
-    injury: ''
   - player: Tre Tucker
     pos: WR
     starter: true
@@ -594,6 +588,12 @@ rosters:
     pos: QB
     starter: false
     proj: 14.89
+    actual: null
+    injury: ''
+  - player: T.J. Hockenson
+    pos: TE
+    starter: false
+    proj: 7.86
     actual: null
     injury: ''
 - manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
@@ -878,6 +878,12 @@ rosters:
     proj: 17.94
     actual: null
     injury: ''
+  - player: Keon Coleman
+    pos: WR
+    starter: false
+    proj: 6.38
+    actual: null
+    injury: ''
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
   team_id: 12
   team_name: The ChoSimba Ones
@@ -1066,10 +1072,10 @@ rosters:
     proj: 7.66
     actual: null
     injury: ''
-  - player: Trey Smack
+  - player: Ka'imi Fairbairn
     pos: K
     starter: true
-    proj: 8.16
+    proj: 8.8
     actual: null
     injury: ''
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
@@ -1154,21 +1160,21 @@ rosters:
     proj: 8.58
     actual: null
     injury: ''
-  - player: Rashod Bateman
-    pos: WR
-    starter: false
-    proj: 4.56
-    actual: null
-    injury: ''
   - player: Darren Waller
     pos: TE
     starter: false
     proj: 0.0
     actual: null
     injury: ''
-  - player: Brycen Tremayne
+  - player: Will Shipley
+    pos: RB
+    starter: false
+    proj: 10.62
+    actual: null
+    injury: ''
+  - player: Roman Wilson
     pos: WR
     starter: true
-    proj: 0.0
+    proj: 7.62
     actual: null
     injury: ''

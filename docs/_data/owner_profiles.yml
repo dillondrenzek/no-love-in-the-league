@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 88.7
+    tx_per_year: 89.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 3-1
-    tx: 21
+    tx: 29
     in_progress: true
     pf: 540.0
     pa: 474.3
@@ -467,6 +467,18 @@ sturmanator15:
       via: add
       week: 4
       waiver: false
+    - player: Aaron Rodgers
+      via: add
+      week: 5
+      waiver: true
+    - player: Chris Boswell
+      via: add
+      week: 5
+      waiver: true
+    - player: Dohnte Meyers
+      via: add
+      week: 5
+      waiver: true
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -2478,7 +2490,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 104.6
+    tx_per_year: 105.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -2501,7 +2513,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 3-1
-    tx: 27
+    tx: 31
     in_progress: true
     pf: 527.1
     pa: 466.3
@@ -3067,6 +3079,14 @@ zachzoske:
     - player: Jaylen Wright
       via: add
       week: 4
+      waiver: true
+    - player: Bears D/ST
+      via: add
+      week: 5
+      waiver: true
+    - player: Khalil Shakir
+      via: add
+      week: 5
       waiver: true
   - year: 2025
     players:
@@ -5266,7 +5286,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 117.9
+    tx_per_year: 118.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -5290,7 +5310,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 3rd
     record: 3-1
-    tx: 56
+    tx: 58
     in_progress: true
     pf: 522.3
     pa: 436.4
@@ -5856,6 +5876,10 @@ jackperkins74:
       via: add
       week: 4
       waiver: false
+    - player: Mike Gesicki
+      via: add
+      week: 5
+      waiver: true
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -8254,7 +8278,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 33.6
+    tx_per_year: 33.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -8279,7 +8303,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 4th
     record: 2-2
-    tx: 6
+    tx: 7
     in_progress: true
     pf: 484.9
     pa: 440.6
@@ -8642,6 +8666,10 @@ whowonthelastsuperbowl:
       via: add
       week: 4
       waiver: false
+    - player: Keon Coleman
+      via: add
+      week: 5
+      waiver: true
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -9951,7 +9979,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 51.7
+    tx_per_year: 51.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -9974,7 +10002,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 5th
     record: 2-2
-    tx: 9
+    tx: 11
     in_progress: true
     pf: 483.9
     pa: 554.9
@@ -10317,6 +10345,10 @@ schirmerj:
       via: add
       week: 4
       waiver: false
+    - player: Jaguars D/ST
+      via: add
+      week: 5
+      waiver: true
   - year: 2025
     players:
     - player: Bijan Robinson
@@ -11686,7 +11718,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 30.0
+    tx_per_year: 30.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -11710,7 +11742,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 6th
     record: 2-1-1
-    tx: 5
+    tx: 7
     in_progress: true
     pf: 481.5
     pa: 487.0
@@ -12030,6 +12062,10 @@ kevbots22:
     - player: Tre Tucker
       via: add
       week: 3
+      waiver: true
+    - player: T.J. Hockenson
+      via: add
+      week: 5
       waiver: true
   - year: 2025
     players:
@@ -13144,7 +13180,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 47.3
+    tx_per_year: 47.8
     tx_known: false
     seasons: 11
     best_finish:
@@ -13168,7 +13204,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 7th
     record: 2-2
-    tx: 11
+    tx: 15
     in_progress: true
     pf: 480.0
     pa: 461.8
@@ -13519,6 +13555,14 @@ shawne2520997:
     - player: Darren Waller
       via: add
       week: 4
+      waiver: true
+    - player: Roman Wilson
+      via: add
+      week: 5
+      waiver: true
+    - player: Will Shipley
+      via: add
+      week: 5
       waiver: true
   - year: 2025
     players:
@@ -14912,7 +14956,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: true
-    tx_per_year: 22.0
+    tx_per_year: 22.7
     tx_known: true
     seasons: 3
     best_finish:
@@ -14936,7 +14980,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 9th
     record: 1-3
-    tx: 5
+    tx: 7
     in_progress: true
     pf: 488.9
     pa: 446.7
@@ -15112,6 +15156,10 @@ gganoom:
       via: add
       week: 3
       waiver: false
+    - player: Ka'imi Fairbairn
+      via: add
+      week: 5
+      waiver: true
   - year: 2025
     players:
     - player: Ashton Jeanty
@@ -18773,7 +18821,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 45.6
+    tx_per_year: 45.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -18796,7 +18844,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 1-3
-    tx: 14
+    tx: 16
     in_progress: true
     pf: 313.3
     pa: 496.5
@@ -19233,6 +19281,10 @@ lukstein:
     - player: Kenyon Sadiq
       via: add
       week: 4
+      waiver: true
+    - player: Matt Gay
+      via: add
+      week: 5
       waiver: true
   - year: 2025
     players:
