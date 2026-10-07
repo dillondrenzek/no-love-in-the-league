@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-06T23:26:56+00:00'
+captured_at: '2026-10-07T03:16:04+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -174,7 +174,7 @@ rosters:
     injury: ''
   - player: Chiefs D/ST
     pos: D/ST
-    starter: false
+    starter: true
     proj: 0.0
     actual: null
     injury: ''
@@ -256,7 +256,7 @@ rosters:
     injury: ''
   - player: Xavier Worthy
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -268,7 +268,7 @@ rosters:
     injury: ''
   - player: Keaton Mitchell
     pos: RB
-    starter: false
+    starter: true
     proj: 7.42
     actual: null
     injury: ''
