@@ -18821,7 +18821,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 45.8
+    tx_per_year: 46.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -18844,7 +18844,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 1-3
-    tx: 16
+    tx: 18
     in_progress: true
     pf: 313.3
     pa: 496.5
@@ -19282,6 +19282,10 @@ lukstein:
       via: add
       week: 4
       waiver: true
+    - player: Dameon Pierce
+      via: add
+      week: 5
+      waiver: false
     - player: Matt Gay
       via: add
       week: 5
