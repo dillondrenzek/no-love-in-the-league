@@ -55,6 +55,10 @@ fueling the group chat. But this is tighter — one line each, not a column.
   OUT/inactive players — never praise a team for a guy who sat, and don't call a
   player hurt if he wasn't listed (a Questionable who plays is just playing). A
   manager juggling multiple IR/Out bodies is a fair, sympathetic angle.
+- **Byes are fair game as a mention.** Each team's line lists who's **on bye
+  this week** (and flags anyone STARTING on bye). A gutted week ahead is a great
+  aside ("without McMillan, Kelce, and Hubbard this week, good luck") — but like
+  the matchup, it's a mention, never a reason for the rank or move. Not an injury.
 - **Continuity.** Skim the season's prior editions (previews/recaps in
   `docs/seasons/`, and last week's blurbs in `data/power/`) for running bits,
   nicknames, and grudges. Callbacks reward the regulars.

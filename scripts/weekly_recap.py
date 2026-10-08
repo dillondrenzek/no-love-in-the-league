@@ -41,7 +41,8 @@ from lib.data import (load_franchises, load_seasons, load_week_rosters,
                       load_projections, short_name_of)
 from lib.weeks import week_summary
 from lib.context import (standings_snapshot, recent_moves, league_bests,
-                         week_roster_context, team_form, week_superlatives)
+                         week_roster_context, team_form, week_superlatives,
+                         bye_watch, bye_watch_lines)
 
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
@@ -152,6 +153,9 @@ def _team_actual_line(entry):
                                               if p.get("actual") is not None else "")
             for p in entry["injured"])
         bits.append(f"injuries: {inj}")
+    started_on_bye = [p["player"] for p in entry.get("on_bye") or [] if p.get("starter")]
+    if started_on_bye:
+        bits.append(f"STARTED on bye (zero): {', '.join(started_on_bye)}")
     return "; ".join(bits) if bits else None
 
 
@@ -198,6 +202,10 @@ def data_block(year, week, summary, ctx):
             lines.append(f"- Trade (Wk {t['week']}): {t['detail']}")
         for ad in moves.get("adds", []):
             lines.append(f"- {ad['owner']} added {ad['player']} ({ad['kind']}, Wk {ad['week']})")
+
+    byes = bye_watch_lines(ctx.get("byes"), week, this_week=False)
+    if byes:
+        lines += ["", "Byes (lineup blunders this week; next week's crunch to tease):"] + byes
 
     standings = ctx.get("standings") or []
     if standings:
@@ -286,7 +294,8 @@ def main():
     # Per-player actuals from the roster snapshot the importer persisted for this
     # week (data/rosters/<year>-week-<nn>.yml). Read from disk — no live fetch.
     week_rosters = load_week_rosters(args.year, args.week, franchises)
-    rosters = week_roster_context(week_rosters, want_actual=True) if week_rosters else None
+    rosters = (week_roster_context(week_rosters, want_actual=True, week=args.week)
+               if week_rosters else None)
     # Streaks (W2+/L2+) carried INTO this week, so the recap can say whether each
     # heater or skid held or snapped — a natural narrative thread as the season runs.
     form = team_form(season, franchises, args.week, load_projections(args.year, franchises))
@@ -308,6 +317,7 @@ def main():
         "bests": league_bests(records),
         "streaks": streaks,
         "superlatives": sup,
+        "byes": bye_watch(rosters, franchises),
     }
     if not read_preview(path):
         print("NOTE: no preview found on the week page — the recap can't grade "

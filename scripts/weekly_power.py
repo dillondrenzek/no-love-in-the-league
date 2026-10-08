@@ -33,7 +33,7 @@ import yaml
 from lib.data import (load_franchises, load_seasons, short_name_of,
                       load_power_blurbs, load_power_order, load_projections,
                       load_week_rosters)
-from lib.context import week_roster_context
+from lib.context import week_roster_context, bye_note
 from lib.power import week_power_rankings, prep_window_problem, _metrics_before
 from lib.weeks import _games_in_week
 
@@ -62,10 +62,11 @@ def _opponent(season, franchises, fid, week):
     return "—"
 
 
-def _facts(season, week, franchises, rows, injuries=None):
+def _facts(season, week, franchises, rows, injuries=None, byes=None):
     year = season["season"]
     metrics = _metrics_before(season, week)
     injuries = injuries or {}
+    byes = byes or {}
     lines = [
         f"# Power Rankings facts — {year} Week {week}",
         "",
@@ -76,6 +77,8 @@ def _facts(season, week, franchises, rows, injuries=None):
         "is listed so a blurb can mention it, never as a reason for the rank.",
         "Credit players by what they actually did: an OUT/IR player listed below did",
         "not contribute, so don't praise a team for his production.",
+        "Byes: players whose NFL team is off this week are listed per team — a",
+        "fair mention (a thin week ahead), never a reason for the rank.",
         "",
     ]
     for r in rows:
@@ -85,10 +88,12 @@ def _facts(season, week, franchises, rows, injuries=None):
         inj_note = ("; OUT/inactive: "
                     + ", ".join(f"{p['player']} ({p['status']})" for p in inj)
                     ) if inj else ""
+        bn = bye_note(byes.get(r["fid"]))
+        bye_str = f"; on bye this week: {bn}" if bn else ""
         lines.append(
             f"{r['rank']}. {r['team']} ({r['owner']}) — {_move_str(r)}; "
             f"avg {avg:.1f} PF, last-3 avg {last3:.1f}, win% {winpct:.3f}; "
-            f"this week vs {opp}{inj_note}. [fid: {r['fid']}]")
+            f"this week vs {opp}{inj_note}{bye_str}. [fid: {r['fid']}]")
     return "\n".join(lines) + "\n"
 
 
@@ -147,12 +152,14 @@ def main():
     # actually suited up and flag a manager's IR/Out burden.
     wr = (load_week_rosters(args.year, args.week, franchises)
           or load_week_rosters(args.year, args.week - 1, franchises))
-    inj_ctx = week_roster_context(wr, want_actual=True) if wr else {}
+    # Bye weeks are static per player, so last week's snapshot can still say who's
+    # off this week.
+    inj_ctx = week_roster_context(wr, want_actual=True, week=args.week) if wr else {}
     injuries = {fid: e.get("injured") or [] for fid, e in inj_ctx.items()}
 
     PROMPT_DIR.mkdir(parents=True, exist_ok=True)
     facts = PROMPT_DIR / f"{args.year}-week-{args.week:02d}.power.data.md"
-    facts.write_text(_facts(season, args.week, franchises, rows, injuries))
+    facts.write_text(_facts(season, args.week, franchises, rows, injuries, inj_ctx))
     blurbs = _scaffold_blurbs(args.year, args.week, rows)
 
     print(f"Wrote {facts.relative_to(ROOT)}")

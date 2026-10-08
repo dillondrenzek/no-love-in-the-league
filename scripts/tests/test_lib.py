@@ -527,6 +527,66 @@ def test_week_roster_context_shapes():
     assert week_roster_context({}, want_actual=True) == {}
 
 
+def test_week_roster_context_byes():
+    from lib.context import week_roster_context
+    wr = {"kev": [
+        {"player": "McMillan", "pos": "WR", "starter": False, "proj": 0.0,
+         "pro_team": "CAR", "bye_week": 5},
+        # Started on bye, and ESPN's soft tag must not double-list him as hurt.
+        {"player": "Rice", "pos": "WR", "starter": True, "proj": 0.0,
+         "injury": "QUESTIONABLE", "pro_team": "KC", "bye_week": 5},
+        {"player": "Stafford", "pos": "QB", "starter": True, "proj": 20.0,
+         "pro_team": "LAR", "bye_week": 6},
+        {"player": "Hurt", "pos": "RB", "starter": False, "proj": 0.0,
+         "injury": "OUT", "pro_team": "NYG", "bye_week": 8},
+        {"player": "Old", "pos": "TE", "starter": False, "proj": 3.0},  # pre-bye snapshot
+    ]}
+    e = week_roster_context(wr, week=5)["kev"]
+    assert [(p["player"], p["starter"], p["pro_team"]) for p in e["on_bye"]] == \
+        [("McMillan", False, "CAR"), ("Rice", True, "KC")]
+    assert [p["player"] for p in e["bye_next"]] == ["Stafford"]
+    assert [p["player"] for p in e["injured"]] == ["Hurt"]
+    # No week -> no bye detection (and Rice reads as a plain injury again).
+    plain = week_roster_context(wr)["kev"]
+    assert plain["on_bye"] == [] and plain["bye_next"] == []
+    assert {p["player"] for p in plain["injured"]} == {"Rice", "Hurt"}
+
+
+def test_bye_watch():
+    from lib.context import bye_watch
+    fr = {"kev": {"name": "Kevin"}, "lexi": {"name": "Lexi"}, "jack": {"name": "Jack"}}
+    ctx = {
+        "kev": {"on_bye": [{"player": "McMillan", "pos": "WR", "pro_team": "CAR", "starter": False},
+                           {"player": "Kelce", "pos": "TE", "pro_team": "KC", "starter": False}],
+                "bye_next": [{"player": "Chase", "pos": "WR", "pro_team": "CIN"}]},
+        "lexi": {"on_bye": [{"player": "Rice", "pos": "WR", "pro_team": "KC", "starter": True}],
+                 "bye_next": []},
+        "jack": {"on_bye": [], "bye_next": []},
+    }
+    w = bye_watch(ctx, fr)
+    assert w["teams"] == ["CAR", "KC"] and w["next_teams"] == ["CIN"]
+    assert w["starting"] == [{"owner": "Lexi", "player": "Rice", "pos": "WR", "pro_team": "KC"}]
+    assert [(r["owner"], r["count"]) for r in w["hardest_hit"]] == [("Kevin", 2), ("Lexi", 1)]
+    assert [(r["owner"], r["count"]) for r in w["next_hardest_hit"]] == [("Kevin", 1)]
+    assert bye_watch({}, fr) == {"teams": [], "next_teams": [], "starting": [],
+                                 "hardest_hit": [], "next_hardest_hit": []}
+
+    from lib.context import bye_note, bye_watch_lines
+    assert bye_note(ctx["kev"]) == "McMillan (WR, CAR), Kelce (TE, KC)"
+    assert bye_note(ctx["lexi"]) == "STARTING (a zero unless swapped out): Rice (WR, KC)"
+    assert bye_note(ctx["jack"]) is None
+    lines = bye_watch_lines(w, 5)
+    assert lines[0] == "Bye watch — Week 5 (NFL teams off: CAR, KC):"
+    assert lines[1] == "- Kevin (2): McMillan (WR, CAR), Kelce (TE, KC)"
+    assert any("STARTING a player on bye" in l and "Lexi — Rice (WR, KC)" in l for l in lines)
+    assert "Week 6 (NFL teams off: CIN)" in lines[-2] and lines[-1] == "- Kevin (1): Chase (WR, CIN)"
+    # Recap mode drops the who's-off-now block but keeps the bye starters.
+    rec = bye_watch_lines(w, 5, this_week=False)
+    assert not any(l.startswith("Bye watch") for l in rec)
+    assert rec[0].startswith("- STARTING a player on bye")
+    assert bye_watch_lines(bye_watch({}, fr), 5) == []
+
+
 def test_snapshot_rosters_backfills_missing_and_refreshes_current():
     import tempfile
     from import_espn import snapshot_rosters, write_week_rosters
@@ -572,7 +632,8 @@ def test_write_and_load_week_rosters_roundtrip():
         {"team_id": 1, "manager_id": "{SWID-A}", "player_name": "Benchy",
          "position": "WR", "starter": False, "projected": 8.0, "actual": 20.0},
         {"team_id": 2, "manager_id": "{SWID-B}", "player_name": "CMC",
-         "position": "RB", "starter": True, "projected": 18.0, "actual": 31.2},
+         "position": "RB", "starter": True, "projected": 18.0, "actual": 31.2,
+         "pro_team": "SF", "bye_week": 8},      # client v0.4.4+ fields
     ]
     team_rows = [{"team_id": 1, "manager_id": "{SWID-A}", "team_name": "Team A"},
                  {"team_id": 2, "manager_id": "{SWID-B}", "team_name": "Team B"}]
@@ -586,6 +647,12 @@ def test_write_and_load_week_rosters_roundtrip():
         assert {p["player"] for p in loaded["aaa"]} == {"Josh Allen", "Benchy"}
         allen = next(p for p in loaded["aaa"] if p["player"] == "Josh Allen")
         assert allen["starter"] is True and allen["proj"] == 24.0 and allen["actual"] == 9.1
+        # NFL team + bye ride along when the client reports them; older rows don't.
+        cmc = loaded["bbb"][0]
+        assert cmc["pro_team"] == "SF" and cmc["bye_week"] == 8
+        assert allen["pro_team"] == "" and allen["bye_week"] is None
+        raw = yaml.safe_load(out.read_text())
+        assert "pro_team" not in raw["rosters"][0]["players"][0]
         # A missing week returns {} (builders then omit per-player detail).
         assert load_week_rosters(2026, 9, fr, data_dir=d) == {}
 

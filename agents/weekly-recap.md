@@ -75,6 +75,12 @@ The dial is turned up. Everything in Voice below still applies, but louder:
   Use them: name the stud who went off, the star who laid an egg, the guy who
   should've been started. Specific numbers land ("CMC dropped 31") — that's the
   boom/bust the league wants to relive.
+- **Byes are a story — every week.** A team line showing `STARTED on bye (zero)`
+  means the manager left a player in the lineup whose NFL team didn't play: that's
+  a decision, not bad luck, so roast it (and if it cost the game, that's the
+  headline). Then use the facts' **"Byes"** section to tease next week's crunch:
+  who's losing the most bodies, which stars sit. A player on bye is not injured —
+  never call his zero an injury.
 - **Settle the streaks.** When "Streaks on the line coming in" is present, say what
   happened to each: the heater that kept rolling (how long can this last?), the one
   that finally got snapped (who played spoiler), the skid that deepened or broke.
@@ -167,8 +173,9 @@ invent scores, players, or outcomes.
    per-team **player detail** (top scorer, bust, bench points, when available), the
    computed **highlights** (top/low score, biggest blowout, closest call), plus
    league context — **recent moves**, the **standings** after this week, **league
-   bests**, and **"Streaks on the line coming in"** (W2+/L2+ runs each team carried
-   in, for you to mark held or snapped). Per-player detail is absent if the week's
+   bests**, **"Streaks on the line coming in"** (W2+/L2+ runs each team carried
+   in, for you to mark held or snapped), and **"Byes"** (anyone started on bye
+   this week, plus next week's byes per team, most hit first). Per-player detail is absent if the week's
    roster snapshot wasn't imported; streaks are empty early in the season. Do NOT
    recompute any of this yourself — trust the file.
 2. **This week's preview** — the predictions you're grading. Read

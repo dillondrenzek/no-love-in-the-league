@@ -87,7 +87,9 @@ def load_projections(year, franchises, data_dir=DATA_DIR):
 
 def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
     """One week's persisted per-player rosters, re-keyed to franchise ids:
-    {fid: [{player, pos, starter, proj, actual}, ...]}.
+    {fid: [{player, pos, starter, proj, actual, injury, pro_team, bye_week}, ...]}.
+    `pro_team`/`bye_week` are blank/None in snapshots captured before the CLI
+    reported them (pre the-league-espn-api v0.4.4).
 
     Reads data/rosters/<year>-week-<nn>.yml (written by scripts/import_espn.py at
     import time), joining each team to its franchise via the owner SWID
@@ -114,7 +116,8 @@ def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
             {"player": p.get("player"), "pos": p.get("pos"),
              "starter": bool(p.get("starter")),
              "proj": p.get("proj"), "actual": p.get("actual"),
-             "injury": p.get("injury") or ""}
+             "injury": p.get("injury") or "",
+             "pro_team": p.get("pro_team") or "", "bye_week": p.get("bye_week")}
             for p in (e.get("players") or [])
         ]
     return out
