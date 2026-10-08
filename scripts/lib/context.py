@@ -203,23 +203,34 @@ def _injury_note(injury, starter, proj, actual):
     return label
 
 
-def week_roster_context(week_rosters, *, want_actual=False):
+def _bye_week(p):
+    """A player's NFL bye week as an int, or None when the snapshot predates byes."""
+    b = p.get("bye_week")
+    return b if isinstance(b, int) and b > 0 else None
+
+
+def week_roster_context(week_rosters, *, want_actual=False, week=None):
     """Turn persisted per-player rosters into the per-team shape the preview/recap
     data blocks consume:
 
         {fid: {starters:[{player,pos,proj,actual}], proj_total, actual_total,
-               bench_points, top?, bust?}}
+               bench_points, injured, on_bye, bye_next, top?, bust?}}
 
-    `week_rosters` is {fid: [{player,pos,starter,proj,actual}, ...]} from
-    data.load_week_rosters. `want_actual` (recap) adds each team's top scorer and
-    biggest bust (projected minus actual) plus bench points, once games are
-    played. Pure — no network; empty in, empty out."""
+    `week_rosters` is {fid: [{player,pos,starter,proj,actual,pro_team,bye_week},
+    ...]} from data.load_week_rosters. `want_actual` (recap) adds each team's top
+    scorer and biggest bust (projected minus actual) plus bench points, once games
+    are played. `week` (the week being written about) fills `on_bye` — every
+    rostered player whose NFL team is off that week, starter flag included, since
+    starting one is a guaranteed zero — and `bye_next`, who's off the week after.
+    A player on bye is listed there, not under `injured`: his zero is the
+    schedule, not his health. Pure — no network; empty in, empty out."""
     def num(v):
         return float(v) if isinstance(v, (int, float)) else None
 
     out = {}
     for fid, players in (week_rosters or {}).items():
         starters, bench_points, injured = [], 0.0, []
+        on_bye, bye_next = [], []
         for p in players or []:
             proj, act = num(p.get("proj")), num(p.get("actual"))
             inj = (p.get("injury") or "").strip()
@@ -229,6 +240,15 @@ def week_roster_context(week_rosters, *, want_actual=False):
                                  "proj": proj, "actual": act, "injury": inj})
             elif act is not None:
                 bench_points += act
+            bye = _bye_week(p)
+            if week is not None and bye is not None:
+                who = {"player": p.get("player"), "pos": p.get("pos"),
+                       "pro_team": p.get("pro_team") or ""}
+                if bye == week:
+                    on_bye.append(dict(who, starter=starting))
+                    continue
+                if bye == week + 1:
+                    bye_next.append(who)
             # Injury/inactive detection spans the whole roster, not just starters —
             # an IR or Out player is usually on the bench, and that's the context a
             # manager's blurb needs. `status` is None for anyone deemed to have played.
@@ -245,6 +265,8 @@ def week_roster_context(week_rosters, *, want_actual=False):
             "actual_total": round(sum(acts), 1) if acts else None,
             "bench_points": round(bench_points, 1),
             "injured": injured,
+            "on_bye": on_bye,
+            "bye_next": bye_next,
         }
         if want_actual and acts:
             scored = [s for s in starters if s["actual"] is not None]
@@ -256,6 +278,83 @@ def week_roster_context(week_rosters, *, want_actual=False):
                               "actual": round(bust["actual"], 1)} if bust else None)
         out[fid] = entry
     return out
+
+
+def bye_watch(rosters_ctx, franchises):
+    """League-wide bye picture from week_roster_context(..., week=W) output:
+
+        {"teams": ["CAR", "KC"],            # NFL teams off this week (rostered)
+         "next_teams": [...],               # ... and next week
+         "starting": [{owner, player, pos, pro_team}],   # started while on bye
+         "hardest_hit": [{owner, count, players}],       # this week, most first
+         "next_hardest_hit": [{owner, count, players}]}  # next week, most first
+
+    Only NFL teams with a rostered player show up — that's every bye that matters
+    here. The hit lists include every team with a bye player, most first (ties by
+    owner name), so the agent can verify a "most byes" claim instead of eyeballing
+    it. Empty lists when the snapshot carries no bye data."""
+    teams, next_teams, starting, hit, next_hit = set(), set(), [], [], []
+    for fid, e in (rosters_ctx or {}).items():
+        owner = short_name_of(fid, franchises)
+        byes, nxt = e.get("on_bye") or [], e.get("bye_next") or []
+        teams.update(p["pro_team"] for p in byes if p.get("pro_team"))
+        next_teams.update(p["pro_team"] for p in nxt if p.get("pro_team"))
+        starting += [{"owner": owner, "player": p["player"], "pos": p["pos"],
+                      "pro_team": p["pro_team"]} for p in byes if p.get("starter")]
+        if byes:
+            hit.append({"owner": owner, "count": len(byes), "players": byes})
+        if nxt:
+            next_hit.append({"owner": owner, "count": len(nxt), "players": nxt})
+
+    def order(rows):
+        return sorted(rows, key=lambda r: (-r["count"], r["owner"]))
+    return {"teams": sorted(teams), "next_teams": sorted(next_teams),
+            "starting": sorted(starting, key=lambda r: (r["owner"], r["player"])),
+            "hardest_hit": order(hit), "next_hardest_hit": order(next_hit)}
+
+
+def _bye_player(p):
+    return f"{p['player']} ({p['pos']}, {p['pro_team']})" if p.get("pro_team") \
+        else f"{p['player']} ({p['pos']})"
+
+
+def bye_note(entry):
+    """One team's bye line for a facts file — 'McMillan (WR, CAR), Kelce (TE, KC);
+    STARTING (a zero unless swapped out): Rice (WR, KC)' — or None when nobody's off."""
+    byes = (entry or {}).get("on_bye") or []
+    if not byes:
+        return None
+    bench = [_bye_player(p) for p in byes if not p.get("starter")]
+    start = [_bye_player(p) for p in byes if p.get("starter")]
+    bits = [", ".join(bench)] if bench else []
+    if start:
+        bits.append("STARTING (a zero unless swapped out): " + ", ".join(start))
+    return "; ".join(bits)
+
+
+def bye_watch_lines(watch, week, *, this_week=True):
+    """The facts-file 'Bye watch' section for bye_watch() output. `this_week=False`
+    (recap: the week is over) skips the who's-off-now block and keeps only any
+    starters who sat on bye plus next week's crunch. [] when there's no bye data."""
+    w = watch or {}
+    lines = []
+    if this_week and w.get("teams"):
+        lines.append(f"Bye watch — Week {week} (NFL teams off: {', '.join(w['teams'])}):")
+        for r in w["hardest_hit"]:
+            lines.append(f"- {r['owner']} ({r['count']}): "
+                         + ", ".join(_bye_player(p) for p in r["players"]))
+    if w.get("starting"):
+        lines.append("- STARTING a player on bye (a zero unless swapped out): "
+                     + "; ".join(f"{r['owner']} — {_bye_player(r)}" for r in w["starting"]))
+    if w.get("next_teams"):
+        if lines:
+            lines.append("")
+        lines.append(f"Next week's byes — Week {week + 1} "
+                     f"(NFL teams off: {', '.join(w['next_teams'])}), most hit first:")
+        for r in w["next_hardest_hit"]:
+            lines.append(f"- {r['owner']} ({r['count']}): "
+                         + ", ".join(_bye_player(p) for p in r["players"]))
+    return lines
 
 
 def league_bests(records):

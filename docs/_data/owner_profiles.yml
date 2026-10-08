@@ -5294,7 +5294,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 12
     trades_known: true
-    tx_per_year: 118.1
+    tx_per_year: 118.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -5318,7 +5318,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 3rd
     record: 3-1
-    tx: 58
+    tx: 60
     in_progress: true
     pf: 522.3
     pa: 436.4

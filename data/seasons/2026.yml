@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-08T11:01:29+00:00
+updated_at: 2026-10-08T18:21:39+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -114,7 +114,7 @@ matchups:
   - { week:  4, home: schirmerj, away: shawne2520997, home_score: 141.3, away_score: 120.7, playoff: false }
   - { week:  4, home: sturmanator15, away: jackperkins74, home_score: 144.8, away_score: 122.0, playoff: false }
   - { week:  4, home: zachzoske, away: lukstein, home_score: 123.2, away_score: 65.4, playoff: false }
-  - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false, home_proj: 129.3, away_proj: 88.67 }
+  - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false, home_proj: 130.77, away_proj: 88.67 }
   - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false, home_proj: 112.27, away_proj: 113.96 }
   - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false, home_proj: 111.17, away_proj: 129.2 }
   - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.41, away_proj: 90.17 }
@@ -272,7 +272,7 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 4, drops: 3, moves: 7 }
-  jackperkins74: { adds: 33, drops: 25, moves: 58 }
+  jackperkins74: { adds: 34, drops: 26, moves: 60 }
   kevbots22: { adds: 4, drops: 3, moves: 7 }
   lukstein: { adds: 11, drops: 7, moves: 18 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }

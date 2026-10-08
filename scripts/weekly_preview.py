@@ -25,7 +25,8 @@ from lib.data import (load_franchises, load_seasons, short_name_of,
                       load_week_rosters, load_projections)
 from lib.weeks import week_state, _games_in_week
 from lib.context import (standings_snapshot, recent_moves, league_bests,
-                         week_roster_context, perceived_strength, team_form)
+                         week_roster_context, perceived_strength, team_form,
+                         bye_watch, bye_note, bye_watch_lines)
 from weekly_recap import scaffold_page
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -140,6 +141,10 @@ def data_block(year, week, games, season, franchises, profiles, ctx):
             if lu:
                 lines.append(f"    {who}'s projected starters: {lu}")
         for fid, who in ((h, hn), (a, an)):
+            bn = bye_note(rosters.get(fid))
+            if bn:
+                lines.append(f"    {who}'s players on bye: {bn}")
+        for fid, who in ((h, hn), (a, an)):
             fl = _form_line(form.get(fid))
             if fl:
                 lines.append(f"    {who}'s form: {fl}")
@@ -150,6 +155,10 @@ def data_block(year, week, games, season, franchises, profiles, ctx):
                   "first — the 'team to beat' on paper):"]
         for s in strength:
             lines.append(f"- {s['rank']}. {s['owner']} — {s['proj_total']:.1f} projected")
+
+    byes = bye_watch_lines(ctx.get("byes"), week)
+    if byes:
+        lines += [""] + byes
 
     standings = ctx.get("standings") or []
     if standings:
@@ -204,11 +213,13 @@ def main():
     # Per-player projections from the roster snapshot the importer persisted for
     # this week (data/rosters/<year>-week-<nn>.yml). Read from disk — no live fetch.
     week_rosters = load_week_rosters(args.year, args.week, franchises)
-    rosters = week_roster_context(week_rosters, want_actual=False) if week_rosters else None
+    rosters = (week_roster_context(week_rosters, want_actual=False, week=args.week)
+               if week_rosters else None)
     projections = load_projections(args.year, franchises)
     ctx = {
         "rosters": rosters,
         "strength": perceived_strength(rosters, franchises) if rosters else [],
+        "byes": bye_watch(rosters, franchises),
         "form": team_form(season, franchises, args.week, projections),
         "standings": standings_snapshot(season, franchises),
         "moves": recent_moves(season, franchises, max(0, args.week - 2), args.week - 1),

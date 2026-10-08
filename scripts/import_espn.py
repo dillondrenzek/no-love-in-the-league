@@ -448,7 +448,10 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
     captured.
 
     Each entry is one team: {manager_id, team_id, team_name, players:[{player,
-    pos, starter, proj, actual, injury}]}. Returns the written Path, or None if
+    pos, starter, proj, actual, injury, pro_team, bye_week}]}. `pro_team` is the
+    NFL abbreviation and `bye_week` that team's bye (the-league-espn-api v0.4.4+;
+    omitted on older clients) — static per player, so any week's snapshot can say
+    who's off this week or next. Returns the written Path, or None if
     there was nothing joinable to write.
 
     Injuries are preserved across re-imports: ESPN clears a player's injury status
@@ -498,6 +501,9 @@ def write_week_rosters(rows, week, year, team_rows, out_dir=ROSTERS_DIR):
             # Fresh status wins; a blank falls back to what we already recorded.
             "injury": r.get("injury") or prev_injury.get((tid, r.get("player_name")), ""),
         })
+        if "pro_team" in r:   # client v0.4.4+; keep older snapshots' shape unchanged
+            entry["players"][-1].update(pro_team=r.get("pro_team") or "",
+                                        bye_week=r.get("bye_week") or None)
 
     entries = [v for _, v in sorted(by_team.items(), key=lambda kv: kv[0][0] or 0)]
     if not entries:

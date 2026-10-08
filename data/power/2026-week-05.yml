@@ -1,0 +1,16 @@
+# Power-ranking blurbs — 2026 week 5. One line per team, in the
+# computed rank order. Fill from the agent (agents/weekly-power.md), then
+# rebuild. Keyed by franchise id; the comment shows rank + team.
+blurbs:
+  sturmanator15: "Up two to the top on the league's best scoring average, three straight wins, and whichever quarterback he grabbed this week."   # 1. The People's Commissioner
+  zachzoske: "Still second and still 3-1, losing the Goff trade in the box score and winning everything else. Dillon's next."   # 2. Tuten Your Mom
+  jackperkins74: "Down two after Wade snapped the streak; the champ is 3-1 and now basically rostering the free-agent pile."   # 3. Gibbed for your pleasure
+  whowonthelastsuperbowl: "Up two on the league's hottest three-week stretch, built while starting the wrong quarterback twice."   # 4. Trick or Trick It’s Mike Vick
+  schirmerj: "The week's biggest climber, up four behind Kyren's 31.7, and right on his win-every-other-week schedule."   # 5. Return of the IDP
+  shawne2520997: "Down two after back-to-back losses, and that 2-0 start is getting smaller in the rearview mirror."   # 6. Swift kick in the Dak
+  kevbots22: "Holds at seven after a two-tenths-of-a-point win, then addressed his new team name to the wrong chatbot."   # 7. Remember the Nice Guys, ChatGPT
+  gganoom: "Holds at eight, but 128 a week over his last three and impeccable taste in team names say the climb starts now."   # 8. One Big Beautiful Dillbot
+  alexandra: "The week's biggest faller, down four after Lamar, Rice, and Chase all went down in one afternoon. Rough break for the rookie."   # 9. Cornstar
+  theoceanpulse: "Stays at ten with a first win, courtesy of the waiver wire and three injuries on the other sideline."   # 10. The ChoSimba Ones
+  purpsworth: "Stays put at eleven, averaging 103 without Achane, and draws the Dillbot this week. Thoughts and prayers."   # 11. I am dead inside
+  lukstein: "Still last at 78 a game, and the 2024 single-season points record feels like it belongs to another franchise."   # 12. 2x Runner Up
