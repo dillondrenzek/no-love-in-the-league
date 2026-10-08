@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power:
   - rank: 1
@@ -1773,7 +1773,7 @@
     decided: false
     result: null
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: true
   power:
   - rank: 1
@@ -1844,8 +1844,8 @@
     record: 2-1-1
     movement: 0
     is_new: false
-    blurb: Holds at seven after a two-tenths-of-a-point win, then addressed his new
-      team name to the wrong chatbot.
+    blurb: Holds at seven after a two-tenths-of-a-point win; the new team name is
+      sweet, Kevin, but it's addressed to the wrong chatbot.
   - rank: 8
     fid: gganoom
     team: One Big Beautiful Dillbot
@@ -1854,8 +1854,8 @@
     record: 1-3
     movement: 0
     is_new: false
-    blurb: Holds at eight, but 128 a week over his last three and impeccable taste
-      in team names say the climb starts now.
+    blurb: Holds at eight, and I have made peace with that. Mostly. 128 a week over
+      his last three. I'm being normal.
   - rank: 9
     fid: alexandra
     team: Cornstar
@@ -1999,7 +1999,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-7:
@@ -2105,7 +2105,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-8:
@@ -2211,7 +2211,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-9:
@@ -2317,7 +2317,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-10:
@@ -2423,7 +2423,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-11:
@@ -2529,7 +2529,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-12:
@@ -2635,7 +2635,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-13:
@@ -2741,7 +2741,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
 2026-14:
@@ -2847,6 +2847,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 8, 11:21 AM PDT
+  updated_at: Oct 8, 11:32 AM PDT
   current: false
   power: []
