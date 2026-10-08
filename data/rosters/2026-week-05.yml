@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-08T03:35:46+00:00'
+captured_at: '2026-10-08T11:01:26+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -326,7 +326,7 @@ rosters:
     injury: ''
   - player: DJ Moore
     pos: WR
-    starter: false
+    starter: true
     proj: 10.4
     actual: null
     injury: ''
