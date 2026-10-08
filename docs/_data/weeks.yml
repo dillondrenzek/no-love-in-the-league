@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power:
   - rank: 1
@@ -1607,7 +1607,7 @@
     live: false
     playoff: false
     home_proj: 112.3
-    away_proj: 109.1
+    away_proj: 114.0
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -1683,7 +1683,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: true
   power: []
 2026-6:
@@ -1789,7 +1789,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-7:
@@ -1895,7 +1895,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-8:
@@ -2001,7 +2001,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-9:
@@ -2107,7 +2107,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-10:
@@ -2213,7 +2213,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-11:
@@ -2319,7 +2319,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-12:
@@ -2425,7 +2425,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-13:
@@ -2531,7 +2531,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []
 2026-14:
@@ -2637,6 +2637,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 7, 4:55 PM PDT
+  updated_at: Oct 7, 8:35 PM PDT
   current: false
   power: []

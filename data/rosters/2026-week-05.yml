@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-07T23:55:25+00:00'
+captured_at: '2026-10-08T03:35:46+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -978,10 +978,10 @@ rosters:
     proj: 7.37
     actual: null
     injury: ''
-  - player: Tank Dell
-    pos: WR
+  - player: MarShawn Lloyd
+    pos: RB
     starter: false
-    proj: 0.0
+    proj: 8.54
     actual: null
     injury: ''
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
@@ -1120,7 +1120,7 @@ rosters:
     injury: ''
   - player: Jacory Croskey-Merritt
     pos: RB
-    starter: true
+    starter: false
     proj: 8.61
     actual: null
     injury: ''
@@ -1138,7 +1138,7 @@ rosters:
     injury: ''
   - player: Rams D/ST
     pos: D/ST
-    starter: true
+    starter: false
     proj: 4.44
     actual: null
     injury: ''
@@ -1160,15 +1160,9 @@ rosters:
     proj: 0.0
     actual: null
     injury: ''
-  - player: Darren Waller
-    pos: TE
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
   - player: Will Shipley
     pos: RB
-    starter: false
+    starter: true
     proj: 10.52
     actual: null
     injury: ''
@@ -1176,5 +1170,11 @@ rosters:
     pos: WR
     starter: true
     proj: 7.62
+    actual: null
+    injury: ''
+  - player: Cowboys D/ST
+    pos: D/ST
+    starter: true
+    proj: 7.42
     actual: null
     injury: ''

@@ -13188,7 +13188,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 47.8
+    tx_per_year: 48.0
     tx_known: false
     seasons: 11
     best_finish:
@@ -13212,7 +13212,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 7th
     record: 2-2
-    tx: 15
+    tx: 17
     in_progress: true
     pf: 480.0
     pa: 461.8
@@ -13564,6 +13564,10 @@ shawne2520997:
       via: add
       week: 4
       waiver: true
+    - player: Cowboys D/ST
+      via: add
+      week: 5
+      waiver: false
     - player: Roman Wilson
       via: add
       week: 5
@@ -15416,7 +15420,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 14
     trades_known: true
-    tx_per_year: 51.3
+    tx_per_year: 51.6
     tx_known: false
     seasons: 11
     best_finish:
@@ -15439,7 +15443,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 1-2-1
-    tx: 28
+    tx: 30
     in_progress: true
     pf: 427.6
     pa: 499.4
@@ -15943,6 +15947,10 @@ theoceanpulse:
     - player: Spencer Shrader
       via: add
       week: 4
+      waiver: false
+    - player: MarShawn Lloyd
+      via: add
+      week: 5
       waiver: false
     - player: Tank Dell
       via: add

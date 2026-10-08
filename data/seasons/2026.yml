@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-07T23:55:28+00:00
+updated_at: 2026-10-08T03:35:48+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -115,7 +115,7 @@ matchups:
   - { week:  4, home: sturmanator15, away: jackperkins74, home_score: 144.8, away_score: 122.0, playoff: false }
   - { week:  4, home: zachzoske, away: lukstein, home_score: 123.2, away_score: 65.4, playoff: false }
   - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false, home_proj: 129.3, away_proj: 88.67 }
-  - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false, home_proj: 112.27, away_proj: 109.07 }
+  - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false, home_proj: 112.27, away_proj: 113.96 }
   - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false, home_proj: 111.17, away_proj: 129.2 }
   - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.41, away_proj: 79.77 }
   - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 117.5, away_proj: 131.56 }
@@ -277,9 +277,9 @@ transactions:
   lukstein: { adds: 11, drops: 7, moves: 18 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }
   schirmerj: { adds: 6, drops: 5, moves: 11 }
-  shawne2520997: { adds: 8, drops: 7, moves: 15 }
+  shawne2520997: { adds: 9, drops: 8, moves: 17 }
   sturmanator15: { adds: 16, drops: 15, moves: 31 }
-  theoceanpulse: { adds: 15, drops: 13, moves: 28 }
+  theoceanpulse: { adds: 16, drops: 14, moves: 30 }
   whowonthelastsuperbowl: { adds: 4, drops: 3, moves: 7 }
   zachzoske: { adds: 19, drops: 14, moves: 33 }
 
@@ -639,6 +639,10 @@ rosters:
     via: add
     week: 4
     waiver: true
+  - player: Cowboys D/ST
+    via: add
+    week: 5
+    waiver: false
   - player: Roman Wilson
     via: add
     week: 5
@@ -1196,6 +1200,10 @@ rosters:
   - player: Spencer Shrader
     via: add
     week: 4
+    waiver: false
+  - player: MarShawn Lloyd
+    via: add
+    week: 5
     waiver: false
   - player: Tank Dell
     via: add
