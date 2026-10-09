@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-08T18:32:02+00:00
+updated_at: 2026-10-09T00:02:24+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -31,7 +31,7 @@ draft_order:
 
 # This season's team name for each franchise (shown on per-season pages).
 teams:
-  sturmanator15: "The People's Commissioner"
+  sturmanator15: "God's Commissioner"
   zachzoske: "Tuten Your Mom"
   schirmerj: "Return of the IDP"
   lukstein: "2x Runner Up"
@@ -90,582 +90,90 @@ final_standings:
 # `played: false` with no scores. Only complete weeks (all games final)
 # count toward standings/records/H2H.
 matchups:
-  - {
-      week: 1,
-      home: alexandra,
-      away: whowonthelastsuperbowl,
-      home_score: 105.0,
-      away_score: 87.4,
-      playoff: false,
-    }
-  - {
-      week: 1,
-      home: gganoom,
-      away: shawne2520997,
-      home_score: 103.6,
-      away_score: 108.3,
-      playoff: false,
-    }
-  - {
-      week: 1,
-      home: kevbots22,
-      away: theoceanpulse,
-      home_score: 137.4,
-      away_score: 137.4,
-      playoff: false,
-    }
-  - {
-      week: 1,
-      home: lukstein,
-      away: purpsworth,
-      home_score: 96.5,
-      away_score: 85.4,
-      playoff: false,
-    }
-  - {
-      week: 1,
-      home: schirmerj,
-      away: jackperkins74,
-      home_score: 103.5,
-      away_score: 166.7,
-      playoff: false,
-    }
-  - {
-      week: 1,
-      home: sturmanator15,
-      away: zachzoske,
-      home_score: 146.7,
-      away_score: 161.3,
-      playoff: false,
-    }
-  - {
-      week: 2,
-      home: jackperkins74,
-      away: gganoom,
-      home_score: 92.0,
-      away_score: 79.3,
-      playoff: false,
-    }
-  - {
-      week: 2,
-      home: kevbots22,
-      away: alexandra,
-      home_score: 106.8,
-      away_score: 95.3,
-      playoff: false,
-    }
-  - {
-      week: 2,
-      home: lukstein,
-      away: whowonthelastsuperbowl,
-      home_score: 77.4,
-      away_score: 153.6,
-      playoff: false,
-    }
-  - {
-      week: 2,
-      home: sturmanator15,
-      away: purpsworth,
-      home_score: 125.8,
-      away_score: 102.6,
-      playoff: false,
-    }
-  - {
-      week: 2,
-      home: theoceanpulse,
-      away: shawne2520997,
-      home_score: 80.8,
-      away_score: 134.7,
-      playoff: false,
-    }
-  - {
-      week: 2,
-      home: zachzoske,
-      away: schirmerj,
-      home_score: 106.5,
-      away_score: 137.9,
-      playoff: false,
-    }
-  - {
-      week: 3,
-      home: jackperkins74,
-      away: whowonthelastsuperbowl,
-      home_score: 141.6,
-      away_score: 108.8,
-      playoff: false,
-    }
-  - {
-      week: 3,
-      home: kevbots22,
-      away: purpsworth,
-      home_score: 92.1,
-      away_score: 109.3,
-      playoff: false,
-    }
-  - {
-      week: 3,
-      home: lukstein,
-      away: alexandra,
-      home_score: 74.0,
-      away_score: 134.3,
-      playoff: false,
-    }
-  - {
-      week: 3,
-      home: schirmerj,
-      away: gganoom,
-      home_score: 101.2,
-      away_score: 161.0,
-      playoff: false,
-    }
-  - {
-      week: 3,
-      home: sturmanator15,
-      away: theoceanpulse,
-      home_score: 122.7,
-      away_score: 88.4,
-      playoff: false,
-    }
-  - {
-      week: 3,
-      home: zachzoske,
-      away: shawne2520997,
-      home_score: 136.1,
-      away_score: 116.3,
-      playoff: false,
-    }
-  - {
-      week: 4,
-      home: alexandra,
-      away: theoceanpulse,
-      home_score: 104.6,
-      away_score: 121.0,
-      playoff: false,
-    }
-  - {
-      week: 4,
-      home: kevbots22,
-      away: gganoom,
-      home_score: 145.2,
-      away_score: 145.0,
-      playoff: false,
-    }
-  - {
-      week: 4,
-      home: purpsworth,
-      away: whowonthelastsuperbowl,
-      home_score: 116.6,
-      away_score: 135.1,
-      playoff: false,
-    }
-  - {
-      week: 4,
-      home: schirmerj,
-      away: shawne2520997,
-      home_score: 141.3,
-      away_score: 120.7,
-      playoff: false,
-    }
-  - {
-      week: 4,
-      home: sturmanator15,
-      away: jackperkins74,
-      home_score: 144.8,
-      away_score: 122.0,
-      playoff: false,
-    }
-  - {
-      week: 4,
-      home: zachzoske,
-      away: lukstein,
-      home_score: 123.2,
-      away_score: 65.4,
-      playoff: false,
-    }
-  - {
-      week: 5,
-      home: jackperkins74,
-      away: alexandra,
-      playoff: false,
-      played: false,
-      home_proj: 130.77,
-      away_proj: 88.67,
-    }
-  - {
-      week: 5,
-      home: kevbots22,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-      home_proj: 112.27,
-      away_proj: 113.96,
-    }
-  - {
-      week: 5,
-      home: purpsworth,
-      away: gganoom,
-      playoff: false,
-      played: false,
-      home_proj: 111.17,
-      away_proj: 129.2,
-    }
-  - {
-      week: 5,
-      home: schirmerj,
-      away: lukstein,
-      playoff: false,
-      played: false,
-      home_proj: 114.41,
-      away_proj: 90.17,
-    }
-  - {
-      week: 5,
-      home: sturmanator15,
-      away: whowonthelastsuperbowl,
-      playoff: false,
-      played: false,
-      home_proj: 117.5,
-      away_proj: 131.56,
-    }
-  - {
-      week: 5,
-      home: zachzoske,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-      home_proj: 127.01,
-      away_proj: 109.93,
-    }
-  - {
-      week: 6,
-      home: lukstein,
-      away: jackperkins74,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 6,
-      home: purpsworth,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - { week: 6, home: schirmerj, away: alexandra, playoff: false, played: false }
-  - {
-      week: 6,
-      home: sturmanator15,
-      away: kevbots22,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 6,
-      home: whowonthelastsuperbowl,
-      away: gganoom,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 6,
-      home: zachzoske,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 7,
-      home: jackperkins74,
-      away: kevbots22,
-      playoff: false,
-      played: false,
-    }
-  - { week: 7, home: lukstein, away: gganoom, playoff: false, played: false }
-  - {
-      week: 7,
-      home: purpsworth,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 7,
-      home: sturmanator15,
-      away: schirmerj,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 7,
-      home: whowonthelastsuperbowl,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - { week: 7, home: zachzoske, away: alexandra, playoff: false, played: false }
-  - {
-      week: 8,
-      home: alexandra,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 8,
-      home: jackperkins74,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 8,
-      home: kevbots22,
-      away: whowonthelastsuperbowl,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 8,
-      home: schirmerj,
-      away: purpsworth,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 8,
-      home: sturmanator15,
-      away: lukstein,
-      playoff: false,
-      played: false,
-    }
-  - { week: 8, home: zachzoske, away: gganoom, playoff: false, played: false }
-  - {
-      week: 9,
-      home: gganoom,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 9,
-      home: jackperkins74,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 9,
-      home: kevbots22,
-      away: purpsworth,
-      playoff: false,
-      played: false,
-    }
-  - { week: 9, home: lukstein, away: alexandra, playoff: false, played: false }
-  - {
-      week: 9,
-      home: sturmanator15,
-      away: whowonthelastsuperbowl,
-      playoff: false,
-      played: false,
-    }
-  - { week: 9, home: zachzoske, away: schirmerj, playoff: false, played: false }
-  - {
-      week: 10,
-      home: alexandra,
-      away: purpsworth,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 10,
-      home: jackperkins74,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 10,
-      home: lukstein,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 10,
-      home: schirmerj,
-      away: whowonthelastsuperbowl,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 10,
-      home: sturmanator15,
-      away: gganoom,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 10,
-      home: zachzoske,
-      away: kevbots22,
-      playoff: false,
-      played: false,
-    }
+  - { week:  1, home: alexandra, away: whowonthelastsuperbowl, home_score: 105.0, away_score: 87.4, playoff: false }
+  - { week:  1, home: gganoom, away: shawne2520997, home_score: 103.6, away_score: 108.3, playoff: false }
+  - { week:  1, home: kevbots22, away: theoceanpulse, home_score: 137.4, away_score: 137.4, playoff: false }
+  - { week:  1, home: lukstein, away: purpsworth, home_score: 96.5, away_score: 85.4, playoff: false }
+  - { week:  1, home: schirmerj, away: jackperkins74, home_score: 103.5, away_score: 166.7, playoff: false }
+  - { week:  1, home: sturmanator15, away: zachzoske, home_score: 146.7, away_score: 161.3, playoff: false }
+  - { week:  2, home: jackperkins74, away: gganoom, home_score: 92.0, away_score: 79.3, playoff: false }
+  - { week:  2, home: kevbots22, away: alexandra, home_score: 106.8, away_score: 95.3, playoff: false }
+  - { week:  2, home: lukstein, away: whowonthelastsuperbowl, home_score: 77.4, away_score: 153.6, playoff: false }
+  - { week:  2, home: sturmanator15, away: purpsworth, home_score: 125.8, away_score: 102.6, playoff: false }
+  - { week:  2, home: theoceanpulse, away: shawne2520997, home_score: 80.8, away_score: 134.7, playoff: false }
+  - { week:  2, home: zachzoske, away: schirmerj, home_score: 106.5, away_score: 137.9, playoff: false }
+  - { week:  3, home: jackperkins74, away: whowonthelastsuperbowl, home_score: 141.6, away_score: 108.8, playoff: false }
+  - { week:  3, home: kevbots22, away: purpsworth, home_score: 92.1, away_score: 109.3, playoff: false }
+  - { week:  3, home: lukstein, away: alexandra, home_score: 74.0, away_score: 134.3, playoff: false }
+  - { week:  3, home: schirmerj, away: gganoom, home_score: 101.2, away_score: 161.0, playoff: false }
+  - { week:  3, home: sturmanator15, away: theoceanpulse, home_score: 122.7, away_score: 88.4, playoff: false }
+  - { week:  3, home: zachzoske, away: shawne2520997, home_score: 136.1, away_score: 116.3, playoff: false }
+  - { week:  4, home: alexandra, away: theoceanpulse, home_score: 104.6, away_score: 121.0, playoff: false }
+  - { week:  4, home: kevbots22, away: gganoom, home_score: 145.2, away_score: 145.0, playoff: false }
+  - { week:  4, home: purpsworth, away: whowonthelastsuperbowl, home_score: 116.6, away_score: 135.1, playoff: false }
+  - { week:  4, home: schirmerj, away: shawne2520997, home_score: 141.3, away_score: 120.7, playoff: false }
+  - { week:  4, home: sturmanator15, away: jackperkins74, home_score: 144.8, away_score: 122.0, playoff: false }
+  - { week:  4, home: zachzoske, away: lukstein, home_score: 123.2, away_score: 65.4, playoff: false }
+  - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false, home_proj: 135.76, away_proj: 88.98 }
+  - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false, home_proj: 112.28, away_proj: 114.79 }
+  - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false, home_proj: 111.17, away_proj: 129.12 }
+  - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.42, away_proj: 90.17 }
+  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 119.85, away_proj: 131.57 }
+  - { week:  5, home: zachzoske, away: theoceanpulse, playoff: false, played: false, home_proj: 122.77, away_proj: 106.02 }
+  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false }
+  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
+  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false }
+  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false }
+  - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false }
+  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
+  - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }
+  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false }
+  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false }
+  - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
+  - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
+  - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  8, home: schirmerj, away: purpsworth, playoff: false, played: false }
+  - { week:  8, home: sturmanator15, away: lukstein, playoff: false, played: false }
+  - { week:  8, home: zachzoske, away: gganoom, playoff: false, played: false }
+  - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false }
+  - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
+  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false }
+  - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false }
+  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false }
+  - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false }
+  - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false }
+  - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false }
+  - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, playoff: false, played: false }
+  - { week: 10, home: sturmanator15, away: gganoom, playoff: false, played: false }
+  - { week: 10, home: zachzoske, away: kevbots22, playoff: false, played: false }
   - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false }
-  - {
-      week: 11,
-      home: lukstein,
-      away: jackperkins74,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 11,
-      home: schirmerj,
-      away: kevbots22,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 11,
-      home: sturmanator15,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 11,
-      home: whowonthelastsuperbowl,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 11,
-      home: zachzoske,
-      away: purpsworth,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 12,
-      home: alexandra,
-      away: purpsworth,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 12,
-      home: schirmerj,
-      away: jackperkins74,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 12,
-      home: sturmanator15,
-      away: lukstein,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 12,
-      home: theoceanpulse,
-      away: gganoom,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 12,
-      home: whowonthelastsuperbowl,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 12,
-      home: zachzoske,
-      away: kevbots22,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 13,
-      home: jackperkins74,
-      away: purpsworth,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 13,
-      home: lukstein,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 13,
-      home: schirmerj,
-      away: alexandra,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 13,
-      home: sturmanator15,
-      away: kevbots22,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 13,
-      home: theoceanpulse,
-      away: gganoom,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 13,
-      home: zachzoske,
-      away: whowonthelastsuperbowl,
-      playoff: false,
-      played: false,
-    }
+  - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false }
+  - { week: 11, home: sturmanator15, away: shawne2520997, playoff: false, played: false }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, playoff: false, played: false }
+  - { week: 11, home: zachzoske, away: purpsworth, playoff: false, played: false }
+  - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
+  - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
+  - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
+  - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false }
+  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false }
+  - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false }
+  - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
+  - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
+  - { week: 13, home: schirmerj, away: alexandra, playoff: false, played: false }
+  - { week: 13, home: sturmanator15, away: kevbots22, playoff: false, played: false }
+  - { week: 13, home: theoceanpulse, away: gganoom, playoff: false, played: false }
+  - { week: 13, home: zachzoske, away: whowonthelastsuperbowl, playoff: false, played: false }
   - { week: 14, home: lukstein, away: kevbots22, playoff: false, played: false }
-  - {
-      week: 14,
-      home: purpsworth,
-      away: shawne2520997,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 14,
-      home: schirmerj,
-      away: theoceanpulse,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 14,
-      home: sturmanator15,
-      away: alexandra,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 14,
-      home: whowonthelastsuperbowl,
-      away: gganoom,
-      playoff: false,
-      played: false,
-    }
-  - {
-      week: 14,
-      home: zachzoske,
-      away: jackperkins74,
-      playoff: false,
-      played: false,
-    }
+  - { week: 14, home: purpsworth, away: shawne2520997, playoff: false, played: false }
+  - { week: 14, home: schirmerj, away: theoceanpulse, playoff: false, played: false }
+  - { week: 14, home: sturmanator15, away: alexandra, playoff: false, played: false }
+  - { week: 14, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false }
+  - { week: 14, home: zachzoske, away: jackperkins74, playoff: false, played: false }
 
 # Completed trades this season (franchise-keyed). ESPN reveals a trade's
 # contents only to its participants, so trades no merged account was in
@@ -689,54 +197,78 @@ trades_known_for:
   - theoceanpulse
   - zachzoske
 trades:
-  - id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
-    week: 0
-    teams:
-      - shawne2520997
-      - theoceanpulse
-    assets:
-      - from: theoceanpulse
-        to: shawne2520997
-        label: Nico Collins
-      - from: theoceanpulse
-        to: shawne2520997
-        label: 5.10 pick
-      - from: theoceanpulse
-        to: shawne2520997
-        label: 9.10 pick
-      - from: shawne2520997
-        to: theoceanpulse
-        label: 5.04 pick
-      - from: shawne2520997
-        to: theoceanpulse
-        label: 9.04 pick
-  - id: 64f2fd97-eec0-4271-b035-f660ea91a959
-    week: 1
-    teams:
-      - purpsworth
-      - zachzoske
-    assets:
-      - from: zachzoske
-        to: purpsworth
-        label: Drake London
-      - from: purpsworth
-        to: zachzoske
-        label: Ashton Jeanty
-  - id: d166a646-a658-4aad-bfc6-9d9b5f1cc9fe
-    week: 3
-    teams:
-      - theoceanpulse
-      - zachzoske
-    assets:
-      - from: theoceanpulse
-        to: zachzoske
-        label: Josh Downs
-      - from: theoceanpulse
-        to: zachzoske
-        faab: 1
-      - from: zachzoske
-        to: theoceanpulse
-        label: Jared Goff
+- id: 6ebbabf7-8443-4cb1-a27e-6511a2d43baa
+  week: 0
+  teams:
+  - shawne2520997
+  - theoceanpulse
+  assets:
+  - from: theoceanpulse
+    to: shawne2520997
+    label: Nico Collins
+  - from: theoceanpulse
+    to: shawne2520997
+    label: 5.10 pick
+  - from: theoceanpulse
+    to: shawne2520997
+    label: 9.10 pick
+  - from: shawne2520997
+    to: theoceanpulse
+    label: 5.04 pick
+  - from: shawne2520997
+    to: theoceanpulse
+    label: 9.04 pick
+- id: 64f2fd97-eec0-4271-b035-f660ea91a959
+  week: 1
+  teams:
+  - purpsworth
+  - zachzoske
+  assets:
+  - from: zachzoske
+    to: purpsworth
+    label: Drake London
+  - from: purpsworth
+    to: zachzoske
+    label: Ashton Jeanty
+- id: d166a646-a658-4aad-bfc6-9d9b5f1cc9fe
+  week: 3
+  teams:
+  - theoceanpulse
+  - zachzoske
+  assets:
+  - from: theoceanpulse
+    to: zachzoske
+    label: Josh Downs
+  - from: theoceanpulse
+    to: zachzoske
+    faab: 1
+  - from: zachzoske
+    to: theoceanpulse
+    label: Jared Goff
+- id: 596a5ff2-372f-4041-a549-f06eae933ad8
+  week: 5
+  teams:
+  - jackperkins74
+  - theoceanpulse
+  assets:
+  - from: jackperkins74
+    to: theoceanpulse
+    label: Dalton Kincaid
+  - from: jackperkins74
+    to: theoceanpulse
+    label: Alvin Kamara
+  - from: jackperkins74
+    to: theoceanpulse
+    label: Breece Hall
+  - from: jackperkins74
+    to: theoceanpulse
+    label: Luther Burden III
+  - from: theoceanpulse
+    to: jackperkins74
+    label: Omarion Hampton
+  - from: theoceanpulse
+    to: jackperkins74
+    label: Garrett Wilson
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
@@ -764,14 +296,14 @@ transactions_known: true
 transactions:
   alexandra: { adds: 1, drops: 1, moves: 2 }
   gganoom: { adds: 4, drops: 3, moves: 7 }
-  jackperkins74: { adds: 34, drops: 26, moves: 60 }
+  jackperkins74: { adds: 36, drops: 26, moves: 62 }
   kevbots22: { adds: 4, drops: 3, moves: 7 }
   lukstein: { adds: 11, drops: 7, moves: 18 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }
   schirmerj: { adds: 6, drops: 5, moves: 11 }
   shawne2520997: { adds: 9, drops: 8, moves: 17 }
   sturmanator15: { adds: 16, drops: 15, moves: 31 }
-  theoceanpulse: { adds: 16, drops: 14, moves: 30 }
+  theoceanpulse: { adds: 17, drops: 15, moves: 32 }
   whowonthelastsuperbowl: { adds: 4, drops: 3, moves: 7 }
   zachzoske: { adds: 19, drops: 14, moves: 33 }
 
@@ -782,1046 +314,1076 @@ transactions:
 # so an older season may be draft-only. Recomputed in full each import.
 rosters:
   jackperkins74:
-    - player: Jahmyr Gibbs
-      via: draft
-      round: 1
-    - player: Breece Hall
-      via: draft
-      round: 2
-    - player: Travis Etienne Jr.
-      via: draft
-      round: 3
-    - player: Luther Burden III
-      via: draft
-      round: 4
-    - player: Parker Washington
-      via: draft
-      round: 5
-    - player: De'Zhaun Stribling
-      via: draft
-      round: 6
-    - player: Trevor Lawrence
-      via: draft
-      round: 7
-    - player: Dallas Goedert
-      via: draft
-      round: 8
-    - player: Puka Nacua
-      via: draft
-      round: 9
-    - player: Mike Washington Jr.
-      via: draft
-      round: 10
-    - player: Caleb Douglas
-      via: draft
-      round: 11
-    - player: Dalton Kincaid
-      via: draft
-      round: 12
-    - player: Jaguars D/ST
-      via: draft
-      round: 13
-    - player: Cairo Santos
-      via: draft
-      round: 14
-    - player: Deebo Samuel Sr.
-      via: draft
-      round: 15
-    - player: Andy Borregales
-      via: add
-      week: 1
-      waiver: false
-    - player: Braelon Allen
-      via: add
-      week: 1
-      waiver: false
-    - player: Brandon Aiyuk
-      via: add
-      week: 1
-      waiver: false
-    - player: Chris Bell
-      via: add
-      week: 1
-      waiver: false
-    - player: George Holani
-      via: add
-      week: 1
-      waiver: false
-    - player: Jacob Saylors
-      via: add
-      week: 1
-      waiver: false
-    - player: James Conner
-      via: add
-      week: 1
-      waiver: false
-    - player: Kaleb Johnson
-      via: add
-      week: 1
-      waiver: true
-    - player: Keenan Allen
-      via: add
-      week: 1
-      waiver: false
-    - player: Malik Davis
-      via: add
-      week: 1
-      waiver: false
-    - player: Roschon Johnson
-      via: add
-      week: 1
-      waiver: false
-    - player: Ted Hurst III
-      via: add
-      week: 1
-      waiver: false
-    - player: Antonio Williams
-      via: add
-      week: 2
-      waiver: true
-    - player: Buccaneers D/ST
-      via: add
-      week: 2
-      waiver: true
-    - player: Devin Singletary
-      via: add
-      week: 2
-      waiver: false
-    - player: Jaylin Noel
-      via: add
-      week: 2
-      waiver: false
-    - player: Rashod Bateman
-      via: add
-      week: 2
-      waiver: false
-    - player: Alvin Kamara
-      via: add
-      week: 3
-      waiver: false
-    - player: Kyler Murray
-      via: add
-      week: 3
-      waiver: false
-    - player: Pat Bryant
-      via: add
-      week: 3
-      waiver: false
-    - player: Terrance Ferguson
-      via: add
-      week: 3
-      waiver: false
-    - player: Vikings D/ST
-      via: add
-      week: 3
-      waiver: true
-    - player: Will Reichard
-      via: add
-      week: 3
-      waiver: false
-    - player: Xavier Hutchinson
-      via: add
-      week: 3
-      waiver: false
-    - player: Austin Ekeler
-      via: add
-      week: 4
-      waiver: false
-    - player: Brandin Cooks
-      via: add
-      week: 4
-      waiver: false
-    - player: Konata Mumpfield
-      via: add
-      week: 4
-      waiver: false
-    - player: Tyler Allgeier
-      via: add
-      week: 4
-      waiver: false
-    - player: Tyreek Hill
-      via: add
-      week: 4
-      waiver: false
-    - player: Mike Gesicki
-      via: add
-      week: 5
-      waiver: true
+  - player: Jahmyr Gibbs
+    via: draft
+    round: 1
+  - player: Breece Hall
+    via: draft
+    round: 2
+  - player: Travis Etienne Jr.
+    via: draft
+    round: 3
+  - player: Luther Burden III
+    via: draft
+    round: 4
+  - player: Parker Washington
+    via: draft
+    round: 5
+  - player: De'Zhaun Stribling
+    via: draft
+    round: 6
+  - player: Trevor Lawrence
+    via: draft
+    round: 7
+  - player: Dallas Goedert
+    via: draft
+    round: 8
+  - player: Puka Nacua
+    via: draft
+    round: 9
+  - player: Mike Washington Jr.
+    via: draft
+    round: 10
+  - player: Caleb Douglas
+    via: draft
+    round: 11
+  - player: Dalton Kincaid
+    via: draft
+    round: 12
+  - player: Jaguars D/ST
+    via: draft
+    round: 13
+  - player: Cairo Santos
+    via: draft
+    round: 14
+  - player: Deebo Samuel Sr.
+    via: draft
+    round: 15
+  - player: Andy Borregales
+    via: add
+    week: 1
+    waiver: false
+  - player: Braelon Allen
+    via: add
+    week: 1
+    waiver: false
+  - player: Brandon Aiyuk
+    via: add
+    week: 1
+    waiver: false
+  - player: Chris Bell
+    via: add
+    week: 1
+    waiver: false
+  - player: George Holani
+    via: add
+    week: 1
+    waiver: false
+  - player: Jacob Saylors
+    via: add
+    week: 1
+    waiver: false
+  - player: James Conner
+    via: add
+    week: 1
+    waiver: false
+  - player: Kaleb Johnson
+    via: add
+    week: 1
+    waiver: true
+  - player: Keenan Allen
+    via: add
+    week: 1
+    waiver: false
+  - player: Malik Davis
+    via: add
+    week: 1
+    waiver: false
+  - player: Roschon Johnson
+    via: add
+    week: 1
+    waiver: false
+  - player: Ted Hurst III
+    via: add
+    week: 1
+    waiver: false
+  - player: Antonio Williams
+    via: add
+    week: 2
+    waiver: true
+  - player: Buccaneers D/ST
+    via: add
+    week: 2
+    waiver: true
+  - player: Devin Singletary
+    via: add
+    week: 2
+    waiver: false
+  - player: Jaylin Noel
+    via: add
+    week: 2
+    waiver: false
+  - player: Rashod Bateman
+    via: add
+    week: 2
+    waiver: false
+  - player: Alvin Kamara
+    via: add
+    week: 3
+    waiver: false
+  - player: Kyler Murray
+    via: add
+    week: 3
+    waiver: false
+  - player: Pat Bryant
+    via: add
+    week: 3
+    waiver: false
+  - player: Terrance Ferguson
+    via: add
+    week: 3
+    waiver: false
+  - player: Vikings D/ST
+    via: add
+    week: 3
+    waiver: true
+  - player: Will Reichard
+    via: add
+    week: 3
+    waiver: false
+  - player: Xavier Hutchinson
+    via: add
+    week: 3
+    waiver: false
+  - player: Austin Ekeler
+    via: add
+    week: 4
+    waiver: false
+  - player: Brandin Cooks
+    via: add
+    week: 4
+    waiver: false
+  - player: Konata Mumpfield
+    via: add
+    week: 4
+    waiver: false
+  - player: Tyler Allgeier
+    via: add
+    week: 4
+    waiver: false
+  - player: Tyreek Hill
+    via: add
+    week: 4
+    waiver: false
+  - player: Garrett Wilson
+    via: trade
+    week: 5
+  - player: Omarion Hampton
+    via: trade
+    week: 5
+  - player: Chris Rodriguez Jr.
+    via: add
+    week: 5
+    waiver: false
+  - player: Germie Bernard
+    via: add
+    week: 5
+    waiver: false
+  - player: Mike Gesicki
+    via: add
+    week: 5
+    waiver: true
   gganoom:
-    - player: Bijan Robinson
-      via: draft
-      round: 1
-    - player: Malik Nabers
-      via: draft
-      round: 2
-    - player: Quinshon Judkins
-      via: draft
-      round: 3
-    - player: TreVeyon Henderson
-      via: draft
-      round: 4
-    - player: Brock Bowers
-      via: draft
-      round: 5
-    - player: Michael Wilson
-      via: draft
-      round: 6
-    - player: Jaylen Warren
-      via: draft
-      round: 7
-    - player: Jakobi Meyers
-      via: draft
-      round: 8
-    - player: Wan'Dale Robinson
-      via: draft
-      round: 9
-    - player: Brock Purdy
-      via: draft
-      round: 10
-    - player: Patrick Mahomes
-      via: draft
-      round: 11
-    - player: Romeo Doubs
-      via: draft
-      round: 12
-    - player: Broncos D/ST
-      via: draft
-      round: 13
-    - player: Brian Robinson Jr.
-      via: draft
-      round: 14
-    - player: Chris Boswell
-      via: draft
-      round: 15
-    - player: Adonai Mitchell
-      via: add
-      week: 1
-      waiver: false
-    - player: Hunter Henry
-      via: add
-      week: 1
-      waiver: false
-    - player: Trey Smack
-      via: add
-      week: 3
-      waiver: false
-    - player: Ka'imi Fairbairn
-      via: add
-      week: 5
-      waiver: true
+  - player: Bijan Robinson
+    via: draft
+    round: 1
+  - player: Malik Nabers
+    via: draft
+    round: 2
+  - player: Quinshon Judkins
+    via: draft
+    round: 3
+  - player: TreVeyon Henderson
+    via: draft
+    round: 4
+  - player: Brock Bowers
+    via: draft
+    round: 5
+  - player: Michael Wilson
+    via: draft
+    round: 6
+  - player: Jaylen Warren
+    via: draft
+    round: 7
+  - player: Jakobi Meyers
+    via: draft
+    round: 8
+  - player: Wan'Dale Robinson
+    via: draft
+    round: 9
+  - player: Brock Purdy
+    via: draft
+    round: 10
+  - player: Patrick Mahomes
+    via: draft
+    round: 11
+  - player: Romeo Doubs
+    via: draft
+    round: 12
+  - player: Broncos D/ST
+    via: draft
+    round: 13
+  - player: Brian Robinson Jr.
+    via: draft
+    round: 14
+  - player: Chris Boswell
+    via: draft
+    round: 15
+  - player: Adonai Mitchell
+    via: add
+    week: 1
+    waiver: false
+  - player: Hunter Henry
+    via: add
+    week: 1
+    waiver: false
+  - player: Trey Smack
+    via: add
+    week: 3
+    waiver: false
+  - player: Ka'imi Fairbairn
+    via: add
+    week: 5
+    waiver: true
   alexandra:
-    - player: Ja'Marr Chase
-      via: draft
-      round: 1
-    - player: Jeremiyah Love
-      via: draft
-      round: 2
-    - player: Rashee Rice
-      via: draft
-      round: 3
-    - player: Lamar Jackson
-      via: draft
-      round: 4
-    - player: Tyler Warren
-      via: draft
-      round: 5
-    - player: DK Metcalf
-      via: draft
-      round: 6
-    - player: Javonte Williams
-      via: draft
-      round: 7
-    - player: J.K. Dobbins
-      via: draft
-      round: 8
-    - player: Jordan Addison
-      via: draft
-      round: 9
-    - player: Denzel Boston
-      via: draft
-      round: 10
-    - player: Tyjae Spears
-      via: draft
-      round: 11
-    - player: Travis Hunter
-      via: draft
-      round: 12
-    - player: Seahawks D/ST
-      via: draft
-      round: 13
-    - player: Ja'Kobi Lane
-      via: draft
-      round: 14
-    - player: Tyler Loop
-      via: draft
-      round: 15
-    - player: Rashid Shaheed
-      via: add
-      week: 2
-      waiver: false
+  - player: Ja'Marr Chase
+    via: draft
+    round: 1
+  - player: Jeremiyah Love
+    via: draft
+    round: 2
+  - player: Rashee Rice
+    via: draft
+    round: 3
+  - player: Lamar Jackson
+    via: draft
+    round: 4
+  - player: Tyler Warren
+    via: draft
+    round: 5
+  - player: DK Metcalf
+    via: draft
+    round: 6
+  - player: Javonte Williams
+    via: draft
+    round: 7
+  - player: J.K. Dobbins
+    via: draft
+    round: 8
+  - player: Jordan Addison
+    via: draft
+    round: 9
+  - player: Denzel Boston
+    via: draft
+    round: 10
+  - player: Tyjae Spears
+    via: draft
+    round: 11
+  - player: Travis Hunter
+    via: draft
+    round: 12
+  - player: Seahawks D/ST
+    via: draft
+    round: 13
+  - player: Ja'Kobi Lane
+    via: draft
+    round: 14
+  - player: Tyler Loop
+    via: draft
+    round: 15
+  - player: Rashid Shaheed
+    via: add
+    week: 2
+    waiver: false
   shawne2520997:
-    - player: James Cook III
-      via: draft
-      round: 1
-    - player: George Pickens
-      via: draft
-      round: 2
-    - player: D'Andre Swift
-      via: draft
-      round: 3
-    - player: Terry McLaurin
-      via: draft
-      round: 4
-    - player: Nico Collins
-      via: draft
-      round: 5
-    - player: Dak Prescott
-      via: draft
-      round: 6
-    - player: Chris Godwin Jr.
-      via: draft
-      round: 7
-    - player: Jacory Croskey-Merritt
-      via: draft
-      round: 8
-    - player: Jalen Coker
-      via: draft
-      round: 9
-    - player: Chris Rodriguez Jr.
-      via: draft
-      round: 10
-    - player: Juwan Johnson
-      via: draft
-      round: 11
-    - player: Rams D/ST
-      via: draft
-      round: 12
-    - player: Keenan Allen
-      via: draft
-      round: 13
-    - player: Jake Bates
-      via: draft
-      round: 14
-    - player: Tre Tucker
-      via: draft
-      round: 15
-    - player: 5.10 pick
-      via: trade
-      week: 0
-    - player: 9.10 pick
-      via: trade
-      week: 0
-    - player: Kaelon Black
-      via: add
-      week: 1
-      waiver: false
-    - player: Adonai Mitchell
-      via: add
-      week: 2
-      waiver: true
-    - player: Rashod Bateman
-      via: add
-      week: 2
-      waiver: false
-    - player: Brycen Tremayne
-      via: add
-      week: 4
-      waiver: false
-    - player: Darren Waller
-      via: add
-      week: 4
-      waiver: true
-    - player: Cowboys D/ST
-      via: add
-      week: 5
-      waiver: false
-    - player: Roman Wilson
-      via: add
-      week: 5
-      waiver: true
-    - player: Will Shipley
-      via: add
-      week: 5
-      waiver: true
+  - player: James Cook III
+    via: draft
+    round: 1
+  - player: George Pickens
+    via: draft
+    round: 2
+  - player: D'Andre Swift
+    via: draft
+    round: 3
+  - player: Terry McLaurin
+    via: draft
+    round: 4
+  - player: Nico Collins
+    via: draft
+    round: 5
+  - player: Dak Prescott
+    via: draft
+    round: 6
+  - player: Chris Godwin Jr.
+    via: draft
+    round: 7
+  - player: Jacory Croskey-Merritt
+    via: draft
+    round: 8
+  - player: Jalen Coker
+    via: draft
+    round: 9
+  - player: Chris Rodriguez Jr.
+    via: draft
+    round: 10
+  - player: Juwan Johnson
+    via: draft
+    round: 11
+  - player: Rams D/ST
+    via: draft
+    round: 12
+  - player: Keenan Allen
+    via: draft
+    round: 13
+  - player: Jake Bates
+    via: draft
+    round: 14
+  - player: Tre Tucker
+    via: draft
+    round: 15
+  - player: 5.10 pick
+    via: trade
+    week: 0
+  - player: 9.10 pick
+    via: trade
+    week: 0
+  - player: Kaelon Black
+    via: add
+    week: 1
+    waiver: false
+  - player: Adonai Mitchell
+    via: add
+    week: 2
+    waiver: true
+  - player: Rashod Bateman
+    via: add
+    week: 2
+    waiver: false
+  - player: Brycen Tremayne
+    via: add
+    week: 4
+    waiver: false
+  - player: Darren Waller
+    via: add
+    week: 4
+    waiver: true
+  - player: Cowboys D/ST
+    via: add
+    week: 5
+    waiver: false
+  - player: Roman Wilson
+    via: add
+    week: 5
+    waiver: true
+  - player: Will Shipley
+    via: add
+    week: 5
+    waiver: true
   schirmerj:
-    - player: Christian McCaffrey
-      via: draft
-      round: 1
-    - player: Josh Allen
-      via: draft
-      round: 2
-    - player: Jaylen Waddle
-      via: draft
-      round: 3
-    - player: Jameson Williams
-      via: draft
-      round: 4
-    - player: Carnell Tate
-      via: draft
-      round: 5
-    - player: Tucker Kraft
-      via: draft
-      round: 6
-    - player: Rachaad White
-      via: draft
-      round: 7
-    - player: Kyren Williams
-      via: draft
-      round: 8
-    - player: Xavier Worthy
-      via: draft
-      round: 9
-    - player: Jason Myers
-      via: draft
-      round: 10
-    - player: Keaton Mitchell
-      via: draft
-      round: 11
-    - player: Jalen McMillan
-      via: draft
-      round: 12
-    - player: Ravens D/ST
-      via: draft
-      round: 13
-    - player: Emmett Johnson
-      via: draft
-      round: 14
-    - player: Adam Randall
-      via: draft
-      round: 15
-    - player: Devaughn Vele
-      via: add
-      week: 1
-      waiver: false
-    - player: Joshua Palmer
-      via: add
-      week: 3
-      waiver: true
-    - player: Panthers D/ST
-      via: add
-      week: 3
-      waiver: true
-    - player: Najee Harris
-      via: add
-      week: 4
-      waiver: false
-    - player: Jaguars D/ST
-      via: add
-      week: 5
-      waiver: true
+  - player: Christian McCaffrey
+    via: draft
+    round: 1
+  - player: Josh Allen
+    via: draft
+    round: 2
+  - player: Jaylen Waddle
+    via: draft
+    round: 3
+  - player: Jameson Williams
+    via: draft
+    round: 4
+  - player: Carnell Tate
+    via: draft
+    round: 5
+  - player: Tucker Kraft
+    via: draft
+    round: 6
+  - player: Rachaad White
+    via: draft
+    round: 7
+  - player: Kyren Williams
+    via: draft
+    round: 8
+  - player: Xavier Worthy
+    via: draft
+    round: 9
+  - player: Jason Myers
+    via: draft
+    round: 10
+  - player: Keaton Mitchell
+    via: draft
+    round: 11
+  - player: Jalen McMillan
+    via: draft
+    round: 12
+  - player: Ravens D/ST
+    via: draft
+    round: 13
+  - player: Emmett Johnson
+    via: draft
+    round: 14
+  - player: Adam Randall
+    via: draft
+    round: 15
+  - player: Devaughn Vele
+    via: add
+    week: 1
+    waiver: false
+  - player: Joshua Palmer
+    via: add
+    week: 3
+    waiver: true
+  - player: Panthers D/ST
+    via: add
+    week: 3
+    waiver: true
+  - player: Najee Harris
+    via: add
+    week: 4
+    waiver: false
+  - player: Jaguars D/ST
+    via: add
+    week: 5
+    waiver: true
   lukstein:
-    - player: Saquon Barkley
-      via: draft
-      round: 1
-    - player: DeVonta Smith
-      via: draft
-      round: 2
-    - player: Jadarian Price
-      via: draft
-      round: 3
-    - player: DJ Moore
-      via: draft
-      round: 4
-    - player: Jalen Hurts
-      via: draft
-      round: 5
-    - player: Marvin Harrison Jr.
-      via: draft
-      round: 6
-    - player: RJ Harvey
-      via: draft
-      round: 7
-    - player: Matthew Golden
-      via: draft
-      round: 8
-    - player: Alec Pierce
-      via: draft
-      round: 9
-    - player: Tank Dell
-      via: draft
-      round: 10
-    - player: Tank Bigsby
-      via: draft
-      round: 11
-    - player: Kyle Pitts Sr.
-      via: draft
-      round: 12
-    - player: Eagles D/ST
-      via: draft
-      round: 13
-    - player: Harrison Butker
-      via: draft
-      round: 14
-    - player: Dontayvion Wicks
-      via: draft
-      round: 15
-    - player: J.J. McCarthy
-      via: add
-      week: 0
-      waiver: false
-    - player: Jeremiyah Love
-      via: add
-      week: 0
-      waiver: false
-    - player: Tez Johnson
-      via: add
-      week: 0
-      waiver: false
-    - player: Kyler Murray
-      via: add
-      week: 1
-      waiver: false
-    - player: Kyle Williams
-      via: add
-      week: 2
-      waiver: false
-    - player: Malik Washington
-      via: add
-      week: 3
-      waiver: true
-    - player: Kenyon Sadiq
-      via: add
-      week: 4
-      waiver: true
-    - player: Dameon Pierce
-      via: add
-      week: 5
-      waiver: false
-    - player: Matt Gay
-      via: add
-      week: 5
-      waiver: true
+  - player: Saquon Barkley
+    via: draft
+    round: 1
+  - player: DeVonta Smith
+    via: draft
+    round: 2
+  - player: Jadarian Price
+    via: draft
+    round: 3
+  - player: DJ Moore
+    via: draft
+    round: 4
+  - player: Jalen Hurts
+    via: draft
+    round: 5
+  - player: Marvin Harrison Jr.
+    via: draft
+    round: 6
+  - player: RJ Harvey
+    via: draft
+    round: 7
+  - player: Matthew Golden
+    via: draft
+    round: 8
+  - player: Alec Pierce
+    via: draft
+    round: 9
+  - player: Tank Dell
+    via: draft
+    round: 10
+  - player: Tank Bigsby
+    via: draft
+    round: 11
+  - player: Kyle Pitts Sr.
+    via: draft
+    round: 12
+  - player: Eagles D/ST
+    via: draft
+    round: 13
+  - player: Harrison Butker
+    via: draft
+    round: 14
+  - player: Dontayvion Wicks
+    via: draft
+    round: 15
+  - player: J.J. McCarthy
+    via: add
+    week: 0
+    waiver: false
+  - player: Jeremiyah Love
+    via: add
+    week: 0
+    waiver: false
+  - player: Tez Johnson
+    via: add
+    week: 0
+    waiver: false
+  - player: Kyler Murray
+    via: add
+    week: 1
+    waiver: false
+  - player: Kyle Williams
+    via: add
+    week: 2
+    waiver: false
+  - player: Malik Washington
+    via: add
+    week: 3
+    waiver: true
+  - player: Kenyon Sadiq
+    via: add
+    week: 4
+    waiver: true
+  - player: Dameon Pierce
+    via: add
+    week: 5
+    waiver: false
+  - player: Matt Gay
+    via: add
+    week: 5
+    waiver: true
   purpsworth:
-    - player: Jonathan Taylor
-      via: draft
-      round: 1
-    - player: Ashton Jeanty
-      via: draft
-      round: 2
-    - player: Emeka Egbuka
-      via: draft
-      round: 3
-    - player: Rome Odunze
-      via: draft
-      round: 4
-    - player: Harold Fannin Jr.
-      via: draft
-      round: 5
-    - player: Rico Dowdle
-      via: draft
-      round: 6
-    - player: Jayden Daniels
-      via: draft
-      round: 7
-    - player: De'Von Achane
-      via: draft
-      round: 8
-    - player: Makai Lemon
-      via: draft
-      round: 9
-    - player: KC Concepcion
-      via: draft
-      round: 10
-    - player: Mark Andrews
-      via: draft
-      round: 11
-    - player: Bo Nix
-      via: draft
-      round: 12
-    - player: Ka'imi Fairbairn
-      via: draft
-      round: 13
-    - player: Kenyon Sadiq
-      via: draft
-      round: 14
-    - player: Browns D/ST
-      via: draft
-      round: 15
-    - player: Drake London
-      via: trade
-      week: 1
-    - player: Deebo Samuel Sr.
-      via: add
-      week: 1
-      waiver: false
-    - player: Steelers D/ST
-      via: add
-      week: 2
-      waiver: true
-    - player: Evan McPherson
-      via: add
-      week: 3
-      waiver: false
-    - player: Kirk Cousins
-      via: add
-      week: 3
-      waiver: false
-    - player: Ollie Gordon II
-      via: add
-      week: 4
-      waiver: true
+  - player: Jonathan Taylor
+    via: draft
+    round: 1
+  - player: Ashton Jeanty
+    via: draft
+    round: 2
+  - player: Emeka Egbuka
+    via: draft
+    round: 3
+  - player: Rome Odunze
+    via: draft
+    round: 4
+  - player: Harold Fannin Jr.
+    via: draft
+    round: 5
+  - player: Rico Dowdle
+    via: draft
+    round: 6
+  - player: Jayden Daniels
+    via: draft
+    round: 7
+  - player: De'Von Achane
+    via: draft
+    round: 8
+  - player: Makai Lemon
+    via: draft
+    round: 9
+  - player: KC Concepcion
+    via: draft
+    round: 10
+  - player: Mark Andrews
+    via: draft
+    round: 11
+  - player: Bo Nix
+    via: draft
+    round: 12
+  - player: Ka'imi Fairbairn
+    via: draft
+    round: 13
+  - player: Kenyon Sadiq
+    via: draft
+    round: 14
+  - player: Browns D/ST
+    via: draft
+    round: 15
+  - player: Drake London
+    via: trade
+    week: 1
+  - player: Deebo Samuel Sr.
+    via: add
+    week: 1
+    waiver: false
+  - player: Steelers D/ST
+    via: add
+    week: 2
+    waiver: true
+  - player: Evan McPherson
+    via: add
+    week: 3
+    waiver: false
+  - player: Kirk Cousins
+    via: add
+    week: 3
+    waiver: false
+  - player: Ollie Gordon II
+    via: add
+    week: 4
+    waiver: true
   sturmanator15:
-    - player: Jaxon Smith-Njigba
-      via: draft
-      round: 1
-    - player: Kenneth Walker III
-      via: draft
-      round: 2
-    - player: Ladd McConkey
-      via: draft
-      round: 3
-    - player: Zay Flowers
-      via: draft
-      round: 4
-    - player: Mike Evans
-      via: draft
-      round: 5
-    - player: Tony Pollard
-      via: draft
-      round: 6
-    - player: Justin Herbert
-      via: draft
-      round: 7
-    - player: Blake Corum
-      via: draft
-      round: 8
-    - player: Trey McBride
-      via: draft
-      round: 9
-    - player: Kyle Monangai
-      via: draft
-      round: 10
-    - player: MarShawn Lloyd
-      via: draft
-      round: 11
-    - player: Jonah Coleman
-      via: draft
-      round: 12
-    - player: Jordyn Tyson
-      via: draft
-      round: 13
-    - player: Eddy Pineiro
-      via: draft
-      round: 14
-    - player: Chargers D/ST
-      via: draft
-      round: 15
-    - player: Malik Washington
-      via: add
-      week: 1
-      waiver: false
-    - player: Chase McLaughlin
-      via: add
-      week: 2
-      waiver: false
-    - player: Mack Hollins
-      via: add
-      week: 2
-      waiver: false
-    - player: Bengals D/ST
-      via: add
-      week: 3
-      waiver: false
-    - player: Bryce Young
-      via: add
-      week: 3
-      waiver: true
-    - player: Jordan Love
-      via: add
-      week: 3
-      waiver: false
-    - player: Packers D/ST
-      via: add
-      week: 3
-      waiver: true
-    - player: Bills D/ST
-      via: add
-      week: 4
-      waiver: true
-    - player: Jauan Jennings
-      via: add
-      week: 4
-      waiver: false
-    - player: Kendre Miller
-      via: add
-      week: 4
-      waiver: false
-    - player: Tre' Harris
-      via: add
-      week: 4
-      waiver: false
-    - player: Aaron Rodgers
-      via: add
-      week: 5
-      waiver: true
-    - player: Chris Boswell
-      via: add
-      week: 5
-      waiver: true
-    - player: Dohnte Meyers
-      via: add
-      week: 5
-      waiver: true
-    - player: Jacoby Brissett
-      via: add
-      week: 5
-      waiver: false
+  - player: Jaxon Smith-Njigba
+    via: draft
+    round: 1
+  - player: Kenneth Walker III
+    via: draft
+    round: 2
+  - player: Ladd McConkey
+    via: draft
+    round: 3
+  - player: Zay Flowers
+    via: draft
+    round: 4
+  - player: Mike Evans
+    via: draft
+    round: 5
+  - player: Tony Pollard
+    via: draft
+    round: 6
+  - player: Justin Herbert
+    via: draft
+    round: 7
+  - player: Blake Corum
+    via: draft
+    round: 8
+  - player: Trey McBride
+    via: draft
+    round: 9
+  - player: Kyle Monangai
+    via: draft
+    round: 10
+  - player: MarShawn Lloyd
+    via: draft
+    round: 11
+  - player: Jonah Coleman
+    via: draft
+    round: 12
+  - player: Jordyn Tyson
+    via: draft
+    round: 13
+  - player: Eddy Pineiro
+    via: draft
+    round: 14
+  - player: Chargers D/ST
+    via: draft
+    round: 15
+  - player: Malik Washington
+    via: add
+    week: 1
+    waiver: false
+  - player: Chase McLaughlin
+    via: add
+    week: 2
+    waiver: false
+  - player: Mack Hollins
+    via: add
+    week: 2
+    waiver: false
+  - player: Bengals D/ST
+    via: add
+    week: 3
+    waiver: false
+  - player: Bryce Young
+    via: add
+    week: 3
+    waiver: true
+  - player: Jordan Love
+    via: add
+    week: 3
+    waiver: false
+  - player: Packers D/ST
+    via: add
+    week: 3
+    waiver: true
+  - player: Bills D/ST
+    via: add
+    week: 4
+    waiver: true
+  - player: Jauan Jennings
+    via: add
+    week: 4
+    waiver: false
+  - player: Kendre Miller
+    via: add
+    week: 4
+    waiver: false
+  - player: Tre' Harris
+    via: add
+    week: 4
+    waiver: false
+  - player: Aaron Rodgers
+    via: add
+    week: 5
+    waiver: true
+  - player: Chris Boswell
+    via: add
+    week: 5
+    waiver: true
+  - player: Dohnte Meyers
+    via: add
+    week: 5
+    waiver: true
+  - player: Jacoby Brissett
+    via: add
+    week: 5
+    waiver: false
   zachzoske:
-    - player: Amon-Ra St. Brown
-      via: draft
-      round: 1
-    - player: Drake London
-      via: draft
-      round: 2
-    - player: Tee Higgins
-      via: draft
-      round: 3
-    - player: Cam Skattebo
-      via: draft
-      round: 4
-    - player: Joe Burrow
-      via: draft
-      round: 5
-    - player: Jonathon Brooks
-      via: draft
-      round: 6
-    - player: George Kittle
-      via: draft
-      round: 7
-    - player: Michael Pittman Jr.
-      via: draft
-      round: 8
-    - player: Bhayshul Tuten
-      via: draft
-      round: 9
-    - player: Isaiah Likely
-      via: draft
-      round: 10
-    - player: Cam Little
-      via: draft
-      round: 11
-    - player: Woody Marks
-      via: draft
-      round: 12
-    - player: Steelers D/ST
-      via: draft
-      round: 13
-    - player: Jaylin Noel
-      via: draft
-      round: 14
-    - player: Jaydon Blue
-      via: draft
-      round: 15
-    - player: Ashton Jeanty
-      via: trade
-      week: 1
-    - player: Caleb Douglas
-      via: add
-      week: 1
-      waiver: false
-    - player: Chris Brooks
-      via: add
-      week: 1
-      waiver: false
-    - player: George Holani
-      via: add
-      week: 1
-      waiver: false
-    - player: Tyreek Hill
-      via: add
-      week: 1
-      waiver: false
-    - player: Chiefs D/ST
-      via: add
-      week: 2
-      waiver: false
-    - player: Kayshon Boutte
-      via: add
-      week: 2
-      waiver: false
-    - player: Tyler Shough
-      via: add
-      week: 2
-      waiver: false
-    - player: Josh Downs
-      via: trade
-      week: 3
-    - player: Chris Bell
-      via: add
-      week: 3
-      waiver: false
-    - player: Jared Goff
-      via: add
-      week: 3
-      waiver: true
-    - player: Keon Coleman
-      via: add
-      week: 3
-      waiver: false
-    - player: Sam Darnold
-      via: add
-      week: 3
-      waiver: false
-    - player: Tyler Allgeier
-      via: add
-      week: 3
-      waiver: true
-    - player: Zach Charbonnet
-      via: add
-      week: 3
-      waiver: false
-    - player: Jaylen Wright
-      via: add
-      week: 4
-      waiver: true
-    - player: Antonio Williams
-      via: add
-      week: 5
-      waiver: false
-    - player: Bears D/ST
-      via: add
-      week: 5
-      waiver: true
-    - player: Khalil Shakir
-      via: add
-      week: 5
-      waiver: true
+  - player: Amon-Ra St. Brown
+    via: draft
+    round: 1
+  - player: Drake London
+    via: draft
+    round: 2
+  - player: Tee Higgins
+    via: draft
+    round: 3
+  - player: Cam Skattebo
+    via: draft
+    round: 4
+  - player: Joe Burrow
+    via: draft
+    round: 5
+  - player: Jonathon Brooks
+    via: draft
+    round: 6
+  - player: George Kittle
+    via: draft
+    round: 7
+  - player: Michael Pittman Jr.
+    via: draft
+    round: 8
+  - player: Bhayshul Tuten
+    via: draft
+    round: 9
+  - player: Isaiah Likely
+    via: draft
+    round: 10
+  - player: Cam Little
+    via: draft
+    round: 11
+  - player: Woody Marks
+    via: draft
+    round: 12
+  - player: Steelers D/ST
+    via: draft
+    round: 13
+  - player: Jaylin Noel
+    via: draft
+    round: 14
+  - player: Jaydon Blue
+    via: draft
+    round: 15
+  - player: Ashton Jeanty
+    via: trade
+    week: 1
+  - player: Caleb Douglas
+    via: add
+    week: 1
+    waiver: false
+  - player: Chris Brooks
+    via: add
+    week: 1
+    waiver: false
+  - player: George Holani
+    via: add
+    week: 1
+    waiver: false
+  - player: Tyreek Hill
+    via: add
+    week: 1
+    waiver: false
+  - player: Chiefs D/ST
+    via: add
+    week: 2
+    waiver: false
+  - player: Kayshon Boutte
+    via: add
+    week: 2
+    waiver: false
+  - player: Tyler Shough
+    via: add
+    week: 2
+    waiver: false
+  - player: Josh Downs
+    via: trade
+    week: 3
+  - player: Chris Bell
+    via: add
+    week: 3
+    waiver: false
+  - player: Jared Goff
+    via: add
+    week: 3
+    waiver: true
+  - player: Keon Coleman
+    via: add
+    week: 3
+    waiver: false
+  - player: Sam Darnold
+    via: add
+    week: 3
+    waiver: false
+  - player: Tyler Allgeier
+    via: add
+    week: 3
+    waiver: true
+  - player: Zach Charbonnet
+    via: add
+    week: 3
+    waiver: false
+  - player: Jaylen Wright
+    via: add
+    week: 4
+    waiver: true
+  - player: Antonio Williams
+    via: add
+    week: 5
+    waiver: false
+  - player: Bears D/ST
+    via: add
+    week: 5
+    waiver: true
+  - player: Khalil Shakir
+    via: add
+    week: 5
+    waiver: true
   theoceanpulse:
-    - player: Omarion Hampton
-      via: draft
-      round: 1
-    - player: A.J. Brown
-      via: draft
-      round: 2
-    - player: Garrett Wilson
-      via: draft
-      round: 3
-    - player: David Montgomery
-      via: draft
-      round: 4
-    - player: Christian Watson
-      via: draft
-      round: 5
-    - player: Kenny Gainwell
-      via: draft
-      round: 6
-    - player: Caleb Williams
-      via: draft
-      round: 7
-    - player: Colston Loveland
-      via: draft
-      round: 8
-    - player: Jordan Mason
-      via: draft
-      round: 9
-    - player: Josh Downs
-      via: draft
-      round: 10
-    - player: Rashid Shaheed
-      via: draft
-      round: 11
-    - player: Tyler Allgeier
-      via: draft
-      round: 12
-    - player: Lions D/ST
-      via: draft
-      round: 13
-    - player: Harrison Mevis
-      via: draft
-      round: 14
-    - player: Zach Charbonnet
-      via: draft
-      round: 15
-    - player: 5.04 pick
-      via: trade
-      week: 0
-    - player: 9.04 pick
-      via: trade
-      week: 0
-    - player: Cyrus Allen
-      via: add
-      week: 1
-      waiver: true
-    - player: Malachi Fields
-      via: add
-      week: 1
-      waiver: false
-    - player: 49ers D/ST
-      via: add
-      week: 2
-      waiver: true
-    - player: Pat Bryant
-      via: add
-      week: 2
-      waiver: true
-    - player: Jared Goff
-      via: trade
-      week: 3
-    - player: Dalton Schultz
-      via: add
-      week: 3
-      waiver: false
-    - player: Devaughn Vele
-      via: add
-      week: 3
-      waiver: true
-    - player: Eddy Pineiro
-      via: add
-      week: 3
-      waiver: true
-    - player: Emanuel Wilson
-      via: add
-      week: 3
-      waiver: true
-    - player: Khalil Shakir
-      via: add
-      week: 3
-      waiver: true
-    - player: Browns D/ST
-      via: add
-      week: 4
-      waiver: false
-    - player: Chris Bell
-      via: add
-      week: 4
-      waiver: false
-    - player: Kalif Raymond
-      via: add
-      week: 4
-      waiver: true
-    - player: Spencer Shrader
-      via: add
-      week: 4
-      waiver: false
-    - player: MarShawn Lloyd
-      via: add
-      week: 5
-      waiver: false
-    - player: Tank Dell
-      via: add
-      week: 5
-      waiver: false
+  - player: Omarion Hampton
+    via: draft
+    round: 1
+  - player: A.J. Brown
+    via: draft
+    round: 2
+  - player: Garrett Wilson
+    via: draft
+    round: 3
+  - player: David Montgomery
+    via: draft
+    round: 4
+  - player: Christian Watson
+    via: draft
+    round: 5
+  - player: Kenny Gainwell
+    via: draft
+    round: 6
+  - player: Caleb Williams
+    via: draft
+    round: 7
+  - player: Colston Loveland
+    via: draft
+    round: 8
+  - player: Jordan Mason
+    via: draft
+    round: 9
+  - player: Josh Downs
+    via: draft
+    round: 10
+  - player: Rashid Shaheed
+    via: draft
+    round: 11
+  - player: Tyler Allgeier
+    via: draft
+    round: 12
+  - player: Lions D/ST
+    via: draft
+    round: 13
+  - player: Harrison Mevis
+    via: draft
+    round: 14
+  - player: Zach Charbonnet
+    via: draft
+    round: 15
+  - player: 5.04 pick
+    via: trade
+    week: 0
+  - player: 9.04 pick
+    via: trade
+    week: 0
+  - player: Cyrus Allen
+    via: add
+    week: 1
+    waiver: true
+  - player: Malachi Fields
+    via: add
+    week: 1
+    waiver: false
+  - player: 49ers D/ST
+    via: add
+    week: 2
+    waiver: true
+  - player: Pat Bryant
+    via: add
+    week: 2
+    waiver: true
+  - player: Jared Goff
+    via: trade
+    week: 3
+  - player: Dalton Schultz
+    via: add
+    week: 3
+    waiver: false
+  - player: Devaughn Vele
+    via: add
+    week: 3
+    waiver: true
+  - player: Eddy Pineiro
+    via: add
+    week: 3
+    waiver: true
+  - player: Emanuel Wilson
+    via: add
+    week: 3
+    waiver: true
+  - player: Khalil Shakir
+    via: add
+    week: 3
+    waiver: true
+  - player: Browns D/ST
+    via: add
+    week: 4
+    waiver: false
+  - player: Chris Bell
+    via: add
+    week: 4
+    waiver: false
+  - player: Kalif Raymond
+    via: add
+    week: 4
+    waiver: true
+  - player: Spencer Shrader
+    via: add
+    week: 4
+    waiver: false
+  - player: Alvin Kamara
+    via: trade
+    week: 5
+  - player: Breece Hall
+    via: trade
+    week: 5
+  - player: Dalton Kincaid
+    via: trade
+    week: 5
+  - player: Luther Burden III
+    via: trade
+    week: 5
+  - player: MarShawn Lloyd
+    via: add
+    week: 5
+    waiver: false
+  - player: Raiders D/ST
+    via: add
+    week: 5
+    waiver: false
+  - player: Tank Dell
+    via: add
+    week: 5
+    waiver: false
   kevbots22:
-    - player: Chase Brown
-      via: draft
-      round: 1
-    - player: Justin Jefferson
-      via: draft
-      round: 2
-    - player: Josh Jacobs
-      via: draft
-      round: 3
-    - player: Tetairoa McMillan
-      via: draft
-      round: 4
-    - player: Chris Olave
-      via: draft
-      round: 5
-    - player: Rhamondre Stevenson
-      via: draft
-      round: 6
-    - player: Jaxson Dart
-      via: draft
-      round: 7
-    - player: Travis Kelce
-      via: draft
-      round: 8
-    - player: Chuba Hubbard
-      via: draft
-      round: 9
-    - player: Brian Thomas Jr.
-      via: draft
-      round: 10
-    - player: Jayden Reed
-      via: draft
-      round: 11
-    - player: Isiah Pacheco
-      via: draft
-      round: 12
-    - player: Cameron Dicker
-      via: draft
-      round: 13
-    - player: Matthew Stafford
-      via: draft
-      round: 14
-    - player: Patriots D/ST
-      via: draft
-      round: 15
-    - player: Samaje Perine
-      via: add
-      week: 1
-      waiver: false
-    - player: Justin Herbert
-      via: add
-      week: 3
-      waiver: true
-    - player: Tre Tucker
-      via: add
-      week: 3
-      waiver: true
-    - player: T.J. Hockenson
-      via: add
-      week: 5
-      waiver: true
+  - player: Chase Brown
+    via: draft
+    round: 1
+  - player: Justin Jefferson
+    via: draft
+    round: 2
+  - player: Josh Jacobs
+    via: draft
+    round: 3
+  - player: Tetairoa McMillan
+    via: draft
+    round: 4
+  - player: Chris Olave
+    via: draft
+    round: 5
+  - player: Rhamondre Stevenson
+    via: draft
+    round: 6
+  - player: Jaxson Dart
+    via: draft
+    round: 7
+  - player: Travis Kelce
+    via: draft
+    round: 8
+  - player: Chuba Hubbard
+    via: draft
+    round: 9
+  - player: Brian Thomas Jr.
+    via: draft
+    round: 10
+  - player: Jayden Reed
+    via: draft
+    round: 11
+  - player: Isiah Pacheco
+    via: draft
+    round: 12
+  - player: Cameron Dicker
+    via: draft
+    round: 13
+  - player: Matthew Stafford
+    via: draft
+    round: 14
+  - player: Patriots D/ST
+    via: draft
+    round: 15
+  - player: Samaje Perine
+    via: add
+    week: 1
+    waiver: false
+  - player: Justin Herbert
+    via: add
+    week: 3
+    waiver: true
+  - player: Tre Tucker
+    via: add
+    week: 3
+    waiver: true
+  - player: T.J. Hockenson
+    via: add
+    week: 5
+    waiver: true
   whowonthelastsuperbowl:
-    - player: Derrick Henry
-      via: draft
-      round: 1
-    - player: CeeDee Lamb
-      via: draft
-      round: 2
-    - player: Davante Adams
-      via: draft
-      round: 3
-    - player: Bucky Irving
-      via: draft
-      round: 4
-    - player: Sam LaPorta
-      via: draft
-      round: 5
-    - player: Courtland Sutton
-      via: draft
-      round: 6
-    - player: Aaron Jones Sr.
-      via: draft
-      round: 7
-    - player: Quentin Johnston
-      via: draft
-      round: 8
-    - player: Stefon Diggs
-      via: draft
-      round: 9
-    - player: Brandon Aubrey
-      via: draft
-      round: 10
-    - player: Drake Maye
-      via: draft
-      round: 11
-    - player: Texans D/ST
-      via: draft
-      round: 12
-    - player: Jake Ferguson
-      via: draft
-      round: 13
-    - player: Justice Hill
-      via: draft
-      round: 14
-    - player: Khalil Shakir
-      via: draft
-      round: 15
-    - player: George Holani
-      via: add
-      week: 2
-      waiver: false
-    - player: Tyler Shough
-      via: add
-      week: 3
-      waiver: true
-    - player: Packers D/ST
-      via: add
-      week: 4
-      waiver: false
-    - player: Keon Coleman
-      via: add
-      week: 5
-      waiver: true
+  - player: Derrick Henry
+    via: draft
+    round: 1
+  - player: CeeDee Lamb
+    via: draft
+    round: 2
+  - player: Davante Adams
+    via: draft
+    round: 3
+  - player: Bucky Irving
+    via: draft
+    round: 4
+  - player: Sam LaPorta
+    via: draft
+    round: 5
+  - player: Courtland Sutton
+    via: draft
+    round: 6
+  - player: Aaron Jones Sr.
+    via: draft
+    round: 7
+  - player: Quentin Johnston
+    via: draft
+    round: 8
+  - player: Stefon Diggs
+    via: draft
+    round: 9
+  - player: Brandon Aubrey
+    via: draft
+    round: 10
+  - player: Drake Maye
+    via: draft
+    round: 11
+  - player: Texans D/ST
+    via: draft
+    round: 12
+  - player: Jake Ferguson
+    via: draft
+    round: 13
+  - player: Justice Hill
+    via: draft
+    round: 14
+  - player: Khalil Shakir
+    via: draft
+    round: 15
+  - player: George Holani
+    via: add
+    week: 2
+    waiver: false
+  - player: Tyler Shough
+    via: add
+    week: 3
+    waiver: true
+  - player: Packers D/ST
+    via: add
+    week: 4
+    waiver: false
+  - player: Keon Coleman
+    via: add
+    week: 5
+    waiver: true

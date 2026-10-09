@@ -284,7 +284,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '14'
+  - value: '15'
     team: null
     owner_name: Dillon
     owner_id: theoceanpulse
@@ -294,7 +294,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '12'
+  - value: '13'
     team: null
     owner_name: Jack
     owner_id: jackperkins74
@@ -390,7 +390,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Transactions
-  value: '1065'
+  value: '1067'
   sub_value: null
   season: null
   week: null
@@ -404,7 +404,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '1065'
+  - value: '1067'
     team: null
     owner_name: Jack
     owner_id: jackperkins74
@@ -444,7 +444,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '464'
+  - value: '466'
     team: null
     owner_name: Dillon
     owner_id: theoceanpulse

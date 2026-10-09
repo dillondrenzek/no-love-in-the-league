@@ -23,7 +23,7 @@ active:
   win_color: '#f6a348'
   titles: '2'
   sackos: 1
-  trades: 12
+  trades: 13
   best_finish:
     type: shiva
     years:
@@ -38,7 +38,7 @@ active:
   win_color: '#f38c43'
   titles: '1'
   sackos: 0
-  trades: 14
+  trades: 15
   best_finish:
     type: shiva
     years:
@@ -1617,8 +1617,8 @@ tx_heatmap:
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1065
-    tx_per_year: 118.3
+    total: 1067
+    tx_per_year: 118.6
     cells:
     - year: 2018
       count: 75
@@ -1645,8 +1645,8 @@ tx_heatmap:
       count: 130
       color: '#f28742'
     - year: 2026
-      count: 60
-      color: '#fac572'
+      count: 62
+      color: '#fac46e'
   - id: zachzoske
     name: Zach
     total: 947
@@ -1745,8 +1745,8 @@ tx_heatmap:
       color: '#fcebcc'
   - id: theoceanpulse
     name: Dillon
-    total: 464
-    tx_per_year: 51.6
+    total: 466
+    tx_per_year: 51.8
     cells:
     - year: 2018
       count: 32
@@ -1773,8 +1773,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 30
-      color: '#fcdca9'
+      count: 32
+      color: '#fbdba5'
   - id: shawne2520997
     name: Shawnee
     total: 432

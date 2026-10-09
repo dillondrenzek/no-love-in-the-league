@@ -35,7 +35,7 @@ sturmanator15:
       opp: Zach
   seasons:
   - year: 2026
-    team: The People's Commissioner
+    team: God's Commissioner
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
@@ -5292,9 +5292,9 @@ jackperkins74:
     titles: '2'
     sackos: 1
     playoff_apps: 9
-    trades: 12
+    trades: 13
     trades_known: true
-    tx_per_year: 118.3
+    tx_per_year: 118.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -5318,7 +5318,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 3rd
     record: 3-1
-    tx: 60
+    tx: 62
     in_progress: true
     pf: 522.3
     pa: 436.4
@@ -5561,6 +5561,20 @@ jackperkins74:
     avg_pf: 98.4
     avg_pa: 108.0
   trades:
+  - year: 2026
+    week: 5
+    got:
+    - Omarion Hampton
+    - Garrett Wilson
+    gave:
+    - Dalton Kincaid
+    - Alvin Kamara
+    - Breece Hall
+    - Luther Burden III
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: The ChoSimba Ones
   - year: 2025
     week: 8
     got:
@@ -5883,6 +5897,20 @@ jackperkins74:
     - player: Tyreek Hill
       via: add
       week: 4
+      waiver: false
+    - player: Garrett Wilson
+      via: trade
+      week: 5
+    - player: Omarion Hampton
+      via: trade
+      week: 5
+    - player: Chris Rodriguez Jr.
+      via: add
+      week: 5
+      waiver: false
+    - player: Germie Bernard
+      via: add
+      week: 5
       waiver: false
     - player: Mike Gesicki
       via: add
@@ -15418,9 +15446,9 @@ theoceanpulse:
     titles: '1'
     sackos: 0
     playoff_apps: 8
-    trades: 14
+    trades: 15
     trades_known: true
-    tx_per_year: 51.6
+    tx_per_year: 51.8
     tx_known: false
     seasons: 11
     best_finish:
@@ -15443,7 +15471,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 1-2-1
-    tx: 30
+    tx: 32
     in_progress: true
     pf: 427.6
     pa: 499.4
@@ -15664,6 +15692,20 @@ theoceanpulse:
     avg_pf: 100.9
     avg_pa: 104.9
   trades:
+  - year: 2026
+    week: 5
+    got:
+    - Dalton Kincaid
+    - Alvin Kamara
+    - Breece Hall
+    - Luther Burden III
+    gave:
+    - Omarion Hampton
+    - Garrett Wilson
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Gibbed for your pleasure
   - year: 2026
     week: 3
     got:
@@ -15948,7 +15990,23 @@ theoceanpulse:
       via: add
       week: 4
       waiver: false
+    - player: Alvin Kamara
+      via: trade
+      week: 5
+    - player: Breece Hall
+      via: trade
+      week: 5
+    - player: Dalton Kincaid
+      via: trade
+      week: 5
+    - player: Luther Burden III
+      via: trade
+      week: 5
     - player: MarShawn Lloyd
+      via: add
+      week: 5
+      waiver: false
+    - player: Raiders D/ST
       via: add
       week: 5
       waiver: false

@@ -47,7 +47,7 @@ detail:
     rows:
     - &id001
       finish: 1
-      team: The People's Commissioner
+      team: God's Commissioner
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
       owner_id: sturmanator15
       owner_name: Wade
@@ -282,7 +282,7 @@ detail:
     - pick: 8
       owner_id: sturmanator15
       owner_name: Wade
-      team: The People's Commissioner
+      team: God's Commissioner
       keepers:
       - player: Trey McBride
         round: 9
@@ -355,6 +355,22 @@ detail:
         team: Tuten Your Mom
         gave:
         - Jared Goff
+    - week: 5
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Gibbed for your pleasure
+        gave:
+        - Dalton Kincaid
+        - Alvin Kamara
+        - Breece Hall
+        - Luther Burden III
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: The ChoSimba Ones
+        gave:
+        - Omarion Hampton
+        - Garrett Wilson
     keepers:
     - round: 5
       player: Brock Bowers
@@ -400,7 +416,7 @@ detail:
       player: Trey McBride
       owner_id: sturmanator15
       owner_name: Wade
-      team: The People's Commissioner
+      team: God's Commissioner
     - round: 9
       player: Bhayshul Tuten
       owner_id: zachzoske
