@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-09T00:02:20+00:00'
+captured_at: '2026-10-09T05:19:03+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -842,7 +842,7 @@ rosters:
     pos: RB
     starter: true
     proj: 16.11
-    actual: null
+    actual: 13.2
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -926,7 +926,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.16
-    actual: null
+    actual: 14.2
     injury: ''
     pro_team: TB
     bye_week: 10
@@ -956,7 +956,7 @@ rosters:
     bye_week: 9
   - player: Jayden Daniels
     pos: QB
-    starter: false
+    starter: true
     proj: 21.92
     actual: null
     injury: ''
@@ -996,7 +996,7 @@ rosters:
     bye_week: 13
   - player: Bo Nix
     pos: QB
-    starter: true
+    starter: false
     proj: 17.39
     actual: null
     injury: ''
@@ -1058,8 +1058,8 @@ rosters:
     pos: WR
     starter: true
     proj: 15.47
-    actual: null
-    injury: ''
+    actual: 1.9
+    injury: QUESTIONABLE
     pro_team: DAL
     bye_week: 14
   - player: Davante Adams
@@ -1074,7 +1074,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.95
-    actual: null
+    actual: 30.5
     injury: ''
     pro_team: TB
     bye_week: 10
@@ -1114,7 +1114,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.55
-    actual: null
+    actual: 5.0
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1138,7 +1138,7 @@ rosters:
     pos: TE
     starter: false
     proj: 5.39
-    actual: null
+    actual: 3.4
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1438,7 +1438,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.9
-    actual: null
+    actual: 23.5
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1470,7 +1470,7 @@ rosters:
     pos: QB
     starter: true
     proj: 19.31
-    actual: null
+    actual: 13.6
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1550,7 +1550,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.42
-    actual: null
+    actual: -2.0
     injury: ''
     pro_team: DAL
     bye_week: 14

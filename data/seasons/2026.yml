@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-09T00:02:24+00:00
+updated_at: 2026-10-09T05:19:08+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -114,11 +114,11 @@ matchups:
   - { week:  4, home: schirmerj, away: shawne2520997, home_score: 141.3, away_score: 120.7, playoff: false }
   - { week:  4, home: sturmanator15, away: jackperkins74, home_score: 144.8, away_score: 122.0, playoff: false }
   - { week:  4, home: zachzoske, away: lukstein, home_score: 123.2, away_score: 65.4, playoff: false }
-  - { week:  5, home: jackperkins74, away: alexandra, playoff: false, played: false, home_proj: 135.76, away_proj: 88.98 }
-  - { week:  5, home: kevbots22, away: shawne2520997, playoff: false, played: false, home_proj: 112.28, away_proj: 114.79 }
-  - { week:  5, home: purpsworth, away: gganoom, playoff: false, played: false, home_proj: 111.17, away_proj: 129.12 }
+  - { week:  5, home: jackperkins74, away: alexandra, home_score: 0.0, away_score: 13.2, playoff: false, final: false, home_proj: 135.76, away_proj: 88.98 }
+  - { week:  5, home: kevbots22, away: shawne2520997, home_score: 0.0, away_score: 35.1, playoff: false, final: false, home_proj: 112.28, away_proj: 114.79 }
+  - { week:  5, home: purpsworth, away: gganoom, home_score: 14.2, away_score: 0.0, playoff: false, final: false, home_proj: 115.7, away_proj: 129.12 }
   - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.42, away_proj: 90.17 }
-  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 119.85, away_proj: 131.57 }
+  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 0.0, away_score: 37.4, playoff: false, final: false, home_proj: 119.85, away_proj: 131.57 }
   - { week:  5, home: zachzoske, away: theoceanpulse, playoff: false, played: false, home_proj: 122.77, away_proj: 106.02 }
   - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false }
   - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
