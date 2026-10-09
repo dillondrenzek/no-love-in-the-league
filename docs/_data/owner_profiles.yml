@@ -5294,7 +5294,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 13
     trades_known: true
-    tx_per_year: 118.6
+    tx_per_year: 118.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -5318,7 +5318,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 3rd
     record: 3-1
-    tx: 62
+    tx: 64
     in_progress: true
     pf: 522.3
     pa: 436.4
@@ -5909,6 +5909,10 @@ jackperkins74:
       week: 5
       waiver: false
     - player: Germie Bernard
+      via: add
+      week: 5
+      waiver: false
+    - player: Marvin Harrison Jr.
       via: add
       week: 5
       waiver: false
@@ -18899,7 +18903,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 46.0
+    tx_per_year: 46.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -18922,7 +18926,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 1-3
-    tx: 18
+    tx: 19
     in_progress: true
     pf: 313.3
     pa: 496.5
@@ -19361,6 +19365,10 @@ lukstein:
       week: 4
       waiver: true
     - player: Dameon Pierce
+      via: add
+      week: 5
+      waiver: false
+    - player: Darius Cooper
       via: add
       week: 5
       waiver: false

@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-09T11:00:33+00:00'
+captured_at: '2026-10-09T17:42:33+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -56,7 +56,7 @@ rosters:
     bye_week: 9
   - player: Blake Corum
     pos: RB
-    starter: false
+    starter: true
     proj: 7.88
     actual: null
     injury: ''
@@ -72,10 +72,10 @@ rosters:
     bye_week: 14
   - player: Kyle Monangai
     pos: RB
-    starter: true
+    starter: false
     proj: 9.91
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: CHI
     bye_week: 10
   - player: Jonah Coleman
@@ -458,14 +458,6 @@ rosters:
     injury: ''
     pro_team: GB
     bye_week: 11
-  - player: Alec Pierce
-    pos: WR
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: INJURY_RESERVE
-    pro_team: IND
-    bye_week: 13
   - player: Tank Bigsby
     pos: RB
     starter: false
@@ -526,6 +518,14 @@ rosters:
     pos: RB
     starter: true
     proj: 4.88
+    actual: null
+    injury: ''
+    pro_team: PHI
+    bye_week: 10
+  - player: Darius Cooper
+    pos: WR
+    starter: false
+    proj: 7.48
     actual: null
     injury: ''
     pro_team: PHI
@@ -654,14 +654,14 @@ rosters:
     injury: ''
     pro_team: JAX
     bye_week: 7
-  - player: Germie Bernard
+  - player: Marvin Harrison Jr.
     pos: WR
     starter: false
-    proj: 6.48
+    proj: 5.69
     actual: null
     injury: ''
-    pro_team: PIT
-    bye_week: 9
+    pro_team: ARI
+    bye_week: 14
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -819,7 +819,7 @@ rosters:
     starter: true
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: BAL
     bye_week: 13
   - player: Tyler Warren
@@ -1287,7 +1287,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: OUT
     pro_team: NYJ
     bye_week: 13
   - player: Luther Burden III
@@ -1527,7 +1527,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: OUT
     pro_team: NYJ
     bye_week: 13
   - player: Will Shipley
