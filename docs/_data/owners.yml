@@ -1711,6 +1711,38 @@ tx_heatmap:
     - year: 2026
       count: 31
       color: '#fbdba7'
+  - id: theoceanpulse
+    name: Dillon
+    total: 468
+    tx_per_year: 52.0
+    cells:
+    - year: 2018
+      count: 32
+      color: '#fbdba5'
+    - year: 2019
+      count: 34
+      color: '#fbd9a2'
+    - year: 2020
+      count: 87
+      color: '#f8af4b'
+    - year: 2021
+      count: 65
+      color: '#fac169'
+    - year: 2022
+      count: 54
+      color: '#faca7d'
+    - year: 2023
+      count: 53
+      color: '#facb7f'
+    - year: 2024
+      count: 59
+      color: '#fac674'
+    - year: 2025
+      count: 50
+      color: '#facd84'
+    - year: 2026
+      count: 34
+      color: '#fbd9a2'
   - id: schirmerj
     name: Jono
     total: 467
@@ -1743,38 +1775,6 @@ tx_heatmap:
     - year: 2026
       count: 11
       color: '#fcebcc'
-  - id: theoceanpulse
-    name: Dillon
-    total: 466
-    tx_per_year: 51.8
-    cells:
-    - year: 2018
-      count: 32
-      color: '#fbdba5'
-    - year: 2019
-      count: 34
-      color: '#fbd9a2'
-    - year: 2020
-      count: 87
-      color: '#f8af4b'
-    - year: 2021
-      count: 65
-      color: '#fac169'
-    - year: 2022
-      count: 54
-      color: '#faca7d'
-    - year: 2023
-      count: 53
-      color: '#facb7f'
-    - year: 2024
-      count: 59
-      color: '#fac674'
-    - year: 2025
-      count: 50
-      color: '#facd84'
-    - year: 2026
-      count: 32
-      color: '#fbdba5'
   - id: shawne2520997
     name: Shawnee
     total: 432

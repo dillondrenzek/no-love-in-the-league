@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-10T16:34:23+00:00'
+captured_at: '2026-10-10T23:05:04+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -65,7 +65,7 @@ rosters:
   - player: Trey McBride
     pos: TE
     starter: true
-    proj: 14.89
+    proj: 15.01
     actual: null
     injury: ''
     pro_team: ARI
@@ -245,7 +245,7 @@ rosters:
   - player: Khalil Shakir
     pos: WR
     starter: false
-    proj: 8.85
+    proj: 7.91
     actual: null
     injury: ''
     pro_team: BUF
@@ -281,7 +281,7 @@ rosters:
   - player: Josh Allen
     pos: QB
     starter: true
-    proj: 21.1
+    proj: 21.12
     actual: null
     injury: ''
     pro_team: BUF
@@ -377,9 +377,9 @@ rosters:
   - player: Joshua Palmer
     pos: WR
     starter: false
-    proj: 5.44
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: BUF
     bye_week: 7
   - player: Najee Harris
@@ -429,7 +429,7 @@ rosters:
   - player: DJ Moore
     pos: WR
     starter: false
-    proj: 0.0
+    proj: 10.38
     actual: null
     injury: QUESTIONABLE
     pro_team: BUF
@@ -609,7 +609,7 @@ rosters:
   - player: Tyler Allgeier
     pos: RB
     starter: false
-    proj: 8.45
+    proj: 8.46
     actual: null
     injury: ''
     pro_team: ARI
@@ -657,7 +657,7 @@ rosters:
   - player: Marvin Harrison Jr.
     pos: WR
     starter: false
-    proj: 5.69
+    proj: 0.0
     actual: null
     injury: OUT
     pro_team: ARI
@@ -801,7 +801,7 @@ rosters:
   - player: Jeremiyah Love
     pos: RB
     starter: true
-    proj: 13.06
+    proj: 13.07
     actual: null
     injury: QUESTIONABLE
     pro_team: ARI
@@ -1161,7 +1161,7 @@ rosters:
   - player: Keon Coleman
     pos: WR
     starter: true
-    proj: 8.8
+    proj: 7.31
     actual: null
     injury: ''
     pro_team: BUF
@@ -1258,14 +1258,6 @@ rosters:
     injury: ''
     pro_team: IND
     bye_week: 13
-  - player: Chris Bell
-    pos: WR
-    starter: false
-    proj: 7.37
-    actual: null
-    injury: QUESTIONABLE
-    pro_team: MIA
-    bye_week: 6
   - player: Raiders D/ST
     pos: D/ST
     starter: true
@@ -1277,7 +1269,7 @@ rosters:
   - player: Dalton Kincaid
     pos: TE
     starter: false
-    proj: 7.88
+    proj: 6.99
     actual: null
     injury: ''
     pro_team: BUF
@@ -1306,6 +1298,14 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
+  - player: Tre' Harris
+    pos: WR
+    starter: false
+    proj: 6.71
+    actual: null
+    injury: ''
+    pro_team: LAC
+    bye_week: 7
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
@@ -1353,7 +1353,7 @@ rosters:
   - player: Michael Wilson
     pos: WR
     starter: true
-    proj: 13.92
+    proj: 14.02
     actual: null
     injury: ''
     pro_team: ARI

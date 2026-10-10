@@ -15456,7 +15456,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 15
     trades_known: true
-    tx_per_year: 51.8
+    tx_per_year: 52.0
     tx_known: false
     seasons: 11
     best_finish:
@@ -15479,7 +15479,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 1-2-1
-    tx: 32
+    tx: 34
     in_progress: true
     pf: 427.6
     pa: 499.4
@@ -16019,6 +16019,10 @@ theoceanpulse:
       week: 5
       waiver: false
     - player: Tank Dell
+      via: add
+      week: 5
+      waiver: false
+    - player: Tre' Harris
       via: add
       week: 5
       waiver: false
