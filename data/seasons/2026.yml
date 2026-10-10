@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-10T10:14:07+00:00
+updated_at: 2026-10-10T16:34:26+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -114,11 +114,11 @@ matchups:
   - { week:  4, home: schirmerj, away: shawne2520997, home_score: 141.3, away_score: 120.7, playoff: false }
   - { week:  4, home: sturmanator15, away: jackperkins74, home_score: 144.8, away_score: 122.0, playoff: false }
   - { week:  4, home: zachzoske, away: lukstein, home_score: 123.2, away_score: 65.4, playoff: false }
-  - { week:  5, home: jackperkins74, away: alexandra, home_score: 0.0, away_score: 13.2, playoff: false, final: false, home_proj: 135.74, away_proj: 88.31 }
-  - { week:  5, home: kevbots22, away: shawne2520997, home_score: 0.0, away_score: 35.1, playoff: false, final: false, home_proj: 112.29, away_proj: 117.63 }
-  - { week:  5, home: purpsworth, away: gganoom, home_score: 14.2, away_score: 0.0, playoff: false, final: false, home_proj: 115.76, away_proj: 129.26 }
-  - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.45, away_proj: 81.48 }
-  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 0.0, away_score: 37.4, playoff: false, final: false, home_proj: 116.11, away_proj: 131.27 }
+  - { week:  5, home: jackperkins74, away: alexandra, home_score: 0.0, away_score: 13.2, playoff: false, final: false, home_proj: 135.74, away_proj: 88.3 }
+  - { week:  5, home: kevbots22, away: shawne2520997, home_score: 0.0, away_score: 35.1, playoff: false, final: false, home_proj: 112.28, away_proj: 117.63 }
+  - { week:  5, home: purpsworth, away: gganoom, home_score: 14.2, away_score: 0.0, playoff: false, final: false, home_proj: 115.74, away_proj: 129.26 }
+  - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.45, away_proj: 87.25 }
+  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 0.0, away_score: 37.4, playoff: false, final: false, home_proj: 116.1, away_proj: 131.27 }
   - { week:  5, home: zachzoske, away: theoceanpulse, playoff: false, played: false, home_proj: 125.85, away_proj: 106.61 }
   - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false }
   - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
@@ -304,7 +304,7 @@ transactions:
   shawne2520997: { adds: 9, drops: 8, moves: 17 }
   sturmanator15: { adds: 16, drops: 15, moves: 31 }
   theoceanpulse: { adds: 17, drops: 15, moves: 32 }
-  whowonthelastsuperbowl: { adds: 4, drops: 3, moves: 7 }
+  whowonthelastsuperbowl: { adds: 5, drops: 3, moves: 8 }
   zachzoske: { adds: 19, drops: 14, moves: 33 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
@@ -1395,3 +1395,7 @@ rosters:
     via: add
     week: 5
     waiver: true
+  - player: MarShawn Lloyd
+    via: add
+    week: 5
+    waiver: false

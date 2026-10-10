@@ -1873,8 +1873,8 @@ tx_heatmap:
       color: '#fdedd1'
   - id: whowonthelastsuperbowl
     name: Nate
-    total: 303
-    tx_per_year: 33.7
+    total: 304
+    tx_per_year: 33.8
     cells:
     - year: 2018
       count: 18
@@ -1901,8 +1901,8 @@ tx_heatmap:
       count: 31
       color: '#fbdba7'
     - year: 2026
-      count: 7
-      color: '#fdeed3'
+      count: 8
+      color: '#fdedd1'
   - id: kevbots22
     name: Kevin
     total: 272

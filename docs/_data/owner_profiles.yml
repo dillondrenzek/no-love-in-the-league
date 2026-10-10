@@ -8318,7 +8318,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 33.7
+    tx_per_year: 33.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -8343,7 +8343,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 4th
     record: 2-2
-    tx: 7
+    tx: 8
     in_progress: true
     pf: 484.9
     pa: 440.6
@@ -8710,6 +8710,10 @@ whowonthelastsuperbowl:
       via: add
       week: 5
       waiver: true
+    - player: MarShawn Lloyd
+      via: add
+      week: 5
+      waiver: false
   - year: 2025
     players:
     - player: Jonathan Taylor
