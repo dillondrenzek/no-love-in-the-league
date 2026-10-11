@@ -1617,8 +1617,8 @@ tx_heatmap:
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1069
-    tx_per_year: 118.8
+    total: 1071
+    tx_per_year: 119.0
     cells:
     - year: 2018
       count: 75
@@ -1645,8 +1645,8 @@ tx_heatmap:
       count: 130
       color: '#f28742'
     - year: 2026
-      count: 64
-      color: '#fac26a'
+      count: 66
+      color: '#fac167'
   - id: zachzoske
     name: Zach
     total: 947

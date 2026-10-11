@@ -5294,7 +5294,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 13
     trades_known: true
-    tx_per_year: 118.8
+    tx_per_year: 119.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -5318,7 +5318,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 3rd
     record: 3-1
-    tx: 64
+    tx: 66
     in_progress: true
     pf: 522.3
     pa: 436.4
@@ -5909,6 +5909,10 @@ jackperkins74:
       week: 5
       waiver: false
     - player: Germie Bernard
+      via: add
+      week: 5
+      waiver: false
+    - player: Kendrick Bourne
       via: add
       week: 5
       waiver: false

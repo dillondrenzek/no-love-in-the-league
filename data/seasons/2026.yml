@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-11T10:25:36+00:00
+updated_at: 2026-10-11T16:59:42+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -114,12 +114,12 @@ matchups:
   - { week:  4, home: schirmerj, away: shawne2520997, home_score: 141.3, away_score: 120.7, playoff: false }
   - { week:  4, home: sturmanator15, away: jackperkins74, home_score: 144.8, away_score: 122.0, playoff: false }
   - { week:  4, home: zachzoske, away: lukstein, home_score: 123.2, away_score: 65.4, playoff: false }
-  - { week:  5, home: jackperkins74, away: alexandra, home_score: 0.0, away_score: 13.2, playoff: false, final: false, home_proj: 135.6, away_proj: 116.47 }
-  - { week:  5, home: kevbots22, away: shawne2520997, home_score: 0.0, away_score: 35.1, playoff: false, final: false, home_proj: 112.29, away_proj: 117.63 }
-  - { week:  5, home: purpsworth, away: gganoom, home_score: 14.2, away_score: 0.0, playoff: false, final: false, home_proj: 115.73, away_proj: 129.34 }
-  - { week:  5, home: schirmerj, away: lukstein, playoff: false, played: false, home_proj: 114.47, away_proj: 87.19 }
-  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 0.0, away_score: 37.4, playoff: false, final: false, home_proj: 116.21, away_proj: 129.79 }
-  - { week:  5, home: zachzoske, away: theoceanpulse, playoff: false, played: false, home_proj: 125.88, away_proj: 106.61 }
+  - { week:  5, home: jackperkins74, away: alexandra, home_score: 55.7, away_score: 13.2, playoff: false, final: false, home_proj: 135.93, away_proj: 116.4 }
+  - { week:  5, home: kevbots22, away: shawne2520997, home_score: 0.0, away_score: 42.9, playoff: false, final: false, home_proj: 112.85, away_proj: 117.57 }
+  - { week:  5, home: purpsworth, away: gganoom, home_score: 14.2, away_score: 0.0, playoff: false, final: false, home_proj: 115.73, away_proj: 132.36 }
+  - { week:  5, home: schirmerj, away: lukstein, home_score: 5.0, away_score: 23.1, playoff: false, final: false, home_proj: 114.85, away_proj: 91.8 }
+  - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 0.0, away_score: 37.4, playoff: false, final: false, home_proj: 116.79, away_proj: 131.2 }
+  - { week:  5, home: zachzoske, away: theoceanpulse, home_score: 12.0, away_score: 0.0, playoff: false, final: false, home_proj: 125.88, away_proj: 106.6 }
   - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false }
   - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
   - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false }
@@ -296,7 +296,7 @@ transactions_known: true
 transactions:
   alexandra: { adds: 5, drops: 5, moves: 10 }
   gganoom: { adds: 4, drops: 3, moves: 7 }
-  jackperkins74: { adds: 37, drops: 27, moves: 64 }
+  jackperkins74: { adds: 38, drops: 28, moves: 66 }
   kevbots22: { adds: 4, drops: 3, moves: 7 }
   lukstein: { adds: 12, drops: 7, moves: 19 }
   purpsworth: { adds: 5, drops: 3, moves: 8 }
@@ -486,6 +486,10 @@ rosters:
     week: 5
     waiver: false
   - player: Germie Bernard
+    via: add
+    week: 5
+    waiver: false
+  - player: Kendrick Bourne
     via: add
     week: 5
     waiver: false
