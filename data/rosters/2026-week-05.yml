@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-10T23:05:04+00:00'
+captured_at: '2026-10-11T02:51:11+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -33,7 +33,7 @@ rosters:
   - player: Zay Flowers
     pos: WR
     starter: true
-    proj: 11.17
+    proj: 11.19
     actual: null
     injury: QUESTIONABLE
     pro_team: BAL
@@ -65,7 +65,7 @@ rosters:
   - player: Trey McBride
     pos: TE
     starter: true
-    proj: 15.01
+    proj: 14.98
     actual: null
     injury: ''
     pro_team: ARI
@@ -253,7 +253,7 @@ rosters:
   - player: Bears D/ST
     pos: D/ST
     starter: true
-    proj: 5.46
+    proj: 5.49
     actual: null
     injury: ''
     pro_team: CHI
@@ -453,7 +453,7 @@ rosters:
   - player: Matthew Golden
     pos: WR
     starter: true
-    proj: 10.64
+    proj: 10.65
     actual: null
     injury: ''
     pro_team: GB
@@ -501,7 +501,7 @@ rosters:
   - player: Kenyon Sadiq
     pos: TE
     starter: true
-    proj: 7.62
+    proj: 7.55
     actual: null
     injury: ''
     pro_team: NYJ
@@ -601,7 +601,7 @@ rosters:
   - player: Braelon Allen
     pos: RB
     starter: true
-    proj: 12.98
+    proj: 12.95
     actual: null
     injury: ''
     pro_team: NYJ
@@ -641,7 +641,7 @@ rosters:
   - player: Garrett Wilson
     pos: WR
     starter: true
-    proj: 11.84
+    proj: 11.73
     actual: null
     injury: ''
     pro_team: NYJ
@@ -669,7 +669,7 @@ rosters:
   - player: Chase Brown
     pos: RB
     starter: true
-    proj: 15.3
+    proj: 15.31
     actual: null
     injury: ''
     pro_team: CIN
@@ -801,7 +801,7 @@ rosters:
   - player: Jeremiyah Love
     pos: RB
     starter: true
-    proj: 13.07
+    proj: 13.06
     actual: null
     injury: QUESTIONABLE
     pro_team: ARI
@@ -989,7 +989,7 @@ rosters:
   - player: Mark Andrews
     pos: TE
     starter: false
-    proj: 7.4
+    proj: 7.42
     actual: null
     injury: ''
     pro_team: BAL
@@ -1005,7 +1005,7 @@ rosters:
   - player: Deebo Samuel Sr.
     pos: WR
     starter: true
-    proj: 10.79
+    proj: 10.78
     actual: null
     injury: ''
     pro_team: SF
@@ -1049,7 +1049,7 @@ rosters:
   - player: Derrick Henry
     pos: RB
     starter: true
-    proj: 15.91
+    proj: 15.92
     actual: null
     injury: ''
     pro_team: BAL
@@ -1145,7 +1145,7 @@ rosters:
   - player: Justice Hill
     pos: RB
     starter: false
-    proj: 3.21
+    proj: 3.22
     actual: null
     injury: ''
     pro_team: BAL
@@ -1353,7 +1353,7 @@ rosters:
   - player: Michael Wilson
     pos: WR
     starter: true
-    proj: 14.02
+    proj: 14.0
     actual: null
     injury: ''
     pro_team: ARI
@@ -1361,7 +1361,7 @@ rosters:
   - player: Jaylen Warren
     pos: RB
     starter: true
-    proj: 12.83
+    proj: 12.84
     actual: null
     injury: ''
     pro_team: PIT
@@ -1401,7 +1401,7 @@ rosters:
   - player: Romeo Doubs
     pos: WR
     starter: true
-    proj: 10.18
+    proj: 10.17
     actual: null
     injury: ''
     pro_team: NE
