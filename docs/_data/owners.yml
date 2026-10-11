@@ -1969,8 +1969,8 @@ tx_heatmap:
       color: '#fdeed3'
   - id: alexandra
     name: Lexi
-    total: 2
-    tx_per_year: 2.0
+    total: 10
+    tx_per_year: 10.0
     cells:
     - year: 2018
       count: null
@@ -1997,8 +1997,8 @@ tx_heatmap:
       count: null
       color: null
     - year: 2026
-      count: 2
-      color: '#fdf1dc'
+      count: 10
+      color: '#fcebce'
   - id: henpen28
     name: Henry
     total: 360

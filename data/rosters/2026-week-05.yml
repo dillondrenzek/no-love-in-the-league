@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-11T02:51:11+00:00'
+captured_at: '2026-10-11T10:25:32+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -808,7 +808,7 @@ rosters:
     bye_week: 14
   - player: Rashee Rice
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: QUESTIONABLE
@@ -816,7 +816,7 @@ rosters:
     bye_week: 5
   - player: Lamar Jackson
     pos: QB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: OUT
@@ -864,7 +864,7 @@ rosters:
     bye_week: 6
   - player: Denzel Boston
     pos: WR
-    starter: false
+    starter: true
     proj: 9.82
     actual: null
     injury: ''
@@ -878,22 +878,6 @@ rosters:
     injury: ''
     pro_team: TEN
     bye_week: 9
-  - player: Travis Hunter
-    pos: WR
-    starter: false
-    proj: 0.06
-    actual: null
-    injury: ''
-    pro_team: JAX
-    bye_week: 7
-  - player: Seahawks D/ST
-    pos: D/ST
-    starter: true
-    proj: 3.86
-    actual: null
-    injury: ''
-    pro_team: SEA
-    bye_week: 11
   - player: Tyler Loop
     pos: K
     starter: true
@@ -909,6 +893,22 @@ rosters:
     actual: null
     injury: ''
     pro_team: SEA
+    bye_week: 11
+  - player: Browns D/ST
+    pos: D/ST
+    starter: true
+    proj: 5.65
+    actual: null
+    injury: ''
+    pro_team: CLE
+    bye_week: 11
+  - player: Jordan Love
+    pos: QB
+    starter: true
+    proj: 16.56
+    actual: null
+    injury: ''
+    pro_team: GB
     bye_week: 11
 - manager_id: '{06571853-E276-48AA-9202-F06B0AD927ED}'
   team_id: 10

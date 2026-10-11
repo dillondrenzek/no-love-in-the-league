@@ -14874,7 +14874,7 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
-    tx_per_year: 2.0
+    tx_per_year: 10.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -14897,7 +14897,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 8th
     record: 2-2
-    tx: 2
+    tx: 10
     in_progress: true
     pf: 439.2
     pa: 389.2
@@ -14987,6 +14987,22 @@ alexandra:
     - player: Rashid Shaheed
       via: add
       week: 2
+      waiver: false
+    - player: Browns D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Commanders D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Jordan Love
+      via: add
+      week: 5
+      waiver: false
+    - player: Kyler Murray
+      via: add
+      week: 5
       waiver: false
 gganoom:
   name: Grant
