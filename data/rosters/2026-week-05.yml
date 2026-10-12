@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-12T11:26:56+00:00'
+captured_at: '2026-10-12T20:34:52+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -11,7 +11,7 @@ rosters:
     starter: true
     proj: 16.76
     actual: 20.3
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: SEA
     bye_week: 11
   - player: Kenneth Walker III
@@ -1007,7 +1007,7 @@ rosters:
     starter: true
     proj: 10.78
     actual: 2.5
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: SF
     bye_week: 8
   - player: Drake London
@@ -1191,7 +1191,7 @@ rosters:
     starter: true
     proj: 10.94
     actual: 1.1
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: HOU
     bye_week: 8
   - player: Christian Watson
@@ -1543,7 +1543,7 @@ rosters:
     starter: true
     proj: 10.55
     actual: 7.8
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: PHI
     bye_week: 10
   - player: Roman Wilson
@@ -1551,7 +1551,7 @@ rosters:
     starter: true
     proj: 8.4
     actual: 0.0
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: PIT
     bye_week: 9
   - player: Cowboys D/ST
