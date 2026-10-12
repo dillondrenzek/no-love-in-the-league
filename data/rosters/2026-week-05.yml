@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-12T03:14:25+00:00'
+captured_at: '2026-10-12T11:26:56+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -34,7 +34,7 @@ rosters:
     pos: WR
     starter: true
     proj: 11.19
-    actual: 8.9
+    actual: 10.6
     injury: QUESTIONABLE
     pro_team: BAL
     bye_week: 13
@@ -882,7 +882,7 @@ rosters:
     pos: K
     starter: true
     proj: 7.69
-    actual: 13.0
+    actual: 14.0
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -990,7 +990,7 @@ rosters:
     pos: TE
     starter: false
     proj: 7.42
-    actual: 0.2
+    actual: 2.8
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -1014,7 +1014,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.25
-    actual: 12.8
+    actual: 15.3
     injury: ''
     pro_team: ATL
     bye_week: 11
@@ -1050,7 +1050,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.92
-    actual: 15.3
+    actual: 20.5
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -1314,7 +1314,7 @@ rosters:
     pos: RB
     starter: true
     proj: 20.55
-    actual: 11.9
+    actual: 13.8
     injury: ''
     pro_team: ATL
     bye_week: 11
@@ -1418,7 +1418,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.66
-    actual: 2.1
+    actual: 2.6
     injury: ''
     pro_team: ATL
     bye_week: 11
