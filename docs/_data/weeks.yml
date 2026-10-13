@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1986,7 +1986,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 84.8
+    home_proj: 84.7
     away_proj: 76.1
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -2005,7 +2005,7 @@
     live: false
     playoff: false
     home_proj: 115.1
-    away_proj: 100.9
+    away_proj: 101.0
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2023,7 +2023,7 @@
     live: false
     playoff: false
     home_proj: 128.2
-    away_proj: 75.3
+    away_proj: 78.9
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -2040,7 +2040,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 116.7
+    home_proj: 116.6
     away_proj: 137.2
   - home_id: zachzoske
     home_team: Tuten Your Mom
@@ -2063,7 +2063,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: true
   power: []
 2026-7:
@@ -2169,7 +2169,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-8:
@@ -2275,7 +2275,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-9:
@@ -2381,7 +2381,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-10:
@@ -2487,7 +2487,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-11:
@@ -2593,7 +2593,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-12:
@@ -2699,7 +2699,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-13:
@@ -2805,7 +2805,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []
 2026-14:
@@ -2911,6 +2911,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 13, 8:24 AM PDT
+  updated_at: Oct 13, 1:53 PM PDT
   current: false
   power: []

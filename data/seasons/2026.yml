@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-13T15:24:02+00:00
+updated_at: 2026-10-13T20:53:37+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -120,11 +120,11 @@ matchups:
   - { week:  5, home: schirmerj, away: lukstein, home_score: 128.0, away_score: 57.9, playoff: false }
   - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 144.1, away_score: 179.1, playoff: false }
   - { week:  5, home: zachzoske, away: theoceanpulse, home_score: 84.2, away_score: 105.5, playoff: false }
-  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 106.56, away_proj: 87.28 }
-  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 84.78, away_proj: 76.07 }
-  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false, home_proj: 115.13, away_proj: 100.93 }
-  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false, home_proj: 128.2, away_proj: 75.29 }
-  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false, home_proj: 116.67, away_proj: 137.16 }
+  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 106.56, away_proj: 87.27 }
+  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 84.73, away_proj: 76.07 }
+  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false, home_proj: 115.11, away_proj: 100.97 }
+  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false, home_proj: 128.22, away_proj: 78.87 }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false, home_proj: 116.63, away_proj: 137.15 }
   - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 99.93, away_proj: 85.25 }
   - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }

@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-13T15:23:59+00:00'
+captured_at: '2026-10-13T20:53:33+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -25,7 +25,7 @@ rosters:
   - player: Ladd McConkey
     pos: WR
     starter: false
-    proj: 8.18
+    proj: 8.15
     actual: null
     injury: QUESTIONABLE
     pro_team: LAC
@@ -65,7 +65,7 @@ rosters:
   - player: Trey McBride
     pos: TE
     starter: true
-    proj: 13.19
+    proj: 13.21
     actual: null
     injury: ''
     pro_team: ARI
@@ -75,7 +75,7 @@ rosters:
     starter: false
     proj: 9.47
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
   - player: Jonah Coleman
@@ -129,7 +129,7 @@ rosters:
   - player: Jacoby Brissett
     pos: QB
     starter: false
-    proj: 16.75
+    proj: 16.72
     actual: null
     injury: ''
     pro_team: ARI
@@ -353,7 +353,7 @@ rosters:
   - player: Keaton Mitchell
     pos: RB
     starter: true
-    proj: 7.49
+    proj: 7.47
     actual: null
     injury: ''
     pro_team: LAC
@@ -379,7 +379,7 @@ rosters:
     starter: false
     proj: 2.65
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: Najee Harris
@@ -407,7 +407,7 @@ rosters:
     starter: true
     proj: 12.89
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: DeVonta Smith
@@ -415,7 +415,7 @@ rosters:
     starter: true
     proj: 11.83
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: Jadarian Price
@@ -431,7 +431,7 @@ rosters:
     starter: true
     proj: 11.33
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: Jalen Hurts
@@ -569,7 +569,7 @@ rosters:
   - player: Puka Nacua
     pos: WR
     starter: true
-    proj: 19.19
+    proj: 19.18
     actual: null
     injury: ''
     pro_team: LAR
@@ -701,7 +701,7 @@ rosters:
   - player: Rhamondre Stevenson
     pos: RB
     starter: true
-    proj: 11.3
+    proj: 14.77
     actual: null
     injury: ''
     pro_team: NE
@@ -749,7 +749,7 @@ rosters:
   - player: Patriots D/ST
     pos: D/ST
     starter: true
-    proj: 6.65
+    proj: 6.76
     actual: null
     injury: ''
     pro_team: NE
@@ -793,7 +793,7 @@ rosters:
   - player: Jeremiyah Love
     pos: RB
     starter: true
-    proj: 10.27
+    proj: 10.28
     actual: null
     injury: ''
     pro_team: ARI
@@ -811,7 +811,7 @@ rosters:
     starter: false
     proj: 20.58
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: BAL
     bye_week: 13
   - player: Tyler Warren
@@ -825,7 +825,7 @@ rosters:
   - player: DK Metcalf
     pos: WR
     starter: true
-    proj: 9.75
+    proj: 9.78
     actual: null
     injury: ''
     pro_team: PIT
@@ -851,7 +851,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: MIN
     bye_week: 6
   - player: Denzel Boston
@@ -941,15 +941,15 @@ rosters:
   - player: Rico Dowdle
     pos: RB
     starter: false
-    proj: 5.62
+    proj: 5.63
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: PIT
     bye_week: 9
   - player: Jayden Daniels
     pos: QB
     starter: true
-    proj: 20.95
+    proj: 20.9
     actual: null
     injury: ''
     pro_team: WSH
@@ -986,14 +986,6 @@ rosters:
     injury: ''
     pro_team: BAL
     bye_week: 13
-  - player: Bo Nix
-    pos: QB
-    starter: false
-    proj: 14.02
-    actual: null
-    injury: ''
-    pro_team: DEN
-    bye_week: 10
   - player: Deebo Samuel Sr.
     pos: WR
     starter: true
@@ -1099,7 +1091,7 @@ rosters:
     starter: false
     proj: 8.12
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
   - player: Brandon Aubrey
@@ -1113,7 +1105,7 @@ rosters:
   - player: Drake Maye
     pos: QB
     starter: true
-    proj: 22.14
+    proj: 22.1
     actual: null
     injury: ''
     pro_team: NE
@@ -1199,7 +1191,7 @@ rosters:
     starter: false
     proj: 17.91
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
   - player: Colston Loveland
@@ -1279,7 +1271,7 @@ rosters:
     starter: false
     proj: 12.57
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: NYJ
     bye_week: 13
   - player: Luther Burden III
@@ -1293,7 +1285,7 @@ rosters:
   - player: Tre' Harris
     pos: WR
     starter: false
-    proj: 4.91
+    proj: 0.0
     actual: null
     injury: DOUBTFUL
     pro_team: LAC
@@ -1329,7 +1321,7 @@ rosters:
   - player: TreVeyon Henderson
     pos: RB
     starter: false
-    proj: 8.95
+    proj: 0.0
     actual: null
     injury: DOUBTFUL
     pro_team: NE
@@ -1337,7 +1329,7 @@ rosters:
   - player: Brock Bowers
     pos: TE
     starter: true
-    proj: 16.0
+    proj: 15.99
     actual: null
     injury: ''
     pro_team: LV
@@ -1345,7 +1337,7 @@ rosters:
   - player: Michael Wilson
     pos: WR
     starter: true
-    proj: 11.47
+    proj: 11.49
     actual: null
     injury: ''
     pro_team: ARI
@@ -1353,7 +1345,7 @@ rosters:
   - player: Jaylen Warren
     pos: RB
     starter: true
-    proj: 13.17
+    proj: 13.18
     actual: null
     injury: ''
     pro_team: PIT
@@ -1393,7 +1385,7 @@ rosters:
   - player: Romeo Doubs
     pos: WR
     starter: true
-    proj: 9.45
+    proj: 9.42
     actual: null
     injury: ''
     pro_team: NE
@@ -1501,7 +1493,7 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: false
-    proj: 7.33
+    proj: 7.02
     actual: null
     injury: ''
     pro_team: LAR
@@ -1525,9 +1517,9 @@ rosters:
   - player: Adonai Mitchell
     pos: WR
     starter: false
-    proj: 7.75
+    proj: 7.74
     actual: null
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: NYJ
     bye_week: 13
   - player: Will Shipley
