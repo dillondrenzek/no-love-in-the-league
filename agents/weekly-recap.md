@@ -81,6 +81,17 @@ The dial is turned up. Everything in Voice below still applies, but louder:
   headline). Then use the facts' **"Byes"** section to tease next week's crunch:
   who's losing the most bodies, which stars sit. A player on bye is not injured —
   never call his zero an injury.
+- **Tell it in the order it happened.** Each matchup has a **Scoring order**
+  block: the running score after every NFL window (Thursday night → Sunday →
+  Monday night), who scored in each, when the winner took the lead for good, the
+  deepest hole they climbed out of, and a **COMEBACK** flag when they trailed
+  going into the final window. The **"Standalone windows"** section lists every
+  starter in the opener, the closer, and the other one-game windows. That's the
+  drama: the stud who went off Thursday to put a manager up before anyone else had
+  played, the lead that evaporated in the late window, the Monday-night player
+  who won (or blew) the week. When a game flipped late, or a record fell on the
+  last night, lead with that. Don't narrate every window of every game, though —
+  pick the swings that matter.
 - **Settle the streaks.** When "Streaks on the line coming in" is present, say what
   happened to each: the heater that kept rolling (how long can this last?), the one
   that finally got snapped (who played spoiler), the skid that deepened or broke.
@@ -171,7 +182,10 @@ invent scores, players, or outcomes.
    once the week is complete). This is the computed, correct context and your
    primary source: the full scoreboard (team names, owners, final scores, winners),
    per-team **player detail** (top scorer, bust, bench points, when available), the
-   computed **highlights** (top/low score, biggest blowout, closest call), plus
+   computed **highlights** (top/low score, biggest blowout, closest call), each
+   matchup's **scoring order** by NFL window (running score, who scored when, when
+   the lead flipped) plus the league-wide **standalone windows** (everyone who
+   played Thursday night, Monday night, etc.), plus
    league context — **recent moves**, the **standings** after this week, **league
    bests**, **"Streaks on the line coming in"** (W2+/L2+ runs each team carried
    in, for you to mark held or snapped), and **"Byes"** (anyone started on bye

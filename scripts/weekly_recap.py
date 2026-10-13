@@ -38,11 +38,13 @@ from pathlib import Path
 import yaml
 
 from lib.data import (load_franchises, load_seasons, load_week_rosters,
-                      load_projections, short_name_of)
+                      load_projections, load_nfl_schedule, short_name_of)
 from lib.weeks import week_summary
 from lib.context import (standings_snapshot, recent_moves, league_bests,
                          week_roster_context, team_form, week_superlatives,
                          bye_watch, bye_watch_lines)
+from lib.nfl_schedule import (week_windows, lineup_by_window, matchup_flow,
+                              flow_lines, spotlight, spotlight_lines)
 
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
@@ -174,12 +176,25 @@ def data_block(year, week, summary, ctx):
             dl = _team_actual_line(rosters.get(fid))
             if dl:
                 lines.append(f"    {who}: {dl}")
+        by_win = ctx.get("by_window") or {}
+        if g["home_id"] in by_win and g["away_id"] in by_win:
+            side = {g["home_id"]: "home", g["away_id"]: "away"}.get(g["winner_id"])
+            flow = matchup_flow(by_win[g["home_id"]], by_win[g["away_id"]],
+                                ctx["windows"], None if g["tie"] else side)
+            lines += ["    " + l for l in flow_lines(flow, g["home_owner"], g["away_owner"],
+                                                    by_win[g["home_id"]], by_win[g["away_id"]])]
 
     lines += ["", "Highlights:"]
     for h in summary["highlights"]:
         who = f" — {h['team']} ({h['owner_name']})" if h["owner_name"] else ""
         sub = f" [{h['sub']}]" if h["sub"] else ""
         lines.append(f"- {h['label']}: {h['value']}{who}{sub}")
+
+    spot = spotlight_lines(ctx.get("spotlight"))
+    if spot:
+        lines += ["", "Standalone windows — every fantasy starter in the week's opener, "
+                  "closer, and other non-Sunday-afternoon games, best first (a big "
+                  "Thursday or Monday night is a story):"] + spot
 
     sup = ctx.get("superlatives") or {}
     if sup.get("best_player") or sup.get("bench_leader"):
@@ -310,8 +325,16 @@ def main():
     for key in ("best_player", "bench_leader"):
         if sup.get(key):
             sup[key]["owner"] = short_name_of(sup[key]["fid"], franchises)
+    # NFL kickoff windows (data/nfl_schedule/<year>.yml), so the facts can tell
+    # the week in order: who scored Thursday, who swung it Monday night.
+    windows = week_windows(load_nfl_schedule(args.year), args.week)
+    by_window = ({fid: lineup_by_window(e["starters"], windows) for fid, e in rosters.items()}
+                 if windows and rosters else {})
     ctx = {
         "rosters": rosters,
+        "windows": windows,
+        "by_window": by_window,
+        "spotlight": spotlight(by_window, windows, lambda f: short_name_of(f, franchises)),
         "standings": standings_snapshot(season, franchises),
         "moves": recent_moves(season, franchises, max(0, args.week - 1), args.week),
         "bests": league_bests(records),
@@ -327,6 +350,9 @@ def main():
         print("NOTE: no roster snapshot for this week (data/rosters/"
               f"{args.year}-week-{args.week:02d}.yml missing) — facts omit per-player "
               "boom/bust lines. Re-run the importer for this week.", file=sys.stderr)
+    elif not windows:
+        print(f"NOTE: no NFL schedule on file (data/nfl_schedule/{args.year}.yml) — "
+              "facts omit the scoring order. Re-run the importer.", file=sys.stderr)
 
     PROMPT_DIR.mkdir(parents=True, exist_ok=True)
     facts_path = PROMPT_DIR / f"{args.year}-week-{args.week:02d}.recap.data.md"

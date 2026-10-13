@@ -587,6 +587,115 @@ def test_bye_watch():
     assert bye_watch_lines(bye_watch({}, fr), 5) == []
 
 
+def test_nfl_window_labels():
+    from lib.nfl_schedule import window_label, fmt_kickoff
+    # Kickoffs are UTC; windows are judged on the Eastern clock (EDT in October).
+    assert window_label("2026-10-09T00:15:00Z") == "Thursday night"      # Thu 8:15 PM ET
+    assert window_label("2026-10-11T13:30:00Z") == "Sunday morning (international)"
+    assert window_label("2026-10-11T17:00:00Z") == "Sunday early"
+    assert window_label("2026-10-11T20:25:00Z") == "Sunday late"
+    assert window_label("2026-10-12T00:20:00Z") == "Sunday night"        # Sun 8:20 PM ET
+    assert window_label("2026-10-13T00:15:00Z") == "Monday night"
+    assert window_label("2026-11-26T17:30:00Z") == "Thursday afternoon"  # Thanksgiving (EST)
+    assert window_label("2026-12-19T21:30:00Z") == "Saturday"
+    assert fmt_kickoff("2026-10-09T00:15:00Z") == "Thu 8:15 PM ET"
+
+
+def _wk5_schedule():
+    return [
+        {"week": 5, "kickoff": "2026-10-13T00:15:00Z", "away": "BUF", "home": "LAR"},
+        {"week": 5, "kickoff": "2026-10-09T00:15:00Z", "away": "TB", "home": "DAL"},
+        {"week": 5, "kickoff": "2026-10-11T17:00:00Z", "away": "CHI", "home": "GB"},
+        {"week": 5, "kickoff": "2026-10-11T17:00:00Z", "away": "NO", "home": "MIN"},
+        {"week": 6, "kickoff": "2026-10-16T00:15:00Z", "away": "SEA", "home": "DEN"},
+    ]
+
+
+def test_nfl_week_windows_and_lineup_split():
+    from lib.nfl_schedule import week_windows, team_windows, lineup_by_window
+    w = week_windows(_wk5_schedule(), 5)
+    assert [x["label"] for x in w] == ["Thursday night", "Sunday early", "Monday night"]
+    assert team_windows(w)["NO"] == "Sunday early" and "SEA" not in team_windows(w)
+    starters = [
+        {"player": "Puka", "pos": "WR", "actual": 29.2, "proj": 18.1, "pro_team": "LAR"},
+        {"player": "Bucky", "pos": "RB", "actual": 30.5, "proj": 14.0, "pro_team": "TB"},
+        {"player": "Lamb", "pos": "WR", "actual": 1.9, "proj": 15.5, "pro_team": "DAL"},
+        {"player": "Kamara", "pos": "RB", "actual": 1.6, "proj": 9.7, "pro_team": "no"},
+        {"player": "Byed", "pos": "RB", "actual": None, "proj": 0.0, "pro_team": "KC"},
+        {"player": "Old", "pos": "TE", "actual": 3.0, "proj": 3.0},     # pre-v0.4.4 snapshot
+    ]
+    rows = lineup_by_window(starters, w)
+    assert [(r["window"], r["points"]) for r in rows] == \
+        [("Thursday night", 32.4), ("Sunday early", 1.6), ("Monday night", 29.2)]
+    assert [p["player"] for p in rows[0]["players"]] == ["Bucky", "Lamb"]   # best first
+    proj = lineup_by_window(starters, w, value="proj")
+    assert proj[0]["points"] == 29.5
+    assert lineup_by_window(starters, []) == []
+
+
+def test_nfl_matchup_flow():
+    from lib.nfl_schedule import week_windows, matchup_flow, flow_lines
+    w = week_windows(_wk5_schedule(), 5)
+    row = lambda win, pts, who="X": {"window": win, "points": pts,
+                                     "players": [{"player": who, "pos": "WR", "points": pts}]}
+    # Home leads early, away wins it on Monday night.
+    home = [row("Thursday night", 30.0), row("Sunday early", 60.0)]
+    away = [row("Sunday early", 70.0), row("Monday night", 25.0, "Puka")]
+    f = matchup_flow(home, away, w, winner="away")
+    assert [(c["home_run"], c["away_run"]) for c in f["checkpoints"]] == \
+        [(30.0, 0.0), (90.0, 70.0), (90.0, 95.0)]
+    assert f["took_lead_for_good"] == "Monday night" and f["comeback"]
+    assert not f["wire_to_wire"] and f["lead_changes"] == 1
+    assert f["max_deficit"] == {"window": "Thursday night", "points": 30.0}
+    assert f["entering_last"] == {"window": "Monday night", "home_run": 90.0, "away_run": 70.0}
+    lines = flow_lines(f, "Kevin", "Jack", home, away)
+    assert lines[-2].startswith("  Monday night: 90.0–95.0 — Jack +25.0 (Puka 25.0)")
+    assert "COMEBACK — trailed 70.0–90.0 going into Monday night" in lines[-1]
+    # Wire to wire for the home side.
+    g = matchup_flow(home, [row("Monday night", 10.0)], w, winner="home")
+    assert g["wire_to_wire"] and g["took_lead_for_good"] == "Thursday night"
+    assert not g["comeback"] and g["max_deficit"] is None
+    # A tie names no winner; nothing to flow without lineups.
+    assert matchup_flow(home, away, w, winner=None)["took_lead_for_good"] is None
+    assert matchup_flow([], [], w)["checkpoints"] == []
+
+
+def test_nfl_spotlight_skips_crowded_slates():
+    from lib.nfl_schedule import week_windows, lineup_by_window, spotlight, plan_line
+    w = week_windows(_wk5_schedule(), 5)
+    by = {"jack": lineup_by_window([{"player": "Puka", "pos": "WR", "actual": 29.2,
+                                     "proj": 18.1, "pro_team": "LAR"},
+                                    {"player": "G", "pos": "QB", "actual": 20.0,
+                                     "proj": 20.0, "pro_team": "GB"}], w),
+          "kev": lineup_by_window([{"player": "Stafford", "pos": "QB", "actual": 30.2,
+                                    "proj": 20.2, "pro_team": "LAR"}], w)}
+    spot = spotlight(by, w, lambda f: f.title())
+    assert [s["window"] for s in spot] == ["Monday night"]          # no Sunday slate
+    assert [(p["owner"], p["player"]) for p in spot[0]["players"]] == \
+        [("Kev", "Stafford"), ("Jack", "Puka")]
+    assert plan_line(by["jack"]) == "Sunday early 1 starter (20.0 proj) · Monday night: Puka 29.2"
+
+
+def test_nfl_schedule_import_roundtrip():
+    import tempfile
+    from import_espn import build_nfl_schedule, write_nfl_schedule
+    from lib.data import load_nfl_schedule
+    game = {"id": 7, "date": 1760314500000, "awayProTeamId": 2, "homeProTeamId": 18}
+    data = {"settings": {"proTeams": [
+        {"id": 2, "abbrev": "Buf", "proGamesByScoringPeriod": {"5": [game]}},
+        {"id": 18, "abbrev": "NO", "proGamesByScoringPeriod": {"5": [game]}},  # same game twice
+        {"id": 0, "abbrev": "FA"},
+    ]}}
+    games = build_nfl_schedule(data)
+    assert games == [{"week": 5, "kickoff": "2025-10-13T00:15:00Z", "away": "BUF", "home": "NO"}]
+    with tempfile.TemporaryDirectory() as d:
+        write_nfl_schedule(games, 2026, out_dir=Path(d) / "nfl_schedule")
+        # 'NO' must survive YAML as a string, not the boolean False.
+        assert load_nfl_schedule(2026, data_dir=d) == games
+        assert load_nfl_schedule(2025, data_dir=d) == []
+    assert write_nfl_schedule([], 2026) is None
+
+
 def test_snapshot_rosters_backfills_missing_and_refreshes_current():
     import tempfile
     from import_espn import snapshot_rosters, write_week_rosters

@@ -87,6 +87,14 @@ The dial is turned up. Everything in Voice below still applies, but louder:
   hammered (a "brace yourself" line). Verify "most byes" against the Bye watch
   counts. A 0.0 projection on a bye player is the schedule, not an injury — don't
   call him hurt.
+- **The week runs in order — use the clock.** Each matchup lists every team's
+  **lineup by kickoff window**, and the **"Kickoff windows this week"** section
+  names the games and every starter in the standalone windows (Thursday night, an
+  international morning game, Sunday night, Monday night). Point out who opens
+  the week Thursday night ("Bucky Irving gets the first word") and who's still
+  playing Monday night ("Kevin's whole week might come down to Stafford on
+  Monday"), especially when both sides of a close matchup have someone in the
+  same late game. Use it when it adds tension; don't recite the schedule.
 - **Work in what just happened — when it matters.** If a "Recent moves" trade or
   waiver add actually swings a matchup, reference it (a team that just dealt for a
   WR1, someone who blew FAAB). If the moves are minor or irrelevant to the games,
@@ -169,12 +177,15 @@ invent records, scores, or history.
    champ/sacko flag) or a rookie tag**, the all-time head-to-head, each team's
    **projected starters** when available, and — once the season's underway — each
    team's **form** (W/L streak, last week's points, league high/low, over/under vs
-   projection), plus each team's **players on bye**. Then league-wide: the **bye
+   projection), plus each team's **players on bye** and **lineup by kickoff
+   window** (which starters play Thursday night, Sunday, or Monday night). Then
+   league-wide: the **kickoff windows** in order with every starter in the
+   standalone (non-Sunday-afternoon) games, the **bye
    watch** (NFL teams off, who's hit hardest, anyone starting a bye player, and
    next week's byes), **projected strength this week** (the on-paper
    pecking order / team-to-beat), the current **standings**, **recent moves**, and
-   **league bests**. Some sections are absent early (projected lineups/strength need
-   the week's imported roster snapshot; form is empty until a week is complete, so
+   **league bests**. Some sections are absent early (projected lineups/strength and
+   kickoff windows need the week's imported roster snapshot; form is empty until a week is complete, so
    Week 1 has none). Do NOT recompute any of this yourself — trust the file.
 2. **The story so far** — the season's earlier editions, for continuity (Week 2 on).
    Read the prior weeks' pages at `docs/seasons/<year>/week-<n>.md` for n = 1 to

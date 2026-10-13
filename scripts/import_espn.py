@@ -7,6 +7,8 @@ through `the_league_espn_api` — The League's own dependency-free ESPN client
 
   - data/seasons/<year>.yml  : matchups + standings order + season metadata
   - data/franchises.yml       : owner -> franchise mapping, merged by ESPN SWID
+  - data/rosters/<year>-week-<nn>.yml : per-player rosters for each week played
+  - data/nfl_schedule/<year>.yml      : NFL kickoff times (orders a week's scoring)
 
 Nothing here runs at site-build time; the site only reads the YAML it produces.
 
@@ -24,6 +26,7 @@ changes. The client returns owner names only when cookies are supplied.
 
 import argparse
 import datetime
+import json
 import os
 import re
 import sys
@@ -33,6 +36,7 @@ import yaml
 
 try:
     from the_league_espn_api import League, ApiError, merge_trades, load_cookies
+    from the_league_espn_api import HOST, build_headers, fetch
 except ImportError:
     sys.exit("the-league-espn-api is not installed. Run: pip install -r requirements-dev.txt")
 
@@ -42,6 +46,7 @@ from lib.playoff_order import corrected_standings
 ROOT = Path(__file__).resolve().parent.parent
 SEASONS_DIR = ROOT / "data" / "seasons"
 ROSTERS_DIR = ROOT / "data" / "rosters"
+NFL_SCHEDULE_DIR = ROOT / "data" / "nfl_schedule"
 FRANCHISES_PATH = ROOT / "data" / "franchises.yml"
 COOKIES_PATH = ROOT / ".espn-cookies"
 # Extra managers' cookie files. ESPN reveals a trade's contents only to its
@@ -555,6 +560,59 @@ def snapshot_rosters(lg, year, team_rows, current_week, current_rows, out_dir=RO
             write_week_rosters(rows, w, year, team_rows, out_dir=out_dir)
 
 
+def build_nfl_schedule(data):
+    """ESPN's `proTeamSchedules_wl` JSON -> the season's NFL games, one row each:
+    [{week, kickoff, away, home}], sorted by kickoff. `kickoff` is ISO-8601 UTC
+    ('2026-10-09T00:15:00Z'), `away`/`home` upper-cased team abbreviations, `week`
+    the fantasy scoring period. Every game is listed under both teams in ESPN's
+    payload; de-duplicated by game id."""
+    teams = (data.get("settings") or {}).get("proTeams") or []
+    abbrev = {t.get("id"): (t.get("abbrev") or "").upper() for t in teams}
+    seen, games = set(), []
+    for t in teams:
+        for period, rows in (t.get("proGamesByScoringPeriod") or {}).items():
+            for g in rows or []:
+                if g.get("id") in seen or not g.get("date"):
+                    continue
+                seen.add(g.get("id"))
+                ko = datetime.datetime.fromtimestamp(g["date"] / 1000, datetime.timezone.utc)
+                games.append({"week": int(period),
+                              "kickoff": ko.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                              "away": abbrev.get(g.get("awayProTeamId"), ""),
+                              "home": abbrev.get(g.get("homeProTeamId"), "")})
+    games.sort(key=lambda g: (g["kickoff"], g["away"]))
+    return games
+
+
+def fetch_nfl_schedule(year, sport="ffl", timeout=30):
+    """The season's NFL schedule from ESPN's public, league-independent pro
+    schedule view (no cookies) — the same view the client reads bye weeks from,
+    kept here with its kickoff times. Returns [] if ESPN refuses or is unreachable."""
+    url = f"{HOST}/apis/v3/games/{sport}/seasons/{year}?view=proTeamSchedules_wl"
+    try:
+        return build_nfl_schedule(json.loads(fetch(url, build_headers(), timeout)))
+    except Exception as e:                  # network/HTTP/JSON — non-fatal
+        print(f"NOTE: NFL schedule for {year} unavailable ({e}); skipped.", file=sys.stderr)
+        return []
+
+
+def write_nfl_schedule(games, year, out_dir=NFL_SCHEDULE_DIR):
+    """Persist the NFL schedule to data/nfl_schedule/<year>.yml. Rewritten every
+    import (flexed games move), with no timestamp, so an unchanged schedule makes
+    no diff. Returns the Path, or None when there was nothing to write."""
+    if not games:
+        return None
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out = out_dir / f"{year}.yml"
+    header = ("# NFL kickoff times (UTC) from ESPN's public pro schedule. Written by\n"
+              "# scripts/import_espn.py — don't hand-edit. Orders a fantasy week's\n"
+              "# scoring by game window (Thursday night ... Monday night).\n")
+    rows = "\n".join(f"  - {{ week: {g['week']}, kickoff: '{g['kickoff']}', "
+                     f"away: '{g['away']}', home: '{g['home']}' }}" for g in games)
+    out.write_text(f"{header}season: {year}\ngames:\n{rows}\n", encoding="utf-8")
+    return out
+
+
 def build_rosters(draft_rows, tx_rows, trades, team_to_fid):
     """Everyone who was on each franchise's roster this season, franchise-keyed:
     {fid: [{player, via, round|week, waiver?}]}.
@@ -956,6 +1014,11 @@ def main():
     # and refreshes the current one; skipped on --stdout previews (writes files).
     if roster_week and not args.stdout:
         snapshot_rosters(lg, args.year, team_rows, roster_week, roster_rows)
+    # NFL kickoff times, so the weekly facts can tell a week's scoring in order
+    # (Thursday opener ... Monday-night finish). Public, one request; non-fatal.
+    if not args.stdout:
+        write_nfl_schedule(fetch_nfl_schedule(args.year, getattr(lg, "sport", "ffl")),
+                           args.year)
 
     # --- Lifecycle state ---------------------------------------------------
     # Detect from robust signals (draft actually run, games actually decided),
