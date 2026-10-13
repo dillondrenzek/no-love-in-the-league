@@ -45,34 +45,6 @@ detail:
     state: season
     points: true
     rows:
-    - &id002
-      finish: 2
-      team: God's Commissioner
-      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-      owner_id: sturmanator15
-      owner_name: Wade
-      record: 3-2
-      pct: 0.6
-      tag: null
-      pct_str: '.600'
-      pf: 684.1
-      pf_color: '#f0793e'
-      pa: 653.4
-      pa_color: '#ee6b3b'
-    - &id005
-      finish: 5
-      team: Tuten Your Mom
-      logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-      owner_id: zachzoske
-      owner_name: Zach
-      record: 3-2
-      pct: 0.6
-      tag: null
-      pct_str: '.600'
-      pf: 611.3
-      pf_color: '#f59946'
-      pa: 571.8
-      pa_color: '#fbd79d'
     - &id001
       finish: 1
       team: Gibbed for your pleasure
@@ -87,6 +59,20 @@ detail:
       pf_color: '#ee6b3b'
       pa: 568.9
       pa_color: '#fbdba5'
+    - &id002
+      finish: 2
+      team: God's Commissioner
+      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+      owner_id: sturmanator15
+      owner_name: Wade
+      record: 3-2
+      pct: 0.6
+      tag: null
+      pct_str: '.600'
+      pf: 684.1
+      pf_color: '#f0793e'
+      pa: 653.4
+      pa_color: '#ee6b3b'
     - &id003
       finish: 3
       team: Trick or Trick It’s Mike Vick
@@ -115,20 +101,20 @@ detail:
       pf_color: '#f59846'
       pa: 612.8
       pa_color: '#f6a549'
-    - &id007
-      finish: 7
-      team: Remember the Nice Guys, ChatGPT
-      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-      owner_id: kevbots22
-      owner_name: Kevin
-      record: 2-2-1
-      pct: 0.5
+    - &id005
+      finish: 5
+      team: Tuten Your Mom
+      logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+      owner_id: zachzoske
+      owner_name: Zach
+      record: 3-2
+      pct: 0.6
       tag: null
-      pct_str: '.500'
-      pf: 574.3
-      pf_color: '#f7a94a'
-      pa: 589.2
-      pa_color: '#fac36d'
+      pct_str: '.600'
+      pf: 611.3
+      pf_color: '#f59946'
+      pa: 571.8
+      pa_color: '#fbd79d'
     - &id006
       finish: 6
       team: Swift kick in the Dak
@@ -143,20 +129,6 @@ detail:
       pf_color: '#f7a549'
       pa: 554.6
       pa_color: '#fcebcd'
-    - &id010
-      finish: 10
-      team: Cornstar
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-      owner_id: alexandra
-      owner_name: Lexi
-      record: 2-3
-      pct: 0.4
-      tag: null
-      pct_str: '.400'
-      pf: 571.7
-      pf_color: '#f7aa4a'
-      pa: 582.9
-      pa_color: '#faca7e'
     - &id009
       finish: 9
       team: One Big Beautiful Dillbot
@@ -171,6 +143,34 @@ detail:
       pf_color: '#f38b43'
       pa: 547.7
       pa_color: '#fdf3e0'
+    - &id007
+      finish: 7
+      team: Remember the Nice Guys, ChatGPT
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      owner_id: kevbots22
+      owner_name: Kevin
+      record: 2-2-1
+      pct: 0.5
+      tag: null
+      pct_str: '.500'
+      pf: 574.3
+      pf_color: '#f7a94a'
+      pa: 589.2
+      pa_color: '#fac36d'
+    - &id010
+      finish: 10
+      team: Cornstar
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      owner_id: alexandra
+      owner_name: Lexi
+      record: 2-3
+      pct: 0.4
+      tag: null
+      pct_str: '.400'
+      pf: 571.7
+      pf_color: '#f7aa4a'
+      pa: 582.9
+      pa_color: '#faca7e'
     - &id008
       finish: 8
       team: The ChoSimba Ones
