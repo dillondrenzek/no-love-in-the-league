@@ -213,7 +213,7 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
     """Turn persisted per-player rosters into the per-team shape the preview/recap
     data blocks consume:
 
-        {fid: {starters:[{player,pos,proj,actual}], proj_total, actual_total,
+        {fid: {starters:[{player,pos,proj,actual,injury,pro_team}], proj_total, actual_total,
                bench_points, injured, on_bye, bye_next, top?, bust?}}
 
     `week_rosters` is {fid: [{player,pos,starter,proj,actual,pro_team,bye_week},
@@ -237,7 +237,8 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
             starting = bool(p.get("starter"))
             if starting:
                 starters.append({"player": p.get("player"), "pos": p.get("pos"),
-                                 "proj": proj, "actual": act, "injury": inj})
+                                 "proj": proj, "actual": act, "injury": inj,
+                                 "pro_team": p.get("pro_team") or ""})
             elif act is not None:
                 bench_points += act
             bye = _bye_week(p)

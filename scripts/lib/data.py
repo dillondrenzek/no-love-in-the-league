@@ -85,6 +85,17 @@ def load_projections(year, franchises, data_dir=DATA_DIR):
     return out
 
 
+def load_nfl_schedule(year, data_dir=DATA_DIR):
+    """A season's NFL games with kickoff times, from data/nfl_schedule/<year>.yml
+    (written by scripts/import_espn.py): [{week, kickoff, away, home}], kickoff an
+    ISO-8601 UTC string. [] when the file doesn't exist yet, so the "scoring
+    order" / "kickoff windows" facts simply don't render."""
+    path = Path(data_dir) / "nfl_schedule" / f"{year}.yml"
+    if not path.is_file():
+        return []
+    return (_read_yaml(path) or {}).get("games") or []
+
+
 def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
     """One week's persisted per-player rosters, re-keyed to franchise ids:
     {fid: [{player, pos, starter, proj, actual, injury, pro_team, bye_week}, ...]}.

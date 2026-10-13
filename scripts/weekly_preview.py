@@ -22,11 +22,13 @@ from pathlib import Path
 import yaml
 
 from lib.data import (load_franchises, load_seasons, short_name_of,
-                      load_week_rosters, load_projections)
+                      load_week_rosters, load_projections, load_nfl_schedule)
 from lib.weeks import week_state, _games_in_week
 from lib.context import (standings_snapshot, recent_moves, league_bests,
                          week_roster_context, perceived_strength, team_form,
                          bye_watch, bye_note, bye_watch_lines)
+from lib.nfl_schedule import (week_windows, lineup_by_window, plan_line,
+                              spotlight, spotlight_lines, fmt_kickoff)
 from weekly_recap import scaffold_page
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -145,9 +147,26 @@ def data_block(year, week, games, season, franchises, profiles, ctx):
             if bn:
                 lines.append(f"    {who}'s players on bye: {bn}")
         for fid, who in ((h, hn), (a, an)):
+            pl = plan_line((ctx.get("by_window") or {}).get(fid))
+            if pl:
+                lines.append(f"    {who}'s lineup by kickoff window: {pl}")
+        for fid, who in ((h, hn), (a, an)):
             fl = _form_line(form.get(fid))
             if fl:
                 lines.append(f"    {who}'s form: {fl}")
+
+    windows = ctx.get("windows") or []
+    if windows:
+        lines += ["", "Kickoff windows this week, in order (who opens the week Thursday "
+                  "night, who's still playing Monday night):"]
+        for w in windows:
+            games = "; ".join(f"{g['away']} @ {g['home']} ({fmt_kickoff(g['kickoff'])})"
+                              for g in w["games"])
+            lines.append(f"- {w['label']}: {games}")
+        spot = spotlight_lines(ctx.get("spotlight"))
+        if spot:
+            lines += ["", "Projected starters in the standalone windows (everything but the "
+                      "Sunday afternoon slates), best projection first:"] + spot
 
     strength = ctx.get("strength") or []
     if strength:
@@ -216,8 +235,16 @@ def main():
     rosters = (week_roster_context(week_rosters, want_actual=False, week=args.week)
                if week_rosters else None)
     projections = load_projections(args.year, franchises)
+    # NFL kickoff windows (data/nfl_schedule/<year>.yml): who plays Thursday night,
+    # who's left for Monday — the order the week will unfold in.
+    windows = week_windows(load_nfl_schedule(args.year), args.week)
+    by_window = ({fid: lineup_by_window(e["starters"], windows, value="proj")
+                  for fid, e in rosters.items()} if windows and rosters else {})
     ctx = {
         "rosters": rosters,
+        "windows": windows,
+        "by_window": by_window,
+        "spotlight": spotlight(by_window, windows, lambda f: short_name_of(f, franchises)),
         "strength": perceived_strength(rosters, franchises) if rosters else [],
         "byes": bye_watch(rosters, franchises),
         "form": team_form(season, franchises, args.week, projections),

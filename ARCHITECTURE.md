@@ -15,6 +15,11 @@ data/
   overrides.yml        league decisions ESPN doesn't record
   season_notes.yml     per-year event bullets shown on History
   settings.yml         per-season scoring & roster settings (rulebook)
+  rosters/<year>-week-<nn>.yml   importer-written per-player rosters (weekly facts)
+  projections/<year>-week-<nn>.yml  pre-game projection snapshots
+  nfl_schedule/<year>.yml        importer-written NFL kickoff times; the weekly
+                                 facts use them to tell a week's scoring in order
+                                 (Thursday night → Monday night) — lib/nfl_schedule.py
 ```
 
 ### `seasons/<year>.yml`

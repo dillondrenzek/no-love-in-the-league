@@ -225,7 +225,8 @@ are written by an **agent** working from repo-stored operating manuals:
 
 The split of labor: a prep script computes the week's **facts file** (the
 correctness-critical stuff — scoreboard, standings, form/streaks, projected
-strength, records — from the tested `scripts/lib` code), and the agent writes the
+strength, records, and the order the week's points landed in by NFL kickoff window —
+from the tested `scripts/lib` code), and the agent writes the
 prose, reading the facts file plus the season's earlier editions straight from the
 repo. That keeps each prompt lean and bounded (the story so far isn't re-pasted
 every week) while the numbers stay computed, not guessed. The facts files land in
