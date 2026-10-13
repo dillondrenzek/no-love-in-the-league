@@ -1,6 +1,6 @@
 season: 2026
 week: 5
-captured_at: '2026-10-12T20:34:52+00:00'
+captured_at: '2026-10-13T04:12:46+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -58,7 +58,7 @@ rosters:
     pos: RB
     starter: true
     proj: 7.88
-    actual: null
+    actual: 14.7
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -246,7 +246,7 @@ rosters:
     pos: WR
     starter: false
     proj: 7.91
-    actual: null
+    actual: 9.5
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -282,7 +282,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.12
-    actual: null
+    actual: 31.5
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -330,7 +330,7 @@ rosters:
     pos: RB
     starter: true
     proj: 16.06
-    actual: null
+    actual: 16.6
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -378,7 +378,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: BUF
     bye_week: 7
@@ -429,9 +429,9 @@ rosters:
   - player: DJ Moore
     pos: WR
     starter: true
-    proj: 10.38
-    actual: null
-    injury: QUESTIONABLE
+    proj: 0.0
+    actual: 0.0
+    injury: OUT
     pro_team: BUF
     bye_week: 7
   - player: Jalen Hurts
@@ -570,7 +570,7 @@ rosters:
     pos: WR
     starter: true
     proj: 18.07
-    actual: null
+    actual: 29.2
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -750,7 +750,7 @@ rosters:
     pos: QB
     starter: true
     proj: 20.2
-    actual: null
+    actual: 30.2
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -1066,7 +1066,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.27
-    actual: null
+    actual: 19.6
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -1162,7 +1162,7 @@ rosters:
     pos: WR
     starter: false
     proj: 7.31
-    actual: null
+    actual: 7.2
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -1270,7 +1270,7 @@ rosters:
     pos: TE
     starter: false
     proj: 6.99
-    actual: null
+    actual: 3.2
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -1303,7 +1303,7 @@ rosters:
     starter: false
     proj: 8.0
     actual: 2.6
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: LAC
     bye_week: 7
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
@@ -1438,7 +1438,7 @@ rosters:
     pos: RB
     starter: true
     proj: 14.68
-    actual: null
+    actual: 22.3
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -1510,7 +1510,7 @@ rosters:
     pos: D/ST
     starter: false
     proj: 4.44
-    actual: null
+    actual: -1.0
     injury: ''
     pro_team: LAR
     bye_week: 11
