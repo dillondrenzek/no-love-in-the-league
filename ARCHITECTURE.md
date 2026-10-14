@@ -130,7 +130,8 @@ scripts/
   lib/                     pure, tested functions:
                              data (all file loaders), standings, seasons, records,
                              teams, overrides, rules, weeks, state, render, schedule,
-                             odds (season forecast)
+                             odds (season forecast), keepers (keeper-cost rule +
+                             owner Current Roster rows)
   generate_records.py   -> docs/_data/records.yml        (record book)
   generate_standings.py -> docs/_data/standings.yml      (per-season, History)
   generate_owners.py    -> owners.yml, owner_profiles.yml (+ owner stub pages)
@@ -206,7 +207,8 @@ docs/
                             trades_list · draft_heatmap · tx_heatmap
                   sections/ full-width page blocks (compose bits + tables):
                             season_detail · week_detail · owner_profile ·
-                            owner_trades · owner_keepers · resume_card ·
+                            owner_trades · owner_keepers ·
+                            owner_current_roster · owner_rosters · resume_card ·
                             records_cards · current_settings · rule_changes ·
                             season_standings
                   sections/season/  season_detail's own sections, composed in

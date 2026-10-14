@@ -1,26 +1,61 @@
 {%- comment -%}
-Owner profile body — composes the résumé card, season-by-season table, and
-head-to-head table. Param: p (a site.data.owner_profiles record). The name +
+Owner profile body — the ONE place the owner page's layout lives. Renders the
+jump-nav, the résumé card, then each full-width section (season-by-season,
+head-to-head, trades, keepers, current roster, roster history), skipping any
+with no data. Param: p (a site.data.owner_profiles record). The name +
 nickname header is rendered by the `owner` layout.
 {%- endcomment -%}
 {%- assign p = include.p -%}
+{%- assign show_keepers = false -%}
+{%- if p.keepers and p.keepers.size > 0 %}{% assign show_keepers = true %}{% endif -%}
+{%- assign show_current = false -%}
+{%- if p.current_roster and p.current_roster.players.size > 0 %}{% assign show_current = true %}{% endif -%}
+{%- assign show_history = false -%}
+{%- if p.rosters and p.rosters.size > 0 %}{% assign show_history = true %}{% endif -%}
+
+<nav class="season-nav" aria-label="Sections">
+  <a href="#seasons">Seasons</a>
+  <a href="#h2h">Head-to-head</a>
+  <a href="#trades">Trades</a>
+  {%- if show_keepers %}<a href="#keepers">Keepers</a>{% endif -%}
+  {%- if show_current %}<a href="#current-roster">Current roster</a>{% endif -%}
+  {%- if show_history %}<a href="#roster-history">Roster history</a>{% endif %}
+</nav>
+
 {% include sections/resume_card.html p=p %}
 
+<section class="season-section" id="seasons">
 <h2>Season by season</h2>
 {% include tables/owner_seasons_table.html rows=p.seasons %}
+</section>
 
+<section class="season-section" id="h2h">
 <h2>Head-to-head</h2>
 {% include tables/h2h_table.html rows=p.h2h %}
+</section>
 
+<section class="season-section" id="trades">
 <h2>Trades</h2>
 {% include sections/owner_trades.html trades=p.trades known=p.trades_known %}
+</section>
 
-{%- if p.keepers and p.keepers.size > 0 %}
+{%- if show_keepers %}
+<section class="season-section" id="keepers">
 <h2>Keepers</h2>
 {% include sections/owner_keepers.html rows=p.keepers %}
+</section>
 {%- endif %}
 
-{%- if p.rosters and p.rosters.size > 0 %}
+{%- if show_current %}
+<section class="season-section" id="current-roster">
+<h2>Current roster</h2>
+{% include sections/owner_current_roster.html r=p.current_roster %}
+</section>
+{%- endif %}
+
+{%- if show_history %}
+<section class="season-section" id="roster-history">
 <h2>Roster history</h2>
 {% include sections/owner_rosters.html seasons=p.rosters %}
+</section>
 {%- endif %}

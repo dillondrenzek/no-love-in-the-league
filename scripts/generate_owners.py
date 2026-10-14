@@ -15,7 +15,9 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons, short_name_of
+from lib.data import (load_franchises, load_seasons, short_name_of,
+                      latest_roster_snapshot, load_week_rosters)
+from lib.keepers import draft_rounds, current_roster_rows
 from lib.teams import compute_profiles, empty_profile, win_pct, rec_str, fmt_titles, split_titles
 from lib.overrides import load_overrides
 from lib.render import warm_heat, heat_color
@@ -376,6 +378,19 @@ def main():
         if fid in profiles_data:
             profiles_data[fid]["rosters"] = [
                 {"year": y, "players": by_year[y]} for y in sorted(by_year, reverse=True)]
+
+    # Current roster: each active owner's players in the newest weekly snapshot,
+    # with what each would cost to keep (from that season's draft rounds).
+    snap = latest_roster_snapshot()
+    if snap:
+        year, week = snap
+        season = next((s for s in seasons if s["season"] == year), {})
+        rounds = draft_rounds(season)
+        for fid, players in load_week_rosters(year, week, franchises).items():
+            if fid in profiles_data and fid in roster:
+                profiles_data[fid]["current_roster"] = {
+                    "year": year, "week": week,
+                    "players": current_roster_rows(players, rounds)}
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "owners.yml").write_text(

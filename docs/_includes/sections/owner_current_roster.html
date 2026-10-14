@@ -1,0 +1,24 @@
+{%- comment -%}
+An owner's current roster with each player's keeper cost (the round it would
+take to keep him next season). Param: r (p.current_roster) — {year, week,
+players: [{player, pos, cost, basis, ineligible}]}. Values precomputed in
+scripts/lib/keepers.py; `basis` (draft round / undrafted) shows as a tooltip.
+{%- endcomment -%}
+{%- assign r = include.r -%}
+<p class="current-roster__note">As of {{ r.year }} Week {{ r.week }}. Keeper cost is two rounds earlier than the round drafted; undrafted players cost a 13th; 1st- and 2nd-rounders can't be kept.</p>
+<div class="table-scroll">
+<table class="current-roster">
+  <thead>
+    <tr><th>Player</th><th>Pos</th><th class="num current-roster__cost">Keeper cost</th></tr>
+  </thead>
+  <tbody>
+    {%- for pl in r.players %}
+    <tr>
+      <td class="current-roster__player">{{ pl.player }}</td>
+      <td class="current-roster__pos">{{ pl.pos }}</td>
+      <td class="num current-roster__cost{% if pl.ineligible %} current-roster__ineligible{% endif %}" title="{{ pl.basis }}">{{ pl.cost }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
