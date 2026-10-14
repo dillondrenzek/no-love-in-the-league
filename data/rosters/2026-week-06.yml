@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-14T16:09:37+00:00'
+captured_at: '2026-10-14T22:50:04+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -25,7 +25,7 @@ rosters:
   - player: Ladd McConkey
     pos: WR
     starter: false
-    proj: 8.15
+    proj: 8.07
     actual: null
     injury: QUESTIONABLE
     pro_team: LAC
@@ -33,7 +33,7 @@ rosters:
   - player: Zay Flowers
     pos: WR
     starter: true
-    proj: 13.51
+    proj: 13.53
     actual: null
     injury: ''
     pro_team: BAL
@@ -207,7 +207,7 @@ rosters:
     starter: true
     proj: 7.72
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: IND
     bye_week: 13
   - player: Zach Charbonnet
@@ -221,7 +221,7 @@ rosters:
   - player: Germie Bernard
     pos: WR
     starter: true
-    proj: 8.61
+    proj: 8.58
     actual: null
     injury: ''
     pro_team: PIT
@@ -242,18 +242,10 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
-  - player: DeMario Douglas
-    pos: WR
-    starter: false
-    proj: 7.47
-    actual: null
-    injury: ''
-    pro_team: NE
-    bye_week: 11
   - player: Garrett Wilson
     pos: WR
     starter: true
-    proj: 11.49
+    proj: 11.7
     actual: null
     injury: ''
     pro_team: NYJ
@@ -261,10 +253,18 @@ rosters:
   - player: Jets D/ST
     pos: D/ST
     starter: false
-    proj: 5.29
+    proj: 5.42
     actual: null
     injury: ''
     pro_team: NYJ
+    bye_week: 13
+  - player: Ja'Kobi Lane
+    pos: WR
+    starter: false
+    proj: 0.0
+    actual: null
+    injury: INJURY_RESERVE
+    pro_team: BAL
     bye_week: 13
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
@@ -353,7 +353,7 @@ rosters:
   - player: Keaton Mitchell
     pos: RB
     starter: false
-    proj: 7.47
+    proj: 7.45
     actual: null
     injury: ''
     pro_team: LAC
@@ -469,7 +469,7 @@ rosters:
   - player: Kyle Pitts Sr.
     pos: TE
     starter: true
-    proj: 6.86
+    proj: 6.87
     actual: null
     injury: ''
     pro_team: ATL
@@ -487,7 +487,7 @@ rosters:
     starter: true
     proj: 7.17
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: Malik Washington
@@ -501,7 +501,7 @@ rosters:
   - player: Kenyon Sadiq
     pos: TE
     starter: false
-    proj: 4.94
+    proj: 5.03
     actual: null
     injury: QUESTIONABLE
     pro_team: NYJ
@@ -593,7 +593,7 @@ rosters:
   - player: Braelon Allen
     pos: RB
     starter: true
-    proj: 6.04
+    proj: 13.13
     actual: null
     injury: ''
     pro_team: NYJ
@@ -609,7 +609,7 @@ rosters:
   - player: Omarion Hampton
     pos: RB
     starter: true
-    proj: 8.37
+    proj: 8.36
     actual: null
     injury: ''
     pro_team: LAC
@@ -622,14 +622,6 @@ rosters:
     injury: ''
     pro_team: HOU
     bye_week: 8
-  - player: Kendrick Bourne
-    pos: WR
-    starter: false
-    proj: 4.78
-    actual: null
-    injury: ''
-    pro_team: ARI
-    bye_week: 14
   - player: Colts D/ST
     pos: D/ST
     starter: true
@@ -662,6 +654,14 @@ rosters:
     injury: ''
     pro_team: SF
     bye_week: 8
+  - player: Dylan Sampson
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+    injury: INJURY_RESERVE
+    pro_team: CLE
+    bye_week: 11
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -703,7 +703,7 @@ rosters:
     starter: true
     proj: 14.01
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
   - player: Rhamondre Stevenson
@@ -757,7 +757,7 @@ rosters:
   - player: Patriots D/ST
     pos: D/ST
     starter: true
-    proj: 6.76
+    proj: 6.67
     actual: null
     injury: ''
     pro_team: NE
@@ -803,7 +803,7 @@ rosters:
     starter: true
     proj: 10.28
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: ARI
     bye_week: 14
   - player: Rashee Rice
@@ -833,7 +833,7 @@ rosters:
   - player: DK Metcalf
     pos: WR
     starter: true
-    proj: 9.78
+    proj: 9.75
     actual: null
     injury: ''
     pro_team: PIT
@@ -865,9 +865,9 @@ rosters:
   - player: Denzel Boston
     pos: WR
     starter: true
-    proj: 10.06
+    proj: 10.0
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CLE
     bye_week: 11
   - player: Tyjae Spears
@@ -875,7 +875,7 @@ rosters:
     starter: false
     proj: 7.5
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: TEN
     bye_week: 9
   - player: Tyler Loop
@@ -897,7 +897,7 @@ rosters:
   - player: Browns D/ST
     pos: D/ST
     starter: true
-    proj: 3.53
+    proj: 3.49
     actual: null
     injury: ''
     pro_team: CLE
@@ -941,7 +941,7 @@ rosters:
   - player: Harold Fannin Jr.
     pos: TE
     starter: true
-    proj: 8.2
+    proj: 8.58
     actual: null
     injury: ''
     pro_team: CLE
@@ -949,7 +949,7 @@ rosters:
   - player: Rico Dowdle
     pos: RB
     starter: false
-    proj: 5.63
+    proj: 5.62
     actual: null
     injury: QUESTIONABLE
     pro_team: PIT
@@ -973,7 +973,7 @@ rosters:
   - player: KC Concepcion
     pos: WR
     starter: false
-    proj: 0.0
+    proj: 6.76
     actual: null
     injury: QUESTIONABLE
     pro_team: CLE
@@ -981,7 +981,7 @@ rosters:
   - player: Mark Andrews
     pos: TE
     starter: false
-    proj: 7.83
+    proj: 7.84
     actual: null
     injury: ''
     pro_team: BAL
@@ -997,7 +997,7 @@ rosters:
   - player: Drake London
     pos: WR
     starter: true
-    proj: 13.15
+    proj: 13.17
     actual: null
     injury: ''
     pro_team: ATL
@@ -1161,7 +1161,7 @@ rosters:
   - player: Pat Freiermuth
     pos: TE
     starter: true
-    proj: 8.18
+    proj: 8.15
     actual: null
     injury: ''
     pro_team: PIT
@@ -1260,7 +1260,7 @@ rosters:
     bye_week: 13
   - player: Dalton Kincaid
     pos: TE
-    starter: false
+    starter: true
     proj: 6.57
     actual: null
     injury: ''
@@ -1271,15 +1271,15 @@ rosters:
     starter: true
     proj: 8.59
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
   - player: Breece Hall
     pos: RB
-    starter: true
-    proj: 12.57
+    starter: false
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: NYJ
     bye_week: 13
   - player: Luther Burden III
@@ -1293,7 +1293,7 @@ rosters:
   - player: Kimani Vidal
     pos: RB
     starter: false
-    proj: 5.14
+    proj: 5.12
     actual: null
     injury: ''
     pro_team: LAC
@@ -1313,7 +1313,7 @@ rosters:
   - player: Bijan Robinson
     pos: RB
     starter: true
-    proj: 21.42
+    proj: 21.43
     actual: null
     injury: ''
     pro_team: ATL
@@ -1329,7 +1329,7 @@ rosters:
   - player: Quinshon Judkins
     pos: RB
     starter: true
-    proj: 11.79
+    proj: 11.93
     actual: null
     injury: QUESTIONABLE
     pro_team: CLE
@@ -1339,7 +1339,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: QUESTIONABLE
     pro_team: NE
     bye_week: 11
   - player: Brock Bowers
@@ -1361,7 +1361,7 @@ rosters:
   - player: Jaylen Warren
     pos: RB
     starter: true
-    proj: 13.18
+    proj: 13.17
     actual: null
     injury: ''
     pro_team: PIT
@@ -1509,7 +1509,7 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: true
-    proj: 7.02
+    proj: 7.11
     actual: null
     injury: ''
     pro_team: LAR
@@ -1533,9 +1533,9 @@ rosters:
   - player: Adonai Mitchell
     pos: WR
     starter: false
-    proj: 7.74
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: NYJ
     bye_week: 13
   - player: Roman Wilson

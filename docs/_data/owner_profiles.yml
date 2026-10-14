@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 119.3
+    tx_per_year: 119.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 4-1
-    tx: 69
+    tx: 71
     in_progress: true
     pf: 716.0
     pa: 568.9
@@ -673,6 +673,10 @@ jackperkins74:
       via: add
       week: 6
       waiver: true
+    - player: Dylan Sampson
+      via: add
+      week: 6
+      waiver: false
     - player: Eddy Pineiro
       via: add
       week: 6
@@ -3090,6 +3094,11 @@ jackperkins74:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Dylan Sampson
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Tee Higgins
       pos: WR
       cost: R1
@@ -3109,11 +3118,6 @@ jackperkins74:
       pos: WR
       cost: R7
       basis: Drafted R9
-      ineligible: false
-    - player: Kendrick Bourne
-      pos: WR
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: George Kittle
       pos: TE
@@ -9352,7 +9356,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 106.0
+    tx_per_year: 106.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -9375,7 +9379,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 5th
     record: 3-2
-    tx: 40
+    tx: 42
     in_progress: true
     pf: 611.3
     pa: 571.8
@@ -9963,6 +9967,10 @@ zachzoske:
       week: 6
       waiver: true
     - player: Giants D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: Ja'Kobi Lane
       via: add
       week: 6
       waiver: false
@@ -12198,10 +12206,10 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: DeMario Douglas
+    - player: Ja'Kobi Lane
       pos: WR
-      cost: R13
-      basis: Undrafted
+      cost: R12
+      basis: Drafted R14
       ineligible: false
     - player: Germie Bernard
       pos: WR
