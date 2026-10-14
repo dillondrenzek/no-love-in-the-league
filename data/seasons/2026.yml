@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-14T09:07:56+00:00
+updated_at: 2026-10-14T16:09:40+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -120,12 +120,12 @@ matchups:
   - { week:  5, home: schirmerj, away: lukstein, home_score: 128.0, away_score: 57.9, playoff: false }
   - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 144.1, away_score: 179.1, playoff: false }
   - { week:  5, home: zachzoske, away: theoceanpulse, home_score: 84.2, away_score: 105.5, playoff: false }
-  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 106.56, away_proj: 101.26 }
-  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 111.38, away_proj: 110.94 }
-  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false, home_proj: 124.11, away_proj: 100.97 }
-  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false, home_proj: 119.83, away_proj: 114.69 }
-  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false, home_proj: 125.6, away_proj: 137.15 }
-  - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 112.52, away_proj: 110.29 }
+  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 106.51, away_proj: 101.99 }
+  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 112.41, away_proj: 110.94 }
+  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false, home_proj: 123.9, away_proj: 101.05 }
+  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false, home_proj: 132.69, away_proj: 114.7 }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false, home_proj: 125.61, away_proj: 137.24 }
+  - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 116.42, away_proj: 110.29 }
   - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }
   - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
@@ -189,7 +189,7 @@ matchups:
 # FAAB isn't in ESPN's trade feed: to record it, add an asset to that trade
 # by hand — `- {from: <giver fid>, to: <receiver fid>, faab: 5}`. It renders
 # as '$5 FAAB' and re-imports keep it (a trade's on-disk detail is preserved).
-trades_complete: true
+trades_complete: false
 trades_known_for:
   - jackperkins74
   - lukstein
@@ -269,6 +269,12 @@ trades:
   - from: theoceanpulse
     to: jackperkins74
     label: Garrett Wilson
+- id: 0068835a-dd2a-4eb9-9091-40f8cb18255f
+  week: 6
+  teams:
+  - jackperkins74
+  assets: []
+  complete: false
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
@@ -302,10 +308,10 @@ transactions:
   purpsworth: { adds: 8, drops: 4, moves: 12 }
   schirmerj: { adds: 7, drops: 6, moves: 13 }
   shawne2520997: { adds: 10, drops: 9, moves: 19 }
-  sturmanator15: { adds: 16, drops: 15, moves: 31 }
+  sturmanator15: { adds: 18, drops: 17, moves: 35 }
   theoceanpulse: { adds: 20, drops: 18, moves: 38 }
   whowonthelastsuperbowl: { adds: 8, drops: 6, moves: 14 }
-  zachzoske: { adds: 23, drops: 16, moves: 39 }
+  zachzoske: { adds: 24, drops: 16, moves: 40 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -1068,6 +1074,14 @@ rosters:
     via: add
     week: 5
     waiver: false
+  - player: Buccaneers D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Kyle Williams
+    via: add
+    week: 6
+    waiver: false
   zachzoske:
   - player: Amon-Ra St. Brown
     via: draft
@@ -1197,6 +1211,10 @@ rosters:
     week: 6
     waiver: true
   - player: Giants D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Jets D/ST
     via: add
     week: 6
     waiver: false

@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power:
   - rank: 1
@@ -1968,8 +1968,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 106.6
-    away_proj: 101.3
+    home_proj: 106.5
+    away_proj: 102.0
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -1986,7 +1986,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 111.4
+    home_proj: 112.4
     away_proj: 110.9
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -2004,7 +2004,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 124.1
+    home_proj: 123.9
     away_proj: 101.0
   - home_id: sturmanator15
     home_team: God's Commissioner
@@ -2017,12 +2017,12 @@
     home_record: 3-2
     away_record: 2-2-1
     scored: false
-    home_yet: 9
+    home_yet: 10
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 119.8
+    home_proj: 132.7
     away_proj: 114.7
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
@@ -2058,12 +2058,12 @@
     final: false
     live: false
     playoff: false
-    home_proj: 112.5
+    home_proj: 116.4
     away_proj: 110.3
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: true
   power: []
 2026-7:
@@ -2169,7 +2169,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-8:
@@ -2275,7 +2275,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-9:
@@ -2381,7 +2381,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-10:
@@ -2487,7 +2487,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-11:
@@ -2593,7 +2593,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-12:
@@ -2699,7 +2699,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-13:
@@ -2805,7 +2805,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
 2026-14:
@@ -2911,6 +2911,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 14, 2:07 AM PDT
+  updated_at: Oct 14, 9:09 AM PDT
   current: false
   power: []
