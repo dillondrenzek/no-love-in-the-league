@@ -1004,6 +1004,15 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 .season-section { margin: 0 0 2.4em; scroll-margin-top: 1.5em; }
 .season-section > h2 { margin-top: 0; }
 
+// Owner page: Current Roster note + ineligible keeper cells.
+.current-roster__note { font-size: 0.8rem; color: var(--muted); margin: -0.4em 0 0.8em; }
+// Player names read as content (not the quiet first-column index); position is
+// a small tag; keeper cost sits left-aligned beside it.
+.current-roster tbody td.current-roster__player { color: var(--ink); }
+.current-roster td.current-roster__pos { font-size: 0.75rem; }
+.current-roster .current-roster__cost { text-align: left; }
+td.current-roster__ineligible { color: var(--muted); }
+
 // =============================================================================
 // Record book (two-up grid of leaderboard tables)
 // =============================================================================

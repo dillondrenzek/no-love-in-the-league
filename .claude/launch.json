@@ -4,7 +4,7 @@
     {
       "name": "site",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "cd docs && LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll serve --port 4000"],
+      "runtimeArgs": ["-lc", "export PATH=\"$HOME/.rbenv/shims:$PATH\" && cd docs && LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll serve --port 4000"],
       "port": 4000
     }
   ]

@@ -3042,6 +3042,85 @@ jackperkins74:
     - player: Nick Novak
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Trevor Lawrence
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Jahmyr Gibbs
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Omarion Hampton
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Travis Etienne Jr.
+      pos: RB
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Mike Washington Jr.
+      pos: RB
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Tyler Allgeier
+      pos: RB
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Braelon Allen
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Garrett Wilson
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Parker Washington
+      pos: WR
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Marvin Harrison Jr.
+      pos: WR
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Puka Nacua
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Kendrick Bourne
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Dallas Goedert
+      pos: TE
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Will Reichard
+      pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Vikings D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 sturmanator15:
   name: Wade
   nickname: ''
@@ -5510,6 +5589,90 @@ sturmanator15:
     - player: Ryan Tannehill
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Bryce Young
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Jacoby Brissett
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Kenneth Walker III
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Tony Pollard
+      pos: RB
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Blake Corum
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Kyle Monangai
+      pos: RB
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Jonah Coleman
+      pos: RB
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Jaxon Smith-Njigba
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Ladd McConkey
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Zay Flowers
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Mike Evans
+      pos: WR
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Jordyn Tyson
+      pos: WR
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+    - player: Dohnte Meyers
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Trey McBride
+      pos: TE
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Chris Boswell
+      pos: K
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Bengals D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 whowonthelastsuperbowl:
   name: Nate
   nickname: ''
@@ -7208,6 +7371,90 @@ whowonthelastsuperbowl:
     - player: Brandon McManus
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Drake Maye
+      pos: QB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Tyler Shough
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Derrick Henry
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Bucky Irving
+      pos: RB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Aaron Jones Sr.
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: MarShawn Lloyd
+      pos: RB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Justice Hill
+      pos: RB
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: CeeDee Lamb
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Davante Adams
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Courtland Sutton
+      pos: WR
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Stefon Diggs
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Keon Coleman
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Sam LaPorta
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Jake Ferguson
+      pos: TE
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+    - player: Brandon Aubrey
+      pos: K
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Texans D/ST
+      pos: D/ST
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
 schirmerj:
   name: Jono
   nickname: ''
@@ -8950,6 +9197,90 @@ schirmerj:
     - player: Saints D/ST
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Josh Allen
+      pos: QB
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Christian McCaffrey
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Rachaad White
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Kyren Williams
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Keaton Mitchell
+      pos: RB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Emmett Johnson
+      pos: RB
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Adam Randall
+      pos: RB
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Najee Harris
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Jaylen Waddle
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Jameson Williams
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Carnell Tate
+      pos: WR
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Xavier Worthy
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Joshua Palmer
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Tucker Kraft
+      pos: TE
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Jason Myers
+      pos: K
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Jaguars D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
 zachzoske:
   name: Zach
   nickname: ''
@@ -11750,6 +12081,90 @@ zachzoske:
     - player: James Starks
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Joe Burrow
+      pos: QB
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Sam Darnold
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Ashton Jeanty
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Cam Skattebo
+      pos: RB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Bhayshul Tuten
+      pos: RB
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Woody Marks
+      pos: RB
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Zach Charbonnet
+      pos: RB
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Amon-Ra St. Brown
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Tee Higgins
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Josh Downs
+      pos: WR
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Khalil Shakir
+      pos: WR
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Antonio Williams
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: George Kittle
+      pos: TE
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Isaiah Likely
+      pos: TE
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Cam Little
+      pos: K
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Bears D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 shawne2520997:
   name: Shawnee
   nickname: ''
@@ -13415,6 +13830,90 @@ shawne2520997:
     - player: Roberto Aguayo
       via: draft
       round: 17
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Dak Prescott
+      pos: QB
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: James Cook III
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: D'Andre Swift
+      pos: RB
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Jacory Croskey-Merritt
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Kaelon Black
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Will Shipley
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: George Pickens
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Terry McLaurin
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Nico Collins
+      pos: WR
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Jalen Coker
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Adonai Mitchell
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Roman Wilson
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Juwan Johnson
+      pos: TE
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Jake Bates
+      pos: K
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Rams D/ST
+      pos: D/ST
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Cowboys D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 gganoom:
   name: Grant
   nickname: ''
@@ -13861,6 +14360,85 @@ gganoom:
       via: add
       week: 13
       waiver: true
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Brock Purdy
+      pos: QB
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Patrick Mahomes
+      pos: QB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Bijan Robinson
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Quinshon Judkins
+      pos: RB
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: TreVeyon Henderson
+      pos: RB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Jaylen Warren
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Brian Robinson Jr.
+      pos: RB
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Malik Nabers
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Michael Wilson
+      pos: WR
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Jakobi Meyers
+      pos: WR
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Wan'Dale Robinson
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Romeo Doubs
+      pos: WR
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Brock Bowers
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Ka'imi Fairbairn
+      pos: K
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+    - player: Broncos D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
 kevbots22:
   name: Kevin
   nickname: ''
@@ -15317,6 +15895,85 @@ kevbots22:
     - player: Terrance West
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Justin Herbert
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Matthew Stafford
+      pos: QB
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Chase Brown
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Josh Jacobs
+      pos: RB
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Rhamondre Stevenson
+      pos: RB
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Chuba Hubbard
+      pos: RB
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Justin Jefferson
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Tetairoa McMillan
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Chris Olave
+      pos: WR
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Brian Thomas Jr.
+      pos: WR
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Tre Tucker
+      pos: WR
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Travis Kelce
+      pos: TE
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: T.J. Hockenson
+      pos: TE
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Cameron Dicker
+      pos: K
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+    - player: Patriots D/ST
+      pos: D/ST
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
 alexandra:
   name: Lexi
   nickname: ''
@@ -15467,6 +16124,85 @@ alexandra:
       via: add
       week: 5
       waiver: false
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Lamar Jackson
+      pos: QB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Jordan Love
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Jeremiyah Love
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Javonte Williams
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: J.K. Dobbins
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Tyjae Spears
+      pos: RB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Ja'Marr Chase
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Rashee Rice
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: DK Metcalf
+      pos: WR
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Jordan Addison
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Denzel Boston
+      pos: WR
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Rashid Shaheed
+      pos: WR
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Tyler Warren
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Tyler Loop
+      pos: K
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Browns D/ST
+      pos: D/ST
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
 theoceanpulse:
   name: Dillon
   nickname: ''
@@ -17436,6 +18172,90 @@ theoceanpulse:
     - player: Jared Cook
       via: draft
       round: 17
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Caleb Williams
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Jared Goff
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Breece Hall
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: David Montgomery
+      pos: RB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Jordan Mason
+      pos: RB
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Alvin Kamara
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Emanuel Wilson
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: A.J. Brown
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Luther Burden III
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Christian Watson
+      pos: WR
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Devaughn Vele
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Tre' Harris
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Colston Loveland
+      pos: TE
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Dalton Kincaid
+      pos: TE
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Spencer Shrader
+      pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Raiders D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 purpsworth:
   name: Trevor
   nickname: ''
@@ -18916,6 +19736,85 @@ purpsworth:
       via: add
       week: 15
       waiver: false
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Jayden Daniels
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Jonathan Taylor
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Rico Dowdle
+      pos: RB
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: De'Von Achane
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Ollie Gordon II
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Drake London
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Emeka Egbuka
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Rome Odunze
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Makai Lemon
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: KC Concepcion
+      pos: WR
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Deebo Samuel Sr.
+      pos: WR
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Harold Fannin Jr.
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Mark Andrews
+      pos: TE
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Evan McPherson
+      pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Steelers D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
 lukstein:
   name: Luke
   nickname: ''
@@ -20783,6 +21682,90 @@ lukstein:
     - player: Cody Parkey
       via: draft
       round: 16
+  current_roster:
+    year: 2026
+    week: 6
+    players:
+    - player: Jalen Hurts
+      pos: QB
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Saquon Barkley
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Jadarian Price
+      pos: RB
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: RJ Harvey
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Tank Bigsby
+      pos: RB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Dameon Pierce
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: DeVonta Smith
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: DJ Moore
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Matthew Golden
+      pos: WR
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Dontayvion Wicks
+      pos: WR
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Darius Cooper
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Malik Washington
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Kyle Pitts Sr.
+      pos: TE
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Kenyon Sadiq
+      pos: TE
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Matt Gay
+      pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Eagles D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
 henpen28:
   name: Henry
   nickname: ''

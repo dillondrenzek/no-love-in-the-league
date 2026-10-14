@@ -134,6 +134,21 @@ def load_week_rosters(year, week, franchises, data_dir=DATA_DIR):
     return out
 
 
+def latest_roster_snapshot(data_dir=DATA_DIR):
+    """(year, week) of the newest data/rosters/<year>-week-<nn>.yml snapshot —
+    the league's current rosters — or None when there are none."""
+    best = None
+    for path in (Path(data_dir) / "rosters").glob("*-week-*.yml"):
+        try:
+            year, week = path.stem.split("-week-")
+            key = (int(year), int(week))
+        except ValueError:
+            continue
+        if best is None or key > best:
+            best = key
+    return best
+
+
 def trade_asset_label(asset):
     """Display text for one traded asset. A player or pick carries a `label`
     (what the importer records). FAAB has to be added by hand — ESPN's trade feed

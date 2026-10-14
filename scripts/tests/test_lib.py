@@ -1728,8 +1728,54 @@ def test_current_week_is_first_unfinished():
     assert current_week(s) is None                          # regular season over
 
 
+def test_keeper_cost_rule():
+    from lib.keepers import keeper_cost
+    assert keeper_cost(9) == 7                              # two rounds earlier
+    assert keeper_cost(3) == 1
+    assert keeper_cost(14) == 12
+    assert keeper_cost(None) == 13                          # undrafted
+    assert keeper_cost(1) is None and keeper_cost(2) is None  # ineligible
+
+
+def test_current_roster_rows_cost_follows_draft_round():
+    from lib.keepers import draft_rounds, current_roster_rows
+    season = {"rosters": {
+        "a": [{"player": "Stud", "via": "draft", "round": 1},
+              {"player": "Sleeper", "via": "draft", "round": 11},
+              {"player": "Pickup", "via": "add", "week": 3}],
+        "b": [{"player": "Traded", "via": "draft", "round": 6},
+              {"player": "Sleeper", "via": "trade", "week": 4}],
+    }}
+    rounds = draft_rounds(season)
+    assert rounds == {"Stud": 1, "Sleeper": 11, "Traded": 6}
+    players = [{"player": "Pickup", "pos": "WR"}, {"player": "Traded", "pos": "RB"},
+               {"player": "Sleeper", "pos": "WR"}, {"player": "Stud", "pos": "WR"},
+               {"player": "Kicker", "pos": "K"}, {"player": "Gunslinger", "pos": "QB"}]
+    rows = current_roster_rows(players, rounds)
+    # Position order (QB, RB, WR, ..., K), then draft round, undrafted last.
+    assert [r["player"] for r in rows] == [
+        "Gunslinger", "Traded", "Stud", "Sleeper", "Pickup", "Kicker"]
+    by = {r["player"]: r for r in rows}
+    assert by["Traded"]["cost"] == "R4"            # a trade doesn't change the cost
+    assert by["Sleeper"]["cost"] == "R9" and by["Sleeper"]["basis"] == "Drafted R11"
+    assert by["Pickup"]["cost"] == "R13" and by["Pickup"]["basis"] == "Undrafted"
+    assert by["Stud"]["cost"] == "Ineligible" and by["Stud"]["ineligible"]
+    assert not by["Sleeper"]["ineligible"]
+
+
+def test_latest_roster_snapshot():
+    import tempfile
+    from lib.data import latest_roster_snapshot
+    with tempfile.TemporaryDirectory() as d:
+        assert latest_roster_snapshot(d) is None
+        (Path(d) / "rosters").mkdir()
+        for name in ("2025-week-17.yml", "2026-week-02.yml", "2026-week-10.yml", "notes.yml"):
+            (Path(d) / "rosters" / name).write_text("")
+        assert latest_roster_snapshot(d) == (2026, 10)      # numeric, not lexical
+
+
 def run():
-    tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
+    tests =[v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:
         t()
         print(f"  ok  {t.__name__}")
