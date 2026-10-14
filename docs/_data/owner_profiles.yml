@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 13
     trades_known: true
-    tx_per_year: 119.0
+    tx_per_year: 119.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 4-1
-    tx: 66
+    tx: 69
     in_progress: true
     pf: 716.0
     pa: 568.9
@@ -662,6 +662,14 @@ jackperkins74:
     - player: Mike Gesicki
       via: add
       week: 5
+      waiver: true
+    - player: Colts D/ST
+      via: add
+      week: 6
+      waiver: true
+    - player: Eddy Pineiro
+      via: add
+      week: 6
       waiver: true
   - year: 2025
     players:
@@ -3111,8 +3119,13 @@ jackperkins74:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: Will Reichard
+    - player: Eddy Pineiro
       pos: K
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Colts D/ST
+      pos: D/ST
       cost: R13
       basis: Undrafted
       ineligible: false
@@ -5692,7 +5705,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 33.8
+    tx_per_year: 34.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -5716,7 +5729,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 3rd
     record: 3-2
-    tx: 8
+    tx: 14
     in_progress: true
     pf: 664.0
     pa: 584.7
@@ -6087,6 +6100,18 @@ whowonthelastsuperbowl:
       via: add
       week: 5
       waiver: false
+    - player: Kenny Gainwell
+      via: add
+      week: 6
+      waiver: true
+    - player: Pat Freiermuth
+      via: add
+      week: 6
+      waiver: true
+    - player: Seahawks D/ST
+      via: add
+      week: 6
+      waiver: true
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -7395,6 +7420,11 @@ whowonthelastsuperbowl:
       cost: R2
       basis: Drafted R4
       ineligible: false
+    - player: Kenny Gainwell
+      pos: RB
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
     - player: Aaron Jones Sr.
       pos: RB
       cost: R5
@@ -7404,11 +7434,6 @@ whowonthelastsuperbowl:
       pos: RB
       cost: R9
       basis: Drafted R11
-      ineligible: false
-    - player: Justice Hill
-      pos: RB
-      cost: R12
-      basis: Drafted R14
       ineligible: false
     - player: CeeDee Lamb
       pos: WR
@@ -7430,20 +7455,15 @@ whowonthelastsuperbowl:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Keon Coleman
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Sam LaPorta
       pos: TE
       cost: R3
       basis: Drafted R5
       ineligible: false
-    - player: Jake Ferguson
+    - player: Pat Freiermuth
       pos: TE
-      cost: R11
-      basis: Drafted R13
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Brandon Aubrey
       pos: K
@@ -7454,6 +7474,11 @@ whowonthelastsuperbowl:
       pos: D/ST
       cost: R10
       basis: Drafted R12
+      ineligible: false
+    - player: Seahawks D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
       ineligible: false
 schirmerj:
   name: Jono
@@ -7480,7 +7505,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 51.9
+    tx_per_year: 52.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -7503,7 +7528,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 4th
     record: 3-2
-    tx: 11
+    tx: 13
     in_progress: true
     pf: 611.9
     pa: 612.8
@@ -7849,6 +7874,10 @@ schirmerj:
     - player: Jaguars D/ST
       via: add
       week: 5
+      waiver: true
+    - player: Chiefs D/ST
+      via: add
+      week: 6
       waiver: true
   - year: 2025
     players:
@@ -9276,10 +9305,10 @@ schirmerj:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Jaguars D/ST
+    - player: Chiefs D/ST
       pos: D/ST
-      cost: R11
-      basis: Drafted R13
+      cost: R13
+      basis: Undrafted
       ineligible: false
 zachzoske:
   name: Zach
@@ -9309,7 +9338,7 @@ zachzoske:
     playoff_apps: 5
     trades: 17
     trades_known: true
-    tx_per_year: 105.2
+    tx_per_year: 105.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -9332,7 +9361,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 5th
     record: 3-2
-    tx: 33
+    tx: 39
     in_progress: true
     pf: 611.3
     pa: 571.8
@@ -9910,6 +9939,22 @@ zachzoske:
     - player: Khalil Shakir
       via: add
       week: 5
+      waiver: true
+    - player: DeMario Douglas
+      via: add
+      week: 6
+      waiver: false
+    - player: Germie Bernard
+      via: add
+      week: 6
+      waiver: true
+    - player: Giants D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: Kirk Cousins
+      via: add
+      week: 6
       waiver: true
   - year: 2025
     players:
@@ -12090,7 +12135,7 @@ zachzoske:
       cost: R3
       basis: Drafted R5
       ineligible: false
-    - player: Sam Darnold
+    - player: Kirk Cousins
       pos: QB
       cost: R13
       basis: Undrafted
@@ -12135,10 +12180,15 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Khalil Shakir
+    - player: DeMario Douglas
       pos: WR
       cost: R13
-      basis: Drafted R15
+      basis: Undrafted
+      ineligible: false
+    - player: Germie Bernard
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: George Kittle
       pos: TE
@@ -12155,7 +12205,7 @@ zachzoske:
       cost: R9
       basis: Drafted R11
       ineligible: false
-    - player: Bears D/ST
+    - player: Giants D/ST
       pos: D/ST
       cost: R13
       basis: Undrafted
@@ -12188,7 +12238,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 48.0
+    tx_per_year: 48.2
     tx_known: false
     seasons: 11
     best_finish:
@@ -12212,7 +12262,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 6th
     record: 3-2
-    tx: 17
+    tx: 19
     in_progress: true
     pf: 582.2
     pa: 554.6
@@ -12575,6 +12625,10 @@ shawne2520997:
     - player: Will Shipley
       via: add
       week: 5
+      waiver: true
+    - player: George Holani
+      via: add
+      week: 6
       waiver: true
   - year: 2025
     players:
@@ -13849,12 +13903,12 @@ shawne2520997:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: Kaelon Black
+    - player: George Holani
       pos: RB
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Will Shipley
+    - player: Kaelon Black
       pos: RB
       cost: R13
       basis: Undrafted
@@ -16220,7 +16274,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 15
     trades_known: true
-    tx_per_year: 52.0
+    tx_per_year: 52.4
     tx_known: false
     seasons: 11
     best_finish:
@@ -16243,7 +16297,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 2-2-1
-    tx: 34
+    tx: 38
     in_progress: true
     pf: 533.1
     pa: 583.6
@@ -16790,6 +16844,14 @@ theoceanpulse:
       via: add
       week: 5
       waiver: false
+    - player: Kimani Vidal
+      via: add
+      week: 6
+      waiver: true
+    - player: Ravens D/ST
+      via: add
+      week: 6
+      waiver: true
   - year: 2025
     players:
     - player: Derrick Henry
@@ -18206,6 +18268,11 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Kimani Vidal
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: A.J. Brown
       pos: WR
       cost: Ineligible
@@ -18226,11 +18293,6 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Tre' Harris
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Colston Loveland
       pos: TE
       cost: R6
@@ -18246,10 +18308,10 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Raiders D/ST
+    - player: Ravens D/ST
       pos: D/ST
-      cost: R13
-      basis: Undrafted
+      cost: R11
+      basis: Drafted R13
       ineligible: false
 purpsworth:
   name: Trevor
@@ -18273,7 +18335,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: true
-    tx_per_year: 40.2
+    tx_per_year: 40.8
     tx_known: true
     seasons: 8
     best_finish:
@@ -18297,7 +18359,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 11th
     record: 1-4
-    tx: 8
+    tx: 12
     in_progress: true
     pf: 514.9
     pa: 602.5
@@ -18621,6 +18683,18 @@ purpsworth:
     - player: Ollie Gordon II
       via: add
       week: 4
+      waiver: true
+    - player: Brenton Strange
+      via: add
+      week: 6
+      waiver: false
+    - player: Dominic Zvada
+      via: add
+      week: 6
+      waiver: true
+    - player: Kendre Miller
+      via: add
+      week: 6
       waiver: true
   - year: 2025
     players:
@@ -19755,6 +19829,11 @@ purpsworth:
       cost: R6
       basis: Drafted R8
       ineligible: false
+    - player: Kendre Miller
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Ollie Gordon II
       pos: RB
       cost: R13
@@ -19774,11 +19853,6 @@ purpsworth:
       pos: WR
       cost: R2
       basis: Drafted R4
-      ineligible: false
-    - player: Makai Lemon
-      pos: WR
-      cost: R7
-      basis: Drafted R9
       ineligible: false
     - player: KC Concepcion
       pos: WR
@@ -19800,7 +19874,12 @@ purpsworth:
       cost: R9
       basis: Drafted R11
       ineligible: false
-    - player: Evan McPherson
+    - player: Brenton Strange
+      pos: TE
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Dominic Zvada
       pos: K
       cost: R13
       basis: Undrafted

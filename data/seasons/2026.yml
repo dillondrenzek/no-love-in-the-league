@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-14T02:39:44+00:00
+updated_at: 2026-10-14T09:07:56+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -120,12 +120,12 @@ matchups:
   - { week:  5, home: schirmerj, away: lukstein, home_score: 128.0, away_score: 57.9, playoff: false }
   - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 144.1, away_score: 179.1, playoff: false }
   - { week:  5, home: zachzoske, away: theoceanpulse, home_score: 84.2, away_score: 105.5, playoff: false }
-  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 106.56, away_proj: 87.27 }
-  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 84.73, away_proj: 106.55 }
-  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false, home_proj: 123.31, away_proj: 100.97 }
-  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false, home_proj: 128.22, away_proj: 114.69 }
-  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false, home_proj: 116.63, away_proj: 137.15 }
-  - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 95.67, away_proj: 110.29 }
+  - { week:  6, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 106.56, away_proj: 101.26 }
+  - { week:  6, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 111.38, away_proj: 110.94 }
+  - { week:  6, home: schirmerj, away: alexandra, playoff: false, played: false, home_proj: 124.11, away_proj: 100.97 }
+  - { week:  6, home: sturmanator15, away: kevbots22, playoff: false, played: false, home_proj: 119.83, away_proj: 114.69 }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, playoff: false, played: false, home_proj: 125.6, away_proj: 137.15 }
+  - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 112.52, away_proj: 110.29 }
   - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }
   - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
@@ -296,16 +296,16 @@ transactions_known: true
 transactions:
   alexandra: { adds: 5, drops: 5, moves: 10 }
   gganoom: { adds: 4, drops: 3, moves: 7 }
-  jackperkins74: { adds: 38, drops: 28, moves: 66 }
+  jackperkins74: { adds: 40, drops: 29, moves: 69 }
   kevbots22: { adds: 4, drops: 3, moves: 7 }
   lukstein: { adds: 12, drops: 7, moves: 19 }
-  purpsworth: { adds: 5, drops: 3, moves: 8 }
-  schirmerj: { adds: 6, drops: 5, moves: 11 }
-  shawne2520997: { adds: 9, drops: 8, moves: 17 }
+  purpsworth: { adds: 8, drops: 4, moves: 12 }
+  schirmerj: { adds: 7, drops: 6, moves: 13 }
+  shawne2520997: { adds: 10, drops: 9, moves: 19 }
   sturmanator15: { adds: 16, drops: 15, moves: 31 }
-  theoceanpulse: { adds: 18, drops: 16, moves: 34 }
-  whowonthelastsuperbowl: { adds: 5, drops: 3, moves: 8 }
-  zachzoske: { adds: 19, drops: 14, moves: 33 }
+  theoceanpulse: { adds: 20, drops: 18, moves: 38 }
+  whowonthelastsuperbowl: { adds: 8, drops: 6, moves: 14 }
+  zachzoske: { adds: 23, drops: 16, moves: 39 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -500,6 +500,14 @@ rosters:
   - player: Mike Gesicki
     via: add
     week: 5
+    waiver: true
+  - player: Colts D/ST
+    via: add
+    week: 6
+    waiver: true
+  - player: Eddy Pineiro
+    via: add
+    week: 6
     waiver: true
   gganoom:
   - player: Bijan Robinson
@@ -713,6 +721,10 @@ rosters:
     via: add
     week: 5
     waiver: true
+  - player: George Holani
+    via: add
+    week: 6
+    waiver: true
   schirmerj:
   - player: Christian McCaffrey
     via: draft
@@ -778,6 +790,10 @@ rosters:
   - player: Jaguars D/ST
     via: add
     week: 5
+    waiver: true
+  - player: Chiefs D/ST
+    via: add
+    week: 6
     waiver: true
   lukstein:
   - player: Saquon Barkley
@@ -933,6 +949,18 @@ rosters:
   - player: Ollie Gordon II
     via: add
     week: 4
+    waiver: true
+  - player: Brenton Strange
+    via: add
+    week: 6
+    waiver: false
+  - player: Dominic Zvada
+    via: add
+    week: 6
+    waiver: true
+  - player: Kendre Miller
+    via: add
+    week: 6
     waiver: true
   sturmanator15:
   - player: Jaxon Smith-Njigba
@@ -1160,6 +1188,22 @@ rosters:
     via: add
     week: 5
     waiver: true
+  - player: DeMario Douglas
+    via: add
+    week: 6
+    waiver: false
+  - player: Germie Bernard
+    via: add
+    week: 6
+    waiver: true
+  - player: Giants D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Kirk Cousins
+    via: add
+    week: 6
+    waiver: true
   theoceanpulse:
   - player: Omarion Hampton
     via: draft
@@ -1295,6 +1339,14 @@ rosters:
     via: add
     week: 5
     waiver: false
+  - player: Kimani Vidal
+    via: add
+    week: 6
+    waiver: true
+  - player: Ravens D/ST
+    via: add
+    week: 6
+    waiver: true
   kevbots22:
   - player: Chase Brown
     via: draft
@@ -1423,3 +1475,15 @@ rosters:
     via: add
     week: 5
     waiver: false
+  - player: Kenny Gainwell
+    via: add
+    week: 6
+    waiver: true
+  - player: Pat Freiermuth
+    via: add
+    week: 6
+    waiver: true
+  - player: Seahawks D/ST
+    via: add
+    week: 6
+    waiver: true
