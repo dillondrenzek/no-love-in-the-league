@@ -12140,11 +12140,6 @@ zachzoske:
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Antonio Williams
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: George Kittle
       pos: TE
       cost: R5
