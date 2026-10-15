@@ -10,6 +10,12 @@ Two kinds of records:
 Meaningless final-week consolation games (see lib/overrides) are excluded from the
 score records. Co-champions each count as half a title.
 
+Records that can fall mid-season update live: single-game scoring marks count
+every complete week of the in-progress season, and its running points total
+competes for Most Points in a Season (it only climbs, so a spot it holds is
+earned; the row notes "thru Wk N"). Records settled only when a season ends —
+season win-loss records, titles, Sackos — use finished seasons only.
+
 Every record carries a `leaders` list: the record holder first, then the next few
 runners-up (up to `LEADER_N`), so the record book can render each record as a
 short leaderboard table. The record's own top-level fields mirror `leaders[0]`.
@@ -19,7 +25,8 @@ automatically as richer data (scores) is added.
 """
 
 from .data import (name_of, short_name_of, season_trades_complete,
-                   season_transactions_known, countable_matchups)
+                   season_transactions_known, countable_matchups, complete_weeks)
+from .state import is_in_progress
 from .standings import get_standings, parse_record
 from .overrides import co_champions, meaningless_keys, matchup_key
 
@@ -109,7 +116,7 @@ def _sacko_count(seasons, franchises):
     return counts, display
 
 
-def _standings_records(seasons, franchises, overrides, trade_seasons=None):
+def _standings_records(seasons, franchises, overrides, live_seasons=None):
     all_rows = [(s["season"], r) for s in seasons for r in get_standings(s, franchises)]
     if not all_rows:
         return []
@@ -150,15 +157,16 @@ def _standings_records(seasons, franchises, overrides, trade_seasons=None):
                    for fid, cnt in ranked[:LEADER_N] if cnt > 0]
         records.append(_record("Most Sackos", SEC_TITLES, leaders))
 
-    trade_rec = _most_trades(trade_seasons if trade_seasons is not None else seasons, franchises)
+    live_pool = live_seasons if live_seasons is not None else seasons
+    trade_rec = _most_trades(live_pool, franchises)
     if trade_rec:
         records.append(trade_rec)
 
-    first_overall = _most_first_overall(trade_seasons if trade_seasons is not None else seasons, franchises)
+    first_overall = _most_first_overall(live_pool, franchises)
     if first_overall:
         records.append(first_overall)
 
-    tx_pool = trade_seasons if trade_seasons is not None else seasons
+    tx_pool = live_pool
     most_tx = _transaction_record(tx_pool, franchises, most=True)
     if most_tx:
         records.append(most_tx)
@@ -293,6 +301,10 @@ def _score_records(seasons, franchises, overrides):
         return []
 
     teams_by_year = {s["season"]: s.get("teams", {}) for s in seasons}
+    # In-progress seasons -> their last complete week, so a running season total
+    # can say how far it's counted ("thru Wk 6").
+    live_through = {s["season"]: max(complete_weeks(s))
+                    for s in seasons if is_in_progress(s) and complete_weeks(s)}
 
     def team_for(fid, year):
         return teams_by_year.get(year, {}).get(fid)
@@ -334,7 +346,8 @@ def _score_records(seasons, franchises, overrides):
     season_leaders = [
         _leader(f"{pts:.2f}", team=team_for(fid, yr),
                 owner_name=short_name_of(fid, franchises),
-                owner_id=fid if fid in franchises else None, season=yr)
+                owner_id=fid if fid in franchises else None, season=yr,
+                sub_value=f"thru Wk {live_through[yr]}" if yr in live_through else None)
         for (yr, fid), pts in season_ranked[:LEADER_N]]
 
     return [
@@ -352,13 +365,17 @@ def _score_records(seasons, franchises, overrides):
     ]
 
 
-def compute_records(seasons, franchises=None, overrides=None, trade_seasons=None):
-    """All currently-computable record-book entries. Standings/score records use
-    `seasons` (finished only); the trades record uses `trade_seasons` (defaults to
-    `seasons`) so in-progress trades still count.
+def compute_records(seasons, franchises=None, overrides=None, live_seasons=None):
+    """All currently-computable record-book entries. `seasons` are finished
+    seasons only; `live_seasons` (defaults to `seasons`) also includes an
+    in-progress one. Records that can only be settled at season's end (win-loss
+    records, titles, Sackos) use `seasons`; everything that can fall mid-season —
+    scoring marks (complete weeks only), trades, transactions, 1.01s — uses
+    `live_seasons`.
 
     Each record includes a `leaders` list (holder first, then runners-up)."""
     franchises = franchises or {}
     overrides = overrides or {}
-    records = _standings_records(seasons, franchises, overrides, trade_seasons)
-    return records + _score_records(seasons, franchises, overrides)
+    live = live_seasons if live_seasons is not None else seasons
+    records = _standings_records(seasons, franchises, overrides, live)
+    return records + _score_records(live, franchises, overrides)
