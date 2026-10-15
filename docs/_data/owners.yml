@@ -1680,8 +1680,8 @@ tx_heatmap:
       color: '#fbd18f'
   - id: sturmanator15
     name: Wade
-    total: 812
-    tx_per_year: 90.2
+    total: 816
+    tx_per_year: 90.7
     cells:
     - year: 2018
       count: 110
@@ -1708,8 +1708,8 @@ tx_heatmap:
       count: 52
       color: '#facb80'
     - year: 2026
-      count: 35
-      color: '#fbd8a0'
+      count: 39
+      color: '#fbd598'
   - id: theoceanpulse
     name: Dillon
     total: 472
