@@ -302,10 +302,15 @@ jackperkins74:
   trades:
   - year: 2026
     week: 6
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Tee Higgins
+    - George Kittle
+    gave:
+    - Garrett Wilson
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mom
   - year: 2026
     week: 5
     got:
@@ -669,6 +674,12 @@ jackperkins74:
       via: add
       week: 5
       waiver: true
+    - player: George Kittle
+      via: trade
+      week: 6
+    - player: Tee Higgins
+      via: trade
+      week: 6
     - player: Colts D/ST
       via: add
       week: 6
@@ -5722,7 +5733,7 @@ whowonthelastsuperbowl:
     sackos: 2
     playoff_apps: 4
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 34.4
     tx_known: false
     seasons: 13
@@ -6042,7 +6053,7 @@ whowonthelastsuperbowl:
     - id: lukstein
       name: Luke
       team: Autodraft Monster
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 11
@@ -7522,7 +7533,7 @@ schirmerj:
     sackos: 0
     playoff_apps: 9
     trades: 2
-    trades_known: false
+    trades_known: true
     tx_per_year: 52.1
     tx_known: false
     seasons: 13
@@ -7811,7 +7822,7 @@ schirmerj:
     - id: sturmanator15
       name: Wade
       team: Lamar's Donger
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -9354,7 +9365,7 @@ zachzoske:
     titles: '1'
     sackos: 2
     playoff_apps: 5
-    trades: 17
+    trades: 18
     trades_known: true
     tx_per_year: 106.4
     tx_known: false
@@ -9622,6 +9633,17 @@ zachzoske:
     avg_pf: 98.7
     avg_pa: 100.9
   trades:
+  - year: 2026
+    week: 6
+    got:
+    - Garrett Wilson
+    gave:
+    - Tee Higgins
+    - George Kittle
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Gibbed for Dillbot's pleasure
   - year: 2026
     week: 3
     got:
@@ -9958,6 +9980,9 @@ zachzoske:
       via: add
       week: 5
       waiver: true
+    - player: Garrett Wilson
+      via: trade
+      week: 6
     - player: DeMario Douglas
       via: add
       week: 6
@@ -12267,7 +12292,7 @@ shawne2520997:
     sackos: 2
     playoff_apps: 8
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 48.7
     tx_known: false
     seasons: 11
@@ -12556,7 +12581,7 @@ shawne2520997:
     - id: jackperkins74
       name: Jack
       team: Vladimir Putin
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -14016,7 +14041,7 @@ gganoom:
     sackos: 0
     playoff_apps: 1
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 22.7
     tx_known: true
     seasons: 3
@@ -14146,7 +14171,7 @@ gganoom:
     avg_pf: 124.0
     avg_pa: 123.6
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -14547,7 +14572,7 @@ kevbots22:
     sackos: 0
     playoff_apps: 5
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 30.2
     tx_known: false
     seasons: 13
@@ -14822,7 +14847,7 @@ kevbots22:
     avg_pf: 97.3
     avg_pa: 103.3
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -16073,7 +16098,7 @@ alexandra:
     sackos: 0
     playoff_apps: 0
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 10.0
     tx_known: true
     seasons: 1
@@ -16138,7 +16163,7 @@ alexandra:
     avg_pf: 105.0
     avg_pa: 87.4
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 7
@@ -18372,7 +18397,7 @@ purpsworth:
     sackos: 0
     playoff_apps: 4
     trades: 6
-    trades_known: false
+    trades_known: true
     tx_per_year: 40.8
     tx_known: true
     seasons: 8
@@ -18637,7 +18662,7 @@ purpsworth:
     - id: zachzoske
       name: Zach
       team: Eleven In Crocks
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -19955,7 +19980,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 46.1
+    tx_per_year: 46.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -19978,7 +20003,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 1-4
-    tx: 19
+    tx: 21
     in_progress: true
     pf: 371.2
     pa: 624.5
@@ -20428,6 +20453,10 @@ lukstein:
       via: add
       week: 5
       waiver: true
+    - player: C.J. Stroud
+      via: add
+      week: 6
+      waiver: false
   - year: 2025
     players:
     - player: Amon-Ra St. Brown
@@ -21803,6 +21832,11 @@ lukstein:
       cost: R3
       basis: Drafted R5
       ineligible: false
+    - player: C.J. Stroud
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Saquon Barkley
       pos: RB
       cost: Ineligible
@@ -21862,11 +21896,6 @@ lukstein:
       pos: TE
       cost: R10
       basis: Drafted R12
-      ineligible: false
-    - player: Kenyon Sadiq
-      pos: TE
-      cost: R12
-      basis: Drafted R14
       ineligible: false
     - player: Matt Gay
       pos: K

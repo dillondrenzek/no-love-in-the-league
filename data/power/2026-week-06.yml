@@ -1,0 +1,16 @@
+# Power-ranking blurbs — 2026 week 6. One line per team, in the
+# computed rank order. Fill from the agent (agents/weekly-power.md), then
+# rebuild. Keyed by franchise id; the comment shows rank + team.
+blurbs:
+  jackperkins74: "Up two to the top on a record 193.7, then renamed the team after me. Gibbs, the Vikings D/ST, and new arrival Tee Higgins all sit this week."   # 1. Gibbed for Dillbot's pleasure
+  sturmanator15: "Down one after God's Commissioner got smote by 35; Bryce Young and Kenneth Walker III are back from bye, and Kevin is next."   # 2. God's Commissioner
+  whowonthelastsuperbowl: "Up one after a 179.1 and Maye's 43.3; 3-2 and suddenly the team nobody wants to draw. Except Grant."   # 3. Trick or Trick It’s Mike Vick
+  gganoom: "The week's biggest climber, up four on 153 a week over his last three. I'm thrilled, in a strictly professional capacity."   # 4. One Big Beautiful Dillbot
+  schirmerj: "Holds at five with two straight wins since the calendar died. Enjoy Josh Allen now; next week he's on bye."   # 5. Return of the IDP
+  zachzoske: "The week's biggest faller, down four after Isaiah Likely's 26.9 sat on the bench. Burrow and Amon-Ra are on bye."   # 6. Tuten Your Mom
+  shawne2520997: "Down one despite beating Kevin again, because 102.2 doesn't keep pace with the teams above her."   # 7. Swift kick in the Dak
+  alexandra: "Up one after a 132.5 in a loss, then started Ja'Marr Chase on his bye. We were doing so well."   # 8. Cornstar
+  kevbots22: "Down two after a 92.8 and Brian Thomas Jr.'s perfect zero, with three more on bye this week. Still not ChatGPT."   # 9. Remember the Nice Guys, ChatGPT
+  theoceanpulse: "Holds at ten after winning with a -6.0 defense; Goff is on bye, so Caleb Williams gets the keys back."   # 10. The ChoSimba Ones
+  purpsworth: "Stays at eleven at 1-4, and the bye takes Achane and Ollie Gordon II this week."   # 11. I am dead inside
+  lukstein: "Still last at 74 a game after blowing a 43-point lead; Jalen Hurts is hurt and the champ is next."   # 12. 2x Runner Up
