@@ -52,7 +52,7 @@ active:
   win_color: '#f9b54d'
   titles: '1'
   sackos: 2
-  trades: 17
+  trades: 18
   best_finish:
     type: shiva
     years:
@@ -1808,8 +1808,8 @@ tx_heatmap:
       color: '#fce1b6'
   - id: lukstein
     name: Luke
-    total: 415
-    tx_per_year: 46.1
+    total: 417
+    tx_per_year: 46.3
     cells:
     - year: 2018
       count: 70
@@ -1836,8 +1836,8 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 19
-      color: '#fce5bd'
+      count: 21
+      color: '#fce3b9'
   - id: purpsworth
     name: Trevor
     total: 326
