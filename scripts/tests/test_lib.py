@@ -102,8 +102,40 @@ def test_in_progress_season_trades_still_count():
     assert profiles["a"]["trades"] == 1 and profiles["b"]["trades"] == 1  # 2026 counts
     assert profiles["a"]["seasons_count"] == 1        # but 2026 adds no season row
     assert profiles["a"]["trade_log"][0]["year"] == 2026
-    recs = {r["category"]: r for r in compute_records([done], {}, trade_seasons=[done, live])}
+    recs = {r["category"]: r for r in compute_records([done], {}, live_seasons=[done, live])}
     assert recs["Most Trades"]["value"] == "1"
+
+
+def test_in_progress_season_can_break_scoring_records():
+    done = matchup_season(2025)                       # top week 200, top season 215 (d)
+    live = {"season": 2026, "state": "season",
+            "teams": {"a": "Alpha Cats", "b": "Bravo Dogs", "c": "C", "d": "D"},
+            "matchups": [
+                # Week 1 complete: a record-setting 250 and a 240-point blowout.
+                {"week": 1, "home": "a", "away": "b", "home_score": 250.0, "away_score": 10.0},
+                {"week": 1, "home": "c", "away": "d", "home_score": 90.0, "away_score": 80.0},
+                # Week 2 still live: its 300 mustn't count yet.
+                {"week": 2, "home": "a", "away": "c", "home_score": 300.0, "away_score": 1.0,
+                 "final": False},
+                {"week": 2, "home": "b", "away": "d", "home_score": 50.0, "away_score": 60.0},
+            ]}
+    recs = {r["category"]: r for r in compute_records([done], {}, live_seasons=[done, live])}
+    week = recs["Most Points in a Week"]
+    assert (week["value"], week["season"], week["week"]) == ("250.00", 2026, 1)
+    assert recs["Biggest Blowout"]["value"] == "240.00"
+    assert recs["Fewest Points in a Week"]["value"] == "10.00"
+    # The live running total (250 thru Wk 1) already tops 2025's 215, and says so.
+    season = recs["Most Points in a Season"]
+    assert (season["value"], season["season"], season["sub_value"]) == ("250.00", 2026, "thru Wk 1")
+    finished = [L for L in season["leaders"] if L["season"] == 2025]
+    assert finished and all(L["sub_value"] is None for L in finished)
+    # Season win-loss records are only settled at season's end: a 1-0 start
+    # (a 1.000 pct) mustn't top Best Regular-Season Record.
+    for cat in ("Best Regular-Season Record", "Worst Regular-Season Record"):
+        assert all(L["season"] != 2026 for L in recs[cat]["leaders"])
+    # Without a live pool, nothing from 2026 appears.
+    recs = {r["category"]: r for r in compute_records([done], {})}
+    assert recs["Most Points in a Week"]["value"] == "200.00"
 
 
 def test_keeper_history_across_seasons():

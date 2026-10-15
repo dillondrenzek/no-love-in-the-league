@@ -180,9 +180,12 @@ before committing. Both jobs share a concurrency group so they never overlap.
 drafting → season → playoffs → complete`) that the whole site renders off — see
 [design/season-state.md](design/season-state.md). The importer detects the state
 from ESPN each run and advances it **forward only**; a season that isn't yet
-`complete` is deliberately **left out** of all-time standings, records, owner
-profiles, and the homepage hero, so a half-season never skews the record book. It
-flows into the all-time numbers once it reaches `complete`.
+`complete` is deliberately **left out** of all-time standings, season-level
+records, owner profiles, and the homepage hero, so a half-season never skews the
+record book. It flows into the all-time numbers once it reaches `complete`. The
+exception is records a live season can genuinely break mid-season — single-game
+scoring marks and the running season points total — which update every complete
+week.
 
 Two states are hand-controlled: set `state: drafting` yourself in the ~day between
 keepers locking and the draft (ESPN can't tell us that), and add `state_locked:

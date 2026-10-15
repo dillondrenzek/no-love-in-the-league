@@ -157,11 +157,14 @@ Aggregation gating (concrete predicates, keyed off `state_order` index):
 - **Playoff berths:** `state ≥ playoffs`. *(Slice 4 — done; fixes ESPN's
   pre-filled `playoff_teams` phantom-counting berths on a live season.)*
 - **Titles (Shiva) & Sacko:** `state == complete`. *(Slice 4 — done.)*
-- **Record book (best/worst record, most points, championships):** stays
-  **complete-only** for now. Counting a live 2-0 season as the "best record" is
-  misleading, so season-aggregate records wait for `complete`; trades and the 1.01
-  record already include the live season. A future refinement can split per-week
-  score records (safe to show live) from season-aggregate records.
+- **Record book:** split by whether a record can fall mid-season *(done, in
+  `lib/records.compute_records`)*. **Live:** single-game scoring marks (most/
+  fewest points in a week, biggest blowout, highest combined) count every complete
+  week of the live season; Most Points in a Season ranks its running total (it
+  only climbs, so a spot it holds is earned; the row notes "thru Wk N"); trades,
+  transactions and the 1.01 record include it too. **Complete-only:** best/worst
+  regular-season record, championships, Sackos — a live 2-0 start isn't a
+  "best record".
 
 This makes the earlier ad-hoc rules explicit: a live season counts its record the
 moment it's `season`, earns berths at `playoffs`, and only crowns a champ/Sacko at
