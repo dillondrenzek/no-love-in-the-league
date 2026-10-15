@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-15T02:19:22+00:00'
+captured_at: '2026-10-15T08:41:02+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -234,14 +234,6 @@ rosters:
     injury: ''
     pro_team: LV
     bye_week: 13
-  - player: Giants D/ST
-    pos: D/ST
-    starter: true
-    proj: 5.44
-    actual: null
-    injury: ''
-    pro_team: NYG
-    bye_week: 8
   - player: Garrett Wilson
     pos: WR
     starter: true
@@ -266,6 +258,14 @@ rosters:
     injury: INJURY_RESERVE
     pro_team: BAL
     bye_week: 13
+  - player: Jaguars D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.21
+    actual: null
+    injury: ''
+    pro_team: JAX
+    bye_week: 7
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -532,7 +532,7 @@ rosters:
     bye_week: 10
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
-  team_name: Gibbed for your pleasure
+  team_name: Gibbed for Dillbot's pleasure
   players:
   - player: Jahmyr Gibbs
     pos: RB
@@ -1516,7 +1516,7 @@ rosters:
     bye_week: 11
   - player: Jake Bates
     pos: K
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1538,22 +1538,6 @@ rosters:
     injury: DOUBTFUL
     pro_team: NYJ
     bye_week: 13
-  - player: Roman Wilson
-    pos: WR
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: OUT
-    pro_team: PIT
-    bye_week: 9
-  - player: Cowboys D/ST
-    pos: D/ST
-    starter: false
-    proj: 3.36
-    actual: null
-    injury: ''
-    pro_team: DAL
-    bye_week: 14
   - player: George Holani
     pos: RB
     starter: false
@@ -1561,4 +1545,20 @@ rosters:
     actual: null
     injury: ''
     pro_team: SEA
+    bye_week: 11
+  - player: Tyler Higbee
+    pos: TE
+    starter: false
+    proj: 5.78
+    actual: null
+    injury: ''
+    pro_team: LAR
+    bye_week: 11
+  - player: Nick Folk
+    pos: K
+    starter: true
+    proj: 9.32
+    actual: null
+    injury: ''
+    pro_team: ATL
     bye_week: 11

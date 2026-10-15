@@ -47,7 +47,7 @@ detail:
     rows:
     - &id001
       finish: 1
-      team: Gibbed for your pleasure
+      team: Gibbed for Dillbot's pleasure
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
       owner_id: jackperkins74
       owner_name: Jack
@@ -233,7 +233,7 @@ detail:
     - pick: 1
       owner_id: jackperkins74
       owner_name: Jack
-      team: Gibbed for your pleasure
+      team: Gibbed for Dillbot's pleasure
       keepers:
       - player: Puka Nacua
         round: 9
@@ -359,7 +359,7 @@ detail:
       parties:
       - owner_id: jackperkins74
         owner_name: Jack
-        team: Gibbed for your pleasure
+        team: Gibbed for Dillbot's pleasure
         gave:
         - Dalton Kincaid
         - Alvin Kamara
@@ -375,7 +375,7 @@ detail:
       parties:
       - owner_id: jackperkins74
         owner_name: Jack
-        team: Gibbed for your pleasure
+        team: Gibbed for Dillbot's pleasure
         gave: []
     keepers:
     - round: 5
@@ -417,7 +417,7 @@ detail:
       player: Puka Nacua
       owner_id: jackperkins74
       owner_name: Jack
-      team: Gibbed for your pleasure
+      team: Gibbed for Dillbot's pleasure
     - round: 9
       player: Trey McBride
       owner_id: sturmanator15
