@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power:
   - rank: 1
@@ -2178,7 +2178,7 @@
     decided: false
     result: null
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: true
   power:
   - rank: 1
@@ -2404,7 +2404,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-8:
@@ -2510,7 +2510,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-9:
@@ -2616,7 +2616,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-10:
@@ -2722,7 +2722,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-11:
@@ -2828,7 +2828,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-12:
@@ -2934,7 +2934,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-13:
@@ -3040,7 +3040,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []
 2026-14:
@@ -3146,6 +3146,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 16, 1:35 AM PDT
+  updated_at: Oct 16, 8:45 AM PDT
   current: false
   power: []

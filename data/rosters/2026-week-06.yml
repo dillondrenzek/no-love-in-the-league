@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-16T08:35:40+00:00'
+captured_at: '2026-10-16T15:45:23+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -1279,7 +1279,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: OUT
     pro_team: NYJ
     bye_week: 13
   - player: Luther Burden III
@@ -1535,7 +1535,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: OUT
     pro_team: NYJ
     bye_week: 13
   - player: Tyler Higbee
