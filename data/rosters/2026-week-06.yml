@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-16T02:11:49+00:00'
+captured_at: '2026-10-16T08:35:40+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -10,7 +10,7 @@ rosters:
     pos: WR
     starter: true
     proj: 15.7
-    actual: 4.1
+    actual: 19.4
     injury: QUESTIONABLE
     pro_team: SEA
     bye_week: 11
@@ -250,14 +250,6 @@ rosters:
     injury: ''
     pro_team: NYJ
     bye_week: 13
-  - player: Ja'Kobi Lane
-    pos: WR
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: INJURY_RESERVE
-    pro_team: BAL
-    bye_week: 13
   - player: Jaguars D/ST
     pos: D/ST
     starter: true
@@ -266,6 +258,14 @@ rosters:
     injury: ''
     pro_team: JAX
     bye_week: 7
+  - player: Tyler Allgeier
+    pos: RB
+    starter: false
+    proj: 5.77
+    actual: null
+    injury: ''
+    pro_team: ARI
+    bye_week: 14
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -290,7 +290,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.57
-    actual: 2.5
+    actual: 4.4
     injury: ''
     pro_team: DEN
     bye_week: 10
@@ -346,7 +346,7 @@ rosters:
     pos: K
     starter: true
     proj: 8.42
-    actual: 3.0
+    actual: 6.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -446,7 +446,7 @@ rosters:
     pos: RB
     starter: true
     proj: 8.64
-    actual: 11.7
+    actual: 13.1
     injury: ''
     pro_team: DEN
     bye_week: 10
@@ -770,14 +770,6 @@ rosters:
     injury: ''
     pro_team: LV
     bye_week: 13
-  - player: Justin Herbert
-    pos: QB
-    starter: false
-    proj: 12.08
-    actual: null
-    injury: ''
-    pro_team: LAC
-    bye_week: 7
   - player: T.J. Hockenson
     pos: TE
     starter: false
@@ -786,6 +778,14 @@ rosters:
     injury: QUESTIONABLE
     pro_team: MIN
     bye_week: 6
+  - player: Khalil Shakir
+    pos: WR
+    starter: false
+    proj: 7.5
+    actual: null
+    injury: ''
+    pro_team: BUF
+    bye_week: 7
 - manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
   team_id: 9
   team_name: Cornstar
@@ -850,7 +850,7 @@ rosters:
     pos: RB
     starter: true
     proj: 9.46
-    actual: 10.3
+    actual: 12.1
     injury: ''
     pro_team: DEN
     bye_week: 10
@@ -882,7 +882,7 @@ rosters:
     pos: WR
     starter: false
     proj: 8.23
-    actual: 5.2
+    actual: 11.3
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1154,7 +1154,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.05
-    actual: 4.0
+    actual: 6.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1230,7 +1230,7 @@ rosters:
     pos: RB
     starter: true
     proj: 14.01
-    actual: 3.3
+    actual: 5.2
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1410,7 +1410,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.54
-    actual: 12.0
+    actual: 11.0
     injury: ''
     pro_team: DEN
     bye_week: 10

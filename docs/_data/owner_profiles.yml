@@ -9375,7 +9375,7 @@ zachzoske:
     playoff_apps: 5
     trades: 18
     trades_known: true
-    tx_per_year: 106.4
+    tx_per_year: 106.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -9398,7 +9398,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 5th
     record: 3-2
-    tx: 44
+    tx: 46
     in_progress: true
     pf: 611.3
     pa: 571.8
@@ -12218,6 +12218,11 @@ zachzoske:
       cost: R7
       basis: Drafted R9
       ineligible: false
+    - player: Tyler Allgeier
+      pos: RB
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
     - player: Woody Marks
       pos: RB
       cost: R10
@@ -12242,11 +12247,6 @@ zachzoske:
       pos: WR
       cost: R8
       basis: Drafted R10
-      ineligible: false
-    - player: Ja'Kobi Lane
-      pos: WR
-      cost: R12
-      basis: Drafted R14
       ineligible: false
     - player: Germie Bernard
       pos: WR
@@ -14576,7 +14576,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 30.2
+    tx_per_year: 30.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -14600,7 +14600,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 8th
     record: 2-2-1
-    tx: 7
+    tx: 9
     in_progress: true
     pf: 574.3
     pa: 589.2
@@ -14924,6 +14924,10 @@ kevbots22:
     - player: T.J. Hockenson
       via: add
       week: 5
+      waiver: true
+    - player: Khalil Shakir
+      via: add
+      week: 6
       waiver: true
   - year: 2025
     players:
@@ -16014,11 +16018,6 @@ kevbots22:
     year: 2026
     week: 6
     players:
-    - player: Justin Herbert
-      pos: QB
-      cost: R5
-      basis: Drafted R7
-      ineligible: false
     - player: Matthew Stafford
       pos: QB
       cost: R12
@@ -16063,6 +16062,11 @@ kevbots22:
       pos: WR
       cost: R8
       basis: Drafted R10
+      ineligible: false
+    - player: Khalil Shakir
+      pos: WR
+      cost: R13
+      basis: Drafted R15
       ineligible: false
     - player: Tre Tucker
       pos: WR
