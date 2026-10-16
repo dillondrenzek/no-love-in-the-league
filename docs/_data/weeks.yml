@@ -91,7 +91,7 @@
     home_owner: Jono
     home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: jackperkins74
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: null
@@ -135,7 +135,7 @@
     sub: vs Return of the IDP
     owner_id: jackperkins74
     owner_name: Jack
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
   - key: low
     label: Low Score
     value: '85.40'
@@ -149,7 +149,7 @@
     sub: 166.7–103.5 over Return of the IDP
     owner_id: jackperkins74
     owner_name: Jack
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
   - key: closest
     label: Closest Call
     value: '0.00'
@@ -225,12 +225,12 @@
   - home_id: schirmerj
     away_id: jackperkins74
     home_team: Return of the IDP
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     home_proj: 109.9
     away_proj: 127.0
     pickem: false
     fav_id: jackperkins74
-    fav_team: Gibbed for Dillbot's pleasure
+    fav_team: Unplug Dillbot
     dog_team: Return of the IDP
     fav_proj: 127.0
     dog_proj: 109.9
@@ -255,12 +255,12 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 0-0
@@ -402,7 +402,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: gganoom
@@ -559,13 +559,13 @@
   projections:
   - home_id: jackperkins74
     away_id: gganoom
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     away_team: One Big Beautiful Dillbot
     home_proj: 126.7
     away_proj: 113.0
     pickem: false
     fav_id: jackperkins74
-    fav_team: Gibbed for Dillbot's pleasure
+    fav_team: Unplug Dillbot
     dog_team: One Big Beautiful Dillbot
     fav_proj: 126.7
     dog_proj: 113.0
@@ -654,12 +654,12 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 1-0
@@ -794,7 +794,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: whowonthelastsuperbowl
@@ -951,13 +951,13 @@
   projections:
   - home_id: jackperkins74
     away_id: whowonthelastsuperbowl
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     away_team: Trick or Trick It’s Mike Vick
     home_proj: 129.1
     away_proj: 123.6
     pickem: false
     fav_id: jackperkins74
-    fav_team: Gibbed for Dillbot's pleasure
+    fav_team: Unplug Dillbot
     dog_team: Trick or Trick It’s Mike Vick
     fav_proj: 129.1
     dog_proj: 123.6
@@ -1046,12 +1046,12 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 2-0
@@ -1281,7 +1281,7 @@
     home_owner: Wade
     home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: jackperkins74
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 2-1
@@ -1415,12 +1415,12 @@
   - home_id: sturmanator15
     away_id: jackperkins74
     home_team: God's Commissioner
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     home_proj: 127.5
     away_proj: 130.9
     pickem: false
     fav_id: jackperkins74
-    fav_team: Gibbed for Dillbot's pleasure
+    fav_team: Unplug Dillbot
     dog_team: God's Commissioner
     fav_proj: 130.9
     dog_proj: 127.5
@@ -1445,12 +1445,12 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 3-0
@@ -1573,7 +1573,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: alexandra
@@ -1705,7 +1705,7 @@
     sub: vs Cornstar
     owner_id: jackperkins74
     owner_name: Jack
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
   - key: low
     label: Low Score
     value: '57.90'
@@ -1730,13 +1730,13 @@
   projections:
   - home_id: jackperkins74
     away_id: alexandra
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     away_team: Cornstar
     home_proj: 129.3
     away_proj: 88.7
     pickem: false
     fav_id: jackperkins74
-    fav_team: Gibbed for Dillbot's pleasure
+    fav_team: Unplug Dillbot
     dog_team: Cornstar
     fav_proj: 129.3
     dog_proj: 88.7
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power:
   - rank: 1
@@ -1850,7 +1850,7 @@
       winning everything else. Dillon's next.
   - rank: 3
     fid: jackperkins74
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 3-1
@@ -1950,25 +1950,30 @@
       like it belongs to another franchise.
 2026-6:
   week: 6
-  state: future
+  state: in_progress
   scoreboard:
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
     home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: jackperkins74
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 1-4
     away_record: 4-1
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 9
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
-    home_proj: 79.0
+    home_score: 11.7
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 11.7
+    home_proj: 98.6
     away_proj: 109.4
   - home_id: purpsworth
     home_team: I am dead inside
@@ -1980,12 +1985,17 @@
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     home_record: 1-4
     away_record: 2-2-1
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 3.3
+    winner_id: null
+    tie: false
+    margin: 3.3
     home_proj: 111.7
     away_proj: 105.2
   - home_id: schirmerj
@@ -1998,14 +2008,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     home_record: 3-2
     away_record: 2-3
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 8
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 5.5
+    away_score: 10.3
+    winner_id: null
+    tie: false
+    margin: 4.8
     home_proj: 123.5
-    away_proj: 102.2
+    away_proj: 111.3
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2016,12 +2031,17 @@
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     home_record: 3-2
     away_record: 2-2-1
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 9
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 4.1
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 4.1
     home_proj: 133.7
     away_proj: 114.7
   - home_id: whowonthelastsuperbowl
@@ -2034,12 +2054,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 3-2
     away_record: 2-3
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 8
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 6.9
+    away_score: 12.0
+    winner_id: null
+    tie: false
+    margin: 5.1
     home_proj: 127.1
     away_proj: 137.5
   - home_id: zachzoske
@@ -2061,14 +2086,104 @@
     home_proj: 116.7
     away_proj: 121.7
   highlights: []
-  projections: []
-  projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  projections:
+  - home_id: lukstein
+    away_id: jackperkins74
+    home_team: 2x Runner Up
+    away_team: Unplug Dillbot
+    home_proj: 79.0
+    away_proj: 109.4
+    pickem: false
+    fav_id: jackperkins74
+    fav_team: Unplug Dillbot
+    dog_team: 2x Runner Up
+    fav_proj: 109.4
+    dog_proj: 79.0
+    spread: 30.4
+    decided: false
+    result: null
+  - home_id: purpsworth
+    away_id: theoceanpulse
+    home_team: I am dead inside
+    away_team: The ChoSimba Ones
+    home_proj: 111.7
+    away_proj: 105.2
+    pickem: false
+    fav_id: purpsworth
+    fav_team: I am dead inside
+    dog_team: The ChoSimba Ones
+    fav_proj: 111.7
+    dog_proj: 105.2
+    spread: 6.5
+    decided: false
+    result: null
+  - home_id: schirmerj
+    away_id: alexandra
+    home_team: Return of the IDP
+    away_team: Cornstar
+    home_proj: 123.5
+    away_proj: 102.2
+    pickem: false
+    fav_id: schirmerj
+    fav_team: Return of the IDP
+    dog_team: Cornstar
+    fav_proj: 123.5
+    dog_proj: 102.2
+    spread: 21.3
+    decided: false
+    result: null
+  - home_id: sturmanator15
+    away_id: kevbots22
+    home_team: God's Commissioner
+    away_team: Remember the Nice Guys, ChatGPT
+    home_proj: 133.7
+    away_proj: 114.7
+    pickem: false
+    fav_id: sturmanator15
+    fav_team: God's Commissioner
+    dog_team: Remember the Nice Guys, ChatGPT
+    fav_proj: 133.7
+    dog_proj: 114.7
+    spread: 19.0
+    decided: false
+    result: null
+  - home_id: whowonthelastsuperbowl
+    away_id: gganoom
+    home_team: Trick or Trick It’s Mike Vick
+    away_team: One Big Beautiful Dillbot
+    home_proj: 127.1
+    away_proj: 137.5
+    pickem: false
+    fav_id: gganoom
+    fav_team: One Big Beautiful Dillbot
+    dog_team: Trick or Trick It’s Mike Vick
+    fav_proj: 137.5
+    dog_proj: 127.1
+    spread: 10.4
+    decided: false
+    result: null
+  - home_id: zachzoske
+    away_id: shawne2520997
+    home_team: Tuten Your Mom
+    away_team: Swift kick in the Dak
+    home_proj: 116.7
+    away_proj: 121.7
+    pickem: false
+    fav_id: shawne2520997
+    fav_team: Swift kick in the Dak
+    dog_team: Tuten Your Mom
+    fav_proj: 121.7
+    dog_proj: 116.7
+    spread: 5.0
+    decided: false
+    result: null
+  projected_at: Oct 15, 2026 · 3:56 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: true
   power:
   - rank: 1
     fid: jackperkins74
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 4-1
@@ -2191,7 +2306,7 @@
   state: future
   scoreboard:
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: kevbots22
@@ -2289,7 +2404,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-8:
@@ -2313,7 +2428,7 @@
     live: false
     playoff: false
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: theoceanpulse
@@ -2395,7 +2510,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-9:
@@ -2419,7 +2534,7 @@
     live: false
     playoff: false
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: theoceanpulse
@@ -2501,7 +2616,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-10:
@@ -2525,7 +2640,7 @@
     live: false
     playoff: false
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: shawne2520997
@@ -2607,7 +2722,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-11:
@@ -2635,7 +2750,7 @@
     home_owner: Luke
     home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: jackperkins74
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 1-4
@@ -2713,7 +2828,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-12:
@@ -2741,7 +2856,7 @@
     home_owner: Jono
     home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: jackperkins74
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 3-2
@@ -2819,7 +2934,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-13:
@@ -2827,7 +2942,7 @@
   state: future
   scoreboard:
   - home_id: jackperkins74
-    home_team: Gibbed for Dillbot's pleasure
+    home_team: Unplug Dillbot
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: purpsworth
@@ -2925,7 +3040,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []
 2026-14:
@@ -3017,7 +3132,7 @@
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: jackperkins74
-    away_team: Gibbed for Dillbot's pleasure
+    away_team: Unplug Dillbot
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 3-2
@@ -3031,6 +3146,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 15, 3:46 PM PDT
+  updated_at: Oct 15, 7:11 PM PDT
   current: false
   power: []

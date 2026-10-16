@@ -45,7 +45,7 @@ jackperkins74:
       opp: Luke
   seasons:
   - year: 2026
-    team: Gibbed for Dillbot's pleasure
+    team: Unplug Dillbot
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
@@ -9651,7 +9651,7 @@ zachzoske:
     with:
     - id: jackperkins74
       name: Jack
-      team: Gibbed for Dillbot's pleasure
+      team: Unplug Dillbot
   - year: 2026
     week: 3
     got:
@@ -13974,11 +13974,6 @@ shawne2520997:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: George Holani
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Kaelon Black
       pos: RB
       cost: R13
@@ -16107,7 +16102,7 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
-    tx_per_year: 10.0
+    tx_per_year: 14.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -16130,7 +16125,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 9th
     record: 2-3
-    tx: 10
+    tx: 14
     in_progress: true
     pf: 571.7
     pa: 582.9
@@ -16244,6 +16239,14 @@ alexandra:
       via: add
       week: 5
       waiver: false
+    - player: 49ers D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: DeMario Douglas
+      via: add
+      week: 6
+      waiver: false
   current_roster:
     year: 2026
     week: 6
@@ -16272,11 +16275,6 @@ alexandra:
       pos: RB
       cost: R6
       basis: Drafted R8
-      ineligible: false
-    - player: Tyjae Spears
-      pos: RB
-      cost: R9
-      basis: Drafted R11
       ineligible: false
     - player: Ja'Marr Chase
       pos: WR
@@ -16308,6 +16306,11 @@ alexandra:
       cost: R9
       basis: Drafted R11
       ineligible: false
+    - player: DeMario Douglas
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Tyler Warren
       pos: TE
       cost: R3
@@ -16318,10 +16321,10 @@ alexandra:
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Browns D/ST
+    - player: 49ers D/ST
       pos: D/ST
       cost: R13
-      basis: Drafted R15
+      basis: Undrafted
       ineligible: false
 theoceanpulse:
   name: Dillon
@@ -16602,7 +16605,7 @@ theoceanpulse:
     with:
     - id: jackperkins74
       name: Jack
-      team: Gibbed for Dillbot's pleasure
+      team: Unplug Dillbot
   - year: 2026
     week: 3
     got:
