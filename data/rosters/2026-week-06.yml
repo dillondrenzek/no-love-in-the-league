@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-17T14:37:52+00:00'
+captured_at: '2026-10-17T18:02:21+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -33,7 +33,7 @@ rosters:
   - player: Zay Flowers
     pos: WR
     starter: true
-    proj: 11.11
+    proj: 11.17
     actual: null
     injury: QUESTIONABLE
     pro_team: BAL
@@ -321,7 +321,7 @@ rosters:
   - player: Rachaad White
     pos: RB
     starter: true
-    proj: 7.34
+    proj: 10.33
     actual: null
     injury: QUESTIONABLE
     pro_team: WSH
@@ -957,7 +957,7 @@ rosters:
   - player: Jayden Daniels
     pos: QB
     starter: true
-    proj: 20.9
+    proj: 20.98
     actual: null
     injury: ''
     pro_team: WSH
@@ -981,7 +981,7 @@ rosters:
   - player: Mark Andrews
     pos: TE
     starter: false
-    proj: 6.85
+    proj: 6.91
     actual: null
     injury: ''
     pro_team: BAL
@@ -1049,7 +1049,7 @@ rosters:
   - player: Derrick Henry
     pos: RB
     starter: true
-    proj: 17.62
+    proj: 17.64
     actual: null
     injury: ''
     pro_team: BAL
@@ -1105,7 +1105,7 @@ rosters:
   - player: Stefon Diggs
     pos: WR
     starter: false
-    proj: 8.3
+    proj: 8.28
     actual: null
     injury: QUESTIONABLE
     pro_team: WSH
@@ -1163,7 +1163,7 @@ rosters:
     starter: true
     proj: 9.04
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: PIT
     bye_week: 9
   - player: Kenny Gainwell
@@ -1461,7 +1461,7 @@ rosters:
   - player: Terry McLaurin
     pos: WR
     starter: true
-    proj: 10.12
+    proj: 10.1
     actual: null
     injury: QUESTIONABLE
     pro_team: WSH
@@ -1485,9 +1485,9 @@ rosters:
   - player: Jacory Croskey-Merritt
     pos: RB
     starter: false
-    proj: 6.69
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: WSH
     bye_week: 7
   - player: Jalen Coker
