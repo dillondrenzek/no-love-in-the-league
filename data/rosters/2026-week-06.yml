@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-17T08:07:54+00:00'
+captured_at: '2026-10-17T14:37:52+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -33,7 +33,7 @@ rosters:
   - player: Zay Flowers
     pos: WR
     starter: true
-    proj: 11.09
+    proj: 11.11
     actual: null
     injury: QUESTIONABLE
     pro_team: BAL
@@ -41,7 +41,7 @@ rosters:
   - player: Mike Evans
     pos: WR
     starter: true
-    proj: 13.72
+    proj: 12.6
     actual: null
     injury: QUESTIONABLE
     pro_team: SF
@@ -273,7 +273,7 @@ rosters:
   - player: Christian McCaffrey
     pos: RB
     starter: true
-    proj: 19.14
+    proj: 19.15
     actual: null
     injury: ''
     pro_team: SF
@@ -281,7 +281,7 @@ rosters:
   - player: Josh Allen
     pos: QB
     starter: true
-    proj: 26.73
+    proj: 26.74
     actual: null
     injury: ''
     pro_team: BUF
@@ -641,7 +641,7 @@ rosters:
   - player: George Kittle
     pos: TE
     starter: true
-    proj: 12.39
+    proj: 12.42
     actual: null
     injury: ''
     pro_team: SF
@@ -749,7 +749,7 @@ rosters:
   - player: Matthew Stafford
     pos: QB
     starter: true
-    proj: 21.98
+    proj: 21.96
     actual: null
     injury: ''
     pro_team: LAR
@@ -825,7 +825,7 @@ rosters:
   - player: Tyler Warren
     pos: TE
     starter: true
-    proj: 9.42
+    proj: 9.41
     actual: null
     injury: QUESTIONABLE
     pro_team: IND
@@ -889,7 +889,7 @@ rosters:
   - player: Jordan Love
     pos: QB
     starter: true
-    proj: 23.18
+    proj: 23.19
     actual: null
     injury: ''
     pro_team: GB
@@ -981,7 +981,7 @@ rosters:
   - player: Mark Andrews
     pos: TE
     starter: false
-    proj: 6.8
+    proj: 6.85
     actual: null
     injury: ''
     pro_team: BAL
@@ -1049,7 +1049,7 @@ rosters:
   - player: Derrick Henry
     pos: RB
     starter: true
-    proj: 17.61
+    proj: 17.62
     actual: null
     injury: ''
     pro_team: BAL
@@ -1293,7 +1293,7 @@ rosters:
   - player: Ravens D/ST
     pos: D/ST
     starter: true
-    proj: 7.45
+    proj: 7.46
     actual: null
     injury: ''
     pro_team: BAL
@@ -1329,7 +1329,7 @@ rosters:
   - player: Quinshon Judkins
     pos: RB
     starter: true
-    proj: 12.01
+    proj: 12.0
     actual: null
     injury: QUESTIONABLE
     pro_team: CLE
@@ -1393,7 +1393,7 @@ rosters:
   - player: Patrick Mahomes
     pos: QB
     starter: false
-    proj: 20.54
+    proj: 20.53
     actual: null
     injury: ''
     pro_team: KC
@@ -1445,7 +1445,7 @@ rosters:
   - player: George Pickens
     pos: WR
     starter: true
-    proj: 11.05
+    proj: 11.04
     actual: null
     injury: ''
     pro_team: DAL
