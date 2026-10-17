@@ -3178,7 +3178,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 90.7
+    tx_per_year: 90.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -3201,7 +3201,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 2nd
     record: 3-2
-    tx: 39
+    tx: 41
     in_progress: true
     pf: 684.1
     pa: 653.4
@@ -3645,6 +3645,10 @@ sturmanator15:
       week: 5
       waiver: false
     - player: Buccaneers D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: Cyrus Allen
       via: add
       week: 6
       waiver: false
@@ -5707,7 +5711,7 @@ sturmanator15:
       cost: R11
       basis: Drafted R13
       ineligible: false
-    - player: Keon Coleman
+    - player: Cyrus Allen
       pos: WR
       cost: R13
       basis: Undrafted

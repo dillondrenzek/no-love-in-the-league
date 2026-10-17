@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-17T18:02:21+00:00'
+captured_at: '2026-10-17T21:51:42+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -118,14 +118,6 @@ rosters:
     injury: ''
     pro_team: TB
     bye_week: 10
-  - player: Keon Coleman
-    pos: WR
-    starter: false
-    proj: 6.02
-    actual: null
-    injury: ''
-    pro_team: BUF
-    bye_week: 7
   - player: Roschon Johnson
     pos: RB
     starter: false
@@ -134,6 +126,14 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
+  - player: Cyrus Allen
+    pos: WR
+    starter: false
+    proj: 5.98
+    actual: null
+    injury: ''
+    pro_team: KC
+    bye_week: 5
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mom
@@ -439,7 +439,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: OUT
+    injury: INJURY_RESERVE
     pro_team: PHI
     bye_week: 10
   - player: RJ Harvey
@@ -1183,7 +1183,7 @@ rosters:
     starter: false
     proj: 10.59
     actual: null
-    injury: INJURY_RESERVE
+    injury: QUESTIONABLE
     pro_team: NE
     bye_week: 11
   - player: Christian Watson

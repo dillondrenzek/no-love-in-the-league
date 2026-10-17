@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-17T18:02:25+00:00
+updated_at: 2026-10-17T21:51:46+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -317,7 +317,7 @@ transactions:
   purpsworth: { adds: 8, drops: 4, moves: 12 }
   schirmerj: { adds: 7, drops: 6, moves: 13 }
   shawne2520997: { adds: 12, drops: 11, moves: 23 }
-  sturmanator15: { adds: 20, drops: 19, moves: 39 }
+  sturmanator15: { adds: 21, drops: 20, moves: 41 }
   theoceanpulse: { adds: 21, drops: 19, moves: 40 }
   whowonthelastsuperbowl: { adds: 8, drops: 6, moves: 14 }
   zachzoske: { adds: 27, drops: 19, moves: 46 }
@@ -1118,6 +1118,10 @@ rosters:
     week: 5
     waiver: false
   - player: Buccaneers D/ST
+    via: add
+    week: 6
+    waiver: false
+  - player: Cyrus Allen
     via: add
     week: 6
     waiver: false
