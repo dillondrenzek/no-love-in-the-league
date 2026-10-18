@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-18T08:24:28+00:00'
+captured_at: '2026-10-18T15:04:42+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -149,7 +149,7 @@ rosters:
   - player: Cam Skattebo
     pos: RB
     starter: true
-    proj: 11.71
+    proj: 8.29
     actual: null
     injury: ''
     pro_team: NYG
@@ -166,7 +166,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.16
-    actual: null
+    actual: 18.0
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -182,7 +182,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.25
-    actual: null
+    actual: 2.0
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -190,7 +190,7 @@ rosters:
     pos: RB
     starter: false
     proj: 9.52
-    actual: null
+    actual: 2.0
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -254,7 +254,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.13
-    actual: null
+    actual: 4.0
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -385,7 +385,7 @@ rosters:
   - player: Najee Harris
     pos: RB
     starter: false
-    proj: 5.17
+    proj: 6.71
     actual: null
     injury: ''
     pro_team: NYG
@@ -526,7 +526,7 @@ rosters:
     pos: QB
     starter: true
     proj: 15.08
-    actual: null
+    actual: 16.4
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -554,7 +554,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.5
-    actual: null
+    actual: 6.9
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -562,7 +562,7 @@ rosters:
     pos: QB
     starter: true
     proj: 18.68
-    actual: null
+    actual: 15.4
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -618,7 +618,7 @@ rosters:
     pos: WR
     starter: true
     proj: 2.79
-    actual: null
+    actual: 1.9
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -734,7 +734,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.2
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -1038,7 +1038,7 @@ rosters:
     pos: TE
     starter: true
     proj: 7.41
-    actual: null
+    actual: 4.4
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -1130,7 +1130,7 @@ rosters:
     pos: D/ST
     starter: false
     proj: 5.2
-    actual: null
+    actual: 5.0
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1321,7 +1321,7 @@ rosters:
   - player: Malik Nabers
     pos: WR
     starter: true
-    proj: 14.61
+    proj: 14.6
     actual: null
     injury: ''
     pro_team: NYG
@@ -1370,7 +1370,7 @@ rosters:
     pos: WR
     starter: false
     proj: 7.55
-    actual: null
+    actual: 2.8
     injury: ''
     pro_team: JAX
     bye_week: 7
@@ -1426,7 +1426,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.28
-    actual: null
+    actual: 5.0
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1470,7 +1470,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.2
-    actual: null
+    actual: 4.7
     injury: ''
     pro_team: HOU
     bye_week: 8
