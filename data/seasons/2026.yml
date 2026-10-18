@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-18T02:04:50+00:00
+updated_at: 2026-10-18T08:24:32+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -120,11 +120,11 @@ matchups:
   - { week:  5, home: schirmerj, away: lukstein, home_score: 128.0, away_score: 57.9, playoff: false }
   - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 144.1, away_score: 179.1, playoff: false }
   - { week:  5, home: zachzoske, away: theoceanpulse, home_score: 84.2, away_score: 105.5, playoff: false }
-  - { week:  6, home: lukstein, away: jackperkins74, home_score: 13.1, away_score: 0.0, playoff: false, final: false, home_proj: 100.41, away_proj: 109.63 }
-  - { week:  6, home: purpsworth, away: theoceanpulse, home_score: 0.0, away_score: 5.2, playoff: false, final: false, home_proj: 111.68, away_proj: 105.22 }
-  - { week:  6, home: schirmerj, away: alexandra, home_score: 10.4, away_score: 12.1, playoff: false, final: false, home_proj: 126.23, away_proj: 98.49 }
-  - { week:  6, home: sturmanator15, away: kevbots22, home_score: 19.4, away_score: 0.0, playoff: false, final: false, home_proj: 130.54, away_proj: 114.24 }
-  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 8.9, away_score: 11.0, playoff: false, final: false, home_proj: 124.82, away_proj: 135.95 }
+  - { week:  6, home: lukstein, away: jackperkins74, home_score: 13.1, away_score: 0.0, playoff: false, final: false, home_proj: 100.36, away_proj: 109.63 }
+  - { week:  6, home: purpsworth, away: theoceanpulse, home_score: 0.0, away_score: 5.2, playoff: false, final: false, home_proj: 111.67, away_proj: 105.2 }
+  - { week:  6, home: schirmerj, away: alexandra, home_score: 10.4, away_score: 12.1, playoff: false, final: false, home_proj: 126.24, away_proj: 98.49 }
+  - { week:  6, home: sturmanator15, away: kevbots22, home_score: 19.4, away_score: 0.0, playoff: false, final: false, home_proj: 130.47, away_proj: 114.26 }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 8.9, away_score: 11.0, playoff: false, final: false, home_proj: 124.77, away_proj: 135.95 }
   - { week:  6, home: zachzoske, away: shawne2520997, playoff: false, played: false, home_proj: 116.08, away_proj: 121.72 }
   - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }
@@ -316,7 +316,7 @@ transactions:
   lukstein: { adds: 13, drops: 8, moves: 21 }
   purpsworth: { adds: 8, drops: 4, moves: 12 }
   schirmerj: { adds: 7, drops: 6, moves: 13 }
-  shawne2520997: { adds: 12, drops: 11, moves: 23 }
+  shawne2520997: { adds: 13, drops: 11, moves: 24 }
   sturmanator15: { adds: 21, drops: 20, moves: 41 }
   theoceanpulse: { adds: 22, drops: 20, moves: 42 }
   whowonthelastsuperbowl: { adds: 8, drops: 6, moves: 14 }
@@ -758,6 +758,10 @@ rosters:
     via: add
     week: 5
     waiver: true
+  - player: Austin Ekeler
+    via: add
+    week: 6
+    waiver: false
   - player: George Holani
     via: add
     week: 6
