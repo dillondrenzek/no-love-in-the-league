@@ -1936,8 +1936,8 @@ tx_heatmap:
       color: '#fdeccf'
   - id: gganoom
     name: Grant
-    total: 68
-    tx_per_year: 22.7
+    total: 69
+    tx_per_year: 23.0
     cells:
     - year: 2018
       count: null
@@ -1964,12 +1964,12 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 7
-      color: '#fdeed3'
+      count: 8
+      color: '#fdedd1'
   - id: alexandra
     name: Lexi
-    total: 14
-    tx_per_year: 14.0
+    total: 21
+    tx_per_year: 21.0
     cells:
     - year: 2018
       count: null
@@ -1996,8 +1996,8 @@ tx_heatmap:
       count: null
       color: null
     - year: 2026
-      count: 14
-      color: '#fce8c6'
+      count: 21
+      color: '#fce3b9'
   - id: henpen28
     name: Henry
     total: 360

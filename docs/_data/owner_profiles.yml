@@ -14062,7 +14062,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: true
-    tx_per_year: 22.7
+    tx_per_year: 23.0
     tx_known: true
     seasons: 3
     best_finish:
@@ -14086,7 +14086,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 7th
     record: 2-3
-    tx: 7
+    tx: 8
     in_progress: true
     pf: 641.9
     pa: 547.7
@@ -14266,6 +14266,10 @@ gganoom:
       via: add
       week: 5
       waiver: true
+    - player: Jaleel McLaughlin
+      via: add
+      week: 6
+      waiver: false
   - year: 2025
     players:
     - player: Ashton Jeanty
@@ -14530,6 +14534,11 @@ gganoom:
       pos: RB
       cost: R12
       basis: Drafted R14
+      ineligible: false
+    - player: Jaleel McLaughlin
+      pos: RB
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Malik Nabers
       pos: WR
@@ -16123,7 +16132,7 @@ alexandra:
     playoff_apps: 0
     trades: 0
     trades_known: true
-    tx_per_year: 14.0
+    tx_per_year: 21.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -16146,7 +16155,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 9th
     record: 2-3
-    tx: 14
+    tx: 21
     in_progress: true
     pf: 571.7
     pa: 582.9
@@ -16268,6 +16277,22 @@ alexandra:
       via: add
       week: 6
       waiver: false
+    - player: Hunter Henry
+      via: add
+      week: 6
+      waiver: false
+    - player: Keenan Allen
+      via: add
+      week: 6
+      waiver: false
+    - player: Panthers D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: Pierre Strong Jr.
+      via: add
+      week: 6
+      waiver: false
   current_roster:
     year: 2026
     week: 6
@@ -16312,11 +16337,6 @@ alexandra:
       cost: R4
       basis: Drafted R6
       ineligible: false
-    - player: Jordan Addison
-      pos: WR
-      cost: R7
-      basis: Drafted R9
-      ineligible: false
     - player: Denzel Boston
       pos: WR
       cost: R8
@@ -16326,6 +16346,11 @@ alexandra:
       pos: WR
       cost: R9
       basis: Drafted R11
+      ineligible: false
+    - player: Keenan Allen
+      pos: WR
+      cost: R11
+      basis: Drafted R13
       ineligible: false
     - player: DeMario Douglas
       pos: WR
@@ -16337,12 +16362,17 @@ alexandra:
       cost: R3
       basis: Drafted R5
       ineligible: false
+    - player: Hunter Henry
+      pos: TE
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Tyler Loop
       pos: K
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: 49ers D/ST
+    - player: Panthers D/ST
       pos: D/ST
       cost: R13
       basis: Undrafted
