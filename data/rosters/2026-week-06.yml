@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-17T21:51:42+00:00'
+captured_at: '2026-10-18T02:04:47+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -732,7 +732,7 @@ rosters:
     bye_week: 5
   - player: Brian Thomas Jr.
     pos: WR
-    starter: true
+    starter: false
     proj: 5.2
     actual: null
     injury: ''
@@ -780,7 +780,7 @@ rosters:
     bye_week: 6
   - player: Khalil Shakir
     pos: WR
-    starter: false
+    starter: true
     proj: 7.5
     actual: null
     injury: ''
@@ -1298,12 +1298,12 @@ rosters:
     injury: ''
     pro_team: BAL
     bye_week: 13
-  - player: Tyler Huntley
-    pos: QB
+  - player: Ja'Kobi Lane
+    pos: WR
     starter: false
-    proj: 16.13
+    proj: 3.39
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: BAL
     bye_week: 13
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'

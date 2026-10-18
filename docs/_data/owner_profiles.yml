@@ -16360,7 +16360,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 15
     trades_known: true
-    tx_per_year: 52.7
+    tx_per_year: 52.9
     tx_known: false
     seasons: 11
     best_finish:
@@ -16383,7 +16383,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 2-2-1
-    tx: 40
+    tx: 42
     in_progress: true
     pf: 533.1
     pa: 583.6
@@ -16929,6 +16929,10 @@ theoceanpulse:
     - player: Tre' Harris
       via: add
       week: 5
+      waiver: false
+    - player: Ja'Kobi Lane
+      via: add
+      week: 6
       waiver: false
     - player: Kimani Vidal
       via: add
@@ -18333,11 +18337,6 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Tyler Huntley
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Breece Hall
       pos: RB
       cost: Ineligible
@@ -18377,6 +18376,11 @@ theoceanpulse:
       pos: WR
       cost: R3
       basis: Drafted R5
+      ineligible: false
+    - player: Ja'Kobi Lane
+      pos: WR
+      cost: R12
+      basis: Drafted R14
       ineligible: false
     - player: Devaughn Vele
       pos: WR
