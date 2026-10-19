@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-18T22:02:24+00:00'
+captured_at: '2026-10-19T02:21:26+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -18,7 +18,7 @@ rosters:
     pos: RB
     starter: true
     proj: 21.85
-    actual: 20.6
+    actual: 26.9
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -27,7 +27,7 @@ rosters:
     starter: false
     proj: 8.37
     actual: 2.2
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: LAC
     bye_week: 7
   - player: Zay Flowers
@@ -66,7 +66,7 @@ rosters:
     pos: TE
     starter: true
     proj: 13.26
-    actual: 7.6
+    actual: 8.8
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -130,7 +130,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.03
-    actual: 0.9
+    actual: 3.7
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -198,7 +198,7 @@ rosters:
     pos: RB
     starter: true
     proj: 16.96
-    actual: 14.3
+    actual: 13.8
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -230,7 +230,7 @@ rosters:
     pos: QB
     starter: true
     proj: 20.44
-    actual: 5.0
+    actual: 20.4
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -262,7 +262,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.08
-    actual: 4.2
+    actual: 5.3
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -282,7 +282,7 @@ rosters:
     pos: QB
     starter: true
     proj: 26.77
-    actual: 10.8
+    actual: 20.3
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -314,7 +314,7 @@ rosters:
     pos: TE
     starter: true
     proj: 9.76
-    actual: null
+    actual: 1.9
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -330,7 +330,7 @@ rosters:
     pos: RB
     starter: true
     proj: 19.17
-    actual: 3.5
+    actual: 8.2
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -338,7 +338,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.3
-    actual: 9.5
+    actual: 10.8
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -354,7 +354,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.48
-    actual: 1.4
+    actual: 1.9
     injury: ''
     pro_team: LAC
     bye_week: 7
@@ -362,7 +362,7 @@ rosters:
     pos: RB
     starter: false
     proj: 4.71
-    actual: 3.2
+    actual: 4.4
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -394,7 +394,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.26
-    actual: 9.0
+    actual: 14.0
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -454,7 +454,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.31
-    actual: null
+    actual: 15.1
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -502,7 +502,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.32
-    actual: 7.0
+    actual: 12.0
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -570,7 +570,7 @@ rosters:
     pos: WR
     starter: true
     proj: 19.18
-    actual: 2.6
+    actual: 11.0
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -578,7 +578,7 @@ rosters:
     pos: RB
     starter: false
     proj: 3.75
-    actual: 2.9
+    actual: 5.5
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -610,7 +610,7 @@ rosters:
     pos: RB
     starter: true
     proj: 8.32
-    actual: 2.6
+    actual: 5.9
     injury: ''
     pro_team: LAC
     bye_week: 7
@@ -686,7 +686,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: DAY_TO_DAY
     pro_team: GB
     bye_week: 11
@@ -718,7 +718,7 @@ rosters:
     pos: TE
     starter: true
     proj: 9.31
-    actual: 5.0
+    actual: 7.3
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -742,7 +742,7 @@ rosters:
     pos: K
     starter: true
     proj: 7.5
-    actual: 3.0
+    actual: 6.0
     injury: ''
     pro_team: LAC
     bye_week: 7
@@ -750,7 +750,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.96
-    actual: 8.8
+    actual: 18.8
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -766,7 +766,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.59
-    actual: 4.1
+    actual: 24.2
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -782,7 +782,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.41
-    actual: 7.4
+    actual: 11.4
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -842,7 +842,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.55
-    actual: null
+    actual: 11.5
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -882,7 +882,7 @@ rosters:
     pos: QB
     starter: true
     proj: 23.2
-    actual: null
+    actual: 18.6
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -1066,7 +1066,7 @@ rosters:
     pos: WR
     starter: true
     proj: 14.94
-    actual: null
+    actual: 6.0
     injury: QUESTIONABLE
     pro_team: DAL
     bye_week: 14
@@ -1074,7 +1074,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.85
-    actual: 3.3
+    actual: 5.4
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -1122,7 +1122,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.97
-    actual: null
+    actual: 1.0
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1154,7 +1154,7 @@ rosters:
     pos: RB
     starter: true
     proj: 10.06
-    actual: null
+    actual: -0.2
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -1198,7 +1198,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.68
-    actual: null
+    actual: 7.9
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -1262,8 +1262,8 @@ rosters:
     pos: TE
     starter: false
     proj: 6.99
-    actual: 3.6
-    injury: ''
+    actual: 7.3
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: Alvin Kamara
@@ -1294,7 +1294,7 @@ rosters:
     pos: RB
     starter: false
     proj: 5.12
-    actual: 2.9
+    actual: 5.5
     injury: ''
     pro_team: LAC
     bye_week: 7
@@ -1354,7 +1354,7 @@ rosters:
     pos: TE
     starter: true
     proj: 16.17
-    actual: 0.0
+    actual: 9.0
     injury: QUESTIONABLE
     pro_team: LV
     bye_week: 13
@@ -1362,7 +1362,7 @@ rosters:
     pos: WR
     starter: true
     proj: 11.42
-    actual: 1.5
+    actual: 5.2
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -1402,7 +1402,7 @@ rosters:
     pos: QB
     starter: false
     proj: 20.53
-    actual: 6.0
+    actual: 10.4
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -1454,7 +1454,7 @@ rosters:
     pos: RB
     starter: true
     proj: 18.53
-    actual: 7.8
+    actual: 22.8
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -1462,7 +1462,7 @@ rosters:
     pos: WR
     starter: true
     proj: 11.04
-    actual: null
+    actual: 2.1
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1494,7 +1494,7 @@ rosters:
     pos: QB
     starter: true
     proj: 18.58
-    actual: null
+    actual: 1.1
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1526,7 +1526,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.26
-    actual: 7.0
+    actual: 2.0
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -1558,7 +1558,7 @@ rosters:
     pos: TE
     starter: false
     proj: 5.71
-    actual: 0.0
+    actual: 2.2
     injury: ''
     pro_team: LAR
     bye_week: 11
