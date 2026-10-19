@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-19T09:25:07+00:00
+updated_at: 2026-10-19T17:56:25+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -32,7 +32,7 @@ draft_order:
 # This season's team name for each franchise (shown on per-season pages).
 teams:
   sturmanator15: "God's Commissioner"
-  zachzoske: "Tuten Your Mom"
+  zachzoske: "Tuten Your Mother, Respectfully"
   schirmerj: "Return of the IDP"
   lukstein: "2x Runner Up"
   jackperkins74: "Unplug Dillbot"

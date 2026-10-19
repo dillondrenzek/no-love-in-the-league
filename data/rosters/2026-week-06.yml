@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-19T09:25:02+00:00'
+captured_at: '2026-10-19T17:56:22+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -136,7 +136,7 @@ rosters:
     bye_week: 5
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
-  team_name: Tuten Your Mom
+  team_name: Tuten Your Mother, Respectfully
   players:
   - player: Amon-Ra St. Brown
     pos: WR

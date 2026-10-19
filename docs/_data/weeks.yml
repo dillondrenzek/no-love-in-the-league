@@ -112,7 +112,7 @@
     home_owner: Wade
     home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: zachzoske
-    away_team: Tuten Your Mom
+    away_team: Tuten Your Mother, Respectfully
     away_owner: Zach
     away_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     home_record: null
@@ -241,13 +241,13 @@
   - home_id: sturmanator15
     away_id: zachzoske
     home_team: God's Commissioner
-    away_team: Tuten Your Mom
+    away_team: Tuten Your Mother, Respectfully
     home_proj: 122.4
     away_proj: 120.6
     pickem: false
     fav_id: sturmanator15
     fav_team: God's Commissioner
-    dog_team: Tuten Your Mom
+    dog_team: Tuten Your Mother, Respectfully
     fav_proj: 122.4
     dog_proj: 120.6
     spread: 1.8
@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power:
   - rank: 1
@@ -331,7 +331,7 @@
       here. He opens against a dangerous Zach squad.'
   - rank: 7
     fid: zachzoske
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     record: 0-0
@@ -507,7 +507,7 @@
     tie: false
     margin: 53.9
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: schirmerj
@@ -639,14 +639,14 @@
     winner_id: shawne2520997
   - home_id: zachzoske
     away_id: schirmerj
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     away_team: Return of the IDP
     home_proj: 114.5
     away_proj: 117.4
     pickem: false
     fav_id: schirmerj
     fav_team: Return of the IDP
-    dog_team: Tuten Your Mom
+    dog_team: Tuten Your Mother, Respectfully
     fav_proj: 117.4
     dog_proj: 114.5
     spread: 2.9
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power:
   - rank: 1
@@ -670,7 +670,7 @@
       he draws Grant, a team he's never lost to at 3-0.
   - rank: 2
     fid: zachzoske
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     record: 1-0
@@ -899,7 +899,7 @@
     tie: false
     margin: 34.3
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: shawne2520997
@@ -1031,13 +1031,13 @@
     winner_id: sturmanator15
   - home_id: zachzoske
     away_id: shawne2520997
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     away_team: Swift kick in the Dak
     home_proj: 118.8
     away_proj: 103.3
     pickem: false
     fav_id: zachzoske
-    fav_team: Tuten Your Mom
+    fav_team: Tuten Your Mother, Respectfully
     dog_team: Swift kick in the Dak
     fav_proj: 118.8
     dog_proj: 103.3
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power:
   - rank: 1
@@ -1087,7 +1087,7 @@
       4-6).
   - rank: 4
     fid: zachzoske
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     record: 1-1
@@ -1298,7 +1298,7 @@
     tie: false
     margin: 22.8
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: lukstein
@@ -1329,7 +1329,7 @@
   - key: low
     label: Low Score
     value: '65.40'
-    sub: vs Tuten Your Mom
+    sub: vs Tuten Your Mother, Respectfully
     owner_id: lukstein
     owner_name: Luke
     team: 2x Runner Up
@@ -1339,7 +1339,7 @@
     sub: 123.2–65.4 over 2x Runner Up
     owner_id: zachzoske
     owner_name: Zach
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
   - key: closest
     label: Closest Call
     value: '0.20'
@@ -1430,13 +1430,13 @@
     winner_id: sturmanator15
   - home_id: zachzoske
     away_id: lukstein
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     away_team: 2x Runner Up
     home_proj: 128.3
     away_proj: 104.7
     pickem: false
     fav_id: zachzoske
-    fav_team: Tuten Your Mom
+    fav_team: Tuten Your Mother, Respectfully
     dog_team: 2x Runner Up
     fav_proj: 128.3
     dog_proj: 104.7
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power:
   - rank: 1
@@ -1460,7 +1460,7 @@
       Wade gets the next crack.
   - rank: 2
     fid: zachzoske
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     record: 2-1
@@ -1678,7 +1678,7 @@
     tie: false
     margin: 35.0
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: theoceanpulse
@@ -1810,13 +1810,13 @@
     winner_id: whowonthelastsuperbowl
   - home_id: zachzoske
     away_id: theoceanpulse
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     away_team: The ChoSimba Ones
     home_proj: 127.0
     away_proj: 109.9
     pickem: false
     fav_id: zachzoske
-    fav_team: Tuten Your Mom
+    fav_team: Tuten Your Mother, Respectfully
     dog_team: The ChoSimba Ones
     fav_proj: 127.0
     dog_proj: 109.9
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power:
   - rank: 1
@@ -1840,7 +1840,7 @@
       wins, and whichever quarterback he grabbed this week.
   - rank: 2
     fid: zachzoske
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     record: 3-1
@@ -2068,7 +2068,7 @@
     home_proj: 125.5
     away_proj: 129.4
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: shawne2520997
@@ -2169,21 +2169,21 @@
     result: null
   - home_id: zachzoske
     away_id: shawne2520997
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     away_team: Swift kick in the Dak
     home_proj: 116.7
     away_proj: 121.7
     pickem: false
     fav_id: shawne2520997
     fav_team: Swift kick in the Dak
-    dog_team: Tuten Your Mom
+    dog_team: Tuten Your Mother, Respectfully
     fav_proj: 121.7
     dog_proj: 116.7
     spread: 5.0
     decided: false
     result: null
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: true
   power:
   - rank: 1
@@ -2238,7 +2238,7 @@
       Allen now; next week he's on bye.
   - rank: 6
     fid: zachzoske
-    team: Tuten Your Mom
+    team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     record: 3-2
@@ -2391,7 +2391,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: alexandra
@@ -2409,7 +2409,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-8:
@@ -2497,7 +2497,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: gganoom
@@ -2515,7 +2515,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-9:
@@ -2603,7 +2603,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: schirmerj
@@ -2621,7 +2621,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-10:
@@ -2709,7 +2709,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: kevbots22
@@ -2727,7 +2727,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-11:
@@ -2815,7 +2815,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: purpsworth
@@ -2833,7 +2833,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-12:
@@ -2921,7 +2921,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: kevbots22
@@ -2939,7 +2939,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-13:
@@ -3027,7 +3027,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: whowonthelastsuperbowl
@@ -3045,7 +3045,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []
 2026-14:
@@ -3133,7 +3133,7 @@
     live: false
     playoff: false
   - home_id: zachzoske
-    home_team: Tuten Your Mom
+    home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: jackperkins74
@@ -3151,6 +3151,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 2:25 AM PDT
+  updated_at: Oct 19, 10:56 AM PDT
   current: false
   power: []

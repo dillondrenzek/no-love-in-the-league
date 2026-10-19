@@ -103,7 +103,7 @@ detail:
       pa_color: '#f6a549'
     - &id005
       finish: 5
-      team: Tuten Your Mom
+      team: Tuten Your Mother, Respectfully
       logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
       owner_id: zachzoske
       owner_name: Zach
@@ -289,7 +289,7 @@ detail:
     - pick: 9
       owner_id: zachzoske
       owner_name: Zach
-      team: Tuten Your Mom
+      team: Tuten Your Mother, Respectfully
       keepers:
       - player: Bhayshul Tuten
         round: 9
@@ -339,7 +339,7 @@ detail:
         - Ashton Jeanty
       - owner_id: zachzoske
         owner_name: Zach
-        team: Tuten Your Mom
+        team: Tuten Your Mother, Respectfully
         gave:
         - Drake London
     - week: 3
@@ -352,7 +352,7 @@ detail:
         - $1 FAAB
       - owner_id: zachzoske
         owner_name: Zach
-        team: Tuten Your Mom
+        team: Tuten Your Mother, Respectfully
         gave:
         - Jared Goff
     - week: 5
@@ -380,7 +380,7 @@ detail:
         - Garrett Wilson
       - owner_id: zachzoske
         owner_name: Zach
-        team: Tuten Your Mom
+        team: Tuten Your Mother, Respectfully
         gave:
         - Tee Higgins
         - George Kittle
@@ -434,7 +434,7 @@ detail:
       player: Bhayshul Tuten
       owner_id: zachzoske
       owner_name: Zach
-      team: Tuten Your Mom
+      team: Tuten Your Mother, Respectfully
     - round: 11
       player: Drake Maye
       owner_id: whowonthelastsuperbowl
