@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-19T17:56:22+00:00'
+captured_at: '2026-10-19T23:12:18+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -659,7 +659,7 @@ rosters:
     starter: true
     proj: 9.37
     actual: 4.0
-    injury: QUESTIONABLE
+    injury: INJURY_RESERVE
     pro_team: LAR
     bye_week: 11
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -1075,7 +1075,7 @@ rosters:
     starter: true
     proj: 13.85
     actual: 5.4
-    injury: ''
+    injury: OUT
     pro_team: LAR
     bye_week: 11
   - player: Bucky Irving
@@ -1411,7 +1411,7 @@ rosters:
     starter: true
     proj: 7.93
     actual: 10.7
-    injury: QUESTIONABLE
+    injury: INJURY_RESERVE
     pro_team: NE
     bye_week: 11
   - player: Broncos D/ST
@@ -1503,7 +1503,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: OUT
+    injury: INJURY_RESERVE
     pro_team: WSH
     bye_week: 7
   - player: Jalen Coker
