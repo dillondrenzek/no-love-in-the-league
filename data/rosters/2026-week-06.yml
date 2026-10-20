@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-20T03:23:28+00:00'
+captured_at: '2026-10-20T03:25:30+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -43,7 +43,7 @@ rosters:
     starter: true
     proj: 12.6
     actual: 10.9
-    injury: OUT
+    injury: QUESTIONABLE
     pro_team: SF
     bye_week: 8
   - player: Tony Pollard

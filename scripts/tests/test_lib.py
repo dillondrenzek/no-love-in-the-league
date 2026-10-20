@@ -845,12 +845,14 @@ def test_load_projections_maps_swid_to_fid():
         os.makedirs(pdir)
         with open(os.path.join(pdir, "2026-week-03.yml"), "w") as f:
             yaml.safe_dump({"season": 2026, "week": 3, "projections": [
-                {"manager_id": "{abc}", "projected": 120.4},   # normalizes to jack
+                {"manager_id": "{abc}", "projected": 120.4,    # normalizes to jack
+                 "team_name": "Gibbed"},
                 {"manager_id": "{DEF}", "projected": 110.0},   # normalizes to zach
                 {"manager_id": "{ZZZ}", "projected": 99.0},    # unknown -> dropped
             ]}, f)
         out = load_projections(2026, fr, data_dir=d)
-    assert out == {3: {"captured_at": None, "proj": {"jack": 120.4, "zach": 110.0}}}
+    assert out == {3: {"captured_at": None, "proj": {"jack": 120.4, "zach": 110.0},
+                       "names": {"jack": "Gibbed"}}}
 
 
 def test_season_row_tx_and_tx_heatmap():
@@ -1804,6 +1806,63 @@ def test_latest_roster_snapshot():
         for name in ("2025-week-17.yml", "2026-week-02.yml", "2026-week-10.yml", "notes.yml"):
             (Path(d) / "rosters" / name).write_text("")
         assert latest_roster_snapshot(d) == (2026, 10)      # numeric, not lexical
+
+
+def test_pregame_line_upset_and_vs_projection():
+    from lib.context import pregame_line
+    # Luke (a) projected 79.1, Jack (b) 109.4; Luke won 125.3-106.4 -> upset.
+    ln = pregame_line(79.1, 109.4, 125.3, 106.4)
+    assert ln["favorite"] == "b" and ln["spread"] == 30.3 and ln["upset"] is True
+    assert ln["vs_proj_a"] == 46.2 and ln["vs_proj_b"] == -3.0
+    # Favorite wins -> no upset; tie on projection -> no favorite, no upset.
+    assert pregame_line(120.0, 100.0, 130.0, 90.0)["upset"] is False
+    even = pregame_line(100.0, 100.0, 90.0, 110.0)
+    assert even["favorite"] is None and even["upset"] is False
+    assert pregame_line(None, 100.0, 90.0, 110.0) is None
+
+
+def test_renamed_teams():
+    from lib.context import renamed_teams
+    before = {"jack": "Gibbed for Dillbot's pleasure", "zach": "Tuten Your Mom",
+              "wade": "God's Commissioner", "gone": "Old"}
+    after = {"jack": "Unplug Dillbot", "zach": "Tuten Your Mom ",
+             "wade": "God's  Commissioner", "new": "New"}
+    assert renamed_teams(before, after) == [
+        {"fid": "jack", "old": "Gibbed for Dillbot's pleasure", "new": "Unplug Dillbot"}]
+    assert renamed_teams({}, after) == []
+
+
+def test_h2h_record():
+    from lib.context import h2h_record
+    profiles = {"wade": {"h2h": [{"opp_id": "kevin", "record": "19-4-1"}]}}
+    assert h2h_record(profiles, "wade", "kevin") == "19-4-1"
+    assert h2h_record(profiles, "wade", "luke") is None
+    assert h2h_record({}, "wade", "kevin") is None
+
+
+def test_swing_players_and_decisive_bench_swap():
+    from lib.context import swing_players, decisive_bench_swap
+    entry = {
+        "starters": [
+            {"player": "Stroud", "pos": "QB", "proj": 17.1, "actual": 25.9},
+            {"player": "Pitts", "pos": "TE", "proj": 7.2, "actual": 20.5},
+            {"player": "Boston", "pos": "WR", "proj": 11.5, "actual": 2.0},
+            {"player": "Henry", "pos": "RB", "proj": 17.6, "actual": 4.5},
+            {"player": "NoProj", "pos": "WR", "proj": None, "actual": 9.0},
+        ],
+        "bench": [
+            {"player": "Shaheed", "pos": "WR", "proj": 8.4, "actual": 11.3},
+            {"player": "BenchRB", "pos": "RB", "proj": 5.0, "actual": 5.0},
+        ],
+    }
+    sw = swing_players(entry)
+    assert [r["player"] for r in sw["booms"]] == ["Pitts"]          # +13.3; Stroud +8.8 too small
+    assert [r["player"] for r in sw["busts"]] == ["Henry"]                  # Boston -9.5 is under the bar
+    # Lost by 1.1: Shaheed for Boston (+9.3) flips it; RB swap (+0.5) doesn't.
+    swap = decisive_bench_swap(entry, 1.1)
+    assert swap["bench"] == "Shaheed" and swap["starter"] == "Boston" and swap["gain"] == 9.3
+    assert decisive_bench_swap(entry, 20.0) is None                 # nothing big enough
+    assert decisive_bench_swap({}, 1.0) is None
 
 
 def run():
