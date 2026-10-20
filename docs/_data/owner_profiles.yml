@@ -5711,18 +5711,8 @@ jackperkins74:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: Blake Grupe
-      pos: K
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Will Reichard
       pos: K
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Colts D/ST
-      pos: D/ST
       cost: R13
       basis: Undrafted
       ineligible: false
@@ -21912,11 +21902,6 @@ lukstein:
     year: 2026
     week: 7
     players:
-    - player: Jalen Hurts
-      pos: QB
-      cost: R3
-      basis: Drafted R5
-      ineligible: false
     - player: C.J. Stroud
       pos: QB
       cost: R13
