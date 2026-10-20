@@ -214,7 +214,8 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
     data blocks consume:
 
         {fid: {starters:[{player,pos,proj,actual,injury,pro_team}], proj_total, actual_total,
-               bench_points, injured, on_bye, bye_next, top?, bust?}}
+               bench_points, bench:[{player,pos,proj,actual}], injured, on_bye,
+               bye_next, top?, bust?}}
 
     `week_rosters` is {fid: [{player,pos,starter,proj,actual,pro_team,bye_week},
     ...]} from data.load_week_rosters. `want_actual` (recap) adds each team's top
@@ -229,7 +230,7 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
 
     out = {}
     for fid, players in (week_rosters or {}).items():
-        starters, bench_points, injured = [], 0.0, []
+        starters, bench, bench_points, injured = [], [], 0.0, []
         on_bye, bye_next = [], []
         for p in players or []:
             proj, act = num(p.get("proj")), num(p.get("actual"))
@@ -241,6 +242,8 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
                                  "pro_team": p.get("pro_team") or ""})
             elif act is not None:
                 bench_points += act
+                bench.append({"player": p.get("player"), "pos": p.get("pos"),
+                              "proj": proj, "actual": act})
             bye = _bye_week(p)
             if week is not None and bye is not None:
                 who = {"player": p.get("player"), "pos": p.get("pos"),
@@ -265,6 +268,7 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
             "proj_total": round(sum(s["proj"] or 0.0 for s in starters), 1),
             "actual_total": round(sum(acts), 1) if acts else None,
             "bench_points": round(bench_points, 1),
+            "bench": bench,
             "injured": injured,
             "on_bye": on_bye,
             "bye_next": bye_next,
@@ -371,3 +375,97 @@ def league_bests(records):
                         "holder": r.get("holder") or r.get("owner_name"),
                         "season": r.get("season")})
     return out
+
+
+def pregame_line(proj_a, proj_b, score_a, score_b):
+    """The pre-game line for one matchup against how it finished, side a vs side b:
+
+        {"favorite": "a"|"b"|None, "spread": 30.3, "upset": True,
+         "vs_proj_a": 46.2, "vs_proj_b": -3.0}
+
+    `favorite` is the side with the higher pre-game projection (None on an exact
+    tie); `upset` is True when the other side won. `vs_proj_*` is final score minus
+    projection — how far each team beat (or missed) its line. None when either
+    projection is missing."""
+    if not isinstance(proj_a, (int, float)) or not isinstance(proj_b, (int, float)):
+        return None
+    fav = "a" if proj_a > proj_b else "b" if proj_b > proj_a else None
+    won = "a" if score_a > score_b else "b" if score_b > score_a else None
+    return {"favorite": fav, "spread": round(abs(proj_a - proj_b), 1),
+            "upset": bool(fav and won and won != fav),
+            "vs_proj_a": round(score_a - proj_a, 1),
+            "vs_proj_b": round(score_b - proj_b, 1)}
+
+
+def renamed_teams(before, after):
+    """Teams whose name changed between two {fid: team name} snapshots, as
+    [{"fid", "old", "new"}] sorted by fid. Only teams present in both count, and
+    whitespace-only differences don't."""
+    out = []
+    for fid in sorted(set(before or {}) & set(after or {})):
+        old, new = (before[fid] or "").strip(), (after[fid] or "").strip()
+        if old and new and " ".join(old.split()) != " ".join(new.split()):
+            out.append({"fid": fid, "old": old, "new": new})
+    return out
+
+
+def h2h_record(profiles, fid, opp):
+    """All-time head-to-head record string ('19-4-1') for `fid` against `opp`
+    from owner_profiles data ({fid: {"h2h": [{opp_id, record}]}}), or None when
+    they've never met or there's no profile."""
+    for h in ((profiles or {}).get(fid) or {}).get("h2h") or []:
+        if h.get("opp_id") == opp:
+            return h.get("record")
+    return None
+
+
+def swing_players(entry, threshold=10.0, limit=3):
+    """A team's starters who blew past or fell well short of their projection —
+    the outlier games that usually decide a matchup:
+
+        {"booms": [{player, proj, actual, diff}], "busts": [...]}
+
+    Only gaps of at least `threshold` points count, biggest first, `limit` each.
+    Starters with no projection or no score are skipped."""
+    booms, busts = [], []
+    for s in (entry or {}).get("starters") or []:
+        proj, act = s.get("proj"), s.get("actual")
+        if proj is None or act is None:
+            continue
+        diff = round(act - proj, 1)
+        row = {"player": s["player"], "proj": proj, "actual": act, "diff": diff}
+        if diff >= threshold:
+            booms.append(row)
+        elif diff <= -threshold:
+            busts.append(row)
+    booms.sort(key=lambda r: -r["diff"])
+    busts.sort(key=lambda r: r["diff"])
+    return {"booms": booms[:limit], "busts": busts[:limit]}
+
+
+def decisive_bench_swap(entry, margin):
+    """The single same-position bench-for-starter swap that would have erased a
+    loss of `margin` points, or None. Same position only (the snapshot has no
+    lineup slots, so a flex swap can't be verified) — a bench WR can always replace
+    a starting WR. Returns the biggest such swap:
+
+        {"bench": "Rashid Shaheed", "bench_pts": 11.3, "starter": "Denzel Boston",
+         "starter_pts": 2.0, "pos": "WR", "gain": 9.3}
+
+    A bench note is only a story when it flipped the result — this is that test."""
+    if margin is None or margin < 0:
+        return None
+    best = None
+    starters = [s for s in (entry or {}).get("starters") or [] if s.get("actual") is not None]
+    for b in (entry or {}).get("bench") or []:
+        if b.get("actual") is None:
+            continue
+        for s in starters:
+            if not b.get("pos") or b.get("pos") != s.get("pos"):
+                continue
+            gain = round(b["actual"] - s["actual"], 1)
+            if gain > margin and (best is None or gain > best["gain"]):
+                best = {"bench": b["player"], "bench_pts": b["actual"],
+                        "starter": s["player"], "starter_pts": s["actual"],
+                        "pos": s["pos"], "gain": gain}
+    return best

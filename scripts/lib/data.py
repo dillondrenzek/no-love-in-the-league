@@ -54,7 +54,8 @@ def load_season_notes(data_dir=DATA_DIR):
 
 def load_projections(year, franchises, data_dir=DATA_DIR):
     """Pre-game projection snapshots for a season:
-    {week: {"captured_at": <iso str or None>, "proj": {fid: projected}}}.
+    {week: {"captured_at": <iso str or None>, "proj": {fid: projected},
+            "names": {fid: team name at capture time}}}.
 
     Reads data/projections/<year>-week-<nn>.yml (written by
     scripts/snapshot_projections.py), keyed by owner SWID, and re-keys each team's
@@ -75,13 +76,16 @@ def load_projections(year, franchises, data_dir=DATA_DIR):
         week = doc.get("week")
         if week is None:
             continue
-        wk_map = {}
+        wk_map, names = {}, {}
         for e in doc.get("projections") or []:
             fid = swid_to_fid.get((e.get("manager_id") or "").strip().upper())
             if fid and isinstance(e.get("projected"), (int, float)):
                 wk_map[fid] = round(float(e["projected"]), 1)
+            if fid and e.get("team_name"):
+                names[fid] = e["team_name"]
         if wk_map:
-            out[week] = {"captured_at": doc.get("captured_at"), "proj": wk_map}
+            out[week] = {"captured_at": doc.get("captured_at"), "proj": wk_map,
+                         "names": names}
     return out
 
 
