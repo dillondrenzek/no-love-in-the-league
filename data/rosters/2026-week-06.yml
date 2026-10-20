@@ -1,6 +1,6 @@
 season: 2026
 week: 6
-captured_at: '2026-10-20T02:35:12+00:00'
+captured_at: '2026-10-20T03:23:28+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -274,7 +274,7 @@ rosters:
     pos: RB
     starter: true
     proj: 19.15
-    actual: 24.9
+    actual: 26.2
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -322,7 +322,7 @@ rosters:
     pos: RB
     starter: false
     proj: 10.33
-    actual: 2.9
+    actual: 13.7
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
@@ -966,7 +966,7 @@ rosters:
     pos: QB
     starter: true
     proj: 20.98
-    actual: 11.8
+    actual: 23.0
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -1114,7 +1114,7 @@ rosters:
     pos: WR
     starter: false
     proj: 8.28
-    actual: 11.1
+    actual: 13.4
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
@@ -1394,7 +1394,7 @@ rosters:
     pos: QB
     starter: true
     proj: 23.49
-    actual: 17.6
+    actual: 18.2
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -1574,7 +1574,7 @@ rosters:
     pos: RB
     starter: false
     proj: 6.69
-    actual: 1.0
+    actual: 1.7
     injury: ''
     pro_team: WSH
     bye_week: 7
