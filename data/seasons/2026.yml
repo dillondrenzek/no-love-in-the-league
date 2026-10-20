@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-20T03:25:42+00:00
+updated_at: 2026-10-20T09:00:13+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -63,22 +63,22 @@ team_logos:
 # Franchises seeded into the winners bracket (ESPN playoffSeed <= playoff
 # team count), in seed order. Used for the 'made the playoffs' count.
 playoff_teams:
-  - jackperkins74
   - sturmanator15
-  - whowonthelastsuperbowl
-  - schirmerj
+  - jackperkins74
   - zachzoske
-  - shawne2520997
+  - schirmerj
+  - gganoom
+  - whowonthelastsuperbowl
 
 # Final placement (ESPN's rankCalculatedFinal), used for the finish column.
 final_standings:
-  - jackperkins74
   - sturmanator15
-  - whowonthelastsuperbowl
-  - schirmerj
+  - jackperkins74
   - zachzoske
-  - shawne2520997
+  - schirmerj
   - gganoom
+  - whowonthelastsuperbowl
+  - shawne2520997
   - kevbots22
   - alexandra
   - theoceanpulse
@@ -120,18 +120,18 @@ matchups:
   - { week:  5, home: schirmerj, away: lukstein, home_score: 128.0, away_score: 57.9, playoff: false }
   - { week:  5, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 144.1, away_score: 179.1, playoff: false }
   - { week:  5, home: zachzoske, away: theoceanpulse, home_score: 84.2, away_score: 105.5, playoff: false }
-  - { week:  6, home: lukstein, away: jackperkins74, home_score: 125.3, away_score: 106.4, playoff: false, home_proj: 90.52, away_proj: 111.13 }
-  - { week:  6, home: purpsworth, away: theoceanpulse, home_score: 108.3, away_score: 102.4, playoff: false, home_proj: 112.74, away_proj: 108.89 }
-  - { week:  6, home: schirmerj, away: alexandra, home_score: 112.3, away_score: 111.2, playoff: false, home_proj: 120.82, away_proj: 104.09 }
-  - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false, home_proj: 131.07, away_proj: 116.34 }
-  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false, home_proj: 125.47, away_proj: 129.36 }
-  - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false, home_proj: 112.41, away_proj: 122.55 }
-  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false }
-  - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false }
-  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false }
-  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false }
-  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false }
-  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false }
+  - { week:  6, home: lukstein, away: jackperkins74, home_score: 125.3, away_score: 106.4, playoff: false }
+  - { week:  6, home: purpsworth, away: theoceanpulse, home_score: 108.3, away_score: 102.4, playoff: false }
+  - { week:  6, home: schirmerj, away: alexandra, home_score: 112.3, away_score: 111.2, playoff: false }
+  - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false }
+  - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false }
+  - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
+  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false, home_proj: 109.56, away_proj: 110.86 }
+  - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 93.28, away_proj: 119.55 }
+  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 79.87, away_proj: 102.64 }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 130.91, away_proj: 89.78 }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 113.45, away_proj: 87.65 }
+  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false, home_proj: 115.28, away_proj: 97.51 }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
   - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -189,7 +189,7 @@ matchups:
 # FAAB isn't in ESPN's trade feed: to record it, add an asset to that trade
 # by hand — `- {from: <giver fid>, to: <receiver fid>, faab: 5}`. It renders
 # as '$5 FAAB' and re-imports keep it (a trade's on-disk detail is preserved).
-trades_complete: true
+trades_complete: false
 trades_known_for:
   - jackperkins74
   - lukstein
@@ -284,6 +284,12 @@ trades:
   - from: jackperkins74
     to: zachzoske
     label: Garrett Wilson
+- id: 31c2c586-ffc6-46d3-bc13-d70640926e61
+  week: 7
+  teams:
+  - zachzoske
+  assets: []
+  complete: false
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.

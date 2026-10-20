@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power:
   - rank: 1
@@ -1973,8 +1973,6 @@
     winner_id: lukstein
     tie: false
     margin: 18.9
-    home_proj: 90.5
-    away_proj: 111.1
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -1996,8 +1994,6 @@
     winner_id: purpsworth
     tie: false
     margin: 5.9
-    home_proj: 112.7
-    away_proj: 108.9
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -2019,8 +2015,6 @@
     winner_id: schirmerj
     tie: false
     margin: 1.1
-    home_proj: 120.8
-    away_proj: 104.1
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2042,8 +2036,6 @@
     winner_id: sturmanator15
     tie: false
     margin: 22.3
-    home_proj: 131.1
-    away_proj: 116.3
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -2065,8 +2057,6 @@
     winner_id: gganoom
     tie: false
     margin: 39.3
-    home_proj: 125.5
-    away_proj: 129.4
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2088,8 +2078,6 @@
     winner_id: zachzoske
     tie: false
     margin: 29.1
-    home_proj: 112.4
-    away_proj: 122.5
   highlights:
   - key: top
     label: Top Score
@@ -2217,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power:
   - rank: 1
@@ -2355,11 +2343,13 @@
     home_record: 4-2
     away_record: 2-3-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 109.6
+    away_proj: 110.9
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -2371,11 +2361,13 @@
     home_record: 2-4
     away_record: 3-3
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 93.3
+    away_proj: 119.5
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -2387,11 +2379,13 @@
     home_record: 2-4
     away_record: 2-3-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 79.9
+    away_proj: 102.6
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2403,11 +2397,13 @@
     home_record: 4-2
     away_record: 4-2
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 130.9
+    away_proj: 89.8
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -2419,11 +2415,13 @@
     home_record: 3-3
     away_record: 3-3
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 113.5
+    away_proj: 87.7
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2435,15 +2433,17 @@
     home_record: 4-2
     away_record: 2-4
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 9
     final: false
     live: false
     playoff: false
+    home_proj: 115.3
+    away_proj: 97.5
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: true
   power: []
 2026-8:
@@ -2549,7 +2549,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []
 2026-9:
@@ -2655,7 +2655,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []
 2026-10:
@@ -2761,7 +2761,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []
 2026-11:
@@ -2867,7 +2867,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []
 2026-12:
@@ -2973,7 +2973,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []
 2026-13:
@@ -3079,7 +3079,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []
 2026-14:
@@ -3185,6 +3185,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 19, 8:25 PM PDT
+  updated_at: Oct 20, 2:00 AM PDT
   current: false
   power: []

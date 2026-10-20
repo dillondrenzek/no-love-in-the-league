@@ -52,7 +52,7 @@ active:
   win_color: '#f9b44c'
   titles: '1'
   sackos: 2
-  trades: 18
+  trades: 19
   best_finish:
     type: shiva
     years:

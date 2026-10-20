@@ -45,20 +45,6 @@ detail:
     state: season
     points: true
     rows:
-    - &id002
-      finish: 2
-      team: Unplug Dillbot
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-      owner_id: jackperkins74
-      owner_name: Jack
-      record: 4-2
-      pct: 0.6666666666666666
-      tag: null
-      pct_str: '.667'
-      pf: 822.4
-      pf_color: '#ee6c3b'
-      pa: 694.2
-      pa_color: '#f9b54d'
     - &id001
       finish: 1
       team: God's Commissioner
@@ -73,34 +59,20 @@ detail:
       pf_color: '#ee6b3b'
       pa: 772.2
       pa_color: '#ee6b3b'
-    - &id006
-      finish: 6
-      team: Trick or Trick It’s Mike Vick
-      logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-      owner_id: whowonthelastsuperbowl
-      owner_name: Nate
-      record: 3-3
-      pct: 0.5
-      tag: null
-      pct_str: '.500'
-      pf: 731.1
-      pf_color: '#f49645'
-      pa: 691.1
-      pa_color: '#f9b851'
-    - &id004
-      finish: 4
-      team: Return of the IDP
-      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-      owner_id: schirmerj
-      owner_name: Jono
+    - &id002
+      finish: 2
+      team: Unplug Dillbot
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+      owner_id: jackperkins74
+      owner_name: Jack
       record: 4-2
       pct: 0.6666666666666666
       tag: null
       pct_str: '.667'
-      pf: 724.2
-      pf_color: '#f59946'
-      pa: 724.0
-      pa_color: '#f59946'
+      pf: 822.4
+      pf_color: '#ee6c3b'
+      pa: 694.2
+      pa_color: '#f9b54d'
     - &id003
       finish: 3
       team: Tuten Your Mother, Respectfully
@@ -115,20 +87,20 @@ detail:
       pf_color: '#f49445'
       pa: 666.1
       pa_color: '#facb80'
-    - &id007
-      finish: 7
-      team: Swift kick in the Dak
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-      owner_id: shawne2520997
-      owner_name: Shawnee
-      record: 3-3
-      pct: 0.5
+    - &id004
+      finish: 4
+      team: Return of the IDP
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      owner_id: schirmerj
+      owner_name: Jono
+      record: 4-2
+      pct: 0.6666666666666666
       tag: null
-      pct_str: '.500'
-      pf: 676.5
-      pf_color: '#f8af4b'
-      pa: 678.0
-      pa_color: '#fac26a'
+      pct_str: '.667'
+      pf: 724.2
+      pf_color: '#f59946'
+      pa: 724.0
+      pa_color: '#f59946'
     - &id005
       finish: 5
       team: One Big Beautiful Dillbot
@@ -143,6 +115,34 @@ detail:
       pf_color: '#f38e43'
       pa: 614.8
       pa_color: '#fdf3e0'
+    - &id006
+      finish: 6
+      team: Trick or Trick It’s Mike Vick
+      logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+      owner_id: whowonthelastsuperbowl
+      owner_name: Nate
+      record: 3-3
+      pct: 0.5
+      tag: null
+      pct_str: '.500'
+      pf: 731.1
+      pf_color: '#f49645'
+      pa: 691.1
+      pa_color: '#f9b851'
+    - &id007
+      finish: 7
+      team: Swift kick in the Dak
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      record: 3-3
+      pct: 0.5
+      tag: null
+      pct_str: '.500'
+      pf: 676.5
+      pf_color: '#f8af4b'
+      pa: 678.0
+      pa_color: '#fac26a'
     - &id008
       finish: 8
       team: Remember the Nice Guys, ChatGPT
@@ -384,6 +384,12 @@ detail:
         gave:
         - Tee Higgins
         - George Kittle
+    - week: 7
+      parties:
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave: []
     keepers:
     - round: 5
       player: Brock Bowers
