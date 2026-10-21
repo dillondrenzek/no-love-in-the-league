@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power:
   - rank: 1
@@ -2348,8 +2348,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 130.8
-    away_proj: 120.7
+    home_proj: 132.2
+    away_proj: 121.1
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -2366,8 +2366,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 110.0
-    away_proj: 132.0
+    home_proj: 111.0
+    away_proj: 131.5
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -2384,8 +2384,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 106.7
-    away_proj: 115.3
+    home_proj: 106.9
+    away_proj: 118.3
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2397,13 +2397,13 @@
     home_record: 4-2
     away_record: 4-2
     scored: false
-    home_yet: 10
+    home_yet: 9
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 126.2
-    away_proj: 119.0
+    home_proj: 111.5
+    away_proj: 121.5
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -2416,12 +2416,12 @@
     away_record: 3-3
     scored: false
     home_yet: 10
-    away_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 120.2
-    away_proj: 102.0
+    home_proj: 118.1
+    away_proj: 94.6
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2439,11 +2439,11 @@
     live: false
     playoff: false
     home_proj: 119.7
-    away_proj: 115.0
+    away_proj: 113.5
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: true
   power: []
 2026-8:
@@ -2549,7 +2549,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []
 2026-9:
@@ -2655,7 +2655,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []
 2026-10:
@@ -2761,7 +2761,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []
 2026-11:
@@ -2867,7 +2867,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []
 2026-12:
@@ -2973,7 +2973,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []
 2026-13:
@@ -3079,7 +3079,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []
 2026-14:
@@ -3185,6 +3185,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 21, 9:17 AM PDT
+  updated_at: Oct 21, 3:53 PM PDT
   current: false
   power: []

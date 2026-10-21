@@ -12901,7 +12901,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: false
-    tx_per_year: 48.9
+    tx_per_year: 49.0
     tx_known: false
     seasons: 11
     best_finish:
@@ -12925,7 +12925,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 7th
     record: 3-3
-    tx: 25
+    tx: 26
     in_progress: true
     pf: 676.5
     pa: 678.0
@@ -13309,6 +13309,10 @@ shawne2520997:
       via: add
       week: 7
       waiver: true
+    - player: Devin Singletary
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: Jahmyr Gibbs
@@ -14588,6 +14592,11 @@ shawne2520997:
       basis: Drafted R8
       ineligible: false
     - player: Austin Ekeler
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Devin Singletary
       pos: RB
       cost: R13
       basis: Undrafted
