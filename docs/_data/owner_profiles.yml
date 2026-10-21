@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 91.1
+    tx_per_year: 91.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 4-2
-    tx: 43
+    tx: 45
     in_progress: true
     pf: 825.2
     pa: 772.2
@@ -507,6 +507,10 @@ sturmanator15:
       via: add
       week: 7
       waiver: true
+    - player: Ryan Flournoy
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -2554,7 +2558,7 @@ sturmanator15:
       cost: R11
       basis: Drafted R13
       ineligible: false
-    - player: Cyrus Allen
+    - player: Ryan Flournoy
       pos: WR
       cost: R13
       basis: Undrafted
@@ -8722,7 +8726,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: false
-    tx_per_year: 52.4
+    tx_per_year: 52.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -8745,7 +8749,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 4th
     record: 4-2
-    tx: 16
+    tx: 18
     in_progress: true
     pf: 724.2
     pa: 724.0
@@ -9107,6 +9111,10 @@ schirmerj:
       via: add
       week: 7
       waiver: true
+    - player: Titans D/ST
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: Bijan Robinson
@@ -10493,11 +10501,6 @@ schirmerj:
       cost: R12
       basis: Drafted R14
       ineligible: false
-    - player: Najee Harris
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Jaylen Waddle
       pos: WR
       cost: R1
@@ -10532,6 +10535,11 @@ schirmerj:
       pos: K
       cost: R8
       basis: Drafted R10
+      ineligible: false
+    - player: Titans D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
       ineligible: false
 gganoom:
   name: Grant
@@ -11086,7 +11094,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: false
-    tx_per_year: 34.4
+    tx_per_year: 34.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -11110,7 +11118,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 3-3
-    tx: 14
+    tx: 15
     in_progress: true
     pf: 731.1
     pa: 691.1
@@ -11493,6 +11501,10 @@ whowonthelastsuperbowl:
       via: add
       week: 6
       waiver: true
+    - player: Christian Kirk
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -12830,6 +12842,11 @@ whowonthelastsuperbowl:
       pos: WR
       cost: R7
       basis: Drafted R9
+      ineligible: false
+    - player: Christian Kirk
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Sam LaPorta
       pos: TE
@@ -18532,7 +18549,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: false
-    tx_per_year: 41.0
+    tx_per_year: 41.1
     tx_known: true
     seasons: 8
     best_finish:
@@ -18556,7 +18573,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 11th
     record: 2-4
-    tx: 14
+    tx: 15
     in_progress: true
     pf: 623.2
     pa: 704.9
@@ -18893,6 +18910,10 @@ purpsworth:
       via: add
       week: 6
       waiver: true
+    - player: Michael Penix Jr.
+      via: add
+      week: 7
+      waiver: false
     - player: Omar Cooper Jr.
       via: add
       week: 7
@@ -20015,6 +20036,11 @@ purpsworth:
       cost: R5
       basis: Drafted R7
       ineligible: false
+    - player: Michael Penix Jr.
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Jonathan Taylor
       pos: RB
       cost: Ineligible
@@ -20113,7 +20139,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 46.6
+    tx_per_year: 46.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -20136,7 +20162,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-4
-    tx: 23
+    tx: 24
     in_progress: true
     pf: 496.5
     pa: 730.9
@@ -20594,6 +20620,10 @@ lukstein:
       via: add
       week: 7
       waiver: true
+    - player: Tyrone Tracy Jr.
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: Amon-Ra St. Brown
@@ -21990,6 +22020,11 @@ lukstein:
       basis: Drafted R11
       ineligible: false
     - player: Dameon Pierce
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Tyrone Tracy Jr.
       pos: RB
       cost: R13
       basis: Undrafted
