@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-21T02:29:06+00:00
+updated_at: 2026-10-21T08:58:37+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -35,7 +35,7 @@ teams:
   zachzoske: "Tuten Your Mother, Respectfully"
   schirmerj: "Return of the IDP"
   lukstein: "2x Runner Up"
-  jackperkins74: "Unplug Dillbot"
+  jackperkins74: "Gibbed for your pleasure"
   kevbots22: "Remember the Nice Guys, ChatGPT"
   alexandra: "Cornstar"
   purpsworth: "I am dead inside"
@@ -126,12 +126,12 @@ matchups:
   - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false }
   - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false }
   - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
-  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false, home_proj: 111.28, away_proj: 110.84 }
+  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false, home_proj: 130.79, away_proj: 120.74 }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 110.25, away_proj: 132.04 }
-  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 90.88, away_proj: 102.64 }
-  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 108.14, away_proj: 87.94 }
-  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 113.43, away_proj: 87.65 }
-  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false, home_proj: 115.28, away_proj: 114.99 }
+  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 90.88, away_proj: 115.29 }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 109.86, away_proj: 102.85 }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 113.43, away_proj: 101.95 }
+  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false, home_proj: 119.68, away_proj: 114.99 }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
   - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -284,6 +284,24 @@ trades:
   - from: jackperkins74
     to: zachzoske
     label: Garrett Wilson
+- id: 5e6bfc2d-7ff1-42f8-9d12-dd475a553ed1
+  week: 7
+  teams:
+  - theoceanpulse
+  - zachzoske
+  assets:
+  - from: zachzoske
+    to: theoceanpulse
+    label: DK Metcalf
+  - from: zachzoske
+    to: theoceanpulse
+    label: Woody Marks
+  - from: theoceanpulse
+    to: zachzoske
+    label: Luther Burden III
+  - from: theoceanpulse
+    to: zachzoske
+    label: Alvin Kamara
 - id: 31c2c586-ffc6-46d3-bc13-d70640926e61
   week: 7
   teams:
@@ -317,16 +335,16 @@ transactions_known: true
 transactions:
   alexandra: { adds: 11, drops: 10, moves: 21 }
   gganoom: { adds: 5, drops: 3, moves: 8 }
-  jackperkins74: { adds: 43, drops: 32, moves: 75 }
-  kevbots22: { adds: 5, drops: 4, moves: 9 }
-  lukstein: { adds: 13, drops: 8, moves: 21 }
-  purpsworth: { adds: 8, drops: 4, moves: 12 }
-  schirmerj: { adds: 7, drops: 6, moves: 13 }
-  shawne2520997: { adds: 13, drops: 11, moves: 24 }
-  sturmanator15: { adds: 21, drops: 20, moves: 41 }
+  jackperkins74: { adds: 45, drops: 32, moves: 77 }
+  kevbots22: { adds: 6, drops: 5, moves: 11 }
+  lukstein: { adds: 14, drops: 9, moves: 23 }
+  purpsworth: { adds: 9, drops: 5, moves: 14 }
+  schirmerj: { adds: 8, drops: 8, moves: 16 }
+  shawne2520997: { adds: 14, drops: 11, moves: 25 }
+  sturmanator15: { adds: 22, drops: 21, moves: 43 }
   theoceanpulse: { adds: 22, drops: 20, moves: 42 }
   whowonthelastsuperbowl: { adds: 8, drops: 6, moves: 14 }
-  zachzoske: { adds: 27, drops: 19, moves: 46 }
+  zachzoske: { adds: 29, drops: 21, moves: 50 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -543,6 +561,10 @@ rosters:
   - player: Eddy Pineiro
     via: add
     week: 6
+    waiver: true
+  - player: Jordan Addison
+    via: add
+    week: 7
     waiver: true
   gganoom:
   - player: Bijan Robinson
@@ -800,6 +822,10 @@ rosters:
     via: add
     week: 6
     waiver: false
+  - player: David Montgomery
+    via: add
+    week: 7
+    waiver: true
   schirmerj:
   - player: Christian McCaffrey
     via: draft
@@ -869,6 +895,10 @@ rosters:
   - player: Chiefs D/ST
     via: add
     week: 6
+    waiver: true
+  - player: Aaron Rodgers
+    via: add
+    week: 7
     waiver: true
   lukstein:
   - player: Saquon Barkley
@@ -960,6 +990,10 @@ rosters:
     via: add
     week: 6
     waiver: false
+  - player: Jaylin Noel
+    via: add
+    week: 7
+    waiver: true
   purpsworth:
   - player: Jonathan Taylor
     via: draft
@@ -1040,6 +1074,10 @@ rosters:
   - player: Kendre Miller
     via: add
     week: 6
+    waiver: true
+  - player: Omar Cooper Jr.
+    via: add
+    week: 7
     waiver: true
   sturmanator15:
   - player: Jaxon Smith-Njigba
@@ -1167,6 +1205,10 @@ rosters:
     via: add
     week: 6
     waiver: false
+  - player: Browns D/ST
+    via: add
+    week: 7
+    waiver: true
   zachzoske:
   - player: Amon-Ra St. Brown
     via: draft
@@ -1317,6 +1359,20 @@ rosters:
   - player: Kirk Cousins
     via: add
     week: 6
+    waiver: true
+  - player: Alvin Kamara
+    via: trade
+    week: 7
+  - player: Luther Burden III
+    via: trade
+    week: 7
+  - player: Chase McLaughlin
+    via: add
+    week: 7
+    waiver: false
+  - player: Samaje Perine
+    via: add
+    week: 7
     waiver: true
   theoceanpulse:
   - player: Omarion Hampton
@@ -1469,6 +1525,12 @@ rosters:
     via: add
     week: 6
     waiver: false
+  - player: DK Metcalf
+    via: trade
+    week: 7
+  - player: Woody Marks
+    via: trade
+    week: 7
   kevbots22:
   - player: Chase Brown
     via: draft
@@ -1534,6 +1596,10 @@ rosters:
   - player: Khalil Shakir
     via: add
     week: 6
+    waiver: true
+  - player: Harrison Butker
+    via: add
+    week: 7
     waiver: true
   whowonthelastsuperbowl:
   - player: Derrick Henry

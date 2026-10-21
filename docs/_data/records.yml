@@ -260,7 +260,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Trades
-  value: '19'
+  value: '20'
   sub_value: null
   season: null
   week: null
@@ -274,7 +274,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '19'
+  - value: '20'
     team: null
     owner_name: Zach
     owner_id: zachzoske
@@ -284,7 +284,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '15'
+  - value: '16'
     team: null
     owner_name: Dillon
     owner_id: theoceanpulse
@@ -390,7 +390,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Transactions
-  value: '1080'
+  value: '1082'
   sub_value: null
   season: null
   week: null
@@ -404,7 +404,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '1080'
+  - value: '1082'
     team: null
     owner_name: Jack
     owner_id: jackperkins74
@@ -414,7 +414,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '960'
+  - value: '964'
     team: null
     owner_name: Zach
     owner_id: zachzoske
@@ -424,7 +424,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '818'
+  - value: '820'
     team: null
     owner_name: Wade
     owner_id: sturmanator15
@@ -444,7 +444,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '469'
+  - value: '472'
     team: null
     owner_name: Jono
     owner_id: schirmerj
@@ -524,10 +524,10 @@ records:
   sub_value: null
   season: 2026
   week: 5
-  holder: Unplug Dillbot
+  holder: Gibbed for your pleasure
   owner_id: jackperkins74
   owner_name: Jack
-  team: Unplug Dillbot
+  team: Gibbed for your pleasure
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
@@ -535,7 +535,7 @@ records:
   tabular: true
   leaders:
   - value: '193.70'
-    team: Unplug Dillbot
+    team: Gibbed for your pleasure
     owner_name: Jack
     owner_id: jackperkins74
     season: 2026
@@ -805,7 +805,7 @@ records:
     opp_owner_name: Grant
     opp_owner_id: gganoom
   - value: '326.20'
-    team: Unplug Dillbot
+    team: Gibbed for your pleasure
     owner_name: Jack
     owner_id: jackperkins74
     season: 2026

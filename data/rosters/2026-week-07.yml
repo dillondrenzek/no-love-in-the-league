@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-21T02:29:02+00:00'
+captured_at: '2026-10-21T08:58:34+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -110,14 +110,6 @@ rosters:
     injury: ''
     pro_team: PIT
     bye_week: 9
-  - player: Buccaneers D/ST
-    pos: D/ST
-    starter: true
-    proj: 4.62
-    actual: null
-    injury: ''
-    pro_team: TB
-    bye_week: 10
   - player: Roschon Johnson
     pos: RB
     starter: false
@@ -134,6 +126,14 @@ rosters:
     injury: ''
     pro_team: KC
     bye_week: 5
+  - player: Browns D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.34
+    actual: null
+    injury: ''
+    pro_team: CLE
+    bye_week: 11
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
@@ -178,22 +178,6 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
-  - player: Cam Little
-    pos: K
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: JAX
-    bye_week: 7
-  - player: Woody Marks
-    pos: RB
-    starter: true
-    proj: 8.29
-    actual: null
-    injury: ''
-    pro_team: HOU
-    bye_week: 8
   - player: Ashton Jeanty
     pos: RB
     starter: true
@@ -226,14 +210,6 @@ rosters:
     injury: ''
     pro_team: PIT
     bye_week: 9
-  - player: Kirk Cousins
-    pos: QB
-    starter: false
-    proj: 18.19
-    actual: null
-    injury: ''
-    pro_team: LV
-    bye_week: 13
   - player: Garrett Wilson
     pos: WR
     starter: true
@@ -258,14 +234,38 @@ rosters:
     injury: ''
     pro_team: JAX
     bye_week: 7
-  - player: DK Metcalf
+  - player: Luther Burden III
     pos: WR
     starter: true
-    proj: 12.58
+    proj: 10.24
     actual: null
     injury: ''
-    pro_team: PIT
-    bye_week: 9
+    pro_team: CHI
+    bye_week: 10
+  - player: Alvin Kamara
+    pos: RB
+    starter: true
+    proj: 6.63
+    actual: null
+    injury: ''
+    pro_team: 'NO'
+    bye_week: 8
+  - player: Samaje Perine
+    pos: RB
+    starter: false
+    proj: 5.37
+    actual: null
+    injury: ''
+    pro_team: CIN
+    bye_week: 6
+  - player: Chase McLaughlin
+    pos: K
+    starter: true
+    proj: 8.4
+    actual: null
+    injury: ''
+    pro_team: TB
+    bye_week: 10
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -366,14 +366,6 @@ rosters:
     injury: ''
     pro_team: KC
     bye_week: 5
-  - player: Adam Randall
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: INJURY_RESERVE
-    pro_team: BAL
-    bye_week: 13
   - player: Joshua Palmer
     pos: WR
     starter: false
@@ -390,14 +382,14 @@ rosters:
     injury: ''
     pro_team: ''
     bye_week: null
-  - player: Chiefs D/ST
-    pos: D/ST
+  - player: Aaron Rodgers
+    pos: QB
     starter: true
-    proj: 6.81
+    proj: 21.72
     actual: null
     injury: ''
-    pro_team: KC
-    bye_week: 5
+    pro_team: PIT
+    bye_week: 9
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
   team_id: 4
   team_name: 2x Runner Up
@@ -506,14 +498,6 @@ rosters:
     injury: ''
     pro_team: PHI
     bye_week: 10
-  - player: Darius Cooper
-    pos: WR
-    starter: false
-    proj: 3.84
-    actual: null
-    injury: ''
-    pro_team: PHI
-    bye_week: 10
   - player: C.J. Stroud
     pos: QB
     starter: true
@@ -522,9 +506,17 @@ rosters:
     injury: ''
     pro_team: HOU
     bye_week: 8
+  - player: Jaylin Noel
+    pos: WR
+    starter: false
+    proj: 7.21
+    actual: null
+    injury: ''
+    pro_team: HOU
+    bye_week: 8
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
-  team_name: Unplug Dillbot
+  team_name: Gibbed for your pleasure
   players:
   - player: Jahmyr Gibbs
     pos: RB
@@ -638,6 +630,22 @@ rosters:
     injury: ''
     pro_team: MIN
     bye_week: 6
+  - player: Kyler Murray
+    pos: QB
+    starter: true
+    proj: 19.51
+    actual: null
+    injury: ''
+    pro_team: MIN
+    bye_week: 6
+  - player: Jordan Addison
+    pos: WR
+    starter: false
+    proj: 9.06
+    actual: null
+    injury: QUESTIONABLE
+    pro_team: MIN
+    bye_week: 6
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -714,14 +722,6 @@ rosters:
     injury: ''
     pro_team: JAX
     bye_week: 7
-  - player: Cameron Dicker
-    pos: K
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: LAC
-    bye_week: 7
   - player: Matthew Stafford
     pos: QB
     starter: true
@@ -762,6 +762,14 @@ rosters:
     injury: ''
     pro_team: BUF
     bye_week: 7
+  - player: Harrison Butker
+    pos: K
+    starter: true
+    proj: 9.9
+    actual: null
+    injury: ''
+    pro_team: KC
+    bye_week: 5
 - manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
   team_id: 9
   team_name: Cornstar
@@ -1010,14 +1018,14 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
-  - player: Brenton Strange
-    pos: TE
+  - player: Omar Cooper Jr.
+    pos: WR
     starter: false
-    proj: 0.0
+    proj: 6.11
     actual: null
     injury: ''
-    pro_team: JAX
-    bye_week: 7
+    pro_team: NYJ
+    bye_week: 13
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
   team_id: 11
   team_name: Trick or Trick It’s Mike Vick
@@ -1080,7 +1088,7 @@ rosters:
     bye_week: 6
   - player: Stefon Diggs
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1164,7 +1172,7 @@ rosters:
     bye_week: 11
   - player: Caleb Williams
     pos: QB
-    starter: true
+    starter: false
     proj: 18.93
     actual: null
     injury: ''
@@ -1188,7 +1196,7 @@ rosters:
     bye_week: 6
   - player: Emanuel Wilson
     pos: RB
-    starter: true
+    starter: false
     proj: 7.23
     actual: null
     injury: ''
@@ -1196,7 +1204,7 @@ rosters:
     bye_week: 11
   - player: Jared Goff
     pos: QB
-    starter: false
+    starter: true
     proj: 20.51
     actual: null
     injury: ''
@@ -1226,38 +1234,14 @@ rosters:
     injury: ''
     pro_team: BUF
     bye_week: 7
-  - player: Alvin Kamara
-    pos: RB
-    starter: true
-    proj: 6.63
-    actual: null
-    injury: ''
-    pro_team: 'NO'
-    bye_week: 8
   - player: Breece Hall
     pos: RB
-    starter: false
+    starter: true
     proj: 14.3
     actual: null
     injury: QUESTIONABLE
     pro_team: NYJ
     bye_week: 13
-  - player: Luther Burden III
-    pos: WR
-    starter: true
-    proj: 10.24
-    actual: null
-    injury: ''
-    pro_team: CHI
-    bye_week: 10
-  - player: Kimani Vidal
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: LAC
-    bye_week: 7
   - player: Ravens D/ST
     pos: D/ST
     starter: true
@@ -1274,6 +1258,22 @@ rosters:
     injury: ''
     pro_team: BAL
     bye_week: 13
+  - player: DK Metcalf
+    pos: WR
+    starter: true
+    proj: 12.58
+    actual: null
+    injury: ''
+    pro_team: PIT
+    bye_week: 9
+  - player: Woody Marks
+    pos: RB
+    starter: true
+    proj: 8.29
+    actual: null
+    injury: ''
+    pro_team: HOU
+    bye_week: 8
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
@@ -1412,7 +1412,7 @@ rosters:
   players:
   - player: James Cook III
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1434,14 +1434,6 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
-  - player: Terry McLaurin
-    pos: WR
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: OUT
-    pro_team: WSH
-    bye_week: 7
   - player: Nico Collins
     pos: WR
     starter: true
@@ -1492,7 +1484,7 @@ rosters:
     bye_week: 11
   - player: Jake Bates
     pos: K
-    starter: false
+    starter: true
     proj: 8.83
     actual: null
     injury: ''
@@ -1522,14 +1514,6 @@ rosters:
     injury: ''
     pro_team: LAR
     bye_week: 11
-  - player: Nick Folk
-    pos: K
-    starter: true
-    proj: 7.03
-    actual: null
-    injury: ''
-    pro_team: ATL
-    bye_week: 11
   - player: Austin Ekeler
     pos: RB
     starter: false
@@ -1538,3 +1522,11 @@ rosters:
     injury: ''
     pro_team: WSH
     bye_week: 7
+  - player: David Montgomery
+    pos: RB
+    starter: true
+    proj: 12.5
+    actual: null
+    injury: QUESTIONABLE
+    pro_team: HOU
+    bye_week: 8

@@ -61,7 +61,7 @@ detail:
       pa_color: '#ee6b3b'
     - &id002
       finish: 2
-      team: Unplug Dillbot
+      team: Gibbed for your pleasure
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
       owner_id: jackperkins74
       owner_name: Jack
@@ -233,7 +233,7 @@ detail:
     - pick: 1
       owner_id: jackperkins74
       owner_name: Jack
-      team: Unplug Dillbot
+      team: Gibbed for your pleasure
       keepers:
       - player: Puka Nacua
         round: 9
@@ -359,7 +359,7 @@ detail:
       parties:
       - owner_id: jackperkins74
         owner_name: Jack
-        team: Unplug Dillbot
+        team: Gibbed for your pleasure
         gave:
         - Dalton Kincaid
         - Alvin Kamara
@@ -375,7 +375,7 @@ detail:
       parties:
       - owner_id: jackperkins74
         owner_name: Jack
-        team: Unplug Dillbot
+        team: Gibbed for your pleasure
         gave:
         - Garrett Wilson
       - owner_id: zachzoske
@@ -384,6 +384,20 @@ detail:
         gave:
         - Tee Higgins
         - George Kittle
+    - week: 7
+      parties:
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: The ChoSimba Ones
+        gave:
+        - Luther Burden III
+        - Alvin Kamara
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave:
+        - DK Metcalf
+        - Woody Marks
     - week: 7
       parties:
       - owner_id: zachzoske
@@ -430,7 +444,7 @@ detail:
       player: Puka Nacua
       owner_id: jackperkins74
       owner_name: Jack
-      team: Unplug Dillbot
+      team: Gibbed for your pleasure
     - round: 9
       player: Trey McBride
       owner_id: sturmanator15
