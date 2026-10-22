@@ -168,7 +168,7 @@ active:
   win_color: '#fce9c8'
   titles: '0'
   sackos: 0
-  trades: 0
+  trades: 1
   best_finish:
     type: place
     ordinal: —

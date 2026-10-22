@@ -22,11 +22,13 @@ from pathlib import Path
 import yaml
 
 from lib.data import (load_franchises, load_seasons, short_name_of,
-                      load_week_rosters, load_projections, load_nfl_schedule)
+                      load_week_rosters, load_projections, load_nfl_schedule,
+                      load_settings)
 from lib.weeks import week_state, _games_in_week
 from lib.context import (standings_snapshot, recent_moves, league_bests,
                          week_roster_context, perceived_strength, team_form,
-                         bye_watch, bye_note, bye_watch_lines)
+                         bye_watch, bye_note, bye_watch_lines, lineup_alerts)
+from lib.rules import STARTER_SLOTS
 from lib.nfl_schedule import (week_windows, lineup_by_window, plan_line,
                               spotlight, spotlight_lines, fmt_kickoff)
 from weekly_recap import scaffold_page
@@ -82,6 +84,34 @@ def _h2h_line(home_name, home_prof, away_fid, away_name):
             verb = "leads" if w > l else "trails" if l > w else "is even with"
             return f"Head-to-head: {home_name} {verb} {away_name} {h['record']} all-time"
     return "Head-to-head: first meeting"
+
+
+def _alert_line(al):
+    """'1 empty starting slot (9 of 10 filled); best bench option Tony Pollard (RB)
+    12.6 proj; starting a player projected for zero: David Montgomery'."""
+    if not al:
+        return None
+    bits = []
+    if al["open_slots"]:
+        s = "slot" if al["open_slots"] == 1 else "slots"
+        bit = f"{al['open_slots']} empty starting {s} ({al['filled']} of {al['slots']} filled)"
+        if al.get("best_bench"):
+            b = al["best_bench"]
+            bit += f"; best bench option {b['player']} ({b['pos']}) {b['proj']:.1f} proj"
+        bits.append(bit)
+    if al["zero_proj"]:
+        bits.append("starting a player projected for zero: " + ", ".join(al["zero_proj"]))
+    return "; ".join(bits)
+
+
+def _starting_slots(year):
+    """Number of starting lineup slots for a season, from data/settings.yml (falls
+    back to the latest season on file). None when settings were never imported."""
+    seasons = load_settings() or []
+    entry = next((e for e in seasons if e.get("season") == year), None) or \
+        (seasons[-1] if seasons else None)
+    roster = (entry or {}).get("roster") or {}
+    return sum(v for k, v in roster.items() if int(k) in STARTER_SLOTS) or None
 
 
 def _lineup_line(entry):
@@ -142,6 +172,10 @@ def data_block(year, week, games, season, franchises, profiles, ctx):
             lu = _lineup_line(rosters.get(fid))
             if lu:
                 lines.append(f"    {who}'s projected starters: {lu}")
+        for fid, who in ((h, hn), (a, an)):
+            al = _alert_line(lineup_alerts(rosters.get(fid), ctx.get("starting_slots")))
+            if al:
+                lines.append(f"    LINEUP ALERT — {who}: {al}")
         for fid, who in ((h, hn), (a, an)):
             bn = bye_note(rosters.get(fid))
             if bn:
@@ -249,8 +283,11 @@ def main():
         "byes": bye_watch(rosters, franchises),
         "form": team_form(season, franchises, args.week, projections),
         "standings": standings_snapshot(season, franchises),
-        "moves": recent_moves(season, franchises, max(0, args.week - 2), args.week - 1),
+        # Last week plus this one: moves made going into the week (pre-kickoff
+        # trades and pickups) are the freshest preview material.
+        "moves": recent_moves(season, franchises, max(0, args.week - 1), args.week),
         "bests": league_bests(records),
+        "starting_slots": _starting_slots(args.year),
     }
     if not rosters:
         print("NOTE: no roster snapshot for this week (data/rosters/"

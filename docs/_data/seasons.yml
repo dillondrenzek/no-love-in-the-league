@@ -386,6 +386,18 @@ detail:
         - George Kittle
     - week: 7
       parties:
+      - owner_id: alexandra
+        owner_name: Lexi
+        team: Cornstar
+        gave:
+        - DK Metcalf
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave:
+        - Tyler Allgeier
+    - week: 7
+      parties:
       - owner_id: theoceanpulse
         owner_name: Dillon
         team: The ChoSimba Ones
@@ -398,12 +410,6 @@ detail:
         gave:
         - DK Metcalf
         - Woody Marks
-    - week: 7
-      parties:
-      - owner_id: zachzoske
-        owner_name: Zach
-        team: Tuten Your Mother, Respectfully
-        gave: []
     keepers:
     - round: 5
       player: Brock Bowers

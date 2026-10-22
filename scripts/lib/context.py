@@ -214,7 +214,7 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
     data blocks consume:
 
         {fid: {starters:[{player,pos,proj,actual,injury,pro_team}], proj_total, actual_total,
-               bench_points, bench:[{player,pos,proj,actual}], injured, on_bye,
+               bench_points, bench:[{player,pos,proj,actual,injury}], injured, on_bye,
                bye_next, top?, bust?}}
 
     `week_rosters` is {fid: [{player,pos,starter,proj,actual,pro_team,bye_week},
@@ -240,10 +240,13 @@ def week_roster_context(week_rosters, *, want_actual=False, week=None):
                 starters.append({"player": p.get("player"), "pos": p.get("pos"),
                                  "proj": proj, "actual": act, "injury": inj,
                                  "pro_team": p.get("pro_team") or ""})
-            elif act is not None:
-                bench_points += act
-                bench.append({"player": p.get("player"), "pos": p.get("pos"),
-                              "proj": proj, "actual": act})
+            else:
+                if act is not None:
+                    bench_points += act
+                # Bench options exclude players on bye this week (no game to play).
+                if week is None or _bye_week(p) != week:
+                    bench.append({"player": p.get("player"), "pos": p.get("pos"),
+                                  "proj": proj, "actual": act, "injury": inj})
             bye = _bye_week(p)
             if week is not None and bye is not None:
                 who = {"player": p.get("player"), "pos": p.get("pos"),
@@ -469,3 +472,30 @@ def decisive_bench_swap(entry, margin):
                         "starter": s["player"], "starter_pts": s["actual"],
                         "pos": s["pos"], "gain": gain}
     return best
+
+
+def lineup_alerts(entry, starting_slots):
+    """Pre-kickoff lineup problems for one team, from week_roster_context output —
+    the things a preview should put in a manager's face before it costs him:
+
+        {"open_slots": 1, "filled": 9, "slots": 10,
+         "best_bench": {"player": "Tony Pollard", "pos": "RB", "proj": 12.6},
+         "zero_proj": ["David Montgomery"]}
+
+    `open_slots` counts empty starting spots (`starting_slots` from the league's
+    roster settings); `best_bench` is the highest-projected bench player with a
+    game this week (only reported alongside an open slot); `zero_proj` lists
+    starters projected for nothing. None when there's nothing to flag."""
+    starters = (entry or {}).get("starters") or []
+    open_slots = max(0, (starting_slots or 0) - len(starters))
+    zero = [s["player"] for s in starters if (s.get("proj") or 0) <= 0]
+    if not open_slots and not zero:
+        return None
+    best = None
+    if open_slots:
+        opts = [b for b in (entry or {}).get("bench") or [] if (b.get("proj") or 0) > 0]
+        top = max(opts, key=lambda b: b["proj"], default=None)
+        if top:
+            best = {"player": top["player"], "pos": top["pos"], "proj": round(top["proj"], 1)}
+    return {"open_slots": open_slots, "filled": len(starters), "slots": starting_slots,
+            "best_bench": best, "zero_proj": zero}

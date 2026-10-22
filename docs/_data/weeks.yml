@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power:
   - rank: 1
@@ -2348,7 +2348,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 132.2
+    home_proj: 132.4
     away_proj: 121.1
   - home_id: lukstein
     home_team: 2x Runner Up
@@ -2366,8 +2366,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 111.0
-    away_proj: 131.5
+    home_proj: 111.2
+    away_proj: 131.6
   - home_id: purpsworth
     home_team: I am dead inside
     home_owner: Trevor
@@ -2385,7 +2385,7 @@
     live: false
     playoff: false
     home_proj: 109.3
-    away_proj: 118.3
+    away_proj: 118.5
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2402,7 +2402,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 111.5
+    home_proj: 112.6
     away_proj: 121.5
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
@@ -2420,8 +2420,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 118.1
-    away_proj: 94.6
+    home_proj: 120.2
+    away_proj: 94.8
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2439,13 +2439,223 @@
     live: false
     playoff: false
     home_proj: 119.7
-    away_proj: 113.5
+    away_proj: 114.3
   highlights: []
-  projections: []
-  projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  projections:
+  - home_id: jackperkins74
+    away_id: kevbots22
+    home_team: Gibbed for your pleasure
+    away_team: Remember the Nice Guys, ChatGPT
+    home_proj: 132.4
+    away_proj: 121.1
+    pickem: false
+    fav_id: jackperkins74
+    fav_team: Gibbed for your pleasure
+    dog_team: Remember the Nice Guys, ChatGPT
+    fav_proj: 132.4
+    dog_proj: 121.1
+    spread: 11.3
+    decided: false
+    result: null
+  - home_id: lukstein
+    away_id: gganoom
+    home_team: 2x Runner Up
+    away_team: One Big Beautiful Dillbot
+    home_proj: 111.2
+    away_proj: 131.6
+    pickem: false
+    fav_id: gganoom
+    fav_team: One Big Beautiful Dillbot
+    dog_team: 2x Runner Up
+    fav_proj: 131.6
+    dog_proj: 111.2
+    spread: 20.4
+    decided: false
+    result: null
+  - home_id: purpsworth
+    away_id: theoceanpulse
+    home_team: I am dead inside
+    away_team: The ChoSimba Ones
+    home_proj: 109.3
+    away_proj: 118.5
+    pickem: false
+    fav_id: theoceanpulse
+    fav_team: The ChoSimba Ones
+    dog_team: I am dead inside
+    fav_proj: 118.5
+    dog_proj: 109.3
+    spread: 9.2
+    decided: false
+    result: null
+  - home_id: sturmanator15
+    away_id: schirmerj
+    home_team: God's Commissioner
+    away_team: Return of the IDP
+    home_proj: 112.6
+    away_proj: 121.5
+    pickem: false
+    fav_id: schirmerj
+    fav_team: Return of the IDP
+    dog_team: God's Commissioner
+    fav_proj: 121.5
+    dog_proj: 112.6
+    spread: 8.9
+    decided: false
+    result: null
+  - home_id: whowonthelastsuperbowl
+    away_id: shawne2520997
+    home_team: Trick or Trick It’s Mike Vick
+    away_team: Swift kick in the Dak
+    home_proj: 120.2
+    away_proj: 94.8
+    pickem: false
+    fav_id: whowonthelastsuperbowl
+    fav_team: Trick or Trick It’s Mike Vick
+    dog_team: Swift kick in the Dak
+    fav_proj: 120.2
+    dog_proj: 94.8
+    spread: 25.4
+    decided: false
+    result: null
+  - home_id: zachzoske
+    away_id: alexandra
+    home_team: Tuten Your Mother, Respectfully
+    away_team: Cornstar
+    home_proj: 119.7
+    away_proj: 114.3
+    pickem: false
+    fav_id: zachzoske
+    fav_team: Tuten Your Mother, Respectfully
+    dog_team: Cornstar
+    fav_proj: 119.7
+    dog_proj: 114.3
+    spread: 5.4
+    decided: false
+    result: null
+  projected_at: Oct 22, 2026 · 11:48 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: true
-  power: []
+  power:
+  - rank: 1
+    fid: sturmanator15
+    team: God's Commissioner
+    owner: Wade
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    record: 4-2
+    movement: 1
+    is_new: false
+    blurb: Up one to the top on a 143-point average over three weeks; the throne apparently
+      comes with nine starters.
+  - rank: 2
+    fid: jackperkins74
+    team: Gibbed for your pleasure
+    owner: Jack
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    record: 4-2
+    movement: -1
+    is_new: false
+    blurb: Down one after losing to the last-place team, and the old name is back,
+      so let's never speak of it.
+  - rank: 3
+    fid: gganoom
+    team: One Big Beautiful Dillbot
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 3-3
+    movement: 1
+    is_new: false
+    blurb: Up one on a 135 average over the last three, which is impressive for a
+      team whose Bijan forgot to show up.
+  - rank: 4
+    fid: schirmerj
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 4-2
+    movement: 1
+    is_new: false
+    blurb: Up one on three straight wins, now without Josh Allen and three others,
+      and starting Wade's old quarterback against Wade.
+  - rank: 5
+    fid: whowonthelastsuperbowl
+    team: Trick or Trick It’s Mike Vick
+    owner: Nate
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    record: 3-3
+    movement: -2
+    is_new: false
+    blurb: Down two after a 67 undid a 179; the season average says contender, the
+      last box score disagrees.
+  - rank: 6
+    fid: zachzoske
+    team: Tuten Your Mother, Respectfully
+    owner: Zach
+    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    record: 4-2
+    movement: 0
+    is_new: false
+    blurb: 'Holds at six while trading like it''s a hobby: three deals in two weeks
+      and the namesake on bye.'
+  - rank: 7
+    fid: kevbots22
+    team: Remember the Nice Guys, ChatGPT
+    owner: Kevin
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    record: 2-3-1
+    movement: 2
+    is_new: false
+    blurb: Up two despite a loss, because Tre Tucker's 24 kept the points honest;
+      Jefferson and Chase Brown are finally back.
+  - rank: 8
+    fid: shawne2520997
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-3
+    movement: -1
+    is_new: false
+    blurb: Down one on a 106 average over three, and this week's backfield is a bye
+      list plus a zero-projection Montgomery.
+  - rank: 9
+    fid: alexandra
+    team: Cornstar
+    owner: Lexi
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    record: 2-4
+    movement: -1
+    is_new: false
+    blurb: Down one after a 1.1-point heartbreaker made it three straight losses;
+      at least Chase has a game this week.
+  - rank: 10
+    fid: theoceanpulse
+    team: The ChoSimba Ones
+    owner: Dillon
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    record: 2-3-1
+    movement: 0
+    is_new: false
+    blurb: Holds at ten, because averaging 106 doesn't climb anywhere; Metcalf and
+      Woody Marks arrive by trade to try.
+  - rank: 11
+    fid: purpsworth
+    team: I am dead inside
+    owner: Trevor
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    record: 2-4
+    movement: 0
+    is_new: false
+    blurb: Still eleventh despite the Monday comeback, and the reward for Jayden Daniels
+      saving the week is Jayden Daniels on bye.
+  - rank: 12
+    fid: lukstein
+    team: 2x Runner Up
+    owner: Luke
+    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    record: 2-4
+    movement: 0
+    is_new: false
+    blurb: Still twelfth, because one 125 doesn't erase five weeks of 74, but the
+      No. 1 team knows Luke's name now.
 2026-8:
   week: 8
   state: future
@@ -2549,7 +2759,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
 2026-9:
@@ -2655,7 +2865,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
 2026-10:
@@ -2761,7 +2971,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
 2026-11:
@@ -2867,7 +3077,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
 2026-12:
@@ -2973,7 +3183,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
 2026-13:
@@ -3079,7 +3289,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
 2026-14:
@@ -3185,6 +3395,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 9:16 AM PDT
+  updated_at: Oct 22, 11:47 AM PDT
   current: false
   power: []
