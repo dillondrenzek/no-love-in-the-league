@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-22T18:46:57+00:00'
+captured_at: '2026-10-22T22:51:18+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -407,7 +407,7 @@ rosters:
     starter: true
     proj: 13.46
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: Jadarian Price
@@ -563,7 +563,7 @@ rosters:
     starter: true
     proj: 20.64
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: LAR
     bye_week: 11
   - player: Mike Washington Jr.
@@ -595,7 +595,7 @@ rosters:
     starter: false
     proj: 8.56
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: Omarion Hampton
@@ -1447,7 +1447,7 @@ rosters:
     starter: true
     proj: 10.69
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DAL
     bye_week: 14
   - player: D'Andre Swift
@@ -1551,7 +1551,7 @@ rosters:
     starter: true
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: HOU
     bye_week: 8
   - player: Devin Singletary
