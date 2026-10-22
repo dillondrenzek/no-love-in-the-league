@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-22T16:16:27+00:00
+updated_at: 2026-10-22T18:47:10+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -126,12 +126,12 @@ matchups:
   - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false }
   - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false }
   - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
-  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false, home_proj: 132.25, away_proj: 121.11 }
-  - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 111.05, away_proj: 131.53 }
-  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 109.29, away_proj: 118.28 }
-  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 111.55, away_proj: 121.45 }
-  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 118.12, away_proj: 94.63 }
-  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false, home_proj: 119.65, away_proj: 113.46 }
+  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false, home_proj: 132.43, away_proj: 121.08 }
+  - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 111.21, away_proj: 131.6 }
+  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 109.29, away_proj: 118.49 }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 112.64, away_proj: 121.46 }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 120.16, away_proj: 94.77 }
+  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false, home_proj: 119.74, away_proj: 114.33 }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
   - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -189,7 +189,7 @@ matchups:
 # FAAB isn't in ESPN's trade feed: to record it, add an asset to that trade
 # by hand — `- {from: <giver fid>, to: <receiver fid>, faab: 5}`. It renders
 # as '$5 FAAB' and re-imports keep it (a trade's on-disk detail is preserved).
-trades_complete: false
+trades_complete: true
 trades_known_for:
   - jackperkins74
   - lukstein
@@ -284,6 +284,18 @@ trades:
   - from: jackperkins74
     to: zachzoske
     label: Garrett Wilson
+- id: 31c2c586-ffc6-46d3-bc13-d70640926e61
+  week: 7
+  teams:
+  - alexandra
+  - zachzoske
+  assets:
+  - from: alexandra
+    to: zachzoske
+    label: DK Metcalf
+  - from: zachzoske
+    to: alexandra
+    label: Tyler Allgeier
 - id: 5e6bfc2d-7ff1-42f8-9d12-dd475a553ed1
   week: 7
   teams:
@@ -302,12 +314,6 @@ trades:
   - from: theoceanpulse
     to: zachzoske
     label: Alvin Kamara
-- id: 31c2c586-ffc6-46d3-bc13-d70640926e61
-  week: 7
-  teams:
-  - zachzoske
-  assets: []
-  complete: false
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
@@ -726,6 +732,9 @@ rosters:
     via: add
     week: 6
     waiver: false
+  - player: Tyler Allgeier
+    via: trade
+    week: 7
   shawne2520997:
   - player: James Cook III
     via: draft
@@ -1385,6 +1394,9 @@ rosters:
     week: 6
     waiver: true
   - player: Alvin Kamara
+    via: trade
+    week: 7
+  - player: DK Metcalf
     via: trade
     week: 7
   - player: Luther Burden III

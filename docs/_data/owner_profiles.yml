@@ -6040,6 +6040,16 @@ zachzoske:
   - year: 2026
     week: 7
     got:
+    - DK Metcalf
+    gave:
+    - Tyler Allgeier
+    with:
+    - id: alexandra
+      name: Lexi
+      team: Cornstar
+  - year: 2026
+    week: 7
+    got:
     - Luther Burden III
     - Alvin Kamara
     gave:
@@ -6049,12 +6059,6 @@ zachzoske:
     - id: theoceanpulse
       name: Dillon
       team: The ChoSimba Ones
-  - year: 2026
-    week: 7
-    accepted: true
-    got: []
-    gave: []
-    with: []
   - year: 2026
     week: 6
     got:
@@ -6434,6 +6438,9 @@ zachzoske:
       week: 6
       waiver: true
     - player: Alvin Kamara
+      via: trade
+      week: 7
+    - player: DK Metcalf
       via: trade
       week: 7
     - player: Luther Burden III
@@ -8725,7 +8732,7 @@ schirmerj:
     sackos: 0
     playoff_apps: 9
     trades: 2
-    trades_known: false
+    trades_known: true
     tx_per_year: 52.7
     tx_known: false
     seasons: 13
@@ -9021,7 +9028,7 @@ schirmerj:
     - id: sturmanator15
       name: Wade
       team: Lamar's Donger
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -10556,7 +10563,7 @@ gganoom:
     sackos: 0
     playoff_apps: 1
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 23.7
     tx_known: true
     seasons: 3
@@ -10686,7 +10693,7 @@ gganoom:
     avg_pf: 124.0
     avg_pa: 123.6
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -11097,7 +11104,7 @@ whowonthelastsuperbowl:
     sackos: 2
     playoff_apps: 4
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 34.6
     tx_known: false
     seasons: 13
@@ -11417,7 +11424,7 @@ whowonthelastsuperbowl:
     - id: lukstein
       name: Luke
       team: Autodraft Monster
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 11
@@ -12904,7 +12911,7 @@ shawne2520997:
     sackos: 2
     playoff_apps: 8
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 49.0
     tx_known: false
     seasons: 11
@@ -13193,7 +13200,7 @@ shawne2520997:
     - id: jackperkins74
       name: Jack
       team: Vladimir Putin
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -14671,7 +14678,7 @@ kevbots22:
     sackos: 0
     playoff_apps: 5
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 30.7
     tx_known: false
     seasons: 13
@@ -14946,7 +14953,7 @@ kevbots22:
     avg_pf: 97.3
     avg_pa: 103.3
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -16204,8 +16211,8 @@ alexandra:
     titles: '0'
     sackos: 0
     playoff_apps: 0
-    trades: 0
-    trades_known: false
+    trades: 1
+    trades_known: true
     tx_per_year: 21.0
     tx_known: true
     seasons: 1
@@ -16276,8 +16283,18 @@ alexandra:
     win_color: '#ee6b3b'
     avg_pf: 105.0
     avg_pa: 87.4
-  trades: []
-  trades_known: false
+  trades:
+  - year: 2026
+    week: 7
+    got:
+    - Tyler Allgeier
+    gave:
+    - DK Metcalf
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mother, Respectfully
+  trades_known: true
   keepers:
   - year: 2026
     round: 7
@@ -16374,6 +16391,9 @@ alexandra:
       via: add
       week: 6
       waiver: false
+    - player: Tyler Allgeier
+      via: trade
+      week: 7
   current_roster:
     year: 2026
     week: 7
@@ -18561,7 +18581,7 @@ purpsworth:
     sackos: 0
     playoff_apps: 4
     trades: 6
-    trades_known: false
+    trades_known: true
     tx_per_year: 41.4
     tx_known: true
     seasons: 8
@@ -18826,7 +18846,7 @@ purpsworth:
     - id: zachzoske
       name: Zach
       team: Eleven In Crocks
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
