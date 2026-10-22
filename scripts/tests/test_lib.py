@@ -1865,6 +1865,28 @@ def test_swing_players_and_decisive_bench_swap():
     assert decisive_bench_swap({}, 1.0) is None
 
 
+def test_lineup_alerts_open_slot_and_zero_projection():
+    from lib.context import week_roster_context, lineup_alerts
+    wr = {"wade": [
+        {"player": "Bryce Young", "pos": "QB", "starter": True, "proj": 19.2},
+        {"player": "Montgomery", "pos": "RB", "starter": True, "proj": 0.0,
+         "injury": "QUESTIONABLE"},
+        {"player": "Pollard", "pos": "RB", "starter": False, "proj": 12.6},
+        {"player": "Roschon", "pos": "RB", "starter": False, "proj": 8.4},
+        {"player": "McConkey", "pos": "WR", "starter": False, "proj": 0.0,
+         "pro_team": "LAC", "bye_week": 7},
+    ]}
+    e = week_roster_context(wr, week=7)["wade"]
+    assert [b["player"] for b in e["bench"]] == ["Pollard", "Roschon"]   # bye excluded
+    al = lineup_alerts(e, 3)
+    assert al["open_slots"] == 1 and al["filled"] == 2
+    assert al["best_bench"] == {"player": "Pollard", "pos": "RB", "proj": 12.6}
+    assert al["zero_proj"] == ["Montgomery"]
+    # Full lineup, everyone projected -> nothing to flag.
+    full = {"starters": [{"player": "A", "proj": 10.0}], "bench": []}
+    assert lineup_alerts(full, 1) is None
+
+
 def run():
     tests =[v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

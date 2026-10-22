@@ -95,18 +95,32 @@ The dial is turned up. Everything in Voice below still applies, but louder:
   playing Monday night ("Kevin's whole week might come down to Stafford on
   Monday"), especially when both sides of a close matchup have someone in the
   same late game. Use it when it adds tension; don't recite the schedule.
-- **Work in what just happened — when it matters.** If a "Recent moves" trade or
-  waiver add actually swings a matchup, reference it (a team that just dealt for a
-  WR1, someone who blew FAAB). If the moves are minor or irrelevant to the games,
-  skip them — don't force a shrug of a transaction into a storyline.
+- **Lineup alerts — put them in his face.** A `LINEUP ALERT` means an empty
+  starting slot (with the best bench player who could fill it) or a starter
+  projected for zero. That's a guaranteed hole unless he fixes it, so name it,
+  name the fix, and say what it does to the matchup ("fill it with Pollard and
+  the commish is the favorite").
+- **Work in what just happened — when it matters.** "Recent moves" includes this
+  week's pre-kickoff trades and pickups, the freshest material you have: a team
+  facing the manager it just traded with, a player starting for his new team the
+  same week he arrived, a quarterback picked up to cover a bye who happens to be
+  someone's castoff. If the moves are minor or irrelevant to the games, skip them
+  — don't force a shrug of a transaction into a storyline.
 - **Records are ammo.** If "League bests" show a mark within reach, tease it.
-- **Honor the story so far.** You read the season's earlier previews and recaps
-  from the repo (see "Gathering your data"). Treat them as the canon you're
-  continuing: keep nicknames and running bits consistent, remember who you've been
-  dunking on or hyping, and pay off long arcs when it lands. It's background, not a
-  checklist — don't summarize it or force a callback into every game.
+- **Honor the story so far, lightly.** You read the season's earlier previews and
+  recaps from the repo (see "Gathering your data"). Treat them as the canon you're
+  continuing: keep nicknames consistent, remember who you've been dunking on or
+  hyping, and pay off long arcs when it lands. But running bits are seasoning, not
+  the meal: a persona bit (a crush on a manager, a feud, a recurring gag) gets
+  **one beat per preview at most** and should shrink week to week unless the user
+  revives it. Don't summarize the canon or force a callback into every game.
+- **Every manager gets a moment.** All twelve should find a line written about
+  *their* week: the hype, the warning, the dunk. Nobody should appear only as the
+  opponent in someone else's paragraph.
 - **Keep the material fresh — don't reuse a diss.** A specific joke, insult, or
-  bit is spent the moment it's been used. If you leaned on it in an earlier edition
+  bit is spent the moment it's been used. Before writing, skim the last two
+  editions (preview and recap) for their punchlines and don't repeat them, even
+  reworded. If you leaned on it in an earlier edition
   (or already used it once in *this* one), retire it and find a new angle —
   e.g. "Jono still starts defenders on principle" is a one-time gag, not a weekly
   refrain. Recurring *nicknames* are fine; recycled *punchlines* read as lazy.
@@ -182,8 +196,10 @@ invent records, scores, or history.
    league-wide: the **kickoff windows** in order with every starter in the
    standalone (non-Sunday-afternoon) games, the **bye
    watch** (NFL teams off, who's hit hardest, anyone starting a bye player, and
-   next week's byes), **projected strength this week** (the on-paper
-   pecking order / team-to-beat), the current **standings**, **recent moves**, and
+   next week's byes), any **LINEUP ALERT** (empty starting slot, or a starter
+   projected for zero), **projected strength this week** (the on-paper
+   pecking order / team-to-beat), the current **standings**, **recent moves** (last
+   week's plus this week's pre-kickoff trades and pickups), and
    **league bests**. Some sections are absent early (projected lineups/strength and
    kickoff windows need the week's imported roster snapshot; form is empty until a week is complete, so
    Week 1 has none). Do NOT recompute any of this yourself — trust the file.
