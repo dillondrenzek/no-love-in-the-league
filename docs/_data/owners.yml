@@ -1840,8 +1840,8 @@ tx_heatmap:
       color: '#fce1b4'
   - id: purpsworth
     name: Trevor
-    total: 329
-    tx_per_year: 41.1
+    total: 331
+    tx_per_year: 41.4
     cells:
     - year: 2018
       count: null
@@ -1868,8 +1868,8 @@ tx_heatmap:
       count: 41
       color: '#fbd495'
     - year: 2026
-      count: 15
-      color: '#fce8c4'
+      count: 17
+      color: '#fce6c1'
   - id: whowonthelastsuperbowl
     name: Nate
     total: 311

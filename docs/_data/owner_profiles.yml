@@ -18562,7 +18562,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: false
-    tx_per_year: 41.1
+    tx_per_year: 41.4
     tx_known: true
     seasons: 8
     best_finish:
@@ -18586,7 +18586,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 11th
     record: 2-4
-    tx: 15
+    tx: 17
     in_progress: true
     pf: 623.2
     pa: 704.9
@@ -20049,7 +20049,7 @@ purpsworth:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Michael Penix Jr.
+    - player: Kirk Cousins
       pos: QB
       cost: R13
       basis: Undrafted

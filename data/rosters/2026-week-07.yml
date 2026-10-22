@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-22T09:00:46+00:00'
+captured_at: '2026-10-22T16:16:23+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -1034,14 +1034,14 @@ rosters:
     injury: ''
     pro_team: NYJ
     bye_week: 13
-  - player: Michael Penix Jr.
+  - player: Kirk Cousins
     pos: QB
     starter: true
-    proj: 15.77
+    proj: 18.19
     actual: null
     injury: ''
-    pro_team: ATL
-    bye_week: 11
+    pro_team: LV
+    bye_week: 13
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
   team_id: 11
   team_name: Trick or Trick It’s Mike Vick
