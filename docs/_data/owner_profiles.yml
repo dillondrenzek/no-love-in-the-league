@@ -10557,7 +10557,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: false
-    tx_per_year: 23.0
+    tx_per_year: 23.7
     tx_known: true
     seasons: 3
     best_finish:
@@ -10581,7 +10581,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 5th
     record: 3-3
-    tx: 8
+    tx: 10
     in_progress: true
     pf: 748.3
     pa: 614.8
@@ -10764,6 +10764,10 @@ gganoom:
     - player: Jaleel McLaughlin
       via: add
       week: 6
+      waiver: false
+    - player: Keon Coleman
+      via: add
+      week: 7
       waiver: false
   - year: 2025
     players:
@@ -11030,11 +11034,6 @@ gganoom:
       cost: R12
       basis: Drafted R14
       ineligible: false
-    - player: Jaleel McLaughlin
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Malik Nabers
       pos: WR
       cost: Ineligible
@@ -11059,6 +11058,11 @@ gganoom:
       pos: WR
       cost: R10
       basis: Drafted R12
+      ineligible: false
+    - player: Keon Coleman
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Brock Bowers
       pos: TE

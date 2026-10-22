@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-21T22:53:30+00:00
+updated_at: 2026-10-22T02:24:56+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -334,7 +334,7 @@ keepers:
 transactions_known: true
 transactions:
   alexandra: { adds: 11, drops: 10, moves: 21 }
-  gganoom: { adds: 5, drops: 3, moves: 8 }
+  gganoom: { adds: 6, drops: 4, moves: 10 }
   jackperkins74: { adds: 45, drops: 32, moves: 77 }
   kevbots22: { adds: 6, drops: 5, moves: 11 }
   lukstein: { adds: 15, drops: 9, moves: 24 }
@@ -631,6 +631,10 @@ rosters:
   - player: Jaleel McLaughlin
     via: add
     week: 6
+    waiver: false
+  - player: Keon Coleman
+    via: add
+    week: 7
     waiver: false
   alexandra:
   - player: Ja'Marr Chase
