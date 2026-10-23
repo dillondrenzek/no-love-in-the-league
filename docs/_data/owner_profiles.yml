@@ -11105,7 +11105,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 34.6
+    tx_per_year: 34.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -11129,7 +11129,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 3-3
-    tx: 15
+    tx: 17
     in_progress: true
     pf: 731.1
     pa: 691.1
@@ -11513,6 +11513,10 @@ whowonthelastsuperbowl:
       week: 6
       waiver: true
     - player: Christian Kirk
+      via: add
+      week: 7
+      waiver: false
+    - player: Ted Hurst III
       via: add
       week: 7
       waiver: false
@@ -12859,15 +12863,15 @@ whowonthelastsuperbowl:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Ted Hurst III
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Sam LaPorta
       pos: TE
       cost: R3
       basis: Drafted R5
-      ineligible: false
-    - player: Pat Freiermuth
-      pos: TE
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Brandon Aubrey
       pos: K
