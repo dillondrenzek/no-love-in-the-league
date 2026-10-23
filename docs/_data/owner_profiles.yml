@@ -12912,7 +12912,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 49.0
+    tx_per_year: 49.2
     tx_known: false
     seasons: 11
     best_finish:
@@ -12936,7 +12936,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 7th
     record: 3-3
-    tx: 26
+    tx: 28
     in_progress: true
     pf: 676.5
     pa: 678.0
@@ -13315,6 +13315,10 @@ shawne2520997:
     - player: Tyler Higbee
       via: add
       week: 6
+      waiver: false
+    - player: Bam Knight
+      via: add
+      week: 7
       waiver: false
     - player: David Montgomery
       via: add
@@ -14607,7 +14611,7 @@ shawne2520997:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Devin Singletary
+    - player: Bam Knight
       pos: RB
       cost: R13
       basis: Undrafted

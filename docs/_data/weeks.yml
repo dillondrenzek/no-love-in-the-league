@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power:
   - rank: 1
@@ -2330,7 +2330,7 @@
       and the champ is next.
 2026-7:
   week: 7
-  state: future
+  state: in_progress
   scoreboard:
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
@@ -2342,12 +2342,17 @@
     away_logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     home_record: 4-2
     away_record: 2-3-1
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 4.0
+    winner_id: null
+    tie: false
+    margin: 4.0
     home_proj: 132.4
     away_proj: 121.1
   - home_id: lukstein
@@ -2378,12 +2383,17 @@
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     home_record: 2-4
     away_record: 2-3-1
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 9
+    away_yet: 8
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 1.1
+    away_score: 19.4
+    winner_id: null
+    tie: false
+    margin: 18.3
     home_proj: 109.3
     away_proj: 118.5
   - home_id: sturmanator15
@@ -2397,12 +2407,12 @@
     home_record: 4-2
     away_record: 4-2
     scored: false
-    home_yet: 9
+    home_yet: 10
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 112.6
+    home_proj: 125.2
     away_proj: 121.5
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
@@ -2414,14 +2424,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     home_record: 3-3
     away_record: 3-3
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 9
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 26.2
+    away_score: 12.8
+    winner_id: null
+    tie: false
+    margin: 13.4
     home_proj: 120.2
-    away_proj: 94.8
+    away_proj: 102.6
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2432,12 +2447,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     home_record: 4-2
     away_record: 2-4
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 9
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 21.7
+    away_score: 7.9
+    winner_id: null
+    tie: false
+    margin: 13.8
     home_proj: 119.7
     away_proj: 114.3
   highlights: []
@@ -2533,7 +2553,7 @@
     decided: false
     result: null
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: true
   power:
   - rank: 1
@@ -2759,7 +2779,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []
 2026-9:
@@ -2865,7 +2885,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []
 2026-10:
@@ -2971,7 +2991,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []
 2026-11:
@@ -3077,7 +3097,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []
 2026-12:
@@ -3183,7 +3203,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []
 2026-13:
@@ -3289,7 +3309,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []
 2026-14:
@@ -3395,6 +3415,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 22, 3:51 PM PDT
+  updated_at: Oct 22, 7:30 PM PDT
   current: false
   power: []

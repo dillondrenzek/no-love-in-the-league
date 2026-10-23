@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-22T22:51:21+00:00
+updated_at: 2026-10-23T02:30:26+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -126,12 +126,12 @@ matchups:
   - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false }
   - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false }
   - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
-  - { week:  7, home: jackperkins74, away: kevbots22, playoff: false, played: false, home_proj: 132.43, away_proj: 121.08 }
+  - { week:  7, home: jackperkins74, away: kevbots22, home_score: 0.0, away_score: 4.0, playoff: false, final: false, home_proj: 132.43, away_proj: 121.08 }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 111.21, away_proj: 131.6 }
-  - { week:  7, home: purpsworth, away: theoceanpulse, playoff: false, played: false, home_proj: 109.29, away_proj: 118.49 }
-  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 112.64, away_proj: 121.46 }
-  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 120.16, away_proj: 94.77 }
-  - { week:  7, home: zachzoske, away: alexandra, playoff: false, played: false, home_proj: 119.74, away_proj: 114.33 }
+  - { week:  7, home: purpsworth, away: theoceanpulse, home_score: 1.1, away_score: 19.4, playoff: false, final: false, home_proj: 109.29, away_proj: 118.49 }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 125.23, away_proj: 121.46 }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 26.2, away_score: 12.8, playoff: false, final: false, home_proj: 120.16, away_proj: 102.58 }
+  - { week:  7, home: zachzoske, away: alexandra, home_score: 21.7, away_score: 7.9, playoff: false, final: false, home_proj: 119.74, away_proj: 114.33 }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
   - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -346,7 +346,7 @@ transactions:
   lukstein: { adds: 15, drops: 9, moves: 24 }
   purpsworth: { adds: 11, drops: 6, moves: 17 }
   schirmerj: { adds: 9, drops: 9, moves: 18 }
-  shawne2520997: { adds: 15, drops: 11, moves: 26 }
+  shawne2520997: { adds: 16, drops: 12, moves: 28 }
   sturmanator15: { adds: 23, drops: 22, moves: 45 }
   theoceanpulse: { adds: 22, drops: 20, moves: 42 }
   whowonthelastsuperbowl: { adds: 9, drops: 6, moves: 15 }
@@ -834,6 +834,10 @@ rosters:
   - player: Tyler Higbee
     via: add
     week: 6
+    waiver: false
+  - player: Bam Knight
+    via: add
+    week: 7
     waiver: false
   - player: David Montgomery
     via: add
