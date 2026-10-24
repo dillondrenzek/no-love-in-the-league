@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-24T08:29:23+00:00'
+captured_at: '2026-10-24T15:02:40+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -493,7 +493,7 @@ rosters:
   - player: C.J. Stroud
     pos: QB
     starter: true
-    proj: 21.44
+    proj: 21.47
     actual: null
     injury: ''
     pro_team: HOU
@@ -1129,7 +1129,7 @@ rosters:
   - player: Texans D/ST
     pos: D/ST
     starter: true
-    proj: 7.2
+    proj: 7.23
     actual: null
     injury: ''
     pro_team: HOU
@@ -1145,7 +1145,7 @@ rosters:
   - player: Seahawks D/ST
     pos: D/ST
     starter: false
-    proj: 4.81
+    proj: 4.82
     actual: null
     injury: ''
     pro_team: SEA
@@ -1385,7 +1385,7 @@ rosters:
   - player: Patrick Mahomes
     pos: QB
     starter: false
-    proj: 16.84
+    proj: 16.83
     actual: null
     injury: ''
     pro_team: KC
