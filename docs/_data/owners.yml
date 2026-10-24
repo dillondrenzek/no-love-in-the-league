@@ -1712,8 +1712,8 @@ tx_heatmap:
       color: '#fbd18d'
   - id: theoceanpulse
     name: Dillon
-    total: 476
-    tx_per_year: 52.9
+    total: 479
+    tx_per_year: 53.2
     cells:
     - year: 2018
       count: 32
@@ -1740,8 +1740,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 42
-      color: '#fbd393'
+      count: 45
+      color: '#fbd18d'
   - id: schirmerj
     name: Jono
     total: 474

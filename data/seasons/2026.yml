@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-24T15:02:44+00:00
+updated_at: 2026-10-24T18:26:33+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -128,7 +128,7 @@ matchups:
   - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
   - { week:  7, home: jackperkins74, away: kevbots22, home_score: 0.0, away_score: -1.0, playoff: false, final: false, home_proj: 111.79, away_proj: 121.11 }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 98.0, away_proj: 133.37 }
-  - { week:  7, home: purpsworth, away: theoceanpulse, home_score: 8.9, away_score: 22.7, playoff: false, final: false, home_proj: 104.04, away_proj: 118.53 }
+  - { week:  7, home: purpsworth, away: theoceanpulse, home_score: 8.9, away_score: 22.7, playoff: false, final: false, home_proj: 104.04, away_proj: 120.16 }
   - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 125.71, away_proj: 122.2 }
   - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 29.4, away_score: 17.0, playoff: false, final: false, home_proj: 120.14, away_proj: 104.35 }
   - { week:  7, home: zachzoske, away: alexandra, home_score: 21.7, away_score: 10.6, playoff: false, final: false, home_proj: 119.66, away_proj: 114.31 }
@@ -348,7 +348,7 @@ transactions:
   schirmerj: { adds: 9, drops: 9, moves: 18 }
   shawne2520997: { adds: 16, drops: 12, moves: 28 }
   sturmanator15: { adds: 23, drops: 22, moves: 45 }
-  theoceanpulse: { adds: 22, drops: 20, moves: 42 }
+  theoceanpulse: { adds: 24, drops: 21, moves: 45 }
   whowonthelastsuperbowl: { adds: 10, drops: 7, moves: 17 }
   zachzoske: { adds: 29, drops: 21, moves: 50 }
 
@@ -1571,6 +1571,14 @@ rosters:
   - player: Woody Marks
     via: trade
     week: 7
+  - player: Chiefs D/ST
+    via: add
+    week: 7
+    waiver: false
+  - player: Konata Mumpfield
+    via: add
+    week: 7
+    waiver: false
   kevbots22:
   - player: Chase Brown
     via: draft

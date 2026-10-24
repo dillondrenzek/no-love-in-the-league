@@ -16508,7 +16508,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 16
     trades_known: true
-    tx_per_year: 52.9
+    tx_per_year: 53.2
     tx_known: false
     seasons: 11
     best_finish:
@@ -16531,7 +16531,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 2-3-1
-    tx: 42
+    tx: 45
     in_progress: true
     pf: 635.5
     pa: 691.9
@@ -17112,6 +17112,14 @@ theoceanpulse:
     - player: Woody Marks
       via: trade
       week: 7
+    - player: Chiefs D/ST
+      via: add
+      week: 7
+      waiver: false
+    - player: Konata Mumpfield
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: Derrick Henry
@@ -18548,6 +18556,11 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Konata Mumpfield
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Colston Loveland
       pos: TE
       cost: R6
@@ -18563,10 +18576,10 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Ravens D/ST
+    - player: Chiefs D/ST
       pos: D/ST
-      cost: R11
-      basis: Drafted R13
+      cost: R13
+      basis: Undrafted
       ineligible: false
 purpsworth:
   name: Trevor

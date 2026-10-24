@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-24T15:02:40+00:00'
+captured_at: '2026-10-24T18:26:29+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -1266,14 +1266,6 @@ rosters:
     injury: QUESTIONABLE
     pro_team: NYJ
     bye_week: 13
-  - player: Ravens D/ST
-    pos: D/ST
-    starter: true
-    proj: 5.18
-    actual: null
-    injury: ''
-    pro_team: BAL
-    bye_week: 13
   - player: Ja'Kobi Lane
     pos: WR
     starter: false
@@ -1298,6 +1290,22 @@ rosters:
     injury: ''
     pro_team: HOU
     bye_week: 8
+  - player: Chiefs D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.81
+    actual: null
+    injury: ''
+    pro_team: KC
+    bye_week: 5
+  - player: Konata Mumpfield
+    pos: WR
+    starter: false
+    proj: 8.19
+    actual: null
+    injury: ''
+    pro_team: LAR
+    bye_week: 11
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
