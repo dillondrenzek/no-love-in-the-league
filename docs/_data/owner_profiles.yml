@@ -20180,7 +20180,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 46.7
+    tx_per_year: 46.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -20203,7 +20203,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-4
-    tx: 24
+    tx: 26
     in_progress: true
     pf: 496.5
     pa: 730.9
@@ -22055,11 +22055,6 @@ lukstein:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Tank Bigsby
-      pos: RB
-      cost: R9
-      basis: Drafted R11
-      ineligible: false
     - player: Dameon Pierce
       pos: RB
       cost: R13
@@ -22094,6 +22089,11 @@ lukstein:
       pos: WR
       cost: R13
       basis: Drafted R15
+      ineligible: false
+    - player: Darius Cooper
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Malik Washington
       pos: WR

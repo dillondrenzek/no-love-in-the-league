@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-24T02:28:28+00:00'
+captured_at: '2026-10-24T08:29:23+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -244,7 +244,7 @@ rosters:
     bye_week: 10
   - player: Alvin Kamara
     pos: RB
-    starter: false
+    starter: true
     proj: 6.63
     actual: null
     injury: QUESTIONABLE
@@ -442,14 +442,6 @@ rosters:
     injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
-  - player: Tank Bigsby
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: INJURY_RESERVE
-    pro_team: PHI
-    bye_week: 10
   - player: Kyle Pitts Sr.
     pos: TE
     starter: true
@@ -522,6 +514,14 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
+  - player: Darius Cooper
+    pos: WR
+    starter: false
+    proj: 8.84
+    actual: null
+    injury: ''
+    pro_team: PHI
+    bye_week: 10
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
   team_name: Gibbed for your pleasure
