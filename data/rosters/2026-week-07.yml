@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-23T22:44:37+00:00'
+captured_at: '2026-10-24T02:28:28+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -244,7 +244,7 @@ rosters:
     bye_week: 10
   - player: Alvin Kamara
     pos: RB
-    starter: true
+    starter: false
     proj: 6.63
     actual: null
     injury: QUESTIONABLE
