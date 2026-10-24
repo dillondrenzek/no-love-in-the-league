@@ -1712,8 +1712,8 @@ tx_heatmap:
       color: '#fbd18d'
   - id: theoceanpulse
     name: Dillon
-    total: 479
-    tx_per_year: 53.2
+    total: 481
+    tx_per_year: 53.4
     cells:
     - year: 2018
       count: 32
@@ -1740,8 +1740,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 45
-      color: '#fbd18d'
+      count: 47
+      color: '#fbcf8a'
   - id: schirmerj
     name: Jono
     total: 474
@@ -1872,8 +1872,8 @@ tx_heatmap:
       color: '#fce6c1'
   - id: whowonthelastsuperbowl
     name: Nate
-    total: 313
-    tx_per_year: 34.8
+    total: 315
+    tx_per_year: 35.0
     cells:
     - year: 2018
       count: 18
@@ -1900,8 +1900,8 @@ tx_heatmap:
       count: 31
       color: '#fbdba7'
     - year: 2026
-      count: 17
-      color: '#fce6c1'
+      count: 19
+      color: '#fce5bd'
   - id: kevbots22
     name: Kevin
     total: 276

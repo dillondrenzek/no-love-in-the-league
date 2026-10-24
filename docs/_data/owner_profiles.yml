@@ -11105,7 +11105,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 34.8
+    tx_per_year: 35.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -11129,7 +11129,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 3-3
-    tx: 17
+    tx: 19
     in_progress: true
     pf: 731.1
     pa: 691.1
@@ -11512,6 +11512,10 @@ whowonthelastsuperbowl:
       via: add
       week: 6
       waiver: true
+    - player: Chris Godwin Jr.
+      via: add
+      week: 7
+      waiver: false
     - player: Christian Kirk
       via: add
       week: 7
@@ -12848,10 +12852,10 @@ whowonthelastsuperbowl:
       cost: R1
       basis: Drafted R3
       ineligible: false
-    - player: Courtland Sutton
+    - player: Chris Godwin Jr.
       pos: WR
-      cost: R4
-      basis: Drafted R6
+      cost: R5
+      basis: Drafted R7
       ineligible: false
     - player: Stefon Diggs
       pos: WR
@@ -16508,7 +16512,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 16
     trades_known: true
-    tx_per_year: 53.2
+    tx_per_year: 53.4
     tx_known: false
     seasons: 11
     best_finish:
@@ -16531,7 +16535,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 10th
     record: 2-3-1
-    tx: 45
+    tx: 47
     in_progress: true
     pf: 635.5
     pa: 691.9
@@ -18546,17 +18550,17 @@ theoceanpulse:
       cost: R4
       basis: Drafted R6
       ineligible: false
+    - player: Tank Dell
+      pos: WR
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
     - player: Ja'Kobi Lane
       pos: WR
       cost: R12
       basis: Drafted R14
       ineligible: false
     - player: Devaughn Vele
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Konata Mumpfield
       pos: WR
       cost: R13
       basis: Undrafted
