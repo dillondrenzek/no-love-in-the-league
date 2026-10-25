@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-25T02:15:27+00:00
+updated_at: 2026-10-25T08:48:50+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -126,10 +126,10 @@ matchups:
   - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false }
   - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false }
   - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
-  - { week:  7, home: jackperkins74, away: kevbots22, home_score: 0.0, away_score: -1.0, playoff: false, final: false, home_proj: 111.62, away_proj: 121.13 }
+  - { week:  7, home: jackperkins74, away: kevbots22, home_score: 0.0, away_score: -1.0, playoff: false, final: false, home_proj: 120.41, away_proj: 121.13 }
   - { week:  7, home: lukstein, away: gganoom, playoff: false, played: false, home_proj: 106.1, away_proj: 133.38 }
   - { week:  7, home: purpsworth, away: theoceanpulse, home_score: 8.9, away_score: 22.7, playoff: false, final: false, home_proj: 104.11, away_proj: 120.49 }
-  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 124.4, away_proj: 122.2 }
+  - { week:  7, home: sturmanator15, away: schirmerj, playoff: false, played: false, home_proj: 125.46, away_proj: 122.2 }
   - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 29.4, away_score: 17.0, playoff: false, final: false, home_proj: 119.12, away_proj: 104.22 }
   - { week:  7, home: zachzoske, away: alexandra, home_score: 21.7, away_score: 10.6, playoff: false, final: false, home_proj: 119.49, away_proj: 113.8 }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
@@ -347,10 +347,10 @@ transactions:
   purpsworth: { adds: 11, drops: 6, moves: 17 }
   schirmerj: { adds: 9, drops: 9, moves: 18 }
   shawne2520997: { adds: 16, drops: 12, moves: 28 }
-  sturmanator15: { adds: 23, drops: 22, moves: 45 }
+  sturmanator15: { adds: 24, drops: 23, moves: 47 }
   theoceanpulse: { adds: 25, drops: 22, moves: 47 }
   whowonthelastsuperbowl: { adds: 11, drops: 8, moves: 19 }
-  zachzoske: { adds: 29, drops: 21, moves: 50 }
+  zachzoske: { adds: 30, drops: 22, moves: 52 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -1242,6 +1242,10 @@ rosters:
     via: add
     week: 7
     waiver: true
+  - player: Konata Mumpfield
+    via: add
+    week: 7
+    waiver: false
   - player: Ryan Flournoy
     via: add
     week: 7
@@ -1414,6 +1418,10 @@ rosters:
     via: add
     week: 7
     waiver: true
+  - player: Seth McGowan
+    via: add
+    week: 7
+    waiver: false
   theoceanpulse:
   - player: Omarion Hampton
     via: draft

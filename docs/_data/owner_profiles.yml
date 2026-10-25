@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 91.3
+    tx_per_year: 91.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 4-2
-    tx: 45
+    tx: 47
     in_progress: true
     pf: 825.2
     pa: 772.2
@@ -507,6 +507,10 @@ sturmanator15:
       via: add
       week: 7
       waiver: true
+    - player: Konata Mumpfield
+      via: add
+      week: 7
+      waiver: false
     - player: Ryan Flournoy
       via: add
       week: 7
@@ -2558,7 +2562,7 @@ sturmanator15:
       cost: R11
       basis: Drafted R13
       ineligible: false
-    - player: Ryan Flournoy
+    - player: Konata Mumpfield
       pos: WR
       cost: R13
       basis: Undrafted
@@ -5771,7 +5775,7 @@ zachzoske:
     playoff_apps: 5
     trades: 20
     trades_known: true
-    tx_per_year: 107.1
+    tx_per_year: 107.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -5794,7 +5798,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 3rd
     record: 4-2
-    tx: 50
+    tx: 52
     in_progress: true
     pf: 734.7
     pa: 666.1
@@ -6454,6 +6458,10 @@ zachzoske:
       via: add
       week: 7
       waiver: true
+    - player: Seth McGowan
+      via: add
+      week: 7
+      waiver: false
   - year: 2025
     players:
     - player: CeeDee Lamb
@@ -8658,7 +8666,7 @@ zachzoske:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Samaje Perine
+    - player: Seth McGowan
       pos: RB
       cost: R13
       basis: Undrafted

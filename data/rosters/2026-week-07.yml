@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-25T02:15:24+00:00'
+captured_at: '2026-10-25T08:48:47+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -126,14 +126,14 @@ rosters:
     injury: ''
     pro_team: CLE
     bye_week: 11
-  - player: Ryan Flournoy
+  - player: Konata Mumpfield
     pos: WR
     starter: true
-    proj: 7.13
+    proj: 8.19
     actual: null
     injury: ''
-    pro_team: DAL
-    bye_week: 14
+    pro_team: LAR
+    bye_week: 11
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
@@ -250,14 +250,6 @@ rosters:
     injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
-  - player: Samaje Perine
-    pos: RB
-    starter: false
-    proj: 5.46
-    actual: null
-    injury: ''
-    pro_team: CIN
-    bye_week: 6
   - player: Chase McLaughlin
     pos: K
     starter: true
@@ -266,6 +258,14 @@ rosters:
     injury: ''
     pro_team: TB
     bye_week: 10
+  - player: Seth McGowan
+    pos: RB
+    starter: false
+    proj: 3.5
+    actual: null
+    injury: ''
+    pro_team: IND
+    bye_week: 13
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -560,7 +560,7 @@ rosters:
     bye_week: 7
   - player: Puka Nacua
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: QUESTIONABLE
@@ -592,7 +592,7 @@ rosters:
     bye_week: 13
   - player: Dallas Goedert
     pos: TE
-    starter: false
+    starter: true
     proj: 8.79
     actual: null
     injury: QUESTIONABLE
