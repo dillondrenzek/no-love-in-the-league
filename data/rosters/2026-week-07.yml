@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-25T08:48:47+00:00'
+captured_at: '2026-10-25T15:14:44+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -57,7 +57,7 @@ rosters:
   - player: Blake Corum
     pos: RB
     starter: true
-    proj: 9.78
+    proj: 9.21
     actual: null
     injury: ''
     pro_team: LAR
@@ -90,7 +90,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: 'NO'
     bye_week: 8
@@ -106,7 +106,7 @@ rosters:
     pos: K
     starter: true
     proj: 11.1
-    actual: null
+    actual: 8.0
     injury: ''
     pro_team: PIT
     bye_week: 9
@@ -129,7 +129,7 @@ rosters:
   - player: Konata Mumpfield
     pos: WR
     starter: true
-    proj: 8.19
+    proj: 6.22
     actual: null
     injury: ''
     pro_team: LAR
@@ -149,7 +149,7 @@ rosters:
   - player: Cam Skattebo
     pos: RB
     starter: false
-    proj: 6.15
+    proj: 7.31
     actual: null
     injury: ''
     pro_team: NYG
@@ -173,7 +173,7 @@ rosters:
   - player: Isaiah Likely
     pos: TE
     starter: true
-    proj: 11.49
+    proj: 11.5
     actual: null
     injury: ''
     pro_team: NYG
@@ -206,7 +206,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.8
-    actual: null
+    actual: 3.6
     injury: ''
     pro_team: PIT
     bye_week: 9
@@ -246,7 +246,7 @@ rosters:
     pos: RB
     starter: true
     proj: 6.63
-    actual: null
+    actual: 3.5
     injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
@@ -329,7 +329,7 @@ rosters:
   - player: Kyren Williams
     pos: RB
     starter: true
-    proj: 18.26
+    proj: 17.58
     actual: null
     injury: ''
     pro_team: LAR
@@ -378,7 +378,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.72
-    actual: null
+    actual: 11.4
     injury: ''
     pro_team: PIT
     bye_week: 9
@@ -397,7 +397,7 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 13.9
+    proj: 13.89
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -445,7 +445,7 @@ rosters:
   - player: Kyle Pitts Sr.
     pos: TE
     starter: true
-    proj: 7.9
+    proj: 7.85
     actual: null
     injury: ''
     pro_team: ATL
@@ -509,7 +509,7 @@ rosters:
   - player: Tyrone Tracy Jr.
     pos: RB
     starter: false
-    proj: 5.53
+    proj: 4.8
     actual: null
     injury: ''
     pro_team: NYG
@@ -538,7 +538,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: 'NO'
     bye_week: 8
@@ -560,8 +560,8 @@ rosters:
     bye_week: 7
   - player: Puka Nacua
     pos: WR
-    starter: false
-    proj: 0.0
+    starter: true
+    proj: 18.78
     actual: null
     injury: QUESTIONABLE
     pro_team: LAR
@@ -585,15 +585,15 @@ rosters:
   - player: Braelon Allen
     pos: RB
     starter: true
-    proj: 8.31
+    proj: 13.64
     actual: null
     injury: ''
     pro_team: NYJ
     bye_week: 13
   - player: Dallas Goedert
     pos: TE
-    starter: true
-    proj: 8.79
+    starter: false
+    proj: 8.78
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -694,7 +694,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.6
-    actual: null
+    actual: 4.1
     injury: ''
     pro_team: 'NO'
     bye_week: 8
@@ -733,7 +733,7 @@ rosters:
   - player: Matthew Stafford
     pos: QB
     starter: true
-    proj: 20.53
+    proj: 20.52
     actual: null
     injury: ''
     pro_team: LAR
@@ -905,7 +905,7 @@ rosters:
   - player: Tyler Allgeier
     pos: RB
     starter: false
-    proj: 10.0
+    proj: 9.99
     actual: null
     injury: ''
     pro_team: ARI
@@ -950,7 +950,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.02
-    actual: null
+    actual: 6.1
     injury: QUESTIONABLE
     pro_team: PIT
     bye_week: 9
@@ -989,7 +989,7 @@ rosters:
   - player: Drake London
     pos: WR
     starter: true
-    proj: 14.08
+    proj: 13.99
     actual: null
     injury: ''
     pro_team: ATL
@@ -998,7 +998,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.44
-    actual: null
+    actual: 7.0
     injury: ''
     pro_team: PIT
     bye_week: 9
@@ -1014,7 +1014,7 @@ rosters:
     pos: RB
     starter: true
     proj: 8.73
-    actual: null
+    actual: 2.1
     injury: ''
     pro_team: 'NO'
     bye_week: 8
@@ -1029,7 +1029,7 @@ rosters:
   - player: Omar Cooper Jr.
     pos: WR
     starter: true
-    proj: 6.12
+    proj: 6.61
     actual: null
     injury: ''
     pro_team: NYJ
@@ -1130,7 +1130,7 @@ rosters:
     pos: QB
     starter: false
     proj: 16.41
-    actual: null
+    actual: 11.1
     injury: ''
     pro_team: 'NO'
     bye_week: 8
@@ -1238,7 +1238,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.21
-    actual: null
+    actual: 11.0
     injury: ''
     pro_team: 'NO'
     bye_week: 8
@@ -1261,7 +1261,7 @@ rosters:
   - player: Breece Hall
     pos: RB
     starter: true
-    proj: 13.07
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: NYJ
@@ -1278,7 +1278,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.56
-    actual: null
+    actual: 6.6
     injury: ''
     pro_team: PIT
     bye_week: 9
@@ -1313,7 +1313,7 @@ rosters:
   - player: Bijan Robinson
     pos: RB
     starter: true
-    proj: 19.29
+    proj: 19.26
     actual: null
     injury: ''
     pro_team: ATL
@@ -1321,7 +1321,7 @@ rosters:
   - player: Malik Nabers
     pos: WR
     starter: true
-    proj: 14.56
+    proj: 14.57
     actual: null
     injury: ''
     pro_team: NYG
@@ -1362,7 +1362,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.99
-    actual: null
+    actual: 12.9
     injury: ''
     pro_team: PIT
     bye_week: 9
@@ -1409,7 +1409,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 6.32
+    proj: 6.36
     actual: null
     injury: ''
     pro_team: DEN
@@ -1502,7 +1502,7 @@ rosters:
     pos: TE
     starter: true
     proj: 6.92
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: 'NO'
     bye_week: 8
@@ -1533,7 +1533,7 @@ rosters:
   - player: Adonai Mitchell
     pos: WR
     starter: false
-    proj: 6.24
+    proj: 6.7
     actual: null
     injury: QUESTIONABLE
     pro_team: NYJ
@@ -1541,19 +1541,11 @@ rosters:
   - player: Tyler Higbee
     pos: TE
     starter: true
-    proj: 6.52
+    proj: 5.77
     actual: null
     injury: ''
     pro_team: LAR
     bye_week: 11
-  - player: Austin Ekeler
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: WSH
-    bye_week: 7
   - player: David Montgomery
     pos: RB
     starter: false

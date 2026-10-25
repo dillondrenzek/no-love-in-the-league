@@ -14622,11 +14622,6 @@ shawne2520997:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: Austin Ekeler
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Bam Knight
       pos: RB
       cost: R13
