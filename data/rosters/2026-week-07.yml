@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-24T22:05:57+00:00'
+captured_at: '2026-10-25T02:15:24+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -129,7 +129,7 @@ rosters:
   - player: Ryan Flournoy
     pos: WR
     starter: true
-    proj: 7.09
+    proj: 7.13
     actual: null
     injury: ''
     pro_team: DAL
@@ -397,7 +397,7 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 13.91
+    proj: 13.9
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -453,7 +453,7 @@ rosters:
   - player: Eagles D/ST
     pos: D/ST
     starter: true
-    proj: 4.41
+    proj: 4.35
     actual: null
     injury: ''
     pro_team: PHI
@@ -485,7 +485,7 @@ rosters:
   - player: Dameon Pierce
     pos: RB
     starter: false
-    proj: 5.84
+    proj: 5.83
     actual: null
     injury: ''
     pro_team: PHI
@@ -493,7 +493,7 @@ rosters:
   - player: C.J. Stroud
     pos: QB
     starter: true
-    proj: 21.53
+    proj: 21.51
     actual: null
     injury: ''
     pro_team: HOU
@@ -501,7 +501,7 @@ rosters:
   - player: Jaylin Noel
     pos: WR
     starter: true
-    proj: 8.19
+    proj: 8.17
     actual: null
     injury: ''
     pro_team: HOU
@@ -517,7 +517,7 @@ rosters:
   - player: Darius Cooper
     pos: WR
     starter: true
-    proj: 8.24
+    proj: 8.2
     actual: null
     injury: ''
     pro_team: PHI
@@ -593,7 +593,7 @@ rosters:
   - player: Dallas Goedert
     pos: TE
     starter: false
-    proj: 8.81
+    proj: 8.79
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -609,7 +609,7 @@ rosters:
   - player: Marvin Harrison Jr.
     pos: WR
     starter: true
-    proj: 6.25
+    proj: 6.23
     actual: null
     injury: ''
     pro_team: HOU
@@ -825,7 +825,7 @@ rosters:
   - player: Javonte Williams
     pos: RB
     starter: true
-    proj: 15.38
+    proj: 15.57
     actual: null
     injury: ''
     pro_team: DAL
@@ -997,7 +997,7 @@ rosters:
   - player: Steelers D/ST
     pos: D/ST
     starter: true
-    proj: 6.37
+    proj: 6.44
     actual: null
     injury: ''
     pro_team: PIT
@@ -1057,7 +1057,7 @@ rosters:
   - player: CeeDee Lamb
     pos: WR
     starter: true
-    proj: 14.97
+    proj: 15.03
     actual: null
     injury: ''
     pro_team: DAL
@@ -1105,7 +1105,7 @@ rosters:
   - player: Brandon Aubrey
     pos: K
     starter: true
-    proj: 7.96
+    proj: 7.95
     actual: null
     injury: ''
     pro_team: DAL
@@ -1129,7 +1129,7 @@ rosters:
   - player: Tyler Shough
     pos: QB
     starter: false
-    proj: 16.4
+    proj: 16.41
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1285,7 +1285,7 @@ rosters:
   - player: Woody Marks
     pos: RB
     starter: true
-    proj: 12.74
+    proj: 13.07
     actual: null
     injury: ''
     pro_team: HOU
@@ -1301,7 +1301,7 @@ rosters:
   - player: Tank Dell
     pos: WR
     starter: false
-    proj: 1.43
+    proj: 1.91
     actual: null
     injury: ''
     pro_team: HOU
@@ -1385,7 +1385,7 @@ rosters:
   - player: Brock Purdy
     pos: QB
     starter: true
-    proj: 22.33
+    proj: 22.34
     actual: null
     injury: ''
     pro_team: SF
@@ -1453,7 +1453,7 @@ rosters:
   - player: George Pickens
     pos: WR
     starter: true
-    proj: 10.64
+    proj: 10.69
     actual: null
     injury: QUESTIONABLE
     pro_team: DAL
@@ -1469,7 +1469,7 @@ rosters:
   - player: Nico Collins
     pos: WR
     starter: true
-    proj: 14.05
+    proj: 14.01
     actual: null
     injury: ''
     pro_team: HOU
