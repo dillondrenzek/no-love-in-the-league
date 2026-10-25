@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-25T15:14:47+00:00
+updated_at: 2026-10-25T18:36:49+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -126,12 +126,12 @@ matchups:
   - { week:  6, home: sturmanator15, away: kevbots22, home_score: 141.1, away_score: 118.8, playoff: false }
   - { week:  6, home: whowonthelastsuperbowl, away: gganoom, home_score: 67.1, away_score: 106.4, playoff: false }
   - { week:  6, home: zachzoske, away: shawne2520997, home_score: 123.4, away_score: 94.3, playoff: false }
-  - { week:  7, home: jackperkins74, away: kevbots22, home_score: 0.0, away_score: 3.1, playoff: false, final: false, home_proj: 135.73, away_proj: 121.12 }
-  - { week:  7, home: lukstein, away: gganoom, home_score: 0.0, away_score: 12.9, playoff: false, final: false, home_proj: 106.04, away_proj: 133.4 }
-  - { week:  7, home: purpsworth, away: theoceanpulse, home_score: 18.0, away_score: 40.3, playoff: false, final: false, home_proj: 104.51, away_proj: 107.42 }
-  - { week:  7, home: sturmanator15, away: schirmerj, home_score: 8.0, away_score: 11.4, playoff: false, final: false, home_proj: 122.92, away_proj: 121.52 }
-  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 29.4, away_score: 17.0, playoff: false, final: false, home_proj: 119.12, away_proj: 103.47 }
-  - { week:  7, home: zachzoske, away: alexandra, home_score: 28.8, away_score: 10.6, playoff: false, final: false, home_proj: 119.5, away_proj: 113.8 }
+  - { week:  7, home: jackperkins74, away: kevbots22, home_score: 45.5, away_score: 26.1, playoff: false, final: false, home_proj: 135.73, away_proj: 121.4 }
+  - { week:  7, home: lukstein, away: gganoom, home_score: 19.9, away_score: 66.5, playoff: false, final: false, home_proj: 106.09, away_proj: 133.36 }
+  - { week:  7, home: purpsworth, away: theoceanpulse, home_score: 57.0, away_score: 54.6, playoff: false, final: false, home_proj: 104.51, away_proj: 117.26 }
+  - { week:  7, home: sturmanator15, away: schirmerj, home_score: 65.0, away_score: 40.1, playoff: false, final: false, home_proj: 123.34, away_proj: 121.39 }
+  - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 62.4, away_score: 19.6, playoff: false, final: false, home_proj: 119.12, away_proj: 103.47 }
+  - { week:  7, home: zachzoske, away: alexandra, home_score: 48.8, away_score: 31.5, playoff: false, final: false, home_proj: 119.49, away_proj: 115.67 }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false }
   - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false }
@@ -346,7 +346,7 @@ transactions:
   lukstein: { adds: 16, drops: 10, moves: 26 }
   purpsworth: { adds: 11, drops: 6, moves: 17 }
   schirmerj: { adds: 9, drops: 9, moves: 18 }
-  shawne2520997: { adds: 16, drops: 12, moves: 28 }
+  shawne2520997: { adds: 17, drops: 12, moves: 29 }
   sturmanator15: { adds: 24, drops: 23, moves: 47 }
   theoceanpulse: { adds: 25, drops: 22, moves: 47 }
   whowonthelastsuperbowl: { adds: 11, drops: 8, moves: 19 }
@@ -844,6 +844,10 @@ rosters:
     week: 7
     waiver: true
   - player: Devin Singletary
+    via: add
+    week: 7
+    waiver: false
+  - player: Kendrick Bourne
     via: add
     week: 7
     waiver: false

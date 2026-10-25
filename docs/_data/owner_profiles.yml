@@ -12928,7 +12928,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 49.2
+    tx_per_year: 49.3
     tx_known: false
     seasons: 11
     best_finish:
@@ -12952,7 +12952,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 7th
     record: 3-3
-    tx: 28
+    tx: 29
     in_progress: true
     pf: 676.5
     pa: 678.0
@@ -13341,6 +13341,10 @@ shawne2520997:
       week: 7
       waiver: true
     - player: Devin Singletary
+      via: add
+      week: 7
+      waiver: false
+    - player: Kendrick Bourne
       via: add
       week: 7
       waiver: false
@@ -14648,6 +14652,11 @@ shawne2520997:
       basis: Drafted R9
       ineligible: false
     - player: Adonai Mitchell
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Kendrick Bourne
       pos: WR
       cost: R13
       basis: Undrafted
