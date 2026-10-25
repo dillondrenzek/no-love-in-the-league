@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-25T18:36:44+00:00'
+captured_at: '2026-10-25T22:09:52+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -34,7 +34,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.0
-    actual: 21.0
+    actual: 23.7
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -50,7 +50,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.92
-    actual: 21.2
+    actual: 35.0
     injury: ''
     pro_team: TEN
     bye_week: 9
@@ -58,7 +58,7 @@ rosters:
     pos: RB
     starter: true
     proj: 9.21
-    actual: null
+    actual: 5.8
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -66,7 +66,7 @@ rosters:
     pos: TE
     starter: true
     proj: 12.34
-    actual: null
+    actual: 5.7
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -82,7 +82,7 @@ rosters:
     pos: RB
     starter: false
     proj: 2.17
-    actual: null
+    actual: 3.0
     injury: QUESTIONABLE
     pro_team: DEN
     bye_week: 10
@@ -98,7 +98,7 @@ rosters:
     pos: QB
     starter: true
     proj: 19.25
-    actual: 4.8
+    actual: 6.3
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -122,7 +122,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.31
-    actual: 7.0
+    actual: 5.0
     injury: ''
     pro_team: CLE
     bye_week: 11
@@ -130,7 +130,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.22
-    actual: null
+    actual: 2.0
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -142,7 +142,7 @@ rosters:
     pos: WR
     starter: true
     proj: 15.9
-    actual: null
+    actual: 17.0
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -150,15 +150,15 @@ rosters:
     pos: RB
     starter: false
     proj: 7.32
-    actual: 2.9
-    injury: ''
+    actual: 18.6
+    injury: QUESTIONABLE
     pro_team: NYG
     bye_week: 8
   - player: Joe Burrow
     pos: QB
     starter: true
     proj: 21.36
-    actual: 3.2
+    actual: 32.8
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -174,7 +174,7 @@ rosters:
     pos: TE
     starter: true
     proj: 11.5
-    actual: 0.0
+    actual: 2.2
     injury: ''
     pro_team: NYG
     bye_week: 8
@@ -182,7 +182,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.16
-    actual: null
+    actual: 7.1
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -190,7 +190,7 @@ rosters:
     pos: WR
     starter: false
     proj: 6.43
-    actual: 1.0
+    actual: 2.8
     injury: ''
     pro_team: IND
     bye_week: 13
@@ -213,16 +213,16 @@ rosters:
   - player: Garrett Wilson
     pos: WR
     starter: true
-    proj: 12.23
-    actual: 0.0
+    proj: 12.24
+    actual: 3.6
     injury: ''
     pro_team: NYJ
     bye_week: 13
   - player: Jets D/ST
     pos: D/ST
     starter: true
-    proj: 7.29
-    actual: 3.0
+    proj: 7.16
+    actual: 0.0
     injury: ''
     pro_team: NYJ
     bye_week: 13
@@ -254,7 +254,7 @@ rosters:
     pos: K
     starter: true
     proj: 8.4
-    actual: 7.0
+    actual: 12.0
     injury: ''
     pro_team: TB
     bye_week: 10
@@ -262,7 +262,7 @@ rosters:
     pos: RB
     starter: false
     proj: 3.5
-    actual: 3.0
+    actual: 7.8
     injury: ''
     pro_team: IND
     bye_week: 13
@@ -274,7 +274,7 @@ rosters:
     pos: RB
     starter: true
     proj: 19.28
-    actual: 14.9
+    actual: 19.0
     injury: QUESTIONABLE
     pro_team: SF
     bye_week: 8
@@ -290,7 +290,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.93
-    actual: null
+    actual: 3.6
     injury: QUESTIONABLE
     pro_team: DEN
     bye_week: 10
@@ -298,7 +298,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.95
-    actual: null
+    actual: 12.6
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -306,7 +306,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.9
-    actual: 4.2
+    actual: 7.4
     injury: ''
     pro_team: TEN
     bye_week: 9
@@ -314,7 +314,7 @@ rosters:
     pos: TE
     starter: true
     proj: 9.64
-    actual: null
+    actual: 11.8
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -330,7 +330,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.58
-    actual: null
+    actual: 14.3
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -386,7 +386,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.2
-    actual: 7.0
+    actual: 0.0
     injury: ''
     pro_team: TEN
     bye_week: 9
@@ -430,7 +430,7 @@ rosters:
     pos: RB
     starter: true
     proj: 9.5
-    actual: null
+    actual: 12.9
     injury: ''
     pro_team: DEN
     bye_week: 10
@@ -438,7 +438,7 @@ rosters:
     pos: WR
     starter: true
     proj: 14.36
-    actual: null
+    actual: 5.1
     injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
@@ -446,7 +446,7 @@ rosters:
     pos: TE
     starter: true
     proj: 7.85
-    actual: 3.0
+    actual: 10.7
     injury: ''
     pro_team: ATL
     bye_week: 11
@@ -478,7 +478,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.38
-    actual: null
+    actual: 5.0
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -494,7 +494,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.51
-    actual: 11.2
+    actual: 18.4
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -503,7 +503,7 @@ rosters:
     starter: true
     proj: 8.17
     actual: 0.7
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: HOU
     bye_week: 8
   - player: Tyrone Tracy Jr.
@@ -530,7 +530,7 @@ rosters:
     pos: RB
     starter: true
     proj: 23.49
-    actual: null
+    actual: 5.7
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -562,7 +562,7 @@ rosters:
     pos: WR
     starter: true
     proj: 18.78
-    actual: null
+    actual: 16.5
     injury: QUESTIONABLE
     pro_team: LAR
     bye_week: 11
@@ -570,7 +570,7 @@ rosters:
     pos: RB
     starter: false
     proj: 5.5
-    actual: null
+    actual: 1.9
     injury: QUESTIONABLE
     pro_team: LV
     bye_week: 13
@@ -578,15 +578,15 @@ rosters:
     pos: D/ST
     starter: true
     proj: 8.13
-    actual: 10.0
+    actual: 11.0
     injury: ''
     pro_team: MIN
     bye_week: 6
   - player: Braelon Allen
     pos: RB
     starter: true
-    proj: 13.64
-    actual: 9.3
+    proj: 13.63
+    actual: 16.4
     injury: ''
     pro_team: NYJ
     bye_week: 13
@@ -618,7 +618,7 @@ rosters:
     pos: WR
     starter: true
     proj: 11.62
-    actual: 0.0
+    actual: 23.8
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -626,7 +626,7 @@ rosters:
     pos: TE
     starter: true
     proj: 13.94
-    actual: 4.7
+    actual: 10.8
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -634,7 +634,7 @@ rosters:
     pos: K
     starter: true
     proj: 11.33
-    actual: 7.0
+    actual: 12.0
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -642,7 +642,7 @@ rosters:
     pos: QB
     starter: true
     proj: 19.51
-    actual: 4.1
+    actual: 14.9
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -662,7 +662,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.6
-    actual: 4.6
+    actual: 7.8
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -678,7 +678,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.58
-    actual: null
+    actual: 12.9
     injury: DAY_TO_DAY
     pro_team: GB
     bye_week: 11
@@ -686,7 +686,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.02
-    actual: 2.7
+    actual: 6.0
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -718,7 +718,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.83
-    actual: 4.8
+    actual: 8.0
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -734,7 +734,7 @@ rosters:
     pos: QB
     starter: true
     proj: 20.52
-    actual: null
+    actual: 20.8
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -750,7 +750,7 @@ rosters:
     pos: WR
     starter: false
     proj: 8.73
-    actual: null
+    actual: 4.0
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -758,7 +758,7 @@ rosters:
     pos: TE
     starter: false
     proj: 8.08
-    actual: 1.8
+    actual: 11.5
     injury: QUESTIONABLE
     pro_team: MIN
     bye_week: 6
@@ -786,7 +786,7 @@ rosters:
     pos: WR
     starter: true
     proj: 17.85
-    actual: 4.5
+    actual: 14.7
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -794,7 +794,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: ARI
     bye_week: 14
@@ -834,7 +834,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.73
-    actual: null
+    actual: 2.2
     injury: ''
     pro_team: DEN
     bye_week: 10
@@ -842,7 +842,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.17
-    actual: 3.1
+    actual: 4.2
     injury: QUESTIONABLE
     pro_team: CLE
     bye_week: 11
@@ -866,7 +866,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.67
-    actual: null
+    actual: 19.0
     injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
@@ -890,7 +890,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.7
-    actual: 3.3
+    actual: 4.6
     injury: ''
     pro_team: IND
     bye_week: 13
@@ -898,7 +898,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.12
-    actual: 3.0
+    actual: -3.0
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -906,7 +906,7 @@ rosters:
     pos: RB
     starter: true
     proj: 9.99
-    actual: null
+    actual: 1.6
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -918,7 +918,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.98
-    actual: 12.9
+    actual: 18.0
     injury: ''
     pro_team: IND
     bye_week: 13
@@ -942,7 +942,7 @@ rosters:
     pos: TE
     starter: true
     proj: 6.5
-    actual: 3.0
+    actual: 10.1
     injury: ''
     pro_team: CLE
     bye_week: 11
@@ -974,7 +974,7 @@ rosters:
     pos: TE
     starter: false
     proj: 6.31
-    actual: 2.5
+    actual: 3.8
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -990,7 +990,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.99
-    actual: 2.2
+    actual: 16.1
     injury: ''
     pro_team: ATL
     bye_week: 11
@@ -1005,8 +1005,8 @@ rosters:
   - player: Ollie Gordon II
     pos: RB
     starter: true
-    proj: 11.03
-    actual: 11.8
+    proj: 11.04
+    actual: 16.8
     injury: ''
     pro_team: MIA
     bye_week: 6
@@ -1022,7 +1022,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.49
-    actual: -1.0
+    actual: 0.0
     injury: ''
     pro_team: NYG
     bye_week: 8
@@ -1030,7 +1030,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.61
-    actual: 5.9
+    actual: 20.0
     injury: ''
     pro_team: NYJ
     bye_week: 13
@@ -1038,7 +1038,7 @@ rosters:
     pos: QB
     starter: true
     proj: 18.2
-    actual: null
+    actual: 4.2
     injury: ''
     pro_team: LV
     bye_week: 13
@@ -1050,7 +1050,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.37
-    actual: 4.1
+    actual: 5.4
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -1066,7 +1066,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: LAR
     bye_week: 11
@@ -1074,7 +1074,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.81
-    actual: 21.3
+    actual: 23.5
     injury: QUESTIONABLE
     pro_team: TB
     bye_week: 10
@@ -1082,7 +1082,7 @@ rosters:
     pos: TE
     starter: true
     proj: 10.2
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -1090,8 +1090,8 @@ rosters:
     pos: RB
     starter: true
     proj: 10.88
-    actual: 1.4
-    injury: ''
+    actual: 3.1
+    injury: QUESTIONABLE
     pro_team: MIN
     bye_week: 6
   - player: Stefon Diggs
@@ -1122,7 +1122,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.17
-    actual: 4.0
+    actual: 0.0
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1146,7 +1146,7 @@ rosters:
     pos: RB
     starter: false
     proj: 5.92
-    actual: 5.4
+    actual: 9.3
     injury: ''
     pro_team: TB
     bye_week: 10
@@ -1170,7 +1170,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.61
-    actual: 2.2
+    actual: 4.7
     injury: ''
     pro_team: TB
     bye_week: 10
@@ -1190,7 +1190,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.96
-    actual: null
+    actual: 5.8
     injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
@@ -1214,7 +1214,7 @@ rosters:
     pos: RB
     starter: true
     proj: 9.84
-    actual: 2.8
+    actual: 6.8
     injury: INJURY_RESERVE
     pro_team: MIN
     bye_week: 6
@@ -1230,7 +1230,7 @@ rosters:
     pos: QB
     starter: true
     proj: 20.49
-    actual: null
+    actual: 11.0
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -1246,7 +1246,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.5
-    actual: 5.0
+    actual: 2.0
     injury: ''
     pro_team: IND
     bye_week: 13
@@ -1270,7 +1270,7 @@ rosters:
     pos: WR
     starter: false
     proj: 3.93
-    actual: 2.9
+    actual: 4.0
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -1286,7 +1286,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.07
-    actual: 3.6
+    actual: 8.6
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1302,7 +1302,7 @@ rosters:
     pos: WR
     starter: false
     proj: 1.91
-    actual: 4.8
+    actual: 5.0
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1314,7 +1314,7 @@ rosters:
     pos: RB
     starter: true
     proj: 19.26
-    actual: 8.1
+    actual: 14.7
     injury: ''
     pro_team: ATL
     bye_week: 11
@@ -1322,7 +1322,7 @@ rosters:
     pos: WR
     starter: true
     proj: 14.57
-    actual: 11.4
+    actual: 14.6
     injury: ''
     pro_team: NYG
     bye_week: 8
@@ -1330,7 +1330,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.91
-    actual: 17.5
+    actual: 22.9
     injury: QUESTIONABLE
     pro_team: CLE
     bye_week: 11
@@ -1346,7 +1346,7 @@ rosters:
     pos: TE
     starter: true
     proj: 15.19
-    actual: null
+    actual: 3.1
     injury: QUESTIONABLE
     pro_team: LV
     bye_week: 13
@@ -1354,7 +1354,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.14
-    actual: null
+    actual: 4.5
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -1378,7 +1378,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.58
-    actual: 0.7
+    actual: 2.7
     injury: ''
     pro_team: TEN
     bye_week: 9
@@ -1386,7 +1386,7 @@ rosters:
     pos: QB
     starter: true
     proj: 22.34
-    actual: 3.6
+    actual: 12.9
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -1410,7 +1410,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.36
-    actual: null
+    actual: 8.0
     injury: ''
     pro_team: DEN
     bye_week: 10
@@ -1426,7 +1426,7 @@ rosters:
     pos: K
     starter: true
     proj: 11.02
-    actual: 10.0
+    actual: 11.0
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1470,7 +1470,7 @@ rosters:
     pos: WR
     starter: true
     proj: 14.01
-    actual: 0.0
+    actual: 1.6
     injury: ''
     pro_team: HOU
     bye_week: 8
@@ -1510,7 +1510,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 4.27
-    actual: null
+    actual: 7.0
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -1518,7 +1518,7 @@ rosters:
     pos: K
     starter: true
     proj: 8.82
-    actual: null
+    actual: 5.0
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -1526,14 +1526,14 @@ rosters:
     pos: RB
     starter: false
     proj: 6.03
-    actual: 10.5
+    actual: 10.9
     injury: ''
     pro_team: SF
     bye_week: 8
   - player: Adonai Mitchell
     pos: WR
     starter: false
-    proj: 6.7
+    proj: 6.71
     actual: 0.0
     injury: QUESTIONABLE
     pro_team: NYJ
@@ -1542,7 +1542,7 @@ rosters:
     pos: TE
     starter: true
     proj: 5.77
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -1558,7 +1558,7 @@ rosters:
     pos: RB
     starter: true
     proj: 7.47
-    actual: null
+    actual: 5.3
     injury: ''
     pro_team: ARI
     bye_week: 14
@@ -1566,7 +1566,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.99
-    actual: null
+    actual: 1.0
     injury: ''
     pro_team: ARI
     bye_week: 14
