@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power:
   - rank: 1
@@ -2349,10 +2349,10 @@
     live: true
     playoff: false
     home_score: 131.9
-    away_score: 72.9
+    away_score: 82.3
     winner_id: null
     tie: false
-    margin: 59.0
+    margin: 49.6
     home_proj: 135.7
     away_proj: 121.4
   - home_id: lukstein
@@ -2395,10 +2395,10 @@
     live: true
     playoff: false
     home_score: 125.6
-    away_score: 93.7
+    away_score: 87.7
     winner_id: null
     tie: false
-    margin: 31.9
+    margin: 37.9
     home_proj: 104.5
     away_proj: 117.3
   - home_id: sturmanator15
@@ -2417,11 +2417,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 149.8
-    away_score: 109.6
+    home_score: 156.2
+    away_score: 111.3
     winner_id: null
     tie: false
-    margin: 40.2
+    margin: 44.9
     home_proj: 123.3
     away_proj: 121.4
   - home_id: whowonthelastsuperbowl
@@ -2563,7 +2563,7 @@
     decided: false
     result: null
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: true
   power:
   - rank: 1
@@ -2789,7 +2789,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []
 2026-9:
@@ -2895,7 +2895,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []
 2026-10:
@@ -3001,7 +3001,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []
 2026-11:
@@ -3107,7 +3107,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []
 2026-12:
@@ -3213,7 +3213,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []
 2026-13:
@@ -3319,7 +3319,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []
 2026-14:
@@ -3425,6 +3425,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 25, 7:15 PM PDT
+  updated_at: Oct 26, 2:29 AM PDT
   current: false
   power: []

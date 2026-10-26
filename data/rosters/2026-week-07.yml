@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-26T02:15:54+00:00'
+captured_at: '2026-10-26T09:29:02+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -10,7 +10,7 @@ rosters:
     pos: WR
     starter: true
     proj: 16.25
-    actual: 23.2
+    actual: 26.8
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -18,7 +18,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.74
-    actual: 4.9
+    actual: 7.7
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -338,7 +338,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.92
-    actual: 1.9
+    actual: 2.6
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -346,7 +346,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.27
-    actual: 7.0
+    actual: 8.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -362,7 +362,7 @@ rosters:
     pos: RB
     starter: false
     proj: 5.05
-    actual: 1.5
+    actual: 4.2
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -710,7 +710,7 @@ rosters:
     pos: TE
     starter: true
     proj: 7.97
-    actual: 0.0
+    actual: 6.4
     injury: QUESTIONABLE
     pro_team: KC
     bye_week: 5
@@ -774,7 +774,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.9
-    actual: -1.0
+    actual: 2.0
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -1138,7 +1138,7 @@ rosters:
     pos: D/ST
     starter: false
     proj: 4.76
-    actual: 10.0
+    actual: 9.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1222,7 +1222,7 @@ rosters:
     pos: RB
     starter: false
     proj: 10.12
-    actual: 5.6
+    actual: 18.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1294,7 +1294,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.81
-    actual: 5.0
+    actual: -1.0
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -1394,7 +1394,7 @@ rosters:
     pos: QB
     starter: false
     proj: 16.83
-    actual: 1.0
+    actual: 6.0
     injury: ''
     pro_team: KC
     bye_week: 5
