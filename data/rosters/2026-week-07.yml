@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-26T17:52:50+00:00'
+captured_at: '2026-10-26T23:27:29+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -143,7 +143,7 @@ rosters:
     starter: true
     proj: 15.9
     actual: 19.7
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
   - player: Cam Skattebo
@@ -1495,7 +1495,7 @@ rosters:
     starter: true
     proj: 12.57
     actual: 1.4
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CAR
     bye_week: 5
   - player: Juwan Johnson

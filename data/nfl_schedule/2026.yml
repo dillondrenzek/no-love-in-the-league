@@ -134,9 +134,9 @@ games:
   - { week: 9, kickoff: '2026-11-08T18:00:00Z', away: 'NYG', home: 'PHI' }
   - { week: 9, kickoff: '2026-11-08T18:00:00Z', away: 'NYJ', home: 'KC' }
   - { week: 9, kickoff: '2026-11-08T21:05:00Z', away: 'HOU', home: 'LAC' }
-  - { week: 9, kickoff: '2026-11-08T21:05:00Z', away: 'LV', home: 'SF' }
   - { week: 9, kickoff: '2026-11-08T21:25:00Z', away: 'ARI', home: 'SEA' }
   - { week: 9, kickoff: '2026-11-08T21:25:00Z', away: 'GB', home: 'NE' }
+  - { week: 9, kickoff: '2026-11-08T21:25:00Z', away: 'LV', home: 'SF' }
   - { week: 9, kickoff: '2026-11-09T01:20:00Z', away: 'TB', home: 'CHI' }
   - { week: 9, kickoff: '2026-11-10T01:15:00Z', away: 'BUF', home: 'MIN' }
   - { week: 10, kickoff: '2026-11-13T01:15:00Z', away: 'WSH', home: 'NYG' }
