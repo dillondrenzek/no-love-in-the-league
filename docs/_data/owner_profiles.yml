@@ -2500,7 +2500,7 @@ sturmanator15:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Bryce Young
       pos: QB
@@ -5665,7 +5665,7 @@ jackperkins74:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Trevor Lawrence
       pos: QB
@@ -8641,7 +8641,7 @@ zachzoske:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Joe Burrow
       pos: QB
@@ -8718,10 +8718,544 @@ zachzoske:
       cost: R11
       basis: Drafted R13
       ineligible: false
-    - player: Jets D/ST
-      pos: D/ST
+gganoom:
+  name: Grant
+  nickname: ''
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+  honors:
+  - emoji: ''
+    text: 1× Playoffs
+    strong: false
+  resume:
+    all_time: 20-15
+    win_pct: '.571'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 1
+    trades: 0
+    trades_known: true
+    tx_per_year: 23.7
+    tx_known: true
+    seasons: 3
+    best_finish:
+      type: place
+      ordinal: 4th
+      years:
+      - 2025
+      - 2026
+    avg_finish: 6.0
+    high_game:
+      score: 172.5
+      year: 2024
+      opp: Nate
+    low_game:
+      score: 66.5
+      year: 2025
+      opp: Luke
+  seasons:
+  - year: 2026
+    team: One Big Beautiful Dillbot
+    tag: null
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    finish: 4th
+    record: 4-3
+    tx: 10
+    in_progress: true
+    pf: 864.2
+    pa: 687.8
+  - year: 2025
+    team: One Big Beautiful Dill
+    tag: null
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    finish: 4th
+    record: 9-5
+    tx: 34
+    in_progress: false
+    pf: 1587.6
+    pa: 1494.2
+    pf_color: '#fdf3e0'
+  - year: 2024
+    team: KillDilly Elegy
+    tag: null
+    logo: https://g.espncdn.com/lm-static/ffl/images/default_logos/6.svg
+    finish: 8th
+    record: 7-7
+    tx: 27
+    in_progress: false
+    pf: 1622.6
+    pa: 1550.1
+    pf_color: '#ee6b3b'
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 115.6
+    avg_pa: 102.2
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 1-1
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 112.2
+    avg_pa: 103.5
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 0-4
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 104.0
+    avg_pa: 129.6
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 147.7
+    avg_pa: 117.7
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 1-2
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 109.0
+    avg_pa: 120.9
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 3-2
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 112.8
+    avg_pa: 104.4
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 4-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 132.7
+    avg_pa: 89.6
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 3-2
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 114.1
+    avg_pa: 101.1
+  - opp_id: purpsworth
+    opp_short: Trevor
+    record: 4-2
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 122.6
+    avg_pa: 105.1
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 0-2
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 104.9
+    avg_pa: 119.5
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 2-1
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 124.0
+    avg_pa: 123.6
+  trades: []
+  trades_known: true
+  keepers:
+  - year: 2026
+    round: 5
+    player: Brock Bowers
+  - year: 2025
+    round: 7
+    player: Brock Bowers
+  - year: 2024
+    round: 5
+    player: Chris Olave
+  rosters:
+  - year: 2026
+    players:
+    - player: Bijan Robinson
+      via: draft
+      round: 1
+    - player: Malik Nabers
+      via: draft
+      round: 2
+    - player: Quinshon Judkins
+      via: draft
+      round: 3
+    - player: TreVeyon Henderson
+      via: draft
+      round: 4
+    - player: Brock Bowers
+      via: draft
+      round: 5
+    - player: Michael Wilson
+      via: draft
+      round: 6
+    - player: Jaylen Warren
+      via: draft
+      round: 7
+    - player: Jakobi Meyers
+      via: draft
+      round: 8
+    - player: Wan'Dale Robinson
+      via: draft
+      round: 9
+    - player: Brock Purdy
+      via: draft
+      round: 10
+    - player: Patrick Mahomes
+      via: draft
+      round: 11
+    - player: Romeo Doubs
+      via: draft
+      round: 12
+    - player: Broncos D/ST
+      via: draft
+      round: 13
+    - player: Brian Robinson Jr.
+      via: draft
+      round: 14
+    - player: Chris Boswell
+      via: draft
+      round: 15
+    - player: Adonai Mitchell
+      via: add
+      week: 1
+      waiver: false
+    - player: Hunter Henry
+      via: add
+      week: 1
+      waiver: false
+    - player: Trey Smack
+      via: add
+      week: 3
+      waiver: false
+    - player: Ka'imi Fairbairn
+      via: add
+      week: 5
+      waiver: true
+    - player: Jaleel McLaughlin
+      via: add
+      week: 6
+      waiver: false
+    - player: Keon Coleman
+      via: add
+      week: 7
+      waiver: false
+  - year: 2025
+    players:
+    - player: Ashton Jeanty
+      via: draft
+      round: 1
+    - player: Brian Thomas Jr.
+      via: draft
+      round: 2
+    - player: Marvin Harrison Jr.
+      via: draft
+      round: 3
+    - player: Calvin Ridley
+      via: draft
+      round: 4
+    - player: David Montgomery
+      via: draft
+      round: 5
+    - player: George Pickens
+      via: draft
+      round: 6
+    - player: Brock Bowers
+      via: draft
+      round: 7
+    - player: Cam Skattebo
+      via: draft
+      round: 8
+    - player: Tank Bigsby
+      via: draft
+      round: 9
+    - player: Jauan Jennings
+      via: draft
+      round: 10
+    - player: Jordan Love
+      via: draft
+      round: 11
+    - player: Justin Fields
+      via: draft
+      round: 12
+    - player: Vikings D/ST
+      via: draft
+      round: 13
+    - player: Rachaad White
+      via: draft
+      round: 14
+    - player: Evan McPherson
+      via: draft
+      round: 15
+    - player: Kenneth Gainwell
+      via: add
+      week: 2
+      waiver: true
+    - player: Quentin Johnston
+      via: add
+      week: 2
+      waiver: true
+    - player: Joey Slye
+      via: add
+      week: 3
+      waiver: false
+    - player: Matthew Stafford
+      via: add
+      week: 3
+      waiver: false
+    - player: Brenton Strange
+      via: add
+      week: 5
+      waiver: false
+    - player: Jason Myers
+      via: add
+      week: 5
+      waiver: false
+    - player: Packers D/ST
+      via: add
+      week: 6
+      waiver: true
+    - player: Chiefs D/ST
+      via: add
+      week: 7
+      waiver: true
+    - player: Evan Engram
+      via: add
+      week: 7
+      waiver: false
+    - player: Aaron Rodgers
+      via: add
+      week: 8
+      waiver: false
+    - player: Brock Purdy
+      via: add
+      week: 9
+      waiver: false
+    - player: Devin Singletary
+      via: add
+      week: 9
+      waiver: false
+    - player: Rams D/ST
+      via: add
+      week: 9
+      waiver: true
+    - player: Tyjae Spears
+      via: add
+      week: 9
+      waiver: true
+    - player: Jacoby Brissett
+      via: add
+      week: 12
+      waiver: false
+    - player: Jaguars D/ST
+      via: add
+      week: 15
+      waiver: true
+    - player: Michael Mayer
+      via: add
+      week: 17
+      waiver: false
+    - player: Tyler Warren
+      via: add
+      week: 18
+      waiver: false
+  - year: 2024
+    players:
+    - player: Justin Jefferson
+      via: draft
+      round: 1
+    - player: Mike Evans
+      via: draft
+      round: 2
+    - player: Josh Jacobs
+      via: draft
+      round: 3
+    - player: Josh Allen
+      via: draft
+      round: 4
+    - player: Chris Olave
+      via: draft
+      round: 5
+    - player: Raheem Mostert
+      via: draft
+      round: 6
+    - player: Javonte Williams
+      via: draft
+      round: 8
+    - player: Jayden Daniels
+      via: draft
+      round: 9
+    - player: Brock Bowers
+      via: draft
+      round: 9
+    - player: Jakobi Meyers
+      via: draft
+      round: 10
+    - player: Jameson Williams
+      via: draft
+      round: 11
+    - player: Ty Chandler
+      via: draft
+      round: 12
+    - player: Adonai Mitchell
+      via: draft
+      round: 13
+    - player: Browns D/ST
+      via: draft
+      round: 14
+    - player: Matt Gay
+      via: draft
+      round: 15
+    - player: Cairo Santos
+      via: add
+      week: 1
+      waiver: false
+    - player: Jaleel McLaughlin
+      via: add
+      week: 1
+      waiver: false
+    - player: Rico Dowdle
+      via: add
+      week: 2
+      waiver: true
+    - player: Matt Prater
+      via: add
+      week: 4
+      waiver: true
+    - player: Evan McPherson
+      via: add
+      week: 5
+      waiver: true
+    - player: Justice Hill
+      via: add
+      week: 5
+      waiver: true
+    - player: Seahawks D/ST
+      via: add
+      week: 5
+      waiver: true
+    - player: Bills D/ST
+      via: add
+      week: 6
+      waiver: true
+    - player: Rashod Bateman
+      via: add
+      week: 8
+      waiver: true
+    - player: Jake Bates
+      via: add
+      week: 9
+      waiver: true
+    - player: Jonnu Smith
+      via: add
+      week: 10
+      waiver: true
+    - player: Quentin Johnston
+      via: add
+      week: 10
+      waiver: true
+    - player: Emanuel Wilson
+      via: add
+      week: 11
+      waiver: false
+    - player: Packers D/ST
+      via: add
+      week: 11
+      waiver: true
+    - player: Adam Thielen
+      via: add
+      week: 13
+      waiver: true
+  current_roster:
+    year: 2026
+    week: 8
+    players:
+    - player: Brock Purdy
+      pos: QB
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Patrick Mahomes
+      pos: QB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Bijan Robinson
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Quinshon Judkins
+      pos: RB
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: TreVeyon Henderson
+      pos: RB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Jaylen Warren
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Brian Robinson Jr.
+      pos: RB
+      cost: R12
+      basis: Drafted R14
+      ineligible: false
+    - player: Malik Nabers
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Michael Wilson
+      pos: WR
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: Jakobi Meyers
+      pos: WR
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Wan'Dale Robinson
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
+    - player: Romeo Doubs
+      pos: WR
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Keon Coleman
+      pos: WR
       cost: R13
       basis: Undrafted
+      ineligible: false
+    - player: Brock Bowers
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Ka'imi Fairbairn
+      pos: K
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+    - player: Broncos D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
       ineligible: false
 schirmerj:
   name: Jono
@@ -8769,7 +9303,7 @@ schirmerj:
     team: Return of the IDP
     tag: null
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-    finish: 4th
+    finish: 5th
     record: 4-3
     tx: 18
     in_progress: true
@@ -10486,7 +11020,7 @@ schirmerj:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Josh Allen
       pos: QB
@@ -10562,544 +11096,6 @@ schirmerj:
       pos: D/ST
       cost: R13
       basis: Undrafted
-      ineligible: false
-gganoom:
-  name: Grant
-  nickname: ''
-  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-  honors:
-  - emoji: ''
-    text: 1× Playoffs
-    strong: false
-  resume:
-    all_time: 20-15
-    win_pct: '.571'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 1
-    trades: 0
-    trades_known: true
-    tx_per_year: 23.7
-    tx_known: true
-    seasons: 3
-    best_finish:
-      type: place
-      ordinal: 4th
-      years:
-      - 2025
-    avg_finish: 6.0
-    high_game:
-      score: 172.5
-      year: 2024
-      opp: Nate
-    low_game:
-      score: 66.5
-      year: 2025
-      opp: Luke
-  seasons:
-  - year: 2026
-    team: One Big Beautiful Dillbot
-    tag: null
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-    finish: 5th
-    record: 4-3
-    tx: 10
-    in_progress: true
-    pf: 864.2
-    pa: 687.8
-  - year: 2025
-    team: One Big Beautiful Dill
-    tag: null
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-    finish: 4th
-    record: 9-5
-    tx: 34
-    in_progress: false
-    pf: 1587.6
-    pa: 1494.2
-    pf_color: '#fdf3e0'
-  - year: 2024
-    team: KillDilly Elegy
-    tag: null
-    logo: https://g.espncdn.com/lm-static/ffl/images/default_logos/6.svg
-    finish: 8th
-    record: 7-7
-    tx: 27
-    in_progress: false
-    pf: 1622.6
-    pa: 1550.1
-    pf_color: '#ee6b3b'
-  h2h:
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 2-1
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 115.6
-    avg_pa: 102.2
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 1-1
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 112.2
-    avg_pa: 103.5
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 0-4
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 104.0
-    avg_pa: 129.6
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 2-1
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 147.7
-    avg_pa: 117.7
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 1-2
-    win_pct: '.333'
-    win_color: '#faca7e'
-    avg_pf: 109.0
-    avg_pa: 120.9
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 3-2
-    win_pct: '.600'
-    win_color: '#f7a749'
-    avg_pf: 112.8
-    avg_pa: 104.4
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 4-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 132.7
-    avg_pa: 89.6
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 3-2
-    win_pct: '.600'
-    win_color: '#f7a749'
-    avg_pf: 114.1
-    avg_pa: 101.1
-  - opp_id: purpsworth
-    opp_short: Trevor
-    record: 4-2
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 122.6
-    avg_pa: 105.1
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 0-2
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 104.9
-    avg_pa: 119.5
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 2-1
-    win_pct: '.667'
-    win_color: '#f59d47'
-    avg_pf: 124.0
-    avg_pa: 123.6
-  trades: []
-  trades_known: true
-  keepers:
-  - year: 2026
-    round: 5
-    player: Brock Bowers
-  - year: 2025
-    round: 7
-    player: Brock Bowers
-  - year: 2024
-    round: 5
-    player: Chris Olave
-  rosters:
-  - year: 2026
-    players:
-    - player: Bijan Robinson
-      via: draft
-      round: 1
-    - player: Malik Nabers
-      via: draft
-      round: 2
-    - player: Quinshon Judkins
-      via: draft
-      round: 3
-    - player: TreVeyon Henderson
-      via: draft
-      round: 4
-    - player: Brock Bowers
-      via: draft
-      round: 5
-    - player: Michael Wilson
-      via: draft
-      round: 6
-    - player: Jaylen Warren
-      via: draft
-      round: 7
-    - player: Jakobi Meyers
-      via: draft
-      round: 8
-    - player: Wan'Dale Robinson
-      via: draft
-      round: 9
-    - player: Brock Purdy
-      via: draft
-      round: 10
-    - player: Patrick Mahomes
-      via: draft
-      round: 11
-    - player: Romeo Doubs
-      via: draft
-      round: 12
-    - player: Broncos D/ST
-      via: draft
-      round: 13
-    - player: Brian Robinson Jr.
-      via: draft
-      round: 14
-    - player: Chris Boswell
-      via: draft
-      round: 15
-    - player: Adonai Mitchell
-      via: add
-      week: 1
-      waiver: false
-    - player: Hunter Henry
-      via: add
-      week: 1
-      waiver: false
-    - player: Trey Smack
-      via: add
-      week: 3
-      waiver: false
-    - player: Ka'imi Fairbairn
-      via: add
-      week: 5
-      waiver: true
-    - player: Jaleel McLaughlin
-      via: add
-      week: 6
-      waiver: false
-    - player: Keon Coleman
-      via: add
-      week: 7
-      waiver: false
-  - year: 2025
-    players:
-    - player: Ashton Jeanty
-      via: draft
-      round: 1
-    - player: Brian Thomas Jr.
-      via: draft
-      round: 2
-    - player: Marvin Harrison Jr.
-      via: draft
-      round: 3
-    - player: Calvin Ridley
-      via: draft
-      round: 4
-    - player: David Montgomery
-      via: draft
-      round: 5
-    - player: George Pickens
-      via: draft
-      round: 6
-    - player: Brock Bowers
-      via: draft
-      round: 7
-    - player: Cam Skattebo
-      via: draft
-      round: 8
-    - player: Tank Bigsby
-      via: draft
-      round: 9
-    - player: Jauan Jennings
-      via: draft
-      round: 10
-    - player: Jordan Love
-      via: draft
-      round: 11
-    - player: Justin Fields
-      via: draft
-      round: 12
-    - player: Vikings D/ST
-      via: draft
-      round: 13
-    - player: Rachaad White
-      via: draft
-      round: 14
-    - player: Evan McPherson
-      via: draft
-      round: 15
-    - player: Kenneth Gainwell
-      via: add
-      week: 2
-      waiver: true
-    - player: Quentin Johnston
-      via: add
-      week: 2
-      waiver: true
-    - player: Joey Slye
-      via: add
-      week: 3
-      waiver: false
-    - player: Matthew Stafford
-      via: add
-      week: 3
-      waiver: false
-    - player: Brenton Strange
-      via: add
-      week: 5
-      waiver: false
-    - player: Jason Myers
-      via: add
-      week: 5
-      waiver: false
-    - player: Packers D/ST
-      via: add
-      week: 6
-      waiver: true
-    - player: Chiefs D/ST
-      via: add
-      week: 7
-      waiver: true
-    - player: Evan Engram
-      via: add
-      week: 7
-      waiver: false
-    - player: Aaron Rodgers
-      via: add
-      week: 8
-      waiver: false
-    - player: Brock Purdy
-      via: add
-      week: 9
-      waiver: false
-    - player: Devin Singletary
-      via: add
-      week: 9
-      waiver: false
-    - player: Rams D/ST
-      via: add
-      week: 9
-      waiver: true
-    - player: Tyjae Spears
-      via: add
-      week: 9
-      waiver: true
-    - player: Jacoby Brissett
-      via: add
-      week: 12
-      waiver: false
-    - player: Jaguars D/ST
-      via: add
-      week: 15
-      waiver: true
-    - player: Michael Mayer
-      via: add
-      week: 17
-      waiver: false
-    - player: Tyler Warren
-      via: add
-      week: 18
-      waiver: false
-  - year: 2024
-    players:
-    - player: Justin Jefferson
-      via: draft
-      round: 1
-    - player: Mike Evans
-      via: draft
-      round: 2
-    - player: Josh Jacobs
-      via: draft
-      round: 3
-    - player: Josh Allen
-      via: draft
-      round: 4
-    - player: Chris Olave
-      via: draft
-      round: 5
-    - player: Raheem Mostert
-      via: draft
-      round: 6
-    - player: Javonte Williams
-      via: draft
-      round: 8
-    - player: Jayden Daniels
-      via: draft
-      round: 9
-    - player: Brock Bowers
-      via: draft
-      round: 9
-    - player: Jakobi Meyers
-      via: draft
-      round: 10
-    - player: Jameson Williams
-      via: draft
-      round: 11
-    - player: Ty Chandler
-      via: draft
-      round: 12
-    - player: Adonai Mitchell
-      via: draft
-      round: 13
-    - player: Browns D/ST
-      via: draft
-      round: 14
-    - player: Matt Gay
-      via: draft
-      round: 15
-    - player: Cairo Santos
-      via: add
-      week: 1
-      waiver: false
-    - player: Jaleel McLaughlin
-      via: add
-      week: 1
-      waiver: false
-    - player: Rico Dowdle
-      via: add
-      week: 2
-      waiver: true
-    - player: Matt Prater
-      via: add
-      week: 4
-      waiver: true
-    - player: Evan McPherson
-      via: add
-      week: 5
-      waiver: true
-    - player: Justice Hill
-      via: add
-      week: 5
-      waiver: true
-    - player: Seahawks D/ST
-      via: add
-      week: 5
-      waiver: true
-    - player: Bills D/ST
-      via: add
-      week: 6
-      waiver: true
-    - player: Rashod Bateman
-      via: add
-      week: 8
-      waiver: true
-    - player: Jake Bates
-      via: add
-      week: 9
-      waiver: true
-    - player: Jonnu Smith
-      via: add
-      week: 10
-      waiver: true
-    - player: Quentin Johnston
-      via: add
-      week: 10
-      waiver: true
-    - player: Emanuel Wilson
-      via: add
-      week: 11
-      waiver: false
-    - player: Packers D/ST
-      via: add
-      week: 11
-      waiver: true
-    - player: Adam Thielen
-      via: add
-      week: 13
-      waiver: true
-  current_roster:
-    year: 2026
-    week: 7
-    players:
-    - player: Brock Purdy
-      pos: QB
-      cost: R8
-      basis: Drafted R10
-      ineligible: false
-    - player: Patrick Mahomes
-      pos: QB
-      cost: R9
-      basis: Drafted R11
-      ineligible: false
-    - player: Bijan Robinson
-      pos: RB
-      cost: Ineligible
-      basis: Drafted R1
-      ineligible: true
-    - player: Quinshon Judkins
-      pos: RB
-      cost: R1
-      basis: Drafted R3
-      ineligible: false
-    - player: TreVeyon Henderson
-      pos: RB
-      cost: R2
-      basis: Drafted R4
-      ineligible: false
-    - player: Jaylen Warren
-      pos: RB
-      cost: R5
-      basis: Drafted R7
-      ineligible: false
-    - player: Brian Robinson Jr.
-      pos: RB
-      cost: R12
-      basis: Drafted R14
-      ineligible: false
-    - player: Malik Nabers
-      pos: WR
-      cost: Ineligible
-      basis: Drafted R2
-      ineligible: true
-    - player: Michael Wilson
-      pos: WR
-      cost: R4
-      basis: Drafted R6
-      ineligible: false
-    - player: Jakobi Meyers
-      pos: WR
-      cost: R6
-      basis: Drafted R8
-      ineligible: false
-    - player: Wan'Dale Robinson
-      pos: WR
-      cost: R7
-      basis: Drafted R9
-      ineligible: false
-    - player: Romeo Doubs
-      pos: WR
-      cost: R10
-      basis: Drafted R12
-      ineligible: false
-    - player: Keon Coleman
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Brock Bowers
-      pos: TE
-      cost: R3
-      basis: Drafted R5
-      ineligible: false
-    - player: Ka'imi Fairbairn
-      pos: K
-      cost: R11
-      basis: Drafted R13
-      ineligible: false
-    - player: Broncos D/ST
-      pos: D/ST
-      cost: R11
-      basis: Drafted R13
       ineligible: false
 whowonthelastsuperbowl:
   name: Nate
@@ -12825,7 +12821,7 @@ whowonthelastsuperbowl:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Drake Maye
       pos: QB
@@ -14606,7 +14602,7 @@ shawne2520997:
       round: 17
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Dak Prescott
       pos: QB
@@ -14688,6 +14684,1875 @@ shawne2520997:
       cost: R10
       basis: Drafted R12
       ineligible: false
+purpsworth:
+  name: Trevor
+  nickname: ''
+  logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+  honors:
+  - emoji: 🥈
+    text: 1× Runner-Up
+    strong: false
+  - emoji: 🥉
+    text: 1× Third
+    strong: false
+  - emoji: ''
+    text: 4× Playoffs
+    strong: false
+  resume:
+    all_time: 47-56
+    win_pct: '.456'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 4
+    trades: 6
+    trades_known: true
+    tx_per_year: 41.4
+    tx_known: true
+    seasons: 8
+    best_finish:
+      type: place
+      ordinal: 2nd
+      years:
+      - 2021
+    avg_finish: 6.3
+    high_game:
+      score: 182.4
+      year: 2023
+      opp: Fletcher
+    low_game:
+      score: 44.5
+      year: 2022
+      opp: Jack
+  seasons:
+  - year: 2026
+    team: I am dead inside
+    tag: null
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    finish: 8th
+    record: 3-4
+    tx: 17
+    in_progress: true
+    pf: 748.8
+    pa: 792.6
+  - year: 2025
+    team: I am dead inside
+    tag: null
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    finish: 3rd
+    record: 6-8
+    tx: 41
+    in_progress: false
+    pf: 1566.2
+    pa: 1526.0
+    pf_color: '#f59846'
+  - year: 2024
+    team: I am dead inside
+    tag: null
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    finish: 9th
+    record: 5-9
+    tx: 35
+    in_progress: false
+    pf: 1606.7
+    pa: 1663.6
+    pf_color: '#f38c43'
+  - year: 2023
+    team: Used Napkin
+    tag: null
+    logo: https://i.imgur.com/qda7YBj.jpg
+    finish: 6th
+    record: 9-5
+    tx: 33
+    in_progress: false
+    pf: 1714.6
+    pa: 1505.6
+    pf_color: '#ee6b3b'
+  - year: 2022
+    team: Used Napkin
+    tag: null
+    logo: https://i.imgur.com/qda7YBj.jpg
+    finish: 7th
+    record: 7-7
+    tx: 44
+    in_progress: false
+    pf: 1355.2
+    pa: 1319.5
+    pf_color: '#fbd28f'
+  - year: 2021
+    team: WA Fantasy Football Team
+    tag: null
+    logo: https://i.redd.it/wad5aifmanj51.jpg
+    finish: 2nd
+    record: 7-7
+    tx: 57
+    in_progress: false
+    pf: 1372.6
+    pa: 1433.8
+    pf_color: '#fbcd85'
+  - year: 2020
+    team: AB’s Helmet
+    tag: null
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
+    finish: 7th
+    record: 6-7
+    tx: 41
+    in_progress: false
+    pf: 1219.5
+    pa: 1311.4
+    pf_color: '#fdf3e0'
+  - year: 2019
+    team: AB’s Helmet
+    tag: null
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
+    finish: 10th
+    record: 4-9
+    tx: 63
+    in_progress: false
+    pf: 1240.3
+    pa: 1344.1
+    pf_color: '#fdeed4'
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 7-10
+    win_pct: '.412'
+    win_color: '#fac167'
+    avg_pf: 102.6
+    avg_pa: 106.9
+  - opp_id: unclebadtouch38
+    opp_short: Fletcher
+    record: 6-5
+    win_pct: '.545'
+    win_color: '#f8af4b'
+    avg_pf: 99.5
+    avg_pa: 89.3
+  - opp_id: gganoom
+    opp_short: Grant
+    record: 2-4
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 105.1
+    avg_pa: 122.6
+  - opp_id: henpen28
+    opp_short: Henry
+    record: 4-7
+    win_pct: '.364'
+    win_color: '#fac775'
+    avg_pf: 96.1
+    avg_pa: 99.9
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 7-7
+    win_pct: '.500'
+    win_color: '#f9b64d'
+    avg_pf: 103.7
+    avg_pa: 105.8
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 4-6
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 112.2
+    avg_pa: 117.0
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 7-4
+    win_pct: '.636'
+    win_color: '#f6a248'
+    avg_pf: 118.0
+    avg_pa: 97.6
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 2-6
+    win_pct: '.250'
+    win_color: '#fbd496'
+    avg_pf: 106.1
+    avg_pa: 107.4
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 8-2
+    win_pct: '.800'
+    win_color: '#f28942'
+    avg_pf: 107.1
+    avg_pa: 96.1
+  - opp_id: shawne2520997
+    opp_short: Shawnee
+    record: 1-8
+    win_pct: '.111'
+    win_color: '#fce5bf'
+    avg_pf: 97.1
+    avg_pa: 112.7
+  - opp_id: sturmanator15
+    opp_short: Wade
+    record: 5-4
+    win_pct: '.556'
+    win_color: '#f8ae4b'
+    avg_pf: 109.5
+    avg_pa: 103.1
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 5-3
+    win_pct: '.625'
+    win_color: '#f6a348'
+    avg_pf: 113.9
+    avg_pa: 102.4
+  trades:
+  - year: 2026
+    week: 1
+    got:
+    - Drake London
+    gave:
+    - Ashton Jeanty
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mother, Respectfully
+  - year: 2024
+    week: 0
+    got:
+    - 2.05 pick
+    - 4.05 pick
+    - 6.05 pick
+    - 8.05 pick
+    gave:
+    - Nico Collins
+    - 2.08 pick
+    - 4.08 pick
+    - 6.08 pick
+    - 8.08 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Nix Out For Harambe
+  - year: 2022
+    week: 9
+    got:
+    - Amon-Ra St. Brown
+    gave:
+    - Kyler Murray
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Thoughts and Players
+  - year: 2021
+    week: 8
+    got:
+    - Joe Mixon
+    - Keenan Allen
+    gave:
+    - A.J. Brown
+    - Kenyan Drake
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: Hot Chubb Time Machine
+  - year: 2021
+    week: 4
+    got:
+    - Jamaal Williams
+    gave:
+    - George Kittle
+    with:
+    - id: zachzoske
+      name: Zach
+      team: ESPN 8 The Ocho
+  - year: 2019
+    week: 0
+    got:
+    - 2.05 pick
+    - 3.08 pick
+    - 5.08 pick
+    gave:
+    - 2.08 pick
+    - 3.05 pick
+    - 5.05 pick
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Eleven In Crocks
+  trades_known: true
+  keepers:
+  - year: 2026
+    round: 8
+    player: De'Von Achane
+  - year: 2025
+    round: 10
+    player: De'Von Achane
+  - year: 2024
+    round: 12
+    player: De'Von Achane
+  - year: 2023
+    round: 4
+    player: Amon-Ra St. Brown
+  rosters:
+  - year: 2026
+    players:
+    - player: Jonathan Taylor
+      via: draft
+      round: 1
+    - player: Ashton Jeanty
+      via: draft
+      round: 2
+    - player: Emeka Egbuka
+      via: draft
+      round: 3
+    - player: Rome Odunze
+      via: draft
+      round: 4
+    - player: Harold Fannin Jr.
+      via: draft
+      round: 5
+    - player: Rico Dowdle
+      via: draft
+      round: 6
+    - player: Jayden Daniels
+      via: draft
+      round: 7
+    - player: De'Von Achane
+      via: draft
+      round: 8
+    - player: Makai Lemon
+      via: draft
+      round: 9
+    - player: KC Concepcion
+      via: draft
+      round: 10
+    - player: Mark Andrews
+      via: draft
+      round: 11
+    - player: Bo Nix
+      via: draft
+      round: 12
+    - player: Ka'imi Fairbairn
+      via: draft
+      round: 13
+    - player: Kenyon Sadiq
+      via: draft
+      round: 14
+    - player: Browns D/ST
+      via: draft
+      round: 15
+    - player: Drake London
+      via: trade
+      week: 1
+    - player: Deebo Samuel Sr.
+      via: add
+      week: 1
+      waiver: false
+    - player: Steelers D/ST
+      via: add
+      week: 2
+      waiver: true
+    - player: Evan McPherson
+      via: add
+      week: 3
+      waiver: false
+    - player: Kirk Cousins
+      via: add
+      week: 3
+      waiver: false
+    - player: Ollie Gordon II
+      via: add
+      week: 4
+      waiver: true
+    - player: Brenton Strange
+      via: add
+      week: 6
+      waiver: false
+    - player: Dominic Zvada
+      via: add
+      week: 6
+      waiver: true
+    - player: Kendre Miller
+      via: add
+      week: 6
+      waiver: true
+    - player: Michael Penix Jr.
+      via: add
+      week: 7
+      waiver: false
+    - player: Omar Cooper Jr.
+      via: add
+      week: 7
+      waiver: true
+  - year: 2025
+    players:
+    - player: Malik Nabers
+      via: draft
+      round: 1
+    - player: Josh Jacobs
+      via: draft
+      round: 2
+    - player: George Kittle
+      via: draft
+      round: 3
+    - player: DJ Moore
+      via: draft
+      round: 4
+    - player: Jameson Williams
+      via: draft
+      round: 5
+    - player: Tyrone Tracy Jr.
+      via: draft
+      round: 6
+    - player: Kyler Murray
+      via: draft
+      round: 7
+    - player: Michael Pittman Jr.
+      via: draft
+      round: 8
+    - player: Khalil Shakir
+      via: draft
+      round: 9
+    - player: De'Von Achane
+      via: draft
+      round: 10
+    - player: Bhayshul Tuten
+      via: draft
+      round: 11
+    - player: Marvin Mims Jr.
+      via: draft
+      round: 12
+    - player: Cam Ward
+      via: draft
+      round: 13
+    - player: Chase McLaughlin
+      via: draft
+      round: 14
+    - player: Colts D/ST
+      via: draft
+      round: 15
+    - player: Calvin Austin III
+      via: add
+      week: 2
+      waiver: true
+    - player: Harold Fannin Jr.
+      via: add
+      week: 2
+      waiver: true
+    - player: Kayshon Boutte
+      via: add
+      week: 2
+      waiver: true
+    - player: Spencer Shrader
+      via: add
+      week: 3
+      waiver: false
+    - player: Hunter Henry
+      via: add
+      week: 4
+      waiver: false
+    - player: Luke McCaffrey
+      via: add
+      week: 5
+      waiver: false
+    - player: Rico Dowdle
+      via: add
+      week: 5
+      waiver: false
+    - player: Eddy Pineiro
+      via: add
+      week: 6
+      waiver: false
+    - player: Joey Slye
+      via: add
+      week: 6
+      waiver: false
+    - player: Jordan Love
+      via: add
+      week: 6
+      waiver: true
+    - player: Tory Horton
+      via: add
+      week: 6
+      waiver: true
+    - player: Malik Washington
+      via: add
+      week: 8
+      waiver: false
+    - player: Brock Purdy
+      via: add
+      week: 11
+      waiver: false
+    - player: Chargers D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Emanuel Wilson
+      via: add
+      week: 12
+      waiver: true
+    - player: Jayden Higgins
+      via: add
+      week: 12
+      waiver: true
+    - player: Raiders D/ST
+      via: add
+      week: 12
+      waiver: false
+    - player: Zane Gonzalez
+      via: add
+      week: 12
+      waiver: false
+    - player: C.J. Stroud
+      via: add
+      week: 14
+      waiver: false
+    - player: Marcus Mariota
+      via: add
+      week: 14
+      waiver: false
+    - player: Riley Patterson
+      via: add
+      week: 14
+      waiver: false
+    - player: Zach Ertz
+      via: add
+      week: 14
+      waiver: true
+    - player: Steelers D/ST
+      via: add
+      week: 15
+      waiver: false
+    - player: Falcons D/ST
+      via: add
+      week: 16
+      waiver: false
+    - player: Colby Parkinson
+      via: add
+      week: 17
+      waiver: false
+    - player: Patriots D/ST
+      via: add
+      week: 17
+      waiver: true
+  - year: 2024
+    players:
+    - player: Amon-Ra St. Brown
+      via: draft
+      round: 1
+    - player: Rachaad White
+      via: draft
+      round: 2
+    - player: DJ Moore
+      via: draft
+      round: 3
+    - player: Travis Kelce
+      via: draft
+      round: 4
+    - player: Aaron Jones
+      via: draft
+      round: 5
+    - player: D'Andre Swift
+      via: draft
+      round: 6
+    - player: Keon Coleman
+      via: draft
+      round: 7
+    - player: Tyjae Spears
+      via: draft
+      round: 8
+    - player: DeMario Douglas
+      via: draft
+      round: 9
+    - player: Gabe Davis
+      via: draft
+      round: 10
+    - player: Caleb Williams
+      via: draft
+      round: 11
+    - player: De'Von Achane
+      via: draft
+      round: 12
+    - player: Harrison Butker
+      via: draft
+      round: 13
+    - player: Steelers D/ST
+      via: draft
+      round: 14
+    - player: Tre Tucker
+      via: draft
+      round: 15
+    - player: 2.05 pick
+      via: trade
+      week: 0
+    - player: 4.05 pick
+      via: trade
+      week: 0
+    - player: 6.05 pick
+      via: trade
+      week: 0
+    - player: 8.05 pick
+      via: trade
+      week: 0
+    - player: Wan'Dale Robinson
+      via: add
+      week: 2
+      waiver: false
+    - player: Josh Downs
+      via: add
+      week: 3
+      waiver: false
+    - player: Kirk Cousins
+      via: add
+      week: 3
+      waiver: false
+    - player: Quentin Johnston
+      via: add
+      week: 3
+      waiver: true
+    - player: Cole Kmet
+      via: add
+      week: 4
+      waiver: false
+    - player: Sam Darnold
+      via: add
+      week: 4
+      waiver: false
+    - player: Greg Joseph
+      via: add
+      week: 6
+      waiver: false
+    - player: Jalen Tolbert
+      via: add
+      week: 6
+      waiver: true
+    - player: Drake Maye
+      via: add
+      week: 7
+      waiver: false
+    - player: Sean Tucker
+      via: add
+      week: 7
+      waiver: false
+    - player: Cedric Tillman
+      via: add
+      week: 8
+      waiver: false
+    - player: Dontayvion Wicks
+      via: add
+      week: 8
+      waiver: false
+    - player: Bengals D/ST
+      via: add
+      week: 9
+      waiver: false
+    - player: Giants D/ST
+      via: add
+      week: 10
+      waiver: false
+    - player: Blake Grupe
+      via: add
+      week: 11
+      waiver: false
+    - player: Jared Goff
+      via: add
+      week: 11
+      waiver: false
+    - player: Jets D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Cardinals D/ST
+      via: add
+      week: 12
+      waiver: false
+    - player: Chase McLaughlin
+      via: add
+      week: 12
+      waiver: false
+    - player: Keenan Allen
+      via: add
+      week: 13
+      waiver: true
+  - year: 2023
+    players:
+    - player: Derrick Henry
+      via: draft
+      round: 1
+    - player: CeeDee Lamb
+      via: draft
+      round: 2
+    - player: Amari Cooper
+      via: draft
+      round: 3
+    - player: Amon-Ra St. Brown
+      via: draft
+      round: 4
+    - player: Cam Akers
+      via: draft
+      round: 5
+    - player: Justin Fields
+      via: draft
+      round: 6
+    - player: Courtland Sutton
+      via: draft
+      round: 7
+    - player: Zay Flowers
+      via: draft
+      round: 8
+    - player: Justin Tucker
+      via: draft
+      round: 9
+    - player: Tyler Higbee
+      via: draft
+      round: 10
+    - player: Nico Collins
+      via: draft
+      round: 11
+    - player: Rashee Rice
+      via: draft
+      round: 12
+    - player: Greg Dulcich
+      via: draft
+      round: 13
+    - player: Jameson Williams
+      via: draft
+      round: 14
+    - player: Browns D/ST
+      via: draft
+      round: 15
+    - player: Patriots D/ST
+      via: add
+      week: 1
+      waiver: false
+    - player: Antonio Gibson
+      via: add
+      week: 2
+      waiver: false
+    - player: Chuba Hubbard
+      via: add
+      week: 3
+      waiver: false
+    - player: Brock Purdy
+      via: add
+      week: 4
+      waiver: true
+    - player: De'Von Achane
+      via: add
+      week: 4
+      waiver: true
+    - player: Texans D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Dalton Schultz
+      via: add
+      week: 6
+      waiver: false
+    - player: Jonnu Smith
+      via: add
+      week: 7
+      waiver: false
+    - player: Raiders D/ST
+      via: add
+      week: 7
+      waiver: false
+    - player: Royce Freeman
+      via: add
+      week: 7
+      waiver: false
+    - player: Chiefs D/ST
+      via: add
+      week: 8
+      waiver: false
+    - player: Kyler Murray
+      via: add
+      week: 8
+      waiver: false
+    - player: Derek Carr
+      via: add
+      week: 9
+      waiver: false
+    - player: Falcons D/ST
+      via: add
+      week: 9
+      waiver: false
+    - player: Jaguars D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Broncos D/ST
+      via: add
+      week: 12
+      waiver: false
+    - player: Titans D/ST
+      via: add
+      week: 12
+      waiver: false
+    - player: Chris Boswell
+      via: add
+      week: 13
+      waiver: false
+    - player: Gerald Everett
+      via: add
+      week: 14
+      waiver: false
+    - player: Packers D/ST
+      via: add
+      week: 14
+      waiver: false
+  - year: 2022
+    players:
+    - player: Joe Mixon
+      via: draft
+      round: 1
+    - player: Davante Adams
+      via: draft
+      round: 2
+    - player: Keenan Allen
+      via: draft
+      round: 3
+    - player: David Montgomery
+      via: draft
+      round: 4
+    - player: Diontae Johnson
+      via: draft
+      round: 5
+    - player: Kyler Murray
+      via: draft
+      round: 6
+    - player: Darnell Mooney
+      via: draft
+      round: 7
+    - player: Kareem Hunt
+      via: draft
+      round: 8
+    - player: Hunter Henry
+      via: draft
+      round: 9
+    - player: Saints D/ST
+      via: draft
+      round: 10
+    - player: Daniel Carlson
+      via: draft
+      round: 11
+    - player: Cole Kmet
+      via: draft
+      round: 12
+    - player: Tyler Allgeier
+      via: draft
+      round: 13
+    - player: Nico Collins
+      via: draft
+      round: 14
+    - player: Denzel Perryman
+      via: draft
+      round: 15
+    - player: Bengals D/ST
+      via: add
+      week: 2
+      waiver: false
+    - player: Brandon Jones
+      via: add
+      week: 2
+      waiver: false
+    - player: Jeff Wilson Jr.
+      via: add
+      week: 2
+      waiver: true
+    - player: Jakobi Meyers
+      via: add
+      week: 3
+      waiver: false
+    - player: Tyler Higbee
+      via: add
+      week: 3
+      waiver: true
+    - player: Tyler Lockett
+      via: add
+      week: 3
+      waiver: false
+    - player: Colts D/ST
+      via: add
+      week: 4
+      waiver: false
+    - player: Jordan Hicks
+      via: add
+      week: 4
+      waiver: false
+    - player: Marcus Mariota
+      via: add
+      week: 4
+      waiver: false
+    - player: Michael Gallup
+      via: add
+      week: 4
+      waiver: false
+    - player: Dolphins D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Jaguars D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Will Dissly
+      via: add
+      week: 5
+      waiver: false
+    - player: Brett Maher
+      via: add
+      week: 6
+      waiver: false
+    - player: Cairo Santos
+      via: add
+      week: 6
+      waiver: false
+    - player: Robert Tonyan
+      via: add
+      week: 7
+      waiver: false
+    - player: Tariq Woolen
+      via: add
+      week: 7
+      waiver: false
+    - player: Tua Tagovailoa
+      via: add
+      week: 7
+      waiver: false
+    - player: Mike Gesicki
+      via: add
+      week: 8
+      waiver: false
+    - player: Amon-Ra St. Brown
+      via: trade
+      week: 9
+    - player: DeAndre Carter
+      via: add
+      week: 9
+      waiver: false
+    - player: Eddie Jackson
+      via: add
+      week: 9
+      waiver: false
+    - player: Eric Kendricks
+      via: add
+      week: 9
+      waiver: false
+    - player: Evan Engram
+      via: add
+      week: 9
+      waiver: false
+    - player: David Njoku
+      via: add
+      week: 10
+      waiver: true
+    - player: Odell Beckham Jr.
+      via: add
+      week: 10
+      waiver: false
+    - player: Titans D/ST
+      via: add
+      week: 10
+      waiver: false
+    - player: Foster Moreau
+      via: add
+      week: 11
+      waiver: false
+    - player: Russell Wilson
+      via: add
+      week: 11
+      waiver: false
+    - player: 49ers D/ST
+      via: add
+      week: 12
+      waiver: false
+    - player: Maxx Crosby
+      via: add
+      week: 12
+      waiver: false
+    - player: Darren Waller
+      via: add
+      week: 15
+      waiver: true
+    - player: Brock Purdy
+      via: add
+      week: 17
+      waiver: false
+  - year: 2021
+    players:
+    - player: Christian McCaffrey
+      via: draft
+      round: 1
+    - player: George Kittle
+      via: draft
+      round: 2
+    - player: A.J. Brown
+      via: draft
+      round: 3
+    - player: Javonte Williams
+      via: draft
+      round: 4
+    - player: DJ Moore
+      via: draft
+      round: 5
+    - player: Aaron Rodgers
+      via: draft
+      round: 6
+    - player: Ja'Marr Chase
+      via: draft
+      round: 7
+    - player: Henry Ruggs III
+      via: draft
+      round: 8
+    - player: James Conner
+      via: draft
+      round: 9
+    - player: Michael Carter
+      via: draft
+      round: 10
+    - player: Matthew Stafford
+      via: draft
+      round: 11
+    - player: Commanders D/ST
+      via: draft
+      round: 12
+    - player: Brandon McManus
+      via: draft
+      round: 13
+    - player: Jeremy Chinn
+      via: draft
+      round: 14
+    - player: Bryan Edwards
+      via: add
+      week: 1
+      waiver: true
+    - player: Chandler Jones
+      via: add
+      week: 2
+      waiver: true
+    - player: Jameis Winston
+      via: add
+      week: 2
+      waiver: true
+    - player: Daniel Jones
+      via: add
+      week: 3
+      waiver: false
+    - player: Panthers D/ST
+      via: add
+      week: 3
+      waiver: true
+    - player: Rondale Moore
+      via: add
+      week: 3
+      waiver: false
+    - player: Jamaal Williams
+      via: trade
+      week: 4
+    - player: Dawson Knox
+      via: add
+      week: 4
+      waiver: true
+    - player: Hunter Renfrow
+      via: add
+      week: 4
+      waiver: false
+    - player: Kirk Cousins
+      via: add
+      week: 4
+      waiver: true
+    - player: Tim Patrick
+      via: add
+      week: 4
+      waiver: false
+    - player: Logan Wilson
+      via: add
+      week: 5
+      waiver: true
+    - player: Samaje Perine
+      via: add
+      week: 5
+      waiver: true
+    - player: Jerick McKinnon
+      via: add
+      week: 6
+      waiver: false
+    - player: Taylor Heinicke
+      via: add
+      week: 6
+      waiver: false
+    - player: Kenyan Drake
+      via: add
+      week: 7
+      waiver: false
+    - player: Ricky Seals-Jones
+      via: add
+      week: 7
+      waiver: false
+    - player: Zach Ertz
+      via: add
+      week: 7
+      waiver: true
+    - player: Joe Mixon
+      via: trade
+      week: 8
+    - player: Keenan Allen
+      via: trade
+      week: 8
+    - player: Browns D/ST
+      via: add
+      week: 8
+      waiver: false
+    - player: Adrian Peterson
+      via: add
+      week: 9
+      waiver: true
+    - player: Colts D/ST
+      via: add
+      week: 9
+      waiver: true
+    - player: Derek Carr
+      via: add
+      week: 9
+      waiver: false
+    - player: Chris Boswell
+      via: add
+      week: 10
+      waiver: false
+    - player: Deion Jones
+      via: add
+      week: 10
+      waiver: false
+    - player: Ravens D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Bobby Wagner
+      via: add
+      week: 12
+      waiver: false
+    - player: Cedrick Wilson
+      via: add
+      week: 12
+      waiver: true
+    - player: Texans D/ST
+      via: add
+      week: 12
+      waiver: true
+    - player: Devin Singletary
+      via: add
+      week: 13
+      waiver: true
+    - player: Foster Moreau
+      via: add
+      week: 13
+      waiver: true
+    - player: Kendrick Bourne
+      via: add
+      week: 13
+      waiver: false
+    - player: Rams D/ST
+      via: add
+      week: 13
+      waiver: false
+    - player: K.J. Osborn
+      via: add
+      week: 14
+      waiver: false
+    - player: Titans D/ST
+      via: add
+      week: 14
+      waiver: false
+    - player: Dolphins D/ST
+      via: add
+      week: 15
+      waiver: true
+    - player: Jaret Patterson
+      via: add
+      week: 17
+      waiver: false
+  - year: 2020
+    players:
+    - player: Saquon Barkley
+      via: draft
+      round: 1
+    - player: Kenny Golladay
+      via: draft
+      round: 2
+    - player: Patrick Mahomes
+      via: draft
+      round: 3
+    - player: Cooper Kupp
+      via: draft
+      round: 4
+    - player: Le'Veon Bell
+      via: draft
+      round: 5
+    - player: Darren Waller
+      via: draft
+      round: 6
+    - player: Ronald Jones II
+      via: draft
+      round: 7
+    - player: Henry Ruggs III
+      via: draft
+      round: 8
+    - player: Matt Breida
+      via: draft
+      round: 9
+    - player: Robby Anderson
+      via: draft
+      round: 10
+    - player: Darrell Henderson Jr.
+      via: draft
+      round: 11
+    - player: Vikings D/ST
+      via: draft
+      round: 12
+    - player: Budda Baker
+      via: draft
+      round: 13
+    - player: Rodrigo Blankenship
+      via: draft
+      round: 14
+    - player: Adrian Peterson
+      via: add
+      week: 2
+      waiver: false
+    - player: Cardinals D/ST
+      via: add
+      week: 2
+      waiver: true
+    - player: Peyton Barber
+      via: add
+      week: 2
+      waiver: false
+    - player: Tre'Quan Smith
+      via: add
+      week: 2
+      waiver: false
+    - player: Keelan Cole Sr.
+      via: add
+      week: 3
+      waiver: false
+    - player: Myles Gaskin
+      via: add
+      week: 3
+      waiver: false
+    - player: Chuck Clark
+      via: add
+      week: 4
+      waiver: false
+    - player: Robert Tonyan
+      via: add
+      week: 5
+      waiver: true
+    - player: Tim Patrick
+      via: add
+      week: 5
+      waiver: false
+    - player: Marlon Humphrey
+      via: add
+      week: 6
+      waiver: true
+    - player: Brandon McManus
+      via: add
+      week: 7
+      waiver: false
+    - player: Devin White
+      via: add
+      week: 7
+      waiver: false
+    - player: Sterling Shepard
+      via: add
+      week: 8
+      waiver: false
+    - player: Titans D/ST
+      via: add
+      week: 8
+      waiver: false
+    - player: Washington D/ST
+      via: add
+      week: 9
+      waiver: true
+    - player: Jared Goff
+      via: add
+      week: 10
+      waiver: true
+    - player: Broncos D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Kerryon Johnson
+      via: add
+      week: 11
+      waiver: false
+    - player: Packers D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Nelson Agholor
+      via: add
+      week: 12
+      waiver: false
+    - player: Brandon Aiyuk
+      via: add
+      week: 13
+      waiver: true
+    - player: Cam Akers
+      via: add
+      week: 13
+      waiver: true
+    - player: Tyler Bass
+      via: add
+      week: 13
+      waiver: true
+    - player: Tyrell Adams
+      via: add
+      week: 13
+      waiver: false
+  - year: 2019
+    players:
+    - player: DeAndre Hopkins
+      via: draft
+      round: 1
+    - player: JuJu Smith-Schuster
+      via: draft
+      round: 2
+    - player: Aaron Jones
+      via: draft
+      round: 3
+    - player: Stefon Diggs
+      via: draft
+      round: 4
+    - player: Duke Johnson
+      via: draft
+      round: 5
+    - player: Jared Cook
+      via: draft
+      round: 6
+    - player: Matt Ryan
+      via: draft
+      round: 7
+    - player: Dak Prescott
+      via: draft
+      round: 8
+    - player: Dante Pettis
+      via: draft
+      round: 9
+    - player: Courtland Sutton
+      via: draft
+      round: 10
+    - player: LeSean McCoy
+      via: draft
+      round: 11
+    - player: Jaguars D/ST
+      via: draft
+      round: 12
+    - player: Deion Jones
+      via: draft
+      round: 13
+    - player: Jake Elliott
+      via: draft
+      round: 14
+    - player: 2.05 pick
+      via: trade
+      week: 0
+    - player: 3.08 pick
+      via: trade
+      week: 0
+    - player: 5.08 pick
+      via: trade
+      week: 0
+    - player: Chris Thompson
+      via: add
+      week: 2
+      waiver: false
+    - player: DK Metcalf
+      via: add
+      week: 3
+      waiver: false
+    - player: Frank Gore
+      via: add
+      week: 3
+      waiver: true
+    - player: Luke Kuechly
+      via: add
+      week: 3
+      waiver: true
+    - player: Will Dissly
+      via: add
+      week: 3
+      waiver: true
+    - player: Panthers D/ST
+      via: add
+      week: 5
+      waiver: true
+    - player: Shaquil Barrett
+      via: add
+      week: 5
+      waiver: true
+    - player: Tevin Coleman
+      via: add
+      week: 5
+      waiver: true
+    - player: Cowboys D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: Joey Slye
+      via: add
+      week: 6
+      waiver: true
+    - player: Darren Fells
+      via: add
+      week: 7
+      waiver: true
+    - player: De'Vondre Campbell
+      via: add
+      week: 7
+      waiver: false
+    - player: Matt Prater
+      via: add
+      week: 7
+      waiver: true
+    - player: Seahawks D/ST
+      via: add
+      week: 7
+      waiver: true
+    - player: Chris Herndon
+      via: add
+      week: 8
+      waiver: true
+    - player: Dallas Goedert
+      via: add
+      week: 8
+      waiver: false
+    - player: Gardner Minshew II
+      via: add
+      week: 8
+      waiver: false
+    - player: Steelers D/ST
+      via: add
+      week: 8
+      waiver: true
+    - player: Darius Leonard
+      via: add
+      week: 9
+      waiver: true
+    - player: Chiefs D/ST
+      via: add
+      week: 10
+      waiver: false
+    - player: Christian Kirk
+      via: add
+      week: 10
+      waiver: false
+    - player: Jacob Hollister
+      via: add
+      week: 10
+      waiver: true
+    - player: Kalen Ballage
+      via: add
+      week: 11
+      waiver: false
+    - player: Vikings D/ST
+      via: add
+      week: 11
+      waiver: true
+    - player: Browns D/ST
+      via: add
+      week: 12
+      waiver: true
+    - player: Jaylon Smith
+      via: add
+      week: 12
+      waiver: true
+    - player: Jonathan Williams
+      via: add
+      week: 12
+      waiver: true
+    - player: Benny Snell Jr.
+      via: add
+      week: 13
+      waiver: true
+    - player: Robby Anderson
+      via: add
+      week: 14
+      waiver: false
+    - player: Bills D/ST
+      via: add
+      week: 15
+      waiver: false
+    - player: Michael Badgley
+      via: add
+      week: 15
+      waiver: false
+    - player: Patrick Laird
+      via: add
+      week: 15
+      waiver: false
+  current_roster:
+    year: 2026
+    week: 8
+    players:
+    - player: Jayden Daniels
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: Kirk Cousins
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Jonathan Taylor
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Rico Dowdle
+      pos: RB
+      cost: R4
+      basis: Drafted R6
+      ineligible: false
+    - player: De'Von Achane
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Kendre Miller
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Ollie Gordon II
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Drake London
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Emeka Egbuka
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Rome Odunze
+      pos: WR
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Deebo Samuel Sr.
+      pos: WR
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Omar Cooper Jr.
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Harold Fannin Jr.
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Mark Andrews
+      pos: TE
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Dominic Zvada
+      pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Steelers D/ST
+      pos: D/ST
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+alexandra:
+  name: Lexi
+  nickname: ''
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+  honors: []
+  resume:
+    all_time: 2-5
+    win_pct: '.286'
+    titles: '0'
+    sackos: 0
+    playoff_apps: 0
+    trades: 1
+    trades_known: true
+    tx_per_year: 21.0
+    tx_known: true
+    seasons: 1
+    best_finish:
+      type: place
+      ordinal: —
+      years: []
+    avg_finish: null
+    high_game:
+      score: 134.3
+      year: 2026
+      opp: Luke
+    low_game:
+      score: 93.1
+      year: 2026
+      opp: Zach
+  seasons:
+  - year: 2026
+    team: Cornstar
+    tag: null
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    finish: 9th
+    record: 2-5
+    tx: 21
+    in_progress: true
+    pf: 776.0
+    pa: 818.7
+  h2h:
+  - opp_id: theoceanpulse
+    opp_short: Dillon
+    record: 0-1
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 104.6
+    avg_pa: 121.0
+  - opp_id: jackperkins74
+    opp_short: Jack
+    record: 0-1
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 132.5
+    avg_pa: 193.7
+  - opp_id: schirmerj
+    opp_short: Jono
+    record: 0-1
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 111.2
+    avg_pa: 112.3
+  - opp_id: kevbots22
+    opp_short: Kevin
+    record: 0-1
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 95.3
+    avg_pa: 106.8
+  - opp_id: lukstein
+    opp_short: Luke
+    record: 1-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 134.3
+    avg_pa: 74.0
+  - opp_id: whowonthelastsuperbowl
+    opp_short: Nate
+    record: 1-0
+    win_pct: '1.000'
+    win_color: '#ee6b3b'
+    avg_pf: 105.0
+    avg_pa: 87.4
+  - opp_id: zachzoske
+    opp_short: Zach
+    record: 0-1
+    win_pct: '.000'
+    win_color: '#fdf3e0'
+    avg_pf: 93.1
+    avg_pa: 123.5
+  trades:
+  - year: 2026
+    week: 7
+    got:
+    - Tyler Allgeier
+    gave:
+    - DK Metcalf
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mother, Respectfully
+  trades_known: true
+  keepers:
+  - year: 2026
+    round: 7
+    player: Javonte Williams
+  rosters:
+  - year: 2026
+    players:
+    - player: Ja'Marr Chase
+      via: draft
+      round: 1
+    - player: Jeremiyah Love
+      via: draft
+      round: 2
+    - player: Rashee Rice
+      via: draft
+      round: 3
+    - player: Lamar Jackson
+      via: draft
+      round: 4
+    - player: Tyler Warren
+      via: draft
+      round: 5
+    - player: DK Metcalf
+      via: draft
+      round: 6
+    - player: Javonte Williams
+      via: draft
+      round: 7
+    - player: J.K. Dobbins
+      via: draft
+      round: 8
+    - player: Jordan Addison
+      via: draft
+      round: 9
+    - player: Denzel Boston
+      via: draft
+      round: 10
+    - player: Tyjae Spears
+      via: draft
+      round: 11
+    - player: Travis Hunter
+      via: draft
+      round: 12
+    - player: Seahawks D/ST
+      via: draft
+      round: 13
+    - player: Ja'Kobi Lane
+      via: draft
+      round: 14
+    - player: Tyler Loop
+      via: draft
+      round: 15
+    - player: Rashid Shaheed
+      via: add
+      week: 2
+      waiver: false
+    - player: Browns D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Commanders D/ST
+      via: add
+      week: 5
+      waiver: false
+    - player: Jordan Love
+      via: add
+      week: 5
+      waiver: false
+    - player: Kyler Murray
+      via: add
+      week: 5
+      waiver: false
+    - player: 49ers D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: DeMario Douglas
+      via: add
+      week: 6
+      waiver: false
+    - player: Hunter Henry
+      via: add
+      week: 6
+      waiver: false
+    - player: Keenan Allen
+      via: add
+      week: 6
+      waiver: false
+    - player: Panthers D/ST
+      via: add
+      week: 6
+      waiver: false
+    - player: Pierre Strong Jr.
+      via: add
+      week: 6
+      waiver: false
+    - player: Tyler Allgeier
+      via: trade
+      week: 7
+  current_roster:
+    year: 2026
+    week: 8
+    players:
+    - player: Lamar Jackson
+      pos: QB
+      cost: R2
+      basis: Drafted R4
+      ineligible: false
+    - player: Jordan Love
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Jeremiyah Love
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R2
+      ineligible: true
+    - player: Javonte Williams
+      pos: RB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
+    - player: J.K. Dobbins
+      pos: RB
+      cost: R6
+      basis: Drafted R8
+      ineligible: false
+    - player: Tyler Allgeier
+      pos: RB
+      cost: R10
+      basis: Drafted R12
+      ineligible: false
+    - player: Ja'Marr Chase
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
+    - player: Rashee Rice
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Denzel Boston
+      pos: WR
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
+    - player: Rashid Shaheed
+      pos: WR
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
+    - player: Keenan Allen
+      pos: WR
+      cost: R11
+      basis: Drafted R13
+      ineligible: false
+    - player: DeMario Douglas
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Tyler Warren
+      pos: TE
+      cost: R3
+      basis: Drafted R5
+      ineligible: false
+    - player: Hunter Henry
+      pos: TE
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Tyler Loop
+      pos: K
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Panthers D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 kevbots22:
   name: Kevin
   nickname: ''
@@ -14732,7 +16597,7 @@ kevbots22:
     team: Remember the Nice Guys, ChatGPT
     tag: null
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-    finish: 8th
+    finish: 10th
     record: 2-4-1
     tx: 11
     in_progress: true
@@ -16154,7 +18019,7 @@ kevbots22:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Matthew Stafford
       pos: QB
@@ -16231,291 +18096,6 @@ kevbots22:
       cost: R13
       basis: Drafted R15
       ineligible: false
-alexandra:
-  name: Lexi
-  nickname: ''
-  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-  honors: []
-  resume:
-    all_time: 2-5
-    win_pct: '.286'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 0
-    trades: 1
-    trades_known: true
-    tx_per_year: 21.0
-    tx_known: true
-    seasons: 1
-    best_finish:
-      type: place
-      ordinal: —
-      years: []
-    avg_finish: null
-    high_game:
-      score: 134.3
-      year: 2026
-      opp: Luke
-    low_game:
-      score: 93.1
-      year: 2026
-      opp: Zach
-  seasons:
-  - year: 2026
-    team: Cornstar
-    tag: null
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-    finish: 9th
-    record: 2-5
-    tx: 21
-    in_progress: true
-    pf: 776.0
-    pa: 818.7
-  h2h:
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 0-1
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 104.6
-    avg_pa: 121.0
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 0-1
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 132.5
-    avg_pa: 193.7
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 0-1
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 111.2
-    avg_pa: 112.3
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 0-1
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 95.3
-    avg_pa: 106.8
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 1-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 134.3
-    avg_pa: 74.0
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 1-0
-    win_pct: '1.000'
-    win_color: '#ee6b3b'
-    avg_pf: 105.0
-    avg_pa: 87.4
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 0-1
-    win_pct: '.000'
-    win_color: '#fdf3e0'
-    avg_pf: 93.1
-    avg_pa: 123.5
-  trades:
-  - year: 2026
-    week: 7
-    got:
-    - Tyler Allgeier
-    gave:
-    - DK Metcalf
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Tuten Your Mother, Respectfully
-  trades_known: true
-  keepers:
-  - year: 2026
-    round: 7
-    player: Javonte Williams
-  rosters:
-  - year: 2026
-    players:
-    - player: Ja'Marr Chase
-      via: draft
-      round: 1
-    - player: Jeremiyah Love
-      via: draft
-      round: 2
-    - player: Rashee Rice
-      via: draft
-      round: 3
-    - player: Lamar Jackson
-      via: draft
-      round: 4
-    - player: Tyler Warren
-      via: draft
-      round: 5
-    - player: DK Metcalf
-      via: draft
-      round: 6
-    - player: Javonte Williams
-      via: draft
-      round: 7
-    - player: J.K. Dobbins
-      via: draft
-      round: 8
-    - player: Jordan Addison
-      via: draft
-      round: 9
-    - player: Denzel Boston
-      via: draft
-      round: 10
-    - player: Tyjae Spears
-      via: draft
-      round: 11
-    - player: Travis Hunter
-      via: draft
-      round: 12
-    - player: Seahawks D/ST
-      via: draft
-      round: 13
-    - player: Ja'Kobi Lane
-      via: draft
-      round: 14
-    - player: Tyler Loop
-      via: draft
-      round: 15
-    - player: Rashid Shaheed
-      via: add
-      week: 2
-      waiver: false
-    - player: Browns D/ST
-      via: add
-      week: 5
-      waiver: false
-    - player: Commanders D/ST
-      via: add
-      week: 5
-      waiver: false
-    - player: Jordan Love
-      via: add
-      week: 5
-      waiver: false
-    - player: Kyler Murray
-      via: add
-      week: 5
-      waiver: false
-    - player: 49ers D/ST
-      via: add
-      week: 6
-      waiver: false
-    - player: DeMario Douglas
-      via: add
-      week: 6
-      waiver: false
-    - player: Hunter Henry
-      via: add
-      week: 6
-      waiver: false
-    - player: Keenan Allen
-      via: add
-      week: 6
-      waiver: false
-    - player: Panthers D/ST
-      via: add
-      week: 6
-      waiver: false
-    - player: Pierre Strong Jr.
-      via: add
-      week: 6
-      waiver: false
-    - player: Tyler Allgeier
-      via: trade
-      week: 7
-  current_roster:
-    year: 2026
-    week: 7
-    players:
-    - player: Lamar Jackson
-      pos: QB
-      cost: R2
-      basis: Drafted R4
-      ineligible: false
-    - player: Jordan Love
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Jeremiyah Love
-      pos: RB
-      cost: Ineligible
-      basis: Drafted R2
-      ineligible: true
-    - player: Javonte Williams
-      pos: RB
-      cost: R5
-      basis: Drafted R7
-      ineligible: false
-    - player: J.K. Dobbins
-      pos: RB
-      cost: R6
-      basis: Drafted R8
-      ineligible: false
-    - player: Tyler Allgeier
-      pos: RB
-      cost: R10
-      basis: Drafted R12
-      ineligible: false
-    - player: Ja'Marr Chase
-      pos: WR
-      cost: Ineligible
-      basis: Drafted R1
-      ineligible: true
-    - player: Rashee Rice
-      pos: WR
-      cost: R1
-      basis: Drafted R3
-      ineligible: false
-    - player: Denzel Boston
-      pos: WR
-      cost: R8
-      basis: Drafted R10
-      ineligible: false
-    - player: Rashid Shaheed
-      pos: WR
-      cost: R9
-      basis: Drafted R11
-      ineligible: false
-    - player: Keenan Allen
-      pos: WR
-      cost: R11
-      basis: Drafted R13
-      ineligible: false
-    - player: DeMario Douglas
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Tyler Warren
-      pos: TE
-      cost: R3
-      basis: Drafted R5
-      ineligible: false
-    - player: Hunter Henry
-      pos: TE
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Tyler Loop
-      pos: K
-      cost: R13
-      basis: Drafted R15
-      ineligible: false
-    - player: Panthers D/ST
-      pos: D/ST
-      cost: R13
-      basis: Undrafted
-      ineligible: false
 theoceanpulse:
   name: Dillon
   nickname: ''
@@ -16559,7 +18139,7 @@ theoceanpulse:
     team: The ChoSimba Ones
     tag: null
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
-    finish: 10th
+    finish: 11th
     record: 2-4-1
     tx: 47
     in_progress: true
@@ -18529,7 +20109,7 @@ theoceanpulse:
       round: 17
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: Caleb Williams
       pos: QB
@@ -18576,11 +20156,6 @@ theoceanpulse:
       cost: R4
       basis: Drafted R6
       ineligible: false
-    - player: Tank Dell
-      pos: WR
-      cost: R8
-      basis: Drafted R10
-      ineligible: false
     - player: Ja'Kobi Lane
       pos: WR
       cost: R12
@@ -18610,1590 +20185,6 @@ theoceanpulse:
       pos: D/ST
       cost: R13
       basis: Undrafted
-      ineligible: false
-purpsworth:
-  name: Trevor
-  nickname: ''
-  logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-  honors:
-  - emoji: 🥈
-    text: 1× Runner-Up
-    strong: false
-  - emoji: 🥉
-    text: 1× Third
-    strong: false
-  - emoji: ''
-    text: 4× Playoffs
-    strong: false
-  resume:
-    all_time: 47-56
-    win_pct: '.456'
-    titles: '0'
-    sackos: 0
-    playoff_apps: 4
-    trades: 6
-    trades_known: true
-    tx_per_year: 41.4
-    tx_known: true
-    seasons: 8
-    best_finish:
-      type: place
-      ordinal: 2nd
-      years:
-      - 2021
-    avg_finish: 6.3
-    high_game:
-      score: 182.4
-      year: 2023
-      opp: Fletcher
-    low_game:
-      score: 44.5
-      year: 2022
-      opp: Jack
-  seasons:
-  - year: 2026
-    team: I am dead inside
-    tag: null
-    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    finish: 11th
-    record: 3-4
-    tx: 17
-    in_progress: true
-    pf: 748.8
-    pa: 792.6
-  - year: 2025
-    team: I am dead inside
-    tag: null
-    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    finish: 3rd
-    record: 6-8
-    tx: 41
-    in_progress: false
-    pf: 1566.2
-    pa: 1526.0
-    pf_color: '#f59846'
-  - year: 2024
-    team: I am dead inside
-    tag: null
-    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    finish: 9th
-    record: 5-9
-    tx: 35
-    in_progress: false
-    pf: 1606.7
-    pa: 1663.6
-    pf_color: '#f38c43'
-  - year: 2023
-    team: Used Napkin
-    tag: null
-    logo: https://i.imgur.com/qda7YBj.jpg
-    finish: 6th
-    record: 9-5
-    tx: 33
-    in_progress: false
-    pf: 1714.6
-    pa: 1505.6
-    pf_color: '#ee6b3b'
-  - year: 2022
-    team: Used Napkin
-    tag: null
-    logo: https://i.imgur.com/qda7YBj.jpg
-    finish: 7th
-    record: 7-7
-    tx: 44
-    in_progress: false
-    pf: 1355.2
-    pa: 1319.5
-    pf_color: '#fbd28f'
-  - year: 2021
-    team: WA Fantasy Football Team
-    tag: null
-    logo: https://i.redd.it/wad5aifmanj51.jpg
-    finish: 2nd
-    record: 7-7
-    tx: 57
-    in_progress: false
-    pf: 1372.6
-    pa: 1433.8
-    pf_color: '#fbcd85'
-  - year: 2020
-    team: AB’s Helmet
-    tag: null
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
-    finish: 7th
-    record: 6-7
-    tx: 41
-    in_progress: false
-    pf: 1219.5
-    pa: 1311.4
-    pf_color: '#fdf3e0'
-  - year: 2019
-    team: AB’s Helmet
-    tag: null
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
-    finish: 10th
-    record: 4-9
-    tx: 63
-    in_progress: false
-    pf: 1240.3
-    pa: 1344.1
-    pf_color: '#fdeed4'
-  h2h:
-  - opp_id: theoceanpulse
-    opp_short: Dillon
-    record: 7-10
-    win_pct: '.412'
-    win_color: '#fac167'
-    avg_pf: 102.6
-    avg_pa: 106.9
-  - opp_id: unclebadtouch38
-    opp_short: Fletcher
-    record: 6-5
-    win_pct: '.545'
-    win_color: '#f8af4b'
-    avg_pf: 99.5
-    avg_pa: 89.3
-  - opp_id: gganoom
-    opp_short: Grant
-    record: 2-4
-    win_pct: '.333'
-    win_color: '#faca7e'
-    avg_pf: 105.1
-    avg_pa: 122.6
-  - opp_id: henpen28
-    opp_short: Henry
-    record: 4-7
-    win_pct: '.364'
-    win_color: '#fac775'
-    avg_pf: 96.1
-    avg_pa: 99.9
-  - opp_id: jackperkins74
-    opp_short: Jack
-    record: 7-7
-    win_pct: '.500'
-    win_color: '#f9b64d'
-    avg_pf: 103.7
-    avg_pa: 105.8
-  - opp_id: schirmerj
-    opp_short: Jono
-    record: 4-6
-    win_pct: '.400'
-    win_color: '#fac26a'
-    avg_pf: 112.2
-    avg_pa: 117.0
-  - opp_id: kevbots22
-    opp_short: Kevin
-    record: 7-4
-    win_pct: '.636'
-    win_color: '#f6a248'
-    avg_pf: 118.0
-    avg_pa: 97.6
-  - opp_id: lukstein
-    opp_short: Luke
-    record: 2-6
-    win_pct: '.250'
-    win_color: '#fbd496'
-    avg_pf: 106.1
-    avg_pa: 107.4
-  - opp_id: whowonthelastsuperbowl
-    opp_short: Nate
-    record: 8-2
-    win_pct: '.800'
-    win_color: '#f28942'
-    avg_pf: 107.1
-    avg_pa: 96.1
-  - opp_id: shawne2520997
-    opp_short: Shawnee
-    record: 1-8
-    win_pct: '.111'
-    win_color: '#fce5bf'
-    avg_pf: 97.1
-    avg_pa: 112.7
-  - opp_id: sturmanator15
-    opp_short: Wade
-    record: 5-4
-    win_pct: '.556'
-    win_color: '#f8ae4b'
-    avg_pf: 109.5
-    avg_pa: 103.1
-  - opp_id: zachzoske
-    opp_short: Zach
-    record: 5-3
-    win_pct: '.625'
-    win_color: '#f6a348'
-    avg_pf: 113.9
-    avg_pa: 102.4
-  trades:
-  - year: 2026
-    week: 1
-    got:
-    - Drake London
-    gave:
-    - Ashton Jeanty
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Tuten Your Mother, Respectfully
-  - year: 2024
-    week: 0
-    got:
-    - 2.05 pick
-    - 4.05 pick
-    - 6.05 pick
-    - 8.05 pick
-    gave:
-    - Nico Collins
-    - 2.08 pick
-    - 4.08 pick
-    - 6.08 pick
-    - 8.08 pick
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Nix Out For Harambe
-  - year: 2022
-    week: 9
-    got:
-    - Amon-Ra St. Brown
-    gave:
-    - Kyler Murray
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Thoughts and Players
-  - year: 2021
-    week: 8
-    got:
-    - Joe Mixon
-    - Keenan Allen
-    gave:
-    - A.J. Brown
-    - Kenyan Drake
-    with:
-    - id: theoceanpulse
-      name: Dillon
-      team: Hot Chubb Time Machine
-  - year: 2021
-    week: 4
-    got:
-    - Jamaal Williams
-    gave:
-    - George Kittle
-    with:
-    - id: zachzoske
-      name: Zach
-      team: ESPN 8 The Ocho
-  - year: 2019
-    week: 0
-    got:
-    - 2.05 pick
-    - 3.08 pick
-    - 5.08 pick
-    gave:
-    - 2.08 pick
-    - 3.05 pick
-    - 5.05 pick
-    with:
-    - id: zachzoske
-      name: Zach
-      team: Eleven In Crocks
-  trades_known: true
-  keepers:
-  - year: 2026
-    round: 8
-    player: De'Von Achane
-  - year: 2025
-    round: 10
-    player: De'Von Achane
-  - year: 2024
-    round: 12
-    player: De'Von Achane
-  - year: 2023
-    round: 4
-    player: Amon-Ra St. Brown
-  rosters:
-  - year: 2026
-    players:
-    - player: Jonathan Taylor
-      via: draft
-      round: 1
-    - player: Ashton Jeanty
-      via: draft
-      round: 2
-    - player: Emeka Egbuka
-      via: draft
-      round: 3
-    - player: Rome Odunze
-      via: draft
-      round: 4
-    - player: Harold Fannin Jr.
-      via: draft
-      round: 5
-    - player: Rico Dowdle
-      via: draft
-      round: 6
-    - player: Jayden Daniels
-      via: draft
-      round: 7
-    - player: De'Von Achane
-      via: draft
-      round: 8
-    - player: Makai Lemon
-      via: draft
-      round: 9
-    - player: KC Concepcion
-      via: draft
-      round: 10
-    - player: Mark Andrews
-      via: draft
-      round: 11
-    - player: Bo Nix
-      via: draft
-      round: 12
-    - player: Ka'imi Fairbairn
-      via: draft
-      round: 13
-    - player: Kenyon Sadiq
-      via: draft
-      round: 14
-    - player: Browns D/ST
-      via: draft
-      round: 15
-    - player: Drake London
-      via: trade
-      week: 1
-    - player: Deebo Samuel Sr.
-      via: add
-      week: 1
-      waiver: false
-    - player: Steelers D/ST
-      via: add
-      week: 2
-      waiver: true
-    - player: Evan McPherson
-      via: add
-      week: 3
-      waiver: false
-    - player: Kirk Cousins
-      via: add
-      week: 3
-      waiver: false
-    - player: Ollie Gordon II
-      via: add
-      week: 4
-      waiver: true
-    - player: Brenton Strange
-      via: add
-      week: 6
-      waiver: false
-    - player: Dominic Zvada
-      via: add
-      week: 6
-      waiver: true
-    - player: Kendre Miller
-      via: add
-      week: 6
-      waiver: true
-    - player: Michael Penix Jr.
-      via: add
-      week: 7
-      waiver: false
-    - player: Omar Cooper Jr.
-      via: add
-      week: 7
-      waiver: true
-  - year: 2025
-    players:
-    - player: Malik Nabers
-      via: draft
-      round: 1
-    - player: Josh Jacobs
-      via: draft
-      round: 2
-    - player: George Kittle
-      via: draft
-      round: 3
-    - player: DJ Moore
-      via: draft
-      round: 4
-    - player: Jameson Williams
-      via: draft
-      round: 5
-    - player: Tyrone Tracy Jr.
-      via: draft
-      round: 6
-    - player: Kyler Murray
-      via: draft
-      round: 7
-    - player: Michael Pittman Jr.
-      via: draft
-      round: 8
-    - player: Khalil Shakir
-      via: draft
-      round: 9
-    - player: De'Von Achane
-      via: draft
-      round: 10
-    - player: Bhayshul Tuten
-      via: draft
-      round: 11
-    - player: Marvin Mims Jr.
-      via: draft
-      round: 12
-    - player: Cam Ward
-      via: draft
-      round: 13
-    - player: Chase McLaughlin
-      via: draft
-      round: 14
-    - player: Colts D/ST
-      via: draft
-      round: 15
-    - player: Calvin Austin III
-      via: add
-      week: 2
-      waiver: true
-    - player: Harold Fannin Jr.
-      via: add
-      week: 2
-      waiver: true
-    - player: Kayshon Boutte
-      via: add
-      week: 2
-      waiver: true
-    - player: Spencer Shrader
-      via: add
-      week: 3
-      waiver: false
-    - player: Hunter Henry
-      via: add
-      week: 4
-      waiver: false
-    - player: Luke McCaffrey
-      via: add
-      week: 5
-      waiver: false
-    - player: Rico Dowdle
-      via: add
-      week: 5
-      waiver: false
-    - player: Eddy Pineiro
-      via: add
-      week: 6
-      waiver: false
-    - player: Joey Slye
-      via: add
-      week: 6
-      waiver: false
-    - player: Jordan Love
-      via: add
-      week: 6
-      waiver: true
-    - player: Tory Horton
-      via: add
-      week: 6
-      waiver: true
-    - player: Malik Washington
-      via: add
-      week: 8
-      waiver: false
-    - player: Brock Purdy
-      via: add
-      week: 11
-      waiver: false
-    - player: Chargers D/ST
-      via: add
-      week: 11
-      waiver: false
-    - player: Emanuel Wilson
-      via: add
-      week: 12
-      waiver: true
-    - player: Jayden Higgins
-      via: add
-      week: 12
-      waiver: true
-    - player: Raiders D/ST
-      via: add
-      week: 12
-      waiver: false
-    - player: Zane Gonzalez
-      via: add
-      week: 12
-      waiver: false
-    - player: C.J. Stroud
-      via: add
-      week: 14
-      waiver: false
-    - player: Marcus Mariota
-      via: add
-      week: 14
-      waiver: false
-    - player: Riley Patterson
-      via: add
-      week: 14
-      waiver: false
-    - player: Zach Ertz
-      via: add
-      week: 14
-      waiver: true
-    - player: Steelers D/ST
-      via: add
-      week: 15
-      waiver: false
-    - player: Falcons D/ST
-      via: add
-      week: 16
-      waiver: false
-    - player: Colby Parkinson
-      via: add
-      week: 17
-      waiver: false
-    - player: Patriots D/ST
-      via: add
-      week: 17
-      waiver: true
-  - year: 2024
-    players:
-    - player: Amon-Ra St. Brown
-      via: draft
-      round: 1
-    - player: Rachaad White
-      via: draft
-      round: 2
-    - player: DJ Moore
-      via: draft
-      round: 3
-    - player: Travis Kelce
-      via: draft
-      round: 4
-    - player: Aaron Jones
-      via: draft
-      round: 5
-    - player: D'Andre Swift
-      via: draft
-      round: 6
-    - player: Keon Coleman
-      via: draft
-      round: 7
-    - player: Tyjae Spears
-      via: draft
-      round: 8
-    - player: DeMario Douglas
-      via: draft
-      round: 9
-    - player: Gabe Davis
-      via: draft
-      round: 10
-    - player: Caleb Williams
-      via: draft
-      round: 11
-    - player: De'Von Achane
-      via: draft
-      round: 12
-    - player: Harrison Butker
-      via: draft
-      round: 13
-    - player: Steelers D/ST
-      via: draft
-      round: 14
-    - player: Tre Tucker
-      via: draft
-      round: 15
-    - player: 2.05 pick
-      via: trade
-      week: 0
-    - player: 4.05 pick
-      via: trade
-      week: 0
-    - player: 6.05 pick
-      via: trade
-      week: 0
-    - player: 8.05 pick
-      via: trade
-      week: 0
-    - player: Wan'Dale Robinson
-      via: add
-      week: 2
-      waiver: false
-    - player: Josh Downs
-      via: add
-      week: 3
-      waiver: false
-    - player: Kirk Cousins
-      via: add
-      week: 3
-      waiver: false
-    - player: Quentin Johnston
-      via: add
-      week: 3
-      waiver: true
-    - player: Cole Kmet
-      via: add
-      week: 4
-      waiver: false
-    - player: Sam Darnold
-      via: add
-      week: 4
-      waiver: false
-    - player: Greg Joseph
-      via: add
-      week: 6
-      waiver: false
-    - player: Jalen Tolbert
-      via: add
-      week: 6
-      waiver: true
-    - player: Drake Maye
-      via: add
-      week: 7
-      waiver: false
-    - player: Sean Tucker
-      via: add
-      week: 7
-      waiver: false
-    - player: Cedric Tillman
-      via: add
-      week: 8
-      waiver: false
-    - player: Dontayvion Wicks
-      via: add
-      week: 8
-      waiver: false
-    - player: Bengals D/ST
-      via: add
-      week: 9
-      waiver: false
-    - player: Giants D/ST
-      via: add
-      week: 10
-      waiver: false
-    - player: Blake Grupe
-      via: add
-      week: 11
-      waiver: false
-    - player: Jared Goff
-      via: add
-      week: 11
-      waiver: false
-    - player: Jets D/ST
-      via: add
-      week: 11
-      waiver: false
-    - player: Cardinals D/ST
-      via: add
-      week: 12
-      waiver: false
-    - player: Chase McLaughlin
-      via: add
-      week: 12
-      waiver: false
-    - player: Keenan Allen
-      via: add
-      week: 13
-      waiver: true
-  - year: 2023
-    players:
-    - player: Derrick Henry
-      via: draft
-      round: 1
-    - player: CeeDee Lamb
-      via: draft
-      round: 2
-    - player: Amari Cooper
-      via: draft
-      round: 3
-    - player: Amon-Ra St. Brown
-      via: draft
-      round: 4
-    - player: Cam Akers
-      via: draft
-      round: 5
-    - player: Justin Fields
-      via: draft
-      round: 6
-    - player: Courtland Sutton
-      via: draft
-      round: 7
-    - player: Zay Flowers
-      via: draft
-      round: 8
-    - player: Justin Tucker
-      via: draft
-      round: 9
-    - player: Tyler Higbee
-      via: draft
-      round: 10
-    - player: Nico Collins
-      via: draft
-      round: 11
-    - player: Rashee Rice
-      via: draft
-      round: 12
-    - player: Greg Dulcich
-      via: draft
-      round: 13
-    - player: Jameson Williams
-      via: draft
-      round: 14
-    - player: Browns D/ST
-      via: draft
-      round: 15
-    - player: Patriots D/ST
-      via: add
-      week: 1
-      waiver: false
-    - player: Antonio Gibson
-      via: add
-      week: 2
-      waiver: false
-    - player: Chuba Hubbard
-      via: add
-      week: 3
-      waiver: false
-    - player: Brock Purdy
-      via: add
-      week: 4
-      waiver: true
-    - player: De'Von Achane
-      via: add
-      week: 4
-      waiver: true
-    - player: Texans D/ST
-      via: add
-      week: 5
-      waiver: false
-    - player: Dalton Schultz
-      via: add
-      week: 6
-      waiver: false
-    - player: Jonnu Smith
-      via: add
-      week: 7
-      waiver: false
-    - player: Raiders D/ST
-      via: add
-      week: 7
-      waiver: false
-    - player: Royce Freeman
-      via: add
-      week: 7
-      waiver: false
-    - player: Chiefs D/ST
-      via: add
-      week: 8
-      waiver: false
-    - player: Kyler Murray
-      via: add
-      week: 8
-      waiver: false
-    - player: Derek Carr
-      via: add
-      week: 9
-      waiver: false
-    - player: Falcons D/ST
-      via: add
-      week: 9
-      waiver: false
-    - player: Jaguars D/ST
-      via: add
-      week: 11
-      waiver: false
-    - player: Broncos D/ST
-      via: add
-      week: 12
-      waiver: false
-    - player: Titans D/ST
-      via: add
-      week: 12
-      waiver: false
-    - player: Chris Boswell
-      via: add
-      week: 13
-      waiver: false
-    - player: Gerald Everett
-      via: add
-      week: 14
-      waiver: false
-    - player: Packers D/ST
-      via: add
-      week: 14
-      waiver: false
-  - year: 2022
-    players:
-    - player: Joe Mixon
-      via: draft
-      round: 1
-    - player: Davante Adams
-      via: draft
-      round: 2
-    - player: Keenan Allen
-      via: draft
-      round: 3
-    - player: David Montgomery
-      via: draft
-      round: 4
-    - player: Diontae Johnson
-      via: draft
-      round: 5
-    - player: Kyler Murray
-      via: draft
-      round: 6
-    - player: Darnell Mooney
-      via: draft
-      round: 7
-    - player: Kareem Hunt
-      via: draft
-      round: 8
-    - player: Hunter Henry
-      via: draft
-      round: 9
-    - player: Saints D/ST
-      via: draft
-      round: 10
-    - player: Daniel Carlson
-      via: draft
-      round: 11
-    - player: Cole Kmet
-      via: draft
-      round: 12
-    - player: Tyler Allgeier
-      via: draft
-      round: 13
-    - player: Nico Collins
-      via: draft
-      round: 14
-    - player: Denzel Perryman
-      via: draft
-      round: 15
-    - player: Bengals D/ST
-      via: add
-      week: 2
-      waiver: false
-    - player: Brandon Jones
-      via: add
-      week: 2
-      waiver: false
-    - player: Jeff Wilson Jr.
-      via: add
-      week: 2
-      waiver: true
-    - player: Jakobi Meyers
-      via: add
-      week: 3
-      waiver: false
-    - player: Tyler Higbee
-      via: add
-      week: 3
-      waiver: true
-    - player: Tyler Lockett
-      via: add
-      week: 3
-      waiver: false
-    - player: Colts D/ST
-      via: add
-      week: 4
-      waiver: false
-    - player: Jordan Hicks
-      via: add
-      week: 4
-      waiver: false
-    - player: Marcus Mariota
-      via: add
-      week: 4
-      waiver: false
-    - player: Michael Gallup
-      via: add
-      week: 4
-      waiver: false
-    - player: Dolphins D/ST
-      via: add
-      week: 5
-      waiver: false
-    - player: Jaguars D/ST
-      via: add
-      week: 5
-      waiver: false
-    - player: Will Dissly
-      via: add
-      week: 5
-      waiver: false
-    - player: Brett Maher
-      via: add
-      week: 6
-      waiver: false
-    - player: Cairo Santos
-      via: add
-      week: 6
-      waiver: false
-    - player: Robert Tonyan
-      via: add
-      week: 7
-      waiver: false
-    - player: Tariq Woolen
-      via: add
-      week: 7
-      waiver: false
-    - player: Tua Tagovailoa
-      via: add
-      week: 7
-      waiver: false
-    - player: Mike Gesicki
-      via: add
-      week: 8
-      waiver: false
-    - player: Amon-Ra St. Brown
-      via: trade
-      week: 9
-    - player: DeAndre Carter
-      via: add
-      week: 9
-      waiver: false
-    - player: Eddie Jackson
-      via: add
-      week: 9
-      waiver: false
-    - player: Eric Kendricks
-      via: add
-      week: 9
-      waiver: false
-    - player: Evan Engram
-      via: add
-      week: 9
-      waiver: false
-    - player: David Njoku
-      via: add
-      week: 10
-      waiver: true
-    - player: Odell Beckham Jr.
-      via: add
-      week: 10
-      waiver: false
-    - player: Titans D/ST
-      via: add
-      week: 10
-      waiver: false
-    - player: Foster Moreau
-      via: add
-      week: 11
-      waiver: false
-    - player: Russell Wilson
-      via: add
-      week: 11
-      waiver: false
-    - player: 49ers D/ST
-      via: add
-      week: 12
-      waiver: false
-    - player: Maxx Crosby
-      via: add
-      week: 12
-      waiver: false
-    - player: Darren Waller
-      via: add
-      week: 15
-      waiver: true
-    - player: Brock Purdy
-      via: add
-      week: 17
-      waiver: false
-  - year: 2021
-    players:
-    - player: Christian McCaffrey
-      via: draft
-      round: 1
-    - player: George Kittle
-      via: draft
-      round: 2
-    - player: A.J. Brown
-      via: draft
-      round: 3
-    - player: Javonte Williams
-      via: draft
-      round: 4
-    - player: DJ Moore
-      via: draft
-      round: 5
-    - player: Aaron Rodgers
-      via: draft
-      round: 6
-    - player: Ja'Marr Chase
-      via: draft
-      round: 7
-    - player: Henry Ruggs III
-      via: draft
-      round: 8
-    - player: James Conner
-      via: draft
-      round: 9
-    - player: Michael Carter
-      via: draft
-      round: 10
-    - player: Matthew Stafford
-      via: draft
-      round: 11
-    - player: Commanders D/ST
-      via: draft
-      round: 12
-    - player: Brandon McManus
-      via: draft
-      round: 13
-    - player: Jeremy Chinn
-      via: draft
-      round: 14
-    - player: Bryan Edwards
-      via: add
-      week: 1
-      waiver: true
-    - player: Chandler Jones
-      via: add
-      week: 2
-      waiver: true
-    - player: Jameis Winston
-      via: add
-      week: 2
-      waiver: true
-    - player: Daniel Jones
-      via: add
-      week: 3
-      waiver: false
-    - player: Panthers D/ST
-      via: add
-      week: 3
-      waiver: true
-    - player: Rondale Moore
-      via: add
-      week: 3
-      waiver: false
-    - player: Jamaal Williams
-      via: trade
-      week: 4
-    - player: Dawson Knox
-      via: add
-      week: 4
-      waiver: true
-    - player: Hunter Renfrow
-      via: add
-      week: 4
-      waiver: false
-    - player: Kirk Cousins
-      via: add
-      week: 4
-      waiver: true
-    - player: Tim Patrick
-      via: add
-      week: 4
-      waiver: false
-    - player: Logan Wilson
-      via: add
-      week: 5
-      waiver: true
-    - player: Samaje Perine
-      via: add
-      week: 5
-      waiver: true
-    - player: Jerick McKinnon
-      via: add
-      week: 6
-      waiver: false
-    - player: Taylor Heinicke
-      via: add
-      week: 6
-      waiver: false
-    - player: Kenyan Drake
-      via: add
-      week: 7
-      waiver: false
-    - player: Ricky Seals-Jones
-      via: add
-      week: 7
-      waiver: false
-    - player: Zach Ertz
-      via: add
-      week: 7
-      waiver: true
-    - player: Joe Mixon
-      via: trade
-      week: 8
-    - player: Keenan Allen
-      via: trade
-      week: 8
-    - player: Browns D/ST
-      via: add
-      week: 8
-      waiver: false
-    - player: Adrian Peterson
-      via: add
-      week: 9
-      waiver: true
-    - player: Colts D/ST
-      via: add
-      week: 9
-      waiver: true
-    - player: Derek Carr
-      via: add
-      week: 9
-      waiver: false
-    - player: Chris Boswell
-      via: add
-      week: 10
-      waiver: false
-    - player: Deion Jones
-      via: add
-      week: 10
-      waiver: false
-    - player: Ravens D/ST
-      via: add
-      week: 11
-      waiver: false
-    - player: Bobby Wagner
-      via: add
-      week: 12
-      waiver: false
-    - player: Cedrick Wilson
-      via: add
-      week: 12
-      waiver: true
-    - player: Texans D/ST
-      via: add
-      week: 12
-      waiver: true
-    - player: Devin Singletary
-      via: add
-      week: 13
-      waiver: true
-    - player: Foster Moreau
-      via: add
-      week: 13
-      waiver: true
-    - player: Kendrick Bourne
-      via: add
-      week: 13
-      waiver: false
-    - player: Rams D/ST
-      via: add
-      week: 13
-      waiver: false
-    - player: K.J. Osborn
-      via: add
-      week: 14
-      waiver: false
-    - player: Titans D/ST
-      via: add
-      week: 14
-      waiver: false
-    - player: Dolphins D/ST
-      via: add
-      week: 15
-      waiver: true
-    - player: Jaret Patterson
-      via: add
-      week: 17
-      waiver: false
-  - year: 2020
-    players:
-    - player: Saquon Barkley
-      via: draft
-      round: 1
-    - player: Kenny Golladay
-      via: draft
-      round: 2
-    - player: Patrick Mahomes
-      via: draft
-      round: 3
-    - player: Cooper Kupp
-      via: draft
-      round: 4
-    - player: Le'Veon Bell
-      via: draft
-      round: 5
-    - player: Darren Waller
-      via: draft
-      round: 6
-    - player: Ronald Jones II
-      via: draft
-      round: 7
-    - player: Henry Ruggs III
-      via: draft
-      round: 8
-    - player: Matt Breida
-      via: draft
-      round: 9
-    - player: Robby Anderson
-      via: draft
-      round: 10
-    - player: Darrell Henderson Jr.
-      via: draft
-      round: 11
-    - player: Vikings D/ST
-      via: draft
-      round: 12
-    - player: Budda Baker
-      via: draft
-      round: 13
-    - player: Rodrigo Blankenship
-      via: draft
-      round: 14
-    - player: Adrian Peterson
-      via: add
-      week: 2
-      waiver: false
-    - player: Cardinals D/ST
-      via: add
-      week: 2
-      waiver: true
-    - player: Peyton Barber
-      via: add
-      week: 2
-      waiver: false
-    - player: Tre'Quan Smith
-      via: add
-      week: 2
-      waiver: false
-    - player: Keelan Cole Sr.
-      via: add
-      week: 3
-      waiver: false
-    - player: Myles Gaskin
-      via: add
-      week: 3
-      waiver: false
-    - player: Chuck Clark
-      via: add
-      week: 4
-      waiver: false
-    - player: Robert Tonyan
-      via: add
-      week: 5
-      waiver: true
-    - player: Tim Patrick
-      via: add
-      week: 5
-      waiver: false
-    - player: Marlon Humphrey
-      via: add
-      week: 6
-      waiver: true
-    - player: Brandon McManus
-      via: add
-      week: 7
-      waiver: false
-    - player: Devin White
-      via: add
-      week: 7
-      waiver: false
-    - player: Sterling Shepard
-      via: add
-      week: 8
-      waiver: false
-    - player: Titans D/ST
-      via: add
-      week: 8
-      waiver: false
-    - player: Washington D/ST
-      via: add
-      week: 9
-      waiver: true
-    - player: Jared Goff
-      via: add
-      week: 10
-      waiver: true
-    - player: Broncos D/ST
-      via: add
-      week: 11
-      waiver: false
-    - player: Kerryon Johnson
-      via: add
-      week: 11
-      waiver: false
-    - player: Packers D/ST
-      via: add
-      week: 11
-      waiver: false
-    - player: Nelson Agholor
-      via: add
-      week: 12
-      waiver: false
-    - player: Brandon Aiyuk
-      via: add
-      week: 13
-      waiver: true
-    - player: Cam Akers
-      via: add
-      week: 13
-      waiver: true
-    - player: Tyler Bass
-      via: add
-      week: 13
-      waiver: true
-    - player: Tyrell Adams
-      via: add
-      week: 13
-      waiver: false
-  - year: 2019
-    players:
-    - player: DeAndre Hopkins
-      via: draft
-      round: 1
-    - player: JuJu Smith-Schuster
-      via: draft
-      round: 2
-    - player: Aaron Jones
-      via: draft
-      round: 3
-    - player: Stefon Diggs
-      via: draft
-      round: 4
-    - player: Duke Johnson
-      via: draft
-      round: 5
-    - player: Jared Cook
-      via: draft
-      round: 6
-    - player: Matt Ryan
-      via: draft
-      round: 7
-    - player: Dak Prescott
-      via: draft
-      round: 8
-    - player: Dante Pettis
-      via: draft
-      round: 9
-    - player: Courtland Sutton
-      via: draft
-      round: 10
-    - player: LeSean McCoy
-      via: draft
-      round: 11
-    - player: Jaguars D/ST
-      via: draft
-      round: 12
-    - player: Deion Jones
-      via: draft
-      round: 13
-    - player: Jake Elliott
-      via: draft
-      round: 14
-    - player: 2.05 pick
-      via: trade
-      week: 0
-    - player: 3.08 pick
-      via: trade
-      week: 0
-    - player: 5.08 pick
-      via: trade
-      week: 0
-    - player: Chris Thompson
-      via: add
-      week: 2
-      waiver: false
-    - player: DK Metcalf
-      via: add
-      week: 3
-      waiver: false
-    - player: Frank Gore
-      via: add
-      week: 3
-      waiver: true
-    - player: Luke Kuechly
-      via: add
-      week: 3
-      waiver: true
-    - player: Will Dissly
-      via: add
-      week: 3
-      waiver: true
-    - player: Panthers D/ST
-      via: add
-      week: 5
-      waiver: true
-    - player: Shaquil Barrett
-      via: add
-      week: 5
-      waiver: true
-    - player: Tevin Coleman
-      via: add
-      week: 5
-      waiver: true
-    - player: Cowboys D/ST
-      via: add
-      week: 6
-      waiver: false
-    - player: Joey Slye
-      via: add
-      week: 6
-      waiver: true
-    - player: Darren Fells
-      via: add
-      week: 7
-      waiver: true
-    - player: De'Vondre Campbell
-      via: add
-      week: 7
-      waiver: false
-    - player: Matt Prater
-      via: add
-      week: 7
-      waiver: true
-    - player: Seahawks D/ST
-      via: add
-      week: 7
-      waiver: true
-    - player: Chris Herndon
-      via: add
-      week: 8
-      waiver: true
-    - player: Dallas Goedert
-      via: add
-      week: 8
-      waiver: false
-    - player: Gardner Minshew II
-      via: add
-      week: 8
-      waiver: false
-    - player: Steelers D/ST
-      via: add
-      week: 8
-      waiver: true
-    - player: Darius Leonard
-      via: add
-      week: 9
-      waiver: true
-    - player: Chiefs D/ST
-      via: add
-      week: 10
-      waiver: false
-    - player: Christian Kirk
-      via: add
-      week: 10
-      waiver: false
-    - player: Jacob Hollister
-      via: add
-      week: 10
-      waiver: true
-    - player: Kalen Ballage
-      via: add
-      week: 11
-      waiver: false
-    - player: Vikings D/ST
-      via: add
-      week: 11
-      waiver: true
-    - player: Browns D/ST
-      via: add
-      week: 12
-      waiver: true
-    - player: Jaylon Smith
-      via: add
-      week: 12
-      waiver: true
-    - player: Jonathan Williams
-      via: add
-      week: 12
-      waiver: true
-    - player: Benny Snell Jr.
-      via: add
-      week: 13
-      waiver: true
-    - player: Robby Anderson
-      via: add
-      week: 14
-      waiver: false
-    - player: Bills D/ST
-      via: add
-      week: 15
-      waiver: false
-    - player: Michael Badgley
-      via: add
-      week: 15
-      waiver: false
-    - player: Patrick Laird
-      via: add
-      week: 15
-      waiver: false
-  current_roster:
-    year: 2026
-    week: 7
-    players:
-    - player: Jayden Daniels
-      pos: QB
-      cost: R5
-      basis: Drafted R7
-      ineligible: false
-    - player: Kirk Cousins
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Jonathan Taylor
-      pos: RB
-      cost: Ineligible
-      basis: Drafted R1
-      ineligible: true
-    - player: Rico Dowdle
-      pos: RB
-      cost: R4
-      basis: Drafted R6
-      ineligible: false
-    - player: De'Von Achane
-      pos: RB
-      cost: R6
-      basis: Drafted R8
-      ineligible: false
-    - player: Kendre Miller
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Ollie Gordon II
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Drake London
-      pos: WR
-      cost: Ineligible
-      basis: Drafted R2
-      ineligible: true
-    - player: Emeka Egbuka
-      pos: WR
-      cost: R1
-      basis: Drafted R3
-      ineligible: false
-    - player: Rome Odunze
-      pos: WR
-      cost: R2
-      basis: Drafted R4
-      ineligible: false
-    - player: Deebo Samuel Sr.
-      pos: WR
-      cost: R13
-      basis: Drafted R15
-      ineligible: false
-    - player: Omar Cooper Jr.
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Harold Fannin Jr.
-      pos: TE
-      cost: R3
-      basis: Drafted R5
-      ineligible: false
-    - player: Mark Andrews
-      pos: TE
-      cost: R9
-      basis: Drafted R11
-      ineligible: false
-    - player: Dominic Zvada
-      pos: K
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Steelers D/ST
-      pos: D/ST
-      cost: R11
-      basis: Drafted R13
       ineligible: false
 lukstein:
   name: Luke
@@ -22076,7 +22067,7 @@ lukstein:
       round: 16
   current_roster:
     year: 2026
-    week: 7
+    week: 8
     players:
     - player: C.J. Stroud
       pos: QB

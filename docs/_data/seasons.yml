@@ -87,20 +87,6 @@ detail:
       pf_color: '#f59846'
       pa: 759.2
       pa_color: '#fac675'
-    - &id005
-      finish: 5
-      team: Return of the IDP
-      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-      owner_id: schirmerj
-      owner_name: Jono
-      record: 4-3
-      pct: 0.5714285714285714
-      tag: null
-      pct_str: '.571'
-      pf: 835.5
-      pf_color: '#f6a048'
-      pa: 880.2
-      pa_color: '#ee6e3c'
     - &id004
       finish: 4
       team: One Big Beautiful Dillbot
@@ -115,6 +101,20 @@ detail:
       pf_color: '#f49645'
       pa: 687.8
       pa_color: '#fdf3e0'
+    - &id005
+      finish: 5
+      team: Return of the IDP
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      owner_id: schirmerj
+      owner_name: Jono
+      record: 4-3
+      pct: 0.5714285714285714
+      tag: null
+      pct_str: '.571'
+      pf: 835.5
+      pf_color: '#f6a048'
+      pa: 880.2
+      pa_color: '#ee6e3c'
     - &id006
       finish: 6
       team: Trick or Trick It’s Mike Vick
@@ -143,48 +143,6 @@ detail:
       pf_color: '#f9bb5a'
       pa: 782.3
       pa_color: '#f9b852'
-    - &id009
-      finish: 9
-      team: Remember the Nice Guys, ChatGPT
-      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-      owner_id: kevbots22
-      owner_name: Kevin
-      record: 2-4-1
-      pct: 0.35714285714285715
-      tag: null
-      pct_str: '.357'
-      pf: 775.4
-      pf_color: '#f9b64d'
-      pa: 862.2
-      pa_color: '#f07b3f'
-    - &id011
-      finish: 11
-      team: Cornstar
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-      owner_id: alexandra
-      owner_name: Lexi
-      record: 2-5
-      pct: 0.2857142857142857
-      tag: null
-      pct_str: '.286'
-      pf: 776.0
-      pf_color: '#f9b64d'
-      pa: 818.7
-      pa_color: '#f59d47'
-    - &id010
-      finish: 10
-      team: The ChoSimba Ones
-      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
-      owner_id: theoceanpulse
-      owner_name: Dillon
-      record: 2-4-1
-      pct: 0.35714285714285715
-      tag: null
-      pct_str: '.357'
-      pf: 723.2
-      pf_color: '#fac572'
-      pa: 817.5
-      pa_color: '#f59e47'
     - &id008
       finish: 8
       team: I am dead inside
@@ -199,6 +157,48 @@ detail:
       pf_color: '#fabe60'
       pa: 792.6
       pa_color: '#f8b14c'
+    - &id011
+      finish: 11
+      team: Cornstar
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      owner_id: alexandra
+      owner_name: Lexi
+      record: 2-5
+      pct: 0.2857142857142857
+      tag: null
+      pct_str: '.286'
+      pf: 776.0
+      pf_color: '#f9b64d'
+      pa: 818.7
+      pa_color: '#f59d47'
+    - &id009
+      finish: 9
+      team: Remember the Nice Guys, ChatGPT
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      owner_id: kevbots22
+      owner_name: Kevin
+      record: 2-4-1
+      pct: 0.35714285714285715
+      tag: null
+      pct_str: '.357'
+      pf: 775.4
+      pf_color: '#f9b64d'
+      pa: 862.2
+      pa_color: '#f07b3f'
+    - &id010
+      finish: 10
+      team: The ChoSimba Ones
+      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+      owner_id: theoceanpulse
+      owner_name: Dillon
+      record: 2-4-1
+      pct: 0.35714285714285715
+      tag: null
+      pct_str: '.357'
+      pf: 723.2
+      pf_color: '#fac572'
+      pa: 817.5
+      pa_color: '#f59e47'
     - &id012
       finish: 12
       team: 2x Runner Up
