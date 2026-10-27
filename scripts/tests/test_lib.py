@@ -1887,6 +1887,148 @@ def test_lineup_alerts_open_slot_and_zero_projection():
     assert lineup_alerts(full, 1) is None
 
 
+def _halfway_season():
+    # 4 teams, 4-week regular season -> halfway after week 2.
+    g = lambda w, h, a, hs=None, as_=None, **k: dict(week=w, home=h, away=a,
+                                                     home_score=hs, away_score=as_, **k)
+    return {"season": 2026, "weeks_in_regular_season": 4,
+            "teams": {"a": "A", "b": "B", "c": "C", "d": "D"},
+            "matchups": [
+                g(1, "a", "b", 120.0, 100.0), g(1, "c", "d", 90.0, 95.0),
+                g(2, "a", "c", 110.0, 112.0), g(2, "b", "d", 130.0, 80.0),
+                g(3, "a", "d", 140.0, 70.0, final=False), g(3, "b", "c"),
+                g(4, "a", "b", played=False), g(4, "c", "d", played=False),
+                g(5, "a", "b", 99.0, 98.0, playoff=True),
+            ]}
+
+
+def test_halfway_snapshot_and_completion():
+    from lib.halfway import halfway_week, snapshot, first_half_complete
+    s = _halfway_season()
+    assert halfway_week(s) == 2
+    assert first_half_complete(s, 2) is True
+    assert first_half_complete(s, 3) is False          # week 3 still live
+    snap = snapshot(s, 2)
+    wk3 = [m for m in snap["matchups"] if m["week"] == 3]
+    assert all(m["home_score"] is None and m["played"] is False for m in wk3)
+    assert not any(m.get("playoff") for m in snap["matchups"])
+    assert snap["teams"] == s["teams"] and s["matchups"][4]["home_score"] == 140.0
+    # A finished season still snapshots as mid-season: no final order, no tags.
+    from lib.state import state_of
+    assert state_of(snapshot(dict(s, state="complete"), 2)) == "season"
+
+
+def test_team_halves_resume_and_schedule():
+    from lib.halfway import team_halves, schedule_ranks
+    h = team_halves(_halfway_season(), 2)
+    a = h["a"]
+    assert a["record"] == "1-1" and a["pf"] == 230.0 and a["avg"] == 115.0
+    # Week 1: 120 beats b(100), c(90), d(95); week 2: 110 beats b? no, b=130; d=80 yes.
+    assert a["all_play"] == "4-2"
+    assert a["big_win"]["opp"] == "b" and a["bad_loss"]["opp"] == "c"
+    assert a["close"] == "0-1" and a["streak"] == "L1"
+    assert [r["opp"] for r in a["remaining"]] == ["d", "b"]
+    assert a["remaining_opp_avg"] == round((87.5 + 115.0) / 2, 1)
+    assert h["d"]["pf_rank"] == 4 and h["b"]["big_win"]["pa"] == 80.0
+    ranks = schedule_ranks(h)
+    assert sorted(ranks.values()) == [1, 2, 3, 4]
+
+
+def test_second_half_slate_flags_rematches_and_races():
+    from lib.halfway import team_halves, second_half_slate
+    s = _halfway_season()
+    s["matchups"].append(dict(week=4, home="a", away="c", home_score=None, away_score=None))
+    h = team_halves(s, 2)
+    slate = second_half_slate(h, "a")
+    assert [r["opp"] for r in slate] == ["d", "b", "c"]
+    d, b, c = slate
+    assert d["rematch"] is None and d["opp_record"] == "1-1" and d["race"] is True
+    assert b["rematch"]["res"] == "W" and b["rematch"]["pf"] == 120.0
+    assert c["rematch"]["res"] == "L" and c["gap"] == 1.0 - 1.0
+    assert not any(r["twice"] for r in slate)
+    assert second_half_slate(h, "zzz") == []
+
+
+def test_card_chips_shade_all_play_and_schedule():
+    from lib.halfway import team_halves, card_chips, schedule_ranks
+    from lib.render import warm_heat
+    h = team_halves(_halfway_season(), 2)
+    chips = card_chips(h)
+    best = max(h, key=lambda f: int(h[f]["all_play"].split("-")[0]))
+    assert chips[best]["all_play"] == {"text": h[best]["all_play"], "color": warm_heat(1.0)}
+    ranks = schedule_ranks(h)
+    toughest = min(ranks, key=ranks.get)
+    easiest = max(ranks, key=ranks.get)
+    assert chips[toughest]["sos"]["rank"] == "1st" and chips[toughest]["sos"]["of"] == 4
+    # a's remaining opponents are d (1-1) and b (1-1): combined 2-2.
+    assert chips["a"]["sos"]["record"] == "2-2"
+    assert chips["a"]["sos"]["text"] == f'{chips["a"]["sos"]["rank"]} (101.2 ppg)'
+    assert chips[toughest]["sos"]["color"] == warm_heat(1.0)
+    assert chips[easiest]["sos"]["rank"] == "4th" and chips[easiest]["sos"]["color"] == warm_heat(0.0)
+
+
+def test_bye_load_past_and_ahead():
+    from lib.halfway import bye_load
+    by_week = {
+        # Week 1 predates ESPN's bye data; Chase's bye comes from week 2.
+        1: {"lexi": [{"player": "Chase", "bye_week": None},
+                     {"player": "Love", "bye_week": None}]},
+        2: {"lexi": [{"player": "Chase", "bye_week": 2},
+                     {"player": "Love", "bye_week": 5},
+                     {"player": "Rice", "bye_week": 5}]},
+        3: {"lexi": [{"player": "Love", "bye_week": 5},
+                     {"player": "Rice", "bye_week": 5},
+                     {"player": "Adams", "bye_week": 2}]},   # picked up after his bye
+    }
+    load = bye_load(by_week, 2)["lexi"]
+    assert load["past"] == {2: ["Chase"]}
+    assert load["ahead"] == {5: ["Love", "Rice"]}             # latest roster only
+    assert bye_load({}, 2) == {}
+
+
+def test_halfway_freeze_and_thaw():
+    from lib.halfway import freeze, thaw
+    entry = {"year": 2026, "state": "complete", "intro": "old intro", "outlook": "old",
+             "standings_rows": [{"owner_id": "a", "finish": 1}],
+             "teams": [{"fid": "a", "record": "5-2", "blurb": "old blurb"},
+                       {"fid": "b", "record": "2-5", "blurb": ""}]}
+    frozen = freeze(entry)
+    assert "intro" not in frozen and "outlook" not in frozen
+    assert frozen["teams"] == [{"fid": "a", "record": "5-2"}, {"fid": "b", "record": "2-5"}]
+    assert entry["teams"][0]["blurb"] == "old blurb"           # input untouched
+    page = thaw(frozen, {"intro": "new intro", "teams": {"a": "new blurb"}})
+    assert page["intro"] == "new intro" and page["outlook"] == ""
+    assert [t["blurb"] for t in page["teams"]] == ["new blurb", ""]
+    assert page["standings_rows"] == entry["standings_rows"]
+    assert thaw(frozen, None)["teams"][0]["blurb"] == ""
+
+
+def test_load_halfway_snapshot():
+    import tempfile
+    from lib.data import load_halfway_snapshot
+    with tempfile.TemporaryDirectory() as d:
+        assert load_halfway_snapshot(2026, data_dir=d) is None
+        (Path(d) / "halfway").mkdir()
+        (Path(d) / "halfway" / "2026.snapshot.yml").write_text("# frozen\nyear: 2026\nas_of_week: 7\n")
+        assert load_halfway_snapshot(2026, data_dir=d) == {"year": 2026, "as_of_week": 7}
+
+
+def test_starter_points_and_best_moves():
+    from lib.halfway import starter_points, best_moves
+    by_week = {
+        1: {"lexi": [{"player": "Love", "starter": True, "actual": 27.2},
+                     {"player": "Shaheed", "starter": False, "actual": 11.3}]},
+        2: {"lexi": [{"player": "Love", "starter": True, "actual": 21.2},
+                     {"player": "Douglas", "starter": True, "actual": 16.1},
+                     {"player": "Bye", "starter": True, "actual": None}]},
+    }
+    pts = starter_points(by_week)["lexi"]
+    assert pts == {"Love": 48.4, "Douglas": 16.1}          # bench + no-score skipped
+    assert best_moves(["Douglas", "Love", "Shaheed", "Love"], pts) == [
+        ("Love", 48.4), ("Douglas", 16.1)]
+    assert best_moves(["Nobody"], pts) == []
+
+
 def run():
     tests =[v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

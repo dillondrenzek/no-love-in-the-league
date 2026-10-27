@@ -1,0 +1,77 @@
+{%- comment -%}
+The once-a-season Halfway page (docs/seasons/<year>/halfway.md). Param: h = a
+site.data.halfway[year] record from scripts/generate_halfway.py. Every number is
+frozen at the halfway week — standings and the playoff forecast as they stood
+then — and the prose (intro, outlook, a paragraph per team) is agent-written
+into data/halfway/<year>.yml. Before the halfway week is final it shows the
+weeks that are (h.as_of_week) and says so. Each team card carries chips for
+its playoff and Shiva odds, all-play record, and remaining strength of
+schedule (SOS rank, 1st = toughest), all on the warm heat ramp.
+{%- endcomment -%}
+{%- assign h = include.h -%}
+{% include bits/week_nav.html year=page.season_year active=page.week home=true %}
+{%- if h %}
+<p class="halfway__lede">The season at the break: standings, the playoff picture and every team's first half{% if h.state == "complete" %}, frozen as of the end of Week {{ h.through_week }}{% else %}, through Week {{ h.as_of_week }} so far (it freezes once Week {{ h.through_week }} is final){% endif %}.</p>
+{%- if h.intro != "" %}
+<div class="halfway__intro">{{ h.intro | markdownify }}</div>
+{%- endif %}
+<nav class="season-nav" aria-label="Sections">
+  <a href="#standings">Standings</a><a href="#outlook">Outlook</a><a href="#forecast">Odds</a><a href="#teams">Team by Team</a>
+</nav>
+
+<section class="season-section" id="standings">
+<h2>Standings at the Halfway Point</h2>
+{% include tables/standings_table.html rows=h.standings_rows points=h.points pct=true %}
+</section>
+
+<section class="season-section" id="outlook">
+<h2>Season Outlook</h2>
+{%- if h.outlook != "" %}
+<div class="halfway__outlook">{{ h.outlook | markdownify }}</div>
+{%- endif %}
+</section>
+{%- if h.odds and h.odds.rows.size > 0 %}
+{% include sections/season/forecast.html f=h.odds title="Playoff Odds at the Halfway Point" frozen=true %}
+{%- endif %}
+
+<section class="season-section halfway-teams" id="teams">
+<h2>Team by Team</h2>
+<ol class="halfway-teams__list">
+  {%- for t in h.teams %}
+  <li class="halfway-team" id="team-{{ t.fid }}">
+    <div class="halfway-team__head">
+      <span class="halfway-team__rank">{{ t.rank }}</span>
+      {% include bits/team_logo.html src=t.logo px=36 %}
+      <div class="halfway-team__id">
+        <div class="halfway-team__name"><a href="{{ '/teams/' | append: t.fid | append: '/' | relative_url }}">{{ t.team }}</a> <span class="owner-name">{{ t.owner }}</span></div>
+        <div class="halfway-team__stats"><strong>{{ t.record }}</strong>{% if t.pf %} · {{ t.pf }} PF{% endif %}{% if t.pa %} · {{ t.pa }} PA{% endif %}</div>
+      </div>
+      {%- if t.playoffs or t.all_play %}
+      <div class="halfway-team__odds">
+        {%- if t.playoffs %}
+        <span class="halfway-team__pair"><span class="halfway-team__odds-label">Playoffs</span>
+          {% include bits/chip.html text=t.playoffs.text bg=t.playoffs.color %}</span>
+        {%- endif %}
+        {%- if t.shiva %}
+        <span class="halfway-team__pair"><span class="halfway-team__odds-label">Shiva</span>
+          {% include bits/chip.html text=t.shiva.text bg=t.shiva.color %}</span>
+        {%- endif %}
+        {%- if t.all_play %}
+        <span class="halfway-team__pair"><span class="halfway-team__odds-label" title="Record against every team, every week">All-play</span>
+          {% include bits/chip.html text=t.all_play.text bg=t.all_play.color %}</span>
+        {%- endif %}
+        {%- if t.sos %}
+        <span class="halfway-team__pair"><span class="halfway-team__odds-label" title="Remaining strength of schedule: {{ t.sos.rank }} toughest of {{ t.sos.of }}; opponents averaged {{ t.sos.opp_avg }} pts/wk in the first half and went a combined {{ t.sos.record }}">SOS</span>
+          {% include bits/chip.html text=t.sos.text bg=t.sos.color %}</span>
+        {%- endif %}
+      </div>
+      {%- endif %}
+    </div>
+    {%- if t.blurb != "" %}
+    <div class="halfway-team__blurb">{{ t.blurb | markdownify }}</div>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>
+</section>
+{%- endif %}

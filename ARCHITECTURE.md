@@ -131,7 +131,9 @@ scripts/
                              data (all file loaders), standings, seasons, records,
                              teams, overrides, rules, weeks, state, render, schedule,
                              odds (season forecast), keepers (keeper-cost rule +
-                             owner Current Roster rows)
+                             owner Current Roster rows), halfway (the midseason
+                             snapshot, per-team first-half résumé,
+                             second-half slate, bye load, card chips)
   generate_records.py   -> docs/_data/records.yml        (record book)
   generate_standings.py -> docs/_data/standings.yml      (per-season, History)
   generate_owners.py    -> owners.yml, owner_profiles.yml (+ owner stub pages)
@@ -139,6 +141,7 @@ scripts/
   generate_rules.py     -> rules.yml   (rulebook: settings, rule-change log, schedule history)
   generate_weeks.py     -> weeks.yml    (per-week scoreboard + highlights, live season)
   generate_odds.py      -> odds.yml     (season forecast table, live regular season)
+  generate_halfway.py   -> halfway.yml  (the once-a-season Halfway page, frozen at the break)
   build.py                 runs every generator in order
   import_espn.py           pull a season from ESPN into data/seasons/ (via the
                            the-league-espn-api client; a dev-only dependency)
@@ -146,6 +149,7 @@ scripts/
   generate_schedule.py     draw a fresh, balanced schedule for a year (prints; for ESPN)
   weekly_recap.py          build a complete-week recap prompt (see below)
   weekly_preview.py        build a future/in-progress week preview prompt (see below)
+  halfway_report.py        build the Halfway page's facts file (see below)
   update_season.sh         weekly: import one season + rebuild
   refresh_rules.sh         yearly: import settings + rebuild
   inspect_scoring.py       print the scoring/roster change history (diagnostic)
@@ -154,6 +158,7 @@ scripts/
 agents/
   weekly-recap.md          reusable trash-talk recap agent spec (persona + format)
   weekly-preview.md        reusable hype/oddsmaker preview agent spec
+  halfway-report.md        the once-a-season midseason report spec
 ```
 
 `lib/schedule.py`'s `generate_schedule` draws a fresh, balanced schedule (full
@@ -170,6 +175,22 @@ complete, then a **Recap** once it is. `weekly_preview.py` / `weekly_recap.py`
 `<year> <week>` write paste-ready prompts (the matching `agents/weekly-*.md` spec
 plus the week's context/data) to `recaps/` (git-ignored); the prose is pasted onto
 the page, everything else regenerates from data each build.
+
+Halfway page (2026+): `generate_halfway.py` scaffolds `docs/seasons/<year>/halfway.md`
+once and writes `halfway.yml` (keyed by year). It joins the week nav between the
+last week of the first half and the next (front matter `week: 7.5`, `nav_label`,
+and `special: halfway`, which `bits/week_nav.html` uses to read its state from
+`site.data.halfway`). Its numbers are **frozen at the halfway week**:
+`lib.halfway.snapshot` blanks later games, then the season's own standings and
+forecast builders run on that copy (same seeds as that week's `odds.yml`), so the
+page never drifts. The first build after the halfway week is final writes those
+numbers once to `data/halfway/<year>.snapshot.yml` (`lib.halfway.freeze`); every
+build after that reads it back (`thaw`, which only merges in the current prose)
+instead of recomputing. Delete the file to recompute. Each team card adds all-play and remaining-schedule chips
+(`lib.halfway.card_chips`, on the warm heat ramp) beside the odds. The prose (intro, outlook, a paragraph per team) is written by
+an agent (`agents/halfway-report.md`) from `halfway_report.py`'s facts file into
+`data/halfway/<year>.yml`, which is hand-editable and never overwritten. An
+end-of-season page is meant to follow the same `special:` pattern.
 
 Season forecast (live regular season): `generate_odds.py` writes `odds.yml`, the
 FiveThirtyEight-style table on the season page — each team's chance at the Sacko,
@@ -206,7 +227,8 @@ docs/
                             h2h_table · draft_table · owner_seasons_table ·
                             trades_list · draft_heatmap · tx_heatmap
                   sections/ full-width page blocks (compose bits + tables):
-                            season_detail · week_detail · owner_profile ·
+                            season_detail · week_detail · halfway_detail ·
+                            owner_profile ·
                             owner_trades · owner_keepers ·
                             owner_current_roster · owner_rosters · resume_card ·
                             records_cards · current_settings · rule_changes ·

@@ -1436,3 +1436,58 @@ h4:hover > .heading-anchor,
 .bgame--sink .bteam--lose .bteam__name { color: var(--ink); font-weight: 700; }
 .bgame--sink .bteam--lose .bteam__score { color: var(--ink); font-weight: 700; }
 .bteam--empty .bteam__name { color: var(--faint); font-style: italic; padding-left: 4px; }
+
+// =============================================================================
+// Halfway page (_includes/sections/halfway_detail.html) — once-a-season special
+// edition: frozen standings + odds, then a card per team with its paragraph.
+// =============================================================================
+.week-nav a.week-nav__special { font-weight: 700; }
+.halfway__lede { color: var(--muted); font-size: 0.9rem; margin: 0 0 1em; }
+.halfway__intro { margin: 0 0 1.4em; }
+.halfway-teams__list { list-style: none; margin: 0; padding: 0; }
+.halfway-team {
+  padding: 14px 0;
+  border-top: 1px solid var(--rule);
+  scroll-margin-top: 1.2em;
+}
+.halfway-team__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.halfway-team__rank {
+  font-family: var(--sans);
+  font-size: 1.2rem;
+  font-weight: 700;
+  min-width: 1.6em;
+  text-align: right;
+}
+.halfway-team__head .team-logo { width: 36px; height: 36px; flex: 0 0 auto; }
+.halfway-team__id { min-width: 0; flex: 1 1 12em; }
+.halfway-team__name { font-weight: 600; }
+.halfway-team__name .owner-name { font-weight: 400; margin-left: 4px; }
+.halfway-team__stats { font-family: var(--mono); font-size: 0.72rem; color: var(--faint); }
+.halfway-team__stats strong { color: var(--ink); font-weight: 700; }
+.halfway-team__odds {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+}
+.halfway-team__odds-label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.halfway-team__odds-label[title] { cursor: help; }
+.halfway-team__pair {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+.halfway-team__pair .halfway-team__odds-label { font-size: 0.58rem; }
+.halfway-team__blurb { margin: 8px 0 0 calc(1.92rem + 46px); font-size: 0.92rem; }
+@media (max-width: 600px) { .halfway-team__blurb { margin-left: 0; } }
+.halfway-team__blurb p { margin: 0 0 0.6em; }
+.halfway-team__blurb p:last-child { margin-bottom: 0; }

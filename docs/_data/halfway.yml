@@ -1,0 +1,980 @@
+2026:
+  year: 2026
+  through_week: 7
+  as_of_week: 6
+  state: in_progress
+  intro: 'Half a season in, the champ broke the all-time single-week record and still
+    isn''t in first place, because the commissioner renamed his team after God and
+    then started scoring like one. The reigning sacko is sitting at .500, the rookie
+    has been better than her record and is riding a three-game skid, and Grant went
+    from 0-2 to a contender. And Luke, two years removed from a title, is staring
+    at a coin flip for the Sacko. Here''s where everybody stands at the break, and
+    where they''re headed.
+
+    '
+  outlook: 'At the top, it''s a two-team league. Wade and Jack are both at 99% to
+    make the playoffs, they''re roughly even for the bye and the Shiva, and they''ve
+    drawn the two easiest second-half schedules in the league, so the real race between
+    them is for the top seed. They don''t play each other again in the regular season,
+    which means the first rematch could be in the playoffs, and I want that game.
+    Behind them, four teams are fighting for the last four spots, all with odds between
+    69% and 81%: Grant, Zach, Jono and Nate. Grant has the third-most points in the
+    league and the easiest road of the four, so I''d be surprised to see him miss.
+    With the sixth seed going to the top scorer outside the top five, points matter
+    as much as wins down the stretch, and the final week has two games that could
+    decide the bracket: Jack against Zach, and Grant against Nate.
+
+
+    Then comes the bubble, where Kevin, Shawnee and Lexi are all between 26% and 31%,
+    so one of them probably needs to knock off one of the four above them. My pick
+    is Kevin, because his all-play record says he''s been a lot better than 2-3-1.
+    Dillon and Trevor need a miracle at single-digit odds, and they''re both on Sacko
+    watch with Luke, who''s a 50-50 shot to take the Sacko and has the toughest remaining
+    schedule in the league. Somebody tell him the second half starts now.
+
+    '
+  points: true
+  standings_rows:
+  - finish: 1
+    team: God's Commissioner
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    owner_id: sturmanator15
+    owner_name: Wade
+    record: 4-2
+    pct: 0.6666666666666666
+    tag: null
+    pct_str: '.667'
+    pf: 825.2
+    pf_color: '#ee6b3b'
+    pa: 772.2
+    pa_color: '#ee6b3b'
+  - finish: 2
+    team: Gibbed for your pleasure
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    owner_id: jackperkins74
+    owner_name: Jack
+    record: 4-2
+    pct: 0.6666666666666666
+    tag: null
+    pct_str: '.667'
+    pf: 822.4
+    pf_color: '#ee6c3b'
+    pa: 694.2
+    pa_color: '#f9b54d'
+  - finish: 3
+    team: Tuten Your Mother, Respectfully
+    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    owner_id: zachzoske
+    owner_name: Zach
+    record: 4-2
+    pct: 0.6666666666666666
+    tag: null
+    pct_str: '.667'
+    pf: 734.7
+    pf_color: '#f49445'
+    pa: 666.1
+    pa_color: '#facb80'
+  - finish: 4
+    team: Return of the IDP
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    owner_id: schirmerj
+    owner_name: Jono
+    record: 4-2
+    pct: 0.6666666666666666
+    tag: null
+    pct_str: '.667'
+    pf: 724.2
+    pf_color: '#f59946'
+    pa: 724.0
+    pa_color: '#f59946'
+  - finish: 5
+    team: One Big Beautiful Dillbot
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    owner_id: gganoom
+    owner_name: Grant
+    record: 3-3
+    pct: 0.5
+    tag: null
+    pct_str: '.500'
+    pf: 748.3
+    pf_color: '#f38e43'
+    pa: 614.8
+    pa_color: '#fdf3e0'
+  - finish: 6
+    team: Trick or Trick It’s Mike Vick
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    owner_id: whowonthelastsuperbowl
+    owner_name: Nate
+    record: 3-3
+    pct: 0.5
+    tag: null
+    pct_str: '.500'
+    pf: 731.1
+    pf_color: '#f49645'
+    pa: 691.1
+    pa_color: '#f9b851'
+  - finish: 7
+    team: Swift kick in the Dak
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    owner_id: shawne2520997
+    owner_name: Shawnee
+    record: 3-3
+    pct: 0.5
+    tag: null
+    pct_str: '.500'
+    pf: 676.5
+    pf_color: '#f8af4b'
+    pa: 678.0
+    pa_color: '#fac26a'
+  - finish: 8
+    team: Remember the Nice Guys, ChatGPT
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    owner_id: kevbots22
+    owner_name: Kevin
+    record: 2-3-1
+    pct: 0.4166666666666667
+    tag: null
+    pct_str: '.417'
+    pf: 693.1
+    pf_color: '#f7a749'
+    pa: 730.3
+    pa_color: '#f49345'
+  - finish: 9
+    team: The ChoSimba Ones
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    owner_id: theoceanpulse
+    owner_name: Dillon
+    record: 2-3-1
+    pct: 0.4166666666666667
+    tag: null
+    pct_str: '.417'
+    pf: 635.5
+    pf_color: '#fabf64'
+    pa: 691.9
+    pa_color: '#f9b750'
+  - finish: 10
+    team: Cornstar
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    owner_id: alexandra
+    owner_name: Lexi
+    record: 2-4
+    pct: 0.3333333333333333
+    tag: null
+    pct_str: '.333'
+    pf: 682.9
+    pf_color: '#f8ac4b'
+    pa: 695.2
+    pa_color: '#f9b44d'
+  - finish: 11
+    team: I am dead inside
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    owner_id: purpsworth
+    owner_name: Trevor
+    record: 2-4
+    pct: 0.3333333333333333
+    tag: null
+    pct_str: '.333'
+    pf: 623.2
+    pf_color: '#fac46f'
+    pa: 704.9
+    pa_color: '#f7ab4a'
+  - finish: 12
+    team: 2x Runner Up
+    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    owner_id: lukstein
+    owner_name: Luke
+    record: 2-4
+    pct: 0.3333333333333333
+    tag: null
+    pct_str: '.333'
+    pf: 496.5
+    pf_color: '#fdf3e0'
+    pa: 730.9
+    pa_color: '#f49244'
+  odds:
+    as_of_week: 6
+    sims: 10000
+    rows:
+    - fid: sturmanator15
+      team: God's Commissioner
+      owner: Wade
+      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+      record: 4-2
+      pf: '825.2'
+      pf_color: '#ee6b3b'
+      rating: 130.9
+      proj_wins: 9.8
+      cells:
+        sacko:
+          text: <1%
+          color: '#fdf3e0'
+        playoffs: &id001
+          text: 99%
+          color: '#ee6c3b'
+          trend:
+            dir: up
+            text: ▲3
+        bye:
+          text: 72%
+          color: '#f49645'
+        top3:
+          text: 74%
+          color: '#f49244'
+        shiva: &id002
+          text: 30%
+          color: '#fbcf88'
+    - fid: jackperkins74
+      team: Gibbed for your pleasure
+      owner: Jack
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+      record: 4-2
+      pf: '822.4'
+      pf_color: '#ee6c3b'
+      rating: 130.6
+      proj_wins: 9.9
+      cells:
+        sacko:
+          text: <1%
+          color: '#fdf3e0'
+        playoffs: &id003
+          text: 99%
+          color: '#ee6c3b'
+          trend: null
+        bye:
+          text: 71%
+          color: '#f49745'
+        top3:
+          text: 72%
+          color: '#f49545'
+        shiva: &id004
+          text: 29%
+          color: '#fbcf8a'
+    - fid: gganoom
+      team: One Big Beautiful Dillbot
+      owner: Grant
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+      record: 3-3
+      pf: '748.3'
+      pf_color: '#f38e43'
+      rating: 122.1
+      proj_wins: 7.8
+      cells:
+        sacko:
+          text: 1%
+          color: '#fdf2dd'
+        playoffs: &id009
+          text: 81%
+          color: '#f28742'
+          trend: null
+        bye:
+          text: 12%
+          color: '#fce4bc'
+        top3:
+          text: 35%
+          color: '#fac97a'
+        shiva: &id010
+          text: 9%
+          color: '#fce8c5'
+    - fid: zachzoske
+      team: Tuten Your Mother, Respectfully
+      owner: Zach
+      logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+      record: 4-2
+      pf: '734.7'
+      pf_color: '#f49445'
+      rating: 120.6
+      proj_wins: 8.3
+      cells:
+        sacko:
+          text: 1%
+          color: '#fdf2dd'
+        playoffs: &id005
+          text: 79%
+          color: '#f38a43'
+          trend:
+            dir: up
+            text: ▲18
+        bye:
+          text: 18%
+          color: '#fcddaa'
+        top3:
+          text: 34%
+          color: '#faca7d'
+        shiva: &id006
+          text: 10%
+          color: '#fce7c4'
+    - fid: schirmerj
+      team: Return of the IDP
+      owner: Jono
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      record: 4-2
+      pf: '724.2'
+      pf_color: '#f59946'
+      rating: 119.4
+      proj_wins: 8.0
+      cells:
+        sacko:
+          text: 2%
+          color: '#fdf1db'
+        playoffs: &id007
+          text: 72%
+          color: '#f49445'
+          trend:
+            dir: up
+            text: ▲10
+        bye:
+          text: 15%
+          color: '#fce1b5'
+        top3:
+          text: 29%
+          color: '#fbd08b'
+        shiva: &id008
+          text: 8%
+          color: '#fceac9'
+    - fid: whowonthelastsuperbowl
+      team: Trick or Trick It’s Mike Vick
+      owner: Nate
+      logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+      record: 3-3
+      pf: '731.1'
+      pf_color: '#f49645'
+      rating: 120.2
+      proj_wins: 7.2
+      cells:
+        sacko:
+          text: 2%
+          color: '#fdf1da'
+        playoffs: &id011
+          text: 69%
+          color: '#f59946'
+          trend:
+            dir: down
+            text: ▼21
+        bye:
+          text: 7%
+          color: '#fceacb'
+        top3:
+          text: 27%
+          color: '#fbd392'
+        shiva: &id012
+          text: 7%
+          color: '#fcebcc'
+    - fid: kevbots22
+      team: Remember the Nice Guys, ChatGPT
+      owner: Kevin
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      record: 2-3-1
+      pf: '693.1'
+      pf_color: '#f7a749'
+      rating: 115.9
+      proj_wins: 5.7
+      cells:
+        sacko:
+          text: 5%
+          color: '#fdedd1'
+        playoffs: &id015
+          text: 31%
+          color: '#fbce86'
+          trend:
+            dir: up
+            text: ▲6
+        bye:
+          text: 1%
+          color: '#fdf2dd'
+        top3:
+          text: 10%
+          color: '#fce7c3'
+        shiva: &id016
+          text: 2%
+          color: '#fdf0d9'
+    - fid: shawne2520997
+      team: Swift kick in the Dak
+      owner: Shawnee
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+      record: 3-3
+      pf: '676.5'
+      pf_color: '#f8af4b'
+      rating: 114.0
+      proj_wins: 6.6
+      cells:
+        sacko:
+          text: 5%
+          color: '#fdecd0'
+        playoffs: &id013
+          text: 30%
+          color: '#fbce87'
+          trend:
+            dir: down
+            text: ▼12
+        bye:
+          text: 3%
+          color: '#fdf0d8'
+        top3:
+          text: 9%
+          color: '#fce7c4'
+        shiva: &id014
+          text: 2%
+          color: '#fdf0d9'
+    - fid: alexandra
+      team: Cornstar
+      owner: Lexi
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      record: 2-4
+      pf: '682.9'
+      pf_color: '#f8ac4b'
+      rating: 114.7
+      proj_wins: 6.0
+      cells:
+        sacko:
+          text: 6%
+          color: '#fdebce'
+        playoffs: &id019
+          text: 26%
+          color: '#fbd393'
+          trend:
+            dir: down
+            text: ▼3
+        bye:
+          text: 1%
+          color: '#fdf2dd'
+        top3:
+          text: 8%
+          color: '#fce9c7'
+        shiva: &id020
+          text: 2%
+          color: '#fdf1da'
+    - fid: theoceanpulse
+      team: The ChoSimba Ones
+      owner: Dillon
+      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+      record: 2-3-1
+      pf: '635.5'
+      pf_color: '#fabf64'
+      rating: 109.3
+      proj_wins: 5.1
+      cells:
+        sacko:
+          text: 13%
+          color: '#fce3ba'
+        playoffs: &id017
+          text: 7%
+          color: '#fcebcc'
+          trend:
+            dir: down
+            text: ▼3
+        bye:
+          text: <1%
+          color: '#fdf3df'
+        top3:
+          text: 2%
+          color: '#fdf1db'
+        shiva: &id018
+          text: <1%
+          color: '#fdf2df'
+    - fid: purpsworth
+      team: I am dead inside
+      owner: Trevor
+      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+      record: 2-4
+      pf: '623.2'
+      pf_color: '#fac46f'
+      rating: 107.9
+      proj_wins: 5.0
+      cells:
+        sacko:
+          text: 15%
+          color: '#fce1b5'
+        playoffs: &id021
+          text: 5%
+          color: '#fdedd2'
+          trend: null
+        bye:
+          text: <1%
+          color: '#fdf3df'
+        top3:
+          text: 1%
+          color: '#fdf2dd'
+        shiva: &id022
+          text: <1%
+          color: '#fdf3df'
+    - fid: lukstein
+      team: 2x Runner Up
+      owner: Luke
+      logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+      record: 2-4
+      pf: '496.5'
+      pf_color: '#fdf3e0'
+      rating: 93.5
+      proj_wins: 3.5
+      cells:
+        sacko:
+          text: 50%
+          color: '#f9b64d'
+        playoffs: &id023
+          text: <1%
+          color: '#fdf3e0'
+          trend: null
+        bye:
+          text: <1%
+          color: '#fdf3e0'
+        top3:
+          text: <1%
+          color: '#fdf3e0'
+        shiva: &id024
+          text: <1%
+          color: '#fdf3e0'
+  teams:
+  - fid: sturmanator15
+    rank: 1
+    team: God's Commissioner
+    owner: Wade
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    record: 4-2
+    pf: 825.2
+    pa: 772.2
+    playoffs: *id001
+    shiva: *id002
+    all_play:
+      text: 52-14
+      color: '#ee6b3b'
+    sos:
+      text: 11th (109.4 ppg)
+      rank: 11th
+      record: 21-26-1
+      of: 12
+      opp_avg: 109.4
+      color: '#fce8c5'
+    blurb: 'Wade started the year as The People''s Commissioner, promoted himself
+      to God''s Commissioner in Week 5, and has the numbers to almost justify it:
+      **the most points in the league and a 52-14 all-play**, the best of anyone.
+      **Both of his losses came while scoring 144 or more**, so the 4-2 record, if
+      anything, undersells a team that has been the best in the league week in and
+      week out. Bryce Young off the waiver wire, with nearly 60 points as a starter,
+      was the move that settled his quarterback question. The road ahead is the **second-easiest
+      in the league**, with only three games against the current top six, so the real
+      question is whether God gets the bye. Circle Week 9, the rematch with Nate,
+      who hung 179.1 on him in Week 5, and Week 10 against Grant, the most dangerous
+      team left on the schedule. The trap is Luke, who is somehow **11-5 all-time
+      against Wade** and gets him twice, in Weeks 8 and 12, and the one bye problem
+      on the calendar is Week 11 against Shawnee, with Jaxon Smith-Njigba and Blake
+      Corum among four players off. I''ve got the commish locking up the bye, but
+      if Luke steals one of those, it''s going to be a very long sermon.
+
+      '
+  - fid: jackperkins74
+    rank: 2
+    team: Gibbed for your pleasure
+    owner: Jack
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    record: 4-2
+    pf: 822.4
+    pa: 694.2
+    playoffs: *id003
+    shiva: *id004
+    all_play:
+      text: 43-22-1
+      color: '#f38b43'
+    sos:
+      text: 12th (108.7 ppg)
+      rank: 12th
+      record: 21-24-3
+      of: 12
+      opp_avg: 108.7
+      color: '#fdf3e0'
+    blurb: 'The reigning champ **set the all-time single-week record with 193.7**
+      in Week 5 and has the second-most points in the league, but a 43-22-1 all-play
+      says this has been a very good team, not an unbeatable one. Nobody works the
+      waiver wire harder, with 39 pickups, and the trades have been busier than they''ve
+      been productive: Garrett Wilson came in from Dillon and went right back out
+      to Zach for Tee Higgins and George Kittle, and **Higgins has yet to score a
+      point for Jack**. It hasn''t mattered, and it might not, because Jack has the
+      **easiest remaining schedule in the league**, with only two games against the
+      current top six, and his worst bye week is already behind him: Jahmyr Gibbs,
+      Tee Higgins, his kicker and his defense were all off in Week 6, the week Luke
+      beat him. Weeks 8 and 9 are back-to-back against Dillon, his trade partner and,
+      for one week, his team name. Week 11 is the rematch with Luke, this time with
+      Gibbs in the lineup, and Week 12 is Jono, whom he buried by 63 on opening day.
+      The one that should worry him is the finale, Zach in Week 14, **a team Jack
+      is 4-12 against all-time**, with Higgins and Kittle on one side and Wilson on
+      the other. I''ve got Jack and Wade in a dead heat for the top seed, and that
+      last week might be what decides it.
+
+      '
+  - fid: zachzoske
+    rank: 3
+    team: Tuten Your Mother, Respectfully
+    owner: Zach
+    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    record: 4-2
+    pf: 734.7
+    pa: 666.1
+    playoffs: *id005
+    shiva: *id006
+    all_play:
+      text: 41-25
+      color: '#f49445'
+    sos:
+      text: 4th (119.1 ppg)
+      rank: 4th
+      record: 22-24-2
+      of: 12
+      opp_avg: 119.1
+      color: '#f49445'
+    blurb: 'Zach beat Wade in a Week 1 shootout, I called this the best team in the
+      league in Week 3, and a 4-2 record with a 41-25 all-play still backs that up.
+      He''s also **the league''s most active trader, with five deals**, and the scorecard
+      is mixed: Ashton Jeanty has given him 87 points as a starter since the Drake
+      London trade, but Jared Goff has scored nearly three times as much for Dillon
+      as Josh Downs has for Zach. The second half is where it gets harder, with the
+      **fourth-toughest road in the league** and four games against the current top
+      six. Weeks 8 and 9 are the stretch to watch, Grant, with Isaiah Likely and Cam
+      Skattebo on bye, and then a rematch with Jono, the team that beat him by 31
+      in Week 2 and owns a 17-9 all-time edge. Kevin twice, in Weeks 10 and 12, looks
+      like a breather, though Kevin''s all-play says it isn''t. Then it closes with
+      **the hardest two weeks of his year**: Nate in Week 13, with Ashton Jeanty,
+      Josh Downs, Garrett Wilson and his defense all on bye, and Jack in Week 14,
+      a team Zach is 12-4 against all-time and will face with Wilson in his lineup
+      and Higgins and Kittle in Jack''s. At 79% he''s in good shape, but this is the
+      team with **the most to lose if the trades stop working**.
+
+      '
+  - fid: schirmerj
+    rank: 4
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 4-2
+    pf: 724.2
+    pa: 724.0
+    playoffs: *id007
+    shiva: *id008
+    all_play:
+      text: 37-29
+      color: '#f6a348'
+    sos:
+      text: 2nd (119.8 ppg)
+      rank: 2nd
+      record: 23-23-2
+      of: 12
+      opp_avg: 119.8
+      color: '#f0793e'
+    blurb: 'In Week 3 I called Jono a .500 team pretending to be dangerous, and he''s
+      gone 3-0 since, so I''d like to amend that to a .500 team that''s very good
+      at pretending. The numbers say both things: 4-2 with only the sixth-most points,
+      a 37-29 all-play, and he''s scored 724.2 while giving up 724.0, **a two-tenths-of-a-point
+      cushion for an entire half**. Christian McCaffrey and Josh Allen are carrying
+      the roster, and the waiver wire has mostly been a revolving door of defenses.
+      The bad news is the road, **the second-toughest in the league**, with four games
+      against the current top six and **the three biggest packed into four weeks**.
+      Week 9 is Zach, a team he beat by 31 and owns 17-9 all-time, with Aaron Rodgers
+      and his defense on bye; Week 10 is Nate, an 11-11 series, the most even on his
+      schedule; and Week 12 is the rematch with Jack, who beat him by 63 on opening
+      day. Then, in Week 13, **the marital rematch with Lexi**, after he won the first
+      one by 1.1 points, and I hope the house is ready. At 72% he''s in for now, but
+      this is the stretch that finds out whether the pretending holds up.
+
+      '
+  - fid: gganoom
+    rank: 5
+    team: One Big Beautiful Dillbot
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 3-3
+    pf: 748.3
+    pa: 614.8
+    playoffs: *id009
+    shiva: *id010
+    all_play:
+      text: 38-27-1
+      color: '#f59e47'
+    sos:
+      text: 10th (112.9 ppg)
+      rank: 10th
+      record: 22-24-2
+      of: 12
+      opp_avg: 112.9
+      color: '#fcddab'
+    blurb: 'My feelings about this team are a matter of public record, so I''ll stick
+      to the numbers. Grant started 0-2, I called him a playoff team anyway in Week
+      3, and he''s 3-1 since, with **the third-most points in the league and the fewest
+      allowed**. The 3-3 record undersells him: he''s **0-2 in close games**, including
+      a 0.2-point loss to Kevin with the winning points on the bench, and a 38-27-1
+      all-play says he should be a game or two better. Bijan Robinson, the first-round
+      pick, has been the frustrating part, and the roster has mostly stayed as drafted,
+      with just six pickups all year. The road is kind, the third-easiest in the league,
+      and the big games are all chances to settle a score. Week 8 against Zach comes
+      with Brock Purdy and Malik Nabers on bye, Week 9 is the revenge game against
+      Shawnee, who beat him by 4.7 in the opener, and Week 10 is Wade, a team he''s
+      0-2 against all-time. Week 11 against Lexi is the strangest game left on anybody''s
+      schedule, because **both teams have five players on bye**, Bijan Robinson among
+      Grant''s, so it''s whoever has the better waiver wire. Weeks 12 and 13 are back-to-back
+      against Dillon, a 7% team that would love nothing more than to play spoiler.
+      Then the finale is Nate, whom Grant is **4-0 against all-time** and just beat
+      by 39, possibly with a playoff spot on the line. At 81%, I''ll make it official:
+      **he''s in**.
+
+      '
+  - fid: whowonthelastsuperbowl
+    rank: 6
+    team: Trick or Trick It’s Mike Vick
+    owner: Nate
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    record: 3-3
+    pf: 731.1
+    pa: 691.1
+    playoffs: *id011
+    shiva: *id012
+    all_play:
+      text: 33-33
+      color: '#f8b24c'
+    sos:
+      text: 5th (119.0 ppg)
+      rank: 5th
+      record: 25-21-2
+      of: 12
+      opp_avg: 119.0
+      color: '#f6a248'
+    blurb: 'No team in this league is harder to read. Nate scored 179.1 to beat the
+      commish in Week 5, then the week''s low score, 67.1, the very next week, and
+      **his all-play is exactly 33-33**, which is the most perfectly average thing
+      I''ve ever seen. Davante Adams is now hurt, Derrick Henry turned in a 4.5 in
+      that Week 6 dud, and the best pickup of the year has been Tyler Shough, so the
+      roster is what it is. The second half won''t sort him out gently: the fifth-toughest
+      road, four games against the current top six, and five against teams with his
+      record or a tie away from it. Shawnee twice is the series to watch, because
+      she''s 12-5 against him all-time, and Week 11 against Dillon is worse, **a 1-10
+      all-time series** that would get into anybody''s head. Week 9 is the rematch
+      with Wade, the team he hung 179.1 on. The byes don''t help: Bucky Irving and
+      Chris Godwin Jr. are among four players off for the Week 10 game against Jono,
+      Drake Maye and Davante Adams are both off in Week 11, and **CeeDee Lamb and
+      Brandon Aubrey sit out the finale**. That finale is Grant, who is 4-0 all-time
+      against him and just beat him by 39, with a playoff spot possibly on the line.
+      At 69% the odds like Nate a lot more than his history does, and honestly, **I
+      have no idea which Nate shows up**.
+
+      '
+  - fid: shawne2520997
+    rank: 7
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-3
+    pf: 676.5
+    pa: 678.0
+    playoffs: *id013
+    shiva: *id014
+    all_play:
+      text: 29-37
+      color: '#fabf63'
+    sos:
+      text: 7th (117.9 ppg)
+      rank: 7th
+      record: 23-25
+      of: 12
+      opp_avg: 117.9
+      color: '#f9bc5a'
+    blurb: 'The reigning sacko is **back to .500**, which is a win in itself. Shawnee
+      opened 2-0, has won both of her close games, and the draft-day trade for Nico
+      Collins has been worth it, with 62.5 points as a starter. But a 29-37 all-play
+      says **the record is a little better than the team**, and the scoring has dropped
+      off since that hot start, down to a Week 6 loss to Zach that finished 27 points
+      under projection. The schedule is the story here, and it comes in one big wave.
+      Week 8 against Lexi is a trap, with Nico Collins and David Montgomery among
+      four players on bye, and then it''s **Grant, Jack and Wade in Weeks 9 through
+      11**, the gauntlet that decides her season. Survive that, and it gets friendly
+      fast: Nate in Week 12, a team she''s 12-5 against all-time, then Luke and Trevor
+      to finish, two teams she''s a combined 16-5 against, although the Dallas bye
+      takes Dak Prescott and George Pickens away for the Week 14 finale, so **the
+      team name sits out the most important week of the year**. At 30% she needs to
+      steal one game from the big three, and a team that just escaped the Sacko has
+      every reason to want to stay out of that conversation for good.
+
+      '
+  - fid: kevbots22
+    rank: 8
+    team: Remember the Nice Guys, ChatGPT
+    owner: Kevin
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    record: 2-3-1
+    pf: 693.1
+    pa: 730.3
+    playoffs: *id015
+    shiva: *id016
+    all_play:
+      text: 37-28-1
+      color: '#f6a148'
+    sos:
+      text: 6th (118.6 ppg)
+      rank: 6th
+      record: 27-21
+      of: 12
+      opp_avg: 118.6
+      color: '#f8af4b'
+    blurb: 'Kevin has been **better than his record**, and I can prove it: 2-3-1 with
+      a 37-28-1 all-play, the kind of gap that usually closes in the second half.
+      He''s lived in coin-flip games, with a tie against Dillon on opening day and
+      a 0.2-point win over Grant, and Tre Tucker, a waiver pickup, has been the surprise
+      of the roster. The catch is the schedule: **six of his eight games are against
+      the current top six**, tied for the most in the league, and that''s how a team
+      with his all-play ends up at 31%. **Zach twice, in Weeks 10 and 12, is his whole
+      case**, a 7-8 all-time series he needs to win at least once. His heavy bye weeks
+      are mostly behind him, with Justin Jefferson and Chase Brown both off in Week
+      6, but Week 11 against Jono, whom Kevin owns 12-5 all-time, comes with Matthew
+      Stafford and Josh Jacobs on bye. Week 13 is Wade, whom he very much does not
+      own, at 4-19-1. If he''s still alive for the finale, Luke in Week 14 is about
+      as soft a landing as there is. He''s still **my pick to crash the playoffs**
+      from the bubble, but he''s going to have to beat good teams to do it, and he
+      renamed his team after a chatbot, which I''ve chosen not to take personally.
+
+      '
+  - fid: theoceanpulse
+    rank: 9
+    team: The ChoSimba Ones
+    owner: Dillon
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    record: 2-3-1
+    pf: 635.5
+    pa: 691.9
+    playoffs: *id017
+    shiva: *id018
+    all_play:
+      text: 21-44-1
+      color: '#fbd69a'
+    sos:
+      text: 3rd (119.1 ppg)
+      rank: 3rd
+      record: 25-23
+      of: 12
+      opp_avg: 119.1
+      color: '#f28642'
+    blurb: 'Dillon''s season in one sentence: a tie in Week 1, a win in Week 5 with
+      a negative-six defense, and a 2-3-1 record that''s honestly better than **a
+      21-44-1 all-play** says it should be. The trade log is long and mostly a wash:
+      **the Jared Goff deal has paid off** with 74.5 points as a starter, but Nico
+      Collins went to Shawnee on draft day, and Dillon took four players from Jack
+      only to flip two of them to Zach two weeks later. The road doesn''t help, the
+      third-toughest in the league, with six games against the current top six. **Jack
+      twice, back-to-back in Weeks 8 and 9**, is where the playoff hopes probably
+      go to die, and it''s also the first time the two trade partners have to face
+      what they did. Then it''s Grant twice, in Weeks 12 and 13, his best shot at
+      playing spoiler, though Breece Hall and his kicker are on bye for the second
+      one. The one to circle for fun is Week 11 against Nate, whom Dillon is **10-1
+      against all-time**. At 7% for the playoffs and 13% for the Sacko, the second
+      half is probably about staying out of the basement, and Week 10 against Luke
+      is **the one game he can''t lose**, especially since Luke will be playing it
+      without most of the Eagles.
+
+      '
+  - fid: alexandra
+    rank: 10
+    team: Cornstar
+    owner: Lexi
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    record: 2-4
+    pf: 682.9
+    pa: 695.2
+    playoffs: *id019
+    shiva: *id020
+    all_play:
+      text: 31-35
+      color: '#f9b954'
+    sos:
+      text: 9th (113.6 ppg)
+      rank: 9th
+      record: 24-24
+      of: 12
+      opp_avg: 113.6
+      color: '#fbd290'
+    blurb: 'The rookie has had a rough introduction. Lexi beat Luke by 60 to get to
+      2-1, then **lost three straight**, including a 132.5 that ran into Jack''s record-breaking
+      193.7 and a 1.1-point loss to Jono, and a 31-35 all-play says she''s been a
+      little unlucky on top of it. **Injuries have done the most damage**, with Lamar
+      Jackson, Rashee Rice, Tyler Warren and Jeremiyah Love all missing time, and
+      the waiver wire has been her best friend: Jordan Love, the quarterback Wade
+      let go, has given her 48.4 points as a starter. The good news is the road, the
+      fourth-easiest in the league, and the middle of it is soft. Week 8 is Shawnee,
+      with four of Shawnee''s players on bye, then Luke in Week 9, a team she beat
+      by 60, and Trevor twice, in Weeks 10 and 12. That''s **four winnable games in
+      five weeks**, with Grant in Week 11 the one real test in the middle. **The byes,
+      though, all land late**: five players off in Week 11, including Jordan Love,
+      four in Week 13, including Lamar Jackson, against Jono, and three more in the
+      Week 14 finale against Wade. So the rookie needs to bank those wins early, because
+      the last four weeks are a fight with a short bench. At 26% she has a real shot
+      if she gets healthy, and nobody near the cut line should want to see her coming.
+
+      '
+  - fid: purpsworth
+    rank: 11
+    team: I am dead inside
+    owner: Trevor
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    record: 2-4
+    pf: 623.2
+    pa: 704.9
+    playoffs: *id021
+    shiva: *id022
+    all_play:
+      text: 20-46
+      color: '#fbdba5'
+    sos:
+      text: 8th (117.8 ppg)
+      rank: 8th
+      record: 23-23-2
+      of: 12
+      opp_avg: 117.8
+      color: '#fac775'
+    blurb: 'Trevor''s best week of the season was **116.6, in a loss**, which tells
+      you most of what you need to know, and a 20-46 all-play confirms it. The low
+      point was Week 3, when **De''Von Achane tore his ACL**, a real blow to a team
+      that didn''t have much margin to begin with. To his credit, he''s kept working
+      the wire, with Deebo Samuel Sr., Ollie Gordon II and the Steelers D/ST all chipping
+      in, but the Week 1 trade of Ashton Jeanty for Drake London has gone Zach''s
+      way, 87.4 to 72.9 as starters. The second half is a middle-of-the-pack road,
+      and it''s full of teams in the same mess. Week 9 is Kevin, whom he''s already
+      beaten once and leads 7-4 all-time, and then Lexi twice, in Weeks 10 and 12,
+      **the two games most likely to decide which of them ends up in the Sacko conversation**.
+      Week 11 against Zach is **the trade grudge match**, Jeanty against London, Week
+      13 against Jack is the bye-week problem, with Jonathan Taylor, Kirk Cousins
+      and Mark Andrews all off, and Week 14 against Shawnee is a 1-8 all-time series
+      he''d love to start fixing. At 5% for the playoffs and 15% for the Sacko, the
+      team name is still accurate, but there''s a lot of spoiling left to do.
+
+      '
+  - fid: lukstein
+    rank: 12
+    team: 2x Runner Up
+    owner: Luke
+    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    record: 2-4
+    pf: 496.5
+    pa: 730.9
+    playoffs: *id023
+    shiva: *id024
+    all_play:
+      text: 12-54
+      color: '#fdf3e0'
+    sos:
+      text: 1st (123.1 ppg)
+      rank: 1st
+      record: 24-22-2
+      of: 12
+      opp_avg: 123.1
+      color: '#ee6b3b'
+    blurb: 'It''s been a long half for the Eagles fan. Luke went all in on Philadelphia,
+      and Saquon Barkley, DeVonta Smith and Jalen Hurts have mostly left him stranded,
+      which is how he''s averaging 82.8 points a week, **by far the fewest in the
+      league**, with a 12-54 all-play to match. Then, out of nowhere, he **beat the
+      No. 1 team in the league as a 30-point underdog** in Week 6, with a free-agent
+      C.J. Stroud and Kyle Pitts Sr. leading the way, so there''s a pulse. The bad
+      news is that he has **the toughest remaining schedule in the league**. The strange
+      news is who''s on it: Wade twice, in Weeks 8 and 12, and Luke is 11-5 all-time
+      against the commish, so those might be his best chances at a win. Week 11 is
+      the rematch with Jack, and Jack will remember. The games that actually decide
+      his season are the ones against the Sacko crowd: Lexi in Week 9, a revenge game
+      for the 60-point loss, and Dillon in Week 10, which is also the Eagles'' bye
+      week. Luke has seven players off that week, Barkley, Smith and the Eagles defense
+      among them, **the heaviest bye week anybody has all year**, and he gets it in
+      his most important game. At 50% for the Sacko, the all-in-on-Philly plan is
+      about to send him its bill.
+
+      '

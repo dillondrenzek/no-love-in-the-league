@@ -52,6 +52,24 @@ def load_season_notes(data_dir=DATA_DIR):
     return {}
 
 
+def load_halfway_prose(year, data_dir=DATA_DIR):
+    """Hand-edited / agent-written prose for a season's Halfway page, from
+    data/halfway/<year>.yml: {"intro": str, "outlook": str, "teams": {fid: str}}.
+    Missing file or fields come back empty, so the page renders its data alone."""
+    path = Path(data_dir) / "halfway" / f"{year}.yml"
+    doc = (_read_yaml(path) or {}) if path.is_file() else {}
+    return {"intro": doc.get("intro") or "", "outlook": doc.get("outlook") or "",
+            "teams": doc.get("teams") or {}}
+
+
+def load_halfway_snapshot(year, data_dir=DATA_DIR):
+    """The frozen numbers for a season's Halfway page, from
+    data/halfway/<year>.snapshot.yml (written once by generate_halfway.py when
+    the halfway week went final), or None before then."""
+    path = Path(data_dir) / "halfway" / f"{year}.snapshot.yml"
+    return (_read_yaml(path) or None) if path.is_file() else None
+
+
 def load_projections(year, franchises, data_dir=DATA_DIR):
     """Pre-game projection snapshots for a season:
     {week: {"captured_at": <iso str or None>, "proj": {fid: projected},

@@ -15,6 +15,7 @@ import generate_seasons
 import generate_rules
 import generate_weeks
 import generate_odds
+import generate_halfway
 
 GENERATORS = [
     generate_records,
@@ -24,6 +25,7 @@ GENERATORS = [
     generate_rules,
     generate_weeks,
     generate_odds,
+    generate_halfway,
 ]
 
 
