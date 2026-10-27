@@ -16248,11 +16248,6 @@ purpsworth:
       cost: R9
       basis: Drafted R11
       ineligible: false
-    - player: Dominic Zvada
-      pos: K
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Steelers D/ST
       pos: D/ST
       cost: R11
