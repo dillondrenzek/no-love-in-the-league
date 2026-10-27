@@ -2532,11 +2532,6 @@ sturmanator15:
       cost: R10
       basis: Drafted R12
       ineligible: false
-    - player: Roschon Johnson
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Jaxon Smith-Njigba
       pos: WR
       cost: Ineligible
@@ -5671,11 +5666,6 @@ jackperkins74:
       pos: QB
       cost: R5
       basis: Drafted R7
-      ineligible: false
-    - player: Kyler Murray
-      pos: QB
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Jahmyr Gibbs
       pos: RB
