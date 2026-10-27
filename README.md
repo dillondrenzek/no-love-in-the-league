@@ -264,6 +264,39 @@ preview/recap prose is hand-pasted, and each shows only in the right state, so a
 re-import that corrects a score or flips a week to complete just needs a rebuild.
 Playoff weeks are handled separately (not yet built).
 
+## The Halfway page (once a season)
+
+At the break (after Week 7 of a 14-week season), the season gets a special
+edition at `/seasons/<year>/halfway/`. It sits in the week nav as **½** between
+Weeks 7 and 8. It shows the standings and playoff odds at the halfway point, an
+intro, a season outlook, and a paragraph per team covering its first half, its
+moves, and the road ahead. It's meant to be a time capsule: come back to it in
+December and it reads exactly as it did at the break.
+
+Nothing publishes it but you. The scheduled site update never creates the page;
+the report script does, locally, and the page goes live when you commit and push
+it. Until Week 7 is final it shows the weeks that are, and says so. The yearly
+routine:
+
+1. Around Week 7, run `python scripts/halfway_report.py <year>`. It writes the
+   facts file `recaps/<year>-halfway.data.md` and, the first time, creates the
+   page (`docs/seasons/<year>/halfway.md`) and the prose file
+   (`data/halfway/<year>.yml`). You can run it early, on what's final so far,
+   and again once Week 7 is final.
+2. Point your agent at `agents/halfway-report.md` and have it fill the prose
+   file: the intro, the outlook, and one paragraph per team.
+3. Run `python scripts/build.py`.
+
+**Freezing.** The first build after Week 7 is final, yours or the scheduled
+update's, writes the page's numbers (standings, odds, team cards, team names and
+logos) once to `data/halfway/<year>.snapshot.yml`. The scheduled update commits
+it for you; commit it yourself if your build got there first. From then on every build reads
+that file instead of recomputing, so nothing later in the season, not even a
+rename or a change to the odds model, can move the page. The prose file stays
+editable. To recompute the numbers (say, after a late stat correction to
+Week 7), delete the snapshot file and rebuild. Run the "once Week 7 is final"
+pass of the report after the freeze, so the facts match the frozen page.
+
 ## Running the tests
 
 ```

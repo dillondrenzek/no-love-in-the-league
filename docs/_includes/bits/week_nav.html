@@ -7,6 +7,9 @@ Params:
   active = the week being viewed (week pages; omit on the season page)
   home   = true to lead with a "← Season home" link (week pages); otherwise the
            row is labelled "Weeks:" (season page)
+Special once-a-season pages (the Halfway page) join the row too: they set a
+fractional `week:` to sort between two weeks, a `nav_label:` for the pill, and
+`special: <data file>` so their state comes from site.data[special][year].
 {%- endcomment -%}
 {%- assign year = include.year -%}
 {%- assign wkpages = site.pages | where: "season_year", year | where_exp: "p", "p.week" | sort: "week" -%}
@@ -18,12 +21,17 @@ Params:
   {%- endif -%}
   {%- for p in wkpages -%}
   {%- assign key = year | append: "-" | append: p.week -%}
+  {%- if p.special -%}
+  {%- assign w = site.data[p.special][year] -%}
+  {%- else -%}
   {%- assign w = site.data.weeks[key] -%}
+  {%- endif -%}
   {%- capture cls -%}
     {%- if w.state == "complete" %} week-nav__done{% endif -%}
     {%- if w.current %} week-nav__now{% endif -%}
+    {%- if p.special %} week-nav__special{% endif -%}
     {%- if p.week == include.active %} week-nav__current{% endif -%}
   {%- endcapture %}
-  <a href="{{ p.url | relative_url }}"{% if cls != "" %} class="{{ cls | strip }}"{% endif %}{% if p.week == include.active %} aria-current="page"{% endif %}{% if w.current %} title="This week"{% endif %}>{{ p.week }}</a>
+  <a href="{{ p.url | relative_url }}"{% if cls != "" %} class="{{ cls | strip }}"{% endif %}{% if p.week == include.active %} aria-current="page"{% endif %}{% if w.current %} title="This week"{% elsif p.special %} title="{{ p.title | split: ' · ' | first }}"{% endif %}>{{ p.nav_label | default: p.week }}</a>
   {%- endfor %}
 </nav>
