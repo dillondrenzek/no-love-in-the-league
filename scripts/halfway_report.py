@@ -30,7 +30,7 @@ from lib.data import (load_franchises, load_seasons, load_projections,
 from lib.context import recent_moves, league_bests, h2h_record
 from lib.halfway import (halfway_week, snapshot, first_half_complete, team_halves,
                          schedule_ranks, starter_points, best_moves, second_half_slate,
-                         bye_load)
+                         bye_load, draft_scorecard)
 from lib.overrides import load_overrides
 from lib.power import week_power_rankings
 from generate_halfway import halfway_entry, scaffold_page, scaffold_prose
@@ -85,7 +85,9 @@ def team_block(fid, h, ctx, franchises):
         lines.append("- Team names this season, in order: " + " → ".join(f'"{n}"' for n in names))
     lines.append(f"- History: {_owner_line(who, ctx['profiles'].get(fid))}")
     lines.append(f"- First half: {h['record']}, {h['pf']:.1f} PF ({h['avg']:.1f}/wk, "
-                 f"#{h['pf_rank']} in points), {h['pa']:.1f} PA; all-play {h['all_play']} "
+                 f"#{h['pf_rank']} in points), {h['pa']:.1f} PA (#{h['pa_rank']} most faced — "
+                 f"pure luck: a manager can't affect points against, so high PA is bad luck "
+                 f"and low PA is good luck, never good or bad play); all-play {h['all_play']} "
                  f"(record vs every team every week — far better than the real record means "
                  f"unlucky, far worse means lucky)")
     lines.append(f"- Close games (decided by under 10): {h['close']}; "
@@ -119,11 +121,20 @@ def team_block(fid, h, ctx, franchises):
         if top:
             line += "; best by points as a starter: " + ", ".join(f"{p} {v:.1f}" for p, v in top)
         lines.append(line)
-    drafted = [e for e in (ctx["rosters"].get(fid) or [])
-               if e.get("via") == "draft" and (e.get("round") or 99) <= 2]
-    if drafted:
-        lines.append("- Top draft picks: " + ", ".join(
-            f"R{e['round']} {e['player']}" for e in sorted(drafted, key=lambda e: e["round"])))
+    card = ctx["draft"].get(fid)
+    if card:
+        kept = {k.get("player") for k in ctx["keepers"] if k.get("fid") == fid}
+        fmt = lambda xs: ", ".join(f"R{r} {p}{' (keeper)' if p in kept else ''} {v:.1f}"
+                                   for r, p, v in xs)
+        lines.append(f"- Draft: drafted players have scored {card['drafted']:.1f} of the team's "
+                     f"{card['total']:.1f} starter points ({card['share']:.0%}), "
+                     f"#{card['rank']} of {len(ctx['draft'])} in points from the draft")
+        if card["early"]:
+            lines.append(f"  - Early picks (starter points for this team; 0.0 = hurt, benched, "
+                         f"traded or dropped): {fmt(card['early'])}")
+        if card["best"]:
+            lines.append(f"  - Best draft values (a keeper's round is its keeper cost, "
+                         f"not a draft-day steal): {fmt(card['best'])}")
     odds = ctx["odds"].get(fid)
     if odds:
         c = odds["cells"]
@@ -138,16 +149,20 @@ def team_block(fid, h, ctx, franchises):
     lines.append(f"- Bye weeks ahead (current roster, 2+ off): {ahead or 'none that heavy'}")
     slate = second_half_slate(ctx["halves"], fid)
     if slate:
-        lines.append("- Second half, game by game (opponent's record and standing; "
-                     "RACE = same record or a tie apart, a six-pointer):")
+        lines.append("- Second half, game by game (opponent's record, standing and scoring "
+                     "average with its points rank: how hard a game is comes from these, never "
+                     "from the all-time series; KEY MATCHUP = a team in a similar position: same "
+                     "record or a tie apart, so a win also hands a direct rival a loss):")
         for r in slate:
             opp = r["opp"]
-            bits = [f"{r['opp_record']}, #{ctx['rank'].get(opp, '?')}"]
+            oh = ctx["halves"].get(opp) or {}
+            bits = [f"{r['opp_record']}, #{ctx['rank'].get(opp, '?')}",
+                    f"{oh.get('avg', 0):.1f} ppg, #{oh.get('pf_rank', '?')} in points"]
             po = ((ctx["odds"].get(opp) or {}).get("cells") or {}).get("playoffs", {}).get("text")
             if po:
                 bits.append(f"{po} playoffs")
             if r["race"]:
-                bits.append("RACE")
+                bits.append("KEY MATCHUP")
             if r["twice"]:
                 bits.append("they meet twice in the second half")
             m = r["rematch"]
@@ -156,14 +171,14 @@ def team_block(fid, h, ctx, franchises):
                 bits.append(f"rematch — {verb} {m['pf']:.1f}–{m['pa']:.1f} in Wk {m['week']}")
             series = h2h_record(ctx["profiles"], fid, opp)
             if series:
-                bits.append(f"all-time {series}")
+                bits.append(f"all-time {series}, history only, not a predictor")
             lines.append(f"  - Wk {r['week']} vs {short_name_of(opp, franchises)} "
                          f"({'; '.join(bits)})")
         top6 = sum(ctx["rank"].get(r["opp"], 99) <= 6 for r in slate)
         races = sum(r["race"] for r in slate)
         sos = ctx["sos"].get(fid)
         line = (f"- Remaining schedule: {top6} of {len(slate)} games vs the current top six, "
-                f"{races} race game{'' if races == 1 else 's'}")
+                f"{races} key matchup{'' if races == 1 else 's'}")
         if sos:
             line += (f"; opponents averaged {h['remaining_opp_avg']:.1f} in the first half "
                      f"— #{sos} of {len(ctx['sos'])} toughest")
@@ -186,6 +201,7 @@ def facts(season, franchises, through, entry):
     # Rosters through the week after the break, so "byes ahead" uses the newest roster.
     rosters_by_week = {w: load_week_rosters(year, w, franchises) for w in range(1, as_of + 2)}
     rosters_by_week = {w: r for w, r in rosters_by_week.items() if r}
+    starter_pts = starter_points({w: r for w, r in rosters_by_week.items() if w <= as_of})
     ctx = {
         "teams": season.get("teams") or {},
         "rank": rank,
@@ -197,9 +213,11 @@ def facts(season, franchises, through, entry):
         "moves": recent_moves(season, franchises, 0, through + 1),
         "trades": [t for t in season.get("trades") or []
                    if (t.get("week") or 0) <= through + 1 and t.get("assets")],
-        "starter_pts": starter_points({w: r for w, r in rosters_by_week.items() if w <= as_of}),
+        "starter_pts": starter_pts,
         "byes": bye_load(rosters_by_week, as_of),
         "rosters": season.get("rosters") or {},
+        "keepers": season.get("keepers") or [],
+        "draft": draft_scorecard(season.get("rosters") or {}, starter_pts),
         "name_seq": [(projections[w].get("names") or {})
                      for w in sorted(w for w in projections if w <= through + 1)],
     }

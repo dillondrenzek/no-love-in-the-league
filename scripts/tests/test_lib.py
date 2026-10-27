@@ -1930,6 +1930,9 @@ def test_team_halves_resume_and_schedule():
     assert [r["opp"] for r in a["remaining"]] == ["d", "b"]
     assert a["remaining_opp_avg"] == round((87.5 + 115.0) / 2, 1)
     assert h["d"]["pf_rank"] == 4 and h["b"]["big_win"]["pa"] == 80.0
+    # Points against: d faced 220 (90 + 130), the most; a faced 212 (100 + 112).
+    assert h["d"]["pa"] == 220.0 and h["d"]["pa_rank"] == 1
+    assert a["pa"] == 212.0 and a["pa_rank"] == 2
     ranks = schedule_ranks(h)
     assert sorted(ranks.values()) == [1, 2, 3, 4]
 
@@ -2011,6 +2014,26 @@ def test_load_halfway_snapshot():
         (Path(d) / "halfway").mkdir()
         (Path(d) / "halfway" / "2026.snapshot.yml").write_text("# frozen\nyear: 2026\nas_of_week: 7\n")
         assert load_halfway_snapshot(2026, data_dir=d) == {"year": 2026, "as_of_week": 7}
+
+
+def test_draft_scorecard():
+    from lib.halfway import draft_scorecard
+    rosters = {
+        "a": [{"player": "Star", "via": "draft", "round": 1},
+              {"player": "Bust", "via": "draft", "round": 2},
+              {"player": "Gem", "via": "draft", "round": 10},
+              {"player": "Pickup", "via": "add"}],
+        "b": [{"player": "Solid", "via": "draft", "round": 1}],
+    }
+    points = {"a": {"Star": 90.0, "Gem": 60.0, "Pickup": 50.0},
+              "b": {"Solid": 100.0}}
+    card = draft_scorecard(rosters, points)
+    a = card["a"]
+    assert a["drafted"] == 150.0 and a["total"] == 200.0 and a["share"] == 0.75
+    assert a["early"] == [(1, "Star", 90.0), (2, "Bust", 0.0)]   # busts stay listed
+    assert a["best"] == [(1, "Star", 90.0), (10, "Gem", 60.0)]
+    assert a["rank"] == 1 and card["b"]["rank"] == 2
+    assert draft_scorecard({}, {}) == {}
 
 
 def test_starter_points_and_best_moves():

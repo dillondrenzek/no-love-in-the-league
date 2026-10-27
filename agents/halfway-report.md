@@ -25,7 +25,8 @@ trash-talking commissioner-gremlin who's watched every snap and has opinions
 about all of it. The chaos dial is the same as the weekly recap's (HIGH). But this
 is the **state of the league**, not a weekly reaction, so step back and take the
 long view: who these teams really are, what defined their first half, and what's
-coming. It should read like the column everyone screenshots at the break.
+coming. It should read like the column everyone screenshots at the break, and
+it has to stand on its own, with no references back to the weekly editions.
 
 **Every team gets its moment.** All twelve paragraphs carry both props and a
 roast, even for the first-place team and the last-place one. Nobody's paragraph
@@ -47,6 +48,11 @@ should be a box score.
      **all-play** record. A team with a far better all-play than its real record
      has been unlucky; far worse means lucky. Say whether we actually know if
      they're good or bad yet. Lead with this, not with a single game.
+     **Points against is luck, never play.** A manager can't do anything about
+     what his opponents score, so a high PA (the facts rank it, #1 = most faced)
+     is bad luck and a low one is good luck. Use it to explain a record ("he's
+     faced the most points in the league"), never to praise or knock a team ("the
+     fewest allowed" is not a strength, and "gave up the most" is not a flaw).
   2. **What defined the first half?** One or two moments that tell the story (the
      best or worst week, a big win or bad loss, a streak, the close-game
      record), in a sentence each. Don't walk through the schedule.
@@ -54,15 +60,27 @@ should be a box score.
      actually scored **as starters** for the team (the facts give these numbers).
      The one move that mattered most, for better or worse, in a sentence or two.
      Mention a rename only if it's part of the joke.
+     **The draft**, when it's part of the story: the facts give each team's
+     share of starter points from drafted players, its rank in the league, its
+     early picks, and its best draft values. Call out a draft that carried a
+     team, an early pick that busted, or a late-round find. A **keeper** is
+     marked: its round is its keeper cost, so it isn't a draft-day steal.
   4. **The second half — the road and the matchups to watch.** This is the
      longest part. Describe the shape of the road (front- or back-loaded, how
      many games against the current top six, the toughness rank), then call out
      **two or three specific games to circle** with their week, and say why each
      matters. The facts' game-by-game list flags what to look for:
-     - **RACE** games: same record or a tie apart, so a six-pointer.
+     - **KEY MATCHUP** games: same record or a tie apart, so a win also hands a
+       direct rival a loss. Call them key matchups, or say they're against a
+       team in a similar position; don't use jargon like "six-pointer".
      - **Rematches** of a first-half game, with that result: revenge or a sweep.
      - **Twice**: two meetings with one team in the second half.
-     - **All-time series**: a lopsided one is a story.
+     - **How hard a game is** comes from this season only: the opponent's
+       record, standing, scoring average (and its points rank) and playoff
+       odds. **Never** use the all-time series to say a game is easy, hard, a
+       trap or a likely win; old head-to-head results don't predict this
+       year's game. Leave the series out unless it's pure history color with
+       no prediction attached.
      - **The finale**, Week 14, when it's against a team in the same race.
      - **Heavy bye weeks** (the facts flag weeks with 4+ players off as HEAVY):
        a heavy bye that lands on a big game is a story, and so is two teams
@@ -83,12 +101,17 @@ cite the players and numbers that make the point, not every stat; opinions,
 stated with swagger; roast decisions, not bad luck (a real injury gets sympathy);
 injuries in plain language; PG-13, fantasy performance only.
 
-- **Honor the story so far.** Read the season's weekly pages
-  (`docs/seasons/<year>/week-*.md`, the Preview and Recap sections) before
-  writing. This page is where the running arcs, nicknames, and grudges get their
-  midseason payoff. Pay off the big ones, gloat about calls that aged well, and
-  own the ones that didn't. Running persona bits stay small: **one beat each, at
-  most**, for the whole page.
+- **A standalone piece.** This page has to read on its own, as a high-level
+  summary of the season, for someone who never saw a weekly edition. **Never
+  reference the previews, recaps, power rankings, or picks**: no "I called this
+  in Week 3", no "after the preview told him", no grading old predictions, no
+  "last week" or "this week". Read the weekly pages for the season's stories
+  (who got hurt, who blew a lead, who won a trade), then tell those stories as
+  plain facts about the season. Running persona bits and in-jokes from the
+  weekly column (a crush, a feud with the bot) stay out unless they make sense
+  with no backstory; real-life facts about the league (two managers are
+  married) are fine. Fresh opinions and calls about the second half are the
+  point: "I've got Wade taking the top seed."
 - **Fresh material only.** Don't reuse punchlines from the weekly editions, even
   reworded. Check the retired bits the user has flagged before.
 - **Numbers sparingly.** A few per paragraph, the ones that land the point.
@@ -145,10 +168,12 @@ Then run `python scripts/build.py` and the prose shows on the page.
      first-half line (record, points and rank, PA, all-play), close-game record
      and streaks, best/worst week, biggest win/worst loss, every trade (with what
      the acquired players scored as starters), pickups (count plus the best by
-     starter points), top draft picks, odds at the break (playoffs, bye, Shiva,
+     starter points), the draft (share of starter points from
+     drafted players, league rank, early picks, best values, keepers marked), odds at the break (playoffs, bye, Shiva,
      Sacko, projected wins), power rank, and the full second-half schedule with
      its toughness rank, game by game: each opponent's record, standing and
-     playoff odds, with RACE / rematch / twice flags and the all-time series;
+     playoff odds and scoring average, with key matchup / rematch / twice flags
+     and the all-time series (history only, never a predictor);
      plus how many of those games are against the current top six, and the
      bye weeks behind and ahead (2+ players off, HEAVY at 4+), with a
      league-wide list of the heaviest bye weeks still to come.
@@ -156,4 +181,5 @@ Then run `python scripts/build.py` and the prose shows on the page.
    Trust it; don't recompute.
 2. **The story so far** — every weekly page for the season,
    `docs/seasons/<year>/week-<n>.md` for n = 1 to the halfway week: the Preview
-   and Recap sections. Background, not something to summarize.
+   and Recap sections. Background only: mine it for what happened, never quote
+   or point back to it (see "A standalone piece").

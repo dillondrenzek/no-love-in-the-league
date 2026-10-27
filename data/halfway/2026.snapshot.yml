@@ -1,0 +1,741 @@
+# Halfway page numbers — 2026, frozen at the end of Week 7.
+# Written once by scripts/generate_halfway.py when the halfway week went final;
+# every build reads this file instead of recomputing, so the page never moves.
+# Don't edit it. Delete it to recompute (it's rewritten on the next build).
+year: 2026
+through_week: 7
+as_of_week: 7
+state: complete
+points: true
+standings_rows:
+- finish: 1
+  team: God's Commissioner
+  logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+  owner_id: sturmanator15
+  owner_name: Wade
+  record: 5-2
+  pct: 0.7142857142857143
+  tag: null
+  pct_str: '.714'
+  pf: 981.4
+  pf_color: '#ee6b3b'
+  pa: 883.5
+  pa_color: '#ee6b3b'
+- finish: 2
+  team: Gibbed for your pleasure
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+  owner_id: jackperkins74
+  owner_name: Jack
+  record: 5-2
+  pct: 0.7142857142857143
+  tag: null
+  pct_str: '.714'
+  pf: 954.3
+  pf_color: '#ef753d'
+  pa: 776.5
+  pa_color: '#f9bc5b'
+- finish: 3
+  team: Tuten Your Mother, Respectfully
+  logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+  owner_id: zachzoske
+  owner_name: Zach
+  record: 5-2
+  pct: 0.7142857142857143
+  tag: null
+  pct_str: '.714'
+  pf: 858.2
+  pf_color: '#f59846'
+  pa: 759.2
+  pa_color: '#fac675'
+- finish: 4
+  team: One Big Beautiful Dillbot
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+  owner_id: gganoom
+  owner_name: Grant
+  record: 4-3
+  pct: 0.5714285714285714
+  tag: null
+  pct_str: '.571'
+  pf: 864.2
+  pf_color: '#f49645'
+  pa: 687.8
+  pa_color: '#fdf3e0'
+- finish: 5
+  team: Return of the IDP
+  logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+  owner_id: schirmerj
+  owner_name: Jono
+  record: 4-3
+  pct: 0.5714285714285714
+  tag: null
+  pct_str: '.571'
+  pf: 835.5
+  pf_color: '#f6a048'
+  pa: 880.2
+  pa_color: '#ee6e3c'
+- finish: 6
+  team: Trick or Trick It’s Mike Vick
+  logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+  owner_id: whowonthelastsuperbowl
+  owner_name: Nate
+  record: 4-3
+  pct: 0.5714285714285714
+  tag: null
+  pct_str: '.571'
+  pf: 835.4
+  pf_color: '#f6a048'
+  pa: 772.4
+  pa_color: '#fabe61'
+- finish: 7
+  team: Swift kick in the Dak
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+  owner_id: shawne2520997
+  owner_name: Shawnee
+  record: 3-4
+  pct: 0.42857142857142855
+  tag: null
+  pct_str: '.429'
+  pf: 757.8
+  pf_color: '#f9bb5a'
+  pa: 782.3
+  pa_color: '#f9b852'
+- finish: 8
+  team: I am dead inside
+  logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+  owner_id: purpsworth
+  owner_name: Trevor
+  record: 3-4
+  pct: 0.42857142857142855
+  tag: null
+  pct_str: '.429'
+  pf: 748.8
+  pf_color: '#fabe60'
+  pa: 792.6
+  pa_color: '#f8b14c'
+- finish: 9
+  team: Remember the Nice Guys, ChatGPT
+  logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+  owner_id: kevbots22
+  owner_name: Kevin
+  record: 2-4-1
+  pct: 0.35714285714285715
+  tag: null
+  pct_str: '.357'
+  pf: 775.4
+  pf_color: '#f9b64d'
+  pa: 862.2
+  pa_color: '#f07b3f'
+- finish: 10
+  team: The ChoSimba Ones
+  logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+  owner_id: theoceanpulse
+  owner_name: Dillon
+  record: 2-4-1
+  pct: 0.35714285714285715
+  tag: null
+  pct_str: '.357'
+  pf: 723.2
+  pf_color: '#fac572'
+  pa: 817.5
+  pa_color: '#f59e47'
+- finish: 11
+  team: Cornstar
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+  owner_id: alexandra
+  owner_name: Lexi
+  record: 2-5
+  pct: 0.2857142857142857
+  tag: null
+  pct_str: '.286'
+  pf: 776.0
+  pf_color: '#f9b64d'
+  pa: 818.7
+  pa_color: '#f59d47'
+- finish: 12
+  team: 2x Runner Up
+  logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+  owner_id: lukstein
+  owner_name: Luke
+  record: 2-5
+  pct: 0.2857142857142857
+  tag: null
+  pct_str: '.286'
+  pf: 569.5
+  pf_color: '#fdf3e0'
+  pa: 846.8
+  pa_color: '#f28742'
+odds:
+  as_of_week: 7
+  sims: 10000
+  rows:
+  - fid: sturmanator15
+    team: God's Commissioner
+    owner: Wade
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    record: 5-2
+    pf: '981.4'
+    pf_color: '#ee6b3b'
+    rating: 133.1
+    proj_wins: 10.5
+    cells:
+      sacko:
+        text: <1%
+        color: '#fdf3e0'
+      playoffs: &id001
+        text: '>99%'
+        color: '#ee6b3b'
+        trend: null
+      bye:
+        text: 85%
+        color: '#f18140'
+      top3:
+        text: 82%
+        color: '#f28641'
+      shiva: &id002
+        text: 37%
+        color: '#fac672'
+  - fid: jackperkins74
+    team: Gibbed for your pleasure
+    owner: Jack
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    record: 5-2
+    pf: '954.3'
+    pf_color: '#ef753d'
+    rating: 130.3
+    proj_wins: 10.3
+    cells:
+      sacko:
+        text: <1%
+        color: '#fdf3e0'
+      playoffs: &id003
+        text: '>99%'
+        color: '#ee6b3b'
+        trend: null
+      bye:
+        text: 77%
+        color: '#f38e43'
+      top3:
+        text: 76%
+        color: '#f38f44'
+      shiva: &id004
+        text: 29%
+        color: '#fbcf8a'
+  - fid: zachzoske
+    team: Tuten Your Mother, Respectfully
+    owner: Zach
+    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    record: 5-2
+    pf: '858.2'
+    pf_color: '#f59846'
+    rating: 120.5
+    proj_wins: 8.8
+    cells:
+      sacko:
+        text: <1%
+        color: '#fdf3df'
+      playoffs: &id005
+        text: 92%
+        color: '#f0773e'
+        trend:
+          dir: up
+          text: ▲13
+      bye:
+        text: 20%
+        color: '#fbdba7'
+      top3:
+        text: 38%
+        color: '#fac46f'
+      shiva: &id006
+        text: 9%
+        color: '#fce8c4'
+  - fid: gganoom
+    team: One Big Beautiful Dillbot
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 4-3
+    pf: '864.2'
+    pf_color: '#f49645'
+    rating: 121.1
+    proj_wins: 8.0
+    cells:
+      sacko:
+        text: <1%
+        color: '#fdf3df'
+      playoffs: &id007
+        text: 91%
+        color: '#f0783e'
+        trend:
+          dir: up
+          text: ▲10
+      bye:
+        text: 8%
+        color: '#fce9c8'
+      top3:
+        text: 36%
+        color: '#fac777'
+      shiva: &id008
+        text: 9%
+        color: '#fce8c5'
+  - fid: schirmerj
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 4-3
+    pf: '835.5'
+    pf_color: '#f6a048'
+    rating: 118.2
+    proj_wins: 7.8
+    cells:
+      sacko:
+        text: 1%
+        color: '#fdf2dd'
+      playoffs: &id009
+        text: 79%
+        color: '#f38b43'
+        trend:
+          dir: up
+          text: ▲6
+      bye:
+        text: 5%
+        color: '#fdecd0'
+      top3:
+        text: 26%
+        color: '#fbd393'
+      shiva: &id010
+        text: 6%
+        color: '#fdecce'
+  - fid: whowonthelastsuperbowl
+    team: Trick or Trick It’s Mike Vick
+    owner: Nate
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    record: 4-3
+    pf: '835.4'
+    pf_color: '#f6a048'
+    rating: 118.2
+    proj_wins: 7.5
+    cells:
+      sacko:
+        text: 1%
+        color: '#fdf1dc'
+      playoffs: &id011
+        text: 76%
+        color: '#f38f44'
+        trend:
+          dir: up
+          text: ▲7
+      bye:
+        text: 4%
+        color: '#fdeed4'
+      top3:
+        text: 25%
+        color: '#fbd495'
+      shiva: &id012
+        text: 6%
+        color: '#fdeccf'
+  - fid: alexandra
+    team: Cornstar
+    owner: Lexi
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    record: 2-5
+    pf: '776.0'
+    pf_color: '#f9b64d'
+    rating: 112.1
+    proj_wins: 5.4
+    cells:
+      sacko:
+        text: 7%
+        color: '#fceacb'
+      playoffs: &id021
+        text: 18%
+        color: '#fcddab'
+        trend:
+          dir: down
+          text: ▼8
+      bye:
+        text: <1%
+        color: '#fdf3e0'
+      top3:
+        text: 4%
+        color: '#fdeed3'
+      shiva: &id022
+        text: 1%
+        color: '#fdf2dd'
+  - fid: kevbots22
+    team: Remember the Nice Guys, ChatGPT
+    owner: Kevin
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    record: 2-4-1
+    pf: '775.4'
+    pf_color: '#f9b64d'
+    rating: 112.0
+    proj_wins: 5.1
+    cells:
+      sacko:
+        text: 7%
+        color: '#fceacb'
+      playoffs: &id017
+        text: 17%
+        color: '#fcdfaf'
+        trend:
+          dir: down
+          text: ▼14
+      bye:
+        text: <1%
+        color: '#fdf3e0'
+      top3:
+        text: 4%
+        color: '#fdeed3'
+      shiva: &id018
+        text: 1%
+        color: '#fdf2dd'
+  - fid: shawne2520997
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-4
+    pf: '757.8'
+    pf_color: '#f9bb5a'
+    rating: 110.2
+    proj_wins: 5.9
+    cells:
+      sacko:
+        text: 8%
+        color: '#fce9c9'
+      playoffs: &id013
+        text: 13%
+        color: '#fce3b8'
+        trend:
+          dir: down
+          text: ▼17
+      bye:
+        text: <1%
+        color: '#fdf3df'
+      top3:
+        text: 4%
+        color: '#fdefd6'
+      shiva: &id014
+        text: 1%
+        color: '#fdf2de'
+  - fid: purpsworth
+    team: I am dead inside
+    owner: Trevor
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    record: 3-4
+    pf: '748.8'
+    pf_color: '#fabe60'
+    rating: 109.3
+    proj_wins: 5.8
+    cells:
+      sacko:
+        text: 9%
+        color: '#fce8c6'
+      playoffs: &id015
+        text: 12%
+        color: '#fce5be'
+        trend:
+          dir: up
+          text: ▲7
+      bye:
+        text: <1%
+        color: '#fdf3e0'
+      top3:
+        text: 3%
+        color: '#fdf0d8'
+      shiva: &id016
+        text: <1%
+        color: '#fdf2df'
+  - fid: theoceanpulse
+    team: The ChoSimba Ones
+    owner: Dillon
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    record: 2-4-1
+    pf: '723.2'
+    pf_color: '#fac572'
+    rating: 106.7
+    proj_wins: 4.5
+    cells:
+      sacko:
+        text: 15%
+        color: '#fce1b4'
+      playoffs: &id019
+        text: 2%
+        color: '#fdf0d9'
+        trend:
+          dir: down
+          text: ▼4
+      bye:
+        text: <1%
+        color: '#fdf3e0'
+      top3:
+        text: 1%
+        color: '#fdf2de'
+      shiva: &id020
+        text: <1%
+        color: '#fdf3e0'
+  - fid: lukstein
+    team: 2x Runner Up
+    owner: Luke
+    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    record: 2-5
+    pf: '569.5'
+    pf_color: '#fdf3e0'
+    rating: 91.0
+    proj_wins: 3.3
+    cells:
+      sacko:
+        text: 51%
+        color: '#f9b54d'
+      playoffs: &id023
+        text: <1%
+        color: '#fdf3e0'
+        trend: null
+      bye:
+        text: <1%
+        color: '#fdf3e0'
+      top3:
+        text: <1%
+        color: '#fdf3e0'
+      shiva: &id024
+        text: <1%
+        color: '#fdf3e0'
+teams:
+- fid: sturmanator15
+  rank: 1
+  team: God's Commissioner
+  owner: Wade
+  logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+  record: 5-2
+  pf: 981.4
+  pa: 883.5
+  playoffs: *id001
+  shiva: *id002
+  all_play:
+    text: 63-14
+    color: '#ee6b3b'
+  sos:
+    text: 12th (105.1 ppg)
+    rank: 12th
+    record: 19-29-1
+    of: 12
+    opp_avg: 105.1
+    color: '#fdf3e0'
+- fid: jackperkins74
+  rank: 2
+  team: Gibbed for your pleasure
+  owner: Jack
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+  record: 5-2
+  pf: 954.3
+  pa: 776.5
+  playoffs: *id003
+  shiva: *id004
+  all_play:
+    text: 53-23-1
+    color: '#f28742'
+  sos:
+    text: 11th (106.5 ppg)
+    rank: 11th
+    record: 21-26-2
+    of: 12
+    opp_avg: 106.5
+    color: '#fce8c5'
+- fid: zachzoske
+  rank: 3
+  team: Tuten Your Mother, Respectfully
+  owner: Zach
+  logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+  record: 5-2
+  pf: 858.2
+  pa: 759.2
+  playoffs: *id005
+  shiva: *id006
+  all_play:
+    text: 49-28
+    color: '#f49445'
+  sos:
+    text: 4th (118.1 ppg)
+    rank: 4th
+    record: 24-23-2
+    of: 12
+    opp_avg: 118.1
+    color: '#f49445'
+- fid: gganoom
+  rank: 4
+  team: One Big Beautiful Dillbot
+  owner: Grant
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+  record: 4-3
+  pf: 864.2
+  pa: 687.8
+  playoffs: *id007
+  shiva: *id008
+  all_play:
+    text: 45-31-1
+    color: '#f69e47'
+  sos:
+    text: 9th (115.4 ppg)
+    rank: 9th
+    record: 23-24-2
+    of: 12
+    opp_avg: 115.4
+    color: '#fbd290'
+- fid: schirmerj
+  rank: 5
+  team: Return of the IDP
+  owner: Jono
+  logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+  record: 4-3
+  pf: 835.5
+  pa: 880.2
+  playoffs: *id009
+  shiva: *id010
+  all_play:
+    text: 43-34
+    color: '#f7a649'
+  sos:
+    text: 8th (115.7 ppg)
+    rank: 8th
+    record: 23-24-2
+    of: 12
+    opp_avg: 115.7
+    color: '#fac775'
+- fid: whowonthelastsuperbowl
+  rank: 6
+  team: Trick or Trick It’s Mike Vick
+  owner: Nate
+  logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+  record: 4-3
+  pf: 835.4
+  pa: 772.4
+  playoffs: *id011
+  shiva: *id012
+  all_play:
+    text: 38-39
+    color: '#f9b54d'
+  sos:
+    text: 3rd (118.3 ppg)
+    rank: 3rd
+    record: 25-22-2
+    of: 12
+    opp_avg: 118.3
+    color: '#f28642'
+- fid: shawne2520997
+  rank: 7
+  team: Swift kick in the Dak
+  owner: Shawnee
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+  record: 3-4
+  pf: 757.8
+  pa: 782.3
+  playoffs: *id013
+  shiva: *id014
+  all_play:
+    text: 30-47
+    color: '#fac878'
+  sos:
+    text: 6th (116.9 ppg)
+    rank: 6th
+    record: 25-24
+    of: 12
+    opp_avg: 116.9
+    color: '#f8af4b'
+- fid: purpsworth
+  rank: 8
+  team: I am dead inside
+  owner: Trevor
+  logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+  record: 3-4
+  pf: 748.8
+  pa: 792.6
+  playoffs: *id015
+  shiva: *id016
+  all_play:
+    text: 29-48
+    color: '#faca7e'
+  sos:
+    text: 5th (117.0 ppg)
+    rank: 5th
+    record: 23-25-1
+    of: 12
+    opp_avg: 117.0
+    color: '#f6a248'
+- fid: kevbots22
+  rank: 9
+  team: Remember the Nice Guys, ChatGPT
+  owner: Kevin
+  logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+  record: 2-4-1
+  pf: 775.4
+  pa: 862.2
+  playoffs: *id017
+  shiva: *id018
+  all_play:
+    text: 39-37-1
+    color: '#f8b04c'
+  sos:
+    text: 7th (116.1 ppg)
+    rank: 7th
+    record: 28-21
+    of: 12
+    opp_avg: 116.1
+    color: '#f9bc5a'
+- fid: theoceanpulse
+  rank: 10
+  team: The ChoSimba Ones
+  owner: Dillon
+  logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+  record: 2-4-1
+  pf: 723.2
+  pa: 817.5
+  playoffs: *id019
+  shiva: *id020
+  all_play:
+    text: 24-52-1
+    color: '#fbd598'
+  sos:
+    text: 2nd (119.9 ppg)
+    rank: 2nd
+    record: 28-21
+    of: 12
+    opp_avg: 119.9
+    color: '#f0793e'
+- fid: alexandra
+  rank: 11
+  team: Cornstar
+  owner: Lexi
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+  record: 2-5
+  pf: 776.0
+  pa: 818.7
+  playoffs: *id021
+  shiva: *id022
+  all_play:
+    text: 35-42
+    color: '#f9bc5b'
+  sos:
+    text: 10th (112.4 ppg)
+    rank: 10th
+    record: 24-25
+    of: 12
+    opp_avg: 112.4
+    color: '#fcddab'
+- fid: lukstein
+  rank: 12
+  team: 2x Runner Up
+  owner: Luke
+  logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+  record: 2-5
+  pf: 569.5
+  pa: 846.8
+  playoffs: *id023
+  shiva: *id024
+  all_play:
+    text: 12-65
+    color: '#fdf3e0'
+  sos:
+    text: 1st (121.4 ppg)
+    rank: 1st
+    record: 24-23-2
+    of: 12
+    opp_avg: 121.4
+    color: '#ee6b3b'

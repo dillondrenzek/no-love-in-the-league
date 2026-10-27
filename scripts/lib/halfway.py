@@ -119,6 +119,7 @@ def team_halves(season, through_week, close_margin=10.0):
 
         {"record": "4-3", "pf": 860.1, "pa": 801.0, "avg": 122.9,
          "pf_rank": 2,                       # 1 = most points scored
+         "pa_rank": 5,                       # 1 = most points faced (pure luck)
          "all_play": "48-29",                # vs every team, every week
          "best": {week, opp, pf, pa, res},   # highest score
          "worst": {...},                     # lowest score
@@ -143,6 +144,8 @@ def team_halves(season, through_week, close_margin=10.0):
     avg = {f: sum(g["pf"] for g in gs) / len(gs) for f, gs in results.items() if gs}
     pf_total = {f: sum(g["pf"] for g in gs) for f, gs in results.items()}
     ranked = sorted(pf_total, key=lambda f: -pf_total[f])
+    pa_total = {f: sum(g["pa"] for g in gs) for f, gs in results.items()}
+    faced = sorted(pa_total, key=lambda f: -pa_total[f])
     remaining = {}
     for m in season.get("matchups") or []:
         w = m.get("week") or 0
@@ -176,6 +179,7 @@ def team_halves(season, through_week, close_margin=10.0):
             "pa": round(sum(g["pa"] for g in games), 1),
             "avg": round(avg[f], 1),
             "pf_rank": ranked.index(f) + 1,
+            "pa_rank": faced.index(f) + 1,
             "all_play": _rec(aw, al, at),
             "best": max(games, key=lambda g: g["pf"]),
             "worst": min(games, key=lambda g: g["pf"]),
@@ -204,8 +208,8 @@ def second_half_slate(halves, fid, race=0.5):
           "gap": -1.0,             # opponent's wins minus fid's (+ = ahead)
           "race": True}]           # within `race` wins (same record or a tie apart)
 
-    "Race" games are the six-pointers: a win also costs a team in the same
-    part of the standings one."""
+    "Race" games are the key matchups, against a team in a similar position: a
+    win also costs a team in the same part of the standings one."""
     me = halves.get(fid) or {}
     rem = me.get("remaining") or []
     counts = {}
@@ -331,6 +335,40 @@ def starter_points(rosters_by_week):
                 if p.get("starter") and isinstance(act, (int, float)):
                     tally = out.setdefault(fid, {})
                     tally[p["player"]] = round(tally.get(p["player"], 0.0) + act, 1)
+    return out
+
+
+def draft_scorecard(rosters, points, early_rounds=3, limit=3):
+    """How each team's draft has paid off, judged like the moves: by points its
+    drafted players scored *as starters for that team*. `rosters` is the
+    season's {fid: [{player, via, round}]} (everyone who's been on the roster),
+    `points` is starter_points output. Per fid:
+
+        {"drafted": 512.3, "total": 981.4, "share": 0.52,  # of all starter pts
+         "rank": 3,                     # 1 = most points from the draft
+         "early": [(round, player, pts)],   # rounds 1..early_rounds, by round
+         "best": [(round, player, pts)]}    # top `limit` drafted, best first
+
+    A drafted player traded or dropped counts only for what he scored before he
+    left."""
+    out = {}
+    for fid, entries in (rosters or {}).items():
+        pts = (points or {}).get(fid) or {}
+        drafted = {e["player"]: e.get("round") for e in entries or []
+                   if e.get("via") == "draft"}
+        scored = [(rnd, pl, pts.get(pl, 0.0)) for pl, rnd in drafted.items()]
+        total = round(sum(pts.values()), 1)
+        mine = round(sum(x[2] for x in scored), 1)
+        out[fid] = {
+            "drafted": mine, "total": total,
+            "share": round(mine / total, 2) if total else 0.0,
+            "early": sorted((x for x in scored if (x[0] or 99) <= early_rounds),
+                            key=lambda x: x[0]),
+            "best": sorted((x for x in scored if x[2] > 0), key=lambda x: -x[2])[:limit],
+        }
+    order = sorted(out, key=lambda f: -out[f]["drafted"])
+    for i, f in enumerate(order):
+        out[f]["rank"] = i + 1
     return out
 
 
