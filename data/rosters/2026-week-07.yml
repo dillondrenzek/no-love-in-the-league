@@ -1,6 +1,6 @@
 season: 2026
 week: 7
-captured_at: '2026-10-27T02:52:06+00:00'
+captured_at: '2026-10-27T03:23:33+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -454,7 +454,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 4.35
-    actual: -2.0
+    actual: -6.0
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -486,7 +486,7 @@ rosters:
     pos: RB
     starter: false
     proj: 5.84
-    actual: 11.2
+    actual: 11.8
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -826,7 +826,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.57
-    actual: 13.2
+    actual: 21.5
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1106,7 +1106,7 @@ rosters:
     pos: K
     starter: true
     proj: 7.95
-    actual: 13.0
+    actual: 14.0
     injury: ''
     pro_team: DAL
     bye_week: 14
