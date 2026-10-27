@@ -3,9 +3,9 @@ active:
   name: Shawnee
   seasons: 11
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-  record: 84-56-1
-  win_pct: '.599'
-  win_color: '#f49144'
+  record: 84-57-1
+  win_pct: '.595'
+  win_color: '#f49244'
   titles: '2'
   sackos: 2
   trades: 4
@@ -18,9 +18,9 @@ active:
   name: Jack
   seasons: 13
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-  record: 92-75
-  win_pct: '.551'
-  win_color: '#f6a348'
+  record: 93-75
+  win_pct: '.554'
+  win_color: '#f6a248'
   titles: '2'
   sackos: 1
   trades: 14
@@ -33,9 +33,9 @@ active:
   name: Dillon
   seasons: 11
   logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
-  record: 85-54-2
-  win_pct: '.610'
-  win_color: '#f38d43'
+  record: 85-55-2
+  win_pct: '.606'
+  win_color: '#f38e43'
   titles: '1'
   sackos: 0
   trades: 16
@@ -47,9 +47,9 @@ active:
   name: Zach
   seasons: 13
   logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-  record: 84-82-1
-  win_pct: '.506'
-  win_color: '#f9b44c'
+  record: 85-82-1
+  win_pct: '.509'
+  win_color: '#f9b34c'
   titles: '1'
   sackos: 2
   trades: 20
@@ -61,9 +61,9 @@ active:
   name: Luke
   seasons: 13
   logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-  record: 77-90
-  win_pct: '.461'
-  win_color: '#fac26a'
+  record: 77-91
+  win_pct: '.458'
+  win_color: '#fac36c'
   titles: '1'
   sackos: 1
   trades: 9
@@ -75,9 +75,9 @@ active:
   name: Wade
   seasons: 13
   logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-  record: 98-68-1
-  win_pct: '.590'
-  win_color: '#f49445'
+  record: 99-68-1
+  win_pct: '.592'
+  win_color: '#f49345'
   titles: ½
   sackos: 0
   trades: 7
@@ -89,9 +89,9 @@ active:
   name: Jono
   seasons: 13
   logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-  record: 84-82-1
-  win_pct: '.506'
-  win_color: '#f9b44c'
+  record: 84-83-1
+  win_pct: '.503'
+  win_color: '#f9b54d'
   titles: ½
   sackos: 0
   trades: 2
@@ -103,9 +103,9 @@ active:
   name: Grant
   seasons: 3
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-  record: 19-15
-  win_pct: '.559'
-  win_color: '#f6a048'
+  record: 20-15
+  win_pct: '.571'
+  win_color: '#f59b47'
   titles: '0'
   sackos: 0
   trades: 0
@@ -118,9 +118,9 @@ active:
   name: Trevor
   seasons: 8
   logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-  record: 46-56
-  win_pct: '.451'
-  win_color: '#fac571'
+  record: 47-56
+  win_pct: '.456'
+  win_color: '#fac36d'
   titles: '0'
   sackos: 0
   trades: 6
@@ -133,9 +133,9 @@ active:
   name: Kevin
   seasons: 13
   logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-  record: 66-99-2
-  win_pct: '.401'
-  win_color: '#fbd496'
+  record: 66-100-2
+  win_pct: '.399'
+  win_color: '#fbd597'
   titles: '0'
   sackos: 0
   trades: 0
@@ -148,9 +148,9 @@ active:
   name: Nate
   seasons: 13
   logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-  record: 65-102
-  win_pct: '.389'
-  win_color: '#fbd89e'
+  record: 66-102
+  win_pct: '.393'
+  win_color: '#fbd79c'
   titles: '0'
   sackos: 2
   trades: 4
@@ -163,9 +163,9 @@ active:
   name: Lexi
   seasons: 1
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-  record: 2-4
-  win_pct: '.333'
-  win_color: '#fce9c8'
+  record: 2-5
+  win_pct: '.286'
+  win_color: '#fdf3e0'
   titles: '0'
   sackos: 0
   trades: 1
