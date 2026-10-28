@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 91.6
+    tx_per_year: 91.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 5-2
-    tx: 47
+    tx: 48
     in_progress: true
     pf: 981.4
     pa: 883.5
@@ -515,6 +515,10 @@ sturmanator15:
       via: add
       week: 7
       waiver: false
+    - player: Commanders D/ST
+      via: add
+      week: 8
+      waiver: true
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -2577,6 +2581,11 @@ sturmanator15:
       cost: R13
       basis: Drafted R15
       ineligible: false
+    - player: Commanders D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
 jackperkins74:
   name: Jack
   nickname: ''
@@ -2605,7 +2614,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 120.2
+    tx_per_year: 120.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -2629,7 +2638,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 2nd
     record: 5-2
-    tx: 77
+    tx: 78
     in_progress: true
     pf: 954.3
     pa: 776.5
@@ -3278,6 +3287,10 @@ jackperkins74:
     - player: Jordan Addison
       via: add
       week: 7
+      waiver: true
+    - player: Bengals D/ST
+      via: add
+      week: 8
       waiver: true
   - year: 2025
     players:
@@ -5732,6 +5745,11 @@ jackperkins74:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Bengals D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Vikings D/ST
       pos: D/ST
       cost: R13
@@ -5765,7 +5783,7 @@ zachzoske:
     playoff_apps: 5
     trades: 20
     trades_known: true
-    tx_per_year: 107.3
+    tx_per_year: 107.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -5788,7 +5806,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 3rd
     record: 5-2
-    tx: 52
+    tx: 55
     in_progress: true
     pf: 858.2
     pa: 759.2
@@ -6459,6 +6477,10 @@ zachzoske:
       via: add
       week: 7
       waiver: false
+    - player: Chig Okonkwo
+      via: add
+      week: 8
+      waiver: true
   - year: 2025
     players:
     - player: CeeDee Lamb
@@ -8698,10 +8720,15 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Chase McLaughlin
-      pos: K
+    - player: Chig Okonkwo
+      pos: TE
       cost: R13
       basis: Undrafted
+      ineligible: false
+    - player: Cam Little
+      pos: K
+      cost: R9
+      basis: Drafted R11
       ineligible: false
     - player: Jaguars D/ST
       pos: D/ST
@@ -8724,7 +8751,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: true
-    tx_per_year: 23.7
+    tx_per_year: 24.3
     tx_known: true
     seasons: 3
     best_finish:
@@ -8749,7 +8776,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 4th
     record: 4-3
-    tx: 10
+    tx: 12
     in_progress: true
     pf: 864.2
     pa: 687.8
@@ -8937,6 +8964,10 @@ gganoom:
       via: add
       week: 7
       waiver: false
+    - player: KC Concepcion
+      via: add
+      week: 8
+      waiver: true
   - year: 2025
     players:
     - player: Ashton Jeanty
@@ -9217,10 +9248,10 @@ gganoom:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: Wan'Dale Robinson
+    - player: KC Concepcion
       pos: WR
-      cost: R7
-      basis: Drafted R9
+      cost: R8
+      basis: Drafted R10
       ineligible: false
     - player: Romeo Doubs
       pos: WR
@@ -12863,16 +12894,6 @@ whowonthelastsuperbowl:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Christian Kirk
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Ted Hurst III
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Sam LaPorta
       pos: TE
       cost: R3
@@ -12921,7 +12942,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 49.3
+    tx_per_year: 49.8
     tx_known: false
     seasons: 11
     best_finish:
@@ -12945,7 +12966,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 7th
     record: 3-4
-    tx: 29
+    tx: 33
     in_progress: true
     pf: 757.8
     pa: 782.3
@@ -13341,6 +13362,14 @@ shawne2520997:
       via: add
       week: 7
       waiver: false
+    - player: Antonio Williams
+      via: add
+      week: 8
+      waiver: true
+    - player: Brenton Strange
+      via: add
+      week: 8
+      waiver: true
   - year: 2025
     players:
     - player: Jahmyr Gibbs
@@ -14644,7 +14673,7 @@ shawne2520997:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Adonai Mitchell
+    - player: Antonio Williams
       pos: WR
       cost: R13
       basis: Undrafted
@@ -14654,10 +14683,10 @@ shawne2520997:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Juwan Johnson
+    - player: Brenton Strange
       pos: TE
-      cost: R9
-      basis: Drafted R11
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Tyler Higbee
       pos: TE
@@ -14696,7 +14725,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: true
-    tx_per_year: 41.4
+    tx_per_year: 41.5
     tx_known: true
     seasons: 8
     best_finish:
@@ -14720,7 +14749,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 8th
     record: 3-4
-    tx: 17
+    tx: 18
     in_progress: true
     pf: 748.8
     pa: 792.6
@@ -15065,6 +15094,10 @@ purpsworth:
       via: add
       week: 7
       waiver: true
+    - player: Chad Ryland
+      via: add
+      week: 8
+      waiver: false
   - year: 2025
     players:
     - player: Malik Nabers
@@ -16248,6 +16281,11 @@ purpsworth:
       cost: R9
       basis: Drafted R11
       ineligible: false
+    - player: Chad Ryland
+      pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Steelers D/ST
       pos: D/ST
       cost: R11
@@ -16560,7 +16598,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 30.7
+    tx_per_year: 30.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -16584,7 +16622,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 10th
     record: 2-4-1
-    tx: 11
+    tx: 13
     in_progress: true
     pf: 775.4
     pa: 862.2
@@ -16916,6 +16954,10 @@ kevbots22:
     - player: Harrison Butker
       via: add
       week: 7
+      waiver: true
+    - player: Tyler Bass
+      via: add
+      week: 8
       waiver: true
   - year: 2025
     players:
@@ -18071,10 +18113,10 @@ kevbots22:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Harrison Butker
+    - player: Tyler Bass
       pos: K
-      cost: R12
-      basis: Drafted R14
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Patriots D/ST
       pos: D/ST
@@ -18103,7 +18145,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 16
     trades_known: true
-    tx_per_year: 53.4
+    tx_per_year: 53.7
     tx_known: false
     seasons: 11
     best_finish:
@@ -18126,7 +18168,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 11th
     record: 2-4-1
-    tx: 47
+    tx: 49
     in_progress: true
     pf: 723.2
     pa: 817.5
@@ -18715,6 +18757,10 @@ theoceanpulse:
       via: add
       week: 7
       waiver: false
+    - player: Caleb Douglas
+      via: add
+      week: 8
+      waiver: true
   - year: 2025
     players:
     - player: Derrick Henry
@@ -20141,10 +20187,10 @@ theoceanpulse:
       cost: R4
       basis: Drafted R6
       ineligible: false
-    - player: Ja'Kobi Lane
+    - player: Caleb Douglas
       pos: WR
-      cost: R12
-      basis: Drafted R14
+      cost: R9
+      basis: Drafted R11
       ineligible: false
     - player: Devaughn Vele
       pos: WR
@@ -20199,7 +20245,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 46.9
+    tx_per_year: 47.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -20222,7 +20268,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-5
-    tx: 26
+    tx: 28
     in_progress: true
     pf: 569.5
     pa: 846.8
@@ -20684,6 +20730,10 @@ lukstein:
       via: add
       week: 7
       waiver: false
+    - player: Michael Penix Jr.
+      via: add
+      week: 8
+      waiver: true
   - year: 2025
     players:
     - player: Amon-Ra St. Brown
@@ -22059,6 +22109,11 @@ lukstein:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Michael Penix Jr.
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Saquon Barkley
       pos: RB
       cost: Ineligible
@@ -22098,11 +22153,6 @@ lukstein:
       pos: WR
       cost: R6
       basis: Drafted R8
-      ineligible: false
-    - player: Jaylin Noel
-      pos: WR
-      cost: R12
-      basis: Drafted R14
       ineligible: false
     - player: Dontayvion Wicks
       pos: WR

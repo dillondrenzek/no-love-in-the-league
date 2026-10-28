@@ -1617,8 +1617,8 @@ tx_heatmap:
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1082
-    tx_per_year: 120.2
+    total: 1083
+    tx_per_year: 120.3
     cells:
     - year: 2018
       count: 75
@@ -1645,12 +1645,12 @@ tx_heatmap:
       count: 130
       color: '#f28742'
     - year: 2026
-      count: 77
-      color: '#f9b853'
+      count: 78
+      color: '#f9b851'
   - id: zachzoske
     name: Zach
-    total: 966
-    tx_per_year: 107.3
+    total: 969
+    tx_per_year: 107.7
     cells:
     - year: 2018
       count: 130
@@ -1677,12 +1677,12 @@ tx_heatmap:
       count: 110
       color: '#f59a46'
     - year: 2026
-      count: 52
-      color: '#facb80'
+      count: 55
+      color: '#fac97b'
   - id: sturmanator15
     name: Wade
-    total: 824
-    tx_per_year: 91.6
+    total: 825
+    tx_per_year: 91.7
     cells:
     - year: 2018
       count: 110
@@ -1709,12 +1709,12 @@ tx_heatmap:
       count: 52
       color: '#facb80'
     - year: 2026
-      count: 47
-      color: '#fbcf8a'
+      count: 48
+      color: '#fbce88'
   - id: theoceanpulse
     name: Dillon
-    total: 481
-    tx_per_year: 53.4
+    total: 483
+    tx_per_year: 53.7
     cells:
     - year: 2018
       count: 32
@@ -1741,8 +1741,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 47
-      color: '#fbcf8a'
+      count: 49
+      color: '#fbce86'
   - id: schirmerj
     name: Jono
     total: 474
@@ -1777,8 +1777,8 @@ tx_heatmap:
       color: '#fce5bf'
   - id: shawne2520997
     name: Shawnee
-    total: 444
-    tx_per_year: 49.3
+    total: 448
+    tx_per_year: 49.8
     cells:
     - year: 2018
       count: 52
@@ -1805,12 +1805,12 @@ tx_heatmap:
       count: 101
       color: '#f6a248'
     - year: 2026
-      count: 29
-      color: '#fcddab'
+      count: 33
+      color: '#fbdaa3'
   - id: lukstein
     name: Luke
-    total: 422
-    tx_per_year: 46.9
+    total: 424
+    tx_per_year: 47.1
     cells:
     - year: 2018
       count: 70
@@ -1837,12 +1837,12 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 26
-      color: '#fcdfb0'
+      count: 28
+      color: '#fcdead'
   - id: purpsworth
     name: Trevor
-    total: 331
-    tx_per_year: 41.4
+    total: 332
+    tx_per_year: 41.5
     cells:
     - year: 2018
       count: null
@@ -1869,8 +1869,8 @@ tx_heatmap:
       count: 41
       color: '#fbd495'
     - year: 2026
-      count: 17
-      color: '#fce6c1'
+      count: 18
+      color: '#fce5bf'
   - id: whowonthelastsuperbowl
     name: Nate
     total: 315
@@ -1905,8 +1905,8 @@ tx_heatmap:
       color: '#fce5bd'
   - id: kevbots22
     name: Kevin
-    total: 276
-    tx_per_year: 30.7
+    total: 278
+    tx_per_year: 30.9
     cells:
     - year: 2018
       count: 30
@@ -1933,12 +1933,12 @@ tx_heatmap:
       count: 29
       color: '#fcddab'
     - year: 2026
-      count: 11
-      color: '#fcebcc'
+      count: 13
+      color: '#fce9c8'
   - id: gganoom
     name: Grant
-    total: 71
-    tx_per_year: 23.7
+    total: 73
+    tx_per_year: 24.3
     cells:
     - year: 2018
       count: null
@@ -1965,8 +1965,8 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 10
-      color: '#fcebce'
+      count: 12
+      color: '#fceaca'
   - id: alexandra
     name: Lexi
     total: 21
