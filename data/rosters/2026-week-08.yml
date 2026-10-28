@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-27T23:20:02+00:00'
+captured_at: '2026-10-28T02:59:47+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -256,7 +256,7 @@ rosters:
   players:
   - player: Christian McCaffrey
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: QUESTIONABLE
@@ -264,7 +264,7 @@ rosters:
     bye_week: 8
   - player: Josh Allen
     pos: QB
-    starter: false
+    starter: true
     proj: 25.21
     actual: null
     injury: ''
@@ -304,7 +304,7 @@ rosters:
     bye_week: 11
   - player: Rachaad White
     pos: RB
-    starter: false
+    starter: true
     proj: 11.17
     actual: null
     injury: ''
@@ -360,7 +360,7 @@ rosters:
     bye_week: 7
   - player: Aaron Rodgers
     pos: QB
-    starter: true
+    starter: false
     proj: 16.72
     actual: null
     injury: ''
@@ -668,7 +668,7 @@ rosters:
     bye_week: 5
   - player: Chris Olave
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -724,7 +724,7 @@ rosters:
     bye_week: 11
   - player: Tre Tucker
     pos: WR
-    starter: false
+    starter: true
     proj: 9.06
     actual: null
     injury: ''
@@ -1164,7 +1164,7 @@ rosters:
     bye_week: 11
   - player: Caleb Williams
     pos: QB
-    starter: false
+    starter: true
     proj: 16.47
     actual: null
     injury: ''
@@ -1188,7 +1188,7 @@ rosters:
     bye_week: 6
   - player: Emanuel Wilson
     pos: RB
-    starter: true
+    starter: false
     proj: 8.42
     actual: null
     injury: ''
@@ -1196,7 +1196,7 @@ rosters:
     bye_week: 11
   - player: Jared Goff
     pos: QB
-    starter: true
+    starter: false
     proj: 17.79
     actual: null
     injury: ''
@@ -1220,7 +1220,7 @@ rosters:
     bye_week: 13
   - player: Dalton Kincaid
     pos: TE
-    starter: false
+    starter: true
     proj: 7.17
     actual: null
     injury: ''
@@ -1228,7 +1228,7 @@ rosters:
     bye_week: 7
   - player: Breece Hall
     pos: RB
-    starter: false
+    starter: true
     proj: 14.16
     actual: null
     injury: QUESTIONABLE
@@ -1236,7 +1236,7 @@ rosters:
     bye_week: 13
   - player: Ja'Kobi Lane
     pos: WR
-    starter: true
+    starter: false
     proj: 6.78
     actual: null
     injury: ''
@@ -1404,7 +1404,7 @@ rosters:
   players:
   - player: James Cook III
     pos: RB
-    starter: false
+    starter: true
     proj: 17.91
     actual: null
     injury: ''
@@ -1428,7 +1428,7 @@ rosters:
     bye_week: 10
   - player: Nico Collins
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1460,7 +1460,7 @@ rosters:
     bye_week: 5
   - player: Juwan Johnson
     pos: TE
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1516,7 +1516,7 @@ rosters:
     bye_week: 8
   - player: Bam Knight
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
