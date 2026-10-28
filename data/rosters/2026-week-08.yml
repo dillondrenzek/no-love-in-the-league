@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-28T17:37:14+00:00'
+captured_at: '2026-10-28T23:43:12+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -9,7 +9,7 @@ rosters:
   - player: Jaxon Smith-Njigba
     pos: WR
     starter: true
-    proj: 18.24
+    proj: 18.23
     actual: null
     injury: ''
     pro_team: SEA
@@ -197,7 +197,7 @@ rosters:
   - player: Zach Charbonnet
     pos: RB
     starter: false
-    proj: 10.67
+    proj: 10.13
     actual: null
     injury: QUESTIONABLE
     pro_team: SEA
@@ -313,7 +313,7 @@ rosters:
   - player: Tucker Kraft
     pos: TE
     starter: true
-    proj: 8.54
+    proj: 8.55
     actual: null
     injury: ''
     pro_team: GB
@@ -366,22 +366,6 @@ rosters:
     injury: ''
     pro_team: KC
     bye_week: 5
-  - player: Joshua Palmer
-    pos: WR
-    starter: false
-    proj: 2.26
-    actual: null
-    injury: ''
-    pro_team: BUF
-    bye_week: 7
-  - player: Aaron Rodgers
-    pos: QB
-    starter: false
-    proj: 16.72
-    actual: null
-    injury: ''
-    pro_team: PIT
-    bye_week: 9
   - player: Titans D/ST
     pos: D/ST
     starter: true
@@ -390,6 +374,22 @@ rosters:
     injury: ''
     pro_team: TEN
     bye_week: 9
+  - player: Pat Freiermuth
+    pos: TE
+    starter: false
+    proj: 6.97
+    actual: null
+    injury: ''
+    pro_team: PIT
+    bye_week: 9
+  - player: Treylon Burks
+    pos: WR
+    starter: false
+    proj: 7.75
+    actual: null
+    injury: QUESTIONABLE
+    pro_team: WSH
+    bye_week: 7
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
   team_id: 4
   team_name: 2x Runner Up
@@ -397,7 +397,7 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 10.75
+    proj: 12.97
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -405,7 +405,7 @@ rosters:
   - player: DeVonta Smith
     pos: WR
     starter: true
-    proj: 12.0
+    proj: 11.92
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -461,7 +461,7 @@ rosters:
   - player: Dontayvion Wicks
     pos: WR
     starter: false
-    proj: 6.62
+    proj: 6.58
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -471,7 +471,7 @@ rosters:
     starter: true
     proj: 9.03
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: MIA
     bye_week: 6
   - player: Matt Gay
@@ -482,14 +482,6 @@ rosters:
     injury: ''
     pro_team: LV
     bye_week: 13
-  - player: Dameon Pierce
-    pos: RB
-    starter: false
-    proj: 8.1
-    actual: null
-    injury: QUESTIONABLE
-    pro_team: PHI
-    bye_week: 10
   - player: C.J. Stroud
     pos: QB
     starter: false
@@ -509,7 +501,7 @@ rosters:
   - player: Darius Cooper
     pos: WR
     starter: false
-    proj: 3.97
+    proj: 3.94
     actual: null
     injury: ''
     pro_team: PHI
@@ -522,6 +514,14 @@ rosters:
     injury: ''
     pro_team: ATL
     bye_week: 11
+  - player: Jaydon Blue
+    pos: RB
+    starter: false
+    proj: 6.21
+    actual: null
+    injury: ''
+    pro_team: ''
+    bye_week: null
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
   team_name: Gibbed for your pleasure
@@ -531,7 +531,7 @@ rosters:
     starter: true
     proj: 22.34
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
   - player: Travis Etienne Jr.
@@ -593,7 +593,7 @@ rosters:
   - player: Dallas Goedert
     pos: TE
     starter: true
-    proj: 7.62
+    proj: 7.57
     actual: null
     injury: ''
     pro_team: PHI
@@ -606,14 +606,6 @@ rosters:
     injury: ''
     pro_team: LAC
     bye_week: 7
-  - player: Marvin Harrison Jr.
-    pos: WR
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: HOU
-    bye_week: 8
   - player: Tee Higgins
     pos: WR
     starter: true
@@ -654,6 +646,14 @@ rosters:
     injury: ''
     pro_team: CIN
     bye_week: 6
+  - player: Chris Rodriguez Jr.
+    pos: RB
+    starter: false
+    proj: 6.1
+    actual: null
+    injury: ''
+    pro_team: JAX
+    bye_week: 7
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -733,7 +733,7 @@ rosters:
   - player: Matthew Stafford
     pos: QB
     starter: true
-    proj: 18.86
+    proj: 18.87
     actual: null
     injury: ''
     pro_team: LAR
@@ -787,7 +787,7 @@ rosters:
     starter: true
     proj: 17.98
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CIN
     bye_week: 6
   - player: Jeremiyah Love
@@ -897,7 +897,7 @@ rosters:
   - player: Panthers D/ST
     pos: D/ST
     starter: true
-    proj: 4.67
+    proj: 4.66
     actual: null
     injury: ''
     pro_team: CAR
@@ -905,7 +905,7 @@ rosters:
   - player: Tyler Allgeier
     pos: RB
     starter: true
-    proj: 7.13
+    proj: 7.14
     actual: null
     injury: ''
     pro_team: ARI
@@ -1099,7 +1099,7 @@ rosters:
     starter: true
     proj: 10.27
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
   - player: Brandon Aubrey
@@ -1147,7 +1147,7 @@ rosters:
     starter: false
     proj: 7.24
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: TB
     bye_week: 10
   - player: Chris Godwin Jr.
@@ -1167,13 +1167,13 @@ rosters:
     starter: true
     proj: 13.55
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: NE
     bye_week: 11
   - player: Christian Watson
     pos: WR
     starter: true
-    proj: 12.1
+    proj: 12.11
     actual: null
     injury: ''
     pro_team: GB
@@ -1205,7 +1205,7 @@ rosters:
   - player: Emanuel Wilson
     pos: RB
     starter: false
-    proj: 8.42
+    proj: 8.25
     actual: null
     injury: ''
     pro_team: SEA
@@ -1239,7 +1239,7 @@ rosters:
     starter: true
     proj: 7.17
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: Breece Hall
@@ -1323,7 +1323,7 @@ rosters:
     starter: true
     proj: 13.09
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: LV
     bye_week: 13
   - player: Michael Wilson
@@ -1347,7 +1347,7 @@ rosters:
     starter: true
     proj: 9.11
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
   - player: Brock Purdy
@@ -1431,7 +1431,7 @@ rosters:
     starter: true
     proj: 11.55
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DAL
     bye_week: 14
   - player: D'Andre Swift

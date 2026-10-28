@@ -2618,7 +2618,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 120.3
+    tx_per_year: 120.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -2642,7 +2642,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 2nd
     record: 5-2
-    tx: 78
+    tx: 82
     in_progress: true
     pf: 954.3
     pa: 776.5
@@ -5699,6 +5699,11 @@ jackperkins74:
       cost: R1
       basis: Drafted R3
       ineligible: false
+    - player: Chris Rodriguez Jr.
+      pos: RB
+      cost: R8
+      basis: Drafted R10
+      ineligible: false
     - player: Mike Washington Jr.
       pos: RB
       cost: R8
@@ -5718,11 +5723,6 @@ jackperkins74:
       pos: WR
       cost: R3
       basis: Drafted R5
-      ineligible: false
-    - player: Marvin Harrison Jr.
-      pos: WR
-      cost: R4
-      basis: Drafted R6
       ineligible: false
     - player: Jordan Addison
       pos: WR
@@ -9307,7 +9307,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 52.7
+    tx_per_year: 53.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -9330,7 +9330,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 5th
     record: 4-3
-    tx: 18
+    tx: 22
     in_progress: true
     pf: 835.5
     pa: 880.2
@@ -9695,6 +9695,14 @@ schirmerj:
     - player: Titans D/ST
       via: add
       week: 7
+      waiver: false
+    - player: Pat Freiermuth
+      via: add
+      week: 8
+      waiver: false
+    - player: Treylon Burks
+      via: add
+      week: 8
       waiver: false
   - year: 2025
     players:
@@ -11052,11 +11060,6 @@ schirmerj:
       cost: Ineligible
       basis: Drafted R2
       ineligible: true
-    - player: Aaron Rodgers
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Christian McCaffrey
       pos: RB
       cost: Ineligible
@@ -11102,7 +11105,7 @@ schirmerj:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Joshua Palmer
+    - player: Treylon Burks
       pos: WR
       cost: R13
       basis: Undrafted
@@ -11111,6 +11114,11 @@ schirmerj:
       pos: TE
       cost: R4
       basis: Drafted R6
+      ineligible: false
+    - player: Pat Freiermuth
+      pos: TE
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Jason Myers
       pos: K
@@ -20249,7 +20257,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 47.1
+    tx_per_year: 47.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -20272,7 +20280,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-5
-    tx: 28
+    tx: 30
     in_progress: true
     pf: 569.5
     pa: 846.8
@@ -20733,6 +20741,10 @@ lukstein:
     - player: Tyrone Tracy Jr.
       via: add
       week: 7
+      waiver: false
+    - player: Jaydon Blue
+      via: add
+      week: 8
       waiver: false
     - player: Michael Penix Jr.
       via: add
@@ -22133,10 +22145,10 @@ lukstein:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Dameon Pierce
+    - player: Jaydon Blue
       pos: RB
       cost: R13
-      basis: Undrafted
+      basis: Drafted R15
       ineligible: false
     - player: Tyrone Tracy Jr.
       pos: RB
