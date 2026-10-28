@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 7
     trades_known: true
-    tx_per_year: 91.7
+    tx_per_year: 92.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 5-2
-    tx: 48
+    tx: 52
     in_progress: true
     pf: 981.4
     pa: 883.5
@@ -519,6 +519,10 @@ sturmanator15:
       via: add
       week: 8
       waiver: true
+    - player: Geno Smith
+      via: add
+      week: 8
+      waiver: false
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -2511,6 +2515,11 @@ sturmanator15:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Geno Smith
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Kenneth Walker III
       pos: RB
       cost: Ineligible
@@ -2561,7 +2570,7 @@ sturmanator15:
       cost: R11
       basis: Drafted R13
       ineligible: false
-    - player: Konata Mumpfield
+    - player: Ryan Flournoy
       pos: WR
       cost: R13
       basis: Undrafted
@@ -2573,11 +2582,6 @@ sturmanator15:
       ineligible: false
     - player: Chris Boswell
       pos: K
-      cost: R13
-      basis: Drafted R15
-      ineligible: false
-    - player: Browns D/ST
-      pos: D/ST
       cost: R13
       basis: Drafted R15
       ineligible: false
