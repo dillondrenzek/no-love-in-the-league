@@ -2821,11 +2821,221 @@
     home_proj: 120.9
     away_proj: 111.9
   highlights: []
-  projections: []
-  projected_at: null
+  projections:
+  - home_id: alexandra
+    away_id: shawne2520997
+    home_team: Cornstar
+    away_team: Swift kick in the Dak
+    home_proj: 107.1
+    away_proj: 110.1
+    pickem: false
+    fav_id: shawne2520997
+    fav_team: Swift kick in the Dak
+    dog_team: Cornstar
+    fav_proj: 110.1
+    dog_proj: 107.1
+    spread: 3.0
+    decided: false
+    result: null
+  - home_id: jackperkins74
+    away_id: theoceanpulse
+    home_team: Gibbed for your pleasure
+    away_team: The ChoSimba Ones
+    home_proj: 132.8
+    away_proj: 107.7
+    pickem: false
+    fav_id: jackperkins74
+    fav_team: Gibbed for your pleasure
+    dog_team: The ChoSimba Ones
+    fav_proj: 132.8
+    dog_proj: 107.7
+    spread: 25.1
+    decided: false
+    result: null
+  - home_id: kevbots22
+    away_id: whowonthelastsuperbowl
+    home_team: Remember the Nice Guys, ChatGPT
+    away_team: Trick or Trick It’s Mike Vick
+    home_proj: 121.0
+    away_proj: 127.7
+    pickem: false
+    fav_id: whowonthelastsuperbowl
+    fav_team: Trick or Trick It’s Mike Vick
+    dog_team: Remember the Nice Guys, ChatGPT
+    fav_proj: 127.7
+    dog_proj: 121.0
+    spread: 6.7
+    decided: false
+    result: null
+  - home_id: schirmerj
+    away_id: purpsworth
+    home_team: Return of the IDP
+    away_team: I am dead inside
+    home_proj: 107.2
+    away_proj: 116.3
+    pickem: false
+    fav_id: purpsworth
+    fav_team: I am dead inside
+    dog_team: Return of the IDP
+    fav_proj: 116.3
+    dog_proj: 107.2
+    spread: 9.1
+    decided: false
+    result: null
+  - home_id: sturmanator15
+    away_id: lukstein
+    home_team: God's Commissioner
+    away_team: 2x Runner Up
+    home_proj: 135.9
+    away_proj: 104.3
+    pickem: false
+    fav_id: sturmanator15
+    fav_team: God's Commissioner
+    dog_team: 2x Runner Up
+    fav_proj: 135.9
+    dog_proj: 104.3
+    spread: 31.6
+    decided: false
+    result: null
+  - home_id: zachzoske
+    away_id: gganoom
+    home_team: Tuten Your Mother, Respectfully
+    away_team: One Big Beautiful Dillbot
+    home_proj: 120.9
+    away_proj: 111.9
+    pickem: false
+    fav_id: zachzoske
+    fav_team: Tuten Your Mother, Respectfully
+    dog_team: One Big Beautiful Dillbot
+    fav_proj: 120.9
+    dog_proj: 111.9
+    spread: 9.0
+    decided: false
+    result: null
+  projected_at: Oct 29, 2026 · 12:13 PM PDT
   updated_at: Oct 29, 10:45 AM PDT
   current: true
-  power: []
+  power:
+  - rank: 1
+    fid: sturmanator15
+    team: God's Commissioner
+    owner: Wade
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    record: 5-2
+    movement: 0
+    is_new: false
+    blurb: Holds at No. 1 on a 147 average over three weeks, and one win from the
+      league's first 100.
+  - rank: 2
+    fid: jackperkins74
+    team: Gibbed for your pleasure
+    owner: Jack
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    record: 5-2
+    movement: 0
+    is_new: false
+    blurb: Stays second on a 144 average over three, and gets Dillon two weeks running,
+      which is less a schedule than a buffet.
+  - rank: 3
+    fid: gganoom
+    team: One Big Beautiful Dillbot
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 4-3
+    movement: 0
+    is_new: false
+    blurb: Holds at three on a three-game streak; Nabers, Purdy and the kicker are
+      on bye, so Mahomes drives.
+  - rank: 4
+    fid: zachzoske
+    team: Tuten Your Mother, Respectfully
+    owner: Zach
+    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    record: 5-2
+    movement: 2
+    is_new: false
+    blurb: Up two on a 5-2 record the trade machine built; Tuten's back, and Kamara
+      arrived just in time for his bye.
+  - rank: 5
+    fid: schirmerj
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 4-3
+    movement: -1
+    is_new: false
+    blurb: Down one after a 45-point loss to the commish, but Josh Allen's back and
+      that tends to fix things.
+  - rank: 6
+    fid: whowonthelastsuperbowl
+    team: Trick or Trick It’s Mike Vick
+    owner: Nate
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    record: 4-3
+    movement: -1
+    is_new: false
+    blurb: Down one despite a win, because beating Shawnee with a zero from injured
+      reserve doesn't impress the computer either.
+  - rank: 7
+    fid: purpsworth
+    team: I am dead inside
+    owner: Trevor
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    record: 3-4
+    movement: 4
+    is_new: false
+    blurb: Up four on back-to-back wins over Dillon, and Jayden Daniels comes back
+      from his bye to defend them.
+  - rank: 8
+    fid: alexandra
+    team: Cornstar
+    owner: Lexi
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    record: 2-5
+    movement: 1
+    is_new: false
+    blurb: Up one on a four-game losing streak, because the rookie's points are better
+      than her record, and that's the whole argument.
+  - rank: 9
+    fid: kevbots22
+    team: Remember the Nice Guys, ChatGPT
+    owner: Kevin
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    record: 2-4-1
+    movement: -2
+    is_new: false
+    blurb: Down two on three straight losses and a 98 average across them; Jefferson's
+      6.4 last week did not help.
+  - rank: 10
+    fid: shawne2520997
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-4
+    movement: -2
+    is_new: false
+    blurb: Down two on a 93 average over three weeks, with Collins and Montgomery
+      on bye and the waiver wire playing tight end.
+  - rank: 11
+    fid: theoceanpulse
+    team: The ChoSimba Ones
+    owner: Dillon
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    record: 2-4-1
+    movement: -1
+    is_new: false
+    blurb: Down one after blowing a 21-point lead as the favorite, and the reward
+      is the reigning champ two weeks in a row.
+  - rank: 12
+    fid: lukstein
+    team: 2x Runner Up
+    owner: Luke
+    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    record: 2-5
+    movement: 0
+    is_new: false
+    blurb: Still twelfth on an 81-point average, and the only thing standing between
+      the commish and win No. 100.
 2026-9:
   week: 9
   state: future
