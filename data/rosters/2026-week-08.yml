@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-29T10:33:31+00:00'
+captured_at: '2026-10-29T17:45:37+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -96,7 +96,7 @@ rosters:
     bye_week: 8
   - player: Bryce Young
     pos: QB
-    starter: true
+    starter: false
     proj: 18.58
     actual: null
     injury: ''
@@ -128,7 +128,7 @@ rosters:
     bye_week: 14
   - player: Geno Smith
     pos: QB
-    starter: false
+    starter: true
     proj: 20.36
     actual: null
     injury: ''
@@ -1384,7 +1384,7 @@ rosters:
     bye_week: 10
   - player: Ka'imi Fairbairn
     pos: K
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1408,7 +1408,7 @@ rosters:
     bye_week: 11
   - player: Chase McLaughlin
     pos: K
-    starter: false
+    starter: true
     proj: 9.34
     actual: null
     injury: ''
