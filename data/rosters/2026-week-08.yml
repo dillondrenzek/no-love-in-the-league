@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-29T03:26:34+00:00'
+captured_at: '2026-10-29T10:33:31+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -1236,7 +1236,7 @@ rosters:
     bye_week: 13
   - player: Dalton Kincaid
     pos: TE
-    starter: true
+    starter: false
     proj: 7.17
     actual: null
     injury: QUESTIONABLE
@@ -1276,7 +1276,7 @@ rosters:
     bye_week: 5
   - player: Caleb Douglas
     pos: WR
-    starter: false
+    starter: true
     proj: 7.65
     actual: null
     injury: ''
@@ -1382,14 +1382,6 @@ rosters:
     injury: ''
     pro_team: DEN
     bye_week: 10
-  - player: Brian Robinson Jr.
-    pos: RB
-    starter: false
-    proj: 5.94
-    actual: null
-    injury: QUESTIONABLE
-    pro_team: ATL
-    bye_week: 11
   - player: Ka'imi Fairbairn
     pos: K
     starter: true
@@ -1414,6 +1406,14 @@ rosters:
     injury: ''
     pro_team: CLE
     bye_week: 11
+  - player: Chase McLaughlin
+    pos: K
+    starter: false
+    proj: 9.34
+    actual: null
+    injury: ''
+    pro_team: TB
+    bye_week: 10
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
   team_id: 14
   team_name: Swift kick in the Dak

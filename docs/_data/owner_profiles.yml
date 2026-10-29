@@ -8755,7 +8755,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: true
-    tx_per_year: 24.3
+    tx_per_year: 25.0
     tx_known: true
     seasons: 3
     best_finish:
@@ -8780,7 +8780,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 4th
     record: 4-3
-    tx: 12
+    tx: 14
     in_progress: true
     pf: 864.2
     pa: 687.8
@@ -8968,6 +8968,10 @@ gganoom:
       via: add
       week: 7
       waiver: false
+    - player: Chase McLaughlin
+      via: add
+      week: 8
+      waiver: true
     - player: KC Concepcion
       via: add
       week: 8
@@ -9232,11 +9236,6 @@ gganoom:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Brian Robinson Jr.
-      pos: RB
-      cost: R12
-      basis: Drafted R14
-      ineligible: false
     - player: Malik Nabers
       pos: WR
       cost: Ineligible
@@ -9276,6 +9275,11 @@ gganoom:
       pos: K
       cost: R11
       basis: Drafted R13
+      ineligible: false
+    - player: Chase McLaughlin
+      pos: K
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Broncos D/ST
       pos: D/ST

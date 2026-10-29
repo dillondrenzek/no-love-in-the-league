@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-29T03:26:40+00:00
+updated_at: 2026-10-29T10:33:35+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -133,7 +133,7 @@ matchups:
   - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 104.3, away_score: 81.3, playoff: false }
   - { week:  7, home: zachzoske, away: alexandra, home_score: 123.5, away_score: 93.1, playoff: false }
   - { week:  8, home: alexandra, away: shawne2520997, playoff: false, played: false, home_proj: 107.07, away_proj: 110.1 }
-  - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 132.79, away_proj: 107.23 }
+  - { week:  8, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 132.79, away_proj: 107.71 }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 121.0, away_proj: 127.71 }
   - { week:  8, home: schirmerj, away: purpsworth, playoff: false, played: false, home_proj: 107.19, away_proj: 116.34 }
   - { week:  8, home: sturmanator15, away: lukstein, playoff: false, played: false, home_proj: 134.11, away_proj: 104.33 }
@@ -340,7 +340,7 @@ keepers:
 transactions_known: true
 transactions:
   alexandra: { adds: 11, drops: 10, moves: 21 }
-  gganoom: { adds: 7, drops: 5, moves: 12 }
+  gganoom: { adds: 8, drops: 6, moves: 14 }
   jackperkins74: { adds: 48, drops: 34, moves: 82 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 18, drops: 12, moves: 30 }
@@ -646,6 +646,10 @@ rosters:
     via: add
     week: 7
     waiver: false
+  - player: Chase McLaughlin
+    via: add
+    week: 8
+    waiver: true
   - player: KC Concepcion
     via: add
     week: 8
