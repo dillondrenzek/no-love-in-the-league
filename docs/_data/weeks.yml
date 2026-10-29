@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power:
   - rank: 1
@@ -2728,7 +2728,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 107.1
+    home_proj: 107.5
     away_proj: 110.1
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
@@ -2746,7 +2746,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 132.8
+    home_proj: 133.1
     away_proj: 107.7
   - home_id: kevbots22
     home_team: Remember the Nice Guys, ChatGPT
@@ -2764,7 +2764,7 @@
     final: false
     live: false
     playoff: false
-    home_proj: 121.0
+    home_proj: 121.3
     away_proj: 127.7
   - home_id: schirmerj
     home_team: Return of the IDP
@@ -2782,8 +2782,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 107.2
-    away_proj: 116.3
+    home_proj: 106.6
+    away_proj: 116.4
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2800,8 +2800,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 135.9
-    away_proj: 104.3
+    home_proj: 135.6
+    away_proj: 104.2
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2818,8 +2818,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 120.9
-    away_proj: 111.9
+    home_proj: 121.7
+    away_proj: 113.0
   highlights: []
   projections:
   - home_id: alexandra
@@ -2913,7 +2913,7 @@
     decided: false
     result: null
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: true
   power:
   - rank: 1
@@ -3139,7 +3139,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power: []
 2026-10:
@@ -3245,7 +3245,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power: []
 2026-11:
@@ -3351,7 +3351,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power: []
 2026-12:
@@ -3457,7 +3457,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power: []
 2026-13:
@@ -3563,7 +3563,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power: []
 2026-14:
@@ -3669,6 +3669,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 29, 10:45 AM PDT
+  updated_at: Oct 29, 4:42 PM PDT
   current: false
   power: []
