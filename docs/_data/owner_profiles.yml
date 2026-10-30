@@ -2636,7 +2636,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 120.8
+    tx_per_year: 121.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -2660,7 +2660,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 2nd
     record: 5-2
-    tx: 82
+    tx: 84
     in_progress: true
     pf: 954.3
     pa: 776.5
@@ -3311,6 +3311,10 @@ jackperkins74:
       week: 7
       waiver: true
     - player: Bengals D/ST
+      via: add
+      week: 8
+      waiver: true
+    - player: Brian Robinson Jr.
       via: add
       week: 8
       waiver: true
@@ -5717,15 +5721,15 @@ jackperkins74:
       cost: R1
       basis: Drafted R3
       ineligible: false
-    - player: Chris Rodriguez Jr.
-      pos: RB
-      cost: R8
-      basis: Drafted R10
-      ineligible: false
     - player: Mike Washington Jr.
       pos: RB
       cost: R8
       basis: Drafted R10
+      ineligible: false
+    - player: Brian Robinson Jr.
+      pos: RB
+      cost: R12
+      basis: Drafted R14
       ineligible: false
     - player: Braelon Allen
       pos: RB
@@ -9329,7 +9333,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 53.1
+    tx_per_year: 53.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -9352,7 +9356,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 5th
     record: 4-3
-    tx: 22
+    tx: 24
     in_progress: true
     pf: 835.5
     pa: 880.2
@@ -9718,6 +9722,10 @@ schirmerj:
       via: add
       week: 7
       waiver: false
+    - player: Browns D/ST
+      via: add
+      week: 8
+      waiver: true
     - player: Pat Freiermuth
       via: add
       week: 8
@@ -11147,10 +11155,10 @@ schirmerj:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Titans D/ST
+    - player: Browns D/ST
       pos: D/ST
       cost: R13
-      basis: Undrafted
+      basis: Drafted R15
       ineligible: false
 whowonthelastsuperbowl:
   name: Nate

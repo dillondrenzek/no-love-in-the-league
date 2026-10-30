@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-30T03:29:11+00:00
+updated_at: 2026-10-30T10:33:28+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -133,9 +133,9 @@ matchups:
   - { week:  7, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 104.3, away_score: 81.3, playoff: false }
   - { week:  7, home: zachzoske, away: alexandra, home_score: 123.5, away_score: 93.1, playoff: false }
   - { week:  8, home: alexandra, away: shawne2520997, home_score: 24.4, away_score: 8.6, playoff: false, final: false, home_proj: 108.41, away_proj: 110.13 }
-  - { week:  8, home: jackperkins74, away: theoceanpulse, home_score: 0.0, away_score: 13.3, playoff: false, final: false, home_proj: 133.1, away_proj: 109.0 }
+  - { week:  8, home: jackperkins74, away: theoceanpulse, home_score: 0.0, away_score: 13.3, playoff: false, final: false, home_proj: 133.1, away_proj: 109.62 }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, home_score: 50.4, away_score: 0.0, playoff: false, final: false, home_proj: 121.31, away_proj: 127.7 }
-  - { week:  8, home: schirmerj, away: purpsworth, home_score: 14.3, away_score: 0.0, playoff: false, final: false, home_proj: 106.63, away_proj: 116.36 }
+  - { week:  8, home: schirmerj, away: purpsworth, home_score: 14.3, away_score: 0.0, playoff: false, final: false, home_proj: 110.24, away_proj: 116.36 }
   - { week:  8, home: sturmanator15, away: lukstein, home_score: 0.0, away_score: 17.4, playoff: false, final: false, home_proj: 135.59, away_proj: 104.25 }
   - { week:  8, home: zachzoske, away: gganoom, playoff: false, played: false, home_proj: 121.69, away_proj: 113.04 }
   - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false }
@@ -359,11 +359,11 @@ transactions_known: true
 transactions:
   alexandra: { adds: 12, drops: 11, moves: 23 }
   gganoom: { adds: 8, drops: 6, moves: 14 }
-  jackperkins74: { adds: 48, drops: 34, moves: 82 }
+  jackperkins74: { adds: 49, drops: 35, moves: 84 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 18, drops: 12, moves: 30 }
   purpsworth: { adds: 12, drops: 6, moves: 18 }
-  schirmerj: { adds: 11, drops: 11, moves: 22 }
+  schirmerj: { adds: 12, drops: 12, moves: 24 }
   shawne2520997: { adds: 19, drops: 14, moves: 33 }
   sturmanator15: { adds: 27, drops: 25, moves: 52 }
   theoceanpulse: { adds: 26, drops: 23, moves: 49 }
@@ -591,6 +591,10 @@ rosters:
     week: 7
     waiver: true
   - player: Bengals D/ST
+    via: add
+    week: 8
+    waiver: true
+  - player: Brian Robinson Jr.
     via: add
     week: 8
     waiver: true
@@ -971,6 +975,10 @@ rosters:
     via: add
     week: 7
     waiver: false
+  - player: Browns D/ST
+    via: add
+    week: 8
+    waiver: true
   - player: Pat Freiermuth
     via: add
     week: 8

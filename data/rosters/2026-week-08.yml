@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-30T03:29:06+00:00'
+captured_at: '2026-10-30T10:33:24+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -366,14 +366,6 @@ rosters:
     injury: ''
     pro_team: KC
     bye_week: 5
-  - player: Titans D/ST
-    pos: D/ST
-    starter: true
-    proj: 2.64
-    actual: null
-    injury: ''
-    pro_team: TEN
-    bye_week: 9
   - player: Pat Freiermuth
     pos: TE
     starter: false
@@ -390,6 +382,14 @@ rosters:
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
+  - player: Browns D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.25
+    actual: null
+    injury: ''
+    pro_team: CLE
+    bye_week: 11
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
   team_id: 4
   team_name: 2x Runner Up
@@ -646,14 +646,14 @@ rosters:
     injury: ''
     pro_team: CIN
     bye_week: 6
-  - player: Chris Rodriguez Jr.
+  - player: Brian Robinson Jr.
     pos: RB
     starter: false
-    proj: 6.1
+    proj: 0.0
     actual: null
-    injury: ''
-    pro_team: JAX
-    bye_week: 7
+    injury: QUESTIONABLE
+    pro_team: ATL
+    bye_week: 11
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -1183,7 +1183,7 @@ rosters:
     starter: true
     proj: 12.1
     actual: 13.3
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
   - player: Colston Loveland
@@ -1268,7 +1268,7 @@ rosters:
     bye_week: 5
   - player: Caleb Douglas
     pos: WR
-    starter: true
+    starter: false
     proj: 7.65
     actual: null
     injury: ''
@@ -1284,7 +1284,7 @@ rosters:
     bye_week: 10
   - player: Ladd McConkey
     pos: WR
-    starter: false
+    starter: true
     proj: 8.27
     actual: null
     injury: QUESTIONABLE
