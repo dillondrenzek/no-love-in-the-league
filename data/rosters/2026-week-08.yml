@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-29T23:42:19+00:00'
+captured_at: '2026-10-30T03:29:06+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -22,14 +22,6 @@ rosters:
     injury: ''
     pro_team: KC
     bye_week: 5
-  - player: Ladd McConkey
-    pos: WR
-    starter: false
-    proj: 8.27
-    actual: null
-    injury: QUESTIONABLE
-    pro_team: LAC
-    bye_week: 7
   - player: Zay Flowers
     pos: WR
     starter: true
@@ -78,14 +70,6 @@ rosters:
     injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
-  - player: Jonah Coleman
-    pos: RB
-    starter: false
-    proj: 6.94
-    actual: null
-    injury: ''
-    pro_team: DEN
-    bye_week: 10
   - player: Jordyn Tyson
     pos: WR
     starter: false
@@ -98,7 +82,7 @@ rosters:
     pos: QB
     starter: false
     proj: 18.58
-    actual: null
+    actual: 11.2
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -134,6 +118,22 @@ rosters:
     injury: ''
     pro_team: NYJ
     bye_week: 13
+  - player: Woody Marks
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+    injury: ''
+    pro_team: HOU
+    bye_week: 8
+  - player: Caleb Williams
+    pos: QB
+    starter: false
+    proj: 16.47
+    actual: null
+    injury: ''
+    pro_team: CHI
+    bye_week: 10
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
@@ -314,7 +314,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.55
-    actual: null
+    actual: 14.3
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -438,7 +438,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.77
-    actual: null
+    actual: 17.4
     injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
@@ -678,7 +678,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.61
-    actual: null
+    actual: 20.2
     injury: DAY_TO_DAY
     pro_team: GB
     bye_week: 11
@@ -686,7 +686,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.87
-    actual: null
+    actual: 8.8
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -718,7 +718,7 @@ rosters:
     pos: RB
     starter: true
     proj: 14.09
-    actual: null
+    actual: 21.4
     injury: ''
     pro_team: CAR
     bye_week: 5
@@ -866,7 +866,7 @@ rosters:
     pos: QB
     starter: true
     proj: 18.8
-    actual: null
+    actual: 24.4
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -894,14 +894,6 @@ rosters:
     injury: ''
     pro_team: IND
     bye_week: 13
-  - player: Panthers D/ST
-    pos: D/ST
-    starter: true
-    proj: 4.68
-    actual: null
-    injury: ''
-    pro_team: CAR
-    bye_week: 5
   - player: Tyler Allgeier
     pos: RB
     starter: true
@@ -910,6 +902,14 @@ rosters:
     injury: QUESTIONABLE
     pro_team: ARI
     bye_week: 14
+  - player: Lions D/ST
+    pos: D/ST
+    starter: true
+    proj: 5.63
+    actual: null
+    injury: ''
+    pro_team: DET
+    bye_week: 6
 - manager_id: '{06571853-E276-48AA-9202-F06B0AD927ED}'
   team_id: 10
   team_name: I am dead inside
@@ -1158,6 +1158,14 @@ rosters:
     injury: ''
     pro_team: TB
     bye_week: 10
+  - player: Courtland Sutton
+    pos: WR
+    starter: false
+    proj: 7.35
+    actual: null
+    injury: ''
+    pro_team: DEN
+    bye_week: 10
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
   team_id: 12
   team_name: The ChoSimba Ones
@@ -1174,18 +1182,10 @@ rosters:
     pos: WR
     starter: true
     proj: 12.1
-    actual: null
+    actual: 13.3
     injury: ''
     pro_team: GB
     bye_week: 11
-  - player: Caleb Williams
-    pos: QB
-    starter: true
-    proj: 16.47
-    actual: null
-    injury: ''
-    pro_team: CHI
-    bye_week: 10
   - player: Colston Loveland
     pos: TE
     starter: true
@@ -1212,7 +1212,7 @@ rosters:
     bye_week: 11
   - player: Jared Goff
     pos: QB
-    starter: false
+    starter: true
     proj: 17.79
     actual: null
     injury: ''
@@ -1258,14 +1258,6 @@ rosters:
     injury: ''
     pro_team: PIT
     bye_week: 9
-  - player: Woody Marks
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: HOU
-    bye_week: 8
   - player: Chiefs D/ST
     pos: D/ST
     starter: true
@@ -1282,6 +1274,22 @@ rosters:
     injury: ''
     pro_team: MIA
     bye_week: 6
+  - player: Jonah Coleman
+    pos: RB
+    starter: false
+    proj: 6.94
+    actual: null
+    injury: ''
+    pro_team: DEN
+    bye_week: 10
+  - player: Ladd McConkey
+    pos: WR
+    starter: false
+    proj: 8.27
+    actual: null
+    injury: QUESTIONABLE
+    pro_team: LAC
+    bye_week: 7
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
@@ -1470,7 +1478,7 @@ rosters:
     pos: WR
     starter: true
     proj: 11.9
-    actual: null
+    actual: 8.6
     injury: QUESTIONABLE
     pro_team: CAR
     bye_week: 5

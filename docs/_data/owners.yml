@@ -38,7 +38,7 @@ active:
   win_color: '#f38e43'
   titles: '1'
   sackos: 0
-  trades: 16
+  trades: 17
   best_finish:
     type: shiva
     years:
@@ -80,7 +80,7 @@ active:
   win_color: '#f49345'
   titles: ½
   sackos: 0
-  trades: 7
+  trades: 8
   best_finish:
     type: cochamp
     years:
@@ -1873,8 +1873,8 @@ tx_heatmap:
       color: '#fce5bf'
   - id: whowonthelastsuperbowl
     name: Nate
-    total: 315
-    tx_per_year: 35.0
+    total: 316
+    tx_per_year: 35.1
     cells:
     - year: 2018
       count: 18
@@ -1901,8 +1901,8 @@ tx_heatmap:
       count: 31
       color: '#fbdba7'
     - year: 2026
-      count: 19
-      color: '#fce5bd'
+      count: 20
+      color: '#fce4bb'
   - id: kevbots22
     name: Kevin
     total: 278
@@ -1969,8 +1969,8 @@ tx_heatmap:
       color: '#fce8c6'
   - id: alexandra
     name: Lexi
-    total: 21
-    tx_per_year: 21.0
+    total: 23
+    tx_per_year: 23.0
     cells:
     - year: 2018
       count: null
@@ -1997,8 +1997,8 @@ tx_heatmap:
       count: null
       color: null
     - year: 2026
-      count: 21
-      color: '#fce3b9'
+      count: 23
+      color: '#fce1b6'
   - id: henpen28
     name: Henry
     total: 360

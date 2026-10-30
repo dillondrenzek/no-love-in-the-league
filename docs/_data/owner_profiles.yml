@@ -15,7 +15,7 @@ sturmanator15:
     titles: ½
     sackos: 0
     playoff_apps: 8
-    trades: 7
+    trades: 8
     trades_known: true
     tx_per_year: 92.1
     tx_known: false
@@ -283,6 +283,18 @@ sturmanator15:
     avg_pf: 100.9
     avg_pa: 98.7
   trades:
+  - year: 2026
+    week: 8
+    got:
+    - Woody Marks
+    - Caleb Williams
+    gave:
+    - Jonah Coleman
+    - Ladd McConkey
+    with:
+    - id: theoceanpulse
+      name: Dillon
+      team: The ChoSimba Ones
   - year: 2023
     week: 13
     got:
@@ -515,6 +527,12 @@ sturmanator15:
       via: add
       week: 7
       waiver: false
+    - player: Caleb Williams
+      via: trade
+      week: 8
+    - player: Woody Marks
+      via: trade
+      week: 8
     - player: Commanders D/ST
       via: add
       week: 8
@@ -2510,6 +2528,11 @@ sturmanator15:
     year: 2026
     week: 8
     players:
+    - player: Caleb Williams
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
     - player: Bryce Young
       pos: QB
       cost: R13
@@ -2540,7 +2563,7 @@ sturmanator15:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Jonah Coleman
+    - player: Woody Marks
       pos: RB
       cost: R10
       basis: Drafted R12
@@ -2550,11 +2573,6 @@ sturmanator15:
       cost: Ineligible
       basis: Drafted R1
       ineligible: true
-    - player: Ladd McConkey
-      pos: WR
-      cost: R1
-      basis: Drafted R3
-      ineligible: false
     - player: Zay Flowers
       pos: WR
       cost: R2
@@ -11153,7 +11171,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 35.0
+    tx_per_year: 35.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -11177,7 +11195,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 4-3
-    tx: 19
+    tx: 20
     in_progress: true
     pf: 835.4
     pa: 772.4
@@ -12899,6 +12917,11 @@ whowonthelastsuperbowl:
       pos: WR
       cost: R1
       basis: Drafted R3
+      ineligible: false
+    - player: Courtland Sutton
+      pos: WR
+      cost: R4
+      basis: Drafted R6
       ineligible: false
     - player: Chris Godwin Jr.
       pos: WR
@@ -16320,7 +16343,7 @@ alexandra:
     playoff_apps: 0
     trades: 1
     trades_known: true
-    tx_per_year: 21.0
+    tx_per_year: 23.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -16343,7 +16366,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 9th
     record: 2-5
-    tx: 21
+    tx: 23
     in_progress: true
     pf: 776.0
     pa: 818.7
@@ -16508,6 +16531,10 @@ alexandra:
     - player: Tyler Allgeier
       via: trade
       week: 7
+    - player: Lions D/ST
+      via: add
+      week: 8
+      waiver: false
   current_roster:
     year: 2026
     week: 8
@@ -16587,10 +16614,10 @@ alexandra:
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Panthers D/ST
+    - player: Lions D/ST
       pos: D/ST
-      cost: R13
-      basis: Undrafted
+      cost: R11
+      basis: Drafted R13
       ineligible: false
 kevbots22:
   name: Kevin
@@ -18159,7 +18186,7 @@ theoceanpulse:
     titles: '1'
     sackos: 0
     playoff_apps: 8
-    trades: 16
+    trades: 17
     trades_known: true
     tx_per_year: 53.7
     tx_known: false
@@ -18405,6 +18432,18 @@ theoceanpulse:
     avg_pf: 101.2
     avg_pa: 103.6
   trades:
+  - year: 2026
+    week: 8
+    got:
+    - Jonah Coleman
+    - Ladd McConkey
+    gave:
+    - Woody Marks
+    - Caleb Williams
+    with:
+    - id: sturmanator15
+      name: Wade
+      team: God's Commissioner
   - year: 2026
     week: 7
     got:
@@ -18773,6 +18812,12 @@ theoceanpulse:
       via: add
       week: 7
       waiver: false
+    - player: Jonah Coleman
+      via: trade
+      week: 8
+    - player: Ladd McConkey
+      via: trade
+      week: 8
     - player: Caleb Douglas
       via: add
       week: 8
@@ -20158,11 +20203,6 @@ theoceanpulse:
     year: 2026
     week: 8
     players:
-    - player: Caleb Williams
-      pos: QB
-      cost: R5
-      basis: Drafted R7
-      ineligible: false
     - player: Jared Goff
       pos: QB
       cost: R13
@@ -20178,7 +20218,7 @@ theoceanpulse:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Woody Marks
+    - player: Jonah Coleman
       pos: RB
       cost: R10
       basis: Drafted R12
@@ -20193,6 +20233,11 @@ theoceanpulse:
       cost: Ineligible
       basis: Drafted R2
       ineligible: true
+    - player: Ladd McConkey
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
     - player: Christian Watson
       pos: WR
       cost: R3

@@ -410,6 +410,20 @@ detail:
         gave:
         - DK Metcalf
         - Woody Marks
+    - week: 8
+      parties:
+      - owner_id: sturmanator15
+        owner_name: Wade
+        team: God's Commissioner
+        gave:
+        - Jonah Coleman
+        - Ladd McConkey
+      - owner_id: theoceanpulse
+        owner_name: Dillon
+        team: The ChoSimba Ones
+        gave:
+        - Woody Marks
+        - Caleb Williams
     keepers:
     - round: 5
       player: Brock Bowers
