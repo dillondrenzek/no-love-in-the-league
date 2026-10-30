@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power:
   - rank: 1
@@ -2756,8 +2756,8 @@
     winner_id: null
     tie: false
     margin: 13.3
-    home_proj: 133.1
-    away_proj: 109.6
+    home_proj: 134.7
+    away_proj: 95.3
   - home_id: kevbots22
     home_team: Remember the Nice Guys, ChatGPT
     home_owner: Kevin
@@ -2780,7 +2780,7 @@
     tie: false
     margin: 50.4
     home_proj: 121.3
-    away_proj: 127.7
+    away_proj: 127.6
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -2802,7 +2802,7 @@
     winner_id: null
     tie: false
     margin: 14.3
-    home_proj: 110.2
+    home_proj: 100.9
     away_proj: 116.4
   - home_id: sturmanator15
     home_team: God's Commissioner
@@ -2825,8 +2825,8 @@
     winner_id: null
     tie: false
     margin: 17.4
-    home_proj: 135.6
-    away_proj: 104.2
+    home_proj: 136.5
+    away_proj: 92.4
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2938,7 +2938,7 @@
     decided: false
     result: null
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: true
   power:
   - rank: 1
@@ -3164,7 +3164,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power: []
 2026-10:
@@ -3270,7 +3270,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power: []
 2026-11:
@@ -3376,7 +3376,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power: []
 2026-12:
@@ -3482,7 +3482,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power: []
 2026-13:
@@ -3588,7 +3588,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power: []
 2026-14:
@@ -3694,6 +3694,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Oct 30, 3:33 AM PDT
+  updated_at: Oct 30, 10:26 AM PDT
   current: false
   power: []
