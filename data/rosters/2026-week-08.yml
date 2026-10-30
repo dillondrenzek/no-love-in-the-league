@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-30T17:26:19+00:00'
+captured_at: '2026-10-30T23:21:55+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -41,7 +41,7 @@ rosters:
   - player: Tony Pollard
     pos: RB
     starter: true
-    proj: 13.87
+    proj: 13.84
     actual: null
     injury: ''
     pro_team: TEN
@@ -65,7 +65,7 @@ rosters:
   - player: Kyle Monangai
     pos: RB
     starter: false
-    proj: 7.95
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: CHI
@@ -81,7 +81,7 @@ rosters:
   - player: Bryce Young
     pos: QB
     starter: false
-    proj: 18.58
+    proj: 18.57
     actual: 11.2
     injury: ''
     pro_team: CAR
@@ -105,7 +105,7 @@ rosters:
   - player: Ryan Flournoy
     pos: WR
     starter: true
-    proj: 7.44
+    proj: 7.47
     actual: null
     injury: ''
     pro_team: DAL
@@ -129,7 +129,7 @@ rosters:
   - player: Caleb Williams
     pos: QB
     starter: false
-    proj: 16.47
+    proj: 16.39
     actual: null
     injury: ''
     pro_team: CHI
@@ -181,7 +181,7 @@ rosters:
   - player: Ashton Jeanty
     pos: RB
     starter: true
-    proj: 14.57
+    proj: 14.59
     actual: null
     injury: ''
     pro_team: LV
@@ -221,7 +221,7 @@ rosters:
   - player: Jaguars D/ST
     pos: D/ST
     starter: true
-    proj: 7.4
+    proj: 7.41
     actual: null
     injury: ''
     pro_team: JAX
@@ -289,7 +289,7 @@ rosters:
   - player: Jaylen Waddle
     pos: WR
     starter: true
-    proj: 8.4
+    proj: 8.48
     actual: null
     injury: QUESTIONABLE
     pro_team: DEN
@@ -307,13 +307,13 @@ rosters:
     starter: true
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: TEN
     bye_week: 9
   - player: Tucker Kraft
     pos: TE
     starter: true
-    proj: 8.55
+    proj: 8.56
     actual: 14.3
     injury: ''
     pro_team: GB
@@ -397,17 +397,17 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 12.75
+    proj: 12.78
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: DeVonta Smith
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: PHI
     bye_week: 10
   - player: Jadarian Price
@@ -429,15 +429,15 @@ rosters:
   - player: RJ Harvey
     pos: RB
     starter: true
-    proj: 7.47
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: DEN
     bye_week: 10
   - player: Matthew Golden
     pos: WR
     starter: true
-    proj: 12.77
+    proj: 12.79
     actual: 17.4
     injury: QUESTIONABLE
     pro_team: GB
@@ -463,7 +463,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: PHI
     bye_week: 10
   - player: Malik Washington
@@ -500,8 +500,8 @@ rosters:
     bye_week: 8
   - player: Darius Cooper
     pos: WR
-    starter: false
-    proj: 8.04
+    starter: true
+    proj: 8.14
     actual: null
     injury: ''
     pro_team: PHI
@@ -517,7 +517,7 @@ rosters:
   - player: Jaydon Blue
     pos: RB
     starter: false
-    proj: 3.0
+    proj: 3.02
     actual: null
     injury: ''
     pro_team: ''
@@ -545,7 +545,7 @@ rosters:
   - player: Parker Washington
     pos: WR
     starter: true
-    proj: 14.09
+    proj: 14.1
     actual: null
     injury: ''
     pro_team: JAX
@@ -569,7 +569,7 @@ rosters:
   - player: Mike Washington Jr.
     pos: RB
     starter: false
-    proj: 6.48
+    proj: 6.49
     actual: null
     injury: ''
     pro_team: LV
@@ -593,7 +593,7 @@ rosters:
   - player: Dallas Goedert
     pos: TE
     starter: true
-    proj: 8.26
+    proj: 8.33
     actual: null
     injury: ''
     pro_team: PHI
@@ -677,7 +677,7 @@ rosters:
   - player: Josh Jacobs
     pos: RB
     starter: true
-    proj: 13.61
+    proj: 13.62
     actual: 20.2
     injury: DAY_TO_DAY
     pro_team: GB
@@ -685,7 +685,7 @@ rosters:
   - player: Tetairoa McMillan
     pos: WR
     starter: true
-    proj: 12.87
+    proj: 12.88
     actual: 8.8
     injury: ''
     pro_team: CAR
@@ -701,7 +701,7 @@ rosters:
   - player: Rhamondre Stevenson
     pos: RB
     starter: false
-    proj: 12.38
+    proj: 12.37
     actual: null
     injury: ''
     pro_team: NE
@@ -717,7 +717,7 @@ rosters:
   - player: Chuba Hubbard
     pos: RB
     starter: true
-    proj: 14.09
+    proj: 14.03
     actual: 21.4
     injury: ''
     pro_team: CAR
@@ -749,7 +749,7 @@ rosters:
   - player: Tre Tucker
     pos: WR
     starter: true
-    proj: 9.06
+    proj: 9.07
     actual: null
     injury: ''
     pro_team: LV
@@ -825,7 +825,7 @@ rosters:
   - player: Javonte Williams
     pos: RB
     starter: true
-    proj: 18.86
+    proj: 19.11
     actual: null
     injury: ''
     pro_team: DAL
@@ -833,7 +833,7 @@ rosters:
   - player: J.K. Dobbins
     pos: RB
     starter: true
-    proj: 5.87
+    proj: 8.73
     actual: null
     injury: ''
     pro_team: DEN
@@ -873,7 +873,7 @@ rosters:
   - player: DeMario Douglas
     pos: WR
     starter: false
-    proj: 9.4
+    proj: 9.37
     actual: null
     injury: ''
     pro_team: NE
@@ -881,7 +881,7 @@ rosters:
   - player: Hunter Henry
     pos: TE
     starter: true
-    proj: 8.52
+    proj: 8.49
     actual: null
     injury: ''
     pro_team: NE
@@ -889,7 +889,7 @@ rosters:
   - player: Keenan Allen
     pos: WR
     starter: true
-    proj: 7.04
+    proj: 7.05
     actual: null
     injury: ''
     pro_team: IND
@@ -957,7 +957,7 @@ rosters:
   - player: Jayden Daniels
     pos: QB
     starter: true
-    proj: 24.59
+    proj: 24.58
     actual: null
     injury: ''
     pro_team: WSH
@@ -1029,7 +1029,7 @@ rosters:
   - player: Kirk Cousins
     pos: QB
     starter: false
-    proj: 18.39
+    proj: 18.4
     actual: null
     injury: ''
     pro_team: LV
@@ -1057,7 +1057,7 @@ rosters:
   - player: CeeDee Lamb
     pos: WR
     starter: true
-    proj: 16.8
+    proj: 16.86
     actual: null
     injury: ''
     pro_team: DAL
@@ -1161,7 +1161,7 @@ rosters:
   - player: Courtland Sutton
     pos: WR
     starter: false
-    proj: 7.35
+    proj: 8.01
     actual: null
     injury: ''
     pro_team: DEN
@@ -1172,7 +1172,7 @@ rosters:
   players:
   - player: A.J. Brown
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: QUESTIONABLE
@@ -1181,7 +1181,7 @@ rosters:
   - player: Christian Watson
     pos: WR
     starter: true
-    proj: 12.1
+    proj: 12.12
     actual: 13.3
     injury: QUESTIONABLE
     pro_team: GB
@@ -1191,7 +1191,7 @@ rosters:
     starter: true
     proj: 9.41
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
   - player: Jordan Mason
@@ -1236,7 +1236,7 @@ rosters:
     bye_week: 13
   - player: Dalton Kincaid
     pos: TE
-    starter: false
+    starter: true
     proj: 7.17
     actual: null
     injury: QUESTIONABLE
@@ -1277,7 +1277,7 @@ rosters:
   - player: Jonah Coleman
     pos: RB
     starter: false
-    proj: 6.94
+    proj: 8.66
     actual: null
     injury: ''
     pro_team: DEN
@@ -1329,7 +1329,7 @@ rosters:
   - player: Brock Bowers
     pos: TE
     starter: true
-    proj: 13.09
+    proj: 13.11
     actual: null
     injury: QUESTIONABLE
     pro_team: LV
@@ -1437,7 +1437,7 @@ rosters:
   - player: George Pickens
     pos: WR
     starter: true
-    proj: 11.55
+    proj: 11.6
     actual: null
     injury: QUESTIONABLE
     pro_team: DAL
@@ -1445,7 +1445,7 @@ rosters:
   - player: D'Andre Swift
     pos: RB
     starter: true
-    proj: 11.59
+    proj: 13.12
     actual: null
     injury: ''
     pro_team: CHI
