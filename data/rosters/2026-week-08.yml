@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-30T23:21:55+00:00'
+captured_at: '2026-10-31T03:13:54+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -709,7 +709,7 @@ rosters:
   - player: Travis Kelce
     pos: TE
     starter: true
-    proj: 7.43
+    proj: 7.44
     actual: null
     injury: QUESTIONABLE
     pro_team: KC
@@ -1105,7 +1105,7 @@ rosters:
   - player: Brandon Aubrey
     pos: K
     starter: true
-    proj: 9.76
+    proj: 9.75
     actual: null
     injury: ''
     pro_team: DAL
@@ -1236,7 +1236,7 @@ rosters:
     bye_week: 13
   - player: Dalton Kincaid
     pos: TE
-    starter: true
+    starter: false
     proj: 7.17
     actual: null
     injury: QUESTIONABLE
@@ -1276,7 +1276,7 @@ rosters:
     bye_week: 6
   - player: Jonah Coleman
     pos: RB
-    starter: false
+    starter: true
     proj: 8.66
     actual: null
     injury: ''
@@ -1285,7 +1285,7 @@ rosters:
   - player: Ladd McConkey
     pos: WR
     starter: true
-    proj: 8.27
+    proj: 8.28
     actual: null
     injury: QUESTIONABLE
     pro_team: LAC
@@ -1369,7 +1369,7 @@ rosters:
   - player: Patrick Mahomes
     pos: QB
     starter: true
-    proj: 15.11
+    proj: 15.13
     actual: null
     injury: ''
     pro_team: KC
@@ -1385,7 +1385,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 5.08
+    proj: 4.98
     actual: null
     injury: ''
     pro_team: DEN
