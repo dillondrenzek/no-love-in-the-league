@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-31T10:01:50+00:00'
+captured_at: '2026-10-31T16:30:29+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -304,7 +304,7 @@ rosters:
     bye_week: 6
   - player: Carnell Tate
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: OUT
@@ -376,7 +376,7 @@ rosters:
     bye_week: 9
   - player: Treylon Burks
     pos: WR
-    starter: false
+    starter: true
     proj: 7.75
     actual: null
     injury: QUESTIONABLE
@@ -428,7 +428,7 @@ rosters:
     bye_week: 7
   - player: RJ Harvey
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: OUT
@@ -490,22 +490,6 @@ rosters:
     injury: ''
     pro_team: HOU
     bye_week: 8
-  - player: Tyrone Tracy Jr.
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: INJURY_RESERVE
-    pro_team: NYG
-    bye_week: 8
-  - player: Darius Cooper
-    pos: WR
-    starter: true
-    proj: 8.14
-    actual: null
-    injury: ''
-    pro_team: PHI
-    bye_week: 10
   - player: Michael Penix Jr.
     pos: QB
     starter: true
@@ -514,14 +498,30 @@ rosters:
     injury: ''
     pro_team: ATL
     bye_week: 11
-  - player: Jaydon Blue
-    pos: RB
-    starter: false
-    proj: 3.02
+  - player: Makai Lemon
+    pos: WR
+    starter: true
+    proj: 7.68
     actual: null
     injury: ''
-    pro_team: ''
-    bye_week: null
+    pro_team: PHI
+    bye_week: 10
+  - player: Kimani Vidal
+    pos: RB
+    starter: true
+    proj: 6.95
+    actual: null
+    injury: ''
+    pro_team: LAC
+    bye_week: 7
+  - player: Tez Johnson
+    pos: WR
+    starter: false
+    proj: 8.76
+    actual: null
+    injury: ''
+    pro_team: TB
+    bye_week: 10
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
   team_name: Gibbed for your pleasure

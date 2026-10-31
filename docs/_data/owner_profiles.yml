@@ -20314,7 +20314,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 47.3
+    tx_per_year: 48.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -20337,7 +20337,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-5
-    tx: 30
+    tx: 36
     in_progress: true
     pf: 569.5
     pa: 846.8
@@ -20800,6 +20800,14 @@ lukstein:
       week: 7
       waiver: false
     - player: Jaydon Blue
+      via: add
+      week: 8
+      waiver: false
+    - player: Kimani Vidal
+      via: add
+      week: 8
+      waiver: false
+    - player: Makai Lemon
       via: add
       week: 8
       waiver: false
@@ -22202,12 +22210,7 @@ lukstein:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Jaydon Blue
-      pos: RB
-      cost: R13
-      basis: Drafted R15
-      ineligible: false
-    - player: Tyrone Tracy Jr.
+    - player: Kimani Vidal
       pos: RB
       cost: R13
       basis: Undrafted
@@ -22227,17 +22230,22 @@ lukstein:
       cost: R6
       basis: Drafted R8
       ineligible: false
+    - player: Makai Lemon
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
     - player: Dontayvion Wicks
       pos: WR
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Darius Cooper
+    - player: Malik Washington
       pos: WR
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Malik Washington
+    - player: Tez Johnson
       pos: WR
       cost: R13
       basis: Undrafted

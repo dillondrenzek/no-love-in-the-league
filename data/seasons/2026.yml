@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-10-31T10:01:53+00:00
+updated_at: 2026-10-31T16:30:33+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -135,8 +135,8 @@ matchups:
   - { week:  8, home: alexandra, away: shawne2520997, home_score: 24.4, away_score: 8.6, playoff: false, final: false, home_proj: 111.45, away_proj: 111.71 }
   - { week:  8, home: jackperkins74, away: theoceanpulse, home_score: 0.0, away_score: 13.3, playoff: false, final: false, home_proj: 134.78, away_proj: 103.95 }
   - { week:  8, home: kevbots22, away: whowonthelastsuperbowl, home_score: 50.4, away_score: 0.0, playoff: false, final: false, home_proj: 121.29, away_proj: 127.66 }
-  - { week:  8, home: schirmerj, away: purpsworth, home_score: 14.3, away_score: 0.0, playoff: false, final: false, home_proj: 100.95, away_proj: 116.35 }
-  - { week:  8, home: sturmanator15, away: lukstein, home_score: 0.0, away_score: 17.4, playoff: false, final: false, home_proj: 136.46, away_proj: 93.1 }
+  - { week:  8, home: schirmerj, away: purpsworth, home_score: 14.3, away_score: 0.0, playoff: false, final: false, home_proj: 108.7, away_proj: 116.35 }
+  - { week:  8, home: sturmanator15, away: lukstein, home_score: 0.0, away_score: 17.4, playoff: false, final: false, home_proj: 136.46, away_proj: 99.59 }
   - { week:  8, home: zachzoske, away: gganoom, playoff: false, played: false, home_proj: 121.72, away_proj: 112.89 }
   - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false }
   - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false }
@@ -361,7 +361,7 @@ transactions:
   gganoom: { adds: 8, drops: 6, moves: 14 }
   jackperkins74: { adds: 49, drops: 35, moves: 84 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
-  lukstein: { adds: 18, drops: 12, moves: 30 }
+  lukstein: { adds: 21, drops: 15, moves: 36 }
   purpsworth: { adds: 12, drops: 6, moves: 18 }
   schirmerj: { adds: 12, drops: 12, moves: 24 }
   shawne2520997: { adds: 19, drops: 14, moves: 33 }
@@ -1086,6 +1086,14 @@ rosters:
     week: 7
     waiver: false
   - player: Jaydon Blue
+    via: add
+    week: 8
+    waiver: false
+  - player: Kimani Vidal
+    via: add
+    week: 8
+    waiver: false
+  - player: Makai Lemon
     via: add
     week: 8
     waiver: false
