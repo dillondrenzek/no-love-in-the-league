@@ -11179,7 +11179,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 35.1
+    tx_per_year: 35.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -11203,7 +11203,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 4-3
-    tx: 20
+    tx: 21
     in_progress: true
     pf: 835.4
     pa: 772.4
@@ -11597,6 +11597,10 @@ whowonthelastsuperbowl:
     - player: Ted Hurst III
       via: add
       week: 7
+      waiver: false
+    - player: Corey Kiner
+      via: add
+      week: 8
       waiver: false
   - year: 2025
     players:
@@ -12915,6 +12919,11 @@ whowonthelastsuperbowl:
       pos: RB
       cost: R5
       basis: Drafted R7
+      ineligible: false
+    - player: Corey Kiner
+      pos: RB
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: CeeDee Lamb
       pos: WR
@@ -18196,7 +18205,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 53.7
+    tx_per_year: 53.8
     tx_known: false
     seasons: 11
     best_finish:
@@ -18219,7 +18228,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 11th
     record: 2-4-1
-    tx: 49
+    tx: 50
     in_progress: true
     pf: 723.2
     pa: 817.5
@@ -20260,6 +20269,11 @@ theoceanpulse:
       pos: WR
       cost: R9
       basis: Drafted R11
+      ineligible: false
+    - player: Ja'Kobi Lane
+      pos: WR
+      cost: R12
+      basis: Drafted R14
       ineligible: false
     - player: Devaughn Vele
       pos: WR
