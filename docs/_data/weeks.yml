@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power:
   - rank: 1
@@ -2723,18 +2723,18 @@
     home_record: 2-5
     away_record: 3-4
     scored: true
-    home_yet: 9
-    away_yet: 9
+    home_yet: 0
+    away_yet: 2
     final: false
     live: true
     playoff: false
-    home_score: 24.4
-    away_score: 8.6
+    home_score: 122.5
+    away_score: 76.2
     winner_id: null
     tie: false
-    margin: 15.8
-    home_proj: 110.8
-    away_proj: 112.9
+    margin: 46.3
+    home_proj: 110.7
+    away_proj: 112.8
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
@@ -2746,18 +2746,18 @@
     home_record: 5-2
     away_record: 2-4-1
     scored: true
-    home_yet: 10
-    away_yet: 8
+    home_yet: 1
+    away_yet: 1
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 13.3
+    home_score: 135.4
+    away_score: 51.9
     winner_id: null
     tie: false
-    margin: 13.3
-    home_proj: 141.1
-    away_proj: 90.2
+    margin: 83.5
+    home_proj: 140.5
+    away_proj: 97.6
   - home_id: kevbots22
     home_team: Remember the Nice Guys, ChatGPT
     home_owner: Kevin
@@ -2769,18 +2769,18 @@
     home_record: 2-4-1
     away_record: 4-3
     scored: true
-    home_yet: 7
-    away_yet: 10
+    home_yet: 0
+    away_yet: 2
     final: false
     live: true
     playoff: false
-    home_score: 50.4
-    away_score: 0.0
+    home_score: 114.1
+    away_score: 67.9
     winner_id: null
     tie: false
-    margin: 50.4
-    home_proj: 121.3
-    away_proj: 127.6
+    margin: 46.2
+    home_proj: 121.4
+    away_proj: 126.9
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -2792,18 +2792,18 @@
     home_record: 4-3
     away_record: 3-4
     scored: true
-    home_yet: 9
-    away_yet: 10
+    home_yet: 3
+    away_yet: 2
     final: false
     live: true
     playoff: false
-    home_score: 14.3
-    away_score: 0.0
+    home_score: 80.5
+    away_score: 62.3
     winner_id: null
     tie: false
-    margin: 14.3
+    margin: 18.2
     home_proj: 108.8
-    away_proj: 116.4
+    away_proj: 115.8
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2815,18 +2815,18 @@
     home_record: 5-2
     away_record: 2-5
     scored: true
-    home_yet: 10
-    away_yet: 9
+    home_yet: 2
+    away_yet: 3
     final: false
     live: true
     playoff: false
-    home_score: 0.0
-    away_score: 17.4
+    home_score: 99.2
+    away_score: 54.4
     winner_id: null
     tie: false
-    margin: 17.4
-    home_proj: 136.1
-    away_proj: 99.6
+    margin: 44.8
+    home_proj: 136.6
+    away_proj: 99.1
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2837,14 +2837,19 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     home_record: 5-2
     away_record: 4-3
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 2
+    away_yet: 0
     final: false
-    live: false
+    live: true
     playoff: false
-    home_proj: 121.8
-    away_proj: 113.0
+    home_score: 135.5
+    away_score: 123.4
+    winner_id: null
+    tie: false
+    margin: 12.1
+    home_proj: 121.5
+    away_proj: 112.5
   highlights: []
   projections:
   - home_id: alexandra
@@ -2938,7 +2943,7 @@
     decided: false
     result: null
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: true
   power:
   - rank: 1
@@ -3164,7 +3169,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power: []
 2026-10:
@@ -3270,7 +3275,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power: []
 2026-11:
@@ -3376,7 +3381,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power: []
 2026-12:
@@ -3482,7 +3487,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power: []
 2026-13:
@@ -3588,7 +3593,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power: []
 2026-14:
@@ -3694,6 +3699,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 1, 9:23 AM PST
+  updated_at: Nov 1, 3:13 PM PST
   current: false
   power: []
