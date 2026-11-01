@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-11-01T10:53:21+00:00'
+captured_at: '2026-11-01T17:23:48+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -9,7 +9,7 @@ rosters:
   - player: Jaxon Smith-Njigba
     pos: WR
     starter: true
-    proj: 17.76
+    proj: 17.73
     actual: null
     injury: ''
     pro_team: SEA
@@ -113,7 +113,7 @@ rosters:
   - player: Geno Smith
     pos: QB
     starter: true
-    proj: 20.36
+    proj: 20.4
     actual: null
     injury: ''
     pro_team: NYJ
@@ -181,7 +181,7 @@ rosters:
   - player: Ashton Jeanty
     pos: RB
     starter: true
-    proj: 14.62
+    proj: 14.63
     actual: null
     injury: ''
     pro_team: LV
@@ -213,7 +213,7 @@ rosters:
   - player: Garrett Wilson
     pos: WR
     starter: true
-    proj: 11.41
+    proj: 11.48
     actual: null
     injury: ''
     pro_team: NYJ
@@ -289,7 +289,7 @@ rosters:
   - player: Jaylen Waddle
     pos: WR
     starter: true
-    proj: 8.52
+    proj: 8.51
     actual: null
     injury: QUESTIONABLE
     pro_team: DEN
@@ -585,7 +585,7 @@ rosters:
   - player: Braelon Allen
     pos: RB
     starter: true
-    proj: 10.02
+    proj: 15.93
     actual: null
     injury: QUESTIONABLE
     pro_team: NYJ
@@ -749,7 +749,7 @@ rosters:
   - player: Tre Tucker
     pos: WR
     starter: true
-    proj: 9.12
+    proj: 9.13
     actual: null
     injury: ''
     pro_team: LV
@@ -833,7 +833,7 @@ rosters:
   - player: J.K. Dobbins
     pos: RB
     starter: true
-    proj: 8.17
+    proj: 8.16
     actual: null
     injury: ''
     pro_team: DEN
@@ -1021,7 +1021,7 @@ rosters:
   - player: Omar Cooper Jr.
     pos: WR
     starter: true
-    proj: 8.81
+    proj: 8.86
     actual: null
     injury: ''
     pro_team: NYJ
@@ -1161,7 +1161,7 @@ rosters:
   - player: Courtland Sutton
     pos: WR
     starter: false
-    proj: 8.06
+    proj: 8.04
     actual: null
     injury: ''
     pro_team: DEN
@@ -1252,10 +1252,10 @@ rosters:
     bye_week: 7
   - player: Breece Hall
     pos: RB
-    starter: true
-    proj: 13.26
+    starter: false
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: NYJ
     bye_week: 13
   - player: DK Metcalf
@@ -1285,7 +1285,7 @@ rosters:
   - player: Jonah Coleman
     pos: RB
     starter: true
-    proj: 8.32
+    proj: 8.31
     actual: null
     injury: ''
     pro_team: DEN
@@ -1345,7 +1345,7 @@ rosters:
   - player: Brock Bowers
     pos: TE
     starter: true
-    proj: 13.18
+    proj: 13.2
     actual: null
     injury: QUESTIONABLE
     pro_team: LV
@@ -1524,7 +1524,7 @@ rosters:
     bye_week: 8
   - player: Tyler Higbee
     pos: TE
-    starter: true
+    starter: false
     proj: 6.94
     actual: null
     injury: ''
@@ -1538,17 +1538,9 @@ rosters:
     injury: QUESTIONABLE
     pro_team: HOU
     bye_week: 8
-  - player: Bam Knight
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: ARI
-    bye_week: 14
   - player: Kendrick Bourne
     pos: WR
-    starter: false
+    starter: true
     proj: 6.34
     actual: null
     injury: ''
@@ -1570,3 +1562,11 @@ rosters:
     injury: ''
     pro_team: WSH
     bye_week: 7
+  - player: Devin Singletary
+    pos: RB
+    starter: false
+    proj: 0.0
+    actual: null
+    injury: ''
+    pro_team: NYG
+    bye_week: 8

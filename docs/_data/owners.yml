@@ -1777,8 +1777,8 @@ tx_heatmap:
       color: '#fce1b4'
   - id: shawne2520997
     name: Shawnee
-    total: 448
-    tx_per_year: 49.8
+    total: 450
+    tx_per_year: 50.0
     cells:
     - year: 2018
       count: 52
@@ -1805,8 +1805,8 @@ tx_heatmap:
       count: 101
       color: '#f6a248'
     - year: 2026
-      count: 33
-      color: '#fbdaa3'
+      count: 35
+      color: '#fbd8a0'
   - id: lukstein
     name: Luke
     total: 432
