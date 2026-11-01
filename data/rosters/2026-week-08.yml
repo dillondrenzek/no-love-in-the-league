@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-10-31T22:55:06+00:00'
+captured_at: '2026-11-01T03:10:53+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -517,7 +517,7 @@ rosters:
   - player: Tez Johnson
     pos: WR
     starter: false
-    proj: 8.76
+    proj: 8.77
     actual: null
     injury: ''
     pro_team: TB
@@ -641,7 +641,7 @@ rosters:
   - player: Bengals D/ST
     pos: D/ST
     starter: true
-    proj: 5.98
+    proj: 5.99
     actual: null
     injury: ''
     pro_team: CIN
@@ -1137,7 +1137,7 @@ rosters:
   - player: Seahawks D/ST
     pos: D/ST
     starter: true
-    proj: 5.79
+    proj: 5.8
     actual: null
     injury: ''
     pro_team: SEA
