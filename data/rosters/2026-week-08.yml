@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-11-02T03:20:34+00:00'
+captured_at: '2026-11-02T11:48:45+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -98,7 +98,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 6.86
-    actual: 7.0
+    actual: 14.0
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -254,7 +254,7 @@ rosters:
     pos: TE
     starter: true
     proj: 6.53
-    actual: -0.4
+    actual: 2.2
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -322,7 +322,7 @@ rosters:
     pos: RB
     starter: true
     proj: 11.17
-    actual: 3.1
+    actual: 13.0
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -378,7 +378,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.75
-    actual: 3.8
+    actual: 9.6
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
@@ -398,7 +398,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.79
-    actual: 11.6
+    actual: 11.9
     injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
@@ -454,7 +454,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 3.7
-    actual: 8.0
+    actual: 4.0
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -502,7 +502,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.69
-    actual: 4.9
+    actual: 8.7
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -594,7 +594,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.33
-    actual: 1.8
+    actual: 5.2
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -958,7 +958,7 @@ rosters:
     pos: QB
     starter: true
     proj: 24.58
-    actual: 11.1
+    actual: 15.9
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -1098,7 +1098,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.27
-    actual: 9.8
+    actual: 11.3
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
@@ -1558,7 +1558,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.76
-    actual: 4.4
+    actual: 7.9
     injury: ''
     pro_team: WSH
     bye_week: 7
