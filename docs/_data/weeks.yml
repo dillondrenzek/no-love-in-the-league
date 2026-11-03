@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -2733,8 +2733,6 @@
     winner_id: alexandra
     tie: false
     margin: 9.5
-    home_proj: 110.7
-    away_proj: 112.8
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
@@ -2756,8 +2754,6 @@
     winner_id: jackperkins74
     tie: false
     margin: 68.4
-    home_proj: 140.5
-    away_proj: 97.6
   - home_id: kevbots22
     home_team: Remember the Nice Guys, ChatGPT
     home_owner: Kevin
@@ -2779,8 +2775,6 @@
     winner_id: kevbots22
     tie: false
     margin: 15.8
-    home_proj: 121.4
-    away_proj: 126.9
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -2802,8 +2796,6 @@
     winner_id: schirmerj
     tie: false
     margin: 16.4
-    home_proj: 108.8
-    away_proj: 115.8
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -2825,8 +2817,6 @@
     winner_id: sturmanator15
     tie: false
     margin: 59.2
-    home_proj: 136.6
-    away_proj: 99.1
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -2848,8 +2838,6 @@
     winner_id: zachzoske
     tie: false
     margin: 20.5
-    home_proj: 121.5
-    away_proj: 112.5
   highlights:
   - key: top
     label: Top Score
@@ -2977,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power:
   - rank: 1
@@ -3115,11 +3103,13 @@
     home_record: 4-4
     away_record: 3-5
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 118.3
+    away_proj: 101.4
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
@@ -3131,11 +3121,13 @@
     home_record: 6-2
     away_record: 2-5-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 136.9
+    away_proj: 98.0
   - home_id: kevbots22
     home_team: Remember the Nice Guys, ChatGPT
     home_owner: Kevin
@@ -3147,11 +3139,13 @@
     home_record: 3-4-1
     away_record: 3-5
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 121.6
+    away_proj: 102.4
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -3163,11 +3157,13 @@
     home_record: 2-6
     away_record: 3-5
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 104.7
+    away_proj: 106.2
   - home_id: sturmanator15
     home_team: God's Commissioner
     home_owner: Wade
@@ -3179,11 +3175,13 @@
     home_record: 6-2
     away_record: 4-4
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 7
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 101.5
+    away_proj: 119.8
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -3195,15 +3193,17 @@
     home_record: 6-2
     away_record: 5-3
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 128.1
+    away_proj: 120.8
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: true
   power: []
 2026-10:
@@ -3309,7 +3309,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power: []
 2026-11:
@@ -3415,7 +3415,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power: []
 2026-12:
@@ -3521,7 +3521,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power: []
 2026-13:
@@ -3627,7 +3627,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power: []
 2026-14:
@@ -3733,6 +3733,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 2, 8:58 PM PST
+  updated_at: Nov 3, 7:36 AM PST
   current: false
   power: []

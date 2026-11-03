@@ -87,20 +87,6 @@ detail:
       pf_color: '#f38f44'
       pa: 891.0
       pa_color: '#fac97b'
-    - &id005
-      finish: 5
-      team: One Big Beautiful Dillbot
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-      owner_id: gganoom
-      owner_name: Grant
-      record: 4-4
-      pct: 0.5
-      tag: null
-      pct_str: '.500'
-      pf: 996.0
-      pf_color: '#f49445'
-      pa: 840.1
-      pa_color: '#fdf3e0'
     - &id004
       finish: 4
       team: Return of the IDP
@@ -115,6 +101,20 @@ detail:
       pf_color: '#f6a449'
       pa: 973.7
       pa_color: '#f07a3f'
+    - &id005
+      finish: 5
+      team: One Big Beautiful Dillbot
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+      owner_id: gganoom
+      owner_name: Grant
+      record: 4-4
+      pct: 0.5
+      tag: null
+      pct_str: '.500'
+      pf: 996.0
+      pf_color: '#f49445'
+      pa: 840.1
+      pa_color: '#fdf3e0'
     - &id006
       finish: 6
       team: Trick or Trick It’s Mike Vick
@@ -129,34 +129,6 @@ detail:
       pf_color: '#f7a649'
       pa: 890.1
       pa_color: '#faca7d'
-    - &id009
-      finish: 9
-      team: Swift kick in the Dak
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-      owner_id: shawne2520997
-      owner_name: Shawnee
-      record: 3-5
-      pct: 0.375
-      tag: null
-      pct_str: '.375'
-      pf: 870.8
-      pf_color: '#f9ba58'
-      pa: 904.8
-      pa_color: '#fabe60'
-    - &id010
-      finish: 10
-      team: I am dead inside
-      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-      owner_id: purpsworth
-      owner_name: Trevor
-      record: 3-5
-      pct: 0.375
-      tag: null
-      pct_str: '.375'
-      pf: 842.3
-      pf_color: '#fac269'
-      pa: 902.5
-      pa_color: '#fac065'
     - &id008
       finish: 8
       team: Cornstar
@@ -185,6 +157,34 @@ detail:
       pf_color: '#f9b44d'
       pa: 964.1
       pa_color: '#f28441'
+    - &id009
+      finish: 9
+      team: Swift kick in the Dak
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+      owner_id: shawne2520997
+      owner_name: Shawnee
+      record: 3-5
+      pct: 0.375
+      tag: null
+      pct_str: '.375'
+      pf: 870.8
+      pf_color: '#f9ba58'
+      pa: 904.8
+      pa_color: '#fabe60'
+    - &id010
+      finish: 10
+      team: I am dead inside
+      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+      owner_id: purpsworth
+      owner_name: Trevor
+      record: 3-5
+      pct: 0.375
+      tag: null
+      pct_str: '.375'
+      pf: 842.3
+      pf_color: '#fac269'
+      pa: 902.5
+      pa_color: '#fac065'
     - &id011
       finish: 11
       team: The ChoSimba Ones
