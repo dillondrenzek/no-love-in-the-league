@@ -1,6 +1,6 @@
 season: 2026
 week: 8
-captured_at: '2026-11-02T21:02:02+00:00'
+captured_at: '2026-11-03T04:31:58+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -10,7 +10,7 @@ rosters:
     pos: WR
     starter: true
     proj: 18.22
-    actual: null
+    actual: 20.8
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -66,7 +66,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: CHI
     bye_week: 10
@@ -130,7 +130,7 @@ rosters:
     pos: QB
     starter: false
     proj: 16.39
-    actual: null
+    actual: 14.9
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -167,7 +167,7 @@ rosters:
     starter: true
     proj: 13.42
     actual: 28.9
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
   - player: Isaiah Likely
@@ -198,7 +198,7 @@ rosters:
     pos: RB
     starter: false
     proj: 9.82
-    actual: null
+    actual: 4.4
     injury: QUESTIONABLE
     pro_team: SEA
     bye_week: 11
@@ -230,7 +230,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.79
-    actual: null
+    actual: 15.1
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -346,7 +346,7 @@ rosters:
     pos: K
     starter: true
     proj: 9.33
-    actual: null
+    actual: -1.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -414,7 +414,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.2
-    actual: null
+    actual: 4.7
     injury: INJURY_RESERVE
     pro_team: SEA
     bye_week: 11
@@ -735,7 +735,7 @@ rosters:
     starter: true
     proj: 18.87
     actual: 9.2
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: LAR
     bye_week: 11
   - player: Patriots D/ST
@@ -851,14 +851,14 @@ rosters:
     starter: true
     proj: 8.49
     actual: 2.0
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: BAL
     bye_week: 13
   - player: Rashid Shaheed
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: SEA
     bye_week: 11
@@ -934,7 +934,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.64
-    actual: null
+    actual: 10.7
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -1138,7 +1138,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.8
-    actual: null
+    actual: 1.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1198,7 +1198,7 @@ rosters:
     pos: TE
     starter: true
     proj: 9.41
-    actual: null
+    actual: 8.0
     injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
@@ -1214,7 +1214,7 @@ rosters:
     pos: RB
     starter: false
     proj: 6.39
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: SEA
     bye_week: 11
@@ -1462,7 +1462,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.12
-    actual: null
+    actual: 26.9
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -1543,7 +1543,7 @@ rosters:
     starter: true
     proj: 6.34
     actual: 3.4
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: ARI
     bye_week: 14
   - player: Brenton Strange
