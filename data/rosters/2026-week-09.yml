@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-04T03:52:21+00:00'
+captured_at: '2026-11-04T11:44:08+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -94,14 +94,6 @@ rosters:
     injury: ''
     pro_team: PIT
     bye_week: 9
-  - player: Commanders D/ST
-    pos: D/ST
-    starter: false
-    proj: 4.53
-    actual: null
-    injury: ''
-    pro_team: WSH
-    bye_week: 7
   - player: Ryan Flournoy
     pos: WR
     starter: false
@@ -110,17 +102,9 @@ rosters:
     injury: ''
     pro_team: DAL
     bye_week: 14
-  - player: Geno Smith
-    pos: QB
-    starter: false
-    proj: 15.21
-    actual: null
-    injury: ''
-    pro_team: NYJ
-    bye_week: 13
   - player: Woody Marks
     pos: RB
-    starter: false
+    starter: true
     proj: 7.47
     actual: null
     injury: ''
@@ -134,6 +118,22 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
+  - player: Adonai Mitchell
+    pos: WR
+    starter: false
+    proj: 8.11
+    actual: null
+    injury: ''
+    pro_team: NYJ
+    bye_week: 13
+  - player: Saints D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.39
+    actual: null
+    injury: ''
+    pro_team: 'NO'
+    bye_week: 8
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
@@ -234,14 +234,6 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
-  - player: Alvin Kamara
-    pos: RB
-    starter: false
-    proj: 9.53
-    actual: null
-    injury: ''
-    pro_team: 'NO'
-    bye_week: 8
   - player: Seth McGowan
     pos: RB
     starter: false
@@ -256,6 +248,14 @@ rosters:
     proj: 8.01
     actual: null
     injury: ''
+    pro_team: JAX
+    bye_week: 7
+  - player: Chris Rodriguez Jr.
+    pos: RB
+    starter: false
+    proj: 5.37
+    actual: null
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -374,14 +374,14 @@ rosters:
     injury: ''
     pro_team: WSH
     bye_week: 7
-  - player: Browns D/ST
+  - player: Bears D/ST
     pos: D/ST
     starter: true
-    proj: 6.3
+    proj: 6.36
     actual: null
     injury: ''
-    pro_team: CLE
-    bye_week: 11
+    pro_team: CHI
+    bye_week: 10
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
   team_id: 4
   team_name: 2x Runner Up
@@ -630,14 +630,6 @@ rosters:
     injury: ''
     pro_team: MIN
     bye_week: 6
-  - player: Bengals D/ST
-    pos: D/ST
-    starter: true
-    proj: 4.29
-    actual: null
-    injury: ''
-    pro_team: CIN
-    bye_week: 6
   - player: Brian Robinson Jr.
     pos: RB
     starter: false
@@ -646,6 +638,14 @@ rosters:
     injury: QUESTIONABLE
     pro_team: ATL
     bye_week: 11
+  - player: Giants D/ST
+    pos: D/ST
+    starter: true
+    proj: 6.84
+    actual: null
+    injury: ''
+    pro_team: NYG
+    bye_week: 8
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -962,14 +962,6 @@ rosters:
     injury: INJURY_RESERVE
     pro_team: MIA
     bye_week: 6
-  - player: Mark Andrews
-    pos: TE
-    starter: false
-    proj: 4.71
-    actual: null
-    injury: ''
-    pro_team: BAL
-    bye_week: 13
   - player: Deebo Samuel Sr.
     pos: WR
     starter: true
@@ -1034,6 +1026,14 @@ rosters:
     injury: ''
     pro_team: ARI
     bye_week: 14
+  - player: Buccaneers D/ST
+    pos: D/ST
+    starter: true
+    proj: 4.39
+    actual: null
+    injury: ''
+    pro_team: TB
+    bye_week: 10
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
   team_id: 11
   team_name: Trick or Trick It’s Mike Vick
@@ -1172,7 +1172,7 @@ rosters:
   players:
   - player: A.J. Brown
     pos: WR
-    starter: false
+    starter: true
     proj: 11.24
     actual: null
     injury: QUESTIONABLE
@@ -1196,7 +1196,7 @@ rosters:
     bye_week: 10
   - player: Jordan Mason
     pos: RB
-    starter: true
+    starter: false
     proj: 7.34
     actual: null
     injury: ''
@@ -1244,7 +1244,7 @@ rosters:
     bye_week: 7
   - player: Breece Hall
     pos: RB
-    starter: false
+    starter: true
     proj: 9.6
     actual: null
     injury: QUESTIONABLE
@@ -1252,7 +1252,7 @@ rosters:
     bye_week: 13
   - player: DK Metcalf
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1290,14 +1290,6 @@ rosters:
     injury: ''
     pro_team: LAC
     bye_week: 7
-  - player: Ja'Kobi Lane
-    pos: WR
-    starter: false
-    proj: 4.1
-    actual: null
-    injury: ''
-    pro_team: BAL
-    bye_week: 13
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
@@ -1460,7 +1452,7 @@ rosters:
     bye_week: 10
   - player: Nico Collins
     pos: WR
-    starter: false
+    starter: true
     proj: 11.52
     actual: null
     injury: ''
@@ -1514,30 +1506,14 @@ rosters:
     injury: ''
     pro_team: SF
     bye_week: 8
-  - player: Tyler Higbee
-    pos: TE
-    starter: false
-    proj: 4.68
-    actual: null
-    injury: ''
-    pro_team: LAR
-    bye_week: 11
   - player: David Montgomery
     pos: RB
-    starter: false
+    starter: true
     proj: 11.11
     actual: null
     injury: QUESTIONABLE
     pro_team: HOU
     bye_week: 8
-  - player: Kendrick Bourne
-    pos: WR
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: INJURY_RESERVE
-    pro_team: ARI
-    bye_week: 14
   - player: Brenton Strange
     pos: TE
     starter: true
@@ -1548,7 +1524,7 @@ rosters:
     bye_week: 7
   - player: Antonio Williams
     pos: WR
-    starter: true
+    starter: false
     proj: 7.42
     actual: null
     injury: ''
@@ -1562,3 +1538,19 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
+  - player: Dylan Sampson
+    pos: RB
+    starter: false
+    proj: 7.57
+    actual: null
+    injury: ''
+    pro_team: CLE
+    bye_week: 11
+  - player: Malik Willis
+    pos: QB
+    starter: false
+    proj: 18.52
+    actual: null
+    injury: ''
+    pro_team: MIA
+    bye_week: 6

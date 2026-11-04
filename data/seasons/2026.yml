@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-04T03:52:24+00:00
+updated_at: 2026-11-04T11:44:12+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -138,12 +138,12 @@ matchups:
   - { week:  8, home: schirmerj, away: purpsworth, home_score: 109.9, away_score: 93.5, playoff: false }
   - { week:  8, home: sturmanator15, away: lukstein, home_score: 142.0, away_score: 82.8, playoff: false }
   - { week:  8, home: zachzoske, away: gganoom, home_score: 152.3, away_score: 131.8, playoff: false }
-  - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 127.76, away_proj: 103.18 }
-  - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 136.88, away_proj: 98.15 }
-  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.34, away_proj: 114.98 }
+  - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 127.76, away_proj: 118.39 }
+  - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 139.43, away_proj: 111.65 }
+  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.34, away_proj: 119.37 }
   - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 104.21, away_proj: 101.78 }
-  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 102.44, away_proj: 118.86 }
-  - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 128.62, away_proj: 120.94 }
+  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 116.3, away_proj: 118.86 }
+  - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 128.62, away_proj: 121.0 }
   - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false }
   - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false }
@@ -359,16 +359,16 @@ transactions_known: true
 transactions:
   alexandra: { adds: 12, drops: 11, moves: 23 }
   gganoom: { adds: 8, drops: 6, moves: 14 }
-  jackperkins74: { adds: 49, drops: 35, moves: 84 }
+  jackperkins74: { adds: 50, drops: 36, moves: 86 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 21, drops: 15, moves: 36 }
-  purpsworth: { adds: 12, drops: 6, moves: 18 }
-  schirmerj: { adds: 12, drops: 12, moves: 24 }
-  shawne2520997: { adds: 20, drops: 15, moves: 35 }
-  sturmanator15: { adds: 27, drops: 25, moves: 52 }
+  purpsworth: { adds: 13, drops: 7, moves: 20 }
+  schirmerj: { adds: 13, drops: 13, moves: 26 }
+  shawne2520997: { adds: 22, drops: 17, moves: 39 }
+  sturmanator15: { adds: 29, drops: 27, moves: 56 }
   theoceanpulse: { adds: 27, drops: 23, moves: 50 }
   whowonthelastsuperbowl: { adds: 13, drops: 8, moves: 21 }
-  zachzoske: { adds: 32, drops: 23, moves: 55 }
+  zachzoske: { adds: 33, drops: 24, moves: 57 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -597,6 +597,10 @@ rosters:
   - player: Brian Robinson Jr.
     via: add
     week: 8
+    waiver: true
+  - player: Giants D/ST
+    via: add
+    week: 9
     waiver: true
   gganoom:
   - player: Bijan Robinson
@@ -897,6 +901,14 @@ rosters:
     via: add
     week: 8
     waiver: true
+  - player: Dylan Sampson
+    via: add
+    week: 9
+    waiver: true
+  - player: Malik Willis
+    via: add
+    week: 9
+    waiver: true
   schirmerj:
   - player: Christian McCaffrey
     via: draft
@@ -987,6 +999,10 @@ rosters:
     via: add
     week: 8
     waiver: false
+  - player: Bears D/ST
+    via: add
+    week: 9
+    waiver: true
   lukstein:
   - player: Saquon Barkley
     via: draft
@@ -1194,6 +1210,10 @@ rosters:
     via: add
     week: 8
     waiver: false
+  - player: Buccaneers D/ST
+    via: add
+    week: 9
+    waiver: true
   sturmanator15:
   - player: Jaxon Smith-Njigba
     via: draft
@@ -1346,6 +1366,14 @@ rosters:
     via: add
     week: 8
     waiver: false
+  - player: Adonai Mitchell
+    via: add
+    week: 9
+    waiver: true
+  - player: Saints D/ST
+    via: add
+    week: 9
+    waiver: true
   zachzoske:
   - player: Amon-Ra St. Brown
     via: draft
@@ -1521,6 +1549,10 @@ rosters:
   - player: Chig Okonkwo
     via: add
     week: 8
+    waiver: true
+  - player: Chris Rodriguez Jr.
+    via: add
+    week: 9
     waiver: true
   theoceanpulse:
   - player: Omarion Hampton

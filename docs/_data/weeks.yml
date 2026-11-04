@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power:
   - rank: 1
@@ -3109,7 +3109,7 @@
     live: false
     playoff: false
     home_proj: 127.8
-    away_proj: 103.2
+    away_proj: 118.4
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
@@ -3126,8 +3126,8 @@
     final: false
     live: false
     playoff: false
-    home_proj: 136.9
-    away_proj: 98.2
+    home_proj: 139.4
+    away_proj: 111.7
   - home_id: kevbots22
     home_team: Remember the Nice Guys, ChatGPT
     home_owner: Kevin
@@ -3140,12 +3140,12 @@
     away_record: 3-5
     scored: false
     home_yet: 10
-    away_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
     home_proj: 125.3
-    away_proj: 115.0
+    away_proj: 119.4
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -3175,12 +3175,12 @@
     home_record: 6-2
     away_record: 4-4
     scored: false
-    home_yet: 7
+    home_yet: 9
     away_yet: 10
     final: false
     live: false
     playoff: false
-    home_proj: 102.4
+    home_proj: 116.3
     away_proj: 118.9
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
@@ -3199,11 +3199,11 @@
     live: false
     playoff: false
     home_proj: 128.6
-    away_proj: 120.9
+    away_proj: 121.0
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: true
   power: []
 2026-10:
@@ -3309,7 +3309,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power: []
 2026-11:
@@ -3415,7 +3415,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power: []
 2026-12:
@@ -3521,7 +3521,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power: []
 2026-13:
@@ -3627,7 +3627,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power: []
 2026-14:
@@ -3733,6 +3733,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 3, 7:52 PM PST
+  updated_at: Nov 4, 3:44 AM PST
   current: false
   power: []
