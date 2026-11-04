@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-04T11:44:12+00:00
+updated_at: 2026-11-04T19:03:24+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -142,7 +142,7 @@ matchups:
   - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 139.43, away_proj: 111.65 }
   - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.34, away_proj: 119.37 }
   - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 104.21, away_proj: 101.78 }
-  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 116.3, away_proj: 118.86 }
+  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 126.31, away_proj: 118.86 }
   - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 128.62, away_proj: 121.0 }
   - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false }
@@ -359,14 +359,14 @@ transactions_known: true
 transactions:
   alexandra: { adds: 12, drops: 11, moves: 23 }
   gganoom: { adds: 8, drops: 6, moves: 14 }
-  jackperkins74: { adds: 50, drops: 36, moves: 86 }
+  jackperkins74: { adds: 52, drops: 38, moves: 90 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 21, drops: 15, moves: 36 }
   purpsworth: { adds: 13, drops: 7, moves: 20 }
   schirmerj: { adds: 13, drops: 13, moves: 26 }
   shawne2520997: { adds: 22, drops: 17, moves: 39 }
-  sturmanator15: { adds: 29, drops: 27, moves: 56 }
-  theoceanpulse: { adds: 27, drops: 23, moves: 50 }
+  sturmanator15: { adds: 30, drops: 28, moves: 58 }
+  theoceanpulse: { adds: 28, drops: 24, moves: 52 }
   whowonthelastsuperbowl: { adds: 13, drops: 8, moves: 21 }
   zachzoske: { adds: 33, drops: 24, moves: 57 }
 
@@ -1370,6 +1370,10 @@ rosters:
     via: add
     week: 9
     waiver: true
+  - player: Dominic Zvada
+    via: add
+    week: 9
+    waiver: false
   - player: Saints D/ST
     via: add
     week: 9
@@ -1729,6 +1733,10 @@ rosters:
     via: add
     week: 8
     waiver: true
+  - player: Adonai Mitchell
+    via: add
+    week: 9
+    waiver: false
   kevbots22:
   - player: Chase Brown
     via: draft

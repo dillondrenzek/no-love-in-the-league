@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-04T11:44:08+00:00'
+captured_at: '2026-11-04T19:03:19+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -118,14 +118,6 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
-  - player: Adonai Mitchell
-    pos: WR
-    starter: false
-    proj: 8.11
-    actual: null
-    injury: ''
-    pro_team: NYJ
-    bye_week: 13
   - player: Saints D/ST
     pos: D/ST
     starter: true
@@ -133,6 +125,14 @@ rosters:
     actual: null
     injury: ''
     pro_team: 'NO'
+    bye_week: 8
+  - player: Dominic Zvada
+    pos: K
+    starter: true
+    proj: 10.01
+    actual: null
+    injury: ''
+    pro_team: NYG
     bye_week: 8
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
@@ -215,7 +215,7 @@ rosters:
     starter: true
     proj: 10.1
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: NYJ
     bye_week: 13
   - player: Jaguars D/ST
@@ -582,14 +582,6 @@ rosters:
     injury: ''
     pro_team: NYJ
     bye_week: 13
-  - player: Dallas Goedert
-    pos: TE
-    starter: false
-    proj: 6.7
-    actual: null
-    injury: ''
-    pro_team: PHI
-    bye_week: 10
   - player: Omarion Hampton
     pos: RB
     starter: false
@@ -645,6 +637,14 @@ rosters:
     actual: null
     injury: ''
     pro_team: NYG
+    bye_week: 8
+  - player: Brandon Aiyuk
+    pos: WR
+    starter: false
+    proj: null
+    actual: null
+    injury: OUT
+    pro_team: SF
     bye_week: 8
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
@@ -1218,14 +1218,6 @@ rosters:
     injury: ''
     pro_team: DET
     bye_week: 6
-  - player: Devaughn Vele
-    pos: WR
-    starter: false
-    proj: 7.97
-    actual: null
-    injury: ''
-    pro_team: 'NO'
-    bye_week: 8
   - player: Spencer Shrader
     pos: K
     starter: true
@@ -1290,6 +1282,14 @@ rosters:
     injury: ''
     pro_team: LAC
     bye_week: 7
+  - player: Adonai Mitchell
+    pos: WR
+    starter: false
+    proj: 8.11
+    actual: null
+    injury: ''
+    pro_team: NYJ
+    bye_week: 13
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
