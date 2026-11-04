@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-03T21:21:32+00:00'
+captured_at: '2026-11-04T03:52:21+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -97,7 +97,7 @@ rosters:
   - player: Commanders D/ST
     pos: D/ST
     starter: false
-    proj: 4.57
+    proj: 4.53
     actual: null
     injury: ''
     pro_team: WSH
@@ -165,7 +165,7 @@ rosters:
   - player: Bhayshul Tuten
     pos: RB
     starter: true
-    proj: 14.2
+    proj: 14.21
     actual: null
     injury: QUESTIONABLE
     pro_team: JAX
@@ -221,7 +221,7 @@ rosters:
   - player: Jaguars D/ST
     pos: D/ST
     starter: true
-    proj: 8.59
+    proj: 8.6
     actual: null
     injury: ''
     pro_team: JAX
@@ -237,7 +237,7 @@ rosters:
   - player: Alvin Kamara
     pos: RB
     starter: false
-    proj: 7.65
+    proj: 9.53
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -377,7 +377,7 @@ rosters:
   - player: Browns D/ST
     pos: D/ST
     starter: true
-    proj: 6.22
+    proj: 6.3
     actual: null
     injury: ''
     pro_team: CLE
@@ -529,7 +529,7 @@ rosters:
   - player: Travis Etienne Jr.
     pos: RB
     starter: false
-    proj: 11.94
+    proj: 0.0
     actual: null
     injury: INJURY_RESERVE
     pro_team: 'NO'
@@ -685,7 +685,7 @@ rosters:
   - player: Chris Olave
     pos: WR
     starter: true
-    proj: 11.26
+    proj: 11.36
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -841,9 +841,9 @@ rosters:
   - player: Tyler Loop
     pos: K
     starter: true
-    proj: 7.18
+    proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: INJURY_RESERVE
     pro_team: BAL
     bye_week: 13
   - player: Rashid Shaheed
@@ -933,7 +933,7 @@ rosters:
   - player: Harold Fannin Jr.
     pos: TE
     starter: true
-    proj: 8.99
+    proj: 9.0
     actual: null
     injury: ''
     pro_team: CLE
@@ -1005,7 +1005,7 @@ rosters:
   - player: Kendre Miller
     pos: RB
     starter: false
-    proj: 0.0
+    proj: 8.67
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1041,7 +1041,7 @@ rosters:
   - player: Derrick Henry
     pos: RB
     starter: true
-    proj: 13.32
+    proj: 13.31
     actual: null
     injury: ''
     pro_team: BAL
@@ -1121,7 +1121,7 @@ rosters:
   - player: Tyler Shough
     pos: QB
     starter: false
-    proj: 16.55
+    proj: 16.47
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1221,7 +1221,7 @@ rosters:
   - player: Devaughn Vele
     pos: WR
     starter: false
-    proj: 7.89
+    proj: 7.97
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1293,7 +1293,7 @@ rosters:
   - player: Ja'Kobi Lane
     pos: WR
     starter: false
-    proj: 4.09
+    proj: 4.1
     actual: null
     injury: ''
     pro_team: BAL
@@ -1321,7 +1321,7 @@ rosters:
   - player: Quinshon Judkins
     pos: RB
     starter: true
-    proj: 12.95
+    proj: 12.94
     actual: null
     injury: ''
     pro_team: CLE
@@ -1352,7 +1352,7 @@ rosters:
     bye_week: 14
   - player: Jaylen Warren
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1360,7 +1360,7 @@ rosters:
     bye_week: 9
   - player: Jakobi Meyers
     pos: WR
-    starter: false
+    starter: true
     proj: 9.09
     actual: null
     injury: QUESTIONABLE
@@ -1393,7 +1393,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 6.62
+    proj: 6.54
     actual: null
     injury: ''
     pro_team: DEN
@@ -1437,7 +1437,7 @@ rosters:
   - player: James Cook III
     pos: RB
     starter: true
-    proj: 17.53
+    proj: 17.54
     actual: null
     injury: ''
     pro_team: BUF
@@ -1541,7 +1541,7 @@ rosters:
   - player: Brenton Strange
     pos: TE
     starter: true
-    proj: 7.51
+    proj: 7.5
     actual: null
     injury: ''
     pro_team: JAX
