@@ -11201,7 +11201,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 35.2
+    tx_per_year: 35.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -11225,7 +11225,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 4-4
-    tx: 21
+    tx: 22
     in_progress: true
     pf: 937.3
     pa: 890.1
@@ -11623,6 +11623,10 @@ whowonthelastsuperbowl:
     - player: Corey Kiner
       via: add
       week: 8
+      waiver: false
+    - player: Alvin Kamara
+      via: add
+      week: 9
       waiver: false
   - year: 2025
     players:
@@ -12942,7 +12946,7 @@ whowonthelastsuperbowl:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Corey Kiner
+    - player: Alvin Kamara
       pos: RB
       cost: R13
       basis: Undrafted
@@ -12961,11 +12965,6 @@ whowonthelastsuperbowl:
       pos: WR
       cost: R4
       basis: Drafted R6
-      ineligible: false
-    - player: Chris Godwin Jr.
-      pos: WR
-      cost: R5
-      basis: Drafted R7
       ineligible: false
     - player: Stefon Diggs
       pos: WR

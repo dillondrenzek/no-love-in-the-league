@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-05T11:42:58+00:00
+updated_at: 2026-11-05T19:13:26+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -138,12 +138,12 @@ matchups:
   - { week:  8, home: schirmerj, away: purpsworth, home_score: 109.9, away_score: 93.5, playoff: false }
   - { week:  8, home: sturmanator15, away: lukstein, home_score: 142.0, away_score: 82.8, playoff: false }
   - { week:  8, home: zachzoske, away: gganoom, home_score: 152.3, away_score: 131.8, playoff: false }
-  - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 128.22, away_proj: 107.32 }
-  - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 140.17, away_proj: 108.52 }
-  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.34, away_proj: 119.55 }
-  - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 103.58, away_proj: 101.99 }
-  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 131.27, away_proj: 118.86 }
-  - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 128.85, away_proj: 121.0 }
+  - { week:  9, home: gganoom, away: shawne2520997, playoff: false, played: false, home_proj: 128.24, away_proj: 110.02 }
+  - { week:  9, home: jackperkins74, away: theoceanpulse, playoff: false, played: false, home_proj: 140.35, away_proj: 108.47 }
+  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.5, away_proj: 116.9 }
+  - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 103.58, away_proj: 102.0 }
+  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 125.06, away_proj: 120.37 }
+  - { week:  9, home: zachzoske, away: schirmerj, playoff: false, played: false, home_proj: 128.84, away_proj: 121.88 }
   - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false }
   - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false }
@@ -367,7 +367,7 @@ transactions:
   shawne2520997: { adds: 22, drops: 17, moves: 39 }
   sturmanator15: { adds: 31, drops: 29, moves: 60 }
   theoceanpulse: { adds: 28, drops: 24, moves: 52 }
-  whowonthelastsuperbowl: { adds: 13, drops: 8, moves: 21 }
+  whowonthelastsuperbowl: { adds: 14, drops: 8, moves: 22 }
   zachzoske: { adds: 33, drops: 24, moves: 57 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
@@ -1912,4 +1912,8 @@ rosters:
   - player: Corey Kiner
     via: add
     week: 8
+    waiver: false
+  - player: Alvin Kamara
+    via: add
+    week: 9
     waiver: false

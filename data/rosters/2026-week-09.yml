@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-05T11:42:51+00:00'
+captured_at: '2026-11-05T19:13:22+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -32,8 +32,8 @@ rosters:
     bye_week: 13
   - player: Mike Evans
     pos: WR
-    starter: true
-    proj: 13.38
+    starter: false
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: SF
@@ -65,7 +65,7 @@ rosters:
   - player: Kyle Monangai
     pos: RB
     starter: false
-    proj: 7.91
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: CHI
@@ -88,7 +88,7 @@ rosters:
     bye_week: 9
   - player: Ryan Flournoy
     pos: WR
-    starter: false
+    starter: true
     proj: 7.25
     actual: null
     injury: ''
@@ -105,7 +105,7 @@ rosters:
   - player: Caleb Williams
     pos: QB
     starter: true
-    proj: 18.05
+    proj: 17.97
     actual: null
     injury: ''
     pro_team: CHI
@@ -229,7 +229,7 @@ rosters:
   - player: Luther Burden III
     pos: WR
     starter: true
-    proj: 11.38
+    proj: 11.37
     actual: null
     injury: ''
     pro_team: CHI
@@ -265,7 +265,7 @@ rosters:
   - player: Christian McCaffrey
     pos: RB
     starter: true
-    proj: 20.51
+    proj: 21.24
     actual: null
     injury: QUESTIONABLE
     pro_team: SF
@@ -281,7 +281,7 @@ rosters:
   - player: Jaylen Waddle
     pos: WR
     starter: true
-    proj: 9.07
+    proj: 9.2
     actual: null
     injury: ''
     pro_team: DEN
@@ -313,7 +313,7 @@ rosters:
   - player: Rachaad White
     pos: RB
     starter: true
-    proj: 10.95
+    proj: 10.96
     actual: null
     injury: ''
     pro_team: WSH
@@ -377,7 +377,7 @@ rosters:
   - player: Bears D/ST
     pos: D/ST
     starter: true
-    proj: 6.36
+    proj: 6.37
     actual: null
     injury: ''
     pro_team: CHI
@@ -545,7 +545,7 @@ rosters:
   - player: Trevor Lawrence
     pos: QB
     starter: true
-    proj: 22.59
+    proj: 22.57
     actual: null
     injury: ''
     pro_team: JAX
@@ -601,7 +601,7 @@ rosters:
   - player: George Kittle
     pos: TE
     starter: true
-    proj: 13.28
+    proj: 13.47
     actual: null
     injury: ''
     pro_team: SF
@@ -617,7 +617,7 @@ rosters:
   - player: Jordan Addison
     pos: WR
     starter: true
-    proj: 9.12
+    proj: 9.21
     actual: null
     injury: ''
     pro_team: MIN
@@ -633,7 +633,7 @@ rosters:
   - player: Giants D/ST
     pos: D/ST
     starter: true
-    proj: 7.58
+    proj: 7.5
     actual: null
     injury: ''
     pro_team: NYG
@@ -661,7 +661,7 @@ rosters:
   - player: Justin Jefferson
     pos: WR
     starter: true
-    proj: 14.89
+    proj: 15.05
     actual: null
     injury: ''
     pro_team: MIN
@@ -825,7 +825,7 @@ rosters:
   - player: J.K. Dobbins
     pos: RB
     starter: true
-    proj: 7.62
+    proj: 7.63
     actual: null
     injury: ''
     pro_team: DEN
@@ -916,7 +916,7 @@ rosters:
     bye_week: 13
   - player: Emeka Egbuka
     pos: WR
-    starter: false
+    starter: true
     proj: 9.41
     actual: null
     injury: QUESTIONABLE
@@ -949,7 +949,7 @@ rosters:
   - player: Jayden Daniels
     pos: QB
     starter: true
-    proj: 21.24
+    proj: 21.25
     actual: null
     injury: ''
     pro_team: WSH
@@ -964,8 +964,8 @@ rosters:
     bye_week: 6
   - player: Deebo Samuel Sr.
     pos: WR
-    starter: true
-    proj: 12.07
+    starter: false
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: SF
@@ -1081,7 +1081,7 @@ rosters:
   - player: Aaron Jones Sr.
     pos: RB
     starter: true
-    proj: 7.21
+    proj: 7.35
     actual: null
     injury: ''
     pro_team: MIN
@@ -1089,7 +1089,7 @@ rosters:
   - player: Stefon Diggs
     pos: WR
     starter: true
-    proj: 9.87
+    proj: 9.88
     actual: null
     injury: ''
     pro_team: WSH
@@ -1113,7 +1113,7 @@ rosters:
   - player: Texans D/ST
     pos: D/ST
     starter: false
-    proj: 7.8
+    proj: 7.71
     actual: null
     injury: ''
     pro_team: HOU
@@ -1142,30 +1142,22 @@ rosters:
     injury: QUESTIONABLE
     pro_team: TB
     bye_week: 10
-  - player: Chris Godwin Jr.
-    pos: WR
-    starter: true
-    proj: 6.26
-    actual: null
-    injury: ''
-    pro_team: TB
-    bye_week: 10
   - player: Courtland Sutton
     pos: WR
-    starter: false
-    proj: 7.48
+    starter: true
+    proj: 7.62
     actual: null
     injury: ''
     pro_team: DEN
     bye_week: 10
-  - player: Corey Kiner
+  - player: Alvin Kamara
     pos: RB
     starter: false
-    proj: 3.79
+    proj: 9.53
     actual: null
-    injury: ''
-    pro_team: NE
-    bye_week: 11
+    injury: QUESTIONABLE
+    pro_team: 'NO'
+    bye_week: 8
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
   team_id: 12
   team_name: The ChoSimba Ones
@@ -1189,7 +1181,7 @@ rosters:
   - player: Colston Loveland
     pos: TE
     starter: true
-    proj: 9.81
+    proj: 9.8
     actual: null
     injury: ''
     pro_team: CHI
@@ -1197,7 +1189,7 @@ rosters:
   - player: Jordan Mason
     pos: RB
     starter: false
-    proj: 7.34
+    proj: 7.65
     actual: null
     injury: ''
     pro_team: MIN
@@ -1253,7 +1245,7 @@ rosters:
   - player: Chiefs D/ST
     pos: D/ST
     starter: true
-    proj: 6.21
+    proj: 6.12
     actual: null
     injury: ''
     pro_team: KC
@@ -1269,7 +1261,7 @@ rosters:
   - player: Jonah Coleman
     pos: RB
     starter: true
-    proj: 13.01
+    proj: 13.06
     actual: null
     injury: ''
     pro_team: DEN
@@ -1307,7 +1299,7 @@ rosters:
     starter: true
     proj: 14.29
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: NYG
     bye_week: 8
   - player: Quinshon Judkins
@@ -1361,7 +1353,7 @@ rosters:
   - player: Brock Purdy
     pos: QB
     starter: true
-    proj: 24.22
+    proj: 24.24
     actual: null
     injury: ''
     pro_team: SF
@@ -1445,7 +1437,7 @@ rosters:
   - player: D'Andre Swift
     pos: RB
     starter: true
-    proj: 14.5
+    proj: 17.2
     actual: null
     injury: ''
     pro_team: CHI
@@ -1501,7 +1493,7 @@ rosters:
   - player: Kaelon Black
     pos: RB
     starter: false
-    proj: 7.82
+    proj: 8.29
     actual: null
     injury: ''
     pro_team: SF
