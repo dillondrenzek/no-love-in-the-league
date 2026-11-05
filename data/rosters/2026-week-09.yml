@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-04T19:03:19+00:00'
+captured_at: '2026-11-05T00:37:20+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -9,7 +9,7 @@ rosters:
   - player: Jaxon Smith-Njigba
     pos: WR
     starter: true
-    proj: 19.03
+    proj: 18.61
     actual: null
     injury: ''
     pro_team: SEA
@@ -78,14 +78,6 @@ rosters:
     injury: INJURY_RESERVE
     pro_team: 'NO'
     bye_week: 8
-  - player: Bryce Young
-    pos: QB
-    starter: false
-    proj: 17.08
-    actual: null
-    injury: ''
-    pro_team: CAR
-    bye_week: 5
   - player: Chris Boswell
     pos: K
     starter: false
@@ -105,7 +97,7 @@ rosters:
   - player: Woody Marks
     pos: RB
     starter: true
-    proj: 7.47
+    proj: 13.42
     actual: null
     injury: ''
     pro_team: HOU
@@ -121,7 +113,7 @@ rosters:
   - player: Saints D/ST
     pos: D/ST
     starter: true
-    proj: 6.39
+    proj: 5.82
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -134,6 +126,14 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
+  - player: Marvin Harrison Jr.
+    pos: WR
+    starter: false
+    proj: 6.34
+    actual: null
+    injury: ''
+    pro_team: HOU
+    bye_week: 8
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
@@ -143,7 +143,7 @@ rosters:
     starter: true
     proj: 16.81
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
   - player: Cam Skattebo
@@ -181,7 +181,7 @@ rosters:
   - player: Ashton Jeanty
     pos: RB
     starter: true
-    proj: 12.27
+    proj: 12.5
     actual: null
     injury: ''
     pro_team: LV
@@ -197,7 +197,7 @@ rosters:
   - player: Zach Charbonnet
     pos: RB
     starter: false
-    proj: 10.4
+    proj: 10.22
     actual: null
     injury: ''
     pro_team: SEA
@@ -371,7 +371,7 @@ rosters:
     starter: false
     proj: 8.55
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
   - player: Bears D/ST
@@ -389,9 +389,9 @@ rosters:
   - player: Saquon Barkley
     pos: RB
     starter: true
-    proj: 12.2
+    proj: 11.81
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: DeVonta Smith
@@ -405,7 +405,7 @@ rosters:
   - player: Jadarian Price
     pos: RB
     starter: true
-    proj: 10.29
+    proj: 10.16
     actual: null
     injury: ''
     pro_team: SEA
@@ -445,7 +445,7 @@ rosters:
   - player: Eagles D/ST
     pos: D/ST
     starter: true
-    proj: 5.12
+    proj: 5.03
     actual: null
     injury: ''
     pro_team: PHI
@@ -477,23 +477,15 @@ rosters:
   - player: C.J. Stroud
     pos: QB
     starter: true
-    proj: 18.34
+    proj: 18.46
     actual: null
     injury: ''
     pro_team: HOU
     bye_week: 8
-  - player: Michael Penix Jr.
-    pos: QB
-    starter: false
-    proj: 17.3
-    actual: null
-    injury: ''
-    pro_team: ATL
-    bye_week: 11
   - player: Makai Lemon
     pos: WR
     starter: true
-    proj: 7.87
+    proj: 7.73
     actual: null
     injury: ''
     pro_team: PHI
@@ -513,6 +505,14 @@ rosters:
     actual: null
     injury: ''
     pro_team: TB
+    bye_week: 10
+  - player: Elijah Mitchell
+    pos: RB
+    starter: false
+    proj: 7.81
+    actual: null
+    injury: ''
+    pro_team: PHI
     bye_week: 10
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
@@ -561,7 +561,7 @@ rosters:
   - player: Mike Washington Jr.
     pos: RB
     starter: false
-    proj: 6.89
+    proj: 6.64
     actual: null
     injury: ''
     pro_team: LV
@@ -633,7 +633,7 @@ rosters:
   - player: Giants D/ST
     pos: D/ST
     starter: true
-    proj: 6.84
+    proj: 7.58
     actual: null
     injury: ''
     pro_team: NYG
@@ -693,7 +693,7 @@ rosters:
   - player: Rhamondre Stevenson
     pos: RB
     starter: false
-    proj: 10.39
+    proj: 10.36
     actual: null
     injury: ''
     pro_team: NE
@@ -703,7 +703,7 @@ rosters:
     starter: true
     proj: 8.65
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: KC
     bye_week: 5
   - player: Chuba Hubbard
@@ -795,7 +795,7 @@ rosters:
     starter: false
     proj: 11.18
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: KC
     bye_week: 5
   - player: Lamar Jackson
@@ -833,9 +833,9 @@ rosters:
   - player: Denzel Boston
     pos: WR
     starter: true
-    proj: 10.54
+    proj: 10.71
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CLE
     bye_week: 11
   - player: Tyler Loop
@@ -849,7 +849,7 @@ rosters:
   - player: Rashid Shaheed
     pos: WR
     starter: false
-    proj: 8.58
+    proj: 8.38
     actual: null
     injury: QUESTIONABLE
     pro_team: SEA
@@ -865,7 +865,7 @@ rosters:
   - player: DeMario Douglas
     pos: WR
     starter: false
-    proj: 7.65
+    proj: 9.32
     actual: null
     injury: ''
     pro_team: NE
@@ -873,7 +873,7 @@ rosters:
   - player: Hunter Henry
     pos: TE
     starter: true
-    proj: 7.69
+    proj: 7.65
     actual: null
     injury: QUESTIONABLE
     pro_team: NE
@@ -897,7 +897,7 @@ rosters:
   - player: Lions D/ST
     pos: D/ST
     starter: true
-    proj: 5.87
+    proj: 5.95
     actual: null
     injury: ''
     pro_team: DET
@@ -933,7 +933,7 @@ rosters:
   - player: Harold Fannin Jr.
     pos: TE
     starter: true
-    proj: 9.0
+    proj: 9.18
     actual: null
     injury: ''
     pro_team: CLE
@@ -1172,8 +1172,8 @@ rosters:
   players:
   - player: A.J. Brown
     pos: WR
-    starter: true
-    proj: 11.24
+    starter: false
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: NE
@@ -1284,7 +1284,7 @@ rosters:
     bye_week: 7
   - player: Adonai Mitchell
     pos: WR
-    starter: false
+    starter: true
     proj: 8.11
     actual: null
     injury: ''
@@ -1313,7 +1313,7 @@ rosters:
   - player: Quinshon Judkins
     pos: RB
     starter: true
-    proj: 12.94
+    proj: 13.24
     actual: null
     injury: ''
     pro_team: CLE
@@ -1321,7 +1321,7 @@ rosters:
   - player: TreVeyon Henderson
     pos: RB
     starter: false
-    proj: 5.46
+    proj: 5.45
     actual: null
     injury: QUESTIONABLE
     pro_team: NE
@@ -1409,7 +1409,7 @@ rosters:
   - player: KC Concepcion
     pos: WR
     starter: true
-    proj: 8.72
+    proj: 8.88
     actual: null
     injury: ''
     pro_team: CLE
@@ -1439,7 +1439,7 @@ rosters:
     starter: true
     proj: 10.85
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DAL
     bye_week: 14
   - player: D'Andre Swift
@@ -1453,7 +1453,7 @@ rosters:
   - player: Nico Collins
     pos: WR
     starter: true
-    proj: 11.52
+    proj: 11.47
     actual: null
     injury: ''
     pro_team: HOU
@@ -1485,7 +1485,7 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: true
-    proj: 5.2
+    proj: 5.29
     actual: null
     injury: ''
     pro_team: LAR
@@ -1509,9 +1509,9 @@ rosters:
   - player: David Montgomery
     pos: RB
     starter: true
-    proj: 11.11
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: HOU
     bye_week: 8
   - player: Brenton Strange
@@ -1541,7 +1541,7 @@ rosters:
   - player: Dylan Sampson
     pos: RB
     starter: false
-    proj: 7.57
+    proj: 8.25
     actual: null
     injury: ''
     pro_team: CLE

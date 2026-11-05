@@ -17,7 +17,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 92.8
+    tx_per_year: 93.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -40,7 +40,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
     record: 6-2
-    tx: 58
+    tx: 60
     in_progress: true
     pf: 1123.4
     pa: 966.3
@@ -546,6 +546,10 @@ sturmanator15:
       week: 9
       waiver: true
     - player: Dominic Zvada
+      via: add
+      week: 9
+      waiver: false
+    - player: Marvin Harrison Jr.
       via: add
       week: 9
       waiver: false
@@ -2545,11 +2549,6 @@ sturmanator15:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Bryce Young
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Kenneth Walker III
       pos: RB
       cost: Ineligible
@@ -2589,6 +2588,11 @@ sturmanator15:
       pos: WR
       cost: R3
       basis: Drafted R5
+      ineligible: false
+    - player: Marvin Harrison Jr.
+      pos: WR
+      cost: R4
+      basis: Drafted R6
       ineligible: false
     - player: Jordyn Tyson
       pos: WR
@@ -20371,7 +20375,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 48.0
+    tx_per_year: 48.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -20394,7 +20398,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-6
-    tx: 36
+    tx: 38
     in_progress: true
     pf: 652.3
     pa: 988.8
@@ -20872,6 +20876,10 @@ lukstein:
       via: add
       week: 8
       waiver: true
+    - player: Elijah Mitchell
+      via: add
+      week: 9
+      waiver: false
   - year: 2025
     players:
     - player: Amon-Ra St. Brown
@@ -22247,11 +22255,6 @@ lukstein:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Michael Penix Jr.
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Saquon Barkley
       pos: RB
       cost: Ineligible
@@ -22266,6 +22269,11 @@ lukstein:
       pos: RB
       cost: R5
       basis: Drafted R7
+      ineligible: false
+    - player: Elijah Mitchell
+      pos: RB
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Kimani Vidal
       pos: RB
