@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power:
   - rank: 1
@@ -3090,7 +3090,7 @@
       the commish and win No. 100.
 2026-9:
   week: 9
-  state: future
+  state: in_progress
   scoreboard:
   - home_id: gganoom
     home_team: One Big Beautiful Dillbot
@@ -3102,12 +3102,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     home_record: 4-4
     away_record: 3-5
-    scored: false
-    home_yet: 10
-    away_yet: 9
+    scored: true
+    home_yet: 9
+    away_yet: 8
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 8.5
+    away_score: 3.2
+    winner_id: null
+    tie: false
+    margin: 5.3
     home_proj: 128.3
     away_proj: 110.3
   - home_id: jackperkins74
@@ -3120,12 +3125,17 @@
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     home_record: 6-2
     away_record: 2-5-1
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 8
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 27.6
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 27.6
     home_proj: 140.3
     away_proj: 108.5
   - home_id: kevbots22
@@ -3158,7 +3168,7 @@
     away_record: 3-5
     scored: false
     home_yet: 10
-    away_yet: 10
+    away_yet: 9
     final: false
     live: false
     playoff: false
@@ -3174,12 +3184,17 @@
     away_logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     home_record: 6-2
     away_record: 4-4
-    scored: false
-    home_yet: 10
-    away_yet: 10
+    scored: true
+    home_yet: 9
+    away_yet: 9
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 3.8
+    away_score: 5.7
+    winner_id: null
+    tie: false
+    margin: 1.9
     home_proj: 125.2
     away_proj: 120.4
   - home_id: zachzoske
@@ -3192,13 +3207,18 @@
     away_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     home_record: 6-2
     away_record: 5-3
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 7
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
-    home_proj: 128.8
+    home_score: 37.9
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 37.9
+    home_proj: 126.1
     away_proj: 120.2
   highlights: []
   projections:
@@ -3293,7 +3313,7 @@
     decided: false
     result: null
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: true
   power:
   - rank: 1
@@ -3519,7 +3539,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power: []
 2026-11:
@@ -3625,7 +3645,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power: []
 2026-12:
@@ -3731,7 +3751,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power: []
 2026-13:
@@ -3837,7 +3857,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power: []
 2026-14:
@@ -3943,6 +3963,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 5, 4:37 PM PST
+  updated_at: Nov 6, 3:41 AM PST
   current: false
   power: []

@@ -11201,7 +11201,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 35.3
+    tx_per_year: 35.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -11225,7 +11225,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
     record: 4-4
-    tx: 22
+    tx: 23
     in_progress: true
     pf: 937.3
     pa: 890.1
@@ -11628,6 +11628,10 @@ whowonthelastsuperbowl:
       via: add
       week: 9
       waiver: false
+    - player: Devaughn Vele
+      via: add
+      week: 9
+      waiver: true
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -12970,6 +12974,11 @@ whowonthelastsuperbowl:
       pos: WR
       cost: R7
       basis: Drafted R9
+      ineligible: false
+    - player: Devaughn Vele
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Sam LaPorta
       pos: TE
