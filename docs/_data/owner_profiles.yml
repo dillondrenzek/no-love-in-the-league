@@ -20374,7 +20374,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 48.2
+    tx_per_year: 48.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -20397,7 +20397,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-6
-    tx: 38
+    tx: 40
     in_progress: true
     pf: 652.3
     pa: 988.8
@@ -20875,6 +20875,10 @@ lukstein:
       via: add
       week: 8
       waiver: true
+    - player: Demarcus Robinson
+      via: add
+      week: 9
+      waiver: false
     - player: Elijah Mitchell
       via: add
       week: 9
@@ -22304,12 +22308,12 @@ lukstein:
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Malik Washington
+    - player: Demarcus Robinson
       pos: WR
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Tez Johnson
+    - player: Malik Washington
       pos: WR
       cost: R13
       basis: Undrafted

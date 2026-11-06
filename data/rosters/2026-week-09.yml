@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-05T19:13:22+00:00'
+captured_at: '2026-11-06T00:37:11+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -89,7 +89,7 @@ rosters:
   - player: Ryan Flournoy
     pos: WR
     starter: true
-    proj: 7.25
+    proj: 7.35
     actual: null
     injury: ''
     pro_team: DAL
@@ -265,7 +265,7 @@ rosters:
   - player: Christian McCaffrey
     pos: RB
     starter: true
-    proj: 21.24
+    proj: 19.59
     actual: null
     injury: QUESTIONABLE
     pro_team: SF
@@ -313,7 +313,7 @@ rosters:
   - player: Rachaad White
     pos: RB
     starter: true
-    proj: 10.96
+    proj: 10.95
     actual: null
     injury: ''
     pro_team: WSH
@@ -369,7 +369,7 @@ rosters:
   - player: Treylon Burks
     pos: WR
     starter: false
-    proj: 8.55
+    proj: 8.54
     actual: null
     injury: QUESTIONABLE
     pro_team: WSH
@@ -498,14 +498,6 @@ rosters:
     injury: ''
     pro_team: LAC
     bye_week: 7
-  - player: Tez Johnson
-    pos: WR
-    starter: false
-    proj: 4.75
-    actual: null
-    injury: ''
-    pro_team: TB
-    bye_week: 10
   - player: Elijah Mitchell
     pos: RB
     starter: false
@@ -514,6 +506,14 @@ rosters:
     injury: ''
     pro_team: PHI
     bye_week: 10
+  - player: Demarcus Robinson
+    pos: WR
+    starter: false
+    proj: 8.32
+    actual: null
+    injury: INJURY_RESERVE
+    pro_team: SF
+    bye_week: 8
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
   team_name: Gibbed for your pleasure
@@ -693,7 +693,7 @@ rosters:
   - player: Rhamondre Stevenson
     pos: RB
     starter: false
-    proj: 10.36
+    proj: 13.12
     actual: null
     injury: ''
     pro_team: NE
@@ -803,7 +803,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: OUT
+    injury: INJURY_RESERVE
     pro_team: BAL
     bye_week: 13
   - player: Tyler Warren
@@ -817,7 +817,7 @@ rosters:
   - player: Javonte Williams
     pos: RB
     starter: true
-    proj: 16.46
+    proj: 16.49
     actual: null
     injury: ''
     pro_team: DAL
@@ -865,7 +865,7 @@ rosters:
   - player: DeMario Douglas
     pos: WR
     starter: false
-    proj: 9.32
+    proj: 9.26
     actual: null
     injury: ''
     pro_team: NE
@@ -873,7 +873,7 @@ rosters:
   - player: Hunter Henry
     pos: TE
     starter: true
-    proj: 7.65
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: NE
@@ -935,7 +935,7 @@ rosters:
     starter: true
     proj: 9.18
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CLE
     bye_week: 11
   - player: Rico Dowdle
@@ -949,7 +949,7 @@ rosters:
   - player: Jayden Daniels
     pos: QB
     starter: true
-    proj: 21.25
+    proj: 21.26
     actual: null
     injury: ''
     pro_team: WSH
@@ -1049,7 +1049,7 @@ rosters:
   - player: CeeDee Lamb
     pos: WR
     starter: true
-    proj: 16.89
+    proj: 17.09
     actual: null
     injury: ''
     pro_team: DAL
@@ -1089,7 +1089,7 @@ rosters:
   - player: Stefon Diggs
     pos: WR
     starter: true
-    proj: 9.88
+    proj: 9.86
     actual: null
     injury: ''
     pro_team: WSH
@@ -1105,14 +1105,14 @@ rosters:
   - player: Drake Maye
     pos: QB
     starter: true
-    proj: 22.97
+    proj: 22.94
     actual: null
     injury: ''
     pro_team: NE
     bye_week: 11
   - player: Texans D/ST
     pos: D/ST
-    starter: false
+    starter: true
     proj: 7.71
     actual: null
     injury: ''
@@ -1128,7 +1128,7 @@ rosters:
     bye_week: 8
   - player: Seahawks D/ST
     pos: D/ST
-    starter: true
+    starter: false
     proj: 7.85
     actual: null
     injury: ''
@@ -1223,7 +1223,7 @@ rosters:
     starter: false
     proj: 6.89
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: Breece Hall
@@ -1313,7 +1313,7 @@ rosters:
   - player: TreVeyon Henderson
     pos: RB
     starter: false
-    proj: 5.45
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: NE
@@ -1353,7 +1353,7 @@ rosters:
   - player: Brock Purdy
     pos: QB
     starter: true
-    proj: 24.24
+    proj: 24.29
     actual: null
     injury: ''
     pro_team: SF
@@ -1395,7 +1395,7 @@ rosters:
     starter: false
     proj: 3.96
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: KC Concepcion
@@ -1429,7 +1429,7 @@ rosters:
   - player: George Pickens
     pos: WR
     starter: true
-    proj: 10.85
+    proj: 10.97
     actual: null
     injury: QUESTIONABLE
     pro_team: DAL
@@ -1477,7 +1477,7 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: true
-    proj: 5.29
+    proj: 5.45
     actual: null
     injury: ''
     pro_team: LAR
@@ -1493,14 +1493,14 @@ rosters:
   - player: Kaelon Black
     pos: RB
     starter: false
-    proj: 8.29
+    proj: 9.85
     actual: null
     injury: ''
     pro_team: SF
     bye_week: 8
   - player: David Montgomery
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: OUT
@@ -1517,7 +1517,7 @@ rosters:
   - player: Antonio Williams
     pos: WR
     starter: false
-    proj: 7.42
+    proj: 7.4
     actual: null
     injury: ''
     pro_team: WSH
