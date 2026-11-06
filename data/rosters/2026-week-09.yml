@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-06T11:41:06+00:00'
+captured_at: '2026-11-06T18:40:06+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -188,7 +188,7 @@ rosters:
     bye_week: 13
   - player: Josh Downs
     pos: WR
-    starter: false
+    starter: true
     proj: 6.92
     actual: null
     injury: ''
@@ -212,10 +212,10 @@ rosters:
     bye_week: 9
   - player: Garrett Wilson
     pos: WR
-    starter: true
-    proj: 10.1
+    starter: false
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: NYJ
     bye_week: 13
   - player: Jaguars D/ST
@@ -258,6 +258,14 @@ rosters:
     injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
+  - player: Terrance Ferguson
+    pos: TE
+    starter: false
+    proj: 0.0
+    actual: null
+    injury: INJURY_RESERVE
+    pro_team: LAR
+    bye_week: 11
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -313,7 +321,7 @@ rosters:
   - player: Rachaad White
     pos: RB
     starter: true
-    proj: 10.95
+    proj: 11.12
     actual: null
     injury: ''
     pro_team: WSH
@@ -369,7 +377,7 @@ rosters:
   - player: Treylon Burks
     pos: WR
     starter: false
-    proj: 8.54
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: WSH
@@ -437,7 +445,7 @@ rosters:
   - player: Kyle Pitts Sr.
     pos: TE
     starter: true
-    proj: 8.17
+    proj: 8.2
     actual: null
     injury: ''
     pro_team: ATL
@@ -461,7 +469,7 @@ rosters:
   - player: Malik Washington
     pos: WR
     starter: true
-    proj: 8.26
+    proj: 8.27
     actual: null
     injury: ''
     pro_team: MIA
@@ -545,7 +553,7 @@ rosters:
   - player: Trevor Lawrence
     pos: QB
     starter: true
-    proj: 22.57
+    proj: 22.56
     actual: 14.5
     injury: ''
     pro_team: JAX
@@ -625,9 +633,9 @@ rosters:
   - player: Brian Robinson Jr.
     pos: RB
     starter: false
-    proj: 5.56
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: ATL
     bye_week: 11
   - player: Giants D/ST
@@ -865,7 +873,7 @@ rosters:
   - player: DeMario Douglas
     pos: WR
     starter: false
-    proj: 9.26
+    proj: 9.33
     actual: null
     injury: ''
     pro_team: NE
@@ -873,7 +881,7 @@ rosters:
   - player: Hunter Henry
     pos: TE
     starter: true
-    proj: 0.0
+    proj: 7.65
     actual: null
     injury: QUESTIONABLE
     pro_team: NE
@@ -897,7 +905,7 @@ rosters:
   - player: Lions D/ST
     pos: D/ST
     starter: true
-    proj: 5.95
+    proj: 5.87
     actual: null
     injury: ''
     pro_team: DET
@@ -973,7 +981,7 @@ rosters:
   - player: Drake London
     pos: WR
     starter: true
-    proj: 13.64
+    proj: 13.69
     actual: null
     injury: ''
     pro_team: ATL
@@ -989,7 +997,7 @@ rosters:
   - player: Ollie Gordon II
     pos: RB
     starter: true
-    proj: 15.62
+    proj: 15.63
     actual: null
     injury: ''
     pro_team: MIA
@@ -1005,7 +1013,7 @@ rosters:
   - player: Omar Cooper Jr.
     pos: WR
     starter: true
-    proj: 7.52
+    proj: 8.95
     actual: null
     injury: ''
     pro_team: NYJ
@@ -1089,7 +1097,7 @@ rosters:
   - player: Stefon Diggs
     pos: WR
     starter: true
-    proj: 9.86
+    proj: 10.28
     actual: null
     injury: ''
     pro_team: WSH
@@ -1175,7 +1183,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: NE
     bye_week: 11
   - player: Christian Watson
@@ -1237,7 +1245,7 @@ rosters:
   - player: Breece Hall
     pos: RB
     starter: true
-    proj: 9.6
+    proj: 9.58
     actual: null
     injury: QUESTIONABLE
     pro_team: NYJ
@@ -1261,7 +1269,7 @@ rosters:
   - player: Caleb Douglas
     pos: WR
     starter: true
-    proj: 7.99
+    proj: 8.0
     actual: null
     injury: ''
     pro_team: MIA
@@ -1285,7 +1293,7 @@ rosters:
   - player: Adonai Mitchell
     pos: WR
     starter: true
-    proj: 8.11
+    proj: 9.42
     actual: null
     injury: ''
     pro_team: NYJ
@@ -1297,7 +1305,7 @@ rosters:
   - player: Bijan Robinson
     pos: RB
     starter: true
-    proj: 16.94
+    proj: 18.02
     actual: null
     injury: ''
     pro_team: ATL
@@ -1323,7 +1331,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: NE
     bye_week: 11
   - player: Brock Bowers
@@ -1353,7 +1361,7 @@ rosters:
   - player: Jakobi Meyers
     pos: WR
     starter: true
-    proj: 9.09
+    proj: 9.08
     actual: 8.5
     injury: QUESTIONABLE
     pro_team: JAX
@@ -1525,7 +1533,7 @@ rosters:
   - player: Antonio Williams
     pos: WR
     starter: false
-    proj: 7.4
+    proj: 8.13
     actual: null
     injury: ''
     pro_team: WSH
@@ -1549,7 +1557,7 @@ rosters:
   - player: Malik Willis
     pos: QB
     starter: false
-    proj: 18.52
+    proj: 18.54
     actual: null
     injury: ''
     pro_team: MIA

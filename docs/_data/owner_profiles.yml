@@ -5829,7 +5829,7 @@ zachzoske:
     playoff_apps: 5
     trades: 20
     trades_known: true
-    tx_per_year: 107.9
+    tx_per_year: 108.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -5852,7 +5852,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 3rd
     record: 6-2
-    tx: 57
+    tx: 58
     in_progress: true
     pf: 1010.5
     pa: 891.0
@@ -6531,6 +6531,10 @@ zachzoske:
       via: add
       week: 9
       waiver: true
+    - player: Terrance Ferguson
+      via: add
+      week: 9
+      waiver: false
   - year: 2025
     players:
     - player: CeeDee Lamb
@@ -8769,6 +8773,11 @@ zachzoske:
       pos: TE
       cost: R8
       basis: Drafted R10
+      ineligible: false
+    - player: Terrance Ferguson
+      pos: TE
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Cam Little
       pos: K
