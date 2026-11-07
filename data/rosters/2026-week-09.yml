@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-07T17:09:27+00:00'
+captured_at: '2026-11-07T23:14:22+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -73,9 +73,9 @@ rosters:
   - player: Jordyn Tyson
     pos: WR
     starter: false
-    proj: 0.0
+    proj: 4.81
     actual: null
-    injury: INJURY_RESERVE
+    injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
   - player: Chris Boswell
@@ -625,7 +625,7 @@ rosters:
   - player: Jordan Addison
     pos: WR
     starter: true
-    proj: 9.21
+    proj: 9.23
     actual: null
     injury: ''
     pro_team: MIN
@@ -635,7 +635,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: OUT
+    injury: INJURY_RESERVE
     pro_team: ATL
     bye_week: 11
   - player: Giants D/ST
@@ -669,7 +669,7 @@ rosters:
   - player: Justin Jefferson
     pos: WR
     starter: true
-    proj: 15.05
+    proj: 15.1
     actual: null
     injury: ''
     pro_team: MIN
@@ -693,7 +693,7 @@ rosters:
   - player: Chris Olave
     pos: WR
     starter: true
-    proj: 11.35
+    proj: 11.21
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -757,7 +757,7 @@ rosters:
   - player: T.J. Hockenson
     pos: TE
     starter: false
-    proj: 8.35
+    proj: 8.38
     actual: null
     injury: ''
     pro_team: MIN
@@ -1008,8 +1008,8 @@ rosters:
     proj: 7.88
     actual: null
     injury: ''
-    pro_team: 'NO'
-    bye_week: 8
+    pro_team: ''
+    bye_week: null
   - player: Omar Cooper Jr.
     pos: WR
     starter: true
@@ -1129,7 +1129,7 @@ rosters:
   - player: Tyler Shough
     pos: QB
     starter: false
-    proj: 16.45
+    proj: 16.38
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1161,7 +1161,7 @@ rosters:
   - player: Alvin Kamara
     pos: RB
     starter: false
-    proj: 9.51
+    proj: 10.48
     actual: null
     injury: QUESTIONABLE
     pro_team: 'NO'
@@ -1169,7 +1169,7 @@ rosters:
   - player: Devaughn Vele
     pos: WR
     starter: false
-    proj: 7.97
+    proj: 6.93
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1401,7 +1401,7 @@ rosters:
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 6.53
+    proj: 6.61
     actual: null
     injury: ''
     pro_team: DEN
@@ -1417,7 +1417,7 @@ rosters:
   - player: Keon Coleman
     pos: WR
     starter: false
-    proj: 3.96
+    proj: 4.86
     actual: null
     injury: QUESTIONABLE
     pro_team: BUF
@@ -1445,7 +1445,7 @@ rosters:
   - player: James Cook III
     pos: RB
     starter: true
-    proj: 17.54
+    proj: 17.53
     actual: null
     injury: ''
     pro_team: BUF
@@ -1477,7 +1477,7 @@ rosters:
   - player: Dak Prescott
     pos: QB
     starter: false
-    proj: 21.03
+    proj: 21.04
     actual: null
     injury: ''
     pro_team: DAL

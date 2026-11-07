@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-07T17:09:30+00:00
+updated_at: 2026-11-07T23:14:26+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -138,9 +138,9 @@ matchups:
   - { week:  8, home: schirmerj, away: purpsworth, home_score: 109.9, away_score: 93.5, playoff: false }
   - { week:  8, home: sturmanator15, away: lukstein, home_score: 142.0, away_score: 82.8, playoff: false }
   - { week:  8, home: zachzoske, away: gganoom, home_score: 152.3, away_score: 131.8, playoff: false }
-  - { week:  9, home: gganoom, away: shawne2520997, home_score: 8.5, away_score: 3.2, playoff: false, final: false, home_proj: 129.2, away_proj: 120.08 }
-  - { week:  9, home: jackperkins74, away: theoceanpulse, home_score: 27.6, away_score: 0.0, playoff: false, final: false, home_proj: 140.38, away_proj: 107.91 }
-  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.5, away_proj: 118.4 }
+  - { week:  9, home: gganoom, away: shawne2520997, home_score: 8.5, away_score: 3.2, playoff: false, final: false, home_proj: 129.28, away_proj: 120.07 }
+  - { week:  9, home: jackperkins74, away: theoceanpulse, home_score: 27.6, away_score: 0.0, playoff: false, final: false, home_proj: 140.4, away_proj: 107.91 }
+  - { week:  9, home: kevbots22, away: purpsworth, playoff: false, played: false, home_proj: 125.41, away_proj: 118.4 }
   - { week:  9, home: lukstein, away: alexandra, playoff: false, played: false, home_proj: 103.67, away_proj: 105.45 }
   - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 3.8, away_score: 5.7, playoff: false, final: false, home_proj: 125.7, away_proj: 120.87 }
   - { week:  9, home: zachzoske, away: schirmerj, home_score: 37.9, away_score: 0.0, playoff: false, final: false, home_proj: 122.84, away_proj: 120.43 }
