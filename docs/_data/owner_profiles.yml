@@ -18273,7 +18273,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 54.3
+    tx_per_year: 54.6
     tx_known: false
     seasons: 11
     best_finish:
@@ -18296,7 +18296,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 11th
     record: 2-5-1
-    tx: 55
+    tx: 57
     in_progress: true
     pf: 795.7
     pa: 958.4
@@ -18908,6 +18908,10 @@ theoceanpulse:
       week: 8
       waiver: true
     - player: Adonai Mitchell
+      via: add
+      week: 9
+      waiver: false
+    - player: Audric Estime
       via: add
       week: 9
       waiver: false
@@ -20316,7 +20320,7 @@ theoceanpulse:
       cost: R10
       basis: Drafted R12
       ineligible: false
-    - player: Emanuel Wilson
+    - player: Audric Estime
       pos: RB
       cost: R13
       basis: Undrafted

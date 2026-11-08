@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-08T17:22:55+00:00
+updated_at: 2026-11-08T23:16:35+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -138,12 +138,12 @@ matchups:
   - { week:  8, home: schirmerj, away: purpsworth, home_score: 109.9, away_score: 93.5, playoff: false }
   - { week:  8, home: sturmanator15, away: lukstein, home_score: 142.0, away_score: 82.8, playoff: false }
   - { week:  8, home: zachzoske, away: gganoom, home_score: 152.3, away_score: 131.8, playoff: false }
-  - { week:  9, home: gganoom, away: shawne2520997, home_score: 32.2, away_score: 3.2, playoff: false, final: false, home_proj: 129.18, away_proj: 118.87 }
-  - { week:  9, home: jackperkins74, away: theoceanpulse, home_score: 45.3, away_score: 0.0, playoff: false, final: false, home_proj: 140.38, away_proj: 107.91 }
-  - { week:  9, home: kevbots22, away: purpsworth, home_score: 8.8, away_score: 9.3, playoff: false, final: false, home_proj: 125.41, away_proj: 118.46 }
-  - { week:  9, home: lukstein, away: alexandra, home_score: 3.8, away_score: 26.5, playoff: false, final: false, home_proj: 105.31, away_proj: 110.48 }
-  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 3.8, away_score: 5.7, playoff: false, final: false, home_proj: 128.27, away_proj: 124.51 }
-  - { week:  9, home: zachzoske, away: schirmerj, home_score: 70.5, away_score: 0.0, playoff: false, final: false, home_proj: 122.84, away_proj: 120.42 }
+  - { week:  9, home: gganoom, away: shawne2520997, home_score: 113.6, away_score: 77.2, playoff: false, final: false, home_proj: 129.0, away_proj: 118.75 }
+  - { week:  9, home: jackperkins74, away: theoceanpulse, home_score: 107.2, away_score: 62.0, playoff: false, final: false, home_proj: 139.73, away_proj: 107.9 }
+  - { week:  9, home: kevbots22, away: purpsworth, home_score: 80.4, away_score: 62.5, playoff: false, final: false, home_proj: 125.69, away_proj: 118.49 }
+  - { week:  9, home: lukstein, away: alexandra, home_score: 99.3, away_score: 112.8, playoff: false, final: false, home_proj: 105.34, away_proj: 110.2 }
+  - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 94.1, away_score: 98.7, playoff: false, final: false, home_proj: 128.35, away_proj: 124.42 }
+  - { week:  9, home: zachzoske, away: schirmerj, home_score: 108.9, away_score: 50.8, playoff: false, final: false, home_proj: 122.94, away_proj: 120.45 }
   - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false }
   - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false }
@@ -366,7 +366,7 @@ transactions:
   schirmerj: { adds: 13, drops: 13, moves: 26 }
   shawne2520997: { adds: 23, drops: 17, moves: 40 }
   sturmanator15: { adds: 31, drops: 29, moves: 60 }
-  theoceanpulse: { adds: 30, drops: 25, moves: 55 }
+  theoceanpulse: { adds: 31, drops: 26, moves: 57 }
   whowonthelastsuperbowl: { adds: 15, drops: 8, moves: 23 }
   zachzoske: { adds: 35, drops: 25, moves: 60 }
 
@@ -1758,6 +1758,10 @@ rosters:
     week: 8
     waiver: true
   - player: Adonai Mitchell
+    via: add
+    week: 9
+    waiver: false
+  - player: Audric Estime
     via: add
     week: 9
     waiver: false
