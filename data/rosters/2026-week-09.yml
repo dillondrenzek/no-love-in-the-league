@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-07T23:14:22+00:00'
+captured_at: '2026-11-08T03:18:30+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -321,7 +321,7 @@ rosters:
   - player: Rachaad White
     pos: RB
     starter: true
-    proj: 11.11
+    proj: 11.1
     actual: null
     injury: ''
     pro_team: WSH
@@ -561,7 +561,7 @@ rosters:
   - player: Puka Nacua
     pos: WR
     starter: true
-    proj: 19.98
+    proj: 19.97
     actual: null
     injury: ''
     pro_team: LAR
@@ -1005,7 +1005,7 @@ rosters:
   - player: Kendre Miller
     pos: RB
     starter: false
-    proj: 7.88
+    proj: 0.0
     actual: null
     injury: ''
     pro_team: ''
@@ -1501,7 +1501,7 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: true
-    proj: 5.45
+    proj: 5.47
     actual: null
     injury: ''
     pro_team: LAR
