@@ -1728,6 +1728,110 @@ def test_odds_forecast_rows_sorted_with_colors():
     assert "_key" not in top
 
 
+def test_odds_color_whites_out_negligible_odds():
+    from lib.odds import odds_color, NEGLIGIBLE_COLOR
+    from lib.render import warm_heat
+    assert odds_color(0) == NEGLIGIBLE_COLOR and odds_color(0.004) == NEGLIGIBLE_COLOR
+    assert odds_color(0.005) == warm_heat(0.005)            # shows as 1%, keeps the ramp
+    assert odds_color(0.5) == warm_heat(0.5) and odds_color(1) == warm_heat(1)
+
+
+def test_odds_cells_dim_negligible_values_including_zero():
+    from lib.odds import Params, forecast, forecast_rows, odds_cell, NEGLIGIBLE_COLOR
+    assert odds_cell(0) == {"text": "<1%", "color": NEGLIGIBLE_COLOR, "dim": True}
+    assert odds_cell(0.004)["dim"] and not odds_cell(0.005)["dim"]
+    season = _odds_season(4)
+    st, res = forecast(season, Params(), n=300, seed=3)
+    cells = [c for r in forecast_rows(season, {}, st, res) for c in r["cells"].values()]
+    zero = [c for c in cells if c["text"] == "<1%"]
+    assert zero and all(c["dim"] and c["color"] == NEGLIGIBLE_COLOR for c in zero)
+    assert all(not c["dim"] for c in cells if c["text"] != "<1%")
+
+
+def _brute_force_clinches(wins, games, k):
+    """Test oracle: try every outcome of `games` and keep the teams that finish
+    with at most k-1 others level or above in all of them."""
+    import itertools
+    ok = set(wins)
+    for bits in itertools.product((0, 1), repeat=len(games)):
+        w = dict(wins)
+        for (a, b), x in zip(games, bits):
+            w[a if x else b] += 1
+        ok = {t for t in ok if sum(1 for g in w if g != t and w[g] >= w[t]) <= k - 1}
+    return ok
+
+
+def test_odds_clinched_top_counts_ties_as_threats():
+    from lib.odds import clinched_top
+    games = [("a", "e"), ("b", "f"), ("c", "d")]
+    wins = {"a": 12, "b": 11, "c": 8, "d": 8, "e": 7, "f": 7}
+    assert clinched_top(wins, games, 2) == {"a", "b"}   # nobody else can reach 11
+    wins["c"] = 10                                      # c can now tie b at 11
+    assert clinched_top(wins, games, 2) == {"a"}
+    assert clinched_top({"a": 3, "b": 3}, [], 1) == set()   # dead even: no lock
+    assert clinched_top(dict.fromkeys("ab", 0), [("a", "b")] * 3, 1) == set()
+
+
+def test_odds_clinched_top_uses_the_remaining_schedule():
+    from lib.odds import clinched_top
+    # T is 11-0; B-F are 8-3 and need to win out to tie, with three games left.
+    wins = dict(T=11, B=8, C=8, D=8, E=8, F=8, G=2, H=2, I=2, J=2, K=2, L=2)
+    later = [("B", "G"), ("C", "H"), ("D", "I"), ("E", "J"), ("F", "K"), ("T", "L"),
+             ("B", "H"), ("C", "I"), ("D", "J"), ("E", "K"), ("F", "L"), ("T", "G")]
+    # B and C still play each other, so only one of them can reach 11: T is in.
+    rivals = [("B", "C"), ("D", "G"), ("E", "H"), ("F", "I"), ("T", "J"), ("K", "L")]
+    assert "T" in clinched_top(wins, rivals + later, 5)
+    # Same records, but B and C play the bottom teams instead: all five can tie T.
+    apart = [("B", "K"), ("C", "L"), ("D", "G"), ("E", "H"), ("F", "I"), ("T", "J")]
+    assert "T" not in clinched_top(wins, apart + later, 5)
+
+
+def test_odds_clinched_top_matches_brute_force():
+    import random
+    from lib.odds import clinched_top, clinch_status, played_games
+    for weeks in (12, 13):                              # the round-robin fixture
+        season = _odds_season(weeks)
+        wins = dict.fromkeys(season["teams"], 0)
+        for m in played_games(season):
+            wins[m["home"] if m["home_score"] > m["away_score"] else m["away"]] += 1
+        games = [(m["home"], m["away"]) for m in season["matchups"]
+                 if m["home_score"] is None]
+        status = clinch_status(season)
+        assert status["playoffs"] == _brute_force_clinches(wins, games, 5)
+        assert status["bye"] == _brute_force_clinches(wins, games, 2)
+    rng = random.Random(7)                              # random records and pairings
+    teams = [f"x{i}" for i in range(12)]
+    for _ in range(25):
+        wins = {t: rng.randint(1, 13) for t in teams}
+        games = []
+        for _week in range(2):
+            order = rng.sample(teams, 12)
+            games += [(order[i], order[i + 1]) for i in range(0, 12, 2)]
+        for k in (2, 5):
+            assert clinched_top(wins, games, k) == _brute_force_clinches(wins, games, k)
+
+
+def test_odds_clinch_status_and_labels():
+    from lib.odds import Params, forecast, forecast_rows, clinch_status
+    # After 11 weeks of the round robin, tNN has exactly NN wins with 3 to play.
+    season = _odds_season(11)
+    status = clinch_status(season)
+    # t11 (11 wins): only t08-t10 can reach 11. t10: t11 and t07-t09. t09: five
+    # threats, and the schedule lets all five catch it.
+    assert status["playoffs"] == {"t11", "t10"}
+    assert status["bye"] == set()
+    st, res = forecast(season, Params(), n=300, seed=5)
+    assert res["t11"]["playoffs"] == 1.0 and res["t10"]["playoffs"] == 1.0
+    rows = {r["fid"]: r for r in forecast_rows(season, {}, st, res)}
+    assert rows["t11"]["cells"]["playoffs"]["text"] == "✓"
+    assert rows["t11"]["cells"]["playoffs"]["title"] == "Clinched"
+    assert rows["t11"]["cells"]["playoffs"]["clinched"] is True
+    assert rows["t11"]["cells"]["bye"]["text"] != "✓"
+    assert rows["t09"]["cells"]["playoffs"]["text"].endswith("%")
+    # Nothing is locked before a game is played.
+    assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set()}
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week
