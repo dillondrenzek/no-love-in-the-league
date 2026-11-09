@@ -35,7 +35,7 @@ sturmanator15:
       opp: Zach
   seasons:
   - year: 2026
-    team: God's Commissioner
+    team: The People's Commissioner
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
@@ -18528,7 +18528,7 @@ theoceanpulse:
     with:
     - id: sturmanator15
       name: Wade
-      team: God's Commissioner
+      team: The People's Commissioner
   - year: 2026
     week: 7
     got:

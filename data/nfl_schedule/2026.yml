@@ -156,14 +156,14 @@ games:
   - { week: 11, kickoff: '2026-11-20T01:15:00Z', away: 'IND', home: 'HOU' }
   - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'ARI', home: 'KC' }
   - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'BAL', home: 'CAR' }
-  - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'JAX', home: 'NYG' }
   - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'MIA', home: 'BUF' }
   - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'NO', home: 'CHI' }
+  - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'PIT', home: 'PHI' }
   - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'TB', home: 'DET' }
   - { week: 11, kickoff: '2026-11-22T18:00:00Z', away: 'TEN', home: 'DAL' }
   - { week: 11, kickoff: '2026-11-22T21:05:00Z', away: 'NYJ', home: 'LAC' }
+  - { week: 11, kickoff: '2026-11-22T21:25:00Z', away: 'JAX', home: 'NYG' }
   - { week: 11, kickoff: '2026-11-22T21:25:00Z', away: 'LV', home: 'DEN' }
-  - { week: 11, kickoff: '2026-11-22T21:25:00Z', away: 'PIT', home: 'PHI' }
   - { week: 11, kickoff: '2026-11-23T01:20:00Z', away: 'MIN', home: 'SF' }
   - { week: 11, kickoff: '2026-11-24T01:15:00Z', away: 'CIN', home: 'WSH' }
   - { week: 12, kickoff: '2026-11-26T01:00:00Z', away: 'GB', home: 'LAR' }

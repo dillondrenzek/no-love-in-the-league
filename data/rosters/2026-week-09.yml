@@ -1,10 +1,10 @@
 season: 2026
 week: 9
-captured_at: '2026-11-09T12:18:59+00:00'
+captured_at: '2026-11-09T23:54:08+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
-  team_name: God's Commissioner
+  team_name: The People's Commissioner
   players:
   - player: Jaxon Smith-Njigba
     pos: WR
@@ -555,7 +555,7 @@ rosters:
     starter: true
     proj: 19.98
     actual: 28.0
-    injury: QUESTIONABLE
+    injury: DOUBTFUL
     pro_team: LAR
     bye_week: 11
   - player: Mike Washington Jr.
@@ -671,7 +671,7 @@ rosters:
     starter: true
     proj: 14.64
     actual: 0.5
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: GB
     bye_week: 11
   - player: Tetairoa McMillan
@@ -1347,7 +1347,7 @@ rosters:
     starter: true
     proj: 10.67
     actual: 9.0
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: ARI
     bye_week: 14
   - player: Jaylen Warren
@@ -1551,7 +1551,7 @@ rosters:
     starter: false
     proj: 18.57
     actual: 3.7
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: MIA
     bye_week: 6
   - player: Darius Cooper

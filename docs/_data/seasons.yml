@@ -47,7 +47,7 @@ detail:
     rows:
     - &id001
       finish: 1
-      team: God's Commissioner
+      team: The People's Commissioner
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
       owner_id: sturmanator15
       owner_name: Wade
@@ -282,7 +282,7 @@ detail:
     - pick: 8
       owner_id: sturmanator15
       owner_name: Wade
-      team: God's Commissioner
+      team: The People's Commissioner
       keepers:
       - player: Trey McBride
         round: 9
@@ -414,7 +414,7 @@ detail:
       parties:
       - owner_id: sturmanator15
         owner_name: Wade
-        team: God's Commissioner
+        team: The People's Commissioner
         gave:
         - Jonah Coleman
         - Ladd McConkey
@@ -469,7 +469,7 @@ detail:
       player: Trey McBride
       owner_id: sturmanator15
       owner_name: Wade
-      team: God's Commissioner
+      team: The People's Commissioner
     - round: 9
       player: Bhayshul Tuten
       owner_id: zachzoske
