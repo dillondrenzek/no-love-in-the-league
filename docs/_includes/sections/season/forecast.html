@@ -11,7 +11,7 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
 {%- assign outcomes = "sacko,playoffs,bye,top3,shiva" | split: "," -%}
 <section class="season-section" id="forecast">
 <h2>{{ include.title | default: "Season Forecast" }}</h2>
-<p class="forecast__note">From {{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of the end of Week {{ f.as_of_week }}, using the league's real seeding, wildcard and bracket rules. <strong>Rating</strong> is the model's estimate of a team's true points per week; early in the season it leans on the league average, since a few weeks of scores are mostly noise. Arrows mark teams whose playoff odds rose or fell since {% if include.frozen %}the week before{% else %}last week{% endif %}. {% if include.frozen %}Frozen as it stood at the time; the season page has the live forecast.{% else %}Updates when each week goes final.{% endif %}</p>
+<p class="forecast__note">From {{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of the end of Week {{ f.as_of_week }}, using the league's real seeding, wildcard and bracket rules. <strong>Rating</strong> is the model's estimate of a team's true points per week; early in the season it leans on the league average, since a few weeks of scores are mostly noise. A <strong>✓</strong> means the team has clinched: no remaining result can push the team out of the top five by record (or the top two, for a bye). Arrows mark teams whose playoff odds rose or fell since {% if include.frozen %}the week before{% else %}last week{% endif %}. {% if include.frozen %}Frozen as it stood at the time; the season page has the live forecast.{% else %}Updates when each week goes final.{% endif %}</p>
 <div class="table-scroll">
 <table class="forecast">
   <thead>
@@ -43,7 +43,7 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
       <td class="num forecast__aux forecast__minor">{{ r.proj_wins }}</td>
       {%- for o in outcomes %}
       {%- assign c = r.cells[o] %}
-      <td class="num forecast__cell{% if o == 'playoffs' %} forecast__split{% endif %}" style="background: {{ c.color }}">{% if c.trend %}<span class="forecast__trend forecast__trend--{{ c.trend.dir }}" title="{{ c.trend.text | slice: 1, 9 }} pts since last week">{% if c.trend.dir == "up" %}▲{% else %}▼{% endif %}</span>{% endif %}{{ c.text }}</td>
+      <td class="num forecast__cell{% if o == 'playoffs' %} forecast__split{% endif %}{% if c.dim %} forecast__cell--dim{% endif %}" style="background: {{ c.color }}">{% if c.trend %}<span class="forecast__trend forecast__trend--{{ c.trend.dir }}" title="{{ c.trend.text | slice: 1, 9 }} pts since last week">{% if c.trend.dir == "up" %}▲{% else %}▼{% endif %}</span>{% endif %}{% if c.title %}<span title="{{ c.title }}">{{ c.text }}</span>{% else %}{{ c.text }}{% endif %}</td>
       {%- endfor %}
     </tr>
     {%- endfor %}

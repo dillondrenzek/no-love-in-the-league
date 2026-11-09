@@ -24,6 +24,7 @@ Pure: plain data in, plain data out. Deterministic for a given seed.
 
 import random
 import statistics
+from itertools import combinations
 from dataclasses import dataclass
 
 from .data import game_final, short_name_of
@@ -203,6 +204,113 @@ def pct_label(p):
     return f"{round(p * 100)}%"
 
 
+# Cell fill for a '<1%' odds value: plain white, so a long-shot reads as "out of
+# it" instead of blending into the cream low end of the heat ramp.
+NEGLIGIBLE_COLOR = "#ffffff"
+
+
+def is_negligible(p):
+    """True for a probability that displays as '<1%' (including a flat 0)."""
+    return pct_label(p) == "<1%"
+
+
+def odds_color(p):
+    """Cell fill for a probability: white when it displays as '<1%', otherwise the
+    warm heat ramp scaled to the probability itself."""
+    return NEGLIGIBLE_COLOR if is_negligible(p) else warm_heat(p)
+
+
+def odds_cell(p):
+    """A forecast table cell: {text, color, dim} — `dim` marks a '<1%' value so the
+    template can mute its text along with the white fill."""
+    return {"text": pct_label(p), "color": odds_color(p), "dim": is_negligible(p)}
+
+
+# ---------------------------------------------------------------------------
+# Clinches
+# ---------------------------------------------------------------------------
+
+# Seeds 1-5 go by record, so a spot there can be locked up mathematically; the 6th
+# (a points wildcard) can't, since any team can still outscore anyone. Seeds 1-2
+# get the first-round bye.
+RECORD_SEEDS = 5
+BYE_SEEDS = 2
+
+
+def _can_all_reach(group, need, games):
+    """Can every team in `group` pick up its `need` more wins from `games` — the
+    remaining games played between two members of the group, each won by exactly
+    one of them? Hall's condition: every subset A must need no more wins than
+    there are games with at least one team from A."""
+    inside = [(a, b) for a, b in games if a in group and b in group]
+    members = sorted(group)
+    for r in range(1, len(members) + 1):
+        for sub in combinations(members, r):
+            a_set = set(sub)
+            want = sum(need[f] for f in sub)
+            if want and want > sum(1 for a, b in inside if a in a_set or b in a_set):
+                return False
+    return True
+
+
+def clinched_top(wins, games, k):
+    """The teams guaranteed a top-`k` finish by record, whatever happens in the
+    remaining `games` (a list of (team, team) pairs). For each team, take its worst
+    case, losing every game it has left, and ask whether some k others could all
+    still finish level with or above it, given who actually plays whom: games
+    against the team itself or anyone outside the group go to the group, and a game
+    between two group members can only go to one of them. A tie counts as a
+    threat, since the points tiebreaker can't be known in advance. {fid: wins}."""
+    left = dict.fromkeys(wins, 0)
+    for a, b in games:
+        left[a] = left.get(a, 0) + 1
+        left[b] = left.get(b, 0) + 1
+    out = set()
+    for f, floor in wins.items():
+        rivals = [g for g in wins if g != f and wins[g] + left[g] >= floor]
+        locked = True
+        for group in combinations(rivals, k):
+            group = set(group)
+            # Wins a member is sure of here: its games against `f` or outsiders.
+            sure = {g: sum(1 for a, b in games if g in (a, b)
+                           and (b if a == g else a) not in group) for g in group}
+            need = {g: max(0, floor - wins[g] - sure[g]) for g in group}
+            if _can_all_reach(group, need, games):
+                locked = False
+                break
+        if locked:
+            out.add(f)
+    return out
+
+
+def clinch_status(season):
+    """{'playoffs': {fids}, 'bye': {fids}} — who has mathematically clinched a
+    playoff spot (a top-5 seed by record) and a first-round bye (top 2), given
+    the actual remaining schedule."""
+    reg = season.get("weeks_in_regular_season") or 14
+    played = played_games(season)
+    played_keys = {(m["week"], m["home"]) for m in played}
+    wins = dict.fromkeys(season.get("teams") or {}, 0)
+    for m in played:
+        if m["home_score"] != m["away_score"]:
+            w = m["home"] if m["home_score"] > m["away_score"] else m["away"]
+            wins[w] = wins.get(w, 0) + 1
+    games = [(m["home"], m["away"]) for m in season.get("matchups") or []
+             if 1 <= (m.get("week") or 0) <= reg and not m.get("playoff")
+             and (m["week"], m["home"]) not in played_keys]
+    for g in (x for pair in games for x in pair):
+        wins.setdefault(g, 0)
+    return {"playoffs": clinched_top(wins, games, RECORD_SEEDS),
+            "bye": clinched_top(wins, games, BYE_SEEDS)}
+
+
+def clinched_cell():
+    """The cell for a spot a team has locked up: a checkmark at the top of the
+    ramp, with 'Clinched' as its tooltip."""
+    return {"text": "✓", "title": "Clinched", "color": warm_heat(1.0), "dim": False,
+            "clinched": True}
+
+
 # Smallest playoff-odds move worth an arrow: at 10,000 runs the odds carry ~0.5 pt
 # of simulation noise, so anything under 2 pts could be chance.
 PLAYOFF_MOVE_MIN = 0.02
@@ -230,8 +338,11 @@ def forecast_rows(season, franchises, strength, result, prev=None):
     red-orange). `pf` is points scored so far — the 6th seed is a points
     wildcard, so it matters to the odds — with `pf_color` shaded across the league
     exactly as the season standings table shades it. `prev` is last week's (strength, result);
-    when given, the playoff cell carries a trend ({dir, text}) for meaningful moves."""
+    when given, the playoff cell carries a trend ({dir, text}) for meaningful moves.
+    A playoff spot or bye a team has mathematically clinched shows a checkmark
+    instead of '>99%' (see clinch_status)."""
     prev_res = (prev or ({}, {}))[1]
+    clinched = clinch_status(season)
     teams = season.get("teams") or {}
     logos = season.get("team_logos") or {}
     rec, pf = {}, {}
@@ -256,11 +367,13 @@ def forecast_rows(season, franchises, strength, result, prev=None):
             "pf_color": heat_color(pf.get(f, 0.0), lo, hi),
             "rating": round(strength[f][0], 1),
             "proj_wins": round(res["wins"], 1),
-            "cells": {o: {"text": pct_label(res[o]), "color": warm_heat(res[o])}
-                      for o in TABLE_OUTCOMES},
+            "cells": {o: odds_cell(res[o]) for o in TABLE_OUTCOMES},
             "_key": (-res["playoffs"], -res["bye"], -res["shiva"], res["sacko"]),
         })
     for r in rows:
+        for o in ("playoffs", "bye"):
+            if r["fid"] in clinched[o]:
+                r["cells"][o] = clinched_cell()
         before = prev_res.get(r["fid"], {}).get("playoffs")
         r["cells"]["playoffs"]["trend"] = trend(
             result[r["fid"]]["playoffs"], before, PLAYOFF_MOVE_MIN, scale=100)
