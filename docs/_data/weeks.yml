@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power:
   - rank: 1
@@ -3109,10 +3109,10 @@
     live: true
     playoff: false
     home_score: 138.8
-    away_score: 79.9
+    away_score: 80.3
     winner_id: null
     tie: false
-    margin: 58.9
+    margin: 58.5
     home_proj: 129.0
     away_proj: 118.8
   - home_id: jackperkins74
@@ -3132,10 +3132,10 @@
     live: true
     playoff: false
     home_score: 114.5
-    away_score: 87.9
+    away_score: 97.3
     winner_id: null
     tie: false
-    margin: 26.6
+    margin: 17.2
     home_proj: 139.7
     away_proj: 107.9
   - home_id: kevbots22
@@ -3155,10 +3155,10 @@
     live: true
     playoff: false
     home_score: 70.4
-    away_score: 90.8
+    away_score: 92.9
     winner_id: null
     tie: false
-    margin: 20.4
+    margin: 22.5
     home_proj: 125.7
     away_proj: 118.5
   - home_id: lukstein
@@ -3200,11 +3200,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 115.7
-    away_score: 119.9
+    home_score: 117.2
+    away_score: 134.0
     winner_id: null
     tie: false
-    margin: 4.2
+    margin: 16.8
     home_proj: 128.3
     away_proj: 124.4
   - home_id: zachzoske
@@ -3223,11 +3223,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 131.1
-    away_score: 65.6
+    home_score: 131.5
+    away_score: 70.6
     winner_id: null
     tie: false
-    margin: 65.5
+    margin: 60.9
     home_proj: 122.9
     away_proj: 120.5
   highlights: []
@@ -3323,7 +3323,7 @@
     decided: false
     result: null
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: true
   power:
   - rank: 1
@@ -3549,7 +3549,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power: []
 2026-11:
@@ -3655,7 +3655,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power: []
 2026-12:
@@ -3761,7 +3761,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power: []
 2026-13:
@@ -3867,7 +3867,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power: []
 2026-14:
@@ -3973,6 +3973,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 8, 7:38 PM PST
+  updated_at: Nov 9, 4:19 AM PST
   current: false
   power: []
