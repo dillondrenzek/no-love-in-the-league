@@ -6152,11 +6152,6 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Mike Gesicki
-      pos: TE
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Cam Little
       pos: K
       cost: R9
@@ -20352,11 +20347,6 @@ theoceanpulse:
       basis: Drafted R11
       ineligible: false
     - player: Adonai Mitchell
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Malachi Fields
       pos: WR
       cost: R13
       basis: Undrafted
