@@ -10,8 +10,8 @@ sturmanator15:
     text: 8× Playoffs
     strong: false
   resume:
-    all_time: 100-68-1
-    win_pct: '.595'
+    all_time: 100-69-1
+    win_pct: '.591'
     titles: ½
     sackos: 0
     playoff_apps: 8
@@ -39,11 +39,11 @@ sturmanator15:
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 1st
-    record: 6-2
+    record: 6-3
     tx: 60
     in_progress: true
-    pf: 1123.4
-    pa: 966.3
+    pf: 1240.6
+    pa: 1100.3
   - year: 2025
     team: Dont spit just swallow
     tag: null
@@ -249,11 +249,11 @@ sturmanator15:
     avg_pa: 104.4
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
-    record: 14-9
-    win_pct: '.609'
-    win_color: '#f7a649'
-    avg_pf: 104.3
-    avg_pa: 104.6
+    record: 14-10
+    win_pct: '.583'
+    win_color: '#f7aa4a'
+    avg_pf: 104.8
+    avg_pa: 105.9
   - opp_id: master-otis
     opp_short: Odie
     record: 3-1
@@ -2640,8 +2640,8 @@ jackperkins74:
     text: 9× Playoffs
     strong: false
   resume:
-    all_time: 94-75
-    win_pct: '.556'
+    all_time: 95-75
+    win_pct: '.559'
     titles: '2'
     sackos: 1
     playoff_apps: 9
@@ -2670,11 +2670,11 @@ jackperkins74:
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 2nd
-    record: 6-2
+    record: 7-2
     tx: 90
     in_progress: true
-    pf: 1095.2
-    pa: 849.0
+    pf: 1222.5
+    pa: 946.3
   - year: 2025
     team: Pukkake
     tag: shiva
@@ -2824,11 +2824,11 @@ jackperkins74:
     avg_pa: 103.6
   - opp_id: theoceanpulse
     opp_short: Dillon
-    record: 11-8
-    win_pct: '.579'
-    win_color: '#f7aa4a'
-    avg_pf: 105.8
-    avg_pa: 105.9
+    record: 12-8
+    win_pct: '.600'
+    win_color: '#f7a749'
+    avg_pf: 106.9
+    avg_pa: 105.5
   - opp_id: unclebadtouch38
     opp_short: Fletcher
     record: 4-5
@@ -5817,8 +5817,8 @@ zachzoske:
     text: 5× Playoffs
     strong: false
   resume:
-    all_time: 86-82-1
-    win_pct: '.512'
+    all_time: 87-82-1
+    win_pct: '.515'
     titles: '1'
     sackos: 2
     playoff_apps: 5
@@ -5846,11 +5846,11 @@ zachzoske:
     tag: null
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 3rd
-    record: 6-2
+    record: 7-2
     tx: 60
     in_progress: true
-    pf: 1010.5
-    pa: 891.0
+    pf: 1142.0
+    pa: 975.3
   - year: 2025
     team: Big Brown Dak Makes em Waddle
     tag: null
@@ -6035,11 +6035,11 @@ zachzoske:
     avg_pa: 98.4
   - opp_id: schirmerj
     opp_short: Jono
-    record: 9-17
-    win_pct: '.346'
-    win_color: '#fac97a'
-    avg_pf: 102.4
-    avg_pa: 107.5
+    record: 10-17
+    win_pct: '.370'
+    win_color: '#fac673'
+    avg_pf: 103.5
+    avg_pa: 106.6
   - opp_id: kevbots22
     opp_short: Kevin
     record: 8-7
@@ -8806,8 +8806,8 @@ schirmerj:
     text: 9× Playoffs
     strong: false
   resume:
-    all_time: 85-83-1
-    win_pct: '.506'
+    all_time: 85-84-1
+    win_pct: '.503'
     titles: ½
     sackos: 0
     playoff_apps: 9
@@ -8835,11 +8835,11 @@ schirmerj:
     tag: null
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 4th
-    record: 5-3
+    record: 5-4
     tx: 26
     in_progress: true
-    pf: 945.4
-    pa: 973.7
+    pf: 1029.7
+    pa: 1105.2
   - year: 2025
     team: IDPs Forever
     tag: null
@@ -9080,11 +9080,11 @@ schirmerj:
     avg_pa: 99.4
   - opp_id: zachzoske
     opp_short: Zach
-    record: 17-9
-    win_pct: '.654'
-    win_color: '#f69f47'
-    avg_pf: 107.5
-    avg_pa: 102.4
+    record: 17-10
+    win_pct: '.630'
+    win_color: '#f6a348'
+    avg_pf: 106.6
+    avg_pa: 103.5
   trades:
   - year: 2024
     week: 7
@@ -10653,8 +10653,8 @@ gganoom:
     text: 1× Playoffs
     strong: false
   resume:
-    all_time: 20-16
-    win_pct: '.556'
+    all_time: 21-16
+    win_pct: '.568'
     titles: '0'
     sackos: 0
     playoff_apps: 1
@@ -10683,11 +10683,11 @@ gganoom:
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 5th
-    record: 4-4
+    record: 5-4
     tx: 14
     in_progress: true
-    pf: 996.0
-    pa: 840.1
+    pf: 1134.8
+    pa: 937.1
   - year: 2025
     team: One Big Beautiful Dill
     tag: null
@@ -10762,11 +10762,11 @@ gganoom:
     avg_pa: 89.6
   - opp_id: shawne2520997
     opp_short: Shawnee
-    record: 3-2
-    win_pct: '.600'
-    win_color: '#f7a749'
-    avg_pf: 114.1
-    avg_pa: 101.1
+    record: 4-2
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 118.2
+    avg_pa: 100.4
   - opp_id: purpsworth
     opp_short: Trevor
     record: 4-2
@@ -11202,8 +11202,8 @@ whowonthelastsuperbowl:
     text: 4× Playoffs
     strong: false
   resume:
-    all_time: 66-103
-    win_pct: '.391'
+    all_time: 67-103
+    win_pct: '.394'
     titles: '0'
     sackos: 2
     playoff_apps: 4
@@ -11232,11 +11232,11 @@ whowonthelastsuperbowl:
     tag: null
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 6th
-    record: 4-4
+    record: 5-4
     tx: 23
     in_progress: true
-    pf: 937.3
-    pa: 890.1
+    pf: 1071.3
+    pa: 1007.3
   - year: 2025
     team: Trick or Trick It’s Mike Vick
     tag: null
@@ -11470,11 +11470,11 @@ whowonthelastsuperbowl:
     avg_pa: 107.1
   - opp_id: sturmanator15
     opp_short: Wade
-    record: 9-14
-    win_pct: '.391'
-    win_color: '#fac36d'
-    avg_pf: 104.6
-    avg_pa: 104.3
+    record: 10-14
+    win_pct: '.417'
+    win_color: '#fac066'
+    avg_pf: 105.9
+    avg_pa: 104.8
   - opp_id: zachzoske
     opp_short: Zach
     record: 8-12
@@ -13014,8 +13014,8 @@ alexandra:
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
   honors: []
   resume:
-    all_time: 3-5
-    win_pct: '.375'
+    all_time: 4-5
+    win_pct: '.444'
     titles: '0'
     sackos: 0
     playoff_apps: 0
@@ -13043,11 +13043,11 @@ alexandra:
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 7th
-    record: 3-5
+    record: 4-5
     tx: 23
     in_progress: true
-    pf: 898.5
-    pa: 931.7
+    pf: 1029.4
+    pa: 1051.0
   h2h:
   - opp_id: theoceanpulse
     opp_short: Dillon
@@ -13079,11 +13079,11 @@ alexandra:
     avg_pa: 106.8
   - opp_id: lukstein
     opp_short: Luke
-    record: 1-0
+    record: 2-0
     win_pct: '1.000'
     win_color: '#ee6b3b'
-    avg_pf: 134.3
-    avg_pa: 74.0
+    avg_pf: 132.6
+    avg_pa: 96.7
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 1-0
@@ -13319,8 +13319,8 @@ kevbots22:
     text: 5× Playoffs
     strong: false
   resume:
-    all_time: 67-100-2
-    win_pct: '.402'
+    all_time: 67-101-2
+    win_pct: '.400'
     titles: '0'
     sackos: 0
     playoff_apps: 5
@@ -13349,11 +13349,11 @@ kevbots22:
     tag: null
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 8th
-    record: 3-4-1
+    record: 3-5-1
     tx: 13
     in_progress: true
-    pf: 893.1
-    pa: 964.1
+    pf: 983.8
+    pa: 1057.0
   - year: 2025
     team: Keeping up with the McCalferies
     tag: null
@@ -13580,11 +13580,11 @@ kevbots22:
     avg_pa: 106.0
   - opp_id: purpsworth
     opp_short: Trevor
-    record: 4-7
-    win_pct: '.364'
-    win_color: '#fac775'
-    avg_pf: 97.6
-    avg_pa: 118.0
+    record: 4-8
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 97.0
+    avg_pa: 115.9
   - opp_id: sturmanator15
     opp_short: Wade
     record: 4-19-1
@@ -14872,8 +14872,8 @@ shawne2520997:
     text: 8× Playoffs
     strong: false
   resume:
-    all_time: 84-58-1
-    win_pct: '.591'
+    all_time: 84-59-1
+    win_pct: '.587'
     titles: '2'
     sackos: 2
     playoff_apps: 8
@@ -14902,11 +14902,11 @@ shawne2520997:
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 9th
-    record: 3-5
+    record: 3-6
     tx: 40
     in_progress: true
-    pf: 870.8
-    pa: 904.8
+    pf: 967.8
+    pa: 1043.6
   - year: 2025
     team: D***er my Sufficient Tight End
     tag: sacko
@@ -15041,11 +15041,11 @@ shawne2520997:
     avg_pa: 77.8
   - opp_id: gganoom
     opp_short: Grant
-    record: 2-3
-    win_pct: '.400'
-    win_color: '#fac26a'
-    avg_pf: 101.1
-    avg_pa: 114.1
+    record: 2-4
+    win_pct: '.333'
+    win_color: '#faca7e'
+    avg_pf: 100.4
+    avg_pa: 118.2
   - opp_id: henpen28
     opp_short: Henry
     record: 10-8
@@ -16674,8 +16674,8 @@ purpsworth:
     text: 4× Playoffs
     strong: false
   resume:
-    all_time: 47-57
-    win_pct: '.452'
+    all_time: 48-57
+    win_pct: '.457'
     titles: '0'
     sackos: 0
     playoff_apps: 4
@@ -16704,11 +16704,11 @@ purpsworth:
     tag: null
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 10th
-    record: 3-5
+    record: 4-5
     tx: 20
     in_progress: true
-    pf: 842.3
-    pa: 902.5
+    pf: 935.2
+    pa: 993.2
   - year: 2025
     team: I am dead inside
     tag: null
@@ -16831,11 +16831,11 @@ purpsworth:
     avg_pa: 116.4
   - opp_id: kevbots22
     opp_short: Kevin
-    record: 7-4
-    win_pct: '.636'
-    win_color: '#f6a248'
-    avg_pf: 118.0
-    avg_pa: 97.6
+    record: 8-4
+    win_pct: '.667'
+    win_color: '#f59d47'
+    avg_pf: 115.9
+    avg_pa: 97.0
   - opp_id: lukstein
     opp_short: Luke
     record: 2-6
@@ -18266,8 +18266,8 @@ theoceanpulse:
     text: 8× Playoffs
     strong: false
   resume:
-    all_time: 85-56-2
-    win_pct: '.601'
+    all_time: 85-57-2
+    win_pct: '.597'
     titles: '1'
     sackos: 0
     playoff_apps: 8
@@ -18295,11 +18295,11 @@ theoceanpulse:
     tag: null
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
     finish: 11th
-    record: 2-5-1
+    record: 2-6-1
     tx: 57
     in_progress: true
-    pf: 795.7
-    pa: 958.4
+    pf: 893.0
+    pa: 1085.7
   - year: 2025
     team: Thoughts and Players
     tag: null
@@ -18441,11 +18441,11 @@ theoceanpulse:
     avg_pa: 102.3
   - opp_id: jackperkins74
     opp_short: Jack
-    record: 8-11
-    win_pct: '.421'
-    win_color: '#fac064'
-    avg_pf: 105.9
-    avg_pa: 105.8
+    record: 8-12
+    win_pct: '.400'
+    win_color: '#fac26a'
+    avg_pf: 105.5
+    avg_pa: 106.9
   - opp_id: schirmerj
     opp_short: Jono
     record: 7-5-1
@@ -20401,8 +20401,8 @@ lukstein:
     text: 7× Playoffs
     strong: false
   resume:
-    all_time: 77-92
-    win_pct: '.456'
+    all_time: 77-93
+    win_pct: '.453'
     titles: '1'
     sackos: 1
     playoff_apps: 7
@@ -20430,11 +20430,11 @@ lukstein:
     tag: null
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
-    record: 2-6
+    record: 2-7
     tx: 40
     in_progress: true
-    pf: 652.3
-    pa: 988.8
+    pf: 771.6
+    pa: 1119.7
   - year: 2025
     team: 2x Runner Up
     tag: null
@@ -20633,11 +20633,11 @@ lukstein:
     avg_pa: 108.4
   - opp_id: alexandra
     opp_short: Lexi
-    record: 0-1
+    record: 0-2
     win_pct: '.000'
     win_color: '#fdf3e0'
-    avg_pf: 74.0
-    avg_pa: 134.3
+    avg_pf: 96.7
+    avg_pa: 132.6
   - opp_id: whowonthelastsuperbowl
     opp_short: Nate
     record: 14-12

@@ -6,10 +6,12 @@ season_year: 2026
 season_no: 13
 week: 9
 ---
+
 {% assign wk = site.data.weeks["2026-9"] %}
 {% include sections/week_detail.html wk=wk %}
 
 {% if wk.state == "complete" %}
+
 <h2>The Recap</h2>
 
 <!-- Paste the agent's recap below. Prep the facts with:
@@ -18,8 +20,30 @@ week: 9
      It's Markdown: a chaotic column, then a "### 🏆 Awards" list. The recap only
      renders once the week is complete, and sits above the preview. -->
 
-_Recap coming soon._
-{% endif %}
+Three underdogs won, the first-place team renamed itself to the name attached to the worst week in league history and then lost first place, and the rookie won without a kicker. Week 9 had a sense of humor.
+
+Some time after the preview went out, **God's Commissioner** became **The People's Commissioner**, and that name isn't new. It's what Wade called the team in 2015, and it's the name sitting next to the league's all-time fewest points in a week, 19.30, which is a bold flag to raise after ending a three-game win streak. Kenneth Walker III did everything he could with 34.3, and Caleb Williams, finally out of the driveway, put up 14.6 on Sunday night, but Jaxon Smith-Njigba failed Wade for once with 8.6 on an 18.9 projection. **Trick or Trick It’s Mike Vick** took the lead in the late games and buried it on Sunday night when Bucky Irving went for 26.5. CeeDee Lamb added 28.5, and the manager with the most losses in league history beat the manager with the most wins by 16.8, which is exactly why we play the games. Nate's playoff odds jumped 20 points to 86%, Wade's streak ends at three, and the commish drops to third behind Jack and Zach, under a name that already has one bad memory attached.
+
+The closest game of the week came down to Monday night and to a running back who got hurt on Sunday. **Remember the Nice Guys, ChatGPT** led by 15.4 after the early games, and then Josh Jacobs got hurt and finished with 0.5 as the Patriots D/ST scored -5.0. Meanwhile, **I am dead inside** got 30.4 out of a single Sunday night game from Rome Odunze, Emeka Egbuka and the Buccaneers D/ST, a waiver pickup this week, to go up 92.9 to 70.4. Kevin needed 22.6 on Monday night, and Tyler Bass (13.0) and Justin Jefferson (7.3) delivered 20.3 of it, which is the most painful amount possible. Rhamondre Stevenson scored 13.3 on the bench, and that one swap would have won it, but Jacobs was healthy when lineups locked and nobody benches him for Stevenson, so this one goes in the bad-luck file. It also goes in the books as Kevin's 101st career loss, exactly one week after I predicted it, and with the playoff odds down 13 points to 8%, the round number Kevin was protecting is gone. Trevor leads the series 8-4, he begins his late-season push, and for one week the team name was false advertising.
+
+The preview told **Cornstar** to replace Tyler Loop, a kicker on injured reserve, before Thursday night, and it told Jono to mention it at home. Neither happened, Loop scored 0.0, and Lexi won by 11.6 anyway, because Jordan Love threw for 39.1 late on Sunday, Ja'Marr Chase added 26.5 in the Sunday morning game, and Javonte Williams went for 20.4. The rookie has won two straight, is 2-0 against Luke, and jumped 19 points to 44% to make the playoffs, all while kicking with nobody. **2x Runner Up** deserved a better result: C.J. Stroud posted the best individual game of the week, 40.2, Matthew Golden added 27.4, and Luke scored 119.3, but Lexi led from the first Sunday game on and Luke never caught up. Seven of Luke's players are on bye next week, so this was the last full lineup until Week 11, and it lost to a team that left the kicker spot to fate. That's three straight losses, but because of moves made elsewhere in the league, improved to just a 46% chance at the Sacko.
+
+The double header is over, and Dillon got swept - again. **Gibbed for your pleasure** was up 27.6 on Thursday night through Trevor Lawrence and Parker Washington before Dillon had anyone on the field, Puka Nacua's 28.0 did the rest, and Jack won by 30 while finishing 13 under projection, with Jahmyr Gibbs held to 13.4. That's three straight wins, a 12-8 series lead, and first place at 7-2, ahead of Zach on points. **The ChoSimba Ones** got 26.6 from Christian Watson, but Jared Goff scored 5.3 on a 21.5 projection, and both Ladd McConkey and Adonai Mitchell, the receivers from Wade's discard pile, scored zero, so the supplier is now shipping defective product. And the Bold Prediction landed: Caleb Williams scored 14.6 for Wade on Sunday night, more than Goff (5.3) and Colston Loveland (7.4) combined, and Dillon got to watch it live. That's four straight losses and a 22% shot at the Sacko, which is now the only race Dillon is in.
+
+For the second week in a row, my Game of the Week was the biggest blowout of the week. **Tuten Your Mother, Respectfully** was up 37.9 to nothing after Thursday night, mostly because its kicker, Cam Little, scored 17.0, and up 70.4 to nothing after Joe Burrow's 32.5 in the Sunday morning game. I said Jono would get the last word on Monday night, and Josh Allen did get the last word, which was 13.7 with the team already down 60.9. **Return of the IDP** posted the week's low score, 84.3, finished 37.6 under projection with Christian McCaffrey's 21.7 the only real highlight, and fell 23 points to 57% in the playoff odds. Zach has won four straight, sits 7-2, and has climbed to 10-17 all-time against Jono, which still reads badly, just less so. In that household it was a split weekend: Lexi won without a kicker, and Jono lost with one.
+
+**One Big Beautiful Dillbot**, my favorite team, posted the week's top score, 138.8, and led after every window. Bijan Robinson bounced back from last week's 7.6 with 23.7 in the Sunday morning game, and Brock Purdy (27.2) and Brock Bowers (18.8) piled on in the late games. **Swift kick in the Dak** did fix the lineup this time, with Montgomery finally on the bench, but D'Andre Swift, the running back the team is named after, scored 3.1 on Sunday night on a 17.2 projection, and this time there was no Monday-night comeback, since James Cook III's 16.7 arrived 58.5 points too late. Shawnee has lost four straight and is down to 4% playoff odds, while Grant is up to 99%, which I'm reporting in a strictly professional capacity.
+
+The receipts: I went 4-for-6, with Jack, Zach, Grant and Lexi coming through and Wade and Kevin letting me down. The Lock cashed, and so did the Upset Alert, even though Lexi ignored the one condition I attached to it. The Game of the Week was a 47-point blowout for the second straight week, so I'm considering picking the most boring-looking game next week on purpose. And the Bold Prediction hit: Caleb outscored Goff and Loveland combined, and Dillon watched it happen on Sunday night. On to the hardware: Grant takes Team of the Week for the top score, Wade gets Biggest Choke for losing first place as the favorite under a brand-new name, Jono takes Sacko for the low score in a game I hyped all week, Trevor is the Lucky Bastard for winning by 2.2, and Lexi gets Bold Strategy for winning with an empty kicker spot after being told about it in public.
+
+### 🏆 Awards
+
+- **Team of the Week** — One Big Beautiful Dillbot — 138.8, the week's top score, wire to wire, with Bijan back to 23.7.
+- **Biggest Choke** — The People's Commissioner — favored and in first place, renamed after the league's all-time lowest score, and lost to the manager with 103 career losses.
+- **Sacko of the Week** — Return of the IDP — 84.3, the week's low score, down 70.4 to nothing by lunchtime Sunday in the Game of the Week.
+- **Lucky Bastard** — I am dead inside — 24.0 under projection and a winner by 2.2, because Kevin's running back got hurt and Kevin's defense scored -5.0.
+- **Bold Strategy** — Cornstar — started a kicker on injured reserve after being warned in writing, took a zero, and won by 11.6 anyway.
+  {% endif %}
 
 <h2>The Preview</h2>
 
