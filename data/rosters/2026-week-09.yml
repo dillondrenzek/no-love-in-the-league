@@ -1,6 +1,6 @@
 season: 2026
 week: 9
-captured_at: '2026-11-09T23:54:08+00:00'
+captured_at: '2026-11-10T04:37:48+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -274,7 +274,7 @@ rosters:
     pos: QB
     starter: true
     proj: 21.13
-    actual: null
+    actual: 13.7
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -414,7 +414,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.52
-    actual: null
+    actual: 5.1
     injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
@@ -570,7 +570,7 @@ rosters:
     pos: D/ST
     starter: false
     proj: 4.01
-    actual: null
+    actual: 6.0
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -610,7 +610,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.53
-    actual: null
+    actual: 9.0
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -618,7 +618,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.23
-    actual: null
+    actual: 3.8
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -662,7 +662,7 @@ rosters:
     pos: WR
     starter: true
     proj: 15.1
-    actual: null
+    actual: 7.3
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -750,7 +750,7 @@ rosters:
     pos: TE
     starter: false
     proj: 8.38
-    actual: null
+    actual: 5.3
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -758,7 +758,7 @@ rosters:
     pos: WR
     starter: false
     proj: 7.31
-    actual: null
+    actual: 7.8
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -766,7 +766,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.29
-    actual: null
+    actual: 13.0
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -1082,7 +1082,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.35
-    actual: null
+    actual: 2.6
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -1198,7 +1198,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.65
-    actual: null
+    actual: 5.2
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -1214,7 +1214,7 @@ rosters:
     pos: TE
     starter: false
     proj: 6.89
-    actual: null
+    actual: 4.3
     injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
@@ -1410,7 +1410,7 @@ rosters:
     pos: WR
     starter: false
     proj: 4.86
-    actual: null
+    actual: 3.2
     injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
@@ -1438,7 +1438,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.53
-    actual: null
+    actual: 16.7
     injury: ''
     pro_team: BUF
     bye_week: 7

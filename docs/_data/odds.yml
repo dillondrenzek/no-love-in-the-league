@@ -1,16 +1,16 @@
 2026:
-  as_of_week: 8
+  as_of_week: 9
   sims: 10000
   rows:
   - fid: sturmanator15
     team: The People's Commissioner
     owner: Wade
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    record: 6-2
-    pf: '1123.4'
+    record: 6-3
+    pf: '1240.6'
     pf_color: '#ee6b3b'
-    rating: 133.9
-    proj_wins: 10.6
+    rating: 132.5
+    proj_wins: 9.8
     cells:
       sacko:
         text: <1%
@@ -22,57 +22,88 @@
         dim: false
         trend: null
       bye:
-        text: 86%
-        color: '#f18140'
+        text: 65%
+        color: '#f6a048'
         dim: false
       top3:
-        text: 83%
-        color: '#f28541'
-        dim: false
-      shiva:
-        text: 36%
-        color: '#fac776'
-        dim: false
-  - fid: jackperkins74
-    team: Gibbed for your pleasure
-    owner: Jack
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-    record: 6-2
-    pf: '1095.2'
-    pf_color: '#ef743d'
-    rating: 131.3
-    proj_wins: 10.6
-    cells:
-      sacko:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      playoffs:
-        text: '>99%'
-        color: '#ee6b3b'
-        dim: false
-        trend: null
-      bye:
-        text: 79%
-        color: '#f38b43'
-        dim: false
-      top3:
-        text: 77%
-        color: '#f38d43'
+        text: 75%
+        color: '#f39044'
         dim: false
       shiva:
         text: 31%
         color: '#fbcd85'
         dim: false
+  - fid: jackperkins74
+    team: Gibbed for your pleasure
+    owner: Jack
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    record: 7-2
+    pf: '1222.5'
+    pf_color: '#ef713c'
+    rating: 130.9
+    proj_wins: 10.8
+    cells:
+      sacko:
+        text: <1%
+        color: '#ffffff'
+        dim: true
+      playoffs:
+        text: '>99%'
+        color: '#ee6b3b'
+        dim: false
+        trend: null
+      bye:
+        text: 83%
+        color: '#f28441'
+        dim: false
+      top3:
+        text: 79%
+        color: '#f38b43'
+        dim: false
+      shiva:
+        text: 31%
+        color: '#facd84'
+        dim: false
   - fid: zachzoske
     team: Tuten Your Mother, Respectfully
     owner: Zach
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-    record: 6-2
-    pf: '1010.5'
-    pf_color: '#f38f44'
+    record: 7-2
+    pf: '1142.0'
+    pf_color: '#f38b43'
+    rating: 124.1
+    proj_wins: 10.1
+    cells:
+      sacko:
+        text: <1%
+        color: '#ffffff'
+        dim: true
+      playoffs:
+        text: '>99%'
+        color: '#ee6b3b'
+        dim: false
+        trend: null
+      bye:
+        text: 45%
+        color: '#f9bc5b'
+        dim: false
+      top3:
+        text: 55%
+        color: '#f8af4b'
+        dim: false
+      shiva:
+        text: 15%
+        color: '#fce0b2'
+        dim: false
+  - fid: gganoom
+    team: One Big Beautiful Dillbot
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 5-4
+    pf: '1134.8'
+    pf_color: '#f38d43'
     rating: 123.5
-    proj_wins: 9.6
+    proj_wins: 8.1
     cells:
       sacko:
         text: <1%
@@ -80,214 +111,183 @@
         dim: true
       playoffs:
         text: 99%
-        color: '#ee6d3b'
-        dim: false
-        trend:
-          dir: up
-          text: ▲7
-      bye:
-        text: 29%
-        color: '#fbd08b'
-        dim: false
-      top3:
-        text: 48%
-        color: '#f9b954'
-        dim: false
-      shiva:
-        text: 13%
-        color: '#fce4bb'
-        dim: false
-  - fid: gganoom
-    team: One Big Beautiful Dillbot
-    owner: Grant
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-    record: 4-4
-    pf: '996.0'
-    pf_color: '#f49445'
-    rating: 122.1
-    proj_wins: 7.7
-    cells:
-      sacko:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      playoffs:
-        text: 96%
-        color: '#ef723d'
+        color: '#ee6c3b'
         dim: false
         trend:
           dir: up
           text: ▲4
       bye:
-        text: 2%
-        color: '#fdf0d9'
-        dim: false
-      top3:
-        text: 36%
-        color: '#fac777'
-        dim: false
-      shiva:
-        text: 9%
-        color: '#fce8c6'
-        dim: false
-  - fid: schirmerj
-    team: Return of the IDP
-    owner: Jono
-    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-    record: 5-3
-    pf: '945.4'
-    pf_color: '#f6a449'
-    rating: 117.4
-    proj_wins: 8.0
-    cells:
-      sacko:
-        text: 1%
-        color: '#fdf2de'
-        dim: false
-      playoffs:
-        text: 80%
-        color: '#f28942'
-        dim: false
-        trend: null
-      bye:
-        text: 4%
-        color: '#fdeed5'
-        dim: false
-      top3:
-        text: 24%
-        color: '#fbd699'
-        dim: false
-      shiva:
         text: 5%
-        color: '#fdedd2'
+        color: '#fdedd1'
+        dim: false
+      top3:
+        text: 40%
+        color: '#fac26a'
+        dim: false
+      shiva:
+        text: 11%
+        color: '#fce5be'
         dim: false
   - fid: whowonthelastsuperbowl
     team: Trick or Trick It’s Mike Vick
     owner: Nate
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-    record: 4-4
-    pf: '937.3'
-    pf_color: '#f7a649'
-    rating: 116.7
-    proj_wins: 6.8
+    record: 5-4
+    pf: '1071.3'
+    pf_color: '#f6a148'
+    rating: 118.1
+    proj_wins: 7.7
     cells:
       sacko:
         text: 1%
-        color: '#fdf1dc'
+        color: '#fdf2de'
         dim: false
       playoffs:
-        text: 66%
-        color: '#f69f47'
+        text: 86%
+        color: '#f18140'
+        dim: false
+        trend:
+          dir: up
+          text: ▲20
+      bye:
+        text: 1%
+        color: '#fdf1dc'
+        dim: false
+      top3:
+        text: 24%
+        color: '#fbd599'
+        dim: false
+      shiva:
+        text: 5%
+        color: '#fdedd1'
+        dim: false
+  - fid: schirmerj
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 5-4
+    pf: '1029.7'
+    pf_color: '#f8ae4b'
+    rating: 114.6
+    proj_wins: 7.4
+    cells:
+      sacko:
+        text: 2%
+        color: '#fdf0da'
+        dim: false
+      playoffs:
+        text: 57%
+        color: '#f8ac4b'
         dim: false
         trend:
           dir: down
-          text: ▼11
+          text: ▼23
       bye:
-        text: 1%
-        color: '#fdf2de'
-        dim: false
+        text: <1%
+        color: '#ffffff'
+        dim: true
       top3:
-        text: 18%
-        color: '#fcddac'
+        text: 14%
+        color: '#fce2b7'
         dim: false
       shiva:
-        text: 4%
-        color: '#fdefd6'
+        text: 3%
+        color: '#fdefd7'
         dim: false
   - fid: alexandra
     team: Cornstar
     owner: Lexi
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-    record: 3-5
-    pf: '898.5'
-    pf_color: '#f9b34c'
-    rating: 113.1
-    proj_wins: 6.0
+    record: 4-5
+    pf: '1029.4'
+    pf_color: '#f8af4b'
+    rating: 114.5
+    proj_wins: 6.4
     cells:
       sacko:
-        text: 4%
-        color: '#fdeed3'
+        text: 3%
+        color: '#fdf0d8'
         dim: false
       playoffs:
-        text: 25%
-        color: '#fbd496'
+        text: 44%
+        color: '#fabe5f'
         dim: false
         trend:
           dir: up
-          text: ▲7
+          text: ▲19
       bye:
         text: <1%
         color: '#ffffff'
         dim: true
       top3:
-        text: 6%
-        color: '#fcebcd'
+        text: 10%
+        color: '#fce7c2'
         dim: false
       shiva:
-        text: 1%
-        color: '#fdf1dc'
+        text: 2%
+        color: '#fdf0da'
         dim: false
   - fid: kevbots22
     team: Remember the Nice Guys, ChatGPT
     owner: Kevin
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-    record: 3-4-1
-    pf: '893.1'
-    pf_color: '#f9b44d'
-    rating: 112.6
-    proj_wins: 5.7
+    record: 3-5-1
+    pf: '983.8'
+    pf_color: '#f9bc5b'
+    rating: 110.7
+    proj_wins: 5.1
     cells:
       sacko:
-        text: 5%
-        color: '#fdedd1'
+        text: 8%
+        color: '#fceaca'
         dim: false
       playoffs:
-        text: 21%
-        color: '#fbdaa3'
-        dim: false
-        trend:
-          dir: up
-          text: ▲4
-      bye:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      top3:
-        text: 5%
-        color: '#fdedd1'
-        dim: false
-      shiva:
-        text: 1%
-        color: '#fdf2dd'
-        dim: false
-  - fid: shawne2520997
-    team: Swift kick in the Dak
-    owner: Shawnee
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-    record: 3-5
-    pf: '870.8'
-    pf_color: '#f9ba58'
-    rating: 110.5
-    proj_wins: 5.5
-    cells:
-      sacko:
-        text: 7%
-        color: '#fcebcc'
-        dim: false
-      playoffs:
-        text: 9%
-        color: '#fce7c4'
+        text: 8%
+        color: '#fce9c9'
         dim: false
         trend:
           dir: down
-          text: ▼4
+          text: ▼13
       bye:
         text: <1%
         color: '#ffffff'
         dim: true
       top3:
         text: 2%
-        color: '#fdf0da'
+        color: '#fdf1dc'
+        dim: false
+      shiva:
+        text: <1%
+        color: '#ffffff'
+        dim: true
+  - fid: shawne2520997
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-6
+    pf: '967.8'
+    pf_color: '#fac065'
+    rating: 109.3
+    proj_wins: 5.1
+    cells:
+      sacko:
+        text: 9%
+        color: '#fce8c6'
+        dim: false
+      playoffs:
+        text: 4%
+        color: '#fdeed5'
+        dim: false
+        trend:
+          dir: down
+          text: ▼6
+      bye:
+        text: <1%
+        color: '#ffffff'
+        dim: true
+      top3:
+        text: 1%
+        color: '#fdf2de'
         dim: false
       shiva:
         text: <1%
@@ -297,30 +297,28 @@
     team: I am dead inside
     owner: Trevor
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    record: 3-5
-    pf: '842.3'
-    pf_color: '#fac269'
-    rating: 107.8
-    proj_wins: 5.3
+    record: 4-5
+    pf: '935.2'
+    pf_color: '#fac879'
+    rating: 106.5
+    proj_wins: 5.7
     cells:
       sacko:
         text: 10%
-        color: '#fce7c2'
+        color: '#fce6c2'
         dim: false
       playoffs:
-        text: 4%
-        color: '#fdeed3'
+        text: 3%
+        color: '#fdefd6'
         dim: false
-        trend:
-          dir: down
-          text: ▼7
+        trend: null
       bye:
         text: <1%
         color: '#ffffff'
         dim: true
       top3:
         text: 1%
-        color: '#fdf2dd'
+        color: '#fdf2de'
         dim: false
       shiva:
         text: <1%
@@ -330,15 +328,15 @@
     team: The ChoSimba Ones
     owner: Dillon
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
-    record: 2-5-1
-    pf: '795.7'
-    pf_color: '#fbce87'
-    rating: 103.5
-    proj_wins: 4.0
+    record: 2-6-1
+    pf: '893.0'
+    pf_color: '#fbd394'
+    rating: 102.9
+    proj_wins: 3.8
     cells:
       sacko:
-        text: 19%
-        color: '#fbdca7'
+        text: 22%
+        color: '#fbd9a0'
         dim: false
       playoffs:
         text: <1%
@@ -361,15 +359,15 @@
     team: 2x Runner Up
     owner: Luke
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-    record: 2-6
-    pf: '652.3'
+    record: 2-7
+    pf: '771.6'
     pf_color: '#fdf3e0'
-    rating: 90.2
-    proj_wins: 3.2
+    rating: 92.6
+    proj_wins: 3.1
     cells:
       sacko:
-        text: 52%
-        color: '#f9b34c'
+        text: 46%
+        color: '#f9bb59'
         dim: false
       playoffs:
         text: <1%
