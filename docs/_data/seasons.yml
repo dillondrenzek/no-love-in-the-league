@@ -45,20 +45,6 @@ detail:
     state: season
     points: true
     rows:
-    - &id003
-      finish: 3
-      team: The People's Commissioner
-      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-      owner_id: sturmanator15
-      owner_name: Wade
-      record: 6-3
-      pct: 0.6666666666666666
-      tag: null
-      pct_str: '.667'
-      pf: 1240.6
-      pf_color: '#ee6b3b'
-      pa: 1100.3
-      pa_color: '#f07b3f'
     - &id001
       finish: 1
       team: Gibbed for your pleasure
@@ -87,20 +73,20 @@ detail:
       pf_color: '#f38b43'
       pa: 975.3
       pa_color: '#fbd9a2'
-    - &id006
-      finish: 6
-      team: Return of the IDP
-      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-      owner_id: schirmerj
-      owner_name: Jono
-      record: 5-4
-      pct: 0.5555555555555556
+    - &id003
+      finish: 3
+      team: The People's Commissioner
+      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+      owner_id: sturmanator15
+      owner_name: Wade
+      record: 6-3
+      pct: 0.6666666666666666
       tag: null
-      pct_str: '.556'
-      pf: 1029.7
-      pf_color: '#f8ae4b'
-      pa: 1105.2
-      pa_color: '#f0773e'
+      pct_str: '.667'
+      pf: 1240.6
+      pf_color: '#ee6b3b'
+      pa: 1100.3
+      pa_color: '#f07b3f'
     - &id004
       finish: 4
       team: One Big Beautiful Dillbot
@@ -129,6 +115,20 @@ detail:
       pf_color: '#f6a148'
       pa: 1007.3
       pa_color: '#fac46f'
+    - &id006
+      finish: 6
+      team: Return of the IDP
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      owner_id: schirmerj
+      owner_name: Jono
+      record: 5-4
+      pct: 0.5555555555555556
+      tag: null
+      pct_str: '.556'
+      pf: 1029.7
+      pf_color: '#f8ae4b'
+      pa: 1105.2
+      pa_color: '#f0773e'
     - &id007
       finish: 7
       team: Cornstar
@@ -143,6 +143,20 @@ detail:
       pf_color: '#f8af4b'
       pa: 1051.0
       pa_color: '#f6a349'
+    - &id008
+      finish: 8
+      team: I am dead inside
+      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+      owner_id: purpsworth
+      owner_name: Trevor
+      record: 4-5
+      pct: 0.4444444444444444
+      tag: null
+      pct_str: '.444'
+      pf: 935.2
+      pf_color: '#fac879'
+      pa: 993.2
+      pa_color: '#fbce86'
     - &id009
       finish: 9
       team: Remember the Nice Guys, ChatGPT
@@ -171,20 +185,6 @@ detail:
       pf_color: '#fac065'
       pa: 1043.6
       pa_color: '#f7aa4a'
-    - &id008
-      finish: 8
-      team: I am dead inside
-      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-      owner_id: purpsworth
-      owner_name: Trevor
-      record: 4-5
-      pct: 0.4444444444444444
-      tag: null
-      pct_str: '.444'
-      pf: 935.2
-      pf_color: '#fac879'
-      pa: 993.2
-      pa_color: '#fbce86'
     - &id011
       finish: 11
       team: The ChoSimba Ones

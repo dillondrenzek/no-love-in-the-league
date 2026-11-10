@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power:
   - rank: 1
@@ -3483,11 +3483,13 @@
     home_record: 4-5
     away_record: 4-5
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 92.2
+    away_proj: 86.9
   - home_id: jackperkins74
     home_team: Gibbed for your pleasure
     home_owner: Jack
@@ -3499,11 +3501,13 @@
     home_record: 7-2
     away_record: 3-6
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 113.7
+    away_proj: 89.5
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -3515,11 +3519,13 @@
     home_record: 2-7
     away_record: 2-6-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 86.2
+    away_proj: 73.0
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -3531,11 +3537,13 @@
     home_record: 5-4
     away_record: 5-4
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 106.8
+    away_proj: 114.6
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -3547,11 +3555,13 @@
     home_record: 6-3
     away_record: 5-4
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 103.7
+    away_proj: 105.3
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -3563,15 +3573,17 @@
     home_record: 7-2
     away_record: 3-5-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 123.8
+    away_proj: 110.6
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: true
   power: []
 2026-11:
@@ -3677,7 +3689,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power: []
 2026-12:
@@ -3783,7 +3795,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power: []
 2026-13:
@@ -3889,7 +3901,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power: []
 2026-14:
@@ -3995,6 +4007,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 9, 9:10 PM PST
+  updated_at: Nov 10, 7:55 AM PST
   current: false
   power: []
