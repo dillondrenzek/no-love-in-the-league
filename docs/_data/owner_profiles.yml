@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 121.9
+    tx_per_year: 122.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 7-2
-    tx: 92
+    tx: 94
     in_progress: true
     pf: 1222.5
     pa: 946.3
@@ -712,6 +712,10 @@ jackperkins74:
       via: add
       week: 9
       waiver: true
+    - player: Laquon Treadwell
+      via: add
+      week: 10
+      waiver: false
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -3120,11 +3124,6 @@ jackperkins74:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Brian Robinson Jr.
-      pos: RB
-      cost: R12
-      basis: Drafted R14
-      ineligible: false
     - player: Braelon Allen
       pos: RB
       cost: R13
@@ -3156,6 +3155,11 @@ jackperkins74:
       basis: Undrafted
       ineligible: false
     - player: Konata Mumpfield
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Laquon Treadwell
       pos: WR
       cost: R13
       basis: Undrafted
@@ -9370,7 +9374,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 35.4
+    tx_per_year: 35.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -9394,7 +9398,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 5th
     record: 5-4
-    tx: 23
+    tx: 25
     in_progress: true
     pf: 1071.3
     pa: 1007.3
@@ -9801,6 +9805,10 @@ whowonthelastsuperbowl:
       via: add
       week: 9
       waiver: true
+    - player: Tutu Atwell
+      via: add
+      week: 10
+      waiver: false
   - year: 2025
     players:
     - player: Jonathan Taylor
@@ -11134,17 +11142,17 @@ whowonthelastsuperbowl:
       cost: R1
       basis: Drafted R3
       ineligible: false
-    - player: Courtland Sutton
-      pos: WR
-      cost: R4
-      basis: Drafted R6
-      ineligible: false
     - player: Stefon Diggs
       pos: WR
       cost: R7
       basis: Drafted R9
       ineligible: false
     - player: Devaughn Vele
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Tutu Atwell
       pos: WR
       cost: R13
       basis: Undrafted
@@ -18302,7 +18310,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 54.6
+    tx_per_year: 54.8
     tx_known: false
     seasons: 11
     best_finish:
@@ -18325,7 +18333,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     finish: 11th
     record: 2-6-1
-    tx: 57
+    tx: 59
     in_progress: true
     pf: 893.0
     pa: 1085.7
@@ -18947,6 +18955,10 @@ theoceanpulse:
     - player: Cairo Santos
       via: add
       week: 9
+      waiver: false
+    - player: Jason Sanders
+      via: add
+      week: 10
       waiver: false
   - year: 2025
     players:
@@ -20394,10 +20406,10 @@ theoceanpulse:
       cost: R10
       basis: Drafted R12
       ineligible: false
-    - player: Cairo Santos
+    - player: Jason Sanders
       pos: K
-      cost: R12
-      basis: Drafted R14
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Chiefs D/ST
       pos: D/ST
@@ -20432,7 +20444,7 @@ lukstein:
     playoff_apps: 7
     trades: 9
     trades_known: true
-    tx_per_year: 48.4
+    tx_per_year: 48.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -20455,7 +20467,7 @@ lukstein:
     logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     finish: 12th
     record: 2-7
-    tx: 40
+    tx: 42
     in_progress: true
     pf: 771.6
     pa: 1119.7
@@ -20940,6 +20952,10 @@ lukstein:
     - player: Elijah Mitchell
       via: add
       week: 9
+      waiver: false
+    - player: 49ers D/ST
+      via: add
+      week: 10
       waiver: false
   - year: 2025
     players:
@@ -22386,10 +22402,10 @@ lukstein:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Eagles D/ST
+    - player: 49ers D/ST
       pos: D/ST
-      cost: R11
-      basis: Drafted R13
+      cost: R13
+      basis: Undrafted
       ineligible: false
 henpen28:
   name: Henry
