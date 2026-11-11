@@ -187,8 +187,8 @@ detail:
       pa_color: '#f7aa4a'
     - &id011
       finish: 11
-      team: The ChoSimba Ones
-      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+      team: Im Bleeding Making Me the Shiva
+      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
       owner_id: theoceanpulse
       owner_name: Dillon
       record: 2-6-1
@@ -296,7 +296,7 @@ detail:
     - pick: 10
       owner_id: theoceanpulse
       owner_name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
       keepers:
       - player: Colston Loveland
         round: 8
@@ -325,7 +325,7 @@ detail:
         - 9.04 pick
       - owner_id: theoceanpulse
         owner_name: Dillon
-        team: The ChoSimba Ones
+        team: Im Bleeding Making Me the Shiva
         gave:
         - Nico Collins
         - 5.10 pick
@@ -346,7 +346,7 @@ detail:
       parties:
       - owner_id: theoceanpulse
         owner_name: Dillon
-        team: The ChoSimba Ones
+        team: Im Bleeding Making Me the Shiva
         gave:
         - Josh Downs
         - $1 FAAB
@@ -367,7 +367,7 @@ detail:
         - Luther Burden III
       - owner_id: theoceanpulse
         owner_name: Dillon
-        team: The ChoSimba Ones
+        team: Im Bleeding Making Me the Shiva
         gave:
         - Omarion Hampton
         - Garrett Wilson
@@ -400,7 +400,7 @@ detail:
       parties:
       - owner_id: theoceanpulse
         owner_name: Dillon
-        team: The ChoSimba Ones
+        team: Im Bleeding Making Me the Shiva
         gave:
         - Luther Burden III
         - Alvin Kamara
@@ -420,7 +420,7 @@ detail:
         - Ladd McConkey
       - owner_id: theoceanpulse
         owner_name: Dillon
-        team: The ChoSimba Ones
+        team: Im Bleeding Making Me the Shiva
         gave:
         - Woody Marks
         - Caleb Williams
@@ -449,7 +449,7 @@ detail:
       player: Colston Loveland
       owner_id: theoceanpulse
       owner_name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
     - round: 8
       player: Kyren Williams
       owner_id: schirmerj

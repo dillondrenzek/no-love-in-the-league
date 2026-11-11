@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 121.7
+    tx_per_year: 121.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 7-2
-    tx: 90
+    tx: 92
     in_progress: true
     pf: 1222.5
     pa: 946.3
@@ -324,7 +324,7 @@ jackperkins74:
     with:
     - id: theoceanpulse
       name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
   - year: 2025
     week: 8
     got:
@@ -3155,6 +3155,11 @@ jackperkins74:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Konata Mumpfield
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: George Kittle
       pos: TE
       cost: R5
@@ -3162,11 +3167,6 @@ jackperkins74:
       ineligible: false
     - player: Will Reichard
       pos: K
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Giants D/ST
-      pos: D/ST
       cost: R13
       basis: Undrafted
       ineligible: false
@@ -3203,7 +3203,7 @@ zachzoske:
     playoff_apps: 5
     trades: 20
     trades_known: true
-    tx_per_year: 108.2
+    tx_per_year: 108.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -3226,7 +3226,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 7-2
-    tx: 60
+    tx: 62
     in_progress: true
     pf: 1142.0
     pa: 975.3
@@ -3497,7 +3497,7 @@ zachzoske:
     with:
     - id: theoceanpulse
       name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
   - year: 2026
     week: 6
     got:
@@ -3519,7 +3519,7 @@ zachzoske:
     with:
     - id: theoceanpulse
       name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
   - year: 2026
     week: 1
     got:
@@ -3912,6 +3912,10 @@ zachzoske:
     - player: Terrance Ferguson
       via: add
       week: 9
+      waiver: false
+    - player: MarShawn Lloyd
+      via: add
+      week: 10
       waiver: false
   - year: 2025
     players:
@@ -6112,15 +6116,15 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
+    - player: MarShawn Lloyd
+      pos: RB
+      cost: R9
+      basis: Drafted R11
+      ineligible: false
     - player: Zach Charbonnet
       pos: RB
       cost: R13
       basis: Drafted R15
-      ineligible: false
-    - player: Seth McGowan
-      pos: RB
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Amon-Ra St. Brown
       pos: WR
@@ -6152,6 +6156,11 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
+    - player: Terrance Ferguson
+      pos: TE
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Cam Little
       pos: K
       cost: R9
@@ -6181,7 +6190,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 93.0
+    tx_per_year: 93.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -6204,7 +6213,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 6-3
-    tx: 60
+    tx: 66
     in_progress: true
     pf: 1240.6
     pa: 1100.3
@@ -6458,7 +6467,7 @@ sturmanator15:
     with:
     - id: theoceanpulse
       name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
   - year: 2023
     week: 13
     got:
@@ -6720,6 +6729,14 @@ sturmanator15:
     - player: Saints D/ST
       via: add
       week: 9
+      waiver: true
+    - player: Corey Kiner
+      via: add
+      week: 10
+      waiver: true
+    - player: Ravens D/ST
+      via: add
+      week: 10
       waiver: true
   - year: 2025
     players:
@@ -8713,6 +8730,11 @@ sturmanator15:
       cost: R5
       basis: Drafted R7
       ineligible: false
+    - player: Bryce Young
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Kenneth Walker III
       pos: RB
       cost: Ineligible
@@ -8738,6 +8760,11 @@ sturmanator15:
       cost: R10
       basis: Drafted R12
       ineligible: false
+    - player: Corey Kiner
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Jaxon Smith-Njigba
       pos: WR
       cost: Ineligible
@@ -8758,11 +8785,6 @@ sturmanator15:
       cost: R11
       basis: Drafted R13
       ineligible: false
-    - player: Ryan Flournoy
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Trey McBride
       pos: TE
       cost: R7
@@ -8773,15 +8795,10 @@ sturmanator15:
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Dominic Zvada
-      pos: K
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Saints D/ST
+    - player: Ravens D/ST
       pos: D/ST
-      cost: R13
-      basis: Undrafted
+      cost: R11
+      basis: Drafted R13
       ineligible: false
 gganoom:
   name: Grant
@@ -8799,7 +8816,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: true
-    tx_per_year: 25.0
+    tx_per_year: 25.7
     tx_known: true
     seasons: 3
     best_finish:
@@ -8824,7 +8841,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 4th
     record: 5-4
-    tx: 14
+    tx: 16
     in_progress: true
     pf: 1134.8
     pa: 937.1
@@ -9019,6 +9036,10 @@ gganoom:
     - player: KC Concepcion
       via: add
       week: 8
+      waiver: true
+    - player: Bills D/ST
+      via: add
+      week: 10
       waiver: true
   - year: 2025
     players:
@@ -9290,6 +9311,11 @@ gganoom:
       cost: R6
       basis: Drafted R8
       ineligible: false
+    - player: Wan'Dale Robinson
+      pos: WR
+      cost: R7
+      basis: Drafted R9
+      ineligible: false
     - player: KC Concepcion
       pos: WR
       cost: R8
@@ -9319,6 +9345,11 @@ gganoom:
       pos: D/ST
       cost: R11
       basis: Drafted R13
+      ineligible: false
+    - player: Bills D/ST
+      pos: D/ST
+      cost: R13
+      basis: Undrafted
       ineligible: false
 whowonthelastsuperbowl:
   name: Nate
@@ -11163,7 +11194,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 53.6
+    tx_per_year: 53.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -11186,7 +11217,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 6th
     record: 5-4
-    tx: 26
+    tx: 28
     in_progress: true
     pf: 1029.7
     pa: 1105.2
@@ -11567,6 +11598,10 @@ schirmerj:
     - player: Bears D/ST
       via: add
       week: 9
+      waiver: true
+    - player: Packers D/ST
+      via: add
+      week: 10
       waiver: true
   - year: 2025
     players:
@@ -12989,7 +13024,7 @@ schirmerj:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Bears D/ST
+    - player: Packers D/ST
       pos: D/ST
       cost: R13
       basis: Undrafted
@@ -13312,7 +13347,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: true
-    tx_per_year: 41.8
+    tx_per_year: 42.0
     tx_known: true
     seasons: 8
     best_finish:
@@ -13336,7 +13371,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 8th
     record: 4-5
-    tx: 20
+    tx: 22
     in_progress: true
     pf: 935.2
     pa: 993.2
@@ -13688,6 +13723,10 @@ purpsworth:
     - player: Buccaneers D/ST
       via: add
       week: 9
+      waiver: true
+    - player: Tank Dell
+      via: add
+      week: 10
       waiver: true
   - year: 2025
     players:
@@ -14827,11 +14866,6 @@ purpsworth:
       cost: R6
       basis: Drafted R8
       ineligible: false
-    - player: Kendre Miller
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Ollie Gordon II
       pos: RB
       cost: R13
@@ -14851,6 +14885,11 @@ purpsworth:
       pos: WR
       cost: R2
       basis: Drafted R4
+      ineligible: false
+    - player: Tank Dell
+      pos: WR
+      cost: R8
+      basis: Drafted R10
       ineligible: false
     - player: Deebo Samuel Sr.
       pos: WR
@@ -16457,7 +16496,7 @@ shawne2520997:
     playoff_apps: 8
     trades: 4
     trades_known: true
-    tx_per_year: 50.6
+    tx_per_year: 50.8
     tx_known: false
     seasons: 11
     best_finish:
@@ -16481,7 +16520,7 @@ shawne2520997:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     finish: 10th
     record: 3-6
-    tx: 40
+    tx: 42
     in_progress: true
     pf: 967.8
     pa: 1043.6
@@ -16714,7 +16753,7 @@ shawne2520997:
     with:
     - id: theoceanpulse
       name: Dillon
-      team: The ChoSimba Ones
+      team: Im Bleeding Making Me the Shiva
   - year: 2024
     week: 0
     got:
@@ -16903,6 +16942,10 @@ shawne2520997:
     - player: Malik Willis
       via: add
       week: 9
+      waiver: true
+    - player: Kaleb Johnson
+      via: add
+      week: 10
       waiver: true
   - year: 2025
     players:
@@ -18197,6 +18240,11 @@ shawne2520997:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Kaleb Johnson
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: George Pickens
       pos: WR
       cost: Ineligible
@@ -18213,11 +18261,6 @@ shawne2520997:
       basis: Drafted R9
       ineligible: false
     - player: Antonio Williams
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Darius Cooper
       pos: WR
       cost: R13
       basis: Undrafted
@@ -18240,7 +18283,7 @@ shawne2520997:
 theoceanpulse:
   name: Dillon
   nickname: ''
-  logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+  logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
   honors:
   - emoji: 🏆
     text: 1× Shiva (2018)
@@ -18277,9 +18320,9 @@ theoceanpulse:
       opp: Shawnee
   seasons:
   - year: 2026
-    team: The ChoSimba Ones
+    team: Im Bleeding Making Me the Shiva
     tag: null
-    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     finish: 11th
     record: 2-6-1
     tx: 57

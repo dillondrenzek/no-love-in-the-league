@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-11T03:43:08+00:00
+updated_at: 2026-11-11T11:33:45+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -40,7 +40,7 @@ teams:
   alexandra: "Cornstar"
   purpsworth: "I am dead inside"
   whowonthelastsuperbowl: "Trick or Trick It’s Mike Vick"
-  theoceanpulse: "The ChoSimba Ones"
+  theoceanpulse: "Im Bleeding Making Me the Shiva"
   gganoom: "One Big Beautiful Dillbot"
   shawne2520997: "Swift kick in the Dak"
 
@@ -56,7 +56,7 @@ team_logos:
   alexandra: "https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg"
   purpsworth: "https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg"
   whowonthelastsuperbowl: "http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg"
-  theoceanpulse: "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627ece00-a373-11f1-bc05-dd37ff031f6c"
+  theoceanpulse: "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa"
   gganoom: "https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg"
   shawne2520997: "https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg"
 
@@ -145,11 +145,11 @@ matchups:
   - { week:  9, home: sturmanator15, away: whowonthelastsuperbowl, home_score: 117.2, away_score: 134.0, playoff: false }
   - { week:  9, home: zachzoske, away: schirmerj, home_score: 131.5, away_score: 84.3, playoff: false }
   - { week: 10, home: alexandra, away: purpsworth, playoff: false, played: false, home_proj: 91.55, away_proj: 111.98 }
-  - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false, home_proj: 114.49, away_proj: 103.14 }
+  - { week: 10, home: jackperkins74, away: shawne2520997, playoff: false, played: false, home_proj: 121.69, away_proj: 105.59 }
   - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false, home_proj: 85.06, away_proj: 90.62 }
-  - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 115.09, away_proj: 116.1 }
-  - { week: 10, home: sturmanator15, away: gganoom, playoff: false, played: false, home_proj: 103.65, away_proj: 110.59 }
-  - { week: 10, home: zachzoske, away: kevbots22, playoff: false, played: false, home_proj: 123.27, away_proj: 112.22 }
+  - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, playoff: false, played: false, home_proj: 120.71, away_proj: 116.1 }
+  - { week: 10, home: sturmanator15, away: gganoom, playoff: false, played: false, home_proj: 127.21, away_proj: 110.59 }
+  - { week: 10, home: zachzoske, away: kevbots22, playoff: false, played: false, home_proj: 123.27, away_proj: 120.53 }
   - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false }
   - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false }
   - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false }
@@ -358,17 +358,17 @@ keepers:
 transactions_known: true
 transactions:
   alexandra: { adds: 12, drops: 11, moves: 23 }
-  gganoom: { adds: 8, drops: 6, moves: 14 }
-  jackperkins74: { adds: 52, drops: 38, moves: 90 }
+  gganoom: { adds: 10, drops: 6, moves: 16 }
+  jackperkins74: { adds: 53, drops: 39, moves: 92 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 23, drops: 17, moves: 40 }
-  purpsworth: { adds: 13, drops: 7, moves: 20 }
-  schirmerj: { adds: 13, drops: 13, moves: 26 }
-  shawne2520997: { adds: 23, drops: 17, moves: 40 }
-  sturmanator15: { adds: 31, drops: 29, moves: 60 }
+  purpsworth: { adds: 14, drops: 8, moves: 22 }
+  schirmerj: { adds: 14, drops: 14, moves: 28 }
+  shawne2520997: { adds: 24, drops: 18, moves: 42 }
+  sturmanator15: { adds: 34, drops: 32, moves: 66 }
   theoceanpulse: { adds: 31, drops: 26, moves: 57 }
   whowonthelastsuperbowl: { adds: 15, drops: 8, moves: 23 }
-  zachzoske: { adds: 35, drops: 25, moves: 60 }
+  zachzoske: { adds: 37, drops: 25, moves: 62 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -680,6 +680,10 @@ rosters:
     via: add
     week: 8
     waiver: true
+  - player: Bills D/ST
+    via: add
+    week: 10
+    waiver: true
   alexandra:
   - player: Ja'Marr Chase
     via: draft
@@ -913,6 +917,10 @@ rosters:
     via: add
     week: 9
     waiver: true
+  - player: Kaleb Johnson
+    via: add
+    week: 10
+    waiver: true
   schirmerj:
   - player: Christian McCaffrey
     via: draft
@@ -1006,6 +1014,10 @@ rosters:
   - player: Bears D/ST
     via: add
     week: 9
+    waiver: true
+  - player: Packers D/ST
+    via: add
+    week: 10
     waiver: true
   lukstein:
   - player: Saquon Barkley
@@ -1226,6 +1238,10 @@ rosters:
     via: add
     week: 9
     waiver: true
+  - player: Tank Dell
+    via: add
+    week: 10
+    waiver: true
   sturmanator15:
   - player: Jaxon Smith-Njigba
     via: draft
@@ -1393,6 +1409,14 @@ rosters:
   - player: Saints D/ST
     via: add
     week: 9
+    waiver: true
+  - player: Corey Kiner
+    via: add
+    week: 10
+    waiver: true
+  - player: Ravens D/ST
+    via: add
+    week: 10
     waiver: true
   zachzoske:
   - player: Amon-Ra St. Brown
@@ -1581,6 +1605,10 @@ rosters:
   - player: Terrance Ferguson
     via: add
     week: 9
+    waiver: false
+  - player: MarShawn Lloyd
+    via: add
+    week: 10
     waiver: false
   theoceanpulse:
   - player: Omarion Hampton

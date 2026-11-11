@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-11T03:43:03+00:00'
+captured_at: '2026-11-11T11:33:40+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -86,14 +86,6 @@ rosters:
     injury: ''
     pro_team: PIT
     bye_week: 9
-  - player: Ryan Flournoy
-    pos: WR
-    starter: false
-    proj: 6.69
-    actual: null
-    injury: ''
-    pro_team: DAL
-    bye_week: 14
   - player: Woody Marks
     pos: RB
     starter: false
@@ -110,22 +102,30 @@ rosters:
     injury: ''
     pro_team: CHI
     bye_week: 10
-  - player: Saints D/ST
+  - player: Corey Kiner
+    pos: RB
+    starter: false
+    proj: 10.22
+    actual: null
+    injury: ''
+    pro_team: NE
+    bye_week: 11
+  - player: Bryce Young
+    pos: QB
+    starter: true
+    proj: 20.65
+    actual: null
+    injury: ''
+    pro_team: CAR
+    bye_week: 5
+  - player: Ravens D/ST
     pos: D/ST
     starter: true
-    proj: 4.79
+    proj: 7.7
     actual: null
     injury: ''
-    pro_team: 'NO'
-    bye_week: 8
-  - player: Dominic Zvada
-    pos: K
-    starter: false
-    proj: 10.43
-    actual: null
-    injury: ''
-    pro_team: NYG
-    bye_week: 8
+    pro_team: BAL
+    bye_week: 13
 - manager_id: '{CE078498-3784-4866-8784-983784A866C4}'
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
@@ -226,14 +226,6 @@ rosters:
     injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
-  - player: Seth McGowan
-    pos: RB
-    starter: false
-    proj: 6.16
-    actual: null
-    injury: ''
-    pro_team: IND
-    bye_week: 13
   - player: Cam Little
     pos: K
     starter: true
@@ -250,6 +242,22 @@ rosters:
     injury: ''
     pro_team: JAX
     bye_week: 7
+  - player: Terrance Ferguson
+    pos: TE
+    starter: false
+    proj: 0.0
+    actual: null
+    injury: INJURY_RESERVE
+    pro_team: LAR
+    bye_week: 11
+  - player: MarShawn Lloyd
+    pos: RB
+    starter: false
+    proj: 6.57
+    actual: null
+    injury: QUESTIONABLE
+    pro_team: GB
+    bye_week: 11
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -366,14 +374,14 @@ rosters:
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
-  - player: Bears D/ST
+  - player: Packers D/ST
     pos: D/ST
     starter: true
-    proj: 0.0
+    proj: 5.62
     actual: null
     injury: ''
-    pro_team: CHI
-    bye_week: 10
+    pro_team: GB
+    bye_week: 11
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
   team_id: 4
   team_name: 2x Runner Up
@@ -568,7 +576,7 @@ rosters:
     bye_week: 6
   - player: Braelon Allen
     pos: RB
-    starter: false
+    starter: true
     proj: 6.92
     actual: null
     injury: ''
@@ -576,7 +584,7 @@ rosters:
     bye_week: 13
   - player: Omarion Hampton
     pos: RB
-    starter: true
+    starter: false
     proj: 7.23
     actual: null
     injury: ''
@@ -622,14 +630,6 @@ rosters:
     injury: INJURY_RESERVE
     pro_team: ATL
     bye_week: 11
-  - player: Giants D/ST
-    pos: D/ST
-    starter: false
-    proj: 5.27
-    actual: null
-    injury: ''
-    pro_team: NYG
-    bye_week: 8
   - player: Brandon Aiyuk
     pos: WR
     starter: false
@@ -638,6 +638,14 @@ rosters:
     injury: OUT
     pro_team: SF
     bye_week: 8
+  - player: Konata Mumpfield
+    pos: WR
+    starter: true
+    proj: 7.51
+    actual: null
+    injury: ''
+    pro_team: LAR
+    bye_week: 11
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -660,7 +668,7 @@ rosters:
     bye_week: 6
   - player: Josh Jacobs
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: OUT
@@ -748,7 +756,7 @@ rosters:
     bye_week: 6
   - player: Khalil Shakir
     pos: WR
-    starter: false
+    starter: true
     proj: 8.31
     actual: null
     injury: ''
@@ -986,14 +994,6 @@ rosters:
     injury: ''
     pro_team: MIA
     bye_week: 6
-  - player: Kendre Miller
-    pos: RB
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: ''
-    bye_week: null
   - player: Omar Cooper Jr.
     pos: WR
     starter: true
@@ -1026,6 +1026,14 @@ rosters:
     injury: ''
     pro_team: TB
     bye_week: 10
+  - player: Tank Dell
+    pos: WR
+    starter: false
+    proj: 7.12
+    actual: null
+    injury: ''
+    pro_team: HOU
+    bye_week: 8
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
   team_id: 11
   team_name: Trick or Trick It’s Mike Vick
@@ -1160,7 +1168,7 @@ rosters:
     bye_week: 8
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
   team_id: 12
-  team_name: The ChoSimba Ones
+  team_name: Im Bleeding Making Me the Shiva
   players:
   - player: A.J. Brown
     pos: WR
@@ -1398,6 +1406,22 @@ rosters:
     injury: ''
     pro_team: CLE
     bye_week: 11
+  - player: Wan'Dale Robinson
+    pos: WR
+    starter: false
+    proj: 6.71
+    actual: null
+    injury: ''
+    pro_team: TEN
+    bye_week: 9
+  - player: Bills D/ST
+    pos: D/ST
+    starter: false
+    proj: 6.22
+    actual: null
+    injury: ''
+    pro_team: BUF
+    bye_week: 7
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
   team_id: 14
   team_name: Swift kick in the Dak
@@ -1500,7 +1524,7 @@ rosters:
     bye_week: 7
   - player: Devin Singletary
     pos: RB
-    starter: true
+    starter: false
     proj: 6.31
     actual: null
     injury: ''
@@ -1508,7 +1532,7 @@ rosters:
     bye_week: 8
   - player: Dylan Sampson
     pos: RB
-    starter: false
+    starter: true
     proj: 8.76
     actual: null
     injury: ''
@@ -1522,11 +1546,11 @@ rosters:
     injury: INJURY_RESERVE
     pro_team: MIA
     bye_week: 6
-  - player: Darius Cooper
-    pos: WR
+  - player: Kaleb Johnson
+    pos: RB
     starter: false
-    proj: 0.0
+    proj: 5.29
     actual: null
     injury: ''
-    pro_team: PHI
-    bye_week: 10
+    pro_team: GB
+    bye_week: 11
