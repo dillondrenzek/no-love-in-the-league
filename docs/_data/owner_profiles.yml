@@ -9285,11 +9285,6 @@ gganoom:
       cost: Ineligible
       basis: Drafted R2
       ineligible: true
-    - player: Michael Wilson
-      pos: WR
-      cost: R4
-      basis: Drafted R6
-      ineligible: false
     - player: Jakobi Meyers
       pos: WR
       cost: R6
@@ -9319,11 +9314,6 @@ gganoom:
       pos: K
       cost: R11
       basis: Drafted R13
-      ineligible: false
-    - player: Chase McLaughlin
-      pos: K
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Broncos D/ST
       pos: D/ST

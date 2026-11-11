@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-10T21:35:16+00:00'
+captured_at: '2026-11-11T03:43:03+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -143,7 +143,7 @@ rosters:
     starter: false
     proj: 10.97
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: NYG
     bye_week: 8
   - player: Joe Burrow
@@ -908,7 +908,7 @@ rosters:
     bye_week: 13
   - player: Emeka Egbuka
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -916,7 +916,7 @@ rosters:
     bye_week: 10
   - player: Rome Odunze
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -932,7 +932,7 @@ rosters:
     bye_week: 11
   - player: Rico Dowdle
     pos: RB
-    starter: false
+    starter: true
     proj: 8.56
     actual: null
     injury: ''
@@ -956,7 +956,7 @@ rosters:
     bye_week: 6
   - player: Deebo Samuel Sr.
     pos: WR
-    starter: false
+    starter: true
     proj: 11.54
     actual: null
     injury: QUESTIONABLE
@@ -972,7 +972,7 @@ rosters:
     bye_week: 11
   - player: Steelers D/ST
     pos: D/ST
-    starter: false
+    starter: true
     proj: 5.38
     actual: null
     injury: ''
@@ -1020,7 +1020,7 @@ rosters:
     bye_week: 14
   - player: Buccaneers D/ST
     pos: D/ST
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1326,14 +1326,6 @@ rosters:
     injury: ''
     pro_team: LV
     bye_week: 13
-  - player: Michael Wilson
-    pos: WR
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: OUT
-    pro_team: ARI
-    bye_week: 14
   - player: Jaylen Warren
     pos: RB
     starter: false
@@ -1392,7 +1384,7 @@ rosters:
     bye_week: 8
   - player: Keon Coleman
     pos: WR
-    starter: false
+    starter: true
     proj: 6.41
     actual: null
     injury: ''
@@ -1406,14 +1398,6 @@ rosters:
     injury: ''
     pro_team: CLE
     bye_week: 11
-  - player: Chase McLaughlin
-    pos: K
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: TB
-    bye_week: 10
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
   team_id: 14
   team_name: Swift kick in the Dak
@@ -1436,7 +1420,7 @@ rosters:
     bye_week: 14
   - player: D'Andre Swift
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
@@ -1484,7 +1468,7 @@ rosters:
     bye_week: 6
   - player: Kaelon Black
     pos: RB
-    starter: false
+    starter: true
     proj: 7.25
     actual: null
     injury: ''
@@ -1508,7 +1492,7 @@ rosters:
     bye_week: 7
   - player: Antonio Williams
     pos: WR
-    starter: false
+    starter: true
     proj: 6.47
     actual: null
     injury: ''
@@ -1535,12 +1519,12 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: INJURY_RESERVE
     pro_team: MIA
     bye_week: 6
   - player: Darius Cooper
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: ''
