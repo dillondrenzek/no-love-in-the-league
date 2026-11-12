@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-11T18:59:44+00:00
+updated_at: 2026-11-12T01:43:59+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -367,7 +367,7 @@ transactions:
   shawne2520997: { adds: 24, drops: 18, moves: 42 }
   sturmanator15: { adds: 34, drops: 32, moves: 66 }
   theoceanpulse: { adds: 32, drops: 27, moves: 59 }
-  whowonthelastsuperbowl: { adds: 16, drops: 9, moves: 25 }
+  whowonthelastsuperbowl: { adds: 17, drops: 10, moves: 27 }
   zachzoske: { adds: 37, drops: 25, moves: 62 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
@@ -1985,6 +1985,10 @@ rosters:
     via: add
     week: 9
     waiver: true
+  - player: Mack Hollins
+    via: add
+    week: 10
+    waiver: false
   - player: Tutu Atwell
     via: add
     week: 10

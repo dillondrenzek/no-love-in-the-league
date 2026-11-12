@@ -9374,7 +9374,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 35.7
+    tx_per_year: 35.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -9398,7 +9398,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 5th
     record: 5-4
-    tx: 25
+    tx: 27
     in_progress: true
     pf: 1071.3
     pa: 1007.3
@@ -9805,6 +9805,10 @@ whowonthelastsuperbowl:
       via: add
       week: 9
       waiver: true
+    - player: Mack Hollins
+      via: add
+      week: 10
+      waiver: false
     - player: Tutu Atwell
       via: add
       week: 10
@@ -11147,7 +11151,7 @@ whowonthelastsuperbowl:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Devaughn Vele
+    - player: Mack Hollins
       pos: WR
       cost: R13
       basis: Undrafted

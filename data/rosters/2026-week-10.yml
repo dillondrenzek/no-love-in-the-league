@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-11T18:59:37+00:00'
+captured_at: '2026-11-12T01:43:54+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -91,7 +91,7 @@ rosters:
     starter: false
     proj: 13.03
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: HOU
     bye_week: 8
   - player: Caleb Williams
@@ -135,7 +135,7 @@ rosters:
     starter: true
     proj: 16.37
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
   - player: Cam Skattebo
@@ -159,7 +159,7 @@ rosters:
     starter: true
     proj: 16.23
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
   - player: Isaiah Likely
@@ -239,7 +239,7 @@ rosters:
     starter: false
     proj: 6.64
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
   - player: Terrance Ferguson
@@ -255,7 +255,7 @@ rosters:
     starter: false
     proj: 6.57
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: GB
     bye_week: 11
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
@@ -371,7 +371,7 @@ rosters:
     starter: false
     proj: 7.88
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: WSH
     bye_week: 7
   - player: Packers D/ST
@@ -555,7 +555,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: OUT
     pro_team: LAR
     bye_week: 11
   - player: Mike Washington Jr.
@@ -751,7 +751,7 @@ rosters:
     starter: false
     proj: 8.79
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: MIN
     bye_week: 6
   - player: Khalil Shakir
@@ -851,7 +851,7 @@ rosters:
     starter: false
     proj: 7.58
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: SEA
     bye_week: 11
   - player: Jordan Love
@@ -875,7 +875,7 @@ rosters:
     starter: false
     proj: 7.49
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: NE
     bye_week: 11
   - player: Keenan Allen
@@ -935,7 +935,7 @@ rosters:
     starter: true
     proj: 8.0
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CLE
     bye_week: 11
   - player: Rico Dowdle
@@ -1031,7 +1031,7 @@ rosters:
     starter: false
     proj: 7.12
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: HOU
     bye_week: 8
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
@@ -1147,15 +1147,7 @@ rosters:
     starter: true
     proj: 8.48
     actual: null
-    injury: ''
-    pro_team: 'NO'
-    bye_week: 8
-  - player: Devaughn Vele
-    pos: WR
-    starter: false
-    proj: 5.88
-    actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
   - player: Tutu Atwell
@@ -1165,6 +1157,14 @@ rosters:
     actual: null
     injury: ''
     pro_team: LAR
+    bye_week: 11
+  - player: Mack Hollins
+    pos: WR
+    starter: false
+    proj: 8.93
+    actual: null
+    injury: ''
+    pro_team: NE
     bye_week: 11
 - manager_id: '{A07D41FF-2713-4306-883E-959C2C6F8F1E}'
   team_id: 12
@@ -1207,7 +1207,7 @@ rosters:
     starter: true
     proj: 18.94
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
   - player: Dalton Kincaid
@@ -1215,7 +1215,7 @@ rosters:
     starter: true
     proj: 7.22
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: BUF
     bye_week: 7
   - player: Breece Hall
@@ -1323,7 +1323,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: NE
     bye_week: 11
   - player: Brock Bowers
@@ -1347,7 +1347,7 @@ rosters:
     starter: true
     proj: 9.82
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
   - player: Brock Purdy
