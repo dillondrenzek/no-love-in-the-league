@@ -1,0 +1,16 @@
+# Power-ranking blurbs — 2026 week 10. One line per team, in the
+# computed rank order. Fill from the agent (agents/weekly-power.md), then
+# rebuild. Keyed by franchise id; the comment shows rank + team.
+blurbs:
+  sturmanator15: "Still No. 1 on a 138 average over three, despite losing to Nate; Bryce Young is back, because Caleb's on bye."   # 1. The People's Commissioner
+  jackperkins74: "Stays second after sweeping Dillon, and now finds out what life looks like without Puka."   # 2. Gibbed for your pleasure
+  zachzoske: "Holds at three on four straight wins and a 136 average over three; when the kicker scores 17, things are going right."   # 3. Tuten Your Mother, Respectfully
+  gganoom: "Holds at four after the week's top score, with five players on bye next week, so this is the week to bank one."   # 4. One Big Beautiful Dillbot
+  whowonthelastsuperbowl: "Up three after beating the commish with 45 points on the bench, the most confident way to win there is."   # 5. Trick or Trick It’s Mike Vick
+  alexandra: "Up one after winning without a kicker; this week it's no kicker and a running back on bye, so the experiment continues."   # 6. Cornstar
+  schirmerj: "Down two after the week's low score, and a 102 average over three weeks has the playoff odds sweating at 57%."   # 7. Return of the IDP
+  kevbots22: "Down two after losing by 2.2 to an injury and a -5 defense, which also made it career loss No. 101."   # 8. Remember the Nice Guys, ChatGPT
+  purpsworth: "Holds at nine on a 2.2-point win nobody's bragging about, with Egbuka, Odunze and the defense all off this week."   # 9. I am dead inside
+  shawne2520997: "Still tenth on four straight losses, and the reigning sacko is now likelier to repeat than to make the playoffs."   # 10. Swift kick in the Dak
+  theoceanpulse: "Still eleventh on an 86 average over three, and the new name suggests that's going great."   # 11. Im Bleeding Making Me the Shiva
+  lukstein: "Still twelfth with six players on bye, but the opponent is the one team that's been close to this bad."   # 12. 2x Runner Up
