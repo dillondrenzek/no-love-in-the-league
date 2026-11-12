@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-12T11:58:28+00:00'
+captured_at: '2026-11-12T19:33:42+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -638,14 +638,14 @@ rosters:
     injury: ''
     pro_team: LAR
     bye_week: 11
-  - player: Laquon Treadwell
-    pos: WR
+  - player: Emari Demercado
+    pos: RB
     starter: false
-    proj: 6.12
+    proj: 4.5
     actual: null
     injury: ''
-    pro_team: IND
-    bye_week: 13
+    pro_team: ''
+    bye_week: null
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -695,7 +695,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: DOUBTFUL
+    injury: QUESTIONABLE
     pro_team: NE
     bye_week: 11
   - player: Travis Kelce
@@ -1439,7 +1439,7 @@ rosters:
     starter: false
     proj: 9.91
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: DAL
     bye_week: 14
   - player: D'Andre Swift

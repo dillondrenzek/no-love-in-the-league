@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 14
     trades_known: true
-    tx_per_year: 122.1
+    tx_per_year: 122.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 7-2
-    tx: 94
+    tx: 96
     in_progress: true
     pf: 1222.5
     pa: 946.3
@@ -712,6 +712,10 @@ jackperkins74:
       via: add
       week: 9
       waiver: true
+    - player: Emari Demercado
+      via: add
+      week: 10
+      waiver: false
     - player: Laquon Treadwell
       via: add
       week: 10
@@ -3129,6 +3133,11 @@ jackperkins74:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Emari Demercado
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Tee Higgins
       pos: WR
       cost: R1
@@ -3155,11 +3164,6 @@ jackperkins74:
       basis: Undrafted
       ineligible: false
     - player: Konata Mumpfield
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Laquon Treadwell
       pos: WR
       cost: R13
       basis: Undrafted
