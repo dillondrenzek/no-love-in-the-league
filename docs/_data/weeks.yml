@@ -3581,11 +3581,221 @@
     home_proj: 123.3
     away_proj: 120.5
   highlights: []
-  projections: []
-  projected_at: null
+  projections:
+  - home_id: alexandra
+    away_id: purpsworth
+    home_team: Cornstar
+    away_team: I am dead inside
+    home_proj: 91.7
+    away_proj: 112.0
+    pickem: false
+    fav_id: purpsworth
+    fav_team: I am dead inside
+    dog_team: Cornstar
+    fav_proj: 112.0
+    dog_proj: 91.7
+    spread: 20.3
+    decided: false
+    result: null
+  - home_id: jackperkins74
+    away_id: shawne2520997
+    home_team: Gibbed for your pleasure
+    away_team: Swift kick in the Dak
+    home_proj: 121.7
+    away_proj: 105.6
+    pickem: false
+    fav_id: jackperkins74
+    fav_team: Gibbed for your pleasure
+    dog_team: Swift kick in the Dak
+    fav_proj: 121.7
+    dog_proj: 105.6
+    spread: 16.1
+    decided: false
+    result: null
+  - home_id: lukstein
+    away_id: theoceanpulse
+    home_team: 2x Runner Up
+    away_team: Im Bleeding Making Me the Shiva
+    home_proj: 96.2
+    away_proj: 100.3
+    pickem: false
+    fav_id: theoceanpulse
+    fav_team: Im Bleeding Making Me the Shiva
+    dog_team: 2x Runner Up
+    fav_proj: 100.3
+    dog_proj: 96.2
+    spread: 4.1
+    decided: false
+    result: null
+  - home_id: schirmerj
+    away_id: whowonthelastsuperbowl
+    home_team: Return of the IDP
+    away_team: Trick or Trick It’s Mike Vick
+    home_proj: 120.7
+    away_proj: 117.7
+    pickem: false
+    fav_id: schirmerj
+    fav_team: Return of the IDP
+    dog_team: Trick or Trick It’s Mike Vick
+    fav_proj: 120.7
+    dog_proj: 117.7
+    spread: 3.0
+    decided: false
+    result: null
+  - home_id: sturmanator15
+    away_id: gganoom
+    home_team: The People's Commissioner
+    away_team: One Big Beautiful Dillbot
+    home_proj: 125.0
+    away_proj: 124.6
+    pickem: false
+    fav_id: sturmanator15
+    fav_team: The People's Commissioner
+    dog_team: One Big Beautiful Dillbot
+    fav_proj: 125.0
+    dog_proj: 124.6
+    spread: 0.4
+    decided: false
+    result: null
+  - home_id: zachzoske
+    away_id: kevbots22
+    home_team: Tuten Your Mother, Respectfully
+    away_team: Remember the Nice Guys, ChatGPT
+    home_proj: 123.3
+    away_proj: 120.5
+    pickem: false
+    fav_id: zachzoske
+    fav_team: Tuten Your Mother, Respectfully
+    dog_team: Remember the Nice Guys, ChatGPT
+    fav_proj: 123.3
+    dog_proj: 120.5
+    spread: 2.8
+    decided: false
+    result: null
+  projected_at: Nov 12, 2026 · 1:08 PM PST
   updated_at: Nov 12, 11:33 AM PST
   current: true
-  power: []
+  power:
+  - rank: 1
+    fid: sturmanator15
+    team: The People's Commissioner
+    owner: Wade
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    record: 6-3
+    movement: 0
+    is_new: false
+    blurb: Still No. 1 on a 138 average over three, despite losing to Nate; Bryce
+      Young is back, because Caleb's on bye.
+  - rank: 2
+    fid: jackperkins74
+    team: Gibbed for your pleasure
+    owner: Jack
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+    record: 7-2
+    movement: 0
+    is_new: false
+    blurb: Stays second after sweeping Dillon, and now finds out what life looks like
+      without Puka.
+  - rank: 3
+    fid: zachzoske
+    team: Tuten Your Mother, Respectfully
+    owner: Zach
+    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+    record: 7-2
+    movement: 0
+    is_new: false
+    blurb: Holds at three on four straight wins and a 136 average over three; when
+      the kicker scores 17, things are going right.
+  - rank: 4
+    fid: gganoom
+    team: One Big Beautiful Dillbot
+    owner: Grant
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+    record: 5-4
+    movement: 0
+    is_new: false
+    blurb: Holds at four after the week's top score, with five players on bye next
+      week, so this is the week to bank one.
+  - rank: 5
+    fid: whowonthelastsuperbowl
+    team: Trick or Trick It’s Mike Vick
+    owner: Nate
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    record: 5-4
+    movement: 3
+    is_new: false
+    blurb: Up three after beating the commish with 45 points on the bench, the most
+      confident way to win there is.
+  - rank: 6
+    fid: alexandra
+    team: Cornstar
+    owner: Lexi
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    record: 4-5
+    movement: 1
+    is_new: false
+    blurb: Up one after winning without a kicker; this week it's no kicker and a running
+      back on bye, so the experiment continues.
+  - rank: 7
+    fid: schirmerj
+    team: Return of the IDP
+    owner: Jono
+    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+    record: 5-4
+    movement: -2
+    is_new: false
+    blurb: Down two after the week's low score, and a 102 average over three weeks
+      has the playoff odds sweating at 57%.
+  - rank: 8
+    fid: kevbots22
+    team: Remember the Nice Guys, ChatGPT
+    owner: Kevin
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    record: 3-5-1
+    movement: -2
+    is_new: false
+    blurb: Down two after losing by 2.2 to an injury and a -5 defense, which also
+      made it career loss No. 101.
+  - rank: 9
+    fid: purpsworth
+    team: I am dead inside
+    owner: Trevor
+    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+    record: 4-5
+    movement: 0
+    is_new: false
+    blurb: Holds at nine on a 2.2-point win nobody's bragging about, with Egbuka,
+      Odunze and the defense all off this week.
+  - rank: 10
+    fid: shawne2520997
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-6
+    movement: 0
+    is_new: false
+    blurb: Still tenth on four straight losses, and the reigning sacko is now likelier
+      to repeat than to make the playoffs.
+  - rank: 11
+    fid: theoceanpulse
+    team: Im Bleeding Making Me the Shiva
+    owner: Dillon
+    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
+    record: 2-6-1
+    movement: 0
+    is_new: false
+    blurb: Still eleventh on an 86 average over three, and the new name suggests that's
+      going great.
+  - rank: 12
+    fid: lukstein
+    team: 2x Runner Up
+    owner: Luke
+    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+    record: 2-7
+    movement: 0
+    is_new: false
+    blurb: Still twelfth with six players on bye, but the opponent is the one team
+      that's been close to this bad.
 2026-11:
   week: 11
   state: future
