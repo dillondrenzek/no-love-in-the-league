@@ -18324,7 +18324,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 54.8
+    tx_per_year: 55.0
     tx_known: false
     seasons: 11
     best_finish:
@@ -18347,7 +18347,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     finish: 11th
     record: 2-6-1
-    tx: 59
+    tx: 61
     in_progress: true
     pf: 893.0
     pa: 1085.7
@@ -18969,6 +18969,10 @@ theoceanpulse:
     - player: Cairo Santos
       via: add
       week: 9
+      waiver: false
+    - player: Evan McPherson
+      via: add
+      week: 10
       waiver: false
     - player: Jason Sanders
       via: add
@@ -20420,7 +20424,7 @@ theoceanpulse:
       cost: R10
       basis: Drafted R12
       ineligible: false
-    - player: Jason Sanders
+    - player: Evan McPherson
       pos: K
       cost: R13
       basis: Undrafted
