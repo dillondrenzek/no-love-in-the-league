@@ -23,7 +23,7 @@ active:
   win_color: '#f6a048'
   titles: '2'
   sackos: 1
-  trades: 14
+  trades: 15
   best_finish:
     type: shiva
     years:
@@ -1649,8 +1649,8 @@ tx_heatmap:
       color: '#f7a749'
   - id: zachzoske
     name: Zach
-    total: 976
-    tx_per_year: 108.4
+    total: 979
+    tx_per_year: 108.8
     cells:
     - year: 2018
       count: 130
@@ -1677,8 +1677,8 @@ tx_heatmap:
       count: 110
       color: '#f59a46'
     - year: 2026
-      count: 62
-      color: '#fac46e'
+      count: 65
+      color: '#fac169'
   - id: sturmanator15
     name: Wade
     total: 843
