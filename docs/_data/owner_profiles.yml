@@ -6204,7 +6204,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 93.7
+    tx_per_year: 93.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -6227,7 +6227,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 6-3
-    tx: 66
+    tx: 67
     in_progress: true
     pf: 1240.6
     pa: 1100.3
@@ -6752,6 +6752,10 @@ sturmanator15:
       via: add
       week: 10
       waiver: true
+    - player: Xavier Hutchinson
+      via: add
+      week: 10
+      waiver: false
   - year: 2025
     players:
     - player: Ja'Marr Chase
@@ -8798,6 +8802,11 @@ sturmanator15:
       pos: WR
       cost: R11
       basis: Drafted R13
+      ineligible: false
+    - player: Xavier Hutchinson
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Trey McBride
       pos: TE
