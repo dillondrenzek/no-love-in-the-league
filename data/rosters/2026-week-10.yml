@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-14T17:27:33+00:00'
+captured_at: '2026-11-14T23:29:35+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -49,7 +49,7 @@ rosters:
   - player: Blake Corum
     pos: RB
     starter: true
-    proj: 10.9
+    proj: 10.89
     actual: null
     injury: ''
     pro_team: LAR
@@ -89,7 +89,7 @@ rosters:
   - player: Woody Marks
     pos: RB
     starter: false
-    proj: 8.2
+    proj: 13.2
     actual: null
     injury: QUESTIONABLE
     pro_team: HOU
@@ -129,7 +129,7 @@ rosters:
   - player: Xavier Hutchinson
     pos: WR
     starter: false
-    proj: 9.18
+    proj: 9.24
     actual: null
     injury: ''
     pro_team: HOU
@@ -329,7 +329,7 @@ rosters:
   - player: Kyren Williams
     pos: RB
     starter: true
-    proj: 16.98
+    proj: 16.97
     actual: null
     injury: ''
     pro_team: LAR
@@ -337,7 +337,7 @@ rosters:
   - player: Xavier Worthy
     pos: WR
     starter: true
-    proj: 7.74
+    proj: 7.71
     actual: null
     injury: QUESTIONABLE
     pro_team: KC
@@ -361,7 +361,7 @@ rosters:
   - player: Emmett Johnson
     pos: RB
     starter: false
-    proj: 15.93
+    proj: 15.53
     actual: null
     injury: ''
     pro_team: KC
@@ -477,7 +477,7 @@ rosters:
   - player: C.J. Stroud
     pos: QB
     starter: true
-    proj: 19.97
+    proj: 20.11
     actual: null
     injury: ''
     pro_team: HOU
@@ -537,9 +537,9 @@ rosters:
   - player: Travis Etienne Jr.
     pos: RB
     starter: true
-    proj: 9.68
+    proj: 9.36
     actual: null
-    injury: INJURY_RESERVE
+    injury: QUESTIONABLE
     pro_team: 'NO'
     bye_week: 8
   - player: Trevor Lawrence
@@ -633,7 +633,7 @@ rosters:
   - player: Konata Mumpfield
     pos: WR
     starter: true
-    proj: 7.48
+    proj: 7.47
     actual: null
     injury: ''
     pro_team: LAR
@@ -641,7 +641,7 @@ rosters:
   - player: Josh Downs
     pos: WR
     starter: false
-    proj: 8.45
+    proj: 8.42
     actual: null
     injury: ''
     pro_team: KC
@@ -709,7 +709,7 @@ rosters:
   - player: Travis Kelce
     pos: TE
     starter: true
-    proj: 9.49
+    proj: 9.46
     actual: null
     injury: ''
     pro_team: KC
@@ -741,7 +741,7 @@ rosters:
   - player: Patriots D/ST
     pos: D/ST
     starter: true
-    proj: 3.43
+    proj: 3.52
     actual: null
     injury: ''
     pro_team: NE
@@ -801,7 +801,7 @@ rosters:
   - player: Rashee Rice
     pos: WR
     starter: true
-    proj: 10.68
+    proj: 10.64
     actual: null
     injury: ''
     pro_team: KC
@@ -905,7 +905,7 @@ rosters:
   - player: Lions D/ST
     pos: D/ST
     starter: true
-    proj: 4.98
+    proj: 5.06
     actual: null
     injury: ''
     pro_team: DET
@@ -1037,7 +1037,7 @@ rosters:
   - player: Tank Dell
     pos: WR
     starter: false
-    proj: 8.6
+    proj: 8.65
     actual: null
     injury: QUESTIONABLE
     pro_team: HOU
@@ -1129,7 +1129,7 @@ rosters:
   - player: Tyler Shough
     pos: QB
     starter: false
-    proj: 18.91
+    proj: 18.89
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1153,7 +1153,7 @@ rosters:
   - player: Alvin Kamara
     pos: RB
     starter: true
-    proj: 7.2
+    proj: 6.74
     actual: null
     injury: QUESTIONABLE
     pro_team: 'NO'
@@ -1161,7 +1161,7 @@ rosters:
   - player: Tutu Atwell
     pos: WR
     starter: true
-    proj: 7.44
+    proj: 7.43
     actual: null
     injury: ''
     pro_team: LAR
@@ -1285,7 +1285,7 @@ rosters:
   - player: Audric Estime
     pos: RB
     starter: false
-    proj: 4.01
+    proj: 4.83
     actual: null
     injury: ''
     pro_team: 'NO'
@@ -1331,7 +1331,7 @@ rosters:
     starter: false
     proj: 0.0
     actual: null
-    injury: OUT
+    injury: INJURY_RESERVE
     pro_team: NE
     bye_week: 11
   - player: Brock Bowers
@@ -1369,7 +1369,7 @@ rosters:
   - player: Patrick Mahomes
     pos: QB
     starter: false
-    proj: 20.41
+    proj: 20.3
     actual: null
     injury: QUESTIONABLE
     pro_team: KC
@@ -1444,7 +1444,7 @@ rosters:
     bye_week: 7
   - player: George Pickens
     pos: WR
-    starter: false
+    starter: true
     proj: 9.89
     actual: null
     injury: QUESTIONABLE
@@ -1461,7 +1461,7 @@ rosters:
   - player: Nico Collins
     pos: WR
     starter: true
-    proj: 11.41
+    proj: 11.46
     actual: null
     injury: ''
     pro_team: HOU
@@ -1500,7 +1500,7 @@ rosters:
     bye_week: 6
   - player: Kaelon Black
     pos: RB
-    starter: true
+    starter: false
     proj: 7.25
     actual: null
     injury: ''
@@ -1509,9 +1509,9 @@ rosters:
   - player: David Montgomery
     pos: RB
     starter: false
-    proj: 10.16
+    proj: 0.0
     actual: null
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: HOU
     bye_week: 8
   - player: Brenton Strange
