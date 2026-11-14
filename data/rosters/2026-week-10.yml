@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-14T00:33:05+00:00'
+captured_at: '2026-11-14T11:04:37+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -304,7 +304,7 @@ rosters:
     bye_week: 6
   - player: Carnell Tate
     pos: WR
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: OUT
@@ -366,14 +366,6 @@ rosters:
     injury: ''
     pro_team: KC
     bye_week: 5
-  - player: Pat Freiermuth
-    pos: TE
-    starter: false
-    proj: 7.18
-    actual: null
-    injury: ''
-    pro_team: PIT
-    bye_week: 9
   - player: Treylon Burks
     pos: WR
     starter: false
@@ -390,6 +382,14 @@ rosters:
     injury: ''
     pro_team: GB
     bye_week: 11
+  - player: Chimere Dike
+    pos: WR
+    starter: true
+    proj: 8.04
+    actual: null
+    injury: ''
+    pro_team: TEN
+    bye_week: 9
 - manager_id: '{5100ADE9-CC6D-4D39-80AD-E9CC6D0D39A4}'
   team_id: 4
   team_name: 2x Runner Up

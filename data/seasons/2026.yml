@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-14T00:33:08+00:00
+updated_at: 2026-11-14T11:04:42+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -147,7 +147,7 @@ matchups:
   - { week: 10, home: alexandra, away: purpsworth, home_score: 0.0, away_score: 23.6, playoff: false, final: false, home_proj: 91.62, away_proj: 110.8 }
   - { week: 10, home: jackperkins74, away: shawne2520997, home_score: 25.7, away_score: 11.2, playoff: false, final: false, home_proj: 123.3, away_proj: 105.68 }
   - { week: 10, home: lukstein, away: theoceanpulse, playoff: false, played: false, home_proj: 95.96, away_proj: 99.42 }
-  - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 5.7, away_score: 17.3, playoff: false, final: false, home_proj: 111.14, away_proj: 115.83 }
+  - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 5.7, away_score: 17.3, playoff: false, final: false, home_proj: 119.18, away_proj: 115.83 }
   - { week: 10, home: sturmanator15, away: gganoom, home_score: 0.0, away_score: 4.9, playoff: false, final: false, home_proj: 131.74, away_proj: 124.3 }
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 23.2, away_score: 0.0, playoff: false, final: false, home_proj: 127.1, away_proj: 120.87 }
   - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false }
@@ -369,7 +369,7 @@ transactions:
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 24, drops: 18, moves: 42 }
   purpsworth: { adds: 14, drops: 8, moves: 22 }
-  schirmerj: { adds: 14, drops: 14, moves: 28 }
+  schirmerj: { adds: 15, drops: 15, moves: 30 }
   shawne2520997: { adds: 24, drops: 18, moves: 42 }
   sturmanator15: { adds: 35, drops: 32, moves: 67 }
   theoceanpulse: { adds: 33, drops: 28, moves: 61 }
@@ -1029,6 +1029,10 @@ rosters:
     via: add
     week: 9
     waiver: true
+  - player: Chimere Dike
+    via: add
+    week: 10
+    waiver: false
   - player: Packers D/ST
     via: add
     week: 10

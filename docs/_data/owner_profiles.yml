@@ -11225,7 +11225,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: false
-    tx_per_year: 53.8
+    tx_per_year: 54.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -11248,7 +11248,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 6th
     record: 5-4
-    tx: 28
+    tx: 30
     in_progress: true
     pf: 1029.7
     pa: 1105.2
@@ -11630,6 +11630,10 @@ schirmerj:
       via: add
       week: 9
       waiver: true
+    - player: Chimere Dike
+      via: add
+      week: 10
+      waiver: false
     - player: Packers D/ST
       via: add
       week: 10
@@ -13035,6 +13039,11 @@ schirmerj:
       cost: R7
       basis: Drafted R9
       ineligible: false
+    - player: Chimere Dike
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Treylon Burks
       pos: WR
       cost: R13
@@ -13044,11 +13053,6 @@ schirmerj:
       pos: TE
       cost: R4
       basis: Drafted R6
-      ineligible: false
-    - player: Pat Freiermuth
-      pos: TE
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Jason Myers
       pos: K

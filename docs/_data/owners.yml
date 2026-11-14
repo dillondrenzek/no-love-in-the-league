@@ -1745,8 +1745,8 @@ tx_heatmap:
       color: '#fac470'
   - id: schirmerj
     name: Jono
-    total: 484
-    tx_per_year: 53.8
+    total: 486
+    tx_per_year: 54.0
     cells:
     - year: 2018
       count: 78
@@ -1773,8 +1773,8 @@ tx_heatmap:
       count: 61
       color: '#fac470'
     - year: 2026
-      count: 28
-      color: '#fcdead'
+      count: 30
+      color: '#fcdca9'
   - id: shawne2520997
     name: Shawnee
     total: 457
