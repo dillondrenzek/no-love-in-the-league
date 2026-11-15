@@ -3217,7 +3217,7 @@ zachzoske:
     playoff_apps: 5
     trades: 20
     trades_known: true
-    tx_per_year: 108.8
+    tx_per_year: 109.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -3240,7 +3240,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 7-2
-    tx: 65
+    tx: 67
     in_progress: true
     pf: 1142.0
     pa: 975.3
@@ -6135,6 +6135,11 @@ zachzoske:
       cost: R13
       basis: Drafted R15
       ineligible: false
+    - player: Seth McGowan
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Amon-Ra St. Brown
       pos: WR
       cost: Ineligible
@@ -6179,11 +6184,6 @@ zachzoske:
       pos: D/ST
       cost: R11
       basis: Drafted R13
-      ineligible: false
-    - player: Bears D/ST
-      pos: D/ST
-      cost: R13
-      basis: Undrafted
       ineligible: false
 sturmanator15:
   name: Wade
