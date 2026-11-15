@@ -13077,7 +13077,7 @@ alexandra:
     playoff_apps: 0
     trades: 1
     trades_known: false
-    tx_per_year: 23.0
+    tx_per_year: 25.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -13100,7 +13100,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 7th
     record: 4-5
-    tx: 23
+    tx: 25
     in_progress: true
     pf: 1029.4
     pa: 1051.0
@@ -13276,6 +13276,10 @@ alexandra:
       via: add
       week: 8
       waiver: false
+    - player: Riley Patterson
+      via: add
+      week: 10
+      waiver: false
   current_roster:
     year: 2026
     week: 10
@@ -13350,10 +13354,10 @@ alexandra:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Tyler Loop
+    - player: Riley Patterson
       pos: K
       cost: R13
-      basis: Drafted R15
+      basis: Undrafted
       ineligible: false
     - player: Lions D/ST
       pos: D/ST
@@ -18345,7 +18349,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 55.0
+    tx_per_year: 55.3
     tx_known: false
     seasons: 11
     best_finish:
@@ -18368,7 +18372,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     finish: 11th
     record: 2-6-1
-    tx: 61
+    tx: 64
     in_progress: true
     pf: 893.0
     pa: 1085.7
@@ -18995,7 +18999,15 @@ theoceanpulse:
       via: add
       week: 10
       waiver: false
+    - player: Fernando Mendoza
+      via: add
+      week: 10
+      waiver: false
     - player: Jason Sanders
+      via: add
+      week: 10
+      waiver: false
+    - player: Justice Hill
       via: add
       week: 10
       waiver: false
@@ -20380,6 +20392,11 @@ theoceanpulse:
     year: 2026
     week: 10
     players:
+    - player: Fernando Mendoza
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Jared Goff
       pos: QB
       cost: R13

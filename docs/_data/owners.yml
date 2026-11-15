@@ -1713,8 +1713,8 @@ tx_heatmap:
       color: '#fac065'
   - id: theoceanpulse
     name: Dillon
-    total: 495
-    tx_per_year: 55.0
+    total: 498
+    tx_per_year: 55.3
     cells:
     - year: 2018
       count: 32
@@ -1741,8 +1741,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 61
-      color: '#fac470'
+      count: 64
+      color: '#fac26a'
   - id: schirmerj
     name: Jono
     total: 486
@@ -1969,8 +1969,8 @@ tx_heatmap:
       color: '#fce7c3'
   - id: alexandra
     name: Lexi
-    total: 23
-    tx_per_year: 23.0
+    total: 25
+    tx_per_year: 25.0
     cells:
     - year: 2018
       count: null
@@ -1997,8 +1997,8 @@ tx_heatmap:
       count: null
       color: null
     - year: 2026
-      count: 23
-      color: '#fce1b6'
+      count: 25
+      color: '#fce0b2'
   - id: henpen28
     name: Henry
     total: 360
