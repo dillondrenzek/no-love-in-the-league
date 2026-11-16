@@ -1055,6 +1055,22 @@ def test_score_record_holder_uses_team_name():
     assert recs["Most Points in a Week"]["holder"] == "Delta Fish"
 
 
+def test_most_points_in_a_loss_skips_ties_and_names_the_winner():
+    recs = {r["category"]: r for r in compute_records([matchup_season()], {})}
+    loss = recs["Most Points in a Loss"]
+    # Bravo's 95 was a tie, so its best loss is the 90 against Alpha's 100.
+    assert (loss["holder"], loss["value"], loss["sub_value"]) == ("Bravo Dogs", "90.00", "100.0–90.0")
+    top = loss["leaders"][0]
+    assert (top["season"], top["week"], top["opp_team"]) == (2025, 1, "Alpha Cats")
+    assert [L["value"] for L in loss["leaders"]] == ["90.00", "80.00", "70.00", "60.00"]
+    assert loss["section"] == "Scoring"
+    # No losses yet (only ties), no record.
+    tied = {"season": 2025, "weeks_in_regular_season": 1, "teams": {"a": "A", "b": "B"},
+            "matchups": [{"week": 1, "home": "a", "away": "b",
+                          "home_score": 90.0, "away_score": 90.0}]}
+    assert "Most Points in a Loss" not in {r["category"] for r in compute_records([tied], {})}
+
+
 def test_most_championships_counts_by_franchise_id_across_renames():
     # Same franchise "a" wins both seasons under different team names.
     s1 = matchup_season(2024)

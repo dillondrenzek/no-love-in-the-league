@@ -369,8 +369,8 @@ def league_bests(records):
     """Score-based record book values for reference, from records.yml's `records`
     list: [{category, value, holder, season}]. Lets the agent note when a game is
     at or near an all-time mark."""
-    keep = ("Most Points in a Week", "Fewest Points in a Week", "Biggest Blowout",
-            "Highest Combined Score", "Most Points in a Season")
+    keep = ("Most Points in a Week", "Most Points in a Loss", "Fewest Points in a Week",
+            "Biggest Blowout", "Highest Combined Score", "Most Points in a Season")
     out = []
     for r in records or []:
         if r.get("category") in keep:
