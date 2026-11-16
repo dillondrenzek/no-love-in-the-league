@@ -326,6 +326,9 @@ def _score_records(seasons, franchises, overrides):
         return f"{hi:.1f}–{lo:.1f}"
 
     most = sorted(games, key=lambda g: g["score"], reverse=True)
+    # Outright losses only: a tie isn't a loss, however high the score.
+    most_in_loss = sorted((g for g in games if g["score"] < g["opp_score"]),
+                          key=lambda g: g["score"], reverse=True)
     fewest = sorted(games, key=lambda g: g["score"])
     blowout = sorted(games, key=lambda g: g["margin"], reverse=True)
 
@@ -350,9 +353,14 @@ def _score_records(seasons, franchises, overrides):
                 sub_value=f"thru Wk {live_through[yr]}" if yr in live_through else None)
         for (yr, fid), pts in season_ranked[:LEADER_N]]
 
+    loss_record = ([_record("Most Points in a Loss", SEC_SCORING,
+                            [game_leader(g, f"{g['score']:.2f}", sub_value=score_pair(g),
+                                         with_opp=True) for g in most_in_loss[:LEADER_N]])]
+                   if most_in_loss else [])
     return [
         _record("Most Points in a Week", SEC_SCORING,
                 [game_leader(g, f"{g['score']:.2f}") for g in most[:LEADER_N]]),
+        *loss_record,
         _record("Most Points in a Season", SEC_SCORING, season_leaders),
         _record("Fewest Points in a Week", SEC_SCORING,
                 [game_leader(g, f"{g['score']:.2f}") for g in fewest[:LEADER_N]]),
