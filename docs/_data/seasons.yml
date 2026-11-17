@@ -93,22 +93,6 @@ detail:
       pa: 1211.5
       pa_color: '#f17f40'
       all_play: 86-24
-    - &id005
-      finish: 5
-      team: One Big Beautiful Dillbot
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-      owner_id: gganoom
-      owner_name: Grant
-      record: 5-5
-      pct: 0.5
-      tag: null
-      gb: '3'
-      pct_str: '.500'
-      pf: 1246.0
-      pf_color: '#f49645'
-      pa: 1052.7
-      pa_color: '#fdf3e0'
-      all_play: 70-39-1
     - &id004
       finish: 4
       team: Trick or Trick It’s Mike Vick
@@ -125,6 +109,22 @@ detail:
       pa: 1105.3
       pa_color: '#fbd08c'
       all_play: 55-55
+    - &id005
+      finish: 5
+      team: One Big Beautiful Dillbot
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+      owner_id: gganoom
+      owner_name: Grant
+      record: 5-5
+      pct: 0.5
+      tag: null
+      gb: '3'
+      pct_str: '.500'
+      pf: 1246.0
+      pf_color: '#f49645'
+      pa: 1052.7
+      pa_color: '#fdf3e0'
+      all_play: 70-39-1
     - &id006
       finish: 6
       team: Return of the IDP
@@ -140,22 +140,6 @@ detail:
       pf_color: '#f9b74e'
       pa: 1206.2
       pa_color: '#f28441'
-      all_play: 50-60
-    - &id008
-      finish: 8
-      team: Cornstar
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-      owner_id: alexandra
-      owner_name: Lexi
-      record: 4-6
-      pct: 0.4
-      tag: null
-      gb: '4'
-      pct_str: '.400'
-      pf: 1116.9
-      pf_color: '#f9b954'
-      pa: 1159.8
-      pa_color: '#f7aa4a'
       all_play: 50-60
     - &id007
       finish: 7
@@ -173,22 +157,22 @@ detail:
       pa: 1080.7
       pa_color: '#fce0b3'
       all_play: 38-72
-    - &id009
-      finish: 9
-      team: Remember the Nice Guys, ChatGPT
-      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-      owner_id: kevbots22
-      owner_name: Kevin
-      record: 3-6-1
-      pct: 0.35
+    - &id008
+      finish: 8
+      team: Cornstar
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      owner_id: alexandra
+      owner_name: Lexi
+      record: 4-6
+      pct: 0.4
       tag: null
-      gb: '4.5'
-      pct_str: '.350'
-      pf: 1099.3
-      pf_color: '#f9bd5e'
-      pa: 1236.4
-      pa_color: '#ee6b3b'
-      all_play: 53-56-1
+      gb: '4'
+      pct_str: '.400'
+      pf: 1116.9
+      pf_color: '#f9b954'
+      pa: 1159.8
+      pa_color: '#f7aa4a'
+      all_play: 50-60
     - &id011
       finish: 11
       team: Swift kick in the Dak
@@ -205,6 +189,22 @@ detail:
       pa: 1220.0
       pa_color: '#f0783e'
       all_play: 47-63
+    - &id009
+      finish: 9
+      team: Remember the Nice Guys, ChatGPT
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      owner_id: kevbots22
+      owner_name: Kevin
+      record: 3-6-1
+      pct: 0.35
+      tag: null
+      gb: '4.5'
+      pct_str: '.350'
+      pf: 1099.3
+      pf_color: '#f9bd5e'
+      pa: 1236.4
+      pa_color: '#ee6b3b'
+      all_play: 53-56-1
     - &id010
       finish: 10
       team: Im Bleeding Making Me the Shiva
