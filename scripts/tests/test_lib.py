@@ -1763,13 +1763,16 @@ def test_odds_simulation_follows_league_rules():
     _, res = forecast(season, Params(), n=300, seed=1)
     # Exactly one Shiva and one Sacko per sim; six teams on each side.
     for o, total in (("shiva", 1), ("sacko", 1), ("top3", 3), ("bye", 2),
-                     ("playoffs", 6), ("sacko_bracket", 6)):
+                     ("playoffs", 6), ("sacko_bracket", 6), ("sacko_bye", 2)):
         assert abs(sum(r[o] for r in res.values()) - total) < 1e-9, o
     # Seeds are locked: t11..t07 by record, then the points wildcard (t06).
     made = {f for f, r in res.items() if r["playoffs"] == 1.0}
     assert made == {f"t{i:02d}" for i in range(6, 12)}
     assert all(res[f"t{i:02d}"]["playoffs"] == 0.0 for i in range(6))
     assert res["t11"]["bye"] == res["t10"]["bye"] == 1.0 and res["t09"]["bye"] == 0.0
+    # The bottom two by record (t00, t01) get the Sacko bye; nobody else does.
+    assert res["t00"]["sacko_bye"] == res["t01"]["sacko_bye"] == 1.0
+    assert all(res[f"t{i:02d}"]["sacko_bye"] == 0.0 for i in range(2, 12))
     assert all(set(r) >= set(OUTCOMES) for r in res.values())
 
 
@@ -1793,10 +1796,12 @@ def test_odds_forecast_rows_sorted_with_colors():
     season = _odds_season(4)
     st, res = forecast(season, Params(), n=300, seed=3)
     rows = forecast_rows(season, {}, st, res)
-    odds = [res[r["fid"]]["playoffs"] for r in rows]
-    assert odds == sorted(odds, reverse=True)               # best playoff odds first
+    # Standings order: most wins first (no ties in this fixture), PF breaking level records.
+    keys = [(-int(r["record"].split("-")[0]), -float(r["pf"])) for r in rows]
+    assert keys == sorted(keys)
     top = next(r for r in rows if r["fid"] == "t11")
-    assert top["record"] == "4-0" and top["cells"]["shiva"]["color"].startswith("#")
+    assert top["record"] == "4-0" and top["cells"]["playoffs"]["color"].startswith("#")
+    assert set(top["cells"]) == {"sacko_bye", "playoffs", "bye"}
     assert "_key" not in top
 
 
@@ -1900,8 +1905,29 @@ def test_odds_clinch_status_and_labels():
     assert rows["t11"]["cells"]["playoffs"]["clinched"] is True
     assert rows["t11"]["cells"]["bye"]["text"] != "✓"
     assert rows["t09"]["cells"]["playoffs"]["text"].endswith("%")
+    # Out of the bye: t11 (11) and t10 (10) both beat anyone who can't pass 9.
+    assert status["no_bye"] == {f"t{i:02d}" for i in range(7)}
+    assert rows["t06"]["cells"]["bye"]["text"] == "✕"
+    assert rows["t06"]["cells"]["bye"]["dim"] is True
+    assert rows["t07"]["cells"]["bye"]["text"] != "✕"
+    # Safe from the bottom two: the top of the table, never the bottom.
+    assert "t11" in status["no_sacko_bye"] and "t10" in status["no_sacko_bye"]
+    assert not {"t00", "t01", "t02"} & status["no_sacko_bye"]
+    assert rows["t11"]["cells"]["sacko_bye"]["text"] == "✕"
+    assert rows["t00"]["cells"]["sacko_bye"]["text"] != "✕"
     # Nothing is locked before a game is played.
-    assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set()}
+    assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set(),
+                                              "no_bye": set(), "no_sacko_bye": set()}
+
+
+def test_odds_eliminated_top_needs_k_teams_strictly_out_of_reach():
+    from lib.odds import eliminated_top
+    wins = {"a": 8, "b": 8, "c": 7, "d": 3}
+    games = [("d", "c"), ("d", "a")]          # d can reach 5 at most
+    assert eliminated_top(wins, games, 2) == {"d"}
+    # Level on wins isn't out of reach: c can reach 8, and 8 isn't > 8.
+    assert "c" not in eliminated_top(wins, games, 2)
+    assert eliminated_top(wins, games, 4) == set()
 
 
 def _gap_season():
@@ -1921,6 +1947,23 @@ def _gap_season():
                        "away_score": None, "played": False})
     return {"season": 2030, "weeks_in_regular_season": 4, "teams": teams,
             "matchups": ms}
+
+
+def test_odds_forecast_rows_put_the_wildcard_holder_6th():
+    from lib.odds import forecast_rows
+    # Make h lose a shootout to g (210-200): h is 0-2, last by record, but has
+    # 300 PF, the most of anyone outside the top five (a, e, g, f, c), so h holds
+    # the points wildcard and should jump b (1-1) and d (0-1-1) into row 6.
+    season = _gap_season()
+    for m in season["matchups"]:
+        if m["week"] == 2 and m["home"] == "g":
+            m["home_score"], m["away_score"] = 210, 200
+    blank = {o: 0.0 for o in ("sacko", "sacko_bracket", "playoffs", "bye", "top3",
+                              "shiva", "sacko_bye")}
+    res = {f: dict(blank, wins=0.0) for f in season["teams"]}
+    st = {f: (110.0, 5.0) for f in season["teams"]}
+    order = [r["fid"] for r in forecast_rows(season, {}, st, res)]
+    assert order == ["a", "e", "g", "f", "c", "h", "b", "d"]
 
 
 def test_odds_wildcard_gaps_spread_the_pf_deficit_over_games_left():

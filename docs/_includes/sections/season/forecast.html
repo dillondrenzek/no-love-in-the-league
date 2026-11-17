@@ -9,10 +9,17 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
 {%- endcomment -%}
 {%- assign f = include.f -%}
 {%- assign show_gap = f.rows.first.wc_gap -%}
-{%- assign outcomes = "sacko,playoffs,bye,shiva" | split: "," -%}
+{%- comment -%} Snapshots frozen before the Sacko Bye column existed (the Halfway
+page) don't carry it, so they show just Playoffs and Bye. {%- endcomment -%}
+{%- assign show_sacko_bye = f.rows.first.cells.sacko_bye -%}
+{%- if show_sacko_bye -%}
+{%- assign outcomes = "playoffs,bye,sacko_bye" | split: "," -%}
+{%- else -%}
+{%- assign outcomes = "playoffs,bye" | split: "," -%}
+{%- endif -%}
 <section class="season-section" id="forecast">
 <h2>{{ include.title | default: "Season Forecast" }}</h2>
-<p class="forecast__note">{{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of Week {{ f.as_of_week }}. <strong>Rating</strong> is the model's estimate of a team's true points per week. {% if show_gap %}<strong>PF Back</strong> is the points-for gap to the 6th seed (<strong>WC</strong>, the top scorer outside the top five by record), then that gap per game left. Grey numbers are the top five's cushion if they fall out. {% endif %}<strong>✓</strong> means clinched. Arrows show playoff odds moves since {% if include.frozen %}the week before{% else %}last week{% endif %}.{% if include.frozen %} Frozen as it stood at the time.{% endif %}</p>
+<p class="forecast__note">{{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of Week {{ f.as_of_week }}. <strong>Rating</strong> is the model's estimate of a team's true points per week. {% if show_gap %}<strong>PF Back</strong> is the points-for gap to the 6th seed (<strong>WC</strong>, the top scorer outside the top five by record), then that gap per game left. Grey numbers are the top five's cushion if they fall out. {% endif %}{% if show_sacko_bye %}<strong>Sacko Bye</strong> is a bottom-two finish, which skips the Sacko bracket's first round and lands one loss from the Sacko final. {% endif %}<strong>✓</strong> means clinched and <strong>✕</strong> means it can no longer happen. Arrows show playoff odds moves since {% if include.frozen %}the week before{% else %}last week{% endif %}.{% if include.frozen %} Frozen as it stood at the time.{% endif %}</p>
 <div class="table-scroll">
 <table class="forecast">
   <thead>
@@ -24,10 +31,11 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
       <th class="num forecast__gap-head" title="Points-for behind (or ahead of) the 6th seed, then the extra points per remaining game needed to pass it">PF Back</th>
       {%- endif %}
       <th class="num forecast__aux" title="The model's estimate of the team's true points per week">Rating</th>
-      <th class="num forecast__p">Sacko</th>
       <th class="num forecast__p forecast__split  forecast__key">Playoffs</th>
       <th class="num forecast__p" title="A top-2 regular-season seed, which skips the first playoff round">Bye</th>
-      <th class="num forecast__p">Shiva</th>
+      {%- if show_sacko_bye %}
+      <th class="num forecast__p" title="A bottom-two regular-season finish (11th or 12th), which skips the first round of the Sacko bracket, one loss from the Sacko final">Sacko Bye</th>
+      {%- endif %}
     </tr>
   </thead>
   <tbody>
@@ -47,7 +55,7 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
       <td class="num forecast__aux forecast__minor">{{ r.rating }}</td>
       {%- for o in outcomes %}
       {%- assign c = r.cells[o] %}
-      <td class="num forecast__cell{% if o == 'playoffs' %} forecast__split{% endif %}{% if c.dim %} forecast__cell--dim{% endif %}" style="background: {{ c.color }}">{% if c.trend %}<span class="forecast__trend forecast__trend--{{ c.trend.dir }}" title="{{ c.trend.text | slice: 1, 9 }} pts since last week">{% if c.trend.dir == "up" %}▲{% else %}▼{% endif %}</span>{% endif %}{% if c.title %}<span title="{{ c.title }}">{{ c.text }}</span>{% else %}{{ c.text }}{% endif %}</td>
+      <td class="num forecast__cell{% if o == 'playoffs' %} forecast__split{% endif %}{% if c.dim %} forecast__cell--dim{% endif %}{% if c.clinched or c.eliminated %} forecast__cell--settled{% endif %}" style="background: {{ c.color }}">{% if c.trend %}<span class="forecast__trend forecast__trend--{{ c.trend.dir }}" title="{{ c.trend.text | slice: 1, 9 }} pts since last week">{% if c.trend.dir == "up" %}▲{% else %}▼{% endif %}</span>{% endif %}{% if c.title %}<span{% if c.eliminated %} class="forecast__x"{% endif %} title="{{ c.title }}">{{ c.text }}</span>{% else %}{{ c.text }}{% endif %}</td>
       {%- endfor %}
     </tr>
     {%- endfor %}

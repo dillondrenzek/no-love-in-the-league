@@ -32,9 +32,15 @@ from .render import warm_heat, heat_color
 from .playoff_order import six_team_playoff
 
 OUTCOMES = ("sacko", "sacko_bracket", "playoffs", "bye", "top3", "shiva")
-# What the season-page table shows. The Sacko bracket is just 1 - playoffs, so it's
-# simulated and backtested but not displayed.
-TABLE_OUTCOMES = ("sacko", "playoffs", "bye", "shiva")
+# Simulated too, but not backtested: a Sacko bye is a bottom-two regular-season
+# finish (seed 11 or 12), which skips round 1 of the Sacko bracket and drops
+# straight into round 2, one loss from the Sacko final.
+SIM_OUTCOMES = OUTCOMES + ("sacko_bye",)
+SACKO_BYE_SEEDS = (11, 12)
+# What the season-page table shows: the Sacko bye on the left, then the playoffs
+# and the first-round bye. Shiva, Sacko, top 3 and the Sacko bracket (just
+# 1 - playoffs) are still simulated, and all but the Sacko bye are backtested.
+TABLE_OUTCOMES = ("sacko_bye", "playoffs", "bye")
 
 
 @dataclass(frozen=True)
@@ -144,7 +150,7 @@ def simulate(season, strength, params, n=10000, seed=0):
     shell = _bracket_season(season, teams, reg, season.get("season") or 0)
     pweeks = (reg + 1, reg + 2, reg + 3)
     rng = random.Random(seed)
-    tally = {f: dict.fromkeys(OUTCOMES, 0) for f in teams}
+    tally = {f: dict.fromkeys(SIM_OUTCOMES, 0) for f in teams}
     wins = dict.fromkeys(teams, 0)
     seeds = dict.fromkeys(teams, 0)
     sigma = params.sigma
@@ -176,6 +182,8 @@ def simulate(season, strength, params, n=10000, seed=0):
                     t["bye"] += 1
             else:
                 t["sacko_bracket"] += 1
+                if s in SACKO_BYE_SEEDS:       # bottom two skip Sacko round 1
+                    t["sacko_bye"] += 1
         tally[order[0]]["shiva"] += 1
         for f in order[:3]:
             tally[f]["top3"] += 1
@@ -286,10 +294,33 @@ def clinched_top(wins, games, k):
     return out
 
 
+def eliminated_top(wins, games, k):
+    """Teams that can no longer finish in the top `k` by wins, whatever happens:
+    at least `k` teams already have more wins than the team can reach by winning
+    out. Strictly more, since a tie in wins goes to a tiebreaker nobody can
+    promise. A sufficient check (it ignores who plays whom), so it never marks a
+    team out that still has a path."""
+    left = {}
+    for a, b in games:
+        left[a] = left.get(a, 0) + 1
+        left[b] = left.get(b, 0) + 1
+    out = set()
+    for f in wins:
+        best = wins[f] + left.get(f, 0)
+        if sum(1 for g in wins if g != f and wins[g] > best) >= k:
+            out.add(f)
+    return out
+
+
 def clinch_status(season):
-    """{'playoffs': {fids}, 'bye': {fids}} — who has mathematically clinched a
-    playoff spot (a top-5 seed by record) and a first-round bye (top 2), given
-    the actual remaining schedule."""
+    """Who has mathematically settled what, given the actual remaining schedule:
+
+        {'playoffs': {fids}, 'bye': {fids},      # clinched: a top-5 / top-2 seed
+         'no_bye': {fids},                       # can't reach the top 2
+         'no_sacko_bye': {fids}}                 # can't fall to 11th or 12th
+
+    A Sacko bye is a bottom-two finish, so a team is safe from it once it has
+    clinched a top-10 spot by record."""
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
     played_keys = {(m["week"], m["home"]) for m in played}
@@ -303,8 +334,12 @@ def clinch_status(season):
              and (m["week"], m["home"]) not in played_keys]
     for g in (x for pair in games for x in pair):
         wins.setdefault(g, 0)
+    n = len(wins)
     return {"playoffs": clinched_top(wins, games, RECORD_SEEDS),
-            "bye": clinched_top(wins, games, BYE_SEEDS)}
+            "bye": clinched_top(wins, games, BYE_SEEDS),
+            "no_bye": eliminated_top(wins, games, BYE_SEEDS),
+            "no_sacko_bye": (clinched_top(wins, games, n - len(SACKO_BYE_SEEDS))
+                             if n > len(SACKO_BYE_SEEDS) else set())}
 
 
 def clinched_cell():
@@ -356,7 +391,7 @@ def wildcard_gaps(season):
     for f in order:
         if f == holder:
             out[f] = {"text": "WC", "title": "Holds the 6th seed (the points wildcard)",
-                      "dim": False, "gap": None}
+                      "dim": False, "gap": None, "holder": True}
             continue
         in_top = f in top
         if not left.get(f):
@@ -378,6 +413,14 @@ def wildcard_gaps(season):
     return out
 
 
+def eliminated_cell(title):
+    """The cell for an outcome that can no longer happen: an ✕ on the white
+    'negligible' fill with dimmed text, so it reads as settled rather than as a
+    long shot ('<1%')."""
+    return {"text": "✕", "title": title, "color": NEGLIGIBLE_COLOR, "dim": True,
+            "eliminated": True}
+
+
 # Smallest playoff-odds move worth an arrow: at 10,000 runs the odds carry ~0.5 pt
 # of simulation noise, so anything under 2 pts could be chance.
 PLAYOFF_MOVE_MIN = 0.02
@@ -397,8 +440,12 @@ def trend(now, before, threshold, scale=1, digits=0):
 
 
 def forecast_rows(season, franchises, strength, result, prev=None):
-    """Display rows for the season-page forecast table, best playoff odds first
-    (ties broken by bye, then Shiva odds).
+    """Display rows for the season-page forecast table, in standings order: best
+    record first (win pct, a tie counting as half a win, like the standings
+    table), points-for breaking level records, then playoff odds. The current 6th
+    seed (the points wildcard holder) is pulled up into the 6th row, right under
+    the top five by record, so the rows read in seed order through the playoff
+    line.
     Each: {fid, team, owner, logo, record, pf, rating, proj_wins, cells},
     where `cells` is {outcome: {text, color}} — the colour on the same warm heat
     ramp as every other table, scaled to the probability itself (0% cream .. 100%
@@ -438,16 +485,24 @@ def forecast_rows(season, franchises, strength, result, prev=None):
             "proj_wins": round(res["wins"], 1),
             "cells": {o: odds_cell(res[o]) for o in TABLE_OUTCOMES},
             "wc_gap": gaps.get(f),
-            "_key": (-res["playoffs"], -res["bye"], -res["shiva"], res["sacko"]),
+            "_key": (-((w + t / 2) / (w + l + t) if w + l + t else 0.0),
+                     -pf.get(f, 0.0), -res["playoffs"]),
         })
     for r in rows:
         for o in ("playoffs", "bye"):
             if r["fid"] in clinched[o]:
                 r["cells"][o] = clinched_cell()
+        if r["fid"] in clinched["no_bye"]:
+            r["cells"]["bye"] = eliminated_cell("Can't finish in the top two")
+        if r["fid"] in clinched["no_sacko_bye"] and "sacko_bye" in r["cells"]:
+            r["cells"]["sacko_bye"] = eliminated_cell("Can't finish in the bottom two")
         before = prev_res.get(r["fid"], {}).get("playoffs")
         r["cells"]["playoffs"]["trend"] = trend(
             result[r["fid"]]["playoffs"], before, PLAYOFF_MOVE_MIN, scale=100)
     rows.sort(key=lambda r: r.pop("_key"))
+    wc = next((i for i, r in enumerate(rows) if (r["wc_gap"] or {}).get("holder")), None)
+    if wc is not None and wc > RECORD_SEEDS:
+        rows.insert(RECORD_SEEDS, rows.pop(wc))
     return rows
 
 
