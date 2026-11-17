@@ -34,7 +34,7 @@ from .playoff_order import six_team_playoff
 OUTCOMES = ("sacko", "sacko_bracket", "playoffs", "bye", "top3", "shiva")
 # What the season-page table shows. The Sacko bracket is just 1 - playoffs, so it's
 # simulated and backtested but not displayed.
-TABLE_OUTCOMES = ("sacko", "playoffs", "bye", "top3", "shiva")
+TABLE_OUTCOMES = ("sacko", "playoffs", "bye", "shiva")
 
 
 @dataclass(frozen=True)
@@ -311,6 +311,70 @@ def clinched_cell():
             "clinched": True}
 
 
+def wildcard_gaps(season):
+    """How much more per remaining regular-season game each team must score to
+    catch the 6th seed's points-for, as things stand today. The 6th seed is the
+    points wildcard: the top scorer outside the top five by record (a tie
+    counting as half a win, points-for breaking level records).
+
+    {fid: {"text", "total", "ppg", "title", "dim", "gap", "pf_gap"}} where
+    `pf_gap` is the points-for gap to the 6th seed (negative when ahead) and
+    `gap` that gap spread over the team's remaining games, assuming the 6th seed
+    keeps scoring at the same rate (None when it doesn't apply). Teams behind
+    show '−61.9 (−12.4)': the total deficit, then the deficit per game left. The
+    wildcard holder shows 'WC'. The top five by record get the same numbers, as
+    a fallback in case they lose their way out of the top five: usually a
+    cushion, '105.1 (+21.0)' (they could score 21 less per game and still pass
+    the 6th seed), dimmed since they're in on record for now. With no games
+    left the gap is fixed, so it shows '—'."""
+    reg = season.get("weeks_in_regular_season") or 14
+    played = played_games(season)
+    played_keys = {(m["week"], m["home"]) for m in played}
+    teams = list(season.get("teams") or {})
+    wins = dict.fromkeys(teams, 0.0)
+    pf = dict.fromkeys(teams, 0.0)
+    left = dict.fromkeys(teams, 0)
+    for m in played:
+        for f, a, b in ((m["home"], m["home_score"], m["away_score"]),
+                        (m["away"], m["away_score"], m["home_score"])):
+            wins[f] = wins.get(f, 0.0) + (1.0 if a > b else 0.5 if a == b else 0.0)
+            pf[f] = pf.get(f, 0.0) + a
+    for m in season.get("matchups") or []:
+        if (1 <= (m.get("week") or 0) <= reg and not m.get("playoff")
+                and (m["week"], m["home"]) not in played_keys):
+            for f in (m["home"], m["away"]):
+                left[f] = left.get(f, 0) + 1
+    order = sorted(pf, key=lambda f: (wins.get(f, 0.0), pf[f]), reverse=True)
+    top, rest = order[:RECORD_SEEDS], order[RECORD_SEEDS:]
+    if not rest:
+        return {}
+    holder = max(rest, key=lambda f: pf[f])
+    out = {}
+    for f in order:
+        if f == holder:
+            out[f] = {"text": "WC", "title": "Holds the 6th seed (the points wildcard)",
+                      "dim": False, "gap": None}
+            continue
+        in_top = f in top
+        if not left.get(f):
+            out[f] = {"text": "—", "title": "No regular-season games left",
+                      "dim": True, "gap": None}
+            continue
+        diff = pf[holder] - pf[f]
+        gap = round(diff / left[f], 1)
+        games = f"{left[f]} game{'s' if left[f] != 1 else ''} left"
+        side = (f"{-diff:.1f} PF ahead of" if diff < 0 else f"{diff:.1f} PF behind")
+        title = f"{side} the 6th seed with {games}"
+        if in_top:
+            title = f"Top five by record. If it drops out: {title}"
+        # Signed from the team's side, like the total: behind is −, ahead is +.
+        ppg = f"({'−' if gap > 0 else '+' if gap < 0 else ''}{abs(gap):.1f})"
+        total = f"{'−' if diff > 0 else ''}{abs(diff):.1f}"   # behind: −45.9
+        out[f] = {"text": f"{total} {ppg}", "total": total, "ppg": ppg,
+                  "title": title, "dim": in_top, "gap": gap, "pf_gap": round(diff, 1)}
+    return out
+
+
 # Smallest playoff-odds move worth an arrow: at 10,000 runs the odds carry ~0.5 pt
 # of simulation noise, so anything under 2 pts could be chance.
 PLAYOFF_MOVE_MIN = 0.02
@@ -340,9 +404,11 @@ def forecast_rows(season, franchises, strength, result, prev=None):
     exactly as the season standings table shades it. `prev` is last week's (strength, result);
     when given, the playoff cell carries a trend ({dir, text}) for meaningful moves.
     A playoff spot or bye a team has mathematically clinched shows a checkmark
-    instead of '>99%' (see clinch_status)."""
+    instead of '>99%' (see clinch_status). `wc_gap` is the team's points-per-game
+    chase of the 6th seed (see wildcard_gaps)."""
     prev_res = (prev or ({}, {}))[1]
     clinched = clinch_status(season)
+    gaps = wildcard_gaps(season)
     teams = season.get("teams") or {}
     logos = season.get("team_logos") or {}
     rec, pf = {}, {}
@@ -368,6 +434,7 @@ def forecast_rows(season, franchises, strength, result, prev=None):
             "rating": round(strength[f][0], 1),
             "proj_wins": round(res["wins"], 1),
             "cells": {o: odds_cell(res[o]) for o in TABLE_OUTCOMES},
+            "wc_gap": gaps.get(f),
             "_key": (-res["playoffs"], -res["bye"], -res["shiva"], res["sacko"]),
         })
     for r in rows:

@@ -8,23 +8,25 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
 (the Halfway page).
 {%- endcomment -%}
 {%- assign f = include.f -%}
-{%- assign outcomes = "sacko,playoffs,bye,top3,shiva" | split: "," -%}
+{%- assign show_gap = f.rows.first.wc_gap -%}
+{%- assign outcomes = "sacko,playoffs,bye,shiva" | split: "," -%}
 <section class="season-section" id="forecast">
 <h2>{{ include.title | default: "Season Forecast" }}</h2>
-<p class="forecast__note">From {{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of the end of Week {{ f.as_of_week }}, using the league's real seeding, wildcard and bracket rules. <strong>Rating</strong> is the model's estimate of a team's true points per week; early in the season it leans on the league average, since a few weeks of scores are mostly noise. A <strong>✓</strong> means the team has clinched: no remaining result can push the team out of the top five by record (or the top two, for a bye). Arrows mark teams whose playoff odds rose or fell since {% if include.frozen %}the week before{% else %}last week{% endif %}. {% if include.frozen %}Frozen as it stood at the time; the season page has the live forecast.{% else %}Updates when each week goes final.{% endif %}</p>
+<p class="forecast__note">{{ f.sims | divided_by: 1000 }},000 simulations of the rest of the season, as of Week {{ f.as_of_week }}. <strong>Rating</strong> is the model's estimate of a team's true points per week. {% if show_gap %}<strong>PF Back</strong> is the points-for gap to the 6th seed (<strong>WC</strong>, the top scorer outside the top five by record), then that gap per game left. Grey numbers are the top five's cushion if they fall out. {% endif %}<strong>✓</strong> means clinched. Arrows show playoff odds moves since {% if include.frozen %}the week before{% else %}last week{% endif %}.{% if include.frozen %} Frozen as it stood at the time.{% endif %}</p>
 <div class="table-scroll">
 <table class="forecast">
   <thead>
     <tr>
       <th>Team</th>
-      <th class="num">Rec</th>
+      <th class="num">W-L</th>
       <th class="num" title="Points scored so far — the 6th playoff seed goes to the top scorer outside the top five">PF</th>
+      {%- if show_gap %}
+      <th class="num forecast__gap-head" title="Points-for behind (or ahead of) the 6th seed, then the extra points per remaining game needed to pass it">PF Back</th>
+      {%- endif %}
       <th class="num forecast__aux" title="The model's estimate of the team's true points per week">Rating</th>
-      <th class="num forecast__aux" title="Average final regular-season wins across the simulations">Proj W</th>
       <th class="num forecast__p">Sacko</th>
       <th class="num forecast__p forecast__split  forecast__key">Playoffs</th>
       <th class="num forecast__p" title="A top-2 regular-season seed, which skips the first playoff round">Bye</th>
-      <th class="num forecast__p" title="Final standings after the playoffs: Shiva winner, runner-up, or 3rd-place game winner">Top&nbsp;3</th>
       <th class="num forecast__p">Shiva</th>
     </tr>
   </thead>
@@ -34,13 +36,15 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
       <td class="team-cell">
         {%- include bits/team_logo.html src=r.logo -%}
         {%- assign href = '/teams/' | append: r.fid | append: '/' | relative_url -%}
-        <a class="forecast__aux" href="{{ href }}">{{ r.team }}</a> <span class="owner-name forecast__aux">{{ r.owner }}</span>
+        <span class="forecast__name forecast__aux"><a href="{{ href }}">{{ r.team }}</a><span class="owner-name">{{ r.owner }}</span></span>
         <a class="forecast__short" href="{{ href }}" title="{{ r.team }}">{{ r.owner }}</a>
       </td>
       <td class="num">{{ r.record }}</td>
       <td class="num forecast__cell forecast__pf" style="background: {{ r.pf_color }}">{{ r.pf }}</td>
+      {%- if show_gap %}
+      <td class="num forecast__gap{% if r.wc_gap.dim %} forecast__gap--dim{% endif %}"><span title="{{ r.wc_gap.title }}">{% if r.wc_gap.ppg %}<span class="forecast__gap-total">{{ r.wc_gap.total }}</span> <span class="forecast__gap-ppg">{{ r.wc_gap.ppg }}</span>{% else %}{{ r.wc_gap.text }}{% endif %}</span></td>
+      {%- endif %}
       <td class="num forecast__aux forecast__minor">{{ r.rating }}</td>
-      <td class="num forecast__aux forecast__minor">{{ r.proj_wins }}</td>
       {%- for o in outcomes %}
       {%- assign c = r.cells[o] %}
       <td class="num forecast__cell{% if o == 'playoffs' %} forecast__split{% endif %}{% if c.dim %} forecast__cell--dim{% endif %}" style="background: {{ c.color }}">{% if c.trend %}<span class="forecast__trend forecast__trend--{{ c.trend.dir }}" title="{{ c.trend.text | slice: 1, 9 }} pts since last week">{% if c.trend.dir == "up" %}▲{% else %}▼{% endif %}</span>{% endif %}{% if c.title %}<span title="{{ c.title }}">{{ c.text }}</span>{% else %}{{ c.text }}{% endif %}</td>
