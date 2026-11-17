@@ -22,12 +22,14 @@ Two halves:
 Pure: plain data in, plain data out. Deterministic for a given seed.
 """
 
+import math
 import random
 import statistics
 from itertools import combinations
 from dataclasses import dataclass
 
 from .data import game_final, short_name_of
+from .nfl_schedule import parse_kickoff
 from .render import warm_heat, heat_color
 from .playoff_order import six_team_playoff
 
@@ -109,13 +111,20 @@ def starter_projection(rosters):
             for fid, players in (rosters or {}).items()}
 
 
-def strengths(teams, scores, params, proj=None):
+def strengths(teams, scores, params, proj=None, partial=None):
     """{fid: (mean, sd)} — the posterior estimate of each team's true weekly
     scoring level. `scores` is {fid: [played scores]}; `proj` an optional
     {fid: projected starter total}, centered on its own league mean so only a
-    team's projection *relative to the league* matters."""
+    team's projection *relative to the league* matters. `partial` is an optional
+    {fid: (score, weight)}: one more game counted as a fraction of a game (the
+    live week, worth as much of a game as has been played)."""
     played = [s for v in scores.values() for s in v]
-    center = statistics.mean(played) if played else params.league_mean
+    pw_total = sum(w for _, w in (partial or {}).values())
+    if played or pw_total:
+        center = ((sum(played) + sum(x * w for x, w in (partial or {}).values()))
+                  / (len(played) + pw_total))
+    else:
+        center = params.league_mean
     proj = {f: p for f, p in (proj or {}).items() if f in teams and p}
     pbar = statistics.mean(proj.values()) if proj else 0.0
     t2, s2 = params.tau ** 2, params.sigma ** 2
@@ -123,8 +132,9 @@ def strengths(teams, scores, params, proj=None):
     for f in teams:
         prior = center + params.proj_weight * (proj[f] - pbar) if f in proj else center
         xs = scores.get(f) or []
-        prec = 1 / t2 + len(xs) / s2
-        mean = (prior / t2 + sum(xs) / s2) / prec
+        px, pw = (partial or {}).get(f, (0.0, 0.0))
+        prec = 1 / t2 + (len(xs) + pw) / s2
+        mean = (prior / t2 + (sum(xs) + pw * px) / s2) / prec
         out[f] = (mean, prec ** -0.5)
     return out
 
@@ -136,9 +146,75 @@ def _bracket_season(season, teams, reg, year):
             "matchups": []}
 
 
-def simulate(season, strength, params, n=10000, seed=0):
+# How long an NFL game's fantasy points take to land, for splitting a game in
+# progress into points already scored and points still to come.
+GAME_HOURS = 3.25
+
+
+def _remaining_fraction(kickoff, now):
+    """Share of a game's fantasy points still to come at `now`: all of them before
+    kickoff, none once the game's over, a straight-line share in between."""
+    elapsed = (now - kickoff).total_seconds() / 3600
+    if elapsed <= 0:
+        return 1.0
+    return max(0.0, 1.0 - elapsed / GAME_HOURS)
+
+
+def live_week(season, rosters, schedule, now):
+    """The in-progress week, for a forecast that moves with live scores:
+
+        {"week": 11, "teams": {fid: {"score": 64.2,    # live score so far
+                                     "remaining": 51.3,  # projected points still to come
+                                     "share": 0.44}}}     # of the team's projected total
+
+    The live week is the first regular-season week that isn't final, once any of
+    its games has a score. Each starter's projection counts toward `remaining`
+    by how much of his NFL game is left at `now` (kickoff times from the
+    schedule): all of it before kickoff, a shrinking share during the game, none
+    after. A starter on bye, or with no NFL team on file, has nothing left.
+    `rosters` is lib.data.load_week_rosters output for that week and `schedule`
+    lib.data.load_nfl_schedule. None when there's no live week, or no rosters or
+    kickoff times to split it with — the forecast then waits for the week to go
+    final, as before."""
+    reg = season.get("weeks_in_regular_season") or 14
+    week = complete_through(season) + 1
+    games = [m for m in season.get("matchups") or []
+             if m.get("week") == week and not m.get("playoff")]
+    if (week > reg or not games or not rosters or not schedule or now is None
+            or not any(m.get("home_score") is not None for m in games)):
+        return None
+    kick = {}
+    for g in schedule:
+        if g.get("week") == week and g.get("kickoff"):
+            for t in (g.get("away"), g.get("home")):
+                if t:
+                    kick[t.upper()] = parse_kickoff(g["kickoff"])
+    if not kick:
+        return None
+    teams = {}
+    for m in games:
+        for f, score in ((m["home"], m.get("home_score")), (m["away"], m.get("away_score"))):
+            starters = [p for p in rosters.get(f) or [] if p.get("starter")]
+            total = rem = 0.0
+            for p in starters:
+                proj = float(p.get("proj") or 0.0)
+                total += proj
+                ko = kick.get((p.get("pro_team") or "").upper())
+                if ko is not None:
+                    rem += proj * _remaining_fraction(ko, now)
+            teams[f] = {"score": float(score or 0.0), "remaining": round(rem, 2),
+                        "share": round(rem / total, 4) if total else 0.0}
+    return {"week": week, "teams": teams}
+
+
+def simulate(season, strength, params, n=10000, seed=0, live=None):
     """Run `n` simulated seasons from the current state. Returns
-    {fid: {outcome: probability, 'wins': mean final wins, 'seed': mean seed}}."""
+    {fid: {outcome: probability, 'wins': mean final wins, 'seed': mean seed}}.
+
+    `live` (live_week output) plays out the in-progress week from where it
+    stands: each team's final score is its live score plus its projected points
+    still to come, give or take a spread that shrinks with how much is left (a
+    full week's sigma scaled by the square root of the share remaining)."""
     teams = sorted(season.get("teams") or {})
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
@@ -150,6 +226,8 @@ def simulate(season, strength, params, n=10000, seed=0):
     shell = _bracket_season(season, teams, reg, season.get("season") or 0)
     pweeks = (reg + 1, reg + 2, reg + 3)
     rng = random.Random(seed)
+    live_wk = (live or {}).get("week")
+    live_teams = (live or {}).get("teams") or {}
     tally = {f: dict.fromkeys(SIM_OUTCOMES, 0) for f in teams}
     wins = dict.fromkeys(teams, 0)
     seeds = dict.fromkeys(teams, 0)
@@ -159,9 +237,14 @@ def simulate(season, strength, params, n=10000, seed=0):
         sim = list(base)
         for m in remaining:
             h, a = m["home"], m["away"]
+            if live_teams and m["week"] == live_wk and h in live_teams and a in live_teams:
+                hs, as_ = (live_teams[x]["score"] + rng.gauss(
+                    live_teams[x]["remaining"], sigma * math.sqrt(live_teams[x]["share"]))
+                    for x in (h, a))
+            else:
+                hs, as_ = rng.gauss(level[h], sigma), rng.gauss(level[a], sigma)
             sim.append({"week": m["week"], "home": h, "away": a,
-                        "home_score": rng.gauss(level[h], sigma),
-                        "away_score": rng.gauss(level[a], sigma)})
+                        "home_score": hs, "away_score": as_})
         # Playoff weeks: every team plays (scores only matter per team).
         for w in pweeks:
             for i in range(0, len(teams), 2):
@@ -195,11 +278,19 @@ def simulate(season, strength, params, n=10000, seed=0):
                     wins=wins[f] / n, seed=seeds[f] / n) for f in teams}
 
 
-def forecast(season, params, proj=None, n=10000, seed=0):
-    """Strength estimate + simulation from the season's completed weeks."""
+def forecast(season, params, proj=None, n=10000, seed=0, live=None):
+    """Strength estimate + simulation from the season's completed weeks, with an
+    in-progress week played out from its live scores when `live` (live_week
+    output) is given. The live week also feeds the ratings, as a fraction of a
+    game: each team's projected final (live score plus points still to come),
+    weighted by the share of its week already played — nothing before kickoff,
+    a full game once it's over, so a finished-but-not-final week rates teams
+    the same as the final one will."""
     teams = sorted(season.get("teams") or {})
-    st = strengths(teams, team_scores(played_games(season)), params, proj)
-    return st, simulate(season, st, params, n=n, seed=seed)
+    partial = {f: (t["score"] + t["remaining"], 1.0 - t["share"])
+               for f, t in ((live or {}).get("teams") or {}).items()}
+    st = strengths(teams, team_scores(played_games(season)), params, proj, partial)
+    return st, simulate(season, st, params, n=n, seed=seed, live=live)
 
 
 def pct_label(p):

@@ -2,12 +2,18 @@ name: Site update
 
 # Imports the current ESPN season and rebuilds docs/_data, then commits to main
 # (GitHub Pages redeploys from /docs on main automatically) — only when something
-# changed. Runs every 4 hours in-season so the scoreboard tracks live scores
-# through game days; timezone-agnostic (no DST math), and no-op runs commit
-# nothing.
+# changed. Runs every 4 hours in-season, and every 30 minutes while NFL games are
+# on, so the scoreboard and the live season forecast track scores through game
+# days. Cron is UTC; the game windows below are wide enough to cover both EDT and
+# EST, at :15/:45 so they never double up with the :00 four-hourly run. GitHub
+# can start scheduled runs a few minutes late.
 on:
   schedule:
-    - cron: "0 */4 * 9-12,1 *"   # every 4 hours, Sept–Jan
+    - cron: "0 */4 * 9-12,1 *"        # every 4 hours, Sept–Jan
+    - cron: "15,45 0-4 * 9-12,1 5"    # Thursday night (Fri 00:15–04:45 UTC)
+    - cron: "15,45 17-23 * 9-12,1 0"  # Sunday afternoon/evening (17:15–23:45 UTC)
+    - cron: "15,45 0-4 * 9-12,1 1"    # Sunday night (Mon 00:15–04:45 UTC)
+    - cron: "15,45 0-4 * 9-12,1 2"    # Monday night (Tue 00:15–04:45 UTC)
   workflow_dispatch:             # manual "Run workflow" button, any time
 
 permissions:

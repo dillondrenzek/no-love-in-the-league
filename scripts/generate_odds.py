@@ -3,18 +3,27 @@
 finish top 3, make the playoffs, land in the Sacko bracket, or take the Sacko.
 
 Writes docs/_data/odds.yml, keyed by year. Only the season in its regular season
-gets a forecast, rebuilt from the weeks that are complete (a live week counts once
-it's final). The model and its constants live in lib/odds; tune them with
+gets a forecast. Team ratings come from the weeks that are complete; a week in
+progress is played out from its live scores (lib.odds.live_week: live score plus
+the projected points of starters still to play), so the odds move as each import
+brings new scores. The model and its constants live in lib/odds; tune them with
 scripts/backtest_odds.py.
+
+Each year's record: {as_of_week, live_week, updated_at, sims, rows} plus, during
+a live week, `settled_rows` — the forecast from completed weeks only, which is
+what the weekly recap's facts file quotes.
 """
 
 from pathlib import Path
 
 import yaml
 
-from lib.data import load_franchises, load_seasons
-from lib.odds import Params, complete_through, forecast, forecast_rows, truncate
+from lib.data import load_franchises, load_seasons, load_week_rosters, load_nfl_schedule
+from lib.nfl_schedule import parse_kickoff
+from lib.odds import (Params, complete_through, forecast, forecast_rows, live_week,
+                      truncate)
 from lib.state import state_of
+from lib.weeks import _fmt_updated as fmt_updated
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "docs" / "_data" / "odds.yml"
@@ -31,16 +40,30 @@ def main():
         week = complete_through(season)
         if week >= (season.get("weeks_in_regular_season") or 14):
             continue
+        updated = season.get("updated_at")
+        now = parse_kickoff(updated) if updated else None
+        live = live_week(season, load_week_rosters(year, week + 1, franchises),
+                         load_nfl_schedule(year), now)
         # Fixed seed per (season, week): same inputs -> same numbers on every build.
-        strength, result = forecast(season, Params(), n=SIMS, seed=year * 100 + week)
+        seed = year * 100 + week
+        settled = forecast(season, Params(), n=SIMS, seed=seed)
         # Last week's forecast, re-run from the season as it stood then (same seed
         # it had), for the trend arrows. None before any week is final.
-        prev = None
+        before = None
         if week >= 1:
-            prev = forecast(truncate(season, week - 1), Params(), n=SIMS,
-                            seed=year * 100 + week - 1)
-        out[year] = {"as_of_week": week, "sims": SIMS,
-                     "rows": forecast_rows(season, franchises, strength, result, prev)}
+            before = forecast(truncate(season, week - 1), Params(), n=SIMS,
+                              seed=seed - 1)
+        entry = {"as_of_week": week, "live_week": live["week"] if live else None,
+                 "updated_at": fmt_updated(updated), "sims": SIMS}
+        if live:
+            # Mid-week, the arrows show how far the live scores have moved each
+            # team since the week began (the settled forecast).
+            strength, result = forecast(season, Params(), n=SIMS, seed=seed, live=live)
+            entry["rows"] = forecast_rows(season, franchises, strength, result, settled)
+            entry["settled_rows"] = forecast_rows(season, franchises, *settled, before)
+        else:
+            entry["rows"] = forecast_rows(season, franchises, *settled, before)
+        out[year] = entry
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(yaml.safe_dump(out, sort_keys=False, allow_unicode=True),
                          encoding="utf-8")

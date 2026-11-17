@@ -357,6 +357,8 @@ td.tile-cell > span {
 .forecast td.forecast__seed { color: var(--faint); font-size: 0.8rem; padding-left: 4px; padding-right: 8px; }
 .forecast th.forecast__seed { padding-left: 4px; padding-right: 8px; }  // not the base 1% first-column width, which let long names spill
 .forecast__note { font-size: 0.8rem; color: var(--muted); margin-top: -0.8em; }
+// "Last updated …" under the table: the latest ESPN import behind the odds.
+.forecast__updated { font-size: 0.72rem; color: var(--faint); margin: -1.2em 0 0; text-align: right; }
 // Phones: keep the odds on screen — drop the model columns and owner names, let
 // team names wrap, and tighten the probability cells.
 @media (max-width: 640px) {

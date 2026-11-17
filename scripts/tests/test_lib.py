@@ -1993,6 +1993,77 @@ def test_odds_wildcard_gaps_spread_the_pf_deficit_over_games_left():
     assert wildcard_gaps(done)["a"]["text"] == "—"
 
 
+def _live_fixture(weeks_played=13, done=True):
+    """_odds_season with the next week live: every home team leads 150-50, with
+    final: false, plus a roster per team (one starter per NFL game) and kickoffs.
+    `done` puts both NFL games in the past; otherwise one is still to come."""
+    import datetime
+    season = _odds_season(weeks_played)
+    wk = weeks_played + 1
+    for m in season["matchups"]:
+        if m["week"] == wk:
+            m.update(home_score=150.0, away_score=50.0, final=False)
+    now = datetime.datetime(2030, 11, 20, 20, 0, tzinfo=datetime.timezone.utc)
+    early = (now - datetime.timedelta(hours=5)).isoformat()
+    late = (now - datetime.timedelta(hours=5) if done else
+            now + datetime.timedelta(hours=1)).isoformat()
+    schedule = [{"week": wk, "kickoff": early, "away": "AAA", "home": "BBB"},
+                {"week": wk, "kickoff": late, "away": "CCC", "home": "DDD"}]
+    rosters = {f: [{"starter": True, "proj": 10.0, "pro_team": "AAA"},
+                   {"starter": True, "proj": 30.0, "pro_team": "CCC"},
+                   {"starter": True, "proj": 8.0, "pro_team": "ZZZ"},    # bye
+                   {"starter": False, "proj": 99.0, "pro_team": "DDD"}]  # bench
+               for f in season["teams"]}
+    return season, rosters, schedule, now
+
+
+def test_odds_live_week_splits_remaining_projection_by_kickoff():
+    import datetime
+    from lib.odds import live_week, GAME_HOURS
+    season, rosters, schedule, now = _live_fixture(done=False)
+    live = live_week(season, rosters, schedule, now)
+    assert live["week"] == 14
+    t = live["teams"]["t00"]
+    # Only the CCC starter's game is still to come: 30 of 48 projected points.
+    assert t["remaining"] == 30.0 and t["share"] == round(30 / 48, 4)
+    assert {x["score"] for x in live["teams"].values()} == {150.0, 50.0}
+    # Halfway through a game, half of its projection is still to come.
+    schedule[1]["kickoff"] = (now - datetime.timedelta(hours=GAME_HOURS / 2)).isoformat()
+    assert live_week(season, rosters, schedule, now)["teams"]["t00"]["remaining"] == 15.0
+    # No live week without scores, rosters or kickoff times.
+    assert live_week(_odds_season(13), rosters, schedule, now) is None
+    assert live_week(season, {}, schedule, now) is None
+    assert live_week(season, rosters, [], now) is None
+
+
+def test_odds_live_week_that_is_over_plays_out_as_scored():
+    from lib.odds import Params, forecast, live_week, played_games
+    season, rosters, schedule, now = _live_fixture(done=True)
+    live = live_week(season, rosters, schedule, now)
+    assert all(t["share"] == 0.0 for t in live["teams"].values())
+    wins = {f: 0 for f in season["teams"]}
+    for m in played_games(season):
+        wins[m["home"] if m["home_score"] > m["away_score"] else m["away"]] += 1
+    for m in season["matchups"]:
+        if m["week"] == 14:
+            wins[m["home"]] += 1                 # every home team leads 150-50
+    _, res = forecast(season, Params(), n=200, seed=3, live=live)
+    assert {f: r["wins"] for f, r in res.items()} == {f: float(w) for f, w in wins.items()}
+    # A finished live week rates teams exactly as the final week will.
+    from lib.odds import strengths, team_scores
+    teams = sorted(season["teams"])
+    final = [dict(m) for m in season["matchups"]]
+    for m in final:
+        m.pop("final", None)
+    st_live, _ = forecast(season, Params(), n=10, seed=3, live=live)
+    st_final = strengths(teams, team_scores(played_games(dict(season, matchups=final))),
+                         Params())
+    assert all(abs(st_live[f][0] - st_final[f][0]) < 1e-9 for f in teams)
+    # Without the live week, week 14 is a fresh coin flip weighted by strength.
+    _, res0 = forecast(season, Params(), n=200, seed=3)
+    assert {f: r["wins"] for f, r in res0.items()} != {f: float(w) for f, w in wins.items()}
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week
