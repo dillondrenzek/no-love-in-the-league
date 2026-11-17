@@ -302,10 +302,15 @@ jackperkins74:
   trades:
   - year: 2026
     week: 10
-    accepted: true
-    got: []
-    gave: []
-    with: []
+    got:
+    - Josh Downs
+    - Cam Skattebo
+    gave:
+    - Parker Washington
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mother, Respectfully
   - year: 2026
     week: 6
     got:
@@ -3215,7 +3220,7 @@ zachzoske:
     titles: '1'
     sackos: 2
     playoff_apps: 5
-    trades: 20
+    trades: 21
     trades_known: true
     tx_per_year: 109.0
     tx_known: false
@@ -3490,6 +3495,17 @@ zachzoske:
     avg_pf: 98.7
     avg_pa: 100.9
   trades:
+  - year: 2026
+    week: 10
+    got:
+    - Parker Washington
+    gave:
+    - Josh Downs
+    - Cam Skattebo
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Gibbed for your pleasure
   - year: 2026
     week: 7
     got:
@@ -8838,7 +8854,7 @@ gganoom:
     sackos: 0
     playoff_apps: 1
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 25.7
     tx_known: true
     seasons: 3
@@ -8969,7 +8985,7 @@ gganoom:
     avg_pf: 125.9
     avg_pa: 130.8
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -9392,7 +9408,7 @@ whowonthelastsuperbowl:
     sackos: 2
     playoff_apps: 4
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 35.9
     tx_known: false
     seasons: 13
@@ -9712,7 +9728,7 @@ whowonthelastsuperbowl:
     - id: lukstein
       name: Luke
       team: Autodraft Monster
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 11
@@ -11224,7 +11240,7 @@ schirmerj:
     sackos: 0
     playoff_apps: 9
     trades: 2
-    trades_known: false
+    trades_known: true
     tx_per_year: 54.0
     tx_known: false
     seasons: 13
@@ -11520,7 +11536,7 @@ schirmerj:
     - id: sturmanator15
       name: Wade
       team: Lamar's Donger
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -13076,7 +13092,7 @@ alexandra:
     sackos: 0
     playoff_apps: 0
     trades: 1
-    trades_known: false
+    trades_known: true
     tx_per_year: 25.0
     tx_known: true
     seasons: 1
@@ -13172,7 +13188,7 @@ alexandra:
     - id: zachzoske
       name: Zach
       team: Tuten Your Mother, Respectfully
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 7
@@ -13385,7 +13401,7 @@ purpsworth:
     sackos: 0
     playoff_apps: 4
     trades: 6
-    trades_known: false
+    trades_known: true
     tx_per_year: 42.0
     tx_known: true
     seasons: 8
@@ -13650,7 +13666,7 @@ purpsworth:
     - id: zachzoske
       name: Zach
       team: Eleven In Crocks
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 8
@@ -14981,7 +14997,7 @@ kevbots22:
     sackos: 0
     playoff_apps: 5
     trades: 0
-    trades_known: false
+    trades_known: true
     tx_per_year: 30.9
     tx_known: false
     seasons: 13
@@ -15256,7 +15272,7 @@ kevbots22:
     avg_pf: 97.3
     avg_pa: 103.3
   trades: []
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
@@ -16534,7 +16550,7 @@ shawne2520997:
     sackos: 2
     playoff_apps: 8
     trades: 4
-    trades_known: false
+    trades_known: true
     tx_per_year: 51.2
     tx_known: false
     seasons: 11
@@ -16830,7 +16846,7 @@ shawne2520997:
     - id: jackperkins74
       name: Jack
       team: Vladimir Putin
-  trades_known: false
+  trades_known: true
   keepers:
   - year: 2026
     round: 5
