@@ -54,11 +54,13 @@ detail:
       record: 7-2
       pct: 0.7777777777777778
       tag: null
+      gb: —
       pct_str: '.778'
       pf: 1222.5
       pf_color: '#ef713c'
       pa: 946.3
       pa_color: '#fdedd1'
+      all_play: 69-29-1
     - &id002
       finish: 2
       team: Tuten Your Mother, Respectfully
@@ -68,11 +70,13 @@ detail:
       record: 7-2
       pct: 0.7777777777777778
       tag: null
+      gb: —
       pct_str: '.778'
       pf: 1142.0
       pf_color: '#f38b43'
       pa: 975.3
       pa_color: '#fbd9a2'
+      all_play: 69-30
     - &id003
       finish: 3
       team: The People's Commissioner
@@ -82,11 +86,13 @@ detail:
       record: 6-3
       pct: 0.6666666666666666
       tag: null
+      gb: '1'
       pct_str: '.667'
       pf: 1240.6
       pf_color: '#ee6b3b'
       pa: 1100.3
       pa_color: '#f07b3f'
+      all_play: 78-21
     - &id004
       finish: 4
       team: One Big Beautiful Dillbot
@@ -96,11 +102,13 @@ detail:
       record: 5-4
       pct: 0.5555555555555556
       tag: null
+      gb: '2'
       pct_str: '.556'
       pf: 1134.8
       pf_color: '#f38d43'
       pa: 937.1
       pa_color: '#fdf3e0'
+      all_play: 64-34-1
     - &id005
       finish: 5
       team: Trick or Trick It’s Mike Vick
@@ -110,11 +118,13 @@ detail:
       record: 5-4
       pct: 0.5555555555555556
       tag: null
+      gb: '2'
       pct_str: '.556'
       pf: 1071.3
       pf_color: '#f6a148'
       pa: 1007.3
       pa_color: '#fac46f'
+      all_play: 51-48
     - &id006
       finish: 6
       team: Return of the IDP
@@ -124,11 +134,13 @@ detail:
       record: 5-4
       pct: 0.5555555555555556
       tag: null
+      gb: '2'
       pct_str: '.556'
       pf: 1029.7
       pf_color: '#f8ae4b'
       pa: 1105.2
       pa_color: '#f0773e'
+      all_play: 47-52
     - &id007
       finish: 7
       team: Cornstar
@@ -138,11 +150,13 @@ detail:
       record: 4-5
       pct: 0.4444444444444444
       tag: null
+      gb: '3'
       pct_str: '.444'
       pf: 1029.4
       pf_color: '#f8af4b'
       pa: 1051.0
       pa_color: '#f6a349'
+      all_play: 50-49
     - &id008
       finish: 8
       team: I am dead inside
@@ -152,11 +166,13 @@ detail:
       record: 4-5
       pct: 0.4444444444444444
       tag: null
+      gb: '3'
       pct_str: '.444'
       pf: 935.2
       pf_color: '#fac879'
       pa: 993.2
       pa_color: '#fbce86'
+      all_play: 33-66
     - &id009
       finish: 9
       team: Remember the Nice Guys, ChatGPT
@@ -166,11 +182,13 @@ detail:
       record: 3-5-1
       pct: 0.3888888888888889
       tag: null
+      gb: '3.5'
       pct_str: '.389'
       pf: 983.8
       pf_color: '#f9bc5b'
       pa: 1057.0
       pa_color: '#f69f47'
+      all_play: 46-52-1
     - &id010
       finish: 10
       team: Swift kick in the Dak
@@ -180,11 +198,13 @@ detail:
       record: 3-6
       pct: 0.3333333333333333
       tag: null
+      gb: '4'
       pct_str: '.333'
       pf: 967.8
       pf_color: '#fac065'
       pa: 1043.6
       pa_color: '#f7aa4a'
+      all_play: 38-61
     - &id011
       finish: 11
       team: Im Bleeding Making Me the Shiva
@@ -194,11 +214,13 @@ detail:
       record: 2-6-1
       pct: 0.2777777777777778
       tag: null
+      gb: '4.5'
       pct_str: '.278'
       pf: 893.0
       pf_color: '#fbd394'
       pa: 1085.7
       pa_color: '#f28742'
+      all_play: 28-70-1
     - &id012
       finish: 12
       team: 2x Runner Up
@@ -208,11 +230,13 @@ detail:
       record: 2-7
       pct: 0.2222222222222222
       tag: null
+      gb: '5'
       pct_str: '.222'
       pf: 771.6
       pf_color: '#fdf3e0'
       pa: 1119.7
       pa_color: '#ee6b3b'
+      all_play: 19-80
     standings_rows:
     - *id001
     - *id002
@@ -516,11 +540,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: shiva
+      gb: '1'
       pct_str: '.643'
       pf: 1769.9
       pf_color: '#ee6b3b'
       pa: 1579.4
       pa_color: '#f9ba57'
+      all_play: 105-48-1
     - finish: 2
       team: Keeping up with the McCalferies
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -529,11 +555,13 @@ detail:
       record: 10-4
       pct: 0.7142857142857143
       tag: null
+      gb: —
       pct_str: '.714'
       pf: 1626.2
       pf_color: '#f7a749'
       pa: 1504.3
       pa_color: '#fce2b8'
+      all_play: 96-58
     - finish: 3
       team: I am dead inside
       logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
@@ -542,11 +570,13 @@ detail:
       record: 6-8
       pct: 0.42857142857142855
       tag: null
+      gb: '4'
       pct_str: '.429'
       pf: 1566.2
       pf_color: '#fabe61'
       pa: 1526.0
       pa_color: '#fbd79c'
+      all_play: 76-77-1
     - finish: 4
       team: One Big Beautiful Dill
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
@@ -555,11 +585,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: null
+      gb: '1'
       pct_str: '.643'
       pf: 1587.6
       pf_color: '#f9b750'
       pa: 1494.2
       pa_color: '#fce8c5'
+      all_play: 80-74
     - finish: 5
       team: Big Brown Dak Makes em Waddle
       logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
@@ -568,11 +600,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: null
+      gb: '1'
       pct_str: '.643'
       pf: 1703.3
       pf_color: '#f28742'
       pa: 1511.2
       pa_color: '#fcdfaf'
+      all_play: 94-60
     - finish: 6
       team: Thoughts and Players
       logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
@@ -581,11 +615,13 @@ detail:
       record: 8-6
       pct: 0.5714285714285714
       tag: null
+      gb: '2'
       pct_str: '.571'
       pf: 1612.9
       pf_color: '#f8ad4b'
       pa: 1495.9
       pa_color: '#fce7c2'
+      all_play: 84-70
     - finish: 7
       team: 2x Runner Up
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -594,11 +630,13 @@ detail:
       record: 8-6
       pct: 0.5714285714285714
       tag: null
+      gb: '2'
       pct_str: '.571'
       pf: 1479.8
       pf_color: '#fbdca8'
       pa: 1472.9
       pa_color: '#fdf3e0'
+      all_play: 70-84
     - finish: 8
       team: Dont spit just swallow
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
@@ -607,11 +645,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '3'
       pct_str: '.500'
       pf: 1537.3
       pf_color: '#fac879'
       pa: 1592.9
       pa_color: '#f8b24c'
+      all_play: 71-83
     - finish: 9
       team: Trick or Trick It’s Mike Vick
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -620,11 +660,13 @@ detail:
       record: 3-11
       pct: 0.21428571428571427
       tag: null
+      gb: '7'
       pct_str: '.214'
       pf: 1445.6
       pf_color: '#fce8c4'
       pa: 1675.7
       pa_color: '#f07c3f'
+      all_play: 53-101
     - finish: 10
       team: Dump it on my Chest
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
@@ -633,11 +675,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '5'
       pct_str: '.357'
       pf: 1411.9
       pf_color: '#fdf3e0'
       pa: 1606.0
       pa_color: '#f7aa4a'
+      all_play: 51-103
     - finish: 11
       team: IDPs Forever
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -646,11 +690,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '5'
       pct_str: '.357'
       pf: 1546.0
       pf_color: '#fac572'
       pa: 1701.4
       pa_color: '#ee6b3b'
+      all_play: 73-81
     - &id015
       finish: 12
       team: D***er my Sufficient Tight End
@@ -660,11 +706,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: sacko
+      gb: '5'
       pct_str: '.357'
       pf: 1542.5
       pf_color: '#fac675'
       pa: 1669.3
       pa_color: '#f18040'
+      all_play: 70-84
     standings_rows: *id013
     notes:
     - 'Luke''s Rule takes effect: the playoff bracket reseeds in the second round,
@@ -1217,11 +1265,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: shiva
+      gb: —
       pct_str: '.643'
       pf: 1890.9
       pf_color: '#ee6b3b'
       pa: 1711.1
       pa_color: '#f38f44'
+      all_play: 118-36
     - finish: 2
       team: 5 Star Men
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -1230,11 +1280,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: null
+      gb: —
       pct_str: '.643'
       pf: 1764.6
       pf_color: '#f49445'
       pa: 1661.4
       pa_color: '#f6a549'
+      all_play: 102-52
     - finish: 3
       team: Pukkake
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/FrozenTundra-ToddDetwiler/TundraPack_03_01.svg
@@ -1243,11 +1295,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '2'
       pct_str: '.500'
       pf: 1661.3
       pf_color: '#f9b54d'
       pa: 1686.1
       pa_color: '#f59a46'
+      all_play: 89-65
     - finish: 4
       team: Thoughts and Players
       logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
@@ -1256,11 +1310,13 @@ detail:
       record: 8-6
       pct: 0.5714285714285714
       tag: null
+      gb: '1'
       pct_str: '.571'
       pf: 1569.8
       pf_color: '#fbce86'
       pa: 1502.7
       pa_color: '#fce0b3'
+      all_play: 75-79
     - finish: 5
       team: All Hail the King
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
@@ -1269,11 +1325,13 @@ detail:
       record: 8-6
       pct: 0.5714285714285714
       tag: null
+      gb: '1'
       pct_str: '.571'
       pf: 1560.8
       pf_color: '#fbd08c'
       pa: 1507.7
       pa_color: '#fcdfaf'
+      all_play: 69-85
     - finish: 6
       team: Three's Company
       logo: https://i.redd.it/1jt31reylse21.jpg
@@ -1282,11 +1340,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: null
+      gb: —
       pct_str: '.643'
       pf: 1644.2
       pf_color: '#f9ba57'
       pa: 1603.1
       pa_color: '#f9bd5d'
+      all_play: 75-79
     - finish: 7
       team: Nix Out For Harambe
       logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
@@ -1295,11 +1355,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '2'
       pct_str: '.500'
       pf: 1509.0
       pf_color: '#fcdead'
       pa: 1511.3
       pa_color: '#fcddac'
+      all_play: 65-89
     - finish: 8
       team: KillDilly Elegy
       logo: https://g.espncdn.com/lm-static/ffl/images/default_logos/6.svg
@@ -1308,11 +1370,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '2'
       pct_str: '.500'
       pf: 1622.6
       pf_color: '#fac064'
       pa: 1550.1
       pa_color: '#fbd08b'
+      all_play: 74-80
     - finish: 9
       team: I am dead inside
       logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
@@ -1321,11 +1385,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '4'
       pct_str: '.357'
       pf: 1606.7
       pf_color: '#fac46f'
       pa: 1663.6
       pa_color: '#f6a449'
+      all_play: 80-74
     - finish: 10
       team: Trick or Trick It’s Mike Vick
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -1334,11 +1400,13 @@ detail:
       record: 6-8
       pct: 0.42857142857142855
       tag: null
+      gb: '3'
       pct_str: '.429'
       pf: 1617.1
       pf_color: '#fac168'
       pa: 1794.0
       pa_color: '#ee6b3b'
+      all_play: 80-74
     - finish: 11
       team: Tom Bradys Only Fans
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -1347,11 +1415,13 @@ detail:
       record: 2-12
       pct: 0.14285714285714285
       tag: null
+      gb: '7'
       pct_str: '.143'
       pf: 1428.1
       pf_color: '#fdf3e0'
       pa: 1667.3
       pa_color: '#f6a248'
+      all_play: 54-100
     - &id018
       finish: 12
       team: Save a horse, Ride the Cowboys
@@ -1361,11 +1431,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: sacko
+      gb: '2'
       pct_str: '.500'
       pf: 1433.9
       pf_color: '#fdf1dc'
       pa: 1450.6
       pa_color: '#fdf3e0'
+      all_play: 43-111
     standings_rows: *id016
     notes:
     - Grant joined the league; Fletcher departed.
@@ -1905,11 +1977,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: shiva
+      gb: '3'
       pct_str: '.643'
       pf: 1606.6
       pf_color: '#f59a46'
       pa: 1510.0
       pa_color: '#fce4bc'
+      all_play: 81-73
     - finish: 2
       team: Three's Company
       logo: https://i.redd.it/1jt31reylse21.jpg
@@ -1918,11 +1992,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '5'
       pct_str: '.500'
       pf: 1569.6
       pf_color: '#f7a749'
       pa: 1605.2
       pa_color: '#f9b34c'
+      all_play: 84-70
     - finish: 3
       team: Thoughts and Players
       logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
@@ -1931,11 +2007,13 @@ detail:
       record: 12-2
       pct: 0.8571428571428571
       tag: null
+      gb: —
       pct_str: '.857'
       pf: 1748.5
       pf_color: '#ee6b3b'
       pa: 1480.6
       pa_color: '#fdf3e0'
+      all_play: 106-48
     - finish: 4
       team: In Goff we trust
       logo: https://media.kare11.com/assets/WXIA/images/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7/f31d7072-ca45-4fdc-b7d1-6c70abd44ff7_1920x1080.jpg
@@ -1944,11 +2022,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: null
+      gb: '3'
       pct_str: '.643'
       pf: 1733.5
       pf_color: '#ef703c'
       pa: 1508.8
       pa_color: '#fce5bd'
+      all_play: 101-53
     - finish: 5
       team: IDP'd My Pants
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -1957,11 +2037,13 @@ detail:
       record: 8-6
       pct: 0.5714285714285714
       tag: null
+      gb: '4'
       pct_str: '.571'
       pf: 1658.4
       pf_color: '#f28942'
       pa: 1546.3
       pa_color: '#fbd28f'
+      all_play: 88-66
     - finish: 6
       team: Used Napkin
       logo: https://i.imgur.com/qda7YBj.jpg
@@ -1970,11 +2052,13 @@ detail:
       record: 9-5
       pct: 0.6428571428571429
       tag: null
+      gb: '3'
       pct_str: '.643'
       pf: 1714.6
       pf_color: '#f0763e'
       pa: 1505.6
       pa_color: '#fce6c1'
+      all_play: 94-60
     - finish: 7
       team: Vinegar Strokes
       logo: https://cdn.quotesgram.com/img/85/34/1948657521-ruxin-meme-generator-stroke-face-unlocked-74b1f7-340x320.png
@@ -1983,11 +2067,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '5'
       pct_str: '.500'
       pf: 1522.5
       pf_color: '#f9b64d'
       pa: 1610.4
       pa_color: '#f8b04b'
+      all_play: 68-86
     - finish: 8
       team: Tom Bradys Only Fans
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -1996,11 +2082,13 @@ detail:
       record: 4-10
       pct: 0.2857142857142857
       tag: null
+      gb: '8'
       pct_str: '.286'
       pf: 1507.9
       pf_color: '#f9ba57'
       pa: 1608.6
       pa_color: '#f8b14c'
+      all_play: 59-95
     - finish: 9
       team: Trick or Trick It’s Mike Vick
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -2009,11 +2097,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '7'
       pct_str: '.357'
       pf: 1566.3
       pf_color: '#f7a84a'
       pa: 1630.8
       pa_color: '#f6a348'
+      all_play: 71-83
     - finish: 10
       team: Zach's Juicy Fantasy Teamussy
       logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
@@ -2022,11 +2112,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '5'
       pct_str: '.500'
       pf: 1562.1
       pf_color: '#f7a94a'
       pa: 1635.0
       pa_color: '#f6a048'
+      all_play: 84-70
     - finish: 11
       team: 2x Runner Up
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -2035,11 +2127,13 @@ detail:
       record: 3-11
       pct: 0.21428571428571427
       tag: null
+      gb: '9'
       pct_str: '.214'
       pf: 1428.2
       pf_color: '#fbd08b'
       pa: 1719.9
       pa_color: '#ee6b3b'
+      all_play: 53-101
     - &id021
       finish: 12
       team: Mr. Irrelevant
@@ -2049,11 +2143,13 @@ detail:
       record: 4-10
       pct: 0.2857142857142857
       tag: sacko
+      gb: '8'
       pct_str: '.286'
       pf: 1297.6
       pf_color: '#fdf3e0'
       pa: 1554.6
       pa_color: '#fbcd85'
+      all_play: 35-119
     standings_rows: *id019
     notes:
     - First year of Keepers rule
@@ -2649,11 +2745,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: shiva
+      gb: '4'
       pct_str: '.500'
       pf: 1360.5
       pf_color: '#f8ae4b'
       pa: 1300.7
       pa_color: '#fcdeae'
+      all_play: 77-77
     - finish: 2
       team: Koo Koo Kachoo
       logo: https://g.espncdn.com/lm-static/logo-packs/core/CatsAndDogs/cats_dogs-5.svg
@@ -2662,11 +2760,13 @@ detail:
       record: 11-3
       pct: 0.7857142857142857
       tag: null
+      gb: —
       pct_str: '.786'
       pf: 1438.2
       pf_color: '#f39044'
       pa: 1258.8
       pa_color: '#fdf3e0'
+      all_play: 94-60
     - finish: 3
       team: Fly Eagles Fly
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -2675,11 +2775,13 @@ detail:
       record: 11-3
       pct: 0.7857142857142857
       tag: null
+      gb: —
       pct_str: '.786'
       pf: 1501.3
       pf_color: '#f0783e'
       pa: 1367.6
       pa_color: '#fabe5f'
+      all_play: 107-47
     - finish: 4
       team: Trick or Trick It’s Mike Vick
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -2688,11 +2790,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '4'
       pct_str: '.500'
       pf: 1331.2
       pf_color: '#f9b953'
       pa: 1302.5
       pa_color: '#fcdeac'
+      all_play: 77-77
     - finish: 5
       team: Thoughts and Players
       logo: https://i.ytimg.com/vi/dCImMlwp7A0/maxresdefault.jpg
@@ -2701,11 +2805,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '4'
       pct_str: '.500'
       pf: 1312.8
       pf_color: '#fabe61'
       pa: 1371.1
       pa_color: '#f9bc5b'
+      all_play: 70-84
     - finish: 6
       team: Allen's Deep Balls
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CreepShow-ToddDetwiler/CreepShow-12.svg
@@ -2714,11 +2820,13 @@ detail:
       record: 10-4
       pct: 0.7142857142857143
       tag: null
+      gb: '1'
       pct_str: '.714'
       pf: 1535.0
       pf_color: '#ee6b3b'
       pa: 1340.4
       pa_color: '#facb80'
+      all_play: 111-43
     - finish: 7
       team: Used Napkin
       logo: https://i.imgur.com/qda7YBj.jpg
@@ -2727,11 +2835,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '4'
       pct_str: '.500'
       pf: 1355.2
       pf_color: '#f8b04c'
       pa: 1319.5
       pa_color: '#fbd598'
+      all_play: 75-79
     - finish: 8
       team: Mr. Irrelevant
       logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
@@ -2740,11 +2850,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '4'
       pct_str: '.500'
       pf: 1144.5
       pf_color: '#fdf3e0'
       pa: 1290.3
       pa_color: '#fce4bb'
+      all_play: 45-108-1
     - finish: 9
       team: Naggar's In Paris
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -2753,11 +2865,13 @@ detail:
       record: 2-12
       pct: 0.14285714285714285
       tag: null
+      gb: '9'
       pct_str: '.143'
       pf: 1222.3
       pf_color: '#fbdba5'
       pa: 1398.7
       pa_color: '#f8ad4b'
+      all_play: 53-101
     - finish: 10
       team: Make Dalvin Cook Again
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -2766,11 +2880,13 @@ detail:
       record: 4-10
       pct: 0.2857142857142857
       tag: null
+      gb: '7'
       pct_str: '.286'
       pf: 1317.0
       pf_color: '#f9bd5e'
       pa: 1350.7
       pa_color: '#fac673'
+      all_play: 69-84-1
     - finish: 11
       team: Trey Lanced my ❤️
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
@@ -2779,11 +2895,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '6'
       pct_str: '.357'
       pf: 1299.8
       pf_color: '#fac26b'
       pa: 1507.5
       pa_color: '#ee6b3b'
+      all_play: 69-84-1
     - &id024
       finish: 12
       team: Risk it for The Biscuit
@@ -2793,11 +2911,13 @@ detail:
       record: 6-8
       pct: 0.42857142857142855
       tag: sacko
+      gb: '5'
       pct_str: '.429'
       pf: 1311.0
       pf_color: '#fabf63'
       pa: 1321.0
       pa_color: '#fbd496'
+      all_play: 75-78-1
     standings_rows: *id022
     notes:
     - NFL season expanded to 17 games, giving us one more week of fantasy.
@@ -3263,11 +3383,13 @@ detail:
       record: 12-2
       pct: 0.8571428571428571
       tag: shiva
+      gb: —
       pct_str: '.857'
       pf: 1619.5
       pf_color: '#ee6b3b'
       pa: 1237.5
       pa_color: '#fdf3e0'
+      all_play: 114-40
     - finish: 2
       team: WA Fantasy Football Team
       logo: https://i.redd.it/wad5aifmanj51.jpg
@@ -3276,11 +3398,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '5'
       pct_str: '.500'
       pf: 1372.6
       pf_color: '#f9b44d'
       pa: 1433.8
       pa_color: '#f18040'
+      all_play: 75-78-1
     - finish: 3
       team: Scat Play
       logo: https://i.redd.it/gc1lal601z941.jpg
@@ -3289,11 +3413,13 @@ detail:
       record: 11-3
       pct: 0.7857142857142857
       tag: null
+      gb: '1'
       pct_str: '.786'
       pf: 1490.0
       pf_color: '#f49144'
       pa: 1327.2
       pa_color: '#fac36c'
+      all_play: 93-61
     - finish: 4
       team: Fantasy Judas
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -3302,11 +3428,13 @@ detail:
       record: 7-6-1
       pct: 0.5357142857142857
       tag: null
+      gb: '4.5'
       pct_str: '.536'
       pf: 1334.7
       pf_color: '#f9be5f'
       pa: 1395.1
       pa_color: '#f59946'
+      all_play: 71-82-1
     - finish: 5
       team: Jackie PooPooPants
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/GridironWarriors-MartinLaksman/warriors-09.svg
@@ -3315,11 +3443,13 @@ detail:
       record: 7-7
       pct: 0.5
       tag: null
+      gb: '5'
       pct_str: '.500'
       pf: 1428.8
       pf_color: '#f6a349'
       pa: 1315.6
       pa_color: '#fac97b'
+      all_play: 81-73
     - finish: 6
       team: Post Mahomes
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -3328,11 +3458,13 @@ detail:
       record: 8-6
       pct: 0.5714285714285714
       tag: null
+      gb: '4'
       pct_str: '.571'
       pf: 1341.1
       pf_color: '#f9bc5c'
       pa: 1376.5
       pa_color: '#f7a649'
+      all_play: 74-80
     - finish: 7
       team: Purple Cobras and Michel
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
@@ -3341,11 +3473,13 @@ detail:
       record: 7-6-1
       pct: 0.5357142857142857
       tag: null
+      gb: '4.5'
       pct_str: '.536'
       pf: 1341.5
       pf_color: '#f9bc5b'
       pa: 1271.9
       pa_color: '#fce1b4'
+      all_play: 73-80-1
     - finish: 8
       team: Trick or Trick It’s Mike Vick
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -3354,11 +3488,13 @@ detail:
       record: 6-8
       pct: 0.42857142857142855
       tag: null
+      gb: '6'
       pct_str: '.429'
       pf: 1405.3
       pf_color: '#f7aa4a'
       pa: 1450.5
       pa_color: '#ef753d'
+      all_play: 79-74-1
     - finish: 9
       team: Hot Chubb Time Machine
       logo: https://images.static-bluray.com/reviews/2991_1.jpg
@@ -3367,11 +3503,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '7'
       pct_str: '.357'
       pf: 1489.3
       pf_color: '#f49244'
       pa: 1463.8
       pa_color: '#ee6c3b'
+      all_play: 89-65
     - finish: 10
       team: Autodraft Monster
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -3380,11 +3518,13 @@ detail:
       record: 4-10
       pct: 0.2857142857142857
       tag: null
+      gb: '8'
       pct_str: '.286'
       pf: 1302.7
       pf_color: '#fac572'
       pa: 1465.5
       pa_color: '#ee6b3b'
+      all_play: 64-90
     - finish: 11
       team: ESPN 8 The Ocho
       logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
@@ -3393,11 +3533,13 @@ detail:
       record: 5-9
       pct: 0.35714285714285715
       tag: null
+      gb: '7'
       pct_str: '.357'
       pf: 1346.7
       pf_color: '#f9bb58'
       pa: 1455.0
       pa_color: '#ef723d'
+      all_play: 71-83
     - &id027
       finish: 12
       team: Set_The_ RAT_TRAP_!
@@ -3407,11 +3549,13 @@ detail:
       record: 4-10
       pct: 0.2857142857142857
       tag: sacko
+      gb: '8'
       pct_str: '.286'
       pf: 1112.9
       pf_color: '#fdf3e0'
       pa: 1392.7
       pa_color: '#f59b46'
+      all_play: 38-116
     standings_rows: *id025
     notes:
     - Injured-reserve slots trimmed from 4 to 1.
@@ -3872,11 +4016,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: shiva
+      gb: —
       pct_str: '.692'
       pf: 1389.2
       pf_color: '#f49545'
       pa: 1265.1
       pa_color: '#f7aa4a'
+      all_play: 77-66
     - finish: 2
       team: Calvin and (Jac)Obs
       logo: https://thumbs.gfycat.com/ImmediateDisguisedAcornwoodpecker-poster.jpg
@@ -3885,11 +4031,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: null
+      gb: —
       pct_str: '.692'
       pf: 1502.4
       pf_color: '#ee6b3b'
       pa: 1276.8
       pa_color: '#f6a248'
+      all_play: 107-36
     - finish: 3
       team: Folklore Bandits
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -3898,11 +4046,13 @@ detail:
       record: 8-5
       pct: 0.6153846153846154
       tag: null
+      gb: '1'
       pct_str: '.615'
       pf: 1370.3
       pf_color: '#f59c47'
       pa: 1305.0
       pa_color: '#f38d43'
+      all_play: 83-60
     - finish: 4
       team: Fantasy Judas
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -3911,11 +4061,13 @@ detail:
       record: 8-5
       pct: 0.6153846153846154
       tag: null
+      gb: '1'
       pct_str: '.615'
       pf: 1357.0
       pf_color: '#f6a048'
       pa: 1148.6
       pa_color: '#fdf3e0'
+      all_play: 87-56
     - finish: 5
       team: Koo Koo Kachoo
       logo: https://g.espncdn.com/lm-static/logo-packs/core/CatsAndDogs/cats_dogs-5.svg
@@ -3924,11 +4076,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '2'
       pct_str: '.538'
       pf: 1204.8
       pf_color: '#fbd290'
       pa: 1261.8
       pa_color: '#f8ad4b'
+      all_play: 63-80
     - finish: 6
       team: Trick-Ass Marks
       logo: https://i.imgur.com/k719EE3.jpg
@@ -3937,11 +4091,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '3'
       pct_str: '.462'
       pf: 1208.9
       pf_color: '#fbd18d'
       pa: 1249.7
       pa_color: '#f9b64d'
+      all_play: 67-76
     - finish: 7
       team: AB’s Helmet
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
@@ -3950,11 +4106,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '3'
       pct_str: '.462'
       pf: 1219.5
       pf_color: '#fbcd86'
       pa: 1311.4
       pa_color: '#f28842'
+      all_play: 59-84
     - finish: 8
       team: Wadgerach Sturdellske
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -3963,11 +4121,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '3'
       pct_str: '.462'
       pf: 1298.8
       pf_color: '#f9b64d'
       pa: 1350.4
       pa_color: '#ee6b3b'
+      all_play: 71-72
     - finish: 9
       team: Scat Play
       logo: https://i.redd.it/gc1lal601z941.jpg
@@ -3976,11 +4136,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '5'
       pct_str: '.308'
       pf: 1163.4
       pf_color: '#fcdeae'
       pa: 1318.5
       pa_color: '#f18341'
+      all_play: 60-83
     - finish: 10
       team: Show Me Your TDs
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -3989,11 +4151,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: null
+      gb: '4'
       pct_str: '.385'
       pf: 1291.1
       pf_color: '#f9b852'
       pa: 1309.2
       pa_color: '#f28a42'
+      all_play: 73-70
     - finish: 11
       team: Lickin Brown in my McLaurin
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
@@ -4002,11 +4166,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: null
+      gb: '4'
       pct_str: '.385'
       pf: 1093.9
       pf_color: '#fdf3e0'
       pa: 1284.1
       pa_color: '#f59c47'
+      all_play: 46-97
     - &id030
       finish: 12
       team: Ram It In
@@ -4016,11 +4182,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: sacko
+      gb: '4'
       pct_str: '.385'
       pf: 1278.1
       pf_color: '#f9bc5b'
       pa: 1296.8
       pa_color: '#f49345'
+      all_play: 65-78
     standings_rows: *id028
     notes:
     - Added injured-reserve (IR) slots.
@@ -4495,11 +4663,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: shiva
+      gb: '5.5'
       pct_str: '.462'
       pf: 1358.9
       pf_color: '#f7aa4a'
       pa: 1269.3
       pa_color: '#fabe60'
+      all_play: 84-58-1
     - finish: 2
       team: Show Me Your TDs
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -4508,11 +4678,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5.5'
       pct_str: '.462'
       pf: 1121.6
       pf_color: '#fce0b3'
       pa: 1170.5
       pa_color: '#fdeed4'
+      all_play: 48-94-1
     - finish: 3
       team: Vladimir Putin
       logo: https://sonorareview.files.wordpress.com/2014/04/vladimir-putin-riding-bear.jpg
@@ -4521,11 +4693,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5.5'
       pct_str: '.462'
       pf: 1197.1
       pf_color: '#fbd08b'
       pa: 1160.2
       pa_color: '#fdf3e0'
+      all_play: 58-85
     - finish: 4
       team: Hans Blitz! Ohh noo!
       logo: http://media.washtimes.com.s3.amazonaws.com/media/image/2014/12/17/teamamerican20f-1-web.jpg
@@ -4534,11 +4708,13 @@ detail:
       record: 11-1-1
       pct: 0.8846153846153846
       tag: null
+      gb: —
       pct_str: '.885'
       pf: 1592.1
       pf_color: '#ee6b3b'
       pa: 1197.2
       pa_color: '#fce1b5'
+      all_play: 119-23-1
     - finish: 5
       team: Tank4Picks .
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -4547,11 +4723,13 @@ detail:
       record: 5-7-1
       pct: 0.4230769230769231
       tag: null
+      gb: '6'
       pct_str: '.423'
       pf: 1183.5
       pf_color: '#fbd392'
       pa: 1194.4
       pa_color: '#fce2b8'
+      all_play: 56-86-1
     - finish: 6
       team: Lamar's Donger
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
@@ -4560,11 +4738,13 @@ detail:
       record: 11-2
       pct: 0.8461538461538461
       tag: null
+      gb: '0.5'
       pct_str: '.846'
       pf: 1402.9
       pf_color: '#f59e47'
       pa: 1160.6
       pa_color: '#fdf3e0'
+      all_play: 99-44
     - finish: 7
       team: Mixon it up
       logo: https://g.espncdn.com/lm-static/logo-packs/core/CatsAndDogs/cats_dogs-5.svg
@@ -4573,11 +4753,13 @@ detail:
       record: 7-5-1
       pct: 0.5769230769230769
       tag: null
+      gb: '4'
       pct_str: '.577'
       pf: 1279.9
       pf_color: '#f9be5f'
       pa: 1296.9
       pa_color: '#f8af4b'
+      all_play: 76-66-1
     - finish: 8
       team: Wadgerach Sturdellske
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -4586,11 +4768,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4.5'
       pct_str: '.538'
       pf: 1201.0
       pf_color: '#fbcf89'
       pa: 1342.3
       pa_color: '#f49445'
+      all_play: 74-69
     - finish: 9
       team: Set_The_ RAT_TRAP_!
       logo: https://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
@@ -4599,11 +4783,13 @@ detail:
       record: 5-7-1
       pct: 0.4230769230769231
       tag: null
+      gb: '6'
       pct_str: '.423'
       pf: 1036.2
       pf_color: '#fdf3e0'
       pa: 1215.5
       pa_color: '#fbd89f'
+      all_play: 36-106-1
     - finish: 10
       team: AB’s Helmet
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_09.svg
@@ -4612,11 +4798,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7.5'
       pct_str: '.308'
       pf: 1240.3
       pf_color: '#fac674'
       pa: 1344.1
       pa_color: '#f49345'
+      all_play: 64-79
     - finish: 11
       team: The Antonio ClownExperience
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -4625,11 +4813,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7.5'
       pct_str: '.308'
       pf: 1181.7
       pf_color: '#fbd393'
       pa: 1411.7
       pa_color: '#ee6b3b'
+      all_play: 66-77
     - &id033
       finish: 12
       team: Tom Brady's Fluffer
@@ -4639,11 +4829,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: sacko
+      gb: '7.5'
       pct_str: '.308'
       pf: 1288.2
       pf_color: '#f9bc5b'
       pa: 1320.7
       pa_color: '#f6a148'
+      all_play: 75-68
     standings_rows: *id031
     notes:
     - Trevor joined the league; Anthony departed.
@@ -5154,11 +5346,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: shiva
+      gb: '2'
       pct_str: '.692'
       pf: 1453.7
       pf_color: '#f59b47'
       pa: 1211.3
       pa_color: '#fdf3df'
+      all_play: 90-53
     - finish: 2
       team: Mixon's Gurley Fight Club
       logo: https://cdn.totalfratmove.com/wp-content/uploads/2016/12/0132132ecc8423cfd7a85419fa60e421.jpg
@@ -5167,11 +5361,13 @@ detail:
       record: 11-2
       pct: 0.8461538461538461
       tag: null
+      gb: —
       pct_str: '.846'
       pf: 1581.3
       pf_color: '#ee6b3b'
       pa: 1444.2
       pa_color: '#ee6d3b'
+      all_play: 116-27
     - finish: 3
       team: Sackos Auto Draft Experiene
       logo: https://consequenceofsound.files.wordpress.com/2018/05/rick-moranis-as-dark-helmet-in-spaceballs.png?w=807
@@ -5180,11 +5376,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1359.5
       pf_color: '#f9bd5e'
       pa: 1357.5
       pa_color: '#f6a449'
+      all_play: 79-64
     - finish: 4
       team: Queen of the Hill
       logo: http://g.espncdn.com/lm-static/logo-packs/core/CatsAndDogs/cats_dogs-5.svg
@@ -5193,11 +5391,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1327.0
       pf_color: '#fac776'
       pa: 1245.1
       pa_color: '#fce1b5'
+      all_play: 74-69
     - finish: 5
       team: Hammed Up .
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -5206,11 +5406,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5'
       pct_str: '.462'
       pf: 1311.7
       pf_color: '#facc82'
       pa: 1360.6
       pa_color: '#f6a248'
+      all_play: 73-70
     - finish: 6
       team: Tom Brady's Fluffer
       logo: https://lipstickandscoreboards.files.wordpress.com/2014/04/12.jpg
@@ -5219,11 +5421,13 @@ detail:
       record: 8-5
       pct: 0.6153846153846154
       tag: null
+      gb: '3'
       pct_str: '.615'
       pf: 1309.2
       pf_color: '#facd84'
       pa: 1255.2
       pa_color: '#fbdca9'
+      all_play: 71-72
     - finish: 7
       team: Cleveland Mcpussysmasher
       logo: http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
@@ -5232,11 +5436,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1327.9
       pf_color: '#fac776'
       pa: 1210.7
       pa_color: '#fdf3e0'
+      all_play: 74-69
     - finish: 8
       team: Chubbin out (no more Hydin)
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
@@ -5245,11 +5451,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1302.1
       pf_color: '#fbcf89'
       pa: 1255.9
       pa_color: '#fbdca8'
+      all_play: 65-77-1
     - finish: 9
       team: Team Kevin with a K
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -5258,11 +5466,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7'
       pct_str: '.308'
       pf: 1210.9
       pf_color: '#fcebcd'
       pa: 1446.7
       pa_color: '#ee6b3b'
+      all_play: 54-89
     - finish: 10
       team: Tacos Food Truck
       logo: ''
@@ -5271,11 +5481,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7'
       pct_str: '.308'
       pf: 1269.9
       pf_color: '#fbd9a1'
       pa: 1417.6
       pa_color: '#f17d3f'
+      all_play: 61-82
     - finish: 11
       team: Wadgerach Sturdellske
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -5284,11 +5496,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: null
+      gb: '6'
       pct_str: '.385'
       pf: 1240.9
       pf_color: '#fce2b6'
       pa: 1378.4
       pa_color: '#f49645'
+      all_play: 54-89
     - &id036
       finish: 12
       team: Graham Slam
@@ -5298,11 +5512,13 @@ detail:
       record: 3-10
       pct: 0.23076923076923078
       tag: sacko
+      gb: '8'
       pct_str: '.231'
       pf: 1184.6
       pf_color: '#fdf3e0'
       pa: 1295.5
       pa_color: '#fac776'
+      all_play: 46-96-1
     standings_rows: *id034
     notes: []
     weeks_played: 13
@@ -5698,11 +5914,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: shiva
+      gb: '5'
       pct_str: '.462'
       pf: 1155.7
       pf_color: '#fcdca9'
       pa: 1134.6
       pa_color: '#fcdfaf'
+      all_play: 61-81-1
     - finish: 2
       team: My Cox Will Ertz You
       logo: http://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
@@ -5711,11 +5929,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: null
+      gb: '2'
       pct_str: '.692'
       pf: 1386.7
       pf_color: '#ee6b3b'
       pa: 1095.3
       pa_color: '#fdf3e0'
+      all_play: 89-54
     - finish: 3
       team: Dislocated Johnson
       logo: http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-10.svg
@@ -5724,11 +5944,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: null
+      gb: '2'
       pct_str: '.692'
       pf: 1155.7
       pf_color: '#fcdca9'
       pa: 1193.0
       pa_color: '#fac166'
+      all_play: 69-74
     - finish: 4
       team: Cleveland Mcpussysmasher
       logo: http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
@@ -5737,11 +5959,13 @@ detail:
       record: 6-6-1
       pct: 0.5
       tag: null
+      gb: '4.5'
       pct_str: '.500'
       pf: 1105.6
       pf_color: '#fdf2dd'
       pa: 1120.6
       pa_color: '#fce6c1'
+      all_play: 50-92-1
     - finish: 5
       team: Jacking Goff
       logo: http://g.espncdn.com/s/ffllm/logos/AtTheStadium-RobbHarskamp/At_The_Stadium_10.svg
@@ -5750,11 +5974,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5'
       pct_str: '.462'
       pf: 1220.5
       pf_color: '#fac066'
       pa: 1170.3
       pa_color: '#facc83'
+      all_play: 64-79
     - finish: 6
       team: Russian Roiders
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -5763,11 +5989,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1228.6
       pf_color: '#f9bd5e'
       pa: 1187.0
       pa_color: '#fac46e'
+      all_play: 80-62-1
     - finish: 7
       team: Hans Blitz! Ohh noo!
       logo: http://media.washtimes.com.s3.amazonaws.com/media/image/2014/12/17/teamamerican20f-1-web.jpg
@@ -5776,11 +6004,13 @@ detail:
       record: 11-2
       pct: 0.8461538461538461
       tag: null
+      gb: —
       pct_str: '.846'
       pf: 1241.2
       pf_color: '#f9b851'
       pa: 1097.6
       pa_color: '#fdf2dd'
+      all_play: 84-59
     - finish: 8
       team: Browning out .
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -5789,11 +6019,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1375.9
       pf_color: '#ef713c'
       pa: 1273.8
       pa_color: '#f39044'
+      all_play: 100-43
     - finish: 9
       team: Tacos Food Truck
       logo: ''
@@ -5802,11 +6034,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7'
       pct_str: '.308'
       pf: 1143.7
       pf_color: '#fce1b6'
       pa: 1278.1
       pa_color: '#f38d43'
+      all_play: 66-76-1
     - finish: 10
       team: Wadgerach Sturdellske
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -5815,11 +6049,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7'
       pct_str: '.308'
       pf: 1160.5
       pf_color: '#fbdaa4'
       pa: 1279.7
       pa_color: '#f38c43'
+      all_play: 71-72
     - finish: 11
       team: The People's Champion
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg
@@ -5828,11 +6064,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: null
+      gb: '6'
       pct_str: '.385'
       pf: 1151.0
       pf_color: '#fcdeae'
       pa: 1331.7
       pa_color: '#ee6b3b'
+      all_play: 73-70
     - &id039
       finish: 12
       team: Injury Reserve
@@ -5842,11 +6080,13 @@ detail:
       record: 3-9-1
       pct: 0.2692307692307692
       tag: sacko
+      gb: '7.5'
       pct_str: '.269'
       pf: 1103.0
       pf_color: '#fdf3e0'
       pa: 1266.4
       pa_color: '#f49445'
+      all_play: 48-93-2
     standings_rows: *id037
     notes:
     - Playoff field expanded from 6 teams to 8.
@@ -6246,11 +6486,13 @@ detail:
       record: 11-2
       pct: 0.8461538461538461
       tag: cochamp
+      gb: —
       pct_str: '.846'
       pf: 1296.1
       pf_color: '#f38f44'
       pa: 1063.9
       pa_color: '#fdf3e0'
+      all_play: 77-66
     - finish: 2
       team: Lick my Rawls .
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -6259,11 +6501,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: cochamp
+      gb: '2'
       pct_str: '.692'
       pf: 1403.8
       pf_color: '#ee6b3b'
       pa: 1229.1
       pa_color: '#f7ac4a'
+      all_play: 98-44-1
     - finish: 3
       team: GONNA DEFLATE YO BALLS!!
       logo: http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-10.svg
@@ -6272,11 +6516,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1317.2
       pf_color: '#f28842'
       pa: 1276.8
       pa_color: '#f49345'
+      all_play: 91-51-1
     - finish: 4
       team: The Toddfather
       logo: http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-1.svg
@@ -6285,11 +6531,13 @@ detail:
       record: 8-5
       pct: 0.6153846153846154
       tag: null
+      gb: '3'
       pct_str: '.615'
       pf: 1255.4
       pf_color: '#f59c47'
       pa: 1208.1
       pa_color: '#f9b64e'
+      all_play: 78-65
     - finish: 5
       team: Cleveland Mcpussysmasher
       logo: http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_05a.svg
@@ -6298,11 +6546,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1238.7
       pf_color: '#f6a248'
       pa: 1269.9
       pa_color: '#f49645'
+      all_play: 67-76
     - finish: 6
       team: My Cox Will Ertz You
       logo: http://www4.pictures.zimbio.com/gi/Lamar+Miller+Kansas+State+vs+Miami+_uQzGdimKODl.jpg
@@ -6311,11 +6561,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1224.4
       pf_color: '#f7a749'
       pa: 1234.7
       pa_color: '#f7a94a'
+      all_play: 63-80
     - finish: 7
       team: The Mighty Cucks
       logo: https://lh6.ggpht.com/QVeflxy2dhEk672mgEEuLcuEFyqQJOv9VlfKJ4kPsPCzIV1dsqTi_XOaHvS_U0_kKCE=w300
@@ -6324,11 +6576,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1168.4
       pf_color: '#f9b954'
       pa: 1209.2
       pa_color: '#f9b64d'
+      all_play: 56-87
     - finish: 8
       team: Wadgerach Sturdellske
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
@@ -6337,11 +6591,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5'
       pct_str: '.462'
       pf: 1299.0
       pf_color: '#f38e43'
       pa: 1278.2
       pa_color: '#f49244'
+      all_play: 88-55
     - finish: 9
       team: Russian Roiders
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
@@ -6350,11 +6606,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7'
       pct_str: '.308'
       pf: 1177.7
       pf_color: '#f9b64e'
       pa: 1353.8
       pa_color: '#ee6b3b'
+      all_play: 64-79
     - finish: 10
       team: Hillary Has The 2nd Clinton-Dix
       logo: http://i67.tinypic.com/w0jj12.jpg
@@ -6363,11 +6621,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5'
       pct_str: '.462'
       pf: 1304.7
       pf_color: '#f38c43'
       pa: 1281.6
       pa_color: '#f39044'
+      all_play: 74-69
     - finish: 11
       team: Forceable Entry
       logo: https://speesh.files.wordpress.com/2014/10/the-rock-eyebrow.jpg
@@ -6376,11 +6636,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: null
+      gb: '6'
       pct_str: '.385'
       pf: 1229.8
       pf_color: '#f7a549'
       pa: 1201.5
       pa_color: '#f9b954'
+      all_play: 67-76
     - &id042
       finish: 12
       team: Brown Lives Matter
@@ -6390,11 +6652,13 @@ detail:
       record: 1-12
       pct: 0.07692307692307693
       tag: sacko
+      gb: '10'
       pct_str: '.077'
       pf: 953.6
       pf_color: '#fdf3e0'
       pa: 1262.0
       pa_color: '#f59a46'
+      all_play: 34-109
     standings_rows: *id040
     notes:
     - League expanded from 10 to 12 teams.
@@ -6803,11 +7067,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: shiva
+      gb: '3'
       pct_str: '.462'
       pf: 1218.3
       pf_color: '#fac36d'
       pa: 1187.3
       pa_color: '#f9bc5b'
+      all_play: 51-66
     - finish: 2
       team: I Waxed My Child For This
       logo: ''
@@ -6816,11 +7082,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: null
+      gb: —
       pct_str: '.692'
       pf: 1425.0
       pf_color: '#ee6b3b'
       pa: 1200.2
       pa_color: '#f9b34c'
+      all_play: 78-39
     - finish: 3
       team: Gronkey Punch
       logo: http://sports.cbsimg.net/images/blogs/aa-ron.jpg
@@ -6829,11 +7097,13 @@ detail:
       record: 8-5
       pct: 0.6153846153846154
       tag: null
+      gb: '1'
       pct_str: '.615'
       pf: 1367.2
       pf_color: '#f28541'
       pa: 1277.5
       pa_color: '#f0793e'
+      all_play: 82-35
     - finish: 4
       team: The People's Commissioner
       logo: http://imgick.nola.com/home/nola-media/width620/img/saints_impact/photo/15721934-mmmain.jpg
@@ -6842,11 +7112,13 @@ detail:
       record: 8-5
       pct: 0.6153846153846154
       tag: null
+      gb: '1'
       pct_str: '.615'
       pf: 1296.7
       pf_color: '#f6a449'
       pa: 1097.6
       pa_color: '#fdf3e0'
+      all_play: 72-45
     - finish: 5
       team: Wilson's Magic Water
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
@@ -6855,11 +7127,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '2'
       pct_str: '.538'
       pf: 1243.2
       pf_color: '#f9ba58'
       pa: 1210.2
       pa_color: '#f8ac4b'
+      all_play: 63-54
     - finish: 6
       team: The Bragers
       logo: http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg
@@ -6868,11 +7142,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: null
+      gb: —
       pct_str: '.692'
       pf: 1219.6
       pf_color: '#fac36c'
       pa: 1263.5
       pa_color: '#f28441'
+      all_play: 63-54
     - finish: 7
       team: Polk Me Til I Goregasm
       logo: http://static.comicvine.com/uploads/original/7/70582/1293699-retard_baby1.jpg
@@ -6881,11 +7157,13 @@ detail:
       record: 3-10
       pct: 0.23076923076923078
       tag: null
+      gb: '6'
       pct_str: '.231'
       pf: 1087.9
       pf_color: '#fdf2df'
       pa: 1296.0
       pa_color: '#ee6b3b'
+      all_play: 31-85-1
     - finish: 8
       team: MasterDeflater And_Commander
       logo: http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_01a.svg
@@ -6894,11 +7172,13 @@ detail:
       record: 5-8
       pct: 0.38461538461538464
       tag: null
+      gb: '4'
       pct_str: '.385'
       pf: 1115.0
       pf_color: '#fce9c7'
       pa: 1259.0
       pa_color: '#f28742'
+      all_play: 50-66-1
     - finish: 9
       team: Jared's Kids
       logo: http://cdn.hiphopsince1987.com/wp-content/uploads/2015/07/Jared-1-0-0-443-428750.jpg
@@ -6907,11 +7187,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '5'
       pct_str: '.308'
       pf: 1086.2
       pf_color: '#fdf3e0'
       pa: 1207.2
       pa_color: '#f8ae4b'
+      all_play: 40-77
     - &id045
       finish: 10
       team: He's Quick He's Slick He's Mike
@@ -6921,11 +7203,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: sacko
+      gb: '3'
       pct_str: '.462'
       pf: 1176.3
       pf_color: '#fbd392'
       pa: 1236.9
       pa_color: '#f59846'
+      all_play: 54-63
     standings_rows: *id043
     notes: []
     weeks_played: 13
@@ -7237,11 +7521,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: shiva
+      gb: '4'
       pct_str: '.538'
       pf: 1337.1
       pf_color: '#f0763e'
       pa: 1293.6
       pa_color: '#f28942'
+      all_play: 68-49
     - finish: 2
       team: Lynched by Le' Bell
       logo: ''
@@ -7250,11 +7536,13 @@ detail:
       record: 9-4
       pct: 0.6923076923076923
       tag: null
+      gb: '2'
       pct_str: '.692'
       pf: 1297.1
       pf_color: '#f28341'
       pa: 1202.4
       pa_color: '#faca7d'
+      all_play: 74-43
     - finish: 3
       team: Luck her right in the Pussy
       logo: http://i.imgur.com/R9cyExM.jpg
@@ -7263,11 +7551,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1369.3
       pf_color: '#ee6b3b'
       pa: 1168.4
       pa_color: '#fcdfaf'
+      all_play: 73-44
     - finish: 4
       team: Ben there raped that
       logo: ''
@@ -7276,11 +7566,13 @@ detail:
       record: 11-2
       pct: 0.8461538461538461
       tag: null
+      gb: —
       pct_str: '.846'
       pf: 1358.7
       pf_color: '#ef6f3c'
       pa: 1135.6
       pa_color: '#fdf3e0'
+      all_play: 82-35
     - finish: 5
       team: Team TheBragers
       logo: http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg
@@ -7289,11 +7581,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1197.9
       pf_color: '#f6a449'
       pa: 1188.5
       pa_color: '#fbd291'
+      all_play: 56-61
     - finish: 6
       team: Washington Blowskins
       logo: ''
@@ -7302,11 +7596,13 @@ detail:
       record: 7-6
       pct: 0.5384615384615384
       tag: null
+      gb: '4'
       pct_str: '.538'
       pf: 1168.4
       pf_color: '#f8ae4b'
       pa: 1213.1
       pa_color: '#fac36d'
+      all_play: 50-67
     - finish: 7
       team: Arian nation .
       logo: http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg
@@ -7315,11 +7611,13 @@ detail:
       record: 4-9
       pct: 0.3076923076923077
       tag: null
+      gb: '7'
       pct_str: '.308'
       pf: 1103.1
       pf_color: '#fac168'
       pa: 1267.0
       pa_color: '#f59d47'
+      all_play: 43-74
     - finish: 8
       team: Turn down for Watt
       logo: ''
@@ -7328,11 +7626,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5'
       pct_str: '.462'
       pf: 1254.7
       pf_color: '#f49144'
       pa: 1333.1
       pa_color: '#ee6b3b'
+      all_play: 60-57
     - finish: 9
       team: Spaceball One
       logo: http://img3.wikia.nocookie.net/__cb20120310153846/villains/images/b/b7/Dark_Helmet_unmasked.jpg
@@ -7341,11 +7641,13 @@ detail:
       record: 6-7
       pct: 0.46153846153846156
       tag: null
+      gb: '5'
       pct_str: '.462'
       pf: 1253.9
       pf_color: '#f49244'
       pa: 1252.9
       pa_color: '#f7a84a'
+      all_play: 60-57
     - &id048
       finish: 10
       team: Haters Gonna Hate
@@ -7355,11 +7657,13 @@ detail:
       record: 1-12
       pct: 0.07692307692307693
       tag: sacko
+      gb: '10'
       pct_str: '.077'
       pf: 920.5
       pf_color: '#fdf3e0'
       pa: 1206.1
       pa_color: '#fac777'
+      all_play: 19-98
     standings_rows: *id046
     notes:
     - The league is founded — 10 teams, with 6 making the playoffs.

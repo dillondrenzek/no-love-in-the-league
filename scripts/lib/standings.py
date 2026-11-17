@@ -45,6 +45,51 @@ def pct_string(pct):
     return s[1:] if s.startswith("0.") else s
 
 
+def games_behind(records):
+    """Games behind the leader for each (wins, losses, ties) record, a tie
+    counting as half a win and half a loss — so 6-3-1 sits half a game behind
+    7-3. The leader is whoever is furthest over .500 (best wins minus losses).
+    Returns floats, 0.0 for the leader(s)."""
+    if not records:
+        return []
+    best = max(w - l for w, l, _t in records)
+    return [(best - (w - l)) / 2 for w, l, _t in records]
+
+
+def gb_string(gb):
+    """'—' for the leader, otherwise whole or half games: 1.0 -> '1', 2.5 -> '2.5'."""
+    if not gb:
+        return "\u2014"
+    return f"{gb:g}"
+
+
+def all_play_records(season):
+    """{fid: (wins, losses, ties)} as if every team played every other team every
+    week — the regular season's countable games only (complete weeks). Each
+    team's score is compared with every other score that week. Empty when the
+    season has no scored games."""
+    by_week = {}
+    for m in regular_season_matchups(season):
+        hs, as_ = m.get("home_score"), m.get("away_score")
+        if hs is None or as_ is None:
+            continue
+        wk = by_week.setdefault(m["week"], [])
+        wk.append((m["home"], hs))
+        wk.append((m["away"], as_))
+    out = {}
+    for scores in by_week.values():
+        for f, s in scores:
+            w, l, t = out.get(f, (0, 0, 0))
+            for o, os_ in scores:
+                if o == f:
+                    continue
+                w += s > os_
+                l += s < os_
+                t += s == os_
+            out[f] = (w, l, t)
+    return out
+
+
 def _from_matchups(season, franchises):
     stats = {}
 

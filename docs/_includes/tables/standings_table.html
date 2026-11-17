@@ -1,20 +1,31 @@
 {%- comment -%}
 Standings table, shared identically by the History page and each season page —
 same format, same data. Params: rows (standings rows), points (bool — show
-PF/PA), rank_label (rank-column header; defaults to "Rank"); pct (bool — show a Win %
-column, and expect rows already ordered by it). Row shape: finish, team,
-owner_id, owner_name, record, pct_str, tag, pf, pf_color, pa.
+PF/PA), rank_label (rank-column header; defaults to "Rank"); no_rank (bool — drop
+the rank column); pct (bool — show a Win % column, and expect rows already
+ordered by it); gb (bool — games behind the leader, a tie counting as half a
+game); all_play (bool — the record against every team, every week). Row shape:
+finish, team, owner_id, owner_name, record, pct_str, gb, all_play, tag, pf,
+pf_color, pa.
 {%- endcomment -%}
 {%- assign rows = include.rows -%}
 <div class="table-scroll">
 <table>
   <thead>
     <tr>
+      {%- unless include.no_rank %}
       <th>{{ include.rank_label | default: "Rank" }}</th>
+      {%- endunless %}
       <th>Team</th>
       <th class="num">Record</th>
       {%- if include.pct %}
       <th class="num">Pct</th>
+      {%- endif %}
+      {%- if include.gb %}
+      <th class="num" title="Games behind the leader; a tie counts as half a game">GB</th>
+      {%- endif %}
+      {%- if include.all_play %}
+      <th class="num" title="Record if the team had played every other team every week">All-Play</th>
       {%- endif %}
       {%- if include.points %}
       <th class="num">PF</th>
@@ -25,7 +36,9 @@ owner_id, owner_name, record, pct_str, tag, pf, pf_color, pa.
   <tbody>
     {%- for r in rows %}
     <tr>
+      {%- unless include.no_rank %}
       <td>{{ r.finish }}</td>
+      {%- endunless %}
       <td class="team-cell">
         {%- include bits/team_logo.html src=r.logo -%}
         {%- if r.owner_id -%}
@@ -37,6 +50,12 @@ owner_id, owner_name, record, pct_str, tag, pf, pf_color, pa.
       <td class="num">{{ r.record }}</td>
       {%- if include.pct %}
       <td class="num">{{ r.pct_str }}</td>
+      {%- endif %}
+      {%- if include.gb %}
+      <td class="num">{{ r.gb }}</td>
+      {%- endif %}
+      {%- if include.all_play %}
+      <td class="num">{{ r.all_play | default: "—" }}</td>
       {%- endif %}
       {%- if include.points %}
       {% include bits/tile_cell.html text=r.pf bg=r.pf_color %}
