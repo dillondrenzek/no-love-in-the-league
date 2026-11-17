@@ -442,10 +442,10 @@ def trend(now, before, threshold, scale=1, digits=0):
 def forecast_rows(season, franchises, strength, result, prev=None):
     """Display rows for the season-page forecast table, in standings order: best
     record first (win pct, a tie counting as half a win, like the standings
-    table), points-for breaking level records, then playoff odds. The current 6th
-    seed (the points wildcard holder) is pulled up into the 6th row, right under
-    the top five by record, so the rows read in seed order through the playoff
-    line.
+    table), points-for breaking level records, then playoff odds — except that
+    the rows follow the league's seeding as it stands today: seeds 1-5 by
+    record, the 6th seed the points wildcard holder (top scorer outside the top
+    five), then seeds 7-12 by record. Each row carries its current `seed`.
     Each: {fid, team, owner, logo, record, pf, rating, proj_wins, cells},
     where `cells` is {outcome: {text, color}} — the colour on the same warm heat
     ramp as every other table, scaled to the probability itself (0% cream .. 100%
@@ -503,6 +503,8 @@ def forecast_rows(season, franchises, strength, result, prev=None):
     wc = next((i for i, r in enumerate(rows) if (r["wc_gap"] or {}).get("holder")), None)
     if wc is not None and wc > RECORD_SEEDS:
         rows.insert(RECORD_SEEDS, rows.pop(wc))
+    for i, r in enumerate(rows, start=1):
+        r["seed"] = i
     return rows
 
 

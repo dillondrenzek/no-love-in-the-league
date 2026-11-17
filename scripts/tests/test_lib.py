@@ -1949,11 +1949,11 @@ def _gap_season():
             "matchups": ms}
 
 
-def test_odds_forecast_rows_put_the_wildcard_holder_6th():
+def test_odds_forecast_rows_follow_current_seeds():
     from lib.odds import forecast_rows
     # Make h lose a shootout to g (210-200): h is 0-2, last by record, but has
-    # 300 PF, the most of anyone outside the top five (a, e, g, f, c), so h holds
-    # the points wildcard and should jump b (1-1) and d (0-1-1) into row 6.
+    # 300 PF. Seeds 1-5 go by record (a, e, g, f, c), h (300, the points
+    # wildcard) is the 6th seed, and b (1-1) and d (0-1-1) follow by record.
     season = _gap_season()
     for m in season["matchups"]:
         if m["week"] == 2 and m["home"] == "g":
@@ -1962,8 +1962,9 @@ def test_odds_forecast_rows_put_the_wildcard_holder_6th():
                               "shiva", "sacko_bye")}
     res = {f: dict(blank, wins=0.0) for f in season["teams"]}
     st = {f: (110.0, 5.0) for f in season["teams"]}
-    order = [r["fid"] for r in forecast_rows(season, {}, st, res)]
-    assert order == ["a", "e", "g", "f", "c", "h", "b", "d"]
+    rows = forecast_rows(season, {}, st, res)
+    assert [r["fid"] for r in rows] == ["a", "e", "g", "f", "c", "h", "b", "d"]
+    assert [r["seed"] for r in rows] == list(range(1, 9))
 
 
 def test_odds_wildcard_gaps_spread_the_pf_deficit_over_games_left():

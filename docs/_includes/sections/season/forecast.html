@@ -9,6 +9,7 @@ precomputed. Params: f (a site.data.odds record, or the same shape); title
 {%- endcomment -%}
 {%- assign f = include.f -%}
 {%- assign show_gap = f.rows.first.wc_gap -%}
+{%- assign show_seed = f.rows.first.seed -%}
 {%- comment -%} Snapshots frozen before the Sacko Bye column existed (the Halfway
 page) don't carry it, so they show just Playoffs and Bye. {%- endcomment -%}
 {%- assign show_sacko_bye = f.rows.first.cells.sacko_bye -%}
@@ -24,6 +25,9 @@ page) don't carry it, so they show just Playoffs and Bye. {%- endcomment -%}
 <table class="forecast">
   <thead>
     <tr>
+      {%- if show_seed %}
+      <th class="num forecast__seed" title="Seed if the season ended today: 1-5 by record, 6th the points wildcard, then 7-12 by record">Seed</th>
+      {%- endif %}
       <th>Team</th>
       <th class="num">W-L</th>
       <th class="num" title="Points scored so far — the 6th playoff seed goes to the top scorer outside the top five">PF</th>
@@ -40,7 +44,10 @@ page) don't carry it, so they show just Playoffs and Bye. {%- endcomment -%}
   </thead>
   <tbody>
     {%- for r in f.rows %}
-    <tr>
+    <tr{% if r.seed == 6 %} class="forecast__cutline"{% endif %}>
+      {%- if show_seed %}
+      <td class="num forecast__seed">{{ r.seed }}</td>
+      {%- endif %}
       <td class="team-cell">
         {%- include bits/team_logo.html src=r.logo -%}
         {%- assign href = '/teams/' | append: r.fid | append: '/' | relative_url -%}
