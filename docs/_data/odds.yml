@@ -25,14 +25,19 @@
         text: 65%
         color: '#f6a048'
         dim: false
-      top3:
-        text: 75%
-        color: '#f39044'
-        dim: false
       shiva:
         text: 31%
         color: '#fbcd85'
         dim: false
+    wc_gap:
+      text: 210.9 (+42.2)
+      total: '210.9'
+      ppg: (+42.2)
+      title: 'Top five by record. If it drops out: 210.9 PF ahead of the 6th seed
+        with 5 games left'
+      dim: true
+      gap: -42.2
+      pf_gap: -210.9
   - fid: jackperkins74
     team: Gibbed for your pleasure
     owner: Jack
@@ -56,14 +61,19 @@
         text: 83%
         color: '#f28441'
         dim: false
-      top3:
-        text: 79%
-        color: '#f38b43'
-        dim: false
       shiva:
         text: 31%
         color: '#facd84'
         dim: false
+    wc_gap:
+      text: 192.8 (+38.6)
+      total: '192.8'
+      ppg: (+38.6)
+      title: 'Top five by record. If it drops out: 192.8 PF ahead of the 6th seed
+        with 5 games left'
+      dim: true
+      gap: -38.6
+      pf_gap: -192.8
   - fid: zachzoske
     team: Tuten Your Mother, Respectfully
     owner: Zach
@@ -87,14 +97,19 @@
         text: 45%
         color: '#f9bc5b'
         dim: false
-      top3:
-        text: 55%
-        color: '#f8af4b'
-        dim: false
       shiva:
         text: 15%
         color: '#fce0b2'
         dim: false
+    wc_gap:
+      text: 112.3 (+22.5)
+      total: '112.3'
+      ppg: (+22.5)
+      title: 'Top five by record. If it drops out: 112.3 PF ahead of the 6th seed
+        with 5 games left'
+      dim: true
+      gap: -22.5
+      pf_gap: -112.3
   - fid: gganoom
     team: One Big Beautiful Dillbot
     owner: Grant
@@ -120,14 +135,19 @@
         text: 5%
         color: '#fdedd1'
         dim: false
-      top3:
-        text: 40%
-        color: '#fac26a'
-        dim: false
       shiva:
         text: 11%
         color: '#fce5be'
         dim: false
+    wc_gap:
+      text: 105.1 (+21.0)
+      total: '105.1'
+      ppg: (+21.0)
+      title: 'Top five by record. If it drops out: 105.1 PF ahead of the 6th seed
+        with 5 games left'
+      dim: true
+      gap: -21.0
+      pf_gap: -105.1
   - fid: whowonthelastsuperbowl
     team: Trick or Trick It’s Mike Vick
     owner: Nate
@@ -153,14 +173,19 @@
         text: 1%
         color: '#fdf1dc'
         dim: false
-      top3:
-        text: 24%
-        color: '#fbd599'
-        dim: false
       shiva:
         text: 5%
         color: '#fdedd1'
         dim: false
+    wc_gap:
+      text: 41.6 (+8.3)
+      total: '41.6'
+      ppg: (+8.3)
+      title: 'Top five by record. If it drops out: 41.6 PF ahead of the 6th seed with
+        5 games left'
+      dim: true
+      gap: -8.3
+      pf_gap: -41.6
   - fid: schirmerj
     team: Return of the IDP
     owner: Jono
@@ -186,14 +211,15 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: 14%
-        color: '#fce2b7'
-        dim: false
       shiva:
         text: 3%
         color: '#fdefd7'
         dim: false
+    wc_gap:
+      text: WC
+      title: Holds the 6th seed (the points wildcard)
+      dim: false
+      gap: null
   - fid: alexandra
     team: Cornstar
     owner: Lexi
@@ -219,14 +245,18 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: 10%
-        color: '#fce7c2'
-        dim: false
       shiva:
         text: 2%
         color: '#fdf0da'
         dim: false
+    wc_gap:
+      text: −0.3 (−0.1)
+      total: −0.3
+      ppg: (−0.1)
+      title: 0.3 PF behind the 6th seed with 5 games left
+      dim: false
+      gap: 0.1
+      pf_gap: 0.3
   - fid: kevbots22
     team: Remember the Nice Guys, ChatGPT
     owner: Kevin
@@ -252,14 +282,18 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: 2%
-        color: '#fdf1dc'
-        dim: false
       shiva:
         text: <1%
         color: '#ffffff'
         dim: true
+    wc_gap:
+      text: −45.9 (−9.2)
+      total: −45.9
+      ppg: (−9.2)
+      title: 45.9 PF behind the 6th seed with 5 games left
+      dim: false
+      gap: 9.2
+      pf_gap: 45.9
   - fid: shawne2520997
     team: Swift kick in the Dak
     owner: Shawnee
@@ -285,14 +319,18 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: 1%
-        color: '#fdf2de'
-        dim: false
       shiva:
         text: <1%
         color: '#ffffff'
         dim: true
+    wc_gap:
+      text: −61.9 (−12.4)
+      total: −61.9
+      ppg: (−12.4)
+      title: 61.9 PF behind the 6th seed with 5 games left
+      dim: false
+      gap: 12.4
+      pf_gap: 61.9
   - fid: purpsworth
     team: I am dead inside
     owner: Trevor
@@ -316,14 +354,18 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: 1%
-        color: '#fdf2de'
-        dim: false
       shiva:
         text: <1%
         color: '#ffffff'
         dim: true
+    wc_gap:
+      text: −94.5 (−18.9)
+      total: −94.5
+      ppg: (−18.9)
+      title: 94.5 PF behind the 6th seed with 5 games left
+      dim: false
+      gap: 18.9
+      pf_gap: 94.5
   - fid: theoceanpulse
     team: Im Bleeding Making Me the Shiva
     owner: Dillon
@@ -347,14 +389,18 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: <1%
-        color: '#ffffff'
-        dim: true
       shiva:
         text: <1%
         color: '#ffffff'
         dim: true
+    wc_gap:
+      text: −136.7 (−27.3)
+      total: −136.7
+      ppg: (−27.3)
+      title: 136.7 PF behind the 6th seed with 5 games left
+      dim: false
+      gap: 27.3
+      pf_gap: 136.7
   - fid: lukstein
     team: 2x Runner Up
     owner: Luke
@@ -378,11 +424,15 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      top3:
-        text: <1%
-        color: '#ffffff'
-        dim: true
       shiva:
         text: <1%
         color: '#ffffff'
         dim: true
+    wc_gap:
+      text: −258.1 (−51.6)
+      total: −258.1
+      ppg: (−51.6)
+      title: 258.1 PF behind the 6th seed with 5 games left
+      dim: false
+      gap: 51.6
+      pf_gap: 258.1

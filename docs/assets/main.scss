@@ -335,9 +335,17 @@ td.tile-cell > span {
 .forecast__trend { font-size: 0.68rem; font-weight: 700; margin-right: 3px; }
 .forecast__trend--up { color: #0f9d3a; }
 .forecast__trend--down { color: #e0311c; }
+// PPG Back: the points-per-game chase of the 6th seed; '—' rows fade back.
+.forecast td.forecast__gap { font-family: var(--mono); font-size: 0.74rem; white-space: nowrap; padding-left: 6px; padding-right: 6px; }
+.forecast td.forecast__gap--dim { color: var(--faint); }
+.forecast__gap-ppg { font-size: 0.82em; }
 // Supporting stats (rating, projected wins): smaller and muted next to the main numbers.
 .forecast td.forecast__minor { font-size: 0.74rem; color: var(--faint); }
 .forecast__short { display: none; }
+// Desktop: owner name stacked under the team name, to keep the table narrow.
+.forecast__name { display: inline-block; vertical-align: middle; line-height: 1.15; }
+.forecast__name .owner-name { display: block; margin-left: 0; margin-top: 3px; }
+.forecast .team-cell { padding-right: 10px; width: auto; }  // not the base 1% first-column width, which let long names spill
 .forecast__note { font-size: 0.8rem; color: var(--muted); margin-top: -0.8em; }
 // Phones: keep the odds on screen — drop the model columns and owner names, let
 // team names wrap, and tighten the probability cells.
@@ -348,6 +356,9 @@ td.tile-cell > span {
   .forecast thead th.num:not(.forecast__p) { padding-left: 4px; padding-right: 4px; }
   .forecast { border-spacing: 1px; }
   .forecast td.forecast__pf { min-width: 0; }
+  .forecast th.forecast__gap-head { white-space: normal; line-height: 1.2; }
+  .forecast td.num.forecast__gap { font-size: 0.66rem; padding-left: 1px; padding-right: 1px; line-height: 1.15; }
+  .forecast td.forecast__gap .forecast__gap-total { display: block; }
   .forecast thead th { letter-spacing: 0; }
   .forecast .team-cell { white-space: nowrap; padding-left: 0; }
   .forecast .team-cell .team-logo { display: none; }

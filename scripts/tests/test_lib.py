@@ -1901,6 +1901,51 @@ def test_odds_clinch_status_and_labels():
     assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set()}
 
 
+def _gap_season():
+    """Eight teams, two weeks played, two to go (weeks_in_regular_season=4)."""
+    teams = {f: f.upper() for f in "abcdefgh"}
+    played = [  # (week, home, away, home_score, away_score)
+        (1, "a", "h", 120, 100), (1, "b", "g", 110, 105), (1, "c", "f", 100, 130),
+        (1, "d", "e", 90, 90),
+        (2, "a", "b", 100, 95), (2, "c", "d", 106, 100), (2, "e", "f", 110, 99),
+        (2, "g", "h", 140, 80),
+    ]
+    ms = [{"week": w, "home": h, "away": a, "home_score": hs, "away_score": as_}
+          for w, h, a, hs, as_ in played]
+    for w in (3, 4):
+        for h, a in (("a", "c"), ("b", "d"), ("e", "g"), ("f", "h")):
+            ms.append({"week": w, "home": h, "away": a, "home_score": None,
+                       "away_score": None, "played": False})
+    return {"season": 2030, "weeks_in_regular_season": 4, "teams": teams,
+            "matchups": ms}
+
+
+def test_odds_wildcard_gaps_spread_the_pf_deficit_over_games_left():
+    from lib.odds import wildcard_gaps
+    gaps = wildcard_gaps(_gap_season())
+    # By record (a tie = half a win, PF breaks level records): a 2-0, e 1-0-1,
+    # then the 1-1 teams by PF: g 245, f 229, c 206 — the top five.
+    # They get the fallback number (dimmed): cushion over the 6th seed (b, 205).
+    assert gaps["g"]["gap"] == -20.0 and gaps["g"]["text"] == "40.0 (+20.0)"   # 40 PF / 2
+    assert gaps["g"]["pf_gap"] == -40.0
+    assert gaps["c"]["gap"] == -0.5 and gaps["g"]["dim"] is True
+    assert gaps["a"]["title"] == ("Top five by record. If it drops out: "
+                                  "15.0 PF ahead of the 6th seed with 2 games left")
+    assert gaps["e"]["gap"] == 2.5 and gaps["e"]["text"] == "−5.0 (−2.5)"       # 200 < 205
+    # Outside: b (1-1, 205), d (0-1-1, 190), h (0-2, 180). b holds the wildcard.
+    assert gaps["b"]["text"] == "WC"
+    assert gaps["d"]["gap"] == 7.5 and gaps["d"]["text"] == "−15.0 (−7.5)"   # 15 PF / 2 games
+    assert (gaps["d"]["total"], gaps["d"]["ppg"]) == ("−15.0", "(−7.5)")
+    assert gaps["d"]["dim"] is False
+    assert gaps["h"]["gap"] == 12.5                                  # 25 PF / 2
+    assert "2 games left" in gaps["h"]["title"]
+    # Season over: nothing left to chase.
+    done = _gap_season()
+    done["matchups"] = [m for m in done["matchups"] if m["week"] <= 2]
+    assert wildcard_gaps(done)["h"]["text"] == "—"
+    assert wildcard_gaps(done)["a"]["text"] == "—"
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week
