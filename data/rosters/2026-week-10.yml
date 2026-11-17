@@ -1,6 +1,6 @@
 season: 2026
 week: 10
-captured_at: '2026-11-16T23:54:24+00:00'
+captured_at: '2026-11-17T04:28:22+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -26,7 +26,7 @@ rosters:
     pos: WR
     starter: true
     proj: 11.87
-    actual: null
+    actual: 8.4
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -122,7 +122,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 7.76
-    actual: null
+    actual: 4.0
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -354,7 +354,7 @@ rosters:
     pos: RB
     starter: false
     proj: 6.22
-    actual: null
+    actual: 0.9
     injury: QUESTIONABLE
     pro_team: LAC
     bye_week: 7
@@ -494,7 +494,7 @@ rosters:
     pos: RB
     starter: true
     proj: 6.81
-    actual: null
+    actual: 2.9
     injury: ''
     pro_team: LAC
     bye_week: 7
@@ -586,7 +586,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.26
-    actual: null
+    actual: 17.0
     injury: ''
     pro_team: LAC
     bye_week: 7
@@ -810,7 +810,7 @@ rosters:
     pos: QB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: BAL
     bye_week: 13
@@ -906,7 +906,7 @@ rosters:
     pos: K
     starter: true
     proj: 7.63
-    actual: null
+    actual: 8.0
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -1050,7 +1050,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.56
-    actual: null
+    actual: 16.5
     injury: ''
     pro_team: BAL
     bye_week: 13
@@ -1270,7 +1270,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: LAC
     bye_week: 7

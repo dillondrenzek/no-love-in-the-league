@@ -723,6 +723,12 @@ jackperkins74:
       via: add
       week: 9
       waiver: true
+    - player: Cam Skattebo
+      via: trade
+      week: 10
+    - player: Josh Downs
+      via: trade
+      week: 10
     - player: Emari Demercado
       via: add
       week: 10
@@ -3943,6 +3949,9 @@ zachzoske:
       via: add
       week: 9
       waiver: false
+    - player: Parker Washington
+      via: trade
+      week: 10
     - player: MarShawn Lloyd
       via: add
       week: 10
