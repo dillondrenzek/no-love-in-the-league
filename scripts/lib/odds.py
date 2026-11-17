@@ -201,7 +201,10 @@ def pct_label(p):
         return "<1%"
     if p > 0.995:
         return ">99%"
-    return f"{round(p * 100)}%"
+    # Round half up (Python's round() goes half-to-even, so 0.5% would read
+    # "0%"), and keep the result inside 1..99 so it never contradicts the
+    # '<1%' / '>99%' ends.
+    return f"{min(99, max(1, int(p * 100 + 0.5)))}%"
 
 
 # Cell fill for a '<1%' odds value: plain white, so a long-shot reads as "out of

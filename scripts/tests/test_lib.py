@@ -1783,6 +1783,9 @@ def test_odds_partial_season_and_labels():
     assert complete_through(truncate(_odds_season(14), 5)) == 5
     assert pct_label(0) == "<1%" and pct_label(0.004) == "<1%"
     assert pct_label(1) == ">99%" and pct_label(0.234) == "23%"
+    # Exactly 0.5% / 99.5% / 2.5%: half rounds up, and never to 0% or 100%.
+    assert pct_label(0.005) == "1%" and pct_label(0.995) == "99%"
+    assert pct_label(0.025) == "3%"
 
 
 def test_odds_forecast_rows_sorted_with_colors():
