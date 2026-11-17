@@ -340,7 +340,11 @@ def _odds_rows(year, week):
     """This season's playoff-odds rows from the built docs/_data/odds.yml — only
     when they're as of this week (run build.py first), else []."""
     doc = (_read_yaml_file(ODDS_PATH) or {}).get(year) or {}
-    return doc.get("rows") or [] if doc.get("as_of_week") == week else []
+    if doc.get("as_of_week") != week:
+        return []
+    # Mid-way through the next week, quote the settled forecast (completed weeks
+    # only), not the one moving with live scores.
+    return doc.get("settled_rows") or doc.get("rows") or []
 
 
 def finalize_week(year, week):

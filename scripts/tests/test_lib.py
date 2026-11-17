@@ -1763,13 +1763,16 @@ def test_odds_simulation_follows_league_rules():
     _, res = forecast(season, Params(), n=300, seed=1)
     # Exactly one Shiva and one Sacko per sim; six teams on each side.
     for o, total in (("shiva", 1), ("sacko", 1), ("top3", 3), ("bye", 2),
-                     ("playoffs", 6), ("sacko_bracket", 6)):
+                     ("playoffs", 6), ("sacko_bracket", 6), ("sacko_bye", 2)):
         assert abs(sum(r[o] for r in res.values()) - total) < 1e-9, o
     # Seeds are locked: t11..t07 by record, then the points wildcard (t06).
     made = {f for f, r in res.items() if r["playoffs"] == 1.0}
     assert made == {f"t{i:02d}" for i in range(6, 12)}
     assert all(res[f"t{i:02d}"]["playoffs"] == 0.0 for i in range(6))
     assert res["t11"]["bye"] == res["t10"]["bye"] == 1.0 and res["t09"]["bye"] == 0.0
+    # The bottom two by record (t00, t01) get the Sacko bye; nobody else does.
+    assert res["t00"]["sacko_bye"] == res["t01"]["sacko_bye"] == 1.0
+    assert all(res[f"t{i:02d}"]["sacko_bye"] == 0.0 for i in range(2, 12))
     assert all(set(r) >= set(OUTCOMES) for r in res.values())
 
 
@@ -1793,10 +1796,12 @@ def test_odds_forecast_rows_sorted_with_colors():
     season = _odds_season(4)
     st, res = forecast(season, Params(), n=300, seed=3)
     rows = forecast_rows(season, {}, st, res)
-    odds = [res[r["fid"]]["playoffs"] for r in rows]
-    assert odds == sorted(odds, reverse=True)               # best playoff odds first
+    # Standings order: most wins first (no ties in this fixture), PF breaking level records.
+    keys = [(-int(r["record"].split("-")[0]), -float(r["pf"])) for r in rows]
+    assert keys == sorted(keys)
     top = next(r for r in rows if r["fid"] == "t11")
-    assert top["record"] == "4-0" and top["cells"]["shiva"]["color"].startswith("#")
+    assert top["record"] == "4-0" and top["cells"]["playoffs"]["color"].startswith("#")
+    assert set(top["cells"]) == {"sacko_bye", "playoffs", "bye"}
     assert "_key" not in top
 
 
@@ -1900,8 +1905,29 @@ def test_odds_clinch_status_and_labels():
     assert rows["t11"]["cells"]["playoffs"]["clinched"] is True
     assert rows["t11"]["cells"]["bye"]["text"] != "✓"
     assert rows["t09"]["cells"]["playoffs"]["text"].endswith("%")
+    # Out of the bye: t11 (11) and t10 (10) both beat anyone who can't pass 9.
+    assert status["no_bye"] == {f"t{i:02d}" for i in range(7)}
+    assert rows["t06"]["cells"]["bye"]["text"] == "✕"
+    assert rows["t06"]["cells"]["bye"]["dim"] is True
+    assert rows["t07"]["cells"]["bye"]["text"] != "✕"
+    # Safe from the bottom two: the top of the table, never the bottom.
+    assert "t11" in status["no_sacko_bye"] and "t10" in status["no_sacko_bye"]
+    assert not {"t00", "t01", "t02"} & status["no_sacko_bye"]
+    assert rows["t11"]["cells"]["sacko_bye"]["text"] == "✕"
+    assert rows["t00"]["cells"]["sacko_bye"]["text"] != "✕"
     # Nothing is locked before a game is played.
-    assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set()}
+    assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set(),
+                                              "no_bye": set(), "no_sacko_bye": set()}
+
+
+def test_odds_eliminated_top_needs_k_teams_strictly_out_of_reach():
+    from lib.odds import eliminated_top
+    wins = {"a": 8, "b": 8, "c": 7, "d": 3}
+    games = [("d", "c"), ("d", "a")]          # d can reach 5 at most
+    assert eliminated_top(wins, games, 2) == {"d"}
+    # Level on wins isn't out of reach: c can reach 8, and 8 isn't > 8.
+    assert "c" not in eliminated_top(wins, games, 2)
+    assert eliminated_top(wins, games, 4) == set()
 
 
 def _gap_season():
@@ -1921,6 +1947,24 @@ def _gap_season():
                        "away_score": None, "played": False})
     return {"season": 2030, "weeks_in_regular_season": 4, "teams": teams,
             "matchups": ms}
+
+
+def test_odds_forecast_rows_follow_current_seeds():
+    from lib.odds import forecast_rows
+    # Make h lose a shootout to g (210-200): h is 0-2, last by record, but has
+    # 300 PF. Seeds 1-5 go by record (a, e, g, f, c), h (300, the points
+    # wildcard) is the 6th seed, and b (1-1) and d (0-1-1) follow by record.
+    season = _gap_season()
+    for m in season["matchups"]:
+        if m["week"] == 2 and m["home"] == "g":
+            m["home_score"], m["away_score"] = 210, 200
+    blank = {o: 0.0 for o in ("sacko", "sacko_bracket", "playoffs", "bye", "top3",
+                              "shiva", "sacko_bye")}
+    res = {f: dict(blank, wins=0.0) for f in season["teams"]}
+    st = {f: (110.0, 5.0) for f in season["teams"]}
+    rows = forecast_rows(season, {}, st, res)
+    assert [r["fid"] for r in rows] == ["a", "e", "g", "f", "c", "h", "b", "d"]
+    assert [r["seed"] for r in rows] == list(range(1, 9))
 
 
 def test_odds_wildcard_gaps_spread_the_pf_deficit_over_games_left():
@@ -1947,6 +1991,77 @@ def test_odds_wildcard_gaps_spread_the_pf_deficit_over_games_left():
     done["matchups"] = [m for m in done["matchups"] if m["week"] <= 2]
     assert wildcard_gaps(done)["h"]["text"] == "—"
     assert wildcard_gaps(done)["a"]["text"] == "—"
+
+
+def _live_fixture(weeks_played=13, done=True):
+    """_odds_season with the next week live: every home team leads 150-50, with
+    final: false, plus a roster per team (one starter per NFL game) and kickoffs.
+    `done` puts both NFL games in the past; otherwise one is still to come."""
+    import datetime
+    season = _odds_season(weeks_played)
+    wk = weeks_played + 1
+    for m in season["matchups"]:
+        if m["week"] == wk:
+            m.update(home_score=150.0, away_score=50.0, final=False)
+    now = datetime.datetime(2030, 11, 20, 20, 0, tzinfo=datetime.timezone.utc)
+    early = (now - datetime.timedelta(hours=5)).isoformat()
+    late = (now - datetime.timedelta(hours=5) if done else
+            now + datetime.timedelta(hours=1)).isoformat()
+    schedule = [{"week": wk, "kickoff": early, "away": "AAA", "home": "BBB"},
+                {"week": wk, "kickoff": late, "away": "CCC", "home": "DDD"}]
+    rosters = {f: [{"starter": True, "proj": 10.0, "pro_team": "AAA"},
+                   {"starter": True, "proj": 30.0, "pro_team": "CCC"},
+                   {"starter": True, "proj": 8.0, "pro_team": "ZZZ"},    # bye
+                   {"starter": False, "proj": 99.0, "pro_team": "DDD"}]  # bench
+               for f in season["teams"]}
+    return season, rosters, schedule, now
+
+
+def test_odds_live_week_splits_remaining_projection_by_kickoff():
+    import datetime
+    from lib.odds import live_week, GAME_HOURS
+    season, rosters, schedule, now = _live_fixture(done=False)
+    live = live_week(season, rosters, schedule, now)
+    assert live["week"] == 14
+    t = live["teams"]["t00"]
+    # Only the CCC starter's game is still to come: 30 of 48 projected points.
+    assert t["remaining"] == 30.0 and t["share"] == round(30 / 48, 4)
+    assert {x["score"] for x in live["teams"].values()} == {150.0, 50.0}
+    # Halfway through a game, half of its projection is still to come.
+    schedule[1]["kickoff"] = (now - datetime.timedelta(hours=GAME_HOURS / 2)).isoformat()
+    assert live_week(season, rosters, schedule, now)["teams"]["t00"]["remaining"] == 15.0
+    # No live week without scores, rosters or kickoff times.
+    assert live_week(_odds_season(13), rosters, schedule, now) is None
+    assert live_week(season, {}, schedule, now) is None
+    assert live_week(season, rosters, [], now) is None
+
+
+def test_odds_live_week_that_is_over_plays_out_as_scored():
+    from lib.odds import Params, forecast, live_week, played_games
+    season, rosters, schedule, now = _live_fixture(done=True)
+    live = live_week(season, rosters, schedule, now)
+    assert all(t["share"] == 0.0 for t in live["teams"].values())
+    wins = {f: 0 for f in season["teams"]}
+    for m in played_games(season):
+        wins[m["home"] if m["home_score"] > m["away_score"] else m["away"]] += 1
+    for m in season["matchups"]:
+        if m["week"] == 14:
+            wins[m["home"]] += 1                 # every home team leads 150-50
+    _, res = forecast(season, Params(), n=200, seed=3, live=live)
+    assert {f: r["wins"] for f, r in res.items()} == {f: float(w) for f, w in wins.items()}
+    # A finished live week rates teams exactly as the final week will.
+    from lib.odds import strengths, team_scores
+    teams = sorted(season["teams"])
+    final = [dict(m) for m in season["matchups"]]
+    for m in final:
+        m.pop("final", None)
+    st_live, _ = forecast(season, Params(), n=10, seed=3, live=live)
+    st_final = strengths(teams, team_scores(played_games(dict(season, matchups=final))),
+                         Params())
+    assert all(abs(st_live[f][0] - st_final[f][0]) < 1e-9 for f in teams)
+    # Without the live week, week 14 is a fresh coin flip weighted by strength.
+    _, res0 = forecast(season, Params(), n=200, seed=3)
+    assert {f: r["wins"] for f, r in res0.items()} != {f: float(w) for f, w in wins.items()}
 
 
 def test_odds_trend_arrows():

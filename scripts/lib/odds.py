@@ -22,19 +22,27 @@ Two halves:
 Pure: plain data in, plain data out. Deterministic for a given seed.
 """
 
+import math
 import random
 import statistics
 from itertools import combinations
 from dataclasses import dataclass
 
 from .data import game_final, short_name_of
+from .nfl_schedule import parse_kickoff
 from .render import warm_heat, heat_color
 from .playoff_order import six_team_playoff
 
 OUTCOMES = ("sacko", "sacko_bracket", "playoffs", "bye", "top3", "shiva")
-# What the season-page table shows. The Sacko bracket is just 1 - playoffs, so it's
-# simulated and backtested but not displayed.
-TABLE_OUTCOMES = ("sacko", "playoffs", "bye", "shiva")
+# Simulated too, but not backtested: a Sacko bye is a bottom-two regular-season
+# finish (seed 11 or 12), which skips round 1 of the Sacko bracket and drops
+# straight into round 2, one loss from the Sacko final.
+SIM_OUTCOMES = OUTCOMES + ("sacko_bye",)
+SACKO_BYE_SEEDS = (11, 12)
+# What the season-page table shows: the Sacko bye on the left, then the playoffs
+# and the first-round bye. Shiva, Sacko, top 3 and the Sacko bracket (just
+# 1 - playoffs) are still simulated, and all but the Sacko bye are backtested.
+TABLE_OUTCOMES = ("sacko_bye", "playoffs", "bye")
 
 
 @dataclass(frozen=True)
@@ -103,13 +111,20 @@ def starter_projection(rosters):
             for fid, players in (rosters or {}).items()}
 
 
-def strengths(teams, scores, params, proj=None):
+def strengths(teams, scores, params, proj=None, partial=None):
     """{fid: (mean, sd)} — the posterior estimate of each team's true weekly
     scoring level. `scores` is {fid: [played scores]}; `proj` an optional
     {fid: projected starter total}, centered on its own league mean so only a
-    team's projection *relative to the league* matters."""
+    team's projection *relative to the league* matters. `partial` is an optional
+    {fid: (score, weight)}: one more game counted as a fraction of a game (the
+    live week, worth as much of a game as has been played)."""
     played = [s for v in scores.values() for s in v]
-    center = statistics.mean(played) if played else params.league_mean
+    pw_total = sum(w for _, w in (partial or {}).values())
+    if played or pw_total:
+        center = ((sum(played) + sum(x * w for x, w in (partial or {}).values()))
+                  / (len(played) + pw_total))
+    else:
+        center = params.league_mean
     proj = {f: p for f, p in (proj or {}).items() if f in teams and p}
     pbar = statistics.mean(proj.values()) if proj else 0.0
     t2, s2 = params.tau ** 2, params.sigma ** 2
@@ -117,8 +132,9 @@ def strengths(teams, scores, params, proj=None):
     for f in teams:
         prior = center + params.proj_weight * (proj[f] - pbar) if f in proj else center
         xs = scores.get(f) or []
-        prec = 1 / t2 + len(xs) / s2
-        mean = (prior / t2 + sum(xs) / s2) / prec
+        px, pw = (partial or {}).get(f, (0.0, 0.0))
+        prec = 1 / t2 + (len(xs) + pw) / s2
+        mean = (prior / t2 + (sum(xs) + pw * px) / s2) / prec
         out[f] = (mean, prec ** -0.5)
     return out
 
@@ -130,9 +146,75 @@ def _bracket_season(season, teams, reg, year):
             "matchups": []}
 
 
-def simulate(season, strength, params, n=10000, seed=0):
+# How long an NFL game's fantasy points take to land, for splitting a game in
+# progress into points already scored and points still to come.
+GAME_HOURS = 3.25
+
+
+def _remaining_fraction(kickoff, now):
+    """Share of a game's fantasy points still to come at `now`: all of them before
+    kickoff, none once the game's over, a straight-line share in between."""
+    elapsed = (now - kickoff).total_seconds() / 3600
+    if elapsed <= 0:
+        return 1.0
+    return max(0.0, 1.0 - elapsed / GAME_HOURS)
+
+
+def live_week(season, rosters, schedule, now):
+    """The in-progress week, for a forecast that moves with live scores:
+
+        {"week": 11, "teams": {fid: {"score": 64.2,    # live score so far
+                                     "remaining": 51.3,  # projected points still to come
+                                     "share": 0.44}}}     # of the team's projected total
+
+    The live week is the first regular-season week that isn't final, once any of
+    its games has a score. Each starter's projection counts toward `remaining`
+    by how much of his NFL game is left at `now` (kickoff times from the
+    schedule): all of it before kickoff, a shrinking share during the game, none
+    after. A starter on bye, or with no NFL team on file, has nothing left.
+    `rosters` is lib.data.load_week_rosters output for that week and `schedule`
+    lib.data.load_nfl_schedule. None when there's no live week, or no rosters or
+    kickoff times to split it with — the forecast then waits for the week to go
+    final, as before."""
+    reg = season.get("weeks_in_regular_season") or 14
+    week = complete_through(season) + 1
+    games = [m for m in season.get("matchups") or []
+             if m.get("week") == week and not m.get("playoff")]
+    if (week > reg or not games or not rosters or not schedule or now is None
+            or not any(m.get("home_score") is not None for m in games)):
+        return None
+    kick = {}
+    for g in schedule:
+        if g.get("week") == week and g.get("kickoff"):
+            for t in (g.get("away"), g.get("home")):
+                if t:
+                    kick[t.upper()] = parse_kickoff(g["kickoff"])
+    if not kick:
+        return None
+    teams = {}
+    for m in games:
+        for f, score in ((m["home"], m.get("home_score")), (m["away"], m.get("away_score"))):
+            starters = [p for p in rosters.get(f) or [] if p.get("starter")]
+            total = rem = 0.0
+            for p in starters:
+                proj = float(p.get("proj") or 0.0)
+                total += proj
+                ko = kick.get((p.get("pro_team") or "").upper())
+                if ko is not None:
+                    rem += proj * _remaining_fraction(ko, now)
+            teams[f] = {"score": float(score or 0.0), "remaining": round(rem, 2),
+                        "share": round(rem / total, 4) if total else 0.0}
+    return {"week": week, "teams": teams}
+
+
+def simulate(season, strength, params, n=10000, seed=0, live=None):
     """Run `n` simulated seasons from the current state. Returns
-    {fid: {outcome: probability, 'wins': mean final wins, 'seed': mean seed}}."""
+    {fid: {outcome: probability, 'wins': mean final wins, 'seed': mean seed}}.
+
+    `live` (live_week output) plays out the in-progress week from where it
+    stands: each team's final score is its live score plus its projected points
+    still to come, give or take a spread that shrinks with how much is left (a
+    full week's sigma scaled by the square root of the share remaining)."""
     teams = sorted(season.get("teams") or {})
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
@@ -144,7 +226,9 @@ def simulate(season, strength, params, n=10000, seed=0):
     shell = _bracket_season(season, teams, reg, season.get("season") or 0)
     pweeks = (reg + 1, reg + 2, reg + 3)
     rng = random.Random(seed)
-    tally = {f: dict.fromkeys(OUTCOMES, 0) for f in teams}
+    live_wk = (live or {}).get("week")
+    live_teams = (live or {}).get("teams") or {}
+    tally = {f: dict.fromkeys(SIM_OUTCOMES, 0) for f in teams}
     wins = dict.fromkeys(teams, 0)
     seeds = dict.fromkeys(teams, 0)
     sigma = params.sigma
@@ -153,9 +237,14 @@ def simulate(season, strength, params, n=10000, seed=0):
         sim = list(base)
         for m in remaining:
             h, a = m["home"], m["away"]
+            if live_teams and m["week"] == live_wk and h in live_teams and a in live_teams:
+                hs, as_ = (live_teams[x]["score"] + rng.gauss(
+                    live_teams[x]["remaining"], sigma * math.sqrt(live_teams[x]["share"]))
+                    for x in (h, a))
+            else:
+                hs, as_ = rng.gauss(level[h], sigma), rng.gauss(level[a], sigma)
             sim.append({"week": m["week"], "home": h, "away": a,
-                        "home_score": rng.gauss(level[h], sigma),
-                        "away_score": rng.gauss(level[a], sigma)})
+                        "home_score": hs, "away_score": as_})
         # Playoff weeks: every team plays (scores only matter per team).
         for w in pweeks:
             for i in range(0, len(teams), 2):
@@ -176,6 +265,8 @@ def simulate(season, strength, params, n=10000, seed=0):
                     t["bye"] += 1
             else:
                 t["sacko_bracket"] += 1
+                if s in SACKO_BYE_SEEDS:       # bottom two skip Sacko round 1
+                    t["sacko_bye"] += 1
         tally[order[0]]["shiva"] += 1
         for f in order[:3]:
             tally[f]["top3"] += 1
@@ -187,11 +278,19 @@ def simulate(season, strength, params, n=10000, seed=0):
                     wins=wins[f] / n, seed=seeds[f] / n) for f in teams}
 
 
-def forecast(season, params, proj=None, n=10000, seed=0):
-    """Strength estimate + simulation from the season's completed weeks."""
+def forecast(season, params, proj=None, n=10000, seed=0, live=None):
+    """Strength estimate + simulation from the season's completed weeks, with an
+    in-progress week played out from its live scores when `live` (live_week
+    output) is given. The live week also feeds the ratings, as a fraction of a
+    game: each team's projected final (live score plus points still to come),
+    weighted by the share of its week already played — nothing before kickoff,
+    a full game once it's over, so a finished-but-not-final week rates teams
+    the same as the final one will."""
     teams = sorted(season.get("teams") or {})
-    st = strengths(teams, team_scores(played_games(season)), params, proj)
-    return st, simulate(season, st, params, n=n, seed=seed)
+    partial = {f: (t["score"] + t["remaining"], 1.0 - t["share"])
+               for f, t in ((live or {}).get("teams") or {}).items()}
+    st = strengths(teams, team_scores(played_games(season)), params, proj, partial)
+    return st, simulate(season, st, params, n=n, seed=seed, live=live)
 
 
 def pct_label(p):
@@ -286,10 +385,33 @@ def clinched_top(wins, games, k):
     return out
 
 
+def eliminated_top(wins, games, k):
+    """Teams that can no longer finish in the top `k` by wins, whatever happens:
+    at least `k` teams already have more wins than the team can reach by winning
+    out. Strictly more, since a tie in wins goes to a tiebreaker nobody can
+    promise. A sufficient check (it ignores who plays whom), so it never marks a
+    team out that still has a path."""
+    left = {}
+    for a, b in games:
+        left[a] = left.get(a, 0) + 1
+        left[b] = left.get(b, 0) + 1
+    out = set()
+    for f in wins:
+        best = wins[f] + left.get(f, 0)
+        if sum(1 for g in wins if g != f and wins[g] > best) >= k:
+            out.add(f)
+    return out
+
+
 def clinch_status(season):
-    """{'playoffs': {fids}, 'bye': {fids}} — who has mathematically clinched a
-    playoff spot (a top-5 seed by record) and a first-round bye (top 2), given
-    the actual remaining schedule."""
+    """Who has mathematically settled what, given the actual remaining schedule:
+
+        {'playoffs': {fids}, 'bye': {fids},      # clinched: a top-5 / top-2 seed
+         'no_bye': {fids},                       # can't reach the top 2
+         'no_sacko_bye': {fids}}                 # can't fall to 11th or 12th
+
+    A Sacko bye is a bottom-two finish, so a team is safe from it once it has
+    clinched a top-10 spot by record."""
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
     played_keys = {(m["week"], m["home"]) for m in played}
@@ -303,8 +425,12 @@ def clinch_status(season):
              and (m["week"], m["home"]) not in played_keys]
     for g in (x for pair in games for x in pair):
         wins.setdefault(g, 0)
+    n = len(wins)
     return {"playoffs": clinched_top(wins, games, RECORD_SEEDS),
-            "bye": clinched_top(wins, games, BYE_SEEDS)}
+            "bye": clinched_top(wins, games, BYE_SEEDS),
+            "no_bye": eliminated_top(wins, games, BYE_SEEDS),
+            "no_sacko_bye": (clinched_top(wins, games, n - len(SACKO_BYE_SEEDS))
+                             if n > len(SACKO_BYE_SEEDS) else set())}
 
 
 def clinched_cell():
@@ -356,7 +482,7 @@ def wildcard_gaps(season):
     for f in order:
         if f == holder:
             out[f] = {"text": "WC", "title": "Holds the 6th seed (the points wildcard)",
-                      "dim": False, "gap": None}
+                      "dim": False, "gap": None, "holder": True}
             continue
         in_top = f in top
         if not left.get(f):
@@ -378,6 +504,14 @@ def wildcard_gaps(season):
     return out
 
 
+def eliminated_cell(title):
+    """The cell for an outcome that can no longer happen: an ✕ on the white
+    'negligible' fill with dimmed text, so it reads as settled rather than as a
+    long shot ('<1%')."""
+    return {"text": "✕", "title": title, "color": NEGLIGIBLE_COLOR, "dim": True,
+            "eliminated": True}
+
+
 # Smallest playoff-odds move worth an arrow: at 10,000 runs the odds carry ~0.5 pt
 # of simulation noise, so anything under 2 pts could be chance.
 PLAYOFF_MOVE_MIN = 0.02
@@ -397,8 +531,12 @@ def trend(now, before, threshold, scale=1, digits=0):
 
 
 def forecast_rows(season, franchises, strength, result, prev=None):
-    """Display rows for the season-page forecast table, best playoff odds first
-    (ties broken by bye, then Shiva odds).
+    """Display rows for the season-page forecast table, in standings order: best
+    record first (win pct, a tie counting as half a win, like the standings
+    table), points-for breaking level records, then playoff odds — except that
+    the rows follow the league's seeding as it stands today: seeds 1-5 by
+    record, the 6th seed the points wildcard holder (top scorer outside the top
+    five), then seeds 7-12 by record. Each row carries its current `seed`.
     Each: {fid, team, owner, logo, record, pf, rating, proj_wins, cells},
     where `cells` is {outcome: {text, color}} — the colour on the same warm heat
     ramp as every other table, scaled to the probability itself (0% cream .. 100%
@@ -438,16 +576,26 @@ def forecast_rows(season, franchises, strength, result, prev=None):
             "proj_wins": round(res["wins"], 1),
             "cells": {o: odds_cell(res[o]) for o in TABLE_OUTCOMES},
             "wc_gap": gaps.get(f),
-            "_key": (-res["playoffs"], -res["bye"], -res["shiva"], res["sacko"]),
+            "_key": (-((w + t / 2) / (w + l + t) if w + l + t else 0.0),
+                     -pf.get(f, 0.0), -res["playoffs"]),
         })
     for r in rows:
         for o in ("playoffs", "bye"):
             if r["fid"] in clinched[o]:
                 r["cells"][o] = clinched_cell()
+        if r["fid"] in clinched["no_bye"]:
+            r["cells"]["bye"] = eliminated_cell("Can't finish in the top two")
+        if r["fid"] in clinched["no_sacko_bye"] and "sacko_bye" in r["cells"]:
+            r["cells"]["sacko_bye"] = eliminated_cell("Can't finish in the bottom two")
         before = prev_res.get(r["fid"], {}).get("playoffs")
         r["cells"]["playoffs"]["trend"] = trend(
             result[r["fid"]]["playoffs"], before, PLAYOFF_MOVE_MIN, scale=100)
     rows.sort(key=lambda r: r.pop("_key"))
+    wc = next((i for i, r in enumerate(rows) if (r["wc_gap"] or {}).get("holder")), None)
+    if wc is not None and wc > RECORD_SEEDS:
+        rows.insert(RECORD_SEEDS, rows.pop(wc))
+    for i, r in enumerate(rows, start=1):
+        r["seed"] = i
     return rows
 
 

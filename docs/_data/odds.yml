@@ -1,5 +1,7 @@
 2026:
   as_of_week: 10
+  live_week: null
+  updated_at: Nov 16, 9:41 PM PST
   sims: 10000
   rows:
   - fid: jackperkins74
@@ -12,10 +14,12 @@
     rating: 134.6
     proj_wins: 11.1
     cells:
-      sacko:
-        text: <1%
+      sacko_bye:
+        text: ✕
+        title: Can't finish in the bottom two
         color: '#ffffff'
         dim: true
+        eliminated: true
       playoffs:
         text: '>99%'
         color: '#ee6b3b'
@@ -24,10 +28,6 @@
       bye:
         text: 89%
         color: '#f07b3f'
-        dim: false
-      shiva:
-        text: 37%
-        color: '#fac674'
         dim: false
     wc_gap:
       text: 263.1 (+65.8)
@@ -38,42 +38,7 @@
       dim: true
       gap: -65.8
       pf_gap: -263.1
-  - fid: sturmanator15
-    team: The People's Commissioner
-    owner: Wade
-    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    record: 7-3
-    pf: '1356.2'
-    pf_color: '#f0773e'
-    rating: 131.3
-    proj_wins: 10.1
-    cells:
-      sacko:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      playoffs:
-        text: '>99%'
-        color: '#ee6b3b'
-        dim: false
-        trend: null
-      bye:
-        text: 55%
-        color: '#f8ae4b'
-        dim: false
-      shiva:
-        text: 26%
-        color: '#fbd494'
-        dim: false
-    wc_gap:
-      text: 220.4 (+55.1)
-      total: '220.4'
-      ppg: (+55.1)
-      title: 'Top five by record. If it drops out: 220.4 PF ahead of the 6th seed
-        with 4 games left'
-      dim: true
-      gap: -55.1
-      pf_gap: -220.4
+    seed: 1
   - fid: zachzoske
     team: Tuten Your Mother, Respectfully
     owner: Zach
@@ -84,10 +49,12 @@
     rating: 128.5
     proj_wins: 10.5
     cells:
-      sacko:
-        text: <1%
+      sacko_bye:
+        text: ✕
+        title: Can't finish in the bottom two
         color: '#ffffff'
         dim: true
+        eliminated: true
       playoffs:
         text: '>99%'
         color: '#ee6b3b'
@@ -96,10 +63,6 @@
       bye:
         text: 55%
         color: '#f8af4b'
-        dim: false
-      shiva:
-        text: 22%
-        color: '#fbd9a0'
         dim: false
     wc_gap:
       text: 185.6 (+46.4)
@@ -110,6 +73,75 @@
       dim: true
       gap: -46.4
       pf_gap: -185.6
+    seed: 2
+  - fid: sturmanator15
+    team: The People's Commissioner
+    owner: Wade
+    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+    record: 7-3
+    pf: '1356.2'
+    pf_color: '#f0773e'
+    rating: 131.3
+    proj_wins: 10.1
+    cells:
+      sacko_bye:
+        text: ✕
+        title: Can't finish in the bottom two
+        color: '#ffffff'
+        dim: true
+        eliminated: true
+      playoffs:
+        text: '>99%'
+        color: '#ee6b3b'
+        dim: false
+        trend: null
+      bye:
+        text: 55%
+        color: '#f8ae4b'
+        dim: false
+    wc_gap:
+      text: 220.4 (+55.1)
+      total: '220.4'
+      ppg: (+55.1)
+      title: 'Top five by record. If it drops out: 220.4 PF ahead of the 6th seed
+        with 4 games left'
+      dim: true
+      gap: -55.1
+      pf_gap: -220.4
+    seed: 3
+  - fid: whowonthelastsuperbowl
+    team: Trick or Trick It’s Mike Vick
+    owner: Nate
+    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+    record: 6-4
+    pf: '1172.3'
+    pf_color: '#f7aa4a'
+    rating: 116.9
+    proj_wins: 8.0
+    cells:
+      sacko_bye:
+        text: <1%
+        color: '#ffffff'
+        dim: true
+      playoffs:
+        text: 87%
+        color: '#f17f40'
+        dim: false
+        trend: null
+      bye:
+        text: 1%
+        color: '#fdf2df'
+        dim: false
+    wc_gap:
+      text: 36.5 (+9.1)
+      total: '36.5'
+      ppg: (+9.1)
+      title: 'Top five by record. If it drops out: 36.5 PF ahead of the 6th seed with
+        4 games left'
+      dim: true
+      gap: -9.1
+      pf_gap: -36.5
+    seed: 4
   - fid: gganoom
     team: One Big Beautiful Dillbot
     owner: Grant
@@ -120,7 +152,7 @@
     rating: 122.6
     proj_wins: 7.7
     cells:
-      sacko:
+      sacko_bye:
         text: <1%
         color: '#ffffff'
         dim: true
@@ -133,10 +165,6 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      shiva:
-        text: 8%
-        color: '#fce9c8'
-        dim: false
     wc_gap:
       text: 110.2 (+27.6)
       total: '110.2'
@@ -146,42 +174,41 @@
       dim: true
       gap: -27.6
       pf_gap: -110.2
-  - fid: whowonthelastsuperbowl
-    team: Trick or Trick It’s Mike Vick
-    owner: Nate
-    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-    record: 6-4
-    pf: '1172.3'
-    pf_color: '#f7aa4a'
-    rating: 116.9
-    proj_wins: 8.0
+    seed: 5
+  - fid: shawne2520997
+    team: Swift kick in the Dak
+    owner: Shawnee
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+    record: 3-7
+    pf: '1135.8'
+    pf_color: '#f9b44d'
+    rating: 114.0
+    proj_wins: 5.1
     cells:
-      sacko:
-        text: 1%
-        color: '#fdf2de'
+      sacko_bye:
+        text: 7%
+        color: '#fceaca'
         dim: false
       playoffs:
-        text: 87%
-        color: '#f17f40'
+        text: 37%
+        color: '#fac674'
         dim: false
-        trend: null
+        trend:
+          dir: up
+          text: ▲33
       bye:
-        text: 1%
-        color: '#fdf2df'
-        dim: false
-      shiva:
-        text: 4%
-        color: '#fdeed5'
-        dim: false
+        text: ✕
+        title: Can't finish in the top two
+        color: '#ffffff'
+        dim: true
+        eliminated: true
     wc_gap:
-      text: 36.5 (+9.1)
-      total: '36.5'
-      ppg: (+9.1)
-      title: 'Top five by record. If it drops out: 36.5 PF ahead of the 6th seed with
-        4 games left'
-      dim: true
-      gap: -9.1
-      pf_gap: -36.5
+      text: WC
+      title: Holds the 6th seed (the points wildcard)
+      dim: false
+      gap: null
+      holder: true
+    seed: 6
   - fid: schirmerj
     team: Return of the IDP
     owner: Jono
@@ -192,10 +219,10 @@
     rating: 113.4
     proj_wins: 6.9
     cells:
-      sacko:
-        text: 3%
-        color: '#fdefd6'
-        dim: false
+      sacko_bye:
+        text: <1%
+        color: '#ffffff'
+        dim: true
       playoffs:
         text: 41%
         color: '#fac167'
@@ -207,10 +234,6 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      shiva:
-        text: 1%
-        color: '#fdf1dc'
-        dim: false
     wc_gap:
       text: −8.1 (−2.0)
       total: −8.1
@@ -219,112 +242,7 @@
       dim: false
       gap: 2.0
       pf_gap: 8.1
-  - fid: shawne2520997
-    team: Swift kick in the Dak
-    owner: Shawnee
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-    record: 3-7
-    pf: '1135.8'
-    pf_color: '#f9b44d'
-    rating: 114.0
-    proj_wins: 5.1
-    cells:
-      sacko:
-        text: 4%
-        color: '#fdefd5'
-        dim: false
-      playoffs:
-        text: 37%
-        color: '#fac674'
-        dim: false
-        trend:
-          dir: up
-          text: ▲33
-      bye:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      shiva:
-        text: 1%
-        color: '#fdf1dc'
-        dim: false
-    wc_gap:
-      text: WC
-      title: Holds the 6th seed (the points wildcard)
-      dim: false
-      gap: null
-  - fid: alexandra
-    team: Cornstar
-    owner: Lexi
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-    record: 4-6
-    pf: '1116.9'
-    pf_color: '#f9b954'
-    rating: 112.5
-    proj_wins: 5.7
-    cells:
-      sacko:
-        text: 5%
-        color: '#fdedd2'
-        dim: false
-      playoffs:
-        text: 21%
-        color: '#fbdaa3'
-        dim: false
-        trend:
-          dir: down
-          text: ▼23
-      bye:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      shiva:
-        text: 1%
-        color: '#fdf2de'
-        dim: false
-    wc_gap:
-      text: −18.9 (−4.7)
-      total: −18.9
-      ppg: (−4.7)
-      title: 18.9 PF behind the 6th seed with 4 games left
-      dim: false
-      gap: 4.7
-      pf_gap: 18.9
-  - fid: kevbots22
-    team: Remember the Nice Guys, ChatGPT
-    owner: Kevin
-    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-    record: 3-6-1
-    pf: '1099.3'
-    pf_color: '#f9bd5e'
-    rating: 111.2
-    proj_wins: 4.7
-    cells:
-      sacko:
-        text: 7%
-        color: '#fceaca'
-        dim: false
-      playoffs:
-        text: 9%
-        color: '#fce8c6'
-        dim: false
-        trend: null
-      bye:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-      shiva:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-    wc_gap:
-      text: −36.5 (−9.1)
-      total: −36.5
-      ppg: (−9.1)
-      title: 36.5 PF behind the 6th seed with 4 games left
-      dim: false
-      gap: 9.1
-      pf_gap: 36.5
+    seed: 7
   - fid: purpsworth
     team: I am dead inside
     owner: Trevor
@@ -335,9 +253,9 @@
     rating: 106.8
     proj_wins: 6.2
     cells:
-      sacko:
-        text: 9%
-        color: '#fce8c6'
+      sacko_bye:
+        text: 2%
+        color: '#fdf0da'
         dim: false
       playoffs:
         text: 6%
@@ -350,10 +268,6 @@
         text: <1%
         color: '#ffffff'
         dim: true
-      shiva:
-        text: <1%
-        color: '#ffffff'
-        dim: true
     wc_gap:
       text: −91.8 (−22.9)
       total: −91.8
@@ -362,6 +276,75 @@
       dim: false
       gap: 22.9
       pf_gap: 91.8
+    seed: 8
+  - fid: alexandra
+    team: Cornstar
+    owner: Lexi
+    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+    record: 4-6
+    pf: '1116.9'
+    pf_color: '#f9b954'
+    rating: 112.5
+    proj_wins: 5.7
+    cells:
+      sacko_bye:
+        text: 3%
+        color: '#fdefd7'
+        dim: false
+      playoffs:
+        text: 21%
+        color: '#fbdaa3'
+        dim: false
+        trend:
+          dir: down
+          text: ▼23
+      bye:
+        text: <1%
+        color: '#ffffff'
+        dim: true
+    wc_gap:
+      text: −18.9 (−4.7)
+      total: −18.9
+      ppg: (−4.7)
+      title: 18.9 PF behind the 6th seed with 4 games left
+      dim: false
+      gap: 4.7
+      pf_gap: 18.9
+    seed: 9
+  - fid: kevbots22
+    team: Remember the Nice Guys, ChatGPT
+    owner: Kevin
+    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+    record: 3-6-1
+    pf: '1099.3'
+    pf_color: '#f9bd5e'
+    rating: 111.2
+    proj_wins: 4.7
+    cells:
+      sacko_bye:
+        text: 18%
+        color: '#fcdead'
+        dim: false
+      playoffs:
+        text: 9%
+        color: '#fce8c6'
+        dim: false
+        trend: null
+      bye:
+        text: ✕
+        title: Can't finish in the top two
+        color: '#ffffff'
+        dim: true
+        eliminated: true
+    wc_gap:
+      text: −36.5 (−9.1)
+      total: −36.5
+      ppg: (−9.1)
+      title: 36.5 PF behind the 6th seed with 4 games left
+      dim: false
+      gap: 9.1
+      pf_gap: 36.5
+    seed: 10
   - fid: theoceanpulse
     team: Im Bleeding Making Me the Shiva
     owner: Dillon
@@ -372,9 +355,9 @@
     rating: 102.4
     proj_wins: 4.2
     cells:
-      sacko:
-        text: 23%
-        color: '#fbd79c'
+      sacko_bye:
+        text: 72%
+        color: '#f49545'
         dim: false
       playoffs:
         text: <1%
@@ -382,13 +365,11 @@
         dim: true
         trend: null
       bye:
-        text: <1%
+        text: ✕
+        title: Can't finish in the top two
         color: '#ffffff'
         dim: true
-      shiva:
-        text: <1%
-        color: '#ffffff'
-        dim: true
+        eliminated: true
     wc_gap:
       text: −148.3 (−37.1)
       total: −148.3
@@ -397,6 +378,7 @@
       dim: false
       gap: 37.1
       pf_gap: 148.3
+    seed: 11
   - fid: lukstein
     team: 2x Runner Up
     owner: Luke
@@ -407,9 +389,9 @@
     rating: 92.5
     proj_wins: 2.7
     cells:
-      sacko:
-        text: 48%
-        color: '#f9b852'
+      sacko_bye:
+        text: 98%
+        color: '#ee6e3c'
         dim: false
       playoffs:
         text: <1%
@@ -417,13 +399,11 @@
         dim: true
         trend: null
       bye:
-        text: <1%
+        text: ✕
+        title: Can't finish in the top two
         color: '#ffffff'
         dim: true
-      shiva:
-        text: <1%
-        color: '#ffffff'
-        dim: true
+        eliminated: true
     wc_gap:
       text: −274.4 (−68.6)
       total: −274.4
@@ -432,3 +412,4 @@
       dim: false
       gap: 68.6
       pf_gap: 274.4
+    seed: 12
