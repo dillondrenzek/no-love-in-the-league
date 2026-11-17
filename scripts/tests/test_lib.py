@@ -1463,6 +1463,59 @@ def test_season_rows_carry_win_pct():
     assert rows["C"]["pct_str"] == ".000"
 
 
+def test_games_behind_counts_a_tie_as_half_a_game():
+    from lib.standings import games_behind, gb_string
+    # 7-3 leads; 6-3-1 is half a game back; 6-4 a full game; 4-6 three.
+    gbs = games_behind([(7, 3, 0), (6, 3, 1), (6, 4, 0), (4, 6, 0)])
+    assert gbs == [0.0, 0.5, 1.0, 3.0]
+    assert [gb_string(g) for g in gbs] == ["—", "0.5", "1", "3"]
+    # Two teams level at the top both lead.
+    assert games_behind([(5, 2, 0), (5, 2, 0), (3, 4, 0)]) == [0.0, 0.0, 2.0]
+    assert games_behind([]) == []
+
+
+def test_all_play_records_compare_every_score_each_week():
+    from lib.standings import all_play_records
+    season = {"matchups": [
+        {"week": 1, "home": "a", "away": "b", "home_score": 120, "away_score": 100},
+        {"week": 1, "home": "c", "away": "d", "home_score": 100, "away_score": 80},
+        {"week": 2, "home": "a", "away": "c", "home_score": 90, "away_score": 110},
+        {"week": 2, "home": "b", "away": "d", "home_score": 95, "away_score": 70},
+        # Playoffs and unfinished weeks don't count.
+        {"week": 3, "home": "a", "away": "b", "home_score": 50, "away_score": 60,
+         "final": False},
+        {"week": 15, "home": "a", "away": "d", "home_score": 10, "away_score": 200,
+         "playoff": True},
+    ]}
+    ap = all_play_records(season)
+    # Wk 1: a beats all 3; b and c tie at 100 and beat d. Wk 2: c, b, a, d.
+    assert ap == {"a": (4, 2, 0), "b": (3, 2, 1), "c": (4, 1, 1), "d": (0, 6, 0)}
+    assert all_play_records({"matchups": []}) == {}
+
+
+def test_season_rows_carry_gb_and_all_play():
+    from lib.seasons import season_rows
+    fr = {f: {"name": f.upper()} for f in "abcd"}
+    season = {"season": 2030, "state": "season",
+              "teams": {f: f.upper() for f in "abcd"},
+              "matchups": [
+                  {"week": 1, "home": "a", "away": "b", "home_score": 120, "away_score": 100},
+                  {"week": 1, "home": "c", "away": "d", "home_score": 90, "away_score": 90},
+                  {"week": 2, "home": "a", "away": "c", "home_score": 110, "away_score": 100},
+                  {"week": 2, "home": "b", "away": "d", "home_score": 95, "away_score": 70}]}
+    rows = {r["owner_id"]: r for r in season_rows(season, fr, {}, {})["rows"]}
+    assert rows["a"]["gb"] == "—"                 # 2-0
+    assert rows["b"]["gb"] == "1"                      # 1-1
+    assert rows["c"]["gb"] == "1.5"                    # 0-1-1
+    assert rows["d"]["gb"] == "1.5"
+    assert rows["a"]["all_play"] == "6-0"
+    assert rows["c"]["all_play"] == "2-3-1"
+    # Explicit-standings seasons have no scores, so no all-play.
+    old = season_rows(dict(explicit_season(), state="complete"), {}, {}, {})["rows"]
+    assert all("all_play" not in r for r in old)
+    assert [r["gb"] for r in old] == ["—", "3", "4.5", "11"]
+
+
 def test_power_rankings_explicit_order_and_movement():
     from lib.power import power_rankings
     season = {"season": 2026, "teams": {"a": "A", "b": "B", "c": "C"}}

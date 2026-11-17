@@ -8,7 +8,8 @@ structure from one place instead of importing it from each other.
 """
 
 from .standings import (get_standings, has_points, provisional_standings,
-                        win_pct, pct_string)
+                        win_pct, pct_string, games_behind, gb_string,
+                        all_play_records, record_string)
 from .render import heat_color
 from .overrides import co_champions
 from .state import state_of
@@ -39,9 +40,11 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
     lo, hi = (min(pfs), max(pfs)) if pfs else (0, 0)
     pas = [r["points_against"] for r in rows if r["points_against"] is not None]
     pa_lo, pa_hi = (min(pas), max(pas)) if pas else (0, 0)
+    gbs = games_behind([(r["wins"], r["losses"], r["ties"]) for r in rows])
+    all_play = all_play_records(season)
 
     out = []
-    for r in rows:
+    for r, gb in zip(rows, gbs):
         row = {
             "finish": r["finish"],
             "team": r["name"],
@@ -51,6 +54,7 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
             "record": r["record"],
             "pct": win_pct(r["wins"], r["losses"], r["ties"]),
             "tag": _tag(r["finish"], team_count, r["id"] in co),
+            "gb": gb_string(gb),
         }
         row["pct_str"] = pct_string(row["pct"])
         if points:
@@ -58,6 +62,9 @@ def season_rows(season, franchises, overrides, notes, trade_note=True):
             row["pf_color"] = heat_color(r["points_for"], lo, hi)
             row["pa"] = r["points_against"]
             row["pa_color"] = heat_color(r["points_against"], pa_lo, pa_hi)
+        ap = all_play.get(r["id"])
+        if ap:
+            row["all_play"] = record_string(dict(zip(("wins", "losses", "ties"), ap)))
         out.append(row)
     # Hand-written notes, plus an auto "N trades completed" bullet when any went
     # through that season.
