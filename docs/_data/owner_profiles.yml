@@ -8763,11 +8763,6 @@ sturmanator15:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Bryce Young
-      pos: QB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Kenneth Walker III
       pos: RB
       cost: Ineligible
