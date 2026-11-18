@@ -1681,8 +1681,8 @@ tx_heatmap:
       color: '#fabf63'
   - id: sturmanator15
     name: Wade
-    total: 844
-    tx_per_year: 93.8
+    total: 848
+    tx_per_year: 94.2
     cells:
     - year: 2018
       count: 110
@@ -1709,12 +1709,12 @@ tx_heatmap:
       count: 52
       color: '#facb80'
     - year: 2026
-      count: 67
-      color: '#fac065'
+      count: 71
+      color: '#f9bd5e'
   - id: theoceanpulse
     name: Dillon
-    total: 500
-    tx_per_year: 55.6
+    total: 501
+    tx_per_year: 55.7
     cells:
     - year: 2018
       count: 32
@@ -1741,8 +1741,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 66
-      color: '#fac167'
+      count: 67
+      color: '#fac065'
   - id: schirmerj
     name: Jono
     total: 490
@@ -1841,8 +1841,8 @@ tx_heatmap:
       color: '#fbd18f'
   - id: purpsworth
     name: Trevor
-    total: 336
-    tx_per_year: 42.0
+    total: 337
+    tx_per_year: 42.1
     cells:
     - year: 2018
       count: null
@@ -1869,8 +1869,8 @@ tx_heatmap:
       count: 41
       color: '#fbd495'
     - year: 2026
-      count: 22
-      color: '#fce2b8'
+      count: 23
+      color: '#fce1b6'
   - id: whowonthelastsuperbowl
     name: Nate
     total: 325

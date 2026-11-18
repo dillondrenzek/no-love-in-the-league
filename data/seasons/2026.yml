@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-18T12:28:13+00:00
+updated_at: 2026-11-18T22:46:10+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -150,12 +150,12 @@ matchups:
   - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 98.0, away_score: 101.0, playoff: false }
   - { week: 10, home: sturmanator15, away: gganoom, home_score: 115.6, away_score: 111.2, playoff: false }
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
-  - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false, home_proj: 75.98, away_proj: 91.57 }
-  - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 94.33, away_proj: 120.97 }
-  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 102.54, away_proj: 98.7 }
-  - { week: 11, home: sturmanator15, away: shawne2520997, playoff: false, played: false, home_proj: 124.38, away_proj: 128.56 }
-  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, playoff: false, played: false, home_proj: 123.11, away_proj: 106.16 }
-  - { week: 11, home: zachzoske, away: purpsworth, playoff: false, played: false, home_proj: 132.38, away_proj: 101.86 }
+  - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false, home_proj: 76.66, away_proj: 98.43 }
+  - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 94.29, away_proj: 120.97 }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 102.35, away_proj: 98.7 }
+  - { week: 11, home: sturmanator15, away: shawne2520997, playoff: false, played: false, home_proj: 106.84, away_proj: 128.54 }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, playoff: false, played: false, home_proj: 123.13, away_proj: 106.32 }
+  - { week: 11, home: zachzoske, away: purpsworth, playoff: false, played: false, home_proj: 132.42, away_proj: 107.18 }
   - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
   - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
@@ -377,11 +377,11 @@ transactions:
   jackperkins74: { adds: 56, drops: 41, moves: 97 }
   kevbots22: { adds: 7, drops: 6, moves: 13 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
-  purpsworth: { adds: 14, drops: 8, moves: 22 }
+  purpsworth: { adds: 15, drops: 8, moves: 23 }
   schirmerj: { adds: 17, drops: 17, moves: 34 }
   shawne2520997: { adds: 28, drops: 22, moves: 50 }
-  sturmanator15: { adds: 35, drops: 32, moves: 67 }
-  theoceanpulse: { adds: 36, drops: 30, moves: 66 }
+  sturmanator15: { adds: 37, drops: 34, moves: 71 }
+  theoceanpulse: { adds: 37, drops: 30, moves: 67 }
   whowonthelastsuperbowl: { adds: 19, drops: 10, moves: 29 }
   zachzoske: { adds: 41, drops: 27, moves: 68 }
 
@@ -1311,6 +1311,10 @@ rosters:
     via: add
     week: 10
     waiver: true
+  - player: Dallas Goedert
+    via: add
+    week: 11
+    waiver: false
   sturmanator15:
   - player: Jaxon Smith-Njigba
     via: draft
@@ -1490,6 +1494,14 @@ rosters:
   - player: Xavier Hutchinson
     via: add
     week: 10
+    waiver: false
+  - player: Mark Andrews
+    via: add
+    week: 11
+    waiver: false
+  - player: Panthers D/ST
+    via: add
+    week: 11
     waiver: false
   zachzoske:
   - player: Amon-Ra St. Brown
