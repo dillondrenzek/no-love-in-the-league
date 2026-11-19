@@ -1,0 +1,16 @@
+# Power-ranking blurbs — 2026 week 11. One line per team, in the
+# computed rank order. Fill from the agent (agents/weekly-power.md), then
+# rebuild. Keyed by franchise id; the comment shows rank + team.
+blurbs:
+  jackperkins74: "Up one to the top after surviving a 168-point shootout; four straight wins, a 148 average over three, and Luke is next."   # 1. Gibbed for your pleasure
+  zachzoske: "Up one on five straight wins and a 154 average over three, the best three-week run in the league."   # 2. Tuten Your Mother, Respectfully
+  sturmanator15: "Down two even with the Monday-night win, as the three-week average slides to 125 and Jaxon Smith-Njigba takes a bye."   # 3. The People's Commissioner
+  gganoom: "Holds at four heading into the five-bye week, with Bijan off and Quinshon Judkins somehow still in the lineup on his."   # 4. One Big Beautiful Dillbot
+  whowonthelastsuperbowl: "Holds at five on two straight wins, and Bo Nix is the new quarterback while Drake Maye sits on a bye."   # 5. Trick or Trick It’s Mike Vick
+  shawne2520997: "Up four after the most points ever scored in a loss, and the 3-7 team now holds the playoff wildcard."   # 6. Swift kick in the Dak
+  alexandra: "Down one after the week's low score, and now starting three players on bye, quarterback Jordan Love among them."   # 7. Cornstar
+  schirmerj: "Down one on two straight losses; Emmett Johnson is finally in the lineup, and so is Jason Myers, whose team is off."   # 8. Return of the IDP
+  kevbots22: "Down one after putting up 115.5 in a 63.9-point loss, and the new quarterback is Bryce Young, now released by the commish twice."   # 9. Remember the Nice Guys, ChatGPT
+  purpsworth: "Down one despite a second straight win, because a 98 average over three still trails eight teams; Zach's streak is next."   # 10. I am dead inside
+  theoceanpulse: "Still eleventh after snapping the skid, on an 88 average over three, the lowest in the league."   # 11. Im Bleeding Making Me the Shiva
+  lukstein: "Still twelfth on four straight losses and a 98% shot at the Sacko bye, with the reigning champ up next."   # 12. 2x Runner Up
