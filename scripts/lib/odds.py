@@ -272,7 +272,12 @@ def simulate(season, strength, params, n=10000, seed=0, live=None):
             tally[f]["top3"] += 1
         tally[order[-1]]["sacko"] += 1
         for m in sim:
-            if m["week"] <= reg and m["home_score"] != m["away_score"]:
+            if m["week"] > reg:
+                continue
+            if m["home_score"] == m["away_score"]:          # a tie is half a win each
+                wins[m["home"]] += 0.5
+                wins[m["away"]] += 0.5
+            else:
                 wins[m["home"] if m["home_score"] > m["away_score"] else m["away"]] += 1
     return {f: dict({k: v / n for k, v in tally[f].items()},
                     wins=wins[f] / n, seed=seeds[f] / n) for f in teams}
@@ -362,7 +367,10 @@ def clinched_top(wins, games, k):
     still finish level with or above it, given who actually plays whom: games
     against the team itself or anyone outside the group go to the group, and a game
     between two group members can only go to one of them. A tie counts as a
-    threat, since the points tiebreaker can't be known in advance. {fid: wins}."""
+    threat, since the points tiebreaker can't be known in advance. {fid: wins},
+    where a tie already played counts as half a win; the remaining games are
+    assumed to be decided (a future tie can't be counted on), so a team that needs
+    half a game to draw level still needs a whole win."""
     left = dict.fromkeys(wins, 0)
     for a, b in games:
         left[a] = left.get(a, 0) + 1
@@ -376,7 +384,7 @@ def clinched_top(wins, games, k):
             # Wins a member is sure of here: its games against `f` or outsiders.
             sure = {g: sum(1 for a, b in games if g in (a, b)
                            and (b if a == g else a) not in group) for g in group}
-            need = {g: max(0, floor - wins[g] - sure[g]) for g in group}
+            need = {g: max(0, math.ceil(floor - wins[g] - sure[g])) for g in group}
             if _can_all_reach(group, need, games):
                 locked = False
                 break
@@ -417,7 +425,10 @@ def clinch_status(season):
     played_keys = {(m["week"], m["home"]) for m in played}
     wins = dict.fromkeys(season.get("teams") or {}, 0)
     for m in played:
-        if m["home_score"] != m["away_score"]:
+        if m["home_score"] == m["away_score"]:              # a tie is half a win each
+            for f in (m["home"], m["away"]):
+                wins[f] = wins.get(f, 0) + 0.5
+        else:
             w = m["home"] if m["home_score"] > m["away_score"] else m["away"]
             wins[w] = wins.get(w, 0) + 1
     games = [(m["home"], m["away"]) for m in season.get("matchups") or []
