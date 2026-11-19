@@ -41,7 +41,8 @@ def _playoff_weeks(season):
 
 
 def _record_stats(season):
-    """{fid: (wins, points_for)} over the countable regular season."""
+    """{fid: (wins, points_for)} over the countable regular season. A tie counts
+    as half a win, as ESPN counts it for seeding."""
     reg = season.get("weeks_in_regular_season") or 14
     stats = {}
     for m in season.get("matchups") or []:
@@ -52,6 +53,8 @@ def _record_stats(season):
             d = stats.setdefault(f, [0, 0.0])
             if pf > pa:
                 d[0] += 1
+            elif pf == pa:
+                d[0] += 0.5
             d[1] += pf
     return stats
 

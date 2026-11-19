@@ -1920,6 +1920,38 @@ def test_odds_clinch_status_and_labels():
                                               "no_bye": set(), "no_sacko_bye": set()}
 
 
+def test_seeding_counts_a_tie_as_half_a_win():
+    from lib.playoff_order import _record_stats, _reg_seeds
+    # a ties b (100-100), then both lose; c beats a and b, d loses twice but
+    # outscores everyone. a and b (0-1-1) must seed above d (0-2), whatever the PF.
+    season = {"weeks_in_regular_season": 14, "matchups": [
+        {"week": 1, "home": "a", "away": "b", "home_score": 100, "away_score": 100},
+        {"week": 1, "home": "c", "away": "d", "home_score": 151, "away_score": 150},
+        {"week": 2, "home": "c", "away": "a", "home_score": 90, "away_score": 80},
+        {"week": 2, "home": "b", "away": "d", "home_score": 141, "away_score": 140},
+        {"week": 3, "home": "d", "away": "c", "home_score": 139, "away_score": 140},
+        {"week": 3, "home": "a", "away": "b", "home_score": 70, "away_score": 60},
+    ]}
+    stats = _record_stats(season)
+    assert stats["a"][0] == 1.5 and stats["b"][0] == 1.5 and stats["d"][0] == 0
+    seeds = _reg_seeds(season)
+    assert seeds["c"] == 1 and seeds["d"] == 4      # 0-3 is last despite the most PF
+
+
+def test_odds_clinched_top_with_a_half_win():
+    from lib.odds import clinched_top
+    # f has 7.5 wins (a tie) and loses out; g has 7 with one game left vs h.
+    # g needs only half a game to pass f, but a future tie can't be banked, so
+    # g still has to win that game: if h wins it, f is ahead of g.
+    wins = {"f": 7.5, "g": 7, "h": 2}
+    assert "f" not in clinched_top(wins, [("g", "h")], 1)   # g can still win out
+    assert "f" in clinched_top(wins, [], 1)                  # nothing left: f stays ahead
+    # From 6.5, winning out draws g level at 7.5, and level counts as a threat;
+    # from 6, g tops out at 7 and f is locked in.
+    assert "f" not in clinched_top({"f": 7.5, "g": 6.5, "h": 2}, [("g", "h")], 1)
+    assert "f" in clinched_top({"f": 7.5, "g": 6, "h": 2}, [("g", "h")], 1)
+
+
 def test_odds_eliminated_top_needs_k_teams_strictly_out_of_reach():
     from lib.odds import eliminated_top
     wins = {"a": 8, "b": 8, "c": 7, "d": 3}
