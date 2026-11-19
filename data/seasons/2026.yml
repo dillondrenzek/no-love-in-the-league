@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-19T16:55:30+00:00
+updated_at: 2026-11-19T22:01:48+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -152,7 +152,7 @@ matchups:
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
   - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false, home_proj: 76.59, away_proj: 98.43 }
   - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 93.58, away_proj: 122.82 }
-  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 112.89, away_proj: 98.68 }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 112.89, away_proj: 117.72 }
   - { week: 11, home: sturmanator15, away: shawne2520997, playoff: false, played: false, home_proj: 96.88, away_proj: 128.54 }
   - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, playoff: false, played: false, home_proj: 123.05, away_proj: 106.32 }
   - { week: 11, home: zachzoske, away: purpsworth, playoff: false, played: false, home_proj: 132.42, away_proj: 107.6 }
