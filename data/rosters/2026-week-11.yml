@@ -1,6 +1,6 @@
 season: 2026
 week: 11
-captured_at: '2026-11-18T22:46:05+00:00'
+captured_at: '2026-11-19T04:59:16+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -463,7 +463,7 @@ rosters:
     starter: true
     proj: 7.74
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: LV
     bye_week: 13
   - player: C.J. Stroud
