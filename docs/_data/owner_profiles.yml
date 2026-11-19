@@ -16867,7 +16867,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 30.9
+    tx_per_year: 31.1
     tx_known: false
     seasons: 13
     best_finish:
@@ -16891,7 +16891,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 10th
     record: 3-6-1
-    tx: 13
+    tx: 15
     in_progress: true
     pf: 1099.3
     pa: 1236.4
@@ -17227,6 +17227,10 @@ kevbots22:
     - player: Tyler Bass
       via: add
       week: 8
+      waiver: true
+    - player: Bryce Young
+      via: add
+      week: 11
       waiver: true
   - year: 2025
     players:
@@ -18322,6 +18326,11 @@ kevbots22:
       cost: R12
       basis: Drafted R14
       ineligible: false
+    - player: Bryce Young
+      pos: QB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Chase Brown
       pos: RB
       cost: Ineligible
@@ -18386,11 +18395,6 @@ kevbots22:
       pos: K
       cost: R13
       basis: Undrafted
-      ineligible: false
-    - player: Patriots D/ST
-      pos: D/ST
-      cost: R13
-      basis: Drafted R15
       ineligible: false
 theoceanpulse:
   name: Dillon

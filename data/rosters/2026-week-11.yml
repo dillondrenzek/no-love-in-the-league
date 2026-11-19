@@ -1,6 +1,6 @@
 season: 2026
 week: 11
-captured_at: '2026-11-19T04:59:16+00:00'
+captured_at: '2026-11-19T16:55:26+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -17,7 +17,7 @@ rosters:
   - player: Kenneth Walker III
     pos: RB
     starter: false
-    proj: 24.14
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: KC
@@ -33,7 +33,7 @@ rosters:
   - player: Mike Evans
     pos: WR
     starter: true
-    proj: 9.96
+    proj: 0.0
     actual: null
     injury: QUESTIONABLE
     pro_team: SF
@@ -245,7 +245,7 @@ rosters:
   - player: Seth McGowan
     pos: RB
     starter: false
-    proj: 6.6
+    proj: 6.61
     actual: null
     injury: ''
     pro_team: IND
@@ -265,7 +265,7 @@ rosters:
   - player: Christian McCaffrey
     pos: RB
     starter: true
-    proj: 17.62
+    proj: 17.65
     actual: null
     injury: ''
     pro_team: SF
@@ -329,7 +329,7 @@ rosters:
   - player: Xavier Worthy
     pos: WR
     starter: false
-    proj: 5.96
+    proj: 6.53
     actual: null
     injury: ''
     pro_team: KC
@@ -345,7 +345,7 @@ rosters:
   - player: Keaton Mitchell
     pos: RB
     starter: false
-    proj: 6.63
+    proj: 6.29
     actual: null
     injury: ''
     pro_team: LAC
@@ -353,7 +353,7 @@ rosters:
   - player: Emmett Johnson
     pos: RB
     starter: true
-    proj: 8.87
+    proj: 19.38
     actual: null
     injury: ''
     pro_team: KC
@@ -397,7 +397,7 @@ rosters:
   - player: DeVonta Smith
     pos: WR
     starter: true
-    proj: 10.3
+    proj: 10.31
     actual: null
     injury: QUESTIONABLE
     pro_team: PHI
@@ -469,7 +469,7 @@ rosters:
   - player: C.J. Stroud
     pos: QB
     starter: true
-    proj: 24.43
+    proj: 24.23
     actual: null
     injury: ''
     pro_team: HOU
@@ -485,7 +485,7 @@ rosters:
   - player: Kimani Vidal
     pos: RB
     starter: true
-    proj: 6.67
+    proj: 6.15
     actual: null
     injury: ''
     pro_team: LAC
@@ -577,7 +577,7 @@ rosters:
   - player: Omarion Hampton
     pos: RB
     starter: true
-    proj: 11.88
+    proj: 12.66
     actual: null
     injury: ''
     pro_team: LAC
@@ -593,7 +593,7 @@ rosters:
   - player: George Kittle
     pos: TE
     starter: true
-    proj: 10.65
+    proj: 11.71
     actual: null
     injury: ''
     pro_team: SF
@@ -625,7 +625,7 @@ rosters:
   - player: Josh Downs
     pos: WR
     starter: true
-    proj: 7.76
+    proj: 7.77
     actual: null
     injury: ''
     pro_team: KC
@@ -701,7 +701,7 @@ rosters:
   - player: Travis Kelce
     pos: TE
     starter: true
-    proj: 9.51
+    proj: 9.49
     actual: null
     injury: ''
     pro_team: KC
@@ -729,14 +729,6 @@ rosters:
     actual: null
     injury: ''
     pro_team: LAR
-    bye_week: 11
-  - player: Patriots D/ST
-    pos: D/ST
-    starter: true
-    proj: 0.0
-    actual: null
-    injury: ''
-    pro_team: NE
     bye_week: 11
   - player: Tre Tucker
     pos: WR
@@ -770,6 +762,14 @@ rosters:
     injury: ''
     pro_team: BUF
     bye_week: 7
+  - player: Bryce Young
+    pos: QB
+    starter: false
+    proj: 19.01
+    actual: null
+    injury: ''
+    pro_team: CAR
+    bye_week: 5
 - manager_id: '{3E84ED1A-962A-4601-84ED-1A962A160116}'
   team_id: 9
   team_name: Cornstar
@@ -793,7 +793,7 @@ rosters:
   - player: Rashee Rice
     pos: WR
     starter: true
-    proj: 10.5
+    proj: 10.49
     actual: null
     injury: ''
     pro_team: KC
@@ -809,7 +809,7 @@ rosters:
   - player: Tyler Warren
     pos: TE
     starter: true
-    proj: 6.6
+    proj: 6.62
     actual: null
     injury: ''
     pro_team: IND
@@ -873,7 +873,7 @@ rosters:
   - player: Keenan Allen
     pos: WR
     starter: false
-    proj: 5.7
+    proj: 7.46
     actual: null
     injury: ''
     pro_team: SF
@@ -889,7 +889,7 @@ rosters:
   - player: Lions D/ST
     pos: D/ST
     starter: true
-    proj: 6.62
+    proj: 6.54
     actual: null
     injury: ''
     pro_team: DET
@@ -909,7 +909,7 @@ rosters:
   - player: Jonathan Taylor
     pos: RB
     starter: true
-    proj: 15.16
+    proj: 15.18
     actual: null
     injury: ''
     pro_team: IND
@@ -965,7 +965,7 @@ rosters:
   - player: Deebo Samuel Sr.
     pos: WR
     starter: true
-    proj: 9.77
+    proj: 10.33
     actual: null
     injury: ''
     pro_team: SF
@@ -981,7 +981,7 @@ rosters:
   - player: Steelers D/ST
     pos: D/ST
     starter: true
-    proj: 8.46
+    proj: 8.3
     actual: null
     injury: ''
     pro_team: PIT
@@ -1113,7 +1113,7 @@ rosters:
   - player: Texans D/ST
     pos: D/ST
     starter: true
-    proj: 6.78
+    proj: 6.7
     actual: null
     injury: ''
     pro_team: HOU
@@ -1261,7 +1261,7 @@ rosters:
   - player: Ladd McConkey
     pos: WR
     starter: false
-    proj: 8.97
+    proj: 8.99
     actual: null
     injury: QUESTIONABLE
     pro_team: LAC
@@ -1369,7 +1369,7 @@ rosters:
   - player: Patrick Mahomes
     pos: QB
     starter: false
-    proj: 23.81
+    proj: 24.07
     actual: null
     injury: ''
     pro_team: KC
@@ -1493,7 +1493,7 @@ rosters:
   - player: Kaelon Black
     pos: RB
     starter: false
-    proj: 6.0
+    proj: 6.01
     actual: null
     injury: ''
     pro_team: SF

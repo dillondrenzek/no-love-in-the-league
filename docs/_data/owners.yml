@@ -1905,8 +1905,8 @@ tx_heatmap:
       color: '#fcddab'
   - id: kevbots22
     name: Kevin
-    total: 278
-    tx_per_year: 30.9
+    total: 280
+    tx_per_year: 31.1
     cells:
     - year: 2018
       count: 30
@@ -1933,8 +1933,8 @@ tx_heatmap:
       count: 29
       color: '#fcddab'
     - year: 2026
-      count: 13
-      color: '#fce9c8'
+      count: 15
+      color: '#fce8c4'
   - id: gganoom
     name: Grant
     total: 79
