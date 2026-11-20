@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-19T22:01:48+00:00
+updated_at: 2026-11-20T01:30:26+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -152,10 +152,10 @@ matchups:
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
   - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false, home_proj: 76.59, away_proj: 98.43 }
   - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 93.58, away_proj: 122.82 }
-  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 112.89, away_proj: 117.72 }
-  - { week: 11, home: sturmanator15, away: shawne2520997, playoff: false, played: false, home_proj: 96.88, away_proj: 128.54 }
-  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, playoff: false, played: false, home_proj: 123.05, away_proj: 106.32 }
-  - { week: 11, home: zachzoske, away: purpsworth, playoff: false, played: false, home_proj: 132.42, away_proj: 107.6 }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 112.89, away_proj: 123.29 }
+  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 3.0, playoff: false, final: false, home_proj: 96.88, away_proj: 128.54 }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 9.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.05, away_proj: 106.32 }
+  - { week: 11, home: zachzoske, away: purpsworth, home_score: 0.0, away_score: 0.9, playoff: false, final: false, home_proj: 132.42, away_proj: 107.6 }
   - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
   - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
@@ -375,12 +375,12 @@ transactions:
   alexandra: { adds: 13, drops: 12, moves: 25 }
   gganoom: { adds: 11, drops: 7, moves: 18 }
   jackperkins74: { adds: 56, drops: 41, moves: 97 }
-  kevbots22: { adds: 8, drops: 7, moves: 15 }
+  kevbots22: { adds: 9, drops: 7, moves: 16 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
   purpsworth: { adds: 15, drops: 8, moves: 23 }
   schirmerj: { adds: 17, drops: 17, moves: 34 }
   shawne2520997: { adds: 28, drops: 22, moves: 50 }
-  sturmanator15: { adds: 37, drops: 34, moves: 71 }
+  sturmanator15: { adds: 38, drops: 34, moves: 72 }
   theoceanpulse: { adds: 37, drops: 30, moves: 67 }
   whowonthelastsuperbowl: { adds: 19, drops: 10, moves: 29 }
   zachzoske: { adds: 41, drops: 27, moves: 68 }
@@ -1503,6 +1503,10 @@ rosters:
     via: add
     week: 11
     waiver: false
+  - player: Treylon Burks
+    via: add
+    week: 11
+    waiver: false
   zachzoske:
   - player: Amon-Ra St. Brown
     via: draft
@@ -1987,6 +1991,10 @@ rosters:
     via: add
     week: 11
     waiver: true
+  - player: Chargers D/ST
+    via: add
+    week: 11
+    waiver: false
   whowonthelastsuperbowl:
   - player: Derrick Henry
     via: draft

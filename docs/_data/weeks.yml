@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -3725,7 +3725,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 12, 2026 · 1:08 PM PST
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power:
   - rank: 1
@@ -3850,7 +3850,7 @@
       that's been close to this bad.
 2026-11:
   week: 11
-  state: future
+  state: in_progress
   scoreboard:
   - home_id: alexandra
     home_team: Cornstar
@@ -3863,8 +3863,8 @@
     home_record: 4-6
     away_record: 5-5
     scored: false
-    home_yet: 10
-    away_yet: 10
+    home_yet: 9
+    away_yet: 9
     final: false
     live: false
     playoff: false
@@ -3881,7 +3881,7 @@
     home_record: 2-8
     away_record: 8-2
     scored: false
-    home_yet: 10
+    home_yet: 9
     away_yet: 10
     final: false
     live: false
@@ -3900,12 +3900,12 @@
     away_record: 3-6-1
     scored: false
     home_yet: 10
-    away_yet: 9
+    away_yet: 10
     final: false
     live: false
     playoff: false
     home_proj: 112.9
-    away_proj: 117.7
+    away_proj: 123.3
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -3916,12 +3916,17 @@
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
     home_record: 7-3
     away_record: 3-7
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 7
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 3.0
+    winner_id: null
+    tie: false
+    margin: 3.0
     home_proj: 96.9
     away_proj: 128.5
   - home_id: whowonthelastsuperbowl
@@ -3934,12 +3939,17 @@
     away_logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     home_record: 6-4
     away_record: 3-6-1
-    scored: false
-    home_yet: 10
+    scored: true
+    home_yet: 9
     away_yet: 10
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 9.0
+    away_score: 0.0
+    winner_id: null
+    tie: false
+    margin: 9.0
     home_proj: 123.0
     away_proj: 106.3
   - home_id: zachzoske
@@ -3952,12 +3962,17 @@
     away_logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     home_record: 8-2
     away_record: 5-5
-    scored: false
+    scored: true
     home_yet: 10
-    away_yet: 10
+    away_yet: 8
     final: false
-    live: false
+    live: true
     playoff: false
+    home_score: 0.0
+    away_score: 0.9
+    winner_id: null
+    tie: false
+    margin: 0.9
     home_proj: 132.4
     away_proj: 107.6
   highlights: []
@@ -4053,7 +4068,7 @@
     decided: false
     result: null
   projected_at: Nov 19, 2026 · 2:01 PM PST
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: true
   power:
   - rank: 1
@@ -4279,7 +4294,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power: []
 2026-13:
@@ -4385,7 +4400,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power: []
 2026-14:
@@ -4491,6 +4506,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 19, 2:01 PM PST
+  updated_at: Nov 19, 5:30 PM PST
   current: false
   power: []

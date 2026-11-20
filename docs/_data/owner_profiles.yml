@@ -6237,7 +6237,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 94.2
+    tx_per_year: 94.3
     tx_known: false
     seasons: 13
     best_finish:
@@ -6260,7 +6260,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 7-3
-    tx: 71
+    tx: 72
     in_progress: true
     pf: 1356.2
     pa: 1211.5
@@ -6794,6 +6794,10 @@ sturmanator15:
       week: 11
       waiver: false
     - player: Panthers D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Treylon Burks
       via: add
       week: 11
       waiver: false
@@ -8838,6 +8842,11 @@ sturmanator15:
       pos: WR
       cost: R11
       basis: Drafted R13
+      ineligible: false
+    - player: Treylon Burks
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Trey McBride
       pos: TE
@@ -16867,7 +16876,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 31.1
+    tx_per_year: 31.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -16891,7 +16900,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 10th
     record: 3-6-1
-    tx: 15
+    tx: 16
     in_progress: true
     pf: 1099.3
     pa: 1236.4
@@ -17232,6 +17241,10 @@ kevbots22:
       via: add
       week: 11
       waiver: true
+    - player: Chargers D/ST
+      via: add
+      week: 11
+      waiver: false
   - year: 2025
     players:
     - player: Christian McCaffrey
@@ -18395,6 +18408,11 @@ kevbots22:
       pos: K
       cost: R13
       basis: Undrafted
+      ineligible: false
+    - player: Chargers D/ST
+      pos: D/ST
+      cost: R13
+      basis: Drafted R15
       ineligible: false
 theoceanpulse:
   name: Dillon
