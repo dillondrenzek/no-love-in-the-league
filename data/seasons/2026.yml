@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-20T01:30:26+00:00
+updated_at: 2026-11-20T07:18:57+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -150,12 +150,12 @@ matchups:
   - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 98.0, away_score: 101.0, playoff: false }
   - { week: 10, home: sturmanator15, away: gganoom, home_score: 115.6, away_score: 111.2, playoff: false }
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
-  - { week: 11, home: alexandra, away: gganoom, playoff: false, played: false, home_proj: 76.59, away_proj: 98.43 }
-  - { week: 11, home: lukstein, away: jackperkins74, playoff: false, played: false, home_proj: 93.58, away_proj: 122.82 }
-  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 112.89, away_proj: 123.29 }
-  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 3.0, playoff: false, final: false, home_proj: 96.88, away_proj: 128.54 }
-  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 9.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.05, away_proj: 106.32 }
-  - { week: 11, home: zachzoske, away: purpsworth, home_score: 0.0, away_score: 0.9, playoff: false, final: false, home_proj: 132.42, away_proj: 107.6 }
+  - { week: 11, home: alexandra, away: gganoom, home_score: 2.7, away_score: 6.0, playoff: false, final: false, home_proj: 76.59, away_proj: 98.43 }
+  - { week: 11, home: lukstein, away: jackperkins74, home_score: 23.3, away_score: 0.0, playoff: false, final: false, home_proj: 93.58, away_proj: 122.82 }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 122.21, away_proj: 123.29 }
+  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 28.2, playoff: false, final: false, home_proj: 96.88, away_proj: 128.54 }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 15.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.05, away_proj: 106.32 }
+  - { week: 11, home: zachzoske, away: purpsworth, home_score: 0.0, away_score: 8.9, playoff: false, final: false, home_proj: 132.42, away_proj: 107.6 }
   - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
   - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
@@ -378,7 +378,7 @@ transactions:
   kevbots22: { adds: 9, drops: 7, moves: 16 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
   purpsworth: { adds: 15, drops: 8, moves: 23 }
-  schirmerj: { adds: 17, drops: 17, moves: 34 }
+  schirmerj: { adds: 18, drops: 18, moves: 36 }
   shawne2520997: { adds: 28, drops: 22, moves: 50 }
   sturmanator15: { adds: 38, drops: 34, moves: 72 }
   theoceanpulse: { adds: 37, drops: 30, moves: 67 }
@@ -1080,6 +1080,10 @@ rosters:
     via: add
     week: 10
     waiver: true
+  - player: Chase McLaughlin
+    via: add
+    week: 11
+    waiver: false
   lukstein:
   - player: Saquon Barkley
     via: draft
