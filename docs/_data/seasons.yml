@@ -461,6 +461,12 @@ detail:
         gave:
         - Josh Downs
         - Cam Skattebo
+    - week: 11
+      parties:
+      - owner_id: shawne2520997
+        owner_name: Shawnee
+        team: Swift kick in the Dak
+        gave: []
     keepers:
     - round: 5
       player: Brock Bowers

@@ -8,7 +8,7 @@ active:
   win_color: '#f49746'
   titles: '2'
   sackos: 2
-  trades: 4
+  trades: 5
   best_finish:
     type: shiva
     years:
@@ -1617,8 +1617,8 @@ tx_heatmap:
   rows:
   - id: jackperkins74
     name: Jack
-    total: 1102
-    tx_per_year: 122.4
+    total: 1103
+    tx_per_year: 122.6
     cells:
     - year: 2018
       count: 75
@@ -1645,12 +1645,12 @@ tx_heatmap:
       count: 130
       color: '#f28742'
     - year: 2026
-      count: 97
-      color: '#f7a649'
+      count: 98
+      color: '#f7a549'
   - id: zachzoske
     name: Zach
-    total: 982
-    tx_per_year: 109.1
+    total: 984
+    tx_per_year: 109.3
     cells:
     - year: 2018
       count: 130
@@ -1677,8 +1677,8 @@ tx_heatmap:
       count: 110
       color: '#f59a46'
     - year: 2026
-      count: 68
-      color: '#fabf63'
+      count: 70
+      color: '#fabe5f'
   - id: sturmanator15
     name: Wade
     total: 849
@@ -1713,8 +1713,8 @@ tx_heatmap:
       color: '#f9bc5c'
   - id: theoceanpulse
     name: Dillon
-    total: 501
-    tx_per_year: 55.7
+    total: 503
+    tx_per_year: 55.9
     cells:
     - year: 2018
       count: 32
@@ -1741,8 +1741,8 @@ tx_heatmap:
       count: 50
       color: '#facd84'
     - year: 2026
-      count: 67
-      color: '#fac065'
+      count: 69
+      color: '#fabe61'
   - id: schirmerj
     name: Jono
     total: 492
@@ -1777,8 +1777,8 @@ tx_heatmap:
       color: '#fbd89e'
   - id: shawne2520997
     name: Shawnee
-    total: 465
-    tx_per_year: 51.7
+    total: 466
+    tx_per_year: 51.8
     cells:
     - year: 2018
       count: 52
@@ -1805,8 +1805,8 @@ tx_heatmap:
       count: 101
       color: '#f6a248'
     - year: 2026
-      count: 50
-      color: '#facd84'
+      count: 51
+      color: '#facc82'
   - id: lukstein
     name: Luke
     total: 440

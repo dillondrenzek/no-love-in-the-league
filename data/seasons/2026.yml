@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-20T12:19:51+00:00
+updated_at: 2026-11-20T22:26:15+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -150,12 +150,12 @@ matchups:
   - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 98.0, away_score: 101.0, playoff: false }
   - { week: 10, home: sturmanator15, away: gganoom, home_score: 115.6, away_score: 111.2, playoff: false }
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
-  - { week: 11, home: alexandra, away: gganoom, home_score: 2.7, away_score: 6.0, playoff: false, final: false, home_proj: 76.59, away_proj: 98.43 }
-  - { week: 11, home: lukstein, away: jackperkins74, home_score: 23.3, away_score: 0.0, playoff: false, final: false, home_proj: 93.58, away_proj: 122.82 }
-  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 122.21, away_proj: 123.29 }
-  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 28.2, playoff: false, final: false, home_proj: 96.88, away_proj: 128.54 }
-  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 15.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.05, away_proj: 106.32 }
-  - { week: 11, home: zachzoske, away: purpsworth, home_score: 0.0, away_score: 8.9, playoff: false, final: false, home_proj: 132.42, away_proj: 107.6 }
+  - { week: 11, home: alexandra, away: gganoom, home_score: 2.7, away_score: 6.0, playoff: false, final: false, home_proj: 75.79, away_proj: 98.9 }
+  - { week: 11, home: lukstein, away: jackperkins74, home_score: 23.3, away_score: 0.0, playoff: false, final: false, home_proj: 95.57, away_proj: 127.36 }
+  - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 122.08, away_proj: 123.79 }
+  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 28.2, playoff: false, final: false, home_proj: 106.47, away_proj: 122.93 }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 15.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.23, away_proj: 105.28 }
+  - { week: 11, home: zachzoske, away: purpsworth, home_score: 0.0, away_score: 8.9, playoff: false, final: false, home_proj: 132.5, away_proj: 107.88 }
   - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
   - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
@@ -189,7 +189,7 @@ matchups:
 # FAAB isn't in ESPN's trade feed: to record it, add an asset to that trade
 # by hand — `- {from: <giver fid>, to: <receiver fid>, faab: 5}`. It renders
 # as '$5 FAAB' and re-imports keep it (a trade's on-disk detail is preserved).
-trades_complete: true
+trades_complete: false
 trades_known_for:
   - jackperkins74
   - lukstein
@@ -347,6 +347,12 @@ trades:
   - from: jackperkins74
     to: zachzoske
     label: Parker Washington
+- id: b9f4324b-d4da-442c-96b9-c4cb4c149781
+  week: 11
+  teams:
+  - shawne2520997
+  assets: []
+  complete: false
 
 # Keepers this season (franchise-keyed): the player each team kept and the
 # round it cost. From ESPN's draft; empty before the league kept players.
@@ -374,16 +380,16 @@ transactions_known: true
 transactions:
   alexandra: { adds: 13, drops: 12, moves: 25 }
   gganoom: { adds: 11, drops: 7, moves: 18 }
-  jackperkins74: { adds: 56, drops: 41, moves: 97 }
+  jackperkins74: { adds: 57, drops: 41, moves: 98 }
   kevbots22: { adds: 9, drops: 7, moves: 16 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
   purpsworth: { adds: 15, drops: 8, moves: 23 }
   schirmerj: { adds: 18, drops: 18, moves: 36 }
-  shawne2520997: { adds: 28, drops: 22, moves: 50 }
+  shawne2520997: { adds: 29, drops: 22, moves: 51 }
   sturmanator15: { adds: 38, drops: 34, moves: 72 }
-  theoceanpulse: { adds: 37, drops: 30, moves: 67 }
+  theoceanpulse: { adds: 38, drops: 31, moves: 69 }
   whowonthelastsuperbowl: { adds: 19, drops: 10, moves: 29 }
-  zachzoske: { adds: 41, drops: 27, moves: 68 }
+  zachzoske: { adds: 42, drops: 28, moves: 70 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -969,6 +975,10 @@ rosters:
   - player: Spencer Shrader
     via: add
     week: 10
+    waiver: false
+  - player: Cam Ward
+    via: add
+    week: 11
     waiver: false
   - player: Michael Mayer
     via: add
@@ -1710,6 +1720,10 @@ rosters:
     via: add
     week: 11
     waiver: true
+  - player: Browns D/ST
+    via: add
+    week: 11
+    waiver: false
   theoceanpulse:
   - player: Omarion Hampton
     via: draft
@@ -1912,6 +1926,10 @@ rosters:
   - player: Justice Hill
     via: add
     week: 10
+    waiver: false
+  - player: Chig Okonkwo
+    via: add
+    week: 11
     waiver: false
   - player: Jacory Croskey-Merritt
     via: add
