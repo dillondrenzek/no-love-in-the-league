@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-20T22:26:15+00:00
+updated_at: 2026-11-21T04:45:09+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -35,7 +35,7 @@ teams:
   zachzoske: "Tuten Your Mother, Respectfully"
   schirmerj: "Return of the IDP"
   lukstein: "2x Runner Up"
-  jackperkins74: "Gibbed for your pleasure"
+  jackperkins74: "Touch of the Downs"
   kevbots22: "Remember the Nice Guys, ChatGPT"
   alexandra: "Cornstar"
   purpsworth: "I am dead inside"
@@ -150,7 +150,7 @@ matchups:
   - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 98.0, away_score: 101.0, playoff: false }
   - { week: 10, home: sturmanator15, away: gganoom, home_score: 115.6, away_score: 111.2, playoff: false }
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
-  - { week: 11, home: alexandra, away: gganoom, home_score: 2.7, away_score: 6.0, playoff: false, final: false, home_proj: 75.79, away_proj: 98.9 }
+  - { week: 11, home: alexandra, away: gganoom, home_score: 2.7, away_score: 6.0, playoff: false, final: false, home_proj: 75.79, away_proj: 104.09 }
   - { week: 11, home: lukstein, away: jackperkins74, home_score: 23.3, away_score: 0.0, playoff: false, final: false, home_proj: 95.57, away_proj: 127.36 }
   - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 122.08, away_proj: 123.79 }
   - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 28.2, playoff: false, final: false, home_proj: 106.47, away_proj: 122.93 }
@@ -380,7 +380,7 @@ transactions_known: true
 transactions:
   alexandra: { adds: 13, drops: 12, moves: 25 }
   gganoom: { adds: 11, drops: 7, moves: 18 }
-  jackperkins74: { adds: 57, drops: 41, moves: 98 }
+  jackperkins74: { adds: 58, drops: 42, moves: 100 }
   kevbots22: { adds: 9, drops: 7, moves: 16 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
   purpsworth: { adds: 15, drops: 8, moves: 23 }
@@ -636,6 +636,10 @@ rosters:
   - player: Laquon Treadwell
     via: add
     week: 10
+    waiver: false
+  - player: Justin Herbert
+    via: add
+    week: 11
     waiver: false
   - player: Ryan Flournoy
     via: add

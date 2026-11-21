@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 15
     trades_known: true
-    tx_per_year: 122.6
+    tx_per_year: 122.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -45,12 +45,12 @@ jackperkins74:
       opp: Luke
   seasons:
   - year: 2026
-    team: Gibbed for your pleasure
+    team: Touch of the Downs
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 8-2
-    tx: 98
+    tx: 100
     in_progress: true
     pf: 1398.9
     pa: 1114.3
@@ -736,6 +736,10 @@ jackperkins74:
     - player: Laquon Treadwell
       via: add
       week: 10
+      waiver: false
+    - player: Justin Herbert
+      via: add
+      week: 11
       waiver: false
     - player: Ryan Flournoy
       via: add
@@ -3124,6 +3128,11 @@ jackperkins74:
     year: 2026
     week: 11
     players:
+    - player: Justin Herbert
+      pos: QB
+      cost: R5
+      basis: Drafted R7
+      ineligible: false
     - player: Trevor Lawrence
       pos: QB
       cost: R5
@@ -3180,11 +3189,6 @@ jackperkins74:
       basis: Drafted R10
       ineligible: false
     - player: Brandon Aiyuk
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Konata Mumpfield
       pos: WR
       cost: R13
       basis: Undrafted
@@ -3515,7 +3519,7 @@ zachzoske:
     with:
     - id: jackperkins74
       name: Jack
-      team: Gibbed for your pleasure
+      team: Touch of the Downs
   - year: 2026
     week: 7
     got:
@@ -3548,7 +3552,7 @@ zachzoske:
     with:
     - id: jackperkins74
       name: Jack
-      team: Gibbed for your pleasure
+      team: Touch of the Downs
   - year: 2026
     week: 3
     got:
@@ -18740,7 +18744,7 @@ theoceanpulse:
     with:
     - id: jackperkins74
       name: Jack
-      team: Gibbed for your pleasure
+      team: Touch of the Downs
   - year: 2026
     week: 3
     got:

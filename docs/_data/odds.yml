@@ -1,11 +1,11 @@
 2026:
   as_of_week: 10
   live_week: 11
-  updated_at: Nov 20, 2:26 PM PST
+  updated_at: Nov 20, 8:45 PM PST
   sims: 10000
   rows:
   - fid: jackperkins74
-    team: Gibbed for your pleasure
+    team: Touch of the Downs
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 8-2
@@ -160,7 +160,7 @@
         dim: true
       playoffs:
         text: 99%
-        color: '#ee6d3c'
+        color: '#ee6d3b'
         dim: false
         trend: null
       bye:
@@ -189,11 +189,11 @@
     cells:
       sacko_bye:
         text: 9%
-        color: '#fce8c4'
+        color: '#fce8c5'
         dim: false
       playoffs:
-        text: 40%
-        color: '#fac269'
+        text: 41%
+        color: '#fac168'
         dim: false
         trend:
           dir: up
@@ -218,7 +218,7 @@
     record: 5-5
     pf: '1127.7'
     pf_color: '#f9b74e'
-    rating: 113.3
+    rating: 113.4
     proj_wins: 6.9
     cells:
       sacko_bye:
@@ -227,7 +227,7 @@
         dim: false
       playoffs:
         text: 46%
-        color: '#f9bb59'
+        color: '#f9bb5a'
         dim: false
         trend:
           dir: up
@@ -290,16 +290,16 @@
     proj_wins: 5.5
     cells:
       sacko_bye:
-        text: 12%
-        color: '#fce4bb'
+        text: 13%
+        color: '#fce3b9'
         dim: false
       playoffs:
         text: 5%
-        color: '#fdedd1'
+        color: '#fdedd2'
         dim: false
         trend:
           dir: down
-          text: ▼15
+          text: ▼16
       bye:
         text: <1%
         color: '#ffffff'
@@ -325,7 +325,7 @@
     cells:
       sacko_bye:
         text: 13%
-        color: '#fce3ba'
+        color: '#fce3bb'
         dim: false
       playoffs:
         text: 14%
@@ -360,8 +360,8 @@
     proj_wins: 4.5
     cells:
       sacko_bye:
-        text: 62%
-        color: '#f6a449'
+        text: 61%
+        color: '#f6a549'
         dim: false
       playoffs:
         text: 1%
@@ -390,7 +390,7 @@
     record: 2-8
     pf: '861.4'
     pf_color: '#fdf3e0'
-    rating: 92.5
+    rating: 92.6
     proj_wins: 2.7
     cells:
       sacko_bye:
@@ -419,7 +419,7 @@
     seed: 12
   settled_rows:
   - fid: jackperkins74
-    team: Gibbed for your pleasure
+    team: Touch of the Downs
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 8-2
