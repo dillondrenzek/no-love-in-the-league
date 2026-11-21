@@ -1,6 +1,6 @@
 season: 2026
 week: 11
-captured_at: '2026-11-21T04:45:03+00:00'
+captured_at: '2026-11-21T15:46:07+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -524,7 +524,7 @@ rosters:
     bye_week: 5
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
   team_id: 6
-  team_name: Touch of the Downs
+  team_name: Skatt
   players:
   - player: Travis Etienne Jr.
     pos: RB
@@ -569,7 +569,7 @@ rosters:
   - player: Braelon Allen
     pos: RB
     starter: false
-    proj: 6.9
+    proj: 6.91
     actual: null
     injury: ''
     pro_team: NYJ
@@ -781,7 +781,7 @@ rosters:
   - player: Chargers D/ST
     pos: D/ST
     starter: true
-    proj: 5.57
+    proj: 5.51
     actual: null
     injury: ''
     pro_team: LAC
@@ -1269,7 +1269,7 @@ rosters:
   - player: Ladd McConkey
     pos: WR
     starter: false
-    proj: 8.98
+    proj: 8.99
     actual: null
     injury: QUESTIONABLE
     pro_team: LAC
@@ -1298,14 +1298,6 @@ rosters:
     injury: INJURY_RESERVE
     pro_team: WSH
     bye_week: 7
-  - player: Pat Bryant
-    pos: WR
-    starter: false
-    proj: 6.59
-    actual: null
-    injury: ''
-    pro_team: DEN
-    bye_week: 10
   - player: Chig Okonkwo
     pos: TE
     starter: false
@@ -1314,6 +1306,14 @@ rosters:
     injury: ''
     pro_team: WSH
     bye_week: 7
+  - player: Buccaneers D/ST
+    pos: D/ST
+    starter: false
+    proj: 4.53
+    actual: null
+    injury: ''
+    pro_team: TB
+    bye_week: 10
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
@@ -1525,7 +1525,7 @@ rosters:
   - player: Jets D/ST
     pos: D/ST
     starter: true
-    proj: 6.17
+    proj: 6.21
     actual: null
     injury: ''
     pro_team: NYJ
@@ -1573,7 +1573,7 @@ rosters:
   - player: Cam Ward
     pos: QB
     starter: false
-    proj: 18.24
+    proj: 18.25
     actual: null
     injury: ''
     pro_team: TEN

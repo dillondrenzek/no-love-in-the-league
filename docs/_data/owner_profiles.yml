@@ -45,7 +45,7 @@ jackperkins74:
       opp: Luke
   seasons:
   - year: 2026
-    team: Touch of the Downs
+    team: Skatt
     tag: null
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
@@ -3519,7 +3519,7 @@ zachzoske:
     with:
     - id: jackperkins74
       name: Jack
-      team: Touch of the Downs
+      team: Skatt
   - year: 2026
     week: 7
     got:
@@ -3552,7 +3552,7 @@ zachzoske:
     with:
     - id: jackperkins74
       name: Jack
-      team: Touch of the Downs
+      team: Skatt
   - year: 2026
     week: 3
     got:
@@ -18463,7 +18463,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 55.9
+    tx_per_year: 56.1
     tx_known: false
     seasons: 11
     best_finish:
@@ -18486,7 +18486,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     finish: 11th
     record: 3-6-1
-    tx: 69
+    tx: 71
     in_progress: true
     pf: 987.5
     pa: 1175.5
@@ -18744,7 +18744,7 @@ theoceanpulse:
     with:
     - id: jackperkins74
       name: Jack
-      team: Touch of the Downs
+      team: Skatt
   - year: 2026
     week: 3
     got:
@@ -19124,6 +19124,10 @@ theoceanpulse:
     - player: Justice Hill
       via: add
       week: 10
+      waiver: false
+    - player: Buccaneers D/ST
+      via: add
+      week: 11
       waiver: false
     - player: Chig Okonkwo
       via: add
@@ -20569,11 +20573,6 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Pat Bryant
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Colston Loveland
       pos: TE
       cost: R6
@@ -20586,6 +20585,11 @@ theoceanpulse:
       ineligible: false
     - player: Evan McPherson
       pos: K
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Buccaneers D/ST
+      pos: D/ST
       cost: R13
       basis: Undrafted
       ineligible: false

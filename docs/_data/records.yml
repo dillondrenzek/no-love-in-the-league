@@ -434,7 +434,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '503'
+  - value: '505'
     team: null
     owner_name: Dillon
     owner_id: theoceanpulse
@@ -524,10 +524,10 @@ records:
   sub_value: null
   season: 2026
   week: 5
-  holder: Touch of the Downs
+  holder: Skatt
   owner_id: jackperkins74
   owner_name: Jack
-  team: Touch of the Downs
+  team: Skatt
   opp_owner_id: null
   opp_owner_name: null
   opp_team: null
@@ -535,7 +535,7 @@ records:
   tabular: true
   leaders:
   - value: '193.70'
-    team: Touch of the Downs
+    team: Skatt
     owner_name: Jack
     owner_id: jackperkins74
     season: 2026
@@ -595,7 +595,7 @@ records:
   team: Swift kick in the Dak
   opp_owner_id: jackperkins74
   opp_owner_name: Jack
-  opp_team: Touch of the Downs
+  opp_team: Skatt
   section: Scoring
   tabular: true
   leaders:
@@ -606,7 +606,7 @@ records:
     season: 2026
     week: 10
     sub_value: 176.4–168.0
-    opp_team: Touch of the Downs
+    opp_team: Skatt
     opp_owner_name: Jack
     opp_owner_id: jackperkins74
   - value: '150.30'
@@ -849,10 +849,10 @@ records:
   sub_value: 176.4–168.0
   season: 2026
   week: 10
-  holder: Touch of the Downs
+  holder: Skatt
   owner_id: jackperkins74
   owner_name: Jack
-  team: Touch of the Downs
+  team: Skatt
   opp_owner_id: shawne2520997
   opp_owner_name: Shawnee
   opp_team: Swift kick in the Dak
@@ -860,7 +860,7 @@ records:
   tabular: true
   leaders:
   - value: '344.40'
-    team: Touch of the Downs
+    team: Skatt
     owner_name: Jack
     owner_id: jackperkins74
     season: 2026
@@ -880,7 +880,7 @@ records:
     opp_owner_name: Grant
     opp_owner_id: gganoom
   - value: '326.20'
-    team: Touch of the Downs
+    team: Skatt
     owner_name: Jack
     owner_id: jackperkins74
     season: 2026

@@ -1,11 +1,11 @@
 2026:
   as_of_week: 10
   live_week: 11
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   sims: 10000
   rows:
   - fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 8-2
@@ -419,7 +419,7 @@
     seed: 12
   settled_rows:
   - fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 8-2

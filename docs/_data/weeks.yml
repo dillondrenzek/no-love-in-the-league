@@ -91,7 +91,7 @@
     home_owner: Jono
     home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: jackperkins74
-    away_team: Touch of the Downs
+    away_team: Skatt
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: null
@@ -135,7 +135,7 @@
     sub: vs Return of the IDP
     owner_id: jackperkins74
     owner_name: Jack
-    team: Touch of the Downs
+    team: Skatt
   - key: low
     label: Low Score
     value: '85.40'
@@ -149,7 +149,7 @@
     sub: 166.7–103.5 over Return of the IDP
     owner_id: jackperkins74
     owner_name: Jack
-    team: Touch of the Downs
+    team: Skatt
   - key: closest
     label: Closest Call
     value: '0.00'
@@ -225,12 +225,12 @@
   - home_id: schirmerj
     away_id: jackperkins74
     home_team: Return of the IDP
-    away_team: Touch of the Downs
+    away_team: Skatt
     home_proj: 109.9
     away_proj: 127.0
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Return of the IDP
     fav_proj: 127.0
     dog_proj: 109.9
@@ -255,12 +255,12 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 0-0
@@ -402,7 +402,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: gganoom
@@ -559,13 +559,13 @@
   projections:
   - home_id: jackperkins74
     away_id: gganoom
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: One Big Beautiful Dillbot
     home_proj: 126.7
     away_proj: 113.0
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: One Big Beautiful Dillbot
     fav_proj: 126.7
     dog_proj: 113.0
@@ -654,12 +654,12 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 1-0
@@ -794,7 +794,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: whowonthelastsuperbowl
@@ -951,13 +951,13 @@
   projections:
   - home_id: jackperkins74
     away_id: whowonthelastsuperbowl
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: Trick or Trick It’s Mike Vick
     home_proj: 129.1
     away_proj: 123.6
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Trick or Trick It’s Mike Vick
     fav_proj: 129.1
     dog_proj: 123.6
@@ -1046,12 +1046,12 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 2-0
@@ -1281,7 +1281,7 @@
     home_owner: Wade
     home_logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     away_id: jackperkins74
-    away_team: Touch of the Downs
+    away_team: Skatt
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 2-1
@@ -1415,12 +1415,12 @@
   - home_id: sturmanator15
     away_id: jackperkins74
     home_team: The People's Commissioner
-    away_team: Touch of the Downs
+    away_team: Skatt
     home_proj: 127.5
     away_proj: 130.9
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: The People's Commissioner
     fav_proj: 130.9
     dog_proj: 127.5
@@ -1445,12 +1445,12 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 3-0
@@ -1573,7 +1573,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: alexandra
@@ -1705,7 +1705,7 @@
     sub: vs Cornstar
     owner_id: jackperkins74
     owner_name: Jack
-    team: Touch of the Downs
+    team: Skatt
   - key: low
     label: Low Score
     value: '57.90'
@@ -1730,13 +1730,13 @@
   projections:
   - home_id: jackperkins74
     away_id: alexandra
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: Cornstar
     home_proj: 129.3
     away_proj: 88.7
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Cornstar
     fav_proj: 129.3
     dog_proj: 88.7
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
@@ -1850,7 +1850,7 @@
       winning everything else. Dillon's next.
   - rank: 3
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 3-1
@@ -1957,7 +1957,7 @@
     home_owner: Luke
     home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: jackperkins74
-    away_team: Touch of the Downs
+    away_team: Skatt
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 1-4
@@ -2111,12 +2111,12 @@
   - home_id: lukstein
     away_id: jackperkins74
     home_team: 2x Runner Up
-    away_team: Touch of the Downs
+    away_team: Skatt
     home_proj: 79.0
     away_proj: 109.4
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: 2x Runner Up
     fav_proj: 109.4
     dog_proj: 79.0
@@ -2205,12 +2205,12 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 4-1
@@ -2333,7 +2333,7 @@
   state: complete
   scoreboard:
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: kevbots22
@@ -2479,7 +2479,7 @@
     sub: 131.9–82.3 over Remember the Nice Guys, ChatGPT
     owner_id: jackperkins74
     owner_name: Jack
-    team: Touch of the Downs
+    team: Skatt
   - key: closest
     label: Closest Call
     value: '23.00'
@@ -2490,13 +2490,13 @@
   projections:
   - home_id: jackperkins74
     away_id: kevbots22
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: Remember the Nice Guys, ChatGPT
     home_proj: 132.4
     away_proj: 121.1
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Remember the Nice Guys, ChatGPT
     fav_proj: 132.4
     dog_proj: 121.1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
@@ -2600,7 +2600,7 @@
       comes with nine starters.
   - rank: 2
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 4-2
@@ -2734,7 +2734,7 @@
     tie: false
     margin: 9.5
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: theoceanpulse
@@ -2849,7 +2849,7 @@
   - key: low
     label: Low Score
     value: '72.50'
-    sub: vs Touch of the Downs
+    sub: vs Skatt
     owner_id: theoceanpulse
     owner_name: Dillon
     team: Im Bleeding Making Me the Shiva
@@ -2859,7 +2859,7 @@
     sub: 140.9–72.5 over Im Bleeding Making Me the Shiva
     owner_id: jackperkins74
     owner_name: Jack
-    team: Touch of the Downs
+    team: Skatt
   - key: closest
     label: Closest Call
     value: '9.50'
@@ -2886,13 +2886,13 @@
     winner_id: alexandra
   - home_id: jackperkins74
     away_id: theoceanpulse
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: Im Bleeding Making Me the Shiva
     home_proj: 132.8
     away_proj: 107.7
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Im Bleeding Making Me the Shiva
     fav_proj: 132.8
     dog_proj: 107.7
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
@@ -2980,7 +2980,7 @@
       league's first 100.
   - rank: 2
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 5-2
@@ -3114,7 +3114,7 @@
     tie: false
     margin: 41.8
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: theoceanpulse
@@ -3266,13 +3266,13 @@
     winner_id: gganoom
   - home_id: jackperkins74
     away_id: theoceanpulse
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: Im Bleeding Making Me the Shiva
     home_proj: 140.3
     away_proj: 108.5
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Im Bleeding Making Me the Shiva
     fav_proj: 140.3
     dog_proj: 108.5
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
@@ -3360,7 +3360,7 @@
       exactly one quarterback left on the roster.
   - rank: 2
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 6-2
@@ -3494,7 +3494,7 @@
     tie: false
     margin: 21.3
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: shawne2520997
@@ -3646,13 +3646,13 @@
     winner_id: purpsworth
   - home_id: jackperkins74
     away_id: shawne2520997
-    home_team: Touch of the Downs
+    home_team: Skatt
     away_team: Swift kick in the Dak
     home_proj: 121.7
     away_proj: 105.6
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: Swift kick in the Dak
     fav_proj: 121.7
     dog_proj: 105.6
@@ -3725,7 +3725,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 12, 2026 · 1:08 PM PST
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power:
   - rank: 1
@@ -3740,7 +3740,7 @@
       Young is back, because Caleb's on bye.
   - rank: 2
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 7-2
@@ -3880,7 +3880,7 @@
     home_owner: Luke
     home_logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
     away_id: jackperkins74
-    away_team: Touch of the Downs
+    away_team: Skatt
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 2-8
@@ -3915,7 +3915,7 @@
     live: false
     playoff: false
     home_proj: 122.1
-    away_proj: 123.8
+    away_proj: 123.7
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -3938,7 +3938,7 @@
     tie: false
     margin: 28.2
     home_proj: 106.5
-    away_proj: 122.9
+    away_proj: 123.0
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -4005,12 +4005,12 @@
   - home_id: lukstein
     away_id: jackperkins74
     home_team: 2x Runner Up
-    away_team: Touch of the Downs
+    away_team: Skatt
     home_proj: 93.6
     away_proj: 122.8
     pickem: false
     fav_id: jackperkins74
-    fav_team: Touch of the Downs
+    fav_team: Skatt
     dog_team: 2x Runner Up
     fav_proj: 122.8
     dog_proj: 93.6
@@ -4078,12 +4078,12 @@
     decided: false
     result: null
   projected_at: Nov 19, 2026 · 2:01 PM PST
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: true
   power:
   - rank: 1
     fid: jackperkins74
-    team: Touch of the Downs
+    team: Skatt
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 8-2
@@ -4226,7 +4226,7 @@
     home_owner: Jono
     home_logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     away_id: jackperkins74
-    away_team: Touch of the Downs
+    away_team: Skatt
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 5-5
@@ -4304,7 +4304,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power: []
 2026-13:
@@ -4312,7 +4312,7 @@
   state: future
   scoreboard:
   - home_id: jackperkins74
-    home_team: Touch of the Downs
+    home_team: Skatt
     home_owner: Jack
     home_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     away_id: purpsworth
@@ -4410,7 +4410,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power: []
 2026-14:
@@ -4502,7 +4502,7 @@
     home_owner: Zach
     home_logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     away_id: jackperkins74
-    away_team: Touch of the Downs
+    away_team: Skatt
     away_owner: Jack
     away_logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     home_record: 8-2
@@ -4516,6 +4516,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 20, 8:45 PM PST
+  updated_at: Nov 21, 7:46 AM PST
   current: false
   power: []
