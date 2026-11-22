@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 15
     trades_known: true
-    tx_per_year: 122.8
+    tx_per_year: 123.0
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 8-2
-    tx: 100
+    tx: 102
     in_progress: true
     pf: 1398.9
     pa: 1114.3
@@ -3128,11 +3128,6 @@ jackperkins74:
     year: 2026
     week: 11
     players:
-    - player: Justin Herbert
-      pos: QB
-      cost: R5
-      basis: Drafted R7
-      ineligible: false
     - player: Trevor Lawrence
       pos: QB
       cost: R5
@@ -3189,6 +3184,11 @@ jackperkins74:
       basis: Drafted R10
       ineligible: false
     - player: Brandon Aiyuk
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Pat Bryant
       pos: WR
       cost: R13
       basis: Undrafted
@@ -6245,7 +6245,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 94.6
+    tx_per_year: 94.8
     tx_known: false
     seasons: 13
     best_finish:
@@ -6268,7 +6268,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 7-3
-    tx: 74
+    tx: 76
     in_progress: true
     pf: 1356.2
     pa: 1211.5
@@ -8835,11 +8835,6 @@ sturmanator15:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Samaje Perine
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Jaxon Smith-Njigba
       pos: WR
       cost: Ineligible
@@ -8859,6 +8854,11 @@ sturmanator15:
       pos: WR
       cost: R11
       basis: Drafted R13
+      ineligible: false
+    - player: Konata Mumpfield
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Trey McBride
       pos: TE
@@ -10727,7 +10727,7 @@ gganoom:
     playoff_apps: 1
     trades: 0
     trades_known: false
-    tx_per_year: 26.3
+    tx_per_year: 27.0
     tx_known: true
     seasons: 3
     best_finish:
@@ -10751,7 +10751,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 5th
     record: 5-5
-    tx: 18
+    tx: 20
     in_progress: true
     pf: 1246.0
     pa: 1052.7
@@ -10955,6 +10955,14 @@ gganoom:
       via: add
       week: 11
       waiver: true
+    - player: Malachi Fields
+      via: add
+      week: 11
+      waiver: false
+    - player: Michael Mayer
+      via: add
+      week: 11
+      waiver: false
   - year: 2025
     players:
     - player: Ashton Jeanty
@@ -11205,11 +11213,6 @@ gganoom:
       cost: R1
       basis: Drafted R3
       ineligible: false
-    - player: TreVeyon Henderson
-      pos: RB
-      cost: R2
-      basis: Drafted R4
-      ineligible: false
     - player: Jaylen Warren
       pos: RB
       cost: R5
@@ -11235,12 +11238,12 @@ gganoom:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Romeo Doubs
-      pos: WR
-      cost: R10
-      basis: Drafted R12
-      ineligible: false
     - player: Keon Coleman
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Malachi Fields
       pos: WR
       cost: R13
       basis: Undrafted
@@ -11249,6 +11252,11 @@ gganoom:
       pos: TE
       cost: R3
       basis: Drafted R5
+      ineligible: false
+    - player: Michael Mayer
+      pos: TE
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Ka'imi Fairbairn
       pos: K
@@ -14753,7 +14761,7 @@ alexandra:
     playoff_apps: 0
     trades: 1
     trades_known: false
-    tx_per_year: 25.0
+    tx_per_year: 27.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -14776,7 +14784,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 8th
     record: 4-6
-    tx: 25
+    tx: 27
     in_progress: true
     pf: 1116.9
     pa: 1159.8
@@ -14963,6 +14971,10 @@ alexandra:
       via: add
       week: 10
       waiver: false
+    - player: Aaron Rodgers
+      via: add
+      week: 11
+      waiver: false
   current_roster:
     year: 2026
     week: 11
@@ -14971,6 +14983,11 @@ alexandra:
       pos: QB
       cost: R2
       basis: Drafted R4
+      ineligible: false
+    - player: Aaron Rodgers
+      pos: QB
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Jordan Love
       pos: QB
@@ -15031,11 +15048,6 @@ alexandra:
       pos: TE
       cost: R3
       basis: Drafted R5
-      ineligible: false
-    - player: Hunter Henry
-      pos: TE
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Riley Patterson
       pos: K

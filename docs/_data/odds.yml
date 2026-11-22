@@ -1,7 +1,7 @@
 2026:
   as_of_week: 10
   live_week: 11
-  updated_at: Nov 22, 4:21 AM PST
+  updated_at: Nov 22, 1:24 PM PST
   sims: 10000
   rows:
   - fid: jackperkins74
@@ -11,8 +11,8 @@
     record: 8-2
     pf: '1398.9'
     pf_color: '#ee6b3b'
-    rating: 134.6
-    proj_wins: 11.1
+    rating: 134.5
+    proj_wins: 11.2
     cells:
       sacko_bye:
         text: ✕
@@ -26,8 +26,8 @@
         dim: false
         trend: null
       bye:
-        text: 92%
-        color: '#f0763e'
+        text: 98%
+        color: '#ee6e3c'
         dim: false
     wc_gap:
       text: 263.1 (+65.8)
@@ -46,7 +46,7 @@
     record: 8-2
     pf: '1321.4'
     pf_color: '#f18140'
-    rating: 128.5
+    rating: 128.4
     proj_wins: 10.7
     cells:
       sacko_bye:
@@ -61,8 +61,8 @@
         dim: false
         trend: null
       bye:
-        text: 71%
-        color: '#f49645'
+        text: 84%
+        color: '#f28341'
         dim: false
     wc_gap:
       text: 185.6 (+46.4)
@@ -81,8 +81,8 @@
     record: 7-3
     pf: '1356.2'
     pf_color: '#f0773e'
-    rating: 131.2
-    proj_wins: 9.8
+    rating: 128.0
+    proj_wins: 9.3
     cells:
       sacko_bye:
         text: ✕
@@ -96,8 +96,8 @@
         dim: false
         trend: null
       bye:
-        text: 36%
-        color: '#fac777'
+        text: 17%
+        color: '#fcdfaf'
         dim: false
     wc_gap:
       text: 220.4 (+55.1)
@@ -116,23 +116,23 @@
     record: 6-4
     pf: '1172.3'
     pf_color: '#f7aa4a'
-    rating: 116.9
-    proj_wins: 8.1
+    rating: 117.9
+    proj_wins: 8.3
     cells:
       sacko_bye:
         text: <1%
         color: '#ffffff'
         dim: true
       playoffs:
-        text: 93%
-        color: '#f0763e'
+        text: 94%
+        color: '#ef743d'
         dim: false
         trend:
           dir: up
-          text: ▲6
+          text: ▲7
       bye:
         text: 1%
-        color: '#fdf2de'
+        color: '#fdf1dc'
         dim: false
     wc_gap:
       text: 36.5 (+9.1)
@@ -151,18 +151,20 @@
     record: 5-5
     pf: '1246.0'
     pf_color: '#f49645'
-    rating: 122.4
-    proj_wins: 7.9
+    rating: 121.5
+    proj_wins: 7.5
     cells:
       sacko_bye:
         text: <1%
         color: '#ffffff'
         dim: true
       playoffs:
-        text: 99%
-        color: '#ee6d3b'
+        text: 97%
+        color: '#ef703c'
         dim: false
-        trend: null
+        trend:
+          dir: down
+          text: ▼3
       bye:
         text: <1%
         color: '#ffffff'
@@ -184,20 +186,18 @@
     record: 3-7
     pf: '1135.8'
     pf_color: '#f9b44d'
-    rating: 114.0
-    proj_wins: 5.5
+    rating: 115.3
+    proj_wins: 5.9
     cells:
       sacko_bye:
-        text: 9%
-        color: '#fce8c5'
+        text: 4%
+        color: '#fdeed3'
         dim: false
       playoffs:
-        text: 41%
-        color: '#fac168'
+        text: 37%
+        color: '#fac674'
         dim: false
-        trend:
-          dir: up
-          text: ▲5
+        trend: null
       bye:
         text: ✕
         title: Can't finish in the top two
@@ -218,20 +218,20 @@
     record: 5-5
     pf: '1127.7'
     pf_color: '#f9b74e'
-    rating: 113.4
-    proj_wins: 6.9
+    rating: 114.3
+    proj_wins: 6.4
     cells:
       sacko_bye:
-        text: 1%
-        color: '#fdf1dc'
+        text: 3%
+        color: '#fdf0d9'
         dim: false
       playoffs:
-        text: 46%
-        color: '#f9bb5a'
+        text: 28%
+        color: '#fbd18e'
         dim: false
         trend:
-          dir: up
-          text: ▲5
+          dir: down
+          text: ▼13
       bye:
         text: <1%
         color: '#ffffff'
@@ -252,12 +252,12 @@
     record: 5-5
     pf: '1044.0'
     pf_color: '#faca7c'
-    rating: 106.6
-    proj_wins: 6.1
+    rating: 104.8
+    proj_wins: 5.9
     cells:
       sacko_bye:
-        text: 4%
-        color: '#fdeed3'
+        text: 6%
+        color: '#fcebce'
         dim: false
       playoffs:
         text: 2%
@@ -265,7 +265,7 @@
         dim: false
         trend:
           dir: down
-          text: ▼3
+          text: ▼4
       bye:
         text: <1%
         color: '#ffffff'
@@ -286,20 +286,20 @@
     record: 4-6
     pf: '1116.9'
     pf_color: '#f9b954'
-    rating: 112.2
-    proj_wins: 5.5
+    rating: 111.9
+    proj_wins: 5.9
     cells:
       sacko_bye:
-        text: 13%
-        color: '#fce3b9'
+        text: 9%
+        color: '#fce8c6'
         dim: false
       playoffs:
-        text: 5%
-        color: '#fdedd2'
+        text: 8%
+        color: '#fce9c7'
         dim: false
         trend:
           dir: down
-          text: ▼16
+          text: ▼12
       bye:
         text: <1%
         color: '#ffffff'
@@ -320,20 +320,20 @@
     record: 3-6-1
     pf: '1099.3'
     pf_color: '#f9bd5e'
-    rating: 111.1
-    proj_wins: 5.3
+    rating: 114.3
+    proj_wins: 5.9
     cells:
       sacko_bye:
-        text: 13%
-        color: '#fce3ba'
+        text: 2%
+        color: '#fdf0d9'
         dim: false
       playoffs:
-        text: 14%
-        color: '#fce2b8'
+        text: 34%
+        color: '#faca7d'
         dim: false
         trend:
           dir: up
-          text: ▲4
+          text: ▲24
       bye:
         text: ✕
         title: Can't finish in the top two
@@ -357,16 +357,16 @@
     pf: '987.5'
     pf_color: '#fbd69b'
     rating: 102.4
-    proj_wins: 4.5
+    proj_wins: 4.4
     cells:
       sacko_bye:
-        text: 61%
-        color: '#f7a649'
+        text: 76%
+        color: '#f38f44'
         dim: false
       playoffs:
-        text: 1%
-        color: '#fdf2dd'
-        dim: false
+        text: <1%
+        color: '#ffffff'
+        dim: true
         trend: null
       bye:
         text: ✕
@@ -391,11 +391,11 @@
     pf: '861.4'
     pf_color: '#fdf3e0'
     rating: 92.6
-    proj_wins: 2.7
+    proj_wins: 2.6
     cells:
       sacko_bye:
-        text: 98%
-        color: '#ee6e3c'
+        text: '>99%'
+        color: '#ee6b3b'
         dim: false
       playoffs:
         text: <1%
