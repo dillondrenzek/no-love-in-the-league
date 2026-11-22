@@ -6245,7 +6245,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 94.3
+    tx_per_year: 94.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -6268,7 +6268,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 7-3
-    tx: 72
+    tx: 74
     in_progress: true
     pf: 1356.2
     pa: 1211.5
@@ -6802,6 +6802,10 @@ sturmanator15:
       week: 11
       waiver: false
     - player: Panthers D/ST
+      via: add
+      week: 11
+      waiver: false
+    - player: Samaje Perine
       via: add
       week: 11
       waiver: false
@@ -8831,6 +8835,11 @@ sturmanator15:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Samaje Perine
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Jaxon Smith-Njigba
       pos: WR
       cost: Ineligible
@@ -8850,11 +8859,6 @@ sturmanator15:
       pos: WR
       cost: R11
       basis: Drafted R13
-      ineligible: false
-    - player: Treylon Burks
-      pos: WR
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Trey McBride
       pos: TE
