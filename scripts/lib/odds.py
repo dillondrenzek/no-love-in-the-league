@@ -561,6 +561,32 @@ def as_of_now(season):
     return (dict(season, matchups=ms), week) if week else (season, None)
 
 
+def as_projected(season, live):
+    """The season as if the live week finishes as projected right now: a copy in
+    which each of that week's games counts as final at both teams' live projected
+    finals — points scored so far plus the projections of starters still to play
+    (live_week's `score` + `remaining`). Every game in the week counts once it's
+    under way, including ones that haven't kicked off yet (at their full
+    projections), so the table never mixes projected and untouched games. ESPN's
+    stored `home_proj`/`away_proj` aren't used: they're the starters' pre-game
+    projections summed, blind to what's already been scored. Returns (season,
+    week); without a live week (or the rosters and kickoff times to project it)
+    it falls back to as_of_now, current scores."""
+    if not live:
+        return as_of_now(season)
+    wk, teams = live["week"], live["teams"]
+    ms = []
+    for m in season.get("matchups") or []:
+        if (m.get("week") == wk and not m.get("playoff")
+                and m["home"] in teams and m["away"] in teams):
+            m = {k: v for k, v in m.items() if k not in ("final", "played")}
+            for side in ("home", "away"):
+                t = teams[m[side]]
+                m[side + "_score"] = round(t["score"] + t["remaining"], 2)
+        ms.append(m)
+    return dict(season, matchups=ms), wk
+
+
 def forecast_rows(season, franchises, strength, result, prev=None, now=None):
     """Display rows for the season-page forecast table, in standings order: best
     record first (win pct, a tie counting as half a win, like the standings
@@ -579,10 +605,10 @@ def forecast_rows(season, franchises, strength, result, prev=None, now=None):
     instead of '>99%' (see clinch_status). `wc_gap` is the team's points-per-game
     chase of the 6th seed (see wildcard_gaps).
 
-    `now` (as_of_now output's season) drives everything the table shows apart
-    from the odds — record, points-for, PF Back, the seeds and row order, and the
-    ✓ / ✕ — so it reads as "if the current results held": live games count at
-    their current scores, and a team that would clinch if they held gets its ✓."""
+    `now` (as_projected / as_of_now output's season) drives everything the table
+    shows apart from the odds — record, points-for, PF Back, the seeds and row
+    order, and the ✓ / ✕ — so it reads as "if the live week finishes as
+    projected": a team that would clinch on those results gets its ✓."""
     prev_res = (prev or ({}, {}))[1]
     table = now or season
     clinched = clinch_status(table)

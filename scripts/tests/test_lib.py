@@ -2123,6 +2123,31 @@ def test_odds_as_of_now_counts_live_games_at_current_scores():
     assert marked == clinch_status(now)["playoffs"]
 
 
+def test_odds_as_projected_counts_the_live_week_at_projected_finals():
+    from lib.odds import Params, as_projected, as_of_now, forecast, forecast_rows, live_week
+    season, rosters, schedule, now = _live_fixture(done=False)   # home leads 150-50
+    game = next(m for m in season["matchups"] if m["week"] == 14)
+    h, a = game["home"], game["away"]
+    for p in rosters[a]:                       # the trailer has a monster still to play
+        if p["pro_team"] == "CCC":
+            p["proj"] = 200.0
+    live = live_week(season, rosters, schedule, now)
+    proj, week = as_projected(season, live)
+    assert week == 14
+    pg = next(m for m in proj["matchups"] if m["week"] == 14 and m["home"] == h)
+    assert (pg["home_score"], pg["away_score"]) == (180.0, 250.0)   # 150+30 vs 50+200
+    assert "final" not in pg
+    st, res = forecast(season, Params(), n=50, seed=2, live=live)
+    rows = {r["fid"]: r for r in forecast_rows(season, {}, st, res, now=proj)}
+    cur = {r["fid"]: r for r in forecast_rows(season, {}, st, res,
+                                               now=as_of_now(season)[0])}
+    wins = lambda rs, f: int(rs[f]["record"].split("-")[0])
+    assert wins(rows, a) == wins(cur, a) + 1      # projected to win, trailing now
+    assert wins(rows, h) == wins(cur, h) - 1
+    # No live week to project: falls back to current scores.
+    assert as_projected(season, None) == as_of_now(season)
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week
