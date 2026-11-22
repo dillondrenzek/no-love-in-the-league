@@ -10,8 +10,9 @@ brings new scores. The model and its constants live in lib/odds; tune them with
 scripts/backtest_odds.py.
 
 Each year's record: {as_of_week, live_week, now_week, updated_at, sims, rows}
-(`now_week`: the live week whose games in progress the table's record, PF and
-seeds count at their current scores, as if the season ended now) plus, during
+(`now_week`: the live week the table's record, PF, seeds and ✓ / ✕ count as if
+it finished at its live projected finals — or at current scores when it can't be
+projected, `now_projected` false) plus, during
 a live week, `settled_rows` — the forecast from completed weeks only, which is
 what the weekly recap's facts file quotes.
 """
@@ -22,7 +23,7 @@ import yaml
 
 from lib.data import load_franchises, load_seasons, load_week_rosters, load_nfl_schedule
 from lib.nfl_schedule import parse_kickoff
-from lib.odds import (Params, as_of_now, complete_through, forecast, forecast_rows,
+from lib.odds import (Params, as_projected, complete_through, forecast, forecast_rows,
                       live_week, truncate)
 from lib.state import state_of
 from lib.weeks import _fmt_updated as fmt_updated
@@ -55,10 +56,12 @@ def main():
         if week >= 1:
             before = forecast(truncate(season, week - 1), Params(), n=SIMS,
                               seed=seed - 1)
-        # The table's standings columns read "if the season ended right now".
-        now_season, now_week = as_of_now(season)
+        # The table's standings columns read "if this week finishes as projected"
+        # (or, without the data to project it, "if it ended right now").
+        now_season, now_week = as_projected(season, live)
         entry = {"as_of_week": week, "live_week": live["week"] if live else None,
-                 "now_week": now_week, "updated_at": fmt_updated(updated), "sims": SIMS}
+                 "now_week": now_week, "now_projected": bool(live),
+                 "updated_at": fmt_updated(updated), "sims": SIMS}
         if live:
             # Mid-week, the arrows show how far the live scores have moved each
             # team since the week began (the settled forecast).
