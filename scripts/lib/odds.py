@@ -541,7 +541,27 @@ def trend(now, before, threshold, scale=1, digits=0):
     return {"dir": "up" if d > 0 else "down", "text": ("▲" if d > 0 else "▼") + mag}
 
 
-def forecast_rows(season, franchises, strength, result, prev=None):
+def as_of_now(season):
+    """The season as if it ended this second: a copy in which every regular-season
+    game with a live score (either side on the board) counts as final at its
+    current score, so the leader has the win. Games nobody has scored in yet stay
+    unplayed, so a 0-0 game before kickoff isn't a tie. Returns (season, week),
+    `week` being the live week counted (None when no game is in progress, in which
+    case the season comes back unchanged)."""
+    reg = season.get("weeks_in_regular_season") or 14
+    week, ms = None, []
+    for m in season.get("matchups") or []:
+        w = m.get("week") or 0
+        hs, as_ = m.get("home_score"), m.get("away_score")
+        if (1 <= w <= reg and not m.get("playoff") and hs is not None
+                and as_ is not None and not game_final(m) and (hs or as_)):
+            m = {k: v for k, v in m.items() if k not in ("final", "played")}
+            week = w if week is None else min(week, w)
+        ms.append(m)
+    return (dict(season, matchups=ms), week) if week else (season, None)
+
+
+def forecast_rows(season, franchises, strength, result, prev=None, now=None):
     """Display rows for the season-page forecast table, in standings order: best
     record first (win pct, a tie counting as half a win, like the standings
     table), points-for breaking level records, then playoff odds — except that
@@ -557,14 +577,20 @@ def forecast_rows(season, franchises, strength, result, prev=None):
     when given, the playoff cell carries a trend ({dir, text}) for meaningful moves.
     A playoff spot or bye a team has mathematically clinched shows a checkmark
     instead of '>99%' (see clinch_status). `wc_gap` is the team's points-per-game
-    chase of the 6th seed (see wildcard_gaps)."""
+    chase of the 6th seed (see wildcard_gaps).
+
+    `now` (as_of_now output's season) drives everything the table shows apart
+    from the odds — record, points-for, PF Back, the seeds and row order, and the
+    ✓ / ✕ — so it reads as "if the current results held": live games count at
+    their current scores, and a team that would clinch if they held gets its ✓."""
     prev_res = (prev or ({}, {}))[1]
-    clinched = clinch_status(season)
-    gaps = wildcard_gaps(season)
+    table = now or season
+    clinched = clinch_status(table)
+    gaps = wildcard_gaps(table)
     teams = season.get("teams") or {}
     logos = season.get("team_logos") or {}
     rec, pf = {}, {}
-    for m in played_games(season):
+    for m in played_games(table):
         for f, a, b in ((m["home"], m["home_score"], m["away_score"]),
                         (m["away"], m["away_score"], m["home_score"])):
             r = rec.setdefault(f, [0, 0, 0])

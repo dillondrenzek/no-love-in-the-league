@@ -2096,6 +2096,33 @@ def test_odds_live_week_that_is_over_plays_out_as_scored():
     assert {f: r["wins"] for f, r in res0.items()} != {f: float(w) for f, w in wins.items()}
 
 
+def test_odds_as_of_now_counts_live_games_at_current_scores():
+    from lib.odds import (Params, as_of_now, clinch_status, forecast, forecast_rows,
+                          played_games)
+    season = _odds_season(12)
+    assert as_of_now(season) == (season, None)          # nothing live: unchanged
+    wk13 = [m for m in season["matchups"] if m["week"] == 13]
+    for m in wk13:                                       # away team leads every game
+        m.update(home_score=40.0, away_score=60.0, final=False)
+    wk13[0].update(home_score=0.0, away_score=0.0)       # not started: 0-0
+    now, week = as_of_now(season)
+    assert week == 13
+    assert len(played_games(now)) == len(played_games(season)) + 5
+    assert not any(m["week"] == 13 and m["home"] == wk13[0]["home"]
+                   for m in played_games(now))           # 0-0 isn't a tie
+    assert all(m.get("final") is False for m in wk13)    # the original is untouched
+    st, res = forecast(season, Params(), n=50, seed=1)
+    rows = {r["fid"]: r for r in forecast_rows(season, {}, st, res, now=now)}
+    leader, trailer = wk13[1]["away"], wk13[1]["home"]
+    rec = lambda f: sum(map(int, rows[f]["record"].split("-")[:2]))
+    assert rec(leader) == rec(trailer) == 13             # 12 final + the live game
+    real = {r["fid"]: r for r in forecast_rows(season, {}, st, res)}
+    assert float(rows[leader]["pf"]) == float(real[leader]["pf"]) + 60.0
+    # The ✓ follows the current results, not just the final ones.
+    marked = {f for f, r in rows.items() if r["cells"]["playoffs"].get("clinched")}
+    assert marked == clinch_status(now)["playoffs"]
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week

@@ -9,7 +9,9 @@ the projected points of starters still to play), so the odds move as each import
 brings new scores. The model and its constants live in lib/odds; tune them with
 scripts/backtest_odds.py.
 
-Each year's record: {as_of_week, live_week, updated_at, sims, rows} plus, during
+Each year's record: {as_of_week, live_week, now_week, updated_at, sims, rows}
+(`now_week`: the live week whose games in progress the table's record, PF and
+seeds count at their current scores, as if the season ended now) plus, during
 a live week, `settled_rows` — the forecast from completed weeks only, which is
 what the weekly recap's facts file quotes.
 """
@@ -20,8 +22,8 @@ import yaml
 
 from lib.data import load_franchises, load_seasons, load_week_rosters, load_nfl_schedule
 from lib.nfl_schedule import parse_kickoff
-from lib.odds import (Params, complete_through, forecast, forecast_rows, live_week,
-                      truncate)
+from lib.odds import (Params, as_of_now, complete_through, forecast, forecast_rows,
+                      live_week, truncate)
 from lib.state import state_of
 from lib.weeks import _fmt_updated as fmt_updated
 
@@ -53,16 +55,20 @@ def main():
         if week >= 1:
             before = forecast(truncate(season, week - 1), Params(), n=SIMS,
                               seed=seed - 1)
+        # The table's standings columns read "if the season ended right now".
+        now_season, now_week = as_of_now(season)
         entry = {"as_of_week": week, "live_week": live["week"] if live else None,
-                 "updated_at": fmt_updated(updated), "sims": SIMS}
+                 "now_week": now_week, "updated_at": fmt_updated(updated), "sims": SIMS}
         if live:
             # Mid-week, the arrows show how far the live scores have moved each
             # team since the week began (the settled forecast).
             strength, result = forecast(season, Params(), n=SIMS, seed=seed, live=live)
-            entry["rows"] = forecast_rows(season, franchises, strength, result, settled)
+            entry["rows"] = forecast_rows(season, franchises, strength, result, settled,
+                                          now=now_season)
             entry["settled_rows"] = forecast_rows(season, franchises, *settled, before)
         else:
-            entry["rows"] = forecast_rows(season, franchises, *settled, before)
+            entry["rows"] = forecast_rows(season, franchises, *settled, before,
+                                          now=now_season)
         out[year] = entry
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(yaml.safe_dump(out, sort_keys=False, allow_unicode=True),
