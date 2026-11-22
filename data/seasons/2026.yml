@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-22T03:59:46+00:00
+updated_at: 2026-11-22T12:21:07+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -154,7 +154,7 @@ matchups:
   - { week: 11, home: lukstein, away: jackperkins74, home_score: 23.3, away_score: 0.0, playoff: false, final: false, home_proj: 95.57, away_proj: 127.36 }
   - { week: 11, home: schirmerj, away: kevbots22, playoff: false, played: false, home_proj: 122.08, away_proj: 123.73 }
   - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 0.0, away_score: 28.2, playoff: false, final: false, home_proj: 106.47, away_proj: 122.97 }
-  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 15.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.23, away_proj: 105.28 }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 15.0, away_score: 0.0, playoff: false, final: false, home_proj: 123.23, away_proj: 107.21 }
   - { week: 11, home: zachzoske, away: purpsworth, home_score: 0.0, away_score: 8.9, playoff: false, final: false, home_proj: 132.5, away_proj: 107.88 }
   - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
   - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
@@ -387,7 +387,7 @@ transactions:
   schirmerj: { adds: 18, drops: 18, moves: 36 }
   shawne2520997: { adds: 29, drops: 22, moves: 51 }
   sturmanator15: { adds: 39, drops: 35, moves: 74 }
-  theoceanpulse: { adds: 39, drops: 32, moves: 71 }
+  theoceanpulse: { adds: 41, drops: 34, moves: 75 }
   whowonthelastsuperbowl: { adds: 19, drops: 10, moves: 29 }
   zachzoske: { adds: 42, drops: 28, moves: 70 }
 
@@ -1939,6 +1939,10 @@ rosters:
     via: add
     week: 11
     waiver: false
+  - player: Cameron Dicker
+    via: add
+    week: 11
+    waiver: false
   - player: Chig Okonkwo
     via: add
     week: 11
@@ -1947,6 +1951,10 @@ rosters:
     via: add
     week: 11
     waiver: true
+  - player: Jauan Jennings
+    via: add
+    week: 11
+    waiver: false
   kevbots22:
   - player: Chase Brown
     via: draft

@@ -1,7 +1,7 @@
 2026:
   as_of_week: 10
   live_week: 11
-  updated_at: Nov 21, 7:59 PM PST
+  updated_at: Nov 22, 4:21 AM PST
   sims: 10000
   rows:
   - fid: jackperkins74
@@ -125,7 +125,7 @@
         dim: true
       playoffs:
         text: 93%
-        color: '#f0753e'
+        color: '#f0763e'
         dim: false
         trend:
           dir: up
@@ -197,7 +197,7 @@
         dim: false
         trend:
           dir: up
-          text: ▲4
+          text: ▲5
       bye:
         text: ✕
         title: Can't finish in the top two
@@ -325,7 +325,7 @@
     cells:
       sacko_bye:
         text: 13%
-        color: '#fce3bb'
+        color: '#fce3ba'
         dim: false
       playoffs:
         text: 14%
@@ -361,7 +361,7 @@
     cells:
       sacko_bye:
         text: 61%
-        color: '#f6a549'
+        color: '#f7a649'
         dim: false
       playoffs:
         text: 1%

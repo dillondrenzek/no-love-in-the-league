@@ -18467,7 +18467,7 @@ theoceanpulse:
     playoff_apps: 8
     trades: 17
     trades_known: true
-    tx_per_year: 56.1
+    tx_per_year: 56.6
     tx_known: false
     seasons: 11
     best_finish:
@@ -18490,7 +18490,7 @@ theoceanpulse:
     logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
     finish: 11th
     record: 3-6-1
-    tx: 71
+    tx: 75
     in_progress: true
     pf: 987.5
     pa: 1175.5
@@ -19133,6 +19133,10 @@ theoceanpulse:
       via: add
       week: 11
       waiver: false
+    - player: Cameron Dicker
+      via: add
+      week: 11
+      waiver: false
     - player: Chig Okonkwo
       via: add
       week: 11
@@ -19141,6 +19145,10 @@ theoceanpulse:
       via: add
       week: 11
       waiver: true
+    - player: Jauan Jennings
+      via: add
+      week: 11
+      waiver: false
   - year: 2025
     players:
     - player: Derrick Henry
@@ -20547,11 +20555,6 @@ theoceanpulse:
       cost: R10
       basis: Drafted R12
       ineligible: false
-    - player: A.J. Brown
-      pos: WR
-      cost: Ineligible
-      basis: Drafted R2
-      ineligible: true
     - player: Ladd McConkey
       pos: WR
       cost: R1
@@ -20577,6 +20580,11 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Jauan Jennings
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Colston Loveland
       pos: TE
       cost: R6
@@ -20587,10 +20595,10 @@ theoceanpulse:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Evan McPherson
+    - player: Cameron Dicker
       pos: K
-      cost: R13
-      basis: Undrafted
+      cost: R11
+      basis: Drafted R13
       ineligible: false
     - player: Buccaneers D/ST
       pos: D/ST

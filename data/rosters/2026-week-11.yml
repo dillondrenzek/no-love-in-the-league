@@ -1,6 +1,6 @@
 season: 2026
 week: 11
-captured_at: '2026-11-22T03:59:42+00:00'
+captured_at: '2026-11-22T12:21:02+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -1186,14 +1186,6 @@ rosters:
   team_id: 12
   team_name: Im Bleeding Making Me the Shiva
   players:
-  - player: A.J. Brown
-    pos: WR
-    starter: false
-    proj: 0.0
-    actual: null
-    injury: DOUBTFUL
-    pro_team: NE
-    bye_week: 11
   - player: Christian Watson
     pos: WR
     starter: false
@@ -1282,14 +1274,6 @@ rosters:
     injury: ''
     pro_team: NYJ
     bye_week: 13
-  - player: Evan McPherson
-    pos: K
-    starter: true
-    proj: 8.08
-    actual: null
-    injury: ''
-    pro_team: CIN
-    bye_week: 6
   - player: Jacory Croskey-Merritt
     pos: RB
     starter: false
@@ -1314,6 +1298,22 @@ rosters:
     injury: ''
     pro_team: TB
     bye_week: 10
+  - player: Cameron Dicker
+    pos: K
+    starter: true
+    proj: 10.01
+    actual: null
+    injury: ''
+    pro_team: LAC
+    bye_week: 7
+  - player: Jauan Jennings
+    pos: WR
+    starter: false
+    proj: 5.71
+    actual: null
+    injury: ''
+    pro_team: MIN
+    bye_week: 6
 - manager_id: '{B3BF20F1-A5BA-40D2-BF20-F1A5BA00D2BF}'
   team_id: 13
   team_name: One Big Beautiful Dillbot
