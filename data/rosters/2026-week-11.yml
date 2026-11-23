@@ -1,6 +1,6 @@
 season: 2026
 week: 11
-captured_at: '2026-11-23T03:06:59+00:00'
+captured_at: '2026-11-23T04:42:39+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -34,7 +34,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.47
-    actual: 17.6
+    actual: 19.9
     injury: QUESTIONABLE
     pro_team: SF
     bye_week: 8
@@ -274,7 +274,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.63
-    actual: 4.5
+    actual: 13.2
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -510,7 +510,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.39
-    actual: 15.0
+    actual: 14.0
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -562,7 +562,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 4.47
-    actual: 3.0
+    actual: 0.0
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -594,7 +594,7 @@ rosters:
     pos: TE
     starter: true
     proj: 10.67
-    actual: 15.5
+    actual: 16.9
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -670,7 +670,7 @@ rosters:
     pos: WR
     starter: true
     proj: 16.38
-    actual: 4.7
+    actual: 10.2
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -750,7 +750,7 @@ rosters:
     pos: TE
     starter: false
     proj: 9.0
-    actual: 6.0
+    actual: 8.5
     injury: QUESTIONABLE
     pro_team: MIN
     bye_week: 6
@@ -882,7 +882,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.13
-    actual: 2.2
+    actual: 5.3
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -982,7 +982,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.79
-    actual: 4.0
+    actual: 7.2
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -1022,7 +1022,7 @@ rosters:
     pos: QB
     starter: false
     proj: 16.16
-    actual: 2.8
+    actual: 7.4
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -1098,7 +1098,7 @@ rosters:
     pos: RB
     starter: true
     proj: 7.34
-    actual: 9.7
+    actual: 10.8
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -1206,7 +1206,7 @@ rosters:
     pos: RB
     starter: true
     proj: 7.91
-    actual: 1.7
+    actual: 4.2
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -1310,7 +1310,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.71
-    actual: 1.4
+    actual: 3.5
     injury: ''
     pro_team: MIN
     bye_week: 6
@@ -1370,7 +1370,7 @@ rosters:
     pos: QB
     starter: false
     proj: 18.88
-    actual: 22.0
+    actual: 25.2
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -1494,7 +1494,7 @@ rosters:
     pos: RB
     starter: false
     proj: 6.0
-    actual: 0.4
+    actual: 2.0
     injury: ''
     pro_team: SF
     bye_week: 8
@@ -1542,7 +1542,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.41
-    actual: 1.0
+    actual: 5.1
     injury: ''
     pro_team: MIN
     bye_week: 6
