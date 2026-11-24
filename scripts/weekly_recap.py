@@ -287,15 +287,17 @@ def data_block(year, week, summary, ctx):
     odds = ctx.get("odds") or []
     if odds:
         lines += ["", "Playoff odds after this week (10,000 sims; ▲/▼ = change from last "
-                  "week — a big swing is a story):"]
+                  "week — a big swing is a story; ✓ = clinched, ✕ = can no longer "
+                  "happen; Sacko bye = a bottom-two finish):"]
         for r in odds:
             c = r.get("cells") or {}
             def cell(k):
                 v = c.get(k) or {}
                 t = v.get("trend") or {}
                 return v.get("text", "?") + (f" ({t['text']})" if t.get("text") else "")
+            # The columns the season page's forecast table shows.
             lines.append(f"- {r['owner']} ({r['record']}): playoffs {cell('playoffs')}, "
-                         f"Shiva {cell('shiva')}, Sacko {cell('sacko')}")
+                         f"bye {cell('bye')}, Sacko bye {cell('sacko_bye')}")
 
     byes = bye_watch_lines(ctx.get("byes"), week, this_week=False)
     if byes:
