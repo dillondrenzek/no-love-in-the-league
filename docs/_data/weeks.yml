@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -3725,7 +3725,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 12, 2026 · 1:08 PM PST
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -3873,8 +3873,6 @@
     winner_id: gganoom
     tie: false
     margin: 19.2
-    home_proj: 106.5
-    away_proj: 104.4
   - home_id: lukstein
     home_team: 2x Runner Up
     home_owner: Luke
@@ -3896,8 +3894,6 @@
     winner_id: jackperkins74
     tie: false
     margin: 2.4
-    home_proj: 95.7
-    away_proj: 127.3
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -3919,8 +3915,6 @@
     winner_id: kevbots22
     tie: false
     margin: 20.6
-    home_proj: 122.0
-    away_proj: 124.2
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -3942,8 +3936,6 @@
     winner_id: shawne2520997
     tie: false
     margin: 41.6
-    home_proj: 108.6
-    away_proj: 123.0
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -3965,8 +3957,6 @@
     winner_id: whowonthelastsuperbowl
     tie: false
     margin: 9.9
-    home_proj: 123.2
-    away_proj: 107.2
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -3988,8 +3978,6 @@
     winner_id: zachzoske
     tie: false
     margin: 48.0
-    home_proj: 132.8
-    away_proj: 108.0
   highlights:
   - key: top
     label: Top Score
@@ -4117,7 +4105,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 19, 2026 · 2:01 PM PST
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power:
   - rank: 1
@@ -4255,11 +4243,13 @@
     home_record: 4-7
     away_record: 5-6
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 96.6
+    away_proj: 106.0
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -4271,11 +4261,13 @@
     home_record: 5-6
     away_record: 9-2
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 98.1
+    away_proj: 130.0
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -4287,11 +4279,13 @@
     home_record: 7-4
     away_record: 2-9
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 100.7
+    away_proj: 99.5
   - home_id: theoceanpulse
     home_team: Im Bleeding Making Me the Shiva
     home_owner: Dillon
@@ -4303,11 +4297,13 @@
     home_record: 3-7-1
     away_record: 6-5
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 104.5
+    away_proj: 93.1
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -4319,11 +4315,13 @@
     home_record: 7-4
     away_record: 4-7
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 118.4
+    away_proj: 118.0
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -4335,15 +4333,17 @@
     home_record: 9-2
     away_record: 4-6-1
     scored: false
-    home_yet: null
-    away_yet: null
+    home_yet: 10
+    away_yet: 10
     final: false
     live: false
     playoff: false
+    home_proj: 132.6
+    away_proj: 120.4
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: true
   power: []
 2026-13:
@@ -4449,7 +4449,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power: []
 2026-14:
@@ -4555,6 +4555,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 23, 8:36 PM PST
+  updated_at: Nov 24, 1:52 AM PST
   current: false
   power: []

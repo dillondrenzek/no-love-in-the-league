@@ -157,22 +157,6 @@ detail:
       pa: 1191.0
       pa_color: '#fbd291'
       all_play: 38-83
-    - &id010
-      finish: 10
-      team: Cornstar
-      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-      owner_id: alexandra
-      owner_name: Lexi
-      record: 4-7
-      pct: 0.36363636363636365
-      tag: null
-      gb: '5'
-      pct_str: '.364'
-      pf: 1193.6
-      pf_color: '#fabf62'
-      pa: 1255.7
-      pa_color: '#f8af4b'
-      all_play: 51-70
     - &id009
       finish: 9
       team: Swift kick in the Dak
@@ -205,6 +189,22 @@ detail:
       pa: 1359.9
       pa_color: '#ee6b3b'
       all_play: 64-56-1
+    - &id010
+      finish: 10
+      team: Cornstar
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      owner_id: alexandra
+      owner_name: Lexi
+      record: 4-7
+      pct: 0.36363636363636365
+      tag: null
+      gb: '5'
+      pct_str: '.364'
+      pf: 1193.6
+      pf_color: '#fabf62'
+      pa: 1255.7
+      pa_color: '#f8af4b'
+      all_play: 51-70
     - &id011
       finish: 11
       team: Im Bleeding Making Me the Shiva

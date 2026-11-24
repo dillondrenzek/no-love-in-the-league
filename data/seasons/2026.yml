@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-24T04:36:05+00:00
+updated_at: 2026-11-24T09:52:40+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -79,9 +79,9 @@ final_standings:
   - gganoom
   - schirmerj
   - purpsworth
-  - alexandra
   - shawne2520997
   - kevbots22
+  - alexandra
   - theoceanpulse
   - lukstein
 
@@ -150,18 +150,18 @@ matchups:
   - { week: 10, home: schirmerj, away: whowonthelastsuperbowl, home_score: 98.0, away_score: 101.0, playoff: false }
   - { week: 10, home: sturmanator15, away: gganoom, home_score: 115.6, away_score: 111.2, playoff: false }
   - { week: 10, home: zachzoske, away: kevbots22, home_score: 179.4, away_score: 115.5, playoff: false }
-  - { week: 11, home: alexandra, away: gganoom, home_score: 76.7, away_score: 95.9, playoff: false, home_proj: 106.53, away_proj: 104.4 }
-  - { week: 11, home: lukstein, away: jackperkins74, home_score: 101.0, away_score: 103.4, playoff: false, home_proj: 95.72, away_proj: 127.3 }
-  - { week: 11, home: schirmerj, away: kevbots22, home_score: 123.5, away_score: 144.1, playoff: false, home_proj: 122.05, away_proj: 124.24 }
-  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 92.6, away_score: 134.2, playoff: false, home_proj: 108.57, away_proj: 122.97 }
-  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 121.8, away_score: 111.9, playoff: false, home_proj: 123.2, away_proj: 107.15 }
-  - { week: 11, home: zachzoske, away: purpsworth, home_score: 110.3, away_score: 62.3, playoff: false, home_proj: 132.81, away_proj: 107.95 }
-  - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false }
-  - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false }
-  - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false }
-  - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false }
-  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false }
-  - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false }
+  - { week: 11, home: alexandra, away: gganoom, home_score: 76.7, away_score: 95.9, playoff: false }
+  - { week: 11, home: lukstein, away: jackperkins74, home_score: 101.0, away_score: 103.4, playoff: false }
+  - { week: 11, home: schirmerj, away: kevbots22, home_score: 123.5, away_score: 144.1, playoff: false }
+  - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 92.6, away_score: 134.2, playoff: false }
+  - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 121.8, away_score: 111.9, playoff: false }
+  - { week: 11, home: zachzoske, away: purpsworth, home_score: 110.3, away_score: 62.3, playoff: false }
+  - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false, home_proj: 96.61, away_proj: 105.97 }
+  - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 98.06, away_proj: 130.01 }
+  - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false, home_proj: 100.65, away_proj: 99.51 }
+  - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false, home_proj: 104.53, away_proj: 93.08 }
+  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 118.44, away_proj: 118.02 }
+  - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false, home_proj: 132.58, away_proj: 120.38 }
   - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
   - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
   - { week: 13, home: schirmerj, away: alexandra, playoff: false, played: false }
