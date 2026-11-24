@@ -51,192 +51,192 @@ detail:
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
       owner_id: jackperkins74
       owner_name: Jack
-      record: 8-2
-      pct: 0.8
+      record: 9-2
+      pct: 0.8181818181818182
       tag: null
       gb: —
-      pct_str: '.800'
-      pf: 1398.9
+      pct_str: '.818'
+      pf: 1502.3
       pf_color: '#ee6b3b'
-      pa: 1114.3
-      pa_color: '#faca7d'
-      all_play: 79-30-1
+      pa: 1215.3
+      pa_color: '#fac672'
+      all_play: 84-36-1
     - &id002
       finish: 2
       team: Tuten Your Mother, Respectfully
       logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
       owner_id: zachzoske
       owner_name: Zach
-      record: 8-2
-      pct: 0.8
+      record: 9-2
+      pct: 0.8181818181818182
       tag: null
       gb: —
-      pct_str: '.800'
-      pf: 1321.4
-      pf_color: '#f18140'
-      pa: 1090.8
-      pa_color: '#fbdaa3'
-      all_play: 80-30
+      pct_str: '.818'
+      pf: 1431.7
+      pf_color: '#f17f40'
+      pa: 1153.1
+      pa_color: '#fce6c2'
+      all_play: 86-35
     - &id003
       finish: 3
       team: The People's Commissioner
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
       owner_id: sturmanator15
       owner_name: Wade
-      record: 7-3
-      pct: 0.7
+      record: 7-4
+      pct: 0.6363636363636364
       tag: null
-      gb: '1'
-      pct_str: '.700'
-      pf: 1356.2
-      pf_color: '#f0773e'
-      pa: 1211.5
-      pa_color: '#f17f40'
-      all_play: 86-24
+      gb: '2'
+      pct_str: '.636'
+      pf: 1448.8
+      pf_color: '#f07a3f'
+      pa: 1345.7
+      pa_color: '#ef743d'
+      all_play: 88-33
     - &id004
       finish: 4
       team: Trick or Trick It’s Mike Vick
       logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
       owner_id: whowonthelastsuperbowl
       owner_name: Nate
-      record: 6-4
-      pct: 0.6
+      record: 7-4
+      pct: 0.6363636363636364
       tag: null
       gb: '2'
-      pct_str: '.600'
-      pf: 1172.3
-      pf_color: '#f7aa4a'
-      pa: 1105.3
-      pa_color: '#fbd08c'
-      all_play: 55-55
+      pct_str: '.636'
+      pf: 1294.1
+      pf_color: '#f6a549'
+      pa: 1217.2
+      pa_color: '#fac570'
+      all_play: 63-58
     - &id005
       finish: 5
       team: One Big Beautiful Dillbot
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
       owner_id: gganoom
       owner_name: Grant
-      record: 5-5
-      pct: 0.5
+      record: 6-5
+      pct: 0.5454545454545454
       tag: null
       gb: '3'
-      pct_str: '.500'
-      pf: 1246.0
-      pf_color: '#f49645'
-      pa: 1052.7
+      pct_str: '.545'
+      pf: 1341.9
+      pf_color: '#f59846'
+      pa: 1129.4
       pa_color: '#fdf3e0'
-      all_play: 70-39-1
+      all_play: 73-47-1
     - &id006
       finish: 6
       team: Return of the IDP
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
       owner_id: schirmerj
       owner_name: Jono
-      record: 5-5
-      pct: 0.5
+      record: 5-6
+      pct: 0.45454545454545453
       tag: null
-      gb: '3'
-      pct_str: '.500'
-      pf: 1127.7
-      pf_color: '#f9b74e'
-      pa: 1206.2
-      pa_color: '#f28441'
-      all_play: 50-60
+      gb: '4'
+      pct_str: '.455'
+      pf: 1251.2
+      pf_color: '#f8b14c'
+      pa: 1350.3
+      pa_color: '#ef713c'
+      all_play: 59-62
     - &id007
       finish: 7
       team: I am dead inside
       logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
       owner_id: purpsworth
       owner_name: Trevor
-      record: 5-5
-      pct: 0.5
+      record: 5-6
+      pct: 0.45454545454545453
       tag: null
-      gb: '3'
-      pct_str: '.500'
-      pf: 1044.0
-      pf_color: '#faca7c'
-      pa: 1080.7
-      pa_color: '#fce0b3'
-      all_play: 38-72
-    - &id008
-      finish: 8
+      gb: '4'
+      pct_str: '.455'
+      pf: 1106.3
+      pf_color: '#fbd292'
+      pa: 1191.0
+      pa_color: '#fbd291'
+      all_play: 38-83
+    - &id010
+      finish: 10
       team: Cornstar
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
       owner_id: alexandra
       owner_name: Lexi
-      record: 4-6
-      pct: 0.4
+      record: 4-7
+      pct: 0.36363636363636365
       tag: null
-      gb: '4'
-      pct_str: '.400'
-      pf: 1116.9
-      pf_color: '#f9b954'
-      pa: 1159.8
-      pa_color: '#f7aa4a'
-      all_play: 50-60
-    - &id011
-      finish: 11
+      gb: '5'
+      pct_str: '.364'
+      pf: 1193.6
+      pf_color: '#fabf62'
+      pa: 1255.7
+      pa_color: '#f8af4b'
+      all_play: 51-70
+    - &id009
+      finish: 9
       team: Swift kick in the Dak
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
       owner_id: shawne2520997
       owner_name: Shawnee
-      record: 3-7
-      pct: 0.3
+      record: 4-7
+      pct: 0.36363636363636365
       tag: null
       gb: '5'
-      pct_str: '.300'
-      pf: 1135.8
-      pf_color: '#f9b44d'
-      pa: 1220.0
-      pa_color: '#f0783e'
-      all_play: 47-63
-    - &id009
-      finish: 9
+      pct_str: '.364'
+      pf: 1270.0
+      pf_color: '#f7ac4a'
+      pa: 1312.6
+      pa_color: '#f38a42'
+      all_play: 57-64
+    - &id008
+      finish: 8
       team: Remember the Nice Guys, ChatGPT
       logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
       owner_id: kevbots22
       owner_name: Kevin
-      record: 3-6-1
-      pct: 0.35
+      record: 4-6-1
+      pct: 0.4090909090909091
       tag: null
       gb: '4.5'
-      pct_str: '.350'
-      pf: 1099.3
-      pf_color: '#f9bd5e'
-      pa: 1236.4
+      pct_str: '.409'
+      pf: 1243.4
+      pf_color: '#f9b34c'
+      pa: 1359.9
       pa_color: '#ee6b3b'
-      all_play: 53-56-1
-    - &id010
-      finish: 10
+      all_play: 64-56-1
+    - &id011
+      finish: 11
       team: Im Bleeding Making Me the Shiva
       logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
       owner_id: theoceanpulse
       owner_name: Dillon
-      record: 3-6-1
-      pct: 0.35
+      record: 3-7-1
+      pct: 0.3181818181818182
       tag: null
-      gb: '4.5'
-      pct_str: '.350'
-      pf: 987.5
-      pf_color: '#fbd69b'
-      pa: 1175.5
-      pa_color: '#f59d47'
-      all_play: 30-79-1
+      gb: '5.5'
+      pct_str: '.318'
+      pf: 1099.4
+      pf_color: '#fbd495'
+      pa: 1297.3
+      pa_color: '#f49445'
+      all_play: 37-83-1
     - &id012
       finish: 12
       team: 2x Runner Up
       logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
       owner_id: lukstein
       owner_name: Luke
-      record: 2-8
-      pct: 0.2
+      record: 2-9
+      pct: 0.18181818181818182
       tag: null
-      gb: '6'
-      pct_str: '.200'
-      pf: 861.4
+      gb: '7'
+      pct_str: '.182'
+      pf: 962.4
       pf_color: '#fdf3e0'
-      pa: 1214.2
-      pa_color: '#f17d3f'
-      all_play: 20-90
+      pa: 1317.6
+      pa_color: '#f28742'
+      all_play: 24-97
     standings_rows:
     - *id001
     - *id002
@@ -252,7 +252,7 @@ detail:
     - *id012
     notes:
     - Lexi joined the league; Henry departed (RIP King of the league).
-    weeks_played: 10
+    weeks_played: 11
     draft_order:
     - pick: 1
       owner_id: jackperkins74
@@ -463,10 +463,19 @@ detail:
         - Cam Skattebo
     - week: 11
       parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Skatt
+        gave:
+        - Jordan Addison
+        - Ryan Flournoy
+        - Jahmyr Gibbs
       - owner_id: shawne2520997
         owner_name: Shawnee
         team: Swift kick in the Dak
-        gave: []
+        gave:
+        - George Pickens
+        - James Cook III
     keepers:
     - round: 5
       player: Brock Bowers

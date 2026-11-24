@@ -3,9 +3,9 @@ active:
   name: Shawnee
   seasons: 11
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-  record: 84-60-1
-  win_pct: '.583'
-  win_color: '#f49746'
+  record: 85-60-1
+  win_pct: '.586'
+  win_color: '#f49645'
   titles: '2'
   sackos: 2
   trades: 5
@@ -18,12 +18,12 @@ active:
   name: Jack
   seasons: 13
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-  record: 96-75
-  win_pct: '.561'
-  win_color: '#f69f47'
+  record: 97-75
+  win_pct: '.564'
+  win_color: '#f59e47'
   titles: '2'
   sackos: 1
-  trades: 15
+  trades: 16
   best_finish:
     type: shiva
     years:
@@ -33,9 +33,9 @@ active:
   name: Dillon
   seasons: 11
   logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
-  record: 86-57-2
-  win_pct: '.600'
-  win_color: '#f49044'
+  record: 86-58-2
+  win_pct: '.596'
+  win_color: '#f49244'
   titles: '1'
   sackos: 0
   trades: 17
@@ -47,9 +47,9 @@ active:
   name: Zach
   seasons: 13
   logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-  record: 88-82-1
-  win_pct: '.518'
-  win_color: '#f8af4b'
+  record: 89-82-1
+  win_pct: '.520'
+  win_color: '#f8ae4b'
   titles: '1'
   sackos: 2
   trades: 21
@@ -61,9 +61,9 @@ active:
   name: Luke
   seasons: 13
   logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-  record: 77-94
-  win_pct: '.450'
-  win_color: '#fac572'
+  record: 77-95
+  win_pct: '.448'
+  win_color: '#fac673'
   titles: '1'
   sackos: 1
   trades: 9
@@ -75,9 +75,9 @@ active:
   name: Wade
   seasons: 13
   logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-  record: 101-69-1
-  win_pct: '.594'
-  win_color: '#f49345'
+  record: 101-70-1
+  win_pct: '.590'
+  win_color: '#f49445'
   titles: ½
   sackos: 0
   trades: 8
@@ -89,9 +89,9 @@ active:
   name: Jono
   seasons: 13
   logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-  record: 85-85-1
-  win_pct: '.500'
-  win_color: '#f9b64d'
+  record: 85-86-1
+  win_pct: '.497'
+  win_color: '#f9b74f'
   titles: ½
   sackos: 0
   trades: 2
@@ -103,9 +103,9 @@ active:
   name: Grant
   seasons: 3
   logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-  record: 21-17
-  win_pct: '.553'
-  win_color: '#f6a248'
+  record: 22-17
+  win_pct: '.564'
+  win_color: '#f59e47'
   titles: '0'
   sackos: 0
   trades: 0
@@ -118,9 +118,9 @@ active:
   name: Trevor
   seasons: 8
   logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-  record: 49-57
-  win_pct: '.462'
-  win_color: '#fac269'
+  record: 49-58
+  win_pct: '.458'
+  win_color: '#fac36c'
   titles: '0'
   sackos: 0
   trades: 6
@@ -129,27 +129,13 @@ active:
     ordinal: 2nd
     years:
     - 2021
-- id: alexandra
-  name: Lexi
-  seasons: 1
-  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-  record: 4-6
-  win_pct: '.400'
-  win_color: '#fbd496'
-  titles: '0'
-  sackos: 0
-  trades: 1
-  best_finish:
-    type: place
-    ordinal: —
-    years: []
 - id: whowonthelastsuperbowl
   name: Nate
   seasons: 13
   logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-  record: 68-103
-  win_pct: '.398'
-  win_color: '#fbd598'
+  record: 69-103
+  win_pct: '.401'
+  win_color: '#fbd496'
   titles: '0'
   sackos: 2
   trades: 4
@@ -163,9 +149,9 @@ active:
   name: Kevin
   seasons: 13
   logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-  record: 67-102-2
-  win_pct: '.398'
-  win_color: '#fbd598'
+  record: 68-102-2
+  win_pct: '.401'
+  win_color: '#fbd496'
   titles: '0'
   sackos: 0
   trades: 0
@@ -174,6 +160,20 @@ active:
     ordinal: 2nd
     years:
     - 2025
+- id: alexandra
+  name: Lexi
+  seasons: 1
+  logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+  record: 4-7
+  win_pct: '.364'
+  win_color: '#fce0b1'
+  titles: '0'
+  sackos: 0
+  trades: 1
+  best_finish:
+    type: place
+    ordinal: —
+    years: []
 inactive:
 - id: henpen28
   name: Henry
