@@ -6220,11 +6220,6 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Terrance Ferguson
-      pos: TE
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Cam Little
       pos: K
       cost: R9
