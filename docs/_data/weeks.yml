@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -3725,7 +3725,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 12, 2026 · 1:08 PM PST
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power:
   - rank: 1
@@ -3863,16 +3863,16 @@
     home_record: 4-6
     away_record: 5-5
     scored: true
-    home_yet: 1
+    home_yet: 0
     away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 71.1
+    home_score: 76.7
     away_score: 95.9
     winner_id: null
     tie: false
-    margin: 24.8
+    margin: 19.2
     home_proj: 106.5
     away_proj: 104.4
   - home_id: lukstein
@@ -3887,15 +3887,15 @@
     away_record: 8-2
     scored: true
     home_yet: 0
-    away_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
     home_score: 101.0
-    away_score: 92.1
+    away_score: 103.4
     winner_id: null
     tie: false
-    margin: 8.9
+    margin: 2.4
     home_proj: 95.7
     away_proj: 127.3
   - home_id: schirmerj
@@ -3910,15 +3910,15 @@
     away_record: 3-6-1
     scored: true
     home_yet: 0
-    away_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
     home_score: 123.5
-    away_score: 138.0
+    away_score: 144.1
     winner_id: null
     tie: false
-    margin: 14.5
+    margin: 20.6
     home_proj: 122.0
     away_proj: 124.2
   - home_id: sturmanator15
@@ -3933,15 +3933,15 @@
     away_record: 3-7
     scored: true
     home_yet: 0
-    away_yet: 1
+    away_yet: 0
     final: false
     live: true
     playoff: false
     home_score: 92.6
-    away_score: 117.5
+    away_score: 134.2
     winner_id: null
     tie: false
-    margin: 24.9
+    margin: 41.6
     home_proj: 108.6
     away_proj: 123.0
   - home_id: whowonthelastsuperbowl
@@ -3955,16 +3955,16 @@
     home_record: 6-4
     away_record: 3-6-1
     scored: true
-    home_yet: 1
+    home_yet: 0
     away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 115.3
+    home_score: 121.8
     away_score: 111.9
     winner_id: null
     tie: false
-    margin: 3.4
+    margin: 9.9
     home_proj: 123.2
     away_proj: 107.2
   - home_id: zachzoske
@@ -3978,16 +3978,16 @@
     home_record: 8-2
     away_record: 5-5
     scored: true
-    home_yet: 1
-    away_yet: 1
+    home_yet: 0
+    away_yet: 0
     final: false
     live: true
     playoff: false
-    home_score: 88.4
-    away_score: 45.4
+    home_score: 110.3
+    away_score: 62.3
     winner_id: null
     tie: false
-    margin: 43.0
+    margin: 48.0
     home_proj: 132.8
     away_proj: 108.0
   highlights: []
@@ -4083,7 +4083,7 @@
     decided: false
     result: null
   projected_at: Nov 19, 2026 · 2:01 PM PST
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: true
   power:
   - rank: 1
@@ -4309,7 +4309,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power: []
 2026-13:
@@ -4415,7 +4415,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power: []
 2026-14:
@@ -4521,6 +4521,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 23, 11:38 AM PST
+  updated_at: Nov 23, 8:30 PM PST
   current: false
   power: []

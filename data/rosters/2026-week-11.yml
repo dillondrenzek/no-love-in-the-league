@@ -1,6 +1,6 @@
 season: 2026
 week: 11
-captured_at: '2026-11-23T19:38:08+00:00'
+captured_at: '2026-11-24T04:30:18+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -150,7 +150,7 @@ rosters:
     pos: QB
     starter: true
     proj: 25.35
-    actual: null
+    actual: 21.9
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -247,14 +247,14 @@ rosters:
     starter: false
     proj: 6.61
     actual: 3.3
-    injury: QUESTIONABLE
+    injury: OUT
     pro_team: IND
     bye_week: 13
   - player: Bengals D/ST
     pos: D/ST
     starter: false
     proj: 5.03
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -322,7 +322,7 @@ rosters:
     pos: RB
     starter: false
     proj: 6.76
-    actual: null
+    actual: 0.5
     injury: QUESTIONABLE
     pro_team: WSH
     bye_week: 7
@@ -586,7 +586,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.75
-    actual: null
+    actual: 11.3
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -662,7 +662,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.16
-    actual: null
+    actual: 6.1
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -794,7 +794,7 @@ rosters:
     pos: WR
     starter: true
     proj: 21.02
-    actual: null
+    actual: 5.6
     injury: ''
     pro_team: CIN
     bye_week: 6
@@ -966,7 +966,7 @@ rosters:
     pos: QB
     starter: true
     proj: 20.99
-    actual: null
+    actual: 16.9
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -1047,7 +1047,7 @@ rosters:
     starter: true
     proj: 6.12
     actual: 4.3
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
 - manager_id: '{08EEAEBF-D2BB-4748-9BEA-E8C1B109FA5F}'
@@ -1091,7 +1091,7 @@ rosters:
     starter: true
     proj: 7.74
     actual: 7.7
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
   - player: Aaron Jones Sr.
@@ -1106,7 +1106,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.53
-    actual: null
+    actual: 6.5
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -1278,7 +1278,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.12
-    actual: null
+    actual: 14.7
     injury: INJURY_RESERVE
     pro_team: WSH
     bye_week: 7
@@ -1286,7 +1286,7 @@ rosters:
     pos: TE
     starter: false
     proj: 7.79
-    actual: null
+    actual: 8.6
     injury: ''
     pro_team: WSH
     bye_week: 7
@@ -1518,7 +1518,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.14
-    actual: null
+    actual: 16.7
     injury: ''
     pro_team: WSH
     bye_week: 7
