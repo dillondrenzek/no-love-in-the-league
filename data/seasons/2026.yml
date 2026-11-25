@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-25T13:43:05+00:00
+updated_at: 2026-11-25T23:53:29+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -156,11 +156,11 @@ matchups:
   - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 92.6, away_score: 134.2, playoff: false }
   - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 121.8, away_score: 111.9, playoff: false }
   - { week: 11, home: zachzoske, away: purpsworth, home_score: 110.3, away_score: 62.3, playoff: false }
-  - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false, home_proj: 95.13, away_proj: 111.29 }
-  - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 97.27, away_proj: 128.37 }
-  - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false, home_proj: 100.55, away_proj: 99.12 }
-  - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false, home_proj: 110.46, away_proj: 98.48 }
-  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 119.46, away_proj: 119.68 }
+  - { week: 12, home: alexandra, away: purpsworth, playoff: false, played: false, home_proj: 76.94, away_proj: 114.31 }
+  - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 116.13, away_proj: 128.96 }
+  - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false, home_proj: 110.16, away_proj: 109.04 }
+  - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false, home_proj: 111.39, away_proj: 117.72 }
+  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 116.5, away_proj: 119.78 }
   - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false, home_proj: 138.73, away_proj: 121.22 }
   - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
   - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
@@ -398,13 +398,13 @@ transactions:
   jackperkins74: { adds: 60, drops: 44, moves: 104 }
   kevbots22: { adds: 10, drops: 8, moves: 18 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
-  purpsworth: { adds: 15, drops: 8, moves: 23 }
-  schirmerj: { adds: 18, drops: 18, moves: 36 }
+  purpsworth: { adds: 17, drops: 8, moves: 25 }
+  schirmerj: { adds: 19, drops: 19, moves: 38 }
   shawne2520997: { adds: 29, drops: 22, moves: 51 }
-  sturmanator15: { adds: 40, drops: 36, moves: 76 }
+  sturmanator15: { adds: 42, drops: 38, moves: 80 }
   theoceanpulse: { adds: 41, drops: 34, moves: 75 }
   whowonthelastsuperbowl: { adds: 21, drops: 12, moves: 33 }
-  zachzoske: { adds: 44, drops: 29, moves: 73 }
+  zachzoske: { adds: 45, drops: 30, moves: 75 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -1144,6 +1144,10 @@ rosters:
     via: add
     week: 11
     waiver: false
+  - player: Patriots D/ST
+    via: add
+    week: 12
+    waiver: false
   lukstein:
   - player: Saquon Barkley
     via: draft
@@ -1379,6 +1383,14 @@ rosters:
     via: add
     week: 11
     waiver: false
+  - player: Devaughn Vele
+    via: add
+    week: 12
+    waiver: false
+  - player: Jason Sanders
+    via: add
+    week: 12
+    waiver: false
   sturmanator15:
   - player: Jaxon Smith-Njigba
     via: draft
@@ -1574,6 +1586,14 @@ rosters:
   - player: Treylon Burks
     via: add
     week: 11
+    waiver: false
+  - player: Dylan Sampson
+    via: add
+    week: 12
+    waiver: false
+  - player: Giants D/ST
+    via: add
+    week: 12
     waiver: false
   zachzoske:
   - player: Amon-Ra St. Brown

@@ -3259,7 +3259,7 @@ zachzoske:
     playoff_apps: 5
     trades: 21
     trades_known: true
-    tx_per_year: 109.7
+    tx_per_year: 109.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -3282,7 +3282,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 9-2
-    tx: 73
+    tx: 75
     in_progress: true
     pf: 1431.7
     pa: 1153.1
@@ -6223,11 +6223,6 @@ zachzoske:
       cost: R3
       basis: Drafted R5
       ineligible: false
-    - player: Germie Bernard
-      pos: WR
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: Ted Hurst III
       pos: WR
       cost: R13
@@ -6237,6 +6232,11 @@ zachzoske:
       pos: TE
       cost: R8
       basis: Drafted R10
+      ineligible: false
+    - player: Mike Gesicki
+      pos: TE
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Cam Little
       pos: K
@@ -6272,7 +6272,7 @@ sturmanator15:
     playoff_apps: 8
     trades: 8
     trades_known: true
-    tx_per_year: 94.8
+    tx_per_year: 95.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -6295,7 +6295,7 @@ sturmanator15:
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     finish: 3rd
     record: 7-4
-    tx: 76
+    tx: 80
     in_progress: true
     pf: 1448.8
     pa: 1345.7
@@ -6839,6 +6839,14 @@ sturmanator15:
     - player: Treylon Burks
       via: add
       week: 11
+      waiver: false
+    - player: Dylan Sampson
+      via: add
+      week: 12
+      waiver: false
+    - player: Giants D/ST
+      via: add
+      week: 12
       waiver: false
   - year: 2025
     players:
@@ -8862,6 +8870,11 @@ sturmanator15:
       cost: R13
       basis: Undrafted
       ineligible: false
+    - player: Dylan Sampson
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Jaxon Smith-Njigba
       pos: WR
       cost: Ineligible
@@ -8892,17 +8905,12 @@ sturmanator15:
       cost: R7
       basis: Drafted R9
       ineligible: false
-    - player: Mark Andrews
-      pos: TE
-      cost: R9
-      basis: Drafted R11
-      ineligible: false
     - player: Chris Boswell
       pos: K
       cost: R13
       basis: Drafted R15
       ineligible: false
-    - player: Panthers D/ST
+    - player: Giants D/ST
       pos: D/ST
       cost: R13
       basis: Undrafted
@@ -11340,7 +11348,7 @@ schirmerj:
     playoff_apps: 9
     trades: 2
     trades_known: true
-    tx_per_year: 54.7
+    tx_per_year: 54.9
     tx_known: false
     seasons: 13
     best_finish:
@@ -11363,7 +11371,7 @@ schirmerj:
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     finish: 6th
     record: 5-6
-    tx: 36
+    tx: 38
     in_progress: true
     pf: 1251.2
     pa: 1350.3
@@ -11756,6 +11764,10 @@ schirmerj:
     - player: Chase McLaughlin
       via: add
       week: 11
+      waiver: false
+    - player: Patriots D/ST
+      via: add
+      week: 12
       waiver: false
   - year: 2025
     players:
@@ -13178,10 +13190,10 @@ schirmerj:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Bears D/ST
+    - player: Patriots D/ST
       pos: D/ST
       cost: R13
-      basis: Undrafted
+      basis: Drafted R15
       ineligible: false
 purpsworth:
   name: Trevor
@@ -13205,7 +13217,7 @@ purpsworth:
     playoff_apps: 4
     trades: 6
     trades_known: true
-    tx_per_year: 42.1
+    tx_per_year: 42.4
     tx_known: true
     seasons: 8
     best_finish:
@@ -13229,7 +13241,7 @@ purpsworth:
     logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
     finish: 7th
     record: 5-6
-    tx: 23
+    tx: 25
     in_progress: true
     pf: 1106.3
     pa: 1191.0
@@ -13596,6 +13608,14 @@ purpsworth:
     - player: Dallas Goedert
       via: add
       week: 11
+      waiver: false
+    - player: Devaughn Vele
+      via: add
+      week: 12
+      waiver: false
+    - player: Jason Sanders
+      via: add
+      week: 12
       waiver: false
   - year: 2025
     players:
@@ -14765,6 +14785,11 @@ purpsworth:
       cost: R13
       basis: Drafted R15
       ineligible: false
+    - player: Devaughn Vele
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Omar Cooper Jr.
       pos: WR
       cost: R13
@@ -14775,7 +14800,7 @@ purpsworth:
       cost: R3
       basis: Drafted R5
       ineligible: false
-    - player: Chad Ryland
+    - player: Jason Sanders
       pos: K
       cost: R13
       basis: Undrafted
