@@ -14754,11 +14754,6 @@ purpsworth:
       cost: R3
       basis: Drafted R5
       ineligible: false
-    - player: Dallas Goedert
-      pos: TE
-      cost: R6
-      basis: Drafted R8
-      ineligible: false
     - player: Chad Ryland
       pos: K
       cost: R13
@@ -20657,11 +20652,6 @@ theoceanpulse:
       basis: Drafted R13
       ineligible: false
     - player: Buccaneers D/ST
-      pos: D/ST
-      cost: R13
-      basis: Undrafted
-      ineligible: false
-    - player: Chiefs D/ST
       pos: D/ST
       cost: R13
       basis: Undrafted
