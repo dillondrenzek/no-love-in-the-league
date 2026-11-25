@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-25T03:14:17+00:00
+updated_at: 2026-11-25T13:43:05+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -160,8 +160,8 @@ matchups:
   - { week: 12, home: schirmerj, away: jackperkins74, playoff: false, played: false, home_proj: 97.27, away_proj: 128.37 }
   - { week: 12, home: sturmanator15, away: lukstein, playoff: false, played: false, home_proj: 100.55, away_proj: 99.12 }
   - { week: 12, home: theoceanpulse, away: gganoom, playoff: false, played: false, home_proj: 110.46, away_proj: 98.48 }
-  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 117.54, away_proj: 119.68 }
-  - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false, home_proj: 138.73, away_proj: 119.8 }
+  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, playoff: false, played: false, home_proj: 119.46, away_proj: 119.68 }
+  - { week: 12, home: zachzoske, away: kevbots22, playoff: false, played: false, home_proj: 138.73, away_proj: 121.22 }
   - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
   - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
   - { week: 13, home: schirmerj, away: alexandra, playoff: false, played: false }
@@ -395,16 +395,16 @@ transactions_known: true
 transactions:
   alexandra: { adds: 14, drops: 13, moves: 27 }
   gganoom: { adds: 13, drops: 7, moves: 20 }
-  jackperkins74: { adds: 59, drops: 43, moves: 102 }
-  kevbots22: { adds: 9, drops: 7, moves: 16 }
+  jackperkins74: { adds: 60, drops: 44, moves: 104 }
+  kevbots22: { adds: 10, drops: 8, moves: 18 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
   purpsworth: { adds: 15, drops: 8, moves: 23 }
   schirmerj: { adds: 18, drops: 18, moves: 36 }
   shawne2520997: { adds: 29, drops: 22, moves: 51 }
   sturmanator15: { adds: 40, drops: 36, moves: 76 }
   theoceanpulse: { adds: 41, drops: 34, moves: 75 }
-  whowonthelastsuperbowl: { adds: 19, drops: 10, moves: 29 }
-  zachzoske: { adds: 42, drops: 28, moves: 70 }
+  whowonthelastsuperbowl: { adds: 21, drops: 12, moves: 33 }
+  zachzoske: { adds: 44, drops: 29, moves: 73 }
 
 # Everyone rostered this season per franchise: the union of drafted players,
 # waiver/FA adds, and trade acquisitions, deduped by player and tagged with
@@ -665,6 +665,10 @@ rosters:
   - player: Ryan Flournoy
     via: add
     week: 11
+    waiver: true
+  - player: CJ Daniels
+    via: add
+    week: 12
     waiver: true
   gganoom:
   - player: Bijan Robinson
@@ -1774,6 +1778,10 @@ rosters:
     via: add
     week: 11
     waiver: false
+  - player: Ted Hurst III
+    via: add
+    week: 12
+    waiver: true
   theoceanpulse:
   - player: Omarion Hampton
     via: draft
@@ -2079,6 +2087,10 @@ rosters:
     via: add
     week: 11
     waiver: false
+  - player: Commanders D/ST
+    via: add
+    week: 12
+    waiver: false
   whowonthelastsuperbowl:
   - player: Derrick Henry
     via: draft
@@ -2192,4 +2204,12 @@ rosters:
   - player: Bo Nix
     via: add
     week: 11
+    waiver: true
+  - player: Geno Smith
+    via: add
+    week: 12
+    waiver: false
+  - player: Jack Bech
+    via: add
+    week: 12
     waiver: true

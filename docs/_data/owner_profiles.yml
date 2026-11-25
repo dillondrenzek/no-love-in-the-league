@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 16
     trades_known: true
-    tx_per_year: 123.0
+    tx_per_year: 123.2
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 9-2
-    tx: 102
+    tx: 104
     in_progress: true
     pf: 1502.3
     pa: 1215.3
@@ -763,6 +763,10 @@ jackperkins74:
     - player: Ryan Flournoy
       via: add
       week: 11
+      waiver: true
+    - player: CJ Daniels
+      via: add
+      week: 12
       waiver: true
   - year: 2025
     players:
@@ -3207,7 +3211,7 @@ jackperkins74:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Pat Bryant
+    - player: CJ Daniels
       pos: WR
       cost: R13
       basis: Undrafted
@@ -3255,7 +3259,7 @@ zachzoske:
     playoff_apps: 5
     trades: 21
     trades_known: true
-    tx_per_year: 109.3
+    tx_per_year: 109.7
     tx_known: false
     seasons: 13
     best_finish:
@@ -3278,7 +3282,7 @@ zachzoske:
     logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
     finish: 2nd
     record: 9-2
-    tx: 70
+    tx: 73
     in_progress: true
     pf: 1431.7
     pa: 1153.1
@@ -3991,6 +3995,10 @@ zachzoske:
       via: add
       week: 11
       waiver: false
+    - player: Ted Hurst III
+      via: add
+      week: 12
+      waiver: true
   - year: 2025
     players:
     - player: CeeDee Lamb
@@ -6215,6 +6223,16 @@ zachzoske:
       cost: R3
       basis: Drafted R5
       ineligible: false
+    - player: Germie Bernard
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Ted Hurst III
+      pos: WR
+      cost: R13
+      basis: Undrafted
+      ineligible: false
     - player: Isaiah Likely
       pos: TE
       cost: R8
@@ -6234,11 +6252,6 @@ zachzoske:
       pos: D/ST
       cost: R13
       basis: Drafted R15
-      ineligible: false
-    - player: Bengals D/ST
-      pos: D/ST
-      cost: R13
-      basis: Undrafted
       ineligible: false
 sturmanator15:
   name: Wade
@@ -8913,7 +8926,7 @@ whowonthelastsuperbowl:
     playoff_apps: 4
     trades: 4
     trades_known: true
-    tx_per_year: 36.1
+    tx_per_year: 36.6
     tx_known: false
     seasons: 13
     best_finish:
@@ -8938,7 +8951,7 @@ whowonthelastsuperbowl:
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     finish: 4th
     record: 7-4
-    tx: 29
+    tx: 33
     in_progress: true
     pf: 1294.1
     pa: 1217.2
@@ -9356,6 +9369,14 @@ whowonthelastsuperbowl:
     - player: Bo Nix
       via: add
       week: 11
+      waiver: true
+    - player: Geno Smith
+      via: add
+      week: 12
+      waiver: false
+    - player: Jack Bech
+      via: add
+      week: 12
       waiver: true
   - year: 2025
     players:
@@ -10650,10 +10671,10 @@ whowonthelastsuperbowl:
       cost: R9
       basis: Drafted R11
       ineligible: false
-    - player: Bo Nix
+    - player: Geno Smith
       pos: QB
-      cost: R10
-      basis: Drafted R12
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Tyler Shough
       pos: QB
@@ -10680,11 +10701,6 @@ whowonthelastsuperbowl:
       cost: R5
       basis: Drafted R7
       ineligible: false
-    - player: Alvin Kamara
-      pos: RB
-      cost: R13
-      basis: Undrafted
-      ineligible: false
     - player: CeeDee Lamb
       pos: WR
       cost: Ineligible
@@ -10704,6 +10720,11 @@ whowonthelastsuperbowl:
       pos: WR
       cost: R7
       basis: Drafted R9
+      ineligible: false
+    - player: Jack Bech
+      pos: WR
+      cost: R13
+      basis: Undrafted
       ineligible: false
     - player: Sam LaPorta
       pos: TE
@@ -16640,7 +16661,7 @@ kevbots22:
     playoff_apps: 5
     trades: 0
     trades_known: true
-    tx_per_year: 31.2
+    tx_per_year: 31.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -16664,7 +16685,7 @@ kevbots22:
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     finish: 9th
     record: 4-6-1
-    tx: 16
+    tx: 18
     in_progress: true
     pf: 1243.4
     pa: 1359.9
@@ -17008,6 +17029,10 @@ kevbots22:
     - player: Chargers D/ST
       via: add
       week: 11
+      waiver: false
+    - player: Commanders D/ST
+      via: add
+      week: 12
       waiver: false
   - year: 2025
     players:
@@ -18173,10 +18198,10 @@ kevbots22:
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Chargers D/ST
+    - player: Commanders D/ST
       pos: D/ST
       cost: R13
-      basis: Drafted R15
+      basis: Undrafted
       ineligible: false
 alexandra:
   name: Lexi
