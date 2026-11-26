@@ -170,7 +170,7 @@
         eliminated: true
       playoffs:
         text: 93%
-        color: '#ef753d'
+        color: '#f0753d'
         dim: false
         trend: null
       bye:
@@ -276,8 +276,8 @@
         color: '#fdf1da'
         dim: false
       playoffs:
-        text: 31%
-        color: '#facd84'
+        text: 32%
+        color: '#facc83'
         dim: false
         trend: null
       bye:
@@ -311,7 +311,7 @@
         dim: false
       playoffs:
         text: 14%
-        color: '#fce2b8'
+        color: '#fce2b7'
         dim: false
         trend:
           dir: down
@@ -346,12 +346,9 @@
         color: '#fac46e'
         dim: false
       playoffs:
-        text: ✕
-        title: 'Out: can''t reach the top five by record, and more than 50 points
-          per game behind the 6th seed'
+        text: <1%
         color: '#ffffff'
         dim: true
-        eliminated: true
         trend: null
       bye:
         text: ✕
@@ -383,12 +380,9 @@
         color: '#f8b14c'
         dim: false
       playoffs:
-        text: ✕
-        title: 'Out: can''t reach the top five by record, and more than 50 points
-          per game behind the 6th seed'
+        text: <1%
         color: '#ffffff'
         dim: true
-        eliminated: true
         trend: null
       bye:
         text: ✕
@@ -420,12 +414,9 @@
         color: '#ee6c3b'
         dim: false
       playoffs:
-        text: ✕
-        title: 'Out: can''t reach the top five by record, and more than 50 points
-          per game behind the 6th seed'
+        text: <1%
         color: '#ffffff'
         dim: true
-        eliminated: true
         trend: null
       bye:
         text: ✕
@@ -638,7 +629,7 @@
         dim: false
       playoffs:
         text: 54%
-        color: '#f8af4b'
+        color: '#f8b04b'
         dim: false
         trend:
           dir: up
@@ -668,7 +659,7 @@
     cells:
       sacko_bye:
         text: 2%
-        color: '#fdf0da'
+        color: '#fdf1da'
         dim: false
       playoffs:
         text: 31%
@@ -744,7 +735,7 @@
         dim: false
       playoffs:
         text: 21%
-        color: '#fbdaa4'
+        color: '#fbdaa3'
         dim: false
         trend:
           dir: up
@@ -780,7 +771,7 @@
         dim: false
       playoffs:
         text: 1%
-        color: '#fdf2dc'
+        color: '#fdf1dc'
         dim: false
         trend:
           dir: down
@@ -849,12 +840,9 @@
         color: '#ee6c3b'
         dim: false
       playoffs:
-        text: ✕
-        title: 'Out: can''t reach the top five by record, and more than 50 points
-          per game behind the 6th seed'
+        text: <1%
         color: '#ffffff'
         dim: true
-        eliminated: true
         trend: null
       bye:
         text: ✕
@@ -932,9 +920,9 @@
       now: 98%
       win: '>99%'
       lose: 97%
-      now_p: 0.9826
+      now_p: 0.9823
       win_p: 0.9956
-      lose_p: 0.9683
+      lose_p: 0.9677
       root: []
       note: null
       settled: null
@@ -946,10 +934,10 @@
       label: A playoff spot
       now: 93%
       win: 99%
-      lose: 89%
-      now_p: 0.9347
+      lose: 88%
+      now_p: 0.9315
       win_p: 0.9943
-      lose_p: 0.8853
+      lose_p: 0.8794
       root:
       - Jack over Jono
       note: null
@@ -961,11 +949,11 @@
       goal: playoffs
       label: A playoff spot
       now: 59%
-      win: 69%
+      win: 68%
       lose: 48%
-      now_p: 0.5944
-      win_p: 0.6869
-      lose_p: 0.4829
+      now_p: 0.5925
+      win_p: 0.6842
+      lose_p: 0.482
       root:
       - Jack over Jono
       - Zach over Kevin
@@ -992,12 +980,12 @@
       logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
       goal: playoffs
       label: A playoff spot
-      now: 31%
+      now: 32%
       win: 50%
       lose: 24%
-      now_p: 0.3139
-      win_p: 0.5032
-      lose_p: 0.2411
+      now_p: 0.3165
+      win_p: 0.504
+      lose_p: 0.2444
       root:
       - Nate over Shawnee
       - Zach over Kevin
@@ -1012,12 +1000,12 @@
       now: 14%
       win: 31%
       lose: 11%
-      now_p: 0.136
-      win_p: 0.3076
-      lose_p: 0.1111
+      now_p: 0.1388
+      win_p: 0.3099
+      lose_p: 0.1139
       root:
-      - Nate over Shawnee
       - Jack over Jono
+      - Nate over Shawnee
       note: '6th seed: 38.6 behind Shawnee'
       settled: null
     - fid: alexandra
@@ -1046,8 +1034,8 @@
       now: 46%
       win: 69%
       lose: 26%
-      now_p: 0.4641
-      win_p: 0.69
+      now_p: 0.464
+      win_p: 0.6898
       lose_p: 0.2587
       root:
       - Trevor over Lexi

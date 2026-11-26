@@ -69,16 +69,12 @@ def _reg_seeds(season):
 def _league_seeds(season):
     """The league's playoff seeding for a 12-team season: seeds 1-5 by record, the
     6th seed is the highest-points-for team of the rest, then 7-12 by record.
-    A season may carry `wildcard_out` (fids out of the 6th-seed race under the
-    50-points-per-game rule, see lib.odds.wildcard_cut); those teams are skipped
-    for the 6th seed. Returns {fid: seed} or None if there aren't 12 ranked teams."""
+    Returns {fid: seed} or None if there aren't 12 ranked teams."""
     stats = _record_stats(season)
     if len(stats) < 12:
         return None
     by_rec = sorted(stats, key=lambda f: (stats[f][0], stats[f][1]), reverse=True)
-    out = set(season.get("wildcard_out") or ())
-    pool = [f for f in by_rec[5:] if f not in out] or by_rec[5:]
-    shiva = by_rec[:5] + [max(pool, key=lambda f: stats[f][1])]
+    shiva = by_rec[:5] + [max(by_rec[5:], key=lambda f: stats[f][1])]
     sacko = [f for f in by_rec if f not in shiva]
     seed = {f: i + 1 for i, f in enumerate(shiva)}
     seed.update({f: i + 7 for i, f in enumerate(sacko)})
