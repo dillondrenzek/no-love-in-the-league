@@ -1,0 +1,50 @@
+{%- comment -%}
+Full-width "What to Root For" section: for each team, the one goal still in play
+this week, its odds now, if the team wins and if it loses, and the other games
+this week that help it most. Every value is precomputed by lib/odds.rooting_guide
+from the same simulation as the forecast table. Param: g (a site.data.odds
+record's `rooting`: {week, rows}).
+{%- endcomment -%}
+{%- assign g = include.g -%}
+<section class="season-section" id="rooting">
+<h2>What to Root For · Week {{ g.week }}</h2>
+<p class="forecast__note">The one thing each team is still playing for, its odds now, what a win or a loss this week does to them, and the other games this week that help it most. In the race for the 6th seed, every point counts, so contenders also show their points gap. From the same simulations as the forecast.</p>
+<div class="table-scroll">
+<table class="rooting">
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Chasing</th>
+      <th class="num">Now</th>
+      <th class="num">Win</th>
+      <th class="num">Lose</th>
+      <th>Root for</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for r in g.rows %}
+    {%- assign href = '/teams/' | append: r.fid | append: '/' | relative_url -%}
+    <tr>
+      <td class="team-cell">
+        {%- include bits/team_logo.html src=r.logo -%}
+        <a class="rooting__team" href="{{ href }}">{{ r.owner }}</a>
+      </td>
+      {%- if r.goal %}
+      <td class="rooting__goal">{{ r.label }}</td>
+      <td class="num">{{ r.now }}</td>
+      <td class="num rooting__win">{{ r.win | default: "—" }}</td>
+      <td class="num rooting__lose">{{ r.lose | default: "—" }}</td>
+      {%- else %}
+      <td class="rooting__goal rooting__settled" colspan="4">{{ r.settled }}</td>
+      {%- endif %}
+      <td class="rooting__root">
+        {%- for x in r.root %}<span class="rooting__pick">{{ x }}</span>{% endfor -%}
+        {%- if r.root.size == 0 and r.goal %}<span class="rooting__none">Just win</span>{% endif -%}
+        {%- if r.note %}<span class="rooting__note">{{ r.note }}</span>{% endif -%}
+      </td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+</section>

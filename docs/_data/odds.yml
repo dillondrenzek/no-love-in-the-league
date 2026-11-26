@@ -431,3 +431,200 @@
       gap: 102.5
       pf_gap: 307.6
     seed: 12
+  rooting:
+    week: 12
+    rows:
+    - fid: jackperkins74
+      owner: Jack
+      team: Skatt
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+      goal: bye
+      label: A first-round bye
+      now: 96%
+      win: 99%
+      lose: 89%
+      now_p: 0.9628
+      win_p: 0.9873
+      lose_p: 0.8949
+      root:
+      - Luke over Wade
+      note: null
+      settled: null
+    - fid: zachzoske
+      owner: Zach
+      team: Tuten Your Mother, Respectfully
+      logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+      goal: bye
+      label: A first-round bye
+      now: 81%
+      win: 92%
+      lose: 59%
+      now_p: 0.8144
+      win_p: 0.9158
+      lose_p: 0.5947
+      root:
+      - Luke over Wade
+      note: null
+      settled: null
+    - fid: sturmanator15
+      owner: Wade
+      team: The People's Commissioner
+      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+      goal: bye
+      label: A first-round bye
+      now: 21%
+      win: 23%
+      lose: 2%
+      now_p: 0.2106
+      win_p: 0.234
+      lose_p: 0.0218
+      root:
+      - Kevin over Zach
+      - Jono over Jack
+      note: null
+      settled: null
+    - fid: whowonthelastsuperbowl
+      owner: Nate
+      team: Trick or Trick It’s Mike Vick
+      logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+      goal: playoffs
+      label: A playoff spot
+      now: 93%
+      win: 99%
+      lose: 85%
+      now_p: 0.9259
+      win_p: 0.9943
+      lose_p: 0.8502
+      root:
+      - Jack over Jono
+      note: null
+      settled: null
+    - fid: gganoom
+      owner: Grant
+      team: One Big Beautiful Dillbot
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+      goal: playoffs
+      label: A playoff spot
+      now: 99%
+      win: '>99%'
+      lose: 96%
+      now_p: 0.9852
+      win_p: 0.9958
+      lose_p: 0.9562
+      root: []
+      note: null
+      settled: null
+    - fid: shawne2520997
+      owner: Shawnee
+      team: Swift kick in the Dak
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+      goal: playoffs
+      label: A playoff spot
+      now: 54%
+      win: 66%
+      lose: 43%
+      now_p: 0.5426
+      win_p: 0.6647
+      lose_p: 0.4324
+      root:
+      - Jack over Jono
+      - Zach over Kevin
+      note: '6th seed: 18.8 ahead of Jono'
+      settled: null
+    - fid: schirmerj
+      owner: Jono
+      team: Return of the IDP
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      goal: playoffs
+      label: A playoff spot
+      now: 31%
+      win: 52%
+      lose: 23%
+      now_p: 0.3088
+      win_p: 0.5209
+      lose_p: 0.2321
+      root:
+      - Zach over Kevin
+      - Dillon over Grant
+      note: '6th seed: 18.8 behind Shawnee'
+      settled: null
+    - fid: purpsworth
+      owner: Trevor
+      team: I am dead inside
+      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+      goal: avoid_sacko_bye
+      label: Staying out of the Sacko bye
+      now: 94%
+      win: '>99%'
+      lose: 90%
+      now_p: 0.9403
+      win_p: 0.999
+      lose_p: 0.9002
+      root:
+      - Grant over Dillon
+      note: null
+      settled: null
+    - fid: kevbots22
+      owner: Kevin
+      team: Remember the Nice Guys, ChatGPT
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      goal: playoffs
+      label: A playoff spot
+      now: 21%
+      win: 35%
+      lose: 14%
+      now_p: 0.2079
+      win_p: 0.3543
+      lose_p: 0.1403
+      root:
+      - Jack over Jono
+      - Nate over Shawnee
+      note: '6th seed: 26.6 behind Shawnee'
+      settled: null
+    - fid: alexandra
+      owner: Lexi
+      team: Cornstar
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      goal: avoid_sacko_bye
+      label: Staying out of the Sacko bye
+      now: 84%
+      win: 97%
+      lose: 65%
+      now_p: 0.8387
+      win_p: 0.966
+      lose_p: 0.6522
+      root:
+      - Grant over Dillon
+      note: null
+      settled: null
+    - fid: theoceanpulse
+      owner: Dillon
+      team: Im Bleeding Making Me the Shiva
+      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
+      goal: avoid_sacko_bye
+      label: Staying out of the Sacko bye
+      now: 29%
+      win: 61%
+      lose: 17%
+      now_p: 0.2877
+      win_p: 0.6076
+      lose_p: 0.171
+      root:
+      - Trevor over Lexi
+      note: null
+      settled: null
+    - fid: lukstein
+      owner: Luke
+      team: 2x Runner Up
+      logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+      goal: null
+      label: null
+      now: null
+      win: null
+      lose: null
+      now_p: null
+      win_p: null
+      lose_p: null
+      root: []
+      note: Play spoiler against Wade
+      settled: The Sacko bye is all but locked

@@ -299,6 +299,26 @@ td.tile-cell > span {
   border-radius: 5px;
 }
 // =============================================================================
+// What to Root For (rooting guide under the forecast)
+// =============================================================================
+.rooting td { vertical-align: middle; }
+.rooting .team-cell { white-space: nowrap; width: auto; }
+.rooting td.num { font-size: 0.85rem; }
+.rooting td.rooting__win { color: #0f7a30; }
+.rooting td.rooting__lose { color: #c0301c; }
+.rooting td.rooting__goal { font-size: 0.85rem; }
+.rooting td.rooting__settled { color: var(--muted); font-style: italic; }
+.rooting td.rooting__root { font-size: 0.85rem; }
+.rooting__pick, .rooting__note, .rooting__none { display: block; line-height: 1.35; }
+.rooting__note, .rooting__none { color: var(--faint); font-size: 0.75rem; }
+@media (max-width: 640px) {
+  .rooting .team-cell .team-logo { display: none; }
+  .rooting td, .rooting th { padding-left: 4px; padding-right: 4px; }
+  .rooting td.num, .rooting td.rooting__goal, .rooting td.rooting__root { font-size: 0.74rem; }
+  .rooting__note { font-size: 0.68rem; }
+}
+
+// =============================================================================
 // Season forecast (FiveThirtyEight-style odds table)
 // =============================================================================
 // Probability cells match the Owners-page heatmaps: compact rounded tiles on the

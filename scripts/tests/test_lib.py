@@ -2148,6 +2148,40 @@ def test_odds_as_projected_counts_the_live_week_at_projected_finals():
     assert as_projected(season, None) == as_of_now(season)
 
 
+def test_odds_rooting_goal_picks_the_open_question():
+    from lib.odds import rooting_goal
+    assert rooting_goal(1.0, 0.96, 0.0) == "bye"             # in, bye still open
+    assert rooting_goal(0.54, 0.0, 0.03) == "playoffs"       # in the hunt
+    assert rooting_goal(0.01, 0.0, 0.16) == "avoid_sacko_bye"  # long shot: Sacko race
+    assert rooting_goal(0.01, 0.0, 0.0) == "playoffs"        # long shot, nothing below
+    assert rooting_goal(0.0, 0.0, 0.71) == "avoid_sacko_bye"
+    assert rooting_goal(1.0, 1.0, 0.0) is None               # bye all but locked
+    assert rooting_goal(1.0, 0.0, 0.0) is None               # in, no bye chance
+    assert rooting_goal(0.0, 0.0, 1.0) is None               # Sacko bye locked
+
+
+def test_odds_rooting_guide_reads_this_weeks_swings():
+    from lib.odds import Params, forecast, rooting_guide
+    season = _odds_season(11)                               # three weeks to go
+    st, res = forecast(season, Params(), n=2000, seed=9)
+    guide = rooting_guide(season, st, Params(), {}, n=2000, seed=9)
+    assert guide["week"] == 12 and len(guide["rows"]) == 12
+    for r in guide["rows"]:
+        assert len(r["root"]) <= 2
+        if r["goal"]:
+            # Same seed, same simulation: "now" matches the forecast.
+            key = {"bye": "bye", "playoffs": "playoffs"}.get(r["goal"])
+            if key:
+                assert r["now_p"] == round(res[r["fid"]][key], 4)
+            # Winning never hurts your own goal.
+            if r["win_p"] is not None and r["lose_p"] is not None:
+                assert r["win_p"] >= r["lose_p"]
+            assert all(" over " in x for x in r["root"])
+        else:
+            assert r["settled"] and r["now"] is None
+    assert rooting_guide(_odds_season(14), st, Params(), {}, n=10) == {}
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week
