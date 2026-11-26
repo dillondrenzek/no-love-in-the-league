@@ -1917,7 +1917,8 @@ def test_odds_clinch_status_and_labels():
     assert rows["t00"]["cells"]["sacko_bye"]["text"] != "✕"
     # Nothing is locked before a game is played.
     assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set(),
-                                              "no_bye": set(), "no_sacko_bye": set()}
+                                              "no_bye": set(), "no_playoffs": set(),
+                                              "no_sacko_bye": set()}
 
 
 def test_seeding_counts_a_tie_as_half_a_win():
@@ -2146,6 +2147,41 @@ def test_odds_as_projected_counts_the_live_week_at_projected_finals():
     assert wins(rows, h) == wins(cur, h) - 1
     # No live week to project: falls back to current scores.
     assert as_projected(season, None) == as_of_now(season)
+
+
+def test_odds_wildcard_cut_drops_teams_50_a_game_back():
+    from lib.odds import wildcard_cut
+    # Top five by record: a-e. Of the rest, f has the most PF, so f is the 6th seed.
+    wins = {"a": 9, "b": 9, "c": 8, "d": 7, "e": 7, "f": 5, "g": 5, "h": 4, "i": 6}
+    pf = {"a": 1500, "b": 1400, "c": 1450, "d": 1300, "e": 1350,
+          "f": 1300.0, "g": 1150.0, "h": 1149.0, "i": 990.0}
+    left = dict.fromkeys(wins, 3)
+    # g is exactly 50/game back (150 over 3): not *more* than 50, still alive.
+    # h (151 back) and i (310 back, even with a better record) are out.
+    assert wildcard_cut(wins, pf, left) == {"h", "i"}
+    # Out is for good, and an out team can't be the holder: with f already out,
+    # g is the 6th seed: h is only 1 back now, i is still 160 back.
+    assert wildcard_cut(wins, pf, left, out={"f"}) == {"f", "i"}
+    # No games left: nothing to cut, the final seeding settles it.
+    assert wildcard_cut(wins, pf, dict.fromkeys(wins, 0)) == set()
+
+
+def test_odds_wildcard_rule_shapes_the_simulation():
+    from lib.odds import Params, forecast, wildcard_out
+    from lib.playoff_order import _league_seeds
+    # tNN scores 100 + 5*NN every week. After 11 weeks the top five by record are
+    # t07-t11 and t06 (130/week) holds the 6th seed. With 3 games left, t03 is
+    # 165 back (55/game) and out; t04 is 110 back (36.7/game) and still alive.
+    season = _odds_season(11)
+    assert wildcard_out(season) == {"t00", "t01", "t02", "t03"}
+    assert wildcard_out(dict(season, season=2025)) == set()     # rule starts in 2026
+    st, res = forecast(season, Params(), n=2000, seed=5)
+    for f in ("t00", "t01", "t02", "t03"):   # can't reach the top five on record
+        assert res[f]["playoffs"] == 0.0
+    # The seeding skips an out team for the 6th seed, falling back to the next scorer.
+    season = _odds_season(14)
+    assert _league_seeds(season)["t06"] == 6
+    assert _league_seeds(dict(season, wildcard_out={"t06"}))["t05"] == 6
 
 
 def test_odds_rooting_goal_picks_the_open_question():
