@@ -3,859 +3,1067 @@
   live_week: 12
   now_week: 12
   now_projected: true
-  updated_at: Nov 25, 9:55 PM PST
+  updated_at: Nov 25, 9:56 PM PST
   sims: 10000
   rows:
-  - fid: jackperkins74
-    team: Skatt
-    owner: Jack
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-    record: 10-2
-    pf: '1633.6'
-    pf_color: '#ee6b3b'
-    rating: 132.2
-    proj_wins: 11.1
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+    - fid: jackperkins74
+      team: Skatt
+      owner: Jack
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+      record: 10-2
+      pf: "1633.6"
+      pf_color: "#ee6b3b"
+      rating: 132.2
+      proj_wins: 11.1
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: ✓
+          title: Clinched
+          color: "#ee6b3b"
+          dim: false
+          clinched: true
+          trend: null
+        bye:
+          text: 96%
+          color: "#ef723d"
+          dim: false
+      wc_gap:
+        text: 243.9 (+121.9)
+        total: "243.9"
+        ppg: (+121.9)
+        title:
+          "Top five by record. If it drops out: 243.9 PF ahead of the 6th seed
+          with 2 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: ✓
-        title: Clinched
-        color: '#ee6b3b'
-        dim: false
-        clinched: true
-        trend: null
-      bye:
-        text: 96%
-        color: '#ef723d'
-        dim: false
-    wc_gap:
-      text: 243.9 (+121.9)
-      total: '243.9'
-      ppg: (+121.9)
-      title: 'Top five by record. If it drops out: 243.9 PF ahead of the 6th seed
-        with 2 games left'
-      dim: true
-      gap: -121.9
-      pf_gap: -243.9
-    seed: 1
-  - fid: zachzoske
-    team: Tuten Your Mother, Respectfully
-    owner: Zach
-    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-    record: 10-2
-    pf: '1569.7'
-    pf_color: '#f07c3f'
-    rating: 127.0
-    proj_wins: 10.9
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+        gap: -121.9
+        pf_gap: -243.9
+      seed: 1
+    - fid: zachzoske
+      team: Tuten Your Mother, Respectfully
+      owner: Zach
+      logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+      record: 10-2
+      pf: "1569.7"
+      pf_color: "#f07c3f"
+      rating: 127.0
+      proj_wins: 10.9
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: ✓
+          title: Clinched
+          color: "#ee6b3b"
+          dim: false
+          clinched: true
+          trend: null
+        bye:
+          text: 87%
+          color: "#f17e40"
+          dim: false
+      wc_gap:
+        text: 179.9 (+89.9)
+        total: "179.9"
+        ppg: (+89.9)
+        title:
+          "Top five by record. If it drops out: 179.9 PF ahead of the 6th seed
+          with 2 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: ✓
-        title: Clinched
-        color: '#ee6b3b'
-        dim: false
-        clinched: true
-        trend: null
-      bye:
-        text: 87%
-        color: '#f17e40'
-        dim: false
-    wc_gap:
-      text: 179.9 (+89.9)
-      total: '179.9'
-      ppg: (+89.9)
-      title: 'Top five by record. If it drops out: 179.9 PF ahead of the 6th seed
-        with 2 games left'
-      dim: true
-      gap: -89.9
-      pf_gap: -179.9
-    seed: 2
-  - fid: sturmanator15
-    team: The People's Commissioner
-    owner: Wade
-    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    record: 8-4
-    pf: '1584.0'
-    pf_color: '#f0783e'
-    rating: 128.3
-    proj_wins: 9.3
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+        gap: -89.9
+        pf_gap: -179.9
+      seed: 2
+    - fid: sturmanator15
+      team: The People's Commissioner
+      owner: Wade
+      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+      record: 8-4
+      pf: "1584.0"
+      pf_color: "#f0783e"
+      rating: 128.3
+      proj_wins: 9.3
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: ">99%"
+          color: "#ee6b3b"
+          dim: false
+          trend: null
+        bye:
+          text: 17%
+          color: "#fcdfaf"
+          dim: false
+      wc_gap:
+        text: 194.2 (+97.1)
+        total: "194.2"
+        ppg: (+97.1)
+        title:
+          "Top five by record. If it drops out: 194.2 PF ahead of the 6th seed
+          with 2 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: '>99%'
-        color: '#ee6b3b'
+        gap: -97.1
+        pf_gap: -194.2
+      seed: 3
+    - fid: gganoom
+      team: One Big Beautiful Dillbot
+      owner: Grant
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+      record: 7-5
+      pf: "1458.1"
+      pf_color: "#f59946"
+      rating: 120.5
+      proj_wins: 7.8
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: 98%
+          color: "#ee6e3c"
+          dim: false
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: 68.3 (+34.2)
+        total: "68.3"
+        ppg: (+34.2)
+        title:
+          "Top five by record. If it drops out: 68.3 PF ahead of the 6th seed with
+          2 games left"
+        dim: true
+        gap: -34.2
+        pf_gap: -68.3
+      seed: 4
+    - fid: whowonthelastsuperbowl
+      team: Trick or Trick It’s Mike Vick
+      owner: Nate
+      logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+      record: 7-5
+      pf: "1410.6"
+      pf_color: "#f7a649"
+      rating: 117.1
+      proj_wins: 8.3
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: 93%
+          color: "#ef753d"
+          dim: false
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: 20.8 (+10.4)
+        total: "20.8"
+        ppg: (+10.4)
+        title:
+          "Top five by record. If it drops out: 20.8 PF ahead of the 6th seed with
+          2 games left"
+        dim: true
+        gap: -10.4
+        pf_gap: -20.8
+      seed: 5
+    - fid: shawne2520997
+      team: Swift kick in the Dak
+      owner: Shawnee
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+      record: 5-7
+      pf: "1389.8"
+      pf_color: "#f7ab4a"
+      rating: 115.3
+      proj_wins: 6.0
+      cells:
+        sacko_bye:
+          text: 2%
+          color: "#fdf1db"
+          dim: false
+        playoffs:
+          text: 59%
+          color: "#f7a84a"
+          dim: false
+          trend:
+            dir: up
+            text: ▲5
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: WC
+        title: Holds the 6th seed (the points wildcard)
         dim: false
-        trend: null
-      bye:
-        text: 17%
-        color: '#fcdfaf'
+        gap: null
+        holder: true
+      seed: 6
+    - fid: purpsworth
+      team: I am dead inside
+      owner: Trevor
+      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+      record: 6-6
+      pf: "1220.6"
+      pf_color: "#fbd18f"
+      rating: 103.4
+      proj_wins: 6.4
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: 3%
+          color: "#fdefd6"
+          dim: false
+          trend:
+            dir: up
+            text: ▲2
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −169.2 (−84.6)
+        total: −169.2
+        ppg: (−84.6)
+        title: 169.2 PF behind the 6th seed with 2 games left
         dim: false
-    wc_gap:
-      text: 194.2 (+97.1)
-      total: '194.2'
-      ppg: (+97.1)
-      title: 'Top five by record. If it drops out: 194.2 PF ahead of the 6th seed
-        with 2 games left'
-      dim: true
-      gap: -97.1
-      pf_gap: -194.2
-    seed: 3
-  - fid: gganoom
-    team: One Big Beautiful Dillbot
-    owner: Grant
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-    record: 7-5
-    pf: '1458.1'
-    pf_color: '#f59946'
-    rating: 120.5
-    proj_wins: 7.8
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-      playoffs:
-        text: 98%
-        color: '#ee6e3c'
+        gap: 84.6
+        pf_gap: 169.2
+      seed: 7
+    - fid: schirmerj
+      team: Return of the IDP
+      owner: Jono
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      record: 5-7
+      pf: "1366.7"
+      pf_color: "#f8b14c"
+      rating: 114.0
+      proj_wins: 6.5
+      cells:
+        sacko_bye:
+          text: 2%
+          color: "#fdf1da"
+          dim: false
+        playoffs:
+          text: 31%
+          color: "#facd84"
+          dim: false
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −23.1 (−11.5)
+        total: −23.1
+        ppg: (−11.5)
+        title: 23.1 PF behind the 6th seed with 2 games left
         dim: false
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: 68.3 (+34.2)
-      total: '68.3'
-      ppg: (+34.2)
-      title: 'Top five by record. If it drops out: 68.3 PF ahead of the 6th seed with
-        2 games left'
-      dim: true
-      gap: -34.2
-      pf_gap: -68.3
-    seed: 4
-  - fid: whowonthelastsuperbowl
-    team: Trick or Trick It’s Mike Vick
-    owner: Nate
-    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-    record: 7-5
-    pf: '1410.6'
-    pf_color: '#f7a649'
-    rating: 117.1
-    proj_wins: 8.3
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-      playoffs:
-        text: 93%
-        color: '#f0753d'
+        gap: 11.5
+        pf_gap: 23.1
+      seed: 8
+    - fid: kevbots22
+      team: Remember the Nice Guys, ChatGPT
+      owner: Kevin
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      record: 4-7-1
+      pf: "1351.1"
+      pf_color: "#f9b54d"
+      rating: 113.3
+      proj_wins: 5.7
+      cells:
+        sacko_bye:
+          text: 3%
+          color: "#fdefd7"
+          dim: false
+        playoffs:
+          text: 14%
+          color: "#fce2b8"
+          dim: false
+          trend:
+            dir: down
+            text: ▼7
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −38.6 (−19.3)
+        total: −38.6
+        ppg: (−19.3)
+        title: 38.6 PF behind the 6th seed with 2 games left
         dim: false
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: 20.8 (+10.4)
-      total: '20.8'
-      ppg: (+10.4)
-      title: 'Top five by record. If it drops out: 20.8 PF ahead of the 6th seed with
-        2 games left'
-      dim: true
-      gap: -10.4
-      pf_gap: -20.8
-    seed: 5
-  - fid: shawne2520997
-    team: Swift kick in the Dak
-    owner: Shawnee
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-    record: 5-7
-    pf: '1389.8'
-    pf_color: '#f7ab4a'
-    rating: 115.3
-    proj_wins: 6.0
-    cells:
-      sacko_bye:
-        text: 2%
-        color: '#fdf1db'
+        gap: 19.3
+        pf_gap: 38.6
+      seed: 9
+    - fid: alexandra
+      team: Cornstar
+      owner: Lexi
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      record: 4-8
+      pf: "1270.5"
+      pf_color: "#fac775"
+      rating: 109.8
+      proj_wins: 4.8
+      cells:
+        sacko_bye:
+          text: 39%
+          color: "#fac46e"
+          dim: false
+        playoffs:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −119.2 (−59.6)
+        total: −119.2
+        ppg: (−59.6)
+        title: 119.2 PF behind the 6th seed with 2 games left
         dim: false
-      playoffs:
-        text: 59%
-        color: '#f7a84a'
+        gap: 59.6
+        pf_gap: 119.2
+      seed: 10
+    - fid: theoceanpulse
+      team: Im Bleeding Making Me the Shiva
+      owner: Dillon
+      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
+      record: 3-8-1
+      pf: "1214.0"
+      pf_color: "#fbd392"
+      rating: 103.0
+      proj_wins: 4.6
+      cells:
+        sacko_bye:
+          text: 54%
+          color: "#f8b14c"
+          dim: false
+        playoffs:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −175.8 (−87.9)
+        total: −175.8
+        ppg: (−87.9)
+        title: 175.8 PF behind the 6th seed with 2 games left
         dim: false
-        trend:
-          dir: up
-          text: ▲5
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: WC
-      title: Holds the 6th seed (the points wildcard)
-      dim: false
-      gap: null
-      holder: true
-    seed: 6
-  - fid: purpsworth
-    team: I am dead inside
-    owner: Trevor
-    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    record: 6-6
-    pf: '1220.6'
-    pf_color: '#fbd18f'
-    rating: 103.4
-    proj_wins: 6.4
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-      playoffs:
-        text: 3%
-        color: '#fdefd6'
+        gap: 87.9
+        pf_gap: 175.8
+      seed: 11
+    - fid: lukstein
+      team: 2x Runner Up
+      owner: Luke
+      logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+      record: 2-10
+      pf: "1062.2"
+      pf_color: "#fdf3e0"
+      rating: 93.0
+      proj_wins: 2.5
+      cells:
+        sacko_bye:
+          text: ">99%"
+          color: "#ee6c3b"
+          dim: false
+        playoffs:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −327.6 (−163.8)
+        total: −327.6
+        ppg: (−163.8)
+        title: 327.6 PF behind the 6th seed with 2 games left
         dim: false
-        trend:
-          dir: up
-          text: ▲2
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −169.2 (−84.6)
-      total: −169.2
-      ppg: (−84.6)
-      title: 169.2 PF behind the 6th seed with 2 games left
-      dim: false
-      gap: 84.6
-      pf_gap: 169.2
-    seed: 7
-  - fid: schirmerj
-    team: Return of the IDP
-    owner: Jono
-    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-    record: 5-7
-    pf: '1366.7'
-    pf_color: '#f8b14c'
-    rating: 114.0
-    proj_wins: 6.5
-    cells:
-      sacko_bye:
-        text: 2%
-        color: '#fdf1da'
-        dim: false
-      playoffs:
-        text: 32%
-        color: '#facc83'
-        dim: false
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −23.1 (−11.5)
-      total: −23.1
-      ppg: (−11.5)
-      title: 23.1 PF behind the 6th seed with 2 games left
-      dim: false
-      gap: 11.5
-      pf_gap: 23.1
-    seed: 8
-  - fid: kevbots22
-    team: Remember the Nice Guys, ChatGPT
-    owner: Kevin
-    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-    record: 4-7-1
-    pf: '1351.1'
-    pf_color: '#f9b54d'
-    rating: 113.3
-    proj_wins: 5.7
-    cells:
-      sacko_bye:
-        text: 3%
-        color: '#fdefd7'
-        dim: false
-      playoffs:
-        text: 14%
-        color: '#fce2b7'
-        dim: false
-        trend:
-          dir: down
-          text: ▼7
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −38.6 (−19.3)
-      total: −38.6
-      ppg: (−19.3)
-      title: 38.6 PF behind the 6th seed with 2 games left
-      dim: false
-      gap: 19.3
-      pf_gap: 38.6
-    seed: 9
-  - fid: alexandra
-    team: Cornstar
-    owner: Lexi
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-    record: 4-8
-    pf: '1270.5'
-    pf_color: '#fac775'
-    rating: 109.8
-    proj_wins: 4.8
-    cells:
-      sacko_bye:
-        text: 39%
-        color: '#fac46e'
-        dim: false
-      playoffs:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −119.2 (−59.6)
-      total: −119.2
-      ppg: (−59.6)
-      title: 119.2 PF behind the 6th seed with 2 games left
-      dim: false
-      gap: 59.6
-      pf_gap: 119.2
-    seed: 10
-  - fid: theoceanpulse
-    team: Im Bleeding Making Me the Shiva
-    owner: Dillon
-    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
-    record: 3-8-1
-    pf: '1214.0'
-    pf_color: '#fbd392'
-    rating: 103.0
-    proj_wins: 4.6
-    cells:
-      sacko_bye:
-        text: 54%
-        color: '#f8b14c'
-        dim: false
-      playoffs:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −175.8 (−87.9)
-      total: −175.8
-      ppg: (−87.9)
-      title: 175.8 PF behind the 6th seed with 2 games left
-      dim: false
-      gap: 87.9
-      pf_gap: 175.8
-    seed: 11
-  - fid: lukstein
-    team: 2x Runner Up
-    owner: Luke
-    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-    record: 2-10
-    pf: '1062.2'
-    pf_color: '#fdf3e0'
-    rating: 93.0
-    proj_wins: 2.5
-    cells:
-      sacko_bye:
-        text: '>99%'
-        color: '#ee6c3b'
-        dim: false
-      playoffs:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −327.6 (−163.8)
-      total: −327.6
-      ppg: (−163.8)
-      title: 327.6 PF behind the 6th seed with 2 games left
-      dim: false
-      gap: 163.8
-      pf_gap: 327.6
-    seed: 12
+        gap: 163.8
+        pf_gap: 327.6
+      seed: 12
   settled_rows:
-  - fid: jackperkins74
-    team: Skatt
-    owner: Jack
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
-    record: 9-2
-    pf: '1502.3'
-    pf_color: '#ee6b3b'
-    rating: 132.2
-    proj_wins: 11.1
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+    - fid: jackperkins74
+      team: Skatt
+      owner: Jack
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+      record: 9-2
+      pf: "1502.3"
+      pf_color: "#ee6b3b"
+      rating: 132.2
+      proj_wins: 11.1
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: ✓
+          title: Clinched
+          color: "#ee6b3b"
+          dim: false
+          clinched: true
+          trend: null
+        bye:
+          text: 96%
+          color: "#ef713c"
+          dim: false
+      wc_gap:
+        text: 232.3 (+77.4)
+        total: "232.3"
+        ppg: (+77.4)
+        title:
+          "Top five by record. If it drops out: 232.3 PF ahead of the 6th seed
+          with 3 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: ✓
-        title: Clinched
-        color: '#ee6b3b'
-        dim: false
-        clinched: true
-        trend: null
-      bye:
-        text: 96%
-        color: '#ef713c'
-        dim: false
-    wc_gap:
-      text: 232.3 (+77.4)
-      total: '232.3'
-      ppg: (+77.4)
-      title: 'Top five by record. If it drops out: 232.3 PF ahead of the 6th seed
-        with 3 games left'
-      dim: true
-      gap: -77.4
-      pf_gap: -232.3
-    seed: 1
-  - fid: zachzoske
-    team: Tuten Your Mother, Respectfully
-    owner: Zach
-    logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
-    record: 9-2
-    pf: '1431.7'
-    pf_color: '#f17f40'
-    rating: 127.0
-    proj_wins: 10.7
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+        gap: -77.4
+        pf_gap: -232.3
+      seed: 1
+    - fid: zachzoske
+      team: Tuten Your Mother, Respectfully
+      owner: Zach
+      logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+      record: 9-2
+      pf: "1431.7"
+      pf_color: "#f17f40"
+      rating: 127.0
+      proj_wins: 10.7
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: ✓
+          title: Clinched
+          color: "#ee6b3b"
+          dim: false
+          clinched: true
+          trend: null
+        bye:
+          text: 81%
+          color: "#f28742"
+          dim: false
+      wc_gap:
+        text: 161.7 (+53.9)
+        total: "161.7"
+        ppg: (+53.9)
+        title:
+          "Top five by record. If it drops out: 161.7 PF ahead of the 6th seed
+          with 3 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: ✓
-        title: Clinched
-        color: '#ee6b3b'
-        dim: false
-        clinched: true
-        trend: null
-      bye:
-        text: 81%
-        color: '#f28742'
-        dim: false
-    wc_gap:
-      text: 161.7 (+53.9)
-      total: '161.7'
-      ppg: (+53.9)
-      title: 'Top five by record. If it drops out: 161.7 PF ahead of the 6th seed
-        with 3 games left'
-      dim: true
-      gap: -53.9
-      pf_gap: -161.7
-    seed: 2
-  - fid: sturmanator15
-    team: The People's Commissioner
-    owner: Wade
-    logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
-    record: 7-4
-    pf: '1448.8'
-    pf_color: '#f07a3f'
-    rating: 128.3
-    proj_wins: 9.3
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+        gap: -53.9
+        pf_gap: -161.7
+      seed: 2
+    - fid: sturmanator15
+      team: The People's Commissioner
+      owner: Wade
+      logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+      record: 7-4
+      pf: "1448.8"
+      pf_color: "#f07a3f"
+      rating: 128.3
+      proj_wins: 9.3
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: ">99%"
+          color: "#ee6b3b"
+          dim: false
+          trend: null
+        bye:
+          text: 21%
+          color: "#fbd9a2"
+          dim: false
+      wc_gap:
+        text: 178.8 (+59.6)
+        total: "178.8"
+        ppg: (+59.6)
+        title:
+          "Top five by record. If it drops out: 178.8 PF ahead of the 6th seed
+          with 3 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: '>99%'
-        color: '#ee6b3b'
-        dim: false
-        trend: null
-      bye:
-        text: 21%
-        color: '#fbd9a2'
-        dim: false
-    wc_gap:
-      text: 178.8 (+59.6)
-      total: '178.8'
-      ppg: (+59.6)
-      title: 'Top five by record. If it drops out: 178.8 PF ahead of the 6th seed
-        with 3 games left'
-      dim: true
-      gap: -59.6
-      pf_gap: -178.8
-    seed: 3
-  - fid: whowonthelastsuperbowl
-    team: Trick or Trick It’s Mike Vick
-    owner: Nate
-    logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
-    record: 7-4
-    pf: '1294.1'
-    pf_color: '#f6a549'
-    rating: 117.1
-    proj_wins: 8.3
-    cells:
-      sacko_bye:
-        text: ✕
-        title: Can't finish in the bottom two
-        color: '#ffffff'
+        gap: -59.6
+        pf_gap: -178.8
+      seed: 3
+    - fid: whowonthelastsuperbowl
+      team: Trick or Trick It’s Mike Vick
+      owner: Nate
+      logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+      record: 7-4
+      pf: "1294.1"
+      pf_color: "#f6a549"
+      rating: 117.1
+      proj_wins: 8.3
+      cells:
+        sacko_bye:
+          text: ✕
+          title: Can't finish in the bottom two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+        playoffs:
+          text: 93%
+          color: "#f0763e"
+          dim: false
+          trend:
+            dir: up
+            text: ▲6
+        bye:
+          text: 1%
+          color: "#fdf2dd"
+          dim: false
+      wc_gap:
+        text: 24.1 (+8.0)
+        total: "24.1"
+        ppg: (+8.0)
+        title:
+          "Top five by record. If it drops out: 24.1 PF ahead of the 6th seed with
+          3 games left"
         dim: true
-        eliminated: true
-      playoffs:
-        text: 93%
-        color: '#f0763e'
-        dim: false
-        trend:
-          dir: up
-          text: ▲6
-      bye:
-        text: 1%
-        color: '#fdf2dd'
-        dim: false
-    wc_gap:
-      text: 24.1 (+8.0)
-      total: '24.1'
-      ppg: (+8.0)
-      title: 'Top five by record. If it drops out: 24.1 PF ahead of the 6th seed with
-        3 games left'
-      dim: true
-      gap: -8.0
-      pf_gap: -24.1
-    seed: 4
-  - fid: gganoom
-    team: One Big Beautiful Dillbot
-    owner: Grant
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
-    record: 6-5
-    pf: '1341.9'
-    pf_color: '#f59846'
-    rating: 120.5
-    proj_wins: 8.0
-    cells:
-      sacko_bye:
-        text: <1%
-        color: '#ffffff'
+        gap: -8.0
+        pf_gap: -24.1
+      seed: 4
+    - fid: gganoom
+      team: One Big Beautiful Dillbot
+      owner: Grant
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+      record: 6-5
+      pf: "1341.9"
+      pf_color: "#f59846"
+      rating: 120.5
+      proj_wins: 8.0
+      cells:
+        sacko_bye:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+        playoffs:
+          text: 99%
+          color: "#ee6d3c"
+          dim: false
+          trend: null
+        bye:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+      wc_gap:
+        text: 71.9 (+24.0)
+        total: "71.9"
+        ppg: (+24.0)
+        title:
+          "Top five by record. If it drops out: 71.9 PF ahead of the 6th seed with
+          3 games left"
         dim: true
-      playoffs:
-        text: 99%
-        color: '#ee6d3c'
+        gap: -24.0
+        pf_gap: -71.9
+      seed: 5
+    - fid: shawne2520997
+      team: Swift kick in the Dak
+      owner: Shawnee
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+      record: 4-7
+      pf: "1270.0"
+      pf_color: "#f7ac4a"
+      rating: 115.3
+      proj_wins: 5.9
+      cells:
+        sacko_bye:
+          text: 3%
+          color: "#fdf0d8"
+          dim: false
+        playoffs:
+          text: 54%
+          color: "#f8af4b"
+          dim: false
+          trend:
+            dir: up
+            text: ▲18
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: WC
+        title: Holds the 6th seed (the points wildcard)
         dim: false
-        trend: null
-      bye:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-    wc_gap:
-      text: 71.9 (+24.0)
-      total: '71.9'
-      ppg: (+24.0)
-      title: 'Top five by record. If it drops out: 71.9 PF ahead of the 6th seed with
-        3 games left'
-      dim: true
-      gap: -24.0
-      pf_gap: -71.9
-    seed: 5
-  - fid: shawne2520997
-    team: Swift kick in the Dak
-    owner: Shawnee
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
-    record: 4-7
-    pf: '1270.0'
-    pf_color: '#f7ac4a'
-    rating: 115.3
-    proj_wins: 5.9
-    cells:
-      sacko_bye:
-        text: 3%
-        color: '#fdf0d8'
+        gap: null
+        holder: true
+      seed: 6
+    - fid: schirmerj
+      team: Return of the IDP
+      owner: Jono
+      logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+      record: 5-6
+      pf: "1251.2"
+      pf_color: "#f8b14c"
+      rating: 113.9
+      proj_wins: 6.5
+      cells:
+        sacko_bye:
+          text: 2%
+          color: "#fdf0da"
+          dim: false
+        playoffs:
+          text: 31%
+          color: "#fbcd85"
+          dim: false
+          trend:
+            dir: down
+            text: ▼10
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −18.8 (−6.3)
+        total: −18.8
+        ppg: (−6.3)
+        title: 18.8 PF behind the 6th seed with 3 games left
         dim: false
-      playoffs:
-        text: 54%
-        color: '#f8b04b'
+        gap: 6.3
+        pf_gap: 18.8
+      seed: 7
+    - fid: purpsworth
+      team: I am dead inside
+      owner: Trevor
+      logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+      record: 5-6
+      pf: "1106.3"
+      pf_color: "#fbd292"
+      rating: 103.4
+      proj_wins: 5.9
+      cells:
+        sacko_bye:
+          text: 6%
+          color: "#fdecce"
+          dim: false
+        playoffs:
+          text: 1%
+          color: "#fdf1dc"
+          dim: false
+          trend:
+            dir: down
+            text: ▼5
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −163.7 (−54.6)
+        total: −163.7
+        ppg: (−54.6)
+        title: 163.7 PF behind the 6th seed with 3 games left
         dim: false
-        trend:
-          dir: up
-          text: ▲18
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: WC
-      title: Holds the 6th seed (the points wildcard)
-      dim: false
-      gap: null
-      holder: true
-    seed: 6
-  - fid: schirmerj
-    team: Return of the IDP
-    owner: Jono
-    logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
-    record: 5-6
-    pf: '1251.2'
-    pf_color: '#f8b14c'
-    rating: 113.9
-    proj_wins: 6.5
-    cells:
-      sacko_bye:
-        text: 2%
-        color: '#fdf1da'
+        gap: 54.6
+        pf_gap: 163.7
+      seed: 8
+    - fid: kevbots22
+      team: Remember the Nice Guys, ChatGPT
+      owner: Kevin
+      logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+      record: 4-6-1
+      pf: "1243.4"
+      pf_color: "#f9b34c"
+      rating: 113.4
+      proj_wins: 5.9
+      cells:
+        sacko_bye:
+          text: 2%
+          color: "#fdf0da"
+          dim: false
+        playoffs:
+          text: 21%
+          color: "#fbdaa4"
+          dim: false
+          trend:
+            dir: up
+            text: ▲11
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −26.6 (−8.9)
+        total: −26.6
+        ppg: (−8.9)
+        title: 26.6 PF behind the 6th seed with 3 games left
         dim: false
-      playoffs:
-        text: 31%
-        color: '#fbcd85'
+        gap: 8.9
+        pf_gap: 26.6
+      seed: 9
+    - fid: alexandra
+      team: Cornstar
+      owner: Lexi
+      logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+      record: 4-7
+      pf: "1193.6"
+      pf_color: "#fabf62"
+      rating: 109.8
+      proj_wins: 5.3
+      cells:
+        sacko_bye:
+          text: 16%
+          color: "#fcdfb1"
+          dim: false
+        playoffs:
+          text: 1%
+          color: "#fdf2dc"
+          dim: false
+          trend:
+            dir: down
+            text: ▼19
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −76.4 (−25.5)
+        total: −76.4
+        ppg: (−25.5)
+        title: 76.4 PF behind the 6th seed with 3 games left
         dim: false
-        trend:
-          dir: down
-          text: ▼10
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −18.8 (−6.3)
-      total: −18.8
-      ppg: (−6.3)
-      title: 18.8 PF behind the 6th seed with 3 games left
-      dim: false
-      gap: 6.3
-      pf_gap: 18.8
-    seed: 7
-  - fid: purpsworth
-    team: I am dead inside
-    owner: Trevor
-    logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
-    record: 5-6
-    pf: '1106.3'
-    pf_color: '#fbd292'
-    rating: 103.4
-    proj_wins: 5.9
-    cells:
-      sacko_bye:
-        text: 6%
-        color: '#fdecce'
+        gap: 25.5
+        pf_gap: 76.4
+      seed: 10
+    - fid: theoceanpulse
+      team: Im Bleeding Making Me the Shiva
+      owner: Dillon
+      logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
+      record: 3-7-1
+      pf: "1099.4"
+      pf_color: "#fbd495"
+      rating: 102.9
+      proj_wins: 4.4
+      cells:
+        sacko_bye:
+          text: 71%
+          color: "#f49645"
+          dim: false
+        playoffs:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −170.6 (−56.9)
+        total: −170.6
+        ppg: (−56.9)
+        title: 170.6 PF behind the 6th seed with 3 games left
         dim: false
-      playoffs:
-        text: 1%
-        color: '#fdf1dc'
+        gap: 56.9
+        pf_gap: 170.6
+      seed: 11
+    - fid: lukstein
+      team: 2x Runner Up
+      owner: Luke
+      logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+      record: 2-9
+      pf: "962.4"
+      pf_color: "#fdf3e0"
+      rating: 93.0
+      proj_wins: 2.6
+      cells:
+        sacko_bye:
+          text: ">99%"
+          color: "#ee6c3b"
+          dim: false
+        playoffs:
+          text: <1%
+          color: "#ffffff"
+          dim: true
+          trend: null
+        bye:
+          text: ✕
+          title: Can't finish in the top two
+          color: "#ffffff"
+          dim: true
+          eliminated: true
+      wc_gap:
+        text: −307.6 (−102.5)
+        total: −307.6
+        ppg: (−102.5)
+        title: 307.6 PF behind the 6th seed with 3 games left
         dim: false
-        trend:
-          dir: down
-          text: ▼5
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −163.7 (−54.6)
-      total: −163.7
-      ppg: (−54.6)
-      title: 163.7 PF behind the 6th seed with 3 games left
-      dim: false
-      gap: 54.6
-      pf_gap: 163.7
-    seed: 8
-  - fid: kevbots22
-    team: Remember the Nice Guys, ChatGPT
-    owner: Kevin
-    logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
-    record: 4-6-1
-    pf: '1243.4'
-    pf_color: '#f9b34c'
-    rating: 113.4
-    proj_wins: 5.9
-    cells:
-      sacko_bye:
-        text: 2%
-        color: '#fdf0da'
-        dim: false
-      playoffs:
-        text: 21%
-        color: '#fbdaa3'
-        dim: false
-        trend:
-          dir: up
-          text: ▲11
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −26.6 (−8.9)
-      total: −26.6
-      ppg: (−8.9)
-      title: 26.6 PF behind the 6th seed with 3 games left
-      dim: false
-      gap: 8.9
-      pf_gap: 26.6
-    seed: 9
-  - fid: alexandra
-    team: Cornstar
-    owner: Lexi
-    logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
-    record: 4-7
-    pf: '1193.6'
-    pf_color: '#fabf62'
-    rating: 109.8
-    proj_wins: 5.3
-    cells:
-      sacko_bye:
-        text: 16%
-        color: '#fcdfb1'
-        dim: false
-      playoffs:
-        text: 1%
-        color: '#fdf1dc'
-        dim: false
-        trend:
-          dir: down
-          text: ▼19
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −76.4 (−25.5)
-      total: −76.4
-      ppg: (−25.5)
-      title: 76.4 PF behind the 6th seed with 3 games left
-      dim: false
-      gap: 25.5
-      pf_gap: 76.4
-    seed: 10
-  - fid: theoceanpulse
-    team: Im Bleeding Making Me the Shiva
-    owner: Dillon
-    logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
-    record: 3-7-1
-    pf: '1099.4'
-    pf_color: '#fbd495'
-    rating: 102.9
-    proj_wins: 4.4
-    cells:
-      sacko_bye:
-        text: 71%
-        color: '#f49645'
-        dim: false
-      playoffs:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −170.6 (−56.9)
-      total: −170.6
-      ppg: (−56.9)
-      title: 170.6 PF behind the 6th seed with 3 games left
-      dim: false
-      gap: 56.9
-      pf_gap: 170.6
-    seed: 11
-  - fid: lukstein
-    team: 2x Runner Up
-    owner: Luke
-    logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
-    record: 2-9
-    pf: '962.4'
-    pf_color: '#fdf3e0'
-    rating: 93.0
-    proj_wins: 2.6
-    cells:
-      sacko_bye:
-        text: '>99%'
-        color: '#ee6c3b'
-        dim: false
-      playoffs:
-        text: <1%
-        color: '#ffffff'
-        dim: true
-        trend: null
-      bye:
-        text: ✕
-        title: Can't finish in the top two
-        color: '#ffffff'
-        dim: true
-        eliminated: true
-    wc_gap:
-      text: −307.6 (−102.5)
-      total: −307.6
-      ppg: (−102.5)
-      title: 307.6 PF behind the 6th seed with 3 games left
-      dim: false
-      gap: 102.5
-      pf_gap: 307.6
-    seed: 12
+        gap: 102.5
+        pf_gap: 307.6
+      seed: 12
+  rooting:
+    week: 12
+    rows:
+      - fid: jackperkins74
+        owner: Jack
+        team: Skatt
+        logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
+        goal: bye
+        label: A first-round bye
+        now: 96%
+        win: 99%
+        lose: 88%
+        now_p: 0.9566
+        win_p: 0.9853
+        lose_p: 0.8819
+        root:
+          - Luke over Wade
+        note: null
+        settled: null
+      - fid: zachzoske
+        owner: Zach
+        team: Tuten Your Mother, Respectfully
+        logo: https://www.thedrawplay.com/wp-content/uploads/2021/08/Dolphins-3.png
+        goal: bye
+        label: A first-round bye
+        now: 87%
+        win: 91%
+        lose: 60%
+        now_p: 0.872
+        win_p: 0.9116
+        lose_p: 0.5994
+        root:
+          - Luke over Wade
+        note: null
+        settled: null
+      - fid: sturmanator15
+        owner: Wade
+        team: The People's Commissioner
+        logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
+        goal: bye
+        label: A first-round bye
+        now: 17%
+        win: 18%
+        lose: 1%
+        now_p: 0.1674
+        win_p: 0.183
+        lose_p: 0.011
+        root:
+          - Kevin over Zach
+          - Jono over Jack
+        note: null
+        settled: null
+      - fid: gganoom
+        owner: Grant
+        team: One Big Beautiful Dillbot
+        logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
+        goal: playoffs
+        label: A playoff spot
+        now: 98%
+        win: ">99%"
+        lose: 97%
+        now_p: 0.9826
+        win_p: 0.9956
+        lose_p: 0.9683
+        root: []
+        note: null
+        settled: null
+      - fid: whowonthelastsuperbowl
+        owner: Nate
+        team: Trick or Trick It’s Mike Vick
+        logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
+        goal: playoffs
+        label: A playoff spot
+        now: 93%
+        win: 99%
+        lose: 89%
+        now_p: 0.9347
+        win_p: 0.9943
+        lose_p: 0.8853
+        root:
+          - Jack over Jono
+        note: null
+        settled: null
+      - fid: shawne2520997
+        owner: Shawnee
+        team: Swift kick in the Dak
+        logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
+        goal: playoffs
+        label: A playoff spot
+        now: 59%
+        win: 69%
+        lose: 48%
+        now_p: 0.5944
+        win_p: 0.6869
+        lose_p: 0.4829
+        root:
+          - Jack over Jono
+          - Zach over Kevin
+        note: "6th seed: 23.1 ahead of Jono"
+        settled: null
+      - fid: purpsworth
+        owner: Trevor
+        team: I am dead inside
+        logo: https://i.pinimg.com/564x/0b/e6/03/0be603a7f804d6d4b34b6f09510859ce.jpg
+        goal: avoid_sacko_bye
+        label: Staying out of the Sacko bye
+        now: 99%
+        win: ">99%"
+        lose: 85%
+        now_p: 0.9854
+        win_p: 0.9994
+        lose_p: 0.8508
+        root: []
+        note: null
+        settled: null
+      - fid: schirmerj
+        owner: Jono
+        team: Return of the IDP
+        logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
+        goal: playoffs
+        label: A playoff spot
+        now: 31%
+        win: 50%
+        lose: 24%
+        now_p: 0.3139
+        win_p: 0.5032
+        lose_p: 0.2411
+        root:
+          - Nate over Shawnee
+          - Zach over Kevin
+        note: "6th seed: 23.1 behind Shawnee"
+        settled: null
+      - fid: kevbots22
+        owner: Kevin
+        team: Remember the Nice Guys, ChatGPT
+        logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
+        goal: playoffs
+        label: A playoff spot
+        now: 14%
+        win: 31%
+        lose: 11%
+        now_p: 0.136
+        win_p: 0.3076
+        lose_p: 0.1111
+        root:
+          - Nate over Shawnee
+          - Jack over Jono
+        note: "6th seed: 38.6 behind Shawnee"
+        settled: null
+      - fid: alexandra
+        owner: Lexi
+        team: Cornstar
+        logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
+        goal: avoid_sacko_bye
+        label: Staying out of the Sacko bye
+        now: 61%
+        win: 96%
+        lose: 58%
+        now_p: 0.6135
+        win_p: 0.964
+        lose_p: 0.5769
+        root:
+          - Grant over Dillon
+          - Zach over Kevin
+        note: null
+        settled: null
+      - fid: theoceanpulse
+        owner: Dillon
+        team: Im Bleeding Making Me the Shiva
+        logo: https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7062ab60-dd9b-11f1-8902-81b7ea60f4aa
+        goal: avoid_sacko_bye
+        label: Staying out of the Sacko bye
+        now: 46%
+        win: 69%
+        lose: 26%
+        now_p: 0.4641
+        win_p: 0.69
+        lose_p: 0.2587
+        root:
+          - Trevor over Lexi
+          - Jack over Jono
+        note: null
+        settled: null
+      - fid: lukstein
+        owner: Luke
+        team: 2x Runner Up
+        logo: https://g.espncdn.com/s/ffllm/logos/TeamMascots-RobbHarskamp/Team_Mascots-08.svg
+        goal: null
+        label: null
+        now: null
+        win: null
+        lose: null
+        now_p: null
+        win_p: null
+        lose_p: null
+        root: []
+        note: Play spoiler against Wade
+        settled: The Sacko bye is all but locked

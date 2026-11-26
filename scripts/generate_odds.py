@@ -24,7 +24,7 @@ import yaml
 from lib.data import load_franchises, load_seasons, load_week_rosters, load_nfl_schedule
 from lib.nfl_schedule import parse_kickoff
 from lib.odds import (Params, as_projected, complete_through, forecast, forecast_rows,
-                      live_week, truncate)
+                      live_week, rooting_guide, truncate)
 from lib.state import state_of
 from lib.weeks import _fmt_updated as fmt_updated
 
@@ -72,6 +72,15 @@ def main():
         else:
             entry["rows"] = forecast_rows(season, franchises, *settled, before,
                                           now=now_season)
+        # What each team should root for this week: the same simulation (same
+        # seed, same inputs), so its odds match the table's. Rows in seed order.
+        sim_strength = strength if live else settled[0]
+        guide = rooting_guide(season, sim_strength, Params(), franchises, n=SIMS,
+                              seed=seed, live=live, now=now_season)
+        if guide:
+            order = {r["fid"]: i for i, r in enumerate(entry["rows"])}
+            guide["rows"].sort(key=lambda r: order.get(r["fid"], 99))
+            entry["rooting"] = guide
         out[year] = entry
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(yaml.safe_dump(out, sort_keys=False, allow_unicode=True),

@@ -2148,6 +2148,75 @@ def test_odds_as_projected_counts_the_live_week_at_projected_finals():
     assert as_projected(season, None) == as_of_now(season)
 
 
+def test_odds_wildcard_cut_drops_teams_50_a_game_back():
+    from lib.odds import wildcard_cut
+    # Top five by record: a-e. Of the rest, f has the most PF, so f is the 6th seed.
+    wins = {"a": 9, "b": 9, "c": 8, "d": 7, "e": 7, "f": 5, "g": 5, "h": 4, "i": 6}
+    pf = {"a": 1500, "b": 1400, "c": 1450, "d": 1300, "e": 1350,
+          "f": 1300.0, "g": 1150.0, "h": 1149.0, "i": 990.0}
+    left = dict.fromkeys(wins, 3)
+    # g is exactly 50/game back (150 over 3): not *more* than 50, still alive.
+    # h (151 back) and i (310 back, even with a better record) are out.
+    assert wildcard_cut(wins, pf, left) == {"h", "i"}
+    # Out is for good, and an out team can't be the holder: with f already out,
+    # g is the 6th seed: h is only 1 back now, i is still 160 back.
+    assert wildcard_cut(wins, pf, left, out={"f"}) == {"f", "i"}
+    # No games left: nothing to cut, the final seeding settles it.
+    assert wildcard_cut(wins, pf, dict.fromkeys(wins, 0)) == set()
+
+
+def test_odds_wildcard_rule_shapes_the_simulation():
+    from lib.odds import Params, forecast, wildcard_out
+    from lib.playoff_order import _league_seeds
+    # tNN scores 100 + 5*NN every week. After 11 weeks the top five by record are
+    # t07-t11 and t06 (130/week) holds the 6th seed. With 3 games left, t03 is
+    # 165 back (55/game) and out; t04 is 110 back (36.7/game) and still alive.
+    season = _odds_season(11)
+    assert wildcard_out(season) == {"t00", "t01", "t02", "t03"}
+    assert wildcard_out(dict(season, season=2025)) == set()     # rule starts in 2026
+    st, res = forecast(season, Params(), n=2000, seed=5)
+    for f in ("t00", "t01", "t02", "t03"):   # can't reach the top five on record
+        assert res[f]["playoffs"] == 0.0
+    # The seeding skips an out team for the 6th seed, falling back to the next scorer.
+    season = _odds_season(14)
+    assert _league_seeds(season)["t06"] == 6
+    assert _league_seeds(dict(season, wildcard_out={"t06"}))["t05"] == 6
+
+
+def test_odds_rooting_goal_picks_the_open_question():
+    from lib.odds import rooting_goal
+    assert rooting_goal(1.0, 0.96, 0.0) == "bye"             # in, bye still open
+    assert rooting_goal(0.54, 0.0, 0.03) == "playoffs"       # in the hunt
+    assert rooting_goal(0.01, 0.0, 0.16) == "avoid_sacko_bye"  # long shot: Sacko race
+    assert rooting_goal(0.01, 0.0, 0.0) == "playoffs"        # long shot, nothing below
+    assert rooting_goal(0.0, 0.0, 0.71) == "avoid_sacko_bye"
+    assert rooting_goal(1.0, 1.0, 0.0) is None               # bye all but locked
+    assert rooting_goal(1.0, 0.0, 0.0) is None               # in, no bye chance
+    assert rooting_goal(0.0, 0.0, 1.0) is None               # Sacko bye locked
+
+
+def test_odds_rooting_guide_reads_this_weeks_swings():
+    from lib.odds import Params, forecast, rooting_guide
+    season = _odds_season(11)                               # three weeks to go
+    st, res = forecast(season, Params(), n=2000, seed=9)
+    guide = rooting_guide(season, st, Params(), {}, n=2000, seed=9)
+    assert guide["week"] == 12 and len(guide["rows"]) == 12
+    for r in guide["rows"]:
+        assert len(r["root"]) <= 2
+        if r["goal"]:
+            # Same seed, same simulation: "now" matches the forecast.
+            key = {"bye": "bye", "playoffs": "playoffs"}.get(r["goal"])
+            if key:
+                assert r["now_p"] == round(res[r["fid"]][key], 4)
+            # Winning never hurts your own goal.
+            if r["win_p"] is not None and r["lose_p"] is not None:
+                assert r["win_p"] >= r["lose_p"]
+            assert all(" over " in x for x in r["root"])
+        else:
+            assert r["settled"] and r["now"] is None
+    assert rooting_guide(_odds_season(14), st, Params(), {}, n=10) == {}
+
+
 def test_odds_trend_arrows():
     from lib.odds import Params, forecast, forecast_rows, trend, truncate
     assert trend(0.50, None, 0.02) is None                 # no prior week

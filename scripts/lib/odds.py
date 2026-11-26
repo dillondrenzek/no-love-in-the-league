@@ -207,14 +207,99 @@ def live_week(season, rosters, schedule, now):
     return {"week": week, "teams": teams}
 
 
-def simulate(season, strength, params, n=10000, seed=0, live=None):
+# League rule (from 2026): a team more than this many points-for per game left
+# behind the 6th seed (the points wildcard) at the end of a week is out of the
+# race for that seed for good. It can still make the top five by record.
+WILDCARD_OUT_PPG = 50.0
+WILDCARD_OUT_FROM = 2026
+
+
+def wildcard_cut(wins, pf, left, out=()):
+    """Apply the 50-points-per-game rule at the end of a week. `wins` and `pf`
+    are each team's totals so far (a tie = half a win), `left` its regular-season
+    games still to play, and `out` the teams already out of the 6th-seed race.
+    Returns the new set of teams out: `out` plus every team more than
+    WILDCARD_OUT_PPG per game left behind the 6th seed's points-for. The 6th
+    seed is the top scorer outside the top five by record (points-for breaking
+    level records) among the teams still in the race. A team with no games left
+    isn't cut: the season is over and the seeding settles it."""
+    out = set(out)
+    order = sorted(pf, key=lambda f: (wins.get(f, 0.0), pf[f]), reverse=True)
+    rest = [f for f in order[RECORD_SEEDS:] if f not in out]
+    if not rest:
+        return out
+    holder = max(rest, key=lambda f: pf[f])
+    for f in order:
+        if (f != holder and f not in out and left.get(f)
+                and (pf[holder] - pf[f]) / left[f] > WILDCARD_OUT_PPG):
+            out.add(f)
+    return out
+
+
+def _week_totals(games, wins, pf):
+    """Add one week's games to running wins / points-for totals (in place)."""
+    for m in games:
+        h, a, hs, as_ = m["home"], m["away"], m["home_score"], m["away_score"]
+        pf[h] = pf.get(h, 0.0) + hs
+        pf[a] = pf.get(a, 0.0) + as_
+        if hs == as_:
+            wins[h] = wins.get(h, 0.0) + 0.5
+            wins[a] = wins.get(a, 0.0) + 0.5
+        else:
+            w = h if hs > as_ else a
+            wins[w] = wins.get(w, 0.0) + 1
+
+
+def _games_left_after(season, reg):
+    """{week: {fid: regular-season games scheduled after that week}}."""
+    sched = [m for m in season.get("matchups") or []
+             if 1 <= (m.get("week") or 0) <= reg and not m.get("playoff")]
+    out = {}
+    for w in range(0, reg + 1):
+        left = {}
+        for m in sched:
+            if m["week"] > w:
+                left[m["home"]] = left.get(m["home"], 0) + 1
+                left[m["away"]] = left.get(m["away"], 0) + 1
+        out[w] = left
+    return out
+
+
+def wildcard_out(season):
+    """The teams already out of the 6th-seed race under the 50-points-per-game
+    rule, checked at the end of every completed regular-season week (once out,
+    always out). Empty before WILDCARD_OUT_FROM."""
+    if (season.get("season") or 0) < WILDCARD_OUT_FROM:
+        return set()
+    reg = season.get("weeks_in_regular_season") or 14
+    done = complete_through(season)
+    left = _games_left_after(season, reg)
+    teams = list(season.get("teams") or {})
+    wins, pf = dict.fromkeys(teams, 0.0), dict.fromkeys(teams, 0.0)
+    out = set()
+    for w in range(1, done + 1):
+        _week_totals([m for m in played_games(season) if m["week"] == w], wins, pf)
+        out = wildcard_cut(wins, pf, left[w], out)
+    return out
+
+
+def simulate(season, strength, params, n=10000, seed=0, live=None, observe=None):
     """Run `n` simulated seasons from the current state. Returns
     {fid: {outcome: probability, 'wins': mean final wins, 'seed': mean seed}}.
 
     `live` (live_week output) plays out the in-progress week from where it
     stands: each team's final score is its live score plus its projected points
     still to come, give or take a spread that shrinks with how much is left (a
-    full week's sigma scaled by the square root of the share remaining)."""
+    full week's sigma scaled by the square root of the share remaining).
+
+    `observe`, when given, is called once per simulated season with that
+    season's games and its seeding result (six_team_playoff output) — how the
+    rooting guide learns which results matter to whom. It doesn't change the
+    simulation, so the same seed gives the same odds with or without it.
+
+    The 50-points-per-game rule (wildcard_cut) is applied as each simulated
+    week ends, starting from the teams already out (wildcard_out), and a team
+    that's out can't take the 6th seed in that simulated season."""
     teams = sorted(season.get("teams") or {})
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
@@ -232,6 +317,12 @@ def simulate(season, strength, params, n=10000, seed=0, live=None):
     wins = dict.fromkeys(teams, 0)
     seeds = dict.fromkeys(teams, 0)
     sigma = params.sigma
+    rule = (season.get("season") or 0) >= WILDCARD_OUT_FROM
+    done = complete_through(season)
+    out0 = wildcard_out(season) if rule else set()
+    left_after = _games_left_after(season, reg) if rule else {}
+    base_wins, base_pf = dict.fromkeys(teams, 0.0), dict.fromkeys(teams, 0.0)
+    _week_totals([m for m in played if m["week"] <= done], base_wins, base_pf)
     for _ in range(n):
         level = {f: rng.gauss(*strength[f]) for f in teams}
         sim = list(base)
@@ -253,6 +344,12 @@ def simulate(season, strength, params, n=10000, seed=0, live=None):
                             "home_score": rng.gauss(level[h], sigma),
                             "away_score": rng.gauss(level[a], sigma)})
         shell["matchups"] = sim
+        if rule:
+            out, w_, p_ = set(out0), dict(base_wins), dict(base_pf)
+            for w in range(done + 1, reg):        # no cut after the last week
+                _week_totals([m for m in sim if m["week"] == w], w_, p_)
+                out = wildcard_cut(w_, p_, left_after[w], out)
+            shell["wildcard_out"] = out
         res = six_team_playoff(shell)
         order, seed_of = res["order"], res["seeds"]
         for f in teams:
@@ -267,6 +364,8 @@ def simulate(season, strength, params, n=10000, seed=0, live=None):
                 t["sacko_bracket"] += 1
                 if s in SACKO_BYE_SEEDS:       # bottom two skip Sacko round 1
                     t["sacko_bye"] += 1
+        if observe:
+            observe(sim, res)
         tally[order[0]]["shiva"] += 1
         for f in order[:3]:
             tally[f]["top3"] += 1
@@ -521,6 +620,165 @@ def eliminated_cell(title):
     long shot ('<1%')."""
     return {"text": "✕", "title": title, "color": NEGLIGIBLE_COLOR, "dim": True,
             "eliminated": True}
+
+
+# ---------------------------------------------------------------------------
+# Rooting guide: what each team should be rooting for this week
+# ---------------------------------------------------------------------------
+
+# A game has to move a team's goal by at least this much to be worth rooting for.
+ROOT_MIN_SWING = 0.03
+ROOT_MAX = 2
+# Below this playoff chance, a team still in the Sacko-bye race chases that instead.
+PLAYOFF_LONG_SHOT = 0.05
+
+
+def rooting_goal(p, b, s):
+    """The one goal still in play for a team, from its playoff (p), bye (b) and
+    Sacko-bye (s) odds: 'bye' once the playoffs are all but certain and a bye
+    isn't, 'playoffs' while a playoff spot is in doubt, 'avoid_sacko_bye' for a
+    team that could still fall into the bottom two and is (all but) out of the
+    playoff race — a playoff long shot under PLAYOFF_LONG_SHOT chases the Sacko
+    bye race instead, where more is at stake — and None when nothing is left to
+    decide (a team that's all but locked in, out, or stuck)."""
+    lo, hi = 0.005, 0.995
+    if p >= hi and lo < b < hi:
+        return "bye"
+    sacko_live = lo < s < hi
+    if lo < p < hi and not (p < PLAYOFF_LONG_SHOT and sacko_live):
+        return "playoffs"
+    if p < PLAYOFF_LONG_SHOT and sacko_live:
+        return "avoid_sacko_bye"
+    return None
+
+
+GOAL_LABEL = {"bye": "A first-round bye", "playoffs": "A playoff spot",
+              "avoid_sacko_bye": "Staying out of the Sacko bye"}
+
+
+def rooting_guide(season, strength, params, franchises, n=10000, seed=0, live=None,
+                  now=None):
+    """What each team should be rooting for in the week about to be played (or in
+    progress), read from the same simulation as the forecast (same seed, same
+    odds):
+
+        {"week": 12, "rows": [{fid, owner, team, logo, goal, label, now,
+                               win, lose, root: [str], note, settled}]}
+
+    For each team: the one goal still in play (rooting_goal), its odds now, if
+    the team wins this week and if it loses, and up to two other games this week
+    whose result moves those odds most ("Nate over Shawnee"), each worth at least
+    ROOT_MIN_SWING. The odds for 'avoid_sacko_bye' are the chance of staying out
+    of it, so higher is always better. Points-wildcard contenders get a `note`
+    on the points gap, since every point counts in that race. A team with
+    nothing left to decide gets `settled` text instead. {} after the regular
+    season's last week."""
+    reg = season.get("weeks_in_regular_season") or 14
+    week = (live or {}).get("week") or complete_through(season) + 1
+    if week > reg:
+        return {}
+    games = [(m["home"], m["away"]) for m in season.get("matchups") or []
+             if m.get("week") == week and not m.get("playoff")]
+    teams = sorted(season.get("teams") or {})
+    goals = ("playoffs", "bye", "sacko_bye")
+    base = {f: dict.fromkeys(goals, 0) for f in teams}
+    seen = {(i, side): 0 for i in range(len(games)) for side in (0, 1)}
+    hit = {f: {g: dict.fromkeys(seen, 0) for g in goals} for f in teams}
+    index = {pair: i for i, pair in enumerate(games)}
+
+    def observe(sim, res):
+        winners = {}
+        for m in sim:
+            i = index.get((m["home"], m["away"])) if m["week"] == week else None
+            if i is not None and m["home_score"] != m["away_score"]:
+                winners[i] = 0 if m["home_score"] > m["away_score"] else 1
+        for i, side in winners.items():
+            seen[(i, side)] += 1
+        for f, sd in res["seeds"].items():
+            flags = {"playoffs": sd <= params.n_playoff, "bye": sd <= 2,
+                     "sacko_bye": sd in SACKO_BYE_SEEDS}
+            for g, on in flags.items():
+                if on:
+                    base[f][g] += 1
+                    for i, side in winners.items():
+                        hit[f][g][(i, side)] += 1
+
+    simulate(season, strength, params, n=n, seed=seed, live=live, observe=observe)
+
+    def chance(f, g, key=None):
+        if key is None:
+            v = base[f][g] / n
+        else:
+            v = hit[f][g][key] / seen[key] if seen[key] else None
+            if v is None:
+                return None
+        return 1 - v if g == "sacko_bye" else v
+
+    gaps = wildcard_gaps(now or season)
+    holder = next((f for f, gp in gaps.items() if gp.get("holder")), None)
+    chasers = sorted((gp["pf_gap"], f) for f, gp in gaps.items()
+                     if gp.get("pf_gap") is not None and gp["pf_gap"] > 0)
+    teams_map = season.get("teams") or {}
+    logos = season.get("team_logos") or {}
+    rows = []
+    for f in teams:
+        p, b, s = (base[f][g] / n for g in goals)
+        goal = rooting_goal(p, b, s)
+        key = {"bye": "bye", "playoffs": "playoffs", "avoid_sacko_bye": "sacko_bye"}.get(goal)
+        own = next(((i, 0 if h == f else 1) for i, (h, a) in enumerate(games)
+                    if f in (h, a)), None)
+        opp = None
+        if own:
+            h, a = games[own[0]]
+            opp = a if h == f else h
+        row = {"fid": f, "owner": short_name_of(f, franchises),
+               "team": teams_map.get(f) or short_name_of(f, franchises),
+               "logo": logos.get(f, ""), "goal": goal,
+               "label": GOAL_LABEL.get(goal), "now": None, "win": None, "lose": None,
+               "now_p": None, "win_p": None, "lose_p": None,
+               "root": [], "note": None, "settled": None}
+        if goal is None:
+            if p >= 0.995 and b >= 0.995:
+                row["settled"] = "The bye is all but locked"
+            elif p >= 0.995:
+                row["settled"] = "In; the bye is out of reach"
+            elif s >= 0.995:
+                row["settled"] = "The Sacko bye is all but locked"
+            else:
+                row["settled"] = "Out of the playoffs, clear of the Sacko bye"
+            if opp:
+                row["note"] = f"Play spoiler against {short_name_of(opp, franchises)}"
+            rows.append(row)
+            continue
+        row["now_p"] = round(chance(f, key), 4)
+        row["now"] = pct_label(row["now_p"])
+        if own:
+            win, lose = chance(f, key, own), chance(f, key, (own[0], 1 - own[1]))
+            if win is not None:
+                row["win_p"], row["win"] = round(win, 4), pct_label(win)
+            if lose is not None:
+                row["lose_p"], row["lose"] = round(lose, 4), pct_label(lose)
+        swings = []
+        for i, (h, a) in enumerate(games):
+            if own and i == own[0]:
+                continue
+            ph, pa = chance(f, key, (i, 0)), chance(f, key, (i, 1))
+            if ph is None or pa is None or abs(ph - pa) < ROOT_MIN_SWING:
+                continue
+            fav, other = (h, a) if ph > pa else (a, h)
+            swings.append((abs(ph - pa), fav, other))
+        swings.sort(reverse=True)
+        row["root"] = [f"{short_name_of(w, franchises)} over {short_name_of(l, franchises)}"
+                       for _, w, l in swings[:ROOT_MAX]]
+        if goal == "playoffs" and f in gaps:
+            if f == holder and chasers:
+                row["note"] = (f"6th seed: {chasers[0][0]:.1f} ahead of "
+                               f"{short_name_of(chasers[0][1], franchises)}")
+            elif (gaps[f].get("pf_gap") or 0) > 0 and holder:
+                row["note"] = (f"6th seed: {gaps[f]['pf_gap']:.1f} behind "
+                               f"{short_name_of(holder, franchises)}")
+        rows.append(row)
+    return {"week": week, "rows": rows}
 
 
 # Smallest playoff-odds move worth an arrow: at 10,000 runs the odds carry ~0.5 pt
