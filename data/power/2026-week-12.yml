@@ -1,0 +1,16 @@
+# Power-ranking blurbs — 2026 week 12. One line per team, in the
+# computed rank order. Fill from the agent (agents/weekly-power.md), then
+# rebuild. Keyed by franchise id; the comment shows rank + team.
+blurbs:
+  jackperkins74: "Still No. 1 on the league's best scoring average, after a 2.4-point escape from last place and trading the escape artist, Tee Higgins, to Zach."   # 1. Skatt
+  zachzoske: "Holds at two on six straight wins and a 140 average over three, the best run in the league, then added Bijan Robinson and Tee Higgins anyway."   # 2. Tuten Your Mother, Respectfully
+  sturmanator15: "Holds at three after losing to a team that had won once in five weeks, on a 108.5 three-week average that trails Nate, Grant and Kevin; Luke is next."   # 3. The People's Commissioner
+  whowonthelastsuperbowl: "Up one on three straight wins and four in five, with Geno Smith at quarterback while Drake Maye sits."   # 4. Trick or Trick It’s Mike Vick
+  gganoom: "Down one despite the win, as the three-week average slips to 115 and Bijan Robinson leaves for Zach; Dillon's next."   # 5. One Big Beautiful Dillbot
+  shawne2520997: "Holds at six after snapping the five-game skid, with the third-best three-week average in the league and the wildcard still in hand."   # 6. Swift kick in the Dak
+  kevbots22: "Up two after the week's top score, 144.1, which is how you stay alive at 4-6-1 with Zach next."   # 7. Remember the Nice Guys, ChatGPT
+  schirmerj: "Holds at eight on three straight losses, which is a lot of standing still for a team 18.8 points out of the wildcard."   # 8. Return of the IDP
+  alexandra: "Down two on two straight losses, and the quarterback signed to fix things was released by the Steelers on Wednesday."   # 9. Cornstar
+  theoceanpulse: "Up one despite losing, mostly because Trevor fell past on the way down; Grant, this week and next."   # 10. Im Bleeding Making Me the Shiva
+  purpsworth: "Down one after the week's low score, 62.3, and an 88 average over three, now the worst in the league."   # 11. I am dead inside
+  lukstein: "Still twelfth on five straight losses, though the closest one was 2.4 points from beating first place; the commish is next."   # 12. 2x Runner Up
