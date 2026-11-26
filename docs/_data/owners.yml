@@ -52,7 +52,7 @@ active:
   win_color: '#f8ae4b'
   titles: '1'
   sackos: 2
-  trades: 21
+  trades: 23
   best_finish:
     type: shiva
     years:
@@ -1937,8 +1937,8 @@ tx_heatmap:
       color: '#fce5bf'
   - id: gganoom
     name: Grant
-    total: 81
-    tx_per_year: 27.0
+    total: 83
+    tx_per_year: 27.7
     cells:
     - year: 2018
       count: null
@@ -1965,8 +1965,8 @@ tx_heatmap:
       count: 34
       color: '#fbd9a2'
     - year: 2026
-      count: 20
-      color: '#fce4bb'
+      count: 22
+      color: '#fce2b8'
   - id: alexandra
     name: Lexi
     total: 27

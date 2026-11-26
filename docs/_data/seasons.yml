@@ -476,6 +476,18 @@ detail:
         gave:
         - George Pickens
         - James Cook III
+    - week: 12
+      parties:
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave: []
+    - week: 12
+      parties:
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave: []
     keepers:
     - round: 5
       player: Brock Bowers
