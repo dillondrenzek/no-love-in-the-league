@@ -1,6 +1,6 @@
 season: 2026
 week: 12
-captured_at: '2026-11-25T23:53:23+00:00'
+captured_at: '2026-11-26T05:55:49+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -8,7 +8,7 @@ rosters:
   players:
   - player: Jaxon Smith-Njigba
     pos: WR
-    starter: false
+    starter: true
     proj: 17.58
     actual: null
     injury: QUESTIONABLE
@@ -50,7 +50,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.82
-    actual: null
+    actual: 27.5
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -64,7 +64,7 @@ rosters:
     bye_week: 14
   - player: Kyle Monangai
     pos: RB
-    starter: true
+    starter: false
     proj: 7.2
     actual: null
     injury: ''
@@ -114,7 +114,7 @@ rosters:
     pos: WR
     starter: false
     proj: 7.11
-    actual: null
+    actual: 8.9
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -138,14 +138,6 @@ rosters:
   team_id: 2
   team_name: Tuten Your Mother, Respectfully
   players:
-  - player: Amon-Ra St. Brown
-    pos: WR
-    starter: true
-    proj: 14.43
-    actual: null
-    injury: ''
-    pro_team: DET
-    bye_week: 6
   - player: Joe Burrow
     pos: QB
     starter: true
@@ -178,14 +170,6 @@ rosters:
     injury: ''
     pro_team: LV
     bye_week: 13
-  - player: Zach Charbonnet
-    pos: RB
-    starter: false
-    proj: 10.72
-    actual: null
-    injury: ''
-    pro_team: SEA
-    bye_week: 11
   - player: Garrett Wilson
     pos: WR
     starter: true
@@ -226,14 +210,6 @@ rosters:
     injury: ''
     pro_team: JAX
     bye_week: 7
-  - player: Parker Washington
-    pos: WR
-    starter: true
-    proj: 15.54
-    actual: null
-    injury: ''
-    pro_team: JAX
-    bye_week: 7
   - player: Seth McGowan
     pos: RB
     starter: false
@@ -266,6 +242,30 @@ rosters:
     injury: ''
     pro_team: CIN
     bye_week: 6
+  - player: Tee Higgins
+    pos: WR
+    starter: true
+    proj: 13.16
+    actual: null
+    injury: ''
+    pro_team: CIN
+    bye_week: 6
+  - player: Jakobi Meyers
+    pos: WR
+    starter: false
+    proj: 10.62
+    actual: null
+    injury: QUESTIONABLE
+    pro_team: JAX
+    bye_week: 7
+  - player: Bijan Robinson
+    pos: RB
+    starter: true
+    proj: 16.05
+    actual: null
+    injury: ''
+    pro_team: ATL
+    bye_week: 11
 - manager_id: '{D92FE464-BE9C-482A-AFE4-64BE9C882A83}'
   team_id: 3
   team_name: Return of the IDP
@@ -314,7 +314,7 @@ rosters:
     pos: TE
     starter: false
     proj: 7.13
-    actual: null
+    actual: 1.9
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -330,7 +330,7 @@ rosters:
     pos: RB
     starter: true
     proj: 15.12
-    actual: null
+    actual: 14.5
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -438,7 +438,7 @@ rosters:
     pos: WR
     starter: true
     proj: 13.63
-    actual: null
+    actual: 4.4
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -546,7 +546,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: LAR
     bye_week: 11
@@ -582,14 +582,6 @@ rosters:
     injury: ''
     pro_team: LAC
     bye_week: 7
-  - player: Tee Higgins
-    pos: WR
-    starter: true
-    proj: 13.16
-    actual: null
-    injury: ''
-    pro_team: CIN
-    bye_week: 6
   - player: George Kittle
     pos: TE
     starter: true
@@ -650,10 +642,18 @@ rosters:
     pos: WR
     starter: false
     proj: 6.16
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: LAR
     bye_week: 11
+  - player: Parker Washington
+    pos: WR
+    starter: true
+    proj: 15.54
+    actual: null
+    injury: ''
+    pro_team: JAX
+    bye_week: 7
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
   team_id: 7
   team_name: Remember the Nice Guys, ChatGPT
@@ -678,7 +678,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: GB
     bye_week: 11
@@ -734,7 +734,7 @@ rosters:
     pos: QB
     starter: true
     proj: 17.08
-    actual: null
+    actual: 3.6
     injury: ''
     pro_team: LAR
     bye_week: 11
@@ -866,7 +866,7 @@ rosters:
     pos: QB
     starter: false
     proj: 14.37
-    actual: null
+    actual: 9.5
     injury: ''
     pro_team: GB
     bye_week: 11
@@ -1074,7 +1074,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: LAR
     bye_week: 11
@@ -1190,8 +1190,8 @@ rosters:
     pos: WR
     starter: true
     proj: 11.29
-    actual: null
-    injury: ''
+    actual: 14.5
+    injury: QUESTIONABLE
     pro_team: GB
     bye_week: 11
   - player: Colston Loveland
@@ -1310,14 +1310,6 @@ rosters:
   team_id: 13
   team_name: One Big Beautiful Dillbot
   players:
-  - player: Bijan Robinson
-    pos: RB
-    starter: true
-    proj: 16.05
-    actual: null
-    injury: ''
-    pro_team: ATL
-    bye_week: 11
   - player: Malik Nabers
     pos: WR
     starter: true
@@ -1350,14 +1342,6 @@ rosters:
     injury: ''
     pro_team: PIT
     bye_week: 9
-  - player: Jakobi Meyers
-    pos: WR
-    starter: true
-    proj: 10.62
-    actual: null
-    injury: QUESTIONABLE
-    pro_team: JAX
-    bye_week: 7
   - player: Brock Purdy
     pos: QB
     starter: true
@@ -1390,14 +1374,6 @@ rosters:
     injury: ''
     pro_team: HOU
     bye_week: 8
-  - player: Keon Coleman
-    pos: WR
-    starter: false
-    proj: 4.04
-    actual: null
-    injury: ''
-    pro_team: BUF
-    bye_week: 7
   - player: KC Concepcion
     pos: WR
     starter: true
@@ -1438,6 +1414,30 @@ rosters:
     injury: ''
     pro_team: NYG
     bye_week: 8
+  - player: Zach Charbonnet
+    pos: RB
+    starter: true
+    proj: 10.72
+    actual: null
+    injury: ''
+    pro_team: SEA
+    bye_week: 11
+  - player: Amon-Ra St. Brown
+    pos: WR
+    starter: true
+    proj: 14.43
+    actual: null
+    injury: ''
+    pro_team: DET
+    bye_week: 6
+  - player: Samaje Perine
+    pos: RB
+    starter: false
+    proj: 7.74
+    actual: null
+    injury: ''
+    pro_team: CIN
+    bye_week: 6
 - manager_id: '{E5B17EFA-E8A4-46EE-A59C-C19B62FC4F68}'
   team_id: 14
   team_name: Swift kick in the Dak
@@ -1478,7 +1478,7 @@ rosters:
     pos: D/ST
     starter: false
     proj: 7.69
-    actual: null
+    actual: 12.0
     injury: ''
     pro_team: LAR
     bye_week: 11

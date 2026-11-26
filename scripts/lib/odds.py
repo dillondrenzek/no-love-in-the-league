@@ -207,6 +207,82 @@ def live_week(season, rosters, schedule, now):
     return {"week": week, "teams": teams}
 
 
+# League rule (from 2026): a team more than this many points-for per game left
+# behind the 6th seed (the points wildcard) at the end of a week is out of the
+# race for that seed for good. It can still make the top five by record.
+WILDCARD_OUT_PPG = 50.0
+WILDCARD_OUT_FROM = 2026
+
+
+def wildcard_cut(wins, pf, left, out=()):
+    """Apply the 50-points-per-game rule at the end of a week. `wins` and `pf`
+    are each team's totals so far (a tie = half a win), `left` its regular-season
+    games still to play, and `out` the teams already out of the 6th-seed race.
+    Returns the new set of teams out: `out` plus every team more than
+    WILDCARD_OUT_PPG per game left behind the 6th seed's points-for. The 6th
+    seed is the top scorer outside the top five by record (points-for breaking
+    level records) among the teams still in the race. A team with no games left
+    isn't cut: the season is over and the seeding settles it."""
+    out = set(out)
+    order = sorted(pf, key=lambda f: (wins.get(f, 0.0), pf[f]), reverse=True)
+    rest = [f for f in order[RECORD_SEEDS:] if f not in out]
+    if not rest:
+        return out
+    holder = max(rest, key=lambda f: pf[f])
+    for f in order:
+        if (f != holder and f not in out and left.get(f)
+                and (pf[holder] - pf[f]) / left[f] > WILDCARD_OUT_PPG):
+            out.add(f)
+    return out
+
+
+def _week_totals(games, wins, pf):
+    """Add one week's games to running wins / points-for totals (in place)."""
+    for m in games:
+        h, a, hs, as_ = m["home"], m["away"], m["home_score"], m["away_score"]
+        pf[h] = pf.get(h, 0.0) + hs
+        pf[a] = pf.get(a, 0.0) + as_
+        if hs == as_:
+            wins[h] = wins.get(h, 0.0) + 0.5
+            wins[a] = wins.get(a, 0.0) + 0.5
+        else:
+            w = h if hs > as_ else a
+            wins[w] = wins.get(w, 0.0) + 1
+
+
+def _games_left_after(season, reg):
+    """{week: {fid: regular-season games scheduled after that week}}."""
+    sched = [m for m in season.get("matchups") or []
+             if 1 <= (m.get("week") or 0) <= reg and not m.get("playoff")]
+    out = {}
+    for w in range(0, reg + 1):
+        left = {}
+        for m in sched:
+            if m["week"] > w:
+                left[m["home"]] = left.get(m["home"], 0) + 1
+                left[m["away"]] = left.get(m["away"], 0) + 1
+        out[w] = left
+    return out
+
+
+def wildcard_out(season):
+    """The teams already out of the 6th-seed race under the 50-points-per-game
+    rule, checked at the end of every completed regular-season week (once out,
+    always out). Empty before WILDCARD_OUT_FROM."""
+    if (season.get("season") or 0) < WILDCARD_OUT_FROM:
+        return set()
+    reg = season.get("weeks_in_regular_season") or 14
+    done = complete_through(season)
+    left = _games_left_after(season, reg)
+    teams = list(season.get("teams") or {})
+    wins, pf = dict.fromkeys(teams, 0.0), dict.fromkeys(teams, 0.0)
+    out = set()
+    for w in range(1, done + 1):
+        _week_totals([m for m in played_games(season) if m["week"] == w], wins, pf)
+        out = wildcard_cut(wins, pf, left[w], out)
+    return out
+
+
 def simulate(season, strength, params, n=10000, seed=0, live=None, observe=None):
     """Run `n` simulated seasons from the current state. Returns
     {fid: {outcome: probability, 'wins': mean final wins, 'seed': mean seed}}.
@@ -219,7 +295,11 @@ def simulate(season, strength, params, n=10000, seed=0, live=None, observe=None)
     `observe`, when given, is called once per simulated season with that
     season's games and its seeding result (six_team_playoff output) — how the
     rooting guide learns which results matter to whom. It doesn't change the
-    simulation, so the same seed gives the same odds with or without it."""
+    simulation, so the same seed gives the same odds with or without it.
+
+    The 50-points-per-game rule (wildcard_cut) is applied as each simulated
+    week ends, starting from the teams already out (wildcard_out), and a team
+    that's out can't take the 6th seed in that simulated season."""
     teams = sorted(season.get("teams") or {})
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
@@ -237,6 +317,12 @@ def simulate(season, strength, params, n=10000, seed=0, live=None, observe=None)
     wins = dict.fromkeys(teams, 0)
     seeds = dict.fromkeys(teams, 0)
     sigma = params.sigma
+    rule = (season.get("season") or 0) >= WILDCARD_OUT_FROM
+    done = complete_through(season)
+    out0 = wildcard_out(season) if rule else set()
+    left_after = _games_left_after(season, reg) if rule else {}
+    base_wins, base_pf = dict.fromkeys(teams, 0.0), dict.fromkeys(teams, 0.0)
+    _week_totals([m for m in played if m["week"] <= done], base_wins, base_pf)
     for _ in range(n):
         level = {f: rng.gauss(*strength[f]) for f in teams}
         sim = list(base)
@@ -258,6 +344,12 @@ def simulate(season, strength, params, n=10000, seed=0, live=None, observe=None)
                             "home_score": rng.gauss(level[h], sigma),
                             "away_score": rng.gauss(level[a], sigma)})
         shell["matchups"] = sim
+        if rule:
+            out, w_, p_ = set(out0), dict(base_wins), dict(base_pf)
+            for w in range(done + 1, reg):        # no cut after the last week
+                _week_totals([m for m in sim if m["week"] == w], w_, p_)
+                out = wildcard_cut(w_, p_, left_after[w], out)
+            shell["wildcard_out"] = out
         res = six_team_playoff(shell)
         order, seed_of = res["order"], res["seeds"]
         for f in teams:

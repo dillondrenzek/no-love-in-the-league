@@ -476,6 +476,32 @@ detail:
         gave:
         - George Pickens
         - James Cook III
+    - week: 12
+      parties:
+      - owner_id: gganoom
+        owner_name: Grant
+        team: One Big Beautiful Dillbot
+        gave:
+        - Jakobi Meyers
+        - Bijan Robinson
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave:
+        - Zach Charbonnet
+        - Amon-Ra St. Brown
+    - week: 12
+      parties:
+      - owner_id: jackperkins74
+        owner_name: Jack
+        team: Skatt
+        gave:
+        - Tee Higgins
+      - owner_id: zachzoske
+        owner_name: Zach
+        team: Tuten Your Mother, Respectfully
+        gave:
+        - Parker Washington
     keepers:
     - round: 5
       player: Brock Bowers

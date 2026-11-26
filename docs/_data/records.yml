@@ -260,7 +260,7 @@ records:
     opp_owner_name: null
     opp_owner_id: null
 - category: Most Trades
-  value: '21'
+  value: '23'
   sub_value: null
   season: null
   week: null
@@ -274,7 +274,7 @@ records:
   section: Roster & Draft
   tabular: false
   leaders:
-  - value: '21'
+  - value: '23'
     team: null
     owner_name: Zach
     owner_id: zachzoske
@@ -294,7 +294,7 @@ records:
     opp_team: null
     opp_owner_name: null
     opp_owner_id: null
-  - value: '16'
+  - value: '17'
     team: null
     owner_name: Jack
     owner_id: jackperkins74

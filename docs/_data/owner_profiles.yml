@@ -24,7 +24,7 @@ jackperkins74:
     titles: '2'
     sackos: 1
     playoff_apps: 9
-    trades: 16
+    trades: 17
     trades_known: true
     tx_per_year: 123.2
     tx_known: false
@@ -300,6 +300,16 @@ jackperkins74:
     avg_pf: 98.4
     avg_pa: 108.0
   trades:
+  - year: 2026
+    week: 12
+    got:
+    - Parker Washington
+    gave:
+    - Tee Higgins
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mother, Respectfully
   - year: 2026
     week: 11
     got:
@@ -3191,10 +3201,10 @@ jackperkins74:
       cost: Ineligible
       basis: Drafted R2
       ineligible: true
-    - player: Tee Higgins
+    - player: Parker Washington
       pos: WR
-      cost: R1
-      basis: Drafted R3
+      cost: R3
+      basis: Drafted R5
       ineligible: false
     - player: Puka Nacua
       pos: WR
@@ -3257,7 +3267,7 @@ zachzoske:
     titles: '1'
     sackos: 2
     playoff_apps: 5
-    trades: 21
+    trades: 23
     trades_known: true
     tx_per_year: 109.9
     tx_known: false
@@ -3532,6 +3542,28 @@ zachzoske:
     avg_pf: 98.7
     avg_pa: 100.9
   trades:
+  - year: 2026
+    week: 12
+    got:
+    - Jakobi Meyers
+    - Bijan Robinson
+    gave:
+    - Zach Charbonnet
+    - Amon-Ra St. Brown
+    with:
+    - id: gganoom
+      name: Grant
+      team: One Big Beautiful Dillbot
+  - year: 2026
+    week: 12
+    got:
+    - Tee Higgins
+    gave:
+    - Parker Washington
+    with:
+    - id: jackperkins74
+      name: Jack
+      team: Skatt
   - year: 2026
     week: 10
     got:
@@ -3995,6 +4027,12 @@ zachzoske:
       via: add
       week: 11
       waiver: false
+    - player: Bijan Robinson
+      via: trade
+      week: 12
+    - player: Jakobi Meyers
+      via: trade
+      week: 12
     - player: Ted Hurst III
       via: add
       week: 12
@@ -6178,6 +6216,11 @@ zachzoske:
       cost: R3
       basis: Drafted R5
       ineligible: false
+    - player: Bijan Robinson
+      pos: RB
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
     - player: Ashton Jeanty
       pos: RB
       cost: Ineligible
@@ -6193,22 +6236,17 @@ zachzoske:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Zach Charbonnet
-      pos: RB
-      cost: R13
-      basis: Drafted R15
-      ineligible: false
     - player: Seth McGowan
       pos: RB
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: Amon-Ra St. Brown
-      pos: WR
-      cost: Ineligible
-      basis: Drafted R1
-      ineligible: true
     - player: Garrett Wilson
+      pos: WR
+      cost: R1
+      basis: Drafted R3
+      ineligible: false
+    - player: Tee Higgins
       pos: WR
       cost: R1
       basis: Drafted R3
@@ -6218,10 +6256,10 @@ zachzoske:
       cost: R2
       basis: Drafted R4
       ineligible: false
-    - player: Parker Washington
+    - player: Jakobi Meyers
       pos: WR
-      cost: R3
-      basis: Drafted R5
+      cost: R6
+      basis: Drafted R8
       ineligible: false
     - player: Ted Hurst III
       pos: WR
@@ -10768,9 +10806,9 @@ gganoom:
     titles: '0'
     sackos: 0
     playoff_apps: 1
-    trades: 0
+    trades: 1
     trades_known: true
-    tx_per_year: 27.0
+    tx_per_year: 27.7
     tx_known: true
     seasons: 3
     best_finish:
@@ -10794,7 +10832,7 @@ gganoom:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/u_mad_bro-09.svg
     finish: 5th
     record: 6-5
-    tx: 20
+    tx: 22
     in_progress: true
     pf: 1341.9
     pa: 1129.4
@@ -10905,7 +10943,19 @@ gganoom:
     win_color: '#f9b64d'
     avg_pf: 125.9
     avg_pa: 130.8
-  trades: []
+  trades:
+  - year: 2026
+    week: 12
+    got:
+    - Zach Charbonnet
+    - Amon-Ra St. Brown
+    gave:
+    - Jakobi Meyers
+    - Bijan Robinson
+    with:
+    - id: zachzoske
+      name: Zach
+      team: Tuten Your Mother, Respectfully
   trades_known: true
   keepers:
   - year: 2026
@@ -11012,6 +11062,16 @@ gganoom:
     - player: Michael Mayer
       via: add
       week: 11
+      waiver: false
+    - player: Amon-Ra St. Brown
+      via: trade
+      week: 12
+    - player: Zach Charbonnet
+      via: trade
+      week: 12
+    - player: Samaje Perine
+      via: add
+      week: 12
       waiver: false
   - year: 2025
     players:
@@ -11253,11 +11313,6 @@ gganoom:
       cost: R9
       basis: Drafted R11
       ineligible: false
-    - player: Bijan Robinson
-      pos: RB
-      cost: Ineligible
-      basis: Drafted R1
-      ineligible: true
     - player: Quinshon Judkins
       pos: RB
       cost: R1
@@ -11273,25 +11328,30 @@ gganoom:
       cost: R12
       basis: Drafted R14
       ineligible: false
+    - player: Zach Charbonnet
+      pos: RB
+      cost: R13
+      basis: Drafted R15
+      ineligible: false
+    - player: Samaje Perine
+      pos: RB
+      cost: R13
+      basis: Undrafted
+      ineligible: false
+    - player: Amon-Ra St. Brown
+      pos: WR
+      cost: Ineligible
+      basis: Drafted R1
+      ineligible: true
     - player: Malik Nabers
       pos: WR
       cost: Ineligible
       basis: Drafted R2
       ineligible: true
-    - player: Jakobi Meyers
-      pos: WR
-      cost: R6
-      basis: Drafted R8
-      ineligible: false
     - player: KC Concepcion
       pos: WR
       cost: R8
       basis: Drafted R10
-      ineligible: false
-    - player: Keon Coleman
-      pos: WR
-      cost: R13
-      basis: Undrafted
       ineligible: false
     - player: Malachi Fields
       pos: WR

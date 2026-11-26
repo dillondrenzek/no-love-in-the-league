@@ -2,8 +2,9 @@
 A week's scoreboard + (complete-only) highlights. Param: wk = a
 site.data.weeks["<year>-<n>"] record {state, scoreboard, highlights}. The
 scoreboard renders in every state — future fixtures show no scores, live/final
-games show scores, a final game marks the winner. Highlights appear only for a
-complete week. The AI recap lives on the page, below this include.
+games show scores, a final game marks the winner. Below it, the "What to Root
+For" guide shows on the current week's page until the week is complete.
+Highlights appear only for a complete week. The AI recap lives on the page, below this include.
 {%- endcomment -%}
 {%- assign wk = include.wk -%}
 {% include bits/week_nav.html year=page.season_year active=page.week home=true %}
@@ -81,6 +82,8 @@ render the same way later. {%- endcomment -%}
   {%- if wk.projected_at %}<p class="proj__caption">Captured {{ wk.projected_at }}, before kickoff</p>{% endif -%}
 </section>
 {%- endif -%}
+
+{% include sections/week_rooting.html wk=wk year=page.season_year %}
 
 {%- if wk.highlights and wk.highlights.size > 0 -%}
 <div class="highlights">

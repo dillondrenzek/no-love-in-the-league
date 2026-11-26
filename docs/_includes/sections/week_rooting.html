@@ -1,14 +1,19 @@
 {%- comment -%}
-Full-width "What to Root For" section: for each team, the one goal still in play
+Week page "What to Root For" section: for each team, the one goal still in play
 this week, its odds now, if the team wins and if it loses, and the other games
 this week that help it most. Every value is precomputed by lib/odds.rooting_guide
-from the same simulation as the forecast table. Param: g (a site.data.odds
-record's `rooting`: {week, rows}).
+from the same simulation as the season page's forecast table. The guide only
+exists for the current (upcoming or in-progress) week, so it renders only on
+that week's page and disappears once the week is complete.
+Params: wk (a site.data.weeks record), year (the season year).
 {%- endcomment -%}
-{%- assign g = include.g -%}
-<section class="season-section" id="rooting">
-<h2>What to Root For · Week {{ g.week }}</h2>
-<p class="forecast__note">The one thing each team is still playing for, its odds now, what a win or a loss this week does to them, and the other games this week that help it most. In the race for the 6th seed, every point counts, so contenders also show their points gap. From the same simulations as the forecast.</p>
+{%- assign wk = include.wk -%}
+{%- assign g = site.data.odds[include.year].rooting -%}
+{%- if g and g.rows and g.rows.size > 0 and g.week == wk.week and wk.state != "complete" -%}
+{%- assign forecast_href = '/seasons/' | append: include.year | append: '/#forecast' | relative_url -%}
+<section class="season-section rooting-section" id="rooting">
+<h2>What to Root For</h2>
+<p class="forecast__note">The one thing each team is still playing for, its odds now, what a win or a loss this week does to them, and the other games this week that help it most. In the race for the 6th seed, every point counts, so contenders also show their points gap. From the same simulations as the <a href="{{ forecast_href }}">forecast</a>.</p>
 <div class="table-scroll">
 <table class="rooting">
   <thead>
@@ -48,3 +53,4 @@ record's `rooting`: {week, rows}).
 </table>
 </div>
 </section>
+{%- endif -%}
