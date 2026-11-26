@@ -1917,7 +1917,8 @@ def test_odds_clinch_status_and_labels():
     assert rows["t00"]["cells"]["sacko_bye"]["text"] != "✕"
     # Nothing is locked before a game is played.
     assert clinch_status(_odds_season(0)) == {"playoffs": set(), "bye": set(),
-                                              "no_bye": set(), "no_sacko_bye": set()}
+                                              "no_bye": set(), "no_playoffs": set(),
+                                              "no_sacko_bye": set()}
 
 
 def test_seeding_counts_a_tie_as_half_a_win():
@@ -2177,6 +2178,13 @@ def test_odds_wildcard_rule_shapes_the_simulation():
     st, res = forecast(season, Params(), n=2000, seed=5)
     for f in ("t00", "t01", "t02", "t03"):   # can't reach the top five on record
         assert res[f]["playoffs"] == 0.0
+    # Out of the top five on record AND out of the 6th-seed race: an ✕. (t04 is
+    # within 50 a game and could still reach the top five on record, so no ✕.)
+    from lib.odds import clinch_status, forecast_rows
+    assert clinch_status(season)["no_playoffs"] == {"t00", "t01", "t02", "t03"}
+    rows = {r["fid"]: r for r in forecast_rows(season, {}, st, res)}
+    assert rows["t03"]["cells"]["playoffs"]["text"] == "✕"
+    assert rows["t04"]["cells"]["playoffs"]["text"] != "✕"
     # The seeding skips an out team for the 6th seed, falling back to the next scorer.
     season = _odds_season(14)
     assert _league_seeds(season)["t06"] == 6
