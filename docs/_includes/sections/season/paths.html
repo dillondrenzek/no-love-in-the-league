@@ -1,0 +1,30 @@
+{%- comment -%}
+"Run to the Playoffs" checklist sections for a season page: one per path in
+d.paths (lib.paths, from the hand-written data/playoff_paths.yml). Each box's
+status and live lean are precomputed. Param: d (a seasons.detail record).
+{%- endcomment -%}
+{%- for p in include.d.paths %}
+<section class="season-section run" id="run-{{ p.fid }}">
+<h2>{{ p.title }}</h2>
+{%- if p.intro %}<p class="forecast__note">{{ p.intro }}</p>{% endif %}
+<p class="run__status run__status--{{ p.status }}">
+  {%- if p.status == "in" -%}Every box checked. He's in.
+  {%- elsif p.status == "dead" -%}The run is over.
+  {%- else -%}Still alive: {{ p.done }} of {{ p.total }} checked.{%- endif -%}
+</p>
+<ul class="run__list">
+  {%- for c in p.conditions %}
+  <li class="run__item run__item--{{ c.status }}">
+    <span class="run__box" aria-hidden="true">{% if c.status == "done" %}✓{% elsif c.status == "dead" %}✕{% endif %}</span>
+    <span class="run__label">{{ c.label }}</span>
+    {%- if c.status == "done" %}<span class="run__tag">Done</span>
+    {%- elsif c.status == "dead" %}<span class="run__tag">Didn’t happen</span>
+    {%- elsif c.lean == "ahead" %}<span class="run__tag run__tag--ahead">On track right now</span>
+    {%- elsif c.lean == "behind" %}<span class="run__tag run__tag--behind">In trouble right now</span>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- if p.footnote %}<p class="forecast__note run__foot">{{ p.footnote }}</p>{% endif %}
+</section>
+{%- endfor -%}

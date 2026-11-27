@@ -566,6 +566,47 @@ detail:
     champ: null
     sacko: null
     bracket: null
+    paths:
+    - fid: theoceanpulse
+      title: Dillon's Run to the Playoffs
+      nav: Dillon's Run
+      intro: 'The only way in is the 5th seed at 6-7-1: Dillon wins out, and everyone
+        outside the top four finishes below him. Every box has to get checked.'
+      footnote: 'Technically there''s also the points route: finish with more points
+        than everyone outside the top five. Dillon is one of the league''s lowest
+        scorers, so this is the realistic one.'
+      status: alive
+      done: 0
+      total: 9
+      conditions:
+      - label: Dillon beats Grant in Week 12
+        status: open
+        lean: ahead
+      - label: Dillon beats Grant again in Week 13
+        status: open
+        lean: null
+      - label: Dillon beats Jono in Week 14
+        status: open
+        lean: null
+      - label: Nate beats Grant in Week 14, so Grant finishes 6-8
+        status: open
+        lean: null
+      - label: Jono loses to Jack (Week 12) or Lexi (Week 13)
+        status: open
+        lean: null
+      - label: 'Trevor loses at least two of three: Lexi, Jack, Shawnee'
+        status: open
+        lean: null
+      - label: 'Kevin wins at most one of three: Zach, Wade, Luke (at 6-7-1 he''d
+          win the tiebreak on points)'
+        status: open
+        lean: null
+      - label: 'Shawnee loses at least one of three: Nate, Luke, Trevor'
+        status: open
+        lean: null
+      - label: 'Lexi loses at least one of three: Trevor, Jono, Wade'
+        status: open
+        lean: null
   2025:
     year: 2025
     season_no: 12
@@ -1291,6 +1332,7 @@ detail:
         shawne2520997: 10
         henpen28: 11
         whowonthelastsuperbowl: 12
+    paths: []
   2024:
     year: 2024
     season_no: 11
@@ -2003,6 +2045,7 @@ detail:
         whowonthelastsuperbowl: 10
         purpsworth: 11
         kevbots22: 12
+    paths: []
   2023:
     year: 2023
     season_no: 10
@@ -2771,6 +2814,7 @@ detail:
         kevbots22: 10
         unclebadtouch38: 11
         lukstein: 12
+    paths: []
   2022:
     year: 2022
     season_no: 9
@@ -3409,6 +3453,7 @@ detail:
         sturmanator15: 10
         schirmerj: 11
         kevbots22: 12
+    paths: []
   2021:
     year: 2021
     season_no: 8
@@ -4042,6 +4087,7 @@ detail:
         zachzoske: 10
         lukstein: 11
         unclebadtouch38: 12
+    paths: []
   2020:
     year: 2020
     season_no: 7
@@ -4689,6 +4735,7 @@ detail:
         jackperkins74: 10
         sturmanator15: 11
         henpen28: 12
+    paths: []
   2019:
     year: 2019
     season_no: 6
@@ -5372,6 +5419,7 @@ detail:
         henpen28: 10
         purpsworth: 11
         kevbots22: 12
+    paths: []
   2018:
     year: 2018
     season_no: 5
@@ -5940,6 +5988,7 @@ detail:
         ajstewart04: 10
         kevbots22: 11
         lukstein: 12
+    paths: []
   2017:
     year: 2017
     season_no: 4
@@ -6512,6 +6561,7 @@ detail:
         whowonthelastsuperbowl: 10
         ajstewart04: 11
         zachzoske: 12
+    paths: []
   2016:
     year: 2016
     season_no: 3
@@ -7093,6 +7143,7 @@ detail:
         henpen28: 10
         kevbots22: 11
         master-otis: 12
+    paths: []
   2015:
     year: 2015
     season_no: 2
@@ -7547,6 +7598,7 @@ detail:
         kevbots22: 8
         henpen28: 9
         lukstein: 10
+    paths: []
   2014:
     year: 2014
     season_no: 1
@@ -8015,3 +8067,4 @@ detail:
         zachzoske: 8
         schirmerj: 9
         whowonthelastsuperbowl: 10
+    paths: []

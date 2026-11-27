@@ -2148,6 +2148,48 @@ def test_odds_as_projected_counts_the_live_week_at_projected_finals():
     assert as_projected(season, None) == as_of_now(season)
 
 
+def test_playoff_path_checks_each_box():
+    from lib.paths import playoff_path
+    g = lambda w, h, a, hs=None, as_=None, final=True: dict(
+        week=w, home=h, away=a, home_score=hs, away_score=as_,
+        **({} if final else {"final": False}))
+    season = {"season": 2026, "weeks_in_regular_season": 14, "matchups": [
+        g(12, "me", "x", 110, 100),                 # won: done
+        g(13, "me", "x", 90, 95, final=False),      # trailing live
+        g(14, "me", "y"),                           # not played
+        g(12, "k", "z", 120, 100),                  # k won one...
+        g(13, "k", "z", 80, 100, final=False),      # ...losing live...
+        g(14, "k", "y"),                            # ...one to go
+        g(12, "t", "z", 100, 100),                  # a tie: half a win
+    ]}
+    path = {"fid": "me", "title": "Run", "conditions": [
+        {"label": "a", "win": "me", "week": 12},
+        {"label": "b", "win": "me", "week": 13},
+        {"label": "c", "win": "me", "week": 14},
+        {"label": "d", "team": "k", "weeks": [12, 13, 14], "max_wins": 1},
+        {"label": "e", "team": "k", "weeks": [12, 13, 14], "max_wins": 2},
+        {"label": "f", "team": "k", "weeks": [12], "max_wins": 0},
+        {"label": "g", "team": "t", "weeks": [12], "max_wins": 0.5},
+    ]}
+    p = playoff_path(season, path)
+    got = {c["label"]: (c["status"], c["lean"]) for c in p["conditions"]}
+    assert got["a"] == ("done", None)
+    assert got["b"] == ("open", "behind")
+    assert got["c"] == ("open", None)
+    # k has 1 win, is losing live, and has one to go. "At most 1" still needs the
+    # last one lost too, so no lean; "at most 2" holds whatever happens next if
+    # the live game stays a loss, so it leans our way.
+    assert got["d"] == ("open", None)
+    assert got["e"] == ("open", "ahead")
+    assert got["f"] == ("dead", None)             # k already won in Week 12
+    assert got["g"] == ("done", None)             # a tie is half a win
+    assert p["status"] == "dead" and p["done"] == 2 and p["total"] == 7
+    # Every box checked: in.
+    won = {"fid": "me", "conditions": [{"label": "a", "win": "me", "week": 12}]}
+    assert playoff_path(season, won)["status"] == "in"
+    assert playoff_path(season, {"fid": "me", "conditions": path["conditions"][:3]})["status"] == "alive"
+
+
 def test_odds_rooting_goal_picks_the_open_question():
     from lib.odds import rooting_goal
     assert rooting_goal(1.0, 0.96, 0.0) == "bye"             # in, bye still open

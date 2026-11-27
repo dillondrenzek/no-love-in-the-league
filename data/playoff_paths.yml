@@ -1,0 +1,61 @@
+# Hand-edited, just for fun. A team's checklist of results it needs to make the
+# playoffs, shown as its own section on that season's page. The build checks
+# each box against the actual scores (done / dead / still to play, with a live
+# lean while a game is in progress); the labels are written here.
+#
+# Per year, a list of paths:
+#   fid:        the team the checklist is for
+#   title:      the section heading
+#   nav:        its short label in the page's section menu (optional)
+#   intro:      a line above the checklist (optional)
+#   footnote:   a line below it (optional)
+#   conditions: in order. Each has a `label` plus one of:
+#     win: <fid>, week: <n>            that team wins its game that week
+#     team: <fid>, weeks: [..],        that team wins no more than max_wins of its
+#       max_wins: <n>                  games in those weeks (a tie is half a win)
+# Then run `python scripts/build.py`.
+
+2026:
+  - fid: theoceanpulse
+    title: "Dillon's Run to the Playoffs"
+    nav: "Dillon's Run"
+    intro: >-
+      The only way in is the 5th seed at 6-7-1: Dillon wins out, and everyone
+      outside the top four finishes below him. Every box has to get checked.
+    conditions:
+      - label: "Dillon beats Grant in Week 12"
+        win: theoceanpulse
+        week: 12
+      - label: "Dillon beats Grant again in Week 13"
+        win: theoceanpulse
+        week: 13
+      - label: "Dillon beats Jono in Week 14"
+        win: theoceanpulse
+        week: 14
+      - label: "Nate beats Grant in Week 14, so Grant finishes 6-8"
+        win: whowonthelastsuperbowl
+        week: 14
+      - label: "Jono loses to Jack (Week 12) or Lexi (Week 13)"
+        team: schirmerj
+        weeks: [12, 13]
+        max_wins: 1
+      - label: "Trevor loses at least two of three: Lexi, Jack, Shawnee"
+        team: purpsworth
+        weeks: [12, 13, 14]
+        max_wins: 1
+      - label: "Kevin wins at most one of three: Zach, Wade, Luke (at 6-7-1 he'd win the tiebreak on points)"
+        team: kevbots22
+        weeks: [12, 13, 14]
+        max_wins: 1.5
+      - label: "Shawnee loses at least one of three: Nate, Luke, Trevor"
+        team: shawne2520997
+        weeks: [12, 13, 14]
+        max_wins: 2
+      - label: "Lexi loses at least one of three: Trevor, Jono, Wade"
+        team: alexandra
+        weeks: [12, 13, 14]
+        max_wins: 2
+    footnote: >-
+      Technically there's also the points route: finish with more points than
+      everyone outside the top five. Dillon is one of the league's lowest
+      scorers, so this is the realistic one.

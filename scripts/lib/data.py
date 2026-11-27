@@ -52,6 +52,15 @@ def load_season_notes(data_dir=DATA_DIR):
     return {}
 
 
+def load_playoff_paths(data_dir=DATA_DIR):
+    """Hand-edited playoff-path checklists from data/playoff_paths.yml:
+    {year: [path, ...]} (see lib.paths). Empty when the file is absent."""
+    path = Path(data_dir) / "playoff_paths.yml"
+    if path.exists():
+        return _read_yaml(path) or {}
+    return {}
+
+
 def load_halfway_prose(year, data_dir=DATA_DIR):
     """Hand-edited / agent-written prose for a season's Halfway page, from
     data/halfway/<year>.yml: {"intro": str, "outlook": str, "teams": {fid: str}}.

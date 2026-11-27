@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -3725,7 +3725,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 12, 2026 · 1:08 PM PST
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -4105,7 +4105,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 19, 2026 · 2:01 PM PST
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power:
   - rank: 1
@@ -4271,11 +4271,11 @@
     final: false
     live: true
     playoff: false
-    home_score: 45.7
+    home_score: 46.6
     away_score: 30.0
     winner_id: null
     tie: false
-    margin: 15.7
+    margin: 16.6
     home_proj: 116.1
     away_proj: 131.3
   - home_id: sturmanator15
@@ -4295,10 +4295,10 @@
     live: true
     playoff: false
     home_score: 54.8
-    away_score: 43.5
+    away_score: 45.1
     winner_id: null
     tie: false
-    margin: 11.3
+    margin: 9.7
     home_proj: 120.5
     away_proj: 109.0
   - home_id: theoceanpulse
@@ -4364,10 +4364,10 @@
     live: true
     playoff: false
     home_score: 6.0
-    away_score: 23.5
+    away_score: 28.5
     winner_id: null
     tie: false
-    margin: 17.5
+    margin: 22.5
     home_proj: 138.0
     away_proj: 121.2
   highlights: []
@@ -4463,7 +4463,7 @@
     decided: false
     result: null
   projected_at: Nov 26, 2026 · 6:41 PM PST
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: true
   power:
   - rank: 1
@@ -4689,7 +4689,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power: []
 2026-14:
@@ -4795,6 +4795,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 26, 8:08 PM PST
+  updated_at: Nov 26, 8:34 PM PST
   current: false
   power: []

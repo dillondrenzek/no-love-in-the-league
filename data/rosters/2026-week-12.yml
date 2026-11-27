@@ -1,6 +1,6 @@
 season: 2026
 week: 12
-captured_at: '2026-11-27T04:07:49+00:00'
+captured_at: '2026-11-27T04:33:48+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -282,7 +282,7 @@ rosters:
     pos: QB
     starter: true
     proj: 18.98
-    actual: 3.1
+    actual: 3.5
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -354,7 +354,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.24
-    actual: 17.1
+    actual: 17.6
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -422,7 +422,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.33
-    actual: 0.9
+    actual: 2.5
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -766,7 +766,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.04
-    actual: 6.0
+    actual: 11.0
     injury: ''
     pro_team: BUF
     bye_week: 7

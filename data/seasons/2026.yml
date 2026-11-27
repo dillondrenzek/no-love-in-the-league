@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-27T04:08:11+00:00
+updated_at: 2026-11-27T04:34:09+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -157,11 +157,11 @@ matchups:
   - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 121.8, away_score: 111.9, playoff: false }
   - { week: 11, home: zachzoske, away: purpsworth, home_score: 110.3, away_score: 62.3, playoff: false }
   - { week: 12, home: alexandra, away: purpsworth, home_score: 34.7, away_score: 23.7, playoff: false, final: false, home_proj: 111.14, away_proj: 114.31 }
-  - { week: 12, home: schirmerj, away: jackperkins74, home_score: 45.7, away_score: 30.0, playoff: false, final: false, home_proj: 116.13, away_proj: 131.34 }
-  - { week: 12, home: sturmanator15, away: lukstein, home_score: 54.8, away_score: 43.5, playoff: false, final: false, home_proj: 120.48, away_proj: 109.03 }
+  - { week: 12, home: schirmerj, away: jackperkins74, home_score: 46.6, away_score: 30.0, playoff: false, final: false, home_proj: 116.13, away_proj: 131.34 }
+  - { week: 12, home: sturmanator15, away: lukstein, home_score: 54.8, away_score: 45.1, playoff: false, final: false, home_proj: 120.48, away_proj: 109.03 }
   - { week: 12, home: theoceanpulse, away: gganoom, home_score: 30.2, away_score: 25.1, playoff: false, final: false, home_proj: 111.36, away_proj: 115.14 }
   - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 37.3, away_score: 98.9, playoff: false, final: false, home_proj: 116.43, away_proj: 119.79 }
-  - { week: 12, home: zachzoske, away: kevbots22, home_score: 6.0, away_score: 23.5, playoff: false, final: false, home_proj: 137.97, away_proj: 121.18 }
+  - { week: 12, home: zachzoske, away: kevbots22, home_score: 6.0, away_score: 28.5, playoff: false, final: false, home_proj: 137.97, away_proj: 121.18 }
   - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
   - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
   - { week: 13, home: schirmerj, away: alexandra, playoff: false, played: false }
