@@ -19,12 +19,13 @@ from pathlib import Path
 
 import yaml
 
-from lib.data import (load_franchises, load_seasons, load_season_notes,
+from lib.data import (load_franchises, load_seasons, load_season_notes, load_playoff_paths,
                       name_of, short_name_of, complete_weeks, trade_asset_label)
 from lib.state import state_of, is_in_progress
 from lib.overrides import load_overrides
 from lib.seasons import season_rows
 from lib.playoffs import playoff_bracket
+from lib.paths import season_paths
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "docs" / "seasons"
@@ -104,7 +105,7 @@ def season_keepers(season, franchises):
     return out
 
 
-def season_detail(season, franchises, overrides, notes):
+def season_detail(season, franchises, overrides, notes, paths=None):
     """Page data for one season — completed or still in progress."""
     year = season["season"]
     state = state_of(season)
@@ -149,6 +150,9 @@ def season_detail(season, franchises, overrides, notes):
         # (None outside the playoffs, or when the season's format isn't usable).
         "bracket": (playoff_bracket(season, franchises)
                     if state in ("playoffs", "complete") else None),
+        # Hand-written "run to the playoffs" checklists (data/playoff_paths.yml),
+        # checked against the scores; regular season only.
+        "paths": season_paths(season, paths) if state == "season" else [],
     }
 
 
@@ -169,8 +173,10 @@ def main():
     seasons = load_seasons(include_in_progress=True)  # newest first, live season included
     overrides = load_overrides()
     notes = load_season_notes()
+    paths = load_playoff_paths()
 
-    detail = {s["season"]: season_detail(s, franchises, overrides, notes) for s in seasons}
+    detail = {s["season"]: season_detail(s, franchises, overrides, notes, paths)
+              for s in seasons}
 
     # Newest year first, whatever its lifecycle state.
     years = sorted(detail.keys(), reverse=True)

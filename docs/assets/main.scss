@@ -1051,6 +1051,30 @@ a.hero__subtitle--link:hover { text-decoration: underline; }
 .season-section { margin: 0 0 2.4em; scroll-margin-top: 1.5em; }
 .season-section > h2 { margin-top: 0; }
 
+// "Run to the Playoffs" checklist (sections/season/paths.html).
+.run__status { font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--muted); margin: 0 0 0.8em; }
+.run__status--dead { color: var(--danger-ink); }
+.run__status--in { color: var(--tag-added-ink); }
+.season-section ul.run__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule-strong); }
+.run__item { display: flex; align-items: baseline; gap: 0.7em; padding: 0.55em 0;
+  border-bottom: 1px solid var(--rule); }
+.run__box { flex: 0 0 auto; width: 1.15em; height: 1.15em; line-height: 1.05em;
+  text-align: center; font-size: 0.85rem; border: 1.5px solid var(--faint);
+  border-radius: 3px; position: relative; top: 0.15em; }
+.run__label { flex: 1 1 auto; }
+.run__tag { flex: 0 0 auto; font-family: var(--mono); font-size: 0.68rem;
+  text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); white-space: nowrap; }
+.run__item--done .run__box { border-color: var(--tag-added-ink); background: var(--tag-added-bg);
+  color: var(--tag-added-ink); }
+.run__item--done .run__label { color: var(--muted); }
+.run__item--dead .run__box { border-color: var(--danger-ink); background: var(--danger-bg);
+  color: var(--danger-ink); }
+.run__item--dead .run__label { color: var(--muted); text-decoration: line-through; }
+.run__tag--ahead { color: var(--tag-added-ink); }
+.run__tag--behind { color: var(--danger-ink); }
+.run__foot { margin-top: 0.8em; }
+
 // Owner page: Current Roster note + ineligible keeper cells.
 .current-roster__note { font-size: 0.8rem; color: var(--muted); margin: -0.4em 0 0.8em; }
 // Player names read as content (not the quiet first-column index); position is
