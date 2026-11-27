@@ -423,13 +423,10 @@ def clinch_status(season):
 
         {'playoffs': {fids}, 'bye': {fids},      # clinched: a top-5 / top-2 seed
          'no_bye': {fids},                       # can't reach the top 2
-         'no_playoffs': {fids},                  # out of the playoffs
          'no_sacko_bye': {fids}}                 # can't fall to 11th or 12th
 
     A Sacko bye is a bottom-two finish, so a team is safe from it once it has
-    clinched a top-10 spot by record. A team is out of the playoffs once it can't
-    reach the top five by record and is out of the 6th-seed race under the
-    50-points-per-game rule (wildcard_out)."""
+    clinched a top-10 spot by record."""
     reg = season.get("weeks_in_regular_season") or 14
     played = played_games(season)
     played_keys = {(m["week"], m["home"]) for m in played}
@@ -450,7 +447,6 @@ def clinch_status(season):
     return {"playoffs": clinched_top(wins, games, RECORD_SEEDS),
             "bye": clinched_top(wins, games, BYE_SEEDS),
             "no_bye": eliminated_top(wins, games, BYE_SEEDS),
-            "no_playoffs": eliminated_top(wins, games, RECORD_SEEDS) & wildcard_out(season),
             "no_sacko_bye": (clinched_top(wins, games, n - len(SACKO_BYE_SEEDS))
                              if n > len(SACKO_BYE_SEEDS) else set())}
 
@@ -816,10 +812,6 @@ def forecast_rows(season, franchises, strength, result, prev=None, now=None):
         for o in ("playoffs", "bye"):
             if r["fid"] in clinched[o]:
                 r["cells"][o] = clinched_cell()
-        if r["fid"] in clinched["no_playoffs"]:
-            r["cells"]["playoffs"] = eliminated_cell(
-                "Out: can't reach the top five by record, and more than 50 points "
-                "per game behind the 6th seed")
         if r["fid"] in clinched["no_bye"]:
             r["cells"]["bye"] = eliminated_cell("Can't finish in the top two")
         if r["fid"] in clinched["no_sacko_bye"] and "sacko_bye" in r["cells"]:

@@ -1935,6 +1935,38 @@ tx_heatmap:
     - year: 2026
       count: 18
       color: '#fce5bf'
+  - id: alexandra
+    name: Lexi
+    total: 29
+    tx_per_year: 29.0
+    cells:
+    - year: 2018
+      count: null
+      color: null
+    - year: 2019
+      count: null
+      color: null
+    - year: 2020
+      count: null
+      color: null
+    - year: 2021
+      count: null
+      color: null
+    - year: 2022
+      count: null
+      color: null
+    - year: 2023
+      count: null
+      color: null
+    - year: 2024
+      count: null
+      color: null
+    - year: 2025
+      count: null
+      color: null
+    - year: 2026
+      count: 29
+      color: '#fcddab'
   - id: gganoom
     name: Grant
     total: 83
@@ -1967,38 +1999,6 @@ tx_heatmap:
     - year: 2026
       count: 22
       color: '#fce2b8'
-  - id: alexandra
-    name: Lexi
-    total: 27
-    tx_per_year: 27.0
-    cells:
-    - year: 2018
-      count: null
-      color: null
-    - year: 2019
-      count: null
-      color: null
-    - year: 2020
-      count: null
-      color: null
-    - year: 2021
-      count: null
-      color: null
-    - year: 2022
-      count: null
-      color: null
-    - year: 2023
-      count: null
-      color: null
-    - year: 2024
-      count: null
-      color: null
-    - year: 2025
-      count: null
-      color: null
-    - year: 2026
-      count: 27
-      color: '#fcdeae'
   - id: henpen28
     name: Henry
     total: 360

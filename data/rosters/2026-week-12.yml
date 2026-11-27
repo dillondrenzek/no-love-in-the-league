@@ -1,6 +1,6 @@
 season: 2026
 week: 12
-captured_at: '2026-11-26T06:27:02+00:00'
+captured_at: '2026-11-27T04:07:49+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -18,14 +18,14 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: OUT
     pro_team: KC
     bye_week: 5
   - player: Zay Flowers
     pos: WR
     starter: true
-    proj: 11.56
+    proj: 11.58
     actual: null
     injury: QUESTIONABLE
     pro_team: BAL
@@ -66,7 +66,7 @@ rosters:
     pos: RB
     starter: false
     proj: 7.2
-    actual: null
+    actual: 15.4
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -98,8 +98,8 @@ rosters:
     pos: QB
     starter: true
     proj: 17.0
-    actual: null
-    injury: ''
+    actual: 27.3
+    injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
   - player: Corey Kiner
@@ -121,7 +121,7 @@ rosters:
   - player: Giants D/ST
     pos: D/ST
     starter: true
-    proj: 7.06
+    proj: 6.98
     actual: null
     injury: ''
     pro_team: NYG
@@ -190,7 +190,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.45
-    actual: null
+    actual: 6.0
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -282,7 +282,7 @@ rosters:
     pos: QB
     starter: true
     proj: 18.98
-    actual: null
+    actual: 3.1
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -298,7 +298,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.33
-    actual: null
+    actual: 11.0
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -338,7 +338,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.49
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -354,7 +354,7 @@ rosters:
     pos: RB
     starter: true
     proj: 17.24
-    actual: null
+    actual: 17.1
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -398,7 +398,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.53
-    actual: null
+    actual: 0.7
     injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
@@ -406,8 +406,8 @@ rosters:
     pos: WR
     starter: true
     proj: 11.67
-    actual: null
-    injury: ''
+    actual: 37.5
+    injury: QUESTIONABLE
     pro_team: PHI
     bye_week: 10
   - player: Jadarian Price
@@ -422,7 +422,7 @@ rosters:
     pos: WR
     starter: true
     proj: 10.33
-    actual: null
+    actual: 0.9
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -437,7 +437,7 @@ rosters:
   - player: Matthew Golden
     pos: WR
     starter: true
-    proj: 13.63
+    proj: 13.62
     actual: 4.4
     injury: ''
     pro_team: GB
@@ -454,7 +454,7 @@ rosters:
     pos: WR
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: INJURY_RESERVE
     pro_team: PHI
     bye_week: 10
@@ -486,7 +486,7 @@ rosters:
     pos: WR
     starter: false
     proj: 5.48
-    actual: null
+    actual: 13.6
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -502,7 +502,7 @@ rosters:
     pos: RB
     starter: false
     proj: 0.0
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: PHI
     bye_week: 10
@@ -519,7 +519,7 @@ rosters:
     starter: false
     proj: 5.86
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: CAR
     bye_week: 5
 - manager_id: '{B957C133-CFCE-4DBC-88D7-D8F2CBC0D89F}'
@@ -610,7 +610,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.8
-    actual: null
+    actual: 1.8
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -626,7 +626,7 @@ rosters:
     pos: WR
     starter: true
     proj: 12.56
-    actual: null
+    actual: 9.2
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -634,7 +634,7 @@ rosters:
     pos: RB
     starter: true
     proj: 13.55
-    actual: null
+    actual: 19.0
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -651,7 +651,7 @@ rosters:
     starter: true
     proj: 15.54
     actual: null
-    injury: ''
+    injury: QUESTIONABLE
     pro_team: JAX
     bye_week: 7
 - manager_id: '{F2121BF6-458B-47A2-921B-F6458BC7A227}'
@@ -710,7 +710,7 @@ rosters:
     pos: TE
     starter: true
     proj: 9.38
-    actual: null
+    actual: 9.1
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -733,7 +733,7 @@ rosters:
   - player: Matthew Stafford
     pos: QB
     starter: true
-    proj: 17.08
+    proj: 17.04
     actual: 3.6
     injury: ''
     pro_team: LAR
@@ -758,7 +758,7 @@ rosters:
     pos: WR
     starter: true
     proj: 7.21
-    actual: null
+    actual: 4.8
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -766,7 +766,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.04
-    actual: null
+    actual: 6.0
     injury: ''
     pro_team: BUF
     bye_week: 7
@@ -810,7 +810,7 @@ rosters:
     pos: WR
     starter: true
     proj: 8.72
-    actual: null
+    actual: 2.9
     injury: ''
     pro_team: KC
     bye_week: 5
@@ -834,13 +834,13 @@ rosters:
     pos: RB
     starter: true
     proj: 15.96
-    actual: null
+    actual: 31.8
     injury: ''
     pro_team: DAL
     bye_week: 14
   - player: J.K. Dobbins
     pos: RB
-    starter: true
+    starter: false
     proj: 0.0
     actual: null
     injury: SUSPENSION
@@ -848,7 +848,7 @@ rosters:
     bye_week: 10
   - player: Denzel Boston
     pos: WR
-    starter: false
+    starter: true
     proj: 11.19
     actual: null
     injury: QUESTIONABLE
@@ -865,14 +865,14 @@ rosters:
   - player: Jordan Love
     pos: QB
     starter: false
-    proj: 14.37
+    proj: 14.36
     actual: 9.5
     injury: ''
     pro_team: GB
     bye_week: 11
   - player: DeMario Douglas
     pos: WR
-    starter: false
+    starter: true
     proj: 7.27
     actual: null
     injury: ''
@@ -880,7 +880,7 @@ rosters:
     bye_week: 11
   - player: Keenan Allen
     pos: WR
-    starter: true
+    starter: false
     proj: 5.5
     actual: null
     injury: ''
@@ -898,7 +898,7 @@ rosters:
     pos: D/ST
     starter: true
     proj: 5.5
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -910,14 +910,14 @@ rosters:
     injury: ''
     pro_team: BAL
     bye_week: 13
-  - player: Aaron Rodgers
+  - player: Deshaun Watson
     pos: QB
     starter: true
-    proj: 0.0
+    proj: 21.24
     actual: null
     injury: ''
-    pro_team: ''
-    bye_week: null
+    pro_team: CLE
+    bye_week: 11
 - manager_id: '{06571853-E276-48AA-9202-F06B0AD927ED}'
   team_id: 10
   team_name: I am dead inside
@@ -942,7 +942,7 @@ rosters:
     pos: WR
     starter: true
     proj: 9.01
-    actual: null
+    actual: 23.7
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -1057,7 +1057,7 @@ rosters:
   - player: Derrick Henry
     pos: RB
     starter: true
-    proj: 13.25
+    proj: 13.26
     actual: null
     injury: QUESTIONABLE
     pro_team: BAL
@@ -1066,7 +1066,7 @@ rosters:
     pos: WR
     starter: true
     proj: 16.97
-    actual: null
+    actual: 16.9
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1090,7 +1090,7 @@ rosters:
     pos: TE
     starter: true
     proj: 8.88
-    actual: null
+    actual: 12.4
     injury: QUESTIONABLE
     pro_team: DET
     bye_week: 6
@@ -1114,7 +1114,7 @@ rosters:
     pos: K
     starter: true
     proj: 10.16
-    actual: null
+    actual: 8.0
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1129,7 +1129,7 @@ rosters:
   - player: Texans D/ST
     pos: D/ST
     starter: true
-    proj: 7.26
+    proj: 7.18
     actual: null
     injury: ''
     pro_team: HOU
@@ -1189,7 +1189,7 @@ rosters:
   - player: Christian Watson
     pos: WR
     starter: true
-    proj: 11.29
+    proj: 11.28
     actual: 14.5
     injury: QUESTIONABLE
     pro_team: GB
@@ -1198,8 +1198,8 @@ rosters:
     pos: TE
     starter: true
     proj: 8.3
-    actual: null
-    injury: ''
+    actual: -1.0
+    injury: QUESTIONABLE
     pro_team: CHI
     bye_week: 10
   - player: Jordan Mason
@@ -1213,8 +1213,8 @@ rosters:
   - player: Jared Goff
     pos: QB
     starter: true
-    proj: 18.59
-    actual: null
+    proj: 18.58
+    actual: 16.7
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -1237,7 +1237,7 @@ rosters:
   - player: Caleb Douglas
     pos: WR
     starter: true
-    proj: 9.03
+    proj: 9.02
     actual: null
     injury: ''
     pro_team: MIA
@@ -1344,7 +1344,7 @@ rosters:
     bye_week: 9
   - player: Brock Purdy
     pos: QB
-    starter: true
+    starter: false
     proj: 20.32
     actual: null
     injury: QUESTIONABLE
@@ -1352,16 +1352,16 @@ rosters:
     bye_week: 8
   - player: Patrick Mahomes
     pos: QB
-    starter: false
+    starter: true
     proj: 19.24
-    actual: null
+    actual: 7.0
     injury: ''
     pro_team: KC
     bye_week: 5
   - player: Broncos D/ST
     pos: D/ST
     starter: true
-    proj: 5.68
+    proj: 5.69
     actual: null
     injury: ''
     pro_team: DEN
@@ -1386,14 +1386,14 @@ rosters:
     pos: D/ST
     starter: false
     proj: 4.08
-    actual: null
+    actual: 6.0
     injury: ''
     pro_team: BUF
     bye_week: 7
   - player: Justice Hill
     pos: RB
     starter: false
-    proj: 7.92
+    proj: 7.93
     actual: null
     injury: ''
     pro_team: BAL
@@ -1425,8 +1425,8 @@ rosters:
   - player: Amon-Ra St. Brown
     pos: WR
     starter: true
-    proj: 14.43
-    actual: null
+    proj: 14.44
+    actual: 18.1
     injury: ''
     pro_team: DET
     bye_week: 6
@@ -1446,7 +1446,7 @@ rosters:
     pos: RB
     starter: true
     proj: 12.73
-    actual: null
+    actual: 25.7
     injury: ''
     pro_team: CHI
     bye_week: 10
@@ -1461,8 +1461,8 @@ rosters:
   - player: Dak Prescott
     pos: QB
     starter: true
-    proj: 21.47
-    actual: null
+    proj: 21.48
+    actual: 27.5
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1477,7 +1477,7 @@ rosters:
   - player: Rams D/ST
     pos: D/ST
     starter: false
-    proj: 7.69
+    proj: 7.8
     actual: 12.0
     injury: ''
     pro_team: LAR
@@ -1550,7 +1550,7 @@ rosters:
     pos: WR
     starter: true
     proj: 6.55
-    actual: null
+    actual: 0.0
     injury: ''
     pro_team: DAL
     bye_week: 14
@@ -1558,7 +1558,7 @@ rosters:
     pos: RB
     starter: true
     proj: 23.4
-    actual: null
+    actual: 45.7
     injury: ''
     pro_team: DET
     bye_week: 6
