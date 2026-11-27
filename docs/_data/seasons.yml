@@ -606,7 +606,7 @@ detail:
         lean: null
       - label: 'Lexi loses at least one of three: Trevor, Jono, Wade'
         status: open
-        lean: null
+        lean: ahead
   2025:
     year: 2025
     season_no: 12

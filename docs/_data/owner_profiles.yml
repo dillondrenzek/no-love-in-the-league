@@ -26,7 +26,7 @@ jackperkins74:
     playoff_apps: 9
     trades: 17
     trades_known: true
-    tx_per_year: 123.2
+    tx_per_year: 123.4
     tx_known: false
     seasons: 13
     best_finish:
@@ -50,7 +50,7 @@ jackperkins74:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     finish: 1st
     record: 9-2
-    tx: 104
+    tx: 106
     in_progress: true
     pf: 1502.3
     pa: 1215.3
@@ -778,6 +778,10 @@ jackperkins74:
       via: add
       week: 12
       waiver: true
+    - player: Josh Cameron
+      via: add
+      week: 12
+      waiver: false
   - year: 2025
     players:
     - player: Saquon Barkley
@@ -3216,12 +3220,12 @@ jackperkins74:
       cost: R8
       basis: Drafted R10
       ineligible: false
-    - player: Brandon Aiyuk
+    - player: CJ Daniels
       pos: WR
       cost: R13
       basis: Undrafted
       ineligible: false
-    - player: CJ Daniels
+    - player: Josh Cameron
       pos: WR
       cost: R13
       basis: Undrafted

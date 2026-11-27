@@ -4,7 +4,7 @@
 
 season: 2026
 source: the-league-espn-api
-updated_at: 2026-11-27T13:18:53+00:00
+updated_at: 2026-11-27T23:49:42+00:00
 weeks_in_regular_season: 14
 
 # Lifecycle state (see design/season-state.md) — the site renders off this,
@@ -156,12 +156,12 @@ matchups:
   - { week: 11, home: sturmanator15, away: shawne2520997, home_score: 92.6, away_score: 134.2, playoff: false }
   - { week: 11, home: whowonthelastsuperbowl, away: theoceanpulse, home_score: 121.8, away_score: 111.9, playoff: false }
   - { week: 11, home: zachzoske, away: purpsworth, home_score: 110.3, away_score: 62.3, playoff: false }
-  - { week: 12, home: alexandra, away: purpsworth, home_score: 34.7, away_score: 23.7, playoff: false, final: false, home_proj: 110.82, away_proj: 114.32 }
-  - { week: 12, home: schirmerj, away: jackperkins74, home_score: 46.6, away_score: 30.0, playoff: false, final: false, home_proj: 116.13, away_proj: 131.34 }
-  - { week: 12, home: sturmanator15, away: lukstein, home_score: 54.8, away_score: 45.1, playoff: false, final: false, home_proj: 120.33, away_proj: 109.03 }
-  - { week: 12, home: theoceanpulse, away: gganoom, home_score: 30.2, away_score: 25.1, playoff: false, final: false, home_proj: 111.38, away_proj: 115.16 }
-  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 37.3, away_score: 98.9, playoff: false, final: false, home_proj: 116.51, away_proj: 119.79 }
-  - { week: 12, home: zachzoske, away: kevbots22, home_score: 6.0, away_score: 28.5, playoff: false, final: false, home_proj: 137.99, away_proj: 120.34 }
+  - { week: 12, home: alexandra, away: purpsworth, home_score: 34.7, away_score: 49.7, playoff: false, final: false, home_proj: 99.48, away_proj: 114.47 }
+  - { week: 12, home: schirmerj, away: jackperkins74, home_score: 55.0, away_score: 30.0, playoff: false, final: false, home_proj: 116.61, away_proj: 125.0 }
+  - { week: 12, home: sturmanator15, away: lukstein, home_score: 64.8, away_score: 45.1, playoff: false, final: false, home_proj: 118.96, away_proj: 109.06 }
+  - { week: 12, home: theoceanpulse, away: gganoom, home_score: 41.4, away_score: 38.2, playoff: false, final: false, home_proj: 110.14, away_proj: 116.14 }
+  - { week: 12, home: whowonthelastsuperbowl, away: shawne2520997, home_score: 37.3, away_score: 98.9, playoff: false, final: false, home_proj: 116.33, away_proj: 120.35 }
+  - { week: 12, home: zachzoske, away: kevbots22, home_score: 6.0, away_score: 28.5, playoff: false, final: false, home_proj: 135.83, away_proj: 120.38 }
   - { week: 13, home: jackperkins74, away: purpsworth, playoff: false, played: false }
   - { week: 13, home: lukstein, away: shawne2520997, playoff: false, played: false }
   - { week: 13, home: schirmerj, away: alexandra, playoff: false, played: false }
@@ -425,7 +425,7 @@ transactions_known: true
 transactions:
   alexandra: { adds: 15, drops: 14, moves: 29 }
   gganoom: { adds: 14, drops: 8, moves: 22 }
-  jackperkins74: { adds: 60, drops: 44, moves: 104 }
+  jackperkins74: { adds: 61, drops: 45, moves: 106 }
   kevbots22: { adds: 10, drops: 8, moves: 18 }
   lukstein: { adds: 25, drops: 19, moves: 44 }
   purpsworth: { adds: 17, drops: 8, moves: 25 }
@@ -700,6 +700,10 @@ rosters:
     via: add
     week: 12
     waiver: true
+  - player: Josh Cameron
+    via: add
+    week: 12
+    waiver: false
   gganoom:
   - player: Bijan Robinson
     via: draft

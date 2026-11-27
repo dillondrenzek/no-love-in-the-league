@@ -255,7 +255,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Sep 9, 2026 · 12:14 AM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -654,7 +654,7 @@
     result: hit
     winner_id: schirmerj
   projected_at: Sep 17, 2026 · 1:57 PM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -1046,7 +1046,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Sep 24, 2026 · 9:10 AM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -1445,7 +1445,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 1, 2026 · 3:13 PM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -1825,7 +1825,7 @@
     result: miss
     winner_id: theoceanpulse
   projected_at: Oct 8, 2026 · 11:06 AM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -2205,7 +2205,7 @@
     result: miss
     winner_id: zachzoske
   projected_at: Oct 15, 2026 · 3:56 PM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -2585,7 +2585,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 22, 2026 · 11:48 AM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -2965,7 +2965,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Oct 29, 2026 · 12:13 PM PDT
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -3345,7 +3345,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 5, 2026 · 1:24 PM PST
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -3725,7 +3725,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 12, 2026 · 1:08 PM PST
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -4105,7 +4105,7 @@
     result: hit
     winner_id: zachzoske
   projected_at: Nov 19, 2026 · 2:01 PM PST
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power:
   - rank: 1
@@ -4244,17 +4244,17 @@
     away_record: 5-6
     scored: true
     home_yet: 7
-    away_yet: 9
+    away_yet: 8
     final: false
     live: true
     playoff: false
     home_score: 34.7
-    away_score: 23.7
+    away_score: 49.7
     winner_id: null
     tie: false
-    margin: 11.0
-    home_proj: 110.8
-    away_proj: 114.3
+    margin: 15.0
+    home_proj: 99.5
+    away_proj: 114.5
   - home_id: schirmerj
     home_team: Return of the IDP
     home_owner: Jono
@@ -4266,18 +4266,18 @@
     home_record: 5-6
     away_record: 9-2
     scored: true
-    home_yet: 6
+    home_yet: 4
     away_yet: 7
     final: false
     live: true
     playoff: false
-    home_score: 46.6
+    home_score: 55.0
     away_score: 30.0
     winner_id: null
     tie: false
-    margin: 16.6
-    home_proj: 116.1
-    away_proj: 131.3
+    margin: 25.0
+    home_proj: 116.6
+    away_proj: 125.0
   - home_id: sturmanator15
     home_team: The People's Commissioner
     home_owner: Wade
@@ -4289,18 +4289,18 @@
     home_record: 7-4
     away_record: 2-9
     scored: true
-    home_yet: 8
+    home_yet: 7
     away_yet: 6
     final: false
     live: true
     playoff: false
-    home_score: 54.8
+    home_score: 64.8
     away_score: 45.1
     winner_id: null
     tie: false
-    margin: 9.7
-    home_proj: 120.3
-    away_proj: 109.0
+    margin: 19.7
+    home_proj: 119.0
+    away_proj: 109.1
   - home_id: theoceanpulse
     home_team: Im Bleeding Making Me the Shiva
     home_owner: Dillon
@@ -4312,18 +4312,18 @@
     home_record: 3-7-1
     away_record: 6-5
     scored: true
-    home_yet: 7
-    away_yet: 8
+    home_yet: 6
+    away_yet: 6
     final: false
     live: true
     playoff: false
-    home_score: 30.2
-    away_score: 25.1
+    home_score: 41.4
+    away_score: 38.2
     winner_id: null
     tie: false
-    margin: 5.1
-    home_proj: 111.4
-    away_proj: 115.2
+    margin: 3.2
+    home_proj: 110.1
+    away_proj: 116.1
   - home_id: whowonthelastsuperbowl
     home_team: Trick or Trick It’s Mike Vick
     home_owner: Nate
@@ -4345,8 +4345,8 @@
     winner_id: null
     tie: false
     margin: 61.6
-    home_proj: 116.5
-    away_proj: 119.8
+    home_proj: 116.3
+    away_proj: 120.3
   - home_id: zachzoske
     home_team: Tuten Your Mother, Respectfully
     home_owner: Zach
@@ -4368,8 +4368,8 @@
     winner_id: null
     tie: false
     margin: 22.5
-    home_proj: 138.0
-    away_proj: 120.3
+    home_proj: 135.8
+    away_proj: 120.4
   highlights: []
   projections:
   - home_id: alexandra
@@ -4463,7 +4463,7 @@
     decided: false
     result: null
   projected_at: Nov 26, 2026 · 6:41 PM PST
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: true
   power:
   - rank: 1
@@ -4689,7 +4689,7 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power: []
 2026-14:
@@ -4795,6 +4795,6 @@
   highlights: []
   projections: []
   projected_at: null
-  updated_at: Nov 27, 5:18 AM PST
+  updated_at: Nov 27, 3:49 PM PST
   current: false
   power: []
