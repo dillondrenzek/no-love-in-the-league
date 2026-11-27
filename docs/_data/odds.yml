@@ -3,7 +3,7 @@
   live_week: 12
   now_week: 12
   now_projected: true
-  updated_at: Nov 26, 8:34 PM PST
+  updated_at: Nov 27, 12:37 AM PST
   sims: 10000
   rows:
   - fid: jackperkins74
@@ -11,7 +11,7 @@
     owner: Jack
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/BoneHeads-ToddDetwiler/BoneHeads-07a.svg
     record: 10-2
-    pf: '1630.8'
+    pf: '1630.7'
     pf_color: '#ee6b3b'
     rating: 132.1
     proj_wins: 11.3
@@ -34,14 +34,14 @@
         color: '#ef703c'
         dim: false
     wc_gap:
-      text: 206.3 (+103.1)
-      total: '206.3'
+      text: 206.2 (+103.1)
+      total: '206.2'
       ppg: (+103.1)
-      title: 'Top five by record. If it drops out: 206.3 PF ahead of the 6th seed
+      title: 'Top five by record. If it drops out: 206.2 PF ahead of the 6th seed
         with 2 games left'
       dim: true
       gap: -103.1
-      pf_gap: -206.3
+      pf_gap: -206.2
     seed: 1
   - fid: zachzoske
     team: Tuten Your Mother, Respectfully
@@ -143,14 +143,14 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: 24.0 (+12.0)
-      total: '24.0'
+      text: 23.9 (+12.0)
+      total: '23.9'
       ppg: (+12.0)
-      title: 'Top five by record. If it drops out: 24.0 PF ahead of the 6th seed with
+      title: 'Top five by record. If it drops out: 23.9 PF ahead of the 6th seed with
         2 games left'
       dim: true
       gap: -12.0
-      pf_gap: -24.0
+      pf_gap: -23.9
     seed: 4
   - fid: whowonthelastsuperbowl
     team: Trick or Trick It’s Mike Vick
@@ -264,7 +264,7 @@
     owner: Jono
     logo: http://a.espncdn.com/photo/2012/0907/simmons_iliustration_g_mp_640.jpg
     record: 5-7
-    pf: '1352.4'
+    pf: '1352.3'
     pf_color: '#f9b54d'
     rating: 113.5
     proj_wins: 6.3
@@ -287,20 +287,20 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −72.1 (−36.1)
-      total: −72.1
+      text: −72.3 (−36.1)
+      total: −72.3
       ppg: (−36.1)
-      title: 72.1 PF behind the 6th seed with 2 games left
+      title: 72.3 PF behind the 6th seed with 2 games left
       dim: false
       gap: 36.1
-      pf_gap: 72.1
+      pf_gap: 72.3
     seed: 8
   - fid: kevbots22
     team: Remember the Nice Guys, ChatGPT
     owner: Kevin
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     record: 4-7-1
-    pf: '1349.5'
+    pf: '1349.4'
     pf_color: '#f9b64d'
     rating: 113.2
     proj_wins: 5.7
@@ -323,13 +323,13 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −75.0 (−37.5)
-      total: −75.0
-      ppg: (−37.5)
-      title: 75.0 PF behind the 6th seed with 2 games left
+      text: −75.1 (−37.6)
+      total: −75.1
+      ppg: (−37.6)
+      title: 75.1 PF behind the 6th seed with 2 games left
       dim: false
-      gap: 37.5
-      pf_gap: 75.0
+      gap: 37.6
+      pf_gap: 75.1
     seed: 9
   - fid: alexandra
     team: Cornstar
@@ -357,13 +357,13 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −115.2 (−57.6)
-      total: −115.2
+      text: −115.3 (−57.6)
+      total: −115.3
       ppg: (−57.6)
-      title: 115.2 PF behind the 6th seed with 2 games left
+      title: 115.3 PF behind the 6th seed with 2 games left
       dim: false
       gap: 57.6
-      pf_gap: 115.2
+      pf_gap: 115.3
     seed: 10
   - fid: theoceanpulse
     team: Im Bleeding Making Me the Shiva
@@ -425,13 +425,13 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −357.1 (−178.6)
-      total: −357.1
+      text: −357.2 (−178.6)
+      total: −357.2
       ppg: (−178.6)
-      title: 357.1 PF behind the 6th seed with 2 games left
+      title: 357.2 PF behind the 6th seed with 2 games left
       dim: false
       gap: 178.6
-      pf_gap: 357.1
+      pf_gap: 357.2
     seed: 12
   settled_rows:
   - fid: jackperkins74
@@ -871,9 +871,9 @@
       now: 97%
       win: 98%
       lose: 85%
-      now_p: 0.9657
-      win_p: 0.9793
-      lose_p: 0.8521
+      now_p: 0.9655
+      win_p: 0.9792
+      lose_p: 0.8493
       root:
       - Luke over Wade
       note: null
@@ -887,7 +887,7 @@
       now: 86%
       win: 90%
       lose: 57%
-      now_p: 0.8567
+      now_p: 0.8569
       win_p: 0.8996
       lose_p: 0.567
       root:
@@ -923,7 +923,7 @@
       lose: 94%
       now_p: 0.9687
       win_p: 0.9919
-      lose_p: 0.9393
+      lose_p: 0.9396
       root:
       - Jack over Jono
       - Zach over Kevin
@@ -938,9 +938,9 @@
       now: 92%
       win: '>99%'
       lose: 92%
-      now_p: 0.9203
+      now_p: 0.9207
       win_p: 0.9978
-      lose_p: 0.9167
+      lose_p: 0.9171
       root:
       - Jack over Jono
       - Zach over Kevin
@@ -955,8 +955,8 @@
       now: 90%
       win: 91%
       lose: 81%
-      now_p: 0.9039
-      win_p: 0.9083
+      now_p: 0.904
+      win_p: 0.9084
       lose_p: 0.809
       root:
       - Jack over Jono
@@ -973,8 +973,8 @@
       win: '>99%'
       lose: 87%
       now_p: 0.957
-      win_p: 0.9994
-      lose_p: 0.8663
+      win_p: 0.9996
+      lose_p: 0.8659
       root:
       - Grant over Dillon
       note: null
@@ -988,12 +988,12 @@
       now: 10%
       win: 31%
       lose: 8%
-      now_p: 0.1016
+      now_p: 0.1011
       win_p: 0.3137
-      lose_p: 0.0762
+      lose_p: 0.076
       root:
       - Dillon over Grant
-      note: '6th seed: 72.1 behind Shawnee'
+      note: '6th seed: 72.3 behind Shawnee'
       settled: null
     - fid: kevbots22
       owner: Kevin
@@ -1004,11 +1004,11 @@
       now: 7%
       win: 22%
       lose: 5%
-      now_p: 0.0682
-      win_p: 0.2184
-      lose_p: 0.0459
+      now_p: 0.0681
+      win_p: 0.2196
+      lose_p: 0.0458
       root: []
-      note: '6th seed: 75.0 behind Shawnee'
+      note: '6th seed: 75.1 behind Shawnee'
       settled: null
     - fid: alexandra
       owner: Lexi
@@ -1019,9 +1019,9 @@
       now: 71%
       win: 95%
       lose: 60%
-      now_p: 0.7119
+      now_p: 0.7112
       win_p: 0.9532
-      lose_p: 0.5991
+      lose_p: 0.5982
       root:
       - Grant over Dillon
       note: null
@@ -1035,9 +1035,9 @@
       now: 40%
       win: 63%
       lose: 22%
-      now_p: 0.3996
-      win_p: 0.6279
-      lose_p: 0.2193
+      now_p: 0.4007
+      win_p: 0.6288
+      lose_p: 0.219
       root:
       - Trevor over Lexi
       - Jack over Jono
