@@ -18301,7 +18301,7 @@ alexandra:
     playoff_apps: 0
     trades: 1
     trades_known: true
-    tx_per_year: 27.0
+    tx_per_year: 29.0
     tx_known: true
     seasons: 1
     best_finish:
@@ -18324,7 +18324,7 @@ alexandra:
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     finish: 10th
     record: 4-7
-    tx: 27
+    tx: 29
     in_progress: true
     pf: 1193.6
     pa: 1255.7
@@ -18522,6 +18522,10 @@ alexandra:
       via: add
       week: 11
       waiver: false
+    - player: Deshaun Watson
+      via: add
+      week: 12
+      waiver: false
   current_roster:
     year: 2026
     week: 12
@@ -18531,7 +18535,7 @@ alexandra:
       cost: R2
       basis: Drafted R4
       ineligible: false
-    - player: Aaron Rodgers
+    - player: Deshaun Watson
       pos: QB
       cost: R13
       basis: Undrafted
