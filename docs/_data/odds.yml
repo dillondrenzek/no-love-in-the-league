@@ -3,7 +3,7 @@
   live_week: 12
   now_week: 12
   now_projected: true
-  updated_at: Nov 27, 12:37 AM PST
+  updated_at: Nov 27, 5:18 AM PST
   sims: 10000
   rows:
   - fid: jackperkins74
@@ -85,7 +85,7 @@
     owner: Wade
     logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
     record: 8-4
-    pf: '1594.3'
+    pf: '1594.1'
     pf_color: '#ef753d'
     rating: 128.6
     proj_wins: 9.4
@@ -102,18 +102,18 @@
         dim: false
         trend: null
       bye:
-        text: 18%
-        color: '#fcddac'
+        text: 17%
+        color: '#fcdead'
         dim: false
     wc_gap:
-      text: 169.7 (+84.9)
-      total: '169.7'
-      ppg: (+84.9)
-      title: 'Top five by record. If it drops out: 169.7 PF ahead of the 6th seed
+      text: 169.6 (+84.8)
+      total: '169.6'
+      ppg: (+84.8)
+      title: 'Top five by record. If it drops out: 169.6 PF ahead of the 6th seed
         with 2 games left'
       dim: true
-      gap: -84.9
-      pf_gap: -169.7
+      gap: -84.8
+      pf_gap: -169.6
     seed: 3
   - fid: gganoom
     team: One Big Beautiful Dillbot
@@ -157,7 +157,7 @@
     owner: Nate
     logo: http://orig09.deviantart.net/9f0a/f/2009/034/b/b/michael_vick__pokemon_trainer_by_o12t14a86.jpg
     record: 7-5
-    pf: '1411.8'
+    pf: '1411.9'
     pf_color: '#f7a549'
     rating: 117.1
     proj_wins: 7.9
@@ -180,14 +180,14 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −12.7 (−6.4)
-      total: −12.7
-      ppg: (−6.4)
-      title: 'Top five by record. If it drops out: 12.7 PF behind the 6th seed with
+      text: −12.6 (−6.3)
+      total: −12.6
+      ppg: (−6.3)
+      title: 'Top five by record. If it drops out: 12.6 PF behind the 6th seed with
         2 games left'
       dim: true
-      gap: 6.4
-      pf_gap: 12.7
+      gap: 6.3
+      pf_gap: 12.6
     seed: 5
   - fid: shawne2520997
     team: Swift kick in the Dak
@@ -204,7 +204,7 @@
         color: '#ffffff'
         dim: true
       playoffs:
-        text: 90%
+        text: 91%
         color: '#f0793e'
         dim: false
         trend:
@@ -270,7 +270,7 @@
     proj_wins: 6.3
     cells:
       sacko_bye:
-        text: 3%
+        text: 4%
         color: '#fdefd6'
         dim: false
       playoffs:
@@ -300,7 +300,7 @@
     owner: Kevin
     logo: http://news.images.itv.com/image/file/662476/stream_img.jpg
     record: 4-7-1
-    pf: '1349.4'
+    pf: '1348.6'
     pf_color: '#f9b64d'
     rating: 113.2
     proj_wins: 5.7
@@ -311,7 +311,7 @@
         dim: false
       playoffs:
         text: 7%
-        color: '#fcebcc'
+        color: '#fcebcd'
         dim: false
         trend:
           dir: down
@@ -323,20 +323,20 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −75.1 (−37.6)
-      total: −75.1
-      ppg: (−37.6)
-      title: 75.1 PF behind the 6th seed with 2 games left
+      text: −76.0 (−38.0)
+      total: −76.0
+      ppg: (−38.0)
+      title: 76.0 PF behind the 6th seed with 2 games left
       dim: false
-      gap: 37.6
-      pf_gap: 75.1
+      gap: 38.0
+      pf_gap: 76.0
     seed: 9
   - fid: alexandra
     team: Cornstar
     owner: Lexi
     logo: https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-03.svg
     record: 4-8
-    pf: '1309.3'
+    pf: '1309.2'
     pf_color: '#fabf62'
     rating: 109.9
     proj_wins: 5.0
@@ -357,13 +357,13 @@
         dim: true
         eliminated: true
     wc_gap:
-      text: −115.3 (−57.6)
-      total: −115.3
-      ppg: (−57.6)
-      title: 115.3 PF behind the 6th seed with 2 games left
+      text: −115.4 (−57.7)
+      total: −115.4
+      ppg: (−57.7)
+      title: 115.4 PF behind the 6th seed with 2 games left
       dim: false
-      gap: 57.6
-      pf_gap: 115.3
+      gap: 57.7
+      pf_gap: 115.4
     seed: 10
   - fid: theoceanpulse
     team: Im Bleeding Making Me the Shiva
@@ -886,10 +886,10 @@
       label: A first-round bye
       now: 86%
       win: 90%
-      lose: 57%
-      now_p: 0.8569
-      win_p: 0.8996
-      lose_p: 0.567
+      lose: 56%
+      now_p: 0.8594
+      win_p: 0.9001
+      lose_p: 0.5633
       root:
       - Luke over Wade
       - Shawnee over Nate
@@ -901,11 +901,11 @@
       logo: https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg
       goal: bye
       label: A first-round bye
-      now: 18%
+      now: 17%
       win: 18%
       lose: 1%
-      now_p: 0.1769
-      win_p: 0.1828
+      now_p: 0.1745
+      win_p: 0.1804
       lose_p: 0.006
       root:
       - Kevin over Zach
@@ -921,8 +921,8 @@
       now: 97%
       win: 99%
       lose: 94%
-      now_p: 0.9687
-      win_p: 0.9919
+      now_p: 0.9689
+      win_p: 0.9923
       lose_p: 0.9396
       root:
       - Jack over Jono
@@ -938,13 +938,13 @@
       now: 92%
       win: '>99%'
       lose: 92%
-      now_p: 0.9207
+      now_p: 0.9215
       win_p: 0.9978
-      lose_p: 0.9171
+      lose_p: 0.9179
       root:
       - Jack over Jono
       - Zach over Kevin
-      note: '6th seed: 12.7 behind Shawnee'
+      note: '6th seed: 12.6 behind Shawnee'
       settled: null
     - fid: shawne2520997
       owner: Shawnee
@@ -952,16 +952,16 @@
       logo: https://g.espncdn.com/lm-static/logo-packs/ffl/Talent-ChipWass/talent-russini_2.svg
       goal: playoffs
       label: A playoff spot
-      now: 90%
+      now: 91%
       win: 91%
       lose: 81%
-      now_p: 0.904
-      win_p: 0.9084
-      lose_p: 0.809
+      now_p: 0.9054
+      win_p: 0.91
+      lose_p: 0.808
       root:
       - Jack over Jono
       - Zach over Kevin
-      note: '6th seed: 12.7 ahead of Nate'
+      note: '6th seed: 12.6 ahead of Nate'
       settled: null
     - fid: purpsworth
       owner: Trevor
@@ -972,9 +972,9 @@
       now: 96%
       win: '>99%'
       lose: 87%
-      now_p: 0.957
+      now_p: 0.9573
       win_p: 0.9996
-      lose_p: 0.8659
+      lose_p: 0.866
       root:
       - Grant over Dillon
       note: null
@@ -988,9 +988,9 @@
       now: 10%
       win: 31%
       lose: 8%
-      now_p: 0.1011
+      now_p: 0.1013
       win_p: 0.3137
-      lose_p: 0.076
+      lose_p: 0.0762
       root:
       - Dillon over Grant
       note: '6th seed: 72.3 behind Shawnee'
@@ -1003,12 +1003,12 @@
       label: A playoff spot
       now: 7%
       win: 22%
-      lose: 5%
-      now_p: 0.0681
-      win_p: 0.2196
-      lose_p: 0.0458
+      lose: 4%
+      now_p: 0.0654
+      win_p: 0.2184
+      lose_p: 0.0444
       root: []
-      note: '6th seed: 75.1 behind Shawnee'
+      note: '6th seed: 76.0 behind Shawnee'
       settled: null
     - fid: alexandra
       owner: Lexi
@@ -1019,9 +1019,9 @@
       now: 71%
       win: 95%
       lose: 60%
-      now_p: 0.7112
-      win_p: 0.9532
-      lose_p: 0.5982
+      now_p: 0.7107
+      win_p: 0.9529
+      lose_p: 0.5987
       root:
       - Grant over Dillon
       note: null
@@ -1035,9 +1035,9 @@
       now: 40%
       win: 63%
       lose: 22%
-      now_p: 0.4007
-      win_p: 0.6288
-      lose_p: 0.219
+      now_p: 0.4012
+      win_p: 0.6292
+      lose_p: 0.2195
       root:
       - Trevor over Lexi
       - Jack over Jono

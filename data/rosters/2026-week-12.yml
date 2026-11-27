@@ -1,6 +1,6 @@
 season: 2026
 week: 12
-captured_at: '2026-11-27T08:37:12+00:00'
+captured_at: '2026-11-27T13:18:47+00:00'
 rosters:
 - manager_id: '{1C08B299-B471-49F1-88B2-99B47149F176}'
   team_id: 1
@@ -57,7 +57,7 @@ rosters:
   - player: Trey McBride
     pos: TE
     starter: true
-    proj: 11.24
+    proj: 11.09
     actual: null
     injury: ''
     pro_team: ARI
@@ -65,7 +65,7 @@ rosters:
   - player: Kyle Monangai
     pos: RB
     starter: false
-    proj: 7.2
+    proj: 7.21
     actual: 15.4
     injury: ''
     pro_team: CHI
@@ -189,7 +189,7 @@ rosters:
   - player: Luther Burden III
     pos: WR
     starter: true
-    proj: 10.45
+    proj: 10.47
     actual: 6.0
     injury: ''
     pro_team: CHI
@@ -781,7 +781,7 @@ rosters:
   - player: Commanders D/ST
     pos: D/ST
     starter: true
-    proj: 8.9
+    proj: 8.06
     actual: null
     injury: ''
     pro_team: WSH
@@ -889,7 +889,7 @@ rosters:
   - player: Tyler Allgeier
     pos: RB
     starter: true
-    proj: 7.47
+    proj: 7.36
     actual: null
     injury: ''
     pro_team: ARI
@@ -897,7 +897,7 @@ rosters:
   - player: Lions D/ST
     pos: D/ST
     starter: true
-    proj: 5.5
+    proj: 5.29
     actual: 0.0
     injury: ''
     pro_team: DET
@@ -941,7 +941,7 @@ rosters:
   - player: Rome Odunze
     pos: WR
     starter: true
-    proj: 9.01
+    proj: 9.02
     actual: 23.7
     injury: ''
     pro_team: CHI
@@ -1065,7 +1065,7 @@ rosters:
   - player: CeeDee Lamb
     pos: WR
     starter: true
-    proj: 16.97
+    proj: 16.96
     actual: 16.9
     injury: ''
     pro_team: DAL
@@ -1129,7 +1129,7 @@ rosters:
   - player: Texans D/ST
     pos: D/ST
     starter: true
-    proj: 7.18
+    proj: 7.27
     actual: null
     injury: ''
     pro_team: HOU
@@ -1197,7 +1197,7 @@ rosters:
   - player: Colston Loveland
     pos: TE
     starter: true
-    proj: 8.3
+    proj: 8.32
     actual: -1.0
     injury: QUESTIONABLE
     pro_team: CHI
@@ -1353,7 +1353,7 @@ rosters:
   - player: Patrick Mahomes
     pos: QB
     starter: true
-    proj: 19.24
+    proj: 19.26
     actual: 7.0
     injury: ''
     pro_team: KC
@@ -1385,7 +1385,7 @@ rosters:
   - player: Bills D/ST
     pos: D/ST
     starter: false
-    proj: 4.08
+    proj: 4.06
     actual: 6.0
     injury: ''
     pro_team: BUF
